@@ -3,6 +3,7 @@ title: Aspose.BarCode for Node.js via Java
 type: docs
 weight: 80
 url: /nodejsjava/
+is_root: true
 ---
 
 {{% alert color="primary" %}} 
