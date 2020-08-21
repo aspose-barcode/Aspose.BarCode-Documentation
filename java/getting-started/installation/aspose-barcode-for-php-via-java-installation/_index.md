@@ -29,7 +29,7 @@ git clone git@github.com:asposemarketplace/Aspose-Barcode-Java-for-PHP.git
 composer install
 {{< /highlight >}}
 
-### **Method 2*
+### **Method 2**
 - In composer.json file of your PHP project, add the following lines
 {{< highlight php >}}
 {    
@@ -42,7 +42,7 @@ composer install
 - Run the install command
 {{< highlight php >}}
 composer install
-{{< //highlight >}}
+{{< /highlight >}}
 
 {{% alert color="primary" %}} 
 
