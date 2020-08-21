@@ -46,7 +46,7 @@ url: /java/aspose-barcode-for-node-js-via-java-features/
 - GIF
 
 ## **Supported Barcode Symbologies**
-##### **Numeric Only Symbologies**
+### **Numeric Only Symbologies**
 - EAN13
 - EAN8
 - UPCA
@@ -71,7 +71,7 @@ url: /java/aspose-barcode-for-node-js-via-java-features/
 - DatabarStacked
 - DatabarLimited
 - DatabarTruncated
-##### **Alpha-Numeric Symbologies**
+### **Alpha-Numeric Symbologies**
 - GS1Code128
 - Code128
 - Code39 Extended
@@ -83,7 +83,7 @@ url: /java/aspose-barcode-for-node-js-via-java-features/
 - Matrix 2 of 5
 - DatabarExpanded
 - PatchCode
-##### **2D Symbologies**
+###**2D Symbologies**
 - PDF417
 - DataMatrix
 - Aztec
