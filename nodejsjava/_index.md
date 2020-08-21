@@ -21,13 +21,13 @@ Aspose.BarCode for Node.js via Java supports the most established barcode standa
 ## **Aspose.BarCode for Node.js via Java Resources**
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.BarCode for Java Online Documentation](https://docs.aspose.com/display/barcodejava/Home) (Aspose.BarCode for Node.js via Java is ported from Aspose.BarCode for Java. So, you can use the same documentation)
-- [Aspose.BarCode for Node.js via Java Features](https://docs.aspose.com/display/barcodejava/Aspose.BarCode+for+Node.js+via+Java+Features)
-- [Aspose.BarCode for Node.js via Java Installation](https://docs.aspose.com/display/barcodejava/Aspose.BarCode+for+Node.js+via+Java+Installation)
-- [Aspose.BarCode for Node.js via Java Release Notes](https://docs.aspose.com/display/barcodejava/Node.js+via+Java+Release+Notes)
+- [Aspose.BarCode for Java Online Documentation](https://docs.aspose.com/barcode/java/) (Aspose.BarCode for Node.js via Java is ported from Aspose.BarCode for Java. So, you can use the same documentation)
+- [Aspose.BarCode for Node.js via Java Features](https://docs.aspose.com/barcode/java/aspose-barcode-for-node-js-via-java-features/)
+- [Aspose.BarCode for Node.js via Java Installation](https://docs.aspose.com/barcode/java/aspose-barcode-for-node-js-via-java-installation/)
+- [Aspose.BarCode for Node.js via Java Release Notes](https://docs.aspose.com/barcode/java/node-js-via-java-release-notes/)
 - [Aspose.BarCode for Node.js via Java Product Page](https://products.aspose.com/barcode/nodejs-java)
 - [Download Aspose.BarCode for Node.js via Java](https://downloads.aspose.com/barcode/nodejs)
-- [Aspose.BarCode for Node.js via Java API Reference Guide](https://docs.aspose.com/display/barcodejava/API+Reference)
+- [Aspose.BarCode for Node.js via Java API Reference Guide](https://docs.aspose.com/barcode/java/api-reference/)
 - [Aspose.BarCode for Node.js via Java Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for Node.js via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
