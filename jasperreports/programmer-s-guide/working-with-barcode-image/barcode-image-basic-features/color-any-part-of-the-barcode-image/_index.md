@@ -18,7 +18,7 @@ Aspose.BarCode for JasperReports gives developers free hand to change the colors
 
 {{% /alert %}} 
 ### **Adding Color to Barcodes**
-The [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221378) class has the following methods for coloring different parts of a barcode:
+The [BarCodeAttributes]() class has the following methods for coloring different parts of a barcode:
 
 - The setForeColor() method assigns any color to the barcode.
 - The setCodeTextColor() method assigns any color to the barcode's code.

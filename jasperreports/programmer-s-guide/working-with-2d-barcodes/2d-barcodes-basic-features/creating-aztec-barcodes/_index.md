@@ -13,7 +13,7 @@ Aztec is a square grid high-density two-dimensional barcode symbology that can e
 ### **Creating Aztec Barcodes**
 To create an Aztec barcode:
 
-1. Instantiate [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221330).
+1. Instantiate [BarCodeAttributes]().
 1. Call the setSymbologyType() method and pass AZTEC.
 1. Call the setCodeText() method to set the data you want to encode.
 

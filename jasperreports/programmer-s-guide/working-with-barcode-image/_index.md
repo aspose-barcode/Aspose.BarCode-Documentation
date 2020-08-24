@@ -8,5 +8,5 @@ url: /jasperreports/working-with-barcode-image/
 **This section includes the following topics: 
 **
 ----------------------------------------------
-- [Barcode Image Basic Features](/barcode/jasperreports/barcode-image-basic-features-html/) 
-- [Barcode Image Utility Features](/barcode/jasperreports/barcode-image-utility-features-html/) 
+- [Barcode Image Basic Features](/barcode/jasperreports/barcode-image-basic-features/) 
+- [Barcode Image Utility Features](/barcode/jasperreports/barcode-image-utility-features/) 

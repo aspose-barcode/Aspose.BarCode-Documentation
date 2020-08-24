@@ -7,7 +7,7 @@ url: /jasperreports/set-size-unit-for-the-barcode-image/
 
 {{% alert color="primary" %}} 
 
-To change a barcode image's measuring unit, use the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221377) setGraphicsUnit() method. The setGraphicsUnit() method accepts any value defined in the [GraphicsUnit](/pages/createpage.action?spaceKey=barcodejasperreports&title=GraphicsUnit&linkCreation=true&fromPageId=14221377) class.
+To change a barcode image's measuring unit, use the [BarCodeAttributes]() setGraphicsUnit() method. The setGraphicsUnit() method accepts any value defined in the [GraphicsUnit]() class.
 
 {{% /alert %}} 
 ### **Setting Image Size**

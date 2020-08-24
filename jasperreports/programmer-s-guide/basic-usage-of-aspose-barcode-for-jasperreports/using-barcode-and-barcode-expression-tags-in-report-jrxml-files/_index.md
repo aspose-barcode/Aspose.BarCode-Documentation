@@ -11,16 +11,14 @@ url: /jasperreports/using-barcode-and-barcode-expression-tags-in-report-jrxml-fi
 
 These tags can be used in two ways:
 
-1. Print barcodes based on [parameter values](/barcode/jasperreports/using-barcode-and-barcode-expression-tags-in-report-28jrxml-29-files-html/), or
-1. print barcodes based on [field values](/barcode/jasperreports/using-barcode-and-barcode-expression-tags-in-report-28jrxml-29-files-html/) (using a data source).
+1. Print barcodes based on [parameter values](/barcode/jasperreports/using-barcode-and-barcode-expression-tags-in-report-28jrxml-29-files/), or
+1. print barcodes based on [field values](/barcode/jasperreports/using-barcode-and-barcode-expression-tags-in-report-28jrxml-29-files/) (using a data source).
 
 This article explains how to use them.
 
 {{% /alert %}} 
 ### **Print Barcodes Based on Parameter Values**
 The code example below is an example of how bacodes can be rendered based on parameter values.
-
-[**XML**](/pages/createpage.action?spaceKey=barcodejasperreports&title=XML&linkCreation=true&fromPageId=14221351)
 
 {{< highlight csharp >}}
 
@@ -73,8 +71,6 @@ After declaration, we added one element to the map. The key given is “barCodeA
 ### **Print BarCodes Based on Field Values (Using a Data Source)**
 Below is code snippet from a JRXML file which renders barcode images from a data source. The ID field is used as codetext.
 
-[**XML**](/pages/createpage.action?spaceKey=barcodejasperreports&title=XML&linkCreation=true&fromPageId=14221351)
-
 {{< highlight csharp >}}
 
  <componentElement>
@@ -109,4 +105,4 @@ $F(id) means that a field called is “id” is required. The id field's type sh
 
 In the Java source file, pass a data source to the JRXML file. For this example, we use a custom class inherited from JRDataSource. And in the getFieldValue() method, return an instance of type “BarCodeAttributes”, which will be used by the <bc> tags in JRXML files for rendering barcodes. 
 
-For more details about using a data source in JasperReports, please read [Printing Barcodes in a Report that uses a Data Source](/barcode/jasperreports/printing-barcodes-in-a-report-that-uses-a-data-source-html/). 
+For more details about using a data source in JasperReports, please read [Printing Barcodes in a Report that uses a Data Source](/barcode/jasperreports/printing-barcodes-in-a-report-that-uses-a-data-source/). 

@@ -11,13 +11,13 @@ Data File 417 is a two-dimensional stacked barcode symbology capable of encoding
 
 {{% /alert %}} 
 ### **PDF417 Error Correction Level**
-PDF417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2. This article includes a [code sample that illustrates error correction](/barcode/jasperreports/creating-pdf417-barcodes-html/) in use. 
+PDF417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2. This article includes a [code sample that illustrates error correction](/barcode/jasperreports/creating-pdf417-barcodes/) in use. 
 ### **Truncated PDF417**
-Aspose.BarCode supports the truncated PDF417 version which omits the right-hand side quiet zone to save space. In this article, you'll find a [code sample that creates a truncated barcode](/barcode/jasperreports/creating-pdf417-barcodes-html/). 
+Aspose.BarCode supports the truncated PDF417 version which omits the right-hand side quiet zone to save space. In this article, you'll find a [code sample that creates a truncated barcode](/barcode/jasperreports/creating-pdf417-barcodes/). 
 ### **Creating a PDF417 Barcode**
 To create a PDF417 barcode:
 
-1. Instantiate [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221335).
+1. Instantiate [BarCodeAttributes]().
 1. Call the setSymbologyType() method and pass Pdf417.
 1. Call the setCodeText() method to set the data you want to encode.
 

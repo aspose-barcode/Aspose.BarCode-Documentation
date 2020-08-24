@@ -7,11 +7,11 @@ url: /jasperreports/customize-barcode-image-resolution/
 
 {{% alert color="primary" %}} 
 
-Whith Aspose.BarCode for JasperReports, you can set a custom resolution for barcode images. The component provides the [Resolution](/pages/createpage.action?spaceKey=barcodejasperreports&title=Resolution&linkCreation=true&fromPageId=14221374) class which let you customize the resolution of barcode images.
+Whith Aspose.BarCode for JasperReports, you can set a custom resolution for barcode images. The component provides the [Resolution]() class which let you customize the resolution of barcode images.
 
 {{% /alert %}} 
 ### **Customizing Resolution**
-The [Resolution](/pages/createpage.action?spaceKey=barcodejasperreports&title=Resolution&linkCreation=true&fromPageId=14221374) class has three major properties: 
+The [Resolution]() class has three major properties: 
 
 - The setDpiX() method is used to set a barcode image's horizontal resolution dots per inches (DPI). Float.
 - The setDpiY() method is used to set a barcode image's vertical resolution in dots per inches (DPI). Float.

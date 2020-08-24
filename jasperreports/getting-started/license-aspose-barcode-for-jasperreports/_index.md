@@ -8,6 +8,6 @@ url: /jasperreports/license-aspose-barcode-for-jasperreports/
 **This section includes the following topics:
 **
 ---------------------------------------------
-- [Introduction](/barcode/jasperreports/introduction-html/)
-- [Limitation of Evaluation Version](/barcode/jasperreports/evaluation-version-limitations-html/)
-- [Setting up License](/barcode/jasperreports/applying-a-license-html/)
+- [Introduction](/barcode/jasperreports/introduction/)
+- [Limitation of Evaluation Version](/barcode/jasperreports/evaluation-version-limitations/)
+- [Setting up License](/barcode/jasperreports/applying-a-license/)

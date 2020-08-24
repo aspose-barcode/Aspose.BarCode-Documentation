@@ -7,7 +7,7 @@ url: /jasperreports/rotate-barcode-image/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode for JasperReports](http://www.aspose.com/documentation/jasperreports-exporters/aspose.barcode-for-jasperreports/index.html) allows developers to rotate the barcode image by calling the setRotationAngle() method of the BarCodeAttributes class. 
+[Aspose.BarCode for JasperReports]() allows developers to rotate the barcode image by calling the setRotationAngle() method of the BarCodeAttributes class. 
 The effects of some rotation angles are demonstrated in the figure below: 
 **Figure: Demonstration of common rotation angles** 
 

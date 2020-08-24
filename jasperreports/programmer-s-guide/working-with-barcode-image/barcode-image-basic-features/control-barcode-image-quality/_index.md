@@ -11,7 +11,7 @@ Anti-aliasing aims to give better image results by removing the distortion known
 
 {{% /alert %}} 
 ### **Controlling Image Quality**
-All you have to do is to call the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221380) class' setImageQuality() method to one of the pre-defined image quality mode stored in the [ImageQuality](/pages/createpage.action?spaceKey=barcodejasperreports&title=ImageQuality&linkCreation=true&fromPageId=14221380) class. The pre-defined image quality modes in the ImageQuality class are listed below.
+All you have to do is to call the [BarCodeAttributes]() class' setImageQuality() method to one of the pre-defined image quality mode stored in the [ImageQuality]() class. The pre-defined image quality modes in the ImageQuality class are listed below.
 
 |**Image Quality Modes** |**Description** |
 | :- | :- |

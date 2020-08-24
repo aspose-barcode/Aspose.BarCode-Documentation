@@ -7,7 +7,7 @@ url: /jasperreports/quickstart-tutorial/
 
 {{% alert color="primary" %}} 
 
-Below is an easy tutorial that demonstrates how to use Aspose.BarCode for JasperReports to generate barcodes for reports. Before starting, please check the [System Requirements](/barcode/jasperreports/system-requirements-html/) and [Installation Instructions](/barcode/jasperreports/install-aspose-barcode-for-jasperreports-html/).
+Below is an easy tutorial that demonstrates how to use Aspose.BarCode for JasperReports to generate barcodes for reports. Before starting, please check the [System Requirements](/barcode/jasperreports/system-requirements/) and [Installation Instructions](/barcode/jasperreports/install-aspose-barcode-for-jasperreports/).
 
 What follows is a step by step guide to create a simple demo application.
 

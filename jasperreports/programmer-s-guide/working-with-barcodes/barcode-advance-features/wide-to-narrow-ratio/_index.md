@@ -15,7 +15,7 @@ To manage the widths of the bars (both wide and narrow) in a barcode, the wide t
 
 {{% /alert %}} 
 ### **Wide to Narrow Ratio**
-[Aspose.BarCode for JasperReports](http://www.aspose.com/documentation/jasperreports-exporters/aspose.barcode-for-jasperreports/index.html) lets developers use the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221373) class' setWideNarrowRatio() method to control the ratio of wide to narrow barcode elements. To specify the ratio, pass a float value to the setWideNarrowRatio() method.
+[Aspose.BarCode for JasperReports]() lets developers use the [BarCodeAttributes]() class' setWideNarrowRatio() method to control the ratio of wide to narrow barcode elements. To specify the ratio, pass a float value to the setWideNarrowRatio() method.
 
 The same barcode, created with different ratios (in increasing order), is shown below.
 

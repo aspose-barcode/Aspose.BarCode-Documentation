@@ -13,7 +13,7 @@ DataMatrix is used to encode product and serial number information on electrical
 ### **How to Create a DataMatrix Barcode**
 To create a DataMatrix barcode:
 
-1. Instantiate [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221332).
+1. Instantiate [BarCodeAttributes]().
 1. Call the setSymbologyType() method and pass DATAMATRIX.
 1. Call the setCodeText() method to set the data you want to encode.
 

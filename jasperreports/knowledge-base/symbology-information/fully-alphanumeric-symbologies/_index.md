@@ -20,7 +20,7 @@ This one-dimensional barcode is very effective high density code. It is used ext
 
 ![todo:image_alt_text](fully-alphanumeric-symbologies_1.png)
 #### **Code39 Standard**
-This one-dimensional barcode is used by U.S. Government and military in [DoD](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.DoD&return=Aspose.BarCode.SymbologyBackground) applications. It contains the following characters:
+This one-dimensional barcode is used by U.S. Government and military in [DoD]() applications. It contains the following characters:
 
 - Numbers: 0 to 9
 - Upper case letters: A to Z
@@ -48,7 +48,7 @@ MacroPdf417 is similar to Pdf417, but large data can be encoded in it as compare
 
 ![todo:image_alt_text](fully-alphanumeric-symbologies_7.png)
 #### **Datamatrix**
-This two-dimensional barcode symbology is derived from [ECC200](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.ECC200&return=Aspose.BarCode.SymbologyBackground). It also uses Solomon error correction. It contains full text or 8 bit binary values.
+This two-dimensional barcode symbology is derived from [ECC200](). It also uses Solomon error correction. It contains full text or 8 bit binary values.
 
 ![todo:image_alt_text](fully-alphanumeric-symbologies_8.png)
 #### **QR**

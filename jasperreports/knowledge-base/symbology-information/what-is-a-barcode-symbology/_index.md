@@ -13,8 +13,8 @@ Sometimes, barcode symbologies are also referred to as a *language* in the sense
 
 Aspose.BarCode for Jasper Reports provides world-class barcode generation and recognition of most popular one-dimensional (1D) and two-dimensional (2D) barcode symbologies. In other knowledge base topics, we have listed and described all those supported barcode symbologies. These symbologies are classified into following categories:
 
-- [Numeric Only Symbologies](/barcode/jasperreports/numeric-only-symbologies-html/)
-- [Partially Alphanumeric Symbologies](/barcode/jasperreports/partially-alphanumeric-symbologies-html/)
-- [Fully Alphanumeric Symbologies](/barcode/jasperreports/fully-alphanumeric-symbologies-html/)
+- [Numeric Only Symbologies](/barcode/jasperreports/numeric-only-symbologies/)
+- [Partially Alphanumeric Symbologies](/barcode/jasperreports/partially-alphanumeric-symbologies/)
+- [Fully Alphanumeric Symbologies](/barcode/jasperreports/fully-alphanumeric-symbologies/)
 
 {{% /alert %}}

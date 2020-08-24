@@ -6,5 +6,5 @@ url: /jasperreports/knowledge-base/
 ---
 
 ###### **This section includes the following topics:** 
-- [Technical Articles](/barcode/jasperreports/technical-articles-html/)
-- [Symbology Information](/barcode/jasperreports/symbology-information-html/)
+- [Technical Articles](/barcode/jasperreports/technical-articles/)
+- [Symbology Information](/barcode/jasperreports/symbology-information/)

@@ -17,7 +17,7 @@ QR barcodes are a two-dimensional barcode symbology developed in Japan. QR barco
 ### **Producing a QR Barcode**
 To create a QR barcode with Aspose.BarCode:
 
-1. Instantiate [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221333).
+1. Instantiate [BarCodeAttributes]().
 1. Call the setSymbologyType() method and pass QR.
 1. Call the setCodeText() method to set the data you want to encode.
 

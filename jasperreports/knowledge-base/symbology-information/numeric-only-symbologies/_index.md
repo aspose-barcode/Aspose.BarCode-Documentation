@@ -20,11 +20,11 @@ This one-dimensional barcode is used for consumer products internationally. It c
 
 ![todo:image_alt_text](numeric-only-symbologies_2.png)
 #### **EAN8**
-This one-dimensional barcode contains 8 numbers and is the short version of [EAN13](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.EAN13&return=Aspose.BarCode.SymbologyBackground).
+This one-dimensional barcode contains 8 numbers and is the short version of [EAN13]().
 
 ![todo:image_alt_text](numeric-only-symbologies_3.png)
 #### **BooklandEAN**
-This one-dimensional barcode is the variation version of [EAN13](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.EAN13&return=Aspose.BarCode.SymbologyBackground). It is used exclusively with books. The encoded number starts with 978 and is known as ISBN Barcode.
+This one-dimensional barcode is the variation version of [EAN13](). It is used exclusively with books. The encoded number starts with 978 and is known as ISBN Barcode.
 
 ![todo:image_alt_text](numeric-only-symbologies_4.png)
 #### **Standard 2 of 5**
@@ -40,7 +40,7 @@ ITF 14 is a UPC shipping container symbology. It is used to mark cartons, cases 
 
 ![todo:image_alt_text](numeric-only-symbologies_7.png)
 #### **PostNet**
-[PostNet](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.PostNet&return=Aspose.BarCode.SymbologyBackground) is also one dimensional symbology that was developed by the United States Postal Service (USPS) to allow faster sorting and routing of mail. The barcode itself can encode standard 5-digit Zip codes, Zip+4 codes or full 11-point delivery point codes.
+[PostNet]() is also one dimensional symbology that was developed by the United States Postal Service (USPS) to allow faster sorting and routing of mail. The barcode itself can encode standard 5-digit Zip codes, Zip+4 codes or full 11-point delivery point codes.
 
 ![todo:image_alt_text](numeric-only-symbologies_8.png)
 #### **Planet**
@@ -64,7 +64,7 @@ This one-dimensional symbology is also called UCC/EAN128. It is derived from Cod
 
 ![todo:image_alt_text](numeric-only-symbologies_13.png)
 #### **EAN14**
-This one-dimensional symbology is also known as [SSCC14](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.SSCC14&return=Aspose.BarCode.SymbologyBackground). [SSCC14](http://www.aspose.com/Wiki/wikiedit.aspx?topic=Aspose.BarCode.SSCC14&return=Aspose.BarCode.SymbologyBackground) is a UCC/EAN128 barcode that contains 14 digits of shipping container code with application identifier (AI) = 01.
+This one-dimensional symbology is also known as [SSCC14](). [SSCC14]() is a UCC/EAN128 barcode that contains 14 digits of shipping container code with application identifier (AI) = 01.
 
 ![todo:image_alt_text](numeric-only-symbologies_14.png)
 #### **SSCC18**

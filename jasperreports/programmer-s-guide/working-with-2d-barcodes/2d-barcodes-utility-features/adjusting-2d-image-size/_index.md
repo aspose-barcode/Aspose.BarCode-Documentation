@@ -24,6 +24,6 @@ The size of a barcode image depends on many factors. Mainly, the following setti
 - setWideNarrowRatio(). The ratio of wide bars to narrow bars or wide spaces to narrow spaces for some types of barcodes.
 - setCodeText(). Controlled by setCodeTextFont() and setCodeTextSpace().
 
-Each specific symbology have different semantic demands, which will override or ignore the above settings. For example, DataMatrix is a square barcode. The AspectRatio setting is meaningless to DataMatrix, because it has to be 1 for square modules. [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221345) ignores illegal settings and decides on its own during the process. 
+Each specific symbology have different semantic demands, which will override or ignore the above settings. For example, DataMatrix is a square barcode. The AspectRatio setting is meaningless to DataMatrix, because it has to be 1 for square modules. [BarCodeAttributes]() ignores illegal settings and decides on its own during the process. 
 
 {{% /alert %}}

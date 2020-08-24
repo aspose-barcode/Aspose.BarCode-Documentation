@@ -11,9 +11,9 @@ Two-dimensional barcode can contain more data per label than a one-dimensional o
 
 {{% /alert %}} 
 ### **Creating a Two-dimentional Barcode**
-The [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221334) class supports both one-dimensional and two-dimensional barcodes. Creating two-dimensional barcodes is just the same as creating one-dimensional barcodes.
+The [BarCodeAttributes]() class supports both one-dimensional and two-dimensional barcodes. Creating two-dimensional barcodes is just the same as creating one-dimensional barcodes.
 #### **Creating a Pdf417 Barcode**
-This is a quick example. Read more about [creating PDF417 barcodes](/barcode/jasperreports/creating-pdf417-barcodes-html/).
+This is a quick example. Read more about [creating PDF417 barcodes](/barcode/jasperreports/creating-pdf417-barcodes/).
 
 **Sample PDF417 barcode** 
 
@@ -79,7 +79,7 @@ This is a quick example. Read more about [creating PDF417 barcodes](/barcode/jas
 
 {{< /highlight >}}
 #### **Creating a DataMatrix Barcode**
-This is a quick example. Read more about [creating DataMatrix barcodes](/barcode/jasperreports/creating-datamatrix-barcodes-html/).
+This is a quick example. Read more about [creating DataMatrix barcodes](/barcode/jasperreports/creating-datamatrix-barcodes/).
 
 **Sample DataMatrix barcode** 
 

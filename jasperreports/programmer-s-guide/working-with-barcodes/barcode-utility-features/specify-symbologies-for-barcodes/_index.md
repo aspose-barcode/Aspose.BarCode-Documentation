@@ -25,7 +25,7 @@ A list of all pre-defined symbologies in Symbology enumeration are listed below.
 |Code93Extended|Specifies that the data should be encoded with Extended Code93 barcode specification.|
 |EAN13|Specifies that the data should be encoded with EAN-13 barcode specification.|
 |EAN8|Specifies that the data should be encoded with EAN-8 barcode specification.|
-|BooklandEAN|Specifies that the data should be encoded with [BooklandEAN](http://www.aspose.com/wiki/wikiedit.aspx?topic=Aspose.BarCode.BooklandEAN&return=Aspose.BarCode.SpecifySymbologies) barcode specification.|
+|BooklandEAN|Specifies that the data should be encoded with [BooklandEAN]() barcode specification.|
 |Interleaved2of5|Specifies that the data should be encoded with Interleaved 2 of 5 barcode specification.|
 |MSI|Specifies that the data should be encoded with MSI Plessey barcode specification.|
 |Standard2of5|Specifies that the data should be encoded with Standard 2 of 5 barcode specification.|

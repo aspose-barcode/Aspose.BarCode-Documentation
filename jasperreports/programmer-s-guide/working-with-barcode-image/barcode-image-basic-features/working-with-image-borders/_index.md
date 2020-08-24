@@ -7,11 +7,11 @@ url: /jasperreports/working-with-image-borders/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode for JasperReports](http://www.aspose.com/documentation/jasperreports-exporters/aspose.barcode-for-jasperreports/index.html) allows its users to handle image borders, which include margins and its width. Let's experience these features one by one. 
+[Aspose.BarCode for JasperReports]() allows its users to handle image borders, which include margins and its width. Let's experience these features one by one. 
 
 {{% /alert %}} 
 ### **Margins**
-The margin is the area between the border and the area inhabited by the barcode bars and codetext. Developers can set the border margins of the barcode image by calling the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221379) class' setMargins() method. The Aspose.BarCode.setMargins() method takes an instance of the [Margins](/pages/createpage.action?spaceKey=barcodejasperreports&title=Margins&linkCreation=true&fromPageId=14221379) class that provides the setLeft(), setRight(), setTop() and setBottom() methods for setting the border margins.
+The margin is the area between the border and the area inhabited by the barcode bars and codetext. Developers can set the border margins of the barcode image by calling the [BarCodeAttributes]() class' setMargins() method. The Aspose.BarCode.setMargins() method takes an instance of the [Margins]() class that provides the setLeft(), setRight(), setTop() and setBottom() methods for setting the border margins.
 
 All border margins concepts can be visualized from the figure below.
 
@@ -85,7 +85,7 @@ All border margins concepts can be visualized from the figure below.
 
 The default settings for border margins are left=2, right=2, top=1 and bottom=1. 
 ### **Border Width**
-A very simple but handy feature is to set the border width of the barcode image. The border can be made thick or thin by calling the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221379) class' setBorderWidth() method.
+A very simple but handy feature is to set the border width of the barcode image. The border can be made thick or thin by calling the [BarCodeAttributes]() class' setBorderWidth() method.
 
 **Java**
 
@@ -143,7 +143,7 @@ A very simple but handy feature is to set the border width of the barcode image.
 
 {{< /highlight >}}
 ### **Enable Image Border**
-Developers may also decide whether to show or hide an image border by passing true to the [BarCodeAttributes](/pages/createpage.action?spaceKey=barcodejasperreports&title=BarCodeAttributes&linkCreation=true&fromPageId=14221379) class' setBorderVisible() method.
+Developers may also decide whether to show or hide an image border by passing true to the [BarCodeAttributes]() class' setBorderVisible() method.
 
 **Java**
 
