@@ -18,6 +18,6 @@ To test a license that has been applied successfully:
 
 {{% alert color="primary" %}} 
 
-[Find out what the evaluation limitations](/barcode/sharepoint/evaluation-version-limitations-html/) are.
+[Find out what the evaluation limitations](/barcode/sharepoint/evaluation-version-limitations/) are.
 
 {{% /alert %}}

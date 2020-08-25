@@ -189,5 +189,5 @@ Run the application, it will consume the barcode web service, get barcode image 
 ##### **Summary**
 Aspose.BarCode for .NET can easily be used in ASP.NET web services to generate the barcodes and serve the barcode image to various clients.
 ##### **References**
-- [Aspose.BarCode for .NET Product Overview](/barcode/net/product-overview-html/)
-- [Specify Symbology for Barcode](/barcode/net/symbologies-for-barcodes-html/)
+- [Aspose.BarCode for .NET Product Overview](/barcode/net/product-overview/)
+- [Specify Symbology for Barcode](/barcode/net/symbologies-for-barcodes/)

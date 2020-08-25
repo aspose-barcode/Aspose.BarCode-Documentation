@@ -11,7 +11,7 @@ You can generate 2D barcodes for non-English character sets, for example, Turkis
 
 {{% /alert %}} 
 
-Below are code snippets that create a Pdf417 barcode for [Turkish](/barcode/java/encode-non-english-characters-in-2d-barcodes-html/) and [Chinese](/barcode/java/encode-non-english-characters-in-2d-barcodes-html/) characters.
+Below are code snippets that create a Pdf417 barcode for [Turkish](/barcode/java/encode-non-english-characters-in-2d-barcodes/) and [Chinese](/barcode/java/encode-non-english-characters-in-2d-barcodes/) characters.
 #### **Create a Pdf417 Barcode with Turkish Characters**
 #### **Java**
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-Pdf417BarcodeWithTurkishCharacters-Pdf417BarcodeWithTurkishCharacters.java" >}}

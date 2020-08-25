@@ -16,7 +16,7 @@ Barcodes with custom widths support these properties:
 - Margins.
 - Different graphics unit as usual.
 - Limited to two lines for each type of text. More will flatten the barcode image.
-- If no license has been applied, that is, if you're [evaluating Aspose.BarCode](/barcode/java/licensing-html/#licensing-limitations), an evaluation watermark appears at the top left corner.
+- If no license has been applied, that is, if you're [evaluating Aspose.BarCode](/barcode/java/licensing/#licensing-limitations), an evaluation watermark appears at the top left corner.
 - To get a barcode image with no text or margins, turn off those properties.
 
 {{% /alert %}} 

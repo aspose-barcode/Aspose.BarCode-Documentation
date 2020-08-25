@@ -19,7 +19,7 @@ The following tools are needed in order to complete this tutorial:
 
 {{% /alert %}} 
 ### **Designing the Report**
-The first step is to design the report that the barcodes will be displayed in. When the report is prepared, [write the code](/barcode/java/how-to-print-barcode-images-on-birt-reports-html/) that adds the barcodes dynamically.
+The first step is to design the report that the barcodes will be displayed in. When the report is prepared, [write the code](/barcode/java/how-to-print-barcode-images-on-birt-reports/) that adds the barcodes dynamically.
 #### **Create New Project**
 To design the report:
 

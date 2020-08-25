@@ -12,7 +12,7 @@ Python developers need to install JPype to make use of Java from Python. You can
 
 Download the latest version of Aspose.BarCode for Java, extract files and copy the lib folder with JAR files to the root folder of your project. 
 #### **Python Code to Generate Barcode via JPype**
-The below Python code will use JPype and use Aspose.BarCode for Java class [BarCodeBuilder](/pages/createpage.action?spaceKey=barcodejava&title=com.aspose.barcode.BarCodeBuilder+class&linkCreation=true&fromPageId=13205813) to generate barcode and save the barcode image to disk.
+The below Python code will use JPype and use Aspose.BarCode for Java class [BarcodeGenerator]() to generate barcode and save the barcode image to disk.
 
 **Python**
 

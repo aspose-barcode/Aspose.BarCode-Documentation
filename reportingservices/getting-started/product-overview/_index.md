@@ -17,10 +17,10 @@ Aspose.BarCode for Reporting Services is a unique and robust solution for making
 
 
 ###### **This section includes the following topics:**
-- [Sample Reports Gallery](/barcode/reportingservices/sample-reports-gallery-html/)
-- [Quick Start Tutorial](/barcode/reportingservices/quick-start-tutorial-html/)
-- [Design Time Barcode Report Designer](/barcode/reportingservices/design-time-barcode-report-designer-html/)
-- [Supported File Formats](/barcode/reportingservices/supported-file-formats-html/)
+- [Sample Reports Gallery](/barcode/reportingservices/sample-reports-gallery/)
+- [Quick Start Tutorial](/barcode/reportingservices/quick-start-tutorial/)
+- [Design Time Barcode Report Designer](/barcode/reportingservices/design-time-barcode-report-designer/)
+- [Supported File Formats](/barcode/reportingservices/supported-file-formats/)
 
 
 ### **Product Description**

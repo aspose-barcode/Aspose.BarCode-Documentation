@@ -4,25 +4,6 @@ type: docs
 weight: 10
 url: /net/barcode-generator-for-dynamics-crm/
 ---
-
-**Contents Summary**
-
-- [Introduction](#BarCodeGeneratorforDynamicsCRM-Introduction)
-- [System Requirements and Supported Platforms](#BarCodeGeneratorforDynamicsCRM-SystemRequirementsandSupportedPlatforms) 
-  - [System Requirements](#BarCodeGeneratorforDynamicsCRM-SystemRequirements)
-  - [Supported Platforms](#BarCodeGeneratorforDynamicsCRM-SupportedPlatforms)
-- [Downloading](#BarCodeGeneratorforDynamicsCRM-Downloading)
-- [Installing or Uninstalling](#BarCodeGeneratorforDynamicsCRM-InstallingorUninstalling) 
-  - [How to Install](#BarCodeGeneratorforDynamicsCRM-HowtoInstall)
-  - [Applying License](#BarCodeGeneratorforDynamicsCRM-ApplyingLicense)
-  - [How to Uninstall](#BarCodeGeneratorforDynamicsCRM-HowtoUninstall)
-- [Using](#BarCodeGeneratorforDynamicsCRM-Using) 
-  - [Create BarCode Configuration](#BarCodeGeneratorforDynamicsCRM-CreateBarCodeConfiguration)
-  - [Get Token for BarCode in E-Mail](#BarCodeGeneratorforDynamicsCRM-GetTokenforBarCodeinE-Mail)
-- [Video Demo](#BarCodeGeneratorforDynamicsCRM-VideoDemo)
-- [Support, Extend and Contribute](#BarCodeGeneratorforDynamicsCRM-Support,ExtendandContribute) 
-  - [Support](#BarCodeGeneratorforDynamicsCRM-Support)
-  - [Extend and Contribute](#BarCodeGeneratorforDynamicsCRM-ExtendandContribute)
 ## **Introduction**
 Aspose .NET BarCode Generator is open source add-on used to generate and send BarCodes from CRM via E-mail. You can configure multiple BarCodes with in CRM and and generate BarCode in e-mail as you want. Configuration provides multiple symbologies option and you can also select these configurations while creating e-mail. Aspose .NET BarCode Generator can be used with CRM on-premises and CRM Online.
 

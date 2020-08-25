@@ -6,5 +6,5 @@ url: /reportingservices/migrating-from-earlier-versions-of-aspose-barcode-for-re
 ---
 
 ###### **This section includes the following topics:** 
-- [Public API Changes in Aspose.BarCode for Reporting Services 6.7.0](/barcode/reportingservices/public-api-changes-in-aspose-barcode-for-reporting-services-6-7-0-html/)
-- [Public API Changes in Aspose.BarCode for Reporting Services 7.0.0](/barcode/reportingservices/public-api-changes-in-aspose-barcode-for-reporting-services-7-0-0-html/)
+- [Public API Changes in Aspose.BarCode for Reporting Services 6.7.0](/barcode/reportingservices/public-api-changes-in-aspose-barcode-for-reporting-services-6-7-0/)
+- [Public API Changes in Aspose.BarCode for Reporting Services 7.0.0](/barcode/reportingservices/public-api-changes-in-aspose-barcode-for-reporting-services-7-0-0/)

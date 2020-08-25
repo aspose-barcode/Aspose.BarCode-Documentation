@@ -6,4 +6,4 @@ url: /java/general-information/
 ---
 
 ###### **This section includes the following topics:** 
-- [Programming Styles of .NET & Java Platforms](/barcode/java/programming-styles-of-net-and-java-platforms-html/) 
+- [Programming Styles of .NET & Java Platforms](/barcode/java/programming-styles-of-net-and-java-platforms/) 

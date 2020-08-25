@@ -9,16 +9,16 @@ url: /reportingservices/simple-and-affordable-licensing/
 
 There are two types of licenses currently offered: 
 
-- [Server Subscription](/barcode/reportingservices/simple-and-affordable-licensing-html/)
-- [Site Subscription](/barcode/reportingservices/simple-and-affordable-licensing-html/)
+- [Server Subscription](/barcode/reportingservices/simple-and-affordable-licensing/)
+- [Site Subscription](/barcode/reportingservices/simple-and-affordable-licensing/)
 
 Every license comes with 1 year worth of free upgrades to any new version of the product that comes out and 1 year of unlimited free technical support. 
 
 {{% /alert %}} 
 ### **License Options**
-Aspose.BarCode for Reporting Services evaluation and paid versions is the same download. Simply download Aspose.BarCode for Reporting Services and install it on the server, it will work in the evaluation mode [until a license is applied](/barcode/reportingservices/applying-a-license-html/). 
+Aspose.BarCode for Reporting Services evaluation and paid versions is the same download. Simply download Aspose.BarCode for Reporting Services and install it on the server, it will work in the evaluation mode [until a license is applied](/barcode/reportingservices/applying-a-license/). 
 
-Make sure to take advantage of the Aspose.BarCode for Reporting Services evaluation as it does not have a time limit and free technical support for evaluation users is provided. Find out about Aspose.BarCode's [evaluation version limitations](/barcode/reportingservices/evaluation-version-limitations-html/).
+Make sure to take advantage of the Aspose.BarCode for Reporting Services evaluation as it does not have a time limit and free technical support for evaluation users is provided. Find out about Aspose.BarCode's [evaluation version limitations](/barcode/reportingservices/evaluation-version-limitations/).
 #### **Server Subscription**
 - One license is required for each physical or virtual server.
 - Unlimited number of processors or cores.

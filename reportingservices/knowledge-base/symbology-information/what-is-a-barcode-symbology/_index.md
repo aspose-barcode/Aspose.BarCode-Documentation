@@ -13,8 +13,8 @@ Sometimes, barcode symbologies are also referred to as a language in the sense t
 
 Aspose.BarCode for REporting Services provides world-class barcode generation and recognition of most popular one-dimensional (1D) and two-dimensional (2D) barcode symbologies. In other knowledge base topics, we have listed and described all those supported barcode symbologies. These symbologies are classified into following categories:
 
-- [Numeric only symbologies](/barcode/reportingservices/numeric-only-symbologies-html/)
-- [Partially alphanumeric symbologies](/barcode/reportingservices/partially-alphanumeric-symbologies-html/)
-- [Fully alphanumeric symbologies](/barcode/reportingservices/fully-alphanumeric-symbologies-html/)
+- [Numeric only symbologies](/barcode/reportingservices/numeric-only-symbologies/)
+- [Partially alphanumeric symbologies](/barcode/reportingservices/partially-alphanumeric-symbologies/)
+- [Fully alphanumeric symbologies](/barcode/reportingservices/fully-alphanumeric-symbologies/)
 
 {{% /alert %}}

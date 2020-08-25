@@ -17,6 +17,6 @@ Aspose.BarCode for SharePoint is designed to be used with the following Microsof
 
 There are no additional system requirements.
 
-This documentation describes the [features](/barcode/sharepoint/features-html/), [installation](/barcode/sharepoint/install-aspose-barcode-for-sharepoint-html/), [evaluation version limitations](/barcode/sharepoint/evaluation-version-limitations-html/), [licensing](/barcode/sharepoint/applying-a-license-html/), common use cases and settings of Aspose.BarCode for SharePoint. 
+This documentation describes the [features](/barcode/sharepoint/features/), [installation](/barcode/sharepoint/install-aspose-barcode-for-sharepoint/), [evaluation version limitations](/barcode/sharepoint/evaluation-version-limitations/), [licensing](/barcode/sharepoint/applying-a-license/), common use cases and settings of Aspose.BarCode for SharePoint. 
 
 {{% /alert %}}

@@ -7,5 +7,5 @@ url: /java/working-with-barcode-in-php/
 
 **This section includes the following topics:**
 
-- [Advanced Barcode Features in PHP](/barcode/java/advanced-barcode-features-in-php-html/)
-- [Utility Features in PHP](/barcode/java/utility-features-in-php-html/)
+- [Advanced Barcode Features in PHP](/barcode/java/advanced-barcode-features-in-php/)
+- [Utility Features in PHP](/barcode/java/utility-features-in-php/)

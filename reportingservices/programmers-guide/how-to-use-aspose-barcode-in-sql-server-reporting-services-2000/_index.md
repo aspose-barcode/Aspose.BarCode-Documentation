@@ -7,7 +7,7 @@ url: /reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-servic
 
 {{% alert color="primary" %}} 
 
-This article is intended for customers who want to use Aspose.BarCode with Visual Studio 2003 and SQL Server Reporting Services 2000. Please refer to the [Quick Start](/barcode/reportingservices/quick-start-tutorial-html/) article if you are going to use Aspose.BarCode with Visual Studio 2005 or later and SQL Server Reporting Services 2005 or later.
+This article is intended for customers who want to use Aspose.BarCode with Visual Studio 2003 and SQL Server Reporting Services 2000. Please refer to the [Quick Start](/barcode/reportingservices/quick-start-tutorial/) article if you are going to use Aspose.BarCode with Visual Studio 2005 or later and SQL Server Reporting Services 2005 or later.
 
 {{% /alert %}} 
 
@@ -29,7 +29,7 @@ We need to have following environment for using Aspose.BarCode with Reporting Se
 - Microsoft Visual Studio 2003
 - Aspose.BarCode for .NET (The example here uses the DLL for .NET 1.1)
 
-This article explains how to [set up](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000-html/) Aspose.BarCode for .NET for use with SSRS 2000 and shows how to use it in a [simple project](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000-html/).
+This article explains how to [set up](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000/) Aspose.BarCode for .NET for use with SSRS 2000 and shows how to use it in a [simple project](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000/).
 
 {{% /alert %}} 
 ### **Setting Up Aspose.BarCode for SQL Server Reporting Services 2000**
@@ -113,7 +113,7 @@ This article explains how to [set up](/barcode/reportingservices/how-to-use-aspo
 
 
 
-After copying **Aspose.BarCode.dll** to the SQL Server Reporting Services 2000 folders and modified the config files, [create a simple project](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000-html/) in Visual Studio 2003 Report Project and include a barcode.
+After copying **Aspose.BarCode.dll** to the SQL Server Reporting Services 2000 folders and modified the config files, [create a simple project](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000/) in Visual Studio 2003 Report Project and include a barcode.
 
 The default location of **Aspose.BarCode.dll** is C:\Program Files\Aspose\Aspose.BarCode\Bin\net1.1.
 ### **Using Aspose.BarCode for .NET with SQL Server Reporting Services 2000**

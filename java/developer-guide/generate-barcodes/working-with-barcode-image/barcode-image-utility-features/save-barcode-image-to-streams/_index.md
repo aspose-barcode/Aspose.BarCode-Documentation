@@ -7,7 +7,7 @@ url: /java/save-barcode-image-to-streams/
 
 {{% alert color="primary" %}} 
 
-Barcodes can be saved to [different formats](/barcode/java/save-barcode-images-to-different-formats-html/). It is also possible to save the barcode image to a binary stream.
+Barcodes can be saved to [different formats](/barcode/java/save-barcode-images-to-different-formats/). It is also possible to save the barcode image to a binary stream.
 
 {{% /alert %}} 
 

@@ -18,4 +18,4 @@ Aspose .NET can be used with Dynamics CRM in multiple ways. When you are working
 
 This section includes the following topics
 
-- [BarCode Generator for Dynamics CRM](/barcode/net/barcode-generator-for-dynamics-crm-html/)
+- [BarCode Generator for Dynamics CRM](/barcode/net/barcode-generator-for-dynamics-crm/)

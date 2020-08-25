@@ -12,9 +12,9 @@ All parcels must have a unique barcode which is used to identify the item in aut
 
 SwissPost has three types:
 
-- [Additional Service](/barcode/net/barcodes-using-swisspost-parcel-symbology-html/)
-- [Domestic Mail](/barcode/net/barcodes-using-swisspost-parcel-symbology-html/)
-- [International Mail](/barcode/net/barcodes-using-swisspost-parcel-symbology-html/)
+- [Additional Service](/barcode/net/barcodes-using-swisspost-parcel-symbology/)
+- [Domestic Mail](/barcode/net/barcodes-using-swisspost-parcel-symbology/)
+- [International Mail](/barcode/net/barcodes-using-swisspost-parcel-symbology/)
 
 {{% /alert %}} 
 ### **SwissPost Parcel Symbology**
@@ -127,6 +127,6 @@ Below are code snippets that create SwissPost Parcel barcodes.
 
 Related articles:
 
-- [Working with barcode recognition](/barcode/net/read-barcodes-html/)
-- [Basic barcode image features](/barcode/net/image-formatting-and-display-settings-html/)
+- [Working with barcode recognition](/barcode/net/read-barcodes/)
+- [Basic barcode image features](/barcode/net/image-formatting-and-display-settings/)
 - [Barcode orientation](/pages/createpage.action?spaceKey=barcodenet&title=Barcode+Orientation&linkCreation=true&fromPageId=12943378)

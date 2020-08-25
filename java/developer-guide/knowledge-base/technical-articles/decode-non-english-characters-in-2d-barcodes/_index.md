@@ -11,7 +11,7 @@ You can recognize 2D barcodes for non-English character sets, for example, Turki
 
 {{% /alert %}} 
 
-Below are code snippets that recognize a Pdf417 barcode for [Turkish](/barcode/java/decode-non-english-characters-in-2d-barcodes-html/) and [Chinese](/barcode/java/decode-non-english-characters-in-2d-barcodes-html/) characters.
+Below are code snippets that recognize a Pdf417 barcode for [Turkish](/barcode/java/decode-non-english-characters-in-2d-barcodes/) and [Chinese](/barcode/java/decode-non-english-characters-in-2d-barcodes/) characters.
 #### **Recognize a Pdf417 Barcode with Turkish Characters**
 
 #### **Java**

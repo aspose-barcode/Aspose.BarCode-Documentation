@@ -6,4 +6,4 @@ url: /reportingservices/knowledge-base/
 ---
 
 ###### **This section includes the following topics:** 
-- [Symbology Information](/barcode/reportingservices/symbology-information-html/)
+- [Symbology Information](/barcode/reportingservices/symbology-information/)

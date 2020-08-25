@@ -10,7 +10,7 @@ url: /reportingservices/install-with-msi-installer/
 There are two ways to install Aspose.BarCode for Reporting Services:
 
 - Using the MSI installer. This is the quickest and easiest way to install Aspose.BarCode and is described below.
-- [Installing manually](/barcode/reportingservices/install-manually-html/).
+- [Installing manually](/barcode/reportingservices/install-manually/).
 
 {{% /alert %}} 
 ### **Installing Aspose.BarCode using the MSI Installer**

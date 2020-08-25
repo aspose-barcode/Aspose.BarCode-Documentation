@@ -7,7 +7,7 @@ url: /sharepoint/evaluate-aspose-barcode/
 
 {{% alert color="primary" %}} 
 
-You can easily download an evaluation version of Aspose.BarCode for SharePoint from the [download page](http://www.aspose.com/community/files/73/sharepoint-components/aspose.barcode-for-sharepoint/default.aspx). The evaluation version provides the same capabilities as the licensed version of the component. Furthermore, the evaluation version is licensed by simply buying a license and after [applying a license](http://www.aspose.com/docs/display/barcodesharepoint/Applying+a+License).
+You can easily download an evaluation version of Aspose.BarCode for SharePoint from the [download page](http://www.aspose.com/community/files/73/sharepoint-components/aspose.barcode-for-sharepoint/default.aspx). The evaluation version provides the same capabilities as the licensed version of the component. Furthermore, the evaluation version is licensed by simply buying a license and after [applying a license](https://docs.aspose.com/barcode/sharepoint/applying-a-license/).
 
 The evaluation version of Aspose.BarCode (that is, the application without a license applied) provides full barcode generation functionality but puts an evaluation watermark (the words Aspose) on the barcode image.
 

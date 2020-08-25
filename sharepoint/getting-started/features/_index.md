@@ -6,6 +6,6 @@ url: /sharepoint/features/
 ---
 
 ###### **This section includes the following topics:** 
-- [Barcode Column](/barcode/sharepoint/barcode-column-html/)
-- [Supported Barcode Symbologies](/barcode/sharepoint/supported-barcode-symbologies-html/)
-- [World Class Free Technical Support](/barcode/sharepoint/world-class-free-technical-support-html/)
+- [Barcode Column](/barcode/sharepoint/barcode-column/)
+- [Supported Barcode Symbologies](/barcode/sharepoint/supported-barcode-symbologies/)
+- [World Class Free Technical Support](/barcode/sharepoint/world-class-free-technical-support/)

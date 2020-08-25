@@ -13,10 +13,10 @@ This article explains how to use [Aspose.BarCode for Java](https://apireference.
 ### **Reading Barcodes for Microsoft Word Documents**
 for the purpose of this article, the task has been broken down into two separate tasks:
 
-1. [Generate a Microsoft Word document](/barcode/java/how-to-read-barcode-from-word-documents-html/), complete with barcode.
-1. [Read the barcode](/barcode/java/how-to-read-barcode-from-word-documents-html/) in the Word document.
+1. [Generate a Microsoft Word document](/barcode/java/how-to-read-barcode-from-word-documents/), complete with barcode.
+1. [Read the barcode](/barcode/java/how-to-read-barcode-from-word-documents/) in the Word document.
 
-The [code sample](/barcode/java/how-to-read-barcode-from-word-documents-html/) does both steps.
+The [code sample](/barcode/java/how-to-read-barcode-from-word-documents/) does both steps.
 #### **Generate Barcode and Insert into Word Document**
 1. First, use Aspose.BarCode for Java and generate a barcode image.
 1. Save the image to file.

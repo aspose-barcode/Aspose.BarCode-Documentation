@@ -29,7 +29,7 @@ Aspose.BarCode contains a control class, [BarCodeControl](https://apireference.a
 
 {{% alert color="primary" %}} 
 
-If you can't see Aspose.BarCode controls in the Toolbox of Visual Studio.NET then learn about [How to Integrate Aspose.BarCode with Visual Studio.NET?](/barcode/net/integrate-with-visual-studio-net-html/)
+If you can't see Aspose.BarCode controls in the Toolbox of Visual Studio.NET then learn about [How to Integrate Aspose.BarCode with Visual Studio.NET?](/barcode/net/integrate-with-visual-studio-net/)
 
 {{% /alert %}} 
 ## **Generate Barcode in C# WPF**

@@ -11,7 +11,7 @@ Aspose.BarCode for Reporting Services is a .NET component, compliant with .NET F
 
 {{% /alert %}} 
 ### **Easy to Integrate with Visual Studio**
-The Report Server project does not support adding custom controls in a report's header and footer. But you can add an image control from the toolbox to the header. It contains a public class, BarCodeBuilder, which can be used to render a barcode image as a byte array. This byte array can be used to render the image in the header. For details, please [read this technical article](/barcode/reportingservices/how-to-display-barcodes-in-report-header-html/).
+The Report Server project does not support adding custom controls in a report's header and footer. But you can add an image control from the toolbox to the header. It contains a public class, BarCodeBuilder, which can be used to render a barcode image as a byte array. This byte array can be used to render the image in the header. For details, please [read this technical article](/barcode/reportingservices/how-to-display-barcodes-in-report-header/).
 
 **Barcode added to the report from Toolbox using drag and drop.** 
 

@@ -19,4 +19,4 @@ The evaluation version has only one limitation: “Aspose” appears on every ba
 
 ![todo:image_alt_text](evaluation-version-limitations_1.png)
 
-To use the full version, [apply a license](/barcode/sharepoint/applying-a-license-html/) or [request a 30 temporary license](http://www.aspose.com/corporate/purchase/temporary-license.aspx).
+To use the full version, [apply a license](/barcode/sharepoint/applying-a-license/) or [request a 30 temporary license](http://www.aspose.com/corporate/purchase/temporary-license.aspx).

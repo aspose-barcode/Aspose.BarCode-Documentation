@@ -9,12 +9,12 @@ url: /reportingservices/install-manually/
 
 There are two ways to install Aspose.BarCode for Reporting Services:
 
-- [Using the MSI installer](/barcode/reportingservices/install-with-msi-installer-html/). This is the recommended installation method.
+- [Using the MSI installer](/barcode/reportingservices/install-with-msi-installer/). This is the recommended installation method.
 - Installing manually. This process is described below.
 
 {{% /alert %}} 
 
-If you install Aspose.BarCode manually instead of using the [MSI installer](/barcode/reportingservices/install-with-msi-installer-html/) some files may not be upgraded, for example the offline documentation.
+If you install Aspose.BarCode manually instead of using the [MSI installer](/barcode/reportingservices/install-with-msi-installer/) some files may not be upgraded, for example the offline documentation.
 ### **Manual Installation**
 You may need to install Aspose.BarCode for Reporting Services manually under the following conditions:
 

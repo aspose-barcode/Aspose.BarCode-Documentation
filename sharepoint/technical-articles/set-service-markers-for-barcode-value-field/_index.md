@@ -13,7 +13,7 @@ A few of such markers are listed below for illustration,
 - [SPList:ItemsCount] – Total number of items
 - [SPFieldValue:<Field Display Name>] – Item field Value (that is [SPFieldValue:Priority])
 
-Please check [Add Barcode Column to SharePoint lists](/barcode/sharepoint/add-barcode-column-to-sharepoint-lists-html/) for information on how to add a barcode field to a SharePoint custom list.
+Please check [Add Barcode Column to SharePoint lists](/barcode/sharepoint/add-barcode-column-to-sharepoint-lists/) for information on how to add a barcode field to a SharePoint custom list.
 
 Assuming that the list already has a barcode column, we move forward to set the barcode’s code text using the service markers. Below is an example of a payroll list.
 

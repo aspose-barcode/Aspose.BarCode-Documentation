@@ -11,12 +11,12 @@ This article shows how easy it is to display barcodes in dataset-based reports w
 
 The article covers how to:
 
-- [Create a new report](/barcode/reportingservices/display-barcodes-on-dataset-based-reports-html/).
+- [Create a new report](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/).
 - Add and configure a dataset.
-- [Add the barcode control to the report](/barcode/reportingservices/display-barcodes-on-dataset-based-reports-html/).
-- [Use a field of the dataset as codetext](/barcode/reportingservices/display-barcodes-on-dataset-based-reports-html/), for generating a barcode.
-- [Set the barcode symbology](/barcode/reportingservices/display-barcodes-on-dataset-based-reports-html/).
-- [View the final report after deploying to the SQL Server Reporting Services](/barcode/reportingservices/display-barcodes-on-dataset-based-reports-html/).
+- [Add the barcode control to the report](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/).
+- [Use a field of the dataset as codetext](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/), for generating a barcode.
+- [Set the barcode symbology](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/).
+- [View the final report after deploying to the SQL Server Reporting Services](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/).
 
 {{% /alert %}} 
 ### **Background**

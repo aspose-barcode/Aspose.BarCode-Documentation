@@ -13,10 +13,10 @@ This article shows how to use [Aspose.Pdf for Java](http://www.aspose.com/produc
 ### **Recognizing Barcodes from PDF Files**
 The examples performs two tasks:
 
-1. [Generates a PDf file](/barcode/java/how-to-read-barcode-from-pdf-documents-html/) with a barcode in it.
-1. [Recognizes the barcode](/barcode/java/how-to-read-barcode-from-pdf-documents-html/) in the PDF.
+1. [Generates a PDf file](/barcode/java/how-to-read-barcode-from-pdf-documents/) with a barcode in it.
+1. [Recognizes the barcode](/barcode/java/how-to-read-barcode-from-pdf-documents/) in the PDF.
 
-The [code sample](/barcode/java/how-to-read-barcode-from-pdf-documents-html/) below does both tasks in one go.
+The [code sample](/barcode/java/how-to-read-barcode-from-pdf-documents/) below does both tasks in one go.
 #### **Generate Barcode and Insert in PDF Document**
 1. Use Aspose.BarCode for Java to generate a barcode image.
 1. save the image to disk.
