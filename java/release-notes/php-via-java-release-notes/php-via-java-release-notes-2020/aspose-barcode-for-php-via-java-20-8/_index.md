@@ -18,7 +18,7 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 |BARCODENET-37489|Barcode values were not read correctly|Bug|
 |BARCODENET-37554|Unable to read barcodes in the image|Bug|
 
-# **Public API and Backward Incompatible Changes**
+## **Public API and Backward Incompatible Changes**
 - added function Reader.QualitySettings.getReadTinyBarcodes:boolean
 - added function Reader.QualitySettings.setReadTinyBarcodes(boolean)
 - added function Generator.Pdf417Parameters.isReaderInitialization:boolean
