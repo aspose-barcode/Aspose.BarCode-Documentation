@@ -23,3 +23,17 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 - added function Reader.QualitySettings.setReadTinyBarcodes(boolean)
 - added function Generator.Pdf417Parameters.isReaderInitialization:boolean
 - added function Generator.Pdf417Parameters.setReaderInitialization(boolean)
+
+## **Usage Example**
+{{< highlight java>}}
+    let reader = new BarcodeReader("fileName.gif", null, DecodeType.CODE_32);
+    reader.getQualitySettings().setReadTinyBarcodes(true);
+    let readTinyBarcodes = reader.getQualitySettings().getReadTinyBarcodes();
+
+    let generator = new BarcodeGenerator(EncodeTypes.CODE_39_STANDARD, '01234567');
+    let baseGenerationParameters = generator.getParameters();
+    let barcodeParameters = baseGenerationParameters.getBarcode();
+    let pdf417Parameters = barcodeParameters. getPdf417();
+    pdf417Parameters.setReaderInitialization(true);
+    let readerInitialization = pdf417Parameters.isReaderInitialization();
+{{< /highlight >}}
