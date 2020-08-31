@@ -6,7 +6,7 @@ url: /java/how-to-run-the-examples/
 ---
 
 ### **Download from GitHub**
-All examples of Aspose.BarCode for Java are hosted on [Github](https://github.com/aspose-barcode/Aspose.BarCode-for-Java). You can either clone the repository using your favorite Github client or download the ZIP file from [here](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/archive/master.zip).
+All examples of Aspose.BarCode for Java are hosted on [Github](https://github.com/aspose-barcode/Aspose.BarCode-for-Java). You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/archive/master.zip).
 
 Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
 
@@ -18,7 +18,7 @@ Click on the **File** menu and choose **Open**. Browse to the project folder and
 
 ![todo:image_alt_text](http://i.imgur.com/Cd8yr19.png)
 
-It will open the project and download the dependencies automatically. From the Project tab, browse the examples in **src/main/java** folder. To run an example, just right click on the file and choose "Run ..", the example will be executed and the output will be shown in the built in console output window.
+It will open the project and download the dependencies automatically. From the Project tab, browse the examples in the **src/main/java** folder. To run an example, just right click on the file and choose "Run ..", the example will be executed and the output will be shown in the built in console output window.
 
 ![todo:image_alt_text](http://i.imgur.com/pZ092rJ.png)
 ### **Eclipse**
@@ -30,7 +30,7 @@ Browse to the folder that you cloned or downloaded from GitHub and select **pom.
 
 ![todo:image_alt_text](http://i.imgur.com/xEytaDI.png)
 
-It will open the project and download the dependencies automatically. From the Package Explorer tab, browse the examples in **src/main/java** folder. To run an example, just right click on the file and choose **Run As** - **Java Application**, the example will be executed and the output will be shown in the built in console output window.
+It will open the project and download the dependencies automatically. From the Package Explorer tab, browse the examples in the **src/main/java** folder. To run an example, just right click on the file and choose **Run As** - **Java Application**, the example will be executed and the output will be shown in the built in console output window.
 
 ![todo:image_alt_text](http://i.imgur.com/oLDNDen.png)
 ### **NetBeans**
