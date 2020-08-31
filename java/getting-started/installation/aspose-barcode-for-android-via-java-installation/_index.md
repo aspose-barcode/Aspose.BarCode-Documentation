@@ -18,29 +18,16 @@ Aspose.BarCode for Android via Java is a platform-independent so it can be used 
 1. Add 'Aspose.BarCode for Android via Java' JAR as a dependency
 
 {{< highlight java >}}
-
  // 1. Add maven repository into your build.gradle 
-
-repositories {
-
+ repositories {
     mavenCentral()
-
     maven { url "http://repository.aspose.com/repo/" }
-
-}
-
-
-
-// 2. Add 'Aspose.BarCode for Android via Java' JAR as a dependency
-
-dependencies {
-
+ }
+ 
+ // 2. Add 'Aspose.BarCode for Android via Java' JAR as a dependency 
+ dependencies {
     ...
-
     ...
-
-    compile (group: 'com.aspose', name: 'aspose-barcode', version: '20.4', classifier: 'android.via.java')
-
-}
-
+    compile (group: 'com.aspose', name: 'aspose-barcode', version: '20.8', classifier: 'android.via.java')
+ }
 {{< /highlight >}}
