@@ -11,8 +11,8 @@ Aspose.BarCode for Android via Java is a platform-independent so it can be used 
 - Android 5.1 v 22
 ## **Installation**
 1. Download the latest version of Aspose.BarCode for Android via Java from [Aspose Artifactory](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-barcode/).
-1. Unzip the installation package and copy the aspose-barcode-android-20.4.jar file to your Java application.
-1. Provide a reference to the aspose-barcode-android-20.4.jar file so the compiler can find it.
+1. Unzip the installation package and copy the aspose-barcode-android-20.8.jar file to your Java application.
+1. Provide a reference to the aspose-barcode-android-20.8.jar file so the compiler can find it.
 ## **Install Aspose.BarCode for Android via Java from Maven Repository**
 1. Add maven repository into your build.gradle
 1. Add 'Aspose.BarCode for Android via Java' JAR as a dependency
