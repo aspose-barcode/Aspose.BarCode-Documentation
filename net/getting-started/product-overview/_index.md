@@ -23,10 +23,10 @@ Aspose.BarCode for .NET supports the most established barcode standards and barc
 - Barcode code text (data to be encoded to barcode image) can be set and its appearance-related properties like font, background color, foreground color, alignment and location (hide, above, below), etc. can also be modified.
 - The barcode caption and its font, background color, foreground color, alignment and location (hide, above, below) can be managed.
 - Checksum and supplement data are supported.
-- Bar height of the barcode images can be customized.
+- The bar height of the barcode images can be customized.
 - X-dimension and Y-dimension are also supported for 2D barcodes.
 - Code128 encoding is exceptionally optimized.
-- Wide to narrow ratio can be achieved for supported symbologies.
+- A wide to narrow ratio can be achieved for supported symbologies.
 - WYSIWYG editing of barcodes is also supported using GUI-based controls.
 - DataMatrix barcode with X12, EDIFACT and Base 256 encoding
 ### **Recognition Features**
@@ -217,6 +217,8 @@ Aspose.BarCode offers only one edition type: Enterprise. The features of Enterpr
 |Gif|X|
 |png|X|
 |Tiff|X|
+|EMF|X|
+|SVG|X|
 |**Barcode Features**| |
 |Font Handling|X|
 |X-Dimension|X|
@@ -249,6 +251,5 @@ Aspose.BarCode offers only one edition type: Enterprise. The features of Enterpr
 |Median smoothing image processing for recognition|X|
 |HLS image processing for recognition|X|
 |Grayscale image processing for recognition|X|
-
-
-BMP, GIF, JPEG, PNG, TIFF, EMF and SVG
+|ISO/IEC 8859-1 encoding with FNC4 character to Code128 encoder|X|
+|ISO/IEC 8859-1 decoding with FNC4 character to Code128 decoder|X|
