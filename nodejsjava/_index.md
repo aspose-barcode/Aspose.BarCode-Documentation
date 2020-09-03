@@ -19,7 +19,7 @@ Aspose.BarCode for Node.js via Java supports the most established barcode standa
 
 
 ## **Aspose.BarCode for Node.js via Java Resources**
-Following are the links to some useful resources you may need to accomplish your tasks.
+The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for Java Online Documentation](https://docs.aspose.com/barcode/java/) (Aspose.BarCode for Node.js via Java is ported from Aspose.BarCode for Java. So, you can use the same documentation)
 - [Aspose.BarCode for Node.js via Java Features](https://docs.aspose.com/barcode/java/aspose-barcode-for-node-js-via-java-features/)

@@ -8,7 +8,7 @@ is_root: true
 
 {{% alert color="primary" %}} 
 
-![Aspose.BarCode for C++ Product Logo](aspose_barcode-for-cpp.png)
+<img src="aspose_barcode-for-cpp.png" alt="Aspose.BarCode for C++ Product Logo" style="zoom:50%;" />
 
 **Welcome to Aspose.BarCode for C++.** 
 

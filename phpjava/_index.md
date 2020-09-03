@@ -20,7 +20,7 @@ Aspose.BarCode for PHP via Java is a set of barcode generation and recognition c
 
 
 ## **Aspose.BarCode for PHP via Java Resources**
-Following are the links to some useful resources you may need to accomplish your tasks.
+The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for Java Online Documentation](https://docs.aspose.com/barcode/java/) (Aspose.BarCode for PHP via Java is ported from Aspose.BarCode for Java. So, you can use the same documentation)
 - [Aspose.BarCode for PHP via Java Features](https://docs.aspose.com/barcode/java/aspose-barcode-for-php-via-java-features/)

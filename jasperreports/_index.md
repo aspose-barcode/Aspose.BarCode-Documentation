@@ -17,7 +17,7 @@ Aspose.BarCode for JasperReports provides a unique and robust solution to make y
 
 ## **Aspose.BarCode for JasperReports Resources**
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for JasperReports Online Documentation](/barcode/jasperreports/)
 - [Aspose.BarCode for JasperReports Features](/barcode/jasperreports/features/)

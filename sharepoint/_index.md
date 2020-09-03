@@ -20,7 +20,7 @@ Aspose.BarCode for SharePoint is designed to be used with Microsoft SharePoint S
 
 ## **Aspose.BarCode for SharePoint Resources**
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for SharePoint Online Documentation](/barcode/sharepoint/)
 - [Aspose.BarCode for SharePoint Features](/barcode/sharepoint/features/)
