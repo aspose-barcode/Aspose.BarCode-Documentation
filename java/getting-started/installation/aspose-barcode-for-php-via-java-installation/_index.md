@@ -5,7 +5,7 @@ weight: 10
 url: /java/aspose-barcode-for-php-via-java-installation/
 ---
 
-Aspose.BarCode for PHP via Java is platform-independent API and can be used on any platform (Windows, Linux, etc.) where PHP and Java Bridge are installed.
+Aspose.BarCode for PHP via Java is a platform-independent API and can be used on any platform (Windows, Linux, etc.) where PHP and Java Bridge are installed.
 
 ## **System Requirements**
 - Tomcat Server 8.0 or above installed.
