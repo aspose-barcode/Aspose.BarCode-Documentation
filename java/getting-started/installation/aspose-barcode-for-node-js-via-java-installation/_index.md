@@ -6,7 +6,7 @@ url: /java/aspose-barcode-for-node-js-via-java-installation/
 ---
 
 ## **System Requirements**
-Aspose.BarCode for Node.js via Java is platform-independent API and can be used on any platform (Windows, Linux, etc.) where [Node.js](https://nodejs.org/en/download/) and [node-java](https://github.com/joeferner/node-java) bridge are installed. The machine must have Oracle JDK 7 or greater versions before setting up the installation.
+Aspose.BarCode for Node.js via Java is a platform-independent API and can be used on any platform (Windows, Linux, etc.) where [Node.js](https://nodejs.org/en/download/) and [node-java](https://github.com/joeferner/node-java) bridge are installed. The machine must have Oracle JDK 7 or greater versions before setting up the installation.
 
 ## **Installation**
 Aspose.BarCode for Node.js via Java is distributed as a ZIP archive.
