@@ -15,7 +15,7 @@ is_root: true
 Aspose.BarCode for .NET is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their .NET applications. Aspose.BarCode provides GUI based controls for displaying barcodes in Windows Forms and exposes a simple set of classes that allow developers to create barcodes on the backend. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for .NET doesn't just create barcodes but it provides a complete framework to control almost everything about them.
 
 {{% /alert %}} 
-## **Aspose.BarCode for .NET Resources**
+**Aspose.BarCode for .NET Resources**
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for .NET Online Documentation](/barcode/net/)
