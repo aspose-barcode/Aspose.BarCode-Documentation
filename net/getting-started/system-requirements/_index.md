@@ -46,7 +46,7 @@ Aspose.BarCode for .NET supports .NET frameworks as follows:
 
 {{% alert color="primary" %}} 
 
-- If you have 1.0 only installed on your system. Please see [***Targeting Specific .NET Framework Version***](/barcode/net/installation/#installation-targetingspecific-netframeworkversion) section.
+- If you have 1.0 only installed on your system. Please see [***Targeting Specific .NET Framework Version***](https://docs.aspose.com/barcode/net/installation/#targeting-specific-net-framework-version) section.
 
 {{% /alert %}} 
 
