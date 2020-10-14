@@ -14,7 +14,7 @@ Aspose.Barcode API lets you generate barcodes keeping in view real use cases lik
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-GenerateBarcodeWithoutRestrictedBarcodeSize.cs" >}}
 ### **Get Generated Barcode Size**
-if you just want to know the barcode size without saving the image you can call method RecalculateValues() and get barcode size.
+if you just want to know the barcode size without saving the image you can call method RecalculateValues() and get the barcode size.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-GetGeneratedBarcodeSize.cs" >}}
 ### **Units based Barcode Generation**

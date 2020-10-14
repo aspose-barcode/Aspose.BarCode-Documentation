@@ -12,7 +12,7 @@ QR barcode is a two-dimensional barcode symbology developed in Japan. QR barcode
 - Dirt and damage resistant, a maximum 30% of codewords can be restored
 - Readable from all directions
 
-Added a [QR ](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator) Class as [BarcodeParameter](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodeparameters). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
+Added a [QR ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) Class as [BarcodeParameter](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
 
 The following QR parameters can be set:
 
@@ -22,13 +22,13 @@ The following QR parameters can be set:
 1. **QrErrorLevel** - Level of Reed-Solomon error correction for QR barcode. From low to high: LevelL, LevelM, LevelQ, LevelH.
 1. **QrVersion** - Version of QR Code. From Version1 to Version40 for QR code and from M1 to M4 for MicroQr. The default value is QRVersion.Auto.
 
-[Enum QREncodeType](https://apireference.aspose.com/net/barcode/aspose.barcode/qrencodetype):
+[Enum QREncodeType](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodetype):
 
 1. **Auto** - mode starts barcode version negotiation from MicroQR V1
 1. **ForceQR** – mode starts barcode version negotiation from QR V1
 1. **ForceMicroQR** - mode starts barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded into MicroQR, an exception is thrown.
 
-Added changes to Enum [QREncodeMode](https://apireference.aspose.com/net/barcode/aspose.barcode/qrencodemode):
+Added changes to Enum [QREncodeMode](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodemode):
 
 1. **Auto** - encode CodeText as is non-Unicode charset. If there is any Unicode character, the CodeText will be encoded with the value which is set in CodeTextEncoding.
 1. **Bytes** - encode CodeText as plain bytes. If it detects any Unicode character, the character will be encoded as two bytes, lower byte first;
@@ -62,7 +62,7 @@ Instantiate a BarcodeGenerator class object and set its EncodeType to QR, then 
 ## **QR Code Encoding in the ECI Mode**
 ECI (Extended Channel Interpretation) enables QR Code to encode multiple character sets (e.g. Arabic, Cyrillic, Greek, Hebrew) and other data interpretations or industry-specific requirements to be represented, into one QR Code symbol.
 
-Added the new property ECIEncoding to [BarcodeGenerator](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator) class. It is used to tell the barcode reader details about the used references for encoding the data in the symbol by the Extended Channel Interpretation Identifiers. The current implementation consists of all well-known charset encodings. Currently, it is used only for QR 2D barcode.
+Added the new property ECIEncoding to [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class. It is used to tell the barcode reader details about the used references for encoding the data in the symbol by the Extended Channel Interpretation Identifiers. The current implementation consists of all well-known charset encodings. Currently, it is used only for the QR 2D barcode.
 
 Enum ECIEncodings:
 
@@ -93,15 +93,15 @@ Enum ECIEncodings:
 1. **GB18030** - GB (PRC) Chinese Character Set encoding. ECI Id:"\000029".
 1. **EUC_KR** - Korean Character Set encoding. ECI Id:"\000030".
 ### **QR Code Encoding in the ECI Mode**
-Instantiate a [BarcodeGenerator](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator) class object and set its EncodeType to QR, and set its CodeText property, [QREncodeMode](https://apireference.aspose.com/net/barcode/aspose.barcode/qrencodemode) to ECIEncoding, [QREncodeType](https://apireference.aspose.com/net/barcode/aspose.barcode/qrencodetype) to ForceQR, ECIEncoding to UTF8 and set error correction level for the data you want to encode. The following code example demonstrates how to generate a QR barcode.
-#### **C#**
+Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class object and set its EncodeType to QR, and set its CodeText property, [QREncodeMode](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodemode) to ECIEncoding, [QREncodeType](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodetype) to ForceQR, ECIEncoding to UTF8 and set error correction level for the data you want to encode. The following code example demonstrates how to generate a QR barcode.
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-EncodeQRCodEInECIMode-EncodeQRCodEInECIMode.cs" >}}
 
 
 ## **Encode multi-ECI and FNC1 Symbols in QR Code**
 The ExtendedCodetext mode allows developers to encode multi-ECI and FNC1 symbols in the QR code. Extended Channel mode supports FNC1 first position, FNC1 second position, and multi ECI modes.
 ### **QR Code Encoding in the Extended Code Text Mode**
-Aspose.BarCode APIs use [QrExtCodetextBuilder](https://apireference.aspose.com/net/barcode/aspose.barcode/qrextcodetextbuilder) class for extended code text generation. Use [Display2DText](https://apireference.aspose.com/net/barcode/aspose.barcode.windows.forms/barcodecontrol/properties/display2dtext) property of the [BarcodeGenerator](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator) class to set visible text and removing managing characters display.
+Aspose.BarCode APIs use [QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class for extended code text generation. Use [Display2DText](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/display2dtext) property of the [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class to set visible text and removing managing characters display.
 
 Encoding Principles:
 
@@ -114,7 +114,7 @@ Encoding Principles:
 - TO disable current ECI mode and convert to default JIS8 mode zero mode ECI indetifier is set "\000000".
 - All unicode characters after ECI identifier are automatically encoded into correct character codeset.
 
-[QrExtCodetextBuilder](https://apireference.aspose.com/net/barcode/aspose.barcode/qrextcodetextbuilder) class description:
+[QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class description:
 
 - **Clear()** method - clears extended codetext items.
 - **AddPlainCodetext(System.String)** method - adds plain codetext to the extended codetext items.
@@ -124,10 +124,8 @@ Encoding Principles:
 - **AddFNC1GroupSeparator()** method - Adds Group Separator (GS - '\u001D') to the extended codetext items.
 - **GetExtendedCodetext()** method - generates extended codetext from generation items list.
 ### **Use multi ECI Mode in Extended Mode**
-Instantiate a [QrExtCodetextBuilder](https://apireference.aspose.com/net/barcode/aspose.barcode/qrextcodetextbuilder) class object, call [AddECICodetext](https://apireference.aspose.com/net/barcode/aspose.barcode/extcodetextbuilder/methods/addecicodetext) method multiple times to add code text with extended channel identifier and then call [AddPlainCodetext](https://apireference.aspose.com/net/barcode/aspose.barcode/extcodetextbuilder/methods/addplaincodetext) method to add plain code text to the extended code text items.
-#### **C#**
+Instantiate a [QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class object, call [AddECICodetext](https://apireference.aspose.com/barcode/net/aspose.barcode/extcodetextbuilder/methods/addecicodetext) method multiple times to add code text with extended channel identifier and then call [AddPlainCodetext](https://apireference.aspose.com/barcode/net/aspose.barcode/extcodetextbuilder/methods/addplaincodetext) method to add plain code text to the extended code text items.
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-MultiECIModeInExtendedMode-MultiECIModeInExtendedMode.cs" >}}
-
-
 
 MicroQR cannot support ECI and FNC1 modes. In this way, if you want to generate MicroQR code you must use current modes of QREncodeMode: Auto, Bytes, Utf8BOM, and Utf16BEBOM.

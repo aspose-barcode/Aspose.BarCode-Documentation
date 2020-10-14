@@ -6,7 +6,7 @@ url: /net/barcode-in-xml/
 ---
 
 ## **Overview**
-Aspose.BarCode API facilitates in order to export any barcode to XML format and also provide the functionality to import barcode from XML. For this purpose, the API provides [ExportToXml()](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) and [ImportFromXml()](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator/methods/importfromxml) methods under [BarcodeGenerator ](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodegenerator)class.
+Aspose.BarCode API facilitates in order to export any barcode to XML format and also provide the functionality to import barcode from XML. For this purpose, the API provides [ExportToXml()](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) and [ImportFromXml()](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml) methods under [BarcodeGenerator ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator)class.
 ### **Export Barcode to XML**
 The following code example demonstrates how to export barcode properties to XML.
 

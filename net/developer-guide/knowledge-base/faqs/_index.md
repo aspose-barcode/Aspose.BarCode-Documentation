@@ -7,7 +7,7 @@ url: /net/faqs/
 
 Q: Why can I see "Aspose" on the barcode I've generated?
 
-**A**: You're using an evaluation version of the component. The [evaluation version](http://www.aspose.com/docs/display/barcodenet/Licensing#Licensing-EvaluationVersionLimitations) of Aspose.BarCode puts "Aspose" on the barcode image. To remove the word, [apply a license](http://www.aspose.com/docs/display/barcodenet/Licensing#Licensing-SettingaLicenseinAspose.BarCodefor.NET).
+**A**: You're using an evaluation version of the component. The [evaluation version](https://docs.aspose.com/barcode/net/licensing/#Licensing-EvaluationVersionLimitations) of Aspose.BarCode puts "Aspose" on the barcode image. To remove the word, [apply a license](https://docs.aspose.com/barcode/net/licensing/#Licensing-SettingaLicenseinAspose.BarCodefor.NET).
 
 Q: Does Aspose.BarCode automatically calculate the check digit?
 

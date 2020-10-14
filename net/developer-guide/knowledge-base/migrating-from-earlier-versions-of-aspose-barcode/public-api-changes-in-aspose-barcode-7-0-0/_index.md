@@ -10,17 +10,17 @@ url: /net/public-api-changes-in-aspose-barcode-7-0-0/
 This document describes changes to the Aspose.BarCode API from version 6.9.0 to 7.0.0, that may be of interest to module/application developers. It includes not only new and updated public methods, but also a description of any changes in the behavior behind the scenes in Aspose.BarCode. 
 
 {{% /alert %}} 
-### **Property BarCodeBuilder.QREncodeType is added**
+## **Property BarCodeBuilder.QREncodeType is added**
 Added a QREncodeType property in [BarCodeBuilder](/pages/createpage.action?spaceKey=barcodenet&title=Aspose.BarCode.BarCodeBuilder+Class&linkCreation=true&fromPageId=12943444) Class. This new property works as QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
-### **Property BarCodeBuilder.ECIEncoding is added**
+## **Property BarCodeBuilder.ECIEncoding is added**
 Added a ECIEncoding property in [BarCodeBuilder](/pages/createpage.action?spaceKey=barcodenet&title=Aspose.BarCode.BarCodeBuilder+Class&linkCreation=true&fromPageId=12943444) Class. It is used to tell the barcode reader details about the used references for encoding the data in the symbol by the Extended Channel Interpretation Identifiers.
-### **The Enum QREncodeType is added**
+## **The Enum QREncodeType is added**
 Description of the new Enum QREncodeType:
 
 1. **Auto** - mode starts barcode version negotiation from MicroQR V1
 1. **ForceQR** – mode starts barcode version negotiation from QR V1
-1. **ForceMicroQR** - mode starts barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded into MicroQR, exception is thrown.
-### **The Enum QREncodeMode is added**
+1. **ForceMicroQR** - mode starts barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded into MicroQR, an exception is thrown.
+## **The Enum QREncodeMode is added**
 Description of the new Enum QREncodeMode:
 
 1. **Auto** - encode codetext as is non-unicode charset. If there is any unicode character, the codetext will be encoded with value which is set in CodeTextEncoding.
@@ -29,7 +29,7 @@ Description of the new Enum QREncodeMode:
 1. **Utf16BEBOM** - encode codetext with UTF8 encoding with first ByteOfMark character. It can be problems with some barcode scaners;
 1. **ECIEncoding** - encode codetext with value set in the ECIEncoding property. It can be problems with some old (pre 2006) barcode scaners.
 1. **ExtendedCodetext** - encode codetext in Extended Channel mode which supports FNC1 first position, FNC1 second position and multi ECI modes.
-### **The Enum ECIEncodings is added**
+## **The Enum ECIEncodings is added**
 Description of the new Enum ECIEncodings:
 
 1. **ISO_8859_1** - ISO/IEC 8859-1 Latin alphabet No. 1 encoding. ECI Id:"\000003".
@@ -58,7 +58,7 @@ Description of the new Enum ECIEncodings:
 1. **Big5** - Big 5 (Taiwan) Chinese Character Set encoding. ECI Id:"\000028".
 1. **GB18030** - GB (PRC) Chinese Character Set encoding. ECI Id:"\000029".
 1. **EUC_KR** - Korean Character Set encoding. ECI Id:"\000030".
-### **The Class QrExtCodetextBuilder is added**
+## **The Class QrExtCodetextBuilder is added**
 Description of the new Enum QrExtCodetextBuilder:
 
 - **Clear()** method - clears extended codetext items.

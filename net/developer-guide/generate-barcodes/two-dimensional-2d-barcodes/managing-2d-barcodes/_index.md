@@ -6,10 +6,10 @@ url: /net/managing-2d-barcodes/
 ---
 
 ## **Hiding CodeText that is too long to display**
-Unlike one dimensional barcode, two-dimensional barcodes often contain a huge amount of data, which is exactly why two-dimensional barcode exists. We often print out the human-readable CodeText along with the barcode, this CodeText has nothing to do with machine scanning. In the case of two-dimensional barcodes, CodeText is simply too long to display. Under such a situation, a certain approach should be taken.
+Unlike a dimensional barcode, two-dimensional barcodes often contain a huge amount of data, which is exactly why a two-dimensional barcode exists. We often print out the human-readable CodeText along with the barcode, this CodeText has nothing to do with machine scanning. In the case of two-dimensional barcodes, CodeText is simply too long to display. Under such a situation, a certain approach should be taken.
 ### **Hide BarCode CodeText**
 The following example demonstrates how to hide the barcode CodeText.
-#### **C#**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-HideBarcodeCodeText-HideBarcodeCodeText.cs" >}}
 
 |**Hiding CodeText's**|
@@ -17,7 +17,7 @@ The following example demonstrates how to hide the barcode CodeText.
 |![todo:image_alt_text](managing-2d-barcodes_1.jpg)|
 ### **Reduce the font size of CodeText**
 The following example shows how to reduce the font size of CodeText
-#### **C#**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-ReduceCodeTextFontSize-ReduceCodeTextFontSize.cs" >}}
 ## **Adjusting 2D images size**
 {{% alert color="primary" %}} 
@@ -57,7 +57,7 @@ The Aspect Ratio of a barcode is the width:height ratio. We can control how tall
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_3.png)|
 The code snippet in C# and VB.NET to set the Aspect Ratio is given below:
-#### **C#**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-SetAspectRatio-SetAspectRatio.cs" >}}
 ## **Detect Unicode Encoding of Barcode**
 Aspose.BarCode API allows developers to detect the Unicode encoding. The flag works for QR/Micro QR at the moment.
@@ -71,6 +71,6 @@ In case, the detect encoding flag is enabled the barcode engine returns Unicode 
 
 The flag is enabled by default. In case the flag is disabled the engine returns plain text without encoding detection.
 
-Below is an example to get the plain text without encoding detection
-#### **C#**
+The code example below demonstrates to get the plain text without encoding detection
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-DetectUnicodeEncoding-DetectUnicodeEncoding.cs" >}}
