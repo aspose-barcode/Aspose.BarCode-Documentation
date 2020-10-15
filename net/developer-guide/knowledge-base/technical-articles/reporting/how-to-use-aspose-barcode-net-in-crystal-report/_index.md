@@ -12,13 +12,11 @@ Aspose.BarCode offers .NET developers the ability to create barcode images quick
 ### **Hands on example**
 #### **Step 1: Create a dataset with an image field**
 First of, add a new items to your web project and choose dataset, name it DataSet_BarCode. Now a xsd file DataSet_BarCode is created, this xsd file represents the dataset which will contain two fields, a string CodeText field and a Base64Binary image field. To do so, either edit this dataset in designer or in the xml tab directly:
-#### **C#**
-{{< gist "aspose-barcode" "2224aabcdb4d2a259b10" "Examples-CSharp-DataSetBarCode-DataSetBarCode.cs" >}}
 
-
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-DataSetBarCode-DataSetBarCode.cs" >}}
 
 The data schema is as followed:
-#### **XML**
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-Data Schema.xml" >}}
 
 
 This dataset will provide for the report to display the image you stored in it. Now build the project to check it out.
@@ -31,10 +29,8 @@ Add a report viewer to the default page.
 #### **Step 5: Coding**
 In the page load method, create a barcode builder, generate the barcode image and store it into the dataset.
 #### **Step 6 Build and run**
-#### **C#**
-{{< gist "aspose-barcode" "2224aabcdb4d2a259b10" "Examples-CSharp-Report-Report.cs" >}}
 
-
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-Report-Report.cs" >}}
 
 *DataSet_BarCode is defined in xsd file, we could treat it as a classCrystalReport1.rpt will define a class named CrystalReport1, we could treat it as a class*
 ### **Issues**

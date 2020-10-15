@@ -15,9 +15,7 @@ In this article, we will create a client report definition file (RDCL) and integ
 1. Create a new database connection or select a connection from the dropdown.
 
 If creating a new connection, please give the database server name and authentication information and select “AdventureWorks” as your database. Make sure that if you click **Test Connection**, you get a “Test Connection Succeeded” message. On the Choose a Command Type screen, choose **Use SQL Statements** and click **Next**. Type the following query in **Enter a SQL Statement**:
-#### **C#**
+
 {{< gist "aspose-barcode" "2224aabcdb4d2a259b10" "Examples-CSharp-GenerateBarCodecolumn-GenerateBarCodecolumn.cs" >}}
-
-
 
 Run the project. The 2 BarCode column should show barcode images on the report.

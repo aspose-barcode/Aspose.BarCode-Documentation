@@ -6,10 +6,8 @@ url: /net/decode-non-english-characters-in-2d-barcodes/
 ---
 
 ## **Decode Non-English Characters in 2D barcodes**
-You can recognize 2D barcodes for non-English character sets, for example, Turkish, Chinese, Arabic, Latin, Greek and so on. The character limitation is 1000. The sample codes below recognizes barcodes for Turkish and Chinese characters. Below are code snippets that recognize a Pdf417 barcode for [Turkish](https://docs.aspose.com/barcode/net/encode-non-english-characters-in-2d-barcodes/#create-a-pdf417-barcode-with-turkish-characters) and [Chinese](https://docs.aspose.com/barcode/net/encode-non-english-characters-in-2d-barcodes/#create-a-pdf417-barcode-with-chinese-characters) characters.
+You can recognize 2D barcodes for non-English character sets, for example, Turkish, Chinese, Arabic, Latin, Greek and so on. The character limitation is 1000. The sample codes below recognize barcodes for Turkish and Chinese characters. Below are code snippets that recognize a Pdf417 barcode for [Turkish](https://docs.aspose.com/barcode/net/encode-non-english-characters-in-2d-barcodes/#create-a-pdf417-barcode-with-turkish-characters) and [Chinese](https://docs.aspose.com/barcode/net/encode-non-english-characters-in-2d-barcodes/#create-a-pdf417-barcode-with-chinese-characters) characters.
 ### **Recognize a Pdf417 Barcode with Turkish Characters**
-#### **C#**
 {{< gist "aspose-barcode" "2224aabcdb4d2a259b10" "Examples-CSharp-ManageBarCodes-RecognizeBarcodeWithChineseCharacters-RecognizeBarcodeWithChineseCharacters.cs" >}}
 ### **Recognize a Pdf417 Barcode with Chinese Characters**
-#### **C#**
 {{< gist "aspose-barcode" "2224aabcdb4d2a259b10" "Examples-CSharp-ManageBarCodes-RecognizeBarcodeWithChineseCharacters-RecognizeBarcodeWithChineseCharacters.cs" >}}

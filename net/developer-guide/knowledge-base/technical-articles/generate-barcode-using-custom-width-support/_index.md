@@ -16,8 +16,6 @@ Originally, barcodes systematically represented data by varying the widths and s
 - If no license has been applied (if you're testing Aspose.BarCode) Aspose wording automatically appears at the top left corner.
 - To get a barcode image with no text or margins, turn off those properties.
 ### **Create an Image With Exact Barcode Only**
-#### **C#**
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CreateImageWithExactBarcodeOnly-CreateImageWithExactBarcodeOnly.cs" >}}
 ### **Create and Set Size for the Whole Picture With Barcode inside**
-#### **C#**
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CreateAndSetSizeForImageWithBarcode-CreateAndSetSizeForImageWithBarcode.cs" >}}

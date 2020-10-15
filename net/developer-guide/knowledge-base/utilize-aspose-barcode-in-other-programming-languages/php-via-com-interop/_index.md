@@ -21,7 +21,7 @@ Variables -> System Variables. Edit the value of Path variable and append c:\php
 1. Restart the IIS.
 
 For testing of correct PHP configuration, create a new text file in the mapped folder of IIS virtual directory and name it as test.php. Enter the following lines in this file.
-#### **PHP**
+
 {{< highlight java >}}
 
  <?php
@@ -37,7 +37,7 @@ phpinfo();
 Now, run the php file in browser. The URL should be similar as <http://localhost/virtualDirectory/test.php>. It should show your system and PHP version information. If there is any error, please visit [http://www.php.net](http://www.php.net/) for details about configuration instructions for your operating system. If you do not intend to use php.ini-recommended file as your configuration file, please visit <http://www.php.net/manual/en/ref.com.php> for adding COM support to PHP.
 ## **PHP Script to Generate BarCode**
 The following PHP script displays an HTML form to enter the CodeText. Once you submit the form, an instance of BarCodeBuilder object will be created using COM interop and barcode will be generated in a folder of webserver.
-#### **PHP**
+
 {{< highlight java >}}
 
  {html}

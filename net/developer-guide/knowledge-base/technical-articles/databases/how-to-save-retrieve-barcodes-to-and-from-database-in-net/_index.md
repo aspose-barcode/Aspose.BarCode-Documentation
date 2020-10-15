@@ -5,14 +5,14 @@ weight: 10
 url: /net/how-to-save-retrieve-barcodes-to-and-from-database-in-net/
 ---
 
-We know that it is possible to save a barcode as an image file using [Aspose.BarCode](http://www.aspose.com/categories/.net-components/aspose.barcode-for-.net/default.aspx). Developers can use this feature to obtain a barcode image and then save it to some location on a network or a local machine. But sometimes, we need more flexibility. If you are working in some company and generate barcodes regularly then it can be a great trouble for you to manage all these barcode images to some folder of your local or network based storage device. In such circumstances, it would be better to store your barcodes in some database.
+We know that it is possible to save a barcode as an image file using [Aspose.BarCode](https://products.aspose.com/barcode/net). Developers can use this feature to obtain a barcode image and then save it to some location on a network or a local machine. But sometimes, we need more flexibility. If you are working in some company and generate barcodes regularly then it can be great trouble for you to manage all these barcode images to some folder of your local or network-based storage device. In such circumstances, it would be better to store your barcodes in some database.
 
 This article will discuss Two Approaches for developers to manage barcodes in databases as follows:
 
 - Storing Barcode Information in Database
 - Storing Barcode Image in Database
 
-Every approach has its own merits and demerits. So, it's upto the developers to decide that which approach fulfills their requirements.
+Every approach has its own merits and demerits. So, it's up to the developers to decide which approach fulfills their requirements.
 
 ## **Save and Retrieve Barcode Information**
 The most simple approach to manage barcodes is to store barcode information in the database. This approach allows developers to store barcode information like its Code text and Symbology to the database. So, instead of barcode images, only barcode details are stored in a database. When a barcode is needed to display then those barcode details are retrieved from the database to generate a barcode image at runtime. To understand this approach, let's create a small application that generates a barcode, and the barcode's details such as its Code text and Symbology are stored in a SQL Server database.
@@ -29,22 +29,22 @@ For this purpose, we need to connect to the database and select a specific barco
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-BarcodeWithDatabase-RetrieveFromDB.cs" >}}
 
 The above-mentioned method can be used with Windows Forms application using the [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol).
-After the BarCodeControl is added to Controls collection of Panel, barcode image gets visible.
+After the BarCodeControl is added to the Controls collection of Panel, the barcode image gets visible.
 ### **Merits**
 - This approach works great for small and simple applications where only simple barcodes are generated
 - It's rather easy to store a barcode in the form of a few text values in the database than storing the barcode image
 - Using this approach, developers can save their resources like database
 - Applications work more faster
 ### **Demerits**
-If you are creating more complex barcode images by also customizing there:* Fore Color
+If you are creating more complex barcode images by also customizing there:* ForeColor
 
 - Background Color
 - Bar Height
 - Wide to Narrow Ratio
 - X-Dimension
   and other properties then you would have to create extra columns in your database table to store the information about all properties related to a barcode. Then this approach would depict the following problems:
-- More columns in table would be created that will consume more storage resources
-- Whenever some new information about the barcode would be needed to be stored, changes will be made to not only database but also to the source code
+- More columns in the table would be created that will consume more storage resources
+- Whenever some new information about the barcode would be needed to be stored, changes will be made to not an only database but also to the source code
 - Increasing the number of columns in the database table would also take more efforts by you to write more lines of code
   Just assume some extra properties of the barcode that would be required to be stored in the database.
 

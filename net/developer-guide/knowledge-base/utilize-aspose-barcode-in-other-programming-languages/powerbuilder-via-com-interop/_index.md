@@ -9,7 +9,7 @@ url: /net/powerbuilder-via-com-interop/
 PowerBuilder binaries are available from [http://www.sybase.com](http://www.sybase.com/). Please download and install the latest version of PowerBuilder for your version of Windows Operating System.
 ## **PowerBuilder Code to Generate BarCode**
 The sample code below generates a barcode of type Pdf417 and will save the barcode image in a folder in hard disk.
-#### **PowerBuilder**
+**PowerBuilder**
 {{< highlight java >}}
 
  // Create an ole object

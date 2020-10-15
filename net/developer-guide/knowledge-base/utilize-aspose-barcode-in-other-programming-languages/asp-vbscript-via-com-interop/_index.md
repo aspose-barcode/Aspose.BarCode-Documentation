@@ -21,11 +21,7 @@ This section describes how to write a simple script that generates a barcode:
 1. When the form is submitted, the code takes the value of the CodeText variable,
 1. Generates a barcode, and saves the barcode image in a folder on the web server.
 
-
-
-
-#### **Vb Script**
-
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "VB Script.html" >}}
 
 The code above defines SymbologyType = 15 which generates a Pdf417 barcode. Generate other barcodes by referring to the SymbologyType enumeration from the Object Browser, as shown below.
 
@@ -40,7 +36,7 @@ This section shows a simple script that recognizes a barcode.
 1. displays the barcode's CodeText in a browser.
 
 
-#### **Vb Script**
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "VBScript to Recognize BarCode.html" >}}
 
 
 For queries, please visit the support forum for Aspose.BarCode for .NET at <http://www.aspose.com/community/forums/aspose.barcode-product-family/193/showforum.aspx>.

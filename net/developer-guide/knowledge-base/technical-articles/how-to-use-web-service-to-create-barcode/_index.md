@@ -7,22 +7,20 @@ url: /net/how-to-use-web-service-to-create-barcode/
 
 {{% alert color="primary" %}} 
 
-In this article, we will use ASP.NET web services to create barcodes. We will also create Windows Forms and Console application to request barcode image.
+In this article, we will use ASP.NET web services to create barcodes. We will also create Windows Forms and Console applications to request a barcode image.
 
 {{% /alert %}} 
-##### **Benefits**
-Web services provide a major benefit in integrating the software with external applications. With standardized request/response model, any client application that can utilize XML web service can benefit from it.Below is the brief visual representation of the barcode service. The clients do not need to refer to Aspose.BarCode for .NET. They will just send 2 string values (codetext and symbology) and will get the barcode image (byte array) from service.
+## **Benefits**
+Web services provide a major benefit in integrating the software with external applications. With a standardized request/response model, any client application that can utilize the XML web service can benefit from it. Below is the brief visual representation of the barcode service. The clients do not need to refer to Aspose.BarCode for .NET. They will just send 2 string values (codetext and symbology) and will get the barcode image (byte array) from the service.
 
 ![todo:image_alt_text](how-to-use-web-service-to-create-barcode_1.png)
-##### **Barcode Web Service**
-Open Microsoft Visual Studio and create a new project of type “ASP.NET Web Service Application”. Name the project as “BarCodeService”. Add reference to the following .NET assemblies.
+## **Barcode Web Service**
+Open Microsoft Visual Studio and create a new project of type “ASP.NET Web Service Application”. Name the project as “BarCodeService”. Add a reference to the following .NET assemblies.
 
-1. System.Drawing from .NET tab of “Add Reference” dialog box
+1. System.Drawing from the .NET tab of “Add Reference” dialog box
 1. Aspose.BarCode.
 
 Browse to the location where Aspose.BarCode for .NET is installed and select. Visual Studio adds a default class “Service1” to the Web Service project in Service1.asmx file. Open it and add the following method to this class.
-
-**[C#]**
 
 {{< highlight csharp >}}
 
@@ -60,20 +58,20 @@ public byte[] GetBarcode(string strCodetext, string strSymbology)
 
 {{< /highlight >}}
 
-The web method needs the following two parameters from client:
+The web method needs the following two parameters from the client:
 
-1. Codetext
+1. CodeText
 1. Symbology
 
-These parameters are of String type. The parameters are passed to the BarCodeBuilder class, which then creates the barcode and sends the barcode image in the form of byte array to the client.
+These parameters are of String type. The parameters are passed to the BarCodeBuilder class, which then creates the barcode and sends the barcode image in the form of a byte array to the client.
 
 {{% alert color="primary" %}} 
 
 This web method can be called by any kind of application that can consume a web service.
 
 {{% /alert %}} 
-##### **Consume Web Service from Windows Forms Application**
-Open Visual Studio and create a new project of type “Windows Application”. Name the project as “ GetBarCodeWinForms ”. Add reference to the web service by right clicking on “References” and then choosing “Add Service Reference” from the context menu. Type the address of web service or discover it. After getting the correct service, give “BarCodeService” in the Namespace and click on “Ok” button to add the reference.
+### **Consume Web Service from Windows Forms Application**
+Open Visual Studio and create a new project of type “Windows Application”. Name the project as “ GetBarCodeWinForms ”. Add a reference to the web service by right-clicking on “References” and then choosing “Add Service Reference” from the context menu. Type the address of the web service or discover it. After getting the correct service, give “BarCodeService” in the Namespace and click on the “Ok” button to add the reference.
 
 ![todo:image_alt_text](how-to-use-web-service-to-create-barcode_2.png)
 
@@ -84,14 +82,12 @@ Design the forms as follows.
 
 It contains the following controls:
 
-1. Textbox: Input codetext from user
+1. Textbox: Input CodeText from user
 1. Combobox: Input symbology type from user
 1. Button: Call web service
 1. Picturebox: Display the barcode image
 
-Write the following code on click event of the button.
-
-**[C#]**
+Write the following code on the click event of the button.
 
 {{< highlight csharp >}}
 
@@ -130,10 +126,9 @@ picBarcodeImage.Width = imgBarcode.Width;
 Run the application, specify some values and click on the “Get Barcode” button. The application will consume the barcode web service and get the barcode image from it. The image will then be displayed on the form as below.
 
 ![todo:image_alt_text](how-to-use-web-service-to-create-barcode_4.png)
-##### **Consume Web Service from a Console Application**
-Create a new project in Visual Studio and choose “Console Application” in project type. Name the project as “ GetBarCodeConsole ”. Add the reference to the barcode service, just as we gave above in the winforms application.Write the below code in the main() method.
+### **Consume Web Service from a Console Application**
+Create a new project in Visual Studio and choose “Console Application” in project type. Name the project as “ GetBarCodeConsole ”. Add the reference to the barcode service, just as we gave above in the WinForms application.Write the below code in the main() method.
 
-**[C#]**
 
 {{< highlight csharp >}}
 
@@ -186,8 +181,8 @@ Console.ReadKey();
 
 
 Run the application, it will consume the barcode web service, get barcode image and save the image locally to disk.
-##### **Summary**
+## **Summary**
 Aspose.BarCode for .NET can easily be used in ASP.NET web services to generate the barcodes and serve the barcode image to various clients.
-##### **References**
+## **References**
 - [Aspose.BarCode for .NET Product Overview](/barcode/net/product-overview/)
 - [Specify Symbology for Barcode](/barcode/net/symbologies-for-barcodes/)

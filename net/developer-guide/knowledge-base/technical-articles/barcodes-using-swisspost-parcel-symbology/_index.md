@@ -17,12 +17,12 @@ SwissPost has three types:
 - [International Mail](/barcode/net/barcodes-using-swisspost-parcel-symbology/)
 
 {{% /alert %}} 
-### **SwissPost Parcel Symbology**
-Generation and recognition modules auto detect which type used, so user don’t need to set this type and there is no property for that.
+## **SwissPost Parcel Symbology**
+Generation and recognition modules auto-detect which type used, so users don’t need to set this type and there is no property for that.
 
 1. Additional Service: Four digits with defined allowed values: 0327, 0322, 0340, 0341, 0610, 1007 and 2512.
 1. Domestic Mail: 18 digits long. It must start with 98.
-1. International Mail: Format: RXxxxxxxxxxCH. X - upper case letter, x - digit, the last x is a checksum. The checksum is internal, always exists and does not depend on our checksum properties, but is validated during recognition.
+1. International Mail: Format: RXxxxxxxxxxCH. X - upper case letter, x - digit, the last x is a checksum. The checksum is internal, always exists, and does not depend on our checksum properties, but is validated during recognition.
 
 Important points:
 
@@ -30,10 +30,9 @@ Important points:
 - If no conditions met Code128 symbology used with recognition
 
 Since the barcode is based on Code128, Code128's checksum is added and validated.
-#### **Programming Samples**
+### **Programming Samples**
 Below are code snippets that create SwissPost Parcel barcodes.
 #### **Create a SwissPost Parcel Barcode with the Additional Service Type**
-**C#**
 
 {{< highlight csharp >}}
 
@@ -55,8 +54,6 @@ Below are code snippets that create SwissPost Parcel barcodes.
 
     builder.Save("c:\\barcode.png");
 
-
-
 {{< /highlight >}}
 
 
@@ -65,7 +62,6 @@ Below are code snippets that create SwissPost Parcel barcodes.
 
 ![todo:image_alt_text](barcodes-using-swisspost-parcel-symbology_1.png)
 #### **Create a SwissPost Parcel Barcode with the Domestic Mail Type**
-**C#**
 
 {{< highlight csharp >}}
 
@@ -129,4 +125,4 @@ Related articles:
 
 - [Working with barcode recognition](/barcode/net/read-barcodes/)
 - [Basic barcode image features](/barcode/net/image-formatting-and-display-settings/)
-- [Barcode orientation](/pages/createpage.action?spaceKey=barcodenet&title=Barcode+Orientation&linkCreation=true&fromPageId=12943378)
+- [Barcode orientation](/barcode/net/read-barcode-properties/#detect-orientation-of-a-barcode)

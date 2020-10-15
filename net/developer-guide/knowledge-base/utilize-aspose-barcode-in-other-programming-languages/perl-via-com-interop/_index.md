@@ -10,10 +10,10 @@ Perl binaries are available from <http://www.perl.com/download.csp>. Please down
 Alternatively, you can also get another free distribution of Perl from ActiveState. Please visit <http://www.activestate.com/Products/activeperl/index.mhtml> for details. ActivePerl comes with core Perl and Win32::OLE extension.
 ## **Perl Code to Generate BarCode**
 The code below will generate barcode of type Pdf417 and save the barcode image in a folder in the hard disk.
-#### **PERL**
+
 {{< highlight java >}}
 
- # For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
+ \# For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 use Win32::OLE;  
 
