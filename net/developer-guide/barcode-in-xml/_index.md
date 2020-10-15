@@ -1,6 +1,8 @@
 ---
 title: Barcode in XML
 type: docs
+description: "This article explains how to import and export barcode to XML using Aspose.BarCode for .NET."
+keywords: "Export barcode to XML, Import barcode from XML, barcode in XML, Aspose.BarCode, Read Barcode C#"
 weight: 50
 url: /net/barcode-in-xml/
 ---
