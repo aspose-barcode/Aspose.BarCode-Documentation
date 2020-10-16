@@ -9,22 +9,22 @@ url: /net/sitefinity-barcode-generator-for-ecommerce-products/
 # **Getting Started**
 ## **Introduction**
 ### **What is Sitefinity?**
-Sitefinity is a modern ASP.NET based web Content Management System (CMS), delivering intuitive web content management and robust development environment for business professionals. Here are the projects we have created for this popular CMS.
+Sitefinity is a modern ASP.NET based web Content Management System (CMS), delivering intuitive web content management and a robust development environment for business professionals. Here are the projects we have created for this popular CMS.
 ### **Aspose.BarCode for .NET**
 Aspose.BarCode for .NET is a robust and reliable barcode generation and recognition component, written in managed C#, it allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, ASP.NET, WPF and .NET Compact Framework).
-Aspose.BarCode for .NET supports most established barcode standards and barcode specifications. It has the ability to export to multiple image formats including: BMP, EMF, GIF, JPEG, PNG, TIFF and WMF.
-With Aspose.BarCode for .NET, developers have full control over every aspect of the barcode image including: background color, bar color, image quality, rotation angle, x-dimension, captions, custom size, customer defined resolution and more. Aspose.BarCode can read and recognize most common 1D and 2D barcodes from any image and at any angle.
+Aspose.BarCode for .NET supports the most established barcode standards and barcode specifications. It has the ability to export to multiple image formats including: BMP, EMF, GIF, JPEG, PNG, TIFF and WMF.
+With Aspose.BarCode for .NET, developers have full control over every aspect of the barcode image including: background color, bar color, image quality, rotation angle, x-dimension, captions, custom size, customer-defined resolution and more. Aspose.BarCode can read and recognize the most common 1D and 2D barcodes from any image and at any angle.
 ### **Aspose.BarCode for .NET Plugins**
 This section has the following topics:
 ## **Barcode Generator for eCommerce Products**
-Aspose .NET BarCode Generator for SiteFinity is open source widget used to list SiteFinity eCommerce products along with barcodes. You can configure the widget to generate different symbologies e.g Codabar, QR Code etc. Widget settings allows you to control different features of the generated barcode e.g symbology, width, height etc.
+Aspose .NET BarCode Generator for SiteFinity is open-source widget used to list the SiteFinity eCommerce products along with barcodes. You can configure the widget to generate different symbologies e.g Codabar, QR Code etc. Widget settings allows you to control different features of the generated barcode e.g symbology, width, height etc.
 
-Current Version of the widget have folloiwng features.
+The current Version of the widget have following features.
 
 - Create and Configure Multiple BarCode styles.
       * Select different Symbologies while creating BarCode styles.
 - Allows to control Barcode's Width and Height from the Widget Settings.
-      * Barcode Generation is optimised so it doesn't generate on every widget load.
+      * Barcode Generation is optimized so it doesn't generate on every widget load.
 ## **System Requirements and Supported Platforms**
 ### **System Requirements**
 In order to setup Aspose.BarCode .NET for Sitefinity add-ons you need to have the following requirements met:
