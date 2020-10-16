@@ -19,48 +19,48 @@ This article shows how to use Aspose.BarCode to
 
 To create a QR barcode:
 
-1. Instantiate a [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator).
+1. Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator).
 1. Call the setSymbologyType() method and pass QR.
 1. Call the setCodeText() method to set the data you want to encode.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-createAQRBarcode.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/bw46URS.png)|
 | :- |
 |**Figure: Output QR barcode**|
-#### **Error Correction**
+## **Error Correction**
 QR barcode can withstand a certain amount of damage and still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
 
 - **LevelL**: allows recovery of 7% of the code text.
 - **LevelM**: allows recovery of 15% of the code text.
 - **LevelQ**: allows recovery of 25% of the code text.
 - **LEVEL_H**: allows recovery of 30% of the code text.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-errorCorrection.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/Nb0uqbL.png)|
 | :- |
 |**Figure: Comparison of error correction**|
-#### **Rotation**
+## **Rotation**
 QR barcodes can be read from any direction. The following samples show valid QR barcodes with different rotation angles.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-rotation.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/R5bvM2r.png)|
 | :- |
 |**Figure: Rotated QR barcodes**|
-#### **Create QR Barcode with Logo**
+## **Create QR Barcode with Logo**
 Aspose.BarCode now supports generating QR barcode with logo/other images inside it. The following code snippet shows how a QR barcode can be created with logo/other images inside it.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-QRBarcodeWithImage.java" >}}
-#### **How to set QR version**
+## **How to set QR version**
 Aspose.BarCode for Java allows developers to set version of QR barcode while generating the barcode. A property **setQRVersion** has been introduced in the **BarcodeGenerator** class to achieve the goal. Following is the sample code demonstration of how to set a version of QR barcode before generating the actual barcode image.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-set_QR_version.java" >}}
-#### **QR Code Encoding in the ECI Mode**
+## **QR Code Encoding in the ECI Mode**
 ECI (Extended Channel Interpretation) enables QR Code to encode multiple character sets (e.g. Arabic, Cyrillic, Greek, Hebrew) and other data interpretations or industry-specific requirements to be represented, into one QR Code symbol.
 
-Added the new property ECIEncoding to [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator) class. It is used to tell the barcode reader details about the used references for encoding the data in the symbol by the Extended Channel Interpretation Identifiers. The current implementation consists of all well-known charset encodings. Currently, it is used only for QR 2D barcode.
+Added the new property ECIEncoding to [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class. It is used to tell the barcode reader details about the used references for encoding the data in the symbol by the Extended Channel Interpretation Identifiers. The current implementation consists of all well-known charset encodings. Currently, it is used only for QR 2D barcode.
 
 Enum ECIEncodings:
 
@@ -92,7 +92,5 @@ Enum ECIEncodings:
 1. **EUC_KR** - Korean Character Set encoding. ECI Id:"\000030".
 
 Instantiate a BarcodeGenerator class object and set its EncodeType to be the QR, and set its CodeText property, QREncodeMode to ECIEncoding, QREncodeType to ForceQR, ECIEncoding to UTF8 and set error correction level for the data you want to encode. Below is an example to generate a QR barcode with Encoding QR Code In ECI Mode.
-
-
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-EncodeQRCodEInECIMode.java" >}}

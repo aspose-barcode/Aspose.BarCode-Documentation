@@ -11,10 +11,10 @@ A barcode is the representation of characters in the form of bars and spaces bet
 
 {{% /alert %}} 
 
-Aspose.BarCode has the [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator) class that creates barcodes for different kinds of applications. All characters to be encoded in a barcode are passed to the [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator) class's constructor method.
-#### **Java**
+Aspose.BarCode has the [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class that creates barcodes for different kinds of applications. All characters to be encoded in a barcode are passed to the [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class's constructor method.
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-basic_features-SetCodeText-SetCodeText.java" >}}
-### **Code Text vs Symbology**
+**Code Text vs Symbology**
 Developers can pass any set of characters to the setCodeText() method but only ones appropriate to the symbology type. For example, If the SymbologyType is EncodeType.EAN13, the valid character set of EAN13 specifies numeric values and 13 digits only. If you attempt to add a shorter Codetext to it, a zero will be added. If you set a longer CodeText, the outliers are truncated.
 
 |![todo:image_alt_text](http://i.imgur.com/xr3gd72.jpg)|

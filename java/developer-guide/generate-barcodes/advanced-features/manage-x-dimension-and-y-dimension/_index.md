@@ -40,14 +40,15 @@ Some sample x-dimension values are listed below in mils, inches, and millimeters
 |80|0.08|2.032|
 |160|0.16|4.064|
 Other barcode elements are expressed as multiples of the x-dimension. For instance, to ensure accurate scanning, most bar codes have a quiet zone – the blank margin on either side of a barcode used to tell the barcode reader where a barcode starts and stops – that is 10X wide. (That is, ten times the barcode's x-dimension.) In general, the greater the x-dimension, the easier a barcode can be scanned.
-### **Aspose.BarCode and X-Dimension**
+## **Aspose.BarCode and X-Dimension**
 [Aspose.BarCode](http://www.aspose.com/Products/Aspose.BarCode/Api) provides get methods in the BarCodeGenerator class that allows developers to set the x-dimension of the bars in a barcode. Normally, the x-dimension is configured in Mils but Aspose.BarCode uses millimeters by default. Developers can modify the measuring unit according to their choice.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-advanced_features-ManageXAndYDimension-setXDimension.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/QKzNFjR.jpg)|
 | :- |
 |**Figure: Output barcode**|
 
-
+{{% alert color="primary" %}} 
 YDimension is not a part of BarcodeGenerator API anymore. However, developers may use BarHeight instead of YDimension if needed.
+{{% /alert %}} 

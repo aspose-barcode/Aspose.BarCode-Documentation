@@ -5,7 +5,7 @@ weight: 20
 url: /java/generate-barcodes/
 ---
 
-###### **This section includes the following topics:**
+**This section includes the following topics:**
 - [Generate Barcodes with Aspose.BarCode APIs](/barcode/java/generate-barcodes-with-aspose-barcode-apis/)
 - [BarcodeGenerator Overview](/barcode/java/barcodegenerator-overview/)
 - [Two Dimensional (2D) Barcodes](/barcode/java/two-dimensional-282d-29-barcodes/)

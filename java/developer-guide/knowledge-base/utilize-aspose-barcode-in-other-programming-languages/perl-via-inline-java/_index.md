@@ -5,7 +5,7 @@ weight: 20
 url: /java/perl-via-inline-java/
 ---
 
-### **Installation and Configuration**
+## **Installation and Configuration**
 Perl binaries are available from <http://www.perl.com/download.csp>. Please download and install the binaries for your Windows Operating System. The **Inline::Java** module allows you to put Java source code directly "inline" in a Perl script or module. A Java compiler is launched and the Java code is compiled. Then Perl asks the Java classes what public methods have been defined. These classes and methods are available to the Perl program as if they had been written in Perl. See <http://search.cpan.org/dist/Inline-Java/Java.pod> to learn more about Inline::Java.
 
 To install the Inline::Java module:
@@ -22,7 +22,7 @@ To install the Inline::Java module:
 Download the latest version of Aspose.BarCode for Java, extract files and copy the lib folder with jar files to the root folder of your project.
 
 {{% /alert %}} 
-#### **Perl Script to Generate Barcode using Inline Java**
+## **Perl Script to Generate Barcode using Inline Java**
 The following code will generate barcode and save the barcode image.
 
 **Perl**

@@ -1,6 +1,8 @@
 ---
 title: Generating Aztec Barcode
 type: docs
+description: "This article explains how to generate Aztec barcode using Aspose.BarCode for Java."
+keywords: "generate Aztec barcode, Aztec barcode, Aspose.BarCode, generate Barcode Java"
 weight: 70
 url: /java/generating-aztec-barcode/
 ---
@@ -10,13 +12,11 @@ url: /java/generating-aztec-barcode/
 Aspose.BarCode for Java allow developers to generate Aztec barcode.
 
 {{% /alert %}} 
-### **Generate Aztec Barcode**
+**Generate Aztec Barcode**
 A new symbology Aztec is added to **Symbology** class to generate Aztec coded barcode. Following is the simple code demonstration.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-GenerateAztecBarcode-GenerateAztecBarcode.java" >}}
 
-
-
 A property **setAztecSymbolMode** has been introduced to allow only numbers from 0 to 255 while using the Aztec barcode. When **setAztecSymbolMode** property is set, the reader automatically detects Runes. Following is the code demonstration.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-SetAztecSymbolMode-SetAztecSymbolMode.java" >}}

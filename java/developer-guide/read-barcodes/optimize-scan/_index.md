@@ -33,11 +33,11 @@ Aspose.BarCode for Java provides the recognition modes that can help the develop
   Normal quality recognition quality preset. Suitable for most of the barcodes.
 ### **Quality Settings Example**
 The following code snippet shows how to switch the barcode recognition modes:
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-SwitchBarcodeRecognitionModes-SwitchBarcodeRecognitionModes.java" >}}
 ## **Using Manual Hints to Optimize Scan**
 Below is a code sample that turns off rotation algorithms and increases the recognition speed.
 
 Note: It is available only for Datamatrix and the linear barcodes.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-UsingManualHintsToOptimizeScan-UsingManualHintsToOptimizeScan.java" >}}

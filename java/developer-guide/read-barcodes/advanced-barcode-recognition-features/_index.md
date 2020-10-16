@@ -23,7 +23,7 @@ Aspose.BarCode for Java supports the following orientation hints:
 - Rotate270 – the barcode is rotated 270 degrees.
 
 Below is a code sample that recognizes the barcode in the image above.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-BarcodeOrientation-BarcodeOrientation.java" >}}
 ## **Better and Faster Image Processing for Barcode Recognition**
 Aspose.BarCode for Java provides better and faster barcode recognition using the following image processing algorithms:
@@ -43,29 +43,29 @@ Aspose.BarCode for Java provides better and faster barcode recognition using the
   - setMedianSmoothingWindowSize: Sets the median smoothing window size. Typical values are 3 or 4. The default value is 3. The recognition hint MedianSmoothing must be set. For noisy images, 4 is good value.
 
 The following code snippet shows how to use median smoothing processing technique when recognizing a barcode.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-FasterImageProcessingForBarcodeRecognition-FasterImageProcessingForBarcodeRecognition.java" >}}
 ## **Get BarCode Recognition Quality in Percent**
 The BarCodeReader.getRecognitionQuality method gets the recognition quality in percentage. It works for only 1D and postal barcodes.
 
 The code sample below shows how to get recognition quality.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-GetBarCodeRecognitionQualityInPercent-GetBarCodeRecognitionQualityInPercent.java" >}}
 ## **Recognizing Single Wiped Bars in Pattern**
 Aspose.BarCode provides public property AllowOneDWipedBarsRestoration to the QualitySettings which allows to recognize barcodes with single wiped/glued bars in pattern. This property is enabled by default in HighQuality, MaxBarCodes modes. Currently this property can be used for Code128, GS1Code128, SCC14, EAN14, SSCC18, AustralianPosteParcel and SwissPostParcel barcode types.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-SingleWipedBarsInPattern-SingleWipedBarsInPattern.java" >}}
 ## **Read Multiple Macropdf417 Barcode Images**
 [Generate Multiple MacroPdf417 Barcodes for Large or Multiple Code Text Values](http://www.aspose.com/docs/display/barcodejava/Generate+Multiple+MacroPdf417+Barcodes+for+Large+or+Multiple+Code+Text+Values) showed how to generate multiple Macropdf417 barcodes for multiple code text values. This article shows how to create a program that recognizes barcodes generated in that article.
 
 Barcode images are placed in a folder and are recognized with the BarCodeReader class. The BarCodeReader class returns the segment ID, file ID and last segment flag (which is either true or false) for each for the MacroPdf417 barcodes.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-ReadMultipleMacropdf417BarcodeImages-ReadMultipleMacropdf417BarcodeImages.java" >}}
 ## **Get all Possible 1D Barcodes from an Image**
 The BarCodeReader.getAllPossibleBarCodes method is used only for 1D barcodes. It returns an array of all possible barcodes found in an image. This array holds all information about the barcodes like code text, symbology, recognition percentage and region details.
 
 The code sample below shows how to use the getAllPossibleBarCodes method.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-GetAllPossible1DBarcodesFromAnImage-GetAllPossible1DBarcodesFromAnImage.java" >}}
 ## **Generate Multiple Barcodes on a Single Image**
 Aspose.BarCode for Java can create multiple optimized barcodes on a single image. It also supports generating multiple types of barcodes such as postal, QR, PDF417, EAN, Code 39, Code128, ISBN, MSI, GS1 etc.
@@ -75,5 +75,5 @@ The sample code below creates one image that contains several barcodes.
 |![todo:image_alt_text](http://i.imgur.com/lwY6Qwg.png)|
 | :- |
 |**Figure: A sample image showing multiple barcodes**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-GenerateMultipleBarcodesOnASingleImage-GenerateMultipleBarcodesOnASingleImage.java" >}}

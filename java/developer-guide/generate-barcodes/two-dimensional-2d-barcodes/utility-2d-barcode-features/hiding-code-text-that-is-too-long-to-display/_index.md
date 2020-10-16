@@ -12,14 +12,14 @@ Unlike one-dimensional barcodes, two-dimensional barcodes often contain a huge a
 {{% /alert %}} 
 
 The following example shows how to hide the barcode code text.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-utility_features-HidingCodeTextThatIsTooLongToDisplay-hideTheBarcodeCodeText.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/hSimLrx.jpg)|
 | :- |
 |**Figure: Hiding code text**|
 The following example shows how to reduce the code text font size.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-utility_features-HidingCodeTextThatIsTooLongToDisplay-reduceTheCodeTextFontSize.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/VJ2prIk.jpg)|

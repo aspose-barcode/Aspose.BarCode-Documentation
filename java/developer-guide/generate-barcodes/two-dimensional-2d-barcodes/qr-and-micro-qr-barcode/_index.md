@@ -94,5 +94,5 @@ Enum ECIEncodings:
 1. **EUC_KR** - Korean Character Set encoding. ECI Id:"\000030".
 ### **QR Code Encoding in the ECI Mode**
 Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class object and set its EncodeType to QR, and set its CodeText property, QREncodeMode to ECIEncoding, QREncodeType to ForceQR, ECIEncoding to UTF8 and set error correction level for the data you want to encode. The following code example demonstrates how to generate a QR barcode.
-#### **C#**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-EncodeQRCodEInECIMode.java" >}}

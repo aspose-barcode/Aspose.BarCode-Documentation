@@ -22,5 +22,5 @@ An aspect ratio of 2 means that the barcode width is two times greater than the 
 | :- |
 |**Figure: Pdf417 barcode with an aspect ratio of 2**|
 The code below shows how to set the aspect ratio.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-utility_features-SetAspectRatioOfBarcodes-SetAspectRatioOfBarcodes.java" >}}

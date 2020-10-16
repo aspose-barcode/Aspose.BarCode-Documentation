@@ -13,18 +13,19 @@ This article explains how to
 
 To create an Aztec barcode:
 
-1. Instantiate a [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator).
+1. Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator).
 1. Call the setSymbologyType() method and pass Symbology.AZTEC.
 1. Call the setCodeText() method to set the data you want to encode.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAnAztecBarcode-createAnAztecBarcode.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/0PCmJzY.png)|
 | :- |
 |**Figure: Output Aztec barcode**|
-#### **Error Correction**
+
+**Error Correction**
 An Aztec barcode allows code recovery when the barcode image is partly damaged. The error correction level ranges from 10% to 90%.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAnAztecBarcode-errorCorrection.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/DmUG1B4.png)|

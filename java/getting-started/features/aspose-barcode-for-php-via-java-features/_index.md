@@ -36,7 +36,7 @@ url: /java/aspose-barcode-for-php-via-java-features/
 - JPG
 - PNG
 ## **Supported Barcode Symbologies**
-##### **Numeric Only Symbologies**
+### **Numeric Only Symbologies**
 - EAN13
 - EAN8
 - UPCA
@@ -54,7 +54,7 @@ url: /java/aspose-barcode-for-php-via-java-features/
 - ITF14
 - Leticode
 - OPC
-##### **Alpha-Numeric Symbologies**
+### **Alpha-Numeric Symbologies**
 - Code128
 - EAN128
 - Code39 Extended
@@ -66,7 +66,7 @@ url: /java/aspose-barcode-for-php-via-java-features/
 - PZN
 - Deutsche Post Identcode
 - VIN
-##### **2D Symbologies**
+### **2D Symbologies**
 - Pdf417
 - DataMatrix
 - Aztec

@@ -13,9 +13,9 @@ Some barcode symbologies like Code39, Interleaved2of5 and Standard2of5 allow you
 
 In such barcodes, some bars are wider than others. For example, in Code39 (sometimes called Code 3 from 9) symbology, each character is represented by 9 bars - 3 of which are wider than the others and the ratio of the bar widths can range from 2.2:1 to 3:1. To read the encoded information in a barcode reliably, the decoder must be able to differentiate between wide and narrow bars.
 
-To manage bar widths in a barcode, wide to narrow ratio is configured.
+To manage bar widths in a barcode, a wide to narrow ratio is configured.
 
-[Aspose.BarCode](https://apireference.aspose.com/java/barcode) allows developers to use [setWideNarrowRatio()](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeParameters#setWideNarrowRatio-float-) method of a barcode class to control the ratio of wide and narrow elements in the barcode. To specify the ratio, pass a float value to the setWideNarrowRatio() method.
+[Aspose.BarCode](https://apireference.aspose.com/barcode/java/) allows developers to use [setWideNarrowRatio()](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters#setWideNarrowRatio-float-) method of a barcode class to control the ratio of wide and narrow elements in the barcode. To specify the ratio, pass a float value to the setWideNarrowRatio() method.
 
 |![todo:image_alt_text](http://i.imgur.com/DwBiPLn.jpg)|
 | :- |
@@ -27,5 +27,5 @@ A complete example is given below to demonstrate the use of the WideNarrowRatio 
 |![todo:image_alt_text](http://i.imgur.com/Fu1FO4q.jpg)|
 | :- |
 |**Figure: The output barcode image generated after example code execution**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-advanced_features-WideNarrowRatio-WideNarrowRatio.java" >}}

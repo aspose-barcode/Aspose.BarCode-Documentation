@@ -18,8 +18,8 @@ AustraliaPost barcodes can be generated using the following format control code 
 
 {{% /alert %}} 
 
-The following code snippet generates the AustraliaPost barcode with standard format control code.
-#### **Java**
+The following code snippet generates the AustraliaPost barcode with a standard format control code.
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-advanced_features-GenerateAustraliaPostBarcode-GenerateAustraliaPostBarcode.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/RsXfizg.png)|

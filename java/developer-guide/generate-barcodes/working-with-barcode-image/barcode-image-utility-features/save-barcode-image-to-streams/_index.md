@@ -11,6 +11,6 @@ Barcodes can be saved to [different formats](/barcode/java/save-barcode-images-t
 
 {{% /alert %}} 
 
-Aspose.BarCode lets developers save a barcode image to a stream by using the [BarcodeGenerator](https://apireference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator) object's save() method.
-#### **Java**
+Aspose.BarCode lets developers save a barcode image to a stream by using the [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) object's save() method.
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-utility_features-SaveBarcodeImageToStreams-SaveBarcodeImageToStreams.java" >}}

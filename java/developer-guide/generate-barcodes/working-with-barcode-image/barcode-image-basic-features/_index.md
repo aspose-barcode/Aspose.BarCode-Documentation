@@ -5,7 +5,7 @@ weight: 10
 url: /java/barcode-image-basic-features/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Working with Image Borders](/barcode/java/working-with-image-borders/)
 - [Colorize any Part of the Barcode Image](/barcode/java/colorize-any-part-of-the-barcode-image/)
 - [Rotate Barcode Image](/barcode/java/rotate-barcode-image/)

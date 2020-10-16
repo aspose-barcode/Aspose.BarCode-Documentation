@@ -16,7 +16,7 @@ The example below generates a Code39Standard barcode with customized height and 
 |![todo:image_alt_text](http://i.imgur.com/kFN7Jpe.png)|
 | :- |
 |**Figure: Output barcode**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-utility_features-BarcodeCustomSize-BarcodeCustomSize.java" >}}
 ## **Get Minimum BarCode Size**
 The minimum BarCode Height and width are 1 millimeter by default. Following is the simple code demonstration.

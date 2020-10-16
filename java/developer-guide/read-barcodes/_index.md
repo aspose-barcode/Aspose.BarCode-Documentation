@@ -5,7 +5,7 @@ weight: 30
 url: /java/read-barcodes/
 ---
 
-###### **This section includes the following topics:**
+**This section includes the following topics:**
 - [Read Barcodes with Aspose.BarCode APIs](/barcode/java/read-barcodes-with-aspose-barcode-apis/)
 - [Optimize Scan](/barcode/java/optimize-scan/)
 - [Advanced Barcode Recognition Features](/barcode/java/advanced-barcode-recognition-features/)

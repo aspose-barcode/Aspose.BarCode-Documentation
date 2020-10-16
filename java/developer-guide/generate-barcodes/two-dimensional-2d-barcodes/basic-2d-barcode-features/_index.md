@@ -5,7 +5,7 @@ weight: 10
 url: /java/basic-2d-barcode-features/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Creating Two Dimensional (2D) Barcodes](/barcode/java/creating-two-dimensional-282d-29-barcodes/)
 - [Creating a Pdf417 Barcode](/barcode/java/creating-a-pdf417-barcode/)
 - [How to create Datamatrix Barcode](/barcode/java/how-to-create-datamatrix-barcode/)

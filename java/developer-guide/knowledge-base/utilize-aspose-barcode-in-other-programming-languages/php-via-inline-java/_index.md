@@ -5,7 +5,7 @@ weight: 40
 url: /java/php-via-inline-java/
 ---
 
-#### **Installation and Configuration**
+## **Installation and Configuration**
 PHP binaries for Windows are available from <http://www.php.net/>. You need to download and install it before using Aspose.BarCode.
 
 Install and configure the PHP/Java Bridge to make use of Java from PHP. For more details about installing and configuring the PHP/Java Bridge see <http://www.php.net/manual/en/ref.java.php>.
@@ -13,7 +13,7 @@ Install and configure the PHP/Java Bridge to make use of Java from PHP. For more
 Also you can download PHP/Java Bridge that doesn’t require a java extension from <http://php-java-bridge.sourceforge.net/pjb>.
 
 Download the latest version of Aspose.BarCode for Java, extract files and copy the lib folder with jar files to the root folder of your project. 
-#### **PHP Script to Generate Barcode via Inline Java**
+## **PHP Script to Generate Barcode via Inline Java**
 The below PHP script will use JPype and use Aspose.BarCode for Java class BarCodeBuilder to generate barcode and save the barcode image to disk.
 
 **PHP**

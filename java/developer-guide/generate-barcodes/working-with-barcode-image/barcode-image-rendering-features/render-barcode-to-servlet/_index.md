@@ -13,8 +13,6 @@ Aspose.BarCode for Java provides graphics interfaces to render barcode images in
 
 The following servlet sample shows how to render barcodes:
 
-
-#### **Java**
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-rendering_features-RenderBarcodeToServlet-RenderBarcodeToServlet.java" >}}
 
 
@@ -63,7 +61,7 @@ Edit web.xml to point to your servlet:
 
 {{< /highlight >}}
 
-Packup and deploy. This sample will be run on a Tomcat server.
+Pack up and deploy. This sample will be run on a Tomcat server.
 
 |![todo:image_alt_text](http://i.imgur.com/4DXZc24.png)|
 | :- |

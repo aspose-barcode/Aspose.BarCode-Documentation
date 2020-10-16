@@ -15,7 +15,7 @@ For this tutorial, we used Eclipse as the IDE, which is free and could be downlo
 <http://www.eclipse.org/downloads/>
 
 {{% /alert %}} 
-### **Barcode Generation**
+## **Barcode Generation**
 1. Start Eclipse and create a new Java project.
 
    **Creating a new Java project** 
@@ -74,7 +74,7 @@ You could use your own Servlet-api.jar if available.
 1. Save the image to file. Continuing the sample above, add this code to save the barcode image to file:
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-Test-SaveToDisk.java" >}}
-### **Barcode Recognition**
+## **Barcode Recognition**
 Continuing the sample above, we can add code to scan a barcode from an image:
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-basic_features-Barcode_Recognition-Barcode_Recognition.java" >}}

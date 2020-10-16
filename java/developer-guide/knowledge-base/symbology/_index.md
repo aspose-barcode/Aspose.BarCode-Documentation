@@ -10,7 +10,7 @@ url: /java/symbology/
 Specifies the type of bar code specification.
 
 {{% /alert %}} 
-#### **Members**
+## **Members**
 
 |**Member Name**|**Description**|**Value**|
 | :- | :- | :- |
@@ -60,6 +60,6 @@ Specifies the type of bar code specification.
 |GS1DataMatrix |2D barcode symbology DataMatrix with GS1 string format |35184372088832 |
 |AustralianPosteParcel |Specifies that the data should be encoded with barcode specification |70368744177664 |
 |SwissPostParcel |Specifies that the data should be encoded with barcode specification |140737488355328 |
-#### **Requirements**
+## **Requirements**
 Namspace: com.aspose.barcode
 Jar: aspose-barcode-XXX-jdkXX

@@ -12,7 +12,7 @@ Aspose.BarCode for Java provides graphics interface to render barcodes in variou
 {{% /alert %}} 
 
 The following sample shows how to render barcode to printers.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-rendering_features-RenderBarcodeToPrinter-RenderBarcodeToPrinter.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/z98Ekjw.png)|

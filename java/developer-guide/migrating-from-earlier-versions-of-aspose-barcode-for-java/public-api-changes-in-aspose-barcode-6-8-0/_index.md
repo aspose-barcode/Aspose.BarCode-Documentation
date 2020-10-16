@@ -10,7 +10,7 @@ url: /java/public-api-changes-in-aspose-barcode-6-8-0/
 This document describes changes to the Aspose.BarCode API from version 6.5.0 to 6.8.0, that may be of interest to module/application developers. It includes not only new and updated public methods, but also a description of any changes in the behavior behind the scenes in Aspose.BarCode. 
 
 {{% /alert %}} 
-### **Method com.aspose.barcode.BarCodeBuilder.setRows() is updated**
+## **Method com.aspose.barcode.BarCodeBuilder.setRows() is updated**
 Updated method com.aspose.barcode.BarCodeBuilder.setRows(). Now this method allows to specify number of rows for new symbology DatabarExpandedStacked. If setting is illegal then rows will be calculated automatically.
 
 {{< highlight java >}}
@@ -26,7 +26,7 @@ builder.setRows(1);
 builder.save("stacked1Rows.png");
 
 {{< /highlight >}}
-### **Field com.aspose.barcode.Symbology.DatabarExpandedStacked is added**
+## **Field com.aspose.barcode.Symbology.DatabarExpandedStacked is added**
 It specifies that the data should be encoded with Databar expanded stacked barcode specification.
 
 {{< highlight java >}}
@@ -48,7 +48,7 @@ builder.setSymbologyType(Symbology.DatabarExpandedStacked);
 builder.save("databarexpandedstacked.png");
 
 {{< /highlight >}}
-### **Field com.aspose.barcode.Symbology.DatabarStacked is added**
+## **Field com.aspose.barcode.Symbology.DatabarStacked is added**
 It specifies that the data should be encoded with Databar stacked barcode specification.
 
 {{< highlight java >}}
@@ -70,7 +70,7 @@ builder.setSymbologyType(Symbology.DatabarStacked);
 builder.save("databarstacked.png");
 
 {{< /highlight >}}
-### **Field com.aspose.barcode.Symbology.DatabarStackedOmniDirectional is added**
+## **Field com.aspose.barcode.Symbology.DatabarStackedOmniDirectional is added**
 It specifies that the data should be encoded with Databar stacked omni-directional barcode specification.
 
 {{< highlight java >}}
@@ -92,7 +92,7 @@ builder.setSymbologyType(Symbology.DatabarStackedOmniDirectional);
 builder.save("databarstackedomnidirectional.png");
 
 {{< /highlight >}}
-### **Field com.aspose.barcoderecognition.BarCodeReadType.DatabarExpandedStacked is added**
+## **Field com.aspose.barcoderecognition.BarCodeReadType.DatabarExpandedStacked is added**
 Added support for Databar expanded stacked recognition.
 
 {{< highlight java >}}
@@ -132,7 +132,7 @@ if (reader.read())
 }
 
 {{< /highlight >}}
-### **Field com.aspose.barcoderecognition.BarCodeReadType.DatabarStackedOmniDirectional is added**
+## **Field com.aspose.barcoderecognition.BarCodeReadType.DatabarStackedOmniDirectional is added**
 Added support for Databar stacked omni-directional recognition.
 
 {{< highlight java >}}
@@ -152,7 +152,7 @@ if (reader.read())
 }
 
 {{< /highlight >}}
-### **Field Symbology.PatchCode is added**
+## **Field Symbology.PatchCode is added**
 We’ve added encoding support of Patch code symbology, whereas decoding capability is already present.
 
 {{< highlight java >}}
@@ -162,7 +162,7 @@ We’ve added encoding support of Patch code symbology, whereas decoding capabil
 builder.save("PatchCode.png");
 
 {{< /highlight >}}
-### **Filter ImageBinarization.LineCodesRestoration is added**
+## **Filter ImageBinarization.LineCodesRestoration is added**
 We’ve added a new Line Codes Restoration filter. This filter restores corrupted strokes for 1D barcodes. This degradation could come from dirty, dusty products or discarded barcode resulting in touched or missing parts of the bars.
 
 {{< highlight java >}}
@@ -192,5 +192,5 @@ while (reader.read())
 reader.close();
 
 {{< /highlight >}}
-### **Filter ImageBinarization.Grayscale is removed**
+## **Filter ImageBinarization.Grayscale is removed**
 We’ve removed GrayScale filter.

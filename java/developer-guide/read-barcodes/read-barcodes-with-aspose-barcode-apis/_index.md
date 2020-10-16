@@ -60,7 +60,7 @@ The following example demonstrates how to scan a picture of a barcode image usin
 |![todo:image_alt_text](http://i.imgur.com/97XU28P.jpg)|
 | :- |
 |**Figure: Scan result**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-basic_features-Barcode_Recognition-Barcode_Recognition.java" >}}
 ## **Supported Image Formats**
 [BarCodeReader](https://apireference.aspose.com/java/barcode/com.aspose.barcode.barcoderecognition/package-frame) accepts many standard image formats.
@@ -78,7 +78,7 @@ The following example demonstrates how to scan a picture of a barcode image usin
 |![todo:image_alt_text](http://i.imgur.com/BZm6N0X.png)|
 | :- |
 |**Figure: Output after reading**|
-#### **Java**
+
 {{< gist "aspose-barcode" "e49c13ebe68efe7c059e32871b13a3ab" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-basic_features-SupportedImageFormats-.java" >}}
 ## **Recognizing Specific Barcode Symbology**
 This article shows the basic settings of the BarCodeReader class.
@@ -89,7 +89,7 @@ When we already know the symbology type that will be passed to the reader, this 
 
 |![todo:image_alt_text](http://i.imgur.com/h5sWyXL.jpg)|
 | :- |
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-basic_features-SpecificBarcodeSymbology-SpecificBarcodeSymbology.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/SBzZiCy.jpg)|
@@ -136,7 +136,7 @@ The image below contains two barcodes of the Code39Standard and Pdf417 types.
 |![todo:image_alt_text](http://i.imgur.com/5prpHFS.png)|
 | :- |
 Since the BarCodeReader.read() method returns a Boolean value, it is possible to call it in a while loop to recognize all the barcodes in an image. For the above image, the read() method returns true for the first barcode, and then again for the second barcode. It returns false in the third iteration.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-basic_features-RecognizingMultipleSymbologiesInSingleImage-RecognizingMultipleSymbologiesInSingleImage.java" >}}
 
 The above code snippet assumes that we already know the symbology types of the barcodes in the image and specified the symbologies. If the symbologies are not known in advance, use BarCodeReadType.AllSupportedTypes to check for any symbology type.

@@ -5,7 +5,7 @@ weight: 20
 url: /java/utility-2d-barcode-features/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Hiding Code Text that is too Long to Display](/barcode/java/hiding-code-text-that-is-too-long-to-display/)
 - [Adjusting 2D Images Size](/barcode/java/adjusting-2d-images-size/)
 - [Set Aspect Ratio of Barcodes](/barcode/java/set-aspect-ratio-of-barcodes/)

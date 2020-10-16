@@ -30,7 +30,7 @@ composer install
 {{< /highlight >}}
 
 ### **Method 2**
-- In composer.json file of your PHP project, add the following lines
+- In the composer.json file of your PHP project, add the following lines
 {{< highlight php >}}
 {    
     "require": {        

@@ -7,7 +7,7 @@ url: /java/control-barcode-image-quality/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://apireference.aspose.com/java/barcode/) can render anti-aliased barcode images that provide much better quality. The quality of anti-aliased barcode images is more obvious when the barcode is generated with high resolution.
+[Aspose.BarCode](https://apireference.aspose.com/barcode/java/) can render anti-aliased barcode images that provide much better quality. The quality of anti-aliased barcode images is more obvious when the barcode is generated with high resolution.
 
 {{% /alert %}} 
 
@@ -21,5 +21,5 @@ The example shows the image of the generated barcode with a resolution set to 40
 
 
 The code below is used to generate a barcode shown above.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-basic_features-BarcodeImageQuality-BarcodeImageQuality.java" >}}

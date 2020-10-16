@@ -12,7 +12,7 @@ Multiple MacroPdf417 barcodes can be generated if when there are multiple code t
 {{% /alert %}} 
 
 The below code sample generates 4 MacroPdf417 barcodes for 4 different CodeText values.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-utility_features-GenerateMultipleMacroPdf417-GenerateMultipleMacroPdf417.java" >}}
 
 

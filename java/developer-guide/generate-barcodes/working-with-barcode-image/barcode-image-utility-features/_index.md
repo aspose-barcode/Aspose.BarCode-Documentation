@@ -5,7 +5,7 @@ weight: 20
 url: /java/barcode-image-utility-features/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Customize Barcode Image Resolution](/barcode/java/customize-barcode-image-resolution/)
 - [Set Size Unit for the Barcode Image](/barcode/java/set-size-unit-for-the-barcode-image/)
 - [Save Barcode Images to Different Formats](/barcode/java/save-barcode-images-to-different-formats/)

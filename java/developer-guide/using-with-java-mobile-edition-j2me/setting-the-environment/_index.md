@@ -17,7 +17,7 @@ This example uses the Netbeans IDE and Java Micro Edition SDK 3.0 emulator in ou
 Please make sure that you have Netbeans IDE with J2ME platform installed on your system. If not, you may download it from <http://netbeans.org/>.
 
 {{% /alert %}} 
-### **Creating a Project**
+## **Creating a Project**
 1. After setting up Netbeans, create a new project.
 1. Select **Java ME** from the categories and **Mobile Application** from the projects list, as shown in the screenshot below:
 
@@ -30,7 +30,7 @@ Please make sure that you have Netbeans IDE with J2ME platform installed on your
 |![todo:image_alt_text](http://i.imgur.com/iYDSOzR.png)|
 | :- |
 1. Leave all the options as default and click **Finish** to complete the new project wizard.
-### **Referencing Aspose.BarCode**
+## **Referencing Aspose.BarCode**
 Now, to add barcode generation and recognition capabilities, add a reference to the Aspose.BarCode.J2ME.jar into the project:
 
 1. Right-click on **Project** and click **Properties**.

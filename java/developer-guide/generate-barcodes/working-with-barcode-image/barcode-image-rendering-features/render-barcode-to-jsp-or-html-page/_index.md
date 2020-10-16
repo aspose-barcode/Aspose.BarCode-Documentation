@@ -7,16 +7,14 @@ url: /java/render-barcode-to-jsp-or-html-page/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://apireference.aspose.com/java/barcode/) for Java provides graphics interfaces to render barcode images in various situations, including AWT graphics, web response streams, printers and images. This article demonstrates how to render barcodes to JSP or HTML web pages.
+[Aspose.BarCode](https://apireference.aspose.com/barcode/java/) for Java provides graphics interfaces to render barcode images in various situations, including AWT graphics, web response streams, printers and images. This article demonstrates how to render barcodes to JSP or HTML web pages.
 
 {{% /alert %}} 
-### **JSP**
+
 The following JSP sample shows how to render barcodes to JSP pages using Servlet.
 
 This is a servlet sample to generate barcode images.
 
-
-#### **Java**
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-rendering_features-RenderBarcodeToServlet-RenderBarcodeToServlet.java" >}}
 
 
@@ -62,7 +60,7 @@ Below is a JSP runtime snapshot powered by a Tomcat Server.
 |![todo:image_alt_text](http://i.imgur.com/Nfi7ZRA.png)|
 | :- |
 |**Figure: Render barcodes inside jsp page using img tag**|
-### **HTML**
+
 By using the Img tag, we can also insert a servlet generated imageanywhere on an HTML web page.
 
 **HTML**

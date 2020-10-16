@@ -6,7 +6,7 @@ url: /java/features-overview/
 ---
 
 The tables below summarize the availability of features of Aspose.BarCode for Java and links to supported Barcode generation and recognition symbologies.
-## **Features Summary**
+**Features Summary**
 
 |**General**|
 | :- |

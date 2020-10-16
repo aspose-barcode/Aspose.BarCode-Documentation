@@ -5,7 +5,7 @@ weight: 50
 url: /java/advanced-features/
 ---
 
-###### **This section includes the following topics:**
+**This section includes the following topics:**
 - [Set Height of the Bars in the Barcode Image](/barcode/java/set-height-of-the-bars-in-the-barcode-image/)
 - [Manage X-Dimension and Y-Dimension](/barcode/java/manage-x-dimension-and-y-dimension/)
 - [Use Checksum and Supplement Data for Barcodes](/barcode/java/use-checksum-and-supplement-data-for-barcodes/)

@@ -15,7 +15,7 @@ To find barcode regions:
 1. Read the barcodes in the image using the BarCodeReader.read() method.
 1. Get the barcode region using the BarCodeReader.getRegion() method which returns an instance of type BarCodeRegion.
 1. Get the barcode's x and y coordinates using the BarCodeRegion.Points() method.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-BarcodeRegionInformationFromTheImage-BarcodeRegionInformationFromTheImage.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/kA5n3ex.jpg)|
@@ -53,7 +53,7 @@ After marking the barcode regions and drawing the edges of the barcodes, we get 
 |![todo:image_alt_text](http://i.imgur.com/qy4666y.png)|
 | :- |
 |**Figure: Output image**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-MarkingBarcodeRegionsInAnImage-MarkingBarcodeRegionsInAnImage.java" >}}
 ## **Read Barcode from Specific Region of Image**
 This article explains how to scan only a part of an image that contains a barcode. Suppose that we have a large image, for example, 800x600 pixels, and our barcode is in the top left corner of the image at 100 x 50 pixels. We can optimize the barcode scanning by specifying the area, instead of scanning the whole image. But we need to know in advance where the barcode will be located. The barcode reader will not scan any other parts of the image if we specify the area we want it to read.
@@ -64,5 +64,5 @@ The following image is 333x127 pixels. The size of the barcode is only 94x18 pix
 | :- |
 |**Figure: Input image**|
 If we specify an area of (0, 0, 100, 50), the barcode reader will scan only this area and will be able to recognize the barcode. Doing so greatly increases the speed of recognition because the barcode reader will not look for barcodes in the rest of the image.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-ReadBarcodeFromSpecificRegionOfImage-ReadBarcodeFromSpecificRegionOfImage.java" >}}

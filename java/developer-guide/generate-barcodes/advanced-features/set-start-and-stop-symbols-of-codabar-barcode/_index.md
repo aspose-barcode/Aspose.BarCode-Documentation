@@ -17,8 +17,6 @@ Using Aspose.BarCode for Java, you can customize the start and stop symbols usin
 
 {{% /alert %}} 
 
-
-
 The code below sets A as the start symbol and D as the stop symbol for the Codabar barcode.
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-advanced_features-SetStartAndStopSymbols-SetStartAndStopSymbols.java" >}}

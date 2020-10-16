@@ -10,7 +10,7 @@ url: /java/generate-segments-per-row-barcode/
 Aspose.BarCode supports to generate Databar Expanded Stacked coded barcode with segments per row settings
 
 {{% /alert %}} 
-### **How to Generate Barcode With Segments Per Row**
+**How to Generate Barcode With Segments Per Row**
 Aspose.BarCode for Java supports to set segments per row while generating the barcode. A property BarcodeGenerator.getParameters().getBarcode().getDataBar().setColumns() is exposed to serve the purpose. Following is the sample code demonstrating how to set segments per row before generating a barcode image.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-advanced_features-BarcodeWithSegments-BarcodeWithSegments.java" >}}

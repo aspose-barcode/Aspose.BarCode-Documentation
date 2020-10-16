@@ -27,5 +27,5 @@ The example below changes the bar height of the barcode but the measuring unit b
 |![todo:image_alt_text](http://i.imgur.com/yAiVqPE.jpg)|
 | :- |
 |**Figure: Barcode with customized bar height in points**|
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_image-utility_features-SetSizeUnitForBarcodeImage-SetSizeUnitForBarcodeImage.java" >}}

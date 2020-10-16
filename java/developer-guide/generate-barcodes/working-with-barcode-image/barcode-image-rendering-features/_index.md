@@ -5,7 +5,7 @@ weight: 30
 url: /java/barcode-image-rendering-features/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Render Barcode to Graphics Object](/barcode/java/render-barcode-to-graphics-object/)
 - [Render Barcode to Image Instance](/barcode/java/render-barcode-to-image-instance/)
 - [Render Barcode to Printer](/barcode/java/render-barcode-to-printer/)
