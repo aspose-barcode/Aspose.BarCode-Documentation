@@ -29,7 +29,7 @@ It is possible to use both the .NET and Java versions of Aspose.BarCode with oth
 | |Java |JPype |
 |VBScript |.NET |COM Interop |
 |Visual Basic |.NET |COM Interop |
-As you can see from the table, for some languages like ASP, Delphi, Visual Basic and PowerBuilder, we can only use Aspose.BarCode for .NET using COM Interop. But other languages like PHP, Perl and Python offers support for both Aspose.BarCode for .NET (using COM Interop) and Java (using Inline::Java, Java Bridge and JType). The following table lists pros and cons for choosing the interoperability technology.
+As you can see from the table, for some languages like ASP, Delphi, Visual Basic and PowerBuilder, we can only use Aspose.BarCode for .NET using COM Interop. But other languages like PHP, Perl and Python offers support for both Aspose.BarCode for .NET (using COM Interop) and Java (using Inline::Java, Java Bridge and JType). The following table lists the pros and cons of choosing the interoperability technology.
 
 |**Interoperability Technology** |**Pros and Cons** |
 | :- | :- |

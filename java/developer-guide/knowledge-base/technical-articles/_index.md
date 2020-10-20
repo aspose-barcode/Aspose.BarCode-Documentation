@@ -5,7 +5,7 @@ weight: 10
 url: /java/technical-articles/
 ---
 
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [How to Read Barcode from Word Documents](/barcode/java/how-to-read-barcode-from-word-documents/)
 - [How to Read Barcode from PDF Documents](/barcode/java/how-to-read-barcode-from-pdf-documents/)
 - [How to Read Barcode from Multi-page TIFF Images](/barcode/java/how-to-read-barcode-from-multi-page-tiff-images/)

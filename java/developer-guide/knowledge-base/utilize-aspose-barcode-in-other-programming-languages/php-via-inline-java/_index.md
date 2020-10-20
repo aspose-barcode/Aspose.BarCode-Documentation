@@ -21,31 +21,17 @@ The below PHP script will use JPype and use Aspose.BarCode for Java class BarCod
 {{< highlight csharp >}}
 
  <?php
-
-
-
-require_once("http://localhost:8080/JavaBridge/java/Java.inc");
-
-java_require("lib\\Aspose.BarCode.jar;lib\\jaxen-1.1.jar");
-
-
-
-// Create an instance of BarCodeBuilder
-
-$builder = new Java("com.aspose.barcode.BarCodeBuilder");
-
-
-
-// Set code text
-
-$builder->setCodeText("test-123");
-
-// Save the barcode image to disk
-
-$builder->save("e:\\data\\aspose\\Temp\\testphpjava.png");
-
-?>
-
-
-
+ 
+ require_once("http://localhost:8080/JavaBridge/java/Java.inc");
+ java_require("lib\\Aspose.BarCode.jar;lib\\jaxen-1.1.jar");
+ 
+ // Create an instance of BarCodeBuilder
+ $builder = new Java("com.aspose.barcode.BarCodeBuilder");
+ 
+ // Set code text
+ $builder->setCodeText("test-123");
+ 
+ // Save the barcode image to disk
+ $builder->save("e:\\data\\aspose\\Temp\\testphpjava.png");
+ ?>
 {{< /highlight >}}

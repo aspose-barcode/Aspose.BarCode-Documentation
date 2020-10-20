@@ -25,5 +25,5 @@ The code below shows how to use the method.
 | :- |
 |**Figure: Results**|
 
-#### **Java**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-BarCodeWithOptionalExceptionMessage-BarCodeWithOptionalExceptionMessage.java" >}}

@@ -23,7 +23,7 @@ Specifies the type of bar code specification.
 |Code128 |Specifies that the data should be encoded with barcode specification |64 |
 |EAN8 |Specifies that the data should be encoded with barcode specification |128 |
 |EAN13 |Specifies that the data should be encoded with barcode specification  |256 |
-|EAN14 |Specifies that the data should be encoded withbarcode specification |1024 |
+|EAN14 |Specifies that the data should be encoded with barcode specification |1024 |
 |SCC14 |Specifies that the data should be encoded with barcode specification |2048 |
 |SSCC18 |Specifies that the data should be encoded with barcode specification |4096 |
 |UPCA |Specifies that the data should be encoded with barcode specification |8192 |
@@ -32,7 +32,7 @@ Specifies the type of bar code specification.
 |Interleaved2of5 |Specifies that the data should be encoded with barcode specification |131072 |
 |Matrix2of5 |Represents Matrix 2 of 5 BarCode |262144 |
 |ItalianPost25 |Represents Italian Post 25 barcode. |524288 |
-|IATA2of5 |Represents IATA 2 of 5 barcode.IATA (International Air Transport Assosiation) uses this barcode for the management of air cargo. |1048576 |
+|IATA2of5 |Represents IATA 2 of 5 barcode.IATA (International Air Transport Association) uses this barcode for the management of air cargo. |1048576 |
 |ITF14 |Specifies that the data should be encoded with barcode specification |2097152 |
 |ITF6 |Represents ITF-6 Barcode. |4194304 |
 |MSI |Specifies that the data should be encoded with barcode specification |8388608 |
@@ -49,9 +49,9 @@ Specifies the type of bar code specification.
 |MacroPdf417 |Specifies that the data should be encoded with barcode specification |17179869184 |
 |AustraliaPost |Represents Australia Post Customer BarCode |34359738368 |
 |Postnet |Specifies that the data should be encoded with barcode specification |68719476736 |
-|Planet |Specifies that the data should be encoded withbarcode specification |137438953472 |
+|Planet |Specifies that the data should be encoded with barcode specification |137438953472 |
 |OneCode |Specifies that the data should be encoded with USPS barcode specification |274877906944 |
-|RM4SCC |Represents RM4SCC barcode. RM4SCC (Royal Mail 4-state Customer Code) is used for automated mail sort process in UK. |549755813888 |
+|RM4SCC |Represents RM4SCC barcode. RM4SCC (Royal Mail 4-state Customer Code) is used for automated mail sort process in the UK. |549755813888 |
 |DatabarOmniDirectional |Specifies that the data should be encoded with barcode specification |1099511627776 |
 |DatabarTruncated |Specifies that the data should be encoded with barcode specification |2199023255552 |
 |DatabarLimited |Represents Databar expanded barcode |4398046511104 |

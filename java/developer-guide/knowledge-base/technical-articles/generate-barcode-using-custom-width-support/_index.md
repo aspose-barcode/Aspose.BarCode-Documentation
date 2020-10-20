@@ -23,8 +23,8 @@ Barcodes with custom widths support these properties:
 
 
 Below are code snippets that create custom width bar code.
-#### **Create an Image With Exact Barcode Only**
-#### **Java**
+## **Create an Image With Exact Barcode Only**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-CreateAnImageWithExactBarcodeOnly-CreateAnImageWithExactBarcodeOnly.java" >}}
 
 **Sample image** 
@@ -32,8 +32,8 @@ Below are code snippets that create custom width bar code.
 ![todo:image_alt_text](generate-barcode-using-custom-width-support_1.png)
 
 Below are code snippets that create custom width barcode.
-#### **Create and Set Size for the Whole Picture With Barcode**
-#### **Java**
+## **Create and Set Size for the Whole Picture With Barcode**
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-CreateAndSetSizeForWholePictureWithBarcode-CreateAndSetSizeForWholePictureWithBarcode.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/0l1F7rQ.png)|

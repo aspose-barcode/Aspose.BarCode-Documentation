@@ -11,11 +11,8 @@ When an image has several barcodes users might want to read them in a particular
 
 {{% /alert %}} 
 
-Below is the code snippet that read barcodes in a specific order.
-### **Read and Sort Barcodes in a Specific Order**
-#### **Java**
+The code examples given below demonstrate how to read barcodes in a specific order.
+
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-FoundBarCodes-FoundBarCodes.java" >}}
 
-
-#### **Java**
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-Src-main-java-com-aspose-barcode-examples-technical_articles-ReadAndSortBarcodesInSpecificOrder-ReadAndSortBarcodesInSpecificOrder.java" >}}

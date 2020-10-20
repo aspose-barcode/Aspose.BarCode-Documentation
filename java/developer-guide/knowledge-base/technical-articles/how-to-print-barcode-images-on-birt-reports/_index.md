@@ -18,9 +18,9 @@ The following tools are needed in order to complete this tutorial:
 1. Aspose.BarCode for Java
 
 {{% /alert %}} 
-### **Designing the Report**
+## **Designing the Report**
 The first step is to design the report that the barcodes will be displayed in. When the report is prepared, [write the code](/barcode/java/how-to-print-barcode-images-on-birt-reports/) that adds the barcodes dynamically.
-#### **Create New Project**
+### **Create New Project**
 To design the report:
 
 1. Open Eclipse, if it’s not opened already.
@@ -30,7 +30,7 @@ To design the report:
 |![todo:image_alt_text](http://i.imgur.com/24UlWHB.png)|
 | :- |
 1. Give the project a name and finish the New Project Wizard.
-##### **Add New Report to the Project**
+### **Add New Report to the Project**
 To add a report to the project:
 
 1. Open the Navigator, right-click on the Report Project created above.
@@ -41,14 +41,14 @@ To add a report to the project:
 
 |![todo:image_alt_text](http://i.imgur.com/5D3qzbF.png)|
 | :- |
-##### **Add New Data Source**
+### **Add New Data Source**
 The new report is displayed in the layout view. It has four columns but no data.
 
 1. In Eclipse, open the Data Explorer.
 1. Right-click the Data Sources node and select **New Data Source** from the menu.
 1. Choose **Classic Models Inc. Sample Database** from the data source list.
 1. Click **Next** and then **Finish** to exit the data source wizard.
-##### **Add New Data Set**
+### **Add New Data Set**
 To add a data set:
 
 1. Click the **Data Sets** node in the Data Explorer and select **New Data Set**.
@@ -65,7 +65,7 @@ To add a data set:
 
 |![todo:image_alt_text](http://i.imgur.com/0oPGQ4G.png)|
 | :- |
-##### **Preview Report**
+### **Preview Report**
 1. Open the Data Explorer window.
 1. Open the new data set.
    You should see the fields from the **Customers** table.
@@ -75,12 +75,12 @@ To add a data set:
 | :- |
 1. Click the **Preview** tab.
    You should see a list of customers on the report.
-##### **Add New Column for Barcode**
+### **Add New Column for Barcode**
 Add a new column to the report, where the barcode images will be displayed:
 
 1. In layout view, right-click the table header of the **Phone** column and choose **Insert** followed by **Column to the Right**.
 1. Insert a new label in the column header and set its value to **Barcode**.
-##### **Add Image**
+### **Add Image**
 1. In the detail row, barcode column, add a new image from the Palette window. The Edit Image Item screen opens.
 1. Select **Dynamic Image** from the list.
 
@@ -115,9 +115,9 @@ Add a new column to the report, where the barcode images will be displayed:
 1. Save the report.
 
 That completes the report design.
-### **Insert BarCode Images Dynamically in the BIRT Report**
+## **Insert BarCode Images Dynamically in the BIRT Report**
 Use the BIRT runtime engine and Aspose.BarCode for Java to generate the barcode images and insert into the newly created report.
-#### **Create a New .Java File**
+### **Create a New .Java File**
 1. Create a new Java project in Eclipse.
 1. Create a new Java file.
 1. Add the following code to the Java program file.
@@ -246,7 +246,7 @@ finally
 }
 
 {{< /highlight >}}
-#### **Output**
+### **Output**
 The PDF report is generated on the specified location after the program is compiled and run successfully.
 
 A screenshot of the PDF report is shown below.
