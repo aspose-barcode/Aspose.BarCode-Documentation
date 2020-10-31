@@ -40,7 +40,7 @@ Then define Aspose.BarCode for Java API dependency in your **pom.xml** as follow
 
         <artifactId>aspose-barcode</artifactId>
 
-        <version>20.9</version>
+        <version>20.10</version>
 
 		<classifier>jdk17</classifier>
 
