@@ -1,6 +1,8 @@
 ---
 title: QR and Micro QR Barcode
 type: docs
+aliases:
+ - /.net/qr-and-micro-qr-barcode/
 weight: 40
 url: /net/qr-and-micro-qr-barcode/
 ---
