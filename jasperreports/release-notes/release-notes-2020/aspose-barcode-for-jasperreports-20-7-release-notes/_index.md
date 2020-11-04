@@ -1,6 +1,8 @@
 ---
 title: Aspose.BarCode for JasperReports 20.7 - Release Notes
 type: docs
+aliases:
+ - /display/barcodejasperreports/Aspose.BarCode+for+JasperReports+20.7+-+Release+Notes
 weight: 7
 url: /jasperreports/aspose-barcode-for-jasperreports-20-7-release-notes/
 ---
