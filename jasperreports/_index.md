@@ -1,6 +1,10 @@
 ---
 title: Aspose.BarCode for JasperReports
 type: docs
+aliases:
+ - /jasperreports/Home/
+ - /jasper-reports/Home/
+ - /jasper-reports/
 weight: 70
 url: /jasperreports/
 is_root: true
