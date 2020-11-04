@@ -1,6 +1,8 @@
 ---
 title: Creating Two Dimensional (2D) Barcodes
 type: docs
+aliases: 
+ - /java/creating-two-dimensional-282d-29-barcodes/
 weight: 10
 url: /java/creating-two-dimensional-2d-barcodes/
 ---
