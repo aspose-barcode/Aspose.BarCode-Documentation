@@ -1,6 +1,8 @@
 ---
 title: Read Barcodes with Aspose.BarCode APIs
 type: docs
+aliases:
+ - /node/read-barcodes-with-aspose-barcode-apis/
 description: "This article explains How to scan a barcode from a picture, read barcode from the stream, barcode recognition symbologies, get all Possible 1D Barcodes from an Image, Detect Dot Peen Datamatrix Barcode and Recognizing Barcode in WPF Project."
 keywords: "read barcode, Read Barcode from Stream, scan barcode from image, Multiple barcodes in Single Image, detect all Possible Barcodes, detect dot peen barcode, Reading Multiple Macropdf417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
 weight: 10
