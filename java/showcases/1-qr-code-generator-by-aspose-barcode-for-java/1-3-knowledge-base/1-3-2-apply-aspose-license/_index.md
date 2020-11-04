@@ -1,6 +1,8 @@
 ---
 title: 1.3.2. Apply Aspose License
 type: docs
+aliases:
+ - /java/1-3-2-apply-aspose-license-html/
 weight: 20
 url: /java/1-3-2-apply-aspose-license/
 ---
