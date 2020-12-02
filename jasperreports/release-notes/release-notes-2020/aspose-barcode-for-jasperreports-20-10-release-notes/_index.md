@@ -7,7 +7,7 @@ url: /jasperreports/aspose-barcode-for-jasperreports-20-10-release-notes/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for Aspose.BarCode for JasperReports 20.8 based on features from [Aspose.BarCode for Java 20.10](https://downloads.aspose.com/barcode/java/new-releases/aspose.barcode-for-java-20.10/).
+This page contains release notes information for Aspose.BarCode for JasperReports 20.10 based on features from [Aspose.BarCode for Java 20.10](https://downloads.aspose.com/barcode/java/new-releases/aspose.barcode-for-java-20.10/).
 
 {{% /alert %}} 
 ## **All Changes**
