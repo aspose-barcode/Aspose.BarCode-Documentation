@@ -2,7 +2,7 @@
 title: Aspose.BarCode for Python via Java
 type: docs
 weight: 100
-url: /phthonjava/
+url: /pythonjava/
 is_root: true
 ---
 
