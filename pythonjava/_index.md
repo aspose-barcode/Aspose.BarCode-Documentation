@@ -8,8 +8,6 @@ is_root: true
 
 {{% alert color="primary" %}} 
 
-
-
 ![todo:image_alt_text](aspose_barcode-for-python-via-java-128.png)
 
 **Welcome to Aspose.BarCode for Python via Java**
@@ -19,7 +17,7 @@ Aspose.Barcode for Python via Java is implemented by using the python-java bridg
 {{% /alert %}} 
 
 
-## **Aspose.BarCode for Python via Java Resources**
+**Aspose.BarCode for Python via Java Resources**
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for Python via Java Features](/barcode/pythonjava/features/)
