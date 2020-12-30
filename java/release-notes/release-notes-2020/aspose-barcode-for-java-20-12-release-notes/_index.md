@@ -23,10 +23,10 @@ This page contains release notes information for [Aspose.BarCode for Java 20.12]
 
 
 ## **Public API and Backward Incompatible Changes**
-- Added type com.aspose.barcode.MacroCharacter
-- Added field com.aspose.barcode.MacroCharacter.NONE
-- Added field com.aspose.barcode.MacroCharacter.MACRO_05
-- Added field com.aspose.barcode.MacroCharacter.MACRO_06
+- Added enum com.aspose.barcode.MacroCharacter
+- Added value com.aspose.barcode.MacroCharacter.NONE
+- Added value com.aspose.barcode.MacroCharacter.MACRO_05
+- Added value com.aspose.barcode.MacroCharacter.MACRO_06
 - Added method com.aspose.barcode.generation.DataMatrixParameters.getMacroCharacters()
 - Added method com.aspose.barcode.generation.DataMatrixParameters.setMacroCharacters(com.aspose.barcode.MacroCharacter)
 - Added method com.aspose.barcode.generation.DataBarParameters.is2DCompositeComponent()
@@ -34,7 +34,7 @@ This page contains release notes information for [Aspose.BarCode for Java 20.12]
 - Added method com.aspose.barcode.generation.DataBarParameters.isAllowOnlyGS1Encoding()
 - Added method com.aspose.barcode.generation.DataBarParameters.setAllowOnlyGS1Encoding(boolean)
 - Added method com.aspose.barcode.barcoderecognition.BarCodeExtendedParameters.getDataBar()
-- Added type com.aspose.barcode.barcoderecognition.DataBarExtendedParameters
+- Added class com.aspose.barcode.barcoderecognition.DataBarExtendedParameters
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.is2DCompositeComponent()
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.set2DCompositeComponent(boolean)
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.equals(java.lang.Object)
