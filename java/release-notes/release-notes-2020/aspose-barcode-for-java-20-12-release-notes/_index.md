@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for Java 20.12 Release Notes
 type: docs
-weight: 5
+weight: 4
 url: /java/aspose-barcode-for-java-20-12-release-notes/
 ---
 
