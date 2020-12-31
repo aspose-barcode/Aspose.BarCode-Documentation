@@ -22,10 +22,10 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 
 
 ## **Public API and Backward Incompatible Changes**
-- Added class com.aspose.barcode.MacroCharacter
-- Added const com.aspose.barcode.MacroCharacter.NONE
-- Added const com.aspose.barcode.MacroCharacter.MACRO_05
-- Added const com.aspose.barcode.MacroCharacter.MACRO_06
+- Added class Generator.MacroCharacter
+- Added const Generator.MacroCharacter.NONE
+- Added const Generator.MacroCharacter.MACRO_05
+- Added const Generator.MacroCharacter.MACRO_06
 - Added function Generator.DataMatrixParameters.getMacroCharacters() : int
 - Added function Generator.DataMatrixParameters.setMacroCharacters(int)
 - Added function Generator.DataBarParameters.is2DCompositeComponent() : bool
