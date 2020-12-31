@@ -36,7 +36,6 @@ This page contains release notes information for [Aspose.BarCode for Java 20.12]
 - Added method com.aspose.barcode.barcoderecognition.BarCodeExtendedParameters.getDataBar()
 - Added class com.aspose.barcode.barcoderecognition.DataBarExtendedParameters
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.is2DCompositeComponent()
-- Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.set2DCompositeComponent(boolean)
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.equals(java.lang.Object)
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.op_Equality(com.aspose.barcode.barcoderecognition.DataBarExtendedParameters,com.aspose.barcode.barcoderecognition.DataBarExtendedParameters)
 - Added method com.aspose.barcode.barcoderecognition.DataBarExtendedParameters.op_Inequality(com.aspose.barcode.barcoderecognition.DataBarExtendedParameters,com.aspose.barcode.barcoderecognitionn.DataBarExtendedParameters)
