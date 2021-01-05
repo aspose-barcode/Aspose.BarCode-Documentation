@@ -81,7 +81,7 @@ The following are the links to some useful resources you may need to accomplish 
 ## Aspose.BarCode for Android via Java
 {{% alert color="primary" %}}
 
-![Aspose.BarCode for Java Product Logo](aspose_barcode_androidjava.png)
+<img src="aspose_barcode-for-android-via-java.png" alt="Aspose.BarCode for Android via Java" style="zoom:50%;" />
 
 Welcome to Aspose.BarCode for Android via Java
 
