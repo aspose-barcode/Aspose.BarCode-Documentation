@@ -59,7 +59,7 @@ Following are the links to some useful resources you may need to accomplish your
 ## Aspose.BarCode for C++
 {{% alert color="primary" %}}
 
-![Aspose.BarCode for Java Product Logo](aspose_barcode-for-cpp.png)
+<img src="aspose_barcode-for-cpp" alt="Aspose.Words for SharePoint" style="zoom:50%;" />
 
 Welcome to Aspose.BarCode for C++
 
