@@ -13,7 +13,7 @@ url: /
 
 Welcome to Aspose.BarCode for .NET
 
-Aspose.BarCode for .NET is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their .NET applications. Aspose.BarCode provides GUI based controls for displaying barcodes in Windows Forms and exposes a simple set of classes that allow developers to create barcodes on the backend. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for .NET doesn't just create barcodes but it provides a complete framework to control almost everything about them. 
+Aspose.BarCode for .NET is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their .NET applications. Aspose.BarCode provides GUI based controls for displaying barcodes in Windows Forms and exposes a simple set of classes that allow developers to create barcodes on the backend. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for .NET does not just create barcodes but it provides a complete framework to control almost everything about them. 
 
 {{% /alert %}} 
 
@@ -36,11 +36,11 @@ The following are the links to some useful resources you may need to accomplish 
 
 Welcome to Aspose.BarCode for Java
 
-Aspose.BarCode for Java is a robust and reliable barcode generation and recognition component, written in Java, it allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications. It is available for the Java SE, Java EE and Java ME platforms.
+Aspose.BarCode for Java is a robust and reliable barcode generation and recognition component, written in Java, it allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications. It is available for the Java SE, Java EE, and Java ME platforms.
 
-Aspose.BarCode for Java supports most established barcode standards and barcode specifications. It has the ability to export to multiple image formats including: BMP, GIF, JPEG, PNG and TIFF.
+Aspose.BarCode for Java supports the most established barcode standards and barcode specifications. It can export to multiple image formats including: BMP, GIF, JPEG, PNG, and TIFF.
 
-This section introduces Aspose.BarCode for Java and its features, gives examples as case studies and lists some customers who choose to use Aspose.BarCode in their solutions. This section also includes information about Aspose.BarCode for Java [installation](https://docs.aspose.com/barcode/java/installation/), [evaluation](https://docs.aspose.com/barcode/java/licensing/) and [licensing](https://docs.aspose.com/barcode/java/licensing/). 
+This section introduces Aspose.BarCode for Java and its features, gives examples as case studies, and lists some customers who choose to use Aspose.BarCode in their solutions. This section also includes information about Aspose.BarCode for Java [installation](https://docs.aspose.com/barcode/java/installation/), [evaluation](https://docs.aspose.com/barcode/java/licensing/) and [licensing](https://docs.aspose.com/barcode/java/licensing/). 
 
 {{% /alert %}} 
 
@@ -57,11 +57,109 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.BarCode for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.BarCode for C++
+{{% alert color="primary" %}}
+
+![Aspose.BarCode for Java Product Logo](aspose_barcode-for-cpp.png)
+
+Welcome to Aspose.BarCode for C++
+
+Aspose.BarCode for C++ is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their C++ applications. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for C++ does not just create barcodes but it provides a complete framework to control almost everything about them. The API is easy to use, installable on different platforms, and has a rich functionality as compared to other commercially available software.
+
+{{% /alert %}} 
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for C++ Online Documentation](/barcode/cpp/)
+- [Aspose.BarCode for C++ Features](/barcode/cpp/product-overview/)
+- [Aspose.BarCode for C++ Release Notes](/barcode/cpp/release-notes/)
+- [Aspose.BarCode for C++ Product Page](https://products.aspose.com/barcode/cpp)
+- [Install Aspose.BarCode for C++ NuGet Package](https://www.nuget.org/packages/Aspose.barcode.Cpp/)
+- [Aspose.BarCode for C++ API Reference Guide](https://apireference.aspose.com/cpp/barcode)
+- [Aspose.BarCode for C++ Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.BarCode for Android via Java
+{{% alert color="primary" %}}
+
+![Aspose.BarCode for Java Product Logo](aspose_barcode_androidjava.png)
+
+Welcome to Aspose.BarCode for Android via Java
+
+Aspose.BarCode for Android via Java API gives you the tools you need to generate barcode images and recognize barcodes from within Android applications. You can not only generate barcodes of different types, but also control the size of bars in the barcodes and overall barcode images. You can also customize the appearance of barcode text on barcode images.
+
+{{% /alert %}} 
+
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for Java Online Documentation](/barcode/java) (Aspose.BarCode for Android via Java is very similar to Aspose.BarCode for Java. So, you can use the same documentation)
+- [Aspose.BarCode for Android via Java Features](/barcode/java/aspose-barcode-for-android-via-java-features)
+- [Aspose.BarCode for Android via Java Release Notes](/barcode/java/android-via-java-release-notes)
+- [Aspose.BarCode for Android via Java Product Page](https://products.aspose.com/barcode/android-java)
+- [Aspose.BarCode for Android via Java API Reference Guide](https://apireference.aspose.com/java/barcode) 
 
 ## Aspose.BarCode for ReportingServices
+{{% alert color="primary" %}} 
+
+![Aspose.BarCode for Reporting Services](aspose-BarCode-for-ReportingSerices.png)
+
+Welcome to Aspose.BarCode for Reporting Services
+
+Aspose.BarCode for Reporting Services is a unique and robust solution for making your reports unique and more professional. It allows developers to display high-quality barcode labels on SQL reports. These barcode labels can be rendered in various formats: BMP, JPEG, GIF, and PNG.
+
+{{% /alert %}} 
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for Reporting Services Online Documentation](/barcode/reportingservices/)
+- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/features/)
+- [Aspose.BarCode for Reporting Services Release Notes](/barcode/reportingservices/release-notes/)
+- [Aspose.BarCode for Reporting Services Product Page](https://products.aspose.com/barcode/reporting-services)
+- [Download Aspose.BarCode for Reporting Services](https://downloads.aspose.com/barcode/reportingservices)
+- [Aspose.BarCode for Reporting Services Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for Reporting Services Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.BarCode for SharePoint
+{{% alert color="primary" %}}
+
+![Aspose.BarCode for SharePoint](aspose-BarCode-for-SharePoint.png)
+
+Welcome to Aspose.BarCode for SharePoint
+
+Aspose.BarCode for SharePoint is a flexible solution that allows you to add barcode type columns to SharePoint lists.
+
+Aspose.BarCode for SharePoint is designed to be used with Microsoft SharePoint Server 2010. There are no additional system requirements.
+
+{{% /alert %}} 
+
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for SharePoint Online Documentation](/barcode/sharepoint/)
+- [Aspose.BarCode for SharePoint Features](/barcode/sharepoint/features/)
+- [Aspose.BarCode for SharePoint Release Notes](/barcode/sharepoint/release-notes/)
+- [Aspose.BarCode for SharePoint Product Page](https://products.aspose.com/barcode/sharepoint)
+- [Download Aspose.BarCode for SharePoint](https://downloads.aspose.com/barcode/sharepoint)
+- [Aspose.BarCode for SharePoint Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for SharePoint Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.BarCode for JasperReports
+{{% alert color="primary" %}} 
+
+![Aspose.BarCode for JasperReports](aspose-BarCode-for-JasperReports.png)
+
+Welcome to the Aspose.BarCode for JasperReports
+
+Aspose.BarCode for JasperReports provides a unique and robust solution to make your reports unique and more professional. It allows developers to display high-quality barcode labels on JasperReports. These barcode labels can be rendered in several formats: BMP, JPEG, GIF, and PNG. Aspose.BarCode for JasperReports is a very lightweight component that supports more than 25 types of most popular barcode symbologies.
+
+{{% /alert %}} 
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for JasperReports Online Documentation](/barcode/jasperreports/)
+- [Aspose.BarCode for JasperReports Features](/barcode/jasperreports/features/)
+- [Aspose.BarCode for JasperReports Release Notes](/barcode/jasperreports/release-notes/)
+- [Aspose.BarCode for JasperReports Product Page](https://products.aspose.com/barcode/jasperreports)
+- [Download Aspose.BarCode for JasperReports](https://downloads.aspose.com/barcode/jasperreports)
+- [Aspose.BarCode for JasperReports Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for JasperReports Paid Support Helpdesk](https://helpdesk.aspose.com/)
