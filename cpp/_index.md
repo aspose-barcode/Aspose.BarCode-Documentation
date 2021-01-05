@@ -23,6 +23,8 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.BarCode for C++ Release Notes](/barcode/cpp/release-notes/)
 - [Aspose.BarCode for C++ Product Page](https://products.aspose.com/barcode/cpp)
 - [Install Aspose.BarCode for C++ NuGet Package](https://www.nuget.org/packages/Aspose.barcode.Cpp/)
+- [Download Aspose.BarCode for C++](https://downloads.aspose.com/barcode/cpp)
+- [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.Barcode-for-C)
 - [Aspose.BarCode for C++ API Reference Guide](https://apireference.aspose.com/cpp/barcode)
 - [Aspose.BarCode for C++ Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)

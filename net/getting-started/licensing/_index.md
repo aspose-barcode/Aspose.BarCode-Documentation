@@ -25,18 +25,18 @@ Aspose.BarCode tries to find the license in the following locations:
 ### **Applying a License**
 #### **Applying a License from File or Stream**
 The easiest way to apply a license is to put the license file in the same folder as that of Aspose.BarCode.dll and specify just the file name without a path.
-**C#**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ApplyingLicenseUsingFile.cs" >}}
 
 It is also possible to load a license from a stream.
-**C#**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ApplyingLicenseUsingStream.cs" >}}
 
 #### **Setting a License Using an Embedded Resource**
 Another neat way of packaging the license with the application and making sure it is not lost, is to include it as an embedded resource into one of the assemblies that calls Aspose.BarCode. To include the license file as an embedded resource, perform the following steps:
 
 1. In Visual Studio .NET, include the license (.lic) file into the project by selecting **Add Existing Item** from the **File** menu.
-1. Select the file in the Solution Explorer.
+1. Select the file in Solution Explorer.
 1. Set **Build Action to Embedded Resource** in the Properties window.
 
 To access the license embedded in the assembly (as an embedded resource), it is not necessary to call the Microsoft .NET Framework's System.Reflection.Assembly class' GetExecutingAssembly and GetManifestResourceStream methods. Instead, just add the license file as an embedded resource to your project and pass the name of the license file into the SetLicense method. The License class automatically finds the license file in the embedded resources.
@@ -48,8 +48,6 @@ The license needs to be set only once per application or process. For desktop ap
 [Aspose.BarCode for .NET API](/barcode/net/) allow developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
 A new class **Metered** has been introduced to apply the metered key. Following is the sample code demonstrating how to set metered public and private keys.
-
-**[C#]**
 
 {{< highlight csharp >}}
     // set metered public and private keys
