@@ -26,7 +26,7 @@ The size of a barcode image depends on many factors. Mainly the following settin
 
 - Metrics
 - The resolution, the higher resolution will lead to a larger image on the same screen or printer.
-- GraphicsUnit, whether all the settings are based on millimetre or inches etc.
+- GraphicsUnit, whether all the settings are based on millimetres or inches etc.
 - The overall image
 - AutoSize, set to false means the image's size is fixed to ImageWidth * ImageHeight. Oversized barcode (e.g. CodeText very long) will be out of the frame if AutoSize is false and the size not large enough
 - ImageWidth, only valid when AutoSize set to false
@@ -44,21 +44,22 @@ The size of a barcode image depends on many factors. Mainly the following settin
 
 {{% /alert %}} 
 
-Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. e.g. DataMatrix is square based type of barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. BarcodeGenerator will simply ignore those illegal settings and decide on its own during the process.
+Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. e.g. DataMatrix is a square-based type of barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. BarcodeGenerator will simply ignore those illegal settings and decide on its own during the process.
 ## **Setting Aspect Ratio of Barcodes**
-The Aspect Ratio of a barcode is the width:height ratio. We can control how tall or wide the barcode can be generated using the Aspect Ratio. 3:2 Aspect Ratio means the barcode is 1.5 or 3/2 times wider than taller. Or the width of the barcode is 1.5 times larger than the height. Below is a Pdf417 barcode with 1.5 Aspect Ratio:
+The Aspect Ratio of a barcode is the width:height ratio. We can control how tall or wide the barcode can be generated using the Aspect Ratio. 3:2 Aspect Ratio means the barcode is 1.5 or 3/2 times wider than taller. Or the width of the barcode is 1.5 times larger than the height. Below is a PDF417 barcode with a 1.5 Aspect Ratio:
 
 |**BarCode with Aspect Ratio of 1.5**|
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_2.png)|
-2 Aspect Ratio means the width of the barcode is 2 times greater than the height. Below is the Pdf417 barcode with Aspect Ratio of 2.
+2 Aspect Ratio means the width of the barcode is 2 times greater than the height. Below is the PDF417 barcode with an Aspect Ratio of 2.
 
 |**BarCode with Aspect Ratio of 2**|
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_3.png)|
-The code snippet in C# and VB.NET to set the Aspect Ratio is given below:
+The code snippet given below demonstrates how to set the Aspect Ratio:
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-SetAspectRatio-SetAspectRatio.cs" >}}
+
 ## **Detect Unicode Encoding of Barcode**
 Aspose.BarCode API allows developers to detect the Unicode encoding. The flag works for QR/Micro QR at the moment.
 
@@ -71,6 +72,6 @@ In case, the detect encoding flag is enabled the barcode engine returns Unicode 
 
 The flag is enabled by default. In case the flag is disabled the engine returns plain text without encoding detection.
 
-The code example below demonstrates to get the plain text without encoding detection
+The code example given below demonstrates how to get the plain text without encoding detection.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-DetectUnicodeEncoding-DetectUnicodeEncoding.cs" >}}
