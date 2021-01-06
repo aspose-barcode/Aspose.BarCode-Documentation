@@ -51,9 +51,9 @@ Although Aspose.BarCode references .NET Framework 1.1, it is possible to use it 
 - ASP.NET-hosted application: ASP.NET configuration files are called Web.config and placed in the application directory as well.
 
 Enter the following XML in the application configuration file:
-### **XML**
+
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "TargetFramework.xml" >}}
 
 
 ## **See Also**
-For more information see the MSDN article [http://msdn.microsoft.com/library/default.asp?url/library/en-us/cpguide/html/cpcontargetingnetframeworkversion.asp](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpcontargetingnetframeworkversion.asp).
+For more information see the MSDN article [https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting).

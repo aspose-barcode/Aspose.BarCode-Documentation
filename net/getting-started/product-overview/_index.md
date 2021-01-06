@@ -64,7 +64,7 @@ Aspose.BarCode for .NET supports the most established barcode standards and barc
 ### **Utility Features**
 - Save barcode images to streams.
 ### **Platforms Supported**
-- Window Forms
+- Windows Forms
 - WPF
 ## **Supported Barcode Symbologies**
 ### **Numeric Only Symbologies**

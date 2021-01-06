@@ -13,7 +13,7 @@ The evaluation version of Aspose.BarCode only supports Code39 barcode recognitio
 ## **Applying a License**
 When you call the SetLicense method, the license name should be the same as that of your license file name. For example, you may change the license file name to "Aspose.BarCode.lic.xml". Then in your code, you should use the modified license name (that is Aspose.BarCode.lic.xml) for the SetLicense method.
 ### **Setting a License in Aspose.BarCode for .NET**
-The license is a plain-text XML file that contains details such as the product name, number of developers it is licensed for, subscription expiry date and so on. The file is digitally signed, so don't modify it. Even inadvertently adding an extra line break into the file invalidates it. You need to apply a license before generating barcodes without the evaluation watermark. You only have to apply a license once per application (or process). The license can be loaded from a [file](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream), [stream](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream) or an [embedded resource](https://docs.aspose.com/barcode/net/licensing/#setting-a-license-using-an-embedded-resource).
+The license is a plain-text XML file that contains details such as the product name, number of developers it is licensed for, subscription expiry date and so on. The file is digitally signed, so do not modify it. Even inadvertently adding an extra line break into the file invalidates it. You need to apply a license before generating barcodes without the evaluation watermark. You only have to apply a license once per application (or process). The license can be loaded from a [file](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream), [stream](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream) or an [embedded resource](https://docs.aspose.com/barcode/net/licensing/#setting-a-license-using-an-embedded-resource).
 
 Aspose.BarCode tries to find the license in the following locations:
 
@@ -36,7 +36,7 @@ It is also possible to load a license from a stream.
 Another neat way of packaging the license with the application and making sure it is not lost, is to include it as an embedded resource into one of the assemblies that calls Aspose.BarCode. To include the license file as an embedded resource, perform the following steps:
 
 1. In Visual Studio .NET, include the license (.lic) file into the project by selecting **Add Existing Item** from the **File** menu.
-1. Select the file in the Solution Explorer.
+1. Select the file in Solution Explorer.
 1. Set **Build Action to Embedded Resource** in the Properties window.
 
 To access the license embedded in the assembly (as an embedded resource), it is not necessary to call the Microsoft .NET Framework's System.Reflection.Assembly class' GetExecutingAssembly and GetManifestResourceStream methods. Instead, just add the license file as an embedded resource to your project and pass the name of the license file into the SetLicense method. The License class automatically finds the license file in the embedded resources.
@@ -48,8 +48,6 @@ The license needs to be set only once per application or process. For desktop ap
 [Aspose.BarCode for .NET API](/barcode/net/) allow developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
 A new class **Metered** has been introduced to apply the metered key. Following is the sample code demonstrating how to set metered public and private keys.
-
-**[C#]**
 
 {{< highlight csharp >}}
     // set metered public and private keys

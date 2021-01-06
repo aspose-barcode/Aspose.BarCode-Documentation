@@ -17,7 +17,7 @@ All examples of Aspose.BarCode for .NET are hosted on [GitHub](https://github.co
 
 - You can either clone the repository using your favourite GitHub client or download the ZIP file from [here](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/archive/master.zip).
 - Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
-- There is a Visual Studio solution files, Aspose.BarCode.Examples.CSharp.sln in the folder.
+- There is a Visual Studio solution file, Aspose.BarCode.Examples.CSharp.sln in the folder.
 - The project is created in Visual Studio 2013, but the solution file is compatible with Visual Studio 2010 SP1 and higher.
 - Open the solution file in Visual Studio and build the project.
 - On the first run, the dependencies will automatically be downloaded via NuGet.

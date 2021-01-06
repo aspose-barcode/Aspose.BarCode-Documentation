@@ -31,7 +31,7 @@ The following is the list of Barcode symbologies supported for barcode generatio
 |SSCC18|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |ITF14|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |BarCode supplement|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|Pdf417|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|PDF417|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |QR|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |Datamatrix|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |Matrix 2 of 5|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
