@@ -14,7 +14,7 @@ Aspose.Barcode API lets you generate barcodes keeping in view real use cases lik
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-GenerateBarcodeWithoutRestrictedBarcodeSize.cs" >}}
 ### **Get Generated Barcode Size**
-if you just want to know the barcode size without saving the image you can call method RecalculateValues() and get the barcode size.
+if you just want to know the barcode size without saving the image you can call the RecalculateValues() method and get the barcode size.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-GetGeneratedBarcodeSize.cs" >}}
 ### **Units based Barcode Generation**
@@ -22,7 +22,7 @@ All measurement values can be get and set in pixels, millimeters, inches at the 
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-UnitBasedBarcodeGenerateion.cs" >}}
 ### **Grouping Properties by Barcode Type**
-Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the API for new users.
+Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the APIs for new users.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-GenerateCustomBarcodes-GroupingPropertiesByBarcodeType.cs" >}}
 ### **Getting Default Text for Generated Barcode**

@@ -1,6 +1,8 @@
 ---
 title: Generate Barcodes with Aspose.BarCode APIs
 type: docs
+description: "Aspose.BarCode for .NET allows generating barcode in C# Console Applications, Windows Forms, and WPF."
+keywords: "How to Generate Barcodes in C# .NET, Generate a Simple Barcode or QR, Use Advanced Settings to Style and Customize your Barcode, Implement Complex Barcodes, Generate Barcode in C#, Aspose.BarCode, C#"
 weight: 10
 url: /net/generate-barcodes-with-aspose-barcode-apis/
 ---
@@ -24,8 +26,6 @@ Aspose.BarCode contains a control class, [BarCodeControl](https://apireference.a
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "HowToApplyLicense.cs" >}}
 
-
-
 - Set the CodeText of the barcode using the Properties window
 
 {{% alert color="primary" %}} 
@@ -34,7 +34,7 @@ If you can't see Aspose.BarCode controls in the Toolbox of Visual Studio.NET the
 
 {{% /alert %}} 
 ## **Generate Barcode in C# WPF**
-Aspose.BarCode also ships with a DLL for the Microsoft WPF framework to make it possible to build WPF-based barcode applications. Aspose.BarCode.WPF.dll should be referred in WPF applications for BarCode generation and recognition. To use barcode in the WPF application please follow the steps given below.
+Aspose.BarCode also ships with a DLL for the Microsoft WPF framework to make it possible to build WPF-based barcode applications. Aspose.BarCode.WPF.dll should be referenced in WPF applications for BarCode generation and recognition. To use barcode in the WPF application please follow the steps given below.
 
 1. Create a new WPF application in Visual Studio 2008 as seen in the figure below.
 1. Add a reference to Aspose.BarCode.WPF.dll by right-clicking the project and selecting **Add Reference**.
