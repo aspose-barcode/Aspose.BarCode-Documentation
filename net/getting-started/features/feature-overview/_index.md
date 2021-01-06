@@ -5,7 +5,7 @@ weight: 10
 url: /net/feature-overview/
 ---
 
-The tables below summarize the availability of features of Aspose.BarCode for .NET and link to supported Barcode generation and recognition symbologies.
+The tables below summarize the availability of features of Aspose.BarCode for .NET and links to supported Barcode generation and recognition symbologies.
 
 **Features Summary**
 

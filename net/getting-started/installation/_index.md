@@ -9,7 +9,6 @@ url: /net/installation/
 NuGet is the easiest way to download and install Aspose .NET APIs. **Open** Microsoft Visual Studio. Select **TOOLS** menu, goto **NuGet Package Manager** and select **Manage NuGet packages for solution**. Search 'aspose.barcode' keyword. This will find the desired Aspose API. Click on the "Install" button, the selected API will be downloaded and referenced in your project.
 
 ![todo:image_alt_text](installation_1.jpg)
-
 ## **Install or Update Aspose.BarCode using the Package Manager Console**
 You can follow the steps below to install or upgrade the Aspose.BarCode API using the package manager console:
 Open your solution/project in Visual Studio.
@@ -27,11 +26,10 @@ You should now find that Aspose.BarCode has successfully been added and referenc
 ![todo:image_alt_text](installation_4.jpg)
 
 In the package manager console, you can use the command **Update-Package Aspose.BarCode.NET** and press enter to check for any updates to the Aspose.BarCode package and install them if present. You can also add the "-prerelease" suffix to update the latest release.
-
 ## **Referencing the Component**
 By following the steps given below, one can add a reference to the Visual Studio .NET project:
 
-1. In Solution Explorer, expand the project node you want to add a reference to.
+1. In the Solution Explorer, expand the project node you want to add a reference to.
 1. Right-click **References** node for the project and select **Add Reference** menu item.
 1. In the Add Reference dialog box, select the **.NET** tab (usually selected by default).
 1. If you have used the MSI installer to install Aspose.BarCode, you will see Aspose.BarCode in the top pane. Select it and click the **Select** button.
@@ -39,7 +37,6 @@ By following the steps given below, one can add a reference to the Visual Studio
    You have referenced Aspose.BarCode and it should appear in the **SelectedComponents** pane of the dialog box.
 1. Click **OK**.
 1. An Aspose.BarCode reference appears under the **References** node of the project.
-
 ## **Uninstalling Aspose.BarCode for .NET**
 If you have used MSI installer to deploy Aspose.BarCode, follow these steps to completely remove the component and the associated demos and documentation:
 
@@ -47,7 +44,6 @@ If you have used MSI installer to deploy Aspose.BarCode, follow these steps to c
 1. Click **Add/Remove Programs**.
 1. Select Aspose.BarCode.
 1. Click **Change/Remove** to remove Aspose.BarCode.
-
 ## **Targeting Specific .NET Framework Version**
 Although Aspose.BarCode references .NET Framework 1.1, it is possible to use it on a machine with only version 1.0 installed. But you need to add an entry to the application configuration file to redirect the references because otherwise, the component will try to load assemblies from .NET Framework 1.1. Each assembly that makes up the .NET Framework must be redirected to use .NET Framework version 1.0. The configuration file is an XML file that can be changed as needed. Developers can use it to change settings without recompiling applications. The name and location of the application configuration file depending on the application's host, which can be one of the following:
 
@@ -55,9 +51,9 @@ Although Aspose.BarCode references .NET Framework 1.1, it is possible to use it 
 - ASP.NET-hosted application: ASP.NET configuration files are called Web.config and placed in the application directory as well.
 
 Enter the following XML in the application configuration file:
-
+### **XML**
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "TargetFramework.xml" >}}
 
 
 ## **See Also**
-For more information see the MSDN article [https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting).
+For more information see the MSDN article [http://msdn.microsoft.com/library/default.asp?url/library/en-us/cpguide/html/cpcontargetingnetframeworkversion.asp](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpcontargetingnetframeworkversion.asp).

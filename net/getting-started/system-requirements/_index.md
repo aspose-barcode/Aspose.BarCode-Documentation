@@ -6,7 +6,7 @@ url: /net/system-requirements/
 ---
 
 ## **Overview**
-Aspose.BarCode for .NET is a robust and reliable barcode generation and recognition component, written in managed C#, it allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, WPF, and .NET Core). 
+Aspose.BarCode for .NET is a robust and reliable barcode generation and recognition component, written in managed C#, it allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, WPF and .NET Core). 
 ## **Supported Operating Systems**
 Aspose.BarCode for .NET supports any 32-bit or 64-bit operating system where the .NET framework is installed including, but not limited to:
 ### **Windows**

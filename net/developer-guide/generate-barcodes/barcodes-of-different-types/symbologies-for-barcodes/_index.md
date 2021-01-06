@@ -36,7 +36,7 @@ Aspose.BarCode supports nearly all popular barcode symbologies. All barcode gene
 |Datamatrix|Specifies that the data should be encoded with Datamatrix barcode specification|
 |QR|Specifies that the data should be encoded with QR barcode specification|
 |Aztec|Specifies that the data should be encoded with Aztec barcode specification|
-
+**C#**
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SpecifySymbology-SpecifySymbology.cs" >}}
 
 
@@ -44,7 +44,7 @@ Aspose.BarCode supports nearly all popular barcode symbologies. All barcode gene
 A barcode is the representation of characters in the form of bars and spaces between them. So, it is a simple fact that we would also have to assign some characters to Aspose.BarCode so that the input characters could be converted to a barcode. We know that Aspose.BarCode has three different classes ([BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator), [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol)) to create barcodes for different kinds of applications. All these classes have a common property, CodeText. All characters to be encoded to barcode are assigned to the CodeText property of any barcode class.
 ### **Code text versus Symbology**
 Developers can assign any set of characters to CodeText property but only according to its symbology type. For example, If the EncodeType property of a barcode control is Symbology.EAN13, the valid character set of EAN13 specification is limited to numeric values and contains 13 digits only. If you attempt to shorter [CodeText](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) to it, zero will be added, if longer CodeText, the outbound part will be truncated.
-
+**C#**
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SetCodeText-SetCodeText.cs" >}}
 
 |**When CodeText is too long or too short**|
