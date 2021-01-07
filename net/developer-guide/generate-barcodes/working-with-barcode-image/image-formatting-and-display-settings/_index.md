@@ -41,7 +41,7 @@ Developers may also decide whether to show or hide an image border by setting th
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodeImages-EnableImageBorder-EnableImageBorder.cs" >}}
 
-A complete example to handle borders of the barcode image is given below.
+A complete example to handle the borders of the barcode image is given below.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-BarcodeImageBorders-BarcodeImageBorders.cs" >}}
 
@@ -59,7 +59,7 @@ All barcode classes ( [BarcodeGenerator](https://apireference.aspose.com/barcode
 
 - BarColor property to assign any color to the Barcode
 - CodeTextStyle.Color property to assign any color to the Code text of the barcode
-- BackColor property to set the Background color of the barcode
+- BackColor property to set the background color of the barcode
 - Border.Color property to set the Border color of the barcode
 
 Developers can select any desired color using System.Drawing.Color structure (part of Microsoft .NET Framework) and then assign that selected color to any of the properties (BarColor, CodeTextColor, BackColor or BorderColor) according to their custom requirements. The following code snippet shows you how to colorize a portion of the barcode Image.

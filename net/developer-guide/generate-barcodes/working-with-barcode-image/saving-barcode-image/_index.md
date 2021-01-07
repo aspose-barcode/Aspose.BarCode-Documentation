@@ -6,7 +6,7 @@ url: /net/saving-barcode-image/
 ---
 
 ## **Save Barcode Images to Different Formats**
-[Aspose.BarCode](https://products.aspose.com/barcode/net) facilitates its developers to save the barcode images to most of the popular image formats. All barcode generating classes ([BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator), [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol)) provided by Aspose.BarCode, have a public method, [Save](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms.barcodecontrol/save/methods/1). The BarcodeGenerator.Save method takes an instance of [BarCodeImageFormat ](https://apireference.aspose.com/barcode/net/aspose.barcode/barcodeimageformat)class. Following image formats can be passed to Save method of the barcode class as an argument:
+[Aspose.BarCode](https://products.aspose.com/barcode/net) facilitates its developers to save the barcode images to most of the popular image formats. All barcode generating classes ([BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator), [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol)) provided by Aspose.BarCode, have a public method, [Save](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms.barcodecontrol/save/methods/1). The BarcodeGenerator.Save method takes an instance of [BarCodeImageFormat ](https://apireference.aspose.com/barcode/net/aspose.barcode/barcodeimageformat)class. Following image formats can be passed to the Save method of the barcode class as an argument:
 
 - BarCodeImageFormat.Bmp - Specifies the bitmap (BMP) image format.
 - BarCodeImageFormat.Gif - Specifies the Graphics Interchange Format (GIF) image format.
@@ -17,11 +17,11 @@ url: /net/saving-barcode-image/
 - BarCodeImageFormat.Emf - Specifies the Enhanced Metafile (EMF) image format.
 - BarCodeImageFormat.Svg - Specifies the Scalable Vector Graphics (SVG) image format.
 
-Developers can use any of the image formats from the above list to create a barcode image in the desired image format. An example is given below about its usage. Aspose.BarCode for Java only supports Jpg, Gif, Png, and Bmp.
+Developers can use any of the image formats from the above list to create a barcode image in the desired image format. An example is given below about its usage. Aspose.BarCode for Java only supports JPG, GIF, PNG, and BMP.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SetSizeUnitForBarcodeImage-SetSizeUnitForBarcodeImage.cs" >}}
 ## **Save Barcode Image to Streams**
-In our previous topics, we have studied that a barcode image can be saved to different image formats like Jpeg, Tiff, and Bitmap etc. But sometimes, developers may need to save the barcode image in the form of a Stream (as a binary format). To fulfill this need, [Aspose.BarCode](http://www.aspose.com/api/net/barcode/aspose.barcode/) offers its users to save a barcode image to a Stream by calling the [Save](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/methods/save) method which takes the Stream parameter along with BarCodeImageFormat as shown below:
+In our previous topics, we have studied that a barcode image can be saved to different image formats like JPEG, TIFF, and Bitmap etc. But sometimes, developers may need to save the barcode image in the form of a Stream (as a binary format). To fulfill this need, [Aspose.BarCode](http://www.aspose.com/api/net/barcode/aspose.barcode/) offers its users to save a barcode image to a Stream by calling the [Save](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/methods/save) method which takes the Stream parameter along with BarCodeImageFormat as shown below:
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SaveBarcodeImageToStreams-SaveBarcodeImageToStreams.cs" >}}
 ## **Specify Border Types for ITF14 Barcode**

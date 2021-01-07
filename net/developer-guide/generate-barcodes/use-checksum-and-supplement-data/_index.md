@@ -7,7 +7,7 @@ url: /net/use-checksum-and-supplement-data/
 
 ## **Use Checksum and Supplement Data**
 ### **What is Checksum**
-A Checksum is an error detection scheme in which some additional characters are added to a barcode to protect the integrity of barcode data. Checksums are not necessary for all kinds of barcodes. For example, Code128 and Code39 are self-checking and checksums for such symbologies are not necessary. But on the other hand, another symbology like Interleaved2Of5, which can only represent numeric data, has very little spaces between its bars and is prone to substitution errors. So, for such symbologies, checksums are necessary. There are also some symbologies such as UPC (Universal Product Code) that require a checksum.
+A Checksum is an error detection scheme in which some additional characters are added to a barcode to protect the integrity of barcode data. Checksums are not necessary for all kinds of barcodes. For example, Code128 and Code39 are self-checking and checksums for such symbologies are not necessary. But on the other hand, another symbology like Interleaved2Of5, which can only represent numeric data, has very few spaces between its bars and is prone to substitution errors. So, for such symbologies, checksums are necessary. There are also some symbologies such as UPC (Universal Product Code) that require a checksum.
 ### **What is Supplemental Barcode**
 UPCA, UPCE, EAN13 and EAN8 symbologies may all include an additional barcode to the right of the main barcode. This second barcode that is usually not as tall as the main barcode, is called Supplemental Barcode and is used to encode additional information for newspapers, books, and other periodicals. The above BarCodes are generated using EAN13 symbology. The supplemental barcode may either encode 2 or 5 digits of information.
 
@@ -36,7 +36,7 @@ The following Symbology always includes checksum:
 - EAN8
 - BooklandEAN
 ### **Aspose.BarCode and Supplement Data**
-It is possible to encode 2 or 5 Digit Supplement Data in the barcode using Supplement.SupplementData[ ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/supplementproperties/properties/data)property of BarcodeGenerator class. Moreover, the space between the main barcode and supplemental barcode can also be customized by using the Supplement.SupplementData property of all barcode generating classes.
+It is possible to encode 2 or 5 Digit Supplement Data in the barcode using [Supplement.SupplementData](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/supplementproperties/properties/data)property of BarcodeGenerator class. Moreover, the space between the main barcode and supplemental barcode can also be customized by using the Supplement.SupplementData property of all barcode generating classes.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SetSupplementData-SetSupplementData.cs" >}}
 
@@ -66,7 +66,7 @@ A new Property **ChecksumValidation** has been introduced to perform validation 
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-ApplyingChecksumValidation-ApplyingChecksumValidation.cs" >}}
 ## **Applying Checksum Validation On Codabar**
-Aspose.BarCode for .NET allows developers to apply checksum validation on Codabar. CodabarChecksumMode enumeration has been added. It specifies the checksum algorithm for Codabar barcodes. Following is the sample code demonstrating how CodabarChecksumMode can be used.
+Aspose.BarCode for .NET allows developers to apply checksum validation on Codabar. CodabarChecksumMode enumeration has been added. It specifies the checksum algorithm for Codabar barcodes. The code example given below demonstrates how CodabarChecksumMode can be used.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CodabarChecksumMode-CodabarChecksumMode.cs" >}}
 ## **Get Barcode With Checksum Value**
@@ -78,7 +78,7 @@ Aspose.BarCode for .NET allows developers to identify the type of Code128 coded 
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-IdentifyTypeOfCode128-IdentifyTypeOfCode128.cs" >}}
 ## **Select an ECC Type to Encode a Barcode**
-[Aspose.BarCode for .NET APIs](https://www.aspose.com/products/barcode/net) allows developers to select an ECC 000 to 140 and ECC 200 levels to encode a DataMatrix barcode. The new [DataMatrix](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/datamatrix).[ECC ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixproperties/properties/ecc)property is added to the BarcodeGenerator class in order to select an appropriate ECC level while encoding DataMatrix barcode. DataMatrix symbology adopts two types of error correction algorithms, depending on the ECC level employed. The ECC levels 000 to 140, which offer five different error correction levels. However, the commonly used ECC 200 level uses Reed-Solomon error correction. The new [DataMatrixEccType ](https://apireference.aspose.com/barcode/net/aspose.barcode/datamatrixecctype)Enum has been added to specify the type of the ECC to encode.
+[Aspose.BarCode for .NET APIs](https://www.aspose.com/products/barcode/net) allows developers to select an ECC 000 to 140 and ECC 200 levels to encode a DataMatrix barcode. The new [DataMatrix](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/datamatrix).[ECC ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixproperties/properties/ecc)property is added to the BarcodeGenerator class to select an appropriate ECC level while encoding DataMatrix barcode. DataMatrix symbology adopts two types of error correction algorithms, depending on the ECC level employed. The ECC levels 000 to 140, which offer five different error correction levels. However, the commonly used ECC 200 level uses Reed-Solomon error correction. The new [DataMatrixEccType](https://apireference.aspose.com/barcode/net/aspose.barcode/datamatrixecctype) Enum has been added to specify the type of the ECC to encode.
 
 - EccAuto - Specifies that the encoded ECC type is defined by default Reed-Solomon error correction or ECC 200.
 - Ecc000 - Specifies that the encoded ECC type is defined as ECC 000.
