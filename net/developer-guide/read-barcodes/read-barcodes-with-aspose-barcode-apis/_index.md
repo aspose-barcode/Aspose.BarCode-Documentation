@@ -4,7 +4,7 @@ type: docs
 aliases:
  - /node/read-barcodes-with-aspose-barcode-apis/
 description: "This article explains How to scan a barcode from a picture, read barcode from the stream, barcode recognition symbologies, get all Possible 1D Barcodes from an Image, Detect Dot Peen Datamatrix Barcode and Recognizing Barcode in WPF Project."
-keywords: "read barcode, Read Barcode from Stream, scan barcode from image, Multiple barcodes in Single Image, detect all Possible Barcodes, detect dot peen barcode, Reading Multiple Macropdf417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
+keywords: "read barcode, Read Barcode from Stream, scan the barcode from image, Multiple barcodes in Single Image, detect all Possible Barcodes, detect dot peen barcode, Reading Multiple Macropdf417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
 weight: 10
 url: /net/read-barcodes-with-aspose-barcode-apis/
 ---
@@ -24,11 +24,9 @@ The following example demonstrates how to scan a picture of a barcode image usin
 ## **Recognizing Barcode Symbology**
 This section shows the basic settings of BarCodeReader. We will specify the Symbology type in the constructor of BarCodeReader class and use the [BarCodeReader.ReadBarCodes()](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method to recognize the barcodes from the image. This should be the case if we already know the Symbology Type.
 ### **SymbologyType of a barcode**
-If we specify the Symbology Type in the constructor, the program will know beforehand about the symbology type to be recognized and it will be faster than not passing symbology type in the constructor. If we know the types of barcode ahead, recognition will speed up a lot. The following code snippet shows you how to specify the symbology Type.
+If we specify the Symbology Type in the constructor, the program will know beforehand about the symbology type to be recognized and it will be faster than not passing the symbology type in the constructor. If we know the types of barcodes ahead, recognition will speed up a lot. The following code snippet shows you how to specify the symbology Type.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-RecognizeSpecificBarcodeSymbology-RecognizeSpecificBarcodeSymbology.cs" >}}
-
-
 
 For unknown types of barcodes, either set call Read() method with no arguments or programmatically loop through every Symbology.
 ### **BarCodeReadType**
@@ -36,7 +34,7 @@ For unknown types of barcodes, either set call Read() method with no arguments o
 ### **CodeText**
 GetCodeText() method of a BarCodeReader class returns the string which is the decoded data from the barcode.
 ### **Recognizing Multiple Symbologies in Single Image**
-There might be such situations in which there are multiple barcodes in a single image. Aspose.BarCode can easily recognize all the barcodes of the supported symbology types. This can be done by specifying multiple symbology types separated by bitwise OR operator “|” in the barcode constructorSee the image below. It contains 2 barcodes of type Code39Standard and Pdf417. Since [BarCodeReader.ReadBarCodes()](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method returns a Boolean value, you can call it in a while loop to recognize all the barcodes in the image. The Read() method will return true for the first barcode, again return true for the second barcode and then it will return false in the third iteration.
+There might be such situations in which there are multiple barcodes in a single image. Aspose.BarCode can easily recognize all the barcodes of the supported symbology types. This can be done by specifying multiple symbology types separated by bitwise OR operator “|” in the barcode constructorSee the image below. It contains 2 barcodes of type Code39Standard and PDF417. Since [BarCodeReader.ReadBarCodes()](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method returns a Boolean value, you can call it in a while loop to recognize all the barcodes in the image. The Read() method will return true for the first barcode, again return true for the second barcode and then it will return false in the third iteration.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-RecognizeMultipleSymbologies-RecognizeMultipleSymbologies.cs" >}}
 
 In the above code snippet, we assumed that we already knew the symbology types of the barcodes in the image. So, we specified the symbologies separated by **bitwise OR “|”** operator. If the symbologies are not known in advance, you can simply use [BarCodeReadType.AllSupportedTypes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereadtype) to check for any symbology type. In this case, the constructor in the above code snippet will be modified as follows:
@@ -46,7 +44,7 @@ The [BarCodeReader.GetAllPossibleBarCodes](https://apireference.aspose.com/barc
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-GetAllPossible1DBarcodesfromImage-GetAllPossible1DBarcodesfromImage.cs" >}}
 ## **Datamatrix Barcode**
 ### **Detect Decorated Datamatrix Barcode**
-[Aspose.BarCode for .NET API](https://www.aspose.com/products/barcode/net) allows developers to detect decorated DataMatrix barcode on the image. To detect the decorated DataMatrix barcode, developers have to configure QualitySettings by using BarCodeReader.QualitySettings property which is an instance of QualitySettings class. QualitySettings allows to configure recognition quality and speed manually. You can quickly set up QualitySettings by embedded presets: HighPerformance, NormalQuality, HighQuality, MaxBarCodes or you can manually configure separate options. The default value of QualitySettings is NormalQuality. The following code snippet shows you how to detect decorated DataMatrix barcode.
+[Aspose.BarCode for .NET API](https://www.aspose.com/products/barcode/net) allows developers to detect decorated DataMatrix barcode on the image. To detect the decorated DataMatrix barcode, developers have to configure QualitySettings by using BarCodeReader.QualitySettings property which is an instance of QualitySettings class. QualitySettings allows to configure recognition quality and speed manually. You can quickly set up QualitySettings by embedded presets: HighPerformance, NormalQuality, HighQuality, MaxBarCodes or you can manually configure separate options. The default value of QualitySettings is NormalQuality. The following code snippet shows you how to detect decorated DataMatrix barcodes.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-DetectDecoratedDatamatrix-DetectDecoratedDatamatrix.cs" >}}
 
 **Result:** 
@@ -65,11 +63,11 @@ DataMatrix: BERMA Macchine Budrio (BO)
 DataMatrix: BERMA Macchine Budrio (BO)
 DataMatrix: BERMA Macchine Budrio (BO)
 
-## **Macropdf417 Barcode**
-### **Reading Multiple Macropdf417 Barcode Images**
-In Generating Multiple MacroPdf417 Barcodes for Large or Multiple Code text Values articles, we generated multiple Macropdf417 barcodes for multiple code text values. Now, we will create a program for recognizing the barcodes, which were generated in the above mentioned article. We recognize all the barcode images placed in the folder using the [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) class. The BarCodeReader class returns the Segment ID, File ID and Last Segment flag (true/false) for each for the MacroPdf417 barcodes.
+## **MacroPDF417 Barcode**
+### **Reading Multiple MacroPDF417 Barcode Images**
+In Generating Multiple MacroPDF417 Barcodes for Large or Multiple Code text Values articles, we generated multiple MacroPDF417 barcodes for multiple code text values. Now, we will create a program for recognizing the barcodes, which were generated in the above- mentioned article. We recognize all the barcode images placed in the folder using the [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) class. The BarCodeReader class returns the Segment ID, File ID and Last Segment flag (true/false) for each for the MacroPDF417 barcodes.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-ReadMultipleMacropdf417BarcodeImages-MarkingBarCodeRegionsInImage.cs" >}}
-### **Reading Multiple MacroPdf417 Barcodes**
+### **Reading Multiple MacroPDF417 Barcodes**
 Multiple Macro Pdf417 barcodes can be recognized. It is supported. We can recognize the segments of Macro PDF417 one by one. Each recognized bar code includes the File ID, Segment ID, and Segment Count and it is must have the same File ID assigned to it. In the below code sample, we recognize 2 Macro Pdf417 barcodes for 2 different code text values.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-ReadMultipleMacroPdf417Barcodes-ReadMultipleMacroPdf417Barcodes.cs" >}}
 ## **Recognizing Barcode in WPF Project**
@@ -82,7 +80,7 @@ Aspose.BarCode supports recognizing barcodes in WPF projects. To do so, specify 
 1. Drag the control to the form.
 1. Right-click the control and select **Properties**.
 1. Adjust barcode properties like code text, symbology type, fonts, colors etc.
-1. Please see details: [Using with WPF](/pages/createpage.action?spaceKey=barcodenet&title=Using+with+WPF&linkCreation=true&fromPageId=12943829).
+1. Please see details: [Using with WPF](https://docs.aspose.com/barcode/net/generate-barcodes-with-aspose-barcode-apis/#generate-barcode-in-c-wpf).
 
 Now write the code that recognizes the barcode:
 
