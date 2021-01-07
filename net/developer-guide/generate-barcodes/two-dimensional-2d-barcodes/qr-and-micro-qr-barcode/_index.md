@@ -3,6 +3,8 @@ title: QR and Micro QR Barcode
 type: docs
 aliases:
  - /.net/qr-and-micro-qr-barcode/
+ description: "Aspose.BarCode for .NET allows generating QR and Micro QR Barcode more simply."
+ keywords: "QR Code, Micro QR Barcode, Generate QR Code, Generate Micro QR Barcode, Create QR Code, Aspose.BarCode, C#"
 weight: 40
 url: /net/qr-and-micro-qr-barcode/
 ---
@@ -11,7 +13,7 @@ url: /net/qr-and-micro-qr-barcode/
 QR barcode is a two-dimensional barcode symbology developed in Japan. QR barcode has the following features:
 
 - High capacity encoding of data, up to 7000 numeric digits or 4000 alphanumeric data
-- Dirt and damage resistant, a maximum 30% of codewords can be restored
+- Dirt and damage resistant, a maximum of 30% of codewords can be restored
 - Readable from all directions
 
 Added a [QR ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) Class as [BarcodeParameter](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
@@ -41,7 +43,7 @@ Added changes to Enum [QREncodeMode](https://apireference.aspose.com/barcode/ne
 ### **Encoding of a QR and Micro QR Barcode**
 The micro QR code is a smaller version of the QR code standard for applications where symbol size is limited. There are 4 different versions (sizes) of Micro QR codes: the smallest is 11×11 modules; the largest can hold 35 numeric characters.
 ### **Error correction**
-QR barcode can withstand certain damage and can still be decoded normally. This is decided by QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
+QR barcodes can withstand certain damage and can still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
 
 - **LevelL**. Allows recovery of 7% of the code text
 - **LevelM**. Allows recovery of 15% of the code text
@@ -52,7 +54,7 @@ Instantiate a BarcodeGenerator class object and set its EncodeType to QR, then s
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-EncodeQRCode-EncodeQRCode.cs" >}}
 ### **How to set QR version**
-Aspose.BarCode for .NET allows developers to set a version of QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. The following code example demonstrates how to set the QR version before generating a barcode image.
+Aspose.BarCode for .NET allows developers to set a version of the QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. The following code example demonstrates how to set the QR version before generating a barcode image.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-SettingQRVersion-SettingQRVersion.cs" >}}
 ### **How to Encode MicroQR Code**
@@ -111,10 +113,10 @@ Encoding Principles:
 - FNC1 in the first position is set in CodeText as "<FNC1>".
 - FNC1 in the second position is set in CodeText as "<FNC1(value)>". The value must be single symbols (a-z, A-Z) or digits from 0 to 99.
 - Group Separator for FNC1 modes is set as 0x1D character '\u001D'.
-- If you need to insert "<FNC1>" string into barcode write it as "<\FNC1>".
+- If you need to insert the "<FNC1>" string into the barcode write it as "<\FNC1>".
 - ECI identifiers are set as single slash and six digits identifier "\000026" - UTF8 ECI identifier.
-- TO disable current ECI mode and convert to default JIS8 mode zero mode ECI indetifier is set "\000000".
-- All unicode characters after ECI identifier are automatically encoded into correct character codeset.
+- TO disable current ECI mode and convert to default JIS8 mode, zero-mode ECI identifier is set to "\000000".
+- All Unicode characters after the ECI identifier are automatically encoded into the correct character codeset.
 
 [QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class description:
 

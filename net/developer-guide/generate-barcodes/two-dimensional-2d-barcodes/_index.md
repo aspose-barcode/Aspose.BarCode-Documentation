@@ -6,10 +6,10 @@ url: /net/two-dimensional-2d-barcodes/
 ---
 
 ## **Create Two Dimensional (2D) Barcodes**
-The two-dimensional barcode can contain more data per label, up to thousands of characters. Large amounts of text and data can be stored securely and inexpensively when using [Aspose.BarCode](https://apireference.aspose.com/barcode/net/) to encode.[BarCodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) supports both one dimensional and two-dimensional barcodes. It encapsulates both types of the barcode into one unified interface. Creating two-dimensional barcodes is just the same as creating one-dimensional barcodes.
+The two-dimensional barcode can contain more data per label, up to thousands of characters. Large amounts of text and data can be stored securely and inexpensively when using [Aspose.BarCode](https://apireference.aspose.com/barcode/net/) to encode.[BarCodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) supports both one dimensional and two-dimensional barcodes. It encapsulates both types of barcodes into one unified interface. Creating two-dimensional barcodes is just the same as creating one-dimensional barcodes.
 
-### **Create a pdf417 barcode**
-The following code snippet shows you how to create a pdf417 barcode.
+### **Create a PDF417 barcode**
+The following code snippet shows you how to create a PDF417 barcode.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-Create2DBarcodes-Create2DBarcodes.cs" >}}
 
