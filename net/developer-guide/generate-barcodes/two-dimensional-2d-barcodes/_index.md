@@ -1,6 +1,8 @@
 ---
 title: Two Dimensional - 2D Barcodes
 type: docs
+description: "Aspose.BarCode for .NET allows generating two-dimensional (2D) barcodes which can contain more data per label, up to thousands of characters."
+keywords: "Two Dimensional (2D) Barcodes, 2D Barcode, generate 2D barcode, generate two diemnsional barcodes, generate PDF417 barcode, generate DataMatrix Barcode, Aspose.BarCode for .NET, C#"
 weight: 20
 url: /net/two-dimensional-2d-barcodes/
 ---
