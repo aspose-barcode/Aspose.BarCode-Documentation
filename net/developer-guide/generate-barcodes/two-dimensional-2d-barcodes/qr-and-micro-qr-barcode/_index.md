@@ -3,8 +3,8 @@ title: QR and Micro QR Barcode
 type: docs
 aliases:
  - /.net/qr-and-micro-qr-barcode/
- description: "Aspose.BarCode for .NET allows generating QR and Micro QR Barcode more simply."
- keywords: "QR Code, Micro QR Barcode, Generate QR Code, Generate Micro QR Barcode, Create QR Code, Aspose.BarCode, C#"
+description: "Aspose.BarCode for .NET allows generating QR and Micro QR Barcode more simply."
+keywords: "QR Code, Micro QR Barcode, Generate QR Code, Generate Micro QR Barcode, Create QR Code, Aspose.BarCode, C#"
 weight: 40
 url: /net/qr-and-micro-qr-barcode/
 ---
