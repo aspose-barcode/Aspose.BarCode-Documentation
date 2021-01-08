@@ -18,7 +18,7 @@ PDF417 barcode with error correction can withstand certain kind of damage. [Bar
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-ErrorCorrectionLevel-ErrorCorrectionLevel.cs" >}}
 ### **Truncated PDF417**
-[Aspose.BarCode](https://apireference.aspose.com/net/barcode) supports the truncated PDF417 version which omits the right-hand side quiet zone in order to save space. Setting [Pdf417Truncate](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/pdf417truncate) property to true will lead to a comparatively smaller image.
+[Aspose.BarCode](https://apireference.aspose.com/net/barcode) supports the truncated PDF417 version which omits the right-hand side quiet zone in order to save space. Setting [Pdf417Truncate](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417truncate) property to true will lead to a comparatively smaller image.
 ### **Rows and columns**
 Rows and columns settings are aiming at general two-dimensional barcodes, applicable to PDF417. A PDF417 barcode consists of black and white rectangular modules. If Rows and Columns settings are illegal, the encoder will simply ignore those settings. Setting Rows and Columns to be zero means no Rows and Columns settings. The following sample pictures are PDF417 barcodes with the same CodeText but of different Rows and Columns settings:
 
@@ -26,7 +26,7 @@ Rows and columns settings are aiming at general two-dimensional barcodes, applic
 | :- |
 |![todo:image_alt_text](pdf417-and-macropdf417-barcode_1.jpg)|
 ### **PDF417 Compaction Mode**
-Setting [Pdf417CompactionMode](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/pdf417compactionmode) property will set the corresponding compaction mode. Below are the 4 modes that can be set using Aspose.BarCode for .NET: Auto: Automatically detect compaction mode
+Setting [Pdf417CompactionMode](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property will set the corresponding compaction mode. Below are the 4 modes that can be set using Aspose.BarCode for .NET: Auto: Automatically detect compaction mode
 
 - Text: Text compaction, suitable for text data
 - Numeric: Numeric compaction mode, suitable for numeric data
