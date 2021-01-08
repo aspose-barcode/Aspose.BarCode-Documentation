@@ -19,7 +19,7 @@ There can be plenty of other reasons for working with barcodes on the back end d
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SetCodeText-SetCodeText.cs" >}}
 
 ## **Generate Barcode in C# Windows Forms**
-Aspose.BarCode contains a control class, [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol), which is inherited from System.Windows.Forms.Control class. The [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol) class plays a major role in creating barcode images and drawing the images on the Windows Forms. Follow the steps below to use Aspose.BarCode in Windows Forms:
+Aspose.BarCode contains a control class, [BarCodeGeneratorControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol), which is inherited from System.Windows.Forms.Control class. The [BarCodeGeneratorControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) class plays a major role in creating barcode images and drawing the images on the Windows Forms. Follow the steps below to use Aspose.BarCode in Windows Forms:
 
 - Drag BarCodeControl from Toolbox to your Windows Form
 - Set license to the control, therefore, you can avoid the evaluation watermark in the barcode image. The code for setting the license can be added to the Load event of the Form
