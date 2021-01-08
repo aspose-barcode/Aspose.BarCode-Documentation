@@ -28,6 +28,7 @@ For the functionality differences in Aspose.BarCode for .NET and Aspose.BarCode 
 All barcode symbologies have many unique things in themselves but there are also some things, which are common to all and X-Dimension is one of those common things. All barcodes are based on some X-Dimension. The X-Dimension is the narrowest bar or space in the barcode. Barcode symbologies usually specify a minimum value (of X-Dimension) to ensure compatibility between reading and printing equipment used in an open system (a barcode label that will be read by scanners from outside your company). The X-Dimension determines a barcode's density. Density refers to the amount of information that can be stored within a specific amount of space. When X-Dimension is small, the area required for each character is less than when X-Dimension is large; thus the barcode can hold more per linear inch and is said to be of higher density. Similarly, increasing the width of the narrowest element (X-Dimension) increases the space required for each character and reduces the number of characters per inch. Because the resulting code is often quite large, very low-density codes are often associated with applications such as warehousing that require reading bar codes from a significant distance (3 to 30 feet).
 
 X-Dimension is specified in Mils (One thousand of an inch) but it can also be specified in Inches and Millimeters. For conversion purposes, developers may use the following ratios:
+
 |**1 Mil**|**=**|**0.001 Inches**|
 | :- | :- | :- |
 |**1 Inch**|**=**|**25.4 Millimeters**|
