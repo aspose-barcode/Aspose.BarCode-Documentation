@@ -17,9 +17,9 @@ With Aspose.BarCode for .NET, developers have full control over every aspect of 
 ### **Aspose.BarCode for .NET Plugins**
 This section has the following topics:
 ## **Barcode Generator for eCommerce Products**
-Aspose .NET BarCode Generator for SiteFinity is open-source widget used to list the SiteFinity eCommerce products along with barcodes. You can configure the widget to generate different symbologies e.g Codabar, QR Code etc. Widget settings allows you to control different features of the generated barcode e.g symbology, width, height etc.
+Aspose .NET BarCode Generator for SiteFinity is an open-source widget used to list the SiteFinity eCommerce products along with barcodes. You can configure the widget to generate different symbologies e.g Codabar, QR Code etc. Widget settings allows you to control different features of the generated barcode e.g symbology, width, height etc.
 
-The current Version of the widget have following features.
+The current version of the widget has the following features.
 
 - Create and Configure Multiple BarCode styles.
       * Select different Symbologies while creating BarCode styles.
@@ -106,9 +106,9 @@ Please extract the downloaded ZIP file. You will need FTP or direct access to th
    The widget is registered in the toolbox and can be used in Sitefinity.
 ### **Using and Video Demo**
 #### **Using**
-After you have installed and configured the Aspose SiteFinity Barcode Generator for eCommerce Products widget it is really simple to start using it on your website. Please follow these simple steps to get started:
+After you have installed and configured the Aspose SiteFinity Barcode Generator for the eCommerce Products widget it is really simple to start using it on your website. Please follow these simple steps to get started:
 
-1. Make sure you are logged-in to Sitefinity with an Administrator level account.
+1. Make sure you are logged-in to Sitefinity with an Administrator-level account.
 1. Navigate to the page where you want to add the Export add-on. Make sure the page is opened in edit mode.
 1. From the **Drag Widgets** menu on the right, select Aspose SiteFinity Barcode Generator for eCommerce Products and drag it into position.
 

@@ -19,4 +19,4 @@ Use Aspose.Words.Document class to open the Word document. Call Document.GetChil
 
 
 
-The evaluation version of Aspose.BarCode for .NET can only recognize Code39 barcodes. If the image contains a barcode of other than Code39 symbology type, a valid license must be set. For getting a temporary license for 30 days, please visit <http://www.aspose.com/corporate/purchase/temporary-license.aspx> for more details.
+The evaluation version of Aspose.BarCode for .NET can only recognize Code39 barcodes. If the image contains a barcode of other than the Code39 symbology type, a valid license must be set. For getting a temporary license for 30 days, please visit <http://www.aspose.com/corporate/purchase/temporary-license.aspx> for more details.

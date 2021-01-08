@@ -10,17 +10,17 @@ PHP binaries for Windows are available from <http://www.php.net/>. In this secti
 
 1. Download the binaries in zip format from <http://www.php.net/>.
 1. Unzip at C:\php folder.
-1. Set the above folder path in Environment Variables. Right click on My Computer, select Properties -> Advanced -> Environment
+1. Set the above folder path in Environment Variables. Right-click on My Computer, select Properties -> Advanced -> Environment
 
-Variables -> System Variables. Edit the value of Path variable and append c:\php; at the end.
+Variables -> System Variables. Edit the value of the Path variable and append c:\php; at the end.
 
-1. In C:\php folder, rename the php.ini-recommended to php.ini. Copy php.ini to c:\windows folder.
+1. In the C:\php folder, rename the php.ini-recommended to php.ini. Copy php.ini to c:\windows folder.
 1. Open c:\windows\php.ini and comment the line doc_root=
 1. Set the value of extension_dir to c:\php\ext# Create a new virtual directory in IIS and map it to some folder in your drive, where you will keep the source of php files.
-1. In IIS, right click on the virtual directory, select properties -> Configuration -> Mappings. Press Add button. In Executable, browse for c:\php\php5isapi.dll. in Extension, enter .php.
+1. In IIS, right-click on the virtual directory, select properties -> Configuration -> Mappings. Press the Add button. In Executable, browse for c:\php\php5isapi.dll. in Extension, enter .php.
 1. Restart the IIS.
 
-For testing of correct PHP configuration, create a new text file in the mapped folder of IIS virtual directory and name it as test.php. Enter the following lines in this file.
+For testing of correct PHP configuration, create a new text file in the mapped folder of the IIS virtual directory and name it as test.php. Enter the following lines in this file.
 
 {{< highlight java >}}
 
@@ -34,9 +34,9 @@ phpinfo();
 
 
 
-Now, run the php file in browser. The URL should be similar as <http://localhost/virtualDirectory/test.php>. It should show your system and PHP version information. If there is any error, please visit [http://www.php.net](http://www.php.net/) for details about configuration instructions for your operating system. If you do not intend to use php.ini-recommended file as your configuration file, please visit <http://www.php.net/manual/en/ref.com.php> for adding COM support to PHP.
+Now, run the PHP file in a browser. The URL should be similar as <http://localhost/virtualDirectory/test.php>. It should show your system and PHP version information. If there is any error, please visit [http://www.php.net](http://www.php.net/) for details about configuration instructions for your operating system. If you do not intend to use php.ini-recommended file as your configuration file, please visit <http://www.php.net/manual/en/ref.com.php> for adding COM support to PHP.
 ## **PHP Script to Generate BarCode**
-The following PHP script displays an HTML form to enter the CodeText. Once you submit the form, an instance of BarCodeBuilder object will be created using COM interop and barcode will be generated in a folder of webserver.
+The following PHP script displays an HTML form to enter the CodeText. Once you submit the form, an instance of BarCodeBuilder object will be created using COM interop and barcode will be generated in a folder of the webserver.
 
 {{< highlight java >}}
 
@@ -116,4 +116,4 @@ if ($strCodeText != "")
 
 
 
-Please note that the above code sample uses constant value 4096 for Symbology type which is for Pdf417.
+Please note that the above code sample uses constant value 4096 for Symbology type which is for PDF417.

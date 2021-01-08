@@ -6,10 +6,10 @@ url: /net/perl-via-com-interop/
 ---
 
 ## **Installation and Configuration**
-Perl binaries are available from <http://www.perl.com/download.csp>. Please download and install the binaries for your Windows Operating System.For adding COM support to Perl, you need Win32::OLE extension. Please visit [http://search.cpan.org/jdb/Win32-OLE-0.1709/lib/Win32/OLE.pm](http://search.cpan.org/~jdb/Win32-OLE-0.1709/lib/Win32/OLE.pm) for more information.
+Perl binaries are available from <http://www.perl.com/download.csp>. Please download and install the binaries for your Windows Operating System. For adding COM support to Perl, you need Win32::OLE extension. Please visit [http://search.cpan.org/jdb/Win32-OLE-0.1709/lib/Win32/OLE.pm](http://search.cpan.org/~jdb/Win32-OLE-0.1709/lib/Win32/OLE.pm) for more information.
 Alternatively, you can also get another free distribution of Perl from ActiveState. Please visit <http://www.activestate.com/Products/activeperl/index.mhtml> for details. ActivePerl comes with core Perl and Win32::OLE extension.
 ## **Perl Code to Generate BarCode**
-The code below will generate barcode of type Pdf417 and save the barcode image in a folder in the hard disk.
+The code below will generate a barcode of type PDF417 and save the barcode image in a folder in the hard disk.
 
 {{< highlight java >}}
 
@@ -33,4 +33,4 @@ $barcode->Save("testperl_out.png");
 
 
 
-Please note that the above code sample uses constant value 4096 for Symbology type which is for Pdf417. 
+Please note that the above code sample uses constant value 4096 for Symbology type which is for PDF417. 

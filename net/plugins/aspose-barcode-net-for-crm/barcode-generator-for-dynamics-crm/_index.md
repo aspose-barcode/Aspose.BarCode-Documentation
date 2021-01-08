@@ -5,7 +5,7 @@ weight: 10
 url: /net/barcode-generator-for-dynamics-crm/
 ---
 ## **Introduction**
-Aspose .NET BarCode Generator is open source add-on used to generate and send BarCodes from CRM via E-mail. You can configure multiple BarCodes with in CRM and and generate BarCode in e-mail as you want. Configuration provides multiple symbologies option and you can also select these configurations while creating e-mail. Aspose .NET BarCode Generator can be used with CRM on-premises and CRM Online.
+Aspose .NET BarCode Generator is an open-source add-on used to generate and send BarCodes from CRM via E-mail. You can configure multiple BarCodes with in CRM and generate BarCode in an e-mail as you want. The configuration provides multiple symbologies options and you can also select these configurations while creating an e-mail. Aspose .NET BarCode Generator can be used with CRM on-premises and CRM Online.
 
 The release of this add-on supports the following features:
 
@@ -14,10 +14,10 @@ The release of this add-on supports the following features:
 - Get Token button on e-mail entity.
 - Insert Token with in e-mail body.
 - Generate BarCode and replace inside e-mail when sending.
-- BarCode generation functionality is seperated with other plugins.
+- BarCode generation functionality is separated with other plugins.
 ## **System Requirements and Supported Platforms**
 ### **System Requirements**
-In order to install and use Aspose .NET BarCode Generator for Microsoft Dynamics CRM you need to have one of the following CRM version installed.
+In order to install and use Aspose .NET BarCode Generator for Microsoft Dynamics CRM you need to have one of the following CRM versions installed.
 
 - Microsoft Dynamics CRM 2013 On-Premises.
 - Microsoft Dynamics CRM 2015 On-Premises.
@@ -56,21 +56,21 @@ You can download the latest solution for Microsoft Dynamics CRM 2015 at:
 
 **Configuring Web Page**
 
-- Download the source code for website.
-- Copy on server. (Recomended under inetpub)
-- Open IIS. (On server where you intent to deploy website, accessible from CRM server)
+- Download the source code for the website.
+- Copy on the server. (Recommended under the inetpub folder)
+- Open IIS. (On the server where you intent to deploy a website, accessible from CRM server)
 - Create a new Website.
-- Choose physical path and configure website.
+- Choose a physical path and configure the website.
 - Browse to check if it is accessible.
 - Update Plugin code with correct URL.
 ### **Applying License**
-- Copy the license File on the server and copy the path of the file. 
+- Copy the license file on the server and copy the path of the file. 
   - Recomended: "C:\Aspose\Aspose.Total.Lic".
 - Use the license file on the website code.
 ### **How to Uninstall**
 - Delete Website from IIS.
-- Go to solution and select "Aspose .NET BarCode Generator".
-- Press the Delete button. press OK for confirmation.
+- Go to the solution and select "Aspose .NET BarCode Generator".
+- Press the Delete button. Press OK for confirmation.
 ## **Using**
 ### **Create BarCode Configuration**
 - Go to BarCode Configuration Entity in CRM.
@@ -78,10 +78,10 @@ You can download the latest solution for Microsoft Dynamics CRM 2015 at:
 - ` `Save the record.
 ### **Get Token for BarCode in E-Mail**
 - Open E-mail.
-- Create email as you want.
-- Press the Get Token Button on the top to insert token in email body.
+- Create an email as you want.
+- Press the Get Token Button on the top to insert the token in the email body.
 - Select the BarCode Configuration and click insert.
-- Once sent, the token in email body is replaced by the BarCode.
+- Once sent, the token in the email body is replaced by the BarCode.
 ## **Video Demo**
 Please check [the video](https://youtu.be/KbAOdIPbTDM) below to see the plugin in action.
 ## **Support, Extend and Contribute**
@@ -102,7 +102,7 @@ You can download the latest source code at:
 - [GitHub](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/tree/master/Plugins/Dynamics%20CRM/Aspose%20.NET%20BarCode%20Generator).
 - [Code.MSDN](https://code.msdn.microsoft.com/Aspose-NET-BarCodeGenerator-ecd5b561).
 
-In this scenario we have used Aspose.BarCode.dll to generate document from a template.
+In this scenario we have used Aspose.BarCode.dll to generate a document from a template.
 
 {{< highlight csharp >}}
 

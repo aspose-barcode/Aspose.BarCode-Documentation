@@ -24,7 +24,7 @@ Aspose.BarCode for .NET is designed to run in the .NET framework in managed code
 - Working with COM objects exposed by .NET COM Interop. See [Interoperating With Unmanaged Code](http://msdn.microsoft.com/en-us/library/sd10k43k.aspx) and [Exposing .NET Framework Components to COM](http://msdn.microsoft.com/en-us/library/zsfww439%28v=vs.110%29.aspx) in MSDN.
 - Using th eAspose.BarCode API. See [Aspose.BarCode Programmer’s Guide](https://docs.aspose.com/barcode/net/) and the [API Reference](https://docs.aspose.com/barcode/net/api-reference/).
 ### **Register Aspose.BarCode for .NET with COM Interop**
-Aspose.BarCode for .NET muse be installed on the system and it must be registered with COM Interop to be used with the above listed languages. You can use the regasm command to register the .NET assembly with COM Interop. To access the regasm command:
+Aspose.BarCode for .NET muse be installed on the system and it must be registered with COM Interop to be used with the above-listed languages. You can use the regasm command to register the .NET assembly with COM Interop. To access the regasm command:
 
 1. From the **Start** menu, click **All Programs**, then **Microsoft Visual Studio** (any version), followed by **Visual Studio Tools** and finally **Visual Studio Command Prompt**.
 1. Enter the command to register the assembly:

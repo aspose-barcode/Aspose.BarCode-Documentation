@@ -25,7 +25,7 @@ Now, we have to create an application that generates a specific barcode image ac
 ### **Retrieving Barcode Details from Database**
 If it is required to display the barcode image from the information stored in the database, the details of that specific barcode are retrieved from the database and a barcode is generated at runtime according to those barcode details.
 
-For this purpose, we need to connect to the database and select a specific barcode details and fills the DataTable with those barcode details using SqlDataAdapter. A BarcodeGenerator is created at runtime. It's CodeText and SymbologyType properties are configured using barcode details in DataTable.
+For this purpose, we need to connect to the database and select specific barcode details and fills the DataTable with those barcode details using SqlDataAdapter. A BarcodeGenerator is created at runtime. It's CodeText and SymbologyType properties are configured using barcode details in DataTable.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-BarcodeWithDatabase-RetrieveFromDB.cs" >}}
 
 The above-mentioned method can be used with Windows Forms application using the [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol).
@@ -44,7 +44,7 @@ If you are creating more complex barcode images by also customizing there:* Fore
 - X-Dimension
   and other properties then you would have to create extra columns in your database table to store the information about all properties related to a barcode. Then this approach would depict the following problems:
 - More columns in the table would be created that will consume more storage resources
-- Whenever some new information about the barcode would be needed to be stored, changes will be made to not an only database but also to the source code
+- Whenever some new information about the barcode would be needed to be stored, changes will be made to not only database but also to the source code
 - Increasing the number of columns in the database table would also take more efforts by you to write more lines of code
   Just assume some extra properties of the barcode that would be required to be stored in the database.
 
@@ -52,7 +52,7 @@ If you are creating more complex barcode images by also customizing there:* Fore
 To save yourself from writing more lines of source code and creating a large number of columns in a database table, there is another approach and it is to store the barcode image itself to the database. A barcode can be simple with just two properties or complex with more number of properties.
 
 ### **Saving Barcode Image to Database**
-Using this approach, any barcode image can be stored in a database ranging from simplest to most complex one. For saving an image to the database, we need to create a Varbinary datatype column in our database table. To store a barcode image in the database, the image shall be saved to a MemoryStream and then will be converted to image bytes. The image bytes will be stored in the database column of the Varbinary type as demonstrated in the code example given below.
+Using this approach, any barcode image can be stored in a database ranging from the simplest to the most complex one. For saving an image to the database, we need to create a Varbinary datatype column in our database table. To store a barcode image in the database, the image shall be saved to a MemoryStream and then will be converted to image bytes. The image bytes will be stored in the database column of the Varbinary type as demonstrated in the code example given below.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-BarcodeWithDatabase-StoreImageInDB.cs" >}}
 
 ### **Retrieving Barcode Image from Database**
@@ -63,4 +63,4 @@ The following code example demonstrates how to initiate the Save and Retrieve me
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-BarcodeWithDatabase-BarcodeWithDatabase.cs" >}}
 
 ## **Conclusion**
-Both approaches discussed so far, have their own advantages and disadvantages which are briefly described in the article. Generally, for simple applications where the simple and identical barcodes are generated, the first approach can work better whereas, for such applications that allow users to create complex and different kinds of barcodes, the second approach can do its best. But still, developers can make efficient use of any approach in any kind of application according to their requirements.
+Both approaches discussed so far, have their advantages and disadvantages which are briefly described in the article. Generally, for simple applications where simple and identical barcodes are generated, the first approach can work better whereas, for such applications that allow users to create complex and different kinds of barcodes, the second approach can do its best. But still, developers can make efficient use of any approach in any kind of application according to their requirements.

@@ -10,6 +10,6 @@ The barcode generator Parameter's ThrowExceptionWhenCodeTextIncorrect property
 - Filter the code text and generate with allowed chars.
 - Throw an exception.
 
-If the code text is incorrect and the value for the ThrowExceptionWhenCodeTextIncorrect property is set to true, an exception is thrown. Otherwise, the code text is corrected to match the barcode's specifications. An exception is always thrown for the Databar symbology if code text is incorrect. An exception is never thrown for AustraliaPost, SingapurePost, Code39Extended, Code93Extended, Code16K, Code128 symbologies, even if the code text is incorrect.
+If the code text is incorrect and the value for the ThrowExceptionWhenCodeTextIncorrect property is set to true, an exception is thrown. Otherwise, the code text is corrected to match the barcode's specifications. An exception is always thrown for the Databar symbology if code text is incorrect. An exception is never thrown for the AustraliaPost, SingapurePost, Code39Extended, Code93Extended, Code16K, Code128 symbologies, even if the code text is incorrect.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-OptionalExceptionMessageWith1DBarCode-OptionalExceptionMessageWith1DBarCode.cs" >}}

@@ -17,4 +17,4 @@ Use the [PdfConverter](https://apireference.aspose.com/pdf/net/aspose.pdf.facade
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-ExportPDFPagesToImagesAndRecognizeBarCode-ExportPDFPagesToImagesAndRecognizeBarCode.cs" >}}
 
-The evaluation version of Aspose.BarCode for .NET can only recognize Code39 barcodes. If the image contains a barcode of other than Code39 symbology type, a valid license must be set. For getting a temporary license for 30 days, please visit <http://www.aspose.com/corporate/purchase/temporary-license.aspx> for more details.
+The evaluation version of Aspose.BarCode for .NET can only recognize Code39 barcodes. If the image contains a barcode of other than the Code39 symbology type, a valid license must be set. For getting a temporary license for 30 days, please visit <http://www.aspose.com/corporate/purchase/temporary-license.aspx> for more details.

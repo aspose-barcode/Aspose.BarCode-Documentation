@@ -11,16 +11,16 @@ In this article, we will use ASP.NET web services to create barcodes. We will al
 
 {{% /alert %}} 
 ## **Benefits**
-Web services provide a major benefit in integrating the software with external applications. With a standardized request/response model, any client application that can utilize the XML web service can benefit from it. Below is the brief visual representation of the barcode service. The clients do not need to refer to Aspose.BarCode for .NET. They will just send 2 string values (codetext and symbology) and will get the barcode image (byte array) from the service.
+Web services provide a major benefit in integrating the software with external applications. With a standardized request/response model, any client application that can utilize the XML web service can benefit from it. The given below is a brief visual representation of the barcode service. The clients do not need to refer to Aspose.BarCode for .NET. They will just send 2 string values (codetext and symbology) and will get the barcode image (byte array) from the service.
 
 ![todo:image_alt_text](how-to-use-web-service-to-create-barcode_1.png)
 ## **Barcode Web Service**
 Open Microsoft Visual Studio and create a new project of type “ASP.NET Web Service Application”. Name the project as “BarCodeService”. Add a reference to the following .NET assemblies.
 
-1. System.Drawing from the .NET tab of “Add Reference” dialog box
+1. System.Drawing from the .NET tab of the “Add Reference” dialog box
 1. Aspose.BarCode.
 
-Browse to the location where Aspose.BarCode for .NET is installed and select. Visual Studio adds a default class “Service1” to the Web Service project in Service1.asmx file. Open it and add the following method to this class.
+Browse to the location where Aspose.BarCode for .NET is installed and select. Visual Studio adds a default class “Service1” to the Web Service project in the Service1.asmx file. Open it and add the following method to this class.
 
 {{< highlight csharp >}}
 
@@ -83,7 +83,7 @@ Design the forms as follows.
 It contains the following controls:
 
 1. Textbox: Input CodeText from user
-1. Combobox: Input symbology type from user
+1. Combobox: Input symbology type from the user
 1. Button: Call web service
 1. Picturebox: Display the barcode image
 
