@@ -13,15 +13,13 @@ In this section, we will read the image and get all the barcode regions, for all
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-GetBarCodeRegionInformationfromImage-GetBarCodeRegionInformationfromImage.cs" >}}
 
 ## **Getting Barcode Recognition Quality in Percentage**
-The [BarCodeReader.GetRecognitionQuality](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/getrecognitionquality) method gets the recognition quality in percentage. It works for only 1D and postal barcodes. The following code snippet shows you how to get barcode recognition quality in percentage.
+The [BarCodeResult.ReadingQuality](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) property provides the recognition quality in percentage. It works for only 1D and postal barcodes. The following code snippet shows you how to get barcode recognition quality in percentage.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-GetBarCodeRecognitionQualityInPercent-GetBarCodeRecognitionQualityInPercent.cs" >}}
 
 ## **Detect an Unreadable Barcode on the Image**
-[Aspose.BarCode for .NET APIs](https://www.aspose.com/products/barcode/net) allows developers to detect an unreadable barcode on the image.  It is currently supported by QR and Code128 recognition engines and enabled by the modes: [RecognitionMode.MaxBarCodes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/recognitionmode). All recognition modes are defined in this help topic: [Switch Barcode Recognition Modes According to the Requirement](/barcode/net/read-barcode-properties/). The new [GetIsDeniable method](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/getisdeniable) has been added to the [Aspose.BarCode](https://apireference.aspose.com/net/barcode) class to indicate whether the image contains any unreadable barcodes. The following code snippet shows you how to get barcode recognition quality in percentage.
+[Aspose.BarCode for .NET APIs](https://www.aspose.com/products/barcode/net) allows developers to detect an unreadable barcode on the image.  It is currently supported by QR and Code128 recognition engines and enabled by the modes: [QualitySettings.MaxBarCodes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes).  The following code snippet shows you how to get barcode recognition quality in percentage.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-DetectUnreadableBarcode-DetectUnreadableBarcode.cs" >}}
 
-**Scan result:** 
-Code128: A;000000014941, IsDeniable: True
 
 ## **Detect Orientation of the Barcode**
 [Aspose.BarCode](https://apireference.aspose.com/net/barcode) allows developers to detect the orientation of a detected bar code by calling the GetAngle method of BarCodeReader class. The following code snippet shows you how to detect the orientation of a barcode.

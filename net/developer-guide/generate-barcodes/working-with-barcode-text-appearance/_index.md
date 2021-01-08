@@ -13,7 +13,7 @@ url: /net/working-with-barcode-text-appearance/
 |**All possible locations of Code text on the barcode image**|
 | :- |
 |![todo:image_alt_text](working-with-barcode-text-appearance_1.jpg)|
-All barcode generating classes have a CodeTextParameters.Location property that can accept any pre-defined value stored in CodeLocation enumeration.The pre-defined values in [CodeLocation ](https://apireference.aspose.com/barcode/net/aspose.barcode/codelocation)enumeration are listed below.
+All barcode generating classes have a CodeTextParameters.Location property that can accept any pre-defined value stored in CodeLocation enumeration.The pre-defined values in [CodeLocation ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location)enumeration are listed below.
 
 |**Code Locations**|**Description** |
 | :- | :- |

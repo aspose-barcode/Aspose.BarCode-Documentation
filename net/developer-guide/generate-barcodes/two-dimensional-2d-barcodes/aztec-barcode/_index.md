@@ -16,6 +16,6 @@ Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/net/asp
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateAztecbarcode-CreateAztecbarcode.cs" >}}
 
 ### **Error correction**
-The Aztec barcode allows code recovery when the barcode image is partly damaged, error correction level is ranging from 10% to 90%. Below is an example of setting up the Aztec barcode's [error correction level](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/aztecterrorlevel). Aztec barcode sample with different error correction levels.
+The Aztec barcode allows code recovery when the barcode image is partly damaged, error correction level is ranging from 10% to 90%. Below is an example of setting up the Aztec barcode's [error correction level](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/aztecerrorlevel). Aztec barcode sample with different error correction levels.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-UseAztecErrorCorrection-UseAztecErrorCorrection.cs" >}}

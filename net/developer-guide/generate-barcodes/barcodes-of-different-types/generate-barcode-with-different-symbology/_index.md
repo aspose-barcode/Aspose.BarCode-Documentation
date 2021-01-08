@@ -10,7 +10,7 @@ Aspose.BarCode for .NET allows developers to generate GS1-128 AI 8102 coupon ext
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CreateCouponExtendedBarcode-CreateCouponExtendedBarcode.cs" >}}
 ## **Generating GS1 for Codablock F barcode**
-Aspose.BarCode for .NET allows developers to generate GS1 for Codablock F barcode. A new symbology **GS1CodablockF** is added to [Symbology](https://apireference.aspose.com/net/barcode/aspose.barcode/symbology) class to generate GS1 for Codablock F coded barcode. The following code snippet shows you how to generates the **GS1CodablockF** barcode:
+Aspose.BarCode for .NET allows developers to generate GS1 for Codablock F barcode. A new symbology **GS1CodablockF** is added to [Symbology](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes) class to generate GS1 for Codablock F coded barcode. The following code snippet shows you how to generates the **GS1CodablockF** barcode:
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-GeneratingGS1ForCodablock-GeneratingGS1ForCodablock.cs" >}}
 ## **Generating GS1-128 AI 8012 Barcode**

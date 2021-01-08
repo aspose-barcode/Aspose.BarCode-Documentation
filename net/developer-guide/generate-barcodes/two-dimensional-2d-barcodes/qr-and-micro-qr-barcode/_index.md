@@ -105,7 +105,7 @@ Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/net/as
 ## **Encode multi-ECI and FNC1 Symbols in QR Code**
 The ExtendedCodetext mode allows developers to encode multi-ECI and FNC1 symbols in the QR code. Extended Channel mode supports FNC1 first position, FNC1 second position, and multi ECI modes.
 ### **QR Code Encoding in the Extended Code Text Mode**
-Aspose.BarCode APIs use [QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class for extended code text generation. Use [Display2DText](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/display2dtext) property of the [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class to set visible text and removing managing characters display.
+Aspose.BarCode APIs use [QrExtCodetextBuilder](https://apireference.aspose.com/barcode/net/aspose.barcode/qrextcodetextbuilder) class for extended code text generation. Use [Display2DText](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property of the [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class to set visible text and removing managing characters display.
 
 Encoding Principles:
 

@@ -29,18 +29,15 @@ If we specify the Symbology Type in the constructor, the program will know befor
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-RecognizeSpecificBarcodeSymbology-RecognizeSpecificBarcodeSymbology.cs" >}}
 
 For unknown types of barcodes, either set call Read() method with no arguments or programmatically loop through every Symbology.
-### **BarCodeReadType**
-[GetReadType()](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/getreadtype) method of [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) class returns the symbology type of the recognized barcode. Continuing the sample above, the first recognized barcode's SymbologyType is: For those variation barcode Symbologies, its original SymbologyType or superset SymbologyType will be returned. For example, both Code39Standard and Code39Extended barcode will be recognized as Code39Extended barcode.
-### **CodeText**
-GetCodeText() method of a BarCodeReader class returns the string which is the decoded data from the barcode.
+
 ### **Recognizing Multiple Symbologies in Single Image**
 There might be such situations in which there are multiple barcodes in a single image. Aspose.BarCode can easily recognize all the barcodes of the supported symbology types. This can be done by specifying multiple symbology types separated by bitwise OR operator “|” in the barcode constructorSee the image below. It contains 2 barcodes of type Code39Standard and PDF417. Since [BarCodeReader.ReadBarCodes()](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method returns a Boolean value, you can call it in a while loop to recognize all the barcodes in the image. The Read() method will return true for the first barcode, again return true for the second barcode and then it will return false in the third iteration.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-RecognizeMultipleSymbologies-RecognizeMultipleSymbologies.cs" >}}
 
-In the above code snippet, we assumed that we already knew the symbology types of the barcodes in the image. So, we specified the symbologies separated by **bitwise OR “|”** operator. If the symbologies are not known in advance, you can simply use [BarCodeReadType.AllSupportedTypes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereadtype) to check for any symbology type. In this case, the constructor in the above code snippet will be modified as follows:
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-AllSupportedTypes-AllSupportedTypes.cs" >}}
+In the above code snippet, we assumed that we already knew the symbology types of the barcodes in the image. So, we specified the symbologies separated by **bitwise OR “|”** operator. 
+
 ## **Get all Possible 1D Barcodes from an Image**
-The [BarCodeReader.GetAllPossibleBarCodes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/getallpossiblebarcodes) method is only for 1D barcodes. It returns an array of all possible barcodes found. This array holds all information about the barcodes like code text, symbology, recognition percentage, and region details. The following code snippet shows you how to get all possible 1D barcodes from an image.
+The [DecodeType.AllSupportedTypes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/decodetype/fields/allsupportedtypes) method is only for 1D barcodes. It returns an array of all possible barcodes found. This array holds all information about the barcodes like code text, symbology, recognition percentage, and region details. The following code snippet shows you how to get all possible 1D barcodes from an image.
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-GetAllPossible1DBarcodesfromImage-GetAllPossible1DBarcodesfromImage.cs" >}}
 ## **Datamatrix Barcode**
 ### **Detect Decorated Datamatrix Barcode**
