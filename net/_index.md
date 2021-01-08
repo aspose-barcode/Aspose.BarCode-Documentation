@@ -16,6 +16,7 @@ Aspose.BarCode for .NET is a set of barcode generation and recognition component
 
 {{% /alert %}} 
 **Aspose.BarCode for .NET Resources**
+
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for .NET Online Documentation](/barcode/net/)
