@@ -14,6 +14,7 @@ Patch code is a one-dimensional barcode symbology developed by Kodak.
 
 {{% /alert %}} 
 **How to produce a Patch Code**
+
 Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and set its EncodeType to be [EncodeTypes.](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/patchcode)[PatchCode](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/patchcode), and set its code text for the data you want to encode. The code example given below demonstrates how to generate a Patch code.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-GenerateAPatchCode-GeneratePatchCode.cs" >}}
