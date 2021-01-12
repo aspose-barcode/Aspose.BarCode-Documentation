@@ -99,7 +99,7 @@ There is no printer limitation for the barcodes generated with Aspose.BarCode. D
 - Deutsche Post Identcode
 - VIN
 ### **2D Symbologies**
-- Pdf417
+- PDF417
 - DataMatrix
 - Aztec
 - QR

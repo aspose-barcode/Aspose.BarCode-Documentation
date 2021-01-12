@@ -26,7 +26,7 @@ Click on **File** menu and choose **Import**. Select **Maven** - Existing Maven 
 
 ![todo:image_alt_text](http://i.imgur.com/nReoOb7.png)
 
-Browse to the folder that you cloned or downloaded from GitHub and select **pom.xml** file.
+Browse to the folder that you cloned or downloaded from GitHub and select the **pom.xml** file.
 
 ![todo:image_alt_text](http://i.imgur.com/xEytaDI.png)
 

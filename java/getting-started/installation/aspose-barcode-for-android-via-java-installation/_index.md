@@ -6,7 +6,7 @@ url: /java/aspose-barcode-for-android-via-java-installation/
 ---
 
 ## **System Requirements**
-Aspose.BarCode for Android via Java is a platform-independent so it can be used on any platform where the Android Runtime environment is installed and will run on Android systems running Android OS 2.0 or greater. At present, the component has been tested with:
+Aspose.BarCode for Android via Java is platform-independent so it can be used on any platform where the Android Runtime environment is installed and will run on Android systems running Android OS 2.0 or greater. At present, the component has been tested with:
 
 - Android 5.1 v 22
 ## **Installation**

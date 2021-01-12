@@ -83,7 +83,7 @@ url: /java/aspose-barcode-for-node-js-via-java-features/
 - Matrix 2 of 5
 - DatabarExpanded
 - PatchCode
-###**2D Symbologies**
+### **2D Symbologies**
 - PDF417
 - DataMatrix
 - Aztec

@@ -32,7 +32,7 @@ The license can be loaded from a stream or file in the following locations:
 1. Explicit path.
 1. The folder that contains the Aspose.BarCode.jar.
 
-Use the [License](http://www.aspose.com/api/java/barcode/com.aspose.barcode/classes/License).setLicense method to license the component. Often the easiest way to set a license is to put the license file in the same folder as Aspose.BarCode.jar and specify just the file name without a path as shown in the following example:
+Use the [License](https://apireference.aspose.com/barcode//java/com.aspose.barcode/license).setLicense method to license the component. Often the easiest way to set a license is to put the license file in the same folder as Aspose.BarCode.jar and specify just the file name without a path as shown in the following example:
 ### **Apply License From File**
 In this example Aspose.BarCode will attempt to find the license file in the folder that contains the JARs of your application.
 
@@ -45,7 +45,7 @@ Initializes a license from a stream.
 
 
 ### **Applying Metered Key**
-Aspose.BarCode for Java allows developers to apply metered key. It is a new licensing mechanism. The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [the Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
+Aspose.BarCode for Java allows developers to apply metered keys. It is a new licensing mechanism. The new licensing mechanism will be used along with the existing licensing method. Those customers who want to be billed based on the usage of the API features can use the metered licensing. For more details, please refer to [the Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered) section.
 
 **Metered** class has been introduced to apply the metered key. Following is the sample code demonstrating how to set metered public and private keys.
 

@@ -14,10 +14,6 @@ Aspose.BarCode for Java supports the following Java versions:
 
 Aspose.BarCode for Java is written entirely in Java, depends only on the standard Java libraries, and can be used in any Java application on any platform supported by Java.
 
-Aspose.BarCode for Java is provided as a ZIP download and contains the following:
-
-- Aspose.Barcode.jar libraries for different Java versions
-- Demo projects
-- Aspose.BarCode Documentation in HTML format
+Aspose.BarCode for Java code examples can be [downloaded in a ZIP from GitHub](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/archive/master.zip).
 
 {{% /alert %}}
