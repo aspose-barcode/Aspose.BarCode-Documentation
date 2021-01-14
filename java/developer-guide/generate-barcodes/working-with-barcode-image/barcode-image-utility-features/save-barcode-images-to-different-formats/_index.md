@@ -7,7 +7,7 @@ url: /java/save-barcode-images-to-different-formats/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://products.aspose.com/barcode/java) lets developers save barcode images to most popular image formats. The [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class has a public method, save() that saves an image.
+[Aspose.BarCode](https://products.aspose.com/barcode/java) allows developers to save barcode images to the most popular image formats. The [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) class has a public method, save() that saves an image.
 
 {{% /alert %}} 
 

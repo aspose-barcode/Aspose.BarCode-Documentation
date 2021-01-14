@@ -10,7 +10,7 @@ PHP binaries for Windows are available from <http://www.php.net/>. You need to d
 
 Install and configure the PHP/Java Bridge to make use of Java from PHP. For more details about installing and configuring the PHP/Java Bridge see <http://www.php.net/manual/en/ref.java.php>.
 
-Also you can download PHP/Java Bridge that doesn’t require a java extension from <http://php-java-bridge.sourceforge.net/pjb>.
+Also, you can download PHP/Java Bridge that doesn’t require a java extension from <http://php-java-bridge.sourceforge.net/pjb>.
 
 Download the latest version of Aspose.BarCode for Java, extract files and copy the lib folder with jar files to the root folder of your project. 
 ## **PHP Script to Generate Barcode via Inline Java**

@@ -14,21 +14,21 @@ This article shows how to create a simple mobile application that generates a ba
 1. To set up the application:
    Open Netbeans and create a new mobile device application.
 1. Reference Aspose.BarCode.
-   Please refer to [Setting the Environment](http://www.aspose.com/docs/display/barcodejava/Setting+the+Environment) for information on how to prepare the development environment and adding reference to the Aspose.BarCode.J2ME.jar package.
-   As mentioned in [Setting the Environment](http://www.aspose.com/docs/display/barcodejava/Setting+the+Environment), after creating a new project, a HelloMIDlet.java file is created by the project wizard. This article shows how to modify this file to generate the barcode image.
+   Please refer to [Setting the Environment](https://docs.aspose.com/barcode/java/setting-the-environment/) for information on how to prepare the development environment and adding a reference to the Aspose.BarCode.J2ME.jar package.
+   As mentioned in [Setting the Environment](https://docs.aspose.com/barcode/java/setting-the-environment/), after creating a new project, a HelloMIDlet.java file is created by the project wizard. This article shows how to modify this file to generate the barcode image.
    The screen contains a default “screen item” with the text hello world.
 1. Right-click the screen item and select **Delete** to remove it.
    The screen is now empty, without controls.
 1. Right-click the screen and select **New/Add**, followed by **Text Field** from the menu.
    A text field control is added.
 1. Set the label to **Codetext:** and the text to **test-123**.
-   The screen now looks like one below. 
+   The screen now looks like the one below. 
 
 |![todo:image_alt_text](http://i.imgur.com/YkLrR3U.png)|
 | :- |
 |**Figure: Sample application** |
-The textbox is used to get codetext from screen when generating the barcode.
-To render the barcode image on screen, use a custom item.
+The textbox is used to get codetext from the screen when generating the barcode.
+To render the barcode image on the screen, use a custom item.
 
 1. Create a class that extends the CustomItem class. The new class will add an image to the screen area and render the barcode image to display. Public methods will be added in this class to generate and render the barcode image from the application. Below is the complete code for the class. 
 

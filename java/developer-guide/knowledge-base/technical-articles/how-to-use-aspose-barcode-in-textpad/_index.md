@@ -7,7 +7,7 @@ url: /java/how-to-use-aspose-barcode-in-textpad/
 
 {{% alert color="primary" %}} 
 
-This article explains how to use [Aspose.BarCode for Java](http://www.aspose.com/api/java/barcode) in TextPad.
+This article explains how to use [Aspose.BarCode for Java](https://apireference.aspose.com/barcode/java) in TextPad.
 
 {{% /alert %}} 
 ## **Use Aspose.BarCode in TextPad**
@@ -34,7 +34,7 @@ TextPad is an editor for Windows with menu selections for compiling and running 
 |![todo:image_alt_text](http://i.imgur.com/L9PMGis.png)|
 | :- |
 1. Click **OK** and save the setting.
-   We are now ready to create a main class.
+   We are now ready to create the main class.
 1. Enter the Java code and save the code.
 
 When you save the class, make sure the file name is the same as the class name. For example, if you are saving the SampleCode class, save it as SampleCode.java. Make sure to match the lower- and uppercases. Java is case-sensitive.

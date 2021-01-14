@@ -32,14 +32,14 @@ Specifies the type of bar code specification.
 |Interleaved2of5 |Specifies that the data should be encoded with barcode specification |131072 |
 |Matrix2of5 |Represents Matrix 2 of 5 BarCode |262144 |
 |ItalianPost25 |Represents Italian Post 25 barcode. |524288 |
-|IATA2of5 |Represents IATA 2 of 5 barcode.IATA (International Air Transport Association) uses this barcode for the management of air cargo. |1048576 |
+|IATA2of5 |Represents IATA 2 of 5 barcodes. IATA (International Air Transport Association) uses this barcode for the management of air cargo. |1048576 |
 |ITF14 |Specifies that the data should be encoded with barcode specification |2097152 |
 |ITF6 |Represents ITF-6 Barcode. |4194304 |
 |MSI |Specifies that the data should be encoded with barcode specification |8388608 |
 |VIN |Represents VIN (Vehicle Identification Number) Barcode. |16777216 |
 |DeutschePostIdentcode |Represents Deutschen Post barcode, This Symbology is also known as Identcode,CodeIdentcode,German Postal 2 of 5 Identcode,   <br>Deutsche Post AG Identcode, Deutsche Frachtpost Identcode, Deutsche Post AG (DHL) |33554432 |
 |DeutschePostLeitcode |Represents Deutsche Post Leitcode Barcode,also known as German Postal 2 of 5 Leitcode, CodeLeitcode, Leitcode, Deutsche Post AG (DHL). |67108864 |
-|OPC |Represents OPC(Optical Product Code) Barcode,also known as , VCA Barcode VCA OPC, Vision Council of America OPC Barcode. |134217728 |
+|OPC |Represents OPC(Optical Product Code) Barcode, also known as , VCA Barcode VCA OPC, Vision Council of America OPC Barcode. |134217728 |
 |PZN |Represents PZN barcode.This Symbology is also known as Pharma Zentral Nummer,Pharmazentralnummer |268435456 |
 |Pharmacode |Represents Pharmacode barcode. This Symbology is also known as Code32 |536870912 |
 |DataMatrix |2D barcode symbology DataMatrix |1073741824 |
@@ -51,7 +51,7 @@ Specifies the type of bar code specification.
 |Postnet |Specifies that the data should be encoded with barcode specification |68719476736 |
 |Planet |Specifies that the data should be encoded with barcode specification |137438953472 |
 |OneCode |Specifies that the data should be encoded with USPS barcode specification |274877906944 |
-|RM4SCC |Represents RM4SCC barcode. RM4SCC (Royal Mail 4-state Customer Code) is used for automated mail sort process in the UK. |549755813888 |
+|RM4SCC |Represents RM4SCC barcode. RM4SCC (Royal Mail 4-state Customer Code) is used for the automated mail sort process in the UK. |549755813888 |
 |DatabarOmniDirectional |Specifies that the data should be encoded with barcode specification |1099511627776 |
 |DatabarTruncated |Specifies that the data should be encoded with barcode specification |2199023255552 |
 |DatabarLimited |Represents Databar expanded barcode |4398046511104 |

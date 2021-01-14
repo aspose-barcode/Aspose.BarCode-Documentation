@@ -13,7 +13,7 @@ Sometimes, the barcode in an image might be at an angle, for example at 90 degre
 |**Figure: A rotated barcode**|
 If you know the angle of the barcode in advance, set orientation in the BarCodeReader class to reduce the recognition time.
 
-The barcode above is at a 90 degree angle and has an orientation of Rotate90. The orientation is set using BarCodeReader.setOrientationHints() method and passing Orientation as an argument.
+The barcode above is at a 90-degree angle and has an orientation of Rotate90. The orientation is set using BarCodeReader.setOrientationHints() method and passing Orientation as an argument.
 ### **Supported Orientation Hints**
 Aspose.BarCode for Java supports the following orientation hints:
 
@@ -40,9 +40,9 @@ Aspose.BarCode for Java provides better and faster barcode recognition using the
 - **Median smoothing image processing** 
   ImageBinarization.MedianSmoothing
   Median smoothing removes the noise from the image while preserving the image edges. This technique gives a perfect result. In more complicated images, less data is lost by taking the median.
-  - setMedianSmoothingWindowSize: Sets the median smoothing window size. Typical values are 3 or 4. The default value is 3. The recognition hint MedianSmoothing must be set. For noisy images, 4 is good value.
+  - setMedianSmoothingWindowSize: Sets the median smoothing window size. Typical values are 3 or 4. The default value is 3. The recognition hint MedianSmoothing must be set. For noisy images, 4 is a good value.
 
-The following code snippet shows how to use median smoothing processing technique when recognizing a barcode.
+The following code snippet shows how to use the median smoothing processing technique when recognizing a barcode.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-FasterImageProcessingForBarcodeRecognition-FasterImageProcessingForBarcodeRecognition.java" >}}
 ## **Get BarCode Recognition Quality in Percent**
@@ -56,7 +56,7 @@ Aspose.BarCode provides public property AllowOneDWipedBarsRestoration to the Qua
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode_recognition-advanced_features-SingleWipedBarsInPattern-SingleWipedBarsInPattern.java" >}}
 ## **Read Multiple Macropdf417 Barcode Images**
-[Generate Multiple MacroPdf417 Barcodes for Large or Multiple Code Text Values](http://www.aspose.com/docs/display/barcodejava/Generate+Multiple+MacroPdf417+Barcodes+for+Large+or+Multiple+Code+Text+Values) showed how to generate multiple Macropdf417 barcodes for multiple code text values. This article shows how to create a program that recognizes barcodes generated in that article.
+[Generate Multiple MacroPdf417 Barcodes for Large or Multiple Code Text Values](https://docs.aspose.com/barcode/java/generate-multiple-macropdf417-barcodes-for-large-or-multiple-code-text-values/) showed how to generate multiple Macropdf417 barcodes for multiple code text values. This article shows how to create a program that recognizes barcodes generated in that article.
 
 Barcode images are placed in a folder and are recognized with the BarCodeReader class. The BarCodeReader class returns the segment ID, file ID and last segment flag (which is either true or false) for each for the MacroPdf417 barcodes.
 

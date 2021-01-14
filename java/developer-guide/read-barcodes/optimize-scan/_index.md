@@ -15,7 +15,7 @@ There are two ways to address recognition optimization; the first optimizes accu
 - SymbologyType setting. If the barcode type is unknown, try not to pass the symbology type (BarCodeReadType) to the constructor. Instead, recognize separately.
 - The BarCodeReader class' internal optimization schema sacrifices accuracy for speed if the symbology type is not specified in the constructor.
 ### **Speed Up**
-- Reduce image size. Larger images will lead to longer processing time.
+- Reduce image size. Larger images will lead to a longer processing time.
 ## **Switch Barcode Recognition Modes According to the Requirement**
 Aspose.BarCode for Java provides the recognition modes that can help the developers to quickly set up and tune the processing speed and quality in a way which is the most appropriate for the application needs.
 

@@ -66,7 +66,7 @@ The following example demonstrates how to scan a picture of a barcode image usin
 [BarCodeReader](https://apireference.aspose.com/java/barcode/com.aspose.barcode.barcoderecognition/package-frame) accepts many standard image formats.
 
 - **BMP** – BMP is a standard format to store device-independent and application-independent images. The number of bits per pixel (1, 4, 8, 15, 24, 32, or 64) for a given BMP file is specified in the file header. BMP files with 24 bits per pixel are common. BMP files are usually not compressed.
-- **Graphics Interchange Format (GIF)** – GIF is a common format for images that appear on Web pages. GIFs are compressed, but no information is lost in the compression process; a decompressed image is exactly the same as the original. One color in a GIF can be designated as transparent so that the image will have the background color of any Web page that displays it. GIFs store at most 8 bits per pixel, so they are limited to 256 colors.
+- **Graphics Interchange Format (GIF)** – GIF is a common format for images that appear on Web pages. GIFs are compressed, but no information is lost in the compression process; a decompressed image is exactly the same as the original. One-color in a GIF can be designated as transparent so that the image will have the background color of any Web page that displays it. GIFs store at most 8 bits per pixel, so they are limited to 256 colors.
 - **Joint Photographic Experts Group (JPEG)** – JPEG is a compression scheme that works well for natural scenes such as scanned photographs. Some information is lost in the compression process, but often the loss is imperceptible to the human eye. JPEGs store 24 bits per pixel, so they are capable of displaying more than 16 million colors. JPEGs do not support transparency. * **Portable Network Graphics (PNG)** – The PNG format retains many of the advantages of the GIF format but also provides capabilities beyond those of GIF. Like GIF files, PNG files are compressed with no loss of information. PNG files can store colors with 8, 24, or 48 bits per pixel and grayscales with 1, 2, 4, 8, or 16 bits per pixel. In contrast, GIF files can use only 1, 2, 4, or 8 bits per pixel. A PNG file can also store an alpha value for each pixel, which specifies the degree to which the color of that pixel is blended with the background color.
 - **Tag Image File Format (TIFF)** – TIFF is a flexible and extendable format that is supported by a wide variety of platforms and image-processing applications. TIFF files can store images with an arbitrary number of bits per pixel and can employ a variety of compression algorithms.
 
@@ -115,7 +115,7 @@ The BarCodeReader class' getReadType() method returns the symbology type of the
 
 {{< /highlight >}}
 
-For barcode symbologies with variations, it's original SymbologyType or superset SymbologyType is returned. For example, both Code39Standard and Code39Extended barcodes are recognized as Code39Extended barcode.
+For barcode symbologies with variations, it's original SymbologyType or superset SymbologyType is returned. For example, both Code39Standard and Code39Extended barcodes are recognized as Code39Extended barcodes.
 #### **Code Text**
 The BarCodeReader class' GetCodeText() method returns a string representing the barcode's decoded data.
 

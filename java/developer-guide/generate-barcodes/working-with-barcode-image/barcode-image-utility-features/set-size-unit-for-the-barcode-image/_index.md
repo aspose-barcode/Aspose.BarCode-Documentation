@@ -20,7 +20,7 @@ The pre-defined measuring units are here:
 |Millimeter|Specifies the millimeter as the unit of measure|
 |Pixel|Specifies a device pixel as the unit of measure|
 |Point|Specifies a printer's point (1/72 inch) as the unit of measure|
-The default size measurement unit for barcode images is millimeter.
+The default size measurement unit for barcode images is a millimeter.
 
 The example below changes the bar height of the barcode but the measuring unit being used for the bar height is Point.
 

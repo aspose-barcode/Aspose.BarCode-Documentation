@@ -23,7 +23,7 @@ Download the latest version of Aspose.BarCode for Java, extract files and copy t
 
 {{% /alert %}} 
 ## **Perl Script to Generate Barcode using Inline Java**
-The following code will generate barcode and save the barcode image.
+The following code will generate a barcode and save the barcode image.
 
 **Perl**
 

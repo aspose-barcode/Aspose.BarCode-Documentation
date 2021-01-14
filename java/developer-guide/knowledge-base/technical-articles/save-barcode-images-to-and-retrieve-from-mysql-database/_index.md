@@ -7,7 +7,7 @@ url: /java/save-barcode-images-to-and-retrieve-from-mysql-database/
 
 {{% alert color="primary" %}} 
 
-This article uses [Aspose.BarCode for Java](http://www.aspose.com/api/java/barcode) to generate a barcode image and save it to a MySQL database. It also shows how to retrieve the barcode image from the database and then recognize code text from it.
+This article uses [Aspose.BarCode for Java](https://products.aspose.com/barcode/java) to generate a barcode image and save it to a MySQL database. It also shows how to retrieve the barcode image from the database and then recognize code text from it.
 
 Aspose.BarCode for Java has built-in support for saving barcode images to disk. But it is also possible to store and retrieve barcode images to and from a MySQL database using Java.
 
@@ -46,7 +46,7 @@ The above SQL statement creates a new table called **product** in the test schem
 1. ID (Integer)
 1. ProductNumber (Varchar) stores the product number.
 1. ProductName (Varchar)
-1. BarCodeImage (Blob) stores the barcode image in the binary form.
+1. BarCodeImage (Blob) stores the barcode image in binary form.
 ## **Generate Barcode and Store in Database**
 Create a Java program that will generate a barcode image and then store the image in the product table's **BarCodeImage** column. 
 The data type of this column is blob so that it can contain binary data.
@@ -59,7 +59,7 @@ Below is the full listing of the program.
 
 In the above code snippet, a class called {{GenerateAndSaveBarCode} is created. It contains two methods:
 
-- **PerformInsertExample** – Insert barcode image in MySQL database. This method first uses Aspose.BarCode for Java to generate a Code39Standard barcode image and save it in the disk. Then it creates a connection with the MySQL database using MySQL JDBC drivers. After that, we created an object of type PreparedStatement and supplies the “INSERT” SQL query for creating a new record in the table. Then we create a stream from the file (saved image) and set the value of the **BarCodeImage** column to this stream. Since the data type is a blob, it can store a stream. Finally, the statement is executed and the database connection closed.
+- **PerformInsertExample** – Insert barcode image in MySQL database. This method first uses Aspose.BarCode for Java to generate a Code39Standard barcode image and save it on the disk. Then it creates a connection with the MySQL database using MySQL JDBC drivers. After that, we created an object of type PreparedStatement and supplies the “INSERT” SQL query for creating a new record in the table. Then we create a stream from the file (saved image) and set the value of the **BarCodeImage** column to this stream. Since the data type is a blob, it can store a stream. Finally, the statement is executed and the database connection is closed.
 - **PerformUpdateExample** – Update barcode image to MySQL database. This method also generates a barcode image and saves it to disk. Then it uses the UPDATE SQL statement to update the record in the table.
 ## **Retrieve Barcode Image from Database and Recognize Barcode**
 Now, fetch all the records from the product table and construct an image from the **BarCodeImage** column. Then, pass the image to Aspose.BarCode for Java to recognize CodeText. Below is the code snippet for barcode recognition.
