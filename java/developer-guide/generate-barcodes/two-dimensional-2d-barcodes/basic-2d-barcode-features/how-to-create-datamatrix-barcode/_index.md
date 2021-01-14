@@ -39,7 +39,7 @@ Aspose.BarCode supports several types of an encoding mode for DataMatrix. The de
 |Auto |Automatically pick up the best encode mode for Datamatrix encoding|
 | :- | :- |
 |ASCII |Encodes one alphanumeric or two numeric characters per byte|
-|Full |Encode 8 bit values|
+|Full |Encode 8-bit values|
 |Custom |Encode with the encoding specified in BarCodeBuilder.CodeTextEncoding|
 |C40 |Uses C40 encoding. Encodes Upper-case alphanumeric, Lower case and special characters|
 |Text |Uses Text encoding. Encodes Lower-case alphanumeric, Upper case and special characters|
@@ -57,7 +57,7 @@ The left side barcode was created in Auto encoding mode. The right side barcode 
 | :- |
 |**Figure: DataMatrix under different encoding modes**|
 ## **Custom Encoding Mode**
-Aspose.BarCode now supports the Custom encoding mode for DataMatrix in order to support Encoding standard like UTF8.
+Aspose.BarCode now supports the Custom encoding mode for DataMatrix in order to support Encoding standards like UTF8.
 
 Below is an example of setting up a DataMatrix custom encode mode.
 

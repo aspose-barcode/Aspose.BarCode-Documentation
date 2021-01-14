@@ -30,6 +30,6 @@ The size of a barcode image depends on many factors. The following settings all 
 - [setCodeText()](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator#setCodeText-java.lang.String-) – data to be encoded, different types of BarCode may have different CodeText length restrictions.
 - [getCodeTextParameters()](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters#getCodeTextParameters--) – contains specific configuration properties for codetext of barcode like as setLocation(), setColor(), setAlignment(), getFont(), and getSpace().  
 
-Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. For example, DataMatrix is a square based barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) simply ignores illegal settings and decides on its own during the process.
+Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. For example, DataMatrix is a square-based barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) simply ignores illegal settings and decides on its own during the process.
 
 {{% /alert %}}

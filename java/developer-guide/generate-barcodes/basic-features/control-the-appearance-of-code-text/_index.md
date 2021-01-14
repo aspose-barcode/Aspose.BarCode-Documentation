@@ -7,11 +7,11 @@ url: /java/control-the-appearance-of-code-text/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://www.aspose.com/products/barcode/java) provides complete control over the appearance of the Code text in the barcode image. There are many settings that can be applied to the code text to customize its appearance as discussed below:
+[Aspose.BarCode](https://www.aspose.com/products/barcode/java) provides complete control over the appearance of the Code text in the barcode image. Many settings can be applied to the code text to customize its appearance as discussed below:
 
 {{% /alert %}} 
 ## **Code Text Location**
-Aspose.BarCode gives full power to developers to decide whether they want to display Code text or not. Moreover, it is also possible to customize that where to display the Code text (that is display above or below the barcode) as shown below.
+Aspose.BarCode gives full power to developers to decide whether they want to display Code text or not. Moreover, it is also possible to customize that where to display the Code text (that is the display above or below the barcode) as shown below.
 
 |![todo:image_alt_text](http://i.imgur.com/B5FcjxY.jpg)|
 | :- |

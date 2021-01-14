@@ -8,7 +8,7 @@ url: /java/creating-a-qr-barcode/
 QR is a two-dimensional barcode symbology developed in Japan. QR barcode has the following features:
 
 - High capacity encoding of data, up to 7000 numeric digits or 4000 alphanumeric data.
-- Dirt and damage resistant, a maximum 30% of codewords can be restored.
+- Dirt and damage resistant, a maximum of 30% of codewords can be restored.
 - Readable from all directions.
 
 This article shows how to use Aspose.BarCode to
@@ -29,7 +29,7 @@ To create a QR barcode:
 | :- |
 |**Figure: Output QR barcode**|
 ## **Error Correction**
-QR barcode can withstand a certain amount of damage and still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
+QR barcodes can withstand a certain amount of damage and still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
 
 - **LevelL**: allows recovery of 7% of the code text.
 - **LevelM**: allows recovery of 15% of the code text.
@@ -50,11 +50,11 @@ QR barcodes can be read from any direction. The following samples show valid QR 
 | :- |
 |**Figure: Rotated QR barcodes**|
 ## **Create QR Barcode with Logo**
-Aspose.BarCode now supports generating QR barcode with logo/other images inside it. The following code snippet shows how a QR barcode can be created with logo/other images inside it.
+Aspose.BarCode now supports generating a QR barcode with logo/other images inside it. The following code snippet shows how a QR barcode can be created with logo/other images inside it.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-QRBarcodeWithImage.java" >}}
 ## **How to set QR version**
-Aspose.BarCode for Java allows developers to set version of QR barcode while generating the barcode. A property **setQRVersion** has been introduced in the **BarcodeGenerator** class to achieve the goal. Following is the sample code demonstration of how to set a version of QR barcode before generating the actual barcode image.
+Aspose.BarCode for Java allows developers to set versions of QR barcodes while generating the barcode. A property **setQRVersion** has been introduced in the **BarcodeGenerator** class to achieve the goal. Following is the sample code demonstration of how to set a version of the QR barcode before generating the actual barcode image.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-set_QR_version.java" >}}
 ## **QR Code Encoding in the ECI Mode**

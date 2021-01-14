@@ -9,7 +9,7 @@ url: /java/qr-and-micro-qr-barcode/
 QR barcode is a two-dimensional barcode symbology developed in Japan. QR barcode has the following features:
 
 - High capacity encoding of data, up to 7000 numeric digits or 4000 alphanumeric data
-- Dirt and damage resistant, a maximum 30% of codewords can be restored
+- Dirt and damage resistant, a maximum of 30% of codewords can be restored
 - Readable from all directions
 
 Added a [QR ](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters#getQR--)property in [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) Class as [BarcodeParameter](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
@@ -39,7 +39,7 @@ Added changes to Enum [QREncodeMode](https://apireference.aspose.com/barcode/ja
 ### **Encoding of a QR and Micro QR Barcode**
 The micro QR code is a smaller version of the QR code standard for applications where symbol size is limited. There are 4 different versions (sizes) of Micro QR codes: the smallest is 11×11 modules; the largest can hold 35 numeric characters.
 ### **Error correction**
-QR barcode can withstand certain damage and can still be decoded normally. This is decided by QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
+QR barcodes can withstand certain damage and can still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
 
 - **LevelL**. Allows recovery of 7% of the code text
 - **LevelM**. Allows recovery of 15% of the code text
@@ -50,7 +50,7 @@ Instantiate a BarcodeGenerator class object and set its EncodeType to QR, then s
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-EncodeQRCode.java" >}}
 ### **How to set QR version**
-Aspose.BarCode allows developers to set a version of QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. The following code example demonstrates how to set the QR version before generating a barcode image.
+Aspose.BarCode allows developers to set a version of the QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. The following code example demonstrates how to set the QR version before generating a barcode image.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAQRBarcode-set_QR_version.java" >}}
 ### **How to Encode MicroQR Code**

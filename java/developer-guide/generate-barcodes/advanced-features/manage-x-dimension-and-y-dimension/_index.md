@@ -11,7 +11,7 @@ This article explains how barcodes use the x-dimension and y-dimension, how they
 
 {{% /alert %}} 
 ## **What is x-dimension?**
-All barcode symbologies have unique characteristics but there are some that are common to all: x-dimension is one such. All barcodes have an x-dimension.
+All barcode symbologies have unique characteristics but some are common to all: x-dimension is one such. All barcodes have an x-dimension.
 
 The x-dimension is the narrowest bar or space in the barcode. Barcode symbologies usually specify a minimum x-dimension value to ensure compatibility between reading and printing equipment used in an open system (for example, a barcode label that will be read by scanners outside the issuing company).
 

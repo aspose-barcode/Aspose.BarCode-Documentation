@@ -6,7 +6,7 @@ url: /java/specify-symbologies-for-barcodes/
 ---
 
 ## **What are Barcodes?**
-A barcode is a system for automatic identification of items, such as books in a library, by means of printed bars of different widths which represent numbers. Barcodes are used for many different things. For example, to speed up check out, to track sales and to help with inventory. The first set of numbers in a barcode is the manufacturer code, and the second set of numbers the product code. The barcode was introduced in the early 80s and was often printed on record sleeves only, sometimes also on the center record paper label.
+A barcode is a system for automatic identification of items, such as books in a library, using printed bars of different widths that represent numbers. Barcodes are used for many different things. For example, to speed up check out, to track sales and to help with inventory. The first set of numbers in a barcode is the manufacturer code, and the second set of numbers the product code. The barcode was introduced in the early 80s and was often printed on record sleeves only, sometimes also on the center record paper label.
 ## **Barcode Symbologies**
 The barcode symbology is the protocol that defines a standard for arranging the bars and the spaces between the bars that comprise a particular type of barcode, such as UPCA, EAN, Code128 etc.
 ## **Aspose.BarCode and Barcode Symbologies**

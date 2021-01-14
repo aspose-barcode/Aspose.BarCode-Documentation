@@ -20,7 +20,7 @@ To manage bar widths in a barcode, a wide to narrow ratio is configured.
 |![todo:image_alt_text](http://i.imgur.com/DwBiPLn.jpg)|
 | :- |
 |**Figure: Different views of a barcode with different ratios**|
-Wide to the narrow ratio for Interleaved2of5 and Standard2of5 symbologies is configured in the same way as that of Code39.
+The wide to the narrow ratio for Interleaved2of5 and Standard2of5 symbologies is configured in the same way as that of Code39.
 
 A complete example is given below to demonstrate the use of the WideNarrowRatio property.
 

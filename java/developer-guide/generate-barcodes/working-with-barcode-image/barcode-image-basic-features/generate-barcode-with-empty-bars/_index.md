@@ -13,7 +13,7 @@ url: /java/generate-barcode-with-empty-bars/
 
 This property works only with 1D barcodes.
 
-The BarcodeGenerator provides setFilledBars() method and the default value is set to true; that means if this property is not set then the generated barcodes will have filled bars by default.
+The BarcodeGenerator class provides setFilledBars() method and the default value is set to true; that means if this property is not set then the generated barcodes will have filled bars by default.
 
 The following is an example of the new API usage:
 

@@ -7,7 +7,7 @@ url: /java/render-barcode-to-graphics-object/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://apireference.aspose.com/barcode/java/) for Java provides graphics interfaces to render barcode images on various situations, including AWT graphics, web response streams, printers, and images. This section demonstrates how to render barcode to a Graphics or Graphics2D object.
+[Aspose.BarCode](https://apireference.aspose.com/barcode/java/) for Java provides graphics interfaces to render barcode images on various situations, including AWT graphics, web response streams, printers, and images. This section demonstrates how to render a barcode to a Graphics or Graphics2D object.
 
 {{% /alert %}} 
 

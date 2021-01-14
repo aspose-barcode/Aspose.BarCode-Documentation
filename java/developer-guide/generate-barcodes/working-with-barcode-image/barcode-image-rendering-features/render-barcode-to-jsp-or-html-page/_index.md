@@ -61,7 +61,7 @@ Below is a JSP runtime snapshot powered by a Tomcat Server.
 | :- |
 |**Figure: Render barcodes inside jsp page using img tag**|
 
-By using the Img tag, we can also insert a servlet generated imageanywhere on an HTML web page.
+By using the Img tag, we can also insert a servlet generated image anywhere on an HTML web page.
 
 **HTML**
 
@@ -87,5 +87,5 @@ Below is a HTML runtime snapshot powered by TomCat Server.
 
 |![todo:image_alt_text](http://i.imgur.com/MmgA37z.png)|
 | :- |
-|**Figure: Render barcodes inside html page using img tag**|
+|**Figure: Render barcodes inside HTML page using img tag**|
 

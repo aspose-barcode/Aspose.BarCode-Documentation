@@ -11,7 +11,7 @@ This article explains what checksums and supplemental data are, and how to use A
 
 {{% /alert %}} 
 ## **What is a checksum?**
-A checksum is an error detection scheme in which some additional characters are added to a barcode to protect the integrity of barcode data. Checksums are not necessary for all kinds of barcodes. For example, Code128 and Code39 are self-checking and checksums for such symbologies are not necessary. But on the other hand, another symbology like Interleaved2Of5, which can only represent numeric data, has very little spaces between its bars and is prone to substitution errors. So, for such symbologies, checksums are necessary. There are also some symbologies such as UPC (Universal Product Code) that require a checksum.
+A checksum is an error detection scheme in which some additional characters are added to a barcode to protect the integrity of barcode data. Checksums are not necessary for all kinds of barcodes. For example, Code128 and Code39 are self-checking and checksums for such symbologies are not necessary. But on the other hand, another symbology like Interleaved2Of5, which can only represent numeric data, has very few spaces between its bars and is prone to substitution errors. So, for such symbologies, checksums are necessary. There are also some symbologies such as UPC (Universal Product Code) that require a checksum.
 ### **Coding Checksums**
 Using [Aspose.BarCode](https://apireference.aspose.com/barcode/java/), developers can enable checksum for a barcode by passing “true” to the getParameters().getBarcode().setChecksumEnabled() method of the barcode class. The checksum can also be made visible or hidden in the barcode image by passing true or false to setChecksumEnabled() method.
 

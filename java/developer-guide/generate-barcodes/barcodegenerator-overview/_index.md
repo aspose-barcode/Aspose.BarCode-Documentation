@@ -12,7 +12,7 @@ Aspose.Barcode API lets you generate barcodes keeping in view real use cases lik
 ### **Generating Barcode without Restricted Barcode Size**
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-GenerateBarcode-GenerateBarcodeWithoutRestrictedBarcodeSize-GenerateBarcodeWithoutRestrictedBarcodeSize.java" >}}
 ### **Get Generated Barcode Size**
-if you just want to know the barcode size without saving the image you can call method RecalculateValues() and get barcode size.
+if you just want to know the barcode size without saving the image you can call the RecalculateValues() method and get the barcode size.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-GenerateBarcode-GetGeneratedBarcodeSize-GetGeneratedBarcodeSize.java" >}}
 ### **Units based Barcode Generation**
@@ -20,7 +20,7 @@ All measurement values can get and set in pixels, millimeters, inches at the sam
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-GenerateBarcode-UnitsBasedBarcodeGeneration-UnitsBasedBarcodeGeneration.java" >}}
 ### **Grouping Properties by Barcode Type**
-Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the API for new users.
+Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the APIs for new users.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-GenerateBarcode-GroupingPropertiesByBarcodeType-GroupingPropertiesByBarcodeType.java" >}}
 ### **Getting Default Text for Generated Barcode**

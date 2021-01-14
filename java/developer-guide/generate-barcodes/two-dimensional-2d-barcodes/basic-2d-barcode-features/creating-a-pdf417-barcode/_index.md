@@ -1,5 +1,5 @@
 ---
-title: Creating a Pdf417 Barcode
+title: Creating a PDF417 Barcode
 type: docs
 weight: 20
 url: /java/creating-a-pdf417-barcode/
@@ -9,25 +9,25 @@ Portable Data File 417 (PDF417) is a two-dimensional stacked barcode symbology c
 
 This article explains how to:
 
-1. Create a Pdf417 barcode.
+1. Create a PDF417 barcode.
 1. Manage error correction levels.
-1. Create a truncated Pdf417 barcode.
+1. Create a truncated PDF417 barcode.
 1. Set rows and columns.
 1. Set the compaction mode.
 
-To create a Pdf417 barcode:
+To create a PDF417 barcode:
 
 1. Instantiate a [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator).
-1. Call the setSymbologyType() method and pass Pdf417.
+1. Call the setSymbologyType() method and pass PDF417.
 1. Call the setCodeText() method to set the data you want to encode.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-CreatingAPdf417Barcode-createAPdf417Barcode.java" >}}
 
 |![todo:image_alt_text](http://i.imgur.com/61YdZBz.jpg)|
 | :- |
-|**Figure: Output Pdf417 barcode image**|
-## **Pdf417 Error Correction Level**
-Pdf417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2.
+|**Figure: Output PDF417 barcode image**|
+## **PDF417 Error Correction Level**
+PDF417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2.
 
 [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) with a higher error correction level produces a bigger image. The code below has the maximum error correction level.
 
@@ -45,7 +45,7 @@ The barcode on the right is totally decodable due to its high error correction l
 |![todo:image_alt_text](http://i.imgur.com/VQxZxp6.jpg)|
 | :- |
 |**Figure: Pdf417 withstands damage**|
-## **Truncated Pdf417**
+## **Truncated PDF417**
 Aspose.BarCode supports truncated Pdf417 version which omits the right-hand side quiet zone to save space.
 
 Setting the Pdf417Truncate property to true gives a smaller image:
@@ -64,8 +64,8 @@ If the settings for rows and columns are illegal, the encoder ignores them. Sett
 |![todo:image_alt_text](http://i.imgur.com/8o8RUbN.jpg)|
 | :- |
 |**Figure: Different row and column settings**|
-## **Pdf417 Compaction Mode**
-Setting Pdf417 compaction mode controls how much data can be packed into each code. Below are the different compaction modes supported by the Pdf417 symbology and Aspose.BarCode.
+## **PDF417 Compaction Mode**
+Setting PDF417 compaction mode controls how much data can be packed into each code. Below are the different compaction modes supported by the Pdf417 symbology and Aspose.BarCode.
 
 - **Auto**: Automatically detect compaction mode.
 - **Text**: Text compaction, suitable for text data.
