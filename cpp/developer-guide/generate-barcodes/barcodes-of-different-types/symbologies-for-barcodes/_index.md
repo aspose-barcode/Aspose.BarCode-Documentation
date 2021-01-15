@@ -7,7 +7,7 @@ url: /cpp/symbologies-for-barcodes/
 
 ## **Specify Symbologies for Barcodes**
 ### **What is Barcode**
-Barcode is a system for automatic identification of items, such as books in a library, by means of printed bars of different widths which represent numbers. Barcodes are used for many reasons among them are, to speed up check out, to track sales and to help with inventory. The first set of numbers in a barcode is the manufacturer code, the second set of numbers in the barcode is the product code. The barcode was introduced in the early 80s and is often printed on the record sleeve only, sometimes also on the center record paper label.
+Barcode is a system for the automatic identification of items, such as books in a library, using printed bars of different widths that represent numbers. Barcodes are used for many reasons among them are, to speed up check out, to track sales and to help with inventory. The first set of numbers in a barcode is the manufacturer code, the second set of numbers in the barcode is the product code. The barcode was introduced in the early 80s and is often printed on the record sleeve only, sometimes also on the center record paper label.
 ### **What is Barcode Symbology**
 Barcode Symbology is the protocol that defines a standard for arranging the bars and spaces (between the bars) that comprise a particular type of barcode, such as UPCA, EAN, Code128 etc.
 ### **Aspose.BarCode and Barcode Symbologies**
@@ -32,11 +32,11 @@ Aspose.BarCode supports nearly all popular barcode symbologies. All barcode gene
 |UPCE|Specifies that the data should be encoded with UPC-E barcode specification|
 |Postnet|Specifies that the data should be encoded with Postnet barcode specification|
 |Planet|Specifies that the data should be encoded with Planet barcode specification|
-|Pdf417|Specifies that the data should be encoded with Pdf417 barcode specification|
+|PDF417|Specifies that the data should be encoded with PDF417 barcode specification|
 |Datamatrix|Specifies that the data should be encoded with Datamatrix barcode specification|
 |QR|Specifies that the data should be encoded with QR barcode specification|
 |Aztec|Specifies that the data should be encoded with Aztec barcode specification|
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarCodes-SpecifySymbology-SpecifySymbology.cpp" >}}
 
 
@@ -44,7 +44,7 @@ Aspose.BarCode supports nearly all popular barcode symbologies. All barcode gene
 A barcode is the representation of characters in the form of bars and spaces between them. So, it is a simple fact that we would also have to assign some characters to Aspose.BarCode so that the input characters could be converted to a barcode. We know that Aspose.BarCode has three different classes (BarcodeGenerator, BarCodeControl and BarCodeWebControl) to create barcodes for different kinds of applications. All these classes have a common property, CodeText. All characters to be encoded to barcode are assigned to CodeText property of any barcode class.
 ### **Code text versus Symbology**
 Developers can assign any set of characters to CodeText property but only according to its symbology type. For example, If the EncodeType property of a barcode control is Symbology.EAN13, the valid character set of EAN13 specification is limited to numeric values and contains 13 digits only. If you attempt to shorter CodeText to it, zero will be added, if longer CodeText, the outbound part will be truncated.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarCodes-SetCodeText-SetCodeText.cpp" >}}
 
 |**When CodeText is too long or too short**|

@@ -26,7 +26,6 @@ When you call the SetLicense method, the license name that you pass should be th
 
 {{% /alert %}} 
 
-**C++**
 
 {{< highlight csharp >}}
 
@@ -37,8 +36,6 @@ license->SetLicense(new String("Aspose.Barocde.lic"));
 {{< /highlight >}}
 ### **Loading a License from a Stream Object**
 The following example shows how to load a license from a stream.
-
-**C++**
 
 {{< highlight csharp >}}
 

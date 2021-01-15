@@ -9,7 +9,7 @@ url: /cpp/qr-and-micro-qr-barcode/
 QR barcode is a two-dimensional barcode symbology developed in Japan. QR barcode has the following features:
 
 - High capacity encoding of data, up to 7000 numeric digits or 4000 alphanumeric data
-- Dirt and damage resistant, a maximum 30% of codewords can be restored
+- Dirt and damage resistance, a maximum of 30% of codewords can be restored
 - Readable from all directions
 
 Added a [QR ](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.barcode_generator/) Class as [BarcodeParameter](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.base_generation_parameters/). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
@@ -39,25 +39,25 @@ Added changes to Enum [QREncodeMode](https://apireference.aspose.com/cpp/barcod
 ### **Encoding of a QR and Micro QR Barcode**
 The micro QR code is a smaller version of the QR code standard for applications where symbol size is limited. There are 4 different versions (sizes) of Micro QR codes: the smallest is 11×11 modules; the largest can hold 35 numeric characters.
 ### **Error correction**
-QR barcode can withstand certain damage and can still be decoded normally. This is decided by QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
+QR barcodes can withstand certain damage and can still be decoded normally. This is decided by the QR barcode's error correction level during encoding. There are four levels of error correction, from low to high:
 
 - **LevelL**. Allows recovery of 7% of the code text
 - **LevelM**. Allows recovery of 15% of the code text
 - **LevelQ**. Allows recovery of 25% of the code text
 - **LevelH**. Allows recovery of 30% of the code text
+
 ### **How to Encode QR Code**
 Instantiate a BarcodeGenerator class object and set its EncodeType to QR, then set its CodeText property, QREncodeMode to auto, QREncodeType to ForceQR and set error correction level for the data you want to encode. Below is an example to generate a QR barcode.
 
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-EncodeQRCode-EncodeQRCode.cpp" >}}
 ### **How to set QR version**
-Aspose.BarCode for .NET allows developers to set a version of QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. Following is the sample code demonstrates how to set the QR version before generating a barcode image.
+Aspose.BarCode for C++ allows developers to set a version of the QR barcode while generating the barcode. A property **QR.Version** has been introduced in the **BarcodeGenerator** class to achieve the goal. Following is the sample code demonstrates how to set the QR version before generating a barcode image.
 
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-SettingQRVersion-SettingQRVersion.cpp" >}}
 ### **How to Encode MicroQR Code**
 Instantiate a BarcodeGenerator class object and set its EncodeType to QR, then set its CodeText property, QREncodeMode to auto, QREncodeType to auto and set error correction level for the data you want to encode. The following code snippet shows you how to generate a MicroQR barcode.
 
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-EncodeMicroQRCode-EncodeMicroQRCode.cpp" >}}
-
 
 ## **QR Code Encoding in the ECI Mode**
 ECI (Extended Channel Interpretation) enables QR Code to encode multiple character sets (e.g. Arabic, Cyrillic, Greek, Hebrew) and other data interpretations or industry-specific requirements to be represented, into one QR Code symbol.
@@ -92,9 +92,10 @@ Enum ECIEncodings:
 1. **Big5** - Big 5 (Taiwan) Chinese Character Set encoding. ECI Id:"\000028".
 1. **GB18030** - GB (PRC) Chinese Character Set encoding. ECI Id:"\000029".
 1. **EUC_KR** - Korean Character Set encoding. ECI Id:"\000030".
+
 ### **QR Code Encoding in the ECI Mode**
 Instantiate a BarcodeGenerator class object and set its EncodeType to QR, and set its CodeText property, QREncodeMode to ECIEncoding, QREncodeType to ForceQR, ECIEncoding to UTF8 and set error correction level for the data you want to encode. The following code example demonstrates how to generate a QR barcode.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-EncodeQRCodEInECIMode-EncodeQRCodEInECIMode.cpp" >}}
 ## **Encode multi-ECI and FNC1 Symbols in QR Code**
 The ExtendedCodetext mode allows developers to encode multi-ECI and FNC1 symbols in the QR code. Extended Channel mode supports FNC1 first position, FNC1 second position, and multi ECI modes.
@@ -107,10 +108,10 @@ Encoding Principles:
 - FNC1 in the first position is set in CodeText as "<FNC1>".
 - FNC1 in the second position is set in CodeText as "<FNC1(value)>". The value must be single symbols (a-z, A-Z) or digits from 0 to 99.
 - Group Separator for FNC1 modes is set as 0x1D character '\u001D'.
-- If you need to insert "<FNC1>" string into barcode write it as "<\FNC1>".
+- If you need to insert the "<FNC1>" string into the barcode write it as "<\FNC1>".
 - ECI identifiers are set as single slash and six digits identifier "\000026" - UTF8 ECI identifier.
-- TO disable current ECI mode and convert to default JIS8 mode zero mode ECI indetifier is set "\000000".
-- All unicode characters after ECI identifier are automatically encoded into correct character codeset.
+- TO disable the current ECI mode and convert to default JIS8 mode zero-mode ECI identifier is set "\000000".
+- All Unicode characters after the ECI identifier are automatically encoded into the correct character codeset.
 
 QrExtCodetextBuilder class description:
 
@@ -122,12 +123,8 @@ QrExtCodetextBuilder class description:
 - **AddFNC1GroupSeparator()** method - Adds Group Separator (GS - '\u001D') to the extended codetext items.
 - **GetExtendedCodetext()** method - generates extended codetext from generation items list.
 ### **Use multi ECI Mode in Extended Mode**
-Instantiate a QrExtCodetextBuilder class object, call AddECICodetext method multiple times to add code text with extended channel identifier and then call AddPlainCodetext method to add plain code text to the extended code text items.
-#### **C#**
+Instantiate a QrExtCodetextBuilder class object, call the AddECICodetext method multiple times to add code text with extended channel identifier and then call the AddPlainCodetext method to add plain code text to the extended code text items.
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-MultiECIModeInExtendedMode-MultiECIModeInExtendedMode.cpp" >}}
 
-
-
 MicroQR cannot support ECI and FNC1 modes. In this way, if you want to generate MicroQR code you must use current modes of QREncodeMode: Auto, Bytes, Utf8BOM, and Utf16BEBOM.
-
-

@@ -20,7 +20,7 @@ All barcode generating classes have a CodeTextParameters.Location property that
 |Above|Specifies that the Code text is shown on the top of the bar code|
 |Below |Specifies that the Code text is shown on the bottom of the bar code|
 |None |Specifies that the Code text is hidden|
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarcodeImages-SetCodetextLocation-SetCodetextLocation.cpp" >}}
 
 
@@ -32,29 +32,29 @@ The horizontal alignment of the Code text can be configured by making use of Cod
 |Center |Specifies that text is aligned in the centre of the layout rectangle|
 |Left|Specifies that text is aligned Left from the original position of the layout rectangle.|
 |Right|Specifies the text to be aligned on the right of the layout.|
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarcodeImages-SetCodeAlignment-SetCodeAlignment.cpp" >}}
 
 
 ### **Color of CodeText**
 Developers who want to add colors to their barcodes may also change the color of CodeText. Setting the CodeTextParameters.Color property can change the color of the Code text as demonstrated below in a code snippet.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarcodeImages-SetForeColorText-SetForeColorText.cpp" >}}
 
 
 ### **Set CodeText Font Family Name and Size**
 Setting the CodeTextParameters.Font property to any font family name and its size of the Code text as demonstrated below in a code snippet.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarcodeImages-SetCodeTextFontFamilyNameAndSize-SetCodeTextFontFamilyNameAndSize.cpp" >}}
 
 
 ### **Space between CodeText & Barcode**
 You saw above in the barcode image that the default gap between the barcode and Code text is very small. Developers can increase/decrease the space (gap) between the barcode and Code text by setting the CodeTextParameters.Space property. The following code snippet shows you how to space between code text and Barcode.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarcodeImages-AddSpaceInBarCodeAndText-AddSpaceInBarCodeAndText.cpp" >}}
 
 
 
 A complete example is given below that combines all possible format settings that can be applied on the Code text to control its appearance.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarCodes-CodetextAppearance-CodetextAppearance.cpp" >}}

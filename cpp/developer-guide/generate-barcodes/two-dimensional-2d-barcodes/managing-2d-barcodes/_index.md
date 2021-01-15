@@ -6,10 +6,11 @@ url: /cpp/managing-2d-barcodes/
 ---
 
 ## **Hiding CodeText that is too long to display**
-Unlike one dimensional barcode, two-dimensional barcodes often contain a huge amount of data, which is exactly why two-dimensional barcode exists. We often print out the human-readable CodeText along with the barcode, this CodeText has nothing to do with machine scanning. In the case of two-dimensional barcodes, CodeText is simply too long to display. Under such a situation, a certain approach should be taken.
+Unlike one dimensional barcode, two-dimensional barcodes often contain a huge amount of data, which is exactly why a two-dimensional barcode exists. We often print out the human-readable CodeText along with the barcode, this CodeText has nothing to do with machine scanning. In the case of two-dimensional barcodes, CodeText is simply too long to display. Under such a situation, a certain approach should be taken.
+
 ### **Hide BarCode CodeText**
 The following example shows how to hide the barcode CodeText.
-#### **C#**
+
 {{< gist "aspose-barcode" "ba5a7a8ee427f3d8c211062a11bd7ec9" "Examples-CPP-CreateAndManageTwoDBarcodes-HideBarcodeCodeText-HideBarcodeCodeText.cpp" >}}
 
 |**Hiding CodeText's**|
@@ -17,7 +18,7 @@ The following example shows how to hide the barcode CodeText.
 |![todo:image_alt_text](managing-2d-barcodes_1.jpg)|
 ### **Reduce the font size of CodeText**
 The following example shows how to reduce the font size of CodeText
-#### **C#**
+
 {{< gist "aspose-barcode" "ba5a7a8ee427f3d8c211062a11bd7ec9" "Examples-CPP-CreateAndManageTwoDBarcodes-ReduceCodeTextFontSize-ReduceCodeTextFontSize.cpp" >}}
 ## **Adjusting 2D images size**
 {{% alert color="primary" %}} 
@@ -26,7 +27,7 @@ The size of a barcode image depends on many factors. Mainly the following settin
 
 - Metrics
 - Resolution, the higher resolution will lead to a larger image on the same screen or printer.
-- GraphicsUnit, whether all the settings are based on millimetre or inches etc.
+- GraphicsUnit, whether all the settings are based on millimetres or inches etc.
 - The overall image
 - AutoSize, set to false means the image's size is fixed to ImageWidth * ImageHeight. Oversized barcode (e.g. CodeText very long) will be out of the frame if AutoSize is false and the size not large enough
 - ImageWidth, only valid when AutoSize set to false
@@ -44,20 +45,20 @@ The size of a barcode image depends on many factors. Mainly the following settin
 
 {{% /alert %}} 
 
-Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. e.g. DataMatrix is a square based type of barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. BarCodeBuilder will simply ignore those illegal settings and decide on its own during the process.
+Each specific type of barcode may have different semantic demands, then it will override or ignore the above settings. e.g. DataMatrix is a square-based type of barcode. The AspectRatio setting is meaningless to DataMatrix because AspectRatio has to be 1 for square modules. BarCodeBuilder will simply ignore those illegal settings and decide on its own during the process.
 ## **Setting Aspect Ratio of Barcodes**
 The Aspect Ratio of a barcode is the width:height ratio. We can control how tall or wide the barcode can be generated using the Aspect Ratio. 3:2 Aspect Ratio means the barcode is 1.5 or 3/2 times wider than taller. Or the width of the barcode is 1.5 times larger than the height. Below is a Pdf417 barcode with 1.5 Aspect Ratio:
 
 |**BarCode with Aspect Ratio of 1.5**|
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_2.png)|
-2 Aspect Ratio means the width of barcode is 2 times greater than the height. Below is the Pdf417 barcode with Aspect Ratio of 2.
+2 Aspect Ratio means the width of the barcode is 2 times greater than the height. Below is the Pdf417 barcode with an Aspect Ratio of 2.
 
 |**BarCode with Aspect Ratio of 2**|
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_3.png)|
 The code snippet to set the Aspect Ratio is given below:
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-SetAspectRatio-SetAspectRatio.cpp" >}}
 ## **Detect Unicode Encoding of Barcode**
 Aspose.BarCode API allows developers to detect the Unicode encoding. The flag works for QR/Micro QR at the moment.
@@ -72,5 +73,5 @@ In case, the detect encoding flag is enabled the barcode engine returns Unicode 
 The flag is enabled by default. In case the flag is disabled the engine returns plain text without encoding detection.
 
 The code example given below demonstrates how to get the plain text without encoding detection
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-CreateAndManageTwoDBarcodes-DetectUnicodeEncoding-DetectUnicodeEncoding.cpp" >}}

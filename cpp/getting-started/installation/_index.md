@@ -10,13 +10,13 @@ NuGet is the easiest way to download and install Aspose .NET APIs. **Open** Micr
 
 ![todo:image_alt_text](installation_1.jpg)
 ## **Install or Update Aspose.BarCode using the Package Manager Console**
-You can follow the steps below to install or upgrad the Aspose.BarCode API using the package manager console:
+You can follow the steps below to install or upgrade the Aspose.BarCode API using the package manager console:
 Open your solution/project in Visual Studio.
 Select **TOOLS** -> **NuGet Package Manager** -> **Package Manager Console** from the top menu. This will open package manager console.
 
 ![todo:image_alt_text](installation_2.png)
 
-Type the command “Install-Package Aspose.BarCode -Version x.x.0” and press enter to install latest full release into your application. Alternatively, you can add the "-prerelease" suffix to the command in order to specify that the latest release including hot fixes is to be installed as well.
+Type the command “Install-Package Aspose.BarCode -Version x.x.0” and press enter to install the latest full release into your application. Alternatively, you can add the "-prerelease" suffix to the command in order to specify that the latest release including hot fixes is to be installed as well.
 
 ![todo:image_alt_text](installation_3.jpg)
 
@@ -25,7 +25,7 @@ You should now find that Aspose.BarCode has successfully been added and referenc
 
 ![todo:image_alt_text](installation_4.jpg)
 
-In the package manager console, you can use the command **Update-Package Aspose.BarCode.CPP**and press enter to check for any updates to the Aspose.BarCode package and install them if present. You can also add the "-prerelease" suffix to update latest release.
+In the package manager console, you can use the command **Update-Package Aspose.BarCode.CPP**and press enter to check for any updates to the Aspose.BarCode package and install them if present. You can also add the "-prerelease" suffix to update the latest release.
 ## **Uninstalling Aspose.BarCode for C++**
 If you have used MSI installer to deploy Aspose.BarCode, follow these steps to completely remove the component and the associated demos and documentation:
 

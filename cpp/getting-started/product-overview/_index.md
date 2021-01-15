@@ -20,7 +20,7 @@ Aspose.BarCode for C++ library allows the developers to add barcode generation &
 Aspose.BarCode for C++ not only creates barcodes but also can export the generated barcodes to a verity of image formats in high quality. Moreover, the developers can easily manipulate the appearance of the generated barcodes such as background color, bar color, image quality, rotation angle, x-dimension, captions, size, resolution and much more.
 ### **General Barcode Features**
 - Specify different kinds of symbologies.
-- Barcode code text (data to be encoded to barcode image) can be set and its appearance related properties like font, background color, foreground color, alignment and location (hide, above, below) etc. can also be modified.
+- Barcode code text (data to be encoded to barcode image) can be set and its appearance-related properties like font, background color, foreground color, alignment and location (hide, above, below) etc. can also be modified.
 - The barcode caption and its font, background color, foreground color, alignment and location (hide, above, below) can be managed.
 - Checksum and supplement data are supported.
 - Bar height of the barcode images can be customized.
@@ -35,7 +35,7 @@ Aspose.BarCode for C++ not only creates barcodes but also can export the genera
 ### **Barcode Imaging Features**
 - Manipulate the barcode image borders, border color, style, margins, width etc.
 - Barcode image color, back color and bar color can be modified.
-- Rotate barcode images to any degrees.
+- Rotate barcode images to any degree.
 - High-quality barcode images.
 - Anti-Aliasing for barcode images.
 - Barcode image margins can be managed.
@@ -64,7 +64,7 @@ Aspose.BarCode for C++ not only creates barcodes but also can export the genera
 - EMF
 - SVG
 ### **Platforms Supported**
-- Window Forms
+- Windows Forms
 - Web Forms
 - WPF
 ## **Supported Barcode Symbologies**

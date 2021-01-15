@@ -18,13 +18,13 @@ ProcessorSettings class of namespace Aspose.BarCodeRecognition allows us to sp
 Aspose.BarCodeRecognition namespace introduced a class ProcessorSettings to define the settings for involving multi-threading & number of processor cores to be used. ProcessorSettings can be found as a static member of class BarCodeReader. Developers can set the UseAllCores property to TRUE or FALSE to specify whether to use all cores of the processor or not. In case it is set to FALSE then set how many cores to be used by setting the UseOnlyThisCoresCount propery that takes in an integer value.
 
 The following code snippet demonstrates you how to optimize Barcode Recognition Process
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageAndOptimizeBarcodeRecognition-OptimizingBarCodeRecognitionProcess-OptimizingBarCodeRecognitionProcess.cpp" >}}
 ## **Better and Faster Image Processing for Barcode Recognition**
 Aspose.BarCode provides better and faster barcode recognition with the [QualitySettings](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.bar_code_recognition.quality_settings/) class which allows to configure recognition quality and speed manually:
 
 The following code example demonstrates how to use QualitySettings.
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageAndOptimizeBarcodeRecognition-SwitchBarcodeRecognitionModes-SwitchBarcodeRecognitionModes.cpp" >}}
 ## **Barcode Recognition Modes**
 Aspose.BarCode provides some recognition modes, those help developers to quickly set up and tune the processing speed and quality in a way which is the most appropriate for their need.
@@ -43,5 +43,5 @@ Aspose.BarCode provides some recognition modes, those help developers to quickly
   Normal quality recognition quality preset. Suitable for most of the barcodes.
 
 The following code snippet shows how to switch the barcode recognition modes:
-#### **C#**
+
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageAndOptimizeBarcodeRecognition-ImageProcessingBarcodeRecognition-ImageProcessingBarcodeRecognition.cpp" >}}
