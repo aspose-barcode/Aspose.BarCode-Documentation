@@ -5,7 +5,7 @@ weight: 10
 url: /cpp/generate-barcodes-with-aspose-barcode-apis/
 ---
 
-## **Generate Barcode in C++ Applications**
+**Generate Barcode in C++ Applications**
 Sometimes, developers are interested in generating barcode images on the back end programmatically rather than just showing them on Windows or WebForms. This requirement can be because of the following reasons:
 
 - Developers need to generate barcode images and then save to the database
