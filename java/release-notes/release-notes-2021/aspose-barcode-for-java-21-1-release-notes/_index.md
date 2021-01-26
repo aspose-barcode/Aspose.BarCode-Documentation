@@ -23,8 +23,8 @@ This page contains release notes information for [Aspose.BarCode for Java 21.1](
 
 
 ## **Public API and Backward Incompatible Changes**
-- Added property com.aspose.barcode.generation.QrParameters.getStructuredAppend():QrStructuredAppendParameters
-- Added property com.aspose.barcode.generation.QrParameters.setStructuredAppend(QrStructuredAppendParameters):void
+- Added method com.aspose.barcode.generation.QrParameters.getStructuredAppend():QrStructuredAppendParameters
+- Added method com.aspose.barcode.generation.QrParameters.setStructuredAppend(QrStructuredAppendParameters):void
 - Added class com.aspose.barcode.generation.QrStructuredAppendParameters
 - Added method com.aspose.barcode.generation.QrStructuredAppendParameters.getParityByte():byte
 - Added method com.aspose.barcode.generation.QrStructuredAppendParameters.setParityByte(byte):void
