@@ -22,25 +22,25 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 
 
 ## **Public API and Backward Incompatible Changes**
-- Added class Generator.MacroCharacter
-- Added const Generator.MacroCharacter.NONE
-- Added const Generator.MacroCharacter.MACRO_05
-- Added const Generator.MacroCharacter.MACRO_06
-- Added function Generator.DataMatrixParameters.getMacroCharacters() : int
-- Added function Generator.DataMatrixParameters.setMacroCharacters(int)
-- Added function Generator.DataBarParameters.is2DCompositeComponent() : bool
-- Added function Generator.DataBarParameters.set2DCompositeComponent(bool)
-- Added function Generator.DataBarParameters.isAllowOnlyGS1Encoding() : bool
-- Added function Generator.DataBarParameters.setAllowOnlyGS1Encoding(bool)
-- Added class Reader.DataBarExtendedParameters
-- Added function Reader.BarCodeExtendedParameters.getDataBar() : DataBarExtendedParameters
-- Added function Reader.DataBarExtendedParameters.is2DCompositeComponent() : bool
-- Added function Reader.DataBarExtendedParameters.equals(object) : bool
-- Added function Reader.DataBarExtendedParameters.op_Equality(Reader.DataBarExtendedParameters,Reader.DataBarExtendedParameters) : bool
-- Added function Reader.DataBarExtendedParameters.op_Inequality(Reader.DataBarExtendedParameters,Readern.DataBarExtendedParameters) : bool
-- Added function Reader.DataBarExtendedParameters.hashCode() : int
-- Added function Reader.DataBarExtendedParameters.toString() : string
-- Added const Reader.DecodeType.TYPES_2D
-- Added function Reader.DecodeType.is1D(Reader.BaseDecodeType)
-- Added function Reader.DecodeType.isPostal(Reader.BaseDecodeType)
-- Added function Reader.DecodeType.is2D(Reader.BaseDecodeType)
+- Added class Generator->MacroCharacter
+- Added const Generator->MacroCharacter::NONE
+- Added const Generator->MacroCharacter::MACRO_05
+- Added const Generator->MacroCharacter::MACRO_06
+- Added function Generator->DataMatrixParameters->getMacroCharacters() : int
+- Added function Generator->DataMatrixParameters->setMacroCharacters(int)
+- Added function Generator->DataBarParameters->is2DCompositeComponent() : bool
+- Added function Generator->DataBarParameters->set2DCompositeComponent(bool)
+- Added function Generator->DataBarParameters->isAllowOnlyGS1Encoding() : bool
+- Added function Generator->DataBarParameters->setAllowOnlyGS1Encoding(bool)
+- Added class Reader->DataBarExtendedParameters
+- Added function Reader->BarCodeExtendedParameters->getDataBar() : DataBarExtendedParameters
+- Added function Reader->DataBarExtendedParameters->is2DCompositeComponent() : bool
+- Added function Reader->DataBarExtendedParameters->equals(object) : bool
+- Added function Reader->DataBarExtendedParameters->op_Equality(Reader->DataBarExtendedParameters,Reader->DataBarExtendedParameters) : bool
+- Added function Reader->DataBarExtendedParameters->op_Inequality(Reader->DataBarExtendedParameters,Readern->DataBarExtendedParameters) : bool
+- Added function Reader->DataBarExtendedParameters->hashCode() : int
+- Added function Reader->DataBarExtendedParameters->toString() : string
+- Added const Reader->DecodeType::TYPES_2D
+- Added function Reader->DecodeType->is1D(Reader->BaseDecodeType)
+- Added function Reader->DecodeType->isPostal(Reader->BaseDecodeType)
+- Added function Reader->DecodeType->is2D(Reader->BaseDecodeType)
