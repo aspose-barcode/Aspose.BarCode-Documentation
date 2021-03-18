@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for Reporting Services 21.3 Release Notes
 type: docs
-weightype20
+weight: 20
 url: /reportingservices/aspose-barcode-for-reporting-services-21-3-release-notes/
 ---
 
