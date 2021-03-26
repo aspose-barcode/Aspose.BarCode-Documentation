@@ -70,6 +70,7 @@ This page contains release notes information for [Aspose.BarCode for Java 21.3](
 - Added field com.aspose.barcode.generation.Code128Emulation.CODE_903
 - Added field com.aspose.barcode.generation.Code128Emulation.CODE_904
 - Added field com.aspose.barcode.generation.Code128Emulation.CODE_905
+  
 - Added class com.aspose.barcode.barcodecontrol.BarCodeGeneratorControl
 - Added constructor com.aspose.barcode.barcodecontrol.BarCodeGeneratorControl.#ctor
 - Added method om.aspose.barcode.conrol.BarCodeGeneratorControl.getCodeText()

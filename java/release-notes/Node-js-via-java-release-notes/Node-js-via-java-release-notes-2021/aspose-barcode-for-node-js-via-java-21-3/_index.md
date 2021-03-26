@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for Node.js via Java 21.3
 type: docs
-weight: 990
+weight: 980
 url: /java/aspose-barcode-for-node-js-via-java-21-3/
 ---
 
