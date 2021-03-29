@@ -76,6 +76,11 @@ This page contains release notes information for [Aspose.BarCode for C++ 21.3](h
 |BARCODENET-37721|Incorrect generation and recognition MaxiCode|Bug
 |BARCODENET-37722|Incorrect generation and recognition MaxiCode single zero|Bug
 |BARCODENET-37757|BarcodeGenerator throws exception with AutoSizeMode and FilledBars|Bug
+|BARCODECPP-410|Aspose.BarCode for C++ Library error: Only 'v140' and 'v141' toolsets are supported while using Visual Studio 2019|Bug
+|BARCODECPP-412|Aspose Barcode for C++: x86 libraries|Enhancement
+|BARCODECPP-447|Make Aspose.BarCode for C++ NuGet package depends on Codeporting.Native.Cs2Cpp.API|Enhancement
+|BARCODECPP-429|DecodeType Types2D required|Enhancement
+|BARCODECPP-434|Generate QR Code with ISO 20022 (Swiss QR Code)|Enhancement
 
 ## **Public API and Backward Incompatible Changes**
 Following members have been added:
