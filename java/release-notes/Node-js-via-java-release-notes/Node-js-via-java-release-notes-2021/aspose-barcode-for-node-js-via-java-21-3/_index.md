@@ -14,7 +14,7 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|BARCODEJAVA-1076 | Remove overload operators from public API
+|BARCODEJAVA-1076 | Remove overload operators from public API|Enhancement|
 |BARCODENET-37484|Investigate addition of ECI modes to Micro PDF417 data decoding algorithm|Enhancement|
 |BARCODENET-37479|Investigate addition of input stream compaction mode in Micro PDF417 encoder|Enhancement|
 |BARCODENET-37480|Investigate addition of ECI modes to Micro PDF417 encoder|Enhancement|
@@ -22,10 +22,9 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 |BARCODENET-37751|Implement UCC/EAN-128 emulation decoding|Enhancement|
 
 # **Public API and Backward Incompatible Changes**
-- Renamed the file 'Generator' to 'Generation'
-- Renamed the file 'Reader' to 'Recognition'
-- Renamed the file 'Reader' to 'Recognition'
-- Renamed the file  'assist' to 'Joint'
+- Renamed the file 'Generator.js' to 'Generation.js'
+- Renamed the file 'Reader.js' to 'Recognition.js'
+- Renamed the file  'assist.js' to 'Joint.js'
 - Added AsposeBarcode.BarcodeGenerator,
  - Added AsposeBarcode.BarcodeParameters,
 - Added AsposeBarcode.BaseGenerationParameters ,
@@ -130,9 +129,7 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 - Removed function Recognition.Code128ExtendedParameters.op_Equality( Recognition.Code128ExtendedParameters, Recognition.Code128ExtendedParameters): boolean
 - Removed function Recognition.Code128ExtendedParameters.op_Inequality( Recognition.Code128ExtendedParameters, Recognition.Code128ExtendedParameters): boolean
 - Removed function Recognition.DataBarExtendedParameters.op_Inequality( Recognition.DataBarExtendedParameters, Recognition.DataBarExtendedParameters): boolean
-
 - Added function Recognition.DataBarExtendedParameters.is2DCompositeComponent(): boolean
-
 - Added function Generation.Pdf417Parameters.getCode128Emulation():number
 - Added function Generation.Pdf417Parameters.setCode128Emulation(number)
 - Added Enum Generation.Code128Emulation

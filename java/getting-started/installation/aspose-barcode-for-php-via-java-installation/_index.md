@@ -14,7 +14,7 @@ Aspose.BarCode for PHP via Java is a platform-independent API and can be used on
 - Downloaded Aspose.Barcode component.
 
 ## **Supported Platforms**
-- PHP 5.3 or above
+- PHP 5.x or 7.x
 - Java 1.8 or above
 
 ## **Installation**
