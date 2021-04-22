@@ -18,8 +18,8 @@ This page contains release notes information for [Aspose.BarCode for Reporting S
 |BARCODEREP-108|Hiding Barcode in Reporting Services|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
-- Added filed Aspose.BarCode.ReportingServices.RenderFormat.Tiff
-- Added filed Aspose.BarCode.ReportingServices.RenderFormat.TiffInCmyk
+- Added field Aspose.BarCode.ReportingServices.RenderFormat.Tiff
+- Added field Aspose.BarCode.ReportingServices.RenderFormat.TiffInCmyk
 - Added type Aspose.BarCode.ReportingServices.BarCodeReportItem
 - Added method Aspose.BarCode.ReportingServices.BarCodeReportItem.#ctor
 - Added method Aspose.BarCode.ReportingServices.BarCodeReportItem.GenerateReportItemDefinition(Microsoft.ReportingServices.OnDemandReportRendering.CustomReportItem)
