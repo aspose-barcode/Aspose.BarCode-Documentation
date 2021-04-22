@@ -25,23 +25,23 @@ This page contains release notes information for [Aspose.BarCode for Java 21.4](
 - Removed interface com.aspose.barcode.IBarCodeControl
 
 A list of classes that moved from com.aspose.barcode to com.aspose.barcode.generation package:
-- Moved class AztecSymbolMode
-- Moved class BarCodeImageFormat
-- Moved class BorderDashStyle
-- Moved class CodabarChecksumMode
-- Moved class DataMatrixEncodeMode
-- Moved class EnableChecksum
-- Moved class ITF14BorderType
-- Moved class Pdf417CompactionMode
-- Moved class Pdf417ErrorLevel
-- Moved class QRErrorLevel
-- Moved class QRVersion
+- Moved enum AztecSymbolMode
+- Moved enum BarCodeImageFormat
+- Moved enum BorderDashStyle
+- Moved enum CodabarChecksumMode
+- Moved enum DataMatrixEncodeMode
+- Moved enum EnableChecksum
+- Moved enum ITF14BorderType
+- Moved enum Pdf417CompactionMode
+- Moved enum Pdf417ErrorLevel
+- Moved enum QRErrorLevel
+- Moved enum QRVersion
 - Moved class ECIEncodings
-- Moved class QREncodeMode
-- Moved class QREncodeType
+- Moved enum QREncodeMode
+- Moved enum QREncodeType
 - Moved class ExtCodetextBuilder
 - Moved class QrExtCodetextBuilder
-- Moved class DataMatrixEccType
-- Moved class MacroCharacter
+- Moved enum DataMatrixEccType
+- Moved enum MacroCharacter
 
 
