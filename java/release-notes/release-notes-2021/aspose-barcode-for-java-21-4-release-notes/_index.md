@@ -44,4 +44,6 @@ A list of classes that moved from com.aspose.barcode to com.aspose.barcode.gener
 - Moved enum DataMatrixEccType
 - Moved enum MacroCharacter
 
+-Minimal version of JDK set to JDK8
+
 
