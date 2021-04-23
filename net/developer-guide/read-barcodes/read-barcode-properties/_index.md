@@ -12,7 +12,7 @@ In this section, we will read the image and get all the barcode regions, for all
 
 First, we will read the Barcodes in the image using the [BarCodeReader.ReadBarCodes()(https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method. Then, we will get the region of the barcode using [BarCodeResult.Region](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderegionparameters) , which will return the recognized barcode's region and barcode angle. We can then get the X and Y coordinates of the barcode.
 ### **Getting Barcode Coordinate with Points**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create an instance of BarCodeReader class and read barcode file
 using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
     foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
@@ -29,7 +29,7 @@ using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", D
 {{% alert color="primary" %}}**[GetBarCodeRegionInformationfromImage.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/GetBarCodeRegionInformationfromImage.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ### **Getting Barcode Coordinate with Quadrangle**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create an instance of BarCodeReader class and read barcode file
 using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
     foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
@@ -46,7 +46,7 @@ using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", D
 {{% alert color="primary" %}}**[GetBarCodeRegionInformationfromImage.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/GetBarCodeRegionInformationfromImage.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ### **Getting Barcode Coordinate with Rectangle**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create an instance of BarCodeReader class and read barcode file
 using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
     foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
@@ -61,7 +61,7 @@ using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", D
 
 ## **Detect Orientation of the Barcode**
 [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) allows developers to detect the orientation of a detected bar code by reading [BarCodeResult.Region.Angle](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderegionparameters/properties/angle) . The following code snippet shows you how to detect the orientation of a barcode.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Instantiate BarCodeReader object
 using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", DecodeType.Code128))
     // Read Code128 bar code and Detect bar code orientation
@@ -72,7 +72,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", 
 
 ## **Getting Barcode Recognition Quality and Confidence**
 The [BarCodeResult](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) provides the [ReadingQuality](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) and [Confidence](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) properties. Confidence assures in recognition result because some barcodes even with moderate ReadingQuality could be recognized wrong. ReadingQuality shows quality of the barcode image and used only for 1D and postal barcodes.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Initialize the BarCodeReader object and Call read method
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes))
 {
@@ -89,7 +89,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", Decode
 
 ## **Reading Byte Array as Recognition Result**
 [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) allows to directly read byte array as barcode result and use this data for internal use.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Load barcode image and Read barcode
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Chinese.png", DecodeType.Pdf417))
 {
@@ -105,7 +105,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Chinese.png", DecodeT
 
 ## **Reading MacroPDF417 metadata**
 We can recognize Macro Pdf417 barcodes which is PDF417 barcodes with extended metadata. [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) class. can recognize these metadatas and store them in [Pdf417ExtendedParameters](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/pdf417extendedparameters) structure. The BarCodeReader class can recognize the Segment ID, File ID, Segment ID, Segment Count, File Size, Sender, Addressee, Date and Checksum metadatas.In the lower code example we show how to read Macro Pdf417 metadatas with barcode data.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create array for storing multiple bar codes file names
 string[] files = new string[] { "MacroPdf417_0.png", "MacroPdf417_1.png" };
 
@@ -135,7 +135,7 @@ for (int i = 0; i < files.Length; ++i)
 {{% alert color="primary" %}}**[ReadMultipleMacroPdf417Barcodes.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadMultipleMacroPdf417Barcodes.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ## **Reading 1D Barcode parameters**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Instantiate BarCodeReader object
 using (BarCodeReader reader = new BarCodeReader(dataDir + "EAN13_EAN5.png", DecodeType.EAN13, DecodeType.Supplement))
     // Read Code128 bar code and Detect bar code orientation
@@ -150,7 +150,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "EAN13_EAN5.png", Deco
 {{% alert color="primary" %}}**[ReadOneDBarcodes.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadOneDBarcodes.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ## **Reading Code128 Barcode parameters**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Instantiate BarCodeReader object
 using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", DecodeType.Code128))
     // Read Code128 bar code and Detect bar code orientation
@@ -166,7 +166,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", 
 {{% alert color="primary" %}}**[ReadCode128Barcodes.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadCode128Barcodes.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ## **Reading QR Barcode parameters**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Instantiate BarCodeReader object
 using (BarCodeReader reader = new BarCodeReader(dataDir + "QRStructuredAppend.png", DecodeType.QR))
     // Read Code128 bar code and Detect bar code orientation
@@ -182,7 +182,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "QRStructuredAppend.pn
 {{% alert color="primary" %}}**[ReadQRBarcodes.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadQRBarcodes.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 ## **Reading Databar Barcode parameters**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Instantiate BarCodeReader object
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Databar.png", DecodeType.DatabarExpanded, DecodeType.DatabarExpandedStacked))
     // Read Code128 bar code and Detect bar code orientation

@@ -26,7 +26,7 @@ The folowing examples show how to use multi-threading for obtaning maximal perfo
 
 
 ### **Enable Restricted Number Of Cores**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Start the stopwatch
 Stopwatch sw = new Stopwatch();
 sw.Start();
@@ -60,7 +60,7 @@ Console.WriteLine("Elapsed: " + sw.Elapsed);
 {{< /highlight >}} 
 {{% alert color="primary" %}}**[OptimizingBarCodeRecognitionProcess.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/OptimizingBarCodeRecognitionProcess.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 ### **Enable All Cores**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Start the stopwatch
 Stopwatch sw = new Stopwatch();
 sw.Start();
@@ -100,7 +100,7 @@ Also, some barcode types like [Industrial 2 of 5](https://en.wikipedia.org/wiki/
 
 In this way, selection of only required barcode types allows to avoid wrong recognition and improve barcode recognition speed.
 ### **Recognizing All Supported Barcodes**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "test.png", DecodeType.AllSupportedTypes))
 {
     foreach (BarCodeResult result in reader.ReadBarCodes())
@@ -111,7 +111,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "test.png", DecodeType
 {{< /highlight >}} 
 {{% alert color="primary" %}}**[ReadAllSupportedTypesBarcode.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageBarCodes/ReadAllSupportedTypesBarcode.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 ### **Recognizing Selected Barcode Symbologies**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Initialize the BarCodeReader
 using (BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", DecodeType.Code39Standard, DecodeType.Pdf417))
 {
@@ -139,7 +139,7 @@ Barcode reading engine provides some recognition modes, those help developers to
 |[Max Barcodes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes)|MaxBarCodes recognition quality preset. This preset is developed to recognize all possible barcodes, even incorrect barcodes.|
 
 The following code snippet shows how to switch the barcode recognition modes:
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create an instance of BarCodeReader and set image and symbology type to recognize
 using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
 {
@@ -182,7 +182,7 @@ QualitySettings options can be configured separately after preset setup. This ca
 |[UseOldBarcodeDetector](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/useoldbarcodedetector)|Switches to the old barcode detector which is sometimes faster.|
 
 The following code snippet shows how to use QualitySettings options:
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Initialize the BarCodeReader object and  Set recognition mode
 using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-barcode.jpg", DecodeType.DataMatrix))
 {
@@ -201,7 +201,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-barcode.jp
 
 ### **QualitySettings Examples**
 #### **QualitySettings Preset Example**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 {
     //set high quality mode with low speed recognition 
@@ -213,7 +213,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 {{% alert color="primary" %}}**[BarCodeRecognitionFilters.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/BarCodeRecognitionFilters.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 #### **QualitySettings Preset with Manual Options**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 {
     //set high performance mode
@@ -228,7 +228,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 {{% alert color="primary" %}}**[BarCodeRecognitionFilters.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/BarCodeRecognitionFilters.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 #### **QualitySettings with Manual Options for Normal Quality**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 {
     //default mode is NormalQuality
@@ -243,7 +243,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
 
 #### **Improve Barcode detection by allowing Unreadable Barcodes in Quality Settings**
 [BarCodeReader](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) allows developers to detect an unreadable barcode on the image be enabling [QualitySettings.MaxBarCodes](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes) preset.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
 {
     //set max barcodes mode, which tries to find all possible barcodes, even incorrect. 
@@ -259,7 +259,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeTy
 {{% alert color="primary" %}}**[DetectUnreadableBarcode.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/DetectUnreadableBarcode.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 
 #### **Improve Barcode detection by Allowing Image Inversion in Quality Settings**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType.DataMatrix))
 {
     reader.QualitySettings.AllowInvertImage = true;
@@ -270,7 +270,7 @@ using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType
 {{% alert color="primary" %}}**[BarCodeRecognitionFilters.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/BarCodeRecognitionFilters.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 #### **Recognizing Single Wiped Bars in Pattern**
 Aspose.BarCode provides public property AllowOneDWipedBarsRestoration to the QualitySettings which allows recognizing barcodes with single wiped/glued bars in pattern. This property is enabled by default in HighQuality, MaxBarCodes modes. Currently this property can be used for Code128, GS1Code128, SCC14, EAN14, SSCC18, AustralianPosteParcel and SwissPostParcel barcode types.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Initialize the BarCodeReader object and  Set recognition mode
 using (BarCodeReader reader = new BarCodeReader(@"file.tiff", DecodeType.Code128))
 {
@@ -293,7 +293,7 @@ In this section, we will scan only a part of the image that contains a barcode.
 <img style="border:1px solid black;" src="improve-barcode-recognition_1.png" alt="Barcode image with PDF417" />
 
 If we specify an area of (0, 0, 100, 50), the barcode reader will scan only this area and will be able to recognize the barcode. It will greatly increase the speed of recognition because the barcode reader will not look in other parts of the image.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Create an instance of BarCodeReader class and specify an area to look for the barcode
 using (BarCodeReader reader = new BarCodeReader(new Bitmap(dataDir + "ReadBarcodefromSpecificRegionofImage.png"), new Rectangle(0, 0, 100, 50), DecodeType.Pdf417))
 {
@@ -307,7 +307,7 @@ using (BarCodeReader reader = new BarCodeReader(new Bitmap(dataDir + "ReadBarcod
 {{< /highlight >}} 
 {{% alert color="primary" %}}**[ReadBarcodeSpecificRegionOfImage.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadBarcodeSpecificRegionOfImage.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 ### **Reading Barcode from Whole Region of Image**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
 {
     using (BarCodeReader reader = new BarCodeReader(lBitmap, new Rectangle(0, 0, lBitmap.Width, lBitmap.Height)))
@@ -322,7 +322,7 @@ using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
 {{% alert color="primary" %}}**[ReadBarcodeSpecificRegionOfImage.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadBarcodeSpecificRegionOfImage.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 ### **Reading Barcodes from Multiple Regions**
 In this section, we will scan multiple parts of the image to read barcodes from those specific regions. Suppose that we have an image of large size e.g. 800 x 600 pixels and our barcodes are placed on the top left and bottom right corners of the image, we can optimize the barcode scanning by specifying the areas, instead of scanning the whole image. But, in this case, we need to know in advance about the locations of the barcodes. The barcode reader will not scan other parts of the image if we specify the areas.
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 // Initialize the Bitmap object            
 Bitmap bitmap = new Bitmap(dataDir + "Region.png");
 Rectangle[] areas = new Rectangle[3];
@@ -341,7 +341,7 @@ using (BarCodeReader reader = new BarCodeReader(bitmap, areas, DecodeType.Code39
 {{< /highlight >}} 
 {{% alert color="primary" %}}**[ReadMultipleBarcodeRegions.cs](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/blob/master/Examples/CSharp/ManageAndOptimizeBarcodeRecognition/ReadMultipleBarcodeRegions.cs) as a source of code example, hosted by GitHub**{{% /alert %}}
 ### **Reading Barcodes from Whole Region Defined as Multiple Regions**
-{{< highlight csharp "linenos=inline">}}
+{{< highlight csharp>}}
 using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
 {
     using (BarCodeReader reader = new BarCodeReader(lBitmap, new Rectangle[] { new Rectangle(0, 0, lBitmap.Width, lBitmap.Height) }))
