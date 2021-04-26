@@ -22,6 +22,7 @@ This page contains release notes information for [Aspose.BarCode for Java 21.4](
 
 
 ## **Public API and Backward Incompatible Changes**
+-The minimum version of JDK was established as JDK8
 - Removed interface com.aspose.barcode.IBarCodeControl
 
 A list of classes that moved from com.aspose.barcode to com.aspose.barcode.generation package:
@@ -44,6 +45,6 @@ A list of classes that moved from com.aspose.barcode to com.aspose.barcode.gener
 - Moved enum DataMatrixEccType
 - Moved enum MacroCharacter
 
--Minimal version of JDK set to JDK8
+
 
 
