@@ -13,7 +13,7 @@ To install and use Aspose.BarCode for Node.js via Java, follow the following ins
 
 ### **Linux**
 - Download and install Node.js.
-- Install Oracle JDK (1.7 and higher) for Linux, configure the JAVA_HOME environment variable.
+- Install Oracle JDK (1.8 and higher) for Linux, configure the JAVA_HOME environment variable.
 - Install Python 3.x
 - Install aspose.barcode: 'npm i aspose.barcode'  
 - You can also download "Aspose.BarCode for Node.js via Java" from https://downloads.aspose.com/barcode/nodejs  and extract it.
@@ -21,7 +21,7 @@ To install and use Aspose.BarCode for Node.js via Java, follow the following ins
 
 ### **Windows**
 - Download and install Node.js and add node.exe to PATH.
-- Install Oracle JDK (1.7 and higher) for Linux, configure the JAVA_HOME environment variable.
+- Install Oracle JDK (1.8 and higher) for Windows, configure the JAVA_HOME environment variable.
 - Install Python 3.x and add python.exe to PATH.
 - Install aspose.barcode: 'npm i aspose.barcode'
 - You can also download "Aspose.BarCode for Node.js via Java" from https://downloads.aspose.com/barcode/nodejs  and extract it.
