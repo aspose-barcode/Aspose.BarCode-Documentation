@@ -4,8 +4,7 @@ type: docs
 weight: 10
 url: /reportingservices/getting-started/
 ---
-
-###### **This section includes the following topics:** 
+**This section includes the following topics:** 
 - [Product Overview](/barcode/reportingservices/product-overview/)
 - [Features](/barcode/reportingservices/features/)
 - [System Requirements](/barcode/reportingservices/system-requirements/)
