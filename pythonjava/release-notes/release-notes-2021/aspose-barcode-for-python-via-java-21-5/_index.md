@@ -14,6 +14,6 @@ This page contains release notes information for [Aspose.BarCode for Python via 
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|BARCODENET-37710|Add .NET 5 support|Enhancement|
 |BARCODENET-37708|Exception "Impossible to encode current data to the QR 40" when creating qr barcode|Bug|
+|BARCODENET-37703|SwissQRCode - asymmetrical cross|Bug|
 |BARCODEJAVA-1130|ComplexBarcodeGenerator generates wrong barcode image|Bug|
