@@ -4,35 +4,38 @@ type: docs
 weight: 10
 url: /reportingservices/product-overview/
 ---
-## **Welcome to the Aspose.BarCode for Reporting Services**
-
-{{% alert color="primary" %}} 
-![Aspose.BarCode for Reporting Services](aspose-BarCode-for-ReportingSerices.png)
-
-Aspose.BarCode for Reporting Services is a unique and robust solution for making your reports unique and more professional. It allows developers to display high-quality barcode labels in high resolution mode on SQL reports. These barcode labels can be rendered in various formats: BMP, JPEG, GIF, TIFF and PNG.
-{{% /alert %}} 
-
 ## **Product Description**
-Aspose.BarCode for Reporting Services is a very light weight component that supports 60+ of the most popular barcode symbologies. It can be used easily by adding it to the Visual Studio toolbox and then dropping it on the SQL report just like any Windows or web controls.
+***Aspose.BarCode for Reporting Services*** is designed to use with all exists on the market Microsoft Reporting Services engines. It is designed for both: easy visual barcode labels development and rich barcode generation with special barcode options.
+
+***Aspose.BarCode for Reporting Services*** allows visually create more then 60 barcode label formats. These barcode labels can be rendered with high resolution in various formats: ***BMP***, ***JPEG***, ***GIF***, ***TIFF*** and ***PNG***. Moreover, ***Aspose.BarCode for Reporting Services*** library supports ***Custom Code*** features and allows to use all of ***Aspose.BarCode for .Net*** rich generation features.
 
 ## **Features**
-
-- Generate 60+ barcode symbologies with light weight component or with a few lines of code.
+- Generate 60+ barcode symbologies visually with light weight [Custom Report Items](https://docs.microsoft.com/sql/reporting-services/custom-report-items/custom-report-items) component or with a few lines of code.
 - Wide range of options to manipulate barcode image appearance.
-- Generate barcodes with special barcode parameters, like error correction mode, ECI or embedded matadata.
+- Generate barcodes with special barcode parameters, like error correction mode, ECI or embedded metadata.
 - Create device resolution dependent barcode images.
+- Visual barcode label development with embedded visual editor.
+- Wide range of the barcode label options as Visual Studio component.
+- Custom Code embedding which allows to add all rich barcode generation features from Aspose.BarCode for .Net.
+- Multiple barcode visual options and caption areas which allows to generate barcode label in own style.
+- High resolution modes from 96 to 600 dpi.
+- Barcode label generaton in 5 image formats: ***BMP***, ***JPEG***, ***GIF***, ***TIFF*** and ***PNG***.
 
-## **Supported Barcode Symbologies**
-The following symbologies are supported for generation by Aspose.BarCode for Reporting Services:
+## **System Compatibility**
+- VS2019 / VS2017 / VS2015 / VS2013 / VS2012 / VS2010
+- SSRS 2019 / SSRS 2017 / SSRS 2016 / SSRS 2014 / SSRS 2012 / SSRS 2008R2 / SSRS 2008
 
-- **1D:** Code 11, Code 128, Code 32, Code 39, Code 93, Codabar, Code 16K, CodablockF, Databar OmniDirectional, Databar Stacked OmniDirectional, DatabarLimited, DatabarTruncated,
-Databar Stacked, Databar Expanded, Databar Expanded Stacked, EAN 13, EAN 14, EAN 8, GS1 CodablockF, GS1 Code 128, IATA 2 of 5, Italian Post 25, Interleaved 2 of 5, ISBN
-ISMN, ISSN, ITF6, ITF 14, Matrix 2 of 5, MSI, OPC, PatchCode, Pharmacode, PZN, SSCC 14, SSCC 18, Standard 2 of 5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon, VIN.
-- **2D:** Aztec, Compact PDF 417, Data Matrix, DotCode, GS1 Data Matrix, GS1 QR, MaxiCode, Macro PDF 417, Micro PDF 417, PDF 417, QR, MicroQR, Swiss QR.
-- **Postal:** Australia Post, AustralianPosteParcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, SwissPostParcel, USPS OneCode.
+## **Library Content**
+Aspose.BarCode for Reporting Services contains two components:
+- ***BarcodeGenerator visual component***, built by ***Custom Report Items*** technology, allows editing most of features of barcode label visually by embedded editor or component properties.
+- ***BarcodeGenerator class*** which can be used in ***Custom Code*** solutions and provides the same features as BarcodeGenerator class from ***Aspose.BarCode for .Net***.
 
-## **This section includes the following topics:**
-- [Sample Reports Gallery](/barcode/reportingservices/sample-reports-gallery/)
-- [Quick Start Tutorial](/barcode/reportingservices/quick-start-tutorial/)
-- [Design Time Barcode Report Designer](/barcode/reportingservices/design-time-barcode-report-designer/)
-- [Supported File Formats](/barcode/reportingservices/supported-file-formats/)
+***BarcodeGenerator visual component*** doesn’t work on SQL Server Express Editions because Custom Report Items technology is not supported by Express Editions. ***BarcodeGenerator class*** as Custom Code solution can be used without any limitation even on Express Editions.
+
+## **Report development**
+***Aspose.BarCode for Reporting Services*** requires Visual Studio with [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) or [Microsoft Reporting Services Projects Extension](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio) installed for enabling all of features of report development.
+
+## **Licensing**
+***Aspose.BarCode for Reporting Services*** can be used in evaluation mode with the same features as licensed version without any limitations. Main difference from licensed version is barcode image watermark.
+
+In any time, you can obtain Free [Temporary License](https://purchase.aspose.com/temporary-license) for one month and apply it with ConfigLicense tool which is provided with ***Aspose.BarCode for Reporting Services*** package.

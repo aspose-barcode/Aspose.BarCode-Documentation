@@ -1,16 +1,15 @@
 ---
 title: Programmers Guide
 type: docs
-weight: 20
+weight: 30
 url: /reportingservices/programmers-guide/
 ---
+This ***Programmers Guide*** section provides information of ***Aspose.BarCode for Reporting Service*** development process. For new users, this is the fastest way to learn how to use the library to generate barcode labels for reports.
 
-###### **This section includes the following topics:** 
-- [How to use Aspose.BarCode in SQL Server Reporting Services 2000](/barcode/reportingservices/how-to-use-aspose-barcode-in-sql-server-reporting-services-2000/)
-- [Display Barcodes on Dataset Based Reports](/barcode/reportingservices/display-barcodes-on-dataset-based-reports/)
-- [How to Display BarCodes in Report Header](/barcode/reportingservices/how-to-display-barcodes-in-report-header/)
-- [Using Custom Library of Aspose.BarCode for .NET to Adjust the Bar Code Size](/barcode/reportingservices/using-custom-library-of-aspose-barcode-for-net-to-adjust-the-bar-code-size/)
-- [Migrating from Earlier Versions of Aspose.BarCode for Reporting Services](/barcode/reportingservices/migrating-from-earlier-versions-of-aspose-barcode-for-reporting-services/)
-- [How to Display BarCode with Empty Bars](/barcode/reportingservices/how-to-display-barcode-with-empty-bars/)
-- [Display Quick Response Code](/barcode/reportingservices/display-quick-response-code/)
-- [Select an ECC Level to Encode a Barcode](/barcode/reportingservices/select-an-ecc-level-to-encode-a-barcode/)
+To find out more about ***Aspose.BarCode for Reporting Services*** development process, select the appropriate section:
+- [BarcodeGenerator Visual Component](/barcode/reportingservices/barcodegenerator-visual-component/) – provides information about Visual Component main features
+- [Visual Component Properties](/barcode/reportingservices/visual-component-properties/) – provides information about Visual Component properties
+- [Visual Component Editor](/barcode/reportingservices/visual-component-editor/) – provides information about editing Visual Component parameters by embedded editor.
+- [Display Barcodes from Dataset](/barcode/reportingservices/display-barcodes-from-dataset/) – provides information how to render barcode with Visual Component form database data.
+- [BarcodeGenerator Class](/barcode/reportingservices/barcodegenerator-class/) – provides information about BarcodeGenerator Class and bacode label generation with Custom Code.
+- [Display BarCodes in Report Header and Footer](/barcode/reportingservices/display-barcodes-in-report-header-and-footer/) – provides information about barcode label generation in report header or footer.
