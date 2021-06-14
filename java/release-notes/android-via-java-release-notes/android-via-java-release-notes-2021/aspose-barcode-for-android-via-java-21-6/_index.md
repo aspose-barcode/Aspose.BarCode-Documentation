@@ -14,6 +14,7 @@ This page contains release notes information for [Aspose.BarCode for Android via
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
+|BARCODEANDROID-454|Investigate and find solution for the large images processing|Enhancement|
 |BARCODENET-37797|Remove Databar14 split pattern generation code|Enhancement|
 |BARCODENET-37789|Generated DataBar Expanded images are not recognized by other engines|Bug|
 |BARCODENET-37783|Cannot read QR code image in the PDF file|Bug|
