@@ -20,3 +20,14 @@ This page contains release notes information for [Aspose.BarCode for Android via
 |BARCODENET-37783|Cannot read QR code image in the PDF file|Bug|
 |BARCODENET-37778|The QR code recognition of certain image throws Exception|Bug|
 |BARCODENET-37784|Certain image cannot be recognized|Bug|
+
+## **Public API and Backward Incompatible Changes**
+- Added method com.aspose.barcode.barcoderecognition.QualitySettings.setImageScalingMode(ImageScalingMode) 
+- Added method com.aspose.barcode.barcoderecognition.QualitySettings.getImageScalingMode():ImageScalingMode 
+- Added enum ImageScalingMode
+- Added enum  values
+  ImageScalingMode.WITHOUT_SCALE
+  ImageScalingMode.SCALE_800x600
+  ImageScalingMode.SCALE_1280x720
+  ImageScalingMode.SCALE_1920x1080
+   
