@@ -19,4 +19,4 @@ This page contains release notes information for [Aspose.BarCode for Java 21.6](
 |BARCODENET-37783|Cannot read QR code image in the PDF file|Bug|
 |BARCODENET-37778|The QR code recognition of certain image throws Exception|Bug|
 |BARCODENET-37784|Certain image cannot be recognized|Bug|
-|BARCODEJAVA-851|Tests BARCODEJAVA552 became failed with AssertionError exception|Bug|
+|BARCODEJAVA-851|Test became failed with AssertionError exception : "expected Matrix2of5 but found Interleaved2of5"|Bug|
