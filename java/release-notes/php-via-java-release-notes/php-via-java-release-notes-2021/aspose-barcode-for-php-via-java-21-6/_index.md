@@ -25,10 +25,10 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 ## **Public API and Backward Incompatible Changes**
 - Updated function Complexbarcode->ComplexBarcodeGenerator->save($imagePath, $imageFormat)
   type of $imageFormat changed from string to BarCodeImageFormat
-- Updated function Complexbarcode->ComplexBarcodeGenerator->generateBarcodeImage(int $format)
-  type of $imageFormat changed from string to BarCodeImageFormat
+- Updated function Complexbarcode->ComplexBarcodeGenerator->generateBarcodeImage($format)
+  type of $format changed from string to BarCodeImageFormat
 - Updated function Generation->BarcodeGenerator->save($imagePath, $imageFormat)
   type of $imageFormat changed from string to BarCodeImageFormat
-- Updated function Generation->BarcodeGenerator->generateBarcodeImage(int $format)
-   type of $imageFormat changed from string to BarCodeImageFormat
+- Updated function Generation->BarcodeGenerator->generateBarcodeImage($format)
+   type of $format changed from string to BarCodeImageFormat
 
