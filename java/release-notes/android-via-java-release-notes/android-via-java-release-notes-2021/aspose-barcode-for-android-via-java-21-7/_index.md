@@ -20,3 +20,5 @@ This page contains release notes information for [Aspose.BarCode for Android via
 |BARCODENET-37804|Incorrect data compactification with QR generation|Bug|
 |BARCODENET-37808|QR code is not recognized on full image|Bug|
 |BARCODENET-37812|QR code data is un-readable|Bug|
+|BARCODEANDROID-570|Certain image cannot be recognized|Bug|
+|BARCODEANDROID-574|The recognition of certain image throws java.lang.OutOfMemoryError|Bug|
