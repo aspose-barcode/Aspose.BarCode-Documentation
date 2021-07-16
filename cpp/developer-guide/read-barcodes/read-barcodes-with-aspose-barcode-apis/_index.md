@@ -10,7 +10,7 @@ Aspose.BarCode provides two powerful classes, BarcodeGenerator and BarCodeRea
 ### **How to scan a barcode from a picture**
 The following example demonstrates how to scan a picture of a barcode image using Aspose.BarCode
 
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-ScanBarCodePicture-ScanBarCodePicture.cs" >}}
+{{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CSharp-ManageAndOptimizeBarcodeRecognition-ScanBarCodePicture-ScanBarCodePicture.cpp" >}}
 
 |**A barcode image**|**Scan results**|
 | :- | :- |
