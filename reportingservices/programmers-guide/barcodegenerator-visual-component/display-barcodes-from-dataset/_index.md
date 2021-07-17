@@ -13,12 +13,13 @@ The most common reporting services usage is generating reports from table data f
 As an example, for the article, we use test Microsoft Access database with the table ***Phones*** with the following fields.
 
 **Table Name: Phones**
-|**Column Name** |**Description** |
+
+|**Column Name**|**Description**|
 | :- | :- |
-|**id** |Auto number. Used as primary key |
-|**Model** | Model description, text field.|
-|**OS** | Operational System description, text field.|
-|**Serial** | Serial number, text field.|
+|**id**|Auto number. Used as primary key |
+|**Model**|Model description, text field.|
+|**OS**|Operational System description, text field.|
+|**Serial**|Serial number, text field.|
 
 After attaching DataSet to the project, you should see on the ***Report Data*** toolbox something like this:
 
