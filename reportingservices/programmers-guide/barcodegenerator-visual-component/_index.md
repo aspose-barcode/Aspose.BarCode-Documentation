@@ -42,9 +42,13 @@ At any time you can edit barcode label parameters with visual embedded editor wh
 <img style="border:1px solid black;" src="embedded_editor_01.png" alt="BarcodeGenerator visual component editor" />
 
 ## **Visual Component Properties**
-BarcodeGenerator visual component parameters can be edited in ***Properties*** toolbox. The properties are split on ***Barcode:Main*** and ***Barcode:Parameters***. 
+BarcodeGenerator visual component parameters can be edited in ***Properties*** toolbox. The properties are split on ***Barcode:Appearance***, ***Barcode:Main*** and ***Barcode:Parameters***. 
 
 <img style="border:1px solid black;" src="properties_01.png" alt="BarcodeGenerator visual component properties" />
+
+***Barcode:Appearance*** group contains parameters which affect component appearance and visibility and it includes the following parameters:
+- ***Visible*** - the barcode paraments affect barcode label visibility in ***Preview*** mode. Can contains report expressions.
+- ***DrawErrors*** - the barcode paraments disables or enables error drawing during barcode label generation. If it is disabled, component draws nothing in case error occurring.
 
 ***Barcode:Main*** group contains main generation parameters which is required in most cases and it includes the following parameters:
 - ***AutoSizeMode*** - specifies the different types of automatic sizing modes. The mode defines barcode image resizing to the component size. ***None*** resizes component size to barcode image size which is defined by other parameters. ***Nearest*** resizes barcode image size to nearest value which is fit to the component size. ***Interpolation*** precisely resizes barcode image size to component size value, but barcode can be damaged in low resolution mode. If you use ***Interpolation*** mode, set at least 300 dpi at ***Resolution*** property.

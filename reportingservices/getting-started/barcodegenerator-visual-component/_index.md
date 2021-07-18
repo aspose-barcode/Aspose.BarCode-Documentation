@@ -23,6 +23,7 @@ Main component features:
 <img style="border:1px solid black;" src="ComponentProperties.png" alt="BarcodeGenerator Visual Component Properties" />
 
 ***BarcodeGenerator visual component*** allows to edit barcode label parameters in design time by changing properties, like any other Report Item. It contains two group of properties:
+- ***Barcode:Appearance*** – contains parameters which affect component appearance and visibility.
 - ***Barcode:Main*** – contains main barcode label parameters like codetext, barcode type or resolution.
 - ***Barcode:Parameters*** – contains all other barcode parameters, like barcode area edition or special barcode parameters.
 

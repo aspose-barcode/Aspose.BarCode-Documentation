@@ -5,13 +5,20 @@ weight: 10
 url: /reportingservices/visual-component-properties/
 ---
 ## **Overview**
-***BarcodeGenerator visual component*** properties is a similar to [BarcodeGenerator Parameters]( https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and more detail information about their usage can be obtained from that section. Visual component split on ***Barcode:Main*** and ***Barcode:Parameters*** sections. ***Barcode:Main*** group contains main generation parameters which is required in most cases, ***Barcode:Parameters*** includes all other barcode generation parameters.
+***BarcodeGenerator visual component*** properties is a similar to [BarcodeGenerator Parameters]( https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and more detail information about their usage can be obtained from that section. Visual component split on ***Barcode:Appearance***, ***Barcode:Main*** and ***Barcode:Parameters*** sections. ***Barcode:Appearance*** group contains parameters which affect component appearance and visibility, ***Barcode:Main*** group contains main generation parameters which is required in most cases, ***Barcode:Parameters*** includes all other barcode generation parameters.
 
 <img style="border:1px solid black;" src="properties_01.png" alt="BarcodeGenerator visual component properties" />
 
 The property groups influence can be seen on this image.
 
 <img style="border:1px solid black;" src="properties_02.png" alt="BarcodeGenerator visual component structure" />
+
+## **Barcode:Appearance Properties Group**
+***Barcode:Appearance*** group contains parameters which affect component appearance and visibility
+
+It contains the following parameters:
+- ***Visible*** - the barcode paraments affect barcode label visibility in ***Preview*** mode. Can contains report expressions.
+- ***DrawErrors*** - the barcode paraments disables or enables error drawing during barcode label generation. If it is disabled, component draws nothing in case error occurring.
 
 ## **Barcode:Main Properties Group**
 ***Barcode:Main*** properties group includes main generation parameters which is required in most cases. 
