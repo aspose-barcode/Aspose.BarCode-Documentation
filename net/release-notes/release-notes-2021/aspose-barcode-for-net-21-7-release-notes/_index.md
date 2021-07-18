@@ -18,26 +18,26 @@ This page contains release notes information for [Aspose.BarCode for .NET 21.7](
 
 ## **Public API and Backward Incompatible Changes**
 
-Added method Aspose.BarCode.ComplexBarcode.ComplexCodetextReader.TryDecodeMailmark2D(System.String)
-Added type Aspose.BarCode.ComplexBarcode.Mailmark2DType
-Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Auto
-Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_7
-Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_9
-Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_29
-Added type Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext
-Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.#ctor
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.UPUCountryID
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.InformationTypeID
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.VersionID
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.Class
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.SupplyChainID
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.ItemID
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.DestinationPostCodeAndDPS
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.RTSFlag
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.ReturnToSenderPostCode
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.CustomerContent
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.CustomerContentEncodeMode
-Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.DataMatrixType
-Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.GetConstructedCodetext
-Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.InitFromString(System.String)
-Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.GetBarcodeType
+- Added method Aspose.BarCode.ComplexBarcode.ComplexCodetextReader.TryDecodeMailmark2D(System.String)
+- Added type Aspose.BarCode.ComplexBarcode.Mailmark2DType
+- Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Auto
+- Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_7
+- Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_9
+- Added field Aspose.BarCode.ComplexBarcode.Mailmark2DType.Type_29
+- Added type Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext
+- Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.#ctor
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.UPUCountryID
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.InformationTypeID
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.VersionID
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.Class
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.SupplyChainID
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.ItemID
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.DestinationPostCodeAndDPS
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.RTSFlag
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.ReturnToSenderPostCode
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.CustomerContent
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.CustomerContentEncodeMode
+- Added property Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.DataMatrixType
+- Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.GetConstructedCodetext
+- Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.InitFromString(System.String)
+- Added method Aspose.BarCode.ComplexBarcode.Mailmark2DCodetext.GetBarcodeType
