@@ -13,3 +13,4 @@ To find out more about ***Aspose.BarCode for Reporting Services*** development p
 - [Display Barcodes from Dataset](/barcode/reportingservices/display-barcodes-from-dataset/) – provides information how to render barcode with Visual Component form database data.
 - [BarcodeGenerator Class](/barcode/reportingservices/barcodegenerator-class/) – provides information about BarcodeGenerator Class and bacode label generation with Custom Code.
 - [Display BarCodes in Report Header and Footer](/barcode/reportingservices/display-barcodes-in-report-header-and-footer/) – provides information about barcode label generation in report header or footer.
+- [Dynamically Display Barcodes in Table](/barcode/reportingservices/dynamically-display-barcodes-in-table/) – provides information about hiding or showing barcode with report expressions.
