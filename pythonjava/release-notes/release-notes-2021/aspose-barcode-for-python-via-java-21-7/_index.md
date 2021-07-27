@@ -1,13 +1,13 @@
 ---
-title: Aspose.BarCode for Python via Java 21.6
+title: Aspose.BarCode for Python via Java 21.7
 type: docs
-weight: 940
-url: /java/aspose-barcode-for-python-via-java-21-6/
+weight: 930
+url: /java/aspose-barcode-for-python-via-java-21-7/
 ---
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Python via Java 21.6](https://downloads.aspose.com/barcode/pythonjava/new-releases/aspose.barcode-for-python-via-java-21.6/).
+This page contains release notes information for [Aspose.BarCode for Python via Java 21.7](https://downloads.aspose.com/barcode/pythonjava/new-releases/aspose.barcode-for-python-via-java-21.7/).
 
 {{% /alert %}} 
 ## **All Changes**
