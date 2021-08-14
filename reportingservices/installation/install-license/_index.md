@@ -35,5 +35,5 @@ You can manually install license to registry. You need manually add data from li
 "Conholdate.Total.Product.Family.lic"=hex:00
 {{< /highlight >}}
 
-## **Install license as file**
-As other way you can manually add ***\*.lic*** file to folder with ***Aspose.BarCode.ReportingServices.dll***. You need to add this ***\*.lic*** file to all folders of SQL Server Reporting Services and Visual Studios. However simplest way is using ***ConfigLicense*** utility.
+## **Source code of ConfigLicense utility**
+At any time you can freely [download source code](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/tree/master/ReportingServices/ConfigLicense) of ConfigLicense utility and use it in the own scripts or utilities.
