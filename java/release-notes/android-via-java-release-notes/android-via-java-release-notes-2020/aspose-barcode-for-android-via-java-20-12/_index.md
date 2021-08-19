@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for Android via Java 20.12
 type: docs
-weight: 4
+weight: 3
 url: /java/aspose-barcode-for-android-via-java-20-12/
 ---
 
