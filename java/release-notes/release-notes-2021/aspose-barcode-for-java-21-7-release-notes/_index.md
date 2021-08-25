@@ -20,3 +20,5 @@ This page contains release notes information for [Aspose.BarCode for Java 21.7](
 |BARCODENET-37804|Incorrect data compactification with QR generation|Bug|
 |BARCODENET-37808|QR code is not recognized on full image|Bug|
 |BARCODENET-37812|QR code data is un-readable|Bug|
+|BARCODEJAVA-1113|The databar expended stacked barcode can not be scanned with physical scanner|Bug|
+|BARCODEJAVA-1068|BarCodeReader.readBarCodes hangs while reading barcodes from the attached PDF file|Bug|
