@@ -29,6 +29,8 @@ This page contains release notes information for [Aspose.BarCode for Java 21.9](
 - Added method com.aspose.barcode.barcoderecognition.BarcodeSettings.setDetectEncoding(boolean):void
 - Added method com.aspose.barcode.barcoderecognition.BarcodeSettings.getAustraliaPost():AustraliaPostSettings
 - Added class com.aspose.barcode.barcoderecognition.AustraliaPostSettings
+- Added method com.aspose.barcode.barcoderecognition.AustraliaPostSettings.#ctor
+- Added method com.aspose.barcode.barcoderecognition.AustraliaPostSettings.#ctor(AustraliaPostSettings)
 - Added method com.aspose.barcode.barcoderecognition.AustraliaPostSettings.getCustomerInformationInterpretingType():CustomerInformationInterpretingType
 - Added method com.aspose.barcode.barcoderecognition.AustraliaPostSettings.setCustomerInformationInterpretingType(CustomerInformationInterpretingType):void
 - Added method com.aspose.barcode.barcoderecognition.AustraliaPostSettings.getIgnoreEndingFillingPatternsForCTable():boolean
