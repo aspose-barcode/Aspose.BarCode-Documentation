@@ -1,5 +1,5 @@
 ---
-title: Aspose.BarCode for Python via Java 21.7
+title: Aspose.BarCode for Python via Java 21.8
 type: docs
 weight: 920
 url: /java/aspose-barcode-for-python-via-java-21-8/
