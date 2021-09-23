@@ -25,25 +25,25 @@ This page contains release notes information for [Aspose.BarCode for C++ 21.9](h
 
 |**Class**|**Moved from**|**Moved to**|
 | :- | :- | :- |
-|Aspose::BarCode::Generation::AztecSymbolMode|Generation/AztecSymbolMode.h|BarCode.Generation/GenerationParameters/AztecSymbolMode|
-|Aspose::BarCode::Generation::BarCodeImageFormat|Generation/BarCodeImageFormat.h|BarCode.Generation/GenerationParameters/BarCodeImageFormat|
-|Aspose::BarCode::Generation::BorderDashStyle|Generation/BorderDashStyle.h|BarCode.Generation/GenerationParameters/BorderDashStyle|
-|Aspose::BarCode::Generation::CodabarChecksumMode|Generation/CodabarChecksumMode.h|BarCode.Generation/GenerationParameters/CodabarChecksumMode|
-|Aspose::BarCode::Generation::CodabarSymbol|Generation/CodaBarSymbol.h|BarCode.Generation/GenerationParameters/CodaBarSymbol|
-|Aspose::BarCode::Generation::DataMatrixEccType|Generation/DataMatrixEccType.h|BarCode.Generation/GenerationParameters/DataMatrixEccType|
-|Aspose::BarCode::Generation::DataMatrixEncodeMode|Generation/DataMatrixEncodeMode.h|BarCode.Generation/GenerationParameters/DataMatrixEncodeMode|
-|Aspose::BarCode::Generation::ECIEncodings|Generation/ECIEncodings.h|BarCode.Generation/GenerationParameters/ECIEncodings|
-|Aspose::BarCode::Generation::EnableChecksum|Generation/EnableChecksum.h|BarCode.Generation/GenerationParameters/EnableChecksum|
-|Aspose::BarCode::Generation::ITF14BorderType|Generation/ITF14BorderType.h|BarCode.Generation/GenerationParameters/ITF14BorderType|
-|Aspose::BarCode::Generation::MacroCharacter|Generation/MacroCharacter.h|BarCode.Generation/GenerationParameters/MacroCharacter|
-|Aspose::BarCode::Generation::MacroCharacterValues|Generation/MacroCharacter.h|BarCode.Generation/GenerationParameters/MacroCharacter|
-|Aspose::BarCode::Generation::Pdf417CompactionMode|Generation/Pdf417CompactionMode.h|BarCode.Generation/GenerationParameters/Pdf417CompactionMode|
-|Aspose::BarCode::Generation::Pdf417ErrorLevel|Generation/Pdf417ErrorLevel.h|BarCode.Generation/GenerationParameters/Pdf417ErrorLevel|
-|Aspose::BarCode::Generation::QREncodeMode|Generation/QREncodeMode.h|BarCode.Generation/GenerationParameters/QREncodeMode|
-|Aspose::BarCode::Generation::QREncodeType|Generation/QREncodeType.h|BarCode.Generation/GenerationParameters/QREncodeType|
-|Aspose::BarCode::Generation::QRErrorLevel|Generation/QRErrorLevel.h|BarCode.Generation/GenerationParameters/QRErrorLevel|
-|Aspose::BarCode::Generation::QRVersion|Generation/QRVersion.h|BarCode.Generation/GenerationParameters/QRVersion|
-|Aspose::BarCode::Generation::BarcodeClassifications|Generation/EncodeTypes/BarcodeClassifications.h|BarCode.Generation/EncodeTypes/BarcodeClassifications|
-|Aspose::BarCode::Generation::BarcodeClassifications|Generation/EncodeTypes/BarcodeClassifications.h|BarCode.Generation/EncodeTypes/BarcodeClassifications|
-|Aspose::BarCode::Generation::EncodeTypes|Generation/EncodeTypes/EncodeTypes.h|BarCode.Generation/EncodeTypes/EncodeTypes|
-|Aspose::BarCode::Generation::SymbologyEncodeType|Generation/EncodeTypes/SymbologyEncodeType.h|BarCode.Generation/EncodeTypes/SymbologyEncodeType|
+|Aspose::BarCode::Generation::AztecSymbolMode|Generation/AztecSymbolMode.h|BarCode.Generation/GenerationParameters/AztecSymbolMode.h|
+|Aspose::BarCode::Generation::BarCodeImageFormat|Generation/BarCodeImageFormat.h|BarCode.Generation/GenerationParameters/BarCodeImageFormat.h|
+|Aspose::BarCode::Generation::BorderDashStyle|Generation/BorderDashStyle.h|BarCode.Generation/GenerationParameters/BorderDashStyle.h|
+|Aspose::BarCode::Generation::CodabarChecksumMode|Generation/CodabarChecksumMode.h|BarCode.Generation/GenerationParameters/CodabarChecksumMode.h|
+|Aspose::BarCode::Generation::CodabarSymbol|Generation/CodaBarSymbol.h|BarCode.Generation/GenerationParameters/CodaBarSymbol.h|
+|Aspose::BarCode::Generation::DataMatrixEccType|Generation/DataMatrixEccType.h|BarCode.Generation/GenerationParameters/DataMatrixEccType.h|
+|Aspose::BarCode::Generation::DataMatrixEncodeMode|Generation/DataMatrixEncodeMode.h|BarCode.Generation/GenerationParameters/DataMatrixEncodeMode.h|
+|Aspose::BarCode::Generation::ECIEncodings|Generation/ECIEncodings.h|BarCode.Generation/GenerationParameters/ECIEncodings.h|
+|Aspose::BarCode::Generation::EnableChecksum|Generation/EnableChecksum.h|BarCode.Generation/GenerationParameters/EnableChecksum.h|
+|Aspose::BarCode::Generation::ITF14BorderType|Generation/ITF14BorderType.h|BarCode.Generation/GenerationParameters/ITF14BorderType.h|
+|Aspose::BarCode::Generation::MacroCharacter|Generation/MacroCharacter.h|BarCode.Generation/GenerationParameters/MacroCharacter.h|
+|Aspose::BarCode::Generation::MacroCharacterValues|Generation/MacroCharacter.h|BarCode.Generation/GenerationParameters/MacroCharacter.h|
+|Aspose::BarCode::Generation::Pdf417CompactionMode|Generation/Pdf417CompactionMode.h|BarCode.Generation/GenerationParameters/Pdf417CompactionMode.h|
+|Aspose::BarCode::Generation::Pdf417ErrorLevel|Generation/Pdf417ErrorLevel.h|BarCode.Generation/GenerationParameters/Pdf417ErrorLevel.h|
+|Aspose::BarCode::Generation::QREncodeMode|Generation/QREncodeMode.h|BarCode.Generation/GenerationParameters/QREncodeMode.h|
+|Aspose::BarCode::Generation::QREncodeType|Generation/QREncodeType.h|BarCode.Generation/GenerationParameters/QREncodeType.h|
+|Aspose::BarCode::Generation::QRErrorLevel|Generation/QRErrorLevel.h|BarCode.Generation/GenerationParameters/QRErrorLevel.h|
+|Aspose::BarCode::Generation::QRVersion|Generation/QRVersion.h|BarCode.Generation/GenerationParameters/QRVersion.h|
+|Aspose::BarCode::Generation::BarcodeClassifications|Generation/EncodeTypes/BarcodeClassifications.h|BarCode.Generation/EncodeTypes/BarcodeClassifications.h|
+|Aspose::BarCode::Generation::BaseEncodeType|Generation/EncodeTypes/BaseEncodeType.h|BarCode.Generation/EncodeTypes/BaseEncodeType.h|
+|Aspose::BarCode::Generation::EncodeTypes|Generation/EncodeTypes/EncodeTypes.h|BarCode.Generation/EncodeTypes/EncodeTypes.h|
+|Aspose::BarCode::Generation::SymbologyEncodeType|Generation/EncodeTypes/SymbologyEncodeType.h|BarCode.Generation/EncodeTypes/SymbologyEncodeType.h|
