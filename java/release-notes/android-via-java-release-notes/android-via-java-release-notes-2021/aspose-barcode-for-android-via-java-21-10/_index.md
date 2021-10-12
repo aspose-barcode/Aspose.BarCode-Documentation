@@ -14,7 +14,6 @@ This page contains release notes information for [Aspose.BarCode for Android via
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|BARCODENET-37855|Optimize SVG numbers precision|Enhancement|
 |BARCODENET-37880|Swiss-QR-Code Encoding Problems|Enhancement|
 |BARCODENET-37889|Implement FastScanOnly setting for 1D recognition|Enhancement|
 
