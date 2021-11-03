@@ -4,8 +4,25 @@ type: docs
 weight: 60
 url: /net/licensing/
 ---
+## **Why Get a License**
+Getting a license is required to obtain the acces to some advance properties of Aspose.BarCode for .NET. The evaliuation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognising of Code39 barcodes. To test how recognition works, a full-featured demo is available for all supported barcode symbologies. If you want to try Aspose.BarCode without limitations, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?]() for more information.
 
-## **Evaluation Version Limitations**
+## **How to Obtain a License**
+
+## **License Setting**
+
+### **Using Singleton**
+
+### **From File or Stream**
+
+### **From Application Resource**
+
+### **Additional Ways**
+
+## **How to Protect from License Theft**
+
+
+<!--## **Evaluation Version Limitations**
 ### **Evaluate Aspose.BarCode**
 You can easily download an evaluation version of Aspose.BarCode for .NET from the [download page](https://www.nuget.org/packages/Aspose.barcode/). The evaluation version provides the same capabilities as the licensed version of the component. Furthermore, the evaluation version is licensed by simply buying a license and adding a couple of lines of code to your projects. The evaluation version of Aspose.BarCode (that is, the application without a license applied) provides full barcode generation functionality but puts an evaluation watermark (the words Aspose) on the barcode image. If you want to try Aspose.BarCode without evaluation version limitations, you can also request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.
 ### **Code39 Recognition Only**
@@ -64,3 +81,4 @@ A new class **Metered** has been introduced to apply the metered key. Following 
     // Display information
     Console.WriteLine("Amount Consumed : " + amount.ToString());
 {{< /highlight >}}
+-->
