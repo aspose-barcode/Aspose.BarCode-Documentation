@@ -58,8 +58,21 @@ Class ComplexBarcode allows implementing the generation of barcode documents to 
 
 ### **Examples**
 Here, you can see some codes samples for simple operations, such as generating a barcode using Code128 or recognizing a barcode from a file.
-#### **Generate a Barcode Label using Code128**
+#### **Generate a Barcode using Code128**
+{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SetCodeText-SetCodeText.cs" >}}
 #### **Recognize a Barcode from a File through C# Code**
+{{< highlight csharp>}}
+using (FileStream lStream = new FileStream(dataDir + "Scan.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
+{
+    using (BarCodeReader reader = new BarCodeReader(lStream))
+    {
+        //other way to set
+        reader.SetBarCodeImage(lStream);
+        foreach (BarCodeResult result in reader.ReadBarCodes())
+            Console.WriteLine("BarCode CodeText: " + result.CodeText);
+    }
+}
+{{< /highlight >}} 
 
 ## **Licencing**
 License is required to obtain the acces to some advance properties of Aspose.BarCode for .NET. The evaliuation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognising of Code39 barcodes. To test how recognition works, a full-featured demo is available for all supported barcode symbologies. 
