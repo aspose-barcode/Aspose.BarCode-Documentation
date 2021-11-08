@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/getting-started/
 ---
-This article introduces the basic concepts and features of ***Aspose.BarCode for .NET***. Here you can learn about its features, available barcode and QR code types, functionality, supported input and output formats, installation process, and other key aspects. New users are invited to use this page as a starting point to get familiar with ***Aspose.BarCode for .NET*** and its technical requirements.   
+This article introduces the basic concepts of ***Aspose.BarCode for .NET***. Here you can learn about its features, supported barcode and QR code types, functionality, available input and output formats, installation process, and other key aspects. New users can refer to this page as a starting point to get familiar with ***Aspose.BarCode for .NET*** and its technical requirements.   
 
 For specific information about ***Aspose.BarCode for .NET***, see the following sections:
 - [Product Overview](/barcode/net/product-overview/)  – describes the product and its purpose, functionality, key advantages, barcode types, and compatibility.

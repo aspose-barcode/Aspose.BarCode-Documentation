@@ -4,7 +4,7 @@ type: docs
 weight: 10
 url: /net/product-overview/
 ---
-The present article introduces Aspose.BarCode for .NET, its main concepts, and general technical details that are important to start working with the library. The overview focuses on the description of its purpose, functionality, key features, requirements to input and output image formats, important classes, and supported platforms.
+The present article introduces ***Aspose.BarCode for .NET*** and its main concepts, as well as general technical details that are important to start working with the library. Here, you can find the description of its purpose, functionality, key features, requirements to input and output image formats, important classes, and supported platforms.
 
 ## **Product Description**
 
@@ -57,12 +57,34 @@ One of the key features of Aspose.BarCode for .NET is barcode generation perform
 Class ComplexBarcode allows implementing the generation of barcode documents to work with complex barcodes. At present, it supports processing only Swiss QR Code. The Swiss QR Code is used to manage QR bill in payments that replace previous payment slips. The Swiss QR Code contains all necessary payment information required to initiate payments or to process a QR invoice. Class ComplexBarcode contains SwissQRBill and SwissQRCodetext classes that enable various functions to work with Swiss QR Codes, such as getting or setting the account number of a creditor, alternative payments schemes, payment amount, currency, etc.
 
 ### **Examples**
-Here, you can see some codes samples for simple operations, such as generating a barcode using Code128 or recognizing a barcode from a file.
+Here, you can see some code samples for simple operations, such as generating a barcode using Code128 or recognizing a barcode from a stream.
 #### **Generate a Barcode using Code128**
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-SetCodeText-SetCodeText.cs" >}}
-#### **Recognize a Barcode from a File through C# Code**
 {{< highlight csharp>}}
-using (FileStream lStream = new FileStream(dataDir + "Scan.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
+// instantiate object and set different barcode properties
+BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "1234567");
+generator.Parameters.Barcode.XDimension.Millimeters = 1f;
+
+// save the image to your system and set its image format to Jpeg
+generator.Save(dir + "output.png", BarCodeImageFormat.PNG);
+{{< /highlight >}} 
+
+#### **Recognize Barcodes from a File**
+{{< highlight csharp>}}
+// Read file from directory with DecodeType.EAN13
+using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.зтп", DecodeType.EAN13))
+{
+    foreach (BarCodeResult result in reader.ReadBarCodes())
+    {
+        // Read symbology type and code text
+        Console.WriteLine("Symbology Type: " + result.CodeType);
+        Console.WriteLine("CodeText: " + result.CodeText);
+    }
+}
+{{< /highlight >}} 
+
+#### **Recognize a Barcode from a Stream**
+{{< highlight csharp>}}
+using (FileStream lStream = new FileStream(dataDir + "Scan.png", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
     using (BarCodeReader reader = new BarCodeReader(lStream))
     {
