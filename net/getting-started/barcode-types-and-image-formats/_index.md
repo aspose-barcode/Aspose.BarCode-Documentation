@@ -7,10 +7,10 @@ url: /net/barcode-types-and-image-formats/
 ## **Barcode Types and Supported Symbologies**
 ***Aspose.BarCode for .NET*** supports over 60 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. 
     
-***Linear barcode types***, or ***1D barcodes***, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.   
-Matrix codes, also known as ***2D barcodes***, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This type of barcode symbology is considered more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
+*Linear barcode types*, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.   
+Matrix codes, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This type of barcode symbology is considered more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
   
-***Postal barcode types*** are speicific barcode symbologies used by postal services in a variety of countries.
+*Postal barcode types* are specific barcode symbologies used by postal services in a variety of countries.
 
 <!--| Barcode Type | Supported Symbologies |
 | ------ | ----------- |
@@ -37,53 +37,8 @@ Matrix codes, also known as ***2D barcodes***, have been introduced as a two-dim
 </tr> 
 </table>
 
-<!--- Code 11, 
-- Code 128, 
-- Code 32, 
-- Code 39, 
-- Code 93, 
-- Codabar, 
-- Code 16K, 
-- CodablockF, 
-- Databar OmniDirectional, 
-- Databar Stacked OmniDirectional, 
-- Databar Limited, 
-- Databar Truncated,
-- Databar Stacked, 
-- Databar Expanded, 
-- Databar Expanded Stacked, 
-- EAN 13, 
-- EAN 14, 
-- EAN 8, 
-- GS1 CodablockF, 
-- GS1 Code 128, 
-- IATA 2 of 5, 
-- Italian Post 25, 
-- Interleaved 2 of 5, 
-- ISBN
-- ISMN, 
-- ISSN, 
-- ITF 14, 
-- ITF 6, 
-- Matrix 2 of 5, 
-- MSI, 
-- OPC, 
-- PatchCode, 
-- Pharmacode, 
-- PZN, 
-- SSCC 14, 
-- SSCC 18, 
-- Standard 2 of 5, 
-- EAN 5, 
-- EAN 2, 
-- UPC A, 
-- UPC E, 
-- UpcaGs1DatabarCoupon, 
-- VIN.
--->
-
 ## **Image Formats**
-Aspose.BarCode for .NET supports rendering barcode labels in five mostly widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by SQL Server Reporting Services engine. See below the formats supported for input and output.
+Aspose.BarCode for .NET supports rendering barcode labels in the five most widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by the SQL Server Reporting Services engine. See below the formats supported for input and output.
 
 | Input / Output | Output Only| 
 | ------ | ------ | 

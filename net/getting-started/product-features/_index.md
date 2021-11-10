@@ -28,6 +28,7 @@ url: /net/product-features/
 - Defining the angle and region information for all barcodes recognized in an image (using points, quadrangle, or rectangle to specify a bounding barcode region)
 - Scanning from multi-page TIFF
 - Performing checksum validation for 1D and postal barcodes
+- Increasing the barcode detection speed through multi-threading
 
 ## **Barcode Generation**
 - ***Class BarcodeGenerator***
@@ -45,7 +46,7 @@ url: /net/product-features/
 - Customizing barcode image borders, border color, style, margins, and width
 - Customizing barcode image color, back color, and bar color
 - Customizing bar height
-- Customizing barcode caption and its font, background / foreground colors, alignment, and location
+- Customizing barcode caption and its font, background/foreground colors, alignment, and location
 - Rotating barcode images to any degree
 - Setting the required quality and resolution of barcode images to be generated
 - Anti-aliasing for barcode images
@@ -53,7 +54,3 @@ url: /net/product-features/
 - Auto-sizing of barcode images
 - Generating barcode images in the required image format (BMP, JPEG, GIF, PNG, TIFF, WMF, or metafile)
 - Rendering barcode images on any device
-
-### **Complex Generation Features**
-- ***Class ComplexBarcode***: generating 
-- 
