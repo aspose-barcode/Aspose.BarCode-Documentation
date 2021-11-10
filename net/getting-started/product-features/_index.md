@@ -16,20 +16,23 @@ url: /net/product-features/
 
 ## **Barcode Recognition**
 
-- ***Class BarcodeReaderReading***: reading 1D and 2D barcodes at any angle from an image
-- Supporting popular image formats: JPEG, TIFF, PNG, BMP, GIF and EXIF
+- ***Class BarcodeReader***: reading 1D and 2D barcodes at any angle from an image
+- Supporting popular image formats: JPEG, TIFF, PNG, BMP, and GIF
 - Reading images with resolution from 75 to 600 dpi
 - Reading highly blurred or noised images
-- Specifying an image area to scan a barcode
-- Specifying target barcode types
-- Customize internal engine variables to reach the best trade-off between recognition speed and quality
-- Defining region information for all barcodes recognized in an image
+- Specifying a target image area to scan barcodes
+- Predefining target barcode types
+- Customizing internal engine variables to reach the best trade-off between recognition speed and quality (both manually and using embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR/MicroQR barcodes, and others
+- Detecting and then reading all barcodes presented in the scanned region
+- Reading barcodes of different 1D symbologies from a single scanned region
+- Defining the angle and region information for all barcodes recognized in an image (using points, quadrangle, or rectangle to specify a bounding barcode region)
 - Scanning from multi-page TIFF
+- Performing checksum validation for 1D and postal barcodes
 
 ## **Barcode Generation**
 - ***Class BarcodeGenerator***
 - Setting appearance properties for a barcode and its caption
-- Outputting different image formats: JPEG, TIFF, PNG, BMP, GIF, EXIF 
+- Outputting different image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
 - Customizing the barcode encoding mode and parameters
 - Supporting checksum addition (for 1D barcodes) and supplement data
 - Supporting X- and Y-dimensions for 2D barcodes

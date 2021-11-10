@@ -8,7 +8,7 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ## **Product Description**
 
-Aspose.BarCode for .NET is a multifunctional component library realised through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear, matrix, and postal) at any angle in a fast and easy way. This library enables compatibility with most of existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
+Aspose.BarCode for .NET is a multifunctional component library realized through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear, matrix, and postal) at any angle in a fast and easy way. This library enables compatibility with most of existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
   
 Aspose.BarCode for .NET can be utilized in three ways: through a console application, Windows Forms, or WPF. Using GUI controls in Aspose.BarCode for .NET, developers can drag and drop controls on Windows Forms and set properties in the GUI-mode. For developers who want to work with barcodes in the backend, the library provides the corresponding class ***BarcodeGenerator***. Finally, Aspose.BarCode for .NET enables a DLL for the Microsoft WPF framework to allow implementing WPF-based barcode applications.  
   
@@ -96,9 +96,9 @@ using (FileStream lStream = new FileStream(dataDir + "Scan.png", FileMode.Open, 
 }
 {{< /highlight >}} 
 
-## **Licencing**
-License is required to obtain the acces to some advance properties of Aspose.BarCode for .NET. The evaliuation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognising of Code39 barcodes. To test how recognition works, a full-featured demo is available for all supported barcode symbologies. 
-More detailed information about why and how to apply for a license and how to sei it is provided in [Licensing](/barcode/net/licensing/). If you want to try Aspose.BarCode for .NET, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.
+## **Licensing**
+License is required to obtain the access to some advance properties of Aspose.BarCode for .NET. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognizing Code39 barcodes. To test recognition functionality, a full-featured demo is available for all supported barcode symbologies. 
+More detailed information about why and how to apply for a license, as well as its setting, is provided in [Licensing](/barcode/net/licensing/). If you want to try Aspose.BarCode for .NET, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.
 
 <!--## **Supported Barcode Symbologies**
 ### **Numeric Only Symbologies**

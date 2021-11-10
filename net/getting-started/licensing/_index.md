@@ -4,8 +4,10 @@ type: docs
 weight: 60
 url: /net/licensing/
 ---
-## **Why Get a License**
-Getting a license is required to obtain the acces to some advance properties of Aspose.BarCode for .NET. The evaliuation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognising of Code39 barcodes. To test how recognition works, a full-featured demo is available for all supported barcode symbologies. If you want to try Aspose.BarCode without limitations, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?]() for more information.
+## **Overview**
+
+
+<!--Getting a license is required to obtain the access to some advance properties of Aspose.BarCode for .NET. The evaliuation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. The evaluation version of Aspose.BarCode only supports recognizing Code39 barcodes. To test how recognition works, a full-featured demo is available for all supported barcode symbologies. If you want to try Aspose.BarCode without limitations, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.-->
 
 ## **How to Obtain a License**
 
@@ -13,14 +15,132 @@ Getting a license is required to obtain the acces to some advance properties of 
 
 ### **Using Singleton**
 
+{{< highlight csharp>}}
+internal class LicenseSingleton
+{
+    private static LicenseSingleton _instance = new LicenseSingleton();
+    private LicenseSingleton()
+    {
+        // init the license
+        (new Aspose.BarCode.License()).SetLicense(@"{path}Aspose.Total.Product.Family.lic");
+    }
+
+    public static void SetLicense()
+    {
+        LicenseSingleton local = _instance;
+    }
+}
+	
+	//lazy initialization before using the library
+	LicenseSingleton.SetLicense();
+{{< /highlight >}} 
+
 ### **From File or Stream**
+
+{{< highlight csharp>}}
+//set path to file
+(new Aspose.BarCode.License()).SetLicense(@"{path}Aspose.Total.Product.Family.lic");
+{{< /highlight >}}
+
+{{< highlight csharp>}}
+System.IO.MemoryStream ms = new System.IO.MemoryStream();
+//load license data to stream
+//set license as stream
+(new Aspose.BarCode.License()).SetLicense(ms);
+{{< /highlight >}}
 
 ### **From Application Resource**
 
+{{< highlight xml>}}
+<ItemGroup>
+	<EmbeddedResource Include="{path}Aspose.Total.Product.Family.lic" LogicalName="Aspose.Total.Product.Family.lic"/>
+</ItemGroup>
+{{< /highlight >}}
+
+{{< highlight csharp>}}
+using (System.IO.Stream stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("Aspose.Total.Product.Family.lic"))
+	(new Aspose.BarCode.License()).SetLicense(stream);
+{{< /highlight >}}
+
 ### **Additional Ways**
 
-## **How to Protect from License Theft**
+The license is a plain-text XML file that contains details such as the product name, number of developers it is licensed for, subscription expiry date and so on. The file is digitally signed, so do not modify it. Even inadvertently adding an extra line break into the file invalidates it. You need to apply a license before generating barcodes without the evaluation watermark. You only have to apply a license once per application (or process). The license can be loaded from a [file](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream), [stream](https://docs.aspose.com/barcode/net/licensing/#applying-a-license-from-file-or-stream) or an [embedded resource](https://docs.aspose.com/barcode/net/licensing/#setting-a-license-using-an-embedded-resource).
 
+Aspose.BarCode tries to find the license in the following locations:
+
+- Explicit path.
+- The folder that contains Aspose.BarCode.dll.
+- The folder that contains the assembly that called Aspose.BarCode.dll.
+- The folder that contains the entry assembly (your .exe).
+- An embedded resource in the assembly that called Aspose.BarCode.dll.
+
+
+## **Protection from License Theft**
+
+
+
+{{< highlight csharp>}}
+//load the license from a file to stream
+System.IO.MemoryStream originalStream = null;
+using (System.IO.FileStream fs = new System.IO.FileStream(@"{path}Aspose.Total.Product.Family.lic", System.IO.FileMode.Open))
+{
+    byte[] buf = new byte[fs.Length];
+    fs.Read(buf, 0, buf.Length);
+    originalStream = new System.IO.MemoryStream(buf);
+}
+
+//ENCRYPT LICENSE FILE
+//encription key
+byte[] encriptionKey = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08 };
+//initialization vector
+byte[] ivKey = { 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
+System.IO.MemoryStream encryptedStream = null;
+using (System.Security.Cryptography.DES des = System.Security.Cryptography.DES.Create())
+{
+    //set intialization value and key
+    des.Key = encriptionKey;
+    des.IV = ivKey;
+    //encrypt
+    System.IO.MemoryStream dataStream = new System.IO.MemoryStream();
+    using (System.Security.Cryptography.CryptoStream csEncrypt = new System.Security.Cryptography.CryptoStream(dataStream, des.CreateEncryptor(),
+        System.Security.Cryptography.CryptoStreamMode.Write))
+    {
+        //file length
+        csEncrypt.Write(System.BitConverter.GetBytes((int)originalStream.Length), 0, 4);
+        //file data
+        csEncrypt.Write(originalStream.ToArray(), 0, (int)originalStream.Length);
+    }
+    encryptedStream = new System.IO.MemoryStream(dataStream.ToArray());
+}
+
+//DECRYPT LICENSE FILE
+//same encription key and initialization vector
+System.IO.MemoryStream decryptedStream = null;
+using (System.Security.Cryptography.DES des = System.Security.Cryptography.DES.Create())
+{
+    //set intialization value and key
+    des.Key = encriptionKey;
+    des.IV = ivKey;
+    //decrypt
+    System.IO.MemoryStream dataStream = new System.IO.MemoryStream(encryptedStream.ToArray());
+    dataStream.Position = 0;
+    using (System.Security.Cryptography.CryptoStream csDecrypt = new System.Security.Cryptography.CryptoStream(dataStream, des.CreateDecryptor(),
+        System.Security.Cryptography.CryptoStreamMode.Read))
+    {
+        //read length
+        byte[] buffLen = new byte[4];
+        csDecrypt.Read(buffLen, 0, buffLen.Length);
+        int dataLen = System.BitConverter.ToInt32(buffLen, 0);
+        //read data
+        byte[] buf = new byte[dataLen];
+        csDecrypt.Read(buf, 0, buf.Length);
+        decryptedStream = new System.IO.MemoryStream(buf);
+    }
+}
+
+//set license
+(new Aspose.BarCode.License()).SetLicense(decryptedStream);
+{{< /highlight >}}
 
 <!--## **Evaluation Version Limitations**
 ### **Evaluate Aspose.BarCode**

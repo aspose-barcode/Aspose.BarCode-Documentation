@@ -5,12 +5,69 @@ weight: 40
 url: /net/installation/
 ---
 
-## **Installing Aspose.BarCode for .NET through NuGet**
-NuGet is the easiest way to download and install Aspose .NET APIs. **Open** Microsoft Visual Studio. Select **TOOLS** menu, goto **NuGet Package Manager** and select **Manage NuGet packages for solution**. Search 'aspose.barcode' keyword. This will find the desired Aspose API. Click on the "Install" button, the selected API will be downloaded and referenced in your project.
+## **Overview**
+In this article, new users can find information and brief tutorials about how to install ***AsposeBarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***AsposeBarCode for.NET***: adding a NuGet package (simple and fast), referencing an AsposeBarCode package in a project (more flexible), or installing the library manually from the archive (to perform custom installation).   
+Below you can walk through all available istallation modes and select the one that is the most appropriate for your case. If you have any specific questions or problems with installation, you can check how to reach out [Technical Support](/barcode/net/technical-support/). 
 
-![todo:image_alt_text](installation_1.jpg)
+## **Using NuGet Package**
+Installing ***Aspose.BarCode for .Net*** through NuGet is the most easy and convenient way to download and deploy Aspose .NET APIs. Execute the steps listed below to complete installation automatically.
+1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
+2. In ***Solution Explorer***, make a right mouse click on Refences and select *Manage NuGet Packages*.  
+  
+![todo:image_alt_text](AddNuget01.png)
+  
+3. In the ***NuGet Package Manager*** window, go to the *Browse* tab, type “Aspose.barcode” in the text box, and click the *Install* button.
+  
+![todo:image_alt_text](AddNuget02.png)
+  
+4. Now the library has been downloaded and installed successfully. You can start coding after setting the license.
+
+## **Referencing Aspose.BarCode Package in Project File**
+This option suggests adding a reference to a NuGet package through editing the source file of a project (*.csproj). Follow the steps below to launch installation in this way.
+1. Create a new project with .NET Framework or .NET Core in Visual Studio 2019.
+2. Open the project file (*.csproj) and add the following code:  
+  
+{{< highlight xml>}}
+<Project Sdk="Microsoft.NET.Sdk">
+	<!--Reference to Aspose.Barcode-->
+	<ItemGroup>
+		<PackageReference Include="Aspose.BarCode" Version="21.10.0.0" />
+	</ItemGroup>	
+	<!--Reference to .Net Core libraries if .Net Core application-->
+	<ItemGroup Condition="$(DefineConstants.Contains(NETCOREAPP))">
+		<PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
+	</ItemGroup>	
+</Project>
+{{< /highlight >}}
+  
+3. The library has been installed and referenced in your project successfully. You can start working with code after deploying the license.
+
+
+
+## **Manual Installation of Aspose.BarCode Library from Archive**
+This installation mode is introduced for experienced users who would like to perform customized installation. It allows manually setting up the library from the corresponding archive. Follow the instructions below to deploy Aspose.BarCode for .NET in this manner.  
+1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
+2. Download the archive with the library for various .NET frameworks from [here](https://downloads.aspose.com/barcode/net).
+3. As soon as downloading has been completed, Select the required library and copy it into the project folder or the folder with libraries.
+4. In ***Solution Explorer***, make a right mouse click on *References* and select *Add Reference*.  
+  
+  ![todo:image_alt_text](AddLib01.png)
+    
+5. Go to the *Browse tab* and click the *Browse* button.  
+  
+  ![todo:image_alt_text](AddLib02.png)  
+    
+6. Select the required library version and click the *OK* button.  
+  
+  ![todo:image_alt_text](AddLib03.png)
+    
+7. The library has been installed successfully. You can begin working with code as soon as the license has been set.
+
+
+<!--![todo:image_alt_text](installation_1.jpg)
 ## **Install or Update Aspose.BarCode using the Package Manager Console**
-You can follow the steps below to install or upgrade the Aspose.BarCode API using the package manager console:
+Follow the steps below to install or upgrade the Aspose.BarCode API using the package manager console:
 Open your solution/project in Visual Studio.
 Select **TOOLS** -> **NuGet Package Manager** -> **Package Manager Console** from the top menu. This will open package manager console.
 
@@ -57,3 +114,4 @@ Enter the following XML in the application configuration file:
 
 ## **See Also**
 For more information see the MSDN article [https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting](https://docs.microsoft.com/en-us/dotnet/standard/library-guidance/cross-platform-targeting).
+-->
