@@ -31,15 +31,15 @@ url: /net/product-features/
 - Increasing the barcode detection speed through multi-threading
 
 ## **Barcode Generation**
-- ***Class BarcodeGenerator***
-- Setting appearance properties for a barcode and its caption
-- Outputting different image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
-- Customizing the barcode encoding mode and parameters
+- ***Class BarcodeGenerator***: generating barcode labels according to required parameters
+- Setting appearance-related properties for a barcode and its caption
+- Outputting labels in different image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
+- Customizing the barcode encoding type and parameters
 - Supporting checksum addition (for 1D barcodes) and supplement data
 - Supporting X- and Y-dimensions for 2D barcodes
-- Achieving a wide-to-narrow ratio for supported symbologies
+- Customizing a wide-to-narrow ratio for supported symbologies to improve recognition precision
 - Setting an encoding type for 2D barcodes: Error Checking and Correcting (ECC) or Extended Channel Interpretation (ECI)
-- Supporting WYSIWYG editing through GUI-based controls
+- Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
 - Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256 
 
 ### **Barcode Imaging**

@@ -6,49 +6,29 @@ url: /net/system-requirements/
 ---
 
 ## **Overview**
-***Aspose.BarCode for .NET*** is a robust and reliable barcode generation and recognition component, written in managed C#, it allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, WPF and .NET Core). 
-
+***Aspose.BarCode for .NET*** is a robust and reliable library for barcode generation and recognition written in managed C#. Using this library, developers can add barcode generation and recognition functionality to their Microsoft .NET applications in a fast and easy manner. ***Aspose.BarCode for .NET*** is compatible with any type of x86 or x64 (32-bit or 64-bit) .NET application (including WinForms, WPF, and .NET Core). It is easy to deploy because it contains a single assembly without any dependencies (except .NET Framework itself). The library supports all versions of the Microsoft .NET Framework from 2.0 to 4.0.
 ## **Supported Operating Systems**
 ***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system with installed .NET framework 2.0 or later / .Net Core 2.1 or later with System.Drawing.Common (.Net 5 inlcuded) / any other .NET framework supporting .NET framework 2.0 or System.Drawing.Common.
 
-### Windows
-
-
-### Linux
-***Aspose.BarCode for .NET*** is compatible with any Linux x64, x86 with installed .Net (Mono, .Net Core) and libgdiplus.
-### MacOS
-
+|Operating System|Compatible Versions|
+|--------------|---------------------|
+|**Microsoft Windows**|Microsoft Windows 7 or later: x64 / x86|
+|**Microsoft Windows Server**|Microsoft Windows Server 2008 and later: x64 / x86|
+|**Linux**|Any Linux x64 or x86 with installed .Net (Mono, .Net Core) and [libgdiplus](https://docs.telerik.com/reporting/knowledge-base/how-to-build-and-install-libgdiplus-linux)|
+|**MacOS**|Any MacOS x64 or x86 with installed .Net (Mono, .Net Core) and [libgdiplus](https://formulae.brew.sh/formula/mono-libgdiplus)|
+|**Android**|Available soon|
+|**iOS**|Available soon|
 ## **Supported Frameworks**
-Aspose.BarCode for .NET supports .NET frameworks as follows:
-### **.NET Frameworks**
-- .NET Framework 1.0
-- .NET Framework 2.0
-- .NET Framework 3.0
-- .NET Framework 3.5
-- .NET Framework 4.0
-- .NET Framework 4.0_ClientProfile
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.5.2
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.6.0
-- .NET Framework 4.6.2
-- .NET Framework 4.7
-- .NET Framework 4.7.2
-- .NET Standard 2.0 
-
-{{% alert color="primary" %}} 
-
-- If you have 1.0 only installed on your system. Please see [***Targeting Specific .NET Framework Version***](https://docs.aspose.com/barcode/net/installation/#targeting-specific-net-framework-version) section.
-
-{{% /alert %}} 
-
+***Aspose.BarCode for .NET*** can be used to create any type of x86 or x64 (32-bit or 64-bit) .NET application. The supported .NET frameworks are outlined below.
+|Framework|Supported Versions|
+|---------|------------------|
+|.NET Framework|2.0 / 3.0 / 3.5 / 3.5 Client / 4.0 / 4.0 Client / 4.5 / 4.6 / 4.7 / 4.8|
+|.NET Standard|2.0 / 2.1|
+|.NET Core| 2.0 / 2.1|
+|net5.0|System.Drawing.Common 5.0.2 and later / System.Text.Encoding.CodePages 5.0.0 and later|
 
 ## **Development Environments**
-Aspose.BarCode for .NET can be used to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:
+***Aspose.BarCode for .NET*** can be applied to create applications in any development environment that relies on the .NET platform. The following environments are supported explicitly:
 
 - Microsoft Visual Studio 2010
 - Microsoft Visual Studio 2011
