@@ -8,11 +8,12 @@ url: /net/product-features/
 ## **General Features**
 - Barcode generation
 - Barcode recognition
-- Symbology specification (60+ symbologies)
+- Symbology specification (60+ symbologies: 1D, 2D, Postal)
 - Image rotation
 - Encoding and decoding non-English characters in 2D types
 - Saving to or loading from stream or file
 - Label printing
+- Working with complex barcodes (e.g. Swiss QR Code) 
 
 ## **Barcode Recognition**
 
@@ -20,19 +21,19 @@ url: /net/product-features/
 - Supporting popular image formats: JPEG, TIFF, PNG, BMP, and GIF
 - Reading images with resolution from 75 to 600 dpi
 - Reading highly blurred or noised images
-- Specifying a target image area to scan barcodes
+- Specifying image areas to scan barcodes
 - Predefining target barcode types
-- Customizing internal engine variables to reach the best trade-off between recognition speed and quality (both manually and using embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR/MicroQR barcodes, and others
+- Customizing recognition engine variables to reach the best trade-off between reading speed and quality (both manually and using embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR/MicroQR barcodes, and others
 - Detecting and then reading all barcodes presented in the scanned region
 - Reading barcodes of different 1D symbologies from a single scanned region
 - Defining the angle and region information for all barcodes recognized in an image (using points, quadrangle, or rectangle to specify a bounding barcode region)
-- Scanning from multi-page TIFF
 - Performing checksum validation for 1D and postal barcodes
 - Increasing the barcode detection speed through multi-threading
+- Scanning from multi-page TIFF through System.Drawing
 
 ## **Barcode Generation**
 - ***Class BarcodeGenerator***: generating barcode labels according to required parameters
-- Setting appearance-related properties for a barcode and its caption
+- Providing a wide range of options to manipulate barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
 - Outputting labels in different image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
 - Customizing the barcode encoding type and parameters
 - Supporting checksum addition (for 1D barcodes) and supplement data
@@ -52,5 +53,4 @@ url: /net/product-features/
 - Anti-aliasing for barcode images
 - Selecting size units (inches or millimeters)
 - Auto-sizing of barcode images
-- Generating barcode images in the required image format (BMP, JPEG, GIF, PNG, TIFF, WMF, or metafile)
 - Rendering barcode images on any device

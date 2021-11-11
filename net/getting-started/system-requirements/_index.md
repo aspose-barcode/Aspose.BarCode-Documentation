@@ -20,12 +20,12 @@ url: /net/system-requirements/
 |**iOS**|Available soon|
 ## **Supported Frameworks**
 ***Aspose.BarCode for .NET*** can be used to create any type of x86 or x64 (32-bit or 64-bit) .NET application. The supported .NET frameworks are outlined below.
-|Framework|Supported Versions|
-|---------|------------------|
-|.NET Framework|2.0 / 3.0 / 3.5 / 3.5 Client / 4.0 / 4.0 Client / 4.5 / 4.6 / 4.7 / 4.8|
-|.NET Standard|2.0 / 2.1|
-|.NET Core| 2.0 / 2.1|
-|net5.0|System.Drawing.Common 5.0.2 and later / System.Text.Encoding.CodePages 5.0.0 and later|
+|Framework|Supported Versions|Additional Requirements|
+|---------|------------------|--------|
+|.NET Framework|2.0 / 3.0 / 3.5 / 3.5 Client / 4.0 / 4.0 Client / 4.5 / 4.6 / 4.7 / 4.8||
+|.NET Standard|2.0 / 2.1||
+|.NET Core|2.1 / 3.1 / .Net 5.0. |System.Drawing.Common 5.0.2+ / System.Text.Encoding.CodePages 5.0.0+|
+
 
 ## **Development Environments**
 ***Aspose.BarCode for .NET*** can be applied to create applications in any development environment that relies on the .NET platform. The following environments are supported explicitly:

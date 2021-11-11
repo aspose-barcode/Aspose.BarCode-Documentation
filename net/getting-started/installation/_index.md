@@ -10,7 +10,7 @@ In this article, new users can find information and brief tutorials about how to
 Below you can walk through all available installation modes and select the one that is the most appropriate for your case. If you have any specific questions or problems with installation, you can check how to reach out to [Technical Support](/barcode/net/technical-support/). 
 
 ## **Using NuGet Package**
-Installing ***Aspose.BarCode for .Net*** through NuGet is the most convenient way to download and deploy Aspose .NET APIs. Execute the steps listed below to complete installation automatically.
+Installing ***Aspose.BarCode for .Net*** through NuGet is the most convenient way to download and deploy Aspose .NET APIs. Execute the steps listed below to complete the installation automatically.
 1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
 2. In ***Solution Explorer***, make a right mouse click on References and select *Manage NuGet Packages*.  
   

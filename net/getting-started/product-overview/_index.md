@@ -10,7 +10,7 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ***Aspose.BarCode for .NET*** is a multifunctional component library realized through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear, matrix, and postal) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
   
-***Aspose.BarCode for .NET*** can be utilized in three ways: through a console application, Windows Forms, or WPF. Using GUI controls in Aspose.BarCode for .NET, developers can drag and drop controls on Windows Forms and set properties in the GUI-mode. For developers who want to work with barcodes in the backend, the library provides the corresponding class *BarcodeGenerator*. Finally, ***Aspose.BarCode for .NET*** enables a DLL for the Microsoft WPF framework to allow implementing WPF-based barcode applications.  
+***Aspose.BarCode for .NET*** can be utilized in three ways: through a console application, Windows Forms, or WPF. Using GUI controls in Aspose.BarCode for .NET, developers can drag and drop controls on Windows Forms and set properties in the GUI-mode. For developers who want to work with barcodes in the backend, the library provides the corresponding class *BarcodeGenerator*. Finally, ***Aspose.BarCode for .NET*** supports the Microsoft WPF framework to enable WPF-based barcode applications.  
   
 ***Aspose.BarCode for .NET*** benefits from important characteristics that make it an efficient, flexible, and easy-to-use tool. First, it is a fully functional library that enables both generating and recognizing barcodes. Moreover, barcodes can be generated in various high-quality image formats including two vector ones. The other key advantage is that the library allows recognizing barcodes even of very low quality or being significantly distorted. Therefore, the recognition precision is high for most of the available barcode types.
 ***Aspose.BarCode for .NET*** provides full-featured demos and code samples prepared in C# to allow developers to get a better understanding of the library and its capabilities.
@@ -21,12 +21,14 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 The main features include: 
 - Barcode generation and recognition of 60+ symbologies
 - Reading 1D and 2D barcodes at any angle and from any image quality
+- Wide range of options to manipulate barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
+- Customizing recognition engine variables to reach the best trade-off between reading speed and quality
+- Specifying image areas to scan barcodes
 - Generating barcodes with specific parameters, such as error correction mode, ECI, or embedded metadata
 - Image rotation at any angle 
 - Label printing 
 - Saving to or loading from stream or file 
 - Encoding and decoding non-English characters in 2D types
-- Scanning from multi-page TIFF
 - and many others.
   
 The full list of features can be found in [Product Features](/barcode/net/product-features/).  
@@ -60,14 +62,14 @@ Here, you can see some code samples for simple operations, such as generating a 
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "1234567");
 generator.Parameters.Barcode.XDimension.Millimeters = 1f;
 
-// save the image to your system and set its image format to Jpeg
+// save the image to your system and set its image format to PNG
 generator.Save(dir + "output.png", BarCodeImageFormat.PNG);
 {{< /highlight >}} 
 
 #### **Recognize Barcodes from a File**
 {{< highlight csharp>}}
 // Read file from directory with DecodeType.EAN13
-using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.зтп", DecodeType.EAN13))
+using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.png", DecodeType.EAN13))
 {
     foreach (BarCodeResult result in reader.ReadBarCodes())
     {
