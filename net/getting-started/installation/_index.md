@@ -1,24 +1,28 @@
 ---
 title: Installation
 type: docs
-weight: 40
+description: "Installation of Aspose.BarCode for .NET: Through NuGet Package, Referencing, or Manual Installation"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode Installation, Install Aspose.BarCode for .NET, C#"
+weight: 50
 url: /net/installation/
 ---
 
 ## **Overview**
-In this article, new users can find information and brief tutorials about how to install ***AsposeBarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***AsposeBarCode for.NET***: adding a NuGet package (simple and fast), referencing an AsposeBarCode package in a project (more flexible), or installing the library manually from the archive (to perform custom installation).   
-Below you can walk through all available installation modes and select the one that is the most appropriate for your case. If you have any specific questions or problems with installation, you can check how to reach out to [Technical Support](/barcode/net/technical-support/). 
+In this article, new users can find information and brief tutorials about how to install ***Aspose.BarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***Aspose.BarCode for.NET***: adding a NuGet package (simple and fast), referencing an Aspose.BarCode package in a project (more flexible), or installing the library manually from the archive (to perform custom installation).   
+Below you can walk through all available installation modes and select the one that is the most appropriate in your case. If you have any specific questions or problems with installation, please check how to contact [Technical Support](/barcode/net/technical-support/). 
 
 ## **Using NuGet Package**
 Installing ***Aspose.BarCode for .Net*** through NuGet is the most convenient way to download and deploy Aspose .NET APIs. Execute the steps listed below to complete the installation automatically.
 1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
 2. In ***Solution Explorer***, make a right mouse click on References and select *Manage NuGet Packages*.  
-  
-![todo:image_alt_text](AddNuget01.png)
+
+<p align="center"> <img src="AddNuget01.png"> </p>  
+<!--![todo:image_alt_text](AddNuget01.png)-->
   
 3. In the ***NuGet Package Manager*** window, go to the *Browse* tab, type “Aspose.barcode” in the text box, and click the *Install* button.
   
-![todo:image_alt_text](AddNuget02.png)
+<!--![todo:image_alt_text](AddNuget02.png)-->
+<p align="center"> <img src="AddNuget02.png"> </p>  
   
 4. Now the library has been downloaded and installed successfully. You can start coding after setting the license.
 
@@ -43,8 +47,6 @@ This option suggests adding a reference to a NuGet package through editing the s
   
 3. The library has been installed and referenced in your project successfully. You can start working with code after deploying the license.
 
-
-
 ## **Manual Installation of Aspose.BarCode Library from Archive**
 This installation mode is introduced for experienced users who would like to perform the customized installation. It allows manually setting up the library from the corresponding archive. Follow the instructions below to deploy Aspose.BarCode for .NET in this manner.  
 1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
@@ -52,15 +54,18 @@ This installation mode is introduced for experienced users who would like to per
 3. As soon as the download has been completed, select the required library and copy it into the project folder or the folder with libraries.
 4. In ***Solution Explorer***, make a right mouse click on *References* and select *Add Reference*.  
   
-  ![todo:image_alt_text](AddLib01.png)
+ <!--> ![todo:image_alt_text](AddLib01.png)-->
+ <p align="center"> <img src="AddLib01.png"> </p>  
     
 5. Go to the *Browse tab* and click the *Browse* button.  
   
-  ![todo:image_alt_text](AddLib02.png)  
+  <!--![todo:image_alt_text](AddLib02.png)-->
+  <p align="center"> <img src="AddLib02.png"> </p>    
     
 6. Select the required library version and click the *OK* button.  
   
-  ![todo:image_alt_text](AddLib03.png)
+  <!--![todo:image_alt_text](AddLib03.png)-->
+  <p align="center"> <img src="AddLib03.png"> </p>  
     
 7. The library has been installed successfully. You can begin working with code as soon as the license has been set.
 

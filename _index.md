@@ -11,13 +11,13 @@ url: /
 
 ![Aspose.BarCode for .NET Product Logo](home_1.png)
 
-Welcome to Aspose.BarCode for .NET
+**Welcome to Aspose.BarCode for .NET**
 
-Aspose.BarCode for .NET is a powerful library with a set of barcode generation and recognition components aimed to deploy barcode functionality in .NET applications. Aspose.BarCode provides GUI-based controls to process barcodes in Windows Forms, as well as a set of classes to work with barcodes on the backend. Aspose.BarCode enables compatibility with most of the existing barcode standards and specifications. Aspose.BarCode for .NET not only allows generating barcodes but provides an extensive framework to control the key aspects of barcode processing. 
+***Aspose.BarCode for .NET*** is a powerful library with a set of barcode generation and recognition components aimed to deploy barcode functionality in .NET applications. It provides a group of classes to work with barcodes on the backend, as well as GUI-based controls to process barcodes in Windows Forms and WPF. ***Aspose.BarCode for .NET*** enables compatibility with most of the existing barcode standards and specifications. It not only enables barcode generation but also provides an extensive framework to control the key aspects of barcode processing. 
 
-Why choose Aspose.BarCode for .NET to manage barcodes? First, Aspose.BarCode for .NET allows optimizing the barcode scanning engine to obtain a required trade-off between reading quality and speed. This means that you can enable recognizing even severely corrupted barcodes. 
-Then, it is possible to customize various parameters of barcode appearance, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. 
-Moreover, Aspose.BarCode for .NET supports various symbologies and enables multiple barcode scanning and generating functions so that you can tailor barcode handling activities according to your business processes and needs.   
+Why choose ***Aspose.BarCode for .NET*** to manage barcodes? First, it allows setting the barcode recognition engine variables to obtain the desired trade-off between reading quality and speed. This means that you can enable recognizing even severely corrupted barcodes. 
+Then, it is possible to customize various parameters of barcode and its appearance, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. 
+Moreover, ***Aspose.BarCode for .NET*** supports various symbologies and enables multiple barcode reading and generating functions so that you can implement the barcode functionality as required for your business processes and needs.  
 
 {{% /alert %}} 
 

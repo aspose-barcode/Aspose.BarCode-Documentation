@@ -1,7 +1,9 @@
 ---
 title: System Requirements
 type: docs
-weight: 50
+weight: 40
+description: "Aspose.BarCode for .NET: Systems Requirements and Supported .NET Platforms"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode, C#"
 url: /net/system-requirements/
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Licensing
 type: docs
-weight: 60
+weight: 70
+description: "Setting the License for Aspose.BarCode for .NET"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode License, Get License for Aspose.Barcode, C#"
 url: /net/licensing/
 ---
 ## **Overview**
@@ -14,7 +16,7 @@ To obtain the possibility to use the library without limitations, a commercial l
 
 ## **License Setting**
 
-The license is a plain-text XML file that contains information about the product name, the number of developers to access the license, subscription expiry date, and others. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
+The license is a plain-text XML file that contains various information, such as the product name, the number of developers to access the license, subscription expiry date, and other details. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
 License setting can be realized through calling method *SetLicense* of class *Aspose.BarCode.License*. This must be done before any actions with the library. Method *SetLicense* can be invoked in different ways: in the initialization section of your application (or web application), using Singleton, or through a file/stream.
   
 The details on how to set the license using these methods are provided below in this article.

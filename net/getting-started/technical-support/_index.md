@@ -1,7 +1,9 @@
 ---
 title: Technical Support
 type: docs
-weight: 50
+weight: 60
+description: "How to Contact Technical Support for Aspose.BarCode for .NET"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Technical Support for Aspose.BarCode, Aspose.Barcode Forum, C#"
 url: /net/technical-support/
 ---
 ## **Free Technical Support**
