@@ -7,7 +7,7 @@ url: /java/aspose-barcode-for-node-js-via-java-21-10/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Node.js via Java 21.9](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-21.10/).
+This page contains release notes information for [Aspose.BarCode for Node.js via Java 21.10](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-21.10/).
 
 {{% /alert %}} 
 ## **All Changes**
