@@ -2,254 +2,100 @@
 title: Product Overview
 type: docs
 weight: 10
+description: "Aspose.BarCode for .NET: Product Description, Main Features, and General Information"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/product-overview/
 ---
+The present article introduces ***Aspose.BarCode for .NET*** and its main concepts, as well as general technical details that are important to start working with the library. Here, you can find the description of its purpose, functionality, key features, input and output image formats, important classes, and supported platforms.
 
-{{% alert color="primary" %}} 
-
-![todo:image_alt_text](product-overview_1.png)
-
-**Welcome to Aspose.BarCode for .NET** 
-
-Aspose.BarCode for .NET is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their .NET applications. Aspose.BarCode provides GUI based controls for displaying barcodes in Windows Forms and exposes a simple set of classes that allow developers to create barcodes on the backend. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for .NET doesn't just create barcodes but it provides a complete framework to control almost everything about them.
-
-{{% /alert %}} 
 ## **Product Description**
-Aspose.BarCode for .NET is implemented using Managed C#. It allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, WPF, and ASP.NET). Aspose.BarCode provides fully featured demos and working examples written in C# for developers to have a better understanding of our product. Using these demos, developers can quickly learn about the features provided by Aspose.BarCode. Using GUI controls in Aspose.BarCode, developers can drag and drop the controls on Windows Forms and set their properties in GUI mode like other controls in the .NET Framework. For the developers who are only interested in the backend processing of barcodes, Aspose.BarCode also provides a simple barcode class to ease their jobs.
 
-Aspose.BarCode for .NET supports the most established barcode standards and barcode specifications. It can export to multiple image formats including BMP, GIF, JPEG, PNG, TIFF, EMF, and SVG. Developers can use any kind of printer to print barcodes but naturally, the quality of the printed barcode images will be affected by the printer's resolution. Aspose.BarCode also supports the WPF framework, so that you can generate and recognize barcodes in your WPF applications.
-### **General Barcode Features**
-- Specify different kinds of symbologies.
-- Barcode code text (data to be encoded to barcode image) can be set and its appearance-related properties like font, background color, foreground color, alignment and location (hide, above, below), etc. can also be modified.
-- The barcode caption and its font, background color, foreground color, alignment and location (hide, above, below) can be managed.
-- Checksum and supplement data are supported.
-- The bar height of the barcode images can be customized.
-- X-dimension and Y-dimension are also supported for 2D barcodes.
-- Code128 encoding is exceptionally optimized.
-- A wide to narrow ratio can be achieved for supported symbologies.
-- WYSIWYG editing of barcodes is also supported using GUI-based controls.
-- DataMatrix barcode with X12, EDIFACT and Base 256 encoding
-### **Recognition Features**
-- Barcode Recognition Aspose.BarCode.BarCodeReader reads most common 1D, 2D barcodes anywhere at any angle from an image
-- Specify an area in the image to scan the barcode
-- Get region information for the barcodes recognized in the image
-### **Barcode Imaging Features**
-- Manipulate the barcode image borders, border color, style, margins, width, etc.
-- Barcode image color, back color, and bar color can be modified.
-- Rotate barcode images to any degree.
-- High-quality barcode images.
-- Anti-Aliasing for barcode images.
-- Barcode image margins can be managed.
-- Customized resolution.
-- Size in inches and millimeters.
-- Auto Sizing of barcode images.
-- Create barcode images in any desired image format like BMP, JPEG, GIF, PNG, TIFF, WMF, metafile, etc.
-- Render barcode images on any device and create device resolution dependent images.
-### **Input Image Formats**
-- JPEG
-- TIFF
-- PNG
-- BMP
-- GIF
-- EXIF
-### **Output Image Formats**
-- JPEG
-- TIFF
-- PNG
-- BMP
-- GIF
-- EXIF
-- EMF
-- SVG
-### **Utility Features**
-- Save barcode images to streams.
-### **Platforms Supported**
-- Windows Forms
-- WPF
-## **Supported Barcode Symbologies**
-### **Numeric Only Symbologies**
-- EAN13
-- EAN8
-- UPCA
-- UPCE
-- ISBN
-- ISMN
-- ISSN
-- Interleaved2of5
-- Standard2of5
-- MSI
-- Code11
-- Codabar
-- Postnet
-- Planet
-- EAN14(SCC14)
-- SSCC18
-- ITF14
-- IATA 2 of 5
-- DatabarOmniDirectional
-- DatabarStackedOmniDirectional
-- DatabarExpandedStacked
-- DatabarStacked
-- DatabarLimited
-- DatabarTruncated
-### **Alpha-Numeric Symbologies**
-- GS1Code128
-- Code128
-- Code39 Extended
-- Code39 Standard
-- Code93 Extended
-- Code93 Standard
-- Australia Post
-- Italian Post 25
-- Matrix 2 of 5
-- DatabarExpanded
-- PatchCode
-### **2D Symbologies**
-- PDF417
-- DataMatrix
-- Aztec
-- QR
-- MicroQR
-- GS1DataMatrix
-- Code16K
-- CompactPDF417
-- Swiss QR (QR Bill)
+***Aspose.BarCode for .NET*** is a multifunctional component library realized through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear and matrix) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
+  
+***Aspose.BarCode for .NET*** can be used for development in three ways: through a console application, Windows Forms, or Windows Presentation Foundation (WPF). For developers who want to work with barcodes in the backend, the library provides the corresponding class *BarcodeGenerator*. Alternatively, using GUI controls in ***Aspose.BarCode for .NET***, developers can drag and drop controls onto Windows Forms and set properties in the GUI-based mode. Finally, ***Aspose.BarCode for .NET*** supports the WPF framework to facilitate the development of WPF-based barcode applications.  
+  
+***Aspose.BarCode for .NET*** benefits from important characteristics that make it an efficient, flexible, and easy-to-use tool. First, it is a fully functional library that enables both generating and reading barcodes. Moreover, barcodes can be saved in various high-quality image formats including two vector ones. The other key advantage is that the library allows recognizing barcodes even of very low quality or being significantly distorted. Accordingly, the recognition precision is high for most of the available barcode types.
+***Aspose.BarCode for .NET*** provides full-featured demos and code samples prepared in C# to give developers a better understanding of the library and its capabilities.
 
-Aspose.BarCode supports both encoding and decoding (generation and recognition) for all the listed symbologies.
-## **Declaration**
-All Aspose .NET components require the Full Trust permission set. The reason is, Aspose .NET components need to access registry settings, system files other than a virtual directory for certain operations like parsing fonts, etc. Moreover, Aspose .NET Components are based on core .NET system classes that also require Full Trust permission set in many cases. Internet Service Providers hosting multiple applications from different companies mostly enforce Medium Trust security level. In the case of .NET 2.0, such security level applies the following constraints:
+## **Main Features**
 
-- OleDbPermission is not available. This means you cannot use the ADO.NET managed OLE DB data provider to access databases.
-- EventLogPermission is not available. This means you cannot access the Windows event log.
-- ReflectionPermission is not available. This means you cannot use reflection.
-- RegistryPermission is not available. This means you cannot access the registry.
-- WebPermission is restricted. This means your application can only communicate with an address or range of addresses that you define in the <trust> element.
-- FileIOPermission is restricted. This means you can only access files in your application's virtual directory hierarchy.
+***Aspose.BarCode for .NET*** supports multiple features to address specific business needs. It is noteworthy that it enables a wide range of functionality for setting an efficient barcode processing system. One of the most important functions is the possibility to customize the appearance parameters of generated barcodes, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. Moreover, this library provides rich barcode reading and imaging functionality.  
+The main features include: 
+- Barcode generation and recognition of 60+ symbologies (including QR codes)
+- Reading 1D and 2D barcodes at any angle and from any image quality
+- Wide range of options to manipulate barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
+- Customizing recognition engine variables to reach the best trade-off between reading speed and quality
+- Specifying image areas to scan barcodes
+- Generating barcodes with specific parameters, such as error correction mode, ECI, or embedded metadata
+- Image rotation at any angle 
+- Label printing 
+- Saving to or loading from stream or file 
+- Encoding and decoding non-English characters in 2D types
+- and many others.
+  
+The full list of features can be found in [Product Features](/barcode/net/product-features/).  
 
-Due to the reasons specified above, Aspose .NET components cannot be used on servers granting permission set other than Full Trust.
-## **Edition Types**
-Aspose.BarCode offers only one edition type: Enterprise. The features of Enterprise Edition are summarized in the following table.
+## **System Compatibility**
+***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with System.Drawing.Common (.Net 5 inlcuded) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, Xamarin, UWP, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
 
-|**Features**|**Aspose.BarCode for .NET**|
-| :- | :- |
-|**General**| |
-|Written completely in C#, works with .NET Framework 1.1 and 2.0|X|
-|Supports Windows applications|X|
-|Supports WPF framework|X|
-|Programmers Guide and API Reference in HTML format|X|
-|API Reference in Microsoft Help format|X|
-|Fully featured demos|X|
-|**Barcode Generation Symbologies**| |
-|Code128|X|
-|Code39 Standard|X|
-|Code39 Extended|X|
-|Code93 Standard|X|
-|Code93 Extended|X|
-|Code11|X|
-|Codabar|X|
-|ISSN|X|
-|ISBN|X|
-|ISMN|X|
-|GS1DataMatrix|X|
-|EAN13|X|
-|EAN8|X|
-|GS1Code128|X|
-|Interleaved2of5|X|
-|Standard2of5|X|
-|MSI|X|
-|Postnet|X|
-|Planet|X|
-|UPCA|X|
-|UPCE|X|
-|EAN14(SCC14)|X|
-|SSCC18|X|
-|ITF14|X|
-|BarCode supplement|X|
-|PDF417|X|
-|QR|X|
-|Aztec|X|
-|Datamatrix|X|
-|Australia Post|X|
-|Matrix 2 of 5|X|
-|Italian Post 25|X|
-|IATA 2 of 5|X|
-|Code16K|X|
-|Swiss QR|X|
-|**Barcode Recognition Symbologies**| |
-|Code128|X|
-|Code39 Standard|X|
-|Code39 Extended|X|
-|Code93 Standard|X|
-|Code93 Extended|X|
-|Code11|X|
-|Codabar|X|
-|ISSN|X|
-|ISBN|X|
-|ISMN|X|
-|GS1DataMatrix|X|
-|EAN13|X|
-|EAN8|X|
-|GS1Code128|X|
-|Interleaved2of5|X|
-|Standard2of5|X|
-|Postnet|X|
-|Planet|X|
-|UPCA|X|
-|UPCE|X|
-|EAN14(SCC14)|X|
-|SSCC18|X|
-|ITF14|X|
-|BarCode supplement|X|
-|PDF417|X|
-|QR|X|
-|MSI|X|
-|Aztec|X|
-|Datamatrix|X|
-|Matrix 2 of 5|X|
-|Australia Post|X|
-|Italian Post 25|X|
-|IATA 2 of 5|X|
-|Code16K|X|
-|Swiss QR|X|
-|**Image Formats**| |
-|Bitmap|X|
-|Jpeg|X|
-|Gif|X|
-|png|X|
-|Tiff|X|
-|EMF|X|
-|SVG|X|
-|**Barcode Features**| |
-|Font Handling|X|
-|X-Dimension|X|
-|Y-Dimension|X|
-|Bar Height Customization|X|
-|Bar size Customization|X|
-|Encoding and decoding of Non-English Characters|X|
-|Checksum|X|
-|Supplement Data|X|
-|Wide narrow ratio|X|
-|Background Color|X|
-|ForeColor|X|
-|Barcode Alignment & Location|X|
-|WYSIWYG Editing|X|
-|**Image Formatting Features**| |
-|Background Color|X|
-|Fore Color|X|
-|Border Style|X|
-|Image Margin|X|
-|The rotation at any angle|X|
-|Customized Resolution|X|
-|Caption Above|X|
-|Caption Below|X|
-|Auto Sizing|X|
-|High Image Quality|X|
-|Image Scaling|X|
-|**Other Features**| |
-|Enumerate local available printers and resolutions|X|
-|Http Handler Support|X|
-|Median smoothing image processing for recognition|X|
-|HLS image processing for recognition|X|
-|Grayscale image processing for recognition|X|
-|ISO/IEC 8859-1 encoding with FNC4 character to Code128 encoder|X|
-|ISO/IEC 8859-1 decoding with FNC4 character to Code128 decoder|X|
+## **Library Contents**
+***Aspose.BarCode for .NET*** includes three main classes: *BarCodeReader* to realize barcode scanning and recognizing, *BarcodeGenerator* to implement barcode generation according to the desired format requirements, and *ComplexBarcode* to work with specific barcodes, for example, such as Swiss QR Code. 
+<!--For detailed instructions on how to work with these classes and their methods, you can refer to [Developer Guide](/barcode/net/product-features/)-->
+### **Class BarcodeReader**
+***Aspose.BarCode for .NET*** contains class *BarCodeReader* that is aimed at handling barcode image recognition. *BarCodeReader* has the following basic settings. First, it is required to specify the symbology type in the constructor of *BarCodeReader* class and call *BarCodeReader.ReadBarCodes()* method to read barcodes from an image. Then, *BarCodeReader* applies machine vision algorithms to extract machine-readable tags from the captured image.  
+In ***Aspose.BarCode for .NET***, image reading and identifying barcode regions can be performed for all recognized barcodes in an image. Before reading, barcodes have to be distinguished from other text lines/objects in the image by detecting their edges. To implement this, *BarCodeReader.ReadBarCodes()* method is used. Then, the region of a barcode is identified using *BarCodeResult.Region* that returns the recognized region and the barcode angle.  
+Class *BarCodeReader* provides the following features to achieve the best possible trade-off between recognition speed and quality depending on specific requirements:
+-	Multi-threading support. This feature involves additional processor cores to speed up algorithm calculations, where possible.
+-	Barcode type selection. Specifying required barcode types instead of using *AllSupportedTypes* allows reducing recognition time.
+-	Quality settings. This set of options allows customizing the barcode reading engine according to the type of image and possible distortions. Disabling some options allows increasing recognition speed while their activation improves recognition quality.
+-	Region selection. It is possible to select target regions in which barcode images might be located so that the reading engine will read barcode data only from the selected regions.
+
+### **Class BarcodeGenerator**
+One of the key features of ***Aspose.BarCode for .NET*** is to perform barcode generation. To create a barcode label, it is necessary to specify symbologies, set code text (information to be encoded to a barcode image), customize appearance-related properties. Class *BarcodeGenerator* supports various 1D and 2D barcode types (including QR codes). It encapsulates both types of barcodes into one unified interface. Developers can create an instance of this class, set properties as required, and then save the generated barcode image to any location according to the customized settings.
+
+### **Class ComplexBarcode**
+Class *ComplexBarcode* allows generating barcode documents to work with complex barcodes. At present, it supports only the Swiss QR Code symbology. It is used to manage QR bills in payments that replace previous payment slips. Swiss QR Code contains all necessary payment information required to initiate payments or to process a QR invoice. Class *ComplexBarcode* contains *SwissQRBill* and *SwissQRCodetext* classes that enable various functions to work with Swiss QR codes, such as getting or setting the account number of a creditor, alternative payments schemes, payment amount, currency, etc.
+
+### **Examples**
+Here, you can see some code samples for simple operations, such as generating a barcode using Code128 or recognizing a barcode from a file or stream.
+#### **Generate a Barcode using Code128**
+{{< highlight csharp>}}
+// instantiate object and set different barcode properties
+BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "1234567");
+generator.Parameters.Barcode.XDimension.Millimeters = 1f;
+
+// save the image to your system and set its image format to PNG
+generator.Save(dir + "output.png", BarCodeImageFormat.PNG);
+{{< /highlight >}} 
+
+#### **Recognize Barcodes from a File**
+{{< highlight csharp>}}
+// Read file from directory with DecodeType.EAN13
+using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.png", DecodeType.EAN13))
+{
+    foreach (BarCodeResult result in reader.ReadBarCodes())
+    {
+        // Read symbology type and code text
+        Console.WriteLine("Symbology Type: " + result.CodeType);
+        Console.WriteLine("CodeText: " + result.CodeText);
+    }
+}
+{{< /highlight >}} 
+
+#### **Recognize a Barcode from a Stream**
+{{< highlight csharp>}}
+using (FileStream lStream = new FileStream(dataDir + "Scan.png", FileMode.Open, FileAccess.Read, FileShare.Read))
+{
+    using (BarCodeReader reader = new BarCodeReader(lStream))
+    {
+        //other way to set
+        reader.SetBarCodeImage(lStream);
+        foreach (BarCodeResult result in reader.ReadBarCodes())
+            Console.WriteLine("BarCode CodeText: " + result.CodeText);
+    }
+}
+{{< /highlight >}} 
+
+## **Licensing**
+License is required to obtain access to the advanced functionality of ***Aspose.BarCode for .NET***. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. 
+More information about how to buy and set the license is provided in [Licensing](/barcode/net/licensing/). If you want to try ***Aspose.BarCode for .NET***, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for details.
