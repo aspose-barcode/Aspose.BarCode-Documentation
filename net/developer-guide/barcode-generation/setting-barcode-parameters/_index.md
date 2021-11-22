@@ -5,6 +5,10 @@ weight: 40
 url: /net/setting-barcode-parameters/
 ---
 
+
+
+
+<!-->
 ## **Manage Barcode Caption**
 Sometimes, developers might be interested in displaying some extra information on the barcode image that is called Caption. Using Aspose.BarCode, developers can display captions on above, below or both positions of the barcode image.
 
@@ -124,3 +128,4 @@ The following code snippet demonstrates how to export all of the properties/var
 Aspose.BarCode for .NET allows developers to set segments per row while generating the barcode. Following is the sample code demonstrates how to set segments per row before generating a barcode image.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-BarcodeWithSegments-BarcodeWithSegments.cs" >}}
+-->
