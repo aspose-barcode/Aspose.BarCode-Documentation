@@ -3,12 +3,12 @@ title: Licensing
 type: docs
 weight: 70
 description: "Setting the License for Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode License, Get License for Aspose.Barcode, C#"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode License, Aspose.BarCode Licensing, Get License for Aspose.Barcode, C#"
 url: /net/licensing/
 ---
 ## **Overview**
-***Aspose.BarCode for .NET*** without the license can be used to generate barcode labels without restrictions; in this case, a watermark is placed on the resulting barcode image (words “Aspose”). Moreover, the unlicensed version of the library allows recognizing all types of barcodes; however, only the Code39 symbology can be used without limitations; for all other barcode types, 30% of the resulting text is masked with "*". 
-All other actions with barcodes through ***Aspose.BarCode for .NET*** require getting the license first.  
+***Aspose.BarCode for .NET*** without the license can be used to generate barcode labels without restrictions; in this case, a watermark will be placed on the resulting barcode image (words “Aspose”). Moreover, the unlicensed version of the library allows reading all types of barcodes; however, only the Code39 symbology can be used without limitations; for all other barcode types, 30% of the decrypted text will be masked with "*". 
+All other actions with barcodes through ***Aspose.BarCode for .NET*** require setting the license first.  
 The license activates access to the entire functionality of the library so that you can perform barcode generation and recognition without any limitations and watermarks.  
 ## **How to Obtain the License**
 If you want to try the fully functional version of ***Aspose.BarCode for .NET***, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information.
@@ -17,7 +17,7 @@ To obtain the possibility to use the library without limitations, a commercial l
 ## **License Setting**
 
 The license is a plain-text XML file that contains various information, such as the product name, the number of developers to access the license, subscription expiry date, and other details. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
-License setting can be realized through calling method *SetLicense* of class *Aspose.BarCode.License*. This must be done before any actions with the library. Method *SetLicense* can be invoked in different ways: in the initialization section of your application (or web application), using Singleton, or through a file/stream.
+License setting can be performed by calling the *SetLicense* method of class *Aspose.BarCode.License*. This must be done before executing any actions with the library. The *SetLicense* method can be invoked in different ways: in the initialization section of an application (or a web application), using Singleton, or through a file/stream.
   
 The details on how to set the license using these methods are provided below in this article.
 
@@ -62,7 +62,7 @@ System.IO.MemoryStream ms = new System.IO.MemoryStream();
 {{< /highlight >}}
 
 ### **From Application Resource**
-The other way of implementing the license into an application is to include it as an embedded resource into one of the assemblies that call ***Aspose.BarCode for .NET***. In this way, the license can be embedded into your application as a resource and then be loaded from the resource as a stream. See below how this license setting mode can be realized.  
+The other way to add the license into an application is to include it as an embedded resource into one of the assemblies that call ***Aspose.BarCode for .NET***. In this way, the license can be embedded into an application as a resource and then loaded from the resource as a stream. See below how license setting can be performed in this mode.  
 
 ***Embedding the license as a resource***  
   
@@ -80,11 +80,11 @@ using (System.IO.Stream stream = System.Reflection.Assembly.GetExecutingAssembly
 {{< /highlight >}}
 
 ### **Additional Ways**
-Additionally, the license can be set using the name of the corresponding file or embedded resource. If the license name is called without specifying the full path, the library will search it in the following locations:  
-- Explicit path
-- Folder that contains *Aspose.BarCode.dll*
-- Folder that contains the assembly that is called by *Aspose.BarCode.dll*
-- Embedded resources in the assembly that is called by *Aspose.BarCode.dll* where the resource name matches with the specified license name 
+Additionally, the license can be set using the name of the corresponding file or embedded resource. If the license name is passed to the *SetLicense* method without specifying the full path, the library will search it in the following locations:  
+- Root directory of the .exe file
+- Folder that contains the *Aspose.BarCode.dll* library
+- Folder that contains the assembly calling *Aspose.BarCode.dll*
+- Embedded resources of the application where the resource name matches with the specified license name 
   
 {{< highlight csharp>}}
 //license name, file, or resource
@@ -93,7 +93,7 @@ Additionally, the license can be set using the name of the corresponding file or
 
 ## **Protection from License Theft**
 
-If you share your software with the license applied outside of your organization without implementing any protection, unauthorized access to your license can become possible. To avoid this risk, we recommend encrypting the license source file. See below the example of how to implement such protection. 
+If you share your software with the license applied outside of your organization without implementing any protection, unauthorized access to the license can become possible. To avoid this risk, we recommend encrypting the license source file. See below the example of how to implement such protection. 
   
 {{< highlight csharp>}}
 //load the license from a file to stream

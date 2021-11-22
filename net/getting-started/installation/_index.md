@@ -8,7 +8,7 @@ url: /net/installation/
 ---
 
 ## **Overview**
-In this article, new users can find information and brief tutorials about how to install ***Aspose.BarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***Aspose.BarCode for.NET***: adding a NuGet package (simple and fast), referencing an Aspose.BarCode package in a project (more flexible), or installing the library manually from the archive (to perform custom installation).   
+In this article, new users can find information and brief tutorials about how to install ***Aspose.BarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***Aspose.BarCode for.NET***: adding a NuGet package (simple and fast), referencing an Aspose.BarCode package in a project (more flexible) or installing the library manually from the archive (to perform custom installation). In each case, to start working with code without limitations, it is required to set the license first. You can see how to do that in [Licensing](/barcode/net/licensing/).  
 Below you can walk through all available installation modes and select the one that is the most appropriate in your case. If you have any specific questions or problems with installation, please check how to contact [Technical Support](/barcode/net/technical-support/). 
 
 ## **Using NuGet Package**
@@ -24,7 +24,7 @@ Installing ***Aspose.BarCode for .Net*** through NuGet is the most convenient wa
   
 <p align="center"> <img src="AddNuget02.png"> </p>
   
-4. Now the library has been downloaded and installed successfully. You can start coding after setting the license.
+4. Now the library has been downloaded and installed successfully.
 
 ## **Referencing Aspose.BarCode Package in Project File**
 This option suggests adding a reference to a NuGet package through editing the source file of a project (*.csproj). Follow the steps below to launch the installation in this way:  
@@ -45,7 +45,7 @@ This option suggests adding a reference to a NuGet package through editing the s
 </Project>
 {{< /highlight >}}
   
-3. The library has been installed and referenced in your project successfully. You can start working with code after deploying the license.
+3. The library has been installed and referenced in your project successfully.
   
 ## **Manual Installation of Aspose.BarCode Library from Archive**
 This installation mode is introduced for experienced users who would like to perform the customized installation. It allows manually setting up the library from the corresponding archive. Follow the instructions below to deploy Aspose.BarCode for .NET in this manner.  
@@ -64,5 +64,5 @@ This installation mode is introduced for experienced users who would like to per
   
 <p align="center"> <img src="AddLib03.png"> </p>  
     
-7. The library has been installed successfully. You can begin working with code as soon as the license has been set.
+7. The library has been installed successfully.
 
