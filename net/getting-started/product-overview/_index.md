@@ -10,7 +10,7 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ## **Product Description**
 
-***Aspose.BarCode for .NET*** is a multifunctional component library realized through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear and matrix) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
+***Aspose.BarCode for .NET*** is a multifunctional component library implemented through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear and matrix) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
   
 ***Aspose.BarCode for .NET*** can be used for development in three ways: through a console application, Windows Forms, or Windows Presentation Foundation (WPF). For developers who want to work with barcodes in the backend, the library provides the corresponding class *BarcodeGenerator*. Alternatively, using GUI controls in ***Aspose.BarCode for .NET***, developers can drag and drop controls onto Windows Forms and set properties in the GUI-based mode. Finally, ***Aspose.BarCode for .NET*** supports the WPF framework to facilitate the development of WPF-based barcode applications.  
   
@@ -39,7 +39,7 @@ The full list of features can be found in [Product Features](/barcode/net/produc
 ***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with System.Drawing.Common (.Net 5 inlcuded) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, Xamarin, UWP, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
 
 ## **Library Contents**
-***Aspose.BarCode for .NET*** includes three main classes: *BarCodeReader* to realize barcode scanning and recognizing, *BarcodeGenerator* to implement barcode generation according to the desired format requirements, and *ComplexBarcode* to work with specific barcodes, for example, such as Swiss QR Code. 
+***Aspose.BarCode for .NET*** includes three main classes: *BarCodeReader* to perform barcode scanning and recognizing, *BarcodeGenerator* to provide barcode generation according to the desired format requirements, and *ComplexBarcode* to work with specific barcodes, for example, such as Swiss QR Code. 
   
 ### **Class BarcodeReader**
 ***Aspose.BarCode for .NET*** contains class *BarCodeReader* that is aimed at handling barcode image recognition. *BarCodeReader* has the following basic settings. First, it is required to specify the symbology type in the constructor of class *BarCodeReader* and call the *BarCodeReader.ReadBarCodes()* method to read barcodes from an image. Then, class *BarCodeReader* applies machine vision algorithms to extract machine-readable tags from the captured image.  
@@ -55,7 +55,7 @@ One of the key features of ***Aspose.BarCode for .NET*** is to perform barcode g
 
 
 ### **Class ComplexBarcode**
-Class *ComplexBarcode* allows generating barcode documents to work with complex barcodes. At present, it supports only the Swiss QR Code symbology. It is used to manage QR bills in payments that replace previous payment slips. Swiss QR Code contains all necessary payment information required to initiate payments or to process a QR invoice. Class *ComplexBarcode* contains classes *SwissQRBill* and *SwissQRCodetext* that enable various functions to work with Swiss QR codes, such as getting or setting the account number of a creditor, alternative payments schemes, payment amount, currency, etc.
+Class *ComplexBarcode* allows generating barcode documents to work with complex barcodes. At present, it supports Swiss QR Code and Royal Mail 2D Mailmark symbologies. Swiss QR Code is used to manage QR bills in payments that replace previous payment slips. Swiss QR Code contains all necessary payment information required to initiate payments or to process a QR invoice. Class *ComplexBarcode* contains classes *SwissQRBill* and *SwissQRCodetext* that enable various functions to work with Swiss QR codes, such as getting or setting the account number of a creditor, alternative payments schemes, payment amount, currency, etc.
 
 ### **Examples**
 Here, you can see some code samples for simple operations, such as generating a barcode using Code128 or recognizing a barcode from a file or stream.

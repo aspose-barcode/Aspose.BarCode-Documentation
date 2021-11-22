@@ -6,7 +6,7 @@ description: "General overview on Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, QR codes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/getting-started/
 ---
-This article introduces the basic concepts of ***Aspose.BarCode for .NET***. Here you can learn about its features, supported barcode and QR code types, functionality, the available input and output formats, installation process, and other key aspects. New users can refer to this page as a starting point to get familiar with ***Aspose.BarCode for .NET*** and its technical requirements.   
+This article introduces the basic concepts of ***Aspose.BarCode for .NET***. Here you can learn about its features, supported barcode types (including QR codes), functionality, the available input and output formats, installation process, and other key aspects. New users can refer to this page as a starting point to get familiar with ***Aspose.BarCode for .NET*** and its technical requirements.   
 
 For specific information about ***Aspose.BarCode for .NET***, see the following articles.
   
