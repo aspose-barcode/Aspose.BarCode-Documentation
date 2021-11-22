@@ -36,7 +36,7 @@ url: /net/product-features/
 - Scanning from multi-page TIFF through System.Drawing
 
 ## **Barcode Generation**
-- ***Class BarcodeGenerator***: generating barcode labels according to required settings
+- *Class BarcodeGenerator*: generating barcode labels according to required settings
 - Providing a wide range of options to customize barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
 - Saving barcode labels in various image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
 - Customizing the barcode encoding type and parameters
@@ -47,7 +47,7 @@ url: /net/product-features/
 - Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
 - Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256
 
-### **Barcode Imaging**
+## **Barcode Imaging**
 - Customizing barcode image borders, border color, style, margins, and width
 - Customizing barcode image color, background color, and bar color
 - Customizing bar height
