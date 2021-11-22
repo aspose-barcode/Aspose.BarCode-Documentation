@@ -1,8 +1,8 @@
 ---
-title: Managing Barcode Parameters
+title: Setting Barcode Parameters
 type: docs
 weight: 40
-url: /net/managing-barcode-parameters/
+url: /net/setting-barcode-parameters/
 ---
 
 ## **Manage Barcode Caption**

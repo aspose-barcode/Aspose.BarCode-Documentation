@@ -1,7 +1,7 @@
 ---
 title: Managing Barcode Text
 type: docs
-weight: 50
+weight: 20
 url: /net/managing-barcode-text/
 ---
 

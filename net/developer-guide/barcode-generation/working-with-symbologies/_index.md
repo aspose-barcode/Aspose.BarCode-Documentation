@@ -1,7 +1,7 @@
 ---
 title: Working with Symbologies
 type: docs
-weight: 20
+weight: 10
 url: /net/working-with-symbologies/
 ---
 

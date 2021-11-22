@@ -1,7 +1,7 @@
 ---
 title: Working with WinForms and WPF
 type: docs
-weight: 10
+weight: 80
 url: /net/working-with-winforms-and-wpf/
 ---
 This article provides all necessary information and instructions to implement barcode generation through GUI-based C# tools, such as WinForms and WPF.
@@ -53,7 +53,7 @@ public Form1()
 }
 {{< /highlight >}}
 
-**Calling License Setting code in WPF**
+**Calling License Setting Code in WPF**
 {{< highlight csharp>}}
 public MainWindow()
 {
@@ -65,45 +65,45 @@ public MainWindow()
 
 ## Barcode Generation through WinForms GUI
 ***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation through WinForms. To start working with barcodes through WinForms, follow the steps outlined below:
-1. Create a new project in WinForms.
+1. Create a new project in WinForms
 2. Upload the ***Aspose.BarCode for .NET*** library using NuGet:
-   - Right-click on *References* and then on *Manage NuGet Packages*.  
+- Right-click on *References* and then on *Manage NuGet Packages*
      
-  <p align="center"> <img src="WinForms_01.png"> </p> 
+<p align="center"> <img src="WinForms_01.png"> </p> 
+  
+- Select and install the package ***the Aspose.BarCode for .NET***
+  
+<p align="center"> <img src="WinForms_02.png"> </p>
      
-   - Select and install the package ***the Aspose.BarCode for .NET***.  
-     
-   <p align="center"> <img src="WinForms_02.png"> </p>
-     
-3. Add the *BarCodeGeneratorControl* component to the form from **Toolbox** in the ***Aspose.BarCode for .NET*** directory.  
+3. Drag the *BarCodeGeneratorControl* component from the ***Aspose.BarCode for .NET*** directory in**Toolbox** to the form 
   
 <p align="center"> <img src="WinForms_03.png"> </p>  
   
 4. Insert the license setting code to the [*System.Windows.Forms.Form*] constructor as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode labels. If the license is activated successfully, a barcode will be generated as in the example below.  
   
 <p align="center"> <img src="WinForms_04.png"> </p>
-
+  
 ## Barcode Generation through WPF
 
 ***Aspose.BarCode for .NET*** is compatible with the DLL for the Microsoft WPF framework to enable building WPF-based applications. Namely, barcode generation and recognition functionality can be deployed by referencing *Aspose.BarCode.WPF.dll* in WPF applications. To implement barcode generation through WPF, follow the steps described below.  
-1. Create a new WPF project.
+1. Create a new WPF project
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
-   - Right-click on *References* and then on *Manage NuGet Packages*.  
+- Right-click on *References* and then on *Manage NuGet Packages*  
      
-   <p align="center"> <img src="WPF_01.png"> </p>  
+<p align="center"> <img src="WPF_01.png"> </p>  
      
-   - Install the package ***Aspose.BarCode for .NET***.  
+- Install the package ***Aspose.BarCode for .NET***
      
-   <p align="center"> <img src="WPF_02.png"> </p>
+<p align="center"> <img src="WPF_02.png"> </p>
      
-3. In **Toolbox**, open the *Choose Items* menu. Then, on the *WPF Components* tab, make sure that the checkbox for *BarcodeGeneratorElement* is selected. After that, click the *Browse* button and choose the library *.NET Framework 3.0* or later.     
-  <p align="center"> <img src="WPF_03.png"> </p>  
+3. In **Toolbox**, open the *Choose Items* menu. Then, on the *WPF Components* tab, make sure that the checkbox for *BarcodeGeneratorElement* is selected. After that, click the *Browse* button and choose the library *.NET Framework 3.0* or later  
+<p align="center"> <img src="WPF_03.png"> </p>  
     
-4. Drag the *BarcodeGeneratorElement* component from **Toolbox** to the form.  
+4. Drag the *BarcodeGeneratorElement* component from **Toolbox** to the form  
   
-  <p align="center"> <img src="WPF_04.png"> </p>  
+<p align="center"> <img src="WPF_04.png"> </p>  
     
 5. Add the license setting code to the *System.Windows.Window* WPF window as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode images. If the license is activated successfully, a barcode will be generated as in the example below.  
   
-   <p align="center"> <img src="WPF_05.png"> </p>   
+<p align="center"> <img src="WPF_05.png"> </p>   
 

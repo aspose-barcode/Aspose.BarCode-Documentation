@@ -1,7 +1,7 @@
 ---
 title: How to Run Aspose.BarCode Examples
 type: docs
-weight: 70
+weight: 40
 url: /net/hhow-to-run-aspose.barcode-examples/
 ---
 
