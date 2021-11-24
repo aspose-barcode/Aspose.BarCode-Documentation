@@ -1,10 +1,158 @@
 ---
 title: Managing Barcode Text
 type: docs
-weight: 20
+weight: 40
 url: /net/managing-barcode-text/
 ---
+## Overview
+  
+<p align="center"><img src="Barcode_Text_Scheme.png"></p>
+  
+## Barcode Text
 
+<p align="center"><img src="Codetext_Scheme.png"></p>
+  
+### Text Positioning
+**Location**
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//codetext Above
+gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Above;
+gen.Save($"{path}CodetextLocationAbove.png", BarCodeImageFormat.Png);
+//codetext Below
+gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
+gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+
+|Text Location|Above|Below|
+|---|:---:|:---:|
+|**Output**|<img src="CodetextLocationAbove.png">|<img src="CodetextLocationBelow.png">|
+
+**Alignment**
+
+{{< highlight csharp>}}
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+            gen.Parameters.Barcode.Pdf417.Rows = 12;
+            gen.Parameters.Barcode.XDimension.Pixels = 2;
+            //set Codetext Left alignment
+            gen.Parameters.Barcode.CodeTextParameters.Alignment = TextAlignment.Left;
+            gen.Save($"{path}CodetextAligmentLeft.png", BarCodeImageFormat.Png);
+            //set Codetext Center alignment
+            gen.Parameters.Barcode.CodeTextParameters.Alignment = TextAlignment.Center;
+            gen.Save($"{path}CodetextAligmentCenter.png", BarCodeImageFormat.Png);
+            //set Codetext Right alignment
+            gen.Parameters.Barcode.CodeTextParameters.Alignment = TextAlignment.Right;
+            gen.Save($"{path}CodetextAligmentRight.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+  
+|Text Alignment|Left|Center|Right|
+|---|:---:|:---:|:---:|
+|**Output**|<img src="CodetextAligmentLeft.png">|<img src="CodetextAligmentCenter.png">|<img src="CodetextAligmentRight.png">|
+
+
+### Text Visibility
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//hide codetext
+gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
+gen.Save($"{path}CodetextHide.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+  
+<p align="center"><img src="Codetext_Hide.png"></p>
+  
+### Space between Barcode and Text
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//codetext space 5 pixels
+gen.Parameters.Barcode.CodeTextParameters.Space.Pixels = 5;
+gen.Save($"{path}CodetextSpace5Pixels.png", BarCodeImageFormat.Png);
+//codetext space 40 pixels
+gen.Parameters.Barcode.CodeTextParameters.Space.Pixels = 40;
+gen.Save($"{path}CodetextSpace40Pixels.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+  
+|Text Spacing|5 Pixels|40 Pixels|
+|---|:---:|:---:|
+|**Output**|<img src="CodetextSpace5Pixels.png">|<img src="CodetextSpace40Pixels.png">|
+  
+### Text Font Settings
+
+|Font Setting Mode|Auto|Manual|
+|---|:---:|:---:|
+|**Output**|<img src="CodetextFontModeAuto.png">|<img src="CodetextFontModeManual.png">|
+  
+**Auto Mode**  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//automatic font set
+gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Auto;
+gen.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Lucida Handwriting";
+gen.Parameters.Barcode.CodeTextParameters.Font.Style = FontStyle.Underline;
+//font size is ignored
+gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 10;
+gen.Save($"{path}CodetextFontModeAuto.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+  
+**Manual Mode**
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//manual font set
+gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Manual;
+gen.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Lucida Handwriting";
+gen.Parameters.Barcode.CodeTextParameters.Font.Style = FontStyle.Underline;
+//font size is set
+gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 10;
+gen.Save($"{path}CodetextFontModeManual.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+
+### NoWrap Mode for Text
+
+|Wrapping Mode|Long Text Wrap|Long Text No Wrap|
+|---|:---:|:---:|
+|**Output**|<img src="CodetextLongTextWrap.png">|<img src="CodetextLongTextNoWrap.png">|
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Extremly long codetext for one row");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Manual;
+gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 12;
+//text wrapapping mode on
+gen.Parameters.Barcode.CodeTextParameters.NoWrap = false;
+gen.Save($"{path}CodetextLongTextWrap.png", BarCodeImageFormat.Png);
+//text wrapapping mode off
+gen.Parameters.Barcode.CodeTextParameters.NoWrap = true;
+gen.Save($"{path}CodetextLongTextNoWrap.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+  
+## Caption
+
+<p align="center"><img src="Caption_Scheme.png"></p>
+
+### Text Positioning
+
+### Caption Visibility
+
+### Caption Padding
+
+### Caption Font
+
+### NoWrap Mode for Caption
+
+<!--
 ## **Customize the appearance of Code text**
 [Aspose.BarCode for .NET](https://apireference.aspose.com/barcode/net/) provides the ability to manage the appearance of code text underlying the generated barcode. To customize appearance-related parameters, various settings can be applied to code text using the properties of *CodeTextParameters* class. 
 ### **Location of Code text**
@@ -56,3 +204,4 @@ By default, the default gap between a barcode and code text is rather small. Dev
 The example provided below illustrates all possible format settings that can be applied to code text.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CodetextAppearance-CodetextAppearance.cs" >}}
+-->
