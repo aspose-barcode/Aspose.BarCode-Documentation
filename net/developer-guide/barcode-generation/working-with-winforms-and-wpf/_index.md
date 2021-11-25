@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /net/working-with-winforms-and-wpf/
 ---
-This article provides all necessary information and instructions to implement barcode generation through GUI-based C# tools, such as WinForms and WPF.
+This article provides all necessary information and instructions to perform barcode generation through GUI-based C# tools, such as WinForms and WPF.
 
 ## Overview
 ***AsposeBarCode for .NET*** enables GUI-based development through standard C# visual component frameworks: Windows Forms and Windows Presentation Foundation.  
