@@ -184,8 +184,3 @@ gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
 gen.Save($"{path}DataMatrixBarWidthReduction4.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
-|Symbology|Bar Width Reduction 0|Bar Width Reduction 4|  
-|---|:---:|:---:|  
-|**Code 128**|<p align="center"><img src="Code128BarWidthReduction0.png"></p>|<p align="center"><img src="Code128BarWidthReduction4.png"></p>| 
-|**Data Matrix**|<p align="center"><img src="DataMatrixBarWidthReduction0.png"></p>|<p align="center"><img src="DataMatrixBarWidthReduction4.png"></p>|
-  

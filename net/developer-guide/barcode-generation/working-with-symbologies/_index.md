@@ -98,7 +98,7 @@ gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
 
 Different barcode symbologies have different underlying data encryption approaches and capabilities. Some barcode specifications can be used to encode only numerical sequences so that barcode label size and the amount of data to be encoded are predefined for each symbology. Other barcodes imply encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations. 
 
-**EAN+13**  
+**EAN 13**  
 EAN-13 is the most commonly recognized barcode in Europe, used in supermarkets and other retail establishments for basic product identification. As their name implies, EAN-13 barcodes store a total of 13 digits, as opposed to UPC-A codes, which store 12. The first two digits are the GS1 Prefix, which identify the product's country of origin. Then is a five digit company number, to identify the brand, followed by a five digit item number, to identify the product itself. After that, there is a check number, to ensure the code's accuracy. Finally, there is a > symbol, indicating a "quiet zone," which signifies the end of the barcode.
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
@@ -106,7 +106,7 @@ gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
-<p align="center"><image src="Ean13.png.png"></p>
+<p align="center"><image src="Ean13.png"></p>
 
 **Code 11**  
 Code-11 is a barcode symbology developed by Intermec in 1977 and used mainly in telecommunications. The symbol can encode a string of any length (though Labeljoy limits it to 255 characters), consisting of the digits 0-9 and the dash sign (-). One or two check digit(s) can be included.
