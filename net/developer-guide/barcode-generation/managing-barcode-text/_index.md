@@ -4,16 +4,49 @@ type: docs
 weight: 40
 url: /net/managing-barcode-text/
 ---
+
+In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.Barcode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes. 
+
 ## Overview
-  
+Besides a barcode label itself, ***Aspose.Barcode for .NET*** enables the possibility to place human-readable text onto generated barcode images. This text information may include three fields as shown in the scheme below: main text, top caption, and bottom caption; any of these elements can be hidden.
+    
 <p align="center"><img src="Barcode_Text_Scheme.png"></p>
   
 ## Barcode Text
-
+Main barcode text represents short text information that is detached from the barcode label itself by some space. It can be placed on a barcode label in six different positions as shown in the scheme provided below: top left, top center, top right, bottom left, bottom center, or bottom right.
+  
 <p align="center"><img src="Codetext_Scheme.png"></p>
+   
+### Text Visibility
+
+In ***Aspose.BarCode for .NET***, developers can decide whether barcode text needs to be displayed or not. In case, when there is no necessity to place additional text on a barcode image, it can be hidden as in the barcode sample image shown below.
+  
+<p align="center"><img src="CodetextHide.png"></p>  
+   
+The following code snippet explains how to hide barcode text.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//hide codetext
+gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
+gen.Save($"{path}CodetextHide.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
   
 ### Text Positioning
+Barcode text can be adjusted on a barcode image in terms of its positioning, namely, location and alignment. To manage these parameters, it is necessary to initialize the [*Location*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) and [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/alignment) properties of class [CodetextParameters](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters).
+  
 **Location**
+  
+The *Location* property is used to adjust the vertical position of barcode text: above or below the barcode label, as demonstrated in the figures below. By default, it is set to "Below". 
+  
+|Text Location|Above|Below|
+|---|:---:|:---:|
+| |<img src="CodetextLocationAbove.png">|<img src="CodetextLocationBelow.png">|
+  
+The following code sample illustrates how to set the desired barcode text location.
+    
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
@@ -25,13 +58,17 @@ gen.Save($"{path}CodetextLocationAbove.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
 gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
-
-|Text Location|Above|Below|
-|---|:---:|:---:|
-|**Output**|<img src="CodetextLocationAbove.png">|<img src="CodetextLocationBelow.png">|
-
+  
 **Alignment**
-
+  
+The *Alignment* property allows modifying the horizontal position of barcode text: on the left, in the center, or on the right, as demonstrated in the figures below. By default, it is set to "Center". 
+  
+|Text Alignment|Left|Center|Right|
+|---|:---:|:---:|:---:|
+| |<img src="CodetextAligmentLeft.png">|<img src="CodetextAligmentCenter.png">|<img src="CodetextAligmentRight.png">|
+  
+The following code example shows how to specify the required barcode text alignment.
+     
 {{< highlight csharp>}}
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
             gen.Parameters.Barcode.Pdf417.Rows = 12;
@@ -47,26 +84,16 @@ gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
             gen.Save($"{path}CodetextAligmentRight.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
-|Text Alignment|Left|Center|Right|
-|---|:---:|:---:|:---:|
-|**Output**|<img src="CodetextAligmentLeft.png">|<img src="CodetextAligmentCenter.png">|<img src="CodetextAligmentRight.png">|
-
-
-### Text Visibility
-
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
-gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-//hide codetext
-gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
-gen.Save($"{path}CodetextHide.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+### Spacing between Barcode and Text
+By default, the spacing (gap) between a barcode label and text is rather small (two points). Developers can increase or decrease this spacing by setting the [*Space*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/space) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters). This property is used to manage the spacing between barcode text and the barcode label from above or below depending on the barcode text position. It cannot be initialized for several symbologies, such as EAN8, EAN13, UPCE, UPCA, ISBN, ISMN, ISSN, and UpcaGs1DatabarCoupon.  
+The images provided below illustrate the barcodes generated with different spacings, namely, five and forty pixels.
   
-<p align="center"><img src="Codetext_Hide.png"></p>
+|Text Spacing|5 Pixels|40 Pixels|
+|---|:---:|:---:|
+| |<img src="CodetextSpace5Pixels.png">|<img src="CodetextSpace40Pixels.png">|
   
-### Space between Barcode and Text
-  
+The following code snippet is provided to demonstrate how to adjust the spacing between the barcode label and text.
+   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
@@ -79,17 +106,20 @@ gen.Parameters.Barcode.CodeTextParameters.Space.Pixels = 40;
 gen.Save($"{path}CodetextSpace40Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
-|Text Spacing|5 Pixels|40 Pixels|
-|---|:---:|:---:|
-|**Output**|<img src="CodetextSpace5Pixels.png">|<img src="CodetextSpace40Pixels.png">|
-  
 ### Text Font Settings
-
+Параметры [Font] и [FontMode] позволяют настроить шрифт кодетекста. Параметр [FontMode] имеет два режима [Auto], в этом режиме настройки размера шрифта игнорируются и автоматически рассчитываются из размера самого штрихкода чтобы по-возможности кодетекст вместился в одну строку. В режиме [Manual] размер шрифта необходимо устанавливать вручную. Остальные параметры, как выбранный шрифт или его стили работают в обоих режимах.
+To customize the font of barcode text, the [*Font*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/font) and [*FontMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/fontmode) properties of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) need to be initiated. By default, the *Font* property is set to Arial 5pt regular; it is ignored in the case when the *Auto* mode is set in the *FontMode* property.  
+The *FontMOde* property allows adjusting the font size of barcode text. If *FontMode* is set to "*Auto*", font size is calculated automatically based on the value of *xDimension* so that text should preferably fit into a single line. In contrast, the *Manual* mode implies setting font size by hand. It is recommended to set *FontMode.Auto* especially in *AutoSizeMode.Nearest* or *AutoSizeMode.Interpolation*. Other parameters, such as font style, are initialized similarly in both modes.   
+The sample barcode images shown below have been generated using different font modes. 
+    
 |Font Setting Mode|Auto|Manual|
 |---|:---:|:---:|
-|**Output**|<img src="CodetextFontModeAuto.png">|<img src="CodetextFontModeManual.png">|
+| |<img src="CodetextFontModeAuto.png">|<img src="CodetextFontModeManual.png">|
   
-**Auto Mode**  
+**Auto Mode**
+  
+The following code sample illustrates how to set barcode text font in the *Auto* mode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
@@ -104,7 +134,9 @@ gen.Save($"{path}CodetextFontModeAuto.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
 **Manual Mode**
-
+  
+The code snippet provided below explains how to set barcode text font in the *Manual* mode.
+    
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
@@ -119,89 +151,181 @@ gen.Save($"{path}CodetextFontModeManual.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ### NoWrap Mode for Text
+The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/nowrap) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) is used to disable line breaks within the text when it is too long for a single row. If *NoWrap* is set to "*True*", barcode text is always displayed in one row. By default, the property is set to "*False*". 
+The figures below illustrate the difference in resulting barcode images in cases when the *NoWrap* property is set to *True* and *False*.
 
-|Wrapping Mode|Long Text Wrap|Long Text No Wrap|
+|Text Wrapping Mode|Wrap|No Wrap|
 |---|:---:|:---:|
-|**Output**|<img src="CodetextLongTextWrap.png">|<img src="CodetextLongTextNoWrap.png">|
-
+| |<img src="CodetextLongTextWrap.png">|<img src="CodetextLongTextNoWrap.png">|
+  
+The following code sample illustrates how to enable and disable the *NoWrap* mode.
+  
 {{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Extremly long codetext for one row");
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Extremely long codetext for one row");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Manual;
 gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 12;
-//text wrapapping mode on
+//text wrapping mode on
 gen.Parameters.Barcode.CodeTextParameters.NoWrap = false;
 gen.Save($"{path}CodetextLongTextWrap.png", BarCodeImageFormat.Png);
-//text wrapapping mode off
+//text wrapping mode off
 gen.Parameters.Barcode.CodeTextParameters.NoWrap = true;
 gen.Save($"{path}CodetextLongTextNoWrap.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
-## Caption
-
+## Replacing Barcode Text in 2D Barcodes
+In case when it is necessary to replace the barcode text for 2D barcodes with text with better readability without changing the contents, developers can initialize the [*TwoDDisplayText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property using new text to be displayed. This solution applies to the following 2D symbologies: Aztec, Pdf417, DataMatrix, QR, MaxiCode, DotCode.  
+The following barcode image has been generated with barcode text replaced by initializing the *TwoDDisplayText* property.
+  
+<p align="center"><img src="CodetextTwoDDisplayText.png"></p>
+  
+The following code snippet explains how to replace barcode text for 2D barcodes.
+    
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//replace visible codetext for 2D barcodes: Aztec, Pdf417, DataMatrix, QR, MaxiCode, DotCode
+gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Replace Codetext";
+gen.Save($"{path}CodetextTwoDDisplayText.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
+  
+## Caption  
+In some cases, it may be necessary to display additional text information on a barcode image. To address such a need, ***Aspose.Barcode for .NET*** enables the possibility to place captions above and below the barcode label. As shown in the scheme below, captions have a property called *Padding* that is used to specify the size of spacings on all four sides between a caption and the nearest element (barcode label itself, barcode text, or border). By default, both captions are hidden; they can be displayed by one or both at the same time.
+     
 <p align="center"><img src="Caption_Scheme.png"></p>
-
-### Text Positioning
-
+  
 ### Caption Visibility
 
+As previously mentioned, both captions, [*CaptionAbove*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionabove) and [*CaptionBelow*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionbelow) contained in class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters), are hidden by default. To display any of them or both, it is required to initialize the [*Visible*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/visible) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) and enter some text information in the [*Text*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/text) property of the same class. Top and bottom captions can be placed on a barcode image independently from each other and barcode elements. If required, a caption can replace barcode text for 1D barcodes by setting the former visible and hiding the latter.  
+The figures provided below illustrate how captions can be placed on generated barcode images.
+  
+|Caption Visibility|Above|Below|
+|---|:---:|:---:|
+| |<img src="CaptionVisibleAbove.png">|<img src="CaptionVisibleBelow.png">|
+  
+The following code snippet explains how to set captions visible.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+//set Top Caption visible
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+gen.Save($"{path}CaptionVisibleAbove.png", BarCodeImageFormat.Png);
+gen.Parameters.CaptionAbove.Visible = false;
+//set Bottom Caption visible
+gen.Parameters.CaptionBelow.Visible = true;
+gen.Parameters.CaptionBelow.Text = "Caption Below";
+gen.Parameters.CaptionBelow.Font.Size.Point = 14;
+gen.Save($"{path}CaptionVisibleBelow.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
+    
+### Text Positioning
+The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/alignment) is used to adjust the horizontal positioning of captions in three ways: on the left, in the center, or on the right. By default, captions are placed in the center position.  
+The figures below represent the barcode images generated with the top caption aligned in three ways.
+  
+|Caption Alignment|Left|Center|Right|
+|---|:---:|:---:|:---:|
+| |<img src="CaptionAlignmentLeft.png">|<img src="CaptionAlignmentCenter.png">|<img src="CaptionAlignmentRight.png">|
+  
+The following code sample shows how to adjust caption alignment.
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+//set Caption Above Left alignment
+gen.Parameters.CaptionAbove.Alignment = TextAlignment.Left;
+gen.Save($"{path}CaptionAlignmentLeft.png", BarCodeImageFormat.Png);
+//set Caption Above Center alignment
+gen.Parameters.CaptionAbove.Alignment = TextAlignment.Center;
+gen.Save($"{path}CaptionAlignmentCenter.png", BarCodeImageFormat.Png);
+//set Caption Above Right alignment
+gen.Parameters.CaptionAbove.Alignment = TextAlignment.Right;
+gen.Save($"{path}CaptionAlignmentRight.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+   
 ### Caption Padding
+The [*Padding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/padding) property allows setting spacings for top and bottom captions. The default value is set to {5pt; 5pt; 0; 5pt} for *CaptionAbove* and to {0; 5pt; 5pt; 5pt} for *CaptionBelow*. In the case of setting captions invisible this property is ignored.  
+The sample barcode images provided below have been created adjusting the value of the *Padding* property for captions to five and forty pixels.
+  
+|Caption Padding|5 Pixels|40 Pixels|
+|---|:---:|:---:|
+| |<img src="CaptionPadding5Pixels.png">|<img src="CaptionPadding40Pixels.png">|
+  
+The following code snippet demonstrates how to set caption paddings.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+//Set all padding values around the Caption to 5 pixels
+gen.Parameters.CaptionAbove.Padding.Left.Pixels = 5;
+gen.Parameters.CaptionAbove.Padding.Top.Pixels = 5;
+gen.Parameters.CaptionAbove.Padding.Right.Pixels = 5;
+gen.Parameters.CaptionAbove.Padding.Bottom.Pixels = 5;
+gen.Save($"{path}CaptionPadding5Pixels.png", BarCodeImageFormat.Png);
+//Set all padding values around the Caption to 40 pixels
+gen.Parameters.CaptionAbove.Padding.Left.Pixels = 40;
+gen.Parameters.CaptionAbove.Padding.Top.Pixels = 40;
+gen.Parameters.CaptionAbove.Padding.Right.Pixels = 40;
+gen.Parameters.CaptionAbove.Padding.Bottom.Pixels = 40;
+gen.Save($"{path}CaptionPadding40Pixels.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
 
 ### Caption Font
+***Aspose.Barcode for .NET*** does not provide the possibility to enable automatic font size adjustment depending on the size of a barcode label. Therefore, this parameter needs to be set manually. For top and bottom captions, it is possible to set the font, its style, and size independently. Font parameters can be adjusted using the [*Font*]()  property.  
+The barcode image below illustrates how the caption font can be displayed according to the desired settings.
+   
+<p align="center"><img src="CaptionFont.png"></p>
+  
+The following code sample explains how to adjust caption font settings.
+   
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+//set Caption font
+gen.Parameters.CaptionAbove.Font.FamilyName = "Lucida Handwriting";
+gen.Parameters.CaptionAbove.Font.Style = FontStyle.Underline;
+gen.Parameters.CaptionAbove.Font.Size.Point = 10;
+gen.Save($"{path}CaptionFont.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
 
 ### NoWrap Mode for Caption
 
-<!--
-## **Customize the appearance of Code text**
-[Aspose.BarCode for .NET](https://apireference.aspose.com/barcode/net/) provides the ability to manage the appearance of code text underlying the generated barcode. To customize appearance-related parameters, various settings can be applied to code text using the properties of *CodeTextParameters* class. 
-### **Location of Code text**
-***Aspose.BarCode for .NET*** allows developers to decide whether code text needs to be displayed or not. Moreover, it is possible to customize the display location of code text (above or below the generated barcode), as shown in the figure below.
-
-|**Possible Locations of Code Text**|
-| :- |
-|![todo:image_alt_text](working-with-barcode-text-appearance_1.jpg)|
-All barcode generation classes have *CodeTextParameters.Location* property that can accept any pre-defined value stored in *CodeLocation* enumeration. The values in [*CodeLocation* ](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) enumeration are listed below.
-
-|**Code Locations**|**Description** |
-| :- | :- |
-|Above|Code text on the top of a barcode|
-|Below |Code text on the bottom of a barcode|
-|None |Code text is hidden|
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SetCodetextLocation-SetCodetextLocation.cs" >}}
-
-
-### **Alignment of Code Text**
-The horizontal alignment of code text can be configured using *CodeTextParameters.Alignment* property of *BarcodeGenerator* class. *CodeTextParameters.Alignment* property accepts any enumerated value stored in *Aspose.BarCode.Generation.TextAlignment* enumeration (that is a part of Microsoft .NET Framework). The pre-defined values in *StringAlignment* enumeration are listed below.
-
-|**Alignment Types**|**Description** |
-| :- | :- |
-|Center |Text in the center of the layout rectangle|
-|Left|Text is left-aligned from the original position of the layout rectangle|
-|Right|Text is right-aligned on the right of the layout rectangle|
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SetCodeAlignment-SetCodeAlignment.cs" >}}
-
-
-### **Color of Code Text**
-Besides customizing barcode color, the color of code text can be changed as well; it can be done by setting *CodeTextParameters.Color* property, as demonstrated below in the provided code snippet.
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SetForeColorText-SetForeColorText.cs" >}}
-
-
-### **Set Code Text Font Family Name and Size**
-Setting *CodeTextParameters.Font* property to any font family name and modifying the size of code text can be done as demonstrated below in the code snippet.
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-SetCodeTextFontFamilyNameAndSize-SetCodeTextFontFamilyNameAndSize.cs" >}}
-
-
-### **Space between Code text and Barcode**
-By default, the default gap between a barcode and code text is rather small. Developers can increase/decrease the space (gap) between a barcode and code text by setting *CodeTextParameters.Space* property. The following code snippet illustrates how to space between code text and the barcode.
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarcodeImages-AddSpaceInBarCodeAndText-AddSpaceInBarCodeAndText.cs" >}}
-
-The example provided below illustrates all possible format settings that can be applied to code text.
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-CodetextAppearance-CodetextAppearance.cs" >}}
--->
+The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/nowrap) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) is intended to disable text line breaks in the case when a text string is too long to fit in a single line. When this property is set to "*True*", caption text is always displayed in a single line.  
+The following barcode images show the difference in resulting barcode images in cases when the *NoWrap* property is initialized as *True* and *False*.
+  
+|Caption Wrapping|Wrap|No Wrap|
+|---|:---:|:---:|
+| |<img src="CaptionTextWrap.png">|<img src="CaptionTextNoWrap.png">|
+  
+The code snippet provided below explains how to set the *NoWrap* mode for a barcode caption.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 12;
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+gen.Parameters.CaptionAbove.Font.Size.Point = 28;
+//set wrapping Caption text mode
+gen.Parameters.CaptionAbove.NoWrap = false;
+gen.Save($"{path}CaptionTextWrap.png", BarCodeImageFormat.Png);
+//set no wrapping Caption text mode
+gen.Parameters.CaptionAbove.NoWrap = true;
+gen.Save($"{path}CaptionTextNoWrap.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 

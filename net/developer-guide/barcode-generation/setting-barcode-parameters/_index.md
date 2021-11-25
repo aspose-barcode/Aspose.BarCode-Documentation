@@ -2,7 +2,7 @@
 ---
 title: Setting Barcode Parameters
 type: docs
-weight: 40
+weight: 30
 url: /net/setting-barcode-parameters/
 ---
 This article outlines what capabilities ***Aspose.BarCode for .NET*** provides to customize measurement units and resolution of generated barcode images.
