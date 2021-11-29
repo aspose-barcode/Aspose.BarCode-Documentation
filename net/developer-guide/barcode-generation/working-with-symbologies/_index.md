@@ -62,7 +62,7 @@ Standard 2 of 5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
 </table>
 
 ## Setting Barcode Symbology in Aspose.BarCode
-***Aspose.BarCode for .NET*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to use the *BarcodeGenerator* class with two main parameters to be initialized: data contents to be encoded *CodeText* and barcode symbology *EncodeType*.
+***Aspose.BarCode for .NET*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to create an instance of class *BarcodeGenerator* with two main parameters to be initialized: data contents to be encoded *CodeText* and barcode symbology *EncodeType*.
 Barcode generating classes, such as *LinearBarCode* and *BarCodeGeneratorControl*, have a common property called *EncodeType* that is used to define the symbology of a barcode. Developers can assign any symbology to the *SymbologyType* property out of pre-defined barcode types supported by the *BarcodeGenerator* class. However, it must be noted that not all barcode symbologies enable generating barcodes with code text in a required format due to the limitations of a barcode type itself.  
 Below, two barcode types, Code39 and QR, are considered as examples to demonstrate how to generate barcodes in ***Aspose.BarCode for .NET***. 
   
@@ -179,21 +179,31 @@ gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
 
 ## Barcode Shapes
 <a name="shape"></a>
+In general, the surfaces to place printed barcodes can have various shapes. At the same time, barcodes can be of rectangular or square forms only. Accordingly, if there is large space to put a rectangular barcode, the generation of a square-shaped barcode is inacceptable from the viewpoint of space usage.    
+Как видно Micro QR обладает большой плотностью размещения данных, но при этом является квадратным баркодом, размещение которого требует большого квадратного пространства.
+
 
 **MicroQR**  
-A major feature of Micro QR Code is it has only one position detection pattern, compared with regular QR Code that require a certain amount of area because position detection patterns are located at the three corners of a symbol. Furthermore, QR Code requires at least a four-module wide margin around a symbol, whereas a two-module wide margin is enough for Micro QR Code. This configuration of Micro QR Code allows printing in areas even smaller than QR Code. There are four different versions (sizes) of Micro QR codes: the smallest is 11×11 modules; the largest can hold 35 numeric characters.
-
+The *MicroQR* symbology provides large data density; however, it has a square shape and accordingly, requires square space to be placed. A major feature of *MicroQR* Code is that it has only one position detection pattern instead of three ones for regular *QR Code* and thus requires a smaller placement area.
+  
+<p align="center"><image src="MicroQR.png"></p>
+  
+The following code snippet illustrates how to generate a *MicroQR* code.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceMicroQR;
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
-
-<p align="center"><image src="MicroQR.png"></p>
-
+{{< /highlight >}}
+  
 **Compact PDF417**    
-Compact PDF417 is used when space considerations are a main concern and symbol damage is unlikely.
+*Compact PDF417* can be used when space limitations are the main concern and symbol damage is unlikely. It has lss data density compared with other 2D barcodes; however, owing to its property to have the length 64 times larger that height, it is more suitable for narrow rectangular areas with limited size.
+  
+<p align="center"><image src="CompactPdf417.png"></p>
+  
+The code sample below can be used to create a *Compact PDF417* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 //Compact version of Pdf417
@@ -202,13 +212,11 @@ gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Save($"{path}CompactPdf417.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
-<p align="center"><image src="CompactPdf417.png"></p>
-
 ## Barcode Recognition Precision
 <a name="precision"></a>
 
 **Interleaved 2 of 5**
-Interleaved 2 of 5 (ITF) barcodes are two-width numeric codes that can encode information of any length, as long as there is an even number of digits in the code. Information is encoded based on the width of the bars and spaces, and exactly 2 out of every 5 bars are wide. Their predecessor, the Standard or Industrial 2 of 5 barcode, could encode information only in the width of the bars, but not the spaces. ITF barcodes are generally used for distribution and warehouse identification purposes. They are often used to identify cartons or crates which themselves contain items with their own UPC barcodes. Additionally, they are often used to label 135 film. The Interleaved 2 of 5 barcode begins with a start character, to indicate the beginning of the code. Then comes the encoded data, followed by an optional check digit, and the stop character. The ITF barcode can only encode an even number of digits, since each character is made up of two interleaving digits. If a code has an odd number of digits, a zero is added to the front of the barcode. Additionally, it is self-checking and does not require a check digit, though one can be added.
+Interleaved 2 of 5 barcodes are two-width numeric codes that can encode sequences of digits of any length, as long as there is an even number of digits in the code. By default, it does not require setting a checksum and therefore, can be read with errors.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Interleaved2of5, "1234567890");
