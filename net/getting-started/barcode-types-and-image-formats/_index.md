@@ -2,16 +2,18 @@
 title: Barcode Types and Image Formats
 type: docs
 weight: 20
+description: "Barcode Symbologies and Image Formats Supported in Aspose.BarCode for .NET"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, C#"
 url: /net/barcode-types-and-image-formats/
 ---
 ## **Barcode Types and Supported Symbologies**
 ***Aspose.BarCode for .NET*** supports over 60 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. 
     
 *Linear barcode types*, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.   
-Matrix codes, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This type of barcode symbology is considered more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
+Matrix codes, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
   
 *Postal barcode types* are specific barcode symbologies used by postal services in a variety of countries.
-
+  
 <table> 
 <tr> <th></th><th></th> 
 <th>Supported Symbologies</th> 
@@ -36,10 +38,10 @@ Standard 2 of 5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
 </table>
 
 ## **Image Formats**
-Aspose.BarCode for .NET supports rendering barcode labels in the five most widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by the SQL Server Reporting Services engine. See below the formats supported for input and output.
-
+***Aspose.BarCode for .NET*** allows rendering barcode labels in the five most widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by the SQL Server Reporting Services engine. See below the formats available for input and output.
+  
 | Input / Output | Output Only| 
-| ------ | ------ | 
+| :------: | :------: | 
 |[JPEG](https://docs.fileformat.com/Image/JPEG/) | [EMF](https://docs.fileformat.com/Image/EMF/)|
 |[TIFF](https://docs.fileformat.com/Image/TIFF/)|[SVG](https://docs.fileformat.com/page-description-language/SVG/)|
 |[PNG](https://docs.fileformat.com/Image/PNG/) |
