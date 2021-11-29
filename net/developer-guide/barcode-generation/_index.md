@@ -14,6 +14,6 @@ This documentation chapter is dedicated to barcode generation and related questi
 |[Managing Barcode Text](/barcode/net/managing-barcode-text/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
 |[Customizing Barcode Color Scheme](/barcode/net/customizing-barcode-color-scheme/)|Represents the available options to customize the color scheme of barcodes and their elements|
 |[Saving Generated Barcodes](/barcode/net/saving-generated-barcodes/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
-|[Using Checksum and Data Supplement](/barcode/net/using-checksum-and-data-supplement/)| |
+|[Using Checksum in 1D barcodes](/barcode/net/using-checksum-and-data-supplement/)|Describes the pecularities of setting checksum for 1D barcodes|
 |[Working with WinForms and WPF](/barcode/net/working-woth-winforms-and-wpf/)|Provides instructions on how to performm barcode generation by means of GUI-based .NET frameworks, such as Windows Forms and WPF|
   

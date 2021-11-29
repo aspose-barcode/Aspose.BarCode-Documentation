@@ -22,28 +22,19 @@ Barcodes have multiple applications in various spheres, such as retail, industry
 - *Managing admission desks*. Cinema tickets, event passes, travel itineraries, and other similar documents may have unique barcodes to get verified, in this way, facilitating and speeding up an admission process. Such technology also allows reducing printing costs.
 - *Storing business and personal data*. Nowadays, barcodes and specifically, QR codes, are widely used to store information about organizations or persons that can be read simply by a smartphone.  
 
-### Barcode Advantages 
-The main advantage of barcode systems is that they allow processing detailed information at the moment of barcode scanning, rather than simply storing information for later processing. Barcodes are used to track products, prices, and stock levels for the purposes of centralized management, in this way, improving productivity and efficiency. 
-Barcodes have been introduced to speed up sales transactions; however, there are many other benefits to businesses, including: 
-
-- Better accuracy. Processing information by means of barcode systems provides more accuracy compared with entering data manually.
-- Data is immediately available - Because of the processing speed, information about inventory levels or sales is available in real time.
-- Reduced training requirements - Thanks to the simplicity of the barcode scanner, employees need little in the way of training in how to use it. Additionally, thanks to barcodes, there is much less for employees to have to learn and retain.
-- Improved inventory control - Being able to scan and track inventory yields a much more accurate count, as well as a better calculation of inventory turn. Companies can hold less inventory when they know how soon they will need it.
-- Low cost implementation - Generating barcodes is quick and easy, as is installing a barcode system. Potential savings can be realized almost immediately.
-
 ## Symbology Definition
 Barcode symbology defines the way of encoding information into the barcode image. Each barcode symbology relies on a unique way of encoding data characters. One-dimensional (1D), or linear, barcodes represent data by varying the width and spacing of parallel lines.  In general, a linear barcode is composed of a leading margin, start character, message characters, check character (if any), stop character, and a trailing margin. Based on this framework, all known symbologies constitute their own encoding principles. In 1D barcodes, the bars represent the binary digits 0 and 1 that may constute various sequences to encode numbers from 0 to 9 and then be processed by a digital unit. The presence or absence of a bar of a particular width in a specific position in a sequence is read by the computer as 1 or 0.  
 Later, two-dimensional (2D) barcodes have been introduced.
   
-2D barcodes are more complex and can include not only text data but also other types of information: price, quantity, web address, or image. They can be composed of rectangles, dots, hexagons and other geometric patterns called matrix codes that can encode much larger amounts of information than a typical 1D barcode. By storing data both horizontally and vertically to form a square or rectangle, significantly more information can be encoded than is possible with a 1-D barcode. The 2-D symbology is known for high readability and resistance to poor printing; they contain redundant data so even if one or more cells are damaged, the code is still readable. 
+2D barcodes are more complex and can include not only text data but also other types of information: price, quantity, web address, or image. They can be composed of rectangles, dots, hexagons and other geometric patterns called matrix codes that can encode much larger amounts of data than a typical 1D barcode. By storing data both horizontally and vertically to form a square or rectangle, significantly more information can be encoded than is possible with a 1D barcode. The 2D symbology is known for high readability and resistance to poor printing; they contain redundant data so even if one or more cells are damaged, the code is still readable.  
+The other specific group of symbologies refers to postal barcodes that are used exclusively by post services of different countries. Unlike 1D barcodes, postal ones are created varying the height of bars to encode information. In this way, a postal barcode represents a series of long and short bars that may be used to encode ZIP codes, ZIP+4 codes, delivery addresses, etc. Postal services use automated barcode scanning equipment to process and sort mail by according to barcodes. 
   
 ### Key Barcode Properties 
 In substance, barcode symbologies are similar to file formats, as they define the following key barcode properties:
-- [Data encryption format](#dataencryption). Some barcode types are capable of encoding only numbers, only main characters with specific symbols, or entire encodings.
-- [Data density](#datadensity)
-- [Shape](#shape). It can be rectangular, square, or suitable for long linear spaces.
-- [Recognition precision](#precision). Some barcode types do not include checksum and its controls, and accordingly, it is impossible to verify whether all data contained in a barcode have been recognized and decrypted correctly. Such barcodes have low recognition precision. In contrats, 2D barcodes not only allow recovering partially corrupted data, but also have high recognition precision because they provide mechanisms to guarantee that all barcode data have been read properly. 
+- [Data encryption format](#dataencryption). Different barcode types are capable of encoding sets of characters with different limitations: only numerical digits, only alphabet and special characters, entire encodings, etc. 
+- [Data density](#datadensity). Each symbology has a specified capacity of how much information can be encoded in a barcode. Accordingly, barcodes may have high or low data density. 
+- [Shape](#shape). Barcode shape can be rectangular, square, or adjusted to elongated spaces.
+- [Recognition precision](#precision). Some barcode types do not include checksum and corresponding controls, and thus, it is impossible to verify whether all data contained in a barcode have been recognized and decrypted correctly. Such barcodes have low recognition precision. In contrats, 2D barcodes not only allow recovering partially corrupted data, but also have high recognition precision because they provide mechanisms to guarantee that all barcode data have been read properly. 
   
 ### Supported Symbologies
 All symbologies supported in ***Aspose.BarCode for .NET*** are outlined below.
@@ -73,21 +64,25 @@ Standard 2 of 5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
 ## Setting Barcode Symbology in Aspose.BarCode
 ***Aspose.BarCode for .NET*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to use the *BarcodeGenerator* class with two main parameters to be initialized: data contents to be encoded *CodeText* and barcode symbology *EncodeType*.
 Barcode generating classes, such as *LinearBarCode* and *BarCodeGeneratorControl*, have a common property called *EncodeType* that is used to define the symbology of a barcode. Developers can assign any symbology to the *SymbologyType* property out of pre-defined barcode types supported by the *BarcodeGenerator* class. However, it must be noted that not all barcode symbologies enable generating barcodes with code text in a required format due to the limitations of a barcode type itself.  
+Below, two barcode types, Code39 and QR, are considered as examples to demonstrate how to generate barcodes in ***Aspose.BarCode for .NET***. 
   
 **Code39**    
-*Code39* is a barcode symbology with variable length. Its specification is limited to 43 characters, including uppercase letters (A through Z), numeric digits (0 through 9) and a number of special characters (-, ., $, /, +, %, and space). An additional character (denoted ‘*’) is used for both start and stop delimiters. Each character is composed of nine elements: five bars and four spaces. This symbology has low data density and does not allow ensuring recading accuracy as it does not have a checksum required by default. 
+*Code39* is a barcode symbology with variable length. Its specification is limited to 43 characters, including uppercase letters (A through Z), numeric digits (0 through 9) and a number of special characters (-, ., $, /, +, %, and space). An additional character (denoted ‘*’) is used for both start and stop delimiters. Each character is decoded by nine elements: five bars and four spaces. This symbology has low data density and does not allow ensuring recading accuracy as it does not require by default setting a checksum. 
 
 <p align="center"><image src="Code39Extended.png"></p>
   
-The code snippet provided below illustrates how to generate a barcode in Code39.
+The code snippet provided below illustrates how to generate a barcode of the *Code39* symbology.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "$&This Code#*");
 gen.Save($"{path}Code39Extended.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}  
   
 **QR Code**  
-QR Code is a 2D symbology that is used to encode long strings of alphanumeric data, typically text or a URL. A QR code is composed of an array of black and white squares that can be read by smartphones and other readers. QR-Code is a two-dimensional (2D) barcode type similar to Data Matrix or Aztec, which is capable of encoding large amounts of data. QR means Quick Response, as the inventor intended the symbol to be quickly decoded. The data encoded in a QR-Code may include alphabetic characters, text, numbers, double characters and URLs. The symbology uses a small area of square modules with a unique perimeter pattern, which helps the barcode scanner determine cell locations to decode the symbol. 
+*QR Code* is a 2D symbology that is used to encode long strings of alphanumeric data, typically text or a URL. A QR code is composed of an array of black and white squares that can be read by smartphones and other readers. The data encoded in a QR-Code may include all Unicode alphabetic characters, text, numbers, double characters, and URLs. Moreover, *QR Code* provides high data encoding density. This symbology supports the **Reed-Solomon** correction that allows not only to restore corrupted data but also to ensure correct information recognition.  
+<p align="center"><image src="QrCode.png"></p>
+  
+The code sample below can be used to generate a barcode of the *QR Code* symbology.  
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
@@ -97,75 +92,90 @@ gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
-<p align="center"><image src="QrCode.png"></p>
-
 ## Data Encryption Formats
 <a name="dataencryption"></a>
 
 Different barcode symbologies have different underlying data encryption approaches and capabilities. Some barcode specifications can be used to encode only numerical sequences so that barcode label size and the amount of data to be encoded are predefined for each symbology. Other barcodes imply encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations. 
-   
-**EAN 13**  
-EAN-13 is the most commonly recognized barcode in Europe, used in supermarkets and other retail establishments for basic product identification. As their name implies, EAN-13 barcodes store a total of 13 digits, as opposed to UPC-A codes, which store 12. The first two digits are the GS1 Prefix, which identify the product's country of origin. Then is a five digit company number, to identify the brand, followed by a five digit item number, to identify the product itself. After that, there is a check number, to ensure the code's accuracy. Finally, there is a > symbol, indicating a "quiet zone," which signifies the end of the barcode.
+Further, several barcode types(EAN13, Code11, GS1 Code128, and PDF17)) with different data density are presented as examples.   
+
+**EAN13**  
+*EAN13* barcodes can encode only numerci digits. Specifically, *EAN13* data encryption format requires encoding precisely 12 digits with the 13-th digits used as a control sum calculated according to the specified algorithm. 
+  
+<p align="center"><image src="Ean13.png"></p>
+
+The following code snippet explains how to generate an *EAN13* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
-
-<p align="center"><image src="Ean13.png"></p>
-
-**Code 11**  
-Code-11 is a barcode symbology developed by Intermec in 1977 and used mainly in telecommunications. The symbol can encode a string of any length (though Labeljoy limits it to 255 characters), consisting of the digits 0-9 and the dash sign (-). One or two check digit(s) can be included.
+  
+**Code11**  
+The *Code11* symbology can encode a string of any length (theoretically, unlimited) including numerical digits and the dash sign (-).
+  
+<p align="center"><image src="Code11.png"></p>
+  
+The following code sample demonstrates how to create a *Code11* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "1234-5678");
 gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
-
-<p align="center"><image src="Code11.png"></p>
-
+{{< /highlight >}}
+  
 **GS1 Code128**  
-GS1-128 (formerly UCC/EAN-128) is a variant of Code 128, which can encode all ASCII alphanumeric characters in barcode format. GS1-128 defines both data types and formats that are used for exchange and logistics between entities. Companies use this barcoding format to share company, product, and shipping information. 
+*GS1 Code128* can encode all ASCII alphanumeric characters similarly as the base *Code128* symbology. However, in *GS1 Code128*, data encryption format is defined strictly according to the GS1 standards.  
+  
+<p align="center"><image src="GS1Code128.png"></p>
+  
+The code example provided below can be used to generate a *GS1 Code128* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1Code128, "(02)04006664241007(37)1");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}GS1Code128.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
-
-<p align="center"><image src="GS1Code128.png"></p>
-
+{{< /highlight >}}
+  
 **PDF17**  
-The PDF417 barcode is a two-dimensional (2D), high-density symbology capable of encoding text, numbers, files and actual data bytes. This FAQ provides information and answers to commonly asked questions. Large amounts of text and data can be stored securely and inexpensively when using the PDF417 barcode symbology. The printed symbol consists of several linear rows of stacked codewords. Each codeword represents 1 of 929 possible values from one of three different clusters. A different cluster is chosen for each row, repeating after every three rows. Because the codewords in each cluster are unique, the scanner is able to determine what line each cluster is from. PDF417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to endure some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2. The error correction level depends on the amount of data that needs to be encoded, the size and the amount of symbol damage that could occur. 
+The PDF417 barcode is a 2D high-density symbology that is capable of encoding any sequence of bytes, including text, numbers, files, and actual data bytes. It supports the Reed-Solomon error correction, and therefore, provides high recogniition precision.
+  
+<p align="center"><image src="Pdf417.png"></p>
+  
+The following code snippet illustrates how to generate a *PDF17* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Save($"{path}Pdf417.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
-
-<p align="center"><image src="Pdf417.png"></p>
-
+  
 ## Data Density
 <a name="datadensity"></a>
-
+Data density is one of the most important properties of barcode symbologies. It defines how much information can be encoded in a signle bacode. It is low for 1D barcodes and considerably high for 2D matrix barcode types. The difference in data density for 2D and 1D symbologies can exceed 10 times.
+  
 **Code93**  
-The Code 93 barcode is an updated, more secure and compact version of the Code 39 barcode, which is able to read both letters and numbers. It is used in the military and automotive fields, as well as by Canada Post to encode special delivery information. The Code 93 barcode is an updated, more secure and compact version of the Code 39 barcode, which is able to read both letters and numbers. It is used in the military and automotive fields, as well as by Canada Post to encode special delivery information. Unlike Code 39, Code 93 is not self-checking and, as such, requires a check digit.
+*Code 93* is a more secure and compact version of the *Code39* symbology that can encode both alphabet characters and numerical digits. *Code93* has quite low data density; therefore, with respect to other symbologies, it requires generating a larger barcode to encode the same amount of information.  
+  
+<p align="center"><image src="Code93Extended.png"></p>
+  
+The following code sample shows how to generate a *Code93* barcode.
+  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "$&This Code#*");
 gen.Save($"{path}Code93Extended.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
-
-<p align="center"><image src="Code93Extended.png"></p>
+{{< /highlight >}}
 
 **Data Matrix**  
-A Data Matrix is a 2D matrix code, capable of encoding very large amounts of data in a compact space. Data Matrix codes are made up of small black and white squares that form a big square or rectangle. They're used in a variety of industries, including aerospace, component labeling, food and beverage, pharmaceutical, defense, mail, and printed media because those organizations often run complicated operations where tracking and traceability is critical. A Data Matrix is capable of encoding up to 2,335 alphanumeric characters, or up to 3,116 numerical characters. It is composed of several blocks of black and white cells, that form a square or rectangular pattern. Each Data Matrix has a perimeter finder and a timing pattern. It can also encode symbols of various sizes, both large and small. Along the edges of each data matrix code is a quiet zone. A Data Matrix barcode is designed to be read even when it's up to 30% damaged, due to a built in error correction system. It's also capable of encoding either letters, numerical data, or other ASCII characters. Data Matrix codes can be read with image-based barcode readers or mobile devices; a lower resolution is acceptable for scan readability in any position.
+*Data Matrix* is a 2D code that can encode large amounts of data in a compact space. A single *Data Matrix can contain up to 2,335 alphanumeric or 3,116 numerical characters that is 10 times more than for 1D barcodes.
+  
+<p align="center"><image src="DataMatrix.png"></p>
 
+The code example below can be used to create a *Data Matrix* barcode.  
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
-
-<p align="center"><image src="DataMatrix.png"></p>
-
 
 ## Barcode Shapes
 <a name="shape"></a>

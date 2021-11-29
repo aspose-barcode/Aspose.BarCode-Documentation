@@ -58,6 +58,30 @@ gen.Parameters.Barcode.BarColor = Color.Green;
 gen.Save($"{path}ColorBarcode.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
+## Border Color
+It is possible to vary barcode border color by setting the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*.  
+The barcode image provided below has been created setting border color to (*Color.Green*).
+  
+<p align="center"><image src="ColorBorder.png"></p>
+  
+The following code example is used to change the color of barcode borders.  
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 6;
+gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.CaptionAbove.Visible = true;
+gen.Parameters.CaptionAbove.Font.Size.Point = 20;
+gen.Parameters.CaptionAbove.Text = "Caption Above";
+gen.Parameters.CaptionBelow.Visible = true;
+gen.Parameters.CaptionBelow.Font.Size.Point = 20;
+gen.Parameters.CaptionBelow.Text = "Caption Below";
+gen.Parameters.Border.Visible = true;
+gen.Parameters.Border.Width.Pixels = 5;
+//set color of border
+gen.Parameters.Border.Color = Color.Green;
+gen.Save($"{path}ColorBorder.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
 
 ## Barcode Text Color
 

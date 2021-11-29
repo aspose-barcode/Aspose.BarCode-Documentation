@@ -110,11 +110,14 @@ gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
 
 
 ### SVG Format
-Scalable Vector Graphics (SVG) is an XML-based vector image format used to render two-dimensional images in web applications. In SVG image files, XML-based text is used to describe how the image should appear; therefore, such a file can be scaled to different sizes without losing resolution. Accordingly, this format is often applied to develop websites and print graphics, as they may need to be resized to fit different designs. The following code sample describes how to generate barcode images in the SVG format.
+Scalable Vector Graphics (SVG) is an XML-based vector image format used to render two-dimensional images in web applications. In SVG image files, XML-based text is used to describe how the image should appear; therefore, such a file can be scaled to different sizes without losing resolution. Accordingly, this format is often applied to develop websites and print graphics, as they may need to be resized to fit different designs. The following code sample describes how to generate barcode images in the SVG format.  
+
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Svg
 gen.Save($"{path}VectorImageSvg.svg", BarCodeImageFormat.Svg);
 {{< /highlight >}} 
+  
 The example of a barcode label created in SVG format is provided below.
+  
 <p align="center"><image src="VectorImageSvg.svg"></p>
