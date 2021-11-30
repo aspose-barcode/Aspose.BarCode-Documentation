@@ -26,14 +26,14 @@ Archive articles about barcode generation are accessible with the following link
   
 |Archive Article|Description|
 |---|---|
-|[Generate Barcodes with Aspose.BarCode APIs](https://docs.aspose.com/barcode/net/generate-barcodes-with-aspose-barcode-apis/)||
-|[Two Dimensional - 2D Barcodes](https://docs.aspose.com/barcode/net/two-dimensional-2d-barcodes/)||
-|[Barcodes of Different Types](https://docs.aspose.com/barcode/net/barcodes-of-different-types/)||
-|[Working with Barcode Image](https://docs.aspose.com/barcode/net/working-with-barcode-image/)||
-|[Barcode in XML](https://docs.aspose.com/barcode/net/barcode-in-xml/)||
-|[Working with BarCode Text Appearance](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/)||
-|[Managing Different Barcode Settings](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)||
-|[Use Checksum and Supplement Data](https://docs.aspose.com/barcode/net/use-checksum-and-supplement-data/)||
-|[Generating Barcodes using New Barcode Generation API](https://docs.aspose.com/barcode/net/generating-barcodes-using-new-barcode-generation-api/)||
-|[How to Generate a Patch Code](https://docs.aspose.com/barcode/net/how-to-generate-a-patch-code/)||
+|[Generate Barcodes with Aspose.BarCode APIs](https://docs.aspose.com/barcode/net/generate-barcodes-with-aspose-barcode-apis/)|Describes how to generate barcodes in Aspose.BarCode for .NET through console applications, WinForms, and WPF|
+|[Two Dimensional - 2D Barcodes](https://docs.aspose.com/barcode/net/two-dimensional-2d-barcodes/)|Summarizes how to generate various 2D barcodes|
+|[Barcodes of Different Types](https://docs.aspose.com/barcode/net/barcodes-of-different-types/)|Provides information about various barcode symbologies|
+|[Working with Barcode Image](https://docs.aspose.com/barcode/net/working-with-barcode-image/)|Outlines different barcode formatting settings and ways to save generated barcodes|
+|[Barcode in XML](https://docs.aspose.com/barcode/net/barcode-in-xml/)|Describes how to work with barcodes in XML|
+|[Working with BarCode Text Appearance](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/)|Explains how to adjust settings of barcode text and captions|
+|[Managing Different Barcode Settings](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)|Provides information about specific barcode settings, such as X and Y dimensions, bar height, wide-to-narrow ratio, and others|
+|[Use Checksum and Supplement Data](https://docs.aspose.com/barcode/net/use-checksum-and-supplement-data/)|Describes how to use a checksum and apply checksum validation, as well as how to work with supplement data|
+|[Generating Barcodes using New Barcode Generation API](https://docs.aspose.com/barcode/net/generating-barcodes-using-new-barcode-generation-api/)|Discusses various properties of classes used in Aspose.BarCode for .NET for barcode generation and provides recommendations for various symbologies|
+|[How to Generate a Patch Code](https://docs.aspose.com/barcode/net/how-to-generate-a-patch-code/)|Explains how to generate barcodes using the Patch Code symbology|
   
