@@ -7,7 +7,7 @@ url: /net/barcode-generation/
 This documentation chapter is dedicated to barcode generation and related questions, such as supported symbologies, barcode parameters including appearance-related ones, ways of saving generated barcodes, options to work with GUI-based development tools, and many other subjects. You can find the required information in the articles specified below.
   
 ## New Articles
-    
+  
 |Article|Description|
 |---|---|
 |[Working with WinForms and WPF](/barcode/net/working-with-winforms-and-wpf/)|Provides instructions on how to perform barcode generation by means of GUI-based .NET frameworks, such as Windows Forms and WPF|
@@ -21,7 +21,6 @@ This documentation chapter is dedicated to barcode generation and related questi
 |[Setting Specific Parameters for 1D Barcodes]()||-->
   
 ## Archive Articles
-  
 Archive articles about barcode generation are accessible with the following links.  
   
 |Archive Article|Description|
