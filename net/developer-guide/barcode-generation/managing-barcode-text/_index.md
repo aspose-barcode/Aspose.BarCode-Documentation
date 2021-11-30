@@ -1,7 +1,9 @@
 ---
 title: Managing Barcode Text
 type: docs
-weight: 40
+weight: 50
+description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
+keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.Barcode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
 url: /net/managing-barcode-text/
 ---
 
@@ -253,7 +255,7 @@ gen.Save($"{path}CaptionAlignmentRight.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
    
 ### Caption Padding
-The [*Padding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/padding) property allows setting spacings for top and bottom captions. The default value is set to {5pt; 5pt; 0; 5pt} for *CaptionAbove* and to {0; 5pt; 5pt; 5pt} for *CaptionBelow*. In the case of setting captions invisible this property is ignored.  
+The [*Padding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/padding) property allows setting spacings for top and bottom captions. The default value is set to {5pt; 5pt; 0; 5pt} for *CaptionAbove* and to {0; 5pt; 5pt; 5pt} for *CaptionBelow* accoroding to the standard Windows Rectangle properties {Top, Left, Bottom, Right}. In the case of setting captions invisible this property is ignored.  
 The sample barcode images provided below have been created adjusting the value of the *Padding* property for captions to five and forty pixels.
   
 |Caption Padding|5 Pixels|40 Pixels|

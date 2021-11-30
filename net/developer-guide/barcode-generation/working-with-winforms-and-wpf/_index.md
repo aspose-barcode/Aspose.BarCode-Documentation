@@ -1,7 +1,9 @@
 ---
 title: Working with WinForms and WPF
 type: docs
-weight: 80
+description: "Barcode Generation in Aspose.BarCode for .NET through C# GUI-based frameworks: Windows Forms and WPF"
+keywords: "Generate Barcodes, How to Generate Barcodes in C# .NET, Create Barcodes in WinForms, Generate Barcode WPF, C# Framework, Aspose.BarCode for .NET, C#"
+weight: 10
 url: /net/working-with-winforms-and-wpf/
 ---
 This article provides all necessary information and instructions to perform barcode generation through GUI-based C# tools, such as WinForms and WPF.
@@ -44,6 +46,7 @@ internal class LicenseSingleton
 The following code snippets illustrate how to call license installation code in WinForms and WPF.  
 
 **Calling License Setting Code in WinForms**
+  
   {{< highlight csharp>}}
 public Form1()
 {
@@ -54,6 +57,7 @@ public Form1()
 {{< /highlight >}}
 
 **Calling License Setting Code in WPF**
+  
 {{< highlight csharp>}}
 public MainWindow()
 {

@@ -1,7 +1,9 @@
 ---
 title: Adjusting Barcode Appearance
 type: docs
-weight: 20
+weight: 30
+description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
+keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
 url: /net/adjusting-barcode-appearance/
 ---
 This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
