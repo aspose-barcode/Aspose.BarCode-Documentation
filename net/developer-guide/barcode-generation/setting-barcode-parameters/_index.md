@@ -1,4 +1,3 @@
-
 ---
 title: Setting Barcode Parameters
 type: docs
