@@ -4,7 +4,7 @@ type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
 weight: 90
-url: /net/setting-specific-parameters-for-1D-barcodes/
+url: /net/managing-different-barcode-settings/
 ---
 
 ## Overview
@@ -31,8 +31,8 @@ gen.Parameters.Barcode.BarHeight.Pixels = 80;
 gen.Save($"{path}BarHeight80Code128.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-## Filling Control Bars
-For 1D barcodes, ***Aspose.Barcode for .NET*** provides a specific mode to generate barcodes with empty bars instead of filled ones. This can be done using the [*FilledBars*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
+## Bar Filling Modes
+For 1D barcodes, ***Aspose.Barcode for .NET*** provides a specific mode to generate barcodes with empty bars instead of filled ones. Such a modification can be done using the [*FilledBars*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
   
 |Bar Filling|Filled|Empty|
 |:---:|:---:|:---:|

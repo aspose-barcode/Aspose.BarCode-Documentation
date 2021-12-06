@@ -4,7 +4,7 @@ type: docs
 weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
-url: /net/adjusting-barcode-appearance/
+url: /net/image-formatting-and-display-settings/
 ---
 This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
 
@@ -20,7 +20,9 @@ The size of a barcode image can be managed according to different sizing modes t
 Below, the available barcode sizing modes are described in detail along with barcode examples and code snippets.
 
 ### AutoSizeMode.None  
-As mentioned previously, when the *None* mode is set, the size of the generated barcode image is based on various parameters while the values of width and height are not taken into consideration. The main parameter used to define barcode size is the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. It specifies the minimum size value of bars for 1D barcodes or cells for 2D ones. Then, this value is used to calculate most of the other parameters.   
+As mentioned previously, when the *None* mode is set, the size of the generated barcode image is based on various parameters while the values of width and height are not taken into consideration. The main parameter used to define barcode size is the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. It specifies the minimum size value of bars for 1D barcodes or cells for 2D ones. Then, this value is used to calculate most of the other parameters.  
+Barcode symbologies usually specify the minimum value (*XDimension*) to ensure compatibility between scanning and printing equipment used in open systems (barcode labels need to be readable by scanners used in different companies). *X-Dimension* determines the density of a symbology. This parameter defines the amount of information that can be stored in a barcode. When *X-Dimension* is small, the area required to display each character in a barcode label is less compared with the case when *X-Dimension* is large; thus a barcode can store more information per linear inch and is considered to be of a higher density. Otherwise, increasing the width of the narrowest element (*X-Dimension*) enlarges the space required for each character and reduces the number of characters per inch.  
+    
 The barcode image provided below has been created in the *None* mode.
 
 <p align="center"><img src="AutoSizeModeNone.png"></p>
@@ -39,6 +41,7 @@ gen.Save($"{path}AutoSizeModeNone.png", BarCodeImageFormat.Png);
 
 ### AutoSizeMode.Interpolation  
 When the *AutoSizeMode* property is set to "*Interpolation*", only the values of [*ImageHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*] are taken into account. This sizing mode attempts to adjust barcode image size to the specified height and width precisely even though it will lead to the distortion of barcode proportions and accordingly, to the loss of barcode readability for side scanners *Interpolation* is intended to generate barcode images with the resolution of 300 dpi or higher in which proportion distortion will be negligible and will not affect barcode readability.  
+  
 The sample barcode image created with the *Interpolation* mode being set is shown below.  
 
 <p align="center"><img src="AutoSizeModeInterpolation.png"></p> 
@@ -55,6 +58,7 @@ gen.Save($"{path}AutoSizeModeInterpolation.png", BarCodeImageFormat.Png);
   
 ### AutoSizeMode.Nearest  
 The *Nearest* mode uses only the values of [*ImageHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*] to set the size of the resulting barcode image similarly to *Interpolation*. However, in this case, *BarcodeGenerator* seeks to specify the most appropriate image size to avoid distorting barcode proportions and deteriorating its readability.  
+  
 The resulting barcode image generated using the *Nearest* mode is demonstrated below.
   
 <p align="center"><img src="AutoSizeModeNearest.png"></p>
@@ -155,12 +159,13 @@ gen.Save($"{path}Padding10Millimeters.png", BarCodeImageFormat.Png);
 ## Bar Width Reduction
 The width of bars in a barcode is an important parameter that requires to be set with high precision to ensure proper barcode scanning. Depending on the way of barcode printing, the initially specified width of bars may increase after printing out barcode labels due to ink floating. This effect is especially common in commercial printing with the use of conventional printing presses. Therefore, to ensure that printed barcode labels have acceptable bar width, it may be necessary to reduce this parameter in the barcode generation application by setting an appropriate bar width reduction value.  
 Bar width reduction (BWR) is a method to adjust a graphics design file of a barcode aiming to compensate for ink floating. ***Aspose.Barcode for .NET*** allows adjusting the width of bars in generated barcodes by setting the [*BarWidthReduction*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barwidthreduction) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). Initializing this property with the required value leads to decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
+  
 The sample barcodes shown below have been generated with and without bar width reduction.
   
 |Symbology|Bar Width Reduction 0|Bar Width Reduction 4|  
 |---|:---:|:---:|  
-|**Code 128**|<p align="center"><img src="Code128BarWidthReduction0.png"></p>|<p align="center"><img src="Code128BarWidthReduction4.png"></p>| 
-|**Data Matrix**|<p align="center"><img src="DataMatrixBarWidthReduction0.png"></p>|<p align="center"><img src="DataMatrixBarWidthReduction4.png"></p>|
+|**Code 128**|<img src="Code128BarWidthReduction0.png">|<img src="Code128BarWidthReduction3.png">| 
+|**Data Matrix**|<img src="DataMatrixBarWidthReduction0.png">|<img src="DataMatrixBarWidthReduction4.png">|
   
 The following code example describes how to set bar width reduction.
    

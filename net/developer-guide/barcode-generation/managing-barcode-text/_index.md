@@ -4,7 +4,7 @@ type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.Barcode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
-url: /net/managing-barcode-text/
+url: /net/working-with-barcode-text-appearance/
 ---
 
 In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.Barcode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes. 
@@ -109,9 +109,8 @@ gen.Save($"{path}CodetextSpace40Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
 ### Text Font Settings
-Параметры [Font] и [FontMode] позволяют настроить шрифт кодетекста. Параметр [FontMode] имеет два режима [Auto], в этом режиме настройки размера шрифта игнорируются и автоматически рассчитываются из размера самого штрихкода чтобы по-возможности кодетекст вместился в одну строку. В режиме [Manual] размер шрифта необходимо устанавливать вручную. Остальные параметры, как выбранный шрифт или его стили работают в обоих режимах.
 To customize the font of barcode text, the [*Font*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/font) and [*FontMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/fontmode) properties of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) need to be initiated. By default, the *Font* property is set to Arial 5pt regular; it is ignored in the case when the *Auto* mode is set in the *FontMode* property.  
-The *FontMOde* property allows adjusting the font size of barcode text. If *FontMode* is set to "*Auto*", font size is calculated automatically based on the value of *xDimension* so that text should preferably fit into a single line. In contrast, the *Manual* mode implies setting font size by hand. It is recommended to set *FontMode.Auto* especially in *AutoSizeMode.Nearest* or *AutoSizeMode.Interpolation*. Other parameters, such as font style, are initialized similarly in both modes.   
+The *FontMode* property allows adjusting the font size of barcode text. If *FontMode* is set to "*Auto*", font size is calculated automatically based on the value of *xDimension* so that text should preferably fit into a single line. In contrast, the *Manual* mode implies setting font size by hand. It is recommended to set *FontMode.Auto* especially in *AutoSizeMode.Nearest* or *AutoSizeMode.Interpolation*. Other parameters, such as font style, are initialized similarly in both modes.   
 The sample barcode images shown below have been generated using different font modes. 
     
 |Font Setting Mode|Auto|Manual|
@@ -309,6 +308,7 @@ gen.Save($"{path}CaptionFont.png", BarCodeImageFormat.Png);
 ### NoWrap Mode for Caption
 
 The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/nowrap) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) is intended to disable text line breaks in the case when a text string is too long to fit in a single line. When this property is set to "*True*", caption text is always displayed in a single line.  
+  
 The following barcode images show the difference in resulting barcode images in cases when the *NoWrap* property is initialized as *True* and *False*.
   
 |Caption Wrapping|Wrap|No Wrap|
