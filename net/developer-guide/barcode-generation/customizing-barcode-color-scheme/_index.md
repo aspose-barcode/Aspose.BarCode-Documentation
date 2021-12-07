@@ -10,8 +10,9 @@ This article describes the options provided by ***Aspose.BarCode for .NET*** to 
 
 ## Overview
 Generally, barcode images are created in black and white colors. However, to address the necessity to generate barcode labels of different colors, ***Aspose.BarCode for .NET*** enables customizing system RGB color for key barcode elements, such as:
-- Barcode background
-- Barcode bars
+- Background
+- Bars
+- Borders
 - Barcode text
 - Top and bottom captions
 
@@ -61,8 +62,7 @@ gen.Save($"{path}ColorBarcode.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ## Border Color
-It is possible to vary barcode border color by setting the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*.  
-The barcode image provided below has been created setting border color to (*Color.Green*).
+It is possible to vary barcode border color by setting the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*. The barcode image provided below has been created setting border color to (*Color.Green*).
   
 <p align="center"><image src="ColorBorder.png"></p>
   
@@ -87,8 +87,7 @@ gen.Save($"{path}ColorBorder.png", BarCodeImageFormat.Png);
 
 ## Barcode Text Color
 
-The color of barcode text that may be placed on a barcode image can be adjusted as well. To do this, it is required to initialize the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/color) property in property group [*CodeTextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codetextparameters). By default, the color of barcode text is set to *Black*.  
-The sample barcode image shown below has been generated with customized barcode text color setting (*Color.Green*).
+The color of barcode text that may be placed on a barcode image can be adjusted as well. To do this, it is required to initialize the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/color) property in property group [*CodeTextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codetextparameters). By default, the color of barcode text is set to *Black*. The sample barcode image shown below has been generated with the customized barcode text color setting (*Color.Green*).
   
 <p align="center"><image src="ColorCodetext.png"></p>
   
@@ -110,8 +109,7 @@ gen.Save($"{path}ColorCodetext.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
 ## Caption Color
-Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters).  
-The following barcode images have been generated using the customized caption color settings ((*Color.Green*)).
+Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
   
 |Adjusting Caption Color | |
 |:---|:---:|
