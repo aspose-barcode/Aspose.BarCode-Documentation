@@ -1,6 +1,6 @@
 ---
 title: Complex Barcodes
 type: docs
-weight: 30
+weight: 40
 url: /net/complex-barcodes/
 ---

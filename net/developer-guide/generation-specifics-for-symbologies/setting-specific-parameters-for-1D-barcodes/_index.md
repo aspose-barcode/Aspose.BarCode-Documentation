@@ -3,16 +3,16 @@ title: Setting Specific Parameters for 1D barcodes
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
-weight: 90
+weight: 20
 url: /net/managing-different-barcode-settings/
 ---
 
 ## Overview
-***Aspose.Barcode for .NET*** enables customizing various parameters that are specific for 1D barcode generation. Particularly for 1D barcode standards, developers can adjust the following display properties: the height of bars, the mode of bar filling, the wide-to-narrow ratio, and the automatic correction of invalid barcode text.  
+***Aspose.Barcode for .NET*** enables customizing various specific parameters for 1D barcode generation depending on business needs. Particularly for 1D barcode standards, developers can adjust the following display properties: the height of bars, the mode of bar filling, the wide-to-narrow ratio, and the automatic correction of invalid barcode text.  
 This article describes how to manage these properties using specified classes and properties of the library.  
 
 ## Setting Bar Height
-***Aspose.Barcode for .NET*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when the barcode size property, [*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode), is set to *AutoSizeMode.None* (see more information about this property [here](/barcode/net/adjusting-barcode-appearance/#barcode-image-sizing-modes/)). In this case, regardless of the value specified in the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, the bar height can be regulated using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property cannot be set for multi-row barcodes and 2D barcodes.
+***Aspose.Barcode for .NET*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when the barcode size property ([*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode)) is set to *AutoSizeMode.None* (see more information [here](/barcode/net/adjusting-barcode-appearance/#barcode-image-sizing-modes/)). In this case, regardless of the value set in the *XDimension* property, the bar height can be regulated using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property cannot be set for multiple-row barcodes and 2D barcodes.
   
 |Bar Height|40 Pixels|80 Pixels|
 |:---:|:---:|:---:|

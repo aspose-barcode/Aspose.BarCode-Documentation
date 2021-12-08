@@ -1,10 +1,10 @@
 ---
-title: Barcode Generation
+title: Barcode Generation Basics
 type: docs
 weight: 10
 url: /net/barcode-generation/
 ---
-This documentation chapter is dedicated to barcode generation and the related questions, such as supported symbologies, barcode appearance-related properties, managing barcode size, customizing barcode text, saving generated barcodes, working with GUI-based development tools, and many other subjects. You can find the required information in the articles specified below.
+This documentation chapter is dedicated to barcode generation basics and the related questions, such as supported symbologies, barcode appearance-related properties, managing barcode size, customizing barcode text, saving generated barcodes, working with GUI-based development tools, and many other subjects. You can find the required information in the articles specified below.
   
 ## New Articles
   
