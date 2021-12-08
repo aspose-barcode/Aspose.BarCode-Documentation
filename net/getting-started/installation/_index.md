@@ -2,13 +2,13 @@
 title: Installation
 type: docs
 description: "Installation of Aspose.BarCode for .NET: Through NuGet Package, Referencing, or Manual Installation"
-keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode Installation, Install Aspose.BarCode for .NET, C#"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Install Aspose.BarCode with NuGet, Aspose.BarCode Installation, Install Aspose.BarCode for .NET, C#"
 weight: 50
 url: /net/installation/
 ---
 
 ## **Overview**
-In this article, new users can find information and brief tutorials about how to install ***Aspose.BarCode for.NET*** and start using its classes in a .NET project. There are three ways to deploy ***Aspose.BarCode for.NET***: adding a NuGet package (simple and fast), referencing an Aspose.BarCode package in a project (more flexible) or installing the library manually from the archive (to perform custom installation). In each case, to start working with code without limitations, it is required to set the license first. You can see how to do that in [Licensing](/barcode/net/licensing/).  
+In this article, new users can find information and brief tutorials about how to install ***Aspose.BarCode for .NET*** and start using its classes in a .NET project. There are three ways to deploy ***Aspose.BarCode for .NET***: adding a NuGet package (simple and fast), referencing an Aspose.BarCode package in a project (more flexible) or installing the library manually from the archive (to perform custom installation). In each case, to start working with code without limitations, it is required to set the license first. You can see how to do that in [Licensing](/barcode/net/licensing/).  
 Below you can walk through all available installation modes and select the one that is the most appropriate in your case. If you have any specific questions or problems with installation, please check how to contact [Technical Support](/barcode/net/technical-support/). 
 
 ## **Using NuGet Package**
