@@ -6,7 +6,7 @@ url: /net/itf-barcodes/
 ---
 
 ## Overview
-The *ITF* symbology has been introduced by GS based on the *Interleaved 2 of 5* standard for the purposes of encoding trade identificatory GTIN. This barcode type allows encoding a set of only 14 digits where the last character is the check digit. 
+
 
 ## Border Settings for ITF14 and ITF6
 

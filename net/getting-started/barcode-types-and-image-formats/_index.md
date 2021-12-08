@@ -9,10 +9,10 @@ url: /net/barcode-types-and-image-formats/
 ## **Barcode Types and Supported Symbologies**
 ***Aspose.BarCode for .NET*** supports over 60 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. 
     
-*Linear barcode types*, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.   
-Matrix codes, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
+**Linear barcode types**, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.   
+**Matrix codes**, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
   
-*Postal barcode types* are specific barcode symbologies used by postal services in a variety of countries.
+**Postal barcode types** are specific barcode symbologies used by postal services in a variety of countries.
   
 <table> 
 <tr> <th></th><th></th> 
@@ -26,10 +26,10 @@ Standard 2 of 5, EAN5, EAN2, UPC A, UPC E, UpcaGs1DatabarCoupon
 </td> 
 </tr> 
 <tr> <th>Alpha-Numeric</th> 
-<td>Code128, Code39, Code93, Code16K, CodablockF, Databar Expanded, Databar Expanded Stacked, GS1 CodablockF, GS1 Code128, VIN</td> 
+<td>Code128, Code39, Code93, Code16K, Codablock-F, Databar Expanded, Databar Expanded Stacked, GS1 Codablock-F, GS1 Code128, VIN</td> 
  </tr> 
 <tr> <th colspan ="2" >2D</th> 
-<td>QR, MicroQR, PDF 417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec, Data Matrix, DotCode, GS1 Data Matrix, GS1 QR, MaxiCode</td> 
+<td>QR, MicroQR, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec, Data Matrix, DotCode, GS1 Data Matrix, GS1 QR, MaxiCode</td> 
  </tr> 
  <tr> <th colspan ="2">Postal</th> 
 <td>Australia Post, AustralianPosteParcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, SwissPostParcel, USPS OneCode</td> 
