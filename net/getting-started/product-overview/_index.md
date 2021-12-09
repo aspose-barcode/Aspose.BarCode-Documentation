@@ -38,6 +38,10 @@ The full list of features can be found in [Product Features](/barcode/net/produc
 ## **System Compatibility**
 ***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with System.Drawing.Common (.Net 5 inlcuded) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, Xamarin, UWP, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
 
+## **Licensing**  
+License is required to obtain access to the advanced functionality of ***Aspose.BarCode for .NET***. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. 
+More information about how to buy and set the license is provided in [Licensing](/barcode/net/licensing/). If you want to try ***Aspose.BarCode for .NET***, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for details.
+
 ## **Library Contents**
 ***Aspose.BarCode for .NET*** includes three main classes: [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to perform barcode scanning and recognizing, [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) to provide barcode generation according to the desired format requirements, and [*ComplexBarcode*](https://apireference.aspose.com/barcode/net/aspose.barcode.complexbarcode) to work with specific barcodes, for example, such as Swiss QR Code. 
   
@@ -97,7 +101,3 @@ using (FileStream lStream = new FileStream(dataDir + "Scan.png", FileMode.Open, 
     }
 }
 {{< /highlight >}} 
-
-## **Licensing**  
-License is required to obtain access to the advanced functionality of ***Aspose.BarCode for .NET***. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. 
-More information about how to buy and set the license is provided in [Licensing](/barcode/net/licensing/). If you want to try ***Aspose.BarCode for .NET***, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for details.
