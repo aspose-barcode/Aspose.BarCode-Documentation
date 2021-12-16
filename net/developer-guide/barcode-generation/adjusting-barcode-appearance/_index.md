@@ -3,13 +3,13 @@ title: Adjusting Barcode Appearance
 type: docs
 weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
+keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
 url: /net/image-formatting-and-display-settings/
 ---
 This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
 
 ## Overview
-In ***Aspose.Barcode for .NET***, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides bars constituting the barcode label itself are optional.
+In ***Aspose.BarCode for .NET***, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
   
 <p align="center"><img src="Barcode_View_Scheme.png"></p>
   
@@ -161,7 +161,7 @@ gen.Save($"{path}Padding10Millimeters.png", BarCodeImageFormat.Png);
   
 ## Bar Width Reduction
 The width of bars in a barcode is an important parameter that requires to be set with high precision to ensure proper barcode scanning. Depending on the way of barcode printing, the initially specified width of bars may increase after printing out barcode labels due to ink floating. This effect is common in commercial printing where conventional printing presses are widely used. Therefore, to ensure that printed barcode labels have acceptable bar width, it may be necessary to set an appropriate bar width reduction value.  
-Bar width reduction (BWR) is a method to adjust a graphic design file of a barcode aiming to compensate for ink floating. ***Aspose.Barcode for .NET*** allows adjusting the width of bars in generated barcodes by setting the [*BarWidthReduction*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barwidthreduction) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). Initializing this property with the required value results in decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
+Bar width reduction (BWR) is a method to adjust a graphic design file of a barcode aiming to compensate for ink floating. ***Aspose.BarCode for .NET*** allows adjusting the width of bars in generated barcodes by setting the [*BarWidthReduction*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barwidthreduction) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). Initializing this property with the required value results in decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
   
 The sample barcodes shown below have been generated with and without applying bar width reduction.
   

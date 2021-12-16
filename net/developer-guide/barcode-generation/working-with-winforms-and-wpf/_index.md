@@ -71,7 +71,7 @@ public MainWindow()
 ## Barcode Generation through WinForms GUI
 ***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation through WinForms. To start a new project in this way, follow the steps outlined below:
 1. Create a new project in WinForms
-2. Upload the ***Aspose.BarCode for .NET*** library using NuGet:
+2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*
      
 <p align="center"> <img src="WinForms_01.png"> </p> 
@@ -84,7 +84,7 @@ public MainWindow()
   
 <p align="center"> <img src="WinForms_03.png"> </p>  
   
-4. Insert the license setting code to the [*System.Windows.Forms.Form*] constructor as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode labels. If the license is activated successfully, the barcode will be generated as in the example below.  
+4. Insert the license setting code to the [*System.Windows.Forms.Form*](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.-ctor?view=netframework-4.8) constructor as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode labels. If the license is activated successfully, the barcode will be generated as in the example below.  
   
 <p align="center"> <img src="WinForms_04.png"> </p>
   

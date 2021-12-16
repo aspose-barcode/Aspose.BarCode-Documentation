@@ -3,7 +3,7 @@ title: Customizing Barcode Color Scheme
 type: docs
 weight: 60
 description: "How to Customize Color of Barcode Elements in Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Color, Set Barcode Color, Generate Colored Barcodes, Barcode Color in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
+keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Color, Set Barcode Color, Generate Colored Barcodes, Barcode Color in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
 url: /net/customizing-barcode-color-scheme/
 ---
 This article describes the options provided by ***Aspose.BarCode for .NET*** to adjust the color scheme of a barcode image and its main elements.

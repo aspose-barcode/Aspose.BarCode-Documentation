@@ -3,19 +3,19 @@ title: Managing Barcode Text
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.Barcode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
+keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
 url: /net/working-with-barcode-text-appearance/
 ---
 
-In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.Barcode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes. 
+In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.BarCode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes. 
 
 ## Overview
-Besides a barcode label itself, ***Aspose.Barcode for .NET*** enables the possibility to place human-readable text onto generated barcode images. This text information may include three fields as shown in the scheme below: main text, top caption, and bottom caption; any of these elements can be hidden.
+Besides a barcode label itself, ***Aspose.BarCode for .NET*** enables the possibility to place human-readable text onto generated barcode images. This text information may include three fields as shown in the scheme below: main text, top caption, and bottom caption; any of these elements can be hidden.
     
 <p align="center"><img src="Barcode_Text_Scheme.png"></p>
   
 ## Barcode Text
-Main barcode text represents short text information that is detached from the barcode label itself by some space. It can be placed on a barcode label in six different positions as shown in the scheme provided below: top left, top center, top right, bottom left, bottom center, or bottom right.
+Main barcode text represents short text information that is separated from the barcode label itself by some spacing. It can be placed on a barcode label in six different positions as shown in the scheme provided below: top left, top center, top right, bottom left, bottom center, or bottom right.
   
 <p align="center"><img src="Codetext_Scheme.png"></p>
    
@@ -63,7 +63,7 @@ gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
   
 **Alignment**
   
-The [*Alignment*]((https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/alignment)) property allows modifying the horizontal position of barcode text: on the left, in the center, or on the right, as demonstrated in the figures below. By default, it is set to "Center". 
+The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/alignment) property allows modifying the horizontal position of barcode text: on the left, in the center, or on the right, as demonstrated in the figures below. By default, it is set to "Center". 
   
 |Text Alignment|Left|Center|Right|
 |---|:---:|:---:|:---:|
@@ -195,7 +195,7 @@ gen.Save($"{path}CodetextTwoDDisplayText.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## Caption  
-In some cases, it may be necessary to display additional text information on a barcode image. To address such a need, ***Aspose.Barcode for .NET*** enables the possibility to place captions above and below the barcode label. As shown in the scheme below, captions have a property called *Padding* that is used to specify the size of spacings for all sides between a caption and the nearest element (barcode label itself, barcode text, or border). By default, both captions are hidden; they can be displayed by one or both at the same time.
+In some cases, it may be necessary to display additional text information on a barcode image. To address such a need, ***Aspose.BarCode for .NET*** enables the possibility to place captions above and below the barcode label. As shown in the scheme below, captions have a property called *Padding* that is used to specify the size of spacings for all sides between a caption and the nearest element (barcode label itself, barcode text, or border). By default, both captions are hidden; they can be displayed by one or both at the same time.
      
 <p align="center"><img src="Caption_Scheme.png"></p>
   
@@ -284,7 +284,7 @@ gen.Save($"{path}CaptionPadding40Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ### Caption Font
-***Aspose.Barcode for .NET*** does not provide the possibility to enable automatic font size adjustment depending on the size of a barcode label. Therefore, this parameter needs to be set manually. For top and bottom captions, it is possible to set the font, its style, and size independently. Font parameters can be adjusted using the [*Font*]()  property.  
+***Aspose.BarCode for .NET*** does not provide the possibility to enable automatic font size adjustment depending on the size of a barcode label. Therefore, this parameter needs to be set manually. For top and bottom captions, it is possible to set the font, its style, and size independently. Caption font parameters can be adjusted using the [*Font*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/font) property of class [CaptionParameters](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). By default, this property is set to Arial 8pt regular. 
 The barcode image below illustrates how the caption font can be displayed according to the desired settings.
    
 <p align="center"><img src="CaptionFont.png"></p>

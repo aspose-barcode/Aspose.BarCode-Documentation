@@ -2,17 +2,17 @@
 title: Setting Specific Parameters for 1D barcodes
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.Barcode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
+keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
 weight: 90
 url: /net/managing-different-barcode-settings/
 ---
 
 ## Overview
-***Aspose.Barcode for .NET*** enables customizing various parameters that are specific for 1D barcode generation. Particularly for 1D barcode standards, developers can adjust the following display properties: the height of bars, the mode of bar filling, the wide-to-narrow ratio, and the automatic correction of invalid barcode text.  
+***Aspose.BarCode for .NET*** enables customizing various parameters that are specific for 1D barcode generation. Particularly for 1D barcode standards, developers can adjust the following display properties: the height of bars, the mode of bar filling, the wide-to-narrow ratio, and the automatic correction of invalid barcode text.  
 This article describes how to manage these properties using specified classes and properties of the library.  
 
 ## Setting Bar Height
-***Aspose.Barcode for .NET*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when the barcode size property, [*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode), is set to *AutoSizeMode.None* (see more information about this property [here](/barcode/net/adjusting-barcode-appearance/#barcode-image-sizing-modes/)). In this case, regardless of the value specified in the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, the bar height can be regulated using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property cannot be set for multiple-row barcodes and 2D barcodes.
+***Aspose.BarCode for .NET*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when the barcode size property, [*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode), is set to *AutoSizeMode.None* (see more information about this property [here](/barcode/net/image-formatting-and-display-settings/)). In this case, regardless of the value specified in the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, the bar height can be regulated using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property cannot be set for multiple-row barcodes and 2D barcodes.
   
 |Bar Height|40 Pixels|80 Pixels|
 |:---:|:---:|:---:|
@@ -32,7 +32,7 @@ gen.Save($"{path}BarHeight80Code128.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## Bar Filling Modes
-For 1D barcodes, ***Aspose.Barcode for .NET*** provides a specific mode to generate barcodes with empty bars instead of filled ones. Such a modification can be done using the [*FilledBars*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
+For 1D barcodes, ***Aspose.BarCode for .NET*** provides a specific mode to generate barcodes with empty bars instead of filled ones. Such a modification can be done using the [*FilledBars*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
   
 |Bar Filling|Filled|Empty|
 |:---:|:---:|:---:|
@@ -53,7 +53,7 @@ gen.Save($"{path}BarsEmptyCode128.png", BarCodeImageFormat.Png);
 
 ## Setting Wide-to-Narrow Ratio
 Two-width 1D barcodes are based on the binary code principle, meaning that information is encoded using bars and spaces with two options of width: wide and narrow. Two-width barcode symbologies include the following: *Codabar*, *Code11*, *Code32*, *Code39*, *DataLogic 2 of 5*, *IATA 2 of 5*, *Interleaved 2 of 5*, *ITF6*, *ITF14*, *Matrix 2 of 5*, *MSI*, *OPC*, *PZN*, *Standard 2 of 5*, and *VIN*.  
-In ***Aspose.Barcode for .NET***, the **wide-to-narrow ratio** defines the relation between the width of wide and narrow elements. It can be set in the [*WideNarrowRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/widenarrowratio) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). The larger if the value of the wide-to-narrow ratio, the larger is the width of the generated barcode. However, the readability also improves with an increase in this parameter. By default, *WideNarrowRatio* is set to 3.  
+In ***Aspose.BarCode for .NET***, the **wide-to-narrow ratio** defines the relation between the width of wide and narrow elements. It can be set in the [*WideNarrowRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/widenarrowratio) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). The larger if the value of the wide-to-narrow ratio, the larger is the width of the generated barcode. However, the readability also improves with an increase in this parameter. By default, *WideNarrowRatio* is set to 3.  
   
 |Wide-to-Narrow Ratio|Is Set to 2|Is Set to 5|
 |:---:|:---:|:---:|
