@@ -89,8 +89,7 @@ The following code snippet shows how to modify the size of spacing between coupo
     
 {{< highlight csharp>}}
 BarcodeGenerator gen = new
-BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon,
-"123456789012(8110)ASPOSE");
+BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set coupon supplement space 30 pixels
 gen.Parameters.Barcode.Coupon.SupplementSpace.Pixels = 30;
