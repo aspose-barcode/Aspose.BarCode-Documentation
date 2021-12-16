@@ -4,12 +4,13 @@ type: docs
 weight: 20
 url: /net/generate-barcode-with-different-symbology/
 ---
-This documentation chapter focuses on the peculiarities of working with various barcode symbologies and corresponding barcode generation specificities in ***Aspose.BarCode for .NET***. All related information can be found in the articles listed below.
+This chapter focuses on the peculiarities of working with various barcode symbologies and corresponding barcode generation specificities in ***Aspose.BarCode for .NET***.  
+All related information can be found in the articles listed below.
    
-|Article|Description|
+| Article | Description |
 |---|---|
 |[Working with Symbologies](/barcode/net/symbologies-for-barcodes/)|Provides detailed information about barcode specifications and supported symbologies|
-|[Setting Specific Parameters for 1D Barcodes](/barcode/net/managing-different-barcode-settings/)|Outlines how to set various generation parameters that are specific for 1D barcodes, such as bar height, bar filling, and wide-to-narrow ratio|
+|[Specific Parameters for 1D Barcodes](/barcode/net/managing-different-barcode-settings/)|Outlines how to set various generation parameters that are specific for 1D barcodes, such as bar height, bar filling, and wide-to-narrow ratio|
 |[Codabar Barcodes](/barcode/net/codabar-barcodes/)|Describes how to generate Codabar barcodes, adjust start and stop symbols, and manage checksum settings|
 |[GS1 Barcodes](/barcode/net/generating-barcodes-using-new-barcode-generation-api/)|Explains how to apply GS1 standards to generated barcodes and create UPC-A Coupon barcodes|
 |[DataBar Barcodes](/barcode/net/databar-barcodes/)|Represents the specific information about generating DataBar barcodes, including barcode height adjustment, layout settings, and GS1 compatibility verification|
@@ -18,3 +19,9 @@ This documentation chapter focuses on the peculiarities of working with various 
 |[Codablock-F Barcodes](/barcode/net/code16k-barcodes/)|Provides information on how to generate Codablock-F barcodes and manage barcode height and layout settings|
 |[Patch Code Barcodes](/barcode/net/how-to-generate-a-patch-code/)|Describes how to create Patch Code barcodes and pages using different patterns and generation modes|
 |[Code 16K Barcodes](/barcode/net/code16k-barcodes/)|Specifies how to generate Code 16K barcodes with different barcode height and quiet zone settings|
+|[QR and Micro QR Codes](/barcode/net/qr-and-micro-qr-barcode/)|Explains how to generate QR and Micor QR codes|
+|[PDF417 and Macro PDF417 Barcodes](/barcode/net/pdf417-and-macropdf417-barcode/)|Describes how to create PDF417 and Macro PDF417 barcodes|
+|[Data Matrix Barcodes](/barcode/net/datamatrix-barcode)|Specifies how to generate Data Matrix barcodes|
+|[Aztec Barcodes](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the Aztec symbology|
+|[Barcodes with Logo](/barcode/net/barcode-with-image-in-place-of-codetext/)|Explains how to generate barcodes with a logo or an image instead of text|
+|[Specific Parameters for 2D Barcodes](/barcode/net/managing-2d-barcodes/)|Provides information about special parameters that can be managed during 2D barcode generation|

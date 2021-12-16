@@ -1,5 +1,5 @@
 ---
-title: Setting Specific Parameters for 1D barcodes
+title: Specific Parameters for 1D barcodes
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
