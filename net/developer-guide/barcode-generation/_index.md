@@ -1,5 +1,5 @@
 ---
-title: Barcode Generation
+title: Barcode Generation Basics
 type: docs
 weight: 10
 url: /net/barcode-generation/
@@ -9,12 +9,10 @@ This documentation chapter is dedicated to barcode generation basics and the rel
 |Article|Description|
 |---|---|
 |[Working with WinForms and WPF](/barcode/net/generate-barcodes-with-aspose-barcode-apis/)|Provides instructions on how to perform barcode generation by means of GUI-based .NET frameworks, such as Windows Forms and WPF|
-|[Working with Symbologies](/barcode/net/symbologies-for-barcodes/)|Provides detailed information about barcode specifications and supported symbologies|
 |[Adjusting Barcode Appearance](/barcode/net/image-formatting-and-display-settings/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
 |[Setting Barcode Parameters](/barcode/net/setting-barcode-parameters/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
 |[Managing Barcode Text](/barcode/net/working-with-barcode-text-appearance/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
 |[Customizing Barcode Color Scheme](/barcode/net/customizing-barcode-color-scheme/)|Represents the available options to customize the color scheme of barcodes and their elements|
 |[Saving Generated Barcodes](/barcode/net/saving-barcode-image/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
 |[Using Checksum in 1D Barcodes](/barcode/net/use-checksum-and-supplement-data/)|Describes checksum settings for 1D barcodes|
-|[Setting Specific Parameters for 1D Barcodes](/barcode/net/managing-different-barcode-settings/)|Outlines how to set various generation parameters that are specific for 1D barcodes, such as bar height, bar filling, and wide-to-narrow ratio|
   

@@ -3,7 +3,7 @@ title: Working with Symbologies
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in C# .NET, Barcode types in Aspose.BarCode for .NET, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF 417, Generate MicroQR, Generate Data Matrix"
-weight: 20
+weight: 10
 url: /net/symbologies-for-barcodes/
 ---
 This article introduces general information about barcode symbologies and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 
