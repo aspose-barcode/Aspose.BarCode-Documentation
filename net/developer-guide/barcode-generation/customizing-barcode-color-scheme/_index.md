@@ -111,9 +111,9 @@ gen.Save($"{path}ColorCodetext.png", BarCodeImageFormat.Png);
 ## Caption Color
 Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
   
-|Adjusting Caption Color | |
-|:---|:---:|
-|<p align="center"><image src="ColorCaptionAbove.png"></p>|<p align="center"><image src="ColorCaptionBelow.png"></p>|
+|Adjusting Caption Color|   |
+|:--|:--:|
+|<image src="ColorCaptionAbove.png">|<image src="ColorCaptionBelow.png">|
   
 The code example given below explains how to adjust caption color for top and bottom captions.
 {{< highlight csharp>}}

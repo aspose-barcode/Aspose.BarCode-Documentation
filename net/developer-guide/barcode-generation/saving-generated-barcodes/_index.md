@@ -99,19 +99,23 @@ gen.Save($"{path}RasterImageTiffInCmyk.tiff", BarCodeImageFormat.TiffInCmyk);
 {{< /highlight >}}  
 
 The examples of barcode labels created in TIFF and TIFFInCMYK formats are provided below.
-<a href="RasterImageTiff.tiff"> <p align="center"><img src="RasterImagePng.png" alttext="Saving to TIFF format"> </p></a>
-<a href="RasterImageTiffInCmyk.tiff"> <p align="center"><img src="RasterImagePng.png" alttext="Saving to TIFF format"> </p></a>
-
+  
+| Output Format | TIFF | TIFFInCMYK |
+|:--:|:--:|:--:|
+| |<a href="RasterImageTiff.tiff"><img src="RasterImagePng.png" alttext="Saving to TIFF format"></a>|<a href="RasterImageTiffInCmyk.tiff"><img src="RasterImagePng.png" alttext="Saving to TIFFInCMYK format"></a>|
+  
 ## Outputting in Vector Formats
 Vector data formats allow representing an image as a set of graphical operations that are consequently executed on a user's graphics unit. Namely, vector images can be created using mathematical formulas that establish points on a grid. Vector images can be scaled without losing resolution; therefore, vector files are more preferable for some tasks compared with raster files. At present, ***Aspose.BarCode for .NET*** allows saving barcode labels in two vector formats: EMF and SVG.
 
 ### EMF Format
 Enhanced Metafile (EMF) is a device-independent vector image format most used in Windows operating systems for printing purposes. An EMF image file contains the records of variable length in chronological order so that the stored image can be rendered after parsing on any output device. Such variable-length records can represent definitions of enclosed objects, commands for drawing, and graphics properties that are important to render the image accurately. When a device opens an EMF metafile using its own graphics environment, the dimension, proportions, colors, and other graphic properties of the original image remain unchanged regardless of the opening device platform. The code snippet below illustrates how to create barcode images in the EMF format.
+
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Emf
 gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
 {{< /highlight >}} 
+  
 <a href="VectorImageEmf.emf"> <p align="center"><img src="RasterImagePng.png" alttext="Saving to EMF format"> </p></a>
 
 

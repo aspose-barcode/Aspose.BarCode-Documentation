@@ -13,8 +13,8 @@ url: /net/code16k-barcodes/
   
 Sample *Code 16K* barcode labels demonstrated below have been generated with different barcode height settings of the aspect ratio. 
   
-|Aspect Ratio|Is Set to 10|Is Set to 20|
-|:---:|:---:|:---:|
+| Aspect Ratio | Is Set to 10 | Is Set to 20 |
+|:--:|:--:|:--:|
 | |<img src="Code16KAspectRatio10.png">|<img src="Code16KAspectRatio20.png">|
   
 The following code snippet shows how to set the height of *Code 16K* barcodes by defining the aspect ratio.
@@ -35,8 +35,8 @@ For the *Code 16K* symbology, ***Aspose.BarCode for .NET*** enables adjusting th
   
 *Code 16K* barcode images demonstrated below have been created using different settings of quiet zones.
   
-|Quiet Zone Coefficient|Is Set to 10|Is Set to 20|
-|:---:|:---:|:---:|:---:|:---:|
+| Quiet Zone Coefficient | Is Set to 10 | Is Set to 20 |
+|:--:|:--:|:--:|:--:|:--:|
 | |<img src="Code16KQuietZoneL10R10.png">|<img src="Code16KQuietZoneL20R20.png">|
   
 The following code sample illustrates how to customize quiet zone settings for *Code 16K* barcodes.
