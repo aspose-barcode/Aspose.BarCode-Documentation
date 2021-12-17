@@ -8,42 +8,40 @@ url: /net/datamatrix-barcode/
 ---
 
 ## **Create a Data Matrix Barcode**
-Data Matrix is used to encode product and serial number information on electrical rating plates; to mark of surgical instruments in Japan; to identify lenses, circuit boards, and other items during manufacturing. DataMatrix barcodes can store up to 2000 characters. Aspose.BarCode provides the most convenient way of producing a DataMatrix type of two-dimensional barcode.
+*Data Matrix* is used to encode the information about product and serial number on electrical rating plates; to mark surgical instruments in Japan; to identify lenses, circuit boards, and other items during manufacturing. *Data Matrix* barcodes can store up to 2,000 characters. ***Aspose.BarCode for .NET*** provides a simple and convenient way to generate *Data Matrix* barcodes.
 
 ### **How to Generate a Data Matrix Barcode**
-Instantiate a BarcodeGenerator and set its EncodeType to be DataMatrix, and set its CodeText property for the data you want to encode
+To generate *Data Matrix* barcodes it is required to create an instance of class *BarcodeGenerator* and set the *EncodeType* property to "DataMatrix". Then, the input data to be encoded need to be inserted in the *CodeText* property.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-UseEncodeModeDatamatrixbarcode-UseEncodeModeDatamatrixbarcode.cs" >}}
 
 ### **Encode Mode**
-Aspose.BarCode supports several types of encoding mode for DataMatrix, which is default to Auto, indicating the encoder to choose the best encode mode.
-What is the best encode mode?. The best encoding mode will likely produce the smallest picture under the same settings. What the encoder does is trying to encode two characters into one single byte. The following code snippet shows you how to use encode mode.
+***Aspose.BarCode for .NET*** supports several types of data encoding for Data Matrix barcodes. By default, the *Auto* mode is set, indicating the encoder to choose the most appropriate encode mode that will likely produce the smallest picture under the same settings. The encoder attempts to encode two characters into a single byte. The following code snippet shows how to set the encoding mode.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateEnCodeDatamatrixBarCode-CreateEnCodeDatamatrixBarCode.cs" >}}
 
 ### **Custom Encoding Mode**
-Aspose.BarCode now supports the [Custom encode mode](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/datamatrixencodemode) for DataMatrix to support Encoding standard like **UTF8**. The following code snippet shows you how to use custom encoding mode.
+***Aspose.BarCode for .NET*** supports the [Custom encode mode](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol/properties/datamatrixencodemode) property for *Data Matrix* to enable various encoding standards, for example, such as **UTF8**. The following code snippet illustrates how to use custom encoding mode.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CustomEncodingModeInDataMatrix-CustomEncodingModeInDataMatrix.cs" >}}
 
-
-## **Create C40 Encoded Datamatrix Barcode**
-Aspose.BarCode for .NET now supports creating Datamatix barcode with the C40 encoding scheme. The following code snippet demonstrates how simple it is to create a C40 encoded barcode.
+## **Create C40 Encoded Data Matrix Barcode**
+***Aspose.BarCode for .NET*** supports creating Data Matrix barcodes using the *C40* encoding scheme. The following code snippet demonstrates how to create a barcode in this way.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateC40DatamatrixBarCode-CreateC40DatamatrixBarCode.cs" >}}
 
-## **Create Text Encoded Datamatrix Barcode**
-Aspose.BarCode for .NET now supports creating Datamatix barcode with the Text encoding scheme. The following code snippet demonstrates how simple it is to create Text encoded barcode.
+## **Create Text Encoded Data Matrix Barcode**
+***Aspose.BarCode for .NET*** enables generating *Data Matrix* barcodes using the *Text* encoding scheme. The following code snippet explains how to generate barcodes in this way.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateTextDatamatrixBarCode-CreateTextDatamatrixBarCode.cs" >}}
 
-## **Create X12 Encoded Datamatrix Barcode**
-Aspose.BarCode for .NET now supports creating Datamatix barcodes with the X12 encoding scheme. The following code snippet demonstrates how simple it is to create an X12 encoded barcode.
+## **Create X12 Encoded Data Matrix Barcode**
+***Aspose.BarCode for .NET*** allows creating *Data Matrix* barcodes with the *X12* encoding scheme. The following code sample demonstrates how to create barcodes using this scheme.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateX12DatamatrixBarCode-createX12datamatrixbarcode.cs" >}}
 
-## **Create EDIFACT Encoded Datamatrix Barcode**
-Aspose.BarCode for .NET now supports creating Datamatix barcode with the EDIFACT encoding scheme which uses six bits per character, with four characters packed into three bytes. The following code snippet demonstrates how simple it is to create EDIFACT encoded barcode.
+## **Create EDIFACT Encoded Data Matrix Barcode**
+***Aspose.BarCode for .NET*** support barcode generation for the *Data Matrix* symbology using the *EDIFACT* encoding scheme that allows encoding six bits per character with four characters packed into three bytes. The following code snippet shows how to generated *EDIFACT*-encoded barcode.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-CreateEDIFACTDatamatrixBarCode-createEDIFACTdatamatrixbarcode.cs" >}}
 

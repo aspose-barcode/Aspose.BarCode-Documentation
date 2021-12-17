@@ -11,25 +11,25 @@ url: /net/qr-and-micro-qr-barcode/
 
 ## **Create QR or Micro QR Barcode**
 QR is a two-dimensional barcode symbology invented in Japan. QR barcodes have the following features:
-- High data encoding capacity (up to 7,000 numeric digits or 4,000 alphanumeric symbols)
-- Dirt and damage resistance (at maximum, 30% of codewords can be restored)
+- High data encoding capacity (up to 7,000 numerical digits or 4,000 alphanumeric symbols)
+- Dirt and damage resistance (at maximum, 30% of inpput text can be restored)
 - Readability from all directions
 
-The new [QR](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/qr) property has been added to class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) as [*BarcodeParameter*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) to serve as a QR / MicroQR selector. This property should be set as *ForceQR* (default) for standard QR symbols or *Auto* for MicroQR.
+The new [QR](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/qr) property has been added to class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) as [*BarcodeParameter*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) to serve as a QR / MicroQR selector. This property should be set to *ForceQR* (default) for standard QR symbols or *Auto* for MicroQR.
 
-In addition, the following QR parameters can be initialized:
+In addition, the following QR parameters can be initialized:
 
-1. **QrECIEncoding** – defines Extended Channel Interpretation Identifiers. It is used to store information about the references used for encoding data in a symbol. The current implementation includes all widely used charset encodings. At present, this property is applicable only to QR barcodes.
-2. **QrEncodeMode** - denotes a QR symbology type. The default mode is set to Auto.
-3. **QrEncodeType** - sets a QR / MicroQR selector mode. *ForceQR* is to be set for standard QR symbols, and *Auto* is for MicroQR ones.
+1. **QrECIEncoding** - defines Extended Channel Interpretation Identifiers. This parameter stores information about the references used to encode data in a symbol. The current implementation includes all widely used charset encodings. At present, this property is applicable only to QR barcodes.
+2. **QrEncodeMode** - denotes a QR symbology type. The default mode is set to Auto.
+3. **QrEncodeType** - sets a QR / MicroQR selector mode. *ForceQR* is to be set for standard QR symbols, and *Auto* is for MicroQR ones.
 4. **QrErrorLevel** - defines the level of the Reed-Solomon error correction for QR barcodes. It can range from low to high: LevelL, LevelM, LevelQ, and LevelH.
-5. **QrVersion** - identifies the version of *QR Code*: from Version1 to Version40 for QR codes, and from M1 to M4 for MicroQr. The default value is set to *QRVersion.Auto*.
+5. **QrVersion** - identifies the version of *QR Code*: from Version1 to Version40 for QR codes, and from M1 to M4 for MicroQr. The default value is set to *QRVersion.Auto*.
 
 [*Enum QREncodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodetype):
 
-1. **Auto** - initiates barcode version negotiation from MicroQR V1
-2. **ForceQR** – starts barcode version negotiation from QR V1
-3. **ForceMicroQR** - performs barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded using MicroQR, an exception is thrown.
+1. **Auto** - initiates barcode version negotiation from MicroQR V1
+2. **ForceQR** - starts barcode version negotiation from QR V1
+3. **ForceMicroQR** - performs barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded using MicroQR, an exception is thrown.
 
 The following changes have been added to Enum [*QREncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode/qrencodemode):
 

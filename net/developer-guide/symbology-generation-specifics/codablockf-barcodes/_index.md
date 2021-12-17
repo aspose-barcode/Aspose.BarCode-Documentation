@@ -14,8 +14,8 @@ In ***Aspose.BarCode for .NET***, developers can set the height of each row in a
   
 Barcode labels demonstrated below have been generated with different aspect ratio settings. 
   
-|Aspect Ratio|Is Set to 15|Is Set to 30|
-|:---:|:---:|:---:|
+| Aspect Ratio | Is Set to 15 | Is Set to 30 |
+|:--:|:--:|:--:|
 | |<img src="CodablockFAspectRatio15.png">|<img src="CodablockFAspectRatio30.png">|
   
 The following code snippet explains how to adjust the height of *Codablock-F* barcodes by setting the aspect ratio.
@@ -37,8 +37,8 @@ To set the layout of *Codablock-F* barcodes by defining the number of rows and c
   
 Barcode images provided below have been generated with different layout settings.
   
-|Layout Settings|4 Columns|4 Rows|6 Rows and 4 Columns|
-|:---:|:---:|:---:|:---:|:---:|
+| Layout Settings | 4 Columns | 4 Rows | 6 Rows and 4 Columns |
+|:--:|:--:|:--:|:--:|:--:|
 | |<img src="CodablockFCol4.png">|<img src="CodablockFRow4.png">|<img src="CodablockFRow6Col4.png">|
   
 The following code sample illustrates how to customize layout settings for *Codablock-F* barcodes.

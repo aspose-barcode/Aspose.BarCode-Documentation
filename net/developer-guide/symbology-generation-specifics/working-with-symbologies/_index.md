@@ -42,6 +42,7 @@ In substance, barcode symbologies are similar to file formats, as they define th
   
 ### Supported Symbologies
 All symbologies supported in ***Aspose.BarCode for .NET*** are outlined below.
+  
 <table> 
 <tr> <th></th><th></th> 
 <th><p align="center"><b>Supported Symbologies</b></p></th> 
@@ -64,6 +65,7 @@ Standard 2 of 5, EAN5, EAN2, UPC A, UPC E, UpcaGs1DatabarCoupon
  </tr> 
 </tr> 
 </table>
+  
 
 ## Setting Barcode Symbology in Aspose.BarCode
 ***Aspose.BarCode for .NET*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to create an instance of class *BarcodeGenerator* with two main parameters to be initialized: data contents to be encoded in the [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) property and the barcode type in the [*BarcodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/barcodetype) property. The *BarcodeType* property is used to define the symbology of generated barcodes. Developers can assign any symbology to the *BarcodeType* property out of the list of predefined barcode types supported by class *BarcodeGenerator*. However, not all barcode symbologies enable barcode generation with barcode text in a required format due to the limitations of a barcode type itself.  

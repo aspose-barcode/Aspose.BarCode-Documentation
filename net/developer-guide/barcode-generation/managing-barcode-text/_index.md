@@ -7,7 +7,7 @@ keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barc
 url: /net/working-with-barcode-text-appearance/
 ---
 
-In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.BarCode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes. 
+In the present article, you can find detailed information about how to manage text that can be placed onto barcode labels. To customize appearance-related parameters of barcode text in ***Aspose.BarCode for .NET***, developers can adjust various settings, such as visibility, location, font, spacings, and wrapping modes.
 
 ## Overview
 Besides a barcode label itself, ***Aspose.BarCode for .NET*** enables the possibility to place human-readable text onto generated barcode images. This text information may include three fields as shown in the scheme below: main text, top caption, and bottom caption; any of these elements can be hidden.
@@ -43,8 +43,8 @@ Barcode text can be adjusted on a barcode image in terms of its positioning, nam
   
 The [*Location*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) property is used to adjust the vertical position of barcode text: above or below the barcode label, as demonstrated in the figures below. By default, it is set to "Below". 
   
-|Text Location|Above Barcode|Below Barcode|
-|---|:---:|:---:|
+| Text Location | Above Barcode | Below Barcode |
+|:--:|:--:|:--:|
 | |<img src="CodetextLocationAbove.png">|<img src="CodetextLocationBelow.png">|
   
 The following code sample illustrates how to set the desired barcode text location.
@@ -65,8 +65,8 @@ gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
   
 The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/alignment) property allows modifying the horizontal position of barcode text: on the left, in the center, or on the right, as demonstrated in the figures below. By default, it is set to "Center". 
   
-|Text Alignment|Left|Center|Right|
-|---|:---:|:---:|:---:|
+| Text Alignment | Left | Center | Right |
+|:--:|:--:|:--:|:--:|
 | |<img src="CodetextAligmentLeft.png">|<img src="CodetextAligmentCenter.png">|<img src="CodetextAligmentRight.png">|
   
 The following code example shows how to specify the required barcode text alignment.
@@ -90,8 +90,8 @@ The following code example shows how to specify the required barcode text alignm
 By default, the spacing (gap) between a barcode label and text is rather small (2pt). Developers can increase or decrease this spacing by setting the [*Space*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/space) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters). This property is used to manage the spacing between barcode text and the barcode label from above or below depending on the barcode text position. It cannot be initialized for several symbologies, such as EAN8, EAN13, UPC E, UPC A, ISBN, ISMN, ISSN, and UpcaGs1DatabarCoupon.  
 The images provided below illustrate the barcodes generated with different spacing settings, namely, five and forty pixels.
   
-|Text Spacing|5 Pixels|40 Pixels|
-|---|:---:|:---:|
+| Text Spacing | 5 Pixels | 40 Pixels |
+|:--:|:--:|:--:|
 | |<img src="CodetextSpace5Pixels.png">|<img src="CodetextSpace40Pixels.png">|
   
 The following code snippet is provided to demonstrate how to adjust the spacing between the barcode label and text.
@@ -114,8 +114,8 @@ The *FontMode* property allows adjusting the font size of barcode text. If *Font
   
 The sample barcode images shown below have been generated using different font modes. 
     
-|Font Setting Mode|Auto|Manual|
-|---|:---:|:---:|
+| Font Setting Mode | Auto | Manual |
+|:--:|:--:|:--:|
 | |<img src="CodetextFontModeAuto.png">|<img src="CodetextFontModeManual.png">|
   
 **Auto Mode**
@@ -156,8 +156,8 @@ gen.Save($"{path}CodetextFontModeManual.png", BarCodeImageFormat.Png);
 The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/nowrap) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) is used to disable line breaks within the text when it is too long for a single row. If *NoWrap* is set to "*True*", barcode text is always displayed in one row. By default, the property is set to "*False*". 
 The figures below illustrate the difference in resulting barcode images in cases when the *NoWrap* property is set to *True* and *False*.
 
-|Text Wrapping Mode|Wrap|No Wrap|
-|---|:---:|:---:|
+| Text Wrapping Mode | Wrap | No Wrap |
+|:--:|:--:|:--:|
 | |<img src="CodetextLongTextWrap.png">|<img src="CodetextLongTextNoWrap.png">|
   
 The following code sample illustrates how to enable and disable the *NoWrap* mode.
@@ -203,8 +203,8 @@ In some cases, it may be necessary to display additional text information on a b
 
 As previously mentioned, both captions, [*CaptionAbove*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionabove) and [*CaptionBelow*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionbelow) contained in class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters), are hidden by default. To display any of them or both, it is required to initialize the [*Visible*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/visible) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) and enter some text information in the [*Text*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/text) property of the same class. Top and bottom captions can be placed on a barcode image independently from each other and barcode elements. If required, a caption can replace barcode text for 1D barcodes by setting the former visible and hiding the latter. The figures provided below illustrate how captions can be placed on generated barcode images.
   
-|Caption Visibility|Above|Below|
-|---|:---:|:---:|
+| Caption Visibility | Above | Below |
+|:--:|:--:|:--:|
 | |<img src="CaptionVisibleAbove.png">|<img src="CaptionVisibleBelow.png">|
   
 The following code snippet explains how to set captions visible.
@@ -229,8 +229,8 @@ gen.Save($"{path}CaptionVisibleBelow.png", BarCodeImageFormat.Png);
 ### Text Positioning
 The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/alignment) is used to adjust the horizontal positioning of captions in three ways: on the left, in the center, or on the right. By default, captions are placed in the center position. The figures below represent the barcode images generated with the top caption aligned in three ways.
   
-|Caption Alignment|Left|Center|Right|
-|---|:---:|:---:|:---:|
+| Caption Alignment | Left | Center | Right |
+|:--:|:--:|:--:|:--:|
 | |<img src="CaptionAlignmentLeft.png">|<img src="CaptionAlignmentCenter.png">|<img src="CaptionAlignmentRight.png">|
   
 The following code sample shows how to adjust caption alignment.
@@ -256,8 +256,8 @@ gen.Save($"{path}CaptionAlignmentRight.png", BarCodeImageFormat.Png);
 ### Caption Padding
 The [*Padding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/padding) property allows setting spacings for top and bottom captions. The default value is set to {5pt; 5pt; 0; 5pt} for *CaptionAbove* and to {0; 5pt; 5pt; 5pt} for *CaptionBelow* accoroding to the standard Windows Rectangle properties {Top, Left, Bottom, Right}. In the case of setting captions invisible this property is ignored. The sample barcode images provided below have been created adjusting the value of the *Padding* property for captions to five and forty pixels.
   
-|Caption Padding|5 Pixels|40 Pixels|
-|---|:---:|:---:|
+| Caption Padding | 5 Pixels | 40 Pixels |
+|:--:|:--:|:--:|
 | |<img src="CaptionPadding5Pixels.png">|<img src="CaptionPadding40Pixels.png">|
   
 The following code snippet demonstrates how to set caption paddings.
@@ -308,8 +308,8 @@ gen.Save($"{path}CaptionFont.png", BarCodeImageFormat.Png);
 
 The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/nowrap) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) is intended to disable text line breaks in the case when a text string is too long to fit in a single line. When this property is set to "*True*", caption text is always displayed in a single line. The following barcode images show the difference in resulting barcode images in cases when the *NoWrap* property is initialized as *True* and *False*.
   
-|Caption Wrapping|Wrap|No Wrap|
-|---|:---:|:---:|
+| Caption Wrapping | Wrap | No Wrap |
+|:--:|:--:|:--:|
 | |<img src="CaptionTextWrap.png">|<img src="CaptionTextNoWrap.png">|
   
 The code snippet provided below explains how to set the *NoWrap* mode for a barcode caption.

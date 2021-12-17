@@ -17,8 +17,8 @@ By default, start and stop characters are set to "A".
   
 Sample barcode labels demonstrated below have been generated with different settings for start and stop characters.
   
-|Start and Stop Characters|A+A|B+B|C+C|D+D|
-|:---:|:---:|:---:|:---:|:---:|
+| Start and Stop Characters | A+A | B+B | C+C | D+D |
+|:--:|:--:|:--:|:--:|:--:|
 | |<img src="CodabarStartAStopA.png">|<img src="CodabarStartBStopB.png">|<img src="CodabarStartCStopC.png">|<img src="CodabarStartDStopD.png">|
   
 The following code snippet illustrates how to set different combinations of start and stop characters in *Codabar* barcodes. 
@@ -60,8 +60,8 @@ To enable a checksum for this barcode type, it is necessary to initialize the pr
   
 *Codabar* barcode images provided below have been created with different checksum calculation settings.
 
-|Checksum Calculation|Is Set to *None*|Is Set to *Mod10*|Is Set to *Mod16*|
-|:---:|:---:|:---:|:---:|
+| Checksum Calculation | Is Set to *None* | Is Set to *Mod10* | Is Set to *Mod16* |
+|:--:|:--:|:--:|:--:|
 | |<img src="CodabarChecksumNone.png">|<img src="CodabarChecksumMod10.png">|<img src="CodabarChecksumMod16.png">|
   
 The following code sample explains how to enable different checksum standards (Mod10 and Mod16) for *Codabar* barcodes. 

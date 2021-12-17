@@ -16,8 +16,8 @@ In ***Aspose.BarCode for .NET***, developers can set five different styles for *
   
 Sample barcode labels provided below illustrate how the appearance of barcode frames will change depending on particular settings. 
   
-|Frame Style|No Borders (*None*)|Normal Frame (*Frame*)|Horizontal Lines (*Bar*)|Outside Frame (*FrameOut*)|Outside Lines (*BarOut*)|
-|:---:|:---:|:---:|:---:|:---:|:---:|
+| Frame Style | No Borders (*None*) | Normal Frame (*Frame*) | Horizontal Lines (*Bar*) | Outside Frame (*FrameOut*) | Outside Lines (*BarOut*) |
+|:--:|:--:|:--:|:--:|:--:|:--:|
 | |<img src="ITF14BorderNone.png">|<img src="ITF14BorderFrame.png">|<img src="ITF14BorderBar.png">|<img src="ITF14BorderFrameOut.png">|<img src="ITF14BorderBarOut.png">|
   
 The following code snippet explains how to adjust the frame style considering the *ITF14* symbology as an example.
@@ -47,8 +47,8 @@ Depending on specific industrial requirements, the library enables adjusting bor
   
 *ITF14* barcode labels shown below have been generated with different border thickness settings.
   
-|Border Thickness|Is Set to 5 Pixels|Is Set to 15 Pixels|
-|:---:|:---:|:---:|
+| Border Thickness | Is Set to 5 Pixels | Is Set to 15 Pixels |
+|:--:|:--:|:--:|
 | |<img src="ITF14BorderSize5Pixels.png">|<img src="ITF14BorderSize15Pixels.png">|
   
 The following code sample shows how to set different border thickness values using the *ITF14* symbology as an example.
@@ -65,13 +65,13 @@ gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 15;
 gen.Save($"{path}ITF14BorderSize15Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-## Setting Quiet Zone
+## Quiet Zone Settings
 In ***Aspose.BarCode for .NET***, developers can customize the size of the quiet zone in *ITF* barcodes by setting the [*QuietZoneCoef*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/itfparameters/properties/quietzonecoef) property of class [*ITFParameters*]( https://apireference.aspose.com/barcode/net/aspose.barcode.generation/itfparameters). This property is defined as a relative coefficient to the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter.  
   
 *ITF14* barcode images demonstrated below as examples have been generated using different settings for the quiet zone. 
   
-|Quiet Zone Coefficient|Is Set to 10|Is Set to 30|
-|:---:|:---:|:---:|
+| Quiet Zone Coefficient | Is Set to 10 | Is Set to 30 |
+|:--:|:--:|:--:|
 | |<img src="ITF14QuietZone10.png">|<img src="ITF14QuietZone30.png">|
   
 The following code sample illustrates how to adjust the appearance of the quiet zone for *ITF14* barcodes.

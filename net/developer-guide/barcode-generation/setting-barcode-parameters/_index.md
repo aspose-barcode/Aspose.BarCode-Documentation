@@ -17,8 +17,8 @@ Class [*Unit*](https://apireference.aspose.com/barcode/net/aspose.barcode.genera
   
 Barcode images generated using different unit settings (three pixels and two millimeters) are demonstrated below.
    
-|Size Units|Pixels|Millimeters|
-|---|:---:|:---:|
+| Size Units | Pixels | Millimeters |
+|:--:|:--:|:--:|
 | |<image src="UnitIn3Pixels.png">|<image src="UnitIn2Millimeters.png">|
   
 The following code snippet illustrates how to implement the settings as in the provided barcode labels.
@@ -38,8 +38,8 @@ gen.Save($"{path}UnitIn2Millimeters.png", BarCodeImageFormat.Png);
   
 Barcode labels created with different resolution settings (96 dpi and 300 dpi) are shown below.
   
-|Resolution|96 dpi|300 dpi|
-|---|:---:|:---:|
+| Resolution | 96 dpi | 300 dpi |
+|:--:|:--:|:--:|
 | |<image src="UnitIn1MillimeterResolution96.png">|<image src="UnitIn1MillimeterResolution300.png">|
   
 The following code example is provided to demonstrate how to customize resolution settings.

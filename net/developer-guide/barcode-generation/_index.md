@@ -6,7 +6,7 @@ url: /net/barcode-generation/
 ---
 This documentation chapter is dedicated to barcode generation basics and the related questions, such as supported symbologies, barcode appearance-related properties, managing barcode size, customizing barcode text, saving generated barcodes, working with GUI-based development tools, and many other subjects. You can find the required information in the articles specified below.
    
-|Article|Description|
+| Article | Description |
 |---|---|
 |[Working with WinForms and WPF](/barcode/net/generate-barcodes-with-aspose-barcode-apis/)|Provides instructions on how to perform barcode generation by means of GUI-based .NET frameworks, such as Windows Forms and WPF|
 |[Adjusting Barcode Appearance](/barcode/net/image-formatting-and-display-settings/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
