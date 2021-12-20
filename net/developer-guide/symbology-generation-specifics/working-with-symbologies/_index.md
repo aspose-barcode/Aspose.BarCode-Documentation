@@ -35,7 +35,7 @@ Barcode symbology defines the way of encoding information in a barcode image. Ea
   
 ### Key Barcode Properties 
 In substance, barcode symbologies are similar to file formats, as they define the following key barcode properties:
-- [**Data encryption format**](#dataencryption). Different barcode types are capable of encoding sets of characters with different limitations: only numerical digits, only alphabet and special characters, entire encodings, etc. 
+- [**Data encoding format**](#dataencoding). Different barcode types are capable of encoding sets of characters with different limitations: only numerical digits, only alphabet and special characters, entire encodings, etc. 
 - [**Data density**](#datadensity). Each symbology has a specified capacity of how much information can be encoded in a barcode. Accordingly, barcodes may have high or low data density. 
 - [**Shape**](#shape). Barcode shapes can be rectangular, square, or adjusted to elongated spaces.
 - [**Recognition precision**](#precision). Some 1D barcode types do not include checksum and corresponding controls, and thus it is impossible to verify whether all data contained in a barcode have been recognized and decrypted correctly. Such barcodes have low recognition precision. In contrast, 2D barcodes not only allow recovering partially corrupted data but also have high recognition precision because they provide mechanisms to guarantee that all barcode data have been read properly. 
@@ -98,14 +98,14 @@ gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
-## Data Encryption Formats
-<a name="dataencryption"></a>
+## Data Encoding Formats
+<a name="dataencoding"></a>
 
-Different symbologies have different underlying data encryption approaches and capabilities. Accordingly, barcode label size and the amount of data to be encoded are predefined for each symbology. Some barcode types allow encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations.  
+Different symbologies have different underlying data encoding approaches and capabilities. Accordingly, barcode label size and the amount of data to be encoded are predefined for each symbology. Some barcode types allow encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations.  
 Further in the article, several barcode types (*EAN13*, *Code11*, *GS1 Code128*, and *PDF417*)) with different data densities are presented as examples.   
 
 **EAN13**  
-*EAN13* barcodes can encode only numerical digits. Specifically, the *EAN13* data encryption format requires encoding precisely 12 digits with the 13th one used as a control sum calculated according to the specified algorithm. 
+*EAN13* barcodes can encode only numerical digits. Specifically, the *EAN13* data encoding format requires encoding precisely 12 digits with the 13th one used as a control sum calculated according to the specified algorithm. 
   
 <p align="center"><image src="Ean13.png"></p>
 
@@ -130,7 +130,7 @@ gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 **GS1 Code128**  
-*GS1 Code128* can encode any of ASCII alphanumeric characters similarly to the basic *Code128* symbology. However, in *GS1 Code128*, the data encryption format is defined strictly according to the GS1 standards.  
+*GS1 Code128* can encode any of ASCII alphanumeric characters similarly to the basic *Code128* symbology. However, in *GS1 Code128*, the data encoding format is defined strictly according to the GS1 standards.  
   
 <p align="center"><image src="GS1Code128.png"></p>
   
