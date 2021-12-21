@@ -7,8 +7,8 @@ url: /cpp/aspose-barcode-for-cpp-21-12-release-notes/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for C++ 21.12](https://downloads.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c---21.12/).
-Please check also [CodePorting.Native Cs2Cpp 21.12 release notes](https://docs.codeporting.com/native/cs2cpp/release-notes/2021/codeporting-native-cs2cpp-21-12/).
+This page contains release notes information for [Aspose.BarCode for C++ 21.12](https://downloads.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c---21.12/).<br/>
+Please also check [CodePorting.Native Cs2Cpp 21.12 release notes](https://docs.codeporting.com/native/cs2cpp/release-notes/2021/codeporting-native-cs2cpp-21-12/).
 
 {{% /alert %}} 
 ## **All Changes**
@@ -21,9 +21,10 @@ Please check also [CodePorting.Native Cs2Cpp 21.12 release notes](https://docs.c
 |BARCODENET-37976|Serialize BarcodeGenerator to XML Stream|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
-- Added method Aspose::BarCode::Generation::BarcodeGenerator::ExportToXml(System::SharedPtr<System::IO::Stream>)
-- Added method Aspose::BarCode::Generation::BarcodeGenerator::ImportFromXml(System::SharedPtr<System::IO::Stream>)
+- Added method Aspose::BarCode::Generation::BarcodeGenerator::ExportToXml(System::SharedPtr&nblt;System::IO::Stream&nbgt;)
+- Added method Aspose::BarCode::Generation::BarcodeGenerator::ImportFromXml(System::SharedPtr&nblt;System::IO::Stream&nbgt;)
 
 ## **Notice for upcomig release**
 - Code 39 standard and Code 39 extended symbologies will be merged into Code 39
 - Code 93 standard and Code 93 extended symbologies will be merged into Code 93
+
