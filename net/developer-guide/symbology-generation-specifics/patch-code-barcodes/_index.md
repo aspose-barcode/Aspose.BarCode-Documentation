@@ -12,9 +12,9 @@ The *Patch Code* symbology has been developed by Kodak to facilitate task manage
 ***Aspose.BarCode for .NET*** enables generating the main *Patch Code* set that consists of six patterns. The extended set of patterns introduced by Kodak later on and not standardized yet is not supported by the library. The main pattern set includes the following options: *Patch I*, *Patch II*, *Patch III*, *Patch IV*, *Patch T*, and *Patch VI*.
 Sample barcode labels provided below illustrate six basic *Patch Code* barcode types.
   
-| Patch Code Standards | Patch I | Patch II | Patch III | Patch IV | Patch T | Patch VI |  
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-| |<img src="PatchCodeI.png">|<img src="PatchCodeII.png">|<img src="PatchCodeIII.png">|<img src="PatchCodeIV.png">|<img src="PatchCodeT.png">|<img src="PatchCodeVI.png">|
+|Patch Code Standards|Patch I|Patch II|Patch III|Patch IV|Patch T|Patch VI|  
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| |<img src="patchcodei.png">|<img src="patchcodeii.png">|<img src="patchcodeiii.png">|<img src="patchcodeiv.png">|<img src="patchcodet.png">|<img src="patchcodevi.png">|
   
 The following code snippet explains how to generate *Patch Code* barcodes using available patterns.
   
@@ -61,9 +61,9 @@ To add a complementary QR code to a *Patch Code* barcode page (A4 or US Letter),
   
 Images below illustrate the *Patch Code* barcode pages generated with and without adding complementary QR codes.
   
-| Complementary QR Code | Is Disabled | Is Enabled |
-|:--:|:--:|:--:|
-| |<a href="PatchCodeA4WithoutQR.png"> <p align="center"><img src="PatchCodeA4WithoutQR.png" width="40%" height="40%" alttext="Patch Code Barcode Without QR"></p></a>|<a href="PatchCodeA4WithQR.png"> <p align="center"><img src="PatchCodeA4WithQR.png" width="40%" height="40%" alttext="Patch Code Barcode With QR"></p></a>|
+|Complementary QR Code|Is Disabled|Is Enabled|
+| :-: | :-: | :-: |
+| |<a href="patchcodea4withoutqr.png"> <p align="center"><img src="patchcodea4withoutqr.png" width="40%" height="40%" alttext="Patch Code Barcode Without QR"></p></a>|<a href="patchcodea4withqr.png"> <p align="center"><img src="patchcodea4withqr.png" width="40%" height="40%" alttext="Patch Code Barcode With QR"></p></a>|
   
     
 **Code Sample for Generation Modes**

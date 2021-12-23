@@ -11,11 +11,11 @@ url: /net/code16k-barcodes/
 ## Barcode Height Settings
 ***Aspose.BarCode for .NET*** allows adjusting the height of each row in a *Code 16K* barcode by initializing the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters/properties/aspectratio) property of class [Code16KParameters](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters). *AspectRatio* is defined as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. In the *Code 16K* symbology, it is recommended to set the value of *AspectRatio* greater than 8.  
   
-Sample *Code 16K* barcode labels demonstrated below have been generated with different barcode height settings of the aspect ratio. 
+Sample *Code 16K* barcode labels demonstrated below have been generated with different barcode height settings. 
   
-| Aspect Ratio | Is Set to 10 | Is Set to 20 |
-|:--:|:--:|:--:|
-| |<img src="Code16KAspectRatio10.png">|<img src="Code16KAspectRatio20.png">|
+|Aspect Ratio|Is Set to 10|Is Set to 20|
+| :-: | :-: | :-: |
+| |<img src="code16kaspectratio10.png">|<img src="code16kaspectratio20.png">|
   
 The following code snippet shows how to set the height of *Code 16K* barcodes by defining the aspect ratio.
   
@@ -35,9 +35,9 @@ For the *Code 16K* symbology, ***Aspose.BarCode for .NET*** enables adjusting th
   
 *Code 16K* barcode images demonstrated below have been created using different settings of quiet zones.
   
-| Quiet Zone Coefficient | Is Set to 10 | Is Set to 20 |
-|:--:|:--:|:--:|:--:|:--:|
-| |<img src="Code16KQuietZoneL10R10.png">|<img src="Code16KQuietZoneL20R20.png">|
+|Quiet Zone Coefficient|Is Set to 10|Is Set to 20|
+| :-: | :-: | :-: | :-: | :-: |
+| |<img src="code16kquietzonel10r10.png">|<img src="code16kquietzonel20r20.png">|
   
 The following code sample illustrates how to customize quiet zone settings for *Code 16K* barcodes.
   

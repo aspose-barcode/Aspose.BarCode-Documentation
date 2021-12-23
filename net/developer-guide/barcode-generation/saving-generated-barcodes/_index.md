@@ -54,7 +54,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}RasterImageBmp.bmp", BarCodeImageFormat.Bmp);
 {{< /highlight >}}
 The example of a barcode image generated in the BMP format is demonstrated below.
-<p align="center"><image src="RasterImageBmp.bmp"></p>
+<p align="center"><image src="rasterimagebmp.bmp"></p>
 
 ### PNG Format
 Portable Network Graphics (PNG) is a raster file format that enables lossless data compression. PNG is the most preferred format to create barcode images. Barcode labels generated in this format will be of 32-bit color depth and without losses. The following code example can be used to save barcode images in the PNG format.
@@ -64,7 +64,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}RasterImagePng.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 The resulting barcode label generated in the PNG format is given below.
-<p align="center"><image src="RasterImageBmp.bmp"></p>
+<p align="center"><image src="rasterimagebmp.bmp"></p>
 
 ### GIF Format
 Graphics Interchange Format (GIF) is a lossless raster image format that contains only 256 colors and supports both static and animated images. In ***Aspose.BarCode for .NET***, it can be applied only to black and white raster images. The code sample shown below describes how to save barcode images in the GIF format.
@@ -74,7 +74,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}RasterImageGif.gif", BarCodeImageFormat.Gif);
 {{< /highlight >}} 
 The barcode image example generated in the GIF format is demonstrated below.
-<p align="center"><image src="RasterImageGif.gif"></p>
+<p align="center"><image src="rasterimagegif.gif"></p>
 
 ### JPEG Format
 JPEG is a standard image format to store lossy and compressed image data. Due to compression, the output image is a trade-off between storage size and image quality and usually contains artifacts and graphical noises. This format is the least recommended to save generated barcodes. The following code snippet can be used to generate barcode labels in the JPEG format.
@@ -85,7 +85,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}RasterImageJpeg.jpeg", BarCodeImageFormat.Jpeg);
 {{< /highlight >}} 
 The example of a barcode image generated in the JPEG format is represented below.
-<p align="center"><image src="RasterImageJpeg.jpeg"></p>
+<p align="center"><image src="rasterimagejpeg.jpeg"></p>
 
 ### TIFF (TIFFInCMYK) Format
 Tagged Image File Format (TIFF) is a lossless raster format that provides extremely high image quality and supports 32-bit color. It is the only output format that in its variation TIFFInCMYK, enables the CMYK color scheme. The code sample represented below describes how to create barcode images in the TIFF format.
@@ -100,9 +100,9 @@ gen.Save($"{path}RasterImageTiffInCmyk.tiff", BarCodeImageFormat.TiffInCmyk);
 
 The examples of barcode labels created in TIFF and TIFFInCMYK formats are provided below.
   
-| Output Format | TIFF | TIFFInCMYK |
-|:--:|:--:|:--:|
-| |<a href="RasterImageTiff.tiff"><img src="RasterImagePng.png" alttext="Saving to TIFF format"></a>|<a href="RasterImageTiffInCmyk.tiff"><img src="RasterImagePng.png" alttext="Saving to TIFFInCMYK format"></a>|
+|Output Format|TIFF|TIFFInCMYK|
+| :-: | :-: | :-: |
+| |<a href="rasterimagetiff.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFF format"></a>|<a href="rasterimagetiffincmyk.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFFInCMYK format"></a>|
   
 ## Outputting in Vector Formats
 Vector data formats allow representing an image as a set of graphical operations that are consequently executed on a user's graphics unit. Namely, vector images can be created using mathematical formulas that establish points on a grid. Vector images can be scaled without losing resolution; therefore, vector files are more preferable for some tasks compared with raster files. At present, ***Aspose.BarCode for .NET*** allows saving barcode labels in two vector formats: EMF and SVG.
@@ -116,7 +116,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
 {{< /highlight >}} 
   
-<a href="VectorImageEmf.emf"> <p align="center"><img src="RasterImagePng.png" alttext="Saving to EMF format"> </p></a>
+<a href="vectorimageemf.emf"> <p align="center"><img src="rasterimagepng.png" alttext="Saving to EMF format"> </p></a>
 
 
 ### SVG Format
@@ -132,4 +132,4 @@ gen.Save($"{path}VectorImageSvg.svg", BarCodeImageFormat.Svg);
   
 The example of a barcode label created in the SVG format is provided below.
   
-<p align="center"><image src="VectorImageSvg.svg"></p>
+<p align="center"><image src="vectorimagesvg.svg"></p>

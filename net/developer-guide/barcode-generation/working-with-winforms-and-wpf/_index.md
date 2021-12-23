@@ -74,19 +74,19 @@ public MainWindow()
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*
      
-<p align="center"> <img src="WinForms_01.png"> </p> 
+<p align="center"> <img src="winforms_01.png"> </p> 
   
 - Select and install the ***Aspose.BarCode for .NET*** package
   
-<p align="center"> <img src="WinForms_02.png"> </p>
+<p align="center"> <img src="winforms_02.png"> </p>
      
 3. Drag the *BarCodeGeneratorControl* component from the ***Aspose.BarCode for .NET*** directory in **Toolbox** to the form 
   
-<p align="center"> <img src="WinForms_03.png"> </p>  
+<p align="center"> <img src="winforms_03.png"> </p>  
   
 4. Insert the license setting code to the [*System.Windows.Forms.Form*](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form.-ctor?view=netframework-4.8) constructor as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode labels. If the license is activated successfully, the barcode will be generated as in the example below.  
   
-<p align="center"> <img src="WinForms_04.png"> </p>
+<p align="center"> <img src="winforms_04.png"> </p>
   
 ## Barcode Generation through WPF
 
@@ -95,20 +95,20 @@ public MainWindow()
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*  
      
-<p align="center"> <img src="WPF_01.png"> </p>  
+<p align="center"> <img src="wpf_01.png"> </p>  
      
 - Install the ***Aspose.BarCode for .NET*** package
      
-<p align="center"> <img src="WPF_02.png"> </p>
+<p align="center"> <img src="wpf_02.png"> </p>
      
 3. In **Toolbox**, open the *Choose Items* menu. Then, on the *WPF Components* tab, make sure that the checkbox for *BarcodeGeneratorElement* is selected. After that, click on the *Browse* button and choose the library *.NET Framework 3.0* or later  
-<p align="center"> <img src="WPF_03.png"> </p>  
+<p align="center"> <img src="wpf_03.png"> </p>  
     
 4. Drag the *BarcodeGeneratorElement* component from **Toolbox** to the form  
   
-<p align="center"> <img src="WPF_04.png"> </p>  
+<p align="center"> <img src="wpf_04.png"> </p>  
     
 5. Add the license setting code to the *System.Windows.Window* WPF window as described above in [License Setting](#licensesetting); otherwise, watermarks will be placed onto generated barcode images. If the license is activated successfully, the barcode will be generated as in the example below.  
   
-<p align="center"> <img src="WPF_05.png"> </p>   
+<p align="center"> <img src="wpf_05.png"> </p>   
 

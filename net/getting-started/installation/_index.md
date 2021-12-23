@@ -16,13 +16,13 @@ Installing ***Aspose.BarCode for .Net*** through NuGet is the most convenient wa
 1. Create a new project using .NET Framework or .NET Core in Visual Studio 2019.
 2. In ***Solution Explorer***, make a right mouse click on References and select *Manage NuGet Packages*.
   
-<p align="center"> <img src="AddNuget01.png"> </p>
+<p align="center"> <img src="addnuget01.png"> </p>
   
 
   
 3. In the ***NuGet Package Manager*** window, go to the *Browse* tab, type “Aspose.barcode” in the text box, and click the *Install* button.
   
-<p align="center"> <img src="AddNuget02.png"> </p>
+<p align="center"> <img src="addnuget02.png"> </p>
   
 4. Now the library has been downloaded and installed successfully.
 
@@ -54,15 +54,15 @@ This installation mode is introduced for experienced users who would like to per
 3. As soon as the download has been completed, select the required library and copy it into the project folder or the folder with libraries.
 4. In ***Solution Explorer***, make a right mouse click on *References* and select *Add Reference*.  
    
-<p align="center"> <img src="AddLib01.png"> </p>  
+<p align="center"> <img src="addlib01.png"> </p>  
     
 5. Go to the *Browse tab* and click the *Browse* button.  
     
-<p align="center"> <img src="AddLib02.png"> </p>    
+<p align="center"> <img src="addlib02.png"> </p>    
     
 6. Select the required library version and click the *OK* button.  
   
-<p align="center"> <img src="AddLib03.png"> </p>  
+<p align="center"> <img src="addlib03.png"> </p>  
     
 7. The library has been installed successfully.
 
