@@ -18,18 +18,18 @@ Also you can buy [Commercial License]( https://purchase.aspose.com/admin/pricing
 
 1. To install license with ***ConfigLicense*** utility you need to run it and this is possible by two ways. First way is running from Start Menu ***Aspose\SSRS Configure License***. Other way is running from ***{Package Folder}\ Tools\ConfigLicense.exe***.
 
-<img style="border:1px solid black;" src="ConfigLicense_From_Menu.png" alt="ConfigLicense from Start menu" />
+<img style="border:1px solid black;" src="configlicense_from_menu.png" alt="ConfigLicense from Start menu" />
 
 2. Then you just need to click ***Add new license button*** and select proper license file. License is written to system registry and can be written to only current user registry branch or to all users (local machine). SQL Server Reporting Services requires installing license to all users or local machine, Visual Studio can work with current user registry branch. But better choice is installing license to all users.
 
-<img style="border:1px solid black;" src="License_Config_01.png" alt="ConfigLicense Form" />
+<img style="border:1px solid black;" src="license_config_01.png" alt="ConfigLicense Form" />
 
 License removing is possible with ***Remove selected license*** or ***Remove all licenses*** buttons.
 
 ## **Install license to registry manually**
 You can manually install license to registry. You need manually add data from license file to any named value in registry branch ***HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Aspose\SSRS\License*** as registry binary value.
 
-<img style="border:1px solid black;" src="License_Config_02.png" alt="License in the registry" />
+<img style="border:1px solid black;" src="license_config_02.png" alt="License in the registry" />
 {{< highlight ini>}}
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Aspose\SSRS\License]
 "Conholdate.Total.Product.Family.lic"=hex:00

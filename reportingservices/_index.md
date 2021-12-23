@@ -8,7 +8,7 @@ is_root: true
 ## **Welcome to the Aspose.BarCode for Reporting Services**
 
 {{% alert color="primary" %}} 
-![Aspose.BarCode for Reporting Services](aspose-BarCode-for-ReportingSerices.png)
+![Aspose.BarCode for Reporting Services](aspose-barcode-for-reportingserices.png)
 
 Aspose.BarCode for Reporting Services is a unique and robust solution for making your reports unique and more professional. It allows developers to display more than 60 types of high-quality barcode labels in high resolution mode on SQL reports. These barcode labels can be rendered in various formats: BMP, JPEG, GIF, TIFF and PNG.
 {{% /alert %}} 

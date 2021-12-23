@@ -11,7 +11,7 @@ is_root: true
 ---
 {{% alert color="primary" %}} 
 
-![Aspose.BarCode for JasperReports](aspose-BarCode-for-JasperReports.png)
+![Aspose.BarCode for JasperReports](aspose-barcode-for-jasperreports.png)
 
 **Welcome to the Aspose.BarCode for JasperReports**
 

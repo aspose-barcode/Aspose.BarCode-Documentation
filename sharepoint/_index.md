@@ -8,7 +8,7 @@ is_root: true
 
 {{% alert color="primary" %}}
 
-![Aspose.BarCode for SharePoint](aspose-BarCode-for-SharePoint.png)
+![Aspose.BarCode for SharePoint](aspose-barcode-for-sharepoint.png)
 
 **Welcome to Aspose.BarCode for SharePoint**
 

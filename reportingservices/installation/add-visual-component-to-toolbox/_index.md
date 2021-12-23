@@ -10,7 +10,7 @@ After installing ***Aspose.BarCode for Reporting Services*** visual component to
 ## **Locate Aspose.BarCode for Reporting Services library in Visual Studio folder**
 You can locate Aspose.BarCode for Reporting Services library with system tools. You just need to search ***Aspose.BarCode.ReportingServices.dll*** file in Visual Studio folder.
 
-<img style="border:1px solid black;" src="Add_ComponentToVS_01.png" alt="Locate Aspose.BarCode.ReportingServices.dll" />
+<img style="border:1px solid black;" src="add_componenttovs_01.png" alt="Locate Aspose.BarCode.ReportingServices.dll" />
 
 Other way you can locate the library in predefined folder:
  - **VS2019** folder: ***C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS***
@@ -36,16 +36,16 @@ Use ***Copy*** from the dll file location and ***Paste*** on Visual Studio ***To
 
 2. Select ***Choose Items*** by right click on ***Toolbox*** panel.
 
-<img style="border:1px solid black;" src="Add_ComponentToVS_02.png" alt="Choose Items menu" />
+<img style="border:1px solid black;" src="add_componenttovs_02.png" alt="Choose Items menu" />
 
 3. Select Folder ***.Net Framework Components***, click ***Browse*** button and locate and select ***Aspose.BarCode.ReportingServices.dll*** from Visual studio folder.
 
-<img style="border:1px solid black;" src="Add_ComponentToVS_03.png" alt="Select *Aspose.BarCode.ReportingServices.dll" />
+<img style="border:1px solid black;" src="add_componenttovs_03.png" alt="Select *Aspose.BarCode.ReportingServices.dll" />
 
 4. Select ***Aspose BarcodeGenerator*** form the list.
 
-<img style="border:1px solid black;" src="Add_ComponentToVS_04.png" alt="Select Aspose BarcodeGenerator" />
+<img style="border:1px solid black;" src="add_componenttovs_04.png" alt="Select Aspose BarcodeGenerator" />
 
 5. As a result you should see installed visual component.
 
-<img style="border:1px solid black;" src="Add_ComponentToVS_05.png" alt="BarcodeGenerator visual component" />
+<img style="border:1px solid black;" src="add_componenttovs_05.png" alt="BarcodeGenerator visual component" />

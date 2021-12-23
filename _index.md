@@ -110,7 +110,7 @@ The following are the links to some useful resources you may need to accomplish 
 ## Aspose.BarCode for ReportingServices
 {{% alert color="primary" %}} 
 
-![Aspose.BarCode for Reporting Services](aspose-BarCode-for-ReportingSerices.png)
+![Aspose.BarCode for Reporting Services](aspose-barcode-for-reportingserices.png)
 
 Welcome to Aspose.BarCode for Reporting Services
 
@@ -131,7 +131,7 @@ The following are the links to some useful resources you may need to accomplish 
 ## Aspose.BarCode for SharePoint
 {{% alert color="primary" %}}
 
-![Aspose.BarCode for SharePoint](aspose-BarCode-for-SharePoint.png)
+![Aspose.BarCode for SharePoint](aspose-barcode-for-sharepoint.png)
 
 Welcome to Aspose.BarCode for SharePoint
 
@@ -155,7 +155,7 @@ The following are the links to some useful resources you may need to accomplish 
 ## Aspose.BarCode for JasperReports
 {{% alert color="primary" %}} 
 
-![Aspose.BarCode for JasperReports](aspose-BarCode-for-JasperReports.png)
+![Aspose.BarCode for JasperReports](aspose-barcode-for-jasperreports.png)
 
 Welcome to the Aspose.BarCode for JasperReports
 

@@ -13,7 +13,7 @@ url: /reportingservices/install-package-with-configtool/
 1. ***Run ConfigTool utility.***
 You need to run ***ConfigTool*** utility from ***{Package folder}\Tools\*** folder. Full path is ***{Package folder}\Tools\ConfigTool.exe***. Other way utility running from start menu ***Aspose\SSRS Configuration Tool***.
 
-<img style="border:1px solid black;" src="ConfigTool_From_Menu.png" alt="ConfigTool from Start menu" />
+<img style="border:1px solid black;" src="configtool_from_menu.png" alt="ConfigTool from Start menu" />
 
 2. ***Install Aspose.BarCode for Reporting Services package.***
 As you can see, you need to select “Configure Aspose Barcode for Reporting Services”.
@@ -32,7 +32,7 @@ And on this screen, you can select Visual Studio versions with SQL Server Data T
 1. ***Run ConfigTool utility.***
 You need to run ***ConfigTool*** utility from ***{Package folder}\Tools\ConfigTool.exe*** or from Start menu ***Aspose\SSRS Configuration Tool***.
 
-<img style="border:1px solid black;" src="ConfigTool_From_Menu.png" alt="ConfigTool from Start menu" />
+<img style="border:1px solid black;" src="configtool_from_menu.png" alt="ConfigTool from Start menu" />
 
 2. ***Uninstall Aspose.BarCode for Reporting Services library.***
 For this operation you have to select “Remove Aspose Barcode for Reporting Services configuration”.

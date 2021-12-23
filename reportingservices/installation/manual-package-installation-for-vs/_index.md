@@ -15,7 +15,7 @@ After this you can add ***Aspose.BarCode for Reporting Services*** visual compon
 ## **Locate dll directory**
 You need proper ***Aspose.BarCode for Reporting Services*** library version which is matched with current Reporting Services Extension installed to current Visual Studio version. Visual Studio can have multiple Reporting Services Extensions which have different SSRS versions. As an example, **Visual Studio 2017** supports **SSRS 14.X** and **SSRS 15.X** versions. Current version of SSRS you can locate from the version of the ***Microsoft.ReportingServices.Design.dll*** library. In this location of required ***dll*** is provided in two steps: you need to find installed Visual studio version and installed Reporting Services Extension version.
 
-<img style="border:1px solid black;" src="VS_SSRS_Version.png" alt="Microsoft.ReportingServices.Design.dll version" />
+<img style="border:1px solid black;" src="vs_ssrs_version.png" alt="Microsoft.ReportingServices.Design.dll version" />
 
 Following package folders contain Visual Studio SSRS versions:
 - The **Visual Studio 2010** with **SSRS11.X** version is located in the ***Bin\VS2010SSRS11*** directory.
