@@ -10,7 +10,7 @@ GS1 is a non-profit international organization that is aimed at developing encod
   
 The table below outlines the barcode types that support all GS1 Application Identifiers and those that are compatible only with the GS1AI_01 type.  
   
-| Compatibility with GS1 AIs | Barcode Types |
+|Compatibility with GS1 AIs|Barcode Types|
 |---|---|
 |All GS1 Application Indentifiers Are Supported|DataBar Expanded, DataBar Expanded Stacked, GS1 CodablockF, GS1 Code128, GS1 Data Matrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code128 Coupon|
 |Only GS1AI_01 Is Supported|Databar OmniDirectional, Databar Stacked OmniDirectional, DatabarLimited, DatabarTruncated, Databar Stacked, EAN14, ITF14|
@@ -31,7 +31,7 @@ gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-<p align="center"><img src="GS1Code128Example.png"></p>
+<p align="center"><img src="gs1code128example.png"></p>
   
 **GS1 Data Matrix**  
   
@@ -43,7 +43,7 @@ gen.Parameters.Barcode.DataMatrix.Rows = 12;
 gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-<p align="center"><img src="Gs1DataMatrixExample.png"></p>
+<p align="center"><img src="gs1datamatrixexample.png"></p>
   
 ## GS1 UPC-A Coupon Generation
 For the *UPC-A* symbology, ***Aspose.BarCode for .NET*** allows generating a barcode label with an additional coupon barcode (*DataBar Expanded* or *GS1 Code128*) placed in the same image. This operation can be also performed by generating two barcodes separately and then combining them in an image using an appropriate graphic library; however, the feature provided by ***Aspose.BarCode for .NET*** facilitates generating such barcodes in a much simpler and faster way.  
@@ -65,7 +65,7 @@ gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-<p align="center"><img src="Gs1CouponUpcaDatabar.png"></p>
+<p align="center"><img src="gs1couponupcadatabar.png"></p>
 
 ### UPC-A + GS1 Code128
 {{< highlight csharp>}}
@@ -74,16 +74,16 @@ gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-<p align="center"><img src="Gs1CouponUpcaCode128.png"></p>
+<p align="center"><img src="gs1couponupcacode128.png"></p>
 
 ## Coupon Spacing Settings
 In ***Aspose.BarCode for .NET***, it is possible to adjust the size of spacing between coupon barcodes placed in the same image. It can be done by setting the [*SupplementSpace*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters/properties/supplementspace) property in class [*CouponParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters).  
   
 Sample barcode images provided below have been generated using the *UPC-A GS1 DataBar Coupon* standard and applying different spacing settings.
      
-| Supplement Space | Is Set to 30 Pixels | Is Set to 50 Pixels |
-|:--:|:--:|:--:|
-| |<img src="Gs1CouponSpace30Pixels.png">|<img src="Gs1CouponSpace50Pixels.png">|
+|Supplement Space|Is Set to 30 Pixels|Is Set to 50 Pixels|
+| :-: | :-: | :-: |
+| |<img src="gs1couponspace30pixels.png">|<img src="gs1couponspace50pixels.png">|
   
 The following code snippet shows how to modify the size of spacing between coupon barcodes.
     

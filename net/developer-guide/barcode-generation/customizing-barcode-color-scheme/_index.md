@@ -20,7 +20,7 @@ Generally, barcode images are created in black and white colors. However, to add
 Setting color for barcode background can be done by initializing the [*BackColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/backcolor) property of [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters) class. The default background color is set to *White*.  
 The barcode image generated with adjusted background color settings (*Color.Green*) is demonstrated below.
    
-<p align="center"><image src="ColorBackground.png"></p>
+<p align="center"><image src="colorbackground.png"></p>
 
 The following code snippet illustrates how to set a barcode background color.
     
@@ -43,7 +43,7 @@ gen.Save($"{path}ColorBackground.png", BarCodeImageFormat.Png);
 To customize the bar color in a barcode image, it is necessary to set the value to the [*BarColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barcolor) property of [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) class. The default bar color is *Black*.  
 The following image represents the barcode label generated with the customized bar color settings (*Color.Green*).
   
-<p align="center"><image src="ColorBarcode.png"></p>
+<p align="center"><image src="colorbarcode.png"></p>
   
 The code snippet provided below explains how to adjust bar color.  
 {{< highlight csharp>}}
@@ -64,7 +64,7 @@ gen.Save($"{path}ColorBarcode.png", BarCodeImageFormat.Png);
 ## Border Color
 It is possible to vary barcode border color by setting the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*. The barcode image provided below has been created setting border color to (*Color.Green*).
   
-<p align="center"><image src="ColorBorder.png"></p>
+<p align="center"><image src="colorborder.png"></p>
   
 The following code example is used to change the color of barcode borders.  
 
@@ -89,7 +89,7 @@ gen.Save($"{path}ColorBorder.png", BarCodeImageFormat.Png);
 
 The color of barcode text that may be placed on a barcode image can be adjusted as well. To do this, it is required to initialize the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/color) property in property group [*CodeTextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codetextparameters). By default, the color of barcode text is set to *Black*. The sample barcode image shown below has been generated with the customized barcode text color setting (*Color.Green*).
   
-<p align="center"><image src="ColorCodetext.png"></p>
+<p align="center"><image src="colorcodetext.png"></p>
   
 The following code snippet demonstrates how to change barcode text color.
   
@@ -112,8 +112,8 @@ gen.Save($"{path}ColorCodetext.png", BarCodeImageFormat.Png);
 Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
   
 |Adjusting Caption Color|   |
-|:--|:--:|
-|<image src="ColorCaptionAbove.png">|<image src="ColorCaptionBelow.png">|
+|:--| :-: |
+|<image src="colorcaptionabove.png">|<image src="colorcaptionbelow.png">|
   
 The code example given below explains how to adjust caption color for top and bottom captions.
 {{< highlight csharp>}}

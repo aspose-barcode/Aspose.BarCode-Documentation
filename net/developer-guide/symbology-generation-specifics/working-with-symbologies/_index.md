@@ -35,7 +35,7 @@ Barcode symbology defines the way of encoding information in a barcode image. Ea
   
 ### Key Barcode Properties 
 In substance, barcode symbologies are similar to file formats, as they define the following key barcode properties:
-- [**Data encryption format**](#dataencryption). Different barcode types are capable of encoding sets of characters with different limitations: only numerical digits, only alphabet and special characters, entire encodings, etc. 
+- [**Data encoding format**](#dataencoding). Different barcode types are capable of encoding sets of characters with different limitations: only numerical digits, only alphabet and special characters, entire encodings, etc. 
 - [**Data density**](#datadensity). Each symbology has a specified capacity of how much information can be encoded in a barcode. Accordingly, barcodes may have high or low data density. 
 - [**Shape**](#shape). Barcode shapes can be rectangular, square, or adjusted to elongated spaces.
 - [**Recognition precision**](#precision). Some 1D barcode types do not include checksum and corresponding controls, and thus it is impossible to verify whether all data contained in a barcode have been recognized and decrypted correctly. Such barcodes have low recognition precision. In contrast, 2D barcodes not only allow recovering partially corrupted data but also have high recognition precision because they provide mechanisms to guarantee that all barcode data have been read properly. 
@@ -74,7 +74,7 @@ Below, two barcode types, Code39 and QR, are considered as examples to demonstra
 **Code39**    
 *Code39* is a barcode symbology with variable length. Its specification is limited to 43 characters, including uppercase letters (A-Z), numerical digits, and some special characters (-, ., $, /, +, %, and space). Each character is decoded by nine elements: five bars and four spaces. This symbology has low data density and does not allow ensuring recognition accuracy as it does not require setting an obligatory checksum by default. 
 
-<p align="center"><image src="Code39Extended.png"></p>
+<p align="center"><image src="code39extended.png"></p>
   
 The code snippet provided below illustrates how to generate a barcode using the *Code39* symbology.
   
@@ -86,7 +86,7 @@ gen.Save($"{path}Code39Extended.png", BarCodeImageFormat.Png);
 **QR Code**  
 *QR Code* is a 2D symbology that is used to encode long strings of alphanumeric data, typically text or URL. A QR code is composed of an array of black and white squares that can be recognized by smartphones and other readers. The *QR Code* symbology provides high data encoding density. Moreover, it supports the **Reed-Solomon** error correction that allows not only to restore corrupted data but also to ensure correct information decoding.  
 
-<p align="center"><image src="QrCode.png"></p>
+<p align="center"><image src="qrcode.png"></p>
   
 The code sample below can be used to generate a QR code.  
 
@@ -98,16 +98,16 @@ gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
-## Data Encryption Formats
-<a name="dataencryption"></a>
+## Data Encoding Formats
+<a name="dataencoding"></a>
 
-Different symbologies have different underlying data encryption approaches and capabilities. Accordingly, barcode label size and the amount of data to be encoded are predefined for each symbology. Some barcode types allow encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations.  
+Different symbologies have different underlying data encoding approaches and capabilities. Accordingly, barcode label size and the amount of data to be encoded are predefined for each symbology. Some barcode types allow encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations.  
 Further in the article, several barcode types (*EAN13*, *Code11*, *GS1 Code128*, and *PDF417*)) with different data densities are presented as examples.   
 
 **EAN13**  
-*EAN13* barcodes can encode only numerical digits. Specifically, the *EAN13* data encryption format requires encoding precisely 12 digits with the 13th one used as a control sum calculated according to the specified algorithm. 
+*EAN13* barcodes can encode only numerical digits. Specifically, the *EAN13* data encoding format requires encoding precisely 12 digits with the 13th one used as a control sum calculated according to the specified algorithm. 
   
-<p align="center"><image src="Ean13.png"></p>
+<p align="center"><image src="ean13.png"></p>
 
 The following code snippet explains how to generate *EAN13* barcodes.
   
@@ -120,7 +120,7 @@ gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
 **Code11**  
 The *Code11* symbology allows encoding a string of any length (theoretically, unlimited), including numerical digits and the dash sign (-).
   
-<p align="center"><image src="Code11.png"></p>
+<p align="center"><image src="code11.png"></p>
   
 The following code sample demonstrates how to create a *Code11* barcode.
   
@@ -130,9 +130,9 @@ gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 **GS1 Code128**  
-*GS1 Code128* can encode any of ASCII alphanumeric characters similarly to the basic *Code128* symbology. However, in *GS1 Code128*, the data encryption format is defined strictly according to the GS1 standards.  
+*GS1 Code128* can encode any of ASCII alphanumeric characters similarly to the basic *Code128* symbology. However, in *GS1 Code128*, the data encoding format is defined strictly according to the GS1 standards.  
   
-<p align="center"><image src="GS1Code128.png"></p>
+<p align="center"><image src="gs1code128.png"></p>
   
 The code example provided below can be used to generate a *GS1 Code128* barcode.
   
@@ -145,7 +145,7 @@ gen.Save($"{path}GS1Code128.png", BarCodeImageFormat.Png);
 **PDF417**  
 The *PDF417* barcode is a 2D high-density symbology that is capable of encoding any sequence of bytes, including text, numbers, files, and actual data bytes. It supports the Reed-Solomon error correction and thus provides high recognition accuracy.
   
-<p align="center"><image src="Pdf417.png"></p>
+<p align="center"><image src="pdf417.png"></p>
   
 The following code snippet illustrates how to generate a *PDF417* barcode.
   
@@ -163,7 +163,7 @@ The barcode types discussed below, *Code93* and *Data Matrix*, are provided as e
 **Code93**  
 *Code 93* is a more secure and compact version of the *Code39* symbology that can encode both alphabet characters and numerical digits. *Code93* has quite low data density; therefore, with respect to other symbologies, it requires generating a larger barcode to encode the same amount of information.  
   
-<p align="center"><image src="Code93Extended.png"></p>
+<p align="center"><image src="code93extended.png"></p>
   
 The following code sample shows how to generate a *Code93* barcode.
   
@@ -175,7 +175,7 @@ gen.Save($"{path}Code93Extended.png", BarCodeImageFormat.Png);
 **Data Matrix**  
 *Data Matrix* is a 2D code that allows encoding large amounts of data in a compact space. A single *Data Matrix can contain up to 2,335 alphanumeric or 3,116 numerical characters. This is 10 times greater than the standard data density of 1D barcodes.
   
-<p align="center"><image src="DataMatrix.png"></p>
+<p align="center"><image src="datamatrix.png"></p>
 
 The code example below can be used to create a *Data Matrix* barcode.  
 
@@ -193,7 +193,7 @@ Further, two barcode types, *MicroQR* and *Compact PDF417*, are considered as ex
 **MicroQR**  
 The *MicroQR* symbology provides large data density; however, it has a square shape and thus needs square space to be placed. A major feature of *MicroQR* is that it has only one position detection pattern instead of three ones for regular *QR Code* and requires a more compact placement area.
   
-<p align="center"><image src="MicroQR.png"></p>
+<p align="center"><image src="microqr.png"></p>
   
 The following code snippet illustrates how to generate a *MicroQR* code.
   
@@ -207,7 +207,7 @@ gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
 **Compact PDF417**    
 *Compact PDF417* can be used when space limitations are the main concern and symbol damage is unlikely. It has less data density compared with other 2D barcodes; however, owing to its property to have a length 64 times larger than height, it is more suitable for narrow rectangular areas with size limitations.
   
-<p align="center"><image src="CompactPdf417.png"></p>
+<p align="center"><image src="compactpdf417.png"></p>
   
 The code sample below can be used to create a *Compact PDF417* barcode.
   
@@ -227,7 +227,7 @@ The symbologies outlined below, *Interleaved 2 of 5* and *Aztec*, are considered
 **Interleaved 2 of 5**  
 The *Interleaved 2 of 5* symbology can encode sequences of digits of any length as long as such a sequence contains an even number of digits. By default, it does not require setting a checksum and thus can be read with errors.
   
-<p align="center"><image src="Interleaved2of5.png"></p>
+<p align="center"><image src="interleaved2of5.png"></p>
   
 The following code example describes how to generate *Interleaved 2 of 5* barcodes.
   
@@ -239,7 +239,7 @@ gen.Save($"{path}Interleaved2of5.png", BarCodeImageFormat.Png);
 **Aztec**  
 *Aztec* is a highly efficient 2D symbology that uses square modules with a unique finder pattern in the middle of a barcode, which allows barcode scanners to identify cell locations required for barcode reading. This barcode type not only enables encoding any sequence of bytes but also ensures correct data recognition.
   
-<p align="center"><image src="AztecFull.png"></p>
+<p align="center"><image src="aztecfull.png"></p>
   
 The code snippet given below shows how to generate an *Aztec* barcode.
   
@@ -255,7 +255,7 @@ Postal symbologies correspond to the specific industrial barcode types that are 
 **Postnet**  
 The *Postnet* symbology allows encoding only digits corresponding to ZIP or ZIP+4 codes in half- and full-height bars; its parameters are similar to those of 1D barcodes. In this barcode type, each digit is encoded by a set of five bars, two of which are of full height.
 Two symbologies considered below, *Postnet* and *RM4SCC* are provided as examples of postal barcodes supported in ***Aspose.Barcode for .NET***. 
-<p align="center"><image src="Postnet.png"></p>
+<p align="center"><image src="postnet.png"></p>
   
 The following code example illustrates how to generate a *Postnet* barcode.
   
@@ -268,7 +268,7 @@ gen.Save($"{path}Postnet.png", BarCodeImageFormat.Png);
 **RM4SCC**  
 *RM4SCC* is capable of encoding only digits and English alphabet capital characters. Its parameters are similar to those of 1D barcodes. In this barcode type, each character corresponds to four bars so that two of them are extended upwards and the other two - downwards. The combination of such bars with variable height provides combinations to encode 36 possible characters: 10 numerical and 26 alphabetical ones.
   
-<p align="center"><image src="RM4SCC.png"></p>
+<p align="center"><image src="rm4scc.png"></p>
 
 The code snippet given below shows how to generate a *Postnet* barcode.
    

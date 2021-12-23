@@ -13,9 +13,9 @@ The main information about a product or an item needs to be encoded in the prima
   
 Barcode labels provided below have been generated with the various supplement data settings enabled for *EAN31* barcodes.
 
-| Supplement Barcode | EAN2 | EAN5 |
-|:--:|:--:|:--:|
-| |<img src="SupplementEAN2.png">|<img src="SupplementEAN5.png">|
+|Supplement Barcode|EAN2|EAN5|
+| :-: | :-: | :-: |
+| |<img src="supplementean2.png">|<img src="supplementean5.png">|
   
 The following code sample explains how to generate supplement barcodes using the *EAN2* and *EAN5* symbologies.
     
@@ -36,9 +36,9 @@ To define the size of a gap between the main and supplement barcodes, the librar
   
 Barcode samples demonstrated below have been generated with different gap settings.  
   
-| Supplement Spacing | Is Set to 20 Pixels | Is Set to 40 Pixels |
-|:--:|:--:|:--:|
-| |<img src="SupplementSpace20Pixels.png">|<img src="SupplementSpace40Pixels.png">|
+|Supplement Spacing|Is Set to 20 Pixels|Is Set to 40 Pixels|
+| :-: | :-: | :-: |
+| |<img src="supplementspace20pixels.png">|<img src="supplementspace40pixels.png">|
   
 The following code snippet explains how to set the size of the spacing between the main and supplement barcodes in case of using the *EAN13* symbology.
   

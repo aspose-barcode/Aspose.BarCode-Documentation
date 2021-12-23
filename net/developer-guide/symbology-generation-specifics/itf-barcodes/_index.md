@@ -16,9 +16,9 @@ In ***Aspose.BarCode for .NET***, developers can set five different styles for *
   
 Sample barcode labels provided below illustrate how the appearance of barcode frames will change depending on particular settings. 
   
-| Frame Style | No Borders (*None*) | Normal Frame (*Frame*) | Horizontal Lines (*Bar*) | Outside Frame (*FrameOut*) | Outside Lines (*BarOut*) |
-|:--:|:--:|:--:|:--:|:--:|:--:|
-| |<img src="ITF14BorderNone.png">|<img src="ITF14BorderFrame.png">|<img src="ITF14BorderBar.png">|<img src="ITF14BorderFrameOut.png">|<img src="ITF14BorderBarOut.png">|
+|Frame Style|No Borders (*None*)|Normal Frame (*Frame*)|Horizontal Lines (*Bar*)|Outside Frame (*FrameOut*)|Outside Lines (*BarOut*)|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| |<img src="itf14bordernone.png">|<img src="itf14borderframe.png">|<img src="itf14borderbar.png">|<img src="itf14borderframeout.png">|<img src="itf14borderbarout.png">|
   
 The following code snippet explains how to adjust the frame style considering the *ITF14* symbology as an example.
   
@@ -47,9 +47,9 @@ Depending on specific industrial requirements, the library enables adjusting bor
   
 *ITF14* barcode labels shown below have been generated with different border thickness settings.
   
-| Border Thickness | Is Set to 5 Pixels | Is Set to 15 Pixels |
-|:--:|:--:|:--:|
-| |<img src="ITF14BorderSize5Pixels.png">|<img src="ITF14BorderSize15Pixels.png">|
+|Border Thickness|Is Set to 5 Pixels|Is Set to 15 Pixels|
+| :-: | :-: | :-: |
+| |<img src="itf14bordersize5pixels.png">|<img src="itf14bordersize15pixels.png">|
   
 The following code sample shows how to set different border thickness values using the *ITF14* symbology as an example.
   
@@ -70,9 +70,9 @@ In ***Aspose.BarCode for .NET***, developers can customize the size of the quiet
   
 *ITF14* barcode images demonstrated below as examples have been generated using different settings for the quiet zone. 
   
-| Quiet Zone Coefficient | Is Set to 10 | Is Set to 30 |
-|:--:|:--:|:--:|
-| |<img src="ITF14QuietZone10.png">|<img src="ITF14QuietZone30.png">|
+|Quiet Zone Coefficient|Is Set to 10|Is Set to 30|
+| :-: | :-: | :-: |
+| |<img src="itf14quietzone10.png">|<img src="itf14quietzone30.png">|
   
 The following code sample illustrates how to adjust the appearance of the quiet zone for *ITF14* barcodes.
   

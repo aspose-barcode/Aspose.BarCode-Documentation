@@ -23,9 +23,9 @@ For continuous symbologies, such as *DataBar OmniDirectional*, *DataBar Truncate
   
 Sample *DataBar Omnidirectional* barcode labels provided below have been generated using different bar height settings.
    
-| Bar Height | Is Set to 30 Pixels | Is Set to 60 Pixels |
-|:--:|:--:|:--:|
-| |<img src="DatabarBarHeight30Pixels.png">|<img src="DatabarBarHeight60Pixels.png">|
+|Bar Height|Is Set to 30 Pixels|Is Set to 60 Pixels|
+| :-: | :-: | :-: |
+| |<img src="databarbarheight30pixels.png">|<img src="databarbarheight60pixels.png">|
   
 The following code snippet illustrates how to adjust barcode height for continuos barcodes using the *DataBar Omnidirectional* symbology as an example.
   
@@ -45,9 +45,9 @@ In stacked symbologies, such as *DataBar Stacked OmniDirectional*, *DataBar Stac
   
 *DataBar Stacked Omnidirectional* barcode images represented below as examples have been created with different aspect ratio settings.
   
-| Aspect Ratio | Is Set to 15 | Is Set to 30 |
-|:--:|:--:|:--:|
-| |<img src="DatabarAspectRatio15.png">|<img src="DatabarAspectRatio30.png">|
+|Aspect Ratio|Is Set to 15|Is Set to 30|
+| :-: | :-: | :-: |
+| |<img src="databaraspectratio15.png">|<img src="databaraspectratio30.png">|
   
 The following code sample explains how to customize barcode height by setting the aspect ratio for stacked symbologies considering *DataBar Stacked Omnidirectional* barcodes as an example.
   
@@ -67,9 +67,9 @@ The *DataBar Expanded Stacked* symbology provides flexible settings for barcode 
   
 Sample *DataBar Expanded Stacked* barcode labels given below have been generated with different barcode layout settings.
   
-| Layout Settings | 4 Columns | 3 Rows | 6 Columns and 10 Rows |
-|:--:|:--:|:--:|:--:|
-| |<img src="DatabarCols4.png">|<img src="DatabarRows3.png">|<img src="DatabarCols6Rows10.png">|
+|Layout Settings|4 Columns|3 Rows|6 Columns and 10 Rows|
+| :-: | :-: | :-: | :-: |
+| |<img src="databarcols4.png">|<img src="databarrows3.png">|<img src="databarcols6rows10.png">|
   
 The following code snippet shows how to specify various layout settings for *DataBar Expanded Stacked* barcodes.
    
@@ -94,9 +94,9 @@ Given that *DataBar Expanded* and *DataBar Expanded Stacked* symbologies, in the
   
 *DataBar Expanded* barcode image examples provided below have been created using the GS1 compatible and alternate encodings.
   
-| GS1 Compatibility | GS1 Compatible Encoding | Alternate Encoding |
-|:--:|:--:|:--:|
-| |<img src="DatabarGS1RightEncoding.png">|<img src="DatabarGS1VariableEncoding.png">|
+|GS1 Compatibility|GS1 Compatible Encoding|Alternate Encoding|
+| :-: | :-: | :-: |
+| |<img src="databargs1rightencoding.png">|<img src="databargs1variableencoding.png">|
   
 The following code snippet explains how to enable the verification of compatibility with GS1 standards for *DataBar Expanded* barcodes. In case when the *IsAllowOnlyGS1Encoding* is set, and the used encoding does not match GS1 standards, the following exception is thrown: "*Exception: Wrong GS1 Application Identifiers format*".  
   
@@ -128,9 +128,9 @@ Each of the *DataBar* symbologies may contain a specific 2D component linkage fl
   
 *DataBar Expanded* barcode images shown below have been generated with different settings for the 2D component flag.
   
-| 2D Component | Is Disabled | Is Enabled |
-|:--:|:--:|:--:|
-| |<img src="Databar2DComponentDisabled.png">|<img src="Databar2DComponentEnabled.png">|
+|2D Component|Is Disabled|Is Enabled|
+| :-: | :-: | :-: |
+| |<img src="databar2dcomponentdisabled.png">|<img src="databar2dcomponentenabled.png">|
   
 The following code example illustrates how to enable and disable the linkage to a 2D component for composite *DataBar Expanded* barcodes.
     

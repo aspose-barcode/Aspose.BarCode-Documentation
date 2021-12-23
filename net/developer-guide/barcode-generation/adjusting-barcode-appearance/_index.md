@@ -11,7 +11,7 @@ This article provides all necessary information about adjusting barcode appearan
 ## Overview
 In ***Aspose.BarCode for .NET***, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
   
-<p align="center"><img src="Barcode_View_Scheme.png"></p>
+<p align="center"><img src="barcode_view_scheme.png"></p>
   
 ## Barcode Image Sizing Modes
 
@@ -25,7 +25,7 @@ Barcode symbologies usually specify the minimum value (*XDimension*) to ensure c
     
 The barcode image provided below has been created in the *None* mode.
 
-<p align="center"><img src="AutoSizeModeNone.png"></p>
+<p align="center"><img src="autosizemodenone.png"></p>
   
 The following code snippet illustrates how to set the *AutoSizeMode* property to *None*.  
 
@@ -44,7 +44,7 @@ When the [*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.bar
   
 The sample barcode image created using the *Interpolation* mode is shown below.  
 
-<p align="center"><img src="AutoSizeModeInterpolation.png"></p> 
+<p align="center"><img src="autosizemodeinterpolation.png"></p> 
 
 The following code sample explains how to initialize the *AutoSizeMode* property with the *Interpolation* value.
   
@@ -62,7 +62,7 @@ The *Nearest* mode uses only the values of [*ImageHeight*](https://apireference.
   
 The resulting barcode image generated using the *Nearest* mode is demonstrated below.
   
-<p align="center"><img src="AutoSizeModeNearest.png"></p>
+<p align="center"><img src="autosizemodenearest.png"></p>
   
 The following code snippet shows how to set the *Nearest* mode.
   
@@ -80,9 +80,9 @@ gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
   
 The sample barcode images rotated by different angles are represented below.
   
-| Rotation | +90° | -90° | +45° | -45° | 180° | 
-|:--:|:--:|:--:|:--:|:--:|:--:| 
-| |<img src="RotationAngle+90.png">|<img src="RotationAngle-90.png">|<img src="RotationAngle+45.png">|<img src="RotationAngle-45.png">|<img src="RotationAngle180.png">|
+|Rotation Angle|Is Set to +90°|Is Set to -90°|Is Set to +45°|Is Set to -45°|Is Set to 180°| 
+| :-: | :-: | :-: | :-: | :-: | :-: | 
+| |<img src="rotationangle+90.png">|<img src="rotationangle-90.png">|<img src="rotationangle+45.png">|<img src="rotationangle-45.png">|<img src="rotationangle180.png">|
   
 The following code snippet illustrates how to set various rotation angles.
    
@@ -103,14 +103,14 @@ gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
 ## Customizing Barcode Borders and Padding
 ***Aspose.BarCode for .NET*** enables adjusting barcode borders and paddings during barcode generation. By default, borders are placed tightly to image edges; then, corresponding paddings may be specified.
   
-### Borders
+### Border Settings
 According to the default settings, a barcode image is generated without borders; however, they can be specified explicitly according to five different styles: solid, dashed, dotted, dash-dot, and dash dot dot. Border appearance can be adjusted using the [*Border*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/border) property of class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters). In turn, this property gets an instance of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters) that contains all barcode configuration settings. In addition, this class enables adjusting border thickness (that can be defined in any supported [**units**](http://localhost:1313/barcode/net/setting-barcode-parameters/#measuring-barcode-size-in-different-units)) and color by initializing the [*Width*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/width) and [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) properties, respectively.  
   
 Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by initializing the [*DashStyle*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/dashstyle) of class *BorderParameters*.
   
-| Borders | Solid | Dashed | Dotted | Dash Dot | Dash Dot Dot | 
-|:--:|:--:|:--:|:--:|:--:|:--:| 
-| |<img src="BorderSolid.png">|<img src="BorderDash.png">|<img src="BorderDot.png">|<img src="BorderDashDot.png">|<img src="BorderDashDotDot.png">|
+|Border Style|Solid|Dashed|Dotted|Dash Dot|Dash Dot Dot| 
+| :-: | :-: | :-: | :-: | :-: | :-: | 
+| |<img src="bordersolid.png">|<img src="borderdash.png">|<img src="borderdot.png">|<img src="borderdashdot.png">|<img src="borderdashdotdot.png">|
   
 The following code sample explains how to set the required barcode border style.
   
@@ -135,9 +135,9 @@ gen.Save($"{path}BorderDashDotDot.png", BarCodeImageFormat.Png);
 ### Paddings
 The border paddings from the edges of a barcode image or its borders can be set in four directions by initializing the [Padding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/padding) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). The *Padding* property creates an instance of class [Aspose.BarCode.Generation.Padding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/padding) that specifies the *Left*, *Right*, *Top*, and *Bottom* padding settings. The default values are set to 5 points in all directions.
   
-| Padding | Millimeters | Pixels |  
-|:--:|:--:|:--:|  
-| |<p align="center"><img src="Padding10Millimeters.png"></p>|<p align="center"><img src="Padding10Pixels.png"></p>| 
+|Padding|Millimeters|Pixels|  
+| :-: | :-: | :-: |  
+| |<p align="center"><img src="padding10millimeters.png"></p>|<p align="center"><img src="padding10pixels.png"></p>| 
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -165,10 +165,10 @@ Bar width reduction (BWR) is a method to adjust a graphic design file of a barco
   
 The sample barcodes shown below have been generated with and without applying bar width reduction.
   
-| Symbology | Bar Width Reduction 0 | Bar Width Reduction 3 |  
-|:--:|:--:|:--:|  
-|**Code 128**|<img src="Code128BarWidthReduction0.png">|<img src="Code128BarWidthReduction3.png">| 
-|**Data Matrix**|<img src="DataMatrixBarWidthReduction0.png">|<img src="DataMatrixBarWidthReduction4.png">|
+|Symbology|Bar Width Reduction 0|Bar Width Reduction 3|  
+| :-: | :-: | :-: |  
+|**Code 128**|<img src="code128barwidthreduction0.png">|<img src="code128barwidthreduction3.png">| 
+|**Data Matrix**|<img src="datamatrixbarwidthreduction0.png">|<img src="datamatrixbarwidthreduction4.png">|
   
 The following code example describes how to set bar width reduction.
    
