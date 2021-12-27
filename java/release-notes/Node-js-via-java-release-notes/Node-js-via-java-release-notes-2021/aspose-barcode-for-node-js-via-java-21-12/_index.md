@@ -10,9 +10,14 @@ url: /java/aspose-barcode-for-node-js-via-java-21-12/
 This page contains release notes information for [Aspose.BarCode for Node.js via Java 21.12](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-21.12/).
 
 {{% /alert %}}
-|BARCODENET-37656|[Epic] Add support of Royal Mail Mailmark 4-state C and L barcodes decoding|Enhancement|
-|BARCODENET-37655|[Epic] Add support of Royal Mail Mailmark 4-state C and L barcodes encoding|Enhancement|
-|BARCODENET-37842|[Epic] Implement EMF encoder for BarcodeGenerator|Enhancement|
+
+## **All Changes**
+
+|**Key**|**Summary**|**Category**|
+| :- | :- | :- |
+|BARCODENET-37656|Add support of Royal Mail Mailmark 4-state C and L barcodes decoding|Enhancement|
+|BARCODENET-37655|Add support of Royal Mail Mailmark 4-state C and L barcodes encoding|Enhancement|
+|BARCODENET-37842|Implement EMF encoder for BarcodeGenerator|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
 
