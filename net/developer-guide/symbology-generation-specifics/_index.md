@@ -22,7 +22,7 @@ All related information can be found in the articles listed below.
 |[PDF417 Barcode Family](/barcode/net/pdf417-and-macropdf417-barcode/)|Describes how to create PDF417 and Macro PDF417 barcodes|
 |[Data Matrix Barcodes](/barcode/net/datamatrix-barcode)|Specifies how to generate Data Matrix barcodes|
 |[Aztec Barcodes](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the Aztec symbology|
-|[Maxicode Barcodes](/barcode/net/maxicode-barcodes/)||
+|[MaxiCode Barcodes](/barcode/net/maxicode-barcodes/)|Provides information about *MaxiCode* barcode generation|
   
 |1D Symbologies| |
 |---|---|
@@ -39,4 +39,4 @@ All related information can be found in the articles listed below.
 |Postal Symbologies| |
 |---|---|
 |**Article**|**Description**|  
-|[Postal Barcodes](/barcode/net/postal-barcodes/)||
+|[Postal Barcodes](/barcode/net/postal-barcodes/)|Provides an overview on postal symbologies, including 2-state (*Planet* and *Postnet*) and 4-state (*RM4SCC*, *Dutch KIX*, *Mailmark*, and others) standards|
