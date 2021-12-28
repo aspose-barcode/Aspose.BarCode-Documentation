@@ -1,7 +1,7 @@
 ---
 title: Code 16K Barcodes
 type: docs
-weight: 90
+weight: 150
 url: /net/code16k-barcodes/
 ---
 

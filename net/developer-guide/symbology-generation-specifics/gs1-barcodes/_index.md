@@ -1,7 +1,7 @@
 ---
 title: GS1 Barcodes
 type: docs
-weight: 40
+weight: 90
 url: /net/generating-barcodes-using-new-barcode-generation-api/
 ---
 

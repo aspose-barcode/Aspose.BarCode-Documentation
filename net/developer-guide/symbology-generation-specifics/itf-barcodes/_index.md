@@ -1,7 +1,7 @@
 ---
 title: ITF Barcodes
 type: docs
-weight: 60
+weight: 120
 url: /net/itf-barcodes/
 ---
 

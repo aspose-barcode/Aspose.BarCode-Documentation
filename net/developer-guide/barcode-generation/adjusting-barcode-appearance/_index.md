@@ -118,7 +118,7 @@ The following code sample explains how to set the required barcode border style.
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 //set border visible
 gen.Parameters.Border.Visible = true;
-//set border size to 5 pizels
+//set border size to 5 pixels
 gen.Parameters.Border.Width.Pixels = 5;
 gen.Parameters.Border.DashStyle = BorderDashStyle.Solid;
 gen.Save($"{path}BorderSolid.png", BarCodeImageFormat.Png);

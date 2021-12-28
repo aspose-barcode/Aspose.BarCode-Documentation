@@ -1,7 +1,7 @@
 ---
 title: Patch Code Barcodes
 type: docs
-weight: 80
+weight: 140
 url: /net/how-to-generate-a-patch-code/
 ---
 

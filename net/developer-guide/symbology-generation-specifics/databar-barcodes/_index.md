@@ -1,7 +1,7 @@
 ---
 title: DataBar Barcodes
 type: docs
-weight: 50
+weight: 100
 url: /net/databar-barcodes/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Specific Parameters for 2D Barcodes
 type: docs
-weight: 160
+weight: 170
 url: /net/managing-2d-barcodes/
 ---
 

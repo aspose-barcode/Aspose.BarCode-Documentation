@@ -1,7 +1,7 @@
 ---
 title: Codabar Barcodes
 type: docs
-weight: 30
+weight: 110
 url: /net/codabar-barcodes/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: EAN2 and EAN5 as Supplement
 type: docs
-weight: 70
+weight: 160
 url: /net/ean2-and-ean5-as-supplement/
 ---
 

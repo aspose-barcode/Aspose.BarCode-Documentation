@@ -1,7 +1,7 @@
 ---
 title: Codablock-F Barcodes
 type: docs
-weight: 80
+weight: 130
 url: /net/codablockf-barcodes/
 ---
 
