@@ -2,7 +2,7 @@
 title: Data Matrix Barcodes
 type: docs
 weight: 60
-url: /net/datamatrix-barcodes/
+url: /net/datamatrix-barcode/
 ---
 
 ## Overview
