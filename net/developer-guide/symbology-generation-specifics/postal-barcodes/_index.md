@@ -300,7 +300,7 @@ gen.Save($"{path}PostalAustraliaPostFCC62OtherTable.png", BarCodeImageFormat.Png
 {{< /highlight >}}
 
 ### Mailmark Symbology
-The *Mailmark* symbology has been developed by Royal Mail of the United Kingdom. Its specification is similar to that of RM4SCC but has the predefined data format requirements and does not provide extra space for customer-specific content. This standard allows encoding numerical digits, uppercase English letters, and space Moreover, barcodes contain a checksum and information to perform data recovery using Reed-Solomon error correction.  
+The *Mailmark* symbology has been developed by Royal Mail of the United Kingdom. Its specification is similar to that of *RM4SCC* but has the predefined data format requirements and does not provide extra space for the customer-specific content. This standard allows encoding numerical digits, uppercase English letters, and space. Moreover, barcodes contain a checksum and information to perform data recovery using Reed-Solomon error correction.  
 *Mailmark* supports the following options: 
 - **Type L** - encodes 26 characters 
 - **Type C** - encodes 22 characters

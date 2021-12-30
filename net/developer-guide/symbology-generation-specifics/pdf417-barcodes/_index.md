@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /net/pdf417-and-macropdf417-barcode/
 ---
-## Introduction
+## Overview
 *PDF417* is a group of 2D variable-length stacked symbologies that are similar to matrix barcodes in terms of various parameters while providing the possibility of laser scanning for high-quality documents (except *Compact PDF417* that requires photo scanning). *PDF417* barcodes have data density that is lower that of matrix symbologies but several times greater compared with to basic 1D stacked barcode types. *PDF417* standards enable encoding both byte streams and Unicode symbols. Moreover, *PDF417* barcodes include additional information for data recovery through Reed-Solomon error correction.  
   
 The other peculiarity of the *PDF417* barcode family is the extended format of representing metadata so that one file can be divided into several barcodes and then transmitted on a printed document indicating file date, name, checksum, and other information. However, metadata require additional space in a barcode image. The layout of *PDF417* barcodes includes rows and columns. General *PDF417* standards can encode up to 1,108 bytes or 1,850 alphanumeric (2,710 numerical) symbols in up to 30 columns and 90 rows while *Micro PDF417* is capable of encoding at most 150 bytes of data or 266 alphanumeric (366 numerical) characters in up to 4 columns and 44 rows.  
@@ -66,10 +66,10 @@ gen.Save($"{path}CompactPdf417Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
 ## PDF417 Data Encoding Modes
-To select the encoding mode for input data in ***Aspose.BarCode for .NET**, it is required to set the [*Pdf417CompactionMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that specifies data compression regimes to be used during barcode generation. To encode Unicode symbols, two other properties, [Pdf417ECIEncoding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) and [CodeTextEncoding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding), can be used. Detailed explanations and code samples for these properties are provided further in the article.
+To select the encoding mode for input data in ***Aspose.BarCode for .NET***, it is required to set the [*Pdf417CompactionMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that specifies data compression regimes to be used during barcode generation. To encode Unicode symbols, two other properties, [*Pdf417ECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) and [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding), can be used. Detailed explanations and code samples for these properties are provided further in the article.
 
 ### ECI Encoding Mode
-Besides encoding Unicode characters into byte streams, the [*Pdf417ECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) property allows setting the ECI identifier for the current encoding that can be read and correctly interpreted by decoders. In the case of setting this property using any value that differs from *ECIEncodings.NONE*, data processing is performed using the specified ECI encoding. The present library implementation includes all well-known charset encodings that are listed in the [ECIEncodings](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings) enumeration.  
+Besides encoding Unicode characters into byte streams, the [*Pdf417ECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) property allows setting the ECI identifier for the current encoding that can be read and correctly interpreted by decoders. In the case of setting this property using any value that differs from *ECIEncodings.NONE*, data processing is performed using the specified ECI encoding. The present library implementation includes all well-known charset encodings that are listed in the [*ECIEncodings*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings) enumeration.  
   
 The code sample given below illustrates how to set the *ECI Encoding* mode.
   
@@ -230,8 +230,6 @@ The following code snippet illustrates how to set different aspect ratio values 
 {{< /highlight >}}
    
 ## Error Correction Level Settings
-Семейство баркодов PDF417 использует [Reed-Solomon] для восстановления и проверки целостности поврежденных данных. Для Micro PDF417 количество информации для восстановления устанавливается автоматически. Для Pdf417, Macro Pdf417 и Compact Pdf417 за установку уровня количества избыточных слов данных для коррекции ошибок отвечает свойство [Pdf417ErrorLevel]. При этом 2 слова коррекции данных способны восстановить одну неизвестную ошибку или два известных стирания данных. Однако, чем больше слов коррекции, тем легче восстановить сильно поврежденные баркоды. Тоесть максимальный Level8 уровень может дополнительно откорректировать 256 ошибок, но при этом возможность максимального кодирования данных в этом баркоде уменьшится на 614 байт.
-
 The *PDF417* barcode family applies the Reed-Solomon error correction mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [Pdf417ErrorLevel](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two error correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that 265 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 614 bytes. All supported EC levels are listed below.  
   
 |EC Level|Number of EC Codewords|Error Correction Level|Number of EC Codewords|
@@ -351,7 +349,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="macropdf417optional.png"></p>
   
 ### Unicode Metadata Settings
-If required, it is possible to transmit optional metadata fields in the Unicode encoding by initializing the [Pdf417MacroECIEncoding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macroeciencoding) property that converts data and sends them together with the corresponding encoding identifier. The following code sample illustrates how to use this setting for *Marco PDF417* barcodes.
+If required, it is possible to transmit optional metadata fields in the Unicode encoding by initializing the [*Pdf417MacroECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macroeciencoding) property that converts data and sends them together with the corresponding encoding identifier. The following code sample illustrates how to use this setting for *Marco PDF417* barcodes.
   
 {{< highlight csharp>}}
 Console.OutputEncoding = Encoding.Unicode;
@@ -383,7 +381,6 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="macropdf417eciencoding.png"></p>
   
 ## PDF417 Special Parameters
-Библиотека позволяет кодировать специальные управляющие поля для семейства баркодов Pdf417. 
 For the *PDF417* barcode family, ***Aspose.BarCode for .NET*** allows encoding special control parameters, such as indicating hardware reader initialization and *Code128* emulation. Code snippets explaining how to work with these settings are provided further.
 
 ### Hardware Reader Initialization
