@@ -1,16 +1,15 @@
 ---
-title: Aspose.BarCode for Node.js via Java 21.12
+title: Aspose.BarCode for Python via Java 21.12
 type: docs
-weight: 890
-url: /java/aspose-barcode-for-node-js-via-java-21-12/
+weight: 700
+url: /java/aspose-barcode-for-python-via-java-21-12/
 ---
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Node.js via Java 21.12](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-21.12/).
+This page contains release notes information for [Aspose.BarCode for Python via Java 21.12](https://downloads.aspose.com/barcode/pythonjava/new-releases/aspose.barcode-for-python-via-java-21.12/).
 
-{{% /alert %}}
-
+{{% /alert %}} 
 ## **All Changes**
 
 |**Key**|**Summary**|**Category**|
@@ -22,22 +21,22 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 ## **Public API and Backward Incompatible Changes**
 
 - Added enum's field Generation.EncodeTypes.MAILMARK
-- Added function ComplexBarcode.ComplexCodetextReader.tryDecodeMailmark(String)
+- Added function ComplexBarcode.ComplexCodetextReader.tryDecodeMailmark(str)
 - Added class ComplexBarcode.MailmarkCodetext
 - Added constructor ComplexBarcode.MailmarkCodetext.#ctor
 - Added function ComplexBarcode.MailmarkCodetext.getFormat():int
 - Added function ComplexBarcode.MailmarkCodetext.setFormat(int):void
 - Added function ComplexBarcode.MailmarkCodetext.getVersionID():int
 - Added function ComplexBarcode.MailmarkCodetext.setVersionID(int):void
-- Added function ComplexBarcode.MailmarkCodetext.getClass_():String
-- Added function ComplexBarcode.MailmarkCodetext.setClass(String):void
+- Added function ComplexBarcode.MailmarkCodetext.getClass_():str
+- Added function ComplexBarcode.MailmarkCodetext.setClass(str):void
 - Added function ComplexBarcode.MailmarkCodetext.getSupplychainID():int
 - Added function ComplexBarcode.MailmarkCodetext.setSupplychainID(int):void
 - Added function ComplexBarcode.MailmarkCodetext.getItemID():int
 - Added function ComplexBarcode.MailmarkCodetext.setItemID(int):void
-- Added function ComplexBarcode.MailmarkCodetext.getDestinationPostCodePlusDPS():String
-- Added function ComplexBarcode.MailmarkCodetext.setDestinationPostCodePlusDPS(String):void
-- Added function ComplexBarcode.MailmarkCodetext.getConstructedCodetext():String
-- Added function ComplexBarcode.MailmarkCodetext.initFromString(String):void
-- Added function ComplexBarcode.MailmarkCodetext.getBarcodeType():number
+- Added function ComplexBarcode.MailmarkCodetext.getDestinationPostCodePlusDPS():str
+- Added function ComplexBarcode.MailmarkCodetext.setDestinationPostCodePlusDPS(str):void
+- Added function ComplexBarcode.MailmarkCodetext.getConstructedCodetext():str
+- Added function ComplexBarcode.MailmarkCodetext.initFromstr(str):void
+- Added function ComplexBarcode.MailmarkCodetext.getBarcodeType():int
 - Added enum's field DecodeType.MAILMARK

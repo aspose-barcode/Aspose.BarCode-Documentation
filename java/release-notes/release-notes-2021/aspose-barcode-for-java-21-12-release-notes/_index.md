@@ -21,7 +21,7 @@ This page contains release notes information for [Aspose.BarCode for Java 21.12]
 ## **Public API and Backward Incompatible Changes**
 
 - Added field com.aspose.barcode.generation.EncodeTypes.Mailmark
-- Added method com.aspose.barcode.complexbarcode.ComplexCodetextReader.tryDecodeMailmark2D(String)
+- Added method com.aspose.barcode.complexbarcode.ComplexCodetextReader.tryDecodeMailmark(String)
 - Added class com.aspose.barcode.complexbarcode.MailmarkCodetext
 - Added constructor com.aspose.barcode.complexbarcode.MailmarkCodetext.#ctor
 - Added method com.aspose.barcode.complexbarcode.MailmarkCodetext.getFormat():int
