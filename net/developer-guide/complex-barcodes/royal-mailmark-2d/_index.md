@@ -8,7 +8,7 @@ url: /net/mailmark-2D-barcode/
 ---
 
 ## Overview
-The Royal Mail *Mailmark* symbology has been developed to encode postal and shipping information in the format defined in the *DataMatrix* standard. The *Mailmark 2D* symbology includes three types: 7, 9, and 29 that differ from each other in terms of customer data capacity. Customer information is encoded in addition to the main barcode data in special predefined barcode fields. The amount of customer data space depends on the barcode type and the used encoding. This information can be used to describe print and scanning operations, identify items, or enable barcode scanning with smartphones.  
+The Royal Mail *Mailmark* symbology has been developed to encode postal and shipping information in the format defined in the *DataMatrix* standard. The *Mailmark 2D* symbology includes three types denoted as 7, 9, and 29; they differ from each other in terms of customer data capacity. Customer information is encoded in addition to the main barcode data in special predefined barcode fields. The amount of space to store customer data depends on the barcode type and the used encoding. This information can serve to describe print and scanning operations, identify items, or enable barcode scanning with smartphones.  
 
 To perform data encoding, the *Mailmark 2D* standard uses the basic C40 character set (numerical digits, uppercase English letters, and the space character). All fields of information to be encoded in a *Mailmark 2D* barcode except customer data must be entered in the format compatible with the mentioned encoding standard. The customer information field does not require to comply with this encoding; however, using alternative encodings may affect the overall barcode data capacity.  
   
@@ -17,13 +17,13 @@ To work with *Mailmark 2D* barcodes in ***Aspose.BarCode for .NET***, it is nece
 ## How to Generate Mailmark 2D Barcode
 To generate *Mailmark 2D* barcodes, ***Aspose.BarCode for .NET*** provides class [*Mailmark2DCodetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.complexbarcode/mailmark2dcodetext) to specify barcode fields and class [*ComplexBarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexbarcodegenerator) to generate barcodes. The [*Mailmark2DType*](https://apireference.aspose.com/barcode/net/aspose.barcode.complexbarcode/mailmark2dtype) enumeration is used to select the type of a *Mailmark 2D* barcode to be generated.  
   
-Sample *Mailmark 2D* barcodes demonstrated below have been generated setting different *Mailmark 2D* types.
+Sample *Mailmark 2D* barcodes demonstrated below have been created setting different *Mailmark 2D* types.
   
 |<p align="center">**Mailmark 2D**</p>|<p align="center">**Type 7**</p>|<p align="center">**Type 9**</p>|<p align="center">**Type 29**</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="mailmark2dtype7.png">|<img src="mailmark2dtype9.png">|<img src="mailmark2dtype29.png">|
   
-The following code snippet illustrates how to generate a *Mailmark 2D* barcode of types 7, 9, and 29.
+The following code snippet illustrates how to generate *Mailmark 2D* barcodes of types 7, 9, and 29.
   
 {{< highlight csharp>}}
 ComplexBarcodeGenerator generator = null;

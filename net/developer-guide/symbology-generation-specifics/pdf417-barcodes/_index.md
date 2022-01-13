@@ -176,7 +176,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="pdf417bytesencoding.png"></p>
   
 ## Barcode Layout Settings
-To set the number of rows and columns in *PDF417* barcodes, ***Aspose.BarCode for .NET*** enables the corresponding properties of class [Pdf417Parameters](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that are called [*Rows*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/rows) and [*Columns*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/columns). *Basic PDF417*, *Macro PDF417*, and *Micro PDF417* standards allow arbitrarily set the number of columns from 1 to 30 and the number of rows from 3 to 90. The number of rows and columns can be set independently. In turn, *Micro PDF417* supports setting from 1 to 4 columns so that the maximal and minimal numbers of rows depend on the number of columns. In case if the barcode type capacity is insufficient to generate a barcode with the requested number of rows and columns, an exception will be thrown.  
+To set the number of rows and columns in *PDF417* barcodes, ***Aspose.BarCode for .NET*** enables the corresponding properties of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that are called [*Rows*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/rows) and [*Columns*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/columns). *Basic PDF417*, *Macro PDF417*, and *Micro PDF417* standards allow arbitrarily set the number of columns from 1 to 30 and the number of rows from 3 to 90. The number of rows and columns can be set independently. In turn, *Micro PDF417* supports setting from 1 to 4 columns so that the maximal and minimal numbers of rows depend on the number of columns. In case if the barcode type capacity is insufficient to generate a barcode with the requested number of rows and columns, an exception will be thrown.  
   
 *PDF417* barcode images provided below have been generated using different layout settings.
 
@@ -184,7 +184,7 @@ To set the number of rows and columns in *PDF417* barcodes, ***Aspose.BarCode fo
 | :-: | :-: | :-: | :-: |
 | |<img src="pdf417columns2.png">|<img src="pdf417row6.png">|<img src="pdf417row9columns4.png">|
   
-The following code samples explain how to set different layout settings (rows and columns) in *PDF417* and *Micro PDF417* barcodes.
+Following code samples explain how to set different layout settings (rows and columns) in *PDF417* and *Micro PDF417* barcodes.
   
 **Basic PDF417**  
   
@@ -206,34 +206,11 @@ gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Save($"{path}MicroPdf417Columns4.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-## Aspect Ratio Settings
-*Aspect Ratio* is defined as the ratio between the barcode width and height. In ***Aspose.BarCode for .NET***, to customize barcode proportions using the X and Y coordinates, the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/aspectratio) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) can be used. It is implemented as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. For *PDF417* barcodes, the value of *AspectRatio* should be set between 3 and 5.
-
-*PDF417* barcodes demonstrated below have been created using different aspect ratio settings.  
-  
-|Aspect Ratio|Is Set to 2|Is Set to 5|
-| :-: | :-: | :-: |
-| |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
-  
-The following code snippet illustrates how to set different aspect ratio values for *PDF417* barcodes.
-  
-{{< highlight csharp>}}
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
-            gen.Parameters.Barcode.XDimension.Pixels = 2;
-            gen.Parameters.Barcode.Pdf417.Columns = 3;
-            //set aspect ratio to 2
-            gen.Parameters.Barcode.Pdf417.AspectRatio = 2;
-            gen.Save($"{path}Pdf417AspectRatio2.png", BarCodeImageFormat.Png);
-            //set aspect ratio to 5
-            gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
-            gen.Save($"{path}Pdf417AspectRatio5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
-   
 ## Error Correction Level Settings
-The *PDF417* barcode family applies the Reed-Solomon error correction mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [Pdf417ErrorLevel](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two error correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that 265 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 614 bytes. All supported EC levels are listed below.  
+The *PDF417* barcode family applies the Reed-Solomon error correction mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [*Pdf417ErrorLevel*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two error correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that 265 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 614 bytes. All supported EC levels are listed below.  
   
 |EC Level|Number of EC Codewords|Error Correction Level|Number of EC Codewords|
-|---| :-: |---| :-: |
+| :-: | :-: | :-: | :-: |
 |**Level 0**|2 EC codewords|**Level 5**|64 EC codewords|
 |**Level 1**|4 EC codewords|**Level 6**|128 EC codewords|
 |**Level 2**|8 EC codewords|**Level 7**|256 EC codewords|
@@ -258,6 +235,29 @@ gen.Save($"{path}Pdf417ErrorLevel2.png", BarCodeImageFormat.Png);
 //set error level 5
 gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level5;
 gen.Save($"{path}Pdf417ErrorLevel5.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
+  
+## Aspect Ratio Settings
+*Aspect Ratio* is defined as the ratio between the barcode width and height. In ***Aspose.BarCode for .NET***, to customize barcode proportions using the X and Y coordinates, the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/aspectratio) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) can be used. It is implemented as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. For *PDF417* barcodes, the value of *AspectRatio* should be set between 3 and 5.
+
+*PDF417* barcodes demonstrated below have been created using different aspect ratio settings.  
+  
+|Aspect Ratio|Is Set to 2|Is Set to 5|
+| :-: | :-: | :-: |
+| |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
+  
+The following code snippet illustrates how to set different aspect ratio values for *PDF417* barcodes.
+  
+{{< highlight csharp>}}
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+            gen.Parameters.Barcode.XDimension.Pixels = 2;
+            gen.Parameters.Barcode.Pdf417.Columns = 3;
+            //set aspect ratio to 2
+            gen.Parameters.Barcode.Pdf417.AspectRatio = 2;
+            gen.Save($"{path}Pdf417AspectRatio2.png", BarCodeImageFormat.Png);
+            //set aspect ratio to 5
+            gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
+            gen.Save($"{path}Pdf417AspectRatio5.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## PDF417 Metadata Encoding
@@ -397,8 +397,8 @@ gen.Save($"{path}Pdf417ReaderInitialization.png", BarCodeImageFormat.Png);
 
 <p align="center"><img src="pdf417readerinitialization.png"></p>
 
-### *Code128* Emulation
-To indicate that hardware readers must emulate the considered *Micro PDF417* barcode as the data recognized using a *Code128* barcode, the [*Code128Emulation*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/code128emulation) field needs to be initialized as demonstrated in the code snippet below. 
+### *Code 128* Emulation
+To indicate that hardware readers must emulate the considered *Micro PDF417* barcode as the data recognized using a *Code 128* barcode, the [*Code128Emulation*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/code128emulation) field needs to be initialized as demonstrated in the code snippet below. 
   
 {{< highlight csharp>}}
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose");

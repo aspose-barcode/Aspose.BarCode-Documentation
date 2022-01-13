@@ -5,32 +5,32 @@ weight: 40
 url: /net/qr-and-micro-qr-barcode/
 ---
 ## Overview
-The *QR Code* family corresponds to 2D matrix barcodes of square shape (except *Rectangular Micro QR Code* (rMQR) that is planned to be added to ***Aspose.BarCode*** in the nearest future). Accordingly, *QR Code* and *Micro QR Code* barcodes require square space to be placed on a surface. This group of symbologies has large data density and enables encoding both byte streams of data and arbitrary information represented as a set of Unicode symbols. The data encoding in Unicode is performed using extended channel interpretation (ECI) with different data encoding modes to be selected among which UTF8 is the most widespread.  
+The *QR Code* family corresponds to 2D matrix barcodes of square shape (except *Rectangular Micro QR Code* (rMQR) that will be added to ***Aspose.BarCode*** in the nearest future). Accordingly, *QR Code* and *Micro QR Code* barcodes require square space to be placed on a surface. This group of symbologies has large data density and enables encoding both byte streams of data and arbitrary information represented as a set of Unicode symbols. In ***Aspose.BarCode for .NET***, the data encoding in Unicode is performed using Extended Channel Interpretation (ECI) and enables different encoding modes among which UTF8 is the most widespread one.  
   
-At the minimal error correction level, the *QR Code* symbology can encode up to 7,089 numerical (4,296 alphanumeric) digits or 2,953 bytes, while the *Micro QR Code* standard allows encoding up to 35 numerical (21 alphanumeric) or 15 bytes. *Micro QR Code* is used to generate barcodes of reasonably small size; at the same time, to enable such a possibility, it does not support Extended Channel Interpretation (ECI) and does not support encoding Unicode symbols. Specifically, the *M1* version allows encoding only 5 numerical digits, while *M2* can encode 10 numerical or 6 alphanumeric symbols. This capacity may be sufficient to encode particular industrial markers.  
+At the minimal error correction level, the *QR Code* symbology can encode up to 7,089 numerical (4,296 alphanumeric) digits or 2,953 bytes, while the *Micro QR Code* standard allows encoding at most 35 numerical (21 alphanumeric) or 15 bytes. *Micro QR Code* is used to generate barcodes of reasonably small size; at the same time, to enable such a possibility, it does not support Extended Channel Interpretation (ECI) and does not support encoding Unicode symbols. Specifically, the *M1* version allows encoding only 5 numerical digits, while *M2* can encode 10 numerical or 6 alphanumeric symbols. This capacity may be sufficient to encode particular industrial markers.  
 
-Key features of QR codes are summarized below:
+The key features of QR codes are summarized below:
 - very high barcode recognition speed owing to geometrical specifics 
-- barcode reading under severe 3D distortions 
+- barcode reading capability under severe 3D distortions 
 - encoding byte streams of data
-- encoding Unicode symbols using ECI (does not valid for *Micro QR Code*)
+- encoding Unicode symbols using ECI (is not valid for *Micro QR Code*)
 - high data encoding density
 - customizable error correction that allows recovering up to 30% of barcode data at the maximal level H 
   
-However, *QR Code* barcodes are sensitive to substantial target pattern damages as they can hinder barcode detection in the scanned image.
+However, *QR Code* barcodes are sensitive to substantial damages of a target pattern as they can hinder barcode detection in the scanned image.
 
 ## QR and Micro QR Code Generation Modes
-In ***Aspose.BarCode for .NET***, it is possible to select *QR Code* or *Micro QR Code* barcodes  and its versions to be generated using two properties of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters): [*QrEncodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) and [*QrVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion). First, it is necessary to initialize the *QrVersion* property that allows setting the required version of *QR Code* or *Micro QR Code*.  
-If the inputted information is less than the capacity of the selected version, the remaining space is filled with padding symbols; if it is surplus, an exception is thrown. By default, the *QrVersion* property is set to *QrVersion.AutoAuto*. In this case, it is required to initialize the *QrEncodeType* property to select the desired barcode type. This property can take the following values:
+In ***Aspose.BarCode for .NET***, it is possible to select *QR Code* or *Micro QR Code* barcodes  and its versions to be generated using two properties of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters): [*QrEncodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) and [*QrVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion). First, it is necessary to initialize the [*QrVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) field that allows setting the required version of *QR Code* or *Micro QR Code* to be generated.  
+If the inputted information is less than the capacity of the selected version, the remaining space is filled with padding symbols; if it is surplus, an exception is thrown. By default, the [*QrVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) property is set to *QrVersion.Auto*. In this case, it is required to initialize the [*QrEncodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) field to select the desired barcode type. This property can take the following values:
 
-- *Auto*. First, the most suitable *Micro QR Code* version (from M1 to M4) is searched; then, *QR Code* versions (from Version01 to Version40) are iterated over to find the most appropriate one. If the capacity of Version40 is not sufficient for the input information, an exception is thrown.
-- *ForseQR*. The most suitable *QR Code* version (from Version01 to Version40) is set.
-- *ForseMicroQR*. The most suitable *Micro QR Code* version (from M1 to M4) is selected. If the capacity of M4 is not sufficient to encode the inputted data, an exception is thrown. 
+- *Auto*. First, the most suitable *Micro QR Code* version (from M1 to M4) is searched; then, *QR Code* versions (from *Version01* to *Version40*) are iterated over to find the most appropriate one. If the capacity of *Version40* is not sufficient for the input information, an exception is thrown.
+- *ForseQR*. The most suitable *QR Code* version (from *Version01* to *Version40*) is set.
+- *ForseMicroQR*. The most suitable *Micro QR Code* version (from *M1* to *M4*) is selected. If the capacity of *M4* is not sufficient to encode the inputted data, an exception is thrown. 
   
 ### Automatic Sizing
 The code sample and barcode images below are provided to illustrate how to generate *QR Code* barcodes of various types using automatic size settings.
   
-|Size Setting Mode|*Auto*|*ForseQR*|*ForseMicroQR*|
+|<p align="center">**Size Setting Mode**</p>|<p align="center">*Auto*</p>|<p align="center">*ForseQR*</p>|<p align="center">*ForseMicroQR*</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
   
@@ -53,7 +53,7 @@ gen.Save($"{path}QREncodeTypeForceQR.png", BarCodeImageFormat.Png);
 ### Manual Version Selection
 ***Aspose.BarCode for .NET*** enables manual settings for the required version of *QR Code* barcodes to be generated. To do this, it is necessary to initialize the [*QRVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrversion) property of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the values from *Version01* to *Version40* for *QR Code* and from *M1* to *M4* for *Micro QR Code*. The code snippet and sample barcode labels demonstrated below are given to explain how to generate *QR Code* barcodes by setting the required version manually.
   
-|Barcode Version|Is Set to *QR Version05*|Is Set to *Micro QR Version M4*|
+|<p align="center">**Barcode Version**</p>|<p align="center">Is Set to *QR Version05*</p>|<p align="center">Is Set to *Micro QR Version M4*</p>|
 | :-: | :-: | :-: |
 | |<img src="qrversion05.png">|<img src="qrversionm4.png">|
   
@@ -125,7 +125,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="qrencodemodebytes.png"></p>
   
 ### ***Utf8BOM*** and ***Utf16BEBOM*** Modes
-The *Utf8BOM* and *Utf16BEBOM* data encoding modes are used to encode input data using *UTF8* and *UTF16BE* standards, respectively, using a byte order mark (BOM) character that is placed before the first data symbol. The following code snippet shows how to work with these encoding modes.
+The *Utf8BOM* and *Utf16BEBOM* data encoding modes are used to encode input data using *UTF8* and *UTF16BE* standards, respectively, using a byte order mark (BOM) character that is placed before the first data symbol. The following code snippet shows how to work with the *Utf16BEBOM* encoding mode.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
@@ -144,7 +144,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="qrencodemodeutfbom.png"></p>
   
 ### ***ECIEncoding*** Mode
-In the *ECIEncoding* data encoding mode, input data are processed using one of the encodings specified in [*QrECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding). The present library implementation includes all well-known charset encodings. In addition, the extended channel interpretation identifier that corresponds to the current encoding is set. In this way, information about the way of decoding barcode data is passed to decoders. The *QrECIEncoding.UTF8* mode is the most preferable. The code sample given below explains how to set *ECIEncoding* encoding mode.
+In the *ECIEncoding* data encoding mode, input data are processed using one of the encodings specified in [*QrECIEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding). The present library implementation includes all well-known charset encodings. In addition, the extended channel interpretation identifier that corresponds to the current encoding is set. In this way, information about the way of decoding barcode data is passed to decoders. The *QrECIEncoding.UTF8* mode is the most preferable. The code sample given below explains how to set the *ECIEncoding* encoding mode.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
@@ -154,7 +154,7 @@ Console.OutputEncoding = Encoding.Unicode;
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
 gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
 gen.Save($"{path}QrEncodeModeECIEncoding.png", BarCodeImageFormat.Png);
-//try to recognize it
+//attempt to recognize it
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("QrEncodeModeECIEncoding:" + result.CodeText);
@@ -195,7 +195,7 @@ The *QR Code* family supports several levels of Reed-Solomon error correction. T
   
 *QR Code* standards provide the following error correction levels.
   
-|Error Correction|Recovery Capacity|
+|<p align="center">**Error Correction**</p>|<p align="center">**Recovery Capacity**</p>|
 | :-: | :-: |
 |Level L| 7% |
 |Level M| 15% |
@@ -204,7 +204,7 @@ The *QR Code* family supports several levels of Reed-Solomon error correction. T
   
 *QR Code* symbologies except *Micro QR* can set any of the supported error correction levels. In turn, *Micro QR* enables different error correction levels for different barcodes types: *M1* supports level L; *M2* - levels L and M; *M3* and *M4* - levels L, M, and Q. 
   
-|Error Correction Level|Is Set to L|Is Set to M|Is Set to Q|Is Set to H|
+|<p align="center">**Error Correction Level**</p>|<p align="center">**Is Set to L**</p>|<p align="center">**Is Set to M**</p>|<p align="center">**Is Set to Q**</p>|<p align="center">**Is Set to H**</p>|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="qrerrorlevell.png">|<img src="qrerrorlevelm.png">|<img src="qrerrorlevelq.png">|<img src="qrerrorlevelh.png">|
   
@@ -213,29 +213,29 @@ The following code sample illustrates how to set error correction level for *QR 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is a type of matrix barcode invented in 1994");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set error level L
+//set error correction level to L
 gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
 gen.Save($"{path}QrErrorLevelL.png", BarCodeImageFormat.Png);
-//set error level M
+//set error correction level to M
 gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelM;
 gen.Save($"{path}QrErrorLevelM.png", BarCodeImageFormat.Png);
-//set error level Q
+//set error correction level to Q
 gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelQ;
 gen.Save($"{path}QrErrorLevelQ.png", BarCodeImageFormat.Png);
-//set error level H
+//set error correction level to H
 gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelH;
 gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
 ## Structured Append Mechanism
-*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for .NET*** does not enable distributing information inputted into [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the [StructuredAppend](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/structuredappend) property using the following fields: 
+*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for .NET*** does not enable distributing information inputted into [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the [*StructuredAppend*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/structuredappend) property using the following fields: 
 - *TotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *SequenceIndicator* - the sequence number of the current barcode (starting from 0)
 - *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   
   
 Sample barcode images provided below have been created using the *Structured Append* mechanism implemented in the following code snippet.
   
-|Structured Append QR Code|First Type|Second Type|
+|<p align="center">**Structured Append QR Code**</p>|<p align="center">**First Type**</p>|<p align="center">**Second Type**</p>|
 | :-: | :-: | :-: |
 | |<img src="qrstructuredappendfirst.png">|<img src="qrstructuredappendsecond.png">|
   
@@ -253,7 +253,7 @@ foreach (char val in firstMessage.ToCharArray())
 foreach (char val in secondMessage.ToCharArray())
     parity ^= (val <= 255) ? (byte)val : (byte)((byte)val ^ (byte)((int)val >> 8));
 
-//generate first barcode
+//generate the first barcode
 gen = new BarcodeGenerator(EncodeTypes.QR, firstMessage);
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
@@ -269,7 +269,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
         $"Index: {result.Extended.QR.QRStructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.QRStructuredAppendModeParityData.ToString()} "+ 
         $"Codetext: {result.CodeText}");
 
-//generate second barcode
+//generate the second barcode
 gen = new BarcodeGenerator(EncodeTypes.QR, secondMessage);
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
@@ -278,7 +278,7 @@ gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
 gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
 gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 1;
 gen.Save($"{path}QrStructuredAppendSecond.png", BarCodeImageFormat.Png);
-//try to recognize it
+//attempt to recognize it
 read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +
@@ -287,9 +287,9 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 {{< /highlight >}}
 
 ## Aspect Ratio Settings
-*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for .NET***, it is required to set the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/aspectratio) property of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property is defined as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the *AspectRatio* property can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
+*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for .NET***, it is required to set the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/aspectratio) property of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property is defined as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/aspectratio) property can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
   
-|Aspect Ratio|Is Set to 1|Is Set to 2|
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 2**</p>|
 | :-: | :-: | :-: |
 | |<img src="qraspectratio1.png">|<img src="qraspectratio2.png">|
   
