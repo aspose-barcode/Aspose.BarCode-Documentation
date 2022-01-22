@@ -18,10 +18,10 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 |BARCODENET-37962|Fix bug with incorrect text wrapping with current EMF encoder|Bug|
 |BARCODENET-37963|Fix SwissQR codetext serialization issue|Bug|
 |BARCODEPHP-396|Implement the possibility to import barcode images from http resource|Enhancement|
+|BARCODEPHP-392|Implement the generation of the images in TIFF and SVG formats|Enhancement|
 |BARCODEPHP-397|Implement the possibility to deserialize BarCodeReader from xml file located in file system or http resource|Enhancement|
 |BARCODEPHP-398|Implement the possibility to deserialize BarcodeGenerator from xml file located in file system or http resource|Enhancement|
 |BARCODEPHP-387|Correct the function $generator->getBarcodeType()|Bug|
-|BARCODEPHP-392|Implement the generation of the images in TIFF and SVG formats|Bug|
 
 
 ## **Public API and Backward Incompatible Changes**
