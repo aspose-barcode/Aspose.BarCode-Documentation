@@ -25,9 +25,9 @@ This page contains release notes information for [Aspose.BarCode for Java 20.7](
 # **Public API and Backward Incompatible Changes**
 - added method com.aspose.barcode.generation.Pdf417Parameters.getPdf417ECIEncoding
 - added method com.aspose.barcode.generation.Pdf417Parameters.setPdf417ECIEncoding(int)
-- added field com.aspose.barcode.ECIEncodings.NONE
-- removed methodcom.aspose.barcode.barcoderecognition.BarCodeReader.getCodeType
-- removed methodcom.aspose.barcode.barcoderecognition.BarCodeReader.getCodeTypeName
+- added field com.aspose.barcode.ECIEncodings.NONE 
+- removed method com.aspose.barcode.barcoderecognition.BarCodeReader.getCodeType
+- removed method com.aspose.barcode.barcoderecognition.BarCodeReader.getCodeTypeName
 - removed method com.aspose.barcode.barcoderecognition.BarCodeReader.close
 - removed method com.aspose.barcode.barcoderecognition.BarCodeReader.read
 - removed method com.aspose.barcode.barcoderecognition.BarCodeReader.getCodeText
