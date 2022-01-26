@@ -121,7 +121,7 @@ Aspose.BarCode for Reporting Services is a unique and robust solution for making
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for Reporting Services Online Documentation](/barcode/reportingservices/)
-- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/features/)
+- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/product-overview/)
 - [Aspose.BarCode for Reporting Services Release Notes](/barcode/reportingservices/release-notes/)
 - [Aspose.BarCode for Reporting Services Product Page](https://products.aspose.com/barcode/reporting-services)
 - [Download Aspose.BarCode for Reporting Services](https://downloads.aspose.com/barcode/reportingservices)
