@@ -31,7 +31,7 @@ All related information can be found in the articles listed below.
 |[DataBar Barcodes](/barcode/net/databar-barcodes/)|Represents the specific information about generating *DataBar* barcodes, including barcode height adjustment, layout settings, and GS1 compatibility verification|
 |[Codabar Barcodes](/barcode/net/codabar-barcodes/)|Describes how to generate *Codabar* barcodes, adjust start and stop symbols, and manage checksum settings|
 |[ITF Barcodes](/barcode/net/itf-barcodes/)|Describes how to generate *ITF* barcodes and customize frame styles and quiet zone settings|
-|[Codablock-F Barcodes](/barcode/net/code16k-barcodes/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
+|[Codablock-F Barcodes](/barcode/net/codablockf-barcodes/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
 |[PatchCode Barcodes](/barcode/net/how-to-generate-a-patch-code/)|Describes how to create *PatchCode* barcodes and pages using different patterns and generation modes|
 |[Code 16K Barcodes](/barcode/net/code16k-barcodes/)|Specifies how to generate *Code 16K* barcodes with different barcode height and quiet zone settings|
 |[EAN 2 and EAN 5 as Supplement](/barcode/net/ean2-and-ean5-as-supplement/)|Explains how to use *EAN 2* and *EAN 5* symbologies for the purpose of supplement barcode generation|

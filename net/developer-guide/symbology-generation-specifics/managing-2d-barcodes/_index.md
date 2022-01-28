@@ -6,8 +6,7 @@ url: /net/managing-2d-barcodes/
 ---
 
 ## Hiding Barcode Text that Is Too Long to Display
-
-Unlike one-dimensional barcodes, two-dimensional ones often contain a large amount of data as they have been introduced exactly to address such a need. This human-readable barcode text does not require to be printed out as it does not undergo machine scanning. Therefore, it may be necessary to hide the contents of the *CodeText* property for 2D barcodes in cases when it is too long to be displayed on a barcode label. 
+Unlike one-dimensional barcodes, two-dimensional ones often contain a large amount of data as they have been introduced exactly to address such a need. This human-readable barcode text does not require to be printed out as it does not undergo machine scanning. Therefore, it may be necessary to hide the contents of the *CodeText* property for 2D barcodes in cases when the text is too long to be displayed on a barcode label. 
 
 ### Hiding Barcode Text
 The following code snippet demonstrates how to hide the contents of the *CodeText* property.
@@ -24,8 +23,6 @@ The code sample provided below illustrates how to reduce the font size of *CodeT
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-ReduceCodeTextFontSize-ReduceCodeTextFontSize.cs" >}}
 
 ## Adjusting 2D Barcode Label Size
-{{% alert color="primary" %}} 
-
 The size of a barcode label depends on many factors. Mainly, the following settings affect the size of the resulting image:
 
 - Metrics
@@ -45,39 +42,6 @@ The size of a barcode label depends on many factors. Mainly, the following setti
 - *WideNarrowRatio*: the ratio of wide bars / narrow bars or wide spaces / narrow spaces for some types of barcodes
 - *CodeText*: is based on the settings of *CodeLocation*, *CodeTextFont*, and *CodeTextSpace* properties
 
-{{% /alert %}} 
-
-Each specific barcode type may have different semantic demands; then it will override or ignore the above settings. E.g., *Data Matrix* is a square-based barcode type. The *AspectRatio* setting is not applicable to the *Data Matrix* symbology as it equals 1 for square modules. Accordingly, *BarcodeGenerator* will simply ignore those settings during the generation process.
-
-## Aspect Ratio Settings
-The *AspectRatio* property is the ratio between the height and width of a barcode. We can control these parameters by setting the value of *AspectRatio*. For example, *AspectRatio* equal to 3:2 means that the width of the generated barcode will be 1.5 times larger than the height. Below the *PDF417* barcode with the *AspectRatio* of 1.5 is demonstrated.
-
-|**Aspect Ratio of 1.5**|
-| :- |
-|![todo:image_alt_text](managing-2d-barcodes_2.png)|
+Each specific barcode type may have different semantic demands; then it will override or ignore the above settings. For example,*DataMatrix* is a square-based barcode type; hence, the *AspectRatio* setting is not applicable to the *DataMatrix* symbology as it equals 1 for square modules. Accordingly, *BarcodeGenerator* will simply ignore those settings during the generation process.
   
-Setting the *AspectRatio* equal to 2 means that the width of the barcode is 2 times greater than its height. The PDF417 barcode with the *AspectRatio* of 2 is shown.
-
-|**Aspect Ratio of 2**|
-| :- |
-|![todo:image_alt_text](managing-2d-barcodes_3.png)|
-  
-The code snippet given below demonstrates how to set the Aspect Ratio:
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-SetAspectRatio-SetAspectRatio.cs" >}}
-
-## Detecting Unicode Encoding of Barcode
-Aspose.BarCode API allows developers to detect the Unicode encoding. This flag works only for QR/Micro QR codes at the moment.
-
-In this case, when the encoding detection flag is enabled, the barcode engine returns Unicode text while attempting to detect the encoding of a barcode. The barcode may be encoded using one of the following encodings:
-
-- UTF8
-- BOM_UTF8
-- BOM_UTF16BE
-- BOM_UTF16LE
-
-The flag is enabled by default. In the case when the flag is disabled, the engine returns plain text without encoding detection.
-
-The code example given below demonstrates how to get the plain text without encoding detection.
-
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-DetectUnicodeEncoding-DetectUnicodeEncoding.cs" >}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}

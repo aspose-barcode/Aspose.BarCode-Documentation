@@ -22,7 +22,7 @@ url: /net/barcode-types-and-image-formats/
 <tr> <th rowspan="2">1D (Linear)</th> 
 <th>Numeric Only</th> 
 <td>Code 11, Code 32, Codabar, DataBar OmniDirectional, DataBar Stacked OmniDirectional, DataBar Limited, DataBar Truncated, DataBar Stacked, EAN 13, EAN 14, EAN 8,
-IATA 2-of-5, Italian Post 25, Interleaved 2-of-5, ISBN, ISMN, ISSN, ITF 6, ITF 14, Matrix 2-of-5, MSI, OPC, PatchCode, Pharmacode, PZN, SSCC14, SSCC18, 
+IATA 2-of-5, Italian Post 25, Interleaved 2-of-5, ISBN, ISMN, ISSN, ITF 6, ITF 14, Matrix 2-of-5, MSI, OPC, PatchCode, Pharmacode, PZN, SSCC 14, SSCC 18, 
 Standard 2-of-5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
 </td> 
 </tr> 
@@ -30,7 +30,7 @@ Standard 2-of-5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
 <td>Code 128, Code 39, Code 93, Code 16K, Codablock-F, DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, VIN</td> 
  </tr> 
 <tr> <th colspan ="2" >2D</th> 
-<td>QR, MicroQR, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec, DataMatrix, DotCode, GS1 DataMatrix, GS1 QR, MaxiCode</td> 
+<td>QR, Micro QR Code, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec, DataMatrix, DotCode, GS1 DataMatrix, GS1 QR Code, MaxiCode</td> 
  </tr> 
  <tr> <th colspan ="2">Postal</th> 
 <td>Australia Post, AustralianPostParcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, SwissPostParcel, USPS OneCode</td> 

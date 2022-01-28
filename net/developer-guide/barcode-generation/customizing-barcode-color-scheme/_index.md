@@ -8,6 +8,8 @@ url: /net/customizing-barcode-color-scheme/
 ---
 This article describes the options provided by ***Aspose.BarCode for .NET*** to adjust the color scheme of a barcode image and its main elements.
 
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+
 ## Overview
 Generally, barcode images are created in black and white colors. However, to address the necessity to generate barcode labels of different colors, ***Aspose.BarCode for .NET*** enables customizing system RGB color for key barcode elements, such as:
 - Background

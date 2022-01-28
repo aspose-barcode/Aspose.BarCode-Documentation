@@ -4,11 +4,14 @@ type: docs
 weight: 80
 url: /net/maxicode-barcodes/
 ---
+{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
 
 ## Overview
 *MaxiCode* is a 2D matrix barcode type that allows encoding both text information and byte streams. This symbology supports Reed-Solomon error correction. The amount of data required for error correction and barcode size are strictly specified in the *MaxiCode* standard. A *MaxiCode* barcode includes a round bullseye finder pattern composed of three concentric circles, six orientation patterns, and 33 rows with 29 or 30 hexagonal modules.  
   
-The available size of information to be encoded (data capacity) depends on the input data themselves due to encoding specificities and constitutes at most approximately 60 bytes or 140 numerical (90 alphanumeric) digits. This symbology has been introduced for postal services; it is intended for industrial standard support and is not recommended for arbitrary use.
+The available size of information to be encoded (data capacity) depends on the input data characteristics due to encoding specificities and constitutes at most 60 bytes or 140 numerical (90 alphanumeric) digits. This symbology has been introduced for postal services; it is intended for industrial standard support and is not recommended for arbitrary use.
+  
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## MaxiCode Encoding Mode Settings
 In ***Aspose.BarCode for .NET***, developers can set different encoding modes for *MaxiCode* barcode generation using the [*MaxiCodeEncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/properties/maxicodeencodemode) property of class [*MaxiCodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters). The following encoding modes are supported: 
@@ -19,7 +22,7 @@ In ***Aspose.BarCode for .NET***, developers can set different encoding modes fo
 These modes are described further in the article.   
 
 ### Encoding Modes 2 and 3
-For correct barcode generation, encoding modes 2 and 3 require specifying input data in the predefined formats that can be summarized as follows:  
+For correct barcode generation, encoding modes 2 and 3 require specifying the input data in the predefined formats that can be summarized as follows:  
 - <mark>Format1: “[)>(rs)01(gs)(Postal Code)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)”</mark>
 - <mark>Format2: “(Postal Code 9 digits)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)”</mark>
   
@@ -58,7 +61,7 @@ gen.Save($"{path}MaxiCodeEncodeMode2Second.png", BarCodeImageFormat.Png);
 {{< /highlight >}}  
   
 ### Encoding Modes 4, 5, and 6
-These modes allow encoding arbitrary text data and byte streams. The code sample given below shows how to perform byte stream encoding when encoding mode 4 is enabled.
+These modes allow encoding the arbitrary text data and byte streams. The code sample given below shows how to perform byte stream encoding when encoding mode 4 is enabled.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©");
