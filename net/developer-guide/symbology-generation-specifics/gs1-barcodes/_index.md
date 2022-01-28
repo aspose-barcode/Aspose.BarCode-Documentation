@@ -4,7 +4,7 @@ type: docs
 weight: 90
 url: /net/generating-barcodes-using-new-barcode-generation-api/
 ---
-{{% alert color="primary" %}}[Generate Aspose GS1 Code 128 and](https://products.aspose.app/barcode/generate/qr?type=gs1code128) [GS1 DataMatrix barcodes online](https://products.aspose.app/barcode/generate/qr?type=gs1datamatrix). You can test the quality of ***Aspose.BarCode*** generation for *GS1* barcodes and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Aspose GS1 Code 128 and](https://products.aspose.app/barcode/generate/code128?type=gs1code128) [GS1 DataMatrix barcodes online](https://products.aspose.app/barcode/generate/datamatrix?type=gs1datamatrix). You can test the quality of ***Aspose.BarCode*** generation for *GS1* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 GS1 is a non-profit international organization that is aimed at developing encoding standards for automatic identification and data capture (AIDC) that refers to the methods of machine data reading used in trading and transportation of goods. To facilitate item tracking, GS1 has introduced multiple identification codes (so called application identifiers) that are used to encode various information about goods. GS1 Application Identifiers (AIs) are defined as prefixes included in barcodes and RFID tags to specify the context and format of the data to be encoded. For barcodes that correspond to one of the most widely used item identification methods, GS1 also has developed its own data encoding standards for different barcode types.  
