@@ -4,7 +4,7 @@ type: docs
 weight: 110
 url: /net/codabar-barcodes/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Codabar Barcodes online](https://products.aspose.app/barcode/generate/codabar). You can test the quality of ***Aspose.BarCode*** generation for *Codabar* barcodes and get the results online.{{% /alert %}}
 
 ## Overview
 ***Aspose.BarCode for .NET*** enables generating barcode labels according to the *Codabar* standard that supports encoding numerical digits and six punctuation signs. The number of digits to be encoded in a barcode is unlimited. A *Codabar* barcode may contain four optional alphabet characters (usually, A, B, C, or D) that are used as start and stop digits. In this way, the symbology provides four types of start characters and four types of stop ones. Accordingly, for the same information to be encoded, it allows generating 16 barcodes with different service sets of start and stop characters.  

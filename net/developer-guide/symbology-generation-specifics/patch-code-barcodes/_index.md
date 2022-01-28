@@ -1,10 +1,12 @@
 ---
 title: PatchCode Barcodes
 type: docs
+description: "Aspose.BarCode for .NET enables PatchCode barcode generation."
+keywords: "Generate Patch Code Barcode, Create PatchCode, How to Generate Patch Code barcodes, Aspose.BarCode for .NET, C#"
 weight: 140
 url: /net/how-to-generate-a-patch-code/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate PatchCode Barcodes online](https://products.aspose.app/barcode/generate/patchcode). You can check the quality of ***Aspose.BarCode*** generation for *PatchCode* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 The *PatchCode* symbology has been developed by Kodak to facilitate task management for automatic multi-page document scanning. Such barcodes do not encode any data; instead, a barcode pattern indicates an action to be performed. ***Aspose.BarCode for .NET*** supports six main *PatchCode* patterns and allows generating barcodes in two modes: as separate barcode images to be placed on a page manually; as a complete A4 or US Letter page with the required resolution. *PatchCode* barcode labels are printed on four sides of a document; however, it is sufficient to read only one of them to complete scanning. This feature allows reading barcodes successfully even if pages are rotated.

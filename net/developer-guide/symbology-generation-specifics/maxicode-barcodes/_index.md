@@ -4,7 +4,7 @@ type: docs
 weight: 80
 url: /net/maxicode-barcodes/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate MaxiCode Barcodes online](https://products.aspose.app/barcode/generate/maxicode). You can test the quality of ***Aspose.BarCode*** generation for *MaxiCode* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 *MaxiCode* is a 2D matrix barcode type that allows encoding both text information and byte streams. This symbology supports Reed-Solomon error correction. The amount of data required for error correction and barcode size are strictly specified in the *MaxiCode* standard. A *MaxiCode* barcode includes a round bullseye finder pattern composed of three concentric circles, six orientation patterns, and 33 rows with 29 or 30 hexagonal modules.  

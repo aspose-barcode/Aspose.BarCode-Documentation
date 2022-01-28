@@ -4,7 +4,7 @@ type: docs
 weight: 100
 url: /net/databar-barcodes/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate DataBar Barcodes online](https://products.aspose.app/barcode/generate/databar). You can check the quality of ***Aspose.BarCode*** generation for *DataBar* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 The *DataBar* symbology was introduced at the beginning of the 2000s as a part of the GS1 group of standards. The purpose was to mitigate the problems associated with the use of barcode types developed in the 70s. At the same time, it was necessary to keep the most important feature of 1D barcodes, namely, the possibility of being scanned by laser readers. The *DataBar* standard includes the following barcode types: 

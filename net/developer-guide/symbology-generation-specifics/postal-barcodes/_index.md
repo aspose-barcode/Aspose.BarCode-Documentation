@@ -4,7 +4,7 @@ type: docs
 weight: 170
 url: /net/postal-barcodes/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate USPS Planet and](https://products.aspose.app/barcode/generate/planet) [USPS Postnet Barcodes online](https://products.aspose.app/barcode/generate/postnet). You can check the quality of ***Aspose.BarCode*** generation for postal barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 The *Postal* group of barcode standards has been developed to mitigate various limitations associated with 1D barcodes. In *Postal* barcodes, data encoding is based on varying the barcode height instead of the width of lines and spaces as in the case of 1D symbologies. In contrast, the information about horizontal parameters is ignored while reading *Postal* barcodes to avoid false-positive recognition.  
