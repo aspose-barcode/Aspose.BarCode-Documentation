@@ -4,7 +4,7 @@ type: docs
 weight: 150
 url: /net/code16k-barcodes/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Aspose Code 16K Barcodes online](https://products.aspose.app/barcode/generate/code16k). You can test the quality of ***Aspose.BarCode*** generation for *Code 16K* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 *Code 16K* is a multiple-row barcode symbology that may contain up to 16 rows; each row has a fixed length and can include up to five characters. It has the data encoding structure similar to that of the *Code128* barcode type and allows encoding the same set of characters with equal data density. *Code 16K* contains a checksum for an entire barcode that is calculated in two last characters; however, it does not provide a separate checksum for each row. A barcode of this symbology can encode up to 77 data characters or 154 numerical digits. At present, this barcode type is interesting mainly from the historical point of view and is rarely used in healthcare applications.

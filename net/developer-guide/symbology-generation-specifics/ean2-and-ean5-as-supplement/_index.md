@@ -4,7 +4,7 @@ type: docs
 weight: 160
 url: /net/ean2-and-ean5-as-supplement/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Aspose Barcodes online](https://products.aspose.app/barcode/generate). You can check the quality of ***Aspose.BarCode*** barcode generation and view the results online.{{% /alert %}}
 
 ## Overview
 ***Aspose.BarCode for .NET*** enables the generation of *EAN2* and *EAN5* barcode types but only as supplements for the following symbologies: *EAN13*, *EAN8*, *Interleaved 2 of 5*, *ISBN*, *ISMN*, *ISSN*, *Standard 2 of 5*, *UPC-A*, and *UPC-E*. Supplement barcodes may be used to encode two or five complementary digits in addition to the main barcode and have their own checksum. The use of such barcodes is reserved in various industries; however, in production, they can also be applied to encode additional information, for example, about an item or its price. 

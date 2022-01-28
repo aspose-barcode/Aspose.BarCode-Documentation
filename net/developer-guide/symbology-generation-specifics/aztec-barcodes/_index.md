@@ -2,11 +2,11 @@
 title: Aztec Barcodes
 type: docs
 description: "Aspose.BarCode for .NET allows generating square-grid high-density two-dimensional Aztec barcodes."
-keywords: "Generate Aztech Barcode, Generate Aztec code, How to Generate Aztec barcodes, Aspose.BarCode for .NET, C#"
+keywords: "Generate Aztec Barcode, Generate Aztec code, How to Generate Aztec barcodes, Aspose.BarCode for .NET, C#"
 weight: 70
 url: /net/aztec-barcode/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Aspose Aztec Barcodes online](https://products.aspose.app/barcode/generate/aztec). You can check the quality of ***Aspose.BarCode*** generation for *Aztec* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 *Aztec* is a 2D matrix symbology that supports encoding both byte streams and alphanumeric characters. *Aztec* barcodes are depicted as square-grid modules with a unique pattern in the middle of a barcode image that facilitates barcode scanning and recognition. Moreover, it enables Reed-Solomon error correction to verify data integrity and recover encoded information. This symbology provides high data density and recognition accuracy.  
