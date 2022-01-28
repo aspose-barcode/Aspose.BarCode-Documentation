@@ -7,21 +7,21 @@ keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET
 url: /net/product-features/
 ---
 
-## **General Features**
+## General Features
 - Barcode generation
 - Barcode recognition
-- Symbology specification (60+ symbologies: 1D, 2D, Postal)
+- Symbology specification (60+ symbologies: 1D, 2D, and postal types)
 - Managing barcode appearance-related parameters
 - Image rotation
 - Encoding and decoding non-English characters in 2D types
 - Customizing recognition engine variables
-- Saving to or loading from stream or file
+- Saving to or loading from a stream or a file
 - Label printing
 - Working with complex barcodes (e.g. Swiss QR Code) 
 
-## **Barcode Recognition**
+## Barcode Recognition
 
-- [*Class BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): reading 1D and 2D barcodes at any angle from an image
+- Class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): reading 1D and 2D barcodes at any angle from an image
 - Supporting popular image formats: JPEG, TIFF, PNG, BMP, and GIF
 - Reading images with resolution from 75 to 600 dpi
 - Reading highly blurred or noised images
@@ -35,8 +35,8 @@ url: /net/product-features/
 - Increasing the barcode detection speed through multi-threading
 - Scanning from multi-page TIFF through System.Drawing
 
-## **Barcode Generation**
-- [*Class BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): generating barcode labels according to required settings
+## Barcode Generation
+- Class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): generating barcode labels according to required settings
 - Providing a wide range of options to customize barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
 - Saving barcode labels in various image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
 - Customizing the barcode encoding type and parameters
@@ -47,7 +47,7 @@ url: /net/product-features/
 - Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
 - Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256
 
-## **Barcode Imaging**
+## Barcode Imaging
 - Customizing barcode image borders, border color, style, margins, and width
 - Customizing barcode image color, background color, and bar color
 - Customizing bar height

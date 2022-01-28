@@ -8,11 +8,13 @@ url: /net/image-formatting-and-display-settings/
 ---
 This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
 
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+
 ## Overview
 In ***Aspose.BarCode for .NET***, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
   
 <p align="center"><img src="barcode_view_scheme.png"></p>
-  
+ 
 ## Barcode Image Sizing Modes
 
 In the general case, ***Aspose.BarCode for .NET*** adjusts the size of a barcode image (width and height) automatically. However, it is possible to customize the image size settings manually by specifying the height and width of a barcode image using [*ImageHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imagewidth) properties of class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters).  
@@ -118,7 +120,7 @@ The following code sample explains how to set the required barcode border style.
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 //set border visible
 gen.Parameters.Border.Visible = true;
-//set border size to 5 pizels
+//set border size to 5 pixels
 gen.Parameters.Border.Width.Pixels = 5;
 gen.Parameters.Border.DashStyle = BorderDashStyle.Solid;
 gen.Save($"{path}BorderSolid.png", BarCodeImageFormat.Png);

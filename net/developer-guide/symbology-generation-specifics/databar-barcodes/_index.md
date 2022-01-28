@@ -1,9 +1,10 @@
 ---
 title: DataBar Barcodes
 type: docs
-weight: 50
+weight: 100
 url: /net/databar-barcodes/
 ---
+{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
 
 ## Overview
 The *DataBar* symbology was introduced at the beginning of the 2000s as a part of the GS1 group of standards. The purpose was to mitigate the problems associated with the use of barcode types developed in the 70s. At the same time, it was necessary to keep the most important feature of 1D barcodes, namely, the possibility of being scanned by laser readers. The *DataBar* standard includes the following barcode types: 
@@ -14,6 +15,7 @@ The *DataBar* symbology was introduced at the beginning of the 2000s as a part o
   
 All *DataBar* standards except *DataBar Limited* can be represented both in two-row or multiple-row (up to 10 rows) forms. This allows adjusting the barcode layout and fitting it in the available area in the case of limited horizontal space. These symbologies have been developed specifically to encode GS1 identification codes for trade items (so-called Application Identifiers, see more in [GS1 Barcodes](/barcode/net/generating-barcodes-using-new-barcode-generation-api/)). Accordingly, all *DataBar* symbologies except *DataBar Expanded* and *DataBar Expanded Stacked* can be used to encode only trade identifiers defined as Global Trade Item Number (GTIN) exclusively in *GTIN12* or *GTIN13* digital formats using the 14-digit data structure. In turn, *DataBar Expanded* enables encoding any set of application identifiers; moreover, it allows including additional information in any form as it supports English alphabet characters (uppercase and lowercase), numerical digits, and 21 punctuation symbols.  
 
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## Barcode Height Settings
 *DataBar* symbologies can be divided into two main groups: continuous and stacked. In ***Aspose.BarCode for .NET***, for each of them there is its own way to adjust barcode height. Details on how to modify barcode height along with code samples and examples of generated barcodes are provided further in the article. 
