@@ -121,7 +121,7 @@ Aspose.BarCode for Reporting Services is a unique and robust solution for making
 The following are the links to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for Reporting Services Online Documentation](/barcode/reportingservices/)
-- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/features/)
+- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/product-overview/)
 - [Aspose.BarCode for Reporting Services Release Notes](/barcode/reportingservices/release-notes/)
 - [Aspose.BarCode for Reporting Services Product Page](https://products.aspose.com/barcode/reporting-services)
 - [Download Aspose.BarCode for Reporting Services](https://downloads.aspose.com/barcode/reportingservices)
@@ -146,7 +146,6 @@ The following are the links to some useful resources you may need to accomplish 
 
 - [Aspose.BarCode for SharePoint Online Documentation](/barcode/sharepoint/)
 - [Aspose.BarCode for SharePoint Features](/barcode/sharepoint/features/)
-- [Aspose.BarCode for SharePoint Release Notes](/barcode/sharepoint/release-notes/)
 - [Aspose.BarCode for SharePoint Product Page](https://products.aspose.com/barcode/sharepoint)
 - [Download Aspose.BarCode for SharePoint](https://downloads.aspose.com/barcode/sharepoint)
 - [Aspose.BarCode for SharePoint Free Support Forum](https://forum.aspose.com/c/barcode)
