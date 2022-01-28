@@ -6,7 +6,7 @@ keywords: "Generate PDF417 Barcode, Create Macro PDF417 Barcode, How to Generate
 weight: 50
 url: /net/pdf417-and-macropdf417-barcode/
 ---
-{{% alert color="primary" %}}[Generate Aspose PDF417 Barcode online](https://products.aspose.app/barcode/generate/pdf417). You can test the quality of ***Aspose.BarCode*** generation for *MaxiCode* barcodes and get the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate PDF417 Barcodes online](https://products.aspose.app/barcode/generate/pdf417). You can test the quality of ***Aspose.BarCode*** generation for *MaxiCode* barcodes and get the results online.{{% /alert %}}
 
 ## Overview
 *PDF417* is a group of 2D variable-length stacked symbologies that are similar to matrix barcodes in terms of various parameters. This standard supports laser scanning for high-quality documents (except *Compact PDF417* that requires photo scanning). *PDF417* barcodes have data density that is lower that of matrix symbologies but several times greater compared to basic 1D stacked barcode types. *PDF417* standards enable encoding both byte streams and Unicode symbols. Moreover, *PDF417* barcodes include additional information for data recovery through Reed-Solomon error correction.  

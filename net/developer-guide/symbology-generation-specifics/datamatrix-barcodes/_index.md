@@ -4,7 +4,7 @@ type: docs
 weight: 60
 url: /net/datamatrix-barcode/
 ---
-{{% alert color="primary" %}}[Generate Aspose DataMatrix Barcodes online](https://products.aspose.app/barcode/generate/datamatrix). You can test the quality of ***Aspose.BarCode*** generation for *DataMatrix* barcodes and get the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate DataMatrix Barcodes online](https://products.aspose.app/barcode/generate/datamatrix). You can test the quality of ***Aspose.BarCode*** generation for *DataMatrix* barcodes and get the results online.{{% /alert %}}
 
 ## Overview
 The *DataMatrix* symbology is a 2D matrix barcode type that allows generating barcodes of rectangular and square shapes. It is a widely used industrial barcode standard that enables encoding both sets of characters and byte streams. In the maximal configuration, *DataMatrix* barcodes include 144 rows and columns and contain up to 1,555 bytes or 3,116 numerical (2,335 ASCII) symbols. Moreover, *DataMatrix* implies including additional recovery information that is used for data integrity check and error correction so that even severely damaged barcodes can be recognized. This symbology supports two main standards that are described below.  

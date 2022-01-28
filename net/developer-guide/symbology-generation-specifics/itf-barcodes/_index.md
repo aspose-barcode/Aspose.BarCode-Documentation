@@ -4,7 +4,7 @@ type: docs
 weight: 120
 url: /net/itf-barcodes/
 ---
-{{% alert color="primary" %}}[Generate Aspose ITF Barcodes online](https://products.aspose.app/barcode/generate/itf). You can check the quality of ***Aspose.BarCode*** generation for *ITF* barcodes and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate ITF Barcodes online](https://products.aspose.app/barcode/generate/itf). You can check the quality of ***Aspose.BarCode*** generation for *ITF* barcodes and view the results online.{{% /alert %}}
 
 ## Overview
 The *ITF 14* symbology has been introduced by GS1 based on the *Interleaved 2 of 5* standard to encode trade identifiers defined as Global Trade Item Numbers (GTIN). This barcode type allows encoding a set of 14 digits where the last one is a check digit. The *ITF 6* symbology is mainly used as an addition to *ITF 14* to encode the quantity or weight of a trade item. *ITF* barcode labels usually have borders or frames of different types with a quiet zone. Such appearance-related settings may vary depending on particular industrial needs. In ***Aspose.BarCode for .NET***, parameters of generated *ITF* barcodes can be adjusted using the [*ITF*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/itf) property group of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). Further in the article, these properties are discussed in detail along with the instructions on their use and corresponding code samples.
