@@ -14,10 +14,12 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
+|BARCODEJS-263|Implement the saving images in TIFF and SVG formats|Enhancement|
 |BARCODENET-37974|Fix array out of bounds issue|Bug|
 |BARCODENET-37962|Fix bug with incorrect text wrapping with current EMF encoder|Bug|
 |BARCODENET-37963|Fix SwissQR codetext serialization issue|Bug|
-|BARCODEJS-263|Implement the saving images in TIFF and SVG formats|Enhancement|
+|BARCODEJAVA-1241|Correct the functionality related to processing emf images|Bug|
+|BARCODEJS-254|Function generator.getBarcodeType() returns incorrect result|Bug|
 
 ## **Public API and Backward Incompatible Changes**
 - Added function Generation.BarcodeGenerator.exportToXml(filePath)
