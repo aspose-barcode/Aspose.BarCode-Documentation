@@ -6,7 +6,7 @@ keywords: "Export barcode to XML, Import barcode from XML, barcode in XML, Aspos
 weight: 80
 url: /net/barcode-in-xml/
 ---
-
+ 
 ## Overview
 In ***Aspose.BarCode for .NET***, it is possible to perform data serialization and import data from XML using the specific functionality of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator). Data serialization can be done in two ways: saving data to an xml-file using the [*ExportToXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) or to a stream with the [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) method.  
   
