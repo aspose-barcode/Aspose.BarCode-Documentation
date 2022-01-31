@@ -238,7 +238,7 @@ gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
 *QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for .NET*** does not enable distributing information inputted into [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the [*StructuredAppend*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/structuredappend) property using the following fields: 
 - *TotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *SequenceIndicator* - the sequence number of the current barcode (starting from 0)
-- *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   
+- *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
   
 Sample barcode images provided below have been created using the *Structured Append* mechanism implemented in the following code snippet.
   

@@ -8,7 +8,7 @@ keywords: "read barcode, Read Barcode from Stream, Scan Barcode from Image, Many
 weight: 10
 url: /net/read-barcodes-with-aspose-barcode-apis/
 ---
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read barcodes online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
 
 ## Overview
 ***Aspose.BarCode for .NET*** provides class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) that enables barcode recognition from given images for more than 60 symbologies. In general, to perform barcode reading, it is necessary first to specify the source of an image with barcodes to be detected as a file, a bitmap object, or a stream. Then, it is required to set target symbologies in the [*DecodeType*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/decodetype) parameter; otherwise, barcode recognition will take more time as using the default setting *DecodeType.AllSupportedTypes* implies looking over all supported symbologies to check for their presence in the source barcode image. In addition, developers can explicitly set the target region/regions in an image for barcode reading. It can be done using a [*https://docs.microsoft.com/dotnet/api/system.drawing.rectangle *]( https://docs.microsoft.com/dotnet/api/system.drawing.rectangle) object and allows avoiding the unnecessary search for barcodes in the image areas with no barcodes presented by default.
