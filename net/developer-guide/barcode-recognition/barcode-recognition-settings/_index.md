@@ -7,7 +7,7 @@ weight: 30
 url: /net/barcode-recognition-settings/
 ---
 
-{{% alert color="primary" %}}[Raed barcodes online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read barcodes online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## Overview
 In ***Aspose.BarCode for .NET***, after reading the raw data from a barcode graphical representation, the library initiates data decoding that is performed according to the specific protocol. Often, in case of using particular 1D and postal barcode types, conflicting data decoding formats may appear due to the fact that some barcode symbologies have undergone standardization later than the start of their wide usage. To resolve such conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) contains a group of properties called [*BarcodeSettings*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings) that are responsible for data decoding settings.
