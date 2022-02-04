@@ -1,5 +1,6 @@
 ---
 title: Aspose.Barcode for SharePoint
+description: Aspose.BarCode for SharePoint is a flexible solution that allows you to add barcode type columns to SharePoint lists.
 type: docs
 weight: 60
 url: /sharepoint/
