@@ -18,11 +18,12 @@ In ***Aspose.BarCode for .NET***, multithreading is based on the system paramete
 
 ## Manual Multi-Thread Recognition Settings
 To define multi-thread recognition settings manually, the following parameters can be used:
--	[*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings) and [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount) are intended to indicate the maximal number of additional CPU cores allowed for use in a single reading operation while identification of the required number of threads is performed automatically for each concrete case.  
--	[*MaxAdditionalAllowedThreads*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) is used to set the maximal number of threads allowed for simultaneous execution across all [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) instances in case of necessity during multi-thread recognition. Usually, it is recommended to set the value that equals 2 x the value of [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount) or 2 x overall number of CPU cores when [*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings) is set to *True*.
+-	[*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useallcores) and [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount) are intended to indicate the maximal number of additional CPU cores allowed for use in a single reading operation while identification of the required number of threads is performed automatically for each concrete case.  
+-	[*MaxAdditionalAllowedThreads*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) is used to set the maximal number of threads allowed for simultaneous execution across all [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) instances in case of necessity during multi-thread recognition. Usually, it is recommended to set the value that equals 2 x the value of [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount) or 2 x overall number of CPU cores when [*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useallcores) is set to *True*.
 
 ## Single-Thread Recognition
-
+In cases when there is a reason not to use additional CPU cores and to perform single-thread barcode recognition, this can be implemented setting corresponding parameters [*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useallcores), [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount), and [*MaxAdditionalAllowedThreads*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) of class [*ProcessorSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings) as demonstrated in the code sample provided below.
+  
 <p align="center"><img src="many_pdf417.png" height="75%" width="75%""></p>
 
 {{< highlight csharp>}}
@@ -33,7 +34,7 @@ BarCodeReader.ProcessorSettings.UseAllCores = false;
 BarCodeReader.ProcessorSettings.UseOnlyThisCoresCount = 1;
 BarCodeReader.ProcessorSettings.MaxAdditionalAllowedThreads = 0;
 
-//recognize image
+//read barcode image
 using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeType.Pdf417))
 {
     Stopwatch watch = Stopwatch.StartNew();
@@ -50,7 +51,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeTy
 </details>
 
 ## Using Fixed Number of Cores for Recognition
-
+To fix the number of CPU cores that can be allocated for barcode recognition, it is required to apply specific settings to multi-threading parameters [*UseAllCores*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useallcores), [*UseOnlyThisCoresCount*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/useonlythiscorescount), and [*MaxAdditionalAllowedThreads*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) of class [*ProcessorSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.common/processorsettings) as explained in the code sample given below.
 
 {{< highlight csharp>}}
 Console.WriteLine("ReadMTRestrictedCores:");
@@ -66,12 +67,12 @@ ThreadPool.SetMaxThreads(Math.Max(AllowedCores * 4, workerThreads), completionPo
 ThreadPool.GetMinThreads(out workerThreads, out completionPortThreads);
 ThreadPool.SetMinThreads(Math.Max(AllowedCores * 4, workerThreads), completionPortThreads);
 
-//Set multi-threadeded all-cores recognition
+//Set multi-thread all-cores recognition
 BarCodeReader.ProcessorSettings.UseAllCores = false;
 BarCodeReader.ProcessorSettings.UseOnlyThisCoresCount = AllowedCores;
 BarCodeReader.ProcessorSettings.MaxAdditionalAllowedThreads = AllowedCores;
 
-//recognize image
+//read barcode image
 using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeType.Pdf417))
 {
     Stopwatch watch = Stopwatch.StartNew();
@@ -89,6 +90,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeTy
 
 
 ## Automated Settings with Allocating Maximal Capacity for Recognition
+To set automated allocation of the maximal possible number of cores for barcode recognition, the following settings need to be applied as shown in the code sample below. In this case, class [*BarCodeReader*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) defines the number of required cores without the need of explicit manual instructions.
 
 {{< highlight csharp>}}
 Console.WriteLine("ReadMTAllCores:");
