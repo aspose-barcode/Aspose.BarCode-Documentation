@@ -102,7 +102,7 @@ gen.Save($"{path}RasterImageTiffInCmyk.tiff", BarCodeImageFormat.TiffInCmyk);
 
 The examples of barcode labels created in TIFF and TIFFInCMYK formats are provided below.
   
-|Output Format|TIFF|TIFFInCMYK|
+|Output Format|<p align="center">TIFF</p>|<p align="center">TIFFInCMYK</p>|
 | :-: | :-: | :-: |
 | |<a href="rasterimagetiff.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFF format"></a>|<a href="rasterimagetiffincmyk.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFFInCMYK format"></a>|
   

@@ -106,7 +106,7 @@ As mentioned above, to select the required data compaction way, the [*Pdf417Comp
   
 Barcode images demonstrated below have been generated using different compaction mode settings.
   
-|Compaction Mode|*Auto*|*Binary*|*Text*|*Numeric*|
+|<p align="center">**Compaction Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***Binary***</p>|<p align="center">***Text***</p>|<p align="center">***Numeric***</p>|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="pdf417compactionauto.png">|<img src="pdf417compactionbinary.png">|<img src="pdf417compactiontext.png">|<img src="pdf417compactionnumeric.png">|
   
@@ -185,7 +185,7 @@ To set the number of rows and columns in *PDF417* barcodes, ***Aspose.BarCode fo
   
 *PDF417* barcode images provided below have been generated using different layout settings.
 
-|<p>Layout Settings</p>|<p>2 Columns</p>|<p>6 Rows</p>|<p>9 Rows and 6 Columns</p>|
+|<p align="center">**Layout Settings**</p>|<p align="center">**2 Columns**</p>|<p align="center">**6 Rows**</p>|<p align="center">**9 Rows and 6 Columns**</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="pdf417columns2.png">|<img src="pdf417row6.png">|<img src="pdf417row9columns4.png">|
   
@@ -214,7 +214,7 @@ gen.Save($"{path}MicroPdf417Columns4.png", BarCodeImageFormat.Png);
 ## Error Correction Level Settings
 The *PDF417* barcode family applies the Reed-Solomon error correction mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [*Pdf417ErrorLevel*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two error correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that 265 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 614 bytes. All supported EC levels are listed below.  
   
-|EC Level|Number of EC Codewords|Error Correction Level|Number of EC Codewords|
+|<p align="center">**EC Level**</p>|<p align="center">**Number of EC Codewords**</p>|<p align="center">**Error Correction Level**</p>|<p align="center">**Number of EC Codewords**</p>|
 | :-: | :-: | :-: | :-: |
 |**Level 0**|2 EC codewords|**Level 5**|64 EC codewords|
 |**Level 1**|4 EC codewords|**Level 6**|128 EC codewords|
@@ -224,7 +224,7 @@ The *PDF417* barcode family applies the Reed-Solomon error correction mechanism 
   
 *PDF417* barcode images shown below have been created using different error correction level settings.  
   
-|Error Correction Level|Is Set to 2|Is Set to 5|
+|<p align="center">**Error Correction Level**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
 | :-: | :-: | :-: |
 | |<img src="pdf417errorlevel2.png">|<img src="pdf417errorlevel5.png">|
   
@@ -247,7 +247,7 @@ gen.Save($"{path}Pdf417ErrorLevel5.png", BarCodeImageFormat.Png);
 
 *PDF417* barcodes demonstrated below have been created using different aspect ratio settings.  
   
-|Aspect Ratio|Is Set to 2|Is Set to 5|
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
 | :-: | :-: | :-: |
 | |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
   

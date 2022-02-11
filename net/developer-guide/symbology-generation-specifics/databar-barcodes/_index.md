@@ -8,7 +8,7 @@ url: /net/databar-barcodes/
 
 ## Overview
 The *DataBar* symbology was introduced at the beginning of the 2000s as a part of the GS1 group of standards. The purpose was to mitigate the problems associated with the use of barcode types developed in the 70s. At the same time, it was necessary to keep the most important feature of 1D barcodes, namely, the possibility of being scanned by laser readers. The *DataBar* standard includes the following barcode types: 
-- *DataBar OmniDirectional* / *DataBar Stacked OmniDirectional*
+- *DataBar Omnidirectional* / *DataBar Stacked Omnidirectional*
 - *DataBar Truncated* / *DataBar Stacked*
 - *DataBar Limited*
 - *DataBar Expanded* / *DataBar Expanded Stacked*
@@ -21,7 +21,7 @@ All *DataBar* standards except *DataBar Limited* can be represented both in two-
 *DataBar* symbologies can be divided into two main groups: continuous and stacked. In ***Aspose.BarCode for .NET***, for each of them there is its own way to adjust barcode height. Details on how to modify barcode height along with code samples and examples of generated barcodes are provided further in the article. 
 
 ### Continuous Barcodes
-For continuous symbologies, such as *DataBar OmniDirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*, barcode heigh can be set using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
+For continuous symbologies, such as *DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*, barcode heigh can be set using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
   
 Sample *DataBar Omnidirectional* barcode labels provided below have been generated using different bar height settings.
    
@@ -43,7 +43,7 @@ gen.Save($"{path}DatabarBarHeight60Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ### Stacked Barcodes
-In stacked symbologies, such as *DataBar Stacked OmniDirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode heigh can be customized by initializing the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters/properties/aspectratio) property of class [*DataBarParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters). This parameter is defined as a relative coefficient to the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property.  
+In stacked symbologies, such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode heigh can be customized by initializing the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters/properties/aspectratio) property of class [*DataBarParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters). This parameter is defined as a relative coefficient to the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property.  
   
 *DataBar Stacked Omnidirectional* barcode images represented below as examples have been created with different aspect ratio settings.
   

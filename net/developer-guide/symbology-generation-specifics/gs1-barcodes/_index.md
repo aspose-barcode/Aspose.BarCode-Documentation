@@ -11,7 +11,7 @@ GS1 is a non-profit international organization that is aimed at developing encod
   
 The table below outlines the barcode types that support all GS1 Application Identifiers and those that are compatible only with the GS1AI_01 type.  
   
-|Compatibility with GS1 AIs|Barcode Types|
+|<p align="center">**Compatibility with GS1 AIs**</p>|<p align="center">**Barcode Types**</p>|
 |---|---|
 |All GS1 Application Indentifiers Are Supported|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 DataMatrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
 |Only GS1AI_01 Is Supported|DataBar OmniDirectional, DataBar Stacked OmniDirectional, DatabarLimited, DataBar Truncated, DataBar Stacked, EAN14, ITF14|
@@ -84,7 +84,7 @@ In ***Aspose.BarCode for .NET***, it is possible to adjust the size of spacing b
   
 Sample barcode images provided below have been generated using the *UPC-A GS1 DataBar Coupon* standard and applying different spacing settings.
      
-|Supplement Space|Is Set to 30 Pixels|Is Set to 50 Pixels|
+|<p align="center">**Supplement Space**</p>|<p align="center">**Is Set to 30 Pixels**</p>|<p align="center">**Is Set to 50 Pixels**</p>|
 | :-: | :-: | :-: |
 | |<img src="gs1couponspace30pixels.png">|<img src="gs1couponspace50pixels.png">|
   

@@ -51,7 +51,7 @@ By default, 1D barcodes with optional checksum do not impose the necessity of ch
 - *EnableChecksum.Default* and *EnableChecksum.No*. Checksum calculation is not enabled.
 - *EnableChecksum.Yes*. The library generates the checksum of the most appropriate type for the given barcode symbology.
   
-|Checksum Settings|Checksum Enabled|Checksum Disabled|
+|Checksum Settings|<p align="center">Checksum Enabled</p>|<p align="center">Checksum Disabled</p>|
 | :-: | :-: | :-: |
 | |<img src="onecscode39withchecksum.png">|<img src="onecscode39withoutchecksum.png">|
   
@@ -97,7 +97,7 @@ catch (Exception e)
 ## Displaying Checksum for Code128
 For the *Code128* and *GS1 Code128* symbologies, the library provides a specific setting [*ChecksumAlwaysShow*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/checksumalwaysshow) of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). When enabled, this setting allows adding the checksum digit in the *CodeText* field and thus displaying it as human-readable barcode text. 
   
-|Checksum Visibility|Displayed|Hidden|
+|Checksum Visibility|<p align="center">Displayed</p>|<p align="center">Hidden</p>|
 | :-: | :-: | :-: |
 | |<img src="onecscode128showchecksum.png">|<img src="onecscode128notshowchecksum.png">|
   

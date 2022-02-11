@@ -82,7 +82,7 @@ gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
   
 The sample barcode images rotated by different angles are represented below.
   
-|<p align="center">Rotation Angle</p>|<p align="center">Is Set to +90°</p>|<p align="center">Is Set to -90°</p>|<p align="center">Is Set to +45°</p>|<p align="center">Is Set to -45°</p>|<p align="center">Is Set to 180°</p>| 
+|<p align="center">**Rotation Angle**</p>|<p align="center">**Is Set to +90°**</p>|<p align="center">**Is Set to -90°**</p>|<p align="center">**Is Set to +45°**</p>|<p align="center">**Is Set to -45°**</p>|<p align="center">**Is Set to 180°**</p>| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="rotationangle+90.png">|<img src="rotationangle-90.png">|<img src="rotationangle+45.png">|<img src="rotationangle-45.png">|<img src="rotationangle180.png">|
   
@@ -110,7 +110,7 @@ According to the default settings, a barcode image is generated without borders;
   
 Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by initializing the [*DashStyle*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/dashstyle) of class *BorderParameters*.
   
-|<p align="center">Border Style</p>|<p align="center">Solid</p>|<p align="center">Dashed</p>|<p align="center">Dotted</p>|<p align="center">Dash Dot</p>|<p align="center">Dash Dot Dot</p>| 
+|<p align="center">**Border Style**</p>|<p align="center">**Solid**</p>|<p align="center">**Dashed**</p>|<p align="center">**Dotted**</p>|<p align="center">**Dash Dot**</p>|<p align="center">**Dash Dot Dot**</p>| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="bordersolid.png">|<img src="borderdash.png">|<img src="borderdot.png">|<img src="borderdashdot.png">|<img src="borderdashdotdot.png">|
   
@@ -137,9 +137,9 @@ gen.Save($"{path}BorderDashDotDot.png", BarCodeImageFormat.Png);
 ### Paddings
 The border paddings from the edges of a barcode image or its borders can be set in four directions by initializing the [Padding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/padding) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). The *Padding* property creates an instance of class [Aspose.BarCode.Generation.Padding](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/padding) that specifies the *Left*, *Right*, *Top*, and *Bottom* padding settings. The default values are set to 5 points in all directions.
   
-|Padding|Millimeters|Pixels|  
+|Padding|<p align="center">**Millimeters**</p>|<p align="center">**Pixels**</p>|  
 | :-: | :-: | :-: |  
-| |<p align="center"><img src="padding10millimeters.png"></p>|<p align="center"><img src="padding10pixels.png"></p>| 
+| |<img src="padding10millimeters.png">|<img src="padding10pixels.png">| 
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -153,7 +153,7 @@ gen.Parameters.Barcode.Padding.Top.Pixels = 10;
 gen.Parameters.Barcode.Padding.Right.Pixels = 10;
 gen.Parameters.Barcode.Padding.Bottom.Pixels = 10;
 gen.Save($"{path}Padding10Pixels.png", BarCodeImageFormat.Png);
-//set padding to 10 Millimeters
+//set padding to 10 millimeters
 gen.Parameters.Barcode.Padding.Left.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Top.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Right.Millimeters = 10;
@@ -167,10 +167,10 @@ Bar width reduction (BWR) is a method to adjust a graphic design file of a barco
   
 The sample barcodes shown below have been generated with and without applying bar width reduction.
   
-|Symbology|Bar Width Reduction 0|Bar Width Reduction 3|  
+|Symbology|<p align="center">**Bar Width Reduction 0**</p>|<p align="center">**Bar Width Reduction 3**</p>|  
 | :-: | :-: | :-: |  
-|**Code 128**|<img src="code128barwidthreduction0.png">|<img src="code128barwidthreduction3.png">| 
-|**Data Matrix**|<img src="datamatrixbarwidthreduction0.png">|<img src="datamatrixbarwidthreduction4.png">|
+|**Code 128**|<img src="code128barwidthreduction0.png" width="50%" height="50%">|<img src="code128barwidthreduction3.png" width="50%" height="50%">| 
+|**Data Matrix**|<img src="datamatrixbarwidthreduction0.png" width="50%" height="50%">|<img src="datamatrixbarwidthreduction4.png" width="50%" height="50%">|
   
 The following code example describes how to set bar width reduction.
    

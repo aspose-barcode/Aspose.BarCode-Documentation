@@ -45,7 +45,7 @@ Barcode text can be adjusted on a barcode image in terms of its positioning, nam
   
 The [*Location*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) property is used to adjust the vertical position of barcode text: above or below the barcode label, as demonstrated in the figures below. By default, it is set to "Below". 
   
-|Text Location|Above Barcode|Below Barcode|
+|Text Location|<p align="center">Above Barcode</p>|<p align="center">Below Barcode</p>|
 | :-: | :-: | :-: |
 | |<img src="codetextlocationabove.png">|<img src="codetextlocationbelow.png">|
   
@@ -67,7 +67,7 @@ gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
   
 The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/alignment) property allows modifying the horizontal position of barcode text: on the left, in the center, or on the right, as demonstrated in the figures below. By default, it is set to "Center". 
   
-|Text Alignment|Left|Center|Right|
+|Text Alignment|<p align="center">Left</p>|<p align="center">Center</p>|<p align="center">Right</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="codetextaligmentleft.png">|<img src="codetextaligmentcenter.png">|<img src="codetextaligmentright.png">|
   
@@ -92,7 +92,7 @@ The following code example shows how to specify the required barcode text alignm
 By default, the spacing (gap) between a barcode label and text is rather small (2pt). Developers can increase or decrease this spacing by setting the [*Space*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/space) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters). This property is used to manage the spacing between barcode text and the barcode label from above or below depending on the barcode text position. It cannot be initialized for several symbologies, such as EAN8, EAN13, UPC E, UPC A, ISBN, ISMN, ISSN, and UpcaGs1DatabarCoupon.  
 The images provided below illustrate the barcodes generated with different spacing settings, namely, five and forty pixels.
   
-|Text Spacing|Is Set to 5 Pixels|Is SEt to 40 Pixels|
+|Text Spacing|<p align="center">Is Set to 5 Pixels</p>|<p align="center">Is SEt to 40 Pixels</p>|
 | :-: | :-: | :-: |
 | |<img src="codetextspace5pixels.png">|<img src="codetextspace40pixels.png">|
   
@@ -116,7 +116,7 @@ The *FontMode* property allows adjusting the font size of barcode text. If *Font
   
 The sample barcode images shown below have been generated using different font modes. 
     
-|Font Setting Mode|Auto|Manual|
+|Font Setting Mode|<p align="center">Auto</p>|<p align="center">Manual</p>|
 | :-: | :-: | :-: |
 | |<img src="codetextfontmodeauto.png">|<img src="codetextfontmodemanual.png">|
   
@@ -158,7 +158,7 @@ gen.Save($"{path}CodetextFontModeManual.png", BarCodeImageFormat.Png);
 The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/nowrap) property of class [*CodetextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) is used to disable line breaks within the text when it is too long for a single row. If *NoWrap* is set to "*True*", barcode text is always displayed in one row. By default, the property is set to "*False*". 
 The figures below illustrate the difference in resulting barcode images in cases when the *NoWrap* property is set to *True* and *False*.
 
-|Text Wrapping Mode|Wrap|No Wrap|
+|Text Wrapping Mode|<p align="center">Wrap</p>|<p align="center">No Wrap</p>|
 | :-: | :-: | :-: |
 | |<img src="codetextlongtextwrap.png">|<img src="codetextlongtextnowrap.png">|
   
@@ -205,7 +205,7 @@ In some cases, it may be necessary to display additional text information on a b
 
 As previously mentioned, both captions, [*CaptionAbove*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionabove) and [*CaptionBelow*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/captionbelow) contained in class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters), are hidden by default. To display any of them or both, it is required to initialize the [*Visible*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/visible) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) and enter some text information in the [*Text*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/text) property of the same class. Top and bottom captions can be placed on a barcode image independently from each other and barcode elements. If required, a caption can replace barcode text for 1D barcodes by setting the former visible and hiding the latter. The figures provided below illustrate how captions can be placed on generated barcode images.
   
-|Caption Visibility|Above|Below|
+|Caption Visibility|<p align="center">Above</p>|<p align="center">Below</p>|
 | :-: | :-: | :-: |
 | |<img src="captionvisibleabove.png">|<img src="captionvisiblebelow.png">|
   
@@ -231,7 +231,7 @@ gen.Save($"{path}CaptionVisibleBelow.png", BarCodeImageFormat.Png);
 ### Text Positioning
 The [*Alignment*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/alignment) is used to adjust the horizontal positioning of captions in three ways: on the left, in the center, or on the right. By default, captions are placed in the center position. The figures below represent the barcode images generated with the top caption aligned in three ways.
   
-|Caption Alignment|Left|Center|Right|
+|Caption Alignment|<p align="center">Left</p>|<p align="center">Center</p>|<p align="center">Right</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="captionalignmentleft.png">|<img src="captionalignmentcenter.png">|<img src="captionalignmentright.png">|
   
@@ -258,7 +258,7 @@ gen.Save($"{path}CaptionAlignmentRight.png", BarCodeImageFormat.Png);
 ### Caption Padding
 The [*Padding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/padding) property allows setting spacings for top and bottom captions. The default value is set to {5pt; 5pt; 0; 5pt} for *CaptionAbove* and to {0; 5pt; 5pt; 5pt} for *CaptionBelow* accoroding to the standard Windows Rectangle properties {Top, Left, Bottom, Right}. In the case of setting captions invisible this property is ignored. The sample barcode images provided below have been created adjusting the value of the *Padding* property for captions to five and forty pixels.
   
-|Caption Padding|Is Set to 5 Pixels|Is Set to 40 Pixels|
+|Caption Padding|<p align="center">Is Set to 5 Pixels</p>|<p align="center">Is Set to 40 Pixels</p>|
 | :-: | :-: | :-: |
 | |<img src="captionpadding5pixels.png">|<img src="captionpadding40pixels.png">|
   
@@ -310,7 +310,7 @@ gen.Save($"{path}CaptionFont.png", BarCodeImageFormat.Png);
 
 The [*NoWrap*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/nowrap) property of class [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters) is intended to disable text line breaks in the case when a text string is too long to fit in a single line. When this property is set to "*True*", caption text is always displayed in a single line. The following barcode images show the difference in resulting barcode images in cases when the *NoWrap* property is initialized as *True* and *False*.
   
-|Caption Wrapping|Is Set to *Wrap*|Is Set to *No Wrap*|
+|Caption Wrapping|<p align="center">Is Set to *Wrap*</p>|<p align="center">Is Set to *No Wrap*</p>|
 | :-: | :-: | :-: |
 | |<img src="captiontextwrap.png">|<img src="captiontextnowrap.png">|
   

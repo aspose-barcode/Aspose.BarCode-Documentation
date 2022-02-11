@@ -22,12 +22,12 @@ Sample *Planet* and *RM4SCC* barcode images provided below have been generated w
   
 |Planet Barcode Height| | |
 |---| :-: | :-: |
-|**Bar Height**|<p>**Is Set to None**</p>|<p>**Is Set to 100 Pixels**</p>|
+|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to None**</p>|<p align="center">**Is Set to 100 Pixels**</p>|
 | |<img src="postalplanetbarheightnone.png">|<img src="postalplanetbarheight100pixels.png">|
   
 |RM4SCC Barcode Height| | |
 |---| :-: | :-: |
-|**Bar Height**|<p>**Is Set to None**</p>|<p>**Is Set to 100 Pixels**</p>|
+|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to None**</p>|<p align="center">**Is Set to 100 Pixels**</p>|
 | |<img src="postalrm4sccbarheightnone.png">|<img src="postalrm4sccbarheight100pixels.png">|
   
 The following code snippet explains how to adjust the height of postal barcodes (*Planet* and *RM4SCC* ones).
@@ -61,12 +61,12 @@ In ***Aspose.BarCode for .NET***, developers can customize the appearance of *Po
   
 |Planet Bar Filling| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p>**Filled Bars**</p>|<p>**Empty Bars**</p>|
+|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
 | |<img src="postalplanetfilledbars.png">|<img src="postalplanetemptybars.png">|
   
 |RM4SCC Bar Filling| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p>**Filled Bars**</p>|<p>**Empty Bars**</p>|
+|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
 | |<img src="postalrm4sccfilledbars.png">|<img src="postalrm4sccemptybars.png">|
   
 The following code sample illustrates how to manage bar filling settings for postal barcodes (*Planet* and *RM4SCC* ones).
@@ -157,7 +157,7 @@ In general, **2-state** barcodes are composed of long and short bars so that the
   
 Sample barcode labels demonstrated below have been generated with different short bar settings.
   
-|<p>**Short Bar Height Settings**</p>|<p>**Is Set to 10 Pixels**</p>|<p>**Is Set to 30 Pixels**</p>|
+|Short Bar Height Settings**|<p align="center">**Is Set to 10 Pixels**</p>|<p align="center">**Is Set to 30 Pixels**</p>|
 | :-: | :-: | :-: |  
 | |<img src="postalplanetshortbarheight10pixels.png">|<img src="postalplanetshortbarheight30pixels.png">|
   
@@ -213,7 +213,7 @@ gen.Save($"{path}PostalDutchKIXBarcode.png", BarCodeImageFormat.Png);
 ### OneCode Symbology
 The *OneCode* standard can be used to encode messages composed of numerical digits with the length fixed to 20, 25, 29, or 31 digits into 65-bar barcodes. It includes an eleven-bit cyclic redundancy check to recognize errors but does not support error correction.  
   
-|<p>**OneCode Standard**</p>|<p>**20 Digits**</p>|<p>**25 Digits**</p>|<p>**29 Digits**</p>|<p>**31 Digits**</p>|
+|OneCode Standard|<p align="center">**20 Digits**</p>|<p align="center">**25 Digits**</p>|<p align="center">**29 Digits**</p>|<p align="center">**31 Digits**</p>|
 | :-: | :-: | :-: | :-: | :-: |  
 | |<img src="postalonecodebarcode20digits.png">|<img src="postalonecodebarcode25digits.png">|<img src="postalonecodebarcode29digits.png">|<img src="postalonecodebarcode31digits.png">|
   
@@ -248,7 +248,7 @@ In the *Australia Post* symbology, input messages include specific 2-digit forma
   
 Input messages can be defined using one of the following formats specified in the table below.  
   
-|<p>**FCC Field**</p>|<p>**Sorting Code Field**</p>|<p>**Customer Information Field**</p>|  
+|FCC Field|<p align="center">**Sorting Code Field**</p>|<p align="center">**Customer Information Field**</p>|  
 | :-: | :-: | :-: |
 |11|8 digits|None|
 |59|8 digits|16 bars|
@@ -264,7 +264,7 @@ The value of the FCC field can be defined using the [*AustralianPostEncodingTabl
   
 Barcode images demonstrated below have been generated using different setings for the FCC field.
   
-|<p>**Australia Post Standards**</p>|<p>**FCC 11**</p>|<p>**FCC 59 Table**</p>|<p>**FCC 62N Table**</p>|<p>**FCC 62C Table**</p>|<p>**FCC 62C Other Table**</p>|
+|Australia Post Standards|<p align="center">**FCC 11**</p>|<p align="center">**FCC 59 Table**</p>|<p align="center">**FCC 62N Table**</p>|<p align="center">**FCC 62C Table**</p>|<p align="center">**FCC 62C Other Table**</p>|
 | :-: | :-: | :-: | :-: | :-: | :-: |  
 | |<img src="postalaustraliapostfcc11.png">|<img src="postalaustraliapostfcc59ntable.png">|<img src="postalaustraliapostfcc62ntable.png">|<img src="postalaustraliapostfcc62ctable.png">|<img src="postalaustraliapostfcc62othertable.png">|
   
@@ -309,7 +309,7 @@ The *Mailmark* symbology has been developed by Royal Mail of the United Kingdom.
 - **Type L** - encodes 26 characters 
 - **Type C** - encodes 22 characters
   
-|<p>**Mailmark Standards**</p>|<p>**Type C**</p>|<p>**Type L**</p>|
+|Mailmark Standards|<p align="center">**Type C**</p>|<p align="center">**Type L**</p>|
 | :-: | :-: | :-: |  
 | |<img src="postalmailmarkctype.png">|<img src="postalmailmarkltype.png">|
   

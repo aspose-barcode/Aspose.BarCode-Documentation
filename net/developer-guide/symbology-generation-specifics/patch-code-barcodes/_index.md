@@ -17,7 +17,7 @@ The *PatchCode* symbology has been developed by Kodak to facilitate task managem
 ***Aspose.BarCode for .NET*** enables generating the main *PatchCode* set that consists of six patterns. The extended set of patterns introduced by Kodak later on and not standardized yet is not supported by the library. The main pattern set includes the following options: *Patch I*, *Patch II*, *Patch III*, *Patch IV*, *Patch T*, and *Patch VI*.
 Sample barcode labels provided below illustrate six basic *PatchCode* barcode types.
   
-|PatchCode Standards|Patch I|Patch II|Patch III|Patch IV|Patch T|Patch VI|  
+|<p align="center">**PatchCode Standards**</p>|<p align="center">**Patch I**</p>|<p align="center">**Patch II**</p>|<p align="center">**Patch III**</p>|<p align="center">**Patch IV**</p>|<p align="center">**Patch T**</p>|<p align="center">**Patch VI**</p>|  
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="patchcodei.png">|<img src="patchcodeii.png">|<img src="patchcodeiii.png">|<img src="patchcodeiv.png">|<img src="patchcodet.png">|<img src="patchcodevi.png">|
   
@@ -66,7 +66,7 @@ To add a complementary QR code to a *PatchCode* barcode page (A4 or US Letter), 
   
 Images below illustrate the *PatchCode* barcode pages generated with and without adding complementary QR codes.
   
-|Complementary QR Code|Is Disabled|Is Enabled|
+|<p align="center">**Complementary QR Code**</p>|<p align="center">**Is Disabled**</p>|<p align="center">**Is Enabled**</p>|
 | :-: | :-: | :-: |
 | |<a href="patchcodea4withoutqr.png"> <p align="center"><img src="patchcodea4withoutqr.png" width="40%" height="40%" alttext="PatchCode Barcode Without QR"></p></a>|<a href="patchcodea4withqr.png"> <p align="center"><img src="patchcodea4withqr.png" width="40%" height="40%" alttext="PatchCode Barcode With QR"></p></a>|
   

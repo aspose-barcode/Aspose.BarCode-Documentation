@@ -37,7 +37,7 @@ The second option can be used when [*QrVersion*](https://apireference.aspose.com
 ### Automatic Sizing
 The code sample and barcode images below are provided to illustrate how to generate *QR Code* barcodes of various types using automatic size settings.
   
-|<p align="center">**Size Setting Mode**</p>|<p align="center">*Auto*</p>|<p align="center">*ForseQR*</p>|<p align="center">*ForseMicroQR*</p>|
+|<p align="center">**Size Setting Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***ForseQR***</p>|<p align="center">***ForseMicroQR***</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
   
@@ -58,9 +58,9 @@ gen.Save($"{path}QREncodeTypeForceQR.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
    
 ### Manual Version Selection
-***Aspose.BarCode for .NET*** enables manual settings for the required version of *QR Code* barcodes to be generated. To do this, it is necessary to initialize the [*QRVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrversion) property of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the values from *Version01* to *Version40* for *QR Code* and from *M1* to *M4* for *Micro QR Code*. The code snippet and sample barcode labels demonstrated below are given to explain how to generate *QR Code* barcodes by setting the required version manually.
+***Aspose.BarCode for .NET*** enables manual settings for the required version of *QR Code* barcodes to be generated. To do this, it is necessary to initialize the [*QRVersion*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrversion) property of class [*QrParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the values from *Version 01* to *Version 40* for *QR Code* and from *M1* to *M4* for *Micro QR Code*. The code snippet and sample barcode labels demonstrated below are given to explain how to generate *QR Code* barcodes by setting the required version manually.
   
-|<p align="center">**QR Version**</p>|<p align="center">Is Set to *QR Version05*</p>|<p align="center">Is Set to *Micro QR Version M4*</p>|
+|<p align="center">**QR Version**</p>|<p align="center">**Is Set to *QR Version 05***</p>|<p align="center">**Is Set to *Micro QR Version M4***</p>|
 | :-: | :-: | :-: |
 | |<img src="qrversion05.png">|<img src="qrversionm4.png">|
   
@@ -141,7 +141,7 @@ Console.OutputEncoding = Encoding.Unicode;
 //set encode mode to UTF16BE with BOM
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Utf16BEBOM;
 gen.Save($"{path}QrEncodeModeUtfBOM.png", BarCodeImageFormat.Png);
-//try to recognize it
+//attempt to recognize it
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
 read.BarcodeSettings.DetectEncoding = true;
 foreach (BarCodeResult result in read.ReadBarCodes())
@@ -269,7 +269,7 @@ gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
 gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
 gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 0;
 gen.Save($"{path}QrStructuredAppendFirst.png", BarCodeImageFormat.Png);
-//try to recognize it
+//attempt to recognize it
 read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +

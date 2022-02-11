@@ -37,8 +37,8 @@ gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
 ### *ECC 000-140*  
 *ECC 000-140* standards are supported only by the following encoding modes specified in [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode): *Auto*, *ASCII*, and *Full*; other encoding modes in this case are automatically processed as *Full*. The [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding) property and thus encoding Unicode characters do not apply to these standards. *ECC 000-140* standards have barcode layout settings that differ from those of *ECC 200*. Among each other, they vary only in terms of damaged data recovery percentage for different error correction levels, as outlined below. 
   
-|Error Correction Level|Damage Recovery Capacity|
-|---| :-: |
+|<p align="center">**Error Correction Level**</p>|<p align="center">**Damage Recovery Capacity**</p>|
+| :-: | :-: |
 |**Ecc000**|Only error detection|
 |**Ecc050**|2.8%|
 |**Ecc080**|5.5%|
@@ -181,7 +181,7 @@ gen.Save($"{path}DatamatrixEncodeModeC40.png", BarCodeImageFormat.Png);
 ## Layout Settings
 To set the required layout for *DataMatrix* barcodes, it is necessary to use [*Rows*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/rows) and [*Columns*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/columns) properties of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). If they are not initialized, the library sets an optimal layout according to the size of the data to be encoded. Barcode layout settings differ for *ECC 000-140* and *ECC 200*. Customizing the number of rows and columns is supported only for *ECC 200*; for *ECC 00-140*, the barcode layout is defined automatically. The *ECC 200* standard implies that barcodes have even numbers of rows and columns; namely, the following layout options are available: 10 x 10; 144 x 144; 8 x 18; 16 x 48.
 
-|<p align="center">Layout Settings</p>|<p align="center">22 Rows and 22 Columns</p>|<p align="center">12 Rows and 36 Columns</p>|
+|<p align="center">**Layout Settings**</p>|<p align="center">**22 Rows and 22 Columns**</p>|<p align="center">**12 Rows and 36 Columns**</p>|
 | :-: | :-: | :-: |
 | |<img src="datamatrixrows22columns22ecc200.png">|<img src="datamatrixrows12columns36ecc200.png">|
   
@@ -223,7 +223,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 ## Aspect Ratio Settings
 *Aspect Ratio* is the ratio between the width and height of a barcode. In ***Aspose.BarCode for .NET***, developers can use the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/aspectratio) property of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters) to adjust barcode proportions according to the X and Y coordinates. This parameter is defined as a relative coefficient to the value of [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). In general, the *Aspect Ratio* value should be set to 1.
   
-|<p align="center">Aspect Ratio</p>|<p align="center">Is Set to 1</p>|<p align="center">Is Set to 0.5</p>|
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 0.5**</p>|
 | :-: | :-: | :-: |
 | |<img src="datamatrixaspectratio1.png">|<img src="datamatrixaspectratio0.5.png">|
   

@@ -19,7 +19,7 @@ In ***Aspose.BarCode for .NET***, developers can set five different styles for *
   
 Sample barcode labels provided below illustrate how the appearance of barcode frames will change depending on particular settings. 
   
-|Frame Style|No Borders (*None*)|Normal Frame (*Frame*)|Horizontal Lines (*Bar*)|Outside Frame (*FrameOut*)|Outside Lines (*BarOut*)|
+|<p align="center">**Frame Style**</p>|<p align="center">**No Borders (*None*)**</p>|<p align="center">**Normal Frame (*Frame*)**</p>|<p align="center">**Horizontal Lines (*Bar*)**</p>|<p align="center">**Outside Frame (*FrameOut*)**</p>|<p align="center">**Outside Lines (*BarOut*)**</p>|
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="itf14bordernone.png">|<img src="itf14borderframe.png">|<img src="itf14borderbar.png">|<img src="itf14borderframeout.png">|<img src="itf14borderbarout.png">|
   
@@ -50,7 +50,7 @@ Depending on specific industrial requirements, the library enables adjusting bor
   
 *ITF 14* barcode labels shown below have been generated with different border thickness settings.
   
-|Border Thickness|Is Set to 5 Pixels|Is Set to 15 Pixels|
+|<p align="center">**Border Thickness**</p>|<p align="center">**Is Set to 5 Pixels**</p>|<p align="center">**Is Set to 15 Pixels**</p>|
 | :-: | :-: | :-: |
 | |<img src="itf14bordersize5pixels.png">|<img src="itf14bordersize15pixels.png">|
   
@@ -73,7 +73,7 @@ In ***Aspose.BarCode for .NET***, developers can customize the size of the quiet
   
 *ITF 14* barcode images demonstrated below as examples have been generated using different settings for the quiet zone. 
   
-|Quiet Zone Coefficient|Is Set to 10|Is Set to 30|
+|<p align="center">**Quiet Zone Coefficient**</p>|<p align="center">**Is Set to 10**</p>|<p align="center">**Is Set to 30**</p>|
 | :-: | :-: | :-: |
 | |<img src="itf14quietzone10.png">|<img src="itf14quietzone30.png">|
   
