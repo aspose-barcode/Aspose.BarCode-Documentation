@@ -82,7 +82,7 @@ gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
   
 The sample barcode images rotated by different angles are represented below.
   
-|Rotation Angle|Is Set to +90°|Is Set to -90°|Is Set to +45°|Is Set to -45°|Is Set to 180°| 
+|<p align="center">Rotation Angle</p>|<p align="center">Is Set to +90°</p>|<p align="center">Is Set to -90°</p>|<p align="center">Is Set to +45°</p>|<p align="center">Is Set to -45°</p>|<p align="center">Is Set to 180°</p>| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="rotationangle+90.png">|<img src="rotationangle-90.png">|<img src="rotationangle+45.png">|<img src="rotationangle-45.png">|<img src="rotationangle180.png">|
   
@@ -110,7 +110,7 @@ According to the default settings, a barcode image is generated without borders;
   
 Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by initializing the [*DashStyle*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/dashstyle) of class *BorderParameters*.
   
-|Border Style|Solid|Dashed|Dotted|Dash Dot|Dash Dot Dot| 
+|<p align="center">Border Style</p>|<p align="center">Solid</p>|<p align="center">Dashed</p>|<p align="center">Dotted</p>|<p align="center">Dash Dot</p>|<p align="center">Dash Dot Dot</p>| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="bordersolid.png">|<img src="borderdash.png">|<img src="borderdot.png">|<img src="borderdashdot.png">|<img src="borderdashdotdot.png">|
   
