@@ -15,7 +15,7 @@ Similarly, loading data from XML can be performed from a file using the [*Import
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## Export Data to XML
-As previously mentioned, there are two way to save the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): to an XML file through the [*ExportToXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) function or to a stream using the [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) function. The code snippet below illustrates how to implement data serialization to an XML file.   
+As previously mentioned, there are two ways to save the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): to an XML file through the [*ExportToXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) function or to a stream using the [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) function. The code snippet below illustrates how to implement data serialization to an XML file.   
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
