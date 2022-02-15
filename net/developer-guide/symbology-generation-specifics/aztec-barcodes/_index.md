@@ -6,9 +6,9 @@ keywords: "Generate Aztec Barcode, Generate Aztec code, How to Generate Aztec ba
 weight: 70
 url: /net/aztec-barcode/
 ---
-{{% alert color="primary" %}}[Generate Aztec Barcodes online](https://products.aspose.app/barcode/generate/aztec). You can check the quality of ***Aspose.BarCode*** generation for *Aztec* barcodes and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Aztec Barcodes Online](https://products.aspose.app/barcode/generate/aztec): You can check the quality of ***Aspose.BarCode*** generation for Aztec barcodes and view the results online.{{% /alert %}}
 
-## Overview
+## **Overview**
 *Aztec* is a 2D matrix symbology that supports encoding both byte streams and alphanumeric characters. *Aztec* barcodes are depicted as square-grid modules with a unique pattern in the middle of a barcode image that facilitates barcode scanning and recognition. Moreover, it enables Reed-Solomon error correction to verify data integrity and recover encoded information. This symbology provides high data density and recognition accuracy.  
   
 The *Aztec* symbology includes three barcode types:
@@ -16,9 +16,9 @@ The *Aztec* symbology includes three barcode types:
 -	*Compact Aztec Code* - can encode up to 53 byte or 110 numerical (89 alphanumeric) digits
 -	*Aztec Rune* - encodes values from 0 to 255 and is intended to mark objects in Augmented Reality applications
   
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
-## Aztec Generation Mode Settings
+## **Aztec Generation Mode Settings**
 To select the required generation mode for *Aztec* barcodes in ***Aspose.BarCode for .NET***, it is necessary to initialize the [*AztecSymbolMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/aztecsymbolmode) field of class [*AztecParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters). This property can take the following values:
 - *Auto*. In this generation mode, the library selects the most compact *Aztec* barcode type with the capacity sufficient to encode the information inputted into [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext).
 - *Compact*. This mode is used to generate *Compact Aztec Code* barcodes up to 4 layers with the maximal size of 27x27 modules. 
@@ -27,7 +27,7 @@ To select the required generation mode for *Aztec* barcodes in ***Aspose.BarCode
   
 Sample *Aztec* barcode labels provided below have been created using different generation modes.
   
-|<p align="center">**Generation Mode**</p>|<p align="center">*Auto*</p>|<p align="center">*Compact*</p>|<p align="center">*Full-Range*</p>|<p align="center">*Rune*</p>|
+|<p align="center">**Generation Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***Compact***</p>|<p align="center">***Full-Range***</p>|<p align="center">***Rune***</p>|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="aztecsymbolmodeauto.png">|<img src="aztecsymbolmodecompact.png">|<img src="aztecsymbolmodefullrange.png">|<img src="aztecsymbolmoderune.png">|
   
@@ -54,8 +54,8 @@ gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Rune;
 gen.Save($"{path}AztecSymbolModeRune.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
  
-## Encoding Byte Streams
-***Aspose.BarCode for .NET*** allows encoding streams of bytes as *Aztec* barcodes. To visualize the text under *Aztec* barcodes, it is necessary to initialize the [*TwoDDisplayText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)). The code sample provided below shows how to encode a stream of bytes into an *Aztec* barcode.
+## **Encoding Byte Streams**
+***Aspose.BarCode for .NET*** allows encoding streams of bytes as *Aztec* barcodes. To visualize the text under *Aztec* barcodes, it is necessary to initialize the [*TwoDDisplayText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)). The code sample provided below shows how to encode a stream of bytes into an *Aztec* barcode.
   
 {{< highlight csharp>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
@@ -65,7 +65,7 @@ StringBuilder strBld = new StringBuilder();
 foreach (byte bval in encodedArr)
     strBld.Append((char)bval);
 
-//encode in Aztec code
+//encode in Aztec barcode
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, strBld.ToString());
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set symbol mode Auto
@@ -73,7 +73,7 @@ gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Auto;
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
 gen.Save($"{path}AztecBytesEncoding.png", BarCodeImageFormat.Png);
 
-//try to recognize
+//attempt to recognize
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Aztec);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("AztecBytesEncoding:" + BitConverter.ToString(result.CodeBytes));
@@ -81,7 +81,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 <p align="center"><img src="aztecbytesencoding.png"></p>
   
-## Encoding Unicode Symbols
+## **Encoding Unicode Symbols**
 ***Aspose.BarCode for .NET*** enables encoding Unicode symbols using the [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/codetextencoding) property of class [*AztecParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters). This property is valid for all *Aztec* barcodes except *Rune*. The following code snippet explains how to set various Unicode encodings during *Aztec* barcode generation.
   
 {{< highlight csharp>}}
@@ -99,7 +99,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 <p align="center"><img src="azteccodetextencoding.png"></p>
   
-## Error Correction Level Settings
+## **Error Correction Level Settings**
 In addition to the main barcode data, *Aztec* barcodes contain recovery information that can occupy from 5 to 95% of the entire encoded data stream. It is recommended to set this parameter to 23%. To select the required error correction level for *Aztec* barcodes in ***Aspose.BarCode for .NET***, it is necessary to initialize the [*AztecErrorLevel*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/aztecerrorlevel) property of class [*AztecParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters).  
   
 Sample barcode labels demonstrated below have been generated with different error correction level settings.
@@ -122,7 +122,7 @@ gen.Parameters.Barcode.Aztec.AztecErrorLevel = 50;
 gen.Save($"{path}AztecErrorLevel50.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-## Aspect Ratio Settings
+## **Aspect Ratio Settings**
 *Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for .NET***, it is necessary to use the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/aspectratio) property of class [*AztecParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters). In ***Aspose.BarCode for .NET***, it is defined as a relative coefficient to the value of [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). In most cases, the value of *AspectRatio* should be set to 1. However, if developers need to adjust the proportions of generated *Aztec* barcodes, it can be done using the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/aspectratio) parameter.  
   
 Barcode images demonstrated below have been created using different aspect ratio settings.

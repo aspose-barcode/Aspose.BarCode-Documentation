@@ -7,20 +7,20 @@ weight: 20
 url: /net/managing-different-barcode-settings/
 ---
 
-## Overview
+## **Overview**
 ***Aspose.BarCode for .NET*** enables customizing various parameters that are specific for 1D barcode generation. Particularly for 1D barcode standards, developers can adjust the following display properties: the height of bars, the mode of bar filling, the wide-to-narrow ratio, and the automatic correction of invalid barcode text.  
 This article describes how to manage these properties using specified classes and properties of the library.  
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## Setting Bar Height
+## **Setting Bar Height**
 ***Aspose.BarCode for .NET*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when the barcode size property, [*AutoSizeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode), is set to *AutoSizeMode.None* (see more information about this property [here](/barcode/net/image-formatting-and-display-settings/)). In this case, regardless of the value specified in the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, the bar height can be regulated using the [*BarHeight*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property cannot be set for multiple-row barcodes and 2D barcodes.
   
-|Bar Height|<p align="center">**Is Set to 40 Pixels**</p>|<p align="center">**Is Set to 80 Pixels**</p>|
+|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to 40 Pixels**</p>|<p align="center">**Is Set to 80 Pixels**</p>|
 | :-: | :-: | :-: |
 | |<img src="barheight40code128.png">|<img src="barheight80code128.png">|
   
-The code snippet below explains how to set different values of bar height for *Code128*.
+The code snippet below explains how to set different values of bar height for *Code 128*.
      
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -33,14 +33,14 @@ gen.Parameters.Barcode.BarHeight.Pixels = 80;
 gen.Save($"{path}BarHeight80Code128.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-## Bar Filling Modes
+## **Bar Filling Modes**
 For 1D barcodes, ***Aspose.BarCode for .NET*** provides a specific mode to generate barcodes with empty bars instead of filled ones. Such a modification can be done using the [*FilledBars*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
   
-|Bar Filling|<p align="center">**Filled**</p>|<p align="center">**Empty**</p>|
+|<p align="center">**Bar Filling**</p>|<p align="center">**Filled**</p>|<p align="center">**Empty**</p>|
 | :-: | :-: | :-: |
 | |<img src="barsfilledcode128.png">|<img src="barsemptycode128.png">|
   
-The following code sample demonstrates how to adjust the bar filling mode for *Code128*.
+The following code sample demonstrates how to adjust the bar filling mode for *Code 128*.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -53,36 +53,38 @@ gen.Parameters.Barcode.FilledBars = false;
 gen.Save($"{path}BarsEmptyCode128.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-## Setting Wide-to-Narrow Ratio
-Two-width 1D barcodes are based on the binary code principle, meaning that information is encoded using bars and spaces with two options of width: wide and narrow. Two-width barcode symbologies include the following: *Codabar*, *Code11*, *Code32*, *Code39*, *DataLogic 2 of 5*, *IATA 2 of 5*, *Interleaved 2 of 5*, *ITF6*, *ITF14*, *Matrix 2 of 5*, *MSI*, *OPC*, *PZN*, *Standard 2 of 5*, and *VIN*.  
+## **Setting Wide-to-Narrow Ratio**
+Two-width 1D barcodes are based on the binary code principle, meaning that information is encoded using bars and spaces with two options of width: wide and narrow. Two-width barcode symbologies include the following: *Codabar*, *Code 11*, *Code 32*, *Code 39*, *DataLogic 2-of-5*, *IATA 2-of-5*, *Interleaved 2-of-5*, *ITF 6*, *ITF 14*, *Matrix 2-of-5*, *MSI*, *OPC*, *PZN*, *Standard 2-of-5*, and *VIN*.  
+  
 In ***Aspose.BarCode for .NET***, the **wide-to-narrow ratio** defines the relation between the width of wide and narrow elements. It can be set in the [*WideNarrowRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/widenarrowratio) property of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). The larger if the value of the wide-to-narrow ratio, the larger is the width of the generated barcode. However, the readability also improves with an increase in this parameter. By default, *WideNarrowRatio* is set to 3.  
   
-|Wide-to-Narrow Ratio|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
+|<p align="center">**Wide-to-Narrow Ratio**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
 | :-: | :-: | :-: |
 | |<img src="widenarrow2code39.png">|<img src="widenarrow5code39.png">|
-
-The code snippet provided below illustrates how to adjust the setting of the wide-to-narrow ratio for *Code39*.  
+  
+The code snippet provided below illustrates how to adjust the setting of the wide-to-narrow ratio for *Code 39*.  
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-//set Wide/Narrow Ratio to 2
+//set Wide-to-Narrow Ratio to 2
 gen.Parameters.Barcode.WideNarrowRatio = 2;
 gen.Save($"{path}WideNarrow2Code39.png", BarCodeImageFormat.Png);
-//set Wide/Narrow Ratio to 5
+//set Wide-to-Narrow Ratio to 5
 gen.Parameters.Barcode.WideNarrowRatio = 5;
 gen.Save($"{path}WideNarrow5Code39.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
-## Handling Exception on Incorrect Barcode Text
+## **Handling Exception on Incorrect Barcode Text**
 In case when a barcode has not been created correctly due to invalid barcode text, by default, the library can generate additional dummy data to bring the barcode into line with the standard or delete conflicting characters. Thereafter barcode generation is considered successful.  
-Developers can change this behaviour by setting the [*ThrowExceptionWhenCodeTextIncorrect*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property of *BarcodeParameters* class. When this property is enabled, an exception is thrown if the barcode text has been found incorrect or incomplete.
   
-|Barcode Text Correctness|<p align="center">**Correct with Valid Barcode Text**</p>|<p align="center">**Adjusted with Invalid Barcode Text**</p>|
+Developers can change this behaviour by setting the [*ThrowExceptionWhenCodeTextIncorrect*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property of [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) class. When this property is enabled, an exception is thrown if the barcode text has been found incorrect or incomplete.
+  
+|<p align="center">**Barcode Text Correctness**</p>|<p align="center">**Correct with Valid Barcode Text**</p>|<p align="center">**Adjusted with Invalid Barcode Text**</p>|
 | :-: | :-: | :-: |
 | |<img src="itf6correct.png">|<img src="itf6filled.png">|
   
-The code sample given below illustrates how to set the *ThrowExceptionWhenCodeTextIncorrect* property. In this example, the following exception will be thrown: "*Symbology ITF6 - codetext is invalid*". 
+The code sample given below illustrates how to set the [*ThrowExceptionWhenCodeTextIncorrect*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property. In this example, the following exception will be thrown: "*Symbology ITF 6 - codetext is invalid*". 
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF6, "123457");
