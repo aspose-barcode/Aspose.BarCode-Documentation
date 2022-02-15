@@ -3,20 +3,24 @@ title: Recognition Specifics
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed."
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C#"
-weight: 10
+weight: 20
 url: /net/recognition-specifics/
 ---
-{{% alert color="primary" %}}[Read barcodes online](https://products.aspose.app/barcode/recognize). You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
 ## Overview
  
 ## Reading Barcode Images with Gaussian Noise
-Gaussian noise is one of the most frequent distortions that may affect the quality of barcode images. The biggest problems arise in case when barcode images are monochrome or the distortion grain is much larger than the minimal barcode element. To mitigate such negative effects, it may be useful to apply median filtering methods that are suitable to both 1D and 2D barcodes. Although median filtering methods also introduce distortions by eliminating barcode elements together with noise, they still may succeed in making key barcode modules readable.
+Gaussian noise is one of the most frequent distortions that may affect the quality of barcode images. The most crucial problems arise in cases when barcode images are monochrome or when the distortion grain is much larger than the minimal barcode element. To mitigate such negative effects, it may be useful to apply median filtering methods that are suitable for both 1D and 2D barcodes. Although median filtering methods also introduce distortions by eliminating barcode elements together with noise, they still may be succeed in improving readability of key barcode modules.
+  
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ### Median Filtering for 2D Barcodes
-In ***ASpose.BarCode for .NET***, median filtering can be implemented using a special property called [*AllowMedianSmoothing *]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowmediansmoothing) and setting the median filtering window in the [*MedianSmoothingWindowSize*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/mediansmoothingwindowsize) parameter. Unlike for 1D barcodes, automated selection of median filtering window is not supported for 2D symbologies.
-
-<p align="center"><img src="datamatrix_noised.png"></p>
+In ***Aspose.BarCode for .NET***, median filtering can be implemented using a special property called [*AllowMedianSmoothing*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowmediansmoothing) and setting the median filtering window in the [*MedianSmoothingWindowSize*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/mediansmoothingwindowsize) parameter. Unlike 1D barcodes, automated selection of a suitable median filtering window is not supported for 2D symbologies.  
+  
+The following code snippet illustrates how to perform median filtering for the sample barcode image given below.
+  
+<p align="center"><img src="datamatrix_noised.png" width="15%" height="15%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("MedianSmoothing:");
@@ -45,18 +49,27 @@ using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_noised.png", De
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+MedianSmoothing:  
+- AllowMedianSmoothing: false  
+Barcodes read: 0  
+- AllowMedianSmoothing: true  
+Barcodes read: 1  
+DataMatrix:87918-1023  
+  
 </details>
 
-
 ### Median Filtering for 1D Barcodes
-One-dimensional filtering for linear barcodes can be set using a parameter called [*AllowSaltAndPaperFiltering*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowsaltandpaperfiltering). In this case, the filtering window size is selected automatically.
+One-dimensional filtering for linear barcodes can be set using a parameter called [*AllowSaltAndPaperFiltering*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowsaltandpaperfiltering). In this case, the filtering window size is selected automatically.  
+  
+ The following code sample explains how to apply median filtering to 1D barcodes, such as, for example, the barcode image shown further. 
 
-<p align="center"><img src="saltandpaper.png"></p>
+<p align="center"><img src="saltandpaper.png" width="30%" height="30%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("SaltAndPaperFiltering:");
 
-//read a barcode image with AllowSaltAndPaperFiltering set to false
+//read barcode image with AllowSaltAndPaperFiltering set to false
 Console.WriteLine("AllowSaltAndPaperFiltering: false");
 using (BarCodeReader read = new BarCodeReader($"{path}saltandpaper.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
 {
@@ -66,7 +79,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}saltandpaper.png", DecodeT
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//read a barcode image with AllowSaltAndPaperFiltering set to true
+//read barcode image with AllowSaltAndPaperFiltering set to true
 Console.WriteLine("AllowSaltAndPaperFiltering: true");
 using (BarCodeReader read = new BarCodeReader($"{path}saltandpaper.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
 {
@@ -79,17 +92,27 @@ using (BarCodeReader read = new BarCodeReader($"{path}saltandpaper.png", DecodeT
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+SaltAndPaperFiltering:  
+- AllowSaltAndPaperFiltering: false  
+Barcodes read: 0  
+- AllowSaltAndPaperFiltering: true  
+Barcodes read: 1  
+Code39Standard:0058  
+  
 </details>
 
 ### Median Filtering for Postal Barcodes
-One-dimensional median filtering for postal symbologies can be performed using the [*AllowMicroWhiteSpotsRemoving*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowmicrowhitespotsremoving) property. The size of the filtering window size is set automatically.
+One-dimensional median filtering for postal symbologies can be performed using the [*AllowMicroWhiteSpotsRemoving*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowmicrowhitespotsremoving) property. The size of the filtering window is set automatically.  
+  
+The following code snippet demonstrates how to perform medial filtering in the case of postal barcodes (as the sample *Planet* barcode given below).
 
-<p align="center"><img src="planet_noised.png"></p>
+<p align="center"><img src="planet_noised.png" width="40%" height="40%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("MicroWhiteSpotsRemoving:");
 
-//recognize image with AllowMicroWhiteSpotsRemoving false
+//read barcode image with AllowMicroWhiteSpotsRemoving set to False
 Console.WriteLine("AllowMicroWhiteSpotsRemoving: false");
 using (BarCodeReader read = new BarCodeReader($"{path}planet_noised.png", DecodeType.Planet))
 {
@@ -99,7 +122,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}planet_noised.png", Decode
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//recognize image with AllowMicroWhiteSpotsRemoving true
+//read barcode image with AllowMicroWhiteSpotsRemoving set to True
 Console.WriteLine("AllowMicroWhiteSpotsRemoving: true");
 using (BarCodeReader read = new BarCodeReader($"{path}planet_noised.png", DecodeType.Planet))
 {
@@ -112,12 +135,22 @@ using (BarCodeReader read = new BarCodeReader($"{path}planet_noised.png", Decode
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+MicroWhiteSpotsRemoving:  
+- AllowMicroWhiteSpotsRemoving: false  
+Barcodes read: 0  
+- AllowMicroWhiteSpotsRemoving: true  
+Barcodes read: 1  
+Planet:990000837284  
+  
 </details>
 
 ### Filtering Out White Spots
-The presence of white spots in barcode images is a frequent problem that appears while sending documents with barcodes through fax transmission.  To mitigate this issue in ***Aspose.BaCode for .NET***, it is possible to use a special setting called [*AllowWhiteSpotsRemoving*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowwhitespotsremoving) that allows filtering out not all Gaussian noise but only white spots. 
+The presence of white spots in barcode images is a frequent problem that appears while sending documents with barcodes through fax transmission.  To mitigate this issue in ***Aspose.BarCode for .NET***, it is possible to use a special setting called [*AllowWhiteSpotsRemoving*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowwhitespotsremoving) that allows filtering out not all Gaussian noise but only white spots.  
+  
+The following code sample illustrates how to filter out white spot artifacts from the source barcode image demonstrated below.
 
-<p align="center"><img src="code128_whitespots.png"></p>
+<p align="center"><img src="code128_whitespots.png" width="30%" height="30%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("WhiteSpotsRemoving:");
@@ -143,16 +176,29 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_whitespots.png", D
 }
 {{< /highlight >}}
 
+<details>  
+<summary>View the results of code execution</summary>
+  
+MicroWhiteSpotsRemoving:  
+- AllowMicroWhiteSpotsRemoving: false  
+Barcodes read: 0  
+- AllowMicroWhiteSpotsRemoving: true  
+Barcodes read: 1  
+Planet:990000837284  
+  
+</details>
 
 ## Reducing Barcode Image Size to Eliminate Visual Artifacts
-In some cases, distortions caused by excessive scaling of a barcode image can be mitigated by decreasing the scale space. In ***Aspose.BarCode for .NET***, it can be done using a special setting called [*AllowDecreasedImage*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowdecreasedimage) that allows reducing the size of an image and in this way, to facilitate its reading as a result of eliminating visual artifacts. 
+In some cases, distortions caused by excessive scaling of a barcode image can be mitigated by reducing the scale space. In ***Aspose.BarCode for .NET***, it can be done using a special setting called [*AllowDecreasedImage*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowdecreasedimage). Its purpose is to reduce the size of an image and in this way, to facilitate barcode reading by eliminating visual artifacts.   
+  
+The following code snippet explains how to the size of the source barcode image shown below can be reduced to improve recognition quality.
 
-<p align="center"><img src="datamatrix_waved.png"></p>
+<p align="center"><img src="datamatrix_waved.png" width="20%" height="20%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("DecreasedImage:");
 
-//recognize image with AllowDecreasedImage false
+//read barcode image with AllowDecreasedImage false
 Console.WriteLine("AllowDecreasedImage: false");
 using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_waved.png", DecodeType.DataMatrix))
 {
@@ -162,7 +208,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_waved.png", Dec
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//recognize image with AllowDecreasedImage true
+//read barcode image with AllowDecreasedImage true
 Console.WriteLine("AllowDecreasedImage: true");
 using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_waved.png", DecodeType.DataMatrix))
 {
@@ -175,17 +221,25 @@ using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_waved.png", Dec
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+DecreasedImage:  
+- AllowDecreasedImage: false  
+Barcodes read: 0  
+- AllowDecreasedImage: true  
+Barcodes read: 1  
+DataMatrix:D19-WQ9-F91046-0811  
+  
 </details>
 
 ## Reading Inverted Barcode Images
-***Aspose.BarCode for .NET** enables reading barcode images with inverted colors. To do this, it is required to enable a special parameter called [*AllowInvertImage*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowinvertimage).
+***Aspose.BarCode for .NET*** enables reading barcode images with inverted colors. To do this, it is required to enable a special parameter called [*AllowInvertImage*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowinvertimage). The following code snippet shows how to do that considering the provided barcode image as an example.
 
-<p align="center"><img src="aztec_regular_inverse.png"></p>
+<p align="center"><img src="aztec_regular_inverse.png" width="20%" height="20%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("InvertImage:");
 
-//recognize image with AllowInvertImage false
+//read barcode image with AllowInvertImage set to false
 Console.WriteLine("AllowInvertImage: false");
 using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png", DecodeType.Aztec))
 {
@@ -195,7 +249,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png"
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//recognize image with AllowInvertImage true
+//read barcode image with AllowInvertImage set to true
 Console.WriteLine("AllowInvertImage: true");
 using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png", DecodeType.Aztec))
 {
@@ -208,17 +262,27 @@ using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png"
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+InvertImage:  
+- AllowInvertImage: false  
+Barcodes read: 1  
+Aztec:Aspose Regular  
+- AllowInvertImage: true  
+Barcodes read: 2  
+Aztec:Aspose Regular  
+Aztec:Aspose Inverse  
+  
 </details>
 
 ## Detecting Colored Barcodes on Colored Background
-To read colored barcodes on colored background, ***Aspose.BarCode for .NET*** provides a special parameter called [*AllowComplexBackground*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowcomplexbackground) that attempts to distinguish colored background from barcode labels through color quantization and then subtract it. It should be noted that enabling this parameter results in considerable deceleration of recognition speed and thus should be used in special cases only.
-
-<p align="center"><img src="qr_color.png"></p>
+To read colored barcodes on a colored background, ***Aspose.BarCode for .NET*** provides a special parameter called [*AllowComplexBackground*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowcomplexbackground) that attempts to distinguish the colored background from barcode labels through color quantization and then subtract it. It should be noted that enabling this parameter results in considerable deceleration of recognition speed and thus should be used in special cases only. The following code sample explains how to implement subtraction of a colored barcode from the colored background, as demonstrated in the source image given below.
+  
+<p align="center"><img src="qr_color.png" width="15%" height="15%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("ComplexBackground:");
 
-//recognize image with AllowComplexBackground false
+//read barcode image with AllowComplexBackground set to false
 Console.WriteLine("AllowComplexBackground: false");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_color.png", DecodeType.QR))
 {
@@ -228,7 +292,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_color.png", DecodeType.
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//recognize image with AllowComplexBackground true
+//read barcode image with AllowComplexBackground set to true
 Console.WriteLine("AllowComplexBackground: true");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_color.png", DecodeType.QR))
 {
@@ -241,17 +305,27 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_color.png", DecodeType.
 
 <details>  
 <summary>View the results of code execution</summary>
+
+ComplexBackground:  
+- AllowComplexBackground: false  
+Barcodes read: 0  
+- AllowComplexBackground: true  
+Barcodes read: 1  
+QR:Aspose常に先を行く  
+  
 </details>
 
 ## Reading Barcodes with Erased or Displaced Bars
-While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, ***Aspose.BarCode for .NET*** provides two settings called [*AllowOneDWipedBarsRestoration*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowonedwipedbarsrestoration) and [*CheckMore1DVariants*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/checkmore1dvariants) that allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.
+While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, ***Aspose.BarCode for .NET*** provides two settings called [*AllowOneDWipedBarsRestoration*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowonedwipedbarsrestoration) and [*CheckMore1DVariants*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/checkmore1dvariants) that allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.  
+  
+The following code snippet shows how to work with a barcode image having displaced bars as in the example provided below.  
 
-<p align="center"><img src="code128_wipedbars.png"></p>
+<p align="center"><img src="code128_wipedbars.png" width="40%" height="40%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("OneDWipedBarsRestoration:");
 
-//recognize image with AllowQRMicroQrRestoration and CheckMore1DVariants false
+//read barcode image with AllowQRMicroQrRestoration and CheckMore1DVariants set to False
 Console.WriteLine("AllowQRMicroQrRestoration and CheckMore1DVariants: false");
 using (BarCodeReader read = new BarCodeReader($"{path}code128_wipedbars.png", DecodeType.Code128))
 {
@@ -262,7 +336,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_wipedbars.png", De
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//recognize image with AllowQRMicroQrRestoration and CheckMore1DVariants true
+//read barcode image with AllowQRMicroQrRestoration and CheckMore1DVariants set to True
 Console.WriteLine("AllowQRMicroQrRestoration and CheckMore1DVariants: true");
 using (BarCodeReader read = new BarCodeReader($"{path}code128_wipedbars.png", DecodeType.Code128))
 {
@@ -276,19 +350,29 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_wipedbars.png", De
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+OneDWipedBarsRestoration:  
+- AllowQRMicroQrRestoration and CheckMore1DVariants: false  
+Barcodes read: 0  
+- AllowQRMicroQrRestoration and CheckMore1DVariants: true  
+Barcodes read: 1  
+Code128:JJBEA129955634111200235  
+  
 </details>
 
 ## Reading Evidently Incorrect Barcodes
 In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called [*AllowIncorrectBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) and [*ReadTinyBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/readtinybarcodes). The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, barcode data are decoded with the [*Confidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) level being *None*, which means that the correctness of recognition is not guaranteed.  
   
-The [*ReadTinyBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/readtinybarcodes) option facilitates reading small barcode labels in large images. It is ignored if [*AllowIncorrectBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) is set to *True*. However, enabling this parameter may result in recognizing barcodes in place of actual text or tables.
+The [*ReadTinyBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/readtinybarcodes) option facilitates reading small barcode labels in large images. It is ignored if [*AllowIncorrectBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) is set to *True*. However, enabling this parameter may result in recognizing barcodes in place of actual text or tables.  
+  
+The following code snippet explains how to force the recognition of the barcode known as unreadable (given below).
 
-<p align="center"><img src="pdf417_qr_corrupted.png"></p>
+<p align="center"><img src="pdf417_qr_corrupted.png" width="30%" height="30%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("IncorrectBarcodes:");
 
-//read barcode image with AllowIncorrectBarcodes set to false
+//read barcode image with AllowIncorrectBarcodes set to False
 Console.WriteLine("AllowIncorrectBarcodes: false");
 using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.Pdf417, DecodeType.QR))
 {
@@ -298,7 +382,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", 
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//read barcode image with AllowIncorrectBarcodes set to true
+//read barcode image with AllowIncorrectBarcodes set to True
 Console.WriteLine("AllowIncorrectBarcodes: true");
 using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.Pdf417, DecodeType.QR))
 {
@@ -311,10 +395,19 @@ using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", 
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+IncorrectBarcodes:  
+- AllowIncorrectBarcodes: false  
+Barcodes read: 0  
+- AllowIncorrectBarcodes: true  
+Barcodes read: 2  
+Pdf417:Aspose Pdf417  
+QR:Aspose QR  
+  
 </details>
 
 ## Reading Severely Distorted QR Code and Micro QR Code Barcodes
-***Aspose.BarCide for .NET*** allows reading severely corrupted *QR Code* and *Micro QR Code* labels. This can be enabled by setting the [*AllowQRMicroQrRestoration*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowqrmicroqrrestoration) parameter.
+***Aspose.BarCode for .NET*** allows reading severely corrupted *QR Code* and *Micro QR Code* labels. This can be enabled by setting the [*AllowQRMicroQrRestoration*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowqrmicroqrrestoration) parameter. The following code sample illustrates how to read a severely damaged *QR Code* barcode that is demonstrated further.
 
 <p align="center"><img src="microqr_3d_distorted.png"></p>
 
@@ -344,12 +437,20 @@ using (BarCodeReader read = new BarCodeReader($"{path}microqr_3d_distorted.png",
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+QRMicroQrRestoration:  
+- AllowQRMicroQrRestoration: false  
+Barcodes read: 0  
+- AllowQRMicroQrRestoration: true  
+Barcodes read: 1  
+MicroQR:FV50CE  
+  
 </details>
 
 ## Reading Industrial DataMatrix Barcodes
-Industrial *DataMatrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable a special parameter called [*AllowDatamatrixIndustrialBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowdatamatrixindustrialbarcodes) that allows reading dashed labels in a slow mode.
+Industrial *DataMatrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable a special parameter called [*AllowDatamatrixIndustrialBarcodes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowdatamatrixindustrialbarcodes) that allows reading dashed labels in a slow mode. The following code snippet explains how to read sample industrial *DataMatrix* barcodes that are shown in the image below.
 
-<p align="center"><img src="datamatrix_industrial.png"></p>
+<p align="center"><img src="datamatrix_industrial.png" width="30%" height="30%"></p>
 
 {{< highlight csharp>}}
 Console.WriteLine("DatamatrixIndustrialBarcodes:");
@@ -377,6 +478,15 @@ using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_industrial.png"
 
 <details>  
 <summary>View the results of code execution</summary>
+  
+DatamatrixIndustrialBarcodes:  
+- AllowDatamatrixIndustrialBarcodes: false  
+Barcodes read: 0  
+- AllowDatamatrixIndustrialBarcodes: true  
+Barcodes read: 2  
+DataMatrix:250623022021032007010300  
+DataMatrix:StarDatamatrix  
+  
 </details>
 
 

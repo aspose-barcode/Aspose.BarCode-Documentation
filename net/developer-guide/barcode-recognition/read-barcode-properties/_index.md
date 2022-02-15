@@ -3,22 +3,20 @@ title: Read Barcode Properties and Metadata
 type: docs
 description: ""
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcode C#"
-weight: 20
+weight: 40
 url: /net/read-barcode-properties/
 ---
 
-{{% alert color="primary" %}}[Try online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## Overview
-As a result of barcode reading, ***Aspose.BarCode for .NET*** allows getting not only the main data encoded in a barcode, but also its technical parameters, such as type, placement region, orientation angle, and metadata. The library stores this information in the specific type of objects called [*BarCodeResult*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) so that each object corresponds to one processed barcode. Further in this article, it is explained how to get the required information about barcode properties using the functionality of ***Aspose.BarCode for .NET***. 
+As a result of barcode reading, ***Aspose.BarCode for .NET*** allows getting not only the main data encoded in a barcode, but also its technical parameters, such as type, placement region, orientation angle, and metadata. The library stores this information in the specific object type called [*BarCodeResult*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) so that each object corresponds to one processed barcode. Further in this article, it is explained how to get the required information about barcode properties using the functionality of ***Aspose.BarCode for .NET***. 
 
 ## Getting Barcode Type and Encoded Data
-To get the data encoded in a barcode and identify its type, class [*BarCodeResult*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) provides two most important fields, [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetext) and [*CodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetype), respectively. The other parameter [*CodeTypeName*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetypename) represents the text name of a barcode symbology.
+To get the data encoded in a barcode and identify its type, class [*BarCodeResult*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) provides the two most important fields, [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetext) and [*CodeType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetype), respectively. The other parameter [*CodeTypeName*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codetypename) represents the text name of a barcode symbology.
   
 The following code sample explains how to get the data encoded in a barcode and its type for the sample barcode image provided below (in this case, a *QR Code* label).
-
-<p align="center"><img src="qrcodetext.png"></p> 
-  
+ 
 {{< highlight csharp>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
@@ -39,14 +37,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRCodetext.png", DecodeTyp
     }
 }
 {{< /highlight >}}
+
+<p align="center"><img src="qrcodetext.png"></p> 
   
 ## Reading Barcode Data as Byte Stream
-In cases when it is necessary to get the data encoded in a barcode in the form of a byte stream, these data can be read from the specific field of class [*BarCodeResult*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) that is called [*CodeBytes*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codebytes).  
+In cases when it is necessary to get the data encoded in a barcode in the form of a byte stream, these data can be read from the specific field of class [*BarCodeResult*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult) that is called [*CodeBytes*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/codebytes).  
   
 The following code snippet illustrates how to obtain barcode data as a stream of bytes for the sample *PDF417* barcode image provided below.  
-  
-<p align="center"><img src="extcodebytes.png"></p>
-  
+   
 {{< highlight csharp>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
@@ -75,13 +73,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtCodeBytes.png", DecodeT
     }
 {{< /highlight >}}
 
+<p align="center"><img src="extcodebytes.png"></p>
+
 ## Decoding Barcode Text in Unicode
 In cases when barcode data are encoded using a particular Unicode encoding, these data can be read by calling the [*GetCodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/methods/getcodetext) method and specifying the required encoding.  
   
 The following code snippet shows how to get the data encoded in UTF8 as a result of reading a sample *DataMatrix* barcode given below.
-  
-<p align="center"><img src="extunicodecodetext.png"></p>
-  
+   
 {{< highlight csharp>}}
 //create encoded Unicode codetext
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
@@ -100,20 +98,20 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtUnicodeCodeText.png", D
         Console.WriteLine($"GetCodeText:{result.GetCodeText(Encoding.UTF8)}");
     }
 {{< /highlight >}}
+
+<p align="center"><img src="extunicodecodetext.png"></p>
    
 ## Recognition Quality Check
-In many cases, it is necessary to estimate whether the barcode has been recognized accurately. In ***Aspose.BarCode for .NET***, this can be done using two specific properties of class [*BarCodeResult]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult)*: [*Confidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) and [*ReadingQuality*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality).  
+In many cases, it is necessary to estimate whether the barcode has been recognized accurately. In ***Aspose.BarCode for .NET***, this can be done using two specific properties of class [*BarCodeResult*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult): [*Confidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) and [*ReadingQuality*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality).  
 As a result of barcode reading, the [*Confidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) property returns a value from the [*BarCodeConfidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration that corresponds to the recognition confidence level. Possible values of the [*BarCodeConfidence*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration (*None*, *Moderate*, and *Strong*) are explained in the table below. The [*ReadingQuality*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) parameter returns the estimate of recognition quality according to the identified confidence level: 0 for *None*; from 1 to 99; 100 for *Strong*.
   
 |Confidence Level|Reading Quality Value|Description|
 |---|---|---|
 |None|0|If the confidence level returns *None*, it usually means that the source barcode is incorrect and its data have been decoded with errors. However, it is still possible to get its type and place orientation in the source image, as well as partially decode inputted data|
-|Moderate|80|Is returned for 1D and postal barcodes with weak or missing checksum settings. In this case, it is required to pay attention at the value of [*ReadingQuality*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality); however, even in the case of high values (close to 80), the absolute correctness of barcode recognition is not guaranteed|
-|Strong|100|Is returned for all 2D barcode types with Reed-Solomon error correction in case if the quality setting has not been set to *QualitySettings.AllowIncorrectBarcodes*. When this confidence level is returned, it means that barcode text has been decoded correctly, and the recognition process has been completed successfully|
+|Moderate|80|Is returned for 1D and postal barcodes with weak or missing checksum settings. In this case, it is required to analyze the value of [*ReadingQuality*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality); however, even in the case of high values (close to 80), the absolute correctness of barcode recognition is not guaranteed|
+|Strong|100|Is returned for all 2D barcode types with Reed-Solomon error correction in case the quality setting has not been set to *QualitySettings.AllowIncorrectBarcodes*. When this confidence level is returned, it means that barcode text has been decoded correctly, and the recognition process has been completed successfully|
   
-The following code snippet explains how to get the recognition quality estimate for a sample *Code 128* barcode provided below.
-  
-<p align="center"><img src=".png"></p> 
+The following code snippet explains how to get the recognition quality estimate for a sample barcode image.
   
 {{< highlight csharp>}}
 //recognize image
@@ -130,13 +128,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
 }
 {{< /highlight >}}
   
-
 ## Getting Barcode Placement Region and Orientation Angle
 In some cases, developers may need to get information about the placement region of a source barcode and its orientation angle. To enable such a possibility, ***Aspose.BarCode for .NET*** provides a group of properties called [*RegionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderegionparameters) that stores the following information:
--	Quadrangle – quadrangle object that bounds a barcode
--	Rectangle - rectangle object that bounds a barcode
--	Points – array of points constituting a barcode
--	Angle – orientation angle in degrees
+-	Quadrangle – a quadrangle object that bounds a barcode
+-	Rectangle - a rectangle object that bounds a barcode
+-	Points – an array of points constituting a barcode
+-	Angle – an orientation angle in degrees
+  
+The following code sample illustrates how to get the information about barcode placement region and orientation angle for the example barcode image provided below.
 
 {{< highlight csharp>}}
 //recognize image
@@ -158,8 +157,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
 }
 {{< /highlight >}}
   
-<p align="center"><img src="qr_code128.png"></p>
-  
+<p align="center"><img src="qr_code128.png" width="20%" height="20%"></p>
 
 ## Getting Barcode Metadata
 
@@ -180,9 +178,7 @@ To read metadata from *PDF417* barcodes, ***Aspose.BarCode for .NET*** provides 
 |[*Pdf417MacroSender*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrosender)|Name of the file sender|
   
 The following code snippet shows how to get metadata from a sample *PDF417* barcode provided below.  
-
-<p align="center"><img src="extpdf417meta.png"></p>  
-  
+ 
 {{< highlight csharp>}}
 //generate Macro PDF417 with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©"))
@@ -225,6 +221,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417Meta.png", Decode
 }
 {{< /highlight >}}
   
+<p align="center"><img src="extpdf417meta.png"></p>  
 
 ### Reading Metadata from QR Code with Structured Append
 To read metadata from *QR Code* barcodes, it is necessary to use a group of properties called [*QrExtendedParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters). These properties enable reading the information about *QR Code* barcodes with structured append that allows combining several *QR Code* labels into one. This information includes the following fields:
@@ -234,9 +231,7 @@ To read metadata from *QR Code* barcodes, it is necessary to use a group of prop
 - [*QRStructuredAppendModeParityData*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodeparitydata) - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
   
 The code snippet given below explains how to get metadata for a sample *QR Code* image with structured append.
-  
-<p align="center"><img src="extqrmeta.png"></p>
-  
+   
 {{< highlight csharp>}}
 //generate QR with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
@@ -262,13 +257,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtQRMeta.png", DecodeType
     }
 }
 {{< /highlight >}}
+
+<p align="center"><img src="extqrmeta.png"></p>
   
 ### Reading Metadata from DataBar Barcodes with 2D Components
-To read metadata from *DataBar* barcodes with 2D components, the library provides a group of properties called [*DataBarExtendedParameters*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/databarextendedparameters). This property group includes a special parameter called [*Is2DCompositeComponent*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/databarextendedparameters/properties/is2dcompositecomponent) that is used to enable or disable a 2D component in *DataBar* barcodes.  
+To read metadata from *DataBar* barcodes with 2D components, the library provides a group of properties called [*DataBarExtendedParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/databarextendedparameters). This property group includes a special parameter called [*Is2DCompositeComponent*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/databarextendedparameters/properties/is2dcompositecomponent) that is used to enable or disable a 2D component in *DataBar* barcodes.  
   
 The following code sample illustrates how to get metadata from a sample *DataBar* barcode with a 2D component (shown below).
-  
-<p align="center"><img src="extdatabarmeta.png"></p>
   
 {{< highlight csharp>}}
 //generate Databar with metadata
@@ -293,10 +288,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDataBarMeta.png", Decod
 }
 {{< /highlight >}}
 
+<p align="center"><img src="extdatabarmeta.png"></p>
+
 ### Reading Metadata for 1D Symbologies
-For some 1D symbologies, such as, for example, *EAN 13*, it is possible to separate the decoded barcode data into barcode information itself and the checksum value. This can be done using a group of properties called [*OneDExtendedParameters*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters) that provides the following fields: [*Value*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters/properties/value) that stores the decoded 1D barcode text and [*CheckSum*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters/properties/checksum) that contains the result of checksum calculation.
-  
-<p align="center"><img src="ean13.png"></p>
+For some 1D symbologies, such as, for example, *EAN 13*, it is possible to separate the decoded barcode data into barcode information itself and the checksum value. This can be done using a group of properties called [*OneDExtendedParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters) that provides the following fields: [*Value*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters/properties/value) that stores the decoded 1D barcode text and [*CheckSum*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/onedextendedparameters/properties/checksum) that contains the result of checksum calculation.
   
 {{< highlight csharp>}}
 //generate EAN 13 with metadata
@@ -319,12 +314,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}EAN13.png", DecodeType.EAN
     }
 }
 {{< /highlight >}}
+
+<p align="center"><img src="ean13.png"></p>
   
 ### Getting Raw Data from Code 128 Barcodes
-The input data in *Code 128* barcodes can be encoded in three different modes: A, B, or C. The library provides a group of properties called [*Code128ExtendedParameters*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/code128extendedparameters) with a special field called [*Code128DataPortions *]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/code128extendedparameters/properties/code128dataportions
+The input data in *Code 128* barcodes can be encoded in three different modes: A, B, or C. The library provides a group of properties called [*Code128ExtendedParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/code128extendedparameters) with a special field called [*Code128DataPortions*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/code128extendedparameters/properties/code128dataportions
 ) that stores decoded parts of the input data together with information about their encoding mode.
-
-<p align="center"><img src="code128.png"></p>
 
 {{< highlight csharp>}}
 //generate Code128 with metadata
@@ -350,4 +345,4 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.C
 }
 {{< /highlight >}}
 
-
+<p align="center"><img src="code128.png"></p>

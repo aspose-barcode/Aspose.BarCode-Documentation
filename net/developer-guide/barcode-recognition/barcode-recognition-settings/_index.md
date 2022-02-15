@@ -3,24 +3,24 @@ title: Recognition Settings
 type: docs
 description: ""
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Aspose.BarCode, Read Barcode C#"
-weight: 30
+weight: 20
 url: /net/barcode-recognition-settings/
 ---
 
-{{% alert color="primary" %}}[Read barcodes online](https://products.aspose.app/barcode/recognize). You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## Overview
-In ***Aspose.BarCode for .NET***, after reading the raw data from a barcode graphical representation, the library initiates data decoding that is performed according to the specific protocol. Often, in case of using particular 1D and postal barcode types, conflicting data decoding formats may appear due to the fact that some barcode symbologies have undergone standardization later than the start of their wide usage. To resolve such conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) contains a group of properties called [*BarcodeSettings*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings) that are responsible for data decoding settings.
+In ***Aspose.BarCode for .NET***, after reading the raw data from a barcode graphical representation, the library initiates data decoding that is performed according to the specific protocol. Often, in the case of using particular 1D and postal barcode types, conflicting data decoding formats may appear because some barcode symbologies have undergone standardization later than the start of their wide usage. To resolve such conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) contains a group of properties called [*BarcodeSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings) that are responsible for data decoding settings.
 
 ## Checksum Verification
-In many 1D and postal symbologies, data integrity verification and decoding are based on checksum control mechanisms. Class [*BarcodeSettings*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings
-) provides the [*ChecksumValidation*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property that is used to manage checksum settings for data validation and decoding. In general, barcode standards can be divided in two groups: those with obligatory checksum and those with optional one. Depending on this, the [*ChecksumValidation*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) field can take different values; hence, the barcode recognition process will change according to particular checksum settings.  
+In many 1D and postal symbologies, data integrity verification and decoding are based on checksum control mechanisms. Class [*BarcodeSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings
+) provides the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property that is used to manage checksum settings for data validation and decoding. In general, barcode standards can be divided into two groups: those with obligatory checksum and those with optional one. Depending on this, the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) field can take different values; hence, the barcode recognition process will change according to particular checksum settings.  
 
 ### Checksum Validation for Barcodes with Obligatory Checksum
-Symbologies with obligatory checksum always require performing checksum control when the [*ChecksumValidation*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property is set to *ChecksumValidation.Default* and *ChecksumValidation.On*. Otherwise, this parameter can take the value *ChecksumValidation.Off* that disables checksum controls for barcode type with obligatory checksum and thus allows reading data from incorrectly generated barcodes. However, in thi case, the probability of inaccurate recognition increases considerably.
-
-<p align="center"><img src="code11.png"></p> 
+Symbologies with obligatory checksum always require performing checksum control when the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property is set to *ChecksumValidation.Default* or *ChecksumValidation.On*. Otherwise, this parameter can take the value *ChecksumValidation.Off* that disables checksum controls for barcode type with obligatory checksum and thus allows reading data from incorrectly generated barcodes. However, in this case, the probability of inaccurate recognition increases considerably.  
   
+The following code snippet explains how to manage checksum validation settings for the symbology with obligatory checksum (in this case, a sample *Code 11* barcode image provided below has been considered). 
+ 
 {{< highlight csharp>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456"))
@@ -29,7 +29,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456")
     gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
 }
 
-//read barcode image with ChecksumValidation.Default
+//read barcode image with ChecksumValidation.Default being set
 Console.WriteLine("ReadChecksumCode11:");
 Console.WriteLine("ChecksumValidation: Default");
 using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Code11))
@@ -44,7 +44,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
     }
 }
 
-//read barcode image with ChecksumValidation.Off
+//read barcode image with ChecksumValidation.Off being set
 Console.WriteLine("ChecksumValidation: Off");
 using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Code11))
 {
@@ -58,11 +58,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="code11.png"></p> 
 
 ### Checksum Validation for Barcodes with Optional Checksum
-For symbologies with optional checksum control, [*ChecksumValidation*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) can be set in such a way to enable checksum checking, namely, it needs to take the value *ChecksumValidation.On*. Otherwise, when the values *ChecksumValidation.Default* and *ChecksumValidation.Off* are used, checksum validation is omitted.
-
-<p align="center"><img src="code39.png"></p>
+For symbologies with optional checksum control, [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) can be set in such a way to enable checksum checking, namely, it needs to take the value *ChecksumValidation.On*. Otherwise, when the values *ChecksumValidation.Default* and *ChecksumValidation.Off* are used, checksum validation is omitted.  
+  
+The following code sample illustrates the options of reading barcodes with optional checksum (a *Code 39* barcode image shown below has been used). 
   
 {{< highlight csharp>}}
 //create barcode
@@ -73,7 +75,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
     gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
 }
 
-//read barcode image with ChecksumValidation.Default
+//read barcode image with ChecksumValidation.Default being set
 Console.WriteLine("ReadChecksumCode39:");
 Console.WriteLine("ChecksumValidation: Default");
 using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
@@ -88,7 +90,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
     }
 }
 
-//read barcode image with ChecksumValidation.On
+//read barcode image with ChecksumValidation.On being set
 Console.WriteLine("ChecksumValidation: On");
 using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
 {
@@ -102,11 +104,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="code39.png"></p>
 
 ## Recognition and Processing of Unicode Encodings
-In ***Aspose.BarCode for .NET***, there is a special parameter called [*DetectEncoding*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/detectencoding) that allows enabling automatic recognition of UTF8 and UTF16 Unicode encodings during barcode recognition of 2D symbologies, as well as re-encoding the data into a Unicode string. When this mode is disabled, the barcode data can be read and decoded manually using the required encoding.
+In ***Aspose.BarCode for .NET***, there is a special parameter called [*DetectEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/detectencoding) that allows enabling the automatic recognition of UTF8 and UTF16 Unicode encodings for 2D barcode recognition, as well as re-encoding the data into a Unicode string. When this mode is disabled, the barcode data can be read and decoded manually using the required encoding.  
   
-<p align="center"><img src="qrdetectencoding.png"></p>
+The following code snippet shows how to automatically decode barcodes with UTF8 and UTF16 Unicode encodings (a sample *QR Code* barcode image shown below has been considered). 
 
 {{< highlight csharp>}}
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
@@ -141,11 +145,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="qrdetectencoding.png"></p>
 
 ## Using FNC Symbols
-GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-FNC4); FNC1 is most widespread one and is used for GS1 Application Identifer (AI) marking. When the library detects that a barcode does not correspond to GS1 types (e.g. *Code 128* and *GS1 Code 128*), the decoder outputs FNC symbols as “<FNC#>”. Such messages can be deleted from recognition results by setting the [*StripFNC*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.  
-
-<p align="center"><img src="code128fnc.png"></p>
+The GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-4) among which FNC1 is the most widespread one and is used for GS1 Application Identifier (AI) marking. When the library detects that a barcode does not correspond to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNC#>”. Such messages can be deleted from the recognition results by setting the [*StripFNC*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.  
+  
+The following code sample shows how to work with FCN symbols while reading a *Code 128* barcode demonstrated below.
 
 {{< highlight csharp>}}
 //create barcode
@@ -180,12 +186,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128FNC.png", DecodeTyp
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="code128fnc.png"></p>
 
 ## Reading Australia Post Barcodes
-*Australia Post* is a 4-state postal symbology used in Australian Post. In this barcode strandard, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard contains a checksum and information used for Reed-Solomon data recovery.  
+*Australia Post* is a 4-state postal symbology used in the Australian Post. In this barcode standard, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard contains a checksum and information used for Reed-Solomon data recovery.  
 *See more details about this symbology [here](/barcode/net/postal-barcodes/#australia-post-symbology)*.  
   
-Due to the possibility to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has some specifics. In ***Aspose.BarCode for .NET***, developers can use class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) to customize recognition parameters for this barcode standard according to particular requirements. Further, main properties of class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) are explained in detail.
+Due to the possibility to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has some specifics. In ***Aspose.BarCode for .NET***, developers can use class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) to customize recognition parameters for this barcode standard according to particular requirements. Further, the main properties of class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) are explained in detail.
 
 ### Decoding Customer Information in Standard Formats
 The *Australia Post* symbology allows encoding additional customer information in three different formats; automatic recognition of the format used for encoding is not possible. In ***Aspose.BarCode for .NET***, the required decoding format can be set in the [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype) field that can take the following values as explained in the table below.
@@ -198,7 +206,7 @@ The *Australia Post* symbology allows encoding additional customer information i
   
 **CTable**  
   
-<p align="center"><img src="australiapostctable.png"></p>
+The following code snippet explains how to set the decoding format using the *CTable* option for the barcode image shown below. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -210,7 +218,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
     gen.Save($"{path}AustraliaPostCTable.png", BarCodeImageFormat.Png);
 }
 
-//recognize image
+//read barcode image
 Console.WriteLine("ReadAustraliaPostCTable:");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", DecodeType.AustraliaPost))
 {
@@ -222,10 +230,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="australiapostctable.png"></p>
 
-**NTable**
-
-<p align="center"><img src="australiapostntable.png"></p>
+**NTable**  
+  
+The following code sample shows how to apply the decoding format with the *NTable* option while reading the barcode image provided below. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -237,7 +247,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
     gen.Save($"{path}AustraliaPostNTable.png", BarCodeImageFormat.Png);
 }
 
-//recognize image
+//read barcode image
 Console.WriteLine("ReadAustraliaPostNTable:");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", DecodeType.AustraliaPost))
 {
@@ -249,10 +259,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="australiapostntable.png"></p>
 
-**Other**
-
-<p align="center"><img src="australiapostother.png"></p>
+**Other**  
+  
+The following code snippet demonstrates how to set the *Other* decoding format for the barcode image given below. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -264,7 +276,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
     gen.Save($"{path}AustraliaPostOther.png", BarCodeImageFormat.Png);
 }
 
-//recognize image
+//read barcode image
 Console.WriteLine("ReadAustraliaPostOther:");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", DecodeType.AustraliaPost))
 {
@@ -276,11 +288,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", D
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="australiapostother.png"></p>
 
 ### Removal of Fill Patterns
-The *Australia Post* standard imposes the fixed size for each subtype. When barcode decoding is performed in the *CTable* format, the data that fills empty space in the input message gets decoded as symbol “z”. To avoid such a result, it is necessary to set the [*IgnoreEndingFillingPatternsForCTable *]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) property to *True*.  
-
-<p align="center"><img src="australiapostctableignoreending.png"></p>
+The *Australia Post* standard imposes using fixed size for each subtype. When barcode decoding is performed in the *CTable* format, the data filling empty space in the input message is decoded as symbol “z”. To avoid such a result, it is necessary to set the [*IgnoreEndingFillingPatternsForCTable*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) property to *True*.  
+  
+The following code sample illustrates how to eliminate filling patters while using the *CTable* decoding mode for the barcode image demonstrated below. 
 
 {{< highlight csharp>}}
 //create barcode
@@ -293,7 +307,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 }
 
 Console.WriteLine("ReadAustraliaPostCTableIgnoreEnding:");
-//recognize image with IgnoreEndingFillingPatternsForCTable true
+//read barcode image with IgnoreEndingFillingPatternsForCTable set to true
 Console.WriteLine("IgnoreEndingFillingPatternsForCTable: true");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreEnding.png", DecodeType.AustraliaPost))
 {
@@ -306,7 +320,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
     }
 }
 
-//recognize image with IgnoreEndingFillingPatternsForCTable false
+//read barcode image with IgnoreEndingFillingPatternsForCTable set to false
 Console.WriteLine("IgnoreEndingFillingPatternsForCTable: false");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreEnding.png", DecodeType.AustraliaPost))
 {
@@ -319,12 +333,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
     }
 }
 {{< /highlight >}}
+  
+<p align="center"><img src="australiapostctableignoreending.png"></p>
 
 ### Decoding Customer Information in Custom Format
-***Aspose.BarCode for .NET*** allows developers to decode customer information in their own format. For this purpose, the library provides a special interface called [*CustomerInformationDecoder*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationdecoder). In such way, decoding of barcode data is performed using this interface; the properties [*CustomerInformationInterpretingType*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype
-) and [*IgnoreEndingFillingPatternsForCTable*]( https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) are ignored.
+***Aspose.BarCode for .NET*** allows developers to decode customer information in their own format. For this purpose, the library provides a special interface called [*CustomerInformationDecoder*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationdecoder). In such a way, decoding of barcode data is performed using this interface; the properties [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype
+) and [*IgnoreEndingFillingPatternsForCTable*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) are ignored.  
   
-<p align="center"><img src="australiapostcustomerinformationdecoder.png"></p>
+The following code snippet explains how to decode customer information inputted in the *NTable* format while reading the sample *Australia Post* barcode shown below. 
 
 {{< highlight csharp>}}
 class NTableDecoder : AustraliaPostCustomerInformationDecoder
@@ -360,7 +376,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
     gen.Save($"{path}AustraliaPostCustomerInformationDecoder.png", BarCodeImageFormat.Png);
 }
 
-//recognize image
+//read barcode image
 Console.WriteLine("ReadAustraliaPostCustomerInformationDecoder:");
 using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCustomerInformationDecoder.png", DecodeType.AustraliaPost))
 {
@@ -372,4 +388,5 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCustomerInfor
     }
 }
 {{< /highlight >}}
-
+  
+<p align="center"><img src="australiapostcustomerinformationdecoder.png"></p>
