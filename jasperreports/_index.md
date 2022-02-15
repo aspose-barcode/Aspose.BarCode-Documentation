@@ -1,6 +1,6 @@
 ---
 title: Aspose.BarCode for JasperReports
-description:Aspose.BarCode for JasperReports provides a unique and robust solution to make your reports unique and more professional. It allows developers to display high-quality barcode labels on JasperReports.
+description: Aspose.BarCode for JasperReports provides a unique and robust solution to make your reports unique and more professional. It allows developers to display high-quality barcode labels on JasperReports.
 type: docs
 aliases:
  - /jasperreports/Home/
