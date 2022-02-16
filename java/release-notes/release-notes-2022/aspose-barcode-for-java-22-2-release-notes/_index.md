@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for Java 22.2 Release Notes
 type: docs
-weight: 1000
+weight: 990
 url: /java/aspose-barcode-for-java-22-2-release-notes/
 ---
 
