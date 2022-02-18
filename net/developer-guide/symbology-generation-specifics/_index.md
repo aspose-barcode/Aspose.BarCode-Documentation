@@ -39,4 +39,4 @@ All related information can be found in the articles listed below.
 |Postal Standards| |
 |---|---|
 |**Article**|**Description**|  
-|[Postal Barcodes](/barcode/net/postal-barcodes/)|Provides an overview on postal symbologies, including 2-state (*Planet* and *Postnet*) and 4-state (*RM4SCC*, *Dutch KIX*, *Mailmark*, and others) standards|
+|[Postal Barcodes](/barcode/net/postal-barcodes/)|Provides an overview on postal symbologies, including 2-state (*Planet* and *Postnet*) and 4-state standards (*RM4SCC*, *Dutch KIX*, *Mailmark*, and others)|
