@@ -1,22 +1,24 @@
 ---
 title: Recognition Settings
 type: docs
-description: ""
-keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Aspose.BarCode, Read Barcode C#"
+description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for .NET according to business needs"
+keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode C#"
 weight: 20
 url: /net/barcode-recognition-settings/
 ---
 
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
-## Overview
+## **Overview**
 In ***Aspose.BarCode for .NET***, after reading the raw data from a barcode graphical representation, the library initiates data decoding that is performed according to the specific protocol. Often, in the case of using particular 1D and postal barcode types, conflicting data decoding formats may appear because some barcode symbologies have undergone standardization later than the start of their wide usage. To resolve such conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) contains a group of properties called [*BarcodeSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings) that are responsible for data decoding settings.
 
-## Checksum Verification
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+
+## **Checksum Verification**
 In many 1D and postal symbologies, data integrity verification and decoding are based on checksum control mechanisms. Class [*BarcodeSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings
 ) provides the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property that is used to manage checksum settings for data validation and decoding. In general, barcode standards can be divided into two groups: those with obligatory checksum and those with optional one. Depending on this, the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) field can take different values; hence, the barcode recognition process will change according to particular checksum settings.  
 
-### Checksum Validation for Barcodes with Obligatory Checksum
+### **Checksum Validation for Barcodes with Obligatory Checksum**
 Symbologies with obligatory checksum always require performing checksum control when the [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property is set to *ChecksumValidation.Default* or *ChecksumValidation.On*. Otherwise, this parameter can take the value *ChecksumValidation.Off* that disables checksum controls for barcode type with obligatory checksum and thus allows reading data from incorrectly generated barcodes. However, in this case, the probability of inaccurate recognition increases considerably.  
   
 The following code snippet explains how to manage checksum validation settings for the symbology with obligatory checksum (in this case, a sample *Code 11* barcode image provided below has been considered). 
@@ -61,7 +63,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
   
 <p align="center"><img src="code11.png"></p> 
 
-### Checksum Validation for Barcodes with Optional Checksum
+### **Checksum Validation for Barcodes with Optional Checksum**
 For symbologies with optional checksum control, [*ChecksumValidation*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) can be set in such a way to enable checksum checking, namely, it needs to take the value *ChecksumValidation.On*. Otherwise, when the values *ChecksumValidation.Default* and *ChecksumValidation.Off* are used, checksum validation is omitted.  
   
 The following code sample illustrates the options of reading barcodes with optional checksum (a *Code 39* barcode image shown below has been used). 
@@ -107,7 +109,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
   
 <p align="center"><img src="code39.png"></p>
 
-## Recognition and Processing of Unicode Encodings
+## **Recognition and Processing of Unicode Encodings**
 In ***Aspose.BarCode for .NET***, there is a special parameter called [*DetectEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/detectencoding) that allows enabling the automatic recognition of UTF8 and UTF16 Unicode encodings for 2D barcode recognition, as well as re-encoding the data into a Unicode string. When this mode is disabled, the barcode data can be read and decoded manually using the required encoding.  
   
 The following code snippet shows how to automatically decode barcodes with UTF8 and UTF16 Unicode encodings (a sample *QR Code* barcode image shown below has been considered). 
@@ -148,7 +150,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
   
 <p align="center"><img src="qrdetectencoding.png"></p>
 
-## Using FNC Symbols
+## **Using FNC Symbols**
 The GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-4) among which FNC1 is the most widespread one and is used for GS1 Application Identifier (AI) marking. When the library detects that a barcode does not correspond to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNC#>”. Such messages can be deleted from the recognition results by setting the [*StripFNC*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.  
   
 The following code sample shows how to work with FCN symbols while reading a *Code 128* barcode demonstrated below.
@@ -189,13 +191,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128FNC.png", DecodeTyp
   
 <p align="center"><img src="code128fnc.png"></p>
 
-## Reading Australia Post Barcodes
+## **Reading Australia Post Barcodes**
 *Australia Post* is a 4-state postal symbology used in the Australian Post. In this barcode standard, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard contains a checksum and information used for Reed-Solomon data recovery.  
 *See more details about this symbology [here](/barcode/net/postal-barcodes/#australia-post-symbology)*.  
   
 Due to the possibility to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has some specifics. In ***Aspose.BarCode for .NET***, developers can use class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) to customize recognition parameters for this barcode standard according to particular requirements. Further, the main properties of class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings) are explained in detail.
 
-### Decoding Customer Information in Standard Formats
+### **Decoding Customer Information in Standard Formats**
 The *Australia Post* symbology allows encoding additional customer information in three different formats; automatic recognition of the format used for encoding is not possible. In ***Aspose.BarCode for .NET***, the required decoding format can be set in the [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype) field that can take the following values as explained in the table below.
   
 |Australia Post Encoding Table|Supported Symbols|
@@ -291,7 +293,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", D
   
 <p align="center"><img src="australiapostother.png"></p>
 
-### Removal of Fill Patterns
+### **Removal of Fill Patterns**
 The *Australia Post* standard imposes using fixed size for each subtype. When barcode decoding is performed in the *CTable* format, the data filling empty space in the input message is decoded as symbol “z”. To avoid such a result, it is necessary to set the [*IgnoreEndingFillingPatternsForCTable*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) property to *True*.  
   
 The following code sample illustrates how to eliminate filling patters while using the *CTable* decoding mode for the barcode image demonstrated below. 
@@ -336,7 +338,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
   
 <p align="center"><img src="australiapostctableignoreending.png"></p>
 
-### Decoding Customer Information in Custom Format
+### **Decoding Customer Information in Custom Format**
 ***Aspose.BarCode for .NET*** allows developers to decode customer information in their own format. For this purpose, the library provides a special interface called [*CustomerInformationDecoder*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationdecoder). In such a way, decoding of barcode data is performed using this interface; the properties [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype
 ) and [*IgnoreEndingFillingPatternsForCTable*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/australiapostsettings/properties/ignoreendingfillingpatternsforctable) are ignored.  
   
