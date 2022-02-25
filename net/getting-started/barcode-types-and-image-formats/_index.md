@@ -13,7 +13,7 @@ url: /net/barcode-types-and-image-formats/
 
 **Matrix codes**, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
   
-**Postal barcode types** are specific barcode symbologies used by postal services in a variety of countries.
+**Postal barcode types** are specific barcode symbologies used by postal services in different countries.
   
 <table> 
 <tr> <th></th><th></th> 
@@ -21,9 +21,9 @@ url: /net/barcode-types-and-image-formats/
 </tr> 
 <tr> <th rowspan="2">1D (Linear)</th> 
 <th>Numeric Only</th> 
-<td>Code 11, Code 32, Codabar, DataBar OmniDirectional, DataBar Stacked OmniDirectional, DataBar Limited, DataBar Truncated, DataBar Stacked, EAN 13, EAN 14, EAN 8,
+<td>Code 11, Code 32, Codabar, DataBar Omnidirectional, DataBar Stacked Omnidirectional, DataBar Limited, DataBar Truncated, DataBar Stacked, EAN 13, EAN 14, EAN 8,
 IATA 2-of-5, Italian Post 25, Interleaved 2-of-5, ISBN, ISMN, ISSN, ITF 6, ITF 14, Matrix 2-of-5, MSI, OPC, PatchCode, Pharmacode, PZN, SSCC 14, SSCC 18, 
-Standard 2-of-5, EAN 5, EAN 2, UPC A, UPC E, UpcaGs1DatabarCoupon
+Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 </td> 
 </tr> 
 <tr> <th>Alpha-Numeric</th> 

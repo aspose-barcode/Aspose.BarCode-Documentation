@@ -5,10 +5,10 @@ weight: 170
 url: /net/managing-2d-barcodes/
 ---
 
-## Hiding Barcode Text that Is Too Long to Display
+## **Hiding Barcode Text that Is Too Long to Display**
 Unlike one-dimensional barcodes, two-dimensional ones often contain a large amount of data as they have been introduced exactly to address such a need. This human-readable barcode text does not require to be printed out as it does not undergo machine scanning. Therefore, it may be necessary to hide the contents of the *CodeText* property for 2D barcodes in cases when the text is too long to be displayed on a barcode label. 
 
-### Hiding Barcode Text
+### **Hiding Barcode Text**
 The following code snippet demonstrates how to hide the contents of the *CodeText* property.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-HideBarcodeCodeText-HideBarcodeCodeText.cs" >}}
@@ -17,12 +17,12 @@ The following code snippet demonstrates how to hide the contents of the *CodeTex
 | :- |
 |![todo:image_alt_text](managing-2d-barcodes_1.jpg)|
 
-### Reducing the Font Size of CodeText
+### **Reducing the Font Size of CodeText**
 The code sample provided below illustrates how to reduce the font size of *CodeText* contents.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-ReduceCodeTextFontSize-ReduceCodeTextFontSize.cs" >}}
 
-## Adjusting 2D Barcode Label Size
+## **Adjusting 2D Barcode Label Size**
 The size of a barcode label depends on many factors. Mainly, the following settings affect the size of the resulting image:
 
 - Metrics
@@ -44,4 +44,4 @@ The size of a barcode label depends on many factors. Mainly, the following setti
 
 Each specific barcode type may have different semantic demands; then it will override or ignore the above settings. For example,*DataMatrix* is a square-based barcode type; hence, the *AspectRatio* setting is not applicable to the *DataMatrix* symbology as it equals 1 for square modules. Accordingly, *BarcodeGenerator* will simply ignore those settings during the generation process.
   
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
