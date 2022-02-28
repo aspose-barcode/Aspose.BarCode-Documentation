@@ -1,5 +1,6 @@
 ---
-title: Barcode Recognition Basics
+title: Barcode Recognition Basics - Read Barcode from Image in C# .NET
+linktitle: Barcode Recognition Basics
 type: docs
 aliases:
  - /node/read-barcodes-with-aspose-barcode-apis/
