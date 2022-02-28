@@ -4,17 +4,11 @@ type: docs
 weight: 80
 url: /java/barcode-generation-and-recognition-tutorial/
 ---
-
-{{% alert color="primary" %}} 
-
-Aspose.BarCode for Java provides features for generating and recognising more than 20 types of barcodes.
-
 This tutorial demonstrates how to use Aspose.BarCode for Java to generate a PDF417 barcode image, and then read the barcode in that image.
 
 For this tutorial, we used Eclipse as the IDE, which is free and could be downloaded at:
 <http://www.eclipse.org/downloads/>
 
-{{% /alert %}} 
 ## **Barcode Generation**
 1. Start Eclipse and create a new Java project.
 
@@ -74,6 +68,7 @@ You could use your own Servlet-api.jar if available.
 1. Save the image to file. Continuing the sample above, add this code to save the barcode image to file:
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-TwoD_barcodes-basic_features-Test-SaveToDisk.java" >}}
+
 ## **Barcode Recognition**
 Continuing the sample above, we can add code to scan a barcode from an image:
 
@@ -83,6 +78,6 @@ The evaluation version of Aspose.BarCode for Java only allows Code39 types of ba
 
 {{% alert color="primary" %}} 
 
-If instantiating the BarCodeReader throws an exception, it is probably because the image format is not supported. Download the free JAI library to load the image from [www.java.net](http://www.java.net).
+If instantiating an instance of class BarCodeReader throws an exception, it is probably because the image format is not supported. Download the free JAI library to load the image from [www.java.net](http://www.java.net).
 
 {{% /alert %}}

@@ -29,8 +29,14 @@ There is no printer limitation for the barcodes generated with Aspose.BarCode. D
 The full list of features can be found in [**Product Features**]().
 
 ## **System Compatibility**
+Aspose.BarCode for Java supports any operating system where the Java runtime is installed.  
+
+***Aspose.BarCode for Android via Java*** is platform-independent so it can be used on any platform where the Android Runtime environment is installed and will run on Android systems running Android OS 2.0 or greater.  
+***Aspose.BarCode for Node.js*** via Java is a platform-independent API and can be used on any platform (Windows, Linux, etc.) where Node.js and node-java bridge are installed. The machine must have Oracle JDK 7 or greater versions before setting up the installation.  
+***Aspose.BarCode for PHP via Java*** is a platform-independent API and can be used on any platform (Windows, Linux, etc.) where PHP and Java Bridge are installed.
 
 ## **Licensing**
+License is required to obtain access to the advanced functionality of Aspose.BarCode for .NET. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. More information about how to buy and set the license is provided in Licensing. If you want to try Aspose.BarCode for .NET, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License]() for details.
 
 ## **Platforms Supported**
 - Java Standard Edition 1.4 or greater.

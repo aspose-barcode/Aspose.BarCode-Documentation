@@ -39,7 +39,7 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 ***Aspose.BarCode for .NET*** allows rendering barcode labels in the five most widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by the SQL Server Reporting Services engine. The image formats available for input and output are listed below.
 
 
-|**Format**|**Description**|**Load**|**Save**|
+|**Format**|**Description**|**Recognition**|**Generation**|
 | :- | :- | :- | :- |
 |[JPEG](https://docs.fileformat.com/Image/JPEG/)|The image file format was standardized by the Joint Photographic Experts Group.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[TIFF](https://docs.fileformat.com/Image/TIFF/)|Tagged Image File Format|{{< emoticons/tick >}}|{{< emoticons/tick >}} |
@@ -49,44 +49,3 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 |[EXIF](https://docs.fileformat.com/image/exif/)|Exchangeable Image File Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[EMF](https://docs.fileformat.com/Image/EMF/)|Enhanced Metafile Format| |{{< emoticons/tick >}}|
 |[SVG](https://docs.fileformat.com/page-description-language/SVG/)|Scalable Vector Graphics Files| |{{< emoticons/tick >}} |
-
-
-
-
-
-### **Numeric Only Symbologies**
-- EAN13
-- EAN8
-- UPCA
-- UPCE
-- BooklandEAN
-- Interleaved2of5
-- Standard2of5
-- MSI
-- Code11
-- Codabar
-- Postnet
-- Planet
-- EAN14(SCC14)
-- SSCC18
-- ITF14
-- Leticode
-- OPC
-### **Alpha-Numeric Symbologies**
-- Code128
-- EAN128
-- Code39 Extended
-- Code39 Standard
-- Code93 Extended
-- Code93 Standard
-- Australia Post
-- Matrix 2 of 5
-- PZN
-- Deutsche Post Identcode
-- VIN
-### **2D Symbologies**
-- PDF417
-- DataMatrix
-- Aztec
-- QR
-- Swiss QR (QR Bill)
