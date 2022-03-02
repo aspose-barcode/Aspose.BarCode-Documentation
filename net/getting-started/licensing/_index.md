@@ -55,6 +55,8 @@ License setting can be also performed from a file or stream, as demonstrated bel
 {{< highlight csharp>}}
 System.IO.MemoryStream ms = new System.IO.MemoryStream();
 //load license data to stream
+//set position to 0 to start reading from beginning
+ms.Position = 0;
 //set license as stream
 (new Aspose.BarCode.License()).SetLicense(ms);
 {{< /highlight >}}
