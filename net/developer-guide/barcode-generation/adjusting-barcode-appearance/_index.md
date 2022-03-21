@@ -1,5 +1,5 @@
 ---
-title: Adjusting Barcode Appearance using BarCode C# Library
+title: Adjusting Barcode Appearance using C# Library
 linktitle: Adjusting Barcode Appearance
 type: docs
 weight: 30
