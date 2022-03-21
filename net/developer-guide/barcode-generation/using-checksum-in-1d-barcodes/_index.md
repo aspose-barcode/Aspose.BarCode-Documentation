@@ -1,8 +1,9 @@
 ---
-title: Using Checksum in 1D Barcodes
+title: Using Checksum in 1D Barcodes with C#
+linktitle: Using Checksum in 1D Barcodes
 type: docs
 weight: 80
-description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for .NET"
+description: How to Set Checksum for 1D Barcodes in C# API"
 keywords: "Generate Barcodes, Barcode Checksum in Aspose.Barcode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings Aspose.BarCode"
 url: /net/use-checksum-and-supplement-data/
 ---
