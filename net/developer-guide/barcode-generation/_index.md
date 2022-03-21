@@ -1,9 +1,10 @@
 ---
-title: Barcode Generation Basics
+title: Barcode Generation Basics - Generate Barcode in C# 
+linktitle: Barcode Generation Basics 
 type: docs
 weight: 10
 url: /net/barcode-generation/
-keywords: Barcode C# library
+keywords: Barcode C# library, Generate Barcode C#
 description: Topics convered in Barcode C# library includes supported symbologies, barcode appearance-related features, adjusting barcode size, changing barcode text, saving created barcodes, dealing with GUI-based development tools. The essential information can be found in the articles listed below.
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
