@@ -1,5 +1,6 @@
 ---
-title: Managing Barcode Text
+title: Managing Barcode Text using C# Library
+linktitle: Managing Barcode Text
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
