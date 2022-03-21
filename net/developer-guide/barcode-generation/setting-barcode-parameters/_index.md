@@ -1,5 +1,6 @@
 ---
 title: Setting Barcode Parameters using C# Library
+linktitle: Setting Barcode Parameters
 type: docs
 weight: 40
 description: "How to Set Size Units for Barcodes in Aspose.BarCode for .NET"
