@@ -1,5 +1,5 @@
 ---
-title: Working with WinForms and WPF with BarCode C# Library
+title: Working with WinForms and WPF with Barcode C# Library
 linktitle: Working with WinForms and WPF
 type: docs
 description: "Barcode Generation in Aspose.BarCode for .NET through C# GUI-based frameworks: Windows Forms and WPF"
