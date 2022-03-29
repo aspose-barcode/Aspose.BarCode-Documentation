@@ -1,5 +1,6 @@
 ---
-title: Adjusting Barcode Appearance
+title: Adjusting Barcode Appearance using C# Library
+linktitle: Adjusting Barcode Appearance
 type: docs
 weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
