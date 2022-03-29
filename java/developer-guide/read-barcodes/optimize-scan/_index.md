@@ -1,8 +1,10 @@
 ---
-title: Optimize Scan
+title: Optimize Scan - Barcode Java API
+linktitle: Optimize Scan
 type: docs
 weight: 20
 url: /java/optimize-scan/
+description: Barcode Java API provides the recognition modes that can help the developers to quickly set up and tune the processing speed and quality in a way which is the most appropriate for the application needs.
 ---
 
 ## **Optimized Scan**
