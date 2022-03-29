@@ -1,8 +1,10 @@
 ---
-title: Barcode Regions
+title: Barcode Regions - Barcode Java API
+linktitle: Barcode Regions
 type: docs
 weight: 40
 url: /java/barcode-regions/
+description: The barcode region is the part of the image that only contains the barcode itself, this article shows how to read an image and get the regions for all recognized barcodes in the image using Barcode Java API.
 ---
 
 ## **Getting Barcode Region Information from the Image**
