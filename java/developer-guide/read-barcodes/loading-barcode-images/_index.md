@@ -1,8 +1,10 @@
 ---
-title: Loading Barcode Images
+title: Loading Barcode Images using Java API
+linktitle: Loading Barcode Images
 type: docs
 weight: 50
 url: /java/loading-barcode-images/
+description: Barcode Java API contains two powerful classes to handle barcode generation and recognition. You can load an image from file or stream to read barcode.
 ---
 
 ## **Loading from a File**
