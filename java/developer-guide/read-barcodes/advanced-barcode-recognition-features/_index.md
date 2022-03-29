@@ -1,8 +1,10 @@
 ---
-title: Advanced Barcode Recognition Features
+title: Advanced Barcode Recognition Features - Barcode Java API
+linktitle: Advanced Barcode Recognition Features
 type: docs
 weight: 30
 url: /java/advanced-barcode-recognition-features/
+description: Sometimes, the barcode in an image might be at an angle, the Barcode Java API tries to detect the barcode in all possible directions. But if you know the angle, you can set orientation to reduce the recognition time.
 ---
 
 ## **Barcode Orientation**
