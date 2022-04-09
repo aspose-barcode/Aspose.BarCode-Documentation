@@ -54,7 +54,7 @@ gen.Save($"{path}PatchCodeVI.png", BarCodeImageFormat.Png);
   
 **Setting Generation Format** 
   
-To set the format of *PatchCode* barcodes to be generated, it is necessary to initialize the [*PatchFormat*]() property of class [*PatchCodeParameters*](). This property can take the following values: 
+To set the format of *PatchCode* barcodes to be generated, it is necessary to call the *PatchFormat* method of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters). This property can take the following values: 
 - *PatchOnly* - basic *PatchCode* barcode images are generated. This value is used by default. 
 - *A4* - A4 pages with portrait orientation are outputted having *PatchCode* barcodes on page borders and an optional QR code in the center.
 - *A4_LANDSCAPE* - A4 pages with landscape orientation are created with *PatchCode* barcodes on page borders and an optional QR code in the center. 
@@ -63,7 +63,7 @@ To set the format of *PatchCode* barcodes to be generated, it is necessary to in
 
 **Adding Complementary QR Code**  
   
-To add a complementary QR code to a *PatchCode* barcode page (A4 or US Letter), it is necessary to enter any text value into the [*ExtraBarcodeText*]() property of class [*PatchCodeParameters*]() and then set the [*Location*]() property of class [*CodeTextParameters*]() to "*CodeLocation.None*".  
+To add a complementary QR code to a *PatchCode* barcode page (A4 or US Letter), it is necessary to pass any text value to the *setExtraBarcodeText* method of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters) and then call the *setLocation* method of class [*CodeTextParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters) to "*CodeLocation.None*".  
   
 Images below illustrate the *PatchCode* barcode pages generated with and without adding complementary *QR Code* labels.
   

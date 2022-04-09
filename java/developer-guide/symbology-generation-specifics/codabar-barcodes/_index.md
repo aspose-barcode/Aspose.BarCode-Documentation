@@ -15,7 +15,7 @@ Input text in *Codabar* barcodes has the following format:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Start and Stop Symbols**
-The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate [CodabarStartSymbol]() and [CodabarStopSymbol]() properties included in the [*Codabar*]() group of parameters of class [*BarcodeParameters*]().  
+The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate *setCodabarStartSymbol* and *setCodabarStopSymbol* methods included in class [*CodabarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarParameters).  
 By default, start and stop characters are set to "A".  
   
 Sample barcode labels demonstrated below have been generated with different settings for start and stop characters.
@@ -59,7 +59,7 @@ foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 16;
 {{< /highlight >}} 
   
-To enable a checksum for this barcode type, it is necessary to initialize the property [*IsChecksumEnabled*]() by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the [*CodabarChecksumMode*]() property. By default, the *Mod16* checksum is applied.  
+To enable a checksum for this barcode type, it is necessary to use the [*EnableCHecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum. The required checksum algorithm can be allocated through the [*CodabarChecksumMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarChecksumMode) enum. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images provided below have been created with different checksum calculation settings.
 

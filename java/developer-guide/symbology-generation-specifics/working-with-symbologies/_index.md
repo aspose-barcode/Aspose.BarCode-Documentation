@@ -71,7 +71,7 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
   
 
 ## **Setting Barcode Symbology in Aspose.BarCode**
-***Aspose.BarCode for Java*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to create an instance of class [*BarcodeGenerator*]() with two main parameters to be initialized: data contents to be encoded in the [*CodeText*]() property and the barcode type in the [*BarcodeType*]() property. The [*BarcodeType*]() property is used to define the symbology of generated barcodes. Developers can assign any symbology to the [*BarcodeType*]() property out of the list of predefined barcode types supported by class [*BarcodeGenerator*](). However, not all barcode symbologies enable barcode generation with barcode text in a required format due to the limitations of a barcode type itself.  
+***Aspose.BarCode for Java*** supports nearly all widely used barcode symbologies. In general, to generate a barcode image, it is necessary to create an instance of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) with two main parameters to be initialized: data contents to be encoded using the *setCodeText* method and the barcode type in the *setBarcodeType* method. The *setBarcodeType* method is used to define the symbology of generated barcodes. Developers can assign any symbology to the *setBarcodeType* property out of the list of predefined barcode types supported by class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator). However, not all barcode symbologies enable barcode generation with barcode text in a required format due to the limitations of a barcode type itself.  
   
 Below, two barcode types, *Code 39* and *QR Code*, are considered as examples to demonstrate how to generate barcodes in ***Aspose.BarCode for Java***. 
   
@@ -106,7 +106,7 @@ gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
 <a name="dataencoding"></a>
 
 Different symbologies have different underlying data encoding approaches and capabilities. Accordingly, barcode label size and the amount of data to be encoded are predefined for each symbology. Some barcode types allow encoding only digits or a limited set of characters and digits, while others can accept any byte sequence without limitations.  
-Further in the article, several barcode types (*EAN 13*, *Code 11*, *GS1 Code 128*, and *PDF417*)) with different data densities are presented as examples.   
+Further in the article, several barcode types (*EAN 13*, *Code 11*, *GS1 Code 128*, and *PDF417*) with different data densities are presented as examples.   
 
 **EAN 13**  
 *EAN 13* barcodes can encode only numerical digits. Specifically, the *EAN 13* data encoding format requires encoding precisely 12 digits with the 13th one used as a control sum calculated according to the specified algorithm. 

@@ -11,20 +11,20 @@ This article provides all necessary information about adjusting barcode appearan
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Overview**
-In ***Aspose.BarCode for Java***, class [*BarcodeGenerator*]() allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
+In ***Aspose.BarCode for Java***, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
   
 <p align="center"><img src="barcode_view_scheme.png"></p>
  
 ## **Barcode Image Sizing Modes**
 
-In the general case, ***Aspose.BarCode for Java*** adjusts the size of a barcode image (width and height) automatically. However, it is possible to customize the image size settings manually by specifying the height and width of a barcode image using [*ImageHeight*]() and [*ImageWidth*]() properties of class [*BaseGenerationParameters*]().  
+In the general case, ***Aspose.BarCode for Java*** adjusts the size of a barcode image (width and height) automatically. However, it is possible to customize the image size settings manually by specifying the height and width of a barcode image using *SetImageHeight* and *SetImageWidth* properties of class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BaseGenerationParameters).  
   
-The size of a barcode image can be managed according to different sizing modes that can be set by initializing the [*AutoSizeMode*]() property of class *BaseGenerationParameters*. This parameter can take the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes imply that barcode image size gets adjusted according to the required values of width and height while most of the other parameters are ignored. In contrast, the *None* mode defines the size of a barcode image ignoring width and height but considers other parameters, for example, such as [*XDimension*](). By default, *AutoSizeMode* is set to "*None"*.  
+The size of a barcode image can be managed according to different sizing modes that can be set by initializing an instance of the [*AutoSizeMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AutoSizeMode) enum of class *BaseGenerationParameters*. This parameter can take the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes imply that barcode image size gets adjusted according to the required values of width and height while most of the other parameters are ignored. In contrast, the *None* mode defines the size of a barcode image ignoring width and height but considers other parameters, for example, such as *XDimension*. By default, *AutoSizeMode* is set to "*None"*.  
    
 Below, the available barcode sizing modes are described in detail along with sample barcode labels and code snippets.
 
 ### **AutoSizeMode.None** 
-As mentioned previously, when the *None* mode is set, the size of the generated barcode image is based on various parameters while the values of width and height are not taken into consideration. The main parameter used to define barcode size is the [*XDimension*]() property. It specifies the minimum size value of bars for 1D barcodes or cells for 2D ones. Then, this value is used to calculate most of the other barcode parameters.  
+As mentioned previously, when the *None* mode is set, the size of the generated barcode image is based on various parameters while the values of width and height are not taken into consideration. The main method used to define barcode size is provuded by class [**](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) called *setXDimension*. It specifies the minimum size value of bars for 1D barcodes or cells for 2D ones. Then, this value is used to calculate most of the other barcode parameters.  
   
 Barcode symbologies usually specify the minimum value (*XDimension*) to ensure compatibility between scanning and printing equipment used in open systems (barcode labels need to be readable by scanners utilized in different companies). *X-Dimension* determines the density of a symbology, in other words, defines the amount of information that can be stored in a barcode. When *X-Dimension* is small, the area required to display each character in a barcode label is less compared with the case when *X-Dimension* is large; thus a barcode can store more information per linear inch and is considered to be of higher density. Otherwise, increasing the width of the narrowest element (*X-Dimension*) enlarges the space required for each character and reduces the number of characters per inch.  
     
@@ -45,7 +45,7 @@ gen.Save($"{path}AutoSizeModeNone.png", BarCodeImageFormat.Png);
   
 
 ### **AutoSizeMode.Interpolation**
-When the [*AutoSizeMode*]() property is set to "*Interpolation*", only the values of [*ImageHeight*]() and [*ImageWidth*]() are taken into account. This sizing mode prescribes to adjust barcode image size to the specified height and width precisely even though it may lead to the distortion of barcode proportions and accordingly, to the loss of barcode readability for side scanners. The *Interpolation* mode is suitable to generate barcode images with the resolution of 300 dpi or higher as in this case proportion distortion will be negligible and will not affect barcode readability.  
+When the *AutoSizeMode* is set to "*Interpolation*", only the values defined by *setImageHeight* and *setImageWidth* are considered. This sizing mode prescribes to adjust barcode image size to the specified height and width precisely even though it may lead to the distortion of barcode proportions and accordingly, to the loss of barcode readability for side scanners. The *Interpolation* mode is suitable to generate barcode images with the resolution of 300 dpi or higher as in this case proportion distortion will be negligible and will not affect barcode readability.  
   
 The sample barcode image created using the *Interpolation* mode is shown below.  
 
@@ -63,7 +63,7 @@ gen.Save($"{path}AutoSizeModeInterpolation.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
 ### **AutoSizeMode.Nearest** 
-The *Nearest* mode uses only the values of [*ImageHeight*]() and [*ImageWidth*]() to set the size of the resulting barcode image similarly to *Interpolation*. However, in this case, *BarcodeGenerator* seeks to specify the most appropriate image size to avoid distorting barcode proportions and deteriorating its readability.  
+The *Nearest* mode uses only the values specified by *setImageHeight* and *setImageWidth* to set the size of the resulting barcode image similarly to *Interpolation*. However, in this case, [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) seeks to specify the most appropriate image size to avoid distorting barcode proportions and deteriorating its readability.  
   
 The resulting barcode image generated using the *Nearest* mode is demonstrated below.
   
@@ -81,7 +81,7 @@ gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## **Barcode Rotation**
-***Aspose.BarCode for Java*** enables barcode image rotation that can be performed by initializing the [*RotationAngle*]() property of class [*BaseGenerationParameters*](). Setting this property to a value in degrees results in generating a barcode image rotated according to the required angle clockwise or counterclockwise.  
+***Aspose.BarCode for Java*** enables barcode image rotation that can be performed by using the *setRotationAngle* method of class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BaseGenerationParameters). Setting this property to a value in degrees results in generating a barcode image rotated according to the required angle clockwise or counterclockwise.  
   
 The sample barcode images rotated by different angles are represented below.
   
@@ -109,9 +109,9 @@ gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
 ***Aspose.BarCode for Java*** enables adjusting barcode borders and paddings during barcode generation. By default, borders are placed tightly to image edges; then, corresponding paddings may be specified.
   
 ### **Border Settings**
-According to the default settings, a barcode image is generated without borders; however, they can be specified explicitly according to five different styles: solid, dashed, dotted, dash-dot, and dash dot dot. Border appearance can be adjusted using the [*Border*]() property of class [*BaseGenerationParameters*](). In turn, this property gets an instance of class [*BorderParameters*]() that contains all barcode configuration settings. In addition, this class enables adjusting border thickness (that can be defined in any supported [**units**]()) and color by initializing the [*Width*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/width) and [*Color*]() properties, respectively.  
+According to the default settings, a barcode image is generated without borders; however, they can be specified explicitly according to five different styles: solid, dashed, dotted, dash-dot, and dash dot dot. Border appearance can be adjusted using class [*BorderParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BorderParameters) that contains all barcode border settings. In addition, this class enables adjusting border thickness (that can be defined in any supported units and color by calling *setWidth* and *setColor* methods, respectively.  
   
-Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by initializing the [*DashStyle*]() of class *BorderParameters*.
+Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by calling the *setDashStyle* method of class [*BorderParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BorderParameters).
   
 |<p align="center">**Border Style**</p>|<p align="center">**Solid**</p>|<p align="center">**Dashed**</p>|<p align="center">**Dotted**</p>|<p align="center">**Dash Dot**</p>|<p align="center">**Dash Dot Dot**</p>| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
@@ -138,7 +138,7 @@ gen.Save($"{path}BorderDashDotDot.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ### **Paddings**
-The border paddings from the edges of a barcode image or its borders can be set in four directions by initializing the [Padding]() property of class [*BarcodeParameters*](). The *Padding* property creates an instance of class [Aspose.BarCode.Generation.Padding]() that specifies the *Left*, *Right*, *Top*, and *Bottom* padding settings. The default values are set to 5 points in all directions.
+The border paddings from the edges of a barcode image or its borders can be adjusted in four directions by using class [Aspose.BarCode.Generation.Padding](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Padding) that provides *setLeft*, *setRight*, *setTop*, and *setBottom* methods to customize padding settings. The default values are set to 5 points in all directions.
   
 |<p align="center">**Padding**</p>|<p align="center">**Millimeters**</p>|<p align="center">**Pixels**</p>|  
 | :-: | :-: | :-: |  
@@ -167,7 +167,7 @@ gen.Save($"{path}Padding10Millimeters.png", BarCodeImageFormat.Png);
 ## **Bar Width Reduction**
 The width of bars in a barcode is an important parameter that requires to be set with high precision to ensure proper barcode scanning. Depending on the way of barcode printing, the initially specified width of bars may increase after printing out barcode labels due to ink floating. This effect is common in commercial printing where conventional printing presses are widely used. Therefore, to ensure that printed barcode labels have acceptable bar width, it may be necessary to set an appropriate bar width reduction value.  
   
-Bar width reduction (BWR) is a method to adjust a graphic design file of a barcode aiming to compensate for ink floating. ***Aspose.BarCode for Java*** allows adjusting the width of bars in generated barcodes by setting the [*BarWidthReduction*]() property of class [*BarcodeParameters*](). Initializing this property with the required value results in decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
+Bar width reduction (BWR) is a method to adjust a graphic design file of a barcode aiming to compensate for ink floating. ***Aspose.BarCode for Java*** allows adjusting the width of bars in generated barcodes by using [set*BarWidthReduction* method of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). Initializing this property with the required value results in decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
   
 The sample barcodes shown below have been generated with and without applying bar width reduction.
   

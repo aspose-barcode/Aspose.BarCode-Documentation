@@ -19,8 +19,8 @@ The *Aztec* symbology includes three barcode types:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Aztec Generation Mode Settings**
-To select the required generation mode for *Aztec* barcodes in ***Aspose.BarCode for Java***, it is necessary to initialize the [*AztecSymbolMode*]() field of class [*AztecParameters*](). This property can take the following values:
-- *Auto*. In this generation mode, the library selects the most compact *Aztec* barcode type with the capacity sufficient to encode the information inputted into [*CodeText*]().
+To select the required generation mode for *Aztec* barcodes in ***Aspose.BarCode for Java***, it is necessary to use the [*AztecSymbolMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecSymbolMode) enum of class [*AztecParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecParameters). This property can take the following values:
+- *Auto*. In this generation mode, the library selects the most compact *Aztec* barcode type with the capacity sufficient to encode the information passed using the *setCodeText* method.
 - *Compact*. This mode is used to generate *Compact Aztec Code* barcodes up to 4 layers with the maximal size of 27x27 modules. 
 - *FullRange*. This mode is set to create *Full-Range Aztec Code* barcodes up to 32 layers with the maximal size of 151x151 modules.
 - *Rune*. This mode is intended to generate *Aztec Rune* barcodes and allows encoding only numerical digits from 0 to 255. *Aztec Rune* barcodes correspond to small machine-readable marks with the maximal size of 11x11 modules.  
@@ -35,19 +35,19 @@ The following code snippet illustrates how to set the required generation mode f
 
  
 ## **Encoding Byte Streams**
-***Aspose.BarCode for Java*** allows encoding streams of bytes as *Aztec* barcodes. To visualize the text under *Aztec* barcodes, it is necessary to initialize the [*TwoDDisplayText*]() property (see more information about this property [here](https://docs.aspose.com/barcode/java/barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)). The code sample provided below shows how to encode a stream of bytes into an *Aztec* barcode.
+***Aspose.BarCode for Java*** allows encoding streams of bytes as *Aztec* barcodes. To visualize the text under *Aztec* barcodes, it is necessary to call the *setTwoDDisplayText* method of class [*CodetextParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters). The code sample provided below shows how to encode a stream of bytes into an *Aztec* barcode.
 
   
 <p align="center"><img src="aztecbytesencoding.png"></p>
   
 ## **Encoding Unicode Symbols**
-***Aspose.BarCode for Java*** enables encoding Unicode symbols using the [*CodeTextEncoding*]() property of class [*AztecParameters*](). This property is valid for all *Aztec* barcodes except *Rune*. The following code snippet explains how to set various Unicode encodings during *Aztec* barcode generation.  
+***Aspose.BarCode for Java*** enables encoding Unicode symbols using the *setCodeTextEncoding* method of class [*AztecParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecParameters). This method is valid for all *Aztec* barcodes except *Rune*. The following code snippet explains how to set various Unicode encodings during *Aztec* barcode generation.  
 
   
 <p align="center"><img src="azteccodetextencoding.png"></p>
   
 ## **Error Correction Level Settings**
-In addition to the main barcode data, *Aztec* barcodes contain recovery information that can occupy from 5 to 95% of the entire encoded data stream. It is recommended to set this parameter to 23%. To select the required error correction level for *Aztec* barcodes in ***Aspose.BarCode for Java***, it is necessary to initialize the [*AztecErrorLevel*]() property of class [*AztecParameters*]().  
+In addition to the main barcode data, *Aztec* barcodes contain recovery information that can occupy from 5 to 95% of the entire encoded data stream. It is recommended to set this parameter to 23%. To select the required error correction level for *Aztec* barcodes in ***Aspose.BarCode for Java***, it is necessary to use the *setAztecErrorLevel* method of class [*AztecParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecParameters).  
   
 Sample barcode labels demonstrated below have been generated with different error correction level settings.
   
@@ -59,7 +59,7 @@ The following code sample is given to explain how to set the required error corr
 
 
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for Java***, it is necessary to use the [*AspectRatio*]() property of class [*AztecParameters*](). In ***Aspose.BarCode for Java***, it is defined as a relative coefficient to the value of [*XDimension*](). In most cases, the value of *AspectRatio* should be set to 1. However, if developers need to adjust the proportions of generated *Aztec* barcodes, it can be done using the [*AspectRatio*]() parameter.  
+*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for Java***, it is necessary to use the *setAspectRatio* method of class [*AztecParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecParameters). In ***Aspose.BarCode for Java***, it is defined as a relative coefficient to *XDimension*. In most cases, the value of *AspectRatio* should be set to 1. However, if developers need to adjust the proportions of generated *Aztec* barcodes, it can be done using the *setAspectRatio* method.  
   
 Barcode images demonstrated below have been created using different aspect ratio settings.
   

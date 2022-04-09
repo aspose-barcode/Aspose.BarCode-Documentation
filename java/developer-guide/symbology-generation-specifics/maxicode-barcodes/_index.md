@@ -14,7 +14,7 @@ The available size of information to be encoded (data capacity) depends on the i
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Encoding Mode Settings**
-In ***Aspose.BarCode for Java***, developers can set different encoding modes for *MaxiCode* barcode generation using the [*MaxiCodeEncodeMode*]() property of class [*MaxiCodeParameters*](). The following encoding modes are supported: 
+In ***Aspose.BarCode for Java***, developers can set different encoding modes for *MaxiCode* barcode generation using the *setMaxiCodeEncodeMode* method of class [*MaxiCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/MaxiCodeParameters). The following encoding modes are supported: 
 - *Encoding Modes 2 and 3* - special industrial standards that are used in the transportation industry and intended for storing the information about shipping along with additional data
 - *Encoding Modes 4 and 5* - are intended to encode arbitrary text information or byte streams and differ from each other only by the number of codewords for error correction and potential data capacity
 - *Encoding Mode 6* - is similar to *Encoding Mode 4*, but the information encoded in barcodes is intended for hardware reader programming only
@@ -74,7 +74,7 @@ gen.Save($"{path}MaxiCodeEncodeMode4.png", BarCodeImageFormat.Png);
 <p align="center"><img src="maxicodeencodemode4.png" width="20%" height="20%"></p>
 
 ## **Aspect Ratio**
-*Aspect Ratio* is the ratio between the barcode width and height. In ***Aspose.BarCode for Java***, developers can use the [*AspectRatio*]() property of class [*MaxiCodeParameters*]() to adjust barcode proportions with respect to the X and Y coordinates. It is implemented as a relative coefficient to the [*XDimension*]() parameter. *MaxiCode* barcodes should be generated with the value of *AspectRatio* equal to 1. A sample *MaxiCode* barcode provided below has been generated using the *Aspect Ratio* set to 0.5.
+*Aspect Ratio* is the ratio between the barcode width and height. In ***Aspose.BarCode for Java***, developers can use the *setAspectRatio* method of class [*MaxiCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/MaxiCodeParameters) to adjust barcode proportions with respect to the X and Y coordinates. It is implemented as a relative coefficient to *XDimension*. *MaxiCode* barcodes should be generated with the value of *AspectRatio* equal to 1. A sample *MaxiCode* barcode provided below has been generated using the *Aspect Ratio* set to 0.5.
   
 <p align="center"><img src="maxicodeaspectratio0.5.png" width="20%" height="20%"></p>
   

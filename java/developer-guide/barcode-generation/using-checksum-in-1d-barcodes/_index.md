@@ -39,7 +39,7 @@ for (var pos = 0; pos < encodedCodetext.Length; ++pos)
 {{< /highlight >}} 
   
 ## **Checksum Settings**
-Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The [*IsChecksumEnabled*]() property of class [*BarcodeParameters*]() is used to manage checksum calculation for 1D barcodes. By default, this property is set to *Yes* for barcode types with obligatory checksum computation and *No* for those with an optional check digit.  
+Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is used to manage checksum calculation for 1D barcodes. By default, it is set to *Yes* for barcode types with obligatory checksum computation and *No* for those with an optional check digit.  
   
 Below, the lists of barcode standards with optional and obligatory checksum settings are provided.
   
@@ -49,9 +49,9 @@ Below, the lists of barcode standards with optional and obligatory checksum sett
 |**Obligatory**|CodablockF, Code11, Code128, Code16K, Code32, Code93, Databar Expanded Stacked, Databar Expanded, Databar OmniDirectional, Databar Stacked OmniDirectional, Databar Stacked, DatabarLimited, DatabarTruncated, EAN13, EAN14, EAN2, EAN5, EAN8, GS1 CodablockF, GS1 Code128, IATA 2 of 5, ISBN, ISMN, ISSN, ITF14, ITF6, OPC, SSCC14, SSCC18, UPCA, UPCE, UpcaGs1DatabarCoupon, VIN|
 
 ### **Optional Checksum Settings**
-By default, 1D barcodes with optional checksum do not impose the necessity of check digit calculation. For such barcodes, the [*IsChecksumEnabled*]() property of class [*BarcodeParameters*]() can be set in the following ways:
-- *EnableChecksum.Default* and *EnableChecksum.No*. Checksum calculation is not enabled.
-- *EnableChecksum.Yes*. The library generates the checksum of the most appropriate type for the given barcode symbology.
+By default, 1D barcodes with optional checksum do not impose the necessity of check digit calculation. For such barcodes, the [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum can be set in the following ways:
+- **public static final EnableChecksum DEFAULT** and **public static final EnableChecksum NO**. Checksum calculation is not enabled.
+- **public static final EnableChecksum YES**. The library generates the checksum of the most appropriate type for the given barcode symbology.
   
 |<p align="center">**Checksum Settings**</p>|<p align="center">**Checksum Enabled**</p>|<p align="center">**Checksum Disabled**</p>|
 | :-: | :-: | :-: |
@@ -70,15 +70,15 @@ gen.Save($"{path}OneCSCode39WithChecksum.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
   
 ### **Obligatory Checksum Settings**
-For such barcodes, the [*IsChecksumEnabled*]() property of class [*BarcodeParameters*]() can be initiated as follows:
-- *EnableChecksum.Default* and *EnableChecksum.Yes*. Checksum calculation is performed according to the specific algorithm.
-- *EnableChecksum.No*. Depending on the given symbology, the library throws an exception or ignores this setting.
+For such barcodes, [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) can be initiated as follows:
+- **public static final EnableChecksum DEFAULT** and **public static final EnableChecksum YES**. Checksum calculation is performed according to the specific algorithm.
+- **public static final EnableChecksum NO**. 
 
 The following sample image illustrates the barcode label generated with obligatory checksum settings.   
 
 <p align="center"><img src="onecscode93withchecksum.png"></p>
 
-The code sample provided below shows checksum settings for *Code 39*. Upon the attempt to set the *EnableChecksum* property to "*No*", the following exception is thrown: "*Unable to use Code93Extended symbology without checksum*".
+The code sample provided below shows checksum settings for *Code 39*. 
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "CODE");

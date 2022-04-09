@@ -21,7 +21,7 @@ All *DataBar* standards except *DataBar Limited* can be represented both in two-
 *DataBar* symbologies can be divided into two main groups: continuous and stacked. In ***Aspose.BarCode for Java***, for each of them there is its own way to adjust barcode height. Details on how to modify barcode height along with code samples and examples of generated barcodes are provided further in the article. 
 
 ### **Continuous Barcodes**
-For continuous symbologies, such as *DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*, barcode heigh can be set using the [*BarHeight*]() property of class [*BarcodeParameters*]().  
+For continuous symbologies, such as *DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*, barcode heigh can be set using the *setBarHeight* method of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters).  
   
 Sample *DataBar Omnidirectional* barcode labels provided below have been generated using different bar height settings.
    
@@ -43,7 +43,7 @@ gen.Save($"{path}DatabarBarHeight60Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ### **Stacked Barcodes**
-In stacked symbologies, such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode heigh can be customized by initializing the [*AspectRatio*]() property of class [*DataBarParameters*](). This parameter is defined as a relative coefficient to the [*XDimension*]() property.  
+In stacked symbologies, such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode heigh can be customized by initializing the *setAspectRatio* method of class [*DataBarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataBarParameters). This parameter is defined as a relative coefficient to *XDimension*.  
   
 *DataBar Stacked Omnidirectional* barcode images represented below as examples have been created with different aspect ratio settings.
   
@@ -65,7 +65,7 @@ gen.Save($"{path}DatabarAspectRatio30.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## **Layout Settings for DataBar Expanded Stacked Barcodes**
-The *DataBar Expanded Stacked* symbology provides flexible settings for barcode layout by varying the number of rows and columns in a barcode. The ***Aspose.BarCode*** library enables combining 22 data segments to form up to 10 strings. Developers can set the values independently for [*Rows*]() and [*Columns*]() properties of class [*DataBarParameters*](). The value set in the *Columns* property is the most significant parameter; at first, it is required to specify how many segments need to be placed in a row.  
+The *DataBar Expanded Stacked* symbology provides flexible settings for barcode layout by varying the number of rows and columns in a barcode. The ***Aspose.BarCode*** library enables combining 22 data segments to form up to 10 strings. Developers can set the values independently using *setRows* and *setColumns* methods of class [*DataBarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataBarParameters). The value passed in the *setColumns* method is the most significant parameter; at first, it is required to specify how many segments need to be placed in a row.  
   
 Sample *DataBar Expanded Stacked* barcode labels given below have been generated with different barcode layout settings.
   
@@ -92,7 +92,7 @@ gen.Save($"{path}DatabarCols6Rows10.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 ## **Compatibility with GS1 Components**
-Given that *DataBar Expanded* and *DataBar Expanded Stacked* symbologies, in theory, allow encoding any text, it may be required to ensure that encoded information is fully compatible with GS1 standards. To enable such controls, class [*DataBarParameters*]() provides the [*IsAllowOnlyGS1Encoding*]() property that is aimed to verify the compatibility of the input barcode text with GS Application Identifiers and throws an exception in case of any mismatch. In addition, this property can be used to check the validity of input GTIN values for other *DataBar* standards.     
+Given that *DataBar Expanded* and *DataBar Expanded Stacked* symbologies, in theory, allow encoding any text, it may be required to ensure that encoded information is fully compatible with GS1 standards. To enable such controls, class [*DataBarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataBarParameters) provides the *setAllowOnlyGS1Encoding* method that is aimed to verify the compatibility of the input barcode text with GS Application Identifiers and throws an exception in case of any mismatch. In addition, this property can be used to check the validity of input GTIN values for other *DataBar* standards.     
   
 *DataBar Expanded* barcode image examples provided below have been created using the GS1 compatible and alternate encodings.
   
@@ -126,7 +126,7 @@ catch (Exception e)
 {{< /highlight >}}
   
 ## **Enabling 2D Component**
-Each of the *DataBar* symbologies may contain a specific 2D component linkage flag that indicates the presence of an associated 2D barcode that can be placed alongside the generated *DataBar* barcode label. Usually, such a flag is set in GS1 composite barcode specifications. ***Aspose.BarCode for Java*** enables the [*Is2DCompositeComponent*]() property of class [*DataBarParameters*]() that can be used to set this flag manually when required by particular industrial standards without affecting main information encoded in a barcode.  
+Each of the *DataBar* symbologies may contain a specific 2D component linkage flag that indicates the presence of an associated 2D barcode that can be placed alongside the generated *DataBar* barcode label. Usually, such a flag is set in GS1 composite barcode specifications. ***Aspose.BarCode for Java*** enables the *set2DCompositeComponent* property of class [*DataBarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataBarParameters) that can be used to set this flag manually when required by particular industrial standards without affecting main information encoded in a barcode.  
   
 *DataBar Expanded* barcode images shown below have been generated with different settings for the 2D component flag.
   

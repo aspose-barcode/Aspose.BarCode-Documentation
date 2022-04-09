@@ -23,7 +23,7 @@ gen.Save($"{path}StoreImageAsFile.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ## **Saving to Stream**
-In some cases, developers may need to save the generated barcode label in the form of a stream (as a binary format). A stream is an abstraction of a byte sequence, such as a file, an inter-process communication pipe, a TCP/IP socket, or an input/output device. The *Stream* class and its child classes represent a generic view of various input and output types and allow programmers to abstract away from the details of the operating system and particular devices. To enable this option, class [*BarcodeGenerator*]() calls the public method *Save* that takes *Stream* as an input parameter, as demonstrated in the code sample below.  
+In some cases, developers may need to save the generated barcode label in the form of a stream (as a binary format). A stream is an abstraction of a byte sequence, such as a file, an inter-process communication pipe, a TCP/IP socket, or an input/output device. The *Stream* class and its child classes represent a generic view of various input and output types and allow programmers to abstract away from the details of the operating system and particular devices. To enable this option, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) calls the public method *Save* that takes *Stream* as an input parameter, as demonstrated in the code sample below.  
 
 {{< highlight csharp>}}
 using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Create, FileAccess.Write))

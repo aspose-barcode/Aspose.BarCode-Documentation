@@ -1,5 +1,5 @@
 ---
-title: Specific Parameters for 2D Barcodes
+title: Specific Parameters of 2D Barcodes
 type: docs
 weight: 170
 url: /java/managing-2d-barcodes/
@@ -9,7 +9,7 @@ url: /java/managing-2d-barcodes/
 Unlike one-dimensional barcodes, two-dimensional ones often contain a large amount of data as they have been introduced exactly to address such a need. This human-readable barcode text does not require to be printed out as it does not undergo machine scanning. Therefore, it may be necessary to hide the contents of the *CodeText* property for 2D barcodes in cases when the text is too long to be displayed on a barcode label. 
 
 ### **Hiding Barcode Text**
-The following code snippet demonstrates how to hide the contents of the *CodeText* property.
+The following code snippet demonstrates how to hide the contents of *CodeText*.
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-CreateAndManageTwoDBarcodes-HideBarcodeCodeText-HideBarcodeCodeText.cs" >}}
 
