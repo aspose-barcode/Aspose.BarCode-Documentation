@@ -11,7 +11,7 @@ url: /net/recognition-specifics/
 ## **Overview**
  
 ## **Reading Barcode Images with Gaussian Noise**
-Gaussian noise is one of the most frequent distortions that may affect the quality of barcode images. The most crucial problems arise in cases when barcode images are monochrome or when the distortion grain is much larger than the minimal barcode element. To mitigate such negative effects, it may be useful to apply median filtering methods that are suitable for both 1D and 2D barcodes. Although median filtering methods also introduce distortions by eliminating barcode elements together with noise, they still may be succeed in improving readability of key barcode modules.
+Gaussian noise is one of the most frequent distortions that may affect the quality of barcode images. The most crucial problems arise in cases when barcode images are monochrome or when the distortion grain is much larger than the minimal barcode element. To mitigate such negative effects, it may be useful to apply median filtering methods that are suitable for both 1D and 2D barcodes. Although median filtering methods also introduce distortions by eliminating barcode elements together with noise, they still may succeed in improving readability of key barcode modules.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 

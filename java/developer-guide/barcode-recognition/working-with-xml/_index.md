@@ -4,7 +4,7 @@ type: docs
 description: "This Article Describes How to Save or Load Barcode Recognition State in the XML format"
 keywords: "Read barcode in XML, Barcode XML Serialization, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
 weight: 50
-url: /java/barcode-reading-in-xml/
+url: /java/barcode-in-xml/
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 

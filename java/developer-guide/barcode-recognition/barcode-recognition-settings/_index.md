@@ -10,17 +10,17 @@ url: /java/barcode-recognition-settings/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## **Overview**
-In ***Aspose.BarCode for Java***, after reading the raw data from a barcode graphical representation, the library initiates data decoding that is performed according to the specific protocol. Often, in the case of using particular 1D and postal barcode types, conflicting data decoding formats may appear because some barcode symbologies have undergone standardization later than the start of their wide usage. To resolve such conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) contains a class called [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) that is used for data decoding settings.
+In the barcode recognition process implemented in ***Aspose.BarCode for Java***, barcode data decoding is initiated according to the special protocol after scanning the raw data from a graphical representation. Some linear and postal symbologies have passed standardization after their wide implementation, and therefore, it has lead to the appearance of incompatible decoding formats. To resolve possible conflicts, class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) provides a special class called [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) used to manage barcode decoding settings.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Checksum Verification**
-In many 1D and postal symbologies, data integrity verification and decoding are based on checksum control mechanisms. Class [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) provides the [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) enum that is used to manage checksum settings for data validation and decoding. In general, barcode standards can be divided into two groups: those with obligatory checksum and those with optional one. Depending on this, the [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) enum provides different values; hence, the barcode recognition process will change according to particular checksum settings.  
+Varios 1D and postal symbologies include checksum control mechanisms for data integrity verification. To adjust checksum settings for data validation purposes, class [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) contains the [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) enum. Generally, symbologies can be classified according to the following types: with obligatory checksum controls and with optional ones. The [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) enum suggests different options for these two groups. The barcode recognition procedure varies in line with checksum settings.  
 
-### **Checksum Validation for Barcodes with Obligatory Checksum**
-Symbologies with obligatory checksum always require performing checksum control when [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) is set to *ChecksumValidation.Default* or *ChecksumValidation.On*. Otherwise, this parameter can take the value *ChecksumValidation.Off* that disables checksum controls for barcode type with obligatory checksum and thus allows reading data from incorrectly generated barcodes. However, in this case, the probability of inaccurate recognition increases considerably.  
+### **Checksum Validation for symbologies with Obligatory Checksum**
+Barcoded types with obligatory checksum controls require performing compulsive checksum validation when [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) is initialized using *ChecksumValidation.DEFAULT* or *ChecksumValidation.ON* values. Alternatively, setting the *ChecksumValidation.Off* value turns off checksum verification and in this way, allows decoding information from invalid barcodes. This option increases the probability of incorrect recognition.  
   
-The following code snippet explains how to manage checksum validation settings for the symbology with obligatory checksum (in this case, a sample *Code 11* barcode image provided below has been considered). 
+The following code sample shows how to adjust checksum settings for the barcode type with obligatory checksum controls (namely, *Code 11*). 
  
 {{< highlight csharp>}}
 //create barcode
@@ -62,10 +62,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
   
 <p align="center"><img src="code11.png"></p> 
 
-### **Checksum Validation for Barcodes with Optional Checksum**
-For symbologies with optional checksum control, [*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) can be set in such a way to enable checksum checking, namely, it needs to take the value *ChecksumValidation.On*. Otherwise, when the values *ChecksumValidation.Default* and *ChecksumValidation.Off* are used, checksum validation is omitted.  
+### **Checksum Validation for Symbologies with Optional Checksum**
+[*ChecksumValidation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ChecksumValidation) allows enabling and disabling checksum controls for barcode standards with optional checksum verification. To request checjsum validation, the following setting should be used: *ChecksumValidation.ON*. When other options, *ChecksumValidation.DEFAULT* and *ChecksumValidation.OFF*, are enabled, checksum controls are disabled.  
   
-The following code sample illustrates the options of reading barcodes with optional checksum (a *Code 39* barcode image shown below has been used). 
+The following code snippet illustrates recognition options for symbologies with optional checksum controls (i.e. *Code 39*). 
   
 {{< highlight csharp>}}
 //create barcode
@@ -108,10 +108,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
   
 <p align="center"><img src="code39.png"></p>
 
-## **Recognition and Processing of Unicode Encodings**
-In ***Aspose.BarCode for Java***, class [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) provides a special method called *setDetectEncoding* that allows enabling the automatic recognition of UTF8 and UTF16 Unicode encodings for 2D barcode recognition, as well as re-encoding the data into a Unicode string. When this mode is disabled, the barcode data can be read and decoded manually using the required encoding.  
+## **Managing Barcodes with Unicode Encodings**
+***Aspose.BarCode for Java*** provides class [*BarcodeSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSettings) that contains a special method called *setDetectEncoding* that enables the automatic recognition of UTF8 and UTF16 Unicode encodings for 2D symbologies and allows re-encoding barcode information into a string with Unicode characters. If this recognition mode is turned off, barcode information can be scanned and decoded manually based on the desired encoding.  
   
-The following code snippet shows how to automatically decode barcodes with UTF8 and UTF16 Unicode encodings (a sample *QR Code* barcode image shown below has been considered). 
+The following code sample explains how to decode barcodes with UTF8 and UTF16 Unicode encodings automatically (namely, *QR Code* has been used). 
 
 {{< highlight csharp>}}
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
@@ -149,10 +149,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
   
 <p align="center"><img src="qrdetectencoding.png"></p>
 
-## **Using FNC Symbols**
-The GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-4) among which FNC1 is the most widespread one and is used for GS1 Application Identifier (AI) marking. When the library detects that a barcode does not correspond to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNC#>”. Such messages can be deleted from the recognition results passing the *False* value to the *setStripFNC* method.  
+## **FNC Symbols**
+The GS1 association suggests using FNC character to perform decoding of some symbologies, including *Code 128* and *Code 128*. Four types of FNC symbols (FNC1-4) are supported. FNC1 is the most widely used one that is intended for GS1 Application Identifier (AI) marking. When a barcode does not relate to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder processes FNC symbols as “<FNC#>”. These symbols can be removed from decoding results passing the *False* value to the *setStripFNC* method.  
   
-The following code sample shows how to work with FCN symbols while reading a *Code 128* barcode demonstrated below.
+The following code snippet explains how to manage FCN symbols.
 
 {{< highlight csharp>}}
 //create barcode
@@ -190,24 +190,24 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128FNC.png", DecodeTyp
   
 <p align="center"><img src="code128fnc.png"></p>
 
-## **Reading Australia Post Barcodes**
-*Australia Post* is a 4-state postal symbology used in the Australian Post. In this barcode standard, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard contains a checksum and information used for Reed-Solomon data recovery.  
+## **Australia Post Barcodes**
+*Australia Post* is a 4-state postal barcode type implemented by the Australian Post. This symbology suggests including special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields into barcode information. FCC fields are intended to set one of three supported types with various fixed number of bars: 37, 52, or 67 bars. For some FCC, barcodes may comprise a customer information (CI) field that indicates one of the encoding types supporting numerical or alphanumeric characters. Customer information can take 31 bars in 67-length barcodes or 16 bars in 52-length ones. The *Australia Post* symbology has checksum controls and supports Reed-Solomon error correction.  
 *See more details about this symbology [here](/barcode/java/postal-barcodes/#australia-post-symbology)*.  
   
-Due to the possibility to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has some specifics. In ***Aspose.BarCode for Java***, developers can use class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/AustraliaPostSettings) to customize recognition parameters for this barcode standard according to particular requirements. 
+Because of the possible presence of customer information in barcode information for *Australia Post*, the recognition process has some peculiarities. ***Aspose.BarCode for Java*** provides class [*AustraliaPostSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/AustraliaPostSettings) to manage recognition parameters according to specific industrial needs. 
 
 ### **Decoding Customer Information in Standard Formats**
-The *Australia Post* symbology allows encoding additional customer information in three different formats; automatic recognition of the format used for encoding is not possible. In ***Aspose.BarCode for Java***, the required decoding format can be set using the *setCustomerInformationInterpretingType* method that can take the following values as explained in the table below.
+The *Australia Post* standard enables encoding additional customer data in three formats; automatic detection of the used format is not supported. The desired decoding format can be enabled through the *setCustomerInformationInterpretingType* method that can take different values explained in the table below.
   
 |Australia Post Encoding Table|Supported Symbols|
 |---|---|
 |CTable|Numerical digits, English letters, space symbol, and #|
 |NTable|Numerical digits|
-|Other|0, 1, 2, and 3 that correspond to H, A, D, and T states, respectively|
+|Other|0, 1, 2, and 3 that correspond to H, A, D, and T states|
   
 **CTable**  
   
-The following code snippet explains how to set the decoding format using the *CTable* option for the barcode image shown below. 
+The following code sample shows how to enable the decoding format through the *CTable* option. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -236,7 +236,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
 
 **NTable**  
   
-The following code sample shows how to apply the decoding format with the *NTable* option while reading the barcode image provided below. 
+The following code snippet explains how to use the *NTable* decoding format. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -265,7 +265,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
 
 **Other**  
   
-The following code snippet demonstrates how to set the *Other* decoding format for the barcode image given below. 
+The following code sample shows how to use the *Other* decoding format. 
   
 {{< highlight csharp>}}
 //create barcode
@@ -293,9 +293,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", D
 <p align="center"><img src="australiapostother.png"></p>
 
 ### **Removal of Fill Patterns**
-The *Australia Post* standard imposes using fixed size for each subtype. When barcode decoding is performed in the *CTable* format, the data filling empty space in the input message is decoded as symbol “z”. To avoid such a result, it is necessary to use the *setIgnoreEndingFillingPatternsForCTable* method.  
+The *Australia Post* symbology requires setting fixed size for each subtype. When the *CTable* format is enabled, the empty space included in the input message is decoded as “z”. To disable this property, the *setIgnoreEndingFillingPatternsForCTable* method needs to be called.  
   
-The following code sample illustrates how to eliminate filling patters while using the *CTable* decoding mode for the barcode image demonstrated below. 
+The following code snippet shows how to remove filling empty patters for the *CTable* decoding mode. 
 
 {{< highlight csharp>}}
 //create barcode
@@ -338,9 +338,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
 <p align="center"><img src="australiapostctableignoreending.png"></p>
 
 ### **Decoding Customer Information in Custom Format**
-***Aspose.BarCode for Java*** allows developers to decode customer information in their own format. For this purpose, the library provides a special interface called [*AustraliaPostCustomerInformationDecoder*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/AustraliaPostCustomerInformationDecoder). In this manner, decoding of barcode data is performed using this interface; *CustomerInformationInterpretingType* and *IgnoreEndingFillingPatternsForCTable* are ignored.  
+***Aspose.BarCode for Java*** allows decoding customer data in various specific formats. To do this, a special interface called [*AustraliaPostCustomerInformationDecoder*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/AustraliaPostCustomerInformationDecoder) is available. In this case, barcode data decoding is processed according to this interface; [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/CustomerInformationInterpretingType) and *ignoreEndingFillingPatternsForCTable* settings are ignored.  
   
-The following code snippet explains how to decode customer information inputted in the *NTable* format while reading the sample *Australia Post* barcode shown below. 
+The following code snippet explains how to decode customer data in the *NTable* format. 
 
 {{< highlight csharp>}}
 class NTableDecoder : AustraliaPostCustomerInformationDecoder

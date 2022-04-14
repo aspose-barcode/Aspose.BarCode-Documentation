@@ -1,30 +1,29 @@
 ---
-title: Barcode Recognition Basics - Read Barcodes in Java
+title: Barcode Recognition Basics
 linktitle: Barcode Recognition Basics
 type: docs
 aliases:
  - /node/read-barcodes-with-aspose-barcode-apis/
 description: "This Article Describes How to Read Barcodes of Different Symbologies from Images or Stream and How to Recognize All 1D Barcodes Presented in an Image"
-keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Java"
+keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcodes in Java"
 weight: 10
 url: /java/read-barcodes-with-aspose-barcode-apis/
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
 
 ## **Overview**
-***Aspose.BarCode for Java*** provides class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that enables barcode recognition from given images for more than 60 symbologies. In general, to perform barcode reading, first, it is necessary to specify the source of an image with barcodes to be detected as a file, a bitmap object, or a stream. Then, it is required to set target symbologies in the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) parameter; otherwise, barcode recognition will take more time, as using the default setting *DecodeType.AllSupportedTypes* implies looking over all supported symbologies to check for their presence in the source barcode image. In addition, developers can explicitly set the target region/regions in an image for barcode reading. 
-It can be done using a system [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle) object and allows avoiding the unnecessary search for barcodes in the image areas with no barcodes presented by default.<-->
+In ***Aspose.BarCode for Java***, class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) is the main class used to perform barcode reading for over 60 barcode types. Generally, it is first required to determine the source of an image with barcodes. The source can be a file, a bitmap object, or a stream. Then, it is necessary to identify target barcode types using the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) enum. If this step is omitted, barcode detection and reading will require much more time as the *DecodeType.AllSupportedTypes* setting used by default requires checking all supported symbologies to verify their presence in the source image. Moreover, it is possible to explicitly determine the target area/areas in the source image to perform barcode scanning. This option avoids looking for barcodes in regions without any barcodes and can be enabled through a system object called [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle).
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Basic Recognition Parameters**
-To read barcodes presented in an image using ***Aspose.BarCode for Java***, the following steps need to be taken:
--	Specify the source to read barcodes (from an image file, a stream, or a bitmap), e.g. set the path to a source image
--	Select target symbologies for barcode recognition. By default, the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) property is set to *DecodeType.ALL_SUPPORTED_TYPES*; in this way, the barcode reading procedure will cover all supported barcode types. Such an approach leads to extra time costs required to complete barcode recognition.  
+***Aspose.BarCode for Java*** requires executing the following steps to perform barcode recognition:
+-	Source determination (from an image file a bitmap, or a stream), e.g. setring the path to a source image
+-	Target barcode type selection. By default, [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) is initialized as *DecodeType.ALL_SUPPORTED_TYPES*. In this case, barcode scanning will be performed for all available symbologies. This approach will require additional time to complete the barcode recognition process.  
   
-In ***Aspose.BarCode for Java***, barcode recognition is performed through the *ReadBarCodes* method of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that returns recognition results in an array of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) type.  
+To read barcode images, ***Aspose.BarCode for Java*** provides the *ReadBarCodes* method of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that returns recognition results in an array of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) type.  
   
-The following code snippet explains how to specify several target barcode types to be recognized in a single image, in this case, *PDF417*, *QR Code*, *Code 39*, and *Code 128*, as can be seen in the sample image provided below. As such, barcodes that do not correspond to the target symbologies (*DataMatrix* and *RM4SCC* barcodes in the given example) will be ignored.
+The following code sample shows how to determine target symbologies to be searched in one image (i.e. *PDF417*, *QR Code*, *Code 128*, and *Code 39*). In this case, barcodes of other barcode types (*DataMatrix* and *RM4SCC*) will not be decoded.
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
@@ -39,9 +38,9 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 <p align="center"><img src="multiple_codes.png" hight="50%" width="50%"></p>  
   
 ## **Getting Recognition Results**
-As mentioned above, to get barcode recognition results, it is necessary to call the *ReadBarCodes* method that will output an array of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) type. At the same time, it is possible to get access to the current barcode reading output by using the *getFoundBarCodes* method that allows getting recognition results or the *getFoundCount* method that returns the number of barcodes that have been processed.  
+To load barcode recognition outputs, it is needed to call the *ReadBarCodes* method that provides a [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) array. Moreover, the current recognition output can be accessed through the *getFoundBarCodes* method that enables fetching decoding results or the *getFoundCount* method that returns the number of detected barcodes.  
   
-The following code sample illustrates how to load recognition results for the image provided above.
+The following code snippet explains how to obtain recognition results.
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
@@ -56,14 +55,13 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 }
 {{< /highlight >}}
 
-## **Setting Barcode Recognition Source**
-In ***Aspose.BarCode for Java***, a source for barcode recognition can be defined in three different ways: as an image file, as a stream, or as a bitmap. Reading barcodes from files can be done using five supported image formats: BMP, PNG, JPEG, GIF, or TIFF. The implementation details for three possible modes are provided further. 
+## **Barcode Recognition Source**
+***Aspose.BarCode for Java*** provides three options to determine a source for barcode detection: as an image file, a stream, or a bitmap. Barcode recognition from file sources supports five image formats: PNG, BMP, JPEG, GIF, or TIFF. Three possible modes to load source barcodes are discussed below. 
 
 ### **Reading Barcodes from File**
-
-To set the barcode recognition source as an image file, it is necessary to specify the full or relative path to this file in the *BarCodeReader()* constructor or call the *SetBarCodeImage* method to pass the path to the already existing object of [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader).  
+To read barcodes from an image file, it is required to determine the full or relative path to this source file in the *BarCodeReader()* constructor or call the *setBarCodeImage* method to pass the path to the already existing object of [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader).  
   
-The following code snippet shows how to set the barcode reading source as a file by specifying the path to the required image.
+The following code sample explains how to use a file as a barcode recognition source through setting the path to the target image.
 
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
@@ -75,7 +73,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 }
 {{< /highlight >}}
   
-The code sample below illustrates how to define the path to the already created recognition source object.
+The following code snippet shows how to determine the path to the already existing recognition source object.
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader())
@@ -90,7 +88,7 @@ using (BarCodeReader reader = new BarCodeReader())
 {{< /highlight >}}
 
 ### **Reading Barcodes from Bitmap**
-In ***Aspose.BarCode for Java***, it is possible to get a barcode image for reading in the form of a graphical object, namely, a bitmap. Bitmap objects are used to process images composed of pixel data. To set the recognition source as a bitmap, it is necessary to pass the created bitmap object to the *BarCodeReader()* constructor or the *setBarCodeImage* method similarly to the case of using a raster image file.
+***Aspose.BarCode for Java*** enables loading a barcode image in the form of a graphical object or a bitmap. Bitmap objects serve to work with images composed of pixel data. To use a bitmap as a barcode reading source, it is required to pass the existing bitmap object to the *BarCodeReader()* constructor or the *setBarCodeImage* method.
   
 {{< highlight csharp>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -104,9 +102,9 @@ using (BarCodeReader reader = new BarCodeReader(bmp, DecodeType.Pdf417, DecodeTy
 {{< /highlight >}}
 
 ### **Reading Barcodes from Stream**
-***Aspose.BarCode for Java*** enables the possibility to load the source barcode image from a stream (in a binary format) that is viewed as an abstraction of a byte sequence. In many cases, it may be convenient to set a recognition source as a stream object that is universal and can be accessed without a file system. In ***Aspose.BarCode for Java***, the source stream for barcode recognition can be passed to the *BarCodeReader()* constructor or the *setBarCodeImage* method.
+***Aspose.BarCode for Java*** allows loading the source image from a stream (in a binary format) that can be considered as an abstraction of byte sequences. Setting a recognition source as a stream object can be convenient in some cases as it is universal and accessible without the need to use a file system. A source stream for barcode recognition can be passed to the *BarCodeReader()* constructor or the *setBarCodeImage* method.
   
-The following code snippet explains how to set a source stream for barcode recognition.
+The following code sample shows how to specify a source stream for barcode recognition.
 
 {{< highlight csharp>}}
 using (Stream stream = new FileStream($"{path}multiple_codes.png", FileMode.Open, FileAccess.Read))
@@ -120,12 +118,12 @@ using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, Decod
 {{< /highlight >}}
 
 ## **Selecting Target Symbologies**
-***Aspose.BarCode for Java*** supports more than 60 barcode types for recognition. To minimize the time required to complete recognition and avoid attempts to recognize outdated barcodes that are still used as a legacy of some industrial systems, it is recommended to select target barcode symbologies that will be considered for recognition. However, in the case when there is no information about precise symbologies that can be presented in a source image, it is possible to use the default setting *DecodeType.AllSupportedTypes* for the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) property so that the source image will be checked for the presence of all supported barcode types. This setting results in the increased time required to complete barcode recognition. 
+***Aspose.BarCode for Java*** enables reading over 60 various symbologies. To decrease the time needed to complete the barcode reading process, target barcode types should be specified. However, if no information about symbologies that can be found in a source image is available, the default setting *DecodeType.ALL_SUPPORTED_TYPES* of the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) enum can be applied so that the source image will be searched for all supported symbologies. Leaving this setting enabled may lead incresaing the time needed to complete barcode recognition. 
 
-### **Listing Barcode Types Defined in DecodeType**
-Target symbologies for barcode recognition can be specified as a list and passed to the *BarCodeReader()* constructor or the *setBarCodeReadType* method.  
+### **Listing Symbologies Defined in DecodeType**
+To determine target symbologies for barcode reading, they can be grouped in a list and passed to the *BarCodeReader()* constructor or the *setBarCodeReadType* method.  
   
-The following code snippet demonstrates how to set target symbologies (*Code 39*, *Code 128*, and *RM4SCC*) using [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType).
+The following code sample explains how to enable target barcode types (i.e. *Code 128*,*Code 39*, and *RM4SCC*) using [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType).
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
@@ -138,9 +136,9 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {{< /highlight >}}
 
 ### ***MultyDecodeType* Mode**
-The other way to set target symbologies for recognition is to list the required barcode types in a constructor of class [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType) and then to pass an instance of this class to class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) or the *SetBarCodeReadType* method.  
+The other option to determine target barcode types is to list them in a constructor of class [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType) and then pass this object to class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) or the *setBarCodeReadType* method.  
   
-The following code sample explains how to define target symbologies for barcode reading (in this case, *Code 39*, *Code 128*, and *RM4SCC*) through [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType).
+The following code snippet shows how to set target barcode types (i.e., *Code 39*, *Code 128*, and *RM4SCC*) through [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType).
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
@@ -152,17 +150,17 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 }
 {{< /highlight >}}
 
-### **Predefined Sets of Symbologies**
-Class [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) contains various predefined sets of symbologies for recognition, including the following ones:
--	*ALL_SUPPORTED_TYPES* - all supported barcode types
--	*TYPES_1D* - all supported 1D symbologies
--	*TYPES_2D* - all supported 2D symbologies
--	*POSTAL_TYPES* - all supported postal symbologies that are mainly used by postal services
--	*MOST_COMMON_TYPES* - a set of most widely used barcode standards defined according to the Aspose recommendations
+### **Predefined Sets of Barcode Types**
+Class [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) suggests using several predefined symbology sets, including the following ones:
+-	*ALL_SUPPORTED_TYPES* - all available symbologies
+-	*TYPES_1D* - all supported 1D standards
+-	*TYPES_2D* - all supported 2D barcode types
+-	*POSTAL_TYPES* - all available postal symbologies
+-	*MOST_COMMON_TYPES* - a set of most widespread symbologies defined according to the Aspose recommendations
 
- The required symbology set can be defined in the *BarCodeReader()* constructor or the *SetBarCodeReadType* method.
+The desired symbology set can be specified in the *BarCodeReader()* constructor or passed to the *setBarCodeReadType* method.
   
-The following code snippet illustrates how to specify target barcode types using the predefined set called *Types2D*.
+The following code sample explains how to enable the predefined set called *Types2D*.
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Types2D))
@@ -173,15 +171,15 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 }
 {{< /highlight >}}
 
-## **Specifying Target Regions for Recognition**
-***Aspose.BarCode for Java*** enables setting one or many objects of the [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle) type to limit target areas for barcode detection. This property allows improving recognition efficiency and avoiding the recognition of irrelevant barcodes placed in the areas out of interest. At the same time, it is necessary to select target regions justifiably because the Aspose library applies heuristic methods to localize regions for barcode recognition; hence, simply enumerating multiple areas can deteriorate reading efficiency.
+## **Setting Target Barcode Regions for Recognition**
+***Aspose.BarCode for Java*** allows determining one or several objects of the [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle) type to specify target regions for barcode detection and scanning. It allows increasing reading efficiency and avoiding the scanning of irrelevant barcodes presented in the regions out of interest. It is important to select target areas wisely as the Aspose library uses heuristic methods to determine regions for barcode detection; therefore, targeting multiple image areas can result in decreasing recognition efficiency.
 
 ### **Single Region**
-To set a target region for barcode recognition, it is necessary to define an object of the [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle) type using the *BarCodeReader()* constructor or the *setBarCodeImage*() method.  
+To specify a single target area for barcode reading, an object of the [*Rectangle*](https://apireference.aspose.com/imaging/java/com.aspose.imaging.class-use/Rectangle) type needs to be created using the *BarCodeReader()* constructor or the *setBarCodeImage*() method.  
   
-The following code samples illustrate how to set a target recognition region in the source image using the two ways mentioned above.
+The following code snippets show how to determine a target barcode detection area in the source image through the two modes outlined above.
 
-**Setting Target Region for Recognition Using Class BarCodeReader**
+**Setting Target Reading Area Using Class BarCodeReader**
 
 {{< highlight csharp>}}
 //specify the rectangle of a 2D barcode in the source image
@@ -196,7 +194,7 @@ using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, 
 }
 {{< /highlight >}}
 
-**Setting Target Region for Recognition Using SetBarCodeImage Method**
+**Setting Target Reading Area Using SetBarCodeImage Method**
 {{< highlight csharp>}}
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
@@ -211,10 +209,10 @@ using (BarCodeReader reader = new BarCodeReader())
 }
 {{< /highlight >}}
 
-### **Multiple Regions**
-In cases when it is required to specify several regions for barcode reading in the same source image, developers can define target areas in the same way as for the single region, namely, using the *BarCodeReader()* constructor or the *setBarCodeImage* method.  
+### **Several Reading Regions**
+When it is needed to determine various areas for barcode detection within the same source image, this can be done similarly as for the case of one target region, i.e., through the *BarCodeReader()* constructor or the *setBarCodeImage* method.  
   
-The following code snippet explains how to multiple target areas for barcode reading in the source image.
+The following code sample demonstrates how to determine several target areas in the source image.
   
 {{< highlight csharp>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -233,13 +231,13 @@ using (BarCodeReader reader = new BarCodeReader())
 {{< /highlight >}}
 
 ## **Manual and Timeout Methods of Recognition Abortion**
-Class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) allows aborting the recognition process in case it is not further feasible. It can be done in two ways. The first option is to use the *setTimeOut* method to interrupt the recognition process in case of exceeding the timeout value. By default, the *setTimeOut* method is called passing 0.  
+Class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) provides two options to abort the reading procedure if it becomes unfeasible to continue. The first way is to call the *setTimeOut* method that will interrupt recognition as soon as the timeout value is exceeded. *TimeOut* is set to 0 by default.  
   
-The second way is to call the *abort()* method in case the recognition process has been launched in the other stream. This method does not block the entire process and returns control immediately.  
+The second option is to call the *abort()* method in case when the reading process has been started in the other stream. This method does not interrupt the entire procedure and returns control immediately.  
   
-Both recognition abortion ways result in throwing an exception called [*RecognitionAbortedException*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/RecognitionAbortedException) in the case when the recognition process has not been completed.
+Both recognition abortion options result in throwing an exception called [*RecognitionAbortedException*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/RecognitionAbortedException) if the reading procedure has not been completed.
   
-The following code snippet demonstrates an example of aborting the recognition process with the exception "*Recognition is aborted. Execution time: 342 ms*".
+The following code sample illustrates an example of aborting the recognition process.
   
 {{< highlight csharp>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,

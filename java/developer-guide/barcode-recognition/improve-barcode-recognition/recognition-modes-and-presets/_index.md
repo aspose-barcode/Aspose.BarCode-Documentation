@@ -2,38 +2,38 @@
 title: Recognition Quality Options and Presets
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
-keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcodes Java"
+keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcodes in Java"
 weight: 10
-url: /java/recognition-modes-and-presets/
+url: /java/optimize-scan/
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
 ## **Overview**
-Barcode recognition is based on machine vision techniques and utilizes sophisticated mathematical algorithms for object detection and reading. Similar to other computer vision applications, converting an arbitrary image into a machine-readable code strongly depends on the quality of the source image. Namely, barcode images with low quality may be deemed unreadable according to accepted standards. Various methods can be used to recognize barcodes even with unacceptable quality; however, using these methods requires additional CPU computation time and leads to considerably increasing overall reading time.
+Barcode reading relies on machine vision mechanisms and uses various mathematical algorithms for object detection. Same as in other computer vision tasks, source image quality is crucial to convert an arbitrary image to machine-readable code. Low-quality barcode images may result being unreadable depending on specific recognition standards. There are different approaches to read barcodes of unacceptable quality. However, running such methods takes extra CPU computation time and may lead to the considerable increase in recognition time.
 
-***Aspose.BarCode for Java*** allows optimizing the barcode recognition process in terms of speed and quality depending on particular business needs and specificities. The library provides a special class called [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) that can be used to implement flexible settings for barcode recognition and to reach the required trade-off between reading capacity and speed according to the quality of source barcode images.
+***Aspose.BarCode for Java*** suggests optimizing the recognition process in terms of quality and speed in line with specific business needs. A special class called [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) provides flexible recognition settings to achieve the acceptable trade-off between reading acuracy and speed depending the quality of a source barcode image.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Recognition Options and Presets for Managing Speed and Quality**
-As mentioned above, ***Aspose.BarCode for Java*** provides class [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) that allows enabling and disabling various algorithms for image recovery to read barcodes with distortions or artifacts. See the article [**Recognition Specifics**](/barcode/java/recognition-specifics/) for more information about special cases of barcode recognition. Moreover, class [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) provides special parameters to customize the trade-off between reading speed and quality in regular situations. Such parameters are grouped into several presets that facilitate image recovery and barcode reading for different recognition scenarios.
+## **Recognition Speed and Quality Options and Presets**
+As stated above, ***Aspose.BarCode for Java*** contains class [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) that is used to enable and disable various algorithms to read barcodes with damages or artifacts. See the article [**Recognition Specificities**](/barcode/java/recognition-specificities/) for additional information about special recognition cases. In addition, class [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) allows customizing the trade-off between recognition quality and speed in common cases. Corresponding methods are grouped into dedicated presets that allow improving image recovery and barcode reading for various scenarios.
 
 ## **Recognition Presets**
-This section provides detailed information about supported recognition presets, including *NormalQuality*, *HighPerformance*, *HighQuality*, *MaxBarCodes*, manually configured options, and others, as listed in the table below. By default, [*QualitySettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) uses the *NormalQuality* preset. 
+In this section, supported recognition presets are described, including *HighPerformance*, *NormalQuality*, *HighQuality*, *MaxBarCodes*, and others, as represented in the table below. By default, the *NormalQuality* preset is applied. 
 
 |Recognition Preset|Description|
 |---|---|
-|*NormalQuality*|Suitable for the most of barcodes with regular quality|
-|*HighQuality*|Intended for work with low-quality barcodes; it allows reading and decoding diagonal and severely corrupted barcodes|
-|*HighPerformance*|Suggested for high-quality barcode images|
-|*HighQualityDetection*|Similar to the *NormalQuality* one but with the [*SetDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) method called using the *HighQuality* value|
-|*MaxQualityDetection*|Similar to the *NormalQuality* one but with the [*SetDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) method called using the *MaxQuality* value. It is applicable to detect diagonal and damaged barcodes|
-|*MaxBarcodes*|Allows reading all potential barcodes in an image, even incorrect ones. It is recommended for use for debugging purposes only|
+|*NormalQuality*|Suitable for regular-quality barcode images|
+|*HighQuality*|Intended for low-quality barcode images. It allows scanning diagonal and severely damaged barcode images|
+|*HighPerformance*|Used for high-quality barcode images|
+|*HighQualityDetection*|Same as *NormalQuality* but with the [*setDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) method called passing the *HighQuality* value|
+|*MaxQualityDetection*|Same as *NormalQuality* but with the [*setDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) method called using the *MaxQuality* value. It allows detecting diagonal and damaged barcode images|
+|*MaxBarcodes*|Allows scanning all barcodes possibly presented in an image, including invalid ones. It is recommended for debugging tasks only|
   
 ### **Universal Presets for All Barcode Types**
-***Aspose.BarCode for Java*** provides several universal recognition quality setting presets and corresponding methods to activate them, such as *setHighPerformance*, *setNormalQuality*, and *setHighQuality*. These presets allow establishing linear dependence between recognition quality and speed for all barcode types, including 1D, 2D, and postal symbologies. In most cases, the *NormalQuality* preset used by default is sufficient for the majority of barcodes that provide normal scanning quality. 
+***Aspose.BarCode for Java*** suggests various universal recognition presets and corresponding methods to activate them, such as *setHighPerformance*, *setNormalQuality*, and *setHighQuality*. These presets establish linear dependence between reading accuracy and speed for all symbologies. Generally, using the default *NormalQuality* preset is sufficient for most of barcodes that have acceptable scanning quality. 
   
-The following code snippet illustrates how to apply universal recognition presets to the sample image provided below.
+The following code sample shows how to use universal presets.
   
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
   
@@ -75,13 +75,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
 {{< /highlight >}}
 
 ### **Presets for 1D Barcode Types**
-To read 1D barcodes, ***Aspose.BarCode for Java*** provides special quality setting presets that are intended for working with normal quality barcodes and at the same time, enable improved parameters for the detection and recognition of 1D barcodes. These presets can be particularly useful in cases when it is necessary to scan barcodes of small dimensions that are difficult for detecting and recognizing from complex documents with many textual blocks and tables. Specifically, using *HighQualityDetection* and *MaxQualityDetection* presets allows getting much better recognition results for 1D barcodes in complex documents compared with basic settings. Similar improvements can be achieved by using the *NormalQuality* preset and specifying the appropriate settings of [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) through the *setDetectorSettings* method.  
+To scan linear barcodes, ***Aspose.BarCode for Java*** allows using dedicated recognition presets suitable for normal-quality barcodes. These presets provide improved methods for 1D barcode detection and decoding and are useful to work with barcodes of small dimensions or complex documents with multiple text blocks and tables. For example, compared with general recognition settings, *HighQualityDetection* and *MaxQualityDetection* presets allow improving recognition results for 1D barcodes in complex documents. Alternatilvely, such imprment can be implemented using the *NormalQuality* preset and tuning [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) through the *setDetectorSettings* method.  
   
-The image below illustrates an example of a document with various barcodes presented in this document along with textual parts and illustrations. 
+The image shown below is a sample document with multiple barcodes that contains also text parts and figures. 
 
 <p align="center"><img src="many_code128.png" height="45%" width="45%"></p>
   
-The following code snippet explains how to set recognition quality parameters to ensure accurate detection and decoding of all 1D barcodes of target symbologies. 
+The following code sample shows how to tune reading quality parameters to enable correct detection and decoding of all 1D barcodes corresponding to the target symbologies. 
 
 {{< highlight csharp>}}
 Console.WriteLine("QualityPresetsOneD:");
@@ -117,11 +117,11 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
 }
 {{< /highlight >}}
 
-### **Preset ***MaxBarCodes*** for Debugging**
-To read all barcodes potentially presented in an image including incorrect ones, ***Aspose.BarCode for Java*** provides a special preset called *MaxBarCodes*. This preset applies recognition quality settings that allow recovering up to 1% more barcodes (severely corrupted or erroneous ones) compared with the results achievable using the *NormalQuality* preset. Similar recognition quality settings can be enabled using the *setAllowIncorrectBarcodes* method.
-Although the *MaxBarCodes* mode may be useful to decode barcodes that otherwise are unreadable, it should be used for debugging purposes only, as applying this parameter may lead to notably increasing the time required to complete the recognition process and producing incorrect recognition outputs. This preset is recommended for use only for advanced users of the ***Aspose.BarCode*** library. 
+### **Using ***MaxBarCodes*** Preset for Debugging**
+To detect all possible barcodes in an image including invalid ones, ***Aspose.BarCode for Java*** contains a special preset called *MaxBarCodes*. This preset allows restoring up to 1% more barcodes (severely damaged or incorrectly generated) in comparison with the results that can be reached by the *NormalQuality* preset. Similar reading settings can be implemented through the *setAllowIncorrectBarcodes* method.
+The *MaxBarCodes* preset may be used to scan even unreadable barcodes; however, it is intended for debugging tasks only as it may result in considerably augmenting the time needed to complete the reading process and providing invalid decoding outputs. This preset is suggested only for advanced users of the ***Aspose.BarCode*** library. 
   
-The following code snippet explains how to work with the *MaxBarCodes* preset.
+The following code sample shows how to use the *MaxBarCodes* preset.
 
 {{< highlight csharp>}}
 Console.WriteLine("MaxBarCodesPreset:");
@@ -140,10 +140,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
 
 ## **Recognition Options**
 
-### **Fast Detection for High-Quality Barcodes**
-To read high-quality 1D barcode images generated using web-based tools, it is recommended to call *setAllowOneDFastBarcodesDetector* and *setFastScanOnly* recognition methods. Both modes enable fast scanning of selected barcode image regions using lightweight recognition methods. The only difference between these two recognition options is that the *FastScanOnly* mode does not imply further barcode detection in cases when no barcodes have been identified using lightweight recognition methods.  
+### **Fast Detection for High-Quality Barcode Images**
+To recognize high-quality 1D barcodes created through web-based applications, it is suggested to use *setAllowOneDFastBarcodesDetector* and *setFastScanOnly* reading methods. These methods enable fast scanning of target image areas through lightweight scanning techniques. The difference between these two options is that the *setFastScanOnly* method does not enable further barcode search after the failure to idetify more barcodes through lightweight scanning methods.  
   
-The following code sample illustrates how to perform fast barcode detection for the image shown below as an example.  
+The following code snippet explains how to implement fast barcode recognition.  
 
 <p align="center"><img src="code128_hq.png" height="20%" width="20%"></p>
 
@@ -181,10 +181,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_hq.png", DecodeTyp
 }
 {{< /highlight >}}
 
-### **Regular Recognition of Barcodes without Distortions**
-To read regular barcode labels with normal quality, ***Aspose.BarCode for Java*** provides a method called *setAllowRegularImage* that implies applying standard barcode recognition methods. It is recommended to keep this mode enabled in most cases as disabling it may result in recognition failures for regular barcodes.  
+### **Regular Recognition of Barcode Images without Damages**
+To decode regular norma-quality barcode images, ***Aspose.BarCode for Java*** applies a method called *setAllowRegularImage* that uses standard recognition techniques. This mode is suggested to be enabled in most cases, as its deactivation may lead to decoding failures for regular barcode images.  
   
-The following code snippet demonstrates how to implement regular barcode recognition considering the sample barcode image demonstrated below.
+The following code sample shows how to perform regular barcode recognition.
   
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" heigh="20%"></p>
 
@@ -216,17 +216,17 @@ using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png"
 }
 {{< /highlight >}}
 
-## **Detection of Potential Barcode Regions**
-To perform barcode recognition, first, ***Aspose.BarCode for Java*** launches image segmentation and detects regions with potential barcodes to start the recognition process using corresponding methods. The library utilizes two barcode region detectors: the one with customizable sensitivity that is managed through a special class called [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) and the other one based on the previous detector implementation that allows successfully detecting approximately 97% of barcodes without additional settings. By default, the [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) mode is used together with the quality parameter set to *NormalQuality*.
+## **Detection of Areas with Potential Barcodes**
+To read barcodes, ***Aspose.BarCode for Java*** first performs the segmentation of a source image and finds areas with potential barcodes. Two barcode region detectors are available: the one with flexible sensitivity implemented in a class called [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) and the other one that relies on the previous detector version that allows correctly identifying about 97% of barcodes without the need in additional settings. [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) is used by default together with calling the *setNormalQuality* method.
 
-### **Barcode Detector with Customized Sensibility**
-The [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) property group allows flexibly setting the sensitivity of the barcode detector according to particular business needs. The higher is the detection sensitivity, the lower is recognition speed and the more accurate are the results of barcode region detection in complex images with multiple textual blocks and tables. In the case of 1D barcodes, [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) provides the following modes for region detection sensitivity settings:
--	*HighPerformance*
+### **Barcode Detector with Flexible Sensibility**
+[*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) allows adjusting the sensitivity of the barcode detector in a flexible manner according to specific needs. The better is the detector sensitivity, the lower is reading speed and the better are the results of barcode region detection in complex source images with many text blocks and tables. For 1D barcodes, [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) supports the following sensitivity settings:
 -	*NormalQuality* 
 -	*HighQuality* 
+-	*HighPerformance*
 -	*MaxQuality*  
   
-The following code sample illustrates how to work with [*BarcodeSvrDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
+The following code sample illustrates how to use [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
     
 {{< highlight csharp>}}
 Console.WriteLine("OneDDetectorSettings:");
@@ -252,10 +252,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
 }
 {{< /highlight >}}
 
-### **Old Version of Barcode Detector**
-The *setUseOldBarcodeDetector* method enables 1D barcode region detection through the use of the previous detector implementation without flexible sensitivity settings. This region detection mode approximately corresponds to the *NormalQuality* and *HighQuality* modes of the new detector implemented in [*BarcodeSvrDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).  
+### **Previous Version of Barcode Detector**
+The *setUseOldBarcodeDetector* method allows performing barcode region detection for 1D barcodes using the previous detector version that does not support flexible sensitivity settings. This region detection mode is close to *NormalQuality* and *HighQuality* modes of the new detector implemented in [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).  
   
-The following code snippet shows how to use the old version of the barcode detector. 
+The following code sample explains how to work with the previous version of the barcode region detector. 
 
 {{< highlight csharp>}}
 Console.WriteLine("OneOldBarcodeDetector:");
@@ -281,10 +281,10 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
 }
 {{< /highlight >}}
 
-## **Using Scan Gap for 1D and 2D Barcode Scanning**
-To perform preliminary scanning of large 1D barcodes and some 2D barcodes, such as *PDF417*, *QR Code*, or *Aztec*, scanning with a gap of a few lines is usually applied. This approach allows avoiding excessively long scanning and speeding up the recognition process. In ***Aspose.BarCode for Java***, the scan gap can be set using a special method called *setAllowDetectScanGap*. However, in cases when large and small barcodes are placed close to each other, this setting can result in a refusal to read barcodes of smaller sizes. Disabling this parameter allows successfully reading such combinations of barcode labels albeit at the expense of recognition speed.  
+## **Managing Scan Gap during 1D and 2D Barcode Scanning**
+To conduct preliminary detection of large-sized 1D and some 2D symbologies, such as *QR Code*, *PDF417*, or *Aztec*, barcode scanning can be applied with a gap of several lines. This option is intended to avoid unaccaptably long scanning and allows speeding up the decoding process. ***Aspose.BarCode for Java*** supports a special method called *setAllowDetectScanGap* to enable the scan gap. However, if large-sized and tiny barcodes are displayed in an image close to each other, applying this recognition option can lead to a failure to read smaller-sized barcode. When this option is not enabled, reading such combinations of barcodes can be executed successfully at the expense of recognition speed.  
   
-The following code sample explains how to customizr the scan gap while reading the source image given below as an example.
+The following code snippet shows how to adjust the scan gap.
 
 <p align="center"><img src="code128_big_and_small.png" width="25%" height="25%"></p>
 

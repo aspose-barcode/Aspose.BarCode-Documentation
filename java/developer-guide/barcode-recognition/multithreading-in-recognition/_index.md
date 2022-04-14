@@ -4,7 +4,7 @@ type: docs
 description: "This article explains how to set mulithread barcode recognition"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode Java"
 weight: 50
-url: /java/multithread-barcode-reading/
+url: /java/loading-barcode-images/
 ---
 
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}

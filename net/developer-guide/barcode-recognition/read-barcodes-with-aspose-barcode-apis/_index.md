@@ -213,7 +213,7 @@ using (BarCodeReader reader = new BarCodeReader())
 ### **Multiple Regions**
 In cases when it is required to specify several regions for barcode reading in the same source image, developers can define target areas in the same way as for the single region, namely, using the [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeImage*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage/methods/1) method.  
   
-The following code snippet explains how to multiple target areas for barcode reading in the source image.
+The following code snippet explains how to define multiple target areas for barcode reading in the source image.
   
 {{< highlight csharp>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
