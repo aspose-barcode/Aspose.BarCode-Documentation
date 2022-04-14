@@ -4,6 +4,8 @@ type: docs
 weight: 40
 url: /androidjava/
 is_root: true
+keywords: android barcode api, generate barcode android
+description: Android Barcode API provides the tools to generate barcode images and recognize barcodes from within Android applications. You can generate barcodes of different types, control the size of bars and customize appearance of barcode text on barcode images.
 ---
 
 {{% alert color="primary" %}} 

@@ -19,4 +19,4 @@ This page contains release notes information for [Aspose.BarCode for .NET 22.3](
 
 ## **Public API and Backward Incompatible Changes**
 
-No API changes
+Aspose.BarCode.BarCodeRecognition.Quadrangle struct will be renamed to a class.
