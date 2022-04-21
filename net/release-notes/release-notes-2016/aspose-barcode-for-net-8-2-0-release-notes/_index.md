@@ -10,7 +10,7 @@ url: /net/aspose-barcode-for-net-8-2-0-release-notes/
 This page contains release notes for [Aspose.BarCode for .NET 8.2.0](http://www.aspose.com/downloads/barcode/net/new-releases/aspose.barcode-for-.net-8.2.0/)
 
 {{% /alert %}} 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |
