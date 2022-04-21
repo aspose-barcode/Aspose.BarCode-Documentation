@@ -10,7 +10,7 @@ url: /net/aspose-barcode-for-net-16-10-release-notes/
 This page contains release notes for Aspose.BarCode for .NET 16.10.
 
 {{% /alert %}} 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |
