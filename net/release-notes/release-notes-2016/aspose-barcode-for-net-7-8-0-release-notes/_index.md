@@ -5,7 +5,7 @@ weight: 100
 url: /net/aspose-barcode-for-net-7-8-0-release-notes/
 ---
 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |
@@ -22,12 +22,12 @@ url: /net/aspose-barcode-for-net-7-8-0-release-notes/
 |BARCODENET-34386 |Can't recognize sample Aztec from specification |Enhancement |
 |BARCODENET-34373 |Can't recognize Aztec with a lot of data |Enhancement |
 |BARCODENET-33818 |Can't recognize DataMatrix code from a PNG image |Enhancement |
-### **Public API and Backward Incompatible Changes**
-###### **Enum BarCodeReadType has been marked as [OBSOLETE]**
+## **Public API and Backward Incompatible Changes**
+### **Enum BarCodeReadType has been marked as [OBSOLETE]**
 Since enum ***BarCodeReadType*** allows us to support only first 62 symbologies, new type has been added, and it is highly recommended to use new type called ***DecodeType*** instead.
 
 ***BarCodeReadType*** will have been unavailable within two months term.
-###### **New types have been added to support more BarCode types**
+### **New types have been added to support more BarCode types**
 ***DecodeType, BaseDecodeType, SingleDecodeType, MultyDecodeType***
 
 These types will be further used in BarCodeReader instead of BarCodeReadType.
@@ -77,13 +77,13 @@ Dim multyType2 As MultyDecodeType
 multyType2 = New MultyDecodeType(multyType1, DecodeType.Code128, DecodeType.Code39Standard)
 
 {{< /highlight >}}
-###### **Namespaces have been updated**
+### **Namespaces have been updated**
 Public *Namespaces* have been re-arranged according to [Microsoft guidelines. ](https://msdn.microsoft.com/en-us/library/ms229026%28v=vs.110%29.aspx)
 
 The namespace ***Aspose.BarCodeRecognition*** has been replaced with ***Aspose.BarCode.BarCodeRecognition; BarCode.Common*** has been replaces with ***Aspose.BarCode.Common.***
 
 Thus, the namespaces ***Aspose.BarCodeRecognition,*** ***BarCode.Common*** are not available anymore.
-###### **BARCODENET-34399 Add a manual hint "SkipRotatedBarcodes"**
+### **BARCODENET-34399 Add a manual hint "SkipRotatedBarcodes"**
 New manual hint has been added to the available API: ***SkipRotatedBarcodes***
 
 It turns off rotation algorithms, and  therefore, increases the recognition speed.
@@ -168,7 +168,7 @@ DataMatrix: Wikipedia on erinomainen tietosanakirja, josta lГ¶ytyy paljon tiet
 Time: 436ms.
 
 {{< /highlight >}}
-###### **BARCODENET-34368 Add new BarCode type: MICR (only reader)**
+### **BARCODENET-34368 Add new BarCode type: MICR (only reader)**
 New barcode type **MICR** has been added*.*
 
 It is available only as a feature of **BarCodeReader** class.Code sample
@@ -201,7 +201,7 @@ Result:
  A011234567A001234567C243
 
 {{< /highlight >}}
-###### **BARCODENET-34364 Add new BarCode type: Datalogic2of5Code**
+### **BARCODENET-34364 Add new BarCode type: Datalogic2of5Code**
 Code sample (Generate)
 
 {{< highlight xml >}}
@@ -240,7 +240,7 @@ Result:
  DataLogic2of5: 8500060000
 
 {{< /highlight >}}
-###### **BARCODENET-34363 Add new BarCode type: Code32**
+### **BARCODENET-34363 Add new BarCode type: Code32**
 New barcode type **Code32** has been added.Code sample (Generate)
 
 {{< highlight xml >}}
