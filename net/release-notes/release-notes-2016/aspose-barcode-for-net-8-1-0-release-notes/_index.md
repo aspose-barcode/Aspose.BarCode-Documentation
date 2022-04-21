@@ -10,7 +10,7 @@ url: /net/aspose-barcode-for-net-8-1-0-release-notes/
 This page contains release notes for [Aspose.BarCode for .NET 8.1.0](http://www.aspose.com/downloads/barcode/net/new-releases/aspose.barcode-for-.net-8.1.0/)
 
 {{% /alert %}} 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |
@@ -30,7 +30,7 @@ This page contains release notes for [Aspose.BarCode for .NET 8.1.0](http://www.
 |BARCODENET-34304 |QREncodeMode Enumeration is missing Binary enum |Enhancement |
 |BARCODENET-36214 |BarCodeWebControl Error in VS2013 community |Enhancement |
 |BARCODENET-36200 |Load Barcode controls in the toolbox of VS2013 shows Error |Enhancement |
-### **Public API and Backward Incompatible Changes**
+## **Public API and Backward Incompatible Changes**
 ###### **BARCODENET-36239 Implement saving to CMYK format**
 New public method SaveAsTiffInCMYK() has been added to the BarCodeBuilder.
 
