@@ -10,7 +10,7 @@ url: /net/aspose-barcode-for-net-8-0-0-release-notes/
 This page contains release notes for [Aspose.BarCode for .NET 8.0.0](http://www.aspose.com/downloads/barcode/net/new-releases/aspose.barcode-for-.net-8.0.0/)
 
 {{% /alert %}} 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key** |**Summary** |**Category** |
 | :- | :- | :- |
@@ -30,7 +30,7 @@ This page contains release notes for [Aspose.BarCode for .NET 8.0.0](http://www.
 |BARCODENET-36175 |Investigate and fix order of recognizing barcodes |Enhancement |
 |BARCODENET-36172 |Improve dotcode regions recognition |Enhancement |
 |BARCODENET-34428 |Read the corrupted QR barcode |Enhancement |
-### **Public API and Backward Incompatible Changes**
+## **Public API and Backward Incompatible Changes**
 ###### **BARCODENET-34365 Add new BarCode type: DutchKix**
 Support for new symbology DutchKIX has been added to the BarCode API.
 <example>
