@@ -17,7 +17,8 @@ url: /net/aspose-barcode-for-net-7-9-0-release-notes/
 |BARCODENET-34398 |Unable to Read the QR barcode successfully from a TIFF image |Enhancement |
 |BARCODENET-34390 |Unable to read QR barcode from a BMP image |Enhancement |
 ## **Public API and Backward Incompatible Changes**
-###### **BARCODENET-34421 Generate data matrix barcode with text on its right side**
+**BARCODENET-34421 Generate data matrix barcode with text on its right side**
+
 ***1)*** New Code location value **CodeLocation.Right** has been added to the enumeration: ***CodeLocation;***
 
 ***2)*** New property **Display2DText** has been added to the **BarCodeBuilder** class;
