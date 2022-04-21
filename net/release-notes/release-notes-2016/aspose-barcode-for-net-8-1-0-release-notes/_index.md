@@ -32,6 +32,7 @@ This page contains release notes for [Aspose.BarCode for .NET 8.1.0](http://www.
 |BARCODENET-36200 |Load Barcode controls in the toolbox of VS2013 shows Error |Enhancement |
 ## **Public API and Backward Incompatible Changes**
 **BARCODENET-36239 Implement saving to CMYK format**
+
 New public method SaveAsTiffInCMYK() has been added to the BarCodeBuilder.
 
 Sample code:
