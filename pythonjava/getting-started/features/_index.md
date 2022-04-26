@@ -2,7 +2,7 @@
 title: Features
 type: docs
 weight: 30
-url: /pythonjava/features/
+url: /python-java/features/
 ---
 
 ## **General Barcode Features**

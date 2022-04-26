@@ -2,7 +2,7 @@
 title: Barcode Supported Symbologies
 type: docs
 weight: 20
-url: /pythonjava/barcode-supported-symbologies/
+url: /python-java/barcode-supported-symbologies/
 ---
 
 The following is the list of Barcode symbologies supported for barcode generation and recognition using Aspose.BarCode API.

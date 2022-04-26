@@ -3,7 +3,7 @@ title: Aspose.BarCode for Python via Java
 description: Aspose.Barcode for Python via Java is implemented by using the python-java bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their Python applications.
 type: docs
 weight: 100
-url: /pythonjava/
+url: /python-java/
 is_root: true
 ---
 
@@ -21,8 +21,8 @@ Aspose.Barcode for Python via Java is implemented by using the python-java bridg
 **Aspose.BarCode for Python via Java Resources**
 The following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.BarCode for Python via Java Features](/barcode/pythonjava/features/)
-- [Aspose.BarCode for Python via Java Release Notes](/barcode/pythonjava/release-notes/)
+- [Aspose.BarCode for Python via Java Features](/barcode/python-java/features/)
+- [Aspose.BarCode for Python via Java Release Notes](/barcode/python-java/release-notes/)
 - [Aspose.BarCode for Python via Java Product Page](https://products.aspose.com/barcode/python-java)
 - [Download Aspose.BarCode for Python via Java](https://downloads.aspose.com/barcode/python)
 - [Aspose.BarCode for Python via Java Free Support Forum](https://forum.aspose.com/c/barcode)
