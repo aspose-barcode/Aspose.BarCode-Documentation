@@ -7,7 +7,7 @@ url: /net/aspose-barcode-for-net-17-03-release-notes/
 
 Aspose.BarCode for .Net has been updated to version 17.03 and we are pleased to announce it.
 The following is a list of changes in this version of Aspose.Imaging.
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
