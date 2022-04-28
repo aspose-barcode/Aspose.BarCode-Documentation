@@ -10,7 +10,7 @@ url: /net/aspose-barcode-for-net-17-10-release-notes/
 This page contains release notes for Aspose.BarCode for .NET 17.10
 
 {{% /alert %}} 
-### **Features and Improvements**
+## **Features and Improvements**
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
@@ -22,12 +22,13 @@ This page contains release notes for Aspose.BarCode for .NET 17.10
 |BARCODENET-36652|Rotation doesn't affected to EMF export|Bug|
 |BARCODENET-36688|Index was out of range exception when try to recognize barcode from PDF|Bug|
 |BARCODENET-36701|Incorrect DatabarLimited generation/recognition|Bug|
-### **Public API and Backward Incompatible Changes**
+## **Public API and Backward Incompatible Changes**
 This section lists public API changes that were introduced in Aspose.BarCode for .NET 17.10. It includes not only new, obsoleted public methods, but also a description of any changes in the behavior behind the scenes in Aspose.BarCode for .NET which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
 - Aspose.BarCode for WPF has been merged with main Aspose.BarCode for .NET 3.0 - 4.5.
 - Class Aspose.BarCode.WPF.BarCodeElement has been added to Aspose.BarCode for .NET 3.0 and higher.
-#### **Removed Members**
+
+**Removed Members**
 
 |Method|ICOMBarCodeReader.SetBarCodeReadType|Please use ICOMBarCodeReader.SetBarCodeReadType|
 | :- | :- | :- |
@@ -61,8 +62,9 @@ This section lists public API changes that were introduced in Aspose.BarCode for
 |Dependency property|Aspose.BarCode.WPF.BarCodeElement.SymbologyTypeProperty|Please use Aspose.BarCode.WPF.BarCodeElement.EncodeTypeProperty|
 |Class|Aspose.BarCode.BarCodeRecognition.Common.Algorithms.HistogramStatistic|has been removed as useless|
 |Enum|Aspose.BarCode.BarCodeRecognition.RecognitionHints.ImageBinarization|has been removed as useless|
-#### **New Members**
+
+**New Members**
 
 |constructor|BarCodeWebControl(string, BaseEncodeType)| |
 | :- | :- | :- |
-###
+
