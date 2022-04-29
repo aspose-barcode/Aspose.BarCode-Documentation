@@ -17,3 +17,4 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 | :- | :- | :- |
 |BARCODENET-38136|Aspose.BarCode should throw exception for SwissQRBill empty element StrdBkgInf (BillInformation)|Bug|
 |BARCODENET-38125|Issue with SwissQRCodetext after the End-Tag (EPD-Trailer) there is an unnecessary New-Line (CR-LF)|Bug|
+|BARCODEJAVA-1261|Correct the calculation of the position and size of the text in images that generates BarCodeGenerator|Bug|
