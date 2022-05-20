@@ -29,7 +29,9 @@ This page contains release notes for Aspose.BarCode for .NET 17.12
 |BARCODENET-34033|Performance issue while reading PDF417 and Code128 codes|Bug|
 |BARCODENET-36627|Performing BarCode recognition in C++ application is taking long time|Bug|
 |BARCODENET-33832|Can't recognize code128 from a tif file|Bug|
-### **Public API and Backward Incompatible Changes**
+
+## **Public API and Backward Incompatible Changes**
+
 This section lists public API changes that were introduced in Aspose.BarCode for .NET 17.12. It includes not only new and obsoleted public methods, but also a description of any changes in the behavior behind the scenes in Aspose.BarCode for .NET which may affect existing code. Any behavior introduced that could be seen as a regression and modifies existing behavior is especially important and is documented here.
 
 **New public value QRVersion has been added to the BarCodeBuilder for selecting concrete QR version.**

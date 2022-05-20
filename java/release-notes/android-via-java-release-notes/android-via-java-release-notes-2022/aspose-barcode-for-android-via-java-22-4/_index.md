@@ -1,14 +1,13 @@
 ---
-title: Aspose.BarCode for PHP via Java 22.4
+title: Aspose.BarCode for Android via Java 22.4
 type: docs
-weight: 25
-url: /java/aspose-barcode-for-php-via-java-22-4/
+weight: 970
+url: /java/aspose-barcode-for-android-via-java-22-4/
 ---
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for PHP via Java 22.4](https://downloads.aspose.com/barcode/phpjava/new-releases/aspose.barcode-for-php-via-java-22.4
-/).
+This page contains release notes information for [Aspose.BarCode for Android via Java 22.4](https://downloads.aspose.com/barcode/androidjava/new-releases/aspose.barcode-for-android-via-java-22.4/).
 
 {{% /alert %}} 
 ## **All Changes**
