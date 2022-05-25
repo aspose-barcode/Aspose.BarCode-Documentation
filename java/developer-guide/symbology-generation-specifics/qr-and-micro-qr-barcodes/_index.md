@@ -215,7 +215,7 @@ For all *QR Code* subtypes with the exception of *Micro QR* developers can use a
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="qrerrorlevell.png">|<img src="qrerrorlevelm.png">|<img src="qrerrorlevelq.png">|<img src="qrerrorlevelh.png">|
   
-The following code snippet demonstrates how to enable different error correction levels for *QR Code* barcodes.
+The following code snippet demonstrates how to enable various error correction levels for *QR Code* barcodes.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is a type of matrix barcode invented in 1994");
@@ -235,14 +235,14 @@ gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
 ## **Structured Append Mechanism**
-*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing one of the following value: 
-- *TotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
-- *SequenceIndicator* - the sequence number of the current barcode (starting from 0)
-- *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   
+*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the structured append mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing an object of lass [*QrStructuredAppendParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrStructuredAppendParameters) class. This class provides the following methods: 
+- *setTotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
+- *setSequenceIndicator* - the sequence number of the current barcode (starting from 0)
+- *setParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   
   
 Sample barcode images provided below have been created using the structured append mechanism implemented in the following code snippet.
   
-|<p align="center">**Structured Append QR Code**</p>|<p align="center">**First Type**</p>|<p align="center">**Second Type**</p>|
+|<p align="center">**Structured Append Type**</p>|<p align="center">**First Type**</p>|<p align="center">**Second Type**</p>|
 | :-: | :-: | :-: |
 | |<img src="qrstructuredappendfirst.png">|<img src="qrstructuredappendsecond.png">|
   
