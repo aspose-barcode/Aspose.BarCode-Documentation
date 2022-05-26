@@ -1,8 +1,10 @@
 ---
-title: DataMatrix
+title: DataMatrix Symbology
+description: 
+key words:
 type: docs
-weight: 30
-url: /net/datamatrix-card/
+weight: 70
+url: /datamatrix-card/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/datamatrix) and [Generate](https://products.aspose.app/barcode/generate/datamatrix) DataMatrix barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
 
@@ -105,11 +107,55 @@ In addition, it can be noted that in the special study conducted at The Center o
 
 </details>
 
-## Aspose Code Samples for QR Code Generation and Recognition
+## **Aspose Samples for DataMatrix Generation and Recognition**
+### **DataMatrix Generation Code Samples**
 
-### Aspose.BarCode for .NET
+{{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
-{{% alert color="primary" %}}In article [**DataMatrix Barcodes**](/barcode/net/datamatrix-barcode/), you can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for DataMatrix generation and recognition.{{% /alert %}}
+{{< tab tabNum="1" >}}
+
+Insert Code
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### **DataMatrix Recognition Code Samples**
+
+{{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
+
+{{< tab tabNum="1" >}}
+
+Insert Code
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
   
 <details>  
 <summary>Code Sample for DataMatrix Barcode Generation</summary>

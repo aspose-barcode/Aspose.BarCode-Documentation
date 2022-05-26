@@ -1,25 +1,33 @@
 ---
-title: QR Code Family Barcode Cards
+title: QR Code Family
+description: 
+key words:
 type: docs
 weight: 10
-url: /net/qr-code-cards/
+url: /qr-code-cards/
 ---
 
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Code barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
 
-## Overview
-QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily read by smartphones and other devices equipped with common digital image sensors. The idea of a QR Code has been proposed as an advance of conventional linear barcodes and can contain much more information. They are capable of encoding large portions of data and provide very high recognition speed. Conceptually, a QR code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, QR Codes have multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, and many others. The operations of scanning, reading, and decoding QR Codes can be executed using cameras and special QR code scanner applications on mobile phones (mobile tagging). QR Code scanners are generally embedded into various mobile devices, and third-party scanner applications can download for any smartphone. After capturing a QR code image, a special application converts it into readable text or more often, into an URL link.  
-  
+## **Overview**
+QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily read by smartphones and other devices equipped with common digital image sensors. The idea of a QR Code has been proposed as an advance of conventional linear barcodes and can contain much more information. They are capable of encoding large portions of data and provide very high recognition speed. Conceptually, a QR code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, QR Codes have multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, and many others. The operations of scanning, reading, and decoding QR Codes can be executed using cameras and special QR code scanner applications on mobile phones (mobile tagging). QR Code scanners are generally embedded into various mobile devices, and third-party scanner applications can download for any smartphone. After capturing a QR code image, a special application converts it into readable text or more often, into an URL link. 
+
 Apart from 40 basic variants, the QR Code symbology provides the Micro QR Code version. Micro QR codes can be used to save space for applications in which the data capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/net/micro-qr-card/).  
+
+<p align="center"><img src="qrcodesample.png"></p>
   
 The detailed QR Code specification can be found in the [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html) standard.
 
-<p align="center"><img src="qrcodesample.png"></p>
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for QR Code generation and recognition:
+- [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-and-micro-qr-barcode/)
+- [**QR Code in Aspose.BarCode for .Java**]()
+- [**QR Code in Aspose.BarCode for .C++**]()
+{{% /alert %}} 
 
-## Features
+## **Features**
   
-### Encoding Character Set
+### **Encoding Character Set**
 QR Codes can be used to encode various data types, including numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
   
 The QR Code standard allows encoding the following characters in four standard encoding modes:
@@ -35,13 +43,13 @@ As an optional encoding feature, the QR Code standard supports the Extended Chan
 
 </details>
 
-### Barcode Structure
+### **Barcode Structure**
 Each QR Code label contains the following elements: square modules, finder patterns, timing patterns, alignment pattern, input data modules, error correction data modules, and quiet zone areas. QR Codes encode information as binary data in so-called modules (square dots). Black and while modules correspond to binaries 1 and 0, respectively.  
 
 <details>
 <summary>Read more</summary>
 
-The key elements of QR Codes are:   
+The key elements of QR Codes include the following:   
 - Finder (position detection) patterns - square bull's eye signs in three corners of a QR Code label. These patterns facilitate accurate and fast scanning at any orientation
 - Alignment pattern - added in QR versions only starting from Version 2 and higher and is intended to improve scanning in case of minor distortions of a QR Code label. It is a small square bull's eye sign placed among the input data modules
 - Timing patterns - one row and one column of black and white modules that encode the symbol version and density
@@ -49,7 +57,7 @@ The key elements of QR Codes are:
   
 </details>
 
-### Size Dimentions
+### **Size Dimentions**
 The basic QR Code standard support QR Code versions that range from Version 1 to Version 40. The minimal size of a QR code is 21 x 21 modules (Version 1) or 5.25 mm x 5.25 mm excluding margins. The maximal size (Version 40) is 177 x 177 modules. Each higher version contains four additional modules per side and has its own module configuration (the number of modules). To ensure successful scanning by most smartphones, QR Code labels should have a size of at least 2 cm x 2 cm (0.8 x 0.8 inches).  
   
 |<p align="center">**QR Code Version 5**</p>|
@@ -59,13 +67,13 @@ The basic QR Code standard support QR Code versions that range from Version 1 to
 <details>  
 <summary>Read more</summary>
   
-Modules are black and white dots that constitute a QR Code image. Module configuration is determined by the number of modules presented in a QR Code label. The size of one module is 0.25 mm x 0.25 mm. Accordingly, the size of a QR Code image depends on the number of modules and the amount of information to be encoded. The greater is the portion of data to be stored, the larger is the size of a QR Code label.  
+Modules are black and white dots that constitute QR Code labels. Module configuration is determined by the number of modules presented in a QR Code label. The size of one module is 0.25 mm x 0.25 mm. Accordingly, the size of a QR Code image depends on the number of modules and the amount of information to be encoded. The greater is the portion of data to be stored, the larger is the size of a QR Code label.  
 
 The actual minimal size of a QR Code image is 10 mm or 0.4 inches (as per the scanning standard compliant to ISO 18004). Generally, the size of QR Code labels is determined based on the intended scanning distance (the distance-to-size ratio of 10:1 is usually recommended), the resolution of a printer, scanning equipment (smartphones or industrial scanners), and the error correction level. 
    
 </details>
 
-### Encoding Capacity and Data Density
+### **Encoding Capacity and Data Density**
 QR Code provides very high data density. Each QR Code version has its own maximum data capacity. The actual data capacity may vary according to the amount of information to be encoded, encoding type, and the error correction level. QR Codes can store up to 3 KB of data, namely, 2,953 bytes, 7,089 numerical digits, 4,296 letters, or 1,817 Japanese Kanji symbols. 
 
 <details>  
@@ -74,7 +82,7 @@ QR Code provides very high data density. Each QR Code version has its own maximu
 For example, a 101 x 101 QR Code label with the high-level error correction can encode up to 406 bytes, while a QR Code with the 177 x 177 grid can store from 1,273 to 2,953 bytes depending on the selected error correction level.
 </details>
 
-### Error Correction
+### **Error Correction**
 QR Code supports Reed-Solomon error correction capability to recover input information if an image is distorted, dirty, or damaged. The QR Code standard provides four error correction levels (L, M, Q, and H) that should be selected depending on the operating environment. These four error correction levels allow achieving the recovery capacity from 7% to 30% at most.
 
 <details>  
@@ -95,7 +103,7 @@ Levels Q or H may be selected in industrial environments where the probabilty of
   
 </details>
   
-## Advantages and Weaknesses
+## **Advantages and Weaknesses**
  
 The key advantages of QR codes are summarized below:
 
@@ -111,13 +119,13 @@ The key advantages of QR codes are summarized below:
   
 However, QR Code barcodes are sensitive to substantial damages of the target pattern as it can prevent from correct barcode scanning and recognition.
 
-## Aspose Code Samples for QR Code Generation and Recognition
+## **Aspose Samples for QR Code Generation and Recognition**
 
-### Aspose.BarCode for .NET
-{{% alert color="primary" %}}In article [**QR Code Family**](/barcode/net/qr-and-micro-qr-barcode/), you can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for QR Code generation and recognition.{{% /alert %}}  
+### **QR Code Generation Sample**
 
-<details>  
-<summary>Code Sample for QR Code Generation</summary>
+{{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
+
+{{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
 //generate QR Barcode
@@ -137,10 +145,28 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 }
 {{< /highlight >}}
 
-</details>
-  
-<details>  
-<summary>Code Sample for QR Code Recognition</summary>
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### **QR Code Recognition Sample**
+
+{{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
+
+{{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
 //Read QR Barcode
@@ -152,24 +178,19 @@ using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
     }
 {{< /highlight >}}
 
-</details>  
-  
-### Aspose.BarCode for Java
 
-<details>  
-<summary>Code Sample for Barcode Generation</summary>
-</details>
-  
-<details>  
-<summary>Code Sample for Barcode Recognition</summary>
-</details>  
+{{< /tab >}}
 
-### Aspose.BarCode for C++
+{{< tab tabNum="2" >}}
 
-<details>  
-<summary>Code Sample for Barcode Generation</summary>
-</details>
-  
-<details>  
-<summary>Code Sample for Barcode Recognition</summary>
-</details>  
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}

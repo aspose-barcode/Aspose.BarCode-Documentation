@@ -1,8 +1,10 @@
 ---
-title: PDF417 Family Barcode Cards
+title: PDF417 Barcode Family
+description: 
+key words:
 type: docs
-weight: 10
-url: /net/pdf417-barcode-cards/
+weight: 30
+url: /pdf417-barcode-cards/
 ---
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/pdf417) and [Generate](https://products.aspose.app/barcode/generate/pdf417) PDF417 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
@@ -88,10 +90,56 @@ In PDF417 barcodes, large amounts of text and information can be encoded securel
   
 PDF417 has many applications, such as: government-issued identification cards (such as driver licenses), airline boarding passes, postage stamps, package labels, and many others. 
 
-## Aspose Code Samples for QR Code Generation and Recognition
+## Aspose Samples for Basic PDF417 Generation and Recognition
+### **Basic PDF417 Generation Code Samples**
 
-### Aspose.BarCode for .NET
-{{% alert color="primary" %}}In article [**PDF417 Family**](/barcode/net/pdf417-and-macropdf417-barcode/), you can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for PDF417 barcode generation and recognition.{{% /alert %}}  
+{{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
+
+{{< tab tabNum="1" >}}
+
+Insert Code
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### **Basic PDF417 Recognition Code Samples**
+
+{{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
+
+{{< tab tabNum="1" >}}
+
+Insert Code
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< tab tabNum="3" >}}
+
+<!-->Insert Code<-->
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+
 
 <details>  
 <summary>Code Sample for Basic PDF417 Generation</summary>
