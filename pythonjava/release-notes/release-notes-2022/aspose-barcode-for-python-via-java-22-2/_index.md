@@ -7,7 +7,7 @@ url: /java/aspose-barcode-for-python-via-java-22-2/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Python via Java 22.2](https://downloads.aspose.com/barcode/pythonjava/new-releases/aspose.barcode-for-python-via-java-22.2/).
+This page contains release notes information for [Aspose.BarCode for Python via Java 22.2](https://downloads.aspose.com/barcode/python-java/new-releases/aspose.barcode-for-python-via-java-22.2/).
 
 {{% /alert %}} 
 ## **All Changes**
