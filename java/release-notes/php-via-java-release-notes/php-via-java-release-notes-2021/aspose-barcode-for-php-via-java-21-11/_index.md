@@ -7,7 +7,7 @@ url: /java/aspose-barcode-for-php-via-java-21-11/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for PHP via Java 21.11](https://downloads.aspose.com/barcode/phpjava/new-releases/aspose.barcode-for-php-via-java-21.11/).
+This page contains release notes information for [Aspose.BarCode for PHP via Java 21.11](https://downloads.aspose.com/barcode/php/new-releases/aspose.barcode-for-php-via-java-21.11/).
 
 {{% /alert %}} 
 ## **All Changes**
