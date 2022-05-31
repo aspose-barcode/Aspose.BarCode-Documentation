@@ -14,3 +14,4 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |BARCODENET-38152|Big QR code is not recognized with small geometric distortions|Bug|
+|BARCODEPHP-379|Should be thrown the exception with a proper message for case when to the constructor of BarCodeReader passed incorrect path|Bug|
