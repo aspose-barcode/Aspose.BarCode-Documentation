@@ -1,18 +1,18 @@
 ---
 title: QR Code Family
 description: ""
-key words: ""
+key words: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
 type: docs
 weight: 10
 url: /barcode/qr-code-cards/
 ---
 
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily read by smartphones and other devices equipped with common digital image sensors. The idea of a QR Code has been proposed as an advance of conventional linear barcodes and can contain much more information. They are capable of encoding large portions of data and provide very high recognition speed. Conceptually, a QR code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, QR Codes have multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, and many others. The operations of scanning, reading, and decoding QR Codes can be executed using cameras and special QR code scanner applications on mobile phones (mobile tagging). QR Code scanners are generally embedded into various mobile devices, and third-party scanner applications can download for any smartphone. After capturing a QR code image, a special application converts it into readable text or more often, into an URL link. 
+QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily read by smartphones and other devices equipped with common digital image sensors. The idea of a QR Code has been proposed as an advance of conventional linear barcode types and can contain much more information. They are capable of encoding large portions of data and provide very high recognition speed. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, QR Codes have multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, and many others. The operations of scanning, reading, and decoding QR Codes can be executed using cameras and special scanner applications on mobile phones (mobile tagging). QR Code scanners are generally embedded into various mobile devices, and third-party scanner applications can download for any smartphone. After capturing a QR Code label, a special application converts it into readable text or more often, into an URL link. 
 
-Apart from 40 basic variants, the QR Code standard supports a special option called Micro QR Code. Such barcodes can be used to save space for applications in which the data capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/net/micro-qr-card/).  
+Apart from 40 basic variants, the QR Code standard supports a special option called Micro QR Code. They can be used to save space for applications in which the data capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/net/micro-qr-card/).  
 
 <p align="center"><img src="qrcodesample.png"></p>
   
@@ -28,7 +28,7 @@ The specification for this barcode type has been published in the [ISO/IEC 18004
 ### **Encoding Character Set**
 QR Codes can be used to encode various data types, including numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
   
-The QR Code standard allows encoding the following characters in four standard encoding modes:
+This barcode type allows encoding the following characters in four standard encoding modes:
 - Numerical: all numerical digits (0-9)
 - Alphanumeric: all numeric digits (0-9), uppercase English letters (A-Z), and special characters
 - 8-bit byte/binary: data is encoded at 8 bits per character
@@ -51,12 +51,12 @@ The key elements of QR Codes include the following:
 - Finder (position detection) patterns - square bull's eye signs in three corners of a QR Code label. These patterns facilitate accurate and fast scanning at any orientation
 - Alignment pattern - added in QR versions only starting from Version 2 and higher and is intended to improve scanning in case of minor distortions of a QR Code label. It is a small square bull's eye sign placed among the input data modules
 - Timing patterns - one row and one column of black and white modules that encode the symbol version and density
-- Quiet zone space - an empty area around four QR Code label sides that is essential for scanning and facilitates symbol detection. Four or more empty cells are required to constitute the quiet zone
+- Quiet zone space - an empty area around four barcode sides that is essential for scanning and facilitates symbol detection. Four or more empty cells are required to constitute the quiet zone
   
 </details>
 
 ### **Size Dimentions**
-The basic QR Code standard support QR Code versions that range from Version 1 to Version 40. The minimal size of a QR code is 21 x 21 modules (Version 1) or 5.25 mm x 5.25 mm excluding margins. The maximal size (Version 40) is 177 x 177 modules. Each higher version contains four additional modules per side and has its own module configuration (the number of modules). To ensure successful scanning by most smartphones, QR Code labels should have a size of at least 2 cm x 2 cm (0.8 x 0.8 inches).  
+The basic QR Code standard support QR Code versions that range from Version 1 to Version 40. The minimal size of a QR Code is 21 x 21 modules (Version 1) or 5.25 mm x 5.25 mm excluding margins. The maximal size (Version 40) is 177 x 177 modules. Each higher version contains four additional modules per side and has its own module configuration (the number of modules). To ensure successful scanning by most smartphones, QR Code labels should have a size of at least 2 cm x 2 cm (0.8 x 0.8 inches).  
   
 |<p align="center">**QR Code Version 5**</p>|
 | :-: |
@@ -72,7 +72,7 @@ The actual minimal size of a QR Code image is 10 mm or 0.4 inches (as per the sc
 </details>
 
 ### **Encoding Capacity and Data Density**
-QR Code provides very high data density. Each QR Code version has its own maximum data capacity. The actual data capacity may vary according to the amount of information to be encoded, encoding type, and the error correction level. QR Codes can store up to 3 KB of data, namely, 2,953 bytes, 7,089 numerical digits, 4,296 letters, or 1,817 Japanese Kanji symbols. 
+QR Code provides very high data density. Each QR version has its own maximum data capacity. The actual data capacity may vary according to the amount of information to be encoded, encoding type, and the error correction level. QR Codes can store up to 3 KB of data, namely, 2,953 bytes, 7,089 numerical digits, 4,296 letters, or 1,817 Japanese Kanji symbols. 
 
 <details>  
 <summary>Read more</summary>

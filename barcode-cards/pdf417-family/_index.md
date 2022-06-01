@@ -1,7 +1,7 @@
 ---
 title: PDF417
-description: 
-key words:
+description: ""
+key words: ""
 type: docs
 weight: 30
 url: /barcode/pdf417-cards/
@@ -9,7 +9,7 @@ url: /barcode/pdf417-cards/
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/pdf417) and [Generate](https://products.aspose.app/barcode/generate/pdf417) PDF417 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
-PDF417 (Portable Data File 417) is a family of 2D stacked barcode types introduced to store large amounts of data in relatively small barcodes. Here, "417" denotes the approach used to encode a single digit: 4 bars and 4 spaces constituting a 17-module pattern. This barcode type can be used to encode both streams of bytes and Unicode symbols. PDF417 enables the extended format of metadata that allows splitting one portion of data into several barcode labels and then include them in a printed document to re-assemble later. PDF417 supports laser scanning for high-quality documentation. The PDF417 specification is summarized in the [ISO/IEC 15438](https://www.iso.org/standard/43816.html) document.
+PDF417 (Portable Data File 417) is a family of 2D stacked barcode types introduced to store large amounts of data in relatively small barcodes. Here, "417" denotes the approach used to encode a single digit: 4 bars and 4 spaces constituting a 17-module pattern. This symbology can be used to encode both streams of bytes and Unicode symbols. PDF417 enables the extended format of metadata that allows splitting one portion of data into several labels and then include them in a printed document to re-assemble later. PDF417 supports laser scanning for high-quality documentation. The PDF417 specification is summarized in the [ISO/IEC 15438](https://www.iso.org/standard/43816.html) document.
 
 ## **Overview**
 Basic PDF417 is a high-density variable-length barcode type supporting error correction. It allows encoding textual data, numerical digits, files, and streams of bytes. PDF417 suggests stacking many linear rows together thus increasing the amount of information that can be encoded compared to linear symbologies. PDF417 barcodes can be read by linear scanners, raster laser scanners, or special imaging devices. The shape of PDF417 barcode labels is rectangular. The size of a symbol can be customized according to specific business needs. It is important to maintain appropriate printing accuracy and suitable printer resolution to create high-quality barcode images. 
@@ -100,7 +100,7 @@ Error correction identifies two types of errors: 1) rejection errors (so-called 
 </details>
 
 ## **Advantages and Weaknesses**
-PDF417 allows encoding large amounts of text and information securely and efficiently. PDF417 barcodes can be read from left to right in a linear order by simple linear scanners. PDF417 provides a means for low-cost data transmission in a wide variety of applications. In addition to typical features of 2D barcode types, PDF417 provides the following benefits:
+PDF417 allows encoding large amounts of text and information securely and efficiently. PDF417 barcodes can be read from left to right in a linear order by simple linear scanners. PDF417 provides a means for low-cost data transmission in a wide variety of applications. In addition to typical features of 2D symbology, PDF417 provides the following benefits:
 - Linking. PDF417 barcodes can be linked to other PDF labels and then scanned in a sequence increasing the amount of information to be stored
 - User-specified dimensions. Users can determine the required the narrowest vertical bar heigh (X-dimension) the highest row width (Y dimension)
 - Public domain format. This specification can be implemented without any license

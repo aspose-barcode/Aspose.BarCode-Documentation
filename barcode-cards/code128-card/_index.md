@@ -1,7 +1,7 @@
 ---
 title: Code 128
 type: docs
-description: ""
+description: "code 128, code128, create code 128 barcode, read code 128, linear barcodes, 1D, 1D symbologies"
 key words: ""
 weight: 120
 url: /barcode/code128-card/
@@ -9,7 +9,7 @@ url: /barcode/code128-card/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code128) and [Generate](https://products.aspose.app/barcode/generate/code128) Code 128 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Code 128 is an efficient, high-density linear (1D) barcode type that allows encoding alphanumeric information. It includes verification protection both via a checksum digit and byte parity checking. Code 128 was invented in 1981 by Ted Williams of Laserlight Corporation to solve the problem of representing both alphabetic and numeric characters without sacrificing barcode density. This symbology has been widely implemented in many applications where a relatively large amount of data must be encoded in a relatively small amount of space. Its specific structure also allows numeric data to be encoded at, effectively, double-density. Today, Code 128 is one of the most widely used barcode types, for example for warehouse management, in the transport industry (e.g. by UPS or DHL) and in retail and non-retail environments, such as library books, membership cards, small items, etc.  
+Code 128 is an efficient, high-density linear (1D) barcode type that allows encoding alphanumeric information. It includes verification protection both via a checksum digit and byte parity checking. Code 128 was invented in 1981 by Ted Williams of Laserlight Corporation to solve the problem of representing both alphabetic and numeric characters without sacrificing barcode density. This symbology has been widely implemented in many applications where a relatively large amount of data must be encoded in a relatively small amount of space. Its specific structure also allows numeric data to be encoded at, effectively, double-density. Today, Code 128 is one of the most widely used barcode types, and has various applications, such as, for example, warehouse management, transport industry (e.g. UPS or DHL), as well as retail and non-retail environments, such as library manamegemt, membership cards, tracking small items, etc.  
   
 The specification for Code 128 is available in standard ISO/IEC 15417:2007.
 
@@ -25,16 +25,16 @@ Three different code sets or sub types are defined for Code 128 (namely Code 128
 <details> 
 <summary>Read more</summary>
 
-Code 128 A: all numeric values (0-9), uppercase alphabetic characters (A-Z), punctuation marks, seven special characters, and "control" characters (ASCII values 00 through 95)
-Code 128 B: all numeric values (0-9), uppercase and lowercase alphabetic characters (A-Z, a-z), punctuation marks, and seven special characters (ASCII values 32 through 127)
-Code 128 C: all numeric digit pairs from 00 through 99 and three special characters. This code set is numeric-only, but any one character actually represents two digits
+- Code 128 A: all numeric values (0-9), uppercase alphabetic characters (A-Z), punctuation marks, seven special characters, and "control" characters (ASCII values 00 through 95)
+- Code 128 B: all numeric values (0-9), uppercase and lowercase alphabetic characters (A-Z, a-z), punctuation marks, and seven special characters (ASCII values 32 through 127)
+- Code 128 C: all numeric digit pairs from 00 through 99 and three special characters. This code set is numeric-only, but any one character actually represents two digits
 
-The code set to use is indicated to the scanner by the start symbol or start character. Also available are various mode switching or shift characters to switch from one set to another within a barcode symbol. Usually the sub type selection and switching within a symbol is handled by the barcode software that creates the code.
+The option is indicated in the start character. It is possible to switch from one options to another within a single barcode.
   
 </details>
 
 ### **Structure**
-A Code 128 barcode has seven sections:
+Code 128 barcodes include the following elements:
 
 - Quiet zone
 - Start symbol
