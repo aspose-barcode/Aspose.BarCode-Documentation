@@ -1,5 +1,7 @@
 ---
 title: QR and Micro QR Codes
+description: "Read and generate QR Code and Micro QR Code in Aspose.BarCode for .NET"
+key words: "Qr Code, QR, Read Qr, Read QR Codes, Create Qr, Qr Image, How to generate QR Code, What is QR Code, Add Qr"
 type: docs
 weight: 40
 url: /net/qr-and-micro-qr-barcode/

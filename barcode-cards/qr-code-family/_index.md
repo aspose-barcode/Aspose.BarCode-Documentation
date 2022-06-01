@@ -1,28 +1,26 @@
 ---
 title: QR Code Family
-description: 
-key words:
+description: ""
+key words: ""
 type: docs
 weight: 10
-url: /qr-code-cards/
+url: /barcode/qr-code-cards/
 ---
 
-
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Code barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results.{{% /alert %}}
 
 ## **Overview**
 QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily read by smartphones and other devices equipped with common digital image sensors. The idea of a QR Code has been proposed as an advance of conventional linear barcodes and can contain much more information. They are capable of encoding large portions of data and provide very high recognition speed. Conceptually, a QR code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, QR Codes have multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, and many others. The operations of scanning, reading, and decoding QR Codes can be executed using cameras and special QR code scanner applications on mobile phones (mobile tagging). QR Code scanners are generally embedded into various mobile devices, and third-party scanner applications can download for any smartphone. After capturing a QR code image, a special application converts it into readable text or more often, into an URL link. 
 
-Apart from 40 basic variants, the QR Code symbology provides the Micro QR Code version. Micro QR codes can be used to save space for applications in which the data capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/net/micro-qr-card/).  
+Apart from 40 basic variants, the QR Code standard supports a special option called Micro QR Code. Such barcodes can be used to save space for applications in which the data capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/net/micro-qr-card/).  
 
 <p align="center"><img src="qrcodesample.png"></p>
   
-The detailed QR Code specification can be found in the [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html) standard.
+The specification for this barcode type has been published in the [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html) standard.
 
 {{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for QR Code generation and recognition:
 - [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-and-micro-qr-barcode/)
-- [**QR Code in Aspose.BarCode for .Java**]()
-- [**QR Code in Aspose.BarCode for .C++**]()
+
 {{% /alert %}} 
 
 ## **Features**
@@ -43,7 +41,7 @@ As an optional encoding feature, the QR Code standard supports the Extended Chan
 
 </details>
 
-### **Barcode Structure**
+### **Structure**
 Each QR Code label contains the following elements: square modules, finder patterns, timing patterns, alignment pattern, input data modules, error correction data modules, and quiet zone areas. QR Codes encode information as binary data in so-called modules (square dots). Black and while modules correspond to binaries 1 and 0, respectively.  
 
 <details>
@@ -107,7 +105,7 @@ Levels Q or H may be selected in industrial environments where the probabilty of
  
 The key advantages of QR codes are summarized below:
 
-- very high barcode reading speed owing to geometrical specifics
+- very high reading speed owing to geometrical specifics
 - scanning capability through common mobile devices
 - simple creation procedure
 - readability from any angle
@@ -117,7 +115,7 @@ The key advantages of QR codes are summarized below:
 - high data encoding density
 - customizable error correction mechanism that allows recovering up to 30% of encoded information at the maximal level H 
   
-However, QR Code barcodes are sensitive to substantial damages of the target pattern as it can prevent from correct barcode scanning and recognition.
+However, QR Codes are sensitive to substantial damages of the target pattern as it can prevent from correct scanning and recognition.
 
 ## **Aspose Samples for QR Code Generation and Recognition**
 
@@ -169,7 +167,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
-//Read QR Barcode
+//Read QR Code
 using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
