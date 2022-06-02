@@ -39,11 +39,7 @@ The key elements of Micro QR Codes are:
 
 ### **Size Dimentions**
 Micro QR Code versions range from M1 to M4 for Micro QR Code. Each version has its own module configuration or the number of modules. Micro QR codes can range from 11 x 11 modules or 2.75 mm x 2.75 mm excluding margins to 17 x 17 modules.
-    
-|<p align="center">**Micro QR Code Version M1**</p>|<p align="center">**Micro QR Code Version M4**</p>|
-| :-: | :-: |
-|<img src="qrcodeversionm1.png">|<img src="qrcodeversionm4.png">|
-  
+     
 ### **Encoding Capacity and Data Density**
 Micro QR Codes can encode up to 35 numerical digits (21 alpabetical symbols) or 15 bytes. 
 

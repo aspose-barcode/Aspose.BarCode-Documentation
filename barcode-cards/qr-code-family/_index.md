@@ -58,9 +58,9 @@ The key elements of QR Codes include the following:
 ### **Size Dimentions**
 The basic QR Code standard support QR Code versions that range from Version 1 to Version 40. The minimal size of a QR Code is 21 x 21 modules (Version 1) or 5.25 mm x 5.25 mm excluding margins. The maximal size (Version 40) is 177 x 177 modules. Each higher version contains four additional modules per side and has its own module configuration (the number of modules). To ensure successful scanning by most smartphones, QR Code labels should have a size of at least 2 cm x 2 cm (0.8 x 0.8 inches).  
   
-|<p align="center">**QR Code Version 5**</p>|
-| :-: |
-|<img src="qrcodeversion05.png">|
+|QR Code Version 5|Micro QR Code Version 4|
+| :-: | :-: |
+|<img src="qrcodeversion05.png">|<img src="qrcodeversionm4.png">|
   
 <details>  
 <summary>Read more</summary>

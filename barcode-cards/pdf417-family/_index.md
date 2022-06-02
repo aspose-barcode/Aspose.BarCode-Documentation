@@ -1,5 +1,5 @@
 ---
-title: PDF417
+title: PDF417 Family
 description: ""
 key words: ""
 type: docs
