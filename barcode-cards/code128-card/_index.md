@@ -56,7 +56,7 @@ There are 108 possible 11-unit wide symbols, and the code uses all possible symb
 </details>
 
 ### **Size Dimentions**
-The recommended minimum symbol height for manual scanning is 5.0 mm or 15 percent of the symbol width (excluding quiet zones), whichever is greater. The quiet zones must be at least 10X wide, where "X" is the current X dimension. The most basic unit of measure within a barcode is the x-dimension and is equivalent to the width of the most narrow bar or space within the barcode.  Each character is 11 x-dimensions wide (except for the STOP character which is 13 wide).  The minimum size of the x-dimension is 0.0075 inches.  The overall length of a barcode varies because the number of DATA characters may vary.
+The recommended minimum symbol height for manual scanning is 5.0 mm or 15 percent of the symbol width (excluding quiet zones), whichever is greater. The quiet zones must be at least 10X wide, where "X" is the current X dimension<!-->Create 'What is x-dimension?' page and add link to it here<-->. Each character is 11 x-dimensions wide (except for the STOP character which is 13 wide). The minimum size of the x-dimension is 0.0075 inches.  The overall length of a barcode varies because the number of data characters may vary.
 
 ### **Encoding Capacity and Data Density**
 Code 128 is a variable length code, which in principle can encode an arbitrary length of data. The practical content limit for Code 128 is at 30 characters (large cap and small cap letters) or a maximum of 60 digits (purely numeric code). Code-128 can be very compact due to the "double-density compression" of data, when two numbers are written into one barcode modulus, which makes encoding long strings of digits much more efficient.
@@ -68,7 +68,7 @@ Code 128 requires adding a mandatory check digit to detect errors. Chechsum calc
 ## **Advantanges and Limitations**
 For 1D barcodes, Code 128 is generally the most compact (able to encode the most data in the smallest physical space).  The amount of data is variable allowing the user to encode as much or as little data as is needed.  And finally, it maintains a high level of data integrity with parity bits to verify each character and a check character to verify the data package as a whole.
 
-As CODE 128 uses 4 types of bar size, printers with high print quality are required. CODE 128 is not suitable for printing with dot matrix printers and FA ink-jet printers and for flexographic printing on corrugated cardboards. 
+As Code 128 uses 4 types of bar size, printers with high print quality are required. CODE 128 is not suitable for printing with dot matrix printers and FA ink-jet printers and for flexographic printing on corrugated cardboards. 
 
 ## **Aspose Samples for Code 128 Generation and Recognition**
 ### **Code 128 Generation Code Samples**

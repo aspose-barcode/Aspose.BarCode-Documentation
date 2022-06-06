@@ -19,7 +19,7 @@ Aztect Compact Code is a version of Aztec Code that allows creating smaller barc
 This symbology supports all 255 ASCII characters (digits 0-9, text, and binary data). 
 
 ### **Structure**
-A compact Aztec Code symbol has two white and two black finder pattern rings (in addition to the center square), one to four data layers, and no reference grid. The core symbol, always square and at the exact center of an Aztec Code symbol, consists of a finder pattern, orientation patterns, and a mode message. This core covers an 11x11 module area in compact symbols. It is called the core symbol as it must be successfully detected and decoded before decoding can proceed into the surrounding data fields. Compact Aztec Code symbols, which are of limited size, have no reference grid structure. Because Aztec Runes are read from the inside out, no quiet zone is required.
+A compact Aztec Code symbol has two white and two black finder pattern rings (in addition to the center square), one to four data layers, and no reference grid. The core symbol, always square and at the exact center of an Aztec Code symbol, consists of a finder pattern, orientation patterns, and a mode message. This core covers an 11x11 module area in compact symbols. It is called the core symbol as it must be successfully detected and decoded before decoding can proceed into the surrounding data fields. Compact Aztec Code symbols, which are of limited size, have no reference grid structure. Because Aztec Codes are read from the inside out, no quiet zone is required.
 
 <details>  
 <summary>Read more</summary>

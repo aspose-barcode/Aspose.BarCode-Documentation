@@ -13,7 +13,7 @@ url: /databar-truncated-card/
 
 - **GS1 DataBar Stacked** is a GS1 DataBar Omnidirectional symbol that is reduced in height and split into two rows with a separator pattern between them. It is identical to GS1 DataBar Stacked Omnidirectional except that the total height is reduced to as low as 13 modules. 
 
-encodes a 14-digit numeric data stream. It supports the encodation of the Global Coupon Number (GCN) and the following Global Trade Item Numbers (GTINs): GTIN-8, GTIN-12, GTIN-13, and GTIN-14. If the GCN or GTIN has fewer than 14 characters, leading zeros are appended to the left of the data so that a total of 14 characters is encoded. 
+GS1 DataBar Stacked encodes a 14-digit numeric data stream. It supports the encodation of the Global Coupon Number (GCN) and the following Global Trade Item Numbers (GTINs): GTIN-8, GTIN-12, GTIN-13, and GTIN-14. If the GCN or GTIN has fewer than 14 characters, leading zeros are appended to the left of the data so that a total of 14 characters is encoded. 
 
 Due to the compact size, these barcode types are mainly used in the health care industry.
 

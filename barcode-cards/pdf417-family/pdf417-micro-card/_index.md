@@ -51,7 +51,7 @@ The symbol comprises the following elements per row:
 - Closing quiet zone
 
 ### **Size Dimentions**
-Micro PDF417 symbol dimensions depend on the amount of data that is entered. The height of any Micro PDF417 symbol can range from 4 to 44 rows, and the row height can range from 1X to 10X, where "X" is the current X dimension. The width of a symbol can range from 40X to 101X. A minimum quiet zone of 1X is required on all sides.
+Micro PDF417 symbol dimensions depend on the amount of data that is entered. The height of any Micro PDF417 symbol can range from 4 to 44 rows, and the row height can range from 1X to 10X, where "X" is the current X dimension<!-->Create 'What is x-dimension?' page and add link to it here<-->. The width of a symbol can range from 40X to 101X. A minimum quiet zone of 1X is required on all sides.
 
 ### **Encoding Capacity and Data Density**
 Micro PDF417 is capable of encoding at most 150 bytes of data or 266 alphanumeric characters or 366 numerical digits in configurations including up to 4 columns and 44 rows.
