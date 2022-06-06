@@ -50,6 +50,7 @@ Data Matrix requires a one-module-wide quiet zone on all sides.
 
 <details>  
 <summary>Read more</summary>
+DataMatrix barcodes include the following elements:
 Data regions that contain square modules in an array
 Quiet zone: Surrounds the symbol on all four sides and the minimum quiet zone is originally equal to X.
 Finder pattern: Located between the data region and quiet zone. And its width should be the value of X.

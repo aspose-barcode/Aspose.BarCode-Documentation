@@ -24,7 +24,7 @@ Aztec Code was developed in 1995 by Andrew Longacre and Robert Hussey at Welch A
 
 <p align="center"><img src="aztecfullrange.png"></p>
 
-{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for QR Code generation and recognition:
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for Aztec Code generation and recognition:
 - [**Aztec Code in Aspose.BarCode for .NET**](/barcode/net/aztec-barcode/)
 
 {{% /alert %}} 

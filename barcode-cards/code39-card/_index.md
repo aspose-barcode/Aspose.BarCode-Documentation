@@ -33,8 +33,8 @@ The symbol comprises the following elements:
 - Intercharacter spaces (one module wide) that separate characters within the symbol
 
 ### **Size Dimentions**
-The recommended minimum symbol height for manual scanning is 5.0 mm or 15 percent of the symbol width (excluding quiet zones), whichever is greater. The quiet zones must be at least 10X wide, where "X" is the current X dimension.  
-Code 39 can be to produced in different proportions: 2:1 and 3:1. This is the proportion between the thin and the thick lines of the code. As higher the proportion, the wider is the printed barcode with same contents, but even better is readability. ActiveBarcode always used the proportion 3:1.
+The recommended minimum symbol height for manual scanning is 5.0 mm or 15 percent of the symbol width (excluding quiet zones), whichever is greater. The quiet zones must be at least 10X wide, where "X" is the current X dimension<!-->Create 'What is x-dimension?' page and add link to it here<-->.  
+Code 39 can be to produced in different proportions: 2:1 and 3:1. This is the proportion between the thin and the thick lines of the code. As higher the proportion, the wider is the printed barcode with same contents, but even better is readability.
 
 ### **Encoding Capacity and Data Density**
 Code 39 barcodes are variable length and usually store from 20 to 23 alphanumerical symbols.  
