@@ -1,58 +1,53 @@
 ---
 title: DataBar Limited
 type: docs
-description: ""
-key words: ""
+description: "Information about DataBar Limited Barcode Type"
+key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
 weight: 40
-url: /databar-limited-card/
+url: /info-cards/databar-limited/
 ---
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results online.{{% /alert %}}
 
 ## **Overview**
-DataBar Limited is a fixed-length symbology that supports the encodation of Global Trade Item Numbers (GTINs) that begin with "0" or "1". It is used for applications where space is extremely limited and omnidirectional scanning is not required. Due to its compact size, this symbology is mainly used in the health care industry.
+DataBar Limited is a fixed-length barcode type that supports encoding selected Global Trade Item Numbers (GTINs) that start with 0 or 1. It is intended for use in applications where space limitations are crucial and omnidirectional scanning is not needed. 
 
 <p align="center"><img src="databarlimited.png"></p>
 
 ## **Features**
   
 ### **Encoding Character Set**
-This symbology supports all numeric digits (0-9). 
-
+This symbology allows encoding all numerical digits (0-9). 
 
 ### **Barcode Structure**
-The symbol comprises the following elements:
+The structure includes the following elements:
 - Left guard pattern (narrow space, narrow bar)
 - Left data character
 - Check digit
 - Right data character
 - Right guard pattern (narrow space, narrow bar, wide space)
 
-A quiet zone is not required.
+The first digit serves as a flag to specify whether this barcode will be utilized as a part of a composite barcode. The remaining 13 digits are used as data characters. The height of a barcode should be at least 10 modules. Data characters have a width of 26 modules including 7 bars and 7 spaces with a check character of 18 modules in between that also comprises 7 bars and 7 spaces. Quiet zones are not required.  
 
-The first digit is a flag that indicates whether the barcode is part of a composite barcode, and the 13 digits that follow comprise the data characters. The height is at least 10 modules. There are two data characters, which are 26 modules wide with seven bars and seven spaces. Between them is a check character of 18 modules that also contains seven bars and seven spaces.
-
-
-### **Size Dimentions**
-DataBar Limited barcodes are composed of 46 bars and spaces, in a total, 74 modules.
+### **Size Dimensions**
+DataBar Limited barcodes consist of 46 bars and spaces including 74 modules in total.
 
 ### **Encoding Capacity and Data Density**
+This symbology allows encoding 14-digit numerical data streams.
 
+### **Checksum Controls**
+DataBar Limited barcodes include a check digit calculated using the modulo 89 algorithm.
 
-### **chesum Controls**
-DataBar Limited contains a check digit that uses the modulo 89 algorithm.
-
-## **Advantanges and Weaknesses**
-This DataBar subtype is not intended for retail point-of-sale scanning.
+## **Advantages and Weaknesses**
+This DataBar specification is not intended for retail point-of-sale scanning. Its main advantage is high compactness, which can be useful in applications with strict placement space limitations.
 
 ## **Aspose Samples for DataBar Limited Barcodes**
 
-### **DataBar Limited Generation Code Samples**
+### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//GENERATE
 {{< highlight csharp>}}
 //generate DataBar Limited Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarLimited, "(01)12345678901231"))
@@ -78,13 +73,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarLimited, "
 
 {{< /tabs >}}
 
-### **DataBar Limited Recognition Code Samples**
+### **Recognition Code Samples**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//RECOGNIZE
 {{< highlight csharp>}}
 //recognize DataBar Limited Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataBarLimited.png", DecodeType.DatabarLimited))

@@ -1,7 +1,7 @@
 ---
 title: Aztec Compact Code
-description: ""
-key words: ""
+description: "Overview on Aztec Compact Code Barcode Type"
+key words: "Aztec Code, aztec compact code, aztec compact barcode, aztec compact symbology, Create aztec compact barcodes, Read aztec codes, read aztec compact code, what is aztec compact barcode, aztec compact barcodes, generate aztec compact code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec compact generator, aztec compact reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 30
 url: /barcode/aztec-compact-card/
@@ -9,7 +9,7 @@ url: /barcode/aztec-compact-card/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/aztec) and [Generate](https://products.aspose.app/barcode/generate/aztec) Aztec barcodes online. You can test the quality of ***Aspose.BarCode*** recognition functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Aztect Compact Code is a version of Aztec Code that allows creating smaller barcodes using a simplified pattern configuration. A compact Aztec Code label has 2 white and 2 black finder pattern rings in addition to the center square, from 1 to 4 data layers only, and no reference grid. This symbology may be useful in cases when space limitations are crucial and the amount of data to be encoded is small.
+Aztec Compact Code is a version of Aztec Code that allows creating more compact barcodes using the simplified pattern configuration. Compact Aztec Code labels comprise 2 white and 2 black finder pattern rings in addition to the center square, from 1 to 4 data layers only, and no reference grid. This symbology may be useful in cases when space limitations are crucial and the size of the input message to be encoded is not large.
 
 <p align="center"><img src="azteccompact.png"></p>
 
@@ -19,38 +19,38 @@ Aztect Compact Code is a version of Aztec Code that allows creating smaller barc
 This symbology supports all 255 ASCII characters (digits 0-9, text, and binary data). 
 
 ### **Structure**
-A compact Aztec Code symbol has two white and two black finder pattern rings (in addition to the center square), one to four data layers, and no reference grid. The core symbol, always square and at the exact center of an Aztec Code symbol, consists of a finder pattern, orientation patterns, and a mode message. This core covers an 11x11 module area in compact symbols. It is called the core symbol as it must be successfully detected and decoded before decoding can proceed into the surrounding data fields. Compact Aztec Code symbols, which are of limited size, have no reference grid structure. Because Aztec Runes are read from the inside out, no quiet zone is required.
+Compact Aztec Code barcodes are composed of the central black square, two white, and two black finder pattern rings that constitute the core symbol. Then, it is surrounded by several data layers (from 1 to 4). No reference grid is included. The core symbol is placed at the center of a label and comprises a finder pattern, orientation patterns, and a mode message. In Compact Aztec barcodes, the core symbol has the size of 11x11 modules. No quiet zones are needed.
 
 <details>  
 <summary>Read more</summary>
-- The finder pattern in Aztec Code is a set of concentric square rings. Centered on a single dark module, there is a ring of light modules surrounded by a larger ring of dark modules, and so forth outward to a second 9x9 module dark ring in compact symbols
-- Four 3-module chevron-shaped orientation patterns are located at the corners of the finder pattern. The upper lefthand pattern is all dark and the lower lefthand pattern is all light, while the upper righthand pattern has 2 modules dark and the lower right pattern has just 1 module dark
-- Mode message. The single layer of bits adjoining the finder pattern, excluding the orientation patterns and in full-range symbols also excluding the center bit along each side (which is part of the reference grid), comprises an error-corrected Mode Message wrapped in a clockwise direction starting from the upper left corner. This message explicitly encodes both the number of data layers in the overall symbol (and thus its size) and the number of datawords in those layers, the rest being error correction checkwords for that message
-- The data fields symmetrically surround the Core Symbol with one or more data layers
-- The message data themselves plus their error correction words are laid into 2-module thick layers, spiralling clockwise from the upper left corner of the Core Symbol outward, and in full-range symbols necessarily skipping over module positions occupied by the reference grid. Compact Aztec Code symbols can have from one to four data layers, while full-range Aztec Code symbols can have from one up to 32 data layers
+
+- The finder pattern is a set of concentric square rings and a single dark module.
+- Four three-module chevron-shaped orientation patterns are located at the corners of the finder pattern.
+- Mode message is the single layer of bits attached to the finder pattern. It contains error correction codewords that are structured in a clockwise direction starting from the upper left corner.
+- Data fields symmetrically surround the core symbol with one or more data layers (1-4).
+- Input message together with error correction codewords is organized in 2-module thick layers that are placed along a spiral clockwise from the upper left corner of the core symbol. 
 
 </details>
 
-### **Size Dimentions**
-In compact Aztec Code barcodes, the core may be surrounded by 1 to 4 layers thus the label size can vary from 15 × 15 to 27 × 27 modules.
+### **Size Dimensions**
+In Compact Aztec Code, the core symbol may be surrounded by 1 to 4 layers thus the label size can vary from 15×15 to 27×27 modules.
 
 ### **Encoding Capacity and Data Density**
-Compact Aztec can encode up to 53 byte or 110 numerical (89 alphanumeric) digits. One-layer Compact Aztec barcode composed of 15 x 15 modules (the smallest option) can encode at most 13 textual symbols or 12 numerical digits. The description of all available size combinations and corresponding data capacity values can be found in the ISO standard specification for Aztec Code. 
+This symbology can encode up to 53 bytes or 110 numerical or 89 alphanumeric characters. The most compact configuration corresponds to a one-layer Compact Aztec barcode comprising 15x15 modules that can encode at most 13 textual symbols or 12 numerical digits. The description of all available size combinations and corresponding capacity values can be found in the ISO standard specification for Aztec Code. 
 
 ### **Error Correction**
-See article [Aztec Barcode Family](/barcode/aztec-cards/)   
+See the article [Aztec Barcode Family](/barcode/aztec-cards/)   
 
-## **Advantanges and Weaknesses**
-See article [Aztec Barcode Family](/barcode/aztec-cards/)
+## **Advantages and Weaknesses**
+See the article [Aztec Barcode Family](/barcode/aztec-cards/)
 
 ## **Aspose Samples for Aztec Compact Generation and Recognition**
-### **Aztec Compact Generation Code Samples**
+### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//GENERATE
 {{< highlight csharp>}}
 //generate Aztec Compact Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
@@ -80,13 +80,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 
 {{< /tabs >}}
 
-### **Aztec Compact Recognition Code Samples**
+### **Recognition Code Samples**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//RECOGNIZE
 {{< highlight csharp>}}
 //recognize Aztec Compact Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeType.Aztec))

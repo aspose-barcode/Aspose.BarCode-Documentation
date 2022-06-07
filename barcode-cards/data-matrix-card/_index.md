@@ -1,121 +1,106 @@
 ---
-title: DataMatrix
-description: 
-key words:
+title: Data Matrix
+description: "General Overview on Data Matrix Barcode Type"
+key words: "DataMatrix, data matrix, data matrix symbology, Create datamatrix barcodes, Read data matrix, what is data matrix, data matrix barcodes, generate datamatrix, matrix barcodes, 2D symbology, data matrix specification, data matrix generator, data matrix reader, recognize data matrix, scan data matrix"
 type: docs
 weight: 70
-url: /barcode/datamatrix-card/
+url: /barcode/data-matrix-card/
 ---
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/datamatrix) and [Generate](https://products.aspose.app/barcode/generate/datamatrix) DataMatrix barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/datamatrix) and [Generate](https://products.aspose.app/barcode/generate/datamatrix) Data Matrix barcodes online. You can test ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-DataMatrix is a highly efficient two-dimensional (2D) barcode symbology that encodes data in graphical symbols composed of square modules with a unique border pattern that facilitates detecting cell locations and further decoding. It is a widespread industrial barcode standard that enables encoding sets of characters and byte streams in square or rectangular barcodes. The normative standards for the DataMatrix symbology are described in the [ISO/IEC 16022:2000]() and [ISO/IEC 24720:2006]() specifications. This symbology supports two main groups of standards that are described further.
-
-
-<p align="center"><img src="datamatrixcode.png"></p>
-
+Data Matrix is a highly efficient two-dimensional (2D) barcode type that encodes information in graphical labels consisting of square black modules with a unique pattern on the border that facilitates detecting cell locations and decoding. It is a widely used industrial symbology that allows encoding byte streams and character sets in square or rectangular images. Specifications for Data Matrix are provided in standards ISO/IEC 16022:2000 and [ISO/IEC 24720:2006]. This symbology provides two groups of standards that are outlined below.  
+This information card describes main properties of Data Matrix, its encoding set, structure, size dimensions, capacity, and the error correction mechanism. Code samples for generation and reading through the ***Aspose.BarCode*** library can be found [further](#asposesamples).
+  
+<p align="center"><img alt="Data Matrix Barcode" src="datamatrixcode.png"></p>
+  
 <details>  
 <summary>Read more</summary>
-
-|DataMatrix Standard|Description|
+  
+|Data Matrix Standard|Overview|
 |---|---|
-|ECC 000-140|Outdated standards that enable only square-shaped configuration, use obsolete encoding methods, and provide error correction based on convolutional codes. They are applied only to resolve industrial needs based on legacy specifications|
-|ECC 200|Actual standard that allows generating both square and rectangular barcodes, relies on modern encoding methods, and supports Reed-Solomon error correction. It is recommended for use in modern applications|
-
+|ECC 000-140|Legacy set of standards that allow generating square barcode labels only, rely on outdated encoding algorithms and enable convolutional error correction. These standards are currently used only for industrial tasks related to legacy requirements|
+|ECC 200|Present standard that supports square and rectangular shapes, uses actual encoding approaches and enables Reed-Solomon error correction|
+  
 </details>
+
+{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode for .NET*** for Data Matrix generation and recognition:
+- [**Data Matrix Barcodes**](https://docs.aspose.com/barcode/net/datamatrix-barcode/)
+
+{{% /alert %}} 
 
 ## **Features**
   
 ### **Encoding Character Set**
-DataMatrix barcodes can be used to encode alphabetical characters, numbers, and bytes of data, including Unicode characters and images. Specifically, this barcode type supports ASCII, ISO, and Extended Binary Coded Decimal Interchange Code (EBCDIC) characters.  
-  
-More specifically, the DataMatrix standard includes six encoding modes: ASCII, Text, C40, X12, EDIFACT, and Base 256. The ASCII encoding is the most often used one. The encoding and decoding processes are quite complex.
+Data Matrix can be used to encode textual information, numerical digits, and bytes of data, including ASCII and Extended Binary Coded Decimal Interchange Code (EBCDIC) symbols.  
+Six encoding modes are supported: ASCII, C40, Text, EDIFACT, Base 256, and X12. The ASCII encoding is the most widely used mode.
   
 <details>  
 <summary>Read more</summary>
-There are multiple encoding modes used to store different kinds of information for Data Matrix ECC 200:
 
-- ASCII: Double digit numerics, ASCII values 0 - 127, and Extended ASCII values 128 - 255
-- C40: Upper-case alphanumeric, Lower case and special characters
-- Text: Lower-case alphanumeric, Upper case and special characters
-- X12: ANSI X12 EDI data set
-- EDIFACT: ASCII values 32 - 94
-- Base 256: All byte values 0 - 255
+- ASCII: double numerical digits, ASCII symbols from 0 to 127, and Extended ASCII symbols from 128 to 255
+- C40: upper-case English letters, numerical digits, and special symbols
+- Text: lower-case English letters, numerical digits, and special symbols
+- X12: ANSI X12 EDI set
+- EDIFACT: ASCII symbols from 32 to 94
+- Base 256: byte characters from 0 to 255
 
 </details>
 
 ### **Structure**
-DataMatrix barcodes are composed of black and white cells that are typically arranged in a square pattern (although rectangular patterns also exist). Each Data Matrix is comprised of quiet zone, a finder pattern and alignment patterns. And the dimensions of them are decided by X that indicates the horizontal and vertical width of a module. The finder pattern around the perimeter of the symbol consists of a solid line on the left and bottom edges and a pattern of alternating black and white modules along the right and top edges. The data area of DataMatrix codes is surrounded by an L-shaped frame called the alignment pattern and dotted lines called the clock pattern. Readers capture these patterns to determine the position of the code with image processing. Thus, DataMatrix codes can be read from any direction. 
-Data Matrix requires a one-module-wide quiet zone on all sides.
+Data Matrix labels consist of black and white cells grouped in square (or rectangular) patterns. The main structural elements are: finder pattern, alignment patterns, and quiet zones on four sides. The finder pattern (clock pattern) is represented as a sequence of black and white modules on the right and top borders and a solid line on the left and bottom borders. Scanners use these patterns to identify the area in which input information is encoded. This allows for barcode reading from any angle. 
 
-<details>  
-<summary>Read more</summary>
-Data regions that contain square modules in an array
-Quiet zone: Surrounds the symbol on all four sides and the minimum quiet zone is originally equal to X.
-Finder pattern: Located between the data region and quiet zone. And its width should be the value of X.
-Alignment pattern: In larger DataMatrix, this pattern will be presented, whose width should be equivalent to value of 2X.
-
-</details>
-
-### **Size Dimentions**
-The most popular application for DataMatrix is marking small items, due to the code's ability to encode fifty characters in a symbol that is readable at 2 or 3 mm2.
-The size of a Data Matrix symbol depends on the amount of data that is entered. If ECC 000-140 is used, the symbol size in modules can be from 9 x 9 to 49 x 49, with an odd number of rows and columns. If ECC 200 is used, the symbol size in modules can be anywhere from 10 x 10 to 144 x 144, with an even number of rows and columns. It is possible for an ECC 200 symbol to have more columns than rows and therefore have a rectangular shape. The DataMatrix Rectangular Extension (DMRE) provides additional rectangular formats like 8x48 or 8x64. 
-DataMatrix barcodes can be divided into at most 16 parts if required. Thereafter, the input information still can be reconstructed accurately regardless of the order when those symbols are scanned.
+### **Size Dimensions**
+Data Matrix allows encoding fifty characters in a barcode with a size of 2 or 3 squared mm that remains scannable. The actual size of a label may vary according to the amount of information to be encoded. In the ECC 000-140 configuration, the size can range from 9x9 to 49x49 modules, having an odd number of rows and columns. If ECC 200 is applied, configurations from 10x10 to 144x144 modules are supported; they can contain only an even number of rows and columns. If the rectangular shape is required, ECC 200 allows setting the number of columns greater than the number of rows. The Data Matrix Rectangular Extension (DMRE) supports rectangular formats, e.g. 8x48 or 8x64.
 
 <details>  
 <summary>Read more</summary>
 
-DataMatrix includes 24 square formats but only six rectangular formats with a data capacity in the lower range. Specifically small surfaces benefit from rectangular formats; thus resulting in a demand for rectangular versions with higher data volume.
-Data Matrix ECC200 configurations can be divided into two categories:
-- 24 square symbol configurations sizing from 10x10 to 144x144 (even values only and not including quiet zones);
-- 6 rectangular symbol configurations sizing respectively 8x18, 8x32, 12x26, 12x36, 16x36, 16x48 (not including quiet zones).
-
-The actual size of the DataMatrix code is determined by multiplying the symbol size by the printable size of the module.
-
-When the size of the module is 0.25 mm,
-- Symbol size: 10 x 10 modules = 2.5 x 2.5 mm
-- Symbol size: 32 x 32 modules = 8.0 x 8.0 mm
-- Symbol size: 8 x 18 modules = 2.0 x 4.5 mm
+ECC 200 supports the following configurations:
+- 24 square options ranging from 10x10 to 144x144 modules (excluding quiet zones);
+- 6 rectangular variants, i.e., 8x18, 8x32, 12x26, 12x36, 16x36, and 16x48 modules (excluding quiet zones).
+  
+The actual size of a barcode can be estimated through multiplying the printable size of a module by the number of modules.  
+For Data Matrix, the size of one module is 0.25 mm, thus:
+- Configuration 10x10 modules has the size of 2.5x2.5 mm;
+- Configuration 32x32 modules has the size of 8.0x8.0 mm;
+- Configuration 8x18 modules has the size of 2.0x4.5 mm;
+- and so on.
 
 </details>
 
 ### **Encoding Capacity and Data Density**
-In the maximal configuration, DataMatrix barcodes include 144 rows and columns and contain up to 1,555 bytes or 3,116 numerical (2,335 ASCII) symbols. Data Matrix symbols are printed in square or sometimes a rectangular pattern. Each dot of a Data Matrix symbol represents a bit. This is in contrast to linear bar-codes, where the information is encoded in the ratio of the bars or spaces to each other. Usually a black dot in a Data Matrix symbol is equivalent with the bit-value 1, but Data Matrix may also be printed white on black. Due to internal data compression algorithms the exact data capacity depends on the structure of the data to be encoded. The maximum Data Matrix capacity is also influenced by available printing space and the printer resolution.
-
-<details>  
-<summary>Read more</summary>
-It is recommended to limit the amount of data encoded in each symbol to 800 characters or less if possible. Although the AIM Data Matrix specifications state, “up to 2335 alpha numeric characters can be encoded,” it has been determined that these numbers are not realistic. The amount of data that can be encoded will vary depending upon the type of data, the encoding mode and what the scanner can read. In most implementations, the amount of data that can be encoded is significantly decreased due to mode switching between different types of characters, such as between numbers, upper case, lower case and punctuation.
-</details>
-
+In the maximum configuration, Data Matrix barcodes contain 144 rows and columns and can encode at most 3,116 numerical digits or 2,335 alphanumeric symbols or 1,555 bytes. Each module decodes a bit of information. The exact encoding capacity may vary depending on the size and structure of an input message due to the specifics of compression algorithms. The maximum capacity also depends on the printing area and printer resolution.
+ 
+The amount of information stored in each barcode should be limited to 800 characters or less. In practice, the capacity of 2,335 alphanumeric symbols is unlikely to be achievable. In the majority of applications, the actual capacity is less due to switching between various types of symbols (numbers, upper case, lower case, and punctuation marks).
+ 
 ### **Error Correction**
-DataMatrix barcodes include additional information that is used in error correction for data integrity check and data recovery. Owing to this, even severely distorted or damaged barcode labels can be decoded at least partially. The DataMatrix ECC 200 specification relies on the Reed-Solomon algorithm to perform error detection and correction, while ECC 000-140 standards use convolutional error correction. The majority of existing implementations comply with the ECC 200 error correction method endorsed by ANSI/AIM BC11 and the ISO/IEC 16022 specifications. ***Aspose.BarCode*** supports both these standards. 
+Data Matrix allows storing additional information that serves for error correction to ensure barcode integrity and perform recovery. This approach allows restoring information from distorted or corrupted barcode labels at least in part. The ECC 200 standard supports Reed-Solomon error correction; ECC 000-140 specifications rely on a less advanced convolutional mechanism. Most modern applications are compatible with ECC 200 described in ISO/IEC 16022. Reed-Solomon error correction is capable of restoring two types of invalid codewords: unreadable or incorrectly scanned symbols and a falsely interpreted digit. 
 
-<details>  
-<summary>Read more</summary>
-Reed-Solomon error correction allows correcting two types of incorrect codewords: improperly scanned or unreadable character or a incorrectly decoded symbol. 
-</details>
 
 ## **Advantages and Weaknesses**
-DataMatrix barcodes are capable of encoding large portions of data in a compact format. DataMatrix allows generating barcode labels that are approximately 30 times smaller than Code 39 ones representing the same amount of data. Moreover, DataMatrix is recommended for use for the purposes of sending barcodes over faxed documents as it allows mitigating various resolution and scanning issues.
+Data Matrix enables encoding large amounts of information in compact barcode labels that are roughly 30 times smaller compared with Code 39 for the same input message. It is suitable to send documents with barcodes through fax as it allows avoiding problems with resolution and scanning.  
+This symbology has been widely applied to different fields, including healthcare, business, defense, finance, logistics, and many others. Given that Data Matrix barcodes have the smallest achievable size, they can be very useful when it is necessary to track small items. They are also used to mark printed documents, e.g. letters.  
 
 <details>  
 <summary>Read more</summary>
-
-DataMatrix has been actively used in various spheres, such as defense, healthcare, business, finance, logistics management, and many others. Owing to the fact that the minimal achievable size of a DataMatrix label is the smallest among various barcode types, it is specifically suitable to mark small items. At present, it is also widely used to mark printed media, such as, for example, letters.  
   
-In the special study conducted at The Center of Automatic Identification at Ohio University, it has been found that the statistical probability of DataMatrix barcode incorrect reading is 1 across 10.5 million scans. This is the reason to consider DataMatrix barcodes highly reliable compared with linear Code 39 barcodes that demonstrated the probability of incorrect recognition equal to 1 in 1.7 million cases.
+In the study directed by The Center of Automatic Identification at Ohio University, it has been stated that the statistical probability of incorrect recognition of a Data Matrix barcode is 1 across 10.5 million cases. This allows considering this barcode type as highly reliable compared with the Code 39 symbology that showed the probability of false reading being 1 in 1.7 million cases.
 
 </details>
 
-## **Aspose Samples for DataMatrix Generation and Recognition**
-### **DataMatrix Generation Code Samples**
+## **Aspose Samples for Data Matrix Generation and Recognition**
+
+<a name="asposesamples"></a>
+
+### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
-//generate DataMatrix Barcode
+//generate Data Matrix Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -144,14 +129,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
 
 {{< /tabs >}}
 
-### **DataMatrix Recognition Code Samples**
+### **Recognition Code Samples**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
-//recognize DataMatrix Barcode
+//recognize Data Matrix Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeType.DataMatrix))
     foreach (BarCodeResult result in read.ReadBarCodes())
     {

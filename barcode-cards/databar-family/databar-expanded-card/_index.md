@@ -1,67 +1,66 @@
 ---
 title: DataBar Expanded / Expanded Stacked
 type: docs
-description: ""
-key words: ""
+description: "Information about DataBar Expanded Barcode Type and Its Stacked Version"
+key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
 weight: 30
-url: /databar-expanded-card/
+url: /info-cards/databar-expanded/
 ---
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can check ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-- **DataBar Expanded** is intended for applications that require supplementary data to be encoded. In addition to encoding the Global Trade Item Number (GTIN) or Global Coupon Number (GCN), GS1 DataBar Expanded can encode additional application identifiers and data (known as "attributes"), such as sell-by date, weight, lot number, or expiration date. This symbol also supports the Serial Shipping Container Code (SSCC)-18 numbering structure when the "00" application identifier is used. 
-
-- **DataBar Expanded Stacked** is a GS1 DataBar Expanded barcode that is split into multiple rows with a separator pattern between them.
-GS1 DataBar Expanded Stacked is intended for applications that require supplementary data to be encoded. In addition to encoding the Global Trade Item Number (GTIN) or Global Coupon Number (GCN), DataBar Expanded Stacked can encode additional application identifiers and data (known as "attributes"), such as sell-by date, weight, lot number, or expiration date. This symbol also supports the Serial Shipping Container Code (SSCC)-18 numbering structure when the "00" application identifier is used.
+**DataBar Expanded** is intended for use in applications that require storing supplementary information. Besides Global Trade Item Numbers (GTINs) or Global Coupon Numbers (GCNs), DataBar Expanded can encode additional application identifiers and information (attributes), e.g. expiration date, product weight, lot number, etc. This barcode type supports the Serial Shipping Container Code (SSCC)-18 structure that uses "00" as an application identifier.  
   
+**DataBar Expanded Stacked** is a specification based on DataBar Expanded that allows generating barcodes divided into many rows with a separator pattern between them.
+    
 |Examples|DataBar Expanded|DataBar Expanded Stacked|
 | :-: | :-: | :-: | 
-| |<img src="databarexpanded.png" heigh="75%" width="75%">|<img src="databarexpandedstacked.png" heigh="75%" width="75%">|
+| |<img src="databarexpanded.png" heigh="75%" width="75%" alt="DataBar Expanded Barcode">|<img src="databarexpandedstacked.png" heigh="75%" width="75%" alt="DataBar Expanded Stacked Barcode">|
   
 ## **Features**
   
 ### **Encoding Character Set**
-These barcode types can encode the following characters: 
+These barcode types can encode the following character sets: 
 - All numeric digits (0-9)
 - All uppercase and lowercase letters (A-Z and a-z)
-- Special function character (FNC1)
-- Special characters: !, ", %, &, ', opening and closing parenthesis, *, +, ,, -, ., /, :, ;, (<), (=), (>), (?), (_), space.
+- Special function symbol (FNC1)
+- Special symbols: !, ", %, &, ', opening and closing parenthesis, *, +, ,, -, ., /, :, ;, (<), (=), (>), (?), (_), and space.
 
 ### **Barcode Structure**
 **DataBar Expanded**  
   
-The **DataBar Expanded** barcode comprises the following elements:
+Barcodes consist of the following elements:
 - Left guard pattern (narrow space, narrow bar)
 - Check digit
-- One to eleven triplet sequences that consist of a finder pattern followed by two symbol characters (unless there is an odd number of characters, in which case the last triplet sequence has two elements instead of three)
+- 1 to 11 triplet sequences composed of a finder pattern and two data characters (if the number of characters is odd, the last triplet sequence is reduced to two elements)
 - Right guard pattern (narrow bar, narrow space)
 
-The first digit is a flag that indicates whether the barcode is part of a composite barcode. The data itself is split into groups that contain two data characters and one finder pattern. Each data character is 17 modules wide, using four bars and four spaces. The finder patterns separating the groups are 15 modules wide, using five bars and spaces total.
+The first digit is used as a flag to indicate whether this barcode will be a part of a composite barcode. The input message is divided into groups that comprise two data characters (17 modules each) and one finder pattern. Finder patterns have a width of 15 modules wide and include five bars and spaces in total.
   
 **DataBar Expanded Stacked**  
   
-The symbol comprises the following elements:
+The structure includes the following elements:
 
-- Top row, which consists of the left guard pattern (narrow space, narrow bar), a check digit, an even number of symbol characters (with a finder pattern between each symbol character pair), and the right guard pattern (narrow bar, narrow space)
+- Top row composed of the left guard pattern (narrow space, narrow bar), a check digit, an even number of data characters (with a finder pattern between each pair), and the right guard pattern (narrow bar, narrow space)
 - Separator pattern
-- Additional rows and separator patterns as needed
-- Bottom row, which consists of the left guard pattern, at least two symbol characters with finder patterns, and the right guard pattern
+- Auxiliary rows and separator patterns
+- Bottom row comprising the left guard pattern, at least two data characters with finder patterns, and the right guard pattern
 
-A quiet zone is not required.
+Quiet zones are not needed.
 
-### **Size Dimentions**
-- **DataBar Expanded** is a variable-length symbology, the width of a symbol can vary from 53 to 543 modules. 
-   
-- **DataBar Expanded Stacked** barcodes can contain from two to 11 rows. The height of each row must be 34 modules, and the height of the separator pattern must be three modules. These dimensions make the symbol omnidirectionally readable.
+### **Size Dimensions**
+DataBar Expanded is a variable-length barcode type that allows varying the width of a barcode from 53 to 543 modules.  
+  
+DataBar Expanded Stacked barcodes can include from 2 to 11 rows. The height of each row is 34 modules, and the height of the separator pattern equals 3 modules. This configuration enables omnidirectional readability for such barcodes.
 
 ### **Encoding Capacity and Data Density**
-Each **DataBar Expanded** barcode can encode at most 74 numeric or 41 alphanumeric characters.
+These symbologies allow encoding at most 74 numerical digits or 41 alphanumeric characters.
 
 ### **Checksum Controls**
-DataBar Expanded and DataBar Expanded Stacked include a check digit that is compupted based on the modulo 211 algorithm.
+Barcodes include check digits computed based on the modulo 211 algorithm.
 
-## **Advantanges and Weaknesses**
-DataBar Expanded and DataBar Expanded Stacked have been developed to be used in retail point-of-sale applications. These barcodes can be read omnidirectionally. These DataBar subtypes can apply any of GTIN formats, not only GTIN 12, 13, and 14.
+## **Advantages and Weaknesses**
+DataBar Expanded and DataBar Expanded Stacked have been developed for use in retail point-of-sale applications. Such barcodes can be read omnidirectionally. Unlike other DataBar symbologies that can use only selected GTIN formats, Expanded DataBar specifications are compatible with any of them. The enhanced capacity results in creating larger barcodes thus being inferior in terms of compactness compared with DataBar Omnidirectional.
 
 ## **Aspose Samples for DataBar Expanded and Expanded Stacked Barcpdes**
 ### **DataBar Expanded Generation Code Samples**

@@ -1,83 +1,65 @@
 ---
 title: Code 128
 type: docs
-description: "code 128, code128, create code 128 barcode, read code 128, linear barcodes, 1D, 1D symbologies"
-key words: ""
+description: "Overview on Key Properties of Code 128 Barcode Type"
+key words: "Code 128, code128, Code 128 symbology, Create code 128 barcode, Read code 128, what is Code 128, Code 128 barcodes, generate code 128, linear barcodes, 1D symbology, code 128 specification"
 weight: 120
 url: /barcode/code128-card/
 ---
-{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code128) and [Generate](https://products.aspose.app/barcode/generate/code128) Code 128 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
+{{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code128) and [Generate](https://products.aspose.app/barcode/generate/code128) Code 128 barcodes online. You can check ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Code 128 is an efficient, high-density linear (1D) barcode type that allows encoding alphanumeric information. It includes verification protection both via a checksum digit and byte parity checking. Code 128 was invented in 1981 by Ted Williams of Laserlight Corporation to solve the problem of representing both alphabetic and numeric characters without sacrificing barcode density. This symbology has been widely implemented in many applications where a relatively large amount of data must be encoded in a relatively small amount of space. Its specific structure also allows numeric data to be encoded at, effectively, double-density. Today, Code 128 is one of the most widely used barcode types, and has various applications, such as, for example, warehouse management, transport industry (e.g. UPS or DHL), as well as retail and non-retail environments, such as library manamegemt, membership cards, tracking small items, etc.  
+Code 128 is an efficient linear (1D) barcode type with relatively high data density that allows encoding alphanumeric data. It was introduced in 1981 by Ted Williams from Laserlight Corporation to address the issue of storing both textual and numeric information without deteriorating data density. This symbology has been actively used in different business tasks in which large amounts of information need to be encoded in conditions of limited space. By design, Code 128 enables encoding numerical inputs with even better data density (double-density data compression). It supports validity checks through checksum controls and byte parity verification. At present, this linear symbology corresponds to the most widespread barcode types and has multiple applications, including transport industry and warehouse management, as well as retail and non-retail environments, such as library management, customer loyalty programs, item tracking, etc.  
   
-The specification for Code 128 is available in standard ISO/IEC 15417:2007.
+The detailed specification for Code 128 is provided in standard ISO/IEC 15417:2007.
+  
+<p align="center"><img alt="Code 128 Barcode" src="code128.png"></p>
 
+{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode for .NET*** for linear barcode generation and recognition:
+- [**Specific Parameters for 1D barcodes**](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)
 
-<p align="center"><img src="code128.png"></p>
-
+{{% /alert %}} 
+  
 ## **Features**
-  
 ### **Encoding Character Set**
-Code 128 supports encoding symbols from the full ASCII 128 character set.
-Three different code sets or sub types are defined for Code 128 (namely Code 128 A, Code 128 B, and Code 128 C) that determine how the code is interpreted by the barcode scanner. The code sets differ in compactness and encodable character set.
+Code 128 supports encoding symbols from the full ASCII 128 character set.  
+It provides three different encoding sets that define how encoded information gets interpreted by scanners: A, B, and C. The required option needs to be specified in the start character. It is possible to vary encoding sets within a single barcode.
 
-<details> 
-<summary>Read more</summary>
-
-- Code 128 A: all numeric values (0-9), uppercase alphabetic characters (A-Z), punctuation marks, seven special characters, and "control" characters (ASCII values 00 through 95)
-- Code 128 B: all numeric values (0-9), uppercase and lowercase alphabetic characters (A-Z, a-z), punctuation marks, and seven special characters (ASCII values 32 through 127)
-- Code 128 C: all numeric digit pairs from 00 through 99 and three special characters. This code set is numeric-only, but any one character actually represents two digits
-
-The option is indicated in the start character. It is possible to switch from one options to another within a single barcode.
-  
-</details>
+- Code 128 A: all numerical digits (0-9), uppercase English letters (A-Z), punctuation symbols, 7 special characters, and ASCII control symbols (ASCII characters from 00 to 95)
+- Code 128 B: all numerical digits (0-9), uppercase and lowercase English letters (A-Z, a-z), punctuation symbols, and 7 special characters (ASCII from 32 to 127)
+- Code 128 C: all numerical digit pairs from 00 to 99 and 3 special symbols. This encoding set supports only numerical digits; in this way, one barcode symbol can contain two data digits
 
 ### **Structure**
-Code 128 barcodes include the following elements:
+All symbols in a barcode contain 3 bars and 3 spaces. Each bar or space can have a width of 1, 2, 3, or 4 units (a unit has the size of X-dimension). The sum of bar widths must be even (4, 6, or 8 units), the sum of the widths of the spaces must be odd (3, 5, or 7 units), and in total, the size is 11 units per symbol. The barcode structure includes the following elements:
 
-- Quiet zone
-- Start symbol
-- Encoded data
-- Check symbol (mandatory)
-- Stop symbol
-- Final bar (often considered part of the stop symbol)
-- Quiet zone
+- Starting quiet zone
+- Start character
+- Input information
+- Obligatory check digit
+- Stop character
+- Closing quiet zone
 
-Each symbol in the barcode is composed of three bars and three spaces. Each bar or space is 1, 2, 3 or 4 units wide, the sum of the widths of bars must be even (4, 6 or 8 units), the sum of the widths of the spaces must be odd (3, 5 or 7 units), and total 11 units per symbol.
-
-<details>  
-<summary>Read more</summary>
-
-For instance, encoding the ASCII character "0" can be viewed as 10011101100, where 1 corresponds to a bar and 0 to a space. A single 1 would be the thinnest line in the bar code. Three 1's in sequence (111) indicates a bar three times as thick as a single 1 bar.
-
-There are 108 possible 11-unit wide symbols, and the code uses all possible symbols. Two of the symbols are used for stop (end-of-barcode) indication, stop and reverse stop. The two stop symbols are special because they are always followed by a 2-unit bar, forming a 13-unit long stop pattern. Reading the stop pattern left to right is the stop symbol (followed by a 2-unit bar), and reading the stop pattern right to left is the reverse stop symbol (followed by a 2-unit bar).
-  
-</details>
-
-### **Size Dimentions**
-The recommended minimum symbol height for manual scanning is 5.0 mm or 15 percent of the symbol width (excluding quiet zones), whichever is greater. The quiet zones must be at least 10X wide, where "X" is the current X dimension. The most basic unit of measure within a barcode is the x-dimension and is equivalent to the width of the most narrow bar or space within the barcode.  Each character is 11 x-dimensions wide (except for the STOP character which is 13 wide).  The minimum size of the x-dimension is 0.0075 inches.  The overall length of a barcode varies because the number of DATA characters may vary.
+### **Size Dimensions**
+To perform manual scanning, the specification of Code 128 suggests setting the minimum height to 5.0 mm or 15% of its width. It is recommended to set the size of quiet zones at least 10 times wider than the current X-dimension. X-dimension is one of the most important parameters that is defined as the width of the most narrow bar. Each symbol in a barcode is 11 times wider than the X-dimension (with the exception of the stop digit that is 13-time wider). The minimum possible size of the X-dimension is 0.0075 inches. Thus, the length may vary depending on the amount of data to be encoded.
 
 ### **Encoding Capacity and Data Density**
-Code 128 is a variable length code, which in principle can encode an arbitrary length of data. The practical content limit for Code 128 is at 30 characters (large cap and small cap letters) or a maximum of 60 digits (purely numeric code). Code-128 can be very compact due to the "double-density compression" of data, when two numbers are written into one barcode modulus, which makes encoding long strings of digits much more efficient.
+Code 128 is a variable-length barcode type, which means that it can be used to encode character sets of an arbitrary length. The actual capacity limit that is practically achievable is 30 alphabetical symbols or 60 numerical digits. It allows producing very compact barcodes owing to the so-called double-density data compression. This specificity allows storing two data digits within one barcode symbol thus facilitating efficient conversion of large data sets.
 
 ### **Checksum Controls**
-Code 128 requires adding a mandatory check digit to detect errors. Chechsum calculation is based on the modulo 103 algorithm. It is calculated by summing the start code 'value' to the products of each symbol's 'value' multiplied by its position in the barcode string. The start symbol and first encoded symbol are in position 1. The sum of the products is then reduced modulo 103. The remainder is then converted back to one of the 103 non-delimiter symbols (following the instructions given below) and appended to the barcode, immediately before the stop symbol.
+Code 128 requires adding a mandatory check digit to detect errors and inconsistencies. Checksum calculation is based on the modulo 103 algorithm. It is computed in the following manner: the value of the start symbol is summed up with the products of values of the remaining symbols multiplied by its position. The start character and the first data symbol are in position 1. Modulo 103 is then applied to the sum of products. Finally, the remainder is converted back to one of the 103 non-delimiter digits and is added to the set of symbols right before the stop digits.
 
+## **Advantages and Limitations**
+Among linear symbologies, Code 128 allows generating the most compact labels with large data density. The amount of input information to be encoded can be varied depending on business needs thus allowing users to create barcodes taking very small space. This symbology provides instruments to ensure data integrity through parity bit checks and checksum controls.
 
-## **Advantanges and Limitations**
-For 1D barcodes, Code 128 is generally the most compact (able to encode the most data in the smallest physical space).  The amount of data is variable allowing the user to encode as much or as little data as is needed.  And finally, it maintains a high level of data integrity with parity bits to verify each character and a check character to verify the data package as a whole.
-
-As CODE 128 uses 4 types of bar size, printers with high print quality are required. CODE 128 is not suitable for printing with dot matrix printers and FA ink-jet printers and for flexographic printing on corrugated cardboards. 
+Code 128 includes four different bar sizes, and therefore, it requires high-quality printers to print out labels. Dot matrix and ink-jet printers are not applicable to print out such barcodes; flexographic printing on corrugated cardboards is not supported as well. 
 
 ## **Aspose Samples for Code 128 Generation and Recognition**
-### **Code 128 Generation Code Samples**
+### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//GENERATE
 {{< highlight csharp>}}
 //generate Code128 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"))
@@ -103,13 +85,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"
 
 {{< /tabs >}}
 
-### **Code 128 Limited Recognition Code Samples**
+### **Recognition Code Samples**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-//RECOGNIZE
 {{< highlight csharp>}}
 //recognize Code128 Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.Code128))
