@@ -3,8 +3,8 @@ title: Code 39
 description: "Overview on main parameters of Code 39 Barcode Type"
 key words: "Code 39, code39, Code 39 symbology, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D symbology, linear barcode type, code39 extended, code 39 specification"
 type: docs
-weight: 100
-url: /barcode/code39-card/
+weight: 110
+url: /info-cards/code-39/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code39) and [Generate](https://products.aspose.app/barcode/generate/code39) Code 39 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
@@ -33,7 +33,7 @@ The following structure is supported:
 - One-module wide spaces separating symbols within a barcode
 
 ### **Size Dimensions**
-To scan Code 38 barcodes manually, it is recommended to set the minimum height to 5.0 mm or 15% of the width. The size of quiet zones should be 10 times wider than the current X dimension. This standard allows generating labels of different proportions, i.e. 2:1,0 or 3:1,0. The larger is the selected proportion, the larger gets the printed label; however, this also improves readability.
+To scan Code 38 barcodes manually, it is recommended to set the minimum height to 5.0 mm or 15% of the width. The size of quiet zones should be 10 times wider than the current [X-Dimension](/barcode/info-cards/x-dimension/). This standard allows generating labels of different proportions, i.e. 2:1,0 or 3:1,0. The larger is the selected proportion, the larger gets the printed label; however, this also improves readability.
 
 ### **Encoding Capacity and Data Density**
 Code 39 allows generating barcodes of variable length; its average data capacity varies from 20 to 23 alphanumerical characters. Even though it enables encoding the entire ASCII set including 128 symbols, this leads to limitations in terms of density. This happens because symbols from the full ASCII set need to be encoded in two digits and thus occupy a larger space. 

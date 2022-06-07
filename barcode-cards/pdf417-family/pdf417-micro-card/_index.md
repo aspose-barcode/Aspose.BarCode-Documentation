@@ -11,7 +11,7 @@ url: /info-cards/micro-pdf417/
 ## **Overview**
 Micro PDF417 is a two-dimensional variable-length stacked symbology that has been developed to encode a moderate amount of data in a very compact space in cases when minimizing the barcode label size is the main concern. It is based on the PDF417 specification and adopts its main features. 
 
-Micro PDF417 is similar to PDF417 in terms of its encoding modes, error correction mechanism, and supported encoding sets. Micro PDF417 does not inherit the configuration of PDF417 with 17-module patterns and row indicators. Instead, it uses a unique set of address patterns with the size of 10 modules. This design has been introduced to decrease the barcode width and facilitate linear scanning for narrow barcodes (row heights twice wider than the X-dimension). Unlike PDF417, Micro PDF417 labels can be generated only following pre-defined configurations with fixed numbers of rows, columns, and error correction codewords, up to a maximum of four data columns composed of 44 rows. This symbology is suitable for applications that require improved space usage efficiency but can be satisfied with a capacity lower than that of Basic PDF417. Micro PDF can be used to create composite barcodes together with GS1 [DataBar](/barcode/info-cards/databar-family) barcodes.
+Micro PDF417 is similar to PDF417 in terms of its encoding modes, error correction mechanism, and supported encoding sets. Micro PDF417 does not inherit the configuration of PDF417 with 17-module patterns and row indicators. Instead, it uses a unique set of address patterns with the size of 10 modules. This design has been introduced to decrease the barcode width and facilitate linear scanning for narrow barcodes (row heights twice wider than the [X-dimension](/barcode/info-cards/x-dimension/)). Unlike PDF417, Micro PDF417 labels can be generated only following pre-defined configurations with fixed numbers of rows, columns, and error correction codewords, up to a maximum of four data columns composed of 44 rows. This symbology is suitable for applications that require improved space usage efficiency but can be satisfied with a capacity lower than that of Basic PDF417. Micro PDF can be used to create composite barcodes together with GS1 [DataBar](/barcode/info-cards/databar-family) barcodes.
 
 Micro PDF417 is defined in standard ISO/IEC 24728.
 
@@ -53,7 +53,7 @@ The structure includes the following elements per row:
 - Ending quiet zone
 
 ### **Size Dimensions**
-Dimensions vary on the size of the input message to be encoded. The height of Micro PDF417 barcodes can range from 4 to 44 rows, and the row height can vary from 1X to 10X, where X is the current value of the X-dimension parameter. The overall width of a barcode can be from 40X to 101X. Quiet zones of 1X (at minimum) are needed on four sides.
+Dimensions vary on the size of the input message to be encoded. The height of Micro PDF417 barcodes can range from 4 to 44 rows, and the row height can vary from 1X to 10X, where X is the current value of the [X-dimension](/barcode/info-cards/x-dimension/) parameter. The overall width of a barcode can be from 40X to 101X. Quiet zones of 1X (at minimum) are needed on four sides.
 
 ### **Encoding Capacity and Data Density**
 Micro PDF417 is capable of encoding at most 150 bytes of data or 266 alphanumeric characters or 366 numerical digits in configurations including up to 4 columns and 44 rows.

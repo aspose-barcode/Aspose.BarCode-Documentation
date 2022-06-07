@@ -4,7 +4,7 @@ description: "Description of Aztec Rune Barcode Type"
 key words: "Aztec Code, aztec rune code, aztec rune barcode, aztec rune symbology, Create aztec rune barcodes, Read aztec codes, read aztec rune code, what is aztec rune barcode, aztec rune barcodes, generate aztec rune code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec rune generator, aztec rune reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 20
-url: /barcode/aztec-rune-card/
+url: /info-cards/aztec-rune/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/aztec) and [Generate](https://products.aspose.app/barcode/generate/aztec) Aztec barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
 

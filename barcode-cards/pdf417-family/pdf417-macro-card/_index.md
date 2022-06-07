@@ -21,7 +21,7 @@ Macro PDF417 is a special feature that serves to divide files that are too large
 ## **Features**
   
 ### **Encoding Character Set**
-See the article [PDF417 Barcode Family](/barcode/pdf417-cards/) for the information about character sets supported for encoding in PDF417 barcodes.  
+See the article [PDF417 Barcode Family](/barcode/info-cards/pdf417-family/) for the information about character sets supported for encoding in PDF417 barcodes.  
 
 ### **Structure**
 Available configurations may contain from 1 to 30 columns with input information, 2 columns with metainformation (i.e. row indicator, the number of rows and columns), and finally, start and stop patterns. The number of rows can range from 3 to 90. The main distinction between Macro PDF417 and Basic PDF417 is the capability to encode additional metadata about barcode contents. This redundancy corresponding to auxiliary metadata allows reading such barcodes with laser scanners, as well as reducing image quality requirements.  

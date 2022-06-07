@@ -13,7 +13,7 @@ DataBar has been introduced to encode GS1 identification codes for trade items (
 
 The DataBar specification includes the following subtypes: 
 - [DataBar Omnidirectional / DataBar Stacked Omnidirectional](/barcode/info-cards/databar-omnidirectional/)
-- [DataBar Truncated / DataBar Stacked](/barcode/info-card/databar-truncated/)
+- [DataBar Truncated / DataBar Stacked](/barcode/info-cards/databar-truncated/)
 - [DataBar Expanded / DataBar Expanded Stacked](/barcode/info-cards/databar-expanded/)
 - [DataBar Limited](/barcode/info-cards/databar-limited/)
   

@@ -4,7 +4,7 @@ type: docs
 description: "Overview on Key Properties of Code 128 Barcode Type"
 key words: "Code 128, code128, Code 128 symbology, Create code 128 barcode, Read code 128, what is Code 128, Code 128 barcodes, generate code 128, linear barcodes, 1D symbology, code 128 specification"
 weight: 120
-url: /barcode/code128-card/
+url: /info-cards/code-128/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code128) and [Generate](https://products.aspose.app/barcode/generate/code128) Code 128 barcodes online. You can check ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
@@ -30,7 +30,7 @@ It provides three different encoding sets that define how encoded information ge
 - Code 128 C: all numerical digit pairs from 00 to 99 and 3 special symbols. This encoding set supports only numerical digits; in this way, one barcode symbol can contain two data digits
 
 ### **Structure**
-All symbols in a barcode contain 3 bars and 3 spaces. Each bar or space can have a width of 1, 2, 3, or 4 units (a unit has the size of X-dimension). The sum of bar widths must be even (4, 6, or 8 units), the sum of the widths of the spaces must be odd (3, 5, or 7 units), and in total, the size is 11 units per symbol. The barcode structure includes the following elements:
+All symbols in a barcode contain 3 bars and 3 spaces. Each bar or space can have a width of 1, 2, 3, or 4 units (a unit has the size of [X-dimension](/barcode/info-cards/x-dimension/)). The sum of bar widths must be even (4, 6, or 8 units), the sum of the widths of the spaces must be odd (3, 5, or 7 units), and in total, the size is 11 units per symbol. The barcode structure includes the following elements:
 
 - Starting quiet zone
 - Start character
@@ -40,7 +40,7 @@ All symbols in a barcode contain 3 bars and 3 spaces. Each bar or space can have
 - Closing quiet zone
 
 ### **Size Dimensions**
-To perform manual scanning, the specification of Code 128 suggests setting the minimum height to 5.0 mm or 15% of its width. It is recommended to set the size of quiet zones at least 10 times wider than the current X-dimension. X-dimension is one of the most important parameters that is defined as the width of the most narrow bar. Each symbol in a barcode is 11 times wider than the X-dimension (with the exception of the stop digit that is 13-time wider). The minimum possible size of the X-dimension is 0.0075 inches. Thus, the length may vary depending on the amount of data to be encoded.
+To perform manual scanning, the specification of Code 128 suggests setting the minimum height to 5.0 mm or 15% of its width. It is recommended to set the size of quiet zones at least 10 times wider than the current [X-Dimension](/barcode/info-cards/x-dimension/). Each symbol in a barcode is 11 times wider than the [X-dimension](/barcode/info-cards/x-dimension/) (with the exception of the stop digit that is 13-time wider). The minimum possible size of the [X-dimension](/barcode/info-cards/x-dimension/) is 0.0075 inches. Thus, the length may vary depending on the amount of data to be encoded.
 
 ### **Encoding Capacity and Data Density**
 Code 128 is a variable-length barcode type, which means that it can be used to encode character sets of an arbitrary length. The actual capacity limit that is practically achievable is 30 alphabetical symbols or 60 numerical digits. It allows producing very compact barcodes owing to the so-called double-density data compression. This specificity allows storing two data digits within one barcode symbol thus facilitating efficient conversion of large data sets.
@@ -51,7 +51,7 @@ Code 128 requires adding a mandatory check digit to detect errors and inconsiste
 ## **Advantages and Limitations**
 Among linear symbologies, Code 128 allows generating the most compact labels with large data density. The amount of input information to be encoded can be varied depending on business needs thus allowing users to create barcodes taking very small space. This symbology provides instruments to ensure data integrity through parity bit checks and checksum controls.
 
-Code 128 includes four different bar sizes, and therefore, it requires high-quality printers to print out labels. Dot matrix and ink-jet printers are not applicable to print out such barcodes; flexographic printing on corrugated cardboards is not supported as well. 
+Code 128 utilizes four different bar sizes, and therefore, it requires high-quality printers to print out labels. Dot matrix and ink-jet printers are not applicable to print out such barcodes; flexographic printing on corrugated cardboards is not supported as well. 
 
 ## **Aspose Samples for Code 128 Generation and Recognition**
 ### **Generation Code Samples**

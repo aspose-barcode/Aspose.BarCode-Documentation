@@ -3,7 +3,7 @@ title: DataBar Omnidirectional / Stacked Omnidirectional
 type: docs
 description: "Information about DataBar Omnidirectional Barcode Type and Its Stacked Version"
 key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
-weight: 20
+weight: 10
 url: /info-cards/databar-omnidirectional/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results online.{{% /alert %}}

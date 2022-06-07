@@ -3,15 +3,15 @@ title: DataBar Truncated / Stacked
 type: docs
 description: "Information about DataBar Truncated Barcode Type and Its Stacked Version"
 key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
-weight: 10
+weight: 20
 url: /info-cards/databar-truncated/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-**DataBar Truncated** is a GS1 DataBar specification that allows producing DataBar Omnidirectional barcodes decreased in height to 13 modules. It supports encoding Global Coupon Number (GCN) and selected Global Trade Item Number (GTIN) formats: GTIN-8, GTIN-12, GTIN-13, and GTIN-14.  
+**DataBar Truncated** is a GS1 DataBar specification that allows producing [DataBar Omnidirectional](/barcode/info-cards/databar-omnidirectional) barcodes decreased in height to 13 modules. It supports encoding Global Coupon Number (GCN) and selected Global Trade Item Number (GTIN) formats: GTIN-8, GTIN-12, GTIN-13, and GTIN-14.  
   
-**DataBar Stacked** is a GS1 DataBar symbology that uses DataBar Omnidirectional barcodes reduced in height and divided into two rows with a separator pattern between them. It has a specification similar to DataBar Stacked Omnidirectional with the difference that the overall height is reduced from 33 to 13 modules. 
+**DataBar Stacked** is a GS1 DataBar symbology that uses DataBar Omnidirectional barcodes reduced in height and divided into two rows with a separator pattern between them. It has a specification similar to [DataBar Stacked Omnidirectional](/barcode/info-cards/databar-omnidirectional) with the difference that the overall height is reduced from 33 to 13 modules. 
   
 |Examples|DataBar Truncated|DataBar Stacked|
 | :-: | :-: | :-: | 

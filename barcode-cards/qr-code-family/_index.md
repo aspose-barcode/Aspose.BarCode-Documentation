@@ -4,7 +4,7 @@ description: "Detailed Information about QR Code Specification"
 key words: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
 type: docs
 weight: 10
-url: /barcode/qr-code-cards/
+url: /info-cards/qr-code/
 ---
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
@@ -12,7 +12,7 @@ url: /barcode/qr-code-cards/
 ## **Overview**
 QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily scanned by smartphones and other devices equipped with digital image sensors. The idea has been proposed as an improvement of conventional linear barcode types to adress the need to store much larger amounts of information. This symbology provides a very high recognition speed and increased encoding capacity. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, this 2D barcode type has multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, vaccination certificates, and many others. The operations of scanning and decoding can be executed using smartphone cameras and special scanner applications (mobile tagging) that are usually embedded into modern mobile devices. After capturing a QR label, a special application converts it into readable text or more often, into an URL link. 
   
-Apart from 40 basic configurations, this symbology supports a special option called Micro QR Code that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/micro-qr-card/). The specification for this barcode type has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
+Apart from 40 basic configurations, this symbology supports a special option called Micro QR Code that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/info-cards/micro-qr-code/). The specification for this barcode type has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
   
 <p align="center"><img src="qrcodesample.png"></p>
   

@@ -4,7 +4,7 @@ description: "General Overview on Data Matrix Barcode Type"
 key words: "DataMatrix, data matrix, data matrix symbology, Create datamatrix barcodes, Read data matrix, what is data matrix, data matrix barcodes, generate datamatrix, matrix barcodes, 2D symbology, data matrix specification, data matrix generator, data matrix reader, recognize data matrix, scan data matrix"
 type: docs
 weight: 70
-url: /barcode/data-matrix-card/
+url: /info-cards/data-matrix/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/datamatrix) and [Generate](https://products.aspose.app/barcode/generate/datamatrix) Data Matrix barcodes online. You can test ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
@@ -38,6 +38,7 @@ Six encoding modes are supported: ASCII, C40, Text, EDIFACT, Base 256, and X12. 
 <details>  
 <summary>Read more</summary>
 
+Data Matrix supports the following encoding sets: 
 - ASCII: double numerical digits, ASCII symbols from 0 to 127, and Extended ASCII symbols from 128 to 255
 - C40: upper-case English letters, numerical digits, and special symbols
 - Text: lower-case English letters, numerical digits, and special symbols
@@ -48,7 +49,17 @@ Six encoding modes are supported: ASCII, C40, Text, EDIFACT, Base 256, and X12. 
 </details>
 
 ### **Structure**
-Data Matrix labels consist of black and white cells grouped in square (or rectangular) patterns. The main structural elements are: finder pattern, alignment patterns, and quiet zones on four sides. The finder pattern (clock pattern) is represented as a sequence of black and white modules on the right and top borders and a solid line on the left and bottom borders. Scanners use these patterns to identify the area in which input information is encoded. This allows for barcode reading from any angle. 
+Data Matrix labels consist of black and white cells grouped in square (or rectangular) patterns. The main structural elements are: finder pattern, alignment patterns, and quiet zones on four sides. The finder pattern (clock pattern) is represented as a sequence of black and white modules on the right and top borders and a solid line on the left and bottom borders. Scanners use these patterns to identify the area in which input information is encoded. This allows for barcode reading from any angle.
+
+<details>  
+<summary>Read more</summary>
+
+Data Matrix barcodes include the following elements:
+- Data region composed of square data modules
+- Quiet zone that surrounds the barcode label on four sides. The minimum size of a quiet zone should equal to 10X where X is the [X-Dimension](/barcode/info-cards/x-dimension).
+- Finder pattern that is placed between the data region and the quiet zone
+
+</details>
 
 ### **Size Dimensions**
 Data Matrix allows encoding fifty characters in a barcode with a size of 2 or 3 squared mm that remains scannable. The actual size of a label may vary according to the amount of information to be encoded. In the ECC 000-140 configuration, the size can range from 9x9 to 49x49 modules, having an odd number of rows and columns. If ECC 200 is applied, configurations from 10x10 to 144x144 modules are supported; they can contain only an even number of rows and columns. If the rectangular shape is required, ECC 200 allows setting the number of columns greater than the number of rows. The Data Matrix Rectangular Extension (DMRE) supports rectangular formats, e.g. 8x48 or 8x64.

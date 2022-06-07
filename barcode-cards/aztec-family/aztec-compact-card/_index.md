@@ -4,7 +4,7 @@ description: "Overview on Aztec Compact Code Barcode Type"
 key words: "Aztec Code, aztec compact code, aztec compact barcode, aztec compact symbology, Create aztec compact barcodes, Read aztec codes, read aztec compact code, what is aztec compact barcode, aztec compact barcodes, generate aztec compact code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec compact generator, aztec compact reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 30
-url: /barcode/aztec-compact-card/
+url: /info-cards/aztec-compact/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/aztec) and [Generate](https://products.aspose.app/barcode/generate/aztec) Aztec barcodes online. You can test the quality of ***Aspose.BarCode*** recognition functionality and view results.{{% /alert %}}
 
@@ -39,10 +39,10 @@ In Compact Aztec Code, the core symbol may be surrounded by 1 to 4 layers thus t
 This symbology can encode up to 53 bytes or 110 numerical or 89 alphanumeric characters. The most compact configuration corresponds to a one-layer Compact Aztec barcode comprising 15x15 modules that can encode at most 13 textual symbols or 12 numerical digits. The description of all available size combinations and corresponding capacity values can be found in the ISO standard specification for Aztec Code. 
 
 ### **Error Correction**
-See the article [Aztec Barcode Family](/barcode/aztec-cards/)   
+See the article [Aztec Barcode Family](/barcode/info-cards/aztec-full-range/)   
 
 ## **Advantages and Weaknesses**
-See the article [Aztec Barcode Family](/barcode/aztec-cards/)
+See the article [Aztec Barcode Family](/barcode/info-cards/aztec-full-range/)
 
 ## **Aspose Samples for Aztec Compact Generation and Recognition**
 ### **Generation Code Samples**

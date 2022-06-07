@@ -14,15 +14,15 @@ PDF417 (Portable Data File 417) is a family of 2D stacked barcode types introduc
 ## **Overview**
 Basic PDF417 is a high-density variable-length barcode type that supports error correction. It allows encoding textual data, numerical digits, files, and streams of bytes. PDF417 barcodes are composed of multiple linear rows stacked together thus increasing the amount of information that can be encoded compared to linear symbologies. PDF417 can be read by linear and raster laser scanners or special imaging devices. The shape of PDF417 barcode labels is rectangular. Their size can be customized according to specific business needs. It is important to maintain appropriate printing accuracy and suitable resolution to create high-quality barcode images. 
   
-<p align="center"><img src="pdf417basic.png" alt="Basic PDF417 Barcode></p>
-
+<p align="center"><img src="pdf417basic.png" alt="Basic PDF417 Barcode"></p>
+  
 The PDF417 barcode family supports four specifications:
 
-- [Basic PDF417](/barcode/info-cards/pdf417-basic/)
+- [Basic PDF417](/barcode/info-cards/pdf417-family/)
 - [Compact PDF417](/barcode/info-cards/compact-pdf417/)
-- [Macro PDF417](/barcode/info-cards/marco-pdf417/)
+- [Macro PDF417](/barcode/info-cards/macro-pdf417/)
 - [Micro PDF417](/barcode/info-cards/micro-pdf417/)
-  
+    
 In this article, the overview of Basic PDF417 is provided. This information card highlights its key parameters and describes its encoding supported character set, barcode structure, size dimensions, data capacity, and error correction capability. Code samples for barcode generation and recognition through the ***Aspose.BarCode*** library can be found [below](#asposesamples).
 
 {{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for PDF417 generation and recognition:
@@ -52,7 +52,7 @@ Three major encoding modes can be used to store different types of data and can 
 </details>
 
 ### **Structure**
-The layout of PDF417 barcodes includes rows and columns. PDF417 encodes input information in codewords that get stacked in columns to constitute machine-readable patterns. A PDF417 label is composed of several linear rows of stacked codewords. Such barcodes may contain from 3 to 90 rows so that each of them can be viewed as a linear barcode. All rows must have the same width; each row has to store the same number of codewords. Codewords are represented as patterns of black and white vertical lines. Each of these patterns includes four bars and four spaces. The total width is 17 times greater than the width of the narrowest vertical bar (the X-dimension). Each pattern is started with a bar and is finished with a space. The row height must be at least three times greater than the minimum width.
+The layout of PDF417 barcodes includes rows and columns. PDF417 encodes input information in codewords that get stacked in columns to constitute machine-readable patterns. A PDF417 label is composed of several linear rows of stacked codewords. Such barcodes may contain from 3 to 90 rows so that each of them can be viewed as a linear barcode. All rows must have the same width; each row has to store the same number of codewords. Codewords are represented as patterns of black and white vertical lines. Each of these patterns includes four bars and four spaces. The total width is 17 times greater than the [X-dimension](/barcode/info-cards/x-dimension/). Each pattern is started with a bar and is finished with a space. The row height must be at least three times greater than the minimum width.
 
 <p align="center"><img src="pdf417structureorig.png"></p>
 
@@ -73,7 +73,7 @@ Each row in a PDF417 barcode includes:
 </details>
 
 ### **Size Dimensions**
-The size of PDF417 barcodes may vary depending on the size of the input message to be encoded. The barcode height can range from 3 to 90 rows, and the row height can vary from 1X to 10X, where "X" is the X-dimension value. The width can be from 90X to 583X. A minimum quiet zone of 2X is needed on four sides.  
+The size of PDF417 barcodes may vary depending on the size of the input message to be encoded. The barcode height can range from 3 to 90 rows, and the row height can vary from 1X to 10X, where "X" is the [X-dimension](/barcode/info-cards/x-dimension/) value. The width can be from 90X to 583X. A minimum quiet zone of 2X is needed on four sides.  
 In practice, PDF417 barcodes require space that is about four times larger than those of Data Matrix or QR Code. 
 
 The number of rows can be adjusted, and rows can be of different lengths (i.e. contain a different number of columns). The proportion between height and width (aspect ratio) of PDF417 barcodes may vary to comply with spatial and printing limitations. The number of columns in all rows must be equal. 
@@ -81,7 +81,7 @@ The number of rows can be adjusted, and rows can be of different lengths (i.e. c
 <details>  
 <summary>Read more</summary>
 
-The X-dimension is the width of the narrowest bar. It must be constant within one PDF417 barcode. PDF417 labels are usually printed out setting the aspect ratio that may range from 1:2 to 1:5, with 1:3 being the most widely used value. The placement space can be saved considerably if the aspect ratio is decreased. However, some scanners do not support reading barcodes with aspect ratio values less than 1:3. 
+The value of [X-dimension](/barcode/info-cards/x-dimension/) must be constant within one PDF417 barcode. PDF417 labels are usually printed out setting the aspect ratio that may range from 1:2 to 1:5, with 1:3 being the most widely used value. The placement space can be saved considerably if the aspect ratio is decreased. However, some scanners do not support reading barcodes with aspect ratio values less than 1:3. 
   
 </details>
 
@@ -109,7 +109,7 @@ The error correction mechanism determines two types of errors: rejection errors 
 ## **Advantages and Weaknesses**
 This barcode type allows encoding large amounts of textual and other information in a secure and efficient way. PDF417 barcodes can be scanned from left to right by simple linear scanners. PDF417 may serve as a means for low-cost data transmission in multiple applications. In addition to typical features of a 2D symbology, PDF417 provides the following benefits:
 - Linking capability: PDF417 barcodes can be linked to other PDF417 labels and then scanned in a sequence, thus increasing the amount of information to be stored
-- Customizable size dimensions: users can determine the narrowest vertical bar heigh (X-dimension) and the highest row width (Y dimension) according to business needs
+- Customizable size dimensions: users can determine the narrowest vertical bar heigh ([X-dimension](/barcode/info-cards/x-dimension/)) and the highest row width (Y dimension) according to business needs
 - Public domain format. This specification can be used without any license
   
 PDF417 has various applications, including but not limited to: government ID cards (e.g. driver licenses), airline boarding passes, postage stamps, package labels, and many others. 

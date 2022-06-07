@@ -14,8 +14,8 @@ Aztec Code is a family of two-dimensional (2D) barcode types that encode informa
 The Aztec Code barcode group includes three subtypes:
 
 - [Full-Range Aztec Code](/barcode/info-cards/aztec-full-range/)
-- [Aztec Rune](/barcode/info-cards/aztec-rune-card/)
-- [Compact Aztec Code](/barcode/info-cards/aztec-compact-card/)
+- [Aztec Rune](/barcode/info-cards/aztec-rune/)
+- [Compact Aztec Code](/barcode/info-cards/aztec-compact/)
   
 Further in this article, Full-Range Aztec Code is discussed. This information card outlines its key specifics, including the supported character set, barcode structure, size dimensions, data capacity, and error correction capability. Code samples for barcode generation and recognition through the ***Aspose.BarCode*** library are given [below](#asposesamples).
 

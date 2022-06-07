@@ -4,7 +4,7 @@ description: "General description of Micro Qr Code"
 key words: "QR Code, qr codes, micro qr, Micro QR Code, what is micro qr, what is qr code, generate micro qr, create micro qr code, read micro qr, how to read qr, qr code structure, how much data can encode micro qr, micro qr code size"
 type: docs
 weight: 20
-url: /barcode/micro-qr-card/
+url: /info-cards/micro-qr-code/
 ---
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
@@ -21,7 +21,7 @@ Micro QR (Quick Response) code is a variant of QR Code that has been introduced 
 
 ## **Features**
 ### **Encoding Character Set**
-Micro QR Code allows encoding the same data types as [QR Codes](/barcode/qr-code-cards/): numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
+Micro QR Code allows encoding the same data types as [QR Codes](/barcode/info-cards/qr-code/): numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
 Micro QR Code supports the following standard encoding modes:
 - Numerical: all numerical digits (0-9)
 - Alphanumeric: all numeric digits (0-9), uppercase English letters (A-Z), and special symbols
