@@ -1,7 +1,7 @@
 ---
 title: Data Matrix
 description: "General Overview on Data Matrix Barcode Type"
-key words: "DataMatrix, data matrix, data matrix symbology, Create datamatrix barcodes, Read data matrix, what is data matrix, data matrix barcodes, generate datamatrix, matrix barcodes, 2D symbology, data matrix specification, data matrix generator, data matrix reader, recognize data matrix, scan data matrix"
+keywords: "DataMatrix, data matrix, data matrix symbology, Create datamatrix barcodes, Read data matrix, what is data matrix, data matrix barcodes, generate datamatrix, matrix barcodes, 2D barcode, data matrix specification, data matrix generator, data matrix reader, recognize data matrix, scan data matrix"
 type: docs
 weight: 70
 url: /info-cards/data-matrix/
@@ -9,7 +9,7 @@ url: /info-cards/data-matrix/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/datamatrix) and [Generate](https://products.aspose.app/barcode/generate/datamatrix) Data Matrix barcodes online. You can test ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Data Matrix is a highly efficient two-dimensional (2D) barcode type that encodes information in graphical labels consisting of square black modules with a unique pattern on the border that facilitates detecting cell locations and decoding. It is a widely used industrial symbology that allows encoding byte streams and character sets in square or rectangular images. Specifications for Data Matrix are provided in standards ISO/IEC 16022:2000 and [ISO/IEC 24720:2006]. This symbology provides two groups of standards that are outlined below.  
+Data Matrix is a highly efficient two-dimensional (2D) barcode type that encodes information in graphical labels consisting of square black modules with a unique pattern on the border that facilitates detecting cell locations and decoding. It is a widely used industrial specification that allows encoding byte streams and character sets in square or rectangular images. Specifications for Data Matrix are provided in standards ISO/IEC 16022:2000 and [ISO/IEC 24720:2006]. It provides two groups of standards that are outlined below.  
 This information card describes main properties of Data Matrix, its encoding set, structure, size dimensions, capacity, and the error correction mechanism. Code samples for generation and reading through the ***Aspose.BarCode*** library can be found [further](#asposesamples).
   
 <p align="center"><img alt="Data Matrix Barcode" src="datamatrixcode.png"></p>
@@ -24,13 +24,16 @@ This information card describes main properties of Data Matrix, its encoding set
   
 </details>
 
-{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode for .NET*** for Data Matrix generation and recognition:
+{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode*** for Data Matrix generation and recognition:
 - [**Data Matrix Barcodes**](https://docs.aspose.com/barcode/net/datamatrix-barcode/)
 
 {{% /alert %}} 
 
-## **Features**
-  
+
+## **Usage Scenarios**
+This barcode type is widely applied to different fields, including healthcare, business, defense, finance, logistics, and many others. Given that Data Matrix barcodes have the smallest achievable size, they can be very useful when it is necessary to track small items. They are also used to mark printed documents, e.g. letters.
+
+## **Characteristics**
 ### **Encoding Character Set**
 Data Matrix can be used to encode textual information, numerical digits, and bytes of data, including ASCII and Extended Binary Coded Decimal Interchange Code (EBCDIC) symbols.  
 Six encoding modes are supported: ASCII, C40, Text, EDIFACT, Base 256, and X12. The ASCII encoding is the most widely used mode.
@@ -48,7 +51,7 @@ Data Matrix supports the following encoding sets:
 
 </details>
 
-### **Structure**
+### **Barcode Structure**
 Data Matrix labels consist of black and white cells grouped in square (or rectangular) patterns. The main structural elements are: finder pattern, alignment patterns, and quiet zones on four sides. The finder pattern (clock pattern) is represented as a sequence of black and white modules on the right and top borders and a solid line on the left and bottom borders. Scanners use these patterns to identify the area in which input information is encoded. This allows for barcode reading from any angle.
 
 <details>  
@@ -89,18 +92,17 @@ The amount of information stored in each barcode should be limited to 800 charac
 Data Matrix allows storing additional information that serves for error correction to ensure barcode integrity and perform recovery. This approach allows restoring information from distorted or corrupted barcode labels at least in part. The ECC 200 standard supports Reed-Solomon error correction; ECC 000-140 specifications rely on a less advanced convolutional mechanism. Most modern applications are compatible with ECC 200 described in ISO/IEC 16022. Reed-Solomon error correction is capable of restoring two types of invalid codewords: unreadable or incorrectly scanned symbols and a falsely interpreted digit. 
 
 
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
 Data Matrix enables encoding large amounts of information in compact barcode labels that are roughly 30 times smaller compared with Code 39 for the same input message. It is suitable to send documents with barcodes through fax as it allows avoiding problems with resolution and scanning.  
-This symbology has been widely applied to different fields, including healthcare, business, defense, finance, logistics, and many others. Given that Data Matrix barcodes have the smallest achievable size, they can be very useful when it is necessary to track small items. They are also used to mark printed documents, e.g. letters.  
 
 <details>  
 <summary>Read more</summary>
   
-In the study directed by The Center of Automatic Identification at Ohio University, it has been stated that the statistical probability of incorrect recognition of a Data Matrix barcode is 1 across 10.5 million cases. This allows considering this barcode type as highly reliable compared with the Code 39 symbology that showed the probability of false reading being 1 in 1.7 million cases.
+In the study directed by The Center of Automatic Identification at Ohio University, it has been stated that the statistical probability of incorrect recognition of a Data Matrix barcode is 1 across 10.5 million cases. This allows considering this barcode type as highly reliable compared with the Code 39 type that showed the probability of false reading being 1 in 1.7 million cases.
 
 </details>
 
-## **Aspose Samples for Data Matrix Generation and Recognition**
+## **How to Generate and Read Data Matrix Barcodes**
 
 <a name="asposesamples"></a>
 

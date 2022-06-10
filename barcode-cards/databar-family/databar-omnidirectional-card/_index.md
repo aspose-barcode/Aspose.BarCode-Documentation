@@ -2,14 +2,14 @@
 title: DataBar Omnidirectional / Stacked Omnidirectional
 type: docs
 description: "Information about DataBar Omnidirectional Barcode Type and Its Stacked Version"
-key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
+keywords: "DataBar, data bar barcode, databar barcode type, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
 weight: 10
 url: /info-cards/databar-omnidirectional/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results online.{{% /alert %}}
 
 ## **Overview**
-DataBar Omnidirectional and DataBar Stacked Omnidirectional barcode types allow encoding 14-digit numerical data streams. They support encoding Global Coupon Number (GCN) and selected Global Trade Item Number (GTIN) formats, i.e., GTIN-8, GTIN-12, GTIN-13, and GTIN-14.  
+[DataBar](/barcode/info-cards/databar-family) Omnidirectional and DataBar Stacked Omnidirectional barcode types allow encoding 14-digit numerical data streams. They support encoding Global Coupon Number (GCN) and selected Global Trade Item Number (GTIN) formats, i.e., GTIN-8, GTIN-12, GTIN-13, and GTIN-14.  
   
 If GCN or GTIN contains less than 14 digits, zeros are appended to the left side of the input message so that 14 characters are encoded in total.
    
@@ -17,11 +17,14 @@ If GCN or GTIN contains less than 14 digits, zeros are appended to the left side
 | :-: | :-: | :-: | 
 | |<img src="databaromnidirectional.png" alt="DataBar Omnidirectional Barcode">|<img src="databaromnidirectionalstacked.png" alt="DataBar Omnidirectional Barcode">|
   
-## **Features**
+## **Usage Scenarios**
+These barcode types have been introduced to facilitate retail point-of-sale operational tasks and are widely used to label various items that are difficult to mark, e.g. fresh food products, hardware, and jewelry. 
+  
+## **Characteristics**
 ### **Encoding Character Set**
-These barcode types allow encoding all numerical digits (0-9).  
+Numerical digits (0-9) can be encoded.  
 
-### **Structure**
+### **Barcode Structure**
 **DataBar Omnidirectional**  
   
 Barcodes consist of the following elements:
@@ -51,11 +54,11 @@ These barcode types can be used to encode 14-digit numerical data streams.
 ### **Checksum Controls**
 Check digits that are computed based on the modulo 79 algorithm are included in finder patterns.
 
-## **Advantages and Weaknesses**
-DataBar Omnidirectional and DataBar Omnidirectional Stacked have been introduced to manage retail point-of-sale operational tasks. Such barcodes can be scanned omnidirectionally.
+## **Advantages and Limitations**
+Such barcodes can be scanned omnidirectionally.
 
-## **Aspose Samples for DataBar Omnidirectional and Omnidirectional Stacked Barcodes**
-### **DataBar Omnidirectional Generation Code Samples**
+## **How to Generate and Read DataBar Omnidirectional / Omnidirectional Stacked**
+### **DataBar Omnidirectional Generation**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -86,7 +89,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirect
 
 {{< /tabs >}}
 
-### **DataBar Omnidirectional Recognition Code Samples**
+### **DataBar Omnidirectional Recognition**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -118,7 +121,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
 
 {{< /tabs >}}
 
-### **DataBar Omnidirectional Stacked Generation Code Samples**
+### **DataBar Omnidirectional Stacked Generation**
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -149,7 +152,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmn
 
 {{< /tabs >}}
 
-### **DataBar Omnidirectional Stacked Recognition Code Samples**
+### **DataBar Omnidirectional Stacked Recognition**
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 

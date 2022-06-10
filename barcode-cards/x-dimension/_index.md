@@ -2,7 +2,7 @@
 title: What Is X-Dimesion
 type: docs
 description: "Definition of the X-Dimension Parameter"
-key words: ""
+keywords: "barcode, x dimension, x-dimension, what is barcode x dimension, barcode parameters, 1D barcodes, 2D barcodes, linear barcode types"
 weight: 150
 url: /info-cards/x-dimension/
 ---

@@ -1,7 +1,7 @@
 ---
 title: QR Code Family
 description: "Detailed Information about QR Code Specification"
-key words: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
+keywords: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
 type: docs
 weight: 10
 url: /info-cards/qr-code/
@@ -10,18 +10,21 @@ url: /info-cards/qr-code/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily scanned by smartphones and other devices equipped with digital image sensors. The idea has been proposed as an improvement of conventional linear barcode types to adress the need to store much larger amounts of information. This symbology provides a very high recognition speed and increased encoding capacity. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. At present, this 2D barcode type has multiple applications in various spheres, including E-Commerce, marketing, documentation management, item tracking, digital payments, vaccination certificates, and many others. The operations of scanning and decoding can be executed using smartphone cameras and special scanner applications (mobile tagging) that are usually embedded into modern mobile devices. After capturing a QR label, a special application converts it into readable text or more often, into an URL link. 
+QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily scanned by smartphones and other devices equipped with digital image sensors. The idea has been proposed as an improvement of conventional linear barcode types to adress the need to store much larger amounts of information. This barcode type provides a very high recognition speed and increased encoding capacity. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. The operations of scanning and decoding can be executed using smartphone cameras and special scanner applications (mobile tagging) that are usually embedded into modern mobile devices. After capturing a QR label, a special application converts it into readable text or more often, into an URL link. 
   
-Apart from 40 basic configurations, this symbology supports a special option called Micro QR Code that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/info-cards/micro-qr-code/). The specification for this barcode type has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
+Apart from 40 basic configurations, this standard supports a special option called Micro QR Code that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/info-cards/micro-qr-code/). The specification for this barcode type has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
   
 <p align="center"><img src="qrcodesample.png"></p>
   
-{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for QR Code generation and recognition:
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode*** for QR Code generation and recognition:
 - [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-and-micro-qr-barcode/)
 
 {{% /alert %}} 
 
-## **Features**
+## **Usage Scenarios**
+At present, QR Code has multiple applications in various spheres, including E-Commerce, marketing and advertisement (e.g. loyalty programs and coupon distribution), documentation management, item tracking, digital payments, digitalization of vaccination certificates, supply chain management, and many others.
+
+## **Characteristics**
 ### **Encoding Character Set**
 This barcode type can be used to encode various data types, including numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
 It allows encoding the following characters using four encoding modes:
@@ -37,8 +40,8 @@ As an optional encoding feature, QR Code supports the Extended Channel Interpret
 
 </details>
 
-### **Structure**
-Each QR Code label contains the following elements: square modules, finder patterns, timing patterns, one alignment pattern, input data modules, error correction modules, and quiet zones. This symbology encodes information as binary data in modules (square dots). Black and white modules correspond to binaries 1 and 0.  
+### **Barcode Structure**
+Each QR Code label contains the following elements: square modules, finder patterns, timing patterns, one alignment pattern, input data modules, error correction modules, and quiet zones. It encodes information as binary data in modules (square dots). Black and white modules correspond to binaries 1 and 0.  
 
 The key elements include the following:   
 - Finder (position detection) patterns - square bull's eye signs in three corners of a QR label. These patterns facilitate accurate and fast scanning at any orientation angle
@@ -63,7 +66,7 @@ The practically achievable minimal size is 10 mm or 0.4 inches (according to the
 </details>
 
 ### **Encoding Capacity and Data Density**
-This 2D symbology provides very high density. Each QR version has its own maximum capacity. The actual capacity may vary according to the amount of information to be encoded, encoding type, and the error correction level. QR Codes can store up to 3 KB of data, i.e., 2,953 bytes or 7,089 numerical digits or 4,296 letters, or 1,817 Japanese Kanji symbols. 
+This 2D type provides very high density. Each QR version has its own maximum capacity. The actual capacity may vary according to the amount of information to be encoded, encoding type, and the error correction level. QR Codes can store up to 3 KB of data, i.e., 2,953 bytes or 7,089 numerical digits or 4,296 letters, or 1,817 Japanese Kanji symbols. 
 
 <details>  
 <summary>Read more</summary>
@@ -93,7 +96,7 @@ Levels Q or H may be preferred in industrial environments where the probability 
   
 </details>
   
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
  
 The key advantages of this barcode type are the following:
 - very high reading speed
@@ -108,7 +111,7 @@ The key advantages of this barcode type are the following:
   
 However, QR Codes are sensitive to substantial damage to the target pattern as it can prevent from correct scanning and recognition.
 
-## **Aspose Samples for QR Code Generation and Recognition**
+## **How to Generate and Read QR Codes**
 
 ### **Generation Code Samples**
 
@@ -117,7 +120,7 @@ However, QR Codes are sensitive to substantial damage to the target pattern as i
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
-//generate QR Barcode
+//generate QR Code
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -151,7 +154,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 
 {{< /tabs >}}
 
-### **Recognition Code Sample**
+### **Recognition Code Samples**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 

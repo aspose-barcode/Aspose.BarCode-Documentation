@@ -2,21 +2,23 @@
 title: DataBar Limited
 type: docs
 description: "Information about DataBar Limited Barcode Type"
-key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
+keywords: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
 weight: 40
 url: /info-cards/databar-limited/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results online.{{% /alert %}}
 
 ## **Overview**
-DataBar Limited is a fixed-length barcode type that supports encoding selected Global Trade Item Numbers (GTINs) that start with 0 or 1. It is intended for use in applications where space limitations are crucial and omnidirectional scanning is not needed. 
+[DataBar](/barcode/info-cards/databar-family) Limited is a fixed-length barcode type that supports encoding selected Global Trade Item Numbers (GTINs) that start with 0 or 1.
 
 <p align="center"><img src="databarlimited.png"></p>
 
-## **Features**
-  
+## **Usage Scenarios**
+This barcode type does not support omnidirectional scanning and thus does not apply to retail point-of-sale operational tasks. It allows producing very compact labels and is suitable for applications in which the placement area is strictly limited, e.g. marking very small loose products (vegetables, fruits, or cosmetics).
+
+## **Characteristics**
 ### **Encoding Character Set**
-This symbology allows encoding all numerical digits (0-9). 
+Numerical digits (0-9) are supported for encoding. 
 
 ### **Barcode Structure**
 The structure includes the following elements:
@@ -32,15 +34,15 @@ The first digit serves as a flag to specify whether this barcode will be utilize
 DataBar Limited barcodes consist of 46 bars and spaces including 74 modules in total.
 
 ### **Encoding Capacity and Data Density**
-This symbology allows encoding 14-digit numerical data streams.
+This barcode type allows encoding 14-digit numerical data streams.
 
 ### **Checksum Controls**
 DataBar Limited barcodes include a check digit calculated using the modulo 89 algorithm.
 
-## **Advantages and Weaknesses**
-This DataBar specification is not intended for retail point-of-sale scanning. Its main advantage is high compactness, which can be useful in applications with strict placement space limitations.
+## **Advantages and Limitations**
+This DataBar specification is not intended for retail point-of-sale scanning. Its main advantage is high compactness, which can be useful in applications with strict space limitations.
 
-## **Aspose Samples for DataBar Limited Barcodes**
+## **How to Generate and Read DataBar Limited Barcodes**
 
 ### **Generation Code Samples**
 

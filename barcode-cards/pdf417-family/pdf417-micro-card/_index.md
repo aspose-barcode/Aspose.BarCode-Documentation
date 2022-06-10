@@ -1,7 +1,7 @@
 ---
 title: Micro PDF417
 description: "Description of Micro PDF417 specifics"
-key words: "PDF417 barcode, pdf 417 barcodes, micro pdf417 symbology, Create pdf417 barcodes, Read micro pdf417 barcode, what is micro pdf417, pdf 417 barcodes, generate micro pdf417, matrix barcodes, 2D symbology, micro pdf417 specification, pdf417 generator, pdf417 reader, recognize micro pdf 417, scan micro pdf417"
+keywords: "PDF417 barcode, pdf 417 barcodes, micro pdf417 symbology, Create pdf417 barcodes, Read micro pdf417 barcode, what is micro pdf417, pdf 417 barcodes, generate micro pdf417, matrix barcodes, 2D symbology, micro pdf417 specification, pdf417 generator, pdf417 reader, recognize micro pdf 417, scan micro pdf417"
 type: docs
 weight: 30
 url: /info-cards/micro-pdf417/
@@ -11,27 +11,29 @@ url: /info-cards/micro-pdf417/
 ## **Overview**
 Micro PDF417 is a two-dimensional variable-length stacked symbology that has been developed to encode a moderate amount of data in a very compact space in cases when minimizing the barcode label size is the main concern. It is based on the PDF417 specification and adopts its main features. 
 
-Micro PDF417 is similar to PDF417 in terms of its encoding modes, error correction mechanism, and supported encoding sets. Micro PDF417 does not inherit the configuration of PDF417 with 17-module patterns and row indicators. Instead, it uses a unique set of address patterns with the size of 10 modules. This design has been introduced to decrease the barcode width and facilitate linear scanning for narrow barcodes (row heights twice wider than the [X-dimension](/barcode/info-cards/x-dimension/)). Unlike PDF417, Micro PDF417 labels can be generated only following pre-defined configurations with fixed numbers of rows, columns, and error correction codewords, up to a maximum of four data columns composed of 44 rows. This symbology is suitable for applications that require improved space usage efficiency but can be satisfied with a capacity lower than that of Basic PDF417. Micro PDF can be used to create composite barcodes together with GS1 [DataBar](/barcode/info-cards/databar-family) barcodes.
+Micro PDF417 is similar to PDF417 in terms of its encoding modes, error correction mechanism, and supported encoding sets. Micro PDF417 does not inherit the configuration of PDF417 with 17-module patterns and row indicators. Instead, it uses a unique set of address patterns with the size of 10 modules. This design has been introduced to decrease the barcode width and facilitate linear scanning for narrow barcodes (with row heights being only twice wider than the [X-dimension](/barcode/info-cards/x-dimension/)). Unlike PDF417, Micro PDF417 labels can be generated only following pre-defined configurations with fixed numbers of rows, columns, and error correction codewords, up to a maximum of 4 data columns composed of 44 rows. Micro PDF can be used to create composite barcodes together with GS1 [DataBar](/barcode/info-cards/databar-family) barcodes.
 
 Micro PDF417 is defined in standard ISO/IEC 24728.
 
-<p align="center"><img src="micropdf417code.png" alt="Micro PDF417 Barcode></p>
+<p align="center"><img src="micropdf417code.png" alt="Micro PDF417 Barcode"></p>
 
-{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for PDF417 generation and recognition:
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode*** for PDF417 generation and recognition:
 - [**PDF417 in Aspose.BarCode for .NET**](/barcode/net/pdf417-and-macropdf417-barcode/)
 
 {{% /alert %}} 
 
-## **Features**
-  
+## **Usage Scenarios**
+This barcode type is suitable for applications that require improved space usage efficiency for which reduced encoding capacity (lower than [Basic PDF417](/barcode/info-cards/pdf417-family/)) would be sufficient.
+
+## **Characteristics**
 ### **Encoding Character Set**
-This symbology supports encoding all 256 ASCII characters and 8-bit binary data.  
+All 256 ASCII characters and 8-bit binary sequences are supported for encoding.  
 Micro PDF417 applies various data compaction schemes to increase encoding efficiency. The following modes are supported to map the input message and codeword sequences:
 - Text compaction mode
 - Byte compaction mode
 - Numeric compaction mode
 
-### **Structure**
+### **Barcode Structure**
 Each Micro PDF417 barcode label may comprise between 4 and 44 rows and from 1 to 4 columns. Only certain configurations including fixed numbers of rows and columns are supported. Each codeword gets encoded in a set of 4 bars and 4 spaces composed of 17 rectangular modules in a single row. Row height can be adjusted. It is possible to store Macro 05 and Macro 06 symbols in Micro PDF417 barcodes to denote industry-specific prefixes and suffixes in a single symbol to decrease the overall number of symbols. Unlike Basic PDF417, Micro PDF417 does not contain start and stop characters.
   
 |Number of columns|Allowed Number of Rows|
@@ -61,10 +63,10 @@ Micro PDF417 is capable of encoding at most 150 bytes of data or 266 alphanumeri
 ### **Error Correction**
 Micro PDF417 uses the Reed-Solomon algorithm for error correction. The number of error correction codewords is strictly fixed for each configuration.
 
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
 This barcode type is used to create composite codes combined with the GS1 DataBar barcodes. Owing to its ability to encode large input messages taking very compact space, Micro PDF417 is often used in food industry business tasks in which the placement space limitation needs to be addressed and barcodes must be scanned in a quick and easy way by hand-scanners to track important information about goods.
 
-## **Aspose Code Samples for Micro PDF417 Generation and Recognition**
+## **How to Generate and Read Micro PDF417 Barcodes**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}

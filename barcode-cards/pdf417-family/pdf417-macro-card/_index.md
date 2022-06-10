@@ -1,7 +1,7 @@
 ---
 title: Macro PDF417
 description: "Description of Macro PDF417 Specification"
-key words: "PDF417 barcode, pdf 417 barcodes, macro pdf417 symbology, Create pdf417 barcodes, Read macro pdf417 barcode, what is macro pdf417, pdf 417 barcodes, generate macro pdf417, matrix barcodes, 2D symbology, macro pdf417 specification, pdf417 generator, pdf417 reader, recognize macro pdf 417, scan pdf417, many pdf417 barcodes, multiple pdf417, how to put back together macro pdf417"
+keywords: "PDF417 barcode, pdf 417 barcodes, macro pdf417 type, Create pdf417 barcodes, Read macro pdf417 barcode, what is macro pdf417, pdf 417 barcodes, generate macro pdf417, matrix barcodes, 2D symbology, macro pdf417 specification, pdf417 generator, pdf417 reader, recognize macro pdf 417, scan pdf417, many pdf417 barcodes, multiple pdf417, how to put back together macro pdf417"
 type: docs
 weight: 10
 url: /info-cards/macro-pdf417/
@@ -13,17 +13,19 @@ Macro PDF417 is a special feature that serves to divide files that are too large
 
 <p align="center"><img src="macropdf417permanent.png" alt="Macro PDF417 Barcode"></p>
 
-{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for PDF417 generation and recognition:
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode*** for PDF417 generation and recognition:
 - [**PDF417 in Aspose.BarCode for .NET**](/barcode/net/pdf417-and-macropdf417-barcode/)
 
 {{% /alert %}} 
 
-## **Features**
-  
+## **Usage Scenarios**
+Macro PDF417 can be used to divide information from a large file into multiple blocks that get encoded in a sequence of PDF417 barcodes and then can be reassembled together in the correct order.
+
+## **Characteristics**
 ### **Encoding Character Set**
 See the article [PDF417 Barcode Family](/barcode/info-cards/pdf417-family/) for the information about character sets supported for encoding in PDF417 barcodes.  
 
-### **Structure**
+### **Barcode Structure**
 Available configurations may contain from 1 to 30 columns with input information, 2 columns with metainformation (i.e. row indicator, the number of rows and columns), and finally, start and stop patterns. The number of rows can range from 3 to 90. The main distinction between Macro PDF417 and Basic PDF417 is the capability to encode additional metadata about barcode contents. This redundancy corresponding to auxiliary metadata allows reading such barcodes with laser scanners, as well as reducing image quality requirements.  
 Macro PDF417 barcodes contain additional control data used to facilitate this distributed representation. It allows decoders to correctly reassemble and validate encoded segments regardless of the scanning order. 
 
@@ -36,10 +38,10 @@ The capacity of Macro PDF417 is theoretically unlimited as it allows binding tog
 ### **Error Correction**
 The same error correction mechanism as in Basic PDF417 is applied. See more information in the article [PDF417 Barcode Family](/barcode/info-cards/pdf417-family/).
 
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
 Macro PDF allows representing multiple files in logical and consecutive sequences of PDF417 barcode segments. Up to 99,999 PDF417 barcodes can be linked or concatenated and then scanned in any sequence to enable the correct reconstruction of the original file.
 
-## **Aspose Samples for Macro PDF417 Generation and Recognition**
+## **How to Generate and Read Macro PDF417**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}

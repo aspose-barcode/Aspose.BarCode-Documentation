@@ -1,7 +1,7 @@
 ---
 title: Micro QR Code
 description: "General description of Micro Qr Code"
-key words: "QR Code, qr codes, micro qr, Micro QR Code, what is micro qr, what is qr code, generate micro qr, create micro qr code, read micro qr, how to read qr, qr code structure, how much data can encode micro qr, micro qr code size"
+keywords: "QR Code, qr codes, micro qr, Micro QR Code, what is micro qr, what is qr code, generate micro qr, create micro qr code, read micro qr, how to read qr, qr code structure, how much data can encode micro qr, micro qr code size"
 type: docs
 weight: 20
 url: /info-cards/micro-qr-code/
@@ -10,16 +10,19 @@ url: /info-cards/micro-qr-code/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
 
 ## **Overview**
-Micro QR (Quick Response) code is a variant of QR Code that has been introduced to save printing space by further reducing the size of QR Code labels.
+Micro QR (Quick Response) code is a variant of [QR Code](/barcode/info-cards/qr-code) that has been introduced to save printing space by further reducing the size of QR Code labels.
 
 <p align="center"><img src="microqrcodesample.png"></p>
 
-{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode for .NET*** for Micro QR Code generation and recognition:
+{{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode*** for Micro QR Code generation and recognition:
 - [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-and-micro-qr-barcode/)
 
 {{% /alert %}} 
 
-## **Features**
+## **Usage Scenarios**
+Micro QR Codes are intended for use in cases when 35 digits would be sufficient to encode the input message and there is a strong need to reduce space occupied by QR Code labels. One of the applications is to mark printed circuit boards and various electrical components.
+
+## **Characteristics**
 ### **Encoding Character Set**
 Micro QR Code allows encoding the same data types as [QR Codes](/barcode/info-cards/qr-code/): numeric and alphabetic characters, Unicode symbols, Kanji, and special characters.  
 Micro QR Code supports the following standard encoding modes:
@@ -28,7 +31,7 @@ Micro QR Code supports the following standard encoding modes:
 - 8-bit byte/binary: information gets encoded at 8 bits per symbol
 - Kanji: Kanji characters according to the Japanese Industrial Standard (JIS) 
   
-### **Structure**
+### **Barcode Structure**
 Micro QR Codes have a structure similar to that of basic QR Code labels. It includes square modules, timing patterns, input information, error correction data, and quiet zones. However, it has only one orientation (finder) pattern and does not contain the alignment pattern to reduce the label size so that it can be printed taking tiny space. The least possible number of modules is 11 x 11. Micro QR Code encodes input information as binary data in modules (square dots) in the same way as defined in the basic QR Code specification.  
 
 <details>
@@ -48,9 +51,9 @@ Micro QR Code versions range from M1 to M4. Each version has its own module conf
 Micro QR Codes can encode up to 35 numerical digits or 21 alphabetical characters or 15 bytes. 
 
 ### **Error Correction**
-QR Code provides the error correction capability to restore data if the image has become dirty or damaged. It supports Reed-Solomon error correction and enables four error correction levels with a recovery capacity from 7% to 30%. In the Micro QR Code specification, error correction level H is not available. For Version M1, the Reed-Solomon capacity is limited to error detection only.
+[QR Code](/barcode/info-cards/qr-code) provides the error correction capability to restore data if the image has become dirty or damaged. It supports Reed-Solomon error correction and enables four error correction levels with a recovery capacity from 7% to 30%. In the Micro QR Code specification, error correction level H is not available. For Version M1, the Reed-Solomon capacity is limited to error detection only.
   
-This symbology supports three error correction levels, as listed below.
+This barcode type supports three error correction levels, as listed below.
    
 |<p align="center">**Error Correction Level**</p>|<p align="center">**Recovery Capacity**</p>|
 | :-: | :-: |
@@ -58,7 +61,7 @@ This symbology supports three error correction levels, as listed below.
 |Level M| 15% |
 |Level Q| 25% |
 
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
 The key advantages of Micro QR codes are summarized below:
 - compactness
 - high decoding speed
@@ -68,9 +71,9 @@ The key advantages of Micro QR codes are summarized below:
 - high data encoding density
 - customizable error correction
   
-However, Micro QR Codes are sensitive to substantial damage to the target pattern as it can hinder barcode detection in the scanned image. This symbology provides very limited capacity so it can be applied only to special cases that do not require encoding large input messages. 
+Micro QR Code provides improved density and encode data more efficiently compared with [QR Code](/barcode/info-cards/qr-code). However, Micro QR Codes are sensitive to substantial damage to the target pattern as it can hinder barcode detection in the scanned image. This type provides very limited capacity so it can be applied only to special cases that do not require encoding large input messages. 
 
-## **Aspose Samples for Micro QR Code Generation and Recognition**
+## **How to Generate and Read Micro QR Codes**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}

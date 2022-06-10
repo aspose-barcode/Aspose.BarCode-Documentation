@@ -1,7 +1,7 @@
 ---
 title: Code 39
 description: "Overview on main parameters of Code 39 Barcode Type"
-key words: "Code 39, code39, Code 39 symbology, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D symbology, linear barcode type, code39 extended, code 39 specification"
+keywords: "Code 39, code39, Code 39 barcode type, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D barcode, linear barcode type, code39 extended, code 39 specification"
 type: docs
 weight: 110
 url: /info-cards/code-39/
@@ -9,20 +9,23 @@ url: /info-cards/code-39/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code39) and [Generate](https://products.aspose.app/barcode/generate/code39) Code 39 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Code 39 is a variable-length barcode specification introduced in 1974 by Intermec Corporation. It was the first symbology that allowed storing not only numerical digits but also alphabetic symbols. Its encoding set includes 43 symbols, i.e. uppercase English letters (A-Z), numerical digits, and several special characters. Each symbol gets encoded in a set of five bars and four spaces. It enables self-checking and thus it does not require obligatory checksum controls. Code 39 has been widely employed in various industries, including the LOGMARS system developed by the US military.
+Code 39 is a variable-length barcode type introduced in 1974 by Intermec Corporation. It was the first specification that allowed storing not only numerical digits but also alphabetic symbols. Its encoding set includes 43 symbols, i.e. uppercase English letters (A-Z), numerical digits, and several special characters. Each symbol gets encoded in a set of five bars and four spaces. It enables self-checking and thus it does not require obligatory checksum controls. Code 39 has been widely employed in various industries, including the LOGMARS system developed by the US military.
 
 <p align="center"><img alt="Code 39 Barcode" src="code39.png"></p>
 
-{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode for .NET*** for linear barcode generation and recognition:
+{{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode*** for linear barcode generation and recognition:
 - [**Specific Parameters for 1D barcodes**](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)
 
 {{% /alert %}} 
 
-## **Features**
+## **Usage Scenarios**
+Despite being introduced in the mid-'70s, Code 39 remains one of the frequently widely used barcode types even nowadays. It was widely implemented in various applications, such as inventory management, digitalization of name badges, automotive and medical equipment production, airplane construction, defense projects (i.e. LOGMARS), healthcare sector, transportation, and assembly tracking.
+  
+## **Characteristics**
 ### **Encoding Character Set**
 Code 39 enables encoding characters from the 43-character and 128-character ASCII sets, including uppercase English letters, numerical digits, and special symbols (space, '.', '-', '/', '%', '+', ' * ', and '$'). Symbol ' * ' serves to denote start and stop symbols.
 
-### **Structure**
+### **Barcode Structure**
 Each Code 39 data symbol is encoded using five bars and four spaces so that three of them are wide and six are narrow.  
 The following structure is supported:
 - Starting quiet zone
@@ -33,7 +36,7 @@ The following structure is supported:
 - One-module wide spaces separating symbols within a barcode
 
 ### **Size Dimensions**
-To scan Code 38 barcodes manually, it is recommended to set the minimum height to 5.0 mm or 15% of the width. The size of quiet zones should be 10 times wider than the current [X-Dimension](/barcode/info-cards/x-dimension/). This standard allows generating labels of different proportions, i.e. 2:1,0 or 3:1,0. The larger is the selected proportion, the larger gets the printed label; however, this also improves readability.
+To scan Code 38 barcodes manually, it is recommended to set the minimum height to 5.0 mm or 15% of the width. The size of quiet zones should be 10 times wider than the current [X-dimension](/barcode/info-cards/x-dimension/). This standard allows generating labels of different proportions, i.e. 2:1,0 or 3:1,0. The larger is the selected proportion, the larger gets the printed label; however, this also improves readability.
 
 ### **Encoding Capacity and Data Density**
 Code 39 allows generating barcodes of variable length; its average data capacity varies from 20 to 23 alphanumerical characters. Even though it enables encoding the entire ASCII set including 128 symbols, this leads to limitations in terms of density. This happens because symbols from the full ASCII set need to be encoded in two digits and thus occupy a larger space. 
@@ -43,9 +46,9 @@ Code 39 does not require setting obligatory checksum controls and thus does not 
 
 ## **Advantages and Limitations**
 Code 39 can be applied to the majority of industrial needs. Such barcodes can be scanned and decoded by most scanners existing in the market.
-This symbology provides quite low data density and does not allow verifying the correctness of recognition as it does not include default checksum controls. Low data density means that the greater is the amount of information to be encoded, the larger is the size of a barcode label. Code 39 is not applicable in situations when the space is limited. Like other 1D symbologies, Code 39 labels can be easily corrupted and become unreadable as a result of ink spread while printing.
+Main limitations of this type are quite low data density and inability to verify the correctness of recognition as it does not include default checksum controls. Low data density means that the greater is the amount of information to be encoded, the larger is the size of a barcode label. Code 39 is not applicable in situations when space limitations are critical. Like other 1D barcodes, Code 39 labels can be easily corrupted and become unreadable as a result of ink spread while printing.
 
-## **Aspose Samples for Code 39 Generation and Recognition**
+## **How to Generate and Read Code 39 Barcodes**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}

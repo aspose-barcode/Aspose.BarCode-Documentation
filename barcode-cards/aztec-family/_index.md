@@ -1,7 +1,7 @@
 ---
 title: Aztec Code Family
 description: "General Overview on Aztec Code Barcode Type"
-key words: "Aztec Code, aztec barcode, aztec symbology, Create aztec barcodes, Read aztec codes, what is aztec code, aztec barcodes, generate aztec code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec generator, aztec reader, recognise aztec codes, scan aztec barcode"
+keywords: "Aztec Code, aztec barcode, aztec code full-range, full range aztec barcode, Create aztec barcodes, Read aztec codes, what is aztec code, aztec barcodes, generate aztec code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec generator, aztec reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 40
 url: /info-cards/aztec-full-range/
@@ -9,7 +9,7 @@ url: /info-cards/aztec-full-range/
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/aztec) and [Generate](https://products.aspose.app/barcode/generate/aztec) Aztec barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
-Aztec Code is a family of two-dimensional (2D) barcode types that encode information in square modules with unique finder patterns in the center of barcode labels. Such finder patterns facilitate identifying cell locations while scanning and decoding Aztec barcodes. Aztec Code was introduced by Andrew Longacre and Robert Hussey at Welch Allyn, Inc in 1995 to provide higher reading accuracy than other 2D symbologies. The name of this symbology corresponds to the similarity of the central finder pattern to an Aztec pyramid viewed from above.
+Aztec Code is a family of two-dimensional (2D) barcode types that encode information in square modules with unique finder patterns in the center of barcode labels. Such finder patterns facilitate identifying cell locations while scanning and decoding Aztec barcodes. Aztec Code was introduced by Andrew Longacre and Robert Hussey at Welch Allyn, Inc in 1995 to provide higher reading accuracy than other 2D types. This type got his name based on the similarity of the central finder pattern to an Aztec pyramid viewed from above.
   
 The Aztec Code barcode group includes three subtypes:
 
@@ -20,7 +20,7 @@ The Aztec Code barcode group includes three subtypes:
 Further in this article, Full-Range Aztec Code is discussed. This information card outlines its key specifics, including the supported character set, barcode structure, size dimensions, data capacity, and error correction capability. Code samples for barcode generation and recognition through the ***Aspose.BarCode*** library are given [below](#asposesamples).
 
 ## **Overview**
-Full-range Aztec Code is a 2D symbology that is widely used to work with travel documents (e.g. airline tickets), car registration documentation, and healthcare applications. This barcode type is suitable for small item marking and tracking. 
+Full-range Aztec Code is a 2D barcode type that allows encoding streams of bytes and alphanumeric symbols. Such barcodes are designed as square labels composed of black and white modules and several rings constituting a unique pattern in the center that improves scanning and decoding. This type supports the mechanism of Reed-Solomon error correction that allows ensuring data integrity and restoring barcode information in case of damage. Aztec Code benefits from increased density and reading precision. 
 
 <p align="center"><img src="aztecfullrange.png" alt="Aztec Code Full-Range Barcode"></p>
 
@@ -29,12 +29,14 @@ Full-range Aztec Code is a 2D symbology that is widely used to work with travel 
 
 {{% /alert %}} 
 
-## **Features**
-  
-### **Encoding Character Set**
-This symbology supports all 255 ASCII characters (digits 0-9, text, binary data), as well as FNC1 Flag 7 symbols.
+## **Usage Scenarios**
+Aztec Code is widely used to work with travel documents (e.g. airline tickets), car registration documentation, and healthcare applications. This barcode type is suitable for small item marking and tracking.
 
-### **Structure**
+## **Characteristics**
+### **Encoding Character Set**
+This barcode type supports all 255 ASCII characters (digits 0-9, text, binary data), as well as FNC1 Flag 7 symbols.
+
+### **Barcode Structure**
 Full-range Aztec Code barcodes the core symbol is always square and is placed in the exact center of a barcode. It comprises a finder pattern, orientation patterns, and a mode message. The finder pattern has the central square, 3 black, and 3 white finder pattern rings. It is surrounded by several data layers (from 4 to 32) and a reference grid. In full-range Aztec barcodes, the core has a configuration composed of 15 x 15 modules. It is crucial to successfully detect and decode the core symbol before proceeding with decoding information fields. As Aztec Codes are read starting from the central symbol, no quiet zone is required.
 
 <details>  
@@ -54,7 +56,7 @@ Full-range Aztec Code barcodes the core symbol is always square and is placed in
 
 ### **Size Dimensions**
 Full-Range Aztec barcodes include up to 32 data layers reaching the maximum size of 151 x 151 modules. In total, there are 33 various size configurations.  
-The smallest possible number of modules is 15x15, and the largest possible configuration includes 151x151 modules. Aztec Code is one of the most compact symbologies. An Aztec label can be approximately 30 times smaller than a Code 39 barcode for the same input message. A quiet zone is not required as the unique finder pattern is placed in the center of barcodes.
+The smallest possible number of modules is 15x15, and the largest possible configuration includes 151x151 modules. Aztec Code is one of the most compact barcode types. An Aztec label can be approximately 30 times smaller than a Code 39 barcode for the same input message. A quiet zone is not required as the unique finder pattern is placed in the center of barcodes.
 
 ### **Encoding Capacity and Data Density**
 Aztec Code can encode both small and large input messages with customizable error correction settings. The barcode size gets adjusted automatically based on the amount of information to be encoded.  
@@ -69,16 +71,16 @@ Aztec Code capacity varies for different configurations depending on the preferr
 </details>
 
 ### **Error Correction**
-This symbology supports Reed-Solomon error correction. The required error correction level can be defined as a value from 5% to 95%. Error correction data cannot take less than three codewords. Setting a greater level of error correction leads to generating larger labels that are more resistant to distortions.  
+This specification supports Reed-Solomon error correction. The required error correction level can be defined as a value from 5% to 95%. Error correction data cannot take less than three codewords. Setting a greater level of error correction leads to generating larger labels that are more resistant to distortions.  
   
 Error correction levels over 23% are not recommended for use in cases when large input messages need to be encoded as this may lead to exceeding the barcode capacity. When barcodes are used in safe environments where the probability of damage is low, it is recommended to set the error correction level of 5%-10%. This will allow producing more compact barcode labels.
 
-## **Advantages and Weaknesses**
-Aztec Code has extremely high damage resistance capability. This barcode type uses the space more efficiently than other matrix symbologies. The size can be also adjusted allowing for larger amounts of information to be stored. The other advantage is that quiet zones are not required.    
+## **Advantages and Limitations**
+Aztec Code has extremely high damage resistance capability. This barcode type uses the space more efficiently than other matrix types. The size can be also adjusted allowing for larger amounts of information to be stored. The other advantage is that quiet zones are not required.    
 Such barcodes may be useful in the case of sending documentation via fax as they provide good readability even for low-resolution images.  
-Aztec Code does not support Kana or Kanji characters.
+Compared with QR Code, Aztec Code is more compact, does not require quiet zones and has better density. However, it does not support Kana or Kanji symbols.
 
-## **Aspose Samples for Full-Range Aztec Generation and Recognition**
+## **How to Generate and Read Full-Range Aztec Barcodes**
 <a name="asposesamples"></a>
 
 ### **Generation Code Samples**

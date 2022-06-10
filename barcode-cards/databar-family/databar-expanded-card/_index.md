@@ -2,25 +2,27 @@
 title: DataBar Expanded / Expanded Stacked
 type: docs
 description: "Information about DataBar Expanded Barcode Type and Its Stacked Version"
-key words: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 2D symbology, 2D barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
+keywords: "DataBar, data bar barcode, databar symbology, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, databar specification, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family"
 weight: 30
 url: /info-cards/databar-expanded/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/databar) and [Generate](https://products.aspose.app/barcode/generate/databar) DataBar barcodes online. You can check ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-**DataBar Expanded** is intended for use in applications that require storing supplementary information. Besides Global Trade Item Numbers (GTINs) or Global Coupon Numbers (GCNs), DataBar Expanded can encode additional application identifiers and information (attributes), e.g. expiration date, product weight, lot number, etc. This barcode type supports the Serial Shipping Container Code (SSCC)-18 structure that uses "00" as an application identifier.  
+**[DataBar](/barcode/info-cards/databar-family) Expanded** is intended for use in applications that require storing supplementary information. Besides Global Trade Item Numbers (GTINs) or Global Coupon Numbers (GCNs), DataBar Expanded can encode additional application identifiers and information (attributes), e.g. expiration date, product weight, lot number, etc. This barcode type supports the Serial Shipping Container Code (SSCC-18) structure that uses "00" as an application identifier.  
   
-**DataBar Expanded Stacked** is a specification based on DataBar Expanded that allows generating barcodes divided into many rows with a separator pattern between them.
+**[DataBar](/barcode/info-cards/databar-family) Expanded Stacked** is a specification based on DataBar Expanded that allows generating barcodes divided into many rows with a separator pattern between them.
     
 |Examples|DataBar Expanded|DataBar Expanded Stacked|
 | :-: | :-: | :-: | 
 | |<img src="databarexpanded.png" heigh="75%" width="75%" alt="DataBar Expanded Barcode">|<img src="databarexpandedstacked.png" heigh="75%" width="75%" alt="DataBar Expanded Stacked Barcode">|
   
-## **Features**
-  
+## **Usage Scenarios**
+These barcode types are applicable to retail point-of-sale operations as they support omnidirectional scanning. They are intended for use in cases when it is necessary to encode auxiliary information about products besides GTIN identifiers, such as the date of expiration, weight, batch number, sell-by date, etc. These barcodes are often utilized to facilitate the distribution and realization of supermarket coupons. 
+
+## **Characteristics**
 ### **Encoding Character Set**
-These barcode types can encode the following character sets: 
+The following character sets are supported: 
 - All numeric digits (0-9)
 - All uppercase and lowercase letters (A-Z and a-z)
 - Special function symbol (FNC1)
@@ -54,16 +56,16 @@ DataBar Expanded is a variable-length barcode type that allows varying the width
 DataBar Expanded Stacked barcodes can include from 2 to 11 rows. The height of each row is 34 modules, and the height of the separator pattern equals 3 modules. This configuration enables omnidirectional readability for such barcodes.
 
 ### **Encoding Capacity and Data Density**
-These symbologies allow encoding at most 74 numerical digits or 41 alphanumeric characters.
+At most 74 numerical digits or 41 alphanumeric characters can be encoded.
 
 ### **Checksum Controls**
 Barcodes include check digits computed based on the modulo 211 algorithm.
 
-## **Advantages and Weaknesses**
-DataBar Expanded and DataBar Expanded Stacked have been developed for use in retail point-of-sale applications. Such barcodes can be read omnidirectionally. Unlike other DataBar symbologies that can use only selected GTIN formats, Expanded DataBar specifications are compatible with any of them. The enhanced capacity results in creating larger barcodes thus being inferior in terms of compactness compared with DataBar Omnidirectional.
+## **Advantages and Limitations**
+These barcode types enable omnidirectional reading and are suitable for use in retail point-of-sale applications. Unlike other DataBar types that can use only selected GTIN formats, Expanded DataBar specifications are compatible with any of them. The enhanced capacity results in creating larger barcodes thus being inferior in terms of compactness compared with DataBar Omnidirectional.
 
-## **Aspose Samples for DataBar Expanded and Expanded Stacked Barcpdes**
-### **DataBar Expanded Generation Code Samples**
+## **How to Generate and Read DataBar Expanded / Expanded Stacked**
+### **DataBar Expanded Generation**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -95,7 +97,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, 
 
 {{< /tabs >}}
 
-### **DataBar Expanded Recognition Code Samples**
+### **DataBar Expanded Recognition**
 
 {{< tabs tabTotal="3" tabID="2" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -127,7 +129,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpanded.png", Deco
 
 {{< /tabs >}}
 
-### **DataBar Expanded Stacked Generation Code Samples**
+### **DataBar Expanded Stacked Generation**
 
 {{< tabs tabTotal="3" tabID="3" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
@@ -161,7 +163,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedSt
 
 {{< /tabs >}}
 
-### **DataBar Expanded Stacked Recognition Code Samples**
+### **DataBar Expanded Stacked Recognition**
 
 {{< tabs tabTotal="3" tabID="4" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 

@@ -1,7 +1,7 @@
 ---
 title: PDF417 Family
 description: "General information about the PDF417 barcode family"
-key words: "PDF417 barcode, pdf 417 barcodes, pdf417 symbology, Create pdf417 barcodes, Read pdf417 barcode, what is pdf417 barcode, pdf 417 barcodes, generate pdf417, matrix barcodes, 2D symbology, pdf417 specification, pdf417 generator, pdf417 reader, recognize pdf 417, scan pdf417"
+keywords: "PDF417 barcode, pdf 417 barcodes, pdf417 symbology, Create pdf417 barcodes, Read pdf417 barcode, what is pdf417 barcode, pdf 417 barcodes, generate pdf417, matrix barcodes, 2D symbology, pdf417 specification, pdf417 generator, pdf417 reader, recognize pdf 417, scan pdf417"
 type: docs
 weight: 30
 url: /info-cards/pdf417-family/
@@ -12,7 +12,7 @@ url: /info-cards/pdf417-family/
 PDF417 (Portable Data File 417) is a family of 2D stacked barcode types introduced to store large amounts of information in relatively compact barcode labels. Here, "417" denotes the approach used to encode a single digit: 4 bars and 4 spaces constitute a 17-module pattern. This symbology can be used to encode both streams of bytes and Unicode symbols. PDF417 enables using the extended format of metadata that allows splitting the input message into several barcodes and then storing them in a document to reassemble later. PDF417 supports laser scanning for work with high-quality documentation. The PDF417 specification is summarized in the [ISO/IEC 15438](https://www.iso.org/standard/43816.html) document.
 
 ## **Overview**
-Basic PDF417 is a high-density variable-length barcode type that supports error correction. It allows encoding textual data, numerical digits, files, and streams of bytes. PDF417 barcodes are composed of multiple linear rows stacked together thus increasing the amount of information that can be encoded compared to linear symbologies. PDF417 can be read by linear and raster laser scanners or special imaging devices. The shape of PDF417 barcode labels is rectangular. Their size can be customized according to specific business needs. It is important to maintain appropriate printing accuracy and suitable resolution to create high-quality barcode images. 
+Basic PDF417 is a high-density variable-length barcode type that supports error correction. It allows encoding textual data, numerical digits, files, and streams of bytes. PDF417 barcodes are composed of multiple linear rows stacked together thus increasing the amount of information that can be encoded compared to 1D types. PDF417 can be read by linear and raster laser scanners or special imaging devices. The shape of PDF417 barcode labels is rectangular. Their size can be customized according to specific business needs. It is important to maintain appropriate printing accuracy and suitable resolution to create high-quality barcode images. 
   
 <p align="center"><img src="pdf417basic.png" alt="Basic PDF417 Barcode"></p>
   
@@ -30,7 +30,10 @@ In this article, the overview of Basic PDF417 is provided. This information card
 
 {{% /alert %}} 
 
-## **Features**
+## **Usage Scenarios**
+PDF417 has various applications, including but not limited to: government ID cards (e.g. driver licenses), airline boarding passes, postage stamps, package labels, and many others. 
+
+## **Characteristics**
 ### **Encoding Character Set**
 PDF417 uses the base 929 encoding where each codeword represents a number from 0 to 928. Among 929 available codewords, 900 are used to encode the input message, and 29 correspond to special functions, such as shifting between major encoding modes. PDF417 enables encoding both byte streams and Unicode symbols. Thus it can be applied to encode all 256 ASCII characters and 8-bit binary information.  
 PDF417 utilizes various data compaction schemes to improve encoding efficiency. The following modes are supported; it is possible to set different modes within one PDF417 barcode:
@@ -51,7 +54,7 @@ Three major encoding modes can be used to store different types of data and can 
 
 </details>
 
-### **Structure**
+### **Barcode Structure**
 The layout of PDF417 barcodes includes rows and columns. PDF417 encodes input information in codewords that get stacked in columns to constitute machine-readable patterns. A PDF417 label is composed of several linear rows of stacked codewords. Such barcodes may contain from 3 to 90 rows so that each of them can be viewed as a linear barcode. All rows must have the same width; each row has to store the same number of codewords. Codewords are represented as patterns of black and white vertical lines. Each of these patterns includes four bars and four spaces. The total width is 17 times greater than the [X-dimension](/barcode/info-cards/x-dimension/). Each pattern is started with a bar and is finished with a space. The row height must be at least three times greater than the minimum width.
 
 <p align="center"><img src="pdf417structureorig.png"></p>
@@ -106,15 +109,13 @@ The error correction mechanism determines two types of errors: rejection errors 
   
 </details>
 
-## **Advantages and Weaknesses**
+## **Advantages and Limitations**
 This barcode type allows encoding large amounts of textual and other information in a secure and efficient way. PDF417 barcodes can be scanned from left to right by simple linear scanners. PDF417 may serve as a means for low-cost data transmission in multiple applications. In addition to typical features of a 2D symbology, PDF417 provides the following benefits:
 - Linking capability: PDF417 barcodes can be linked to other PDF417 labels and then scanned in a sequence, thus increasing the amount of information to be stored
 - Customizable size dimensions: users can determine the narrowest vertical bar heigh ([X-dimension](/barcode/info-cards/x-dimension/)) and the highest row width (Y dimension) according to business needs
 - Public domain format. This specification can be used without any license
   
-PDF417 has various applications, including but not limited to: government ID cards (e.g. driver licenses), airline boarding passes, postage stamps, package labels, and many others. 
-
-## **Aspose Samples for Basic PDF417 Generation and Recognition**
+## **How to Generate and Read PDF417 Barcodes**
 
 <a name="asposesamples"></a>
 

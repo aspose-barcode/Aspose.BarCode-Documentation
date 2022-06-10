@@ -1,7 +1,7 @@
 ---
 title: Aztec Rune Code
 description: "Description of Aztec Rune Barcode Type"
-key words: "Aztec Code, aztec rune code, aztec rune barcode, aztec rune symbology, Create aztec rune barcodes, Read aztec codes, read aztec rune code, what is aztec rune barcode, aztec rune barcodes, generate aztec rune code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec rune generator, aztec rune reader, recognise aztec codes, scan aztec barcode"
+keywords: "Aztec Code, aztec rune code, aztec rune barcode, aztec rune type, Create aztec rune barcodes, Read aztec codes, read aztec rune code, what is aztec rune barcode, aztec rune barcodes, generate aztec rune code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec rune generator, aztec rune reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 20
 url: /info-cards/aztec-rune/
@@ -9,17 +9,19 @@ url: /info-cards/aztec-rune/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/aztec) and [Generate](https://products.aspose.app/barcode/generate/aztec) Aztec barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view the results online.{{% /alert %}}
 
 ## **Overview**
-Aztec Rune corresponds to a small but distinct machine-readable mark designed on the basis of the Aztec Code specification. Such barcodes contain only the core symbol of a full-range Aztec Code label with an 8-bit mode message protected by error correction. This symbology includes 256 tiny square marks having the size of 11x11 modules. Aztec Rune barcodes can be detected and decoded by Aztec Code scanners.  
+Aztec Rune corresponds to a small but distinct machine-readable mark designed on the basis of the Aztec Code specification. Such barcodes contain only the core symbol of a full-range Aztec Code label with an 8-bit mode message protected by error correction. This barcode type includes 256 tiny square marks having the size of 11x11 modules. Aztec Rune barcodes can be detected and decoded by Aztec Code scanners.  
 Aztec Rune is defined in Annex A of standard ISO/IEC 24778.
 
 <p align="center"><img src="aztecrune.png"></p>
 
-## **Features**
-  
+## **Usage Scenarios**
+It is intended for specific applications in which the input message can be limited to 3 digits, e.g. object tracking in Augmented Reality systems and marking of very small items.
+
+## **Characteristics**
 ### Encoding Character Set
 Aztec Rune allows encoding only numerical digits from 0 to 255.
 
-### **Structure**
+### **Barcode Structure**
 Each Aztec Rune includes a bulls-eye finder pattern, orientation patterns, and the input message with Reed-Solomon data. The finder and orientation patterns in an Aztec Rune are exactly as defined in the Aztec Code specification. As Aztec Runes are scanned from the center, no quiet zone is needed.
 
 <details>  
@@ -40,10 +42,10 @@ Aztec Rune can encode up to 3 numerical digits or 1 byte.
 ### **Error Correction**
 See the article [Aztec Barcode Family](/aztec-cards/) for information about the error correction mechanism.  
 
-## **Advantages and Weaknesses**
-Aztec Rune allows creating very compact matrix barcodes that still provide damage resistance and data recovery owing to the error correction mechanism. It is intended for specific applications in which input data can be limited to 3 digits.
+## **Advantages and Limitations**
+Aztec Rune allows creating very compact matrix barcodes that still provide damage resistance and data recovery owing to the error correction mechanism.
 
-## **Aspose Samples for Aztec Rune Generation and Recognition**
+## **How to Generate and Read Aztec Rune Barcodes**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
