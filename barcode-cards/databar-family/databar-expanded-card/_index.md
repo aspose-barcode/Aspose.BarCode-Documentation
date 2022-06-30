@@ -85,7 +85,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, 
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -123,7 +123,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpanded.png", Deco
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -165,7 +165,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedSt
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -205,7 +205,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpandedStacked.png
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

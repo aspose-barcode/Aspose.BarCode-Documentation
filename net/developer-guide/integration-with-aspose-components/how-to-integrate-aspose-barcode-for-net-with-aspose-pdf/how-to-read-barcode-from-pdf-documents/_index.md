@@ -4,7 +4,7 @@ description: "How to Recognize Barcodes from PDF Files"
 keywords:
 type: docs
 weight: 20
-url: /net/how-to-read-barcode-from-pdf-documents/
+url: /net/read-barcode-from-pdf-document/
 aliases: 
 - /net/export-pdf-pages-to-images-and-recognize-barcode/
 ---

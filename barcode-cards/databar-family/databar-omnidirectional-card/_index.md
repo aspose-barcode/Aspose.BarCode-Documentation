@@ -77,7 +77,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirect
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -115,7 +115,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -155,13 +155,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmn
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    //GENERATE
     {{< highlight csharp>}}
     //generate DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
@@ -193,13 +192,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStac
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-  //RECOGNIZE
     {{< highlight csharp>}}
     //recognize DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));

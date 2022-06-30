@@ -142,7 +142,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -183,7 +183,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}PDF417Basic.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

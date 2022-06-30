@@ -76,7 +76,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -113,7 +113,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.C
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

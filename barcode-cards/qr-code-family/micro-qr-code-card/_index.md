@@ -99,7 +99,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose"))
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -143,7 +143,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroQR.png", DecodeType.M
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+ 
 
 {{< /tab >}}
 

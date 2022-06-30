@@ -142,13 +142,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-//GENERATE
     {{< highlight csharp>}}
     //generate QR Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose常に先を行く");
@@ -185,18 +184,16 @@ using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
     }
 {{< /highlight >}}
 
-
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
- //RECOGNIZE
     {{< highlight csharp>}}
     //recognize QR Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"QR.png", DecodeType::QR);

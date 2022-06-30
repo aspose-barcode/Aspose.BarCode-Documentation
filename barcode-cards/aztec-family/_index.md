@@ -106,7 +106,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -118,10 +118,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 
 System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Aztec, u"Åspóse.Barcóde©");
 gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
-
 //set symbol mode FullRange
 gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::BarCode::Generation::AztecSymbolMode::FullRange);
-
 //set error correction capacity to 10% (can be from 5% to 95%)
 gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecErrorLevel(10);
 gen->Save(path + u"AztecFullRange.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
@@ -152,13 +150,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecFullRange.png", Decod
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
   
-{{< highlight cpp>}}
+{{< highlight csharp>}}
 
 //recognize Aztec Full Range Barcode     
        

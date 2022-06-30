@@ -130,7 +130,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -172,7 +172,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeTyp
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

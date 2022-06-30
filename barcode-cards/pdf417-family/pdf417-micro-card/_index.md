@@ -86,7 +86,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Asp
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -124,7 +124,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroPDF417.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

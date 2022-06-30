@@ -63,7 +63,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarLimited, "
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -100,7 +100,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarLimited.png", Decod
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

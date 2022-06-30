@@ -79,13 +79,12 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    //GENERATE
     {{< highlight csharp>}}
     //generate Macro PDF417 Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
@@ -144,13 +143,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}MacroPDF417.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    //RECOGNIZE
     {{< highlight csharp>}}
     //recognize Macro PDF417 Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MacroPDF417.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Pdf417, DecodeType::CompactPdf417, DecodeType::MacroPdf417}));

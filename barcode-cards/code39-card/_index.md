@@ -68,7 +68,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -106,7 +106,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 

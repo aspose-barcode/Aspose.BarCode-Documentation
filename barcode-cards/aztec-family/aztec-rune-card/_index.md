@@ -67,13 +67,13 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight cpp>}}
+{{< highlight csharp>}}
 
 //generate Aztec Rune Barcode
     
@@ -110,13 +110,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecRune.png", DecodeType
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight cpp>}}
+{{< highlight csharp>}}
 
 //recognize Aztec Rune Barcode
 System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecRune.png", DecodeType::Aztec);

@@ -70,7 +70,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 
 {{< tab tabNum="2" >}}
 
-<!--->Insert Code<-->
+ 
 
 {{< /tab >}}
 
@@ -118,7 +118,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeT
 
 {{< tab tabNum="2" >}}
 
-<!---> Insert Code <-->
+ 
 
 {{< /tab >}}
 
