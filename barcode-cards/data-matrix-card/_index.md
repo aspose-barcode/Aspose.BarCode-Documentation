@@ -130,14 +130,24 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
-
+    {{< highlight csharp>}}
+    //generate DataMatrix Barcode        
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DataMatrix, u"Åspóse.Barcóde©");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+    //set DataMatrix Ecc to 200
+    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_DataMatrixEcc(Aspose::BarCode::Generation::DataMatrixEccType::Ecc200);
+    //set rows 22 columns 22
+    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Columns(22);
+    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
+    gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -162,13 +172,21 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeTyp
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize DataMatrix Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataMatrix.png", DecodeType::DataMatrix);
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

@@ -142,14 +142,29 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
-
+//GENERATE
+    {{< highlight csharp>}}
+    //generate QR Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose常に先を行く");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+    //encode data as QR
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceQR);
+    //set error correction level 7%
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
+    //set ECI encoding UTF8
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeMode(Aspose::BarCode::Generation::QREncodeMode::ECIEncoding);
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrECIEncoding(Aspose::BarCode::Generation::ECIEncodings::UTF8);
+    //set version 5 can be Auto
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::Version05);
+    gen->Save(path + u"QR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -175,13 +190,22 @@ using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+ //RECOGNIZE
+    {{< highlight csharp>}}
+    //recognize QR Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"QR.png", DecodeType::QR);
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

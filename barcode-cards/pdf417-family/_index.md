@@ -142,14 +142,23 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
-
+    {{< highlight csharp>}}
+    //generate PDF417 Basic Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    //set 3 columns
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Columns(3);
+    //set error level 2
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417ErrorLevel(Aspose::BarCode::Generation::Pdf417ErrorLevel::Level2);
+    gen->Save(path + u"PDF417Basic.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -174,13 +183,21 @@ using (BarCodeReader read = new BarCodeReader($"{path}PDF417Basic.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize PDF417 Basic Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"PDF417Basic.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Pdf417, DecodeType::CompactPdf417, DecodeType::MacroPdf417}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

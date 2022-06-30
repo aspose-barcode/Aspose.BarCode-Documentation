@@ -99,13 +99,25 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose"))
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //generate MicroQR Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+    //encode data as MicroQR
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceMicroQR);
+    //set error correction level 7%
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
+    //set version M4 can be Auto
+    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::VersionM4);
+    gen->Save(path + u"MicroQR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+
 
 {{< /tab >}}
 
@@ -137,7 +149,15 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroQR.png", DecodeType.M
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize MicroQR Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroQR.png", DecodeType::MicroQR);
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

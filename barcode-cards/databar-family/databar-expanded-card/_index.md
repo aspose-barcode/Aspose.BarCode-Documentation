@@ -85,13 +85,19 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, 
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //generate DataBar Expanded Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarExpanded, u"(01)12345678901231(21)SERIAL1234");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    gen->get_Parameters()->get_Barcode()->get_DataBar()->set_IsAllowOnlyGS1Encoding(true);
+    gen->Save(path + u"DataBarExpanded.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -117,13 +123,21 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpanded.png", Deco
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize DataBar Expanded Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarExpanded.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarExpanded, DecodeType::DatabarExpandedStacked}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -151,13 +165,21 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedSt
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //generate DataBar Expanded Stacked Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarExpandedStacked, u"(01)12345678901231(21)SERIAL1234");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    gen->get_Parameters()->get_Barcode()->get_DataBar()->set_IsAllowOnlyGS1Encoding(true);
+    //set 3 rows
+    gen->get_Parameters()->get_Barcode()->get_DataBar()->set_Rows(3);
+    gen->Save(path + u"DataBarExpandedStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -183,13 +205,21 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpandedStacked.png
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize DataBar Expanded Stacked Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarExpandedStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarExpanded, DecodeType::DatabarExpandedStacked}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

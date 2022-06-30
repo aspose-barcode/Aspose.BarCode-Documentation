@@ -79,14 +79,37 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
-
+    //GENERATE
+    {{< highlight csharp>}}
+    //generate Macro PDF417 Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    //set 3 columns
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Columns(3);
+    //set error level 2
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417ErrorLevel(Aspose::BarCode::Generation::Pdf417ErrorLevel::Level2);
+    //set metadata
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileID(12345678);
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentID(12);
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentsCount(20);
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileName(u"file01");
+    //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
+    //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
+    //for the example we use random number
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroChecksum(1234);
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileSize(400000);
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroTimeStamp(System::DateTime(2019, 11, 1));
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroAddressee(u"street");
+    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSender(u"aspose");
+    gen->Save(path + u"MacroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -121,13 +144,31 @@ using (BarCodeReader read = new BarCodeReader($"{path}MacroPDF417.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    //RECOGNIZE
+    {{< highlight csharp>}}
+    //recognize Macro PDF417 Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MacroPDF417.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Pdf417, DecodeType::CompactPdf417, DecodeType::MacroPdf417}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+        System::Console::WriteLine(System::String(u"Pdf417MacroFileID:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417FileID());
+        System::Console::WriteLine(System::String(u"Pdf417MacroSegmentID:") + System::Convert::ToString(result->get_Extended()->get_Pdf417()->get_MacroPdf417SegmentID()));
+        System::Console::WriteLine(System::String(u"Pdf417MacroSegmentsCount:") + System::Convert::ToString(result->get_Extended()->get_Pdf417()->get_MacroPdf417SegmentsCount()));
+        System::Console::WriteLine(System::String(u"Pdf417MacroFileName:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417FileName());
+        System::Console::WriteLine(System::String(u"Pdf417MacroChecksum:") + System::Convert::ToString(result->get_Extended()->get_Pdf417()->get_MacroPdf417Checksum()));
+        System::Console::WriteLine(System::String(u"Pdf417MacroFileSize:") + System::Convert::ToString(result->get_Extended()->get_Pdf417()->get_MacroPdf417FileSize()));
+        System::Console::WriteLine(System::String(u"Pdf417MacroTimeStamp:") + System::ObjectExt::ToString(result->get_Extended()->get_Pdf417()->get_MacroPdf417TimeStamp()));
+        System::Console::WriteLine(System::String(u"Pdf417MacroAddressee:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417Addressee());
+        System::Console::WriteLine(System::String(u"Pdf417MacroSender:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417Sender());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

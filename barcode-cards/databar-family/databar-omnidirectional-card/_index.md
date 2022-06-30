@@ -77,13 +77,19 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirect
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    //GENERATE
+    {{< highlight csharp>}}
+    //generate DataBar OmniDirectional Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarOmniDirectional, u"(01)12345678901231");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    gen->Save(path + u"DataBarOmniDirectional.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -109,13 +115,22 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+ //RECOGNIZE
+    {{< highlight csharp>}}
+    //recognize DataBar OmniDirectional Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectional.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -140,13 +155,19 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmn
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    //GENERATE
+    {{< highlight csharp>}}
+    //generate DataBar OmniDirectional Stacked Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    gen->Save(path + u"DataBarOmniDirectionalStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
 
 {{< /tab >}}
 
@@ -172,13 +193,22 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStac
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+  //RECOGNIZE
+    {{< highlight csharp>}}
+    //recognize DataBar OmniDirectional Stacked Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

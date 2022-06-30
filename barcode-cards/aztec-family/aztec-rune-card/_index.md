@@ -67,13 +67,24 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+{{< highlight cpp>}}
+
+//generate Aztec Rune Barcode
+    
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Aztec, u"123");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+//set symbol mode Rune
+gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::BarCode::Generation::AztecSymbolMode::Rune);
+gen->Save(path + u"AztecRune.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+
+{{< /highlight >}}
+
 
 {{< /tab >}}
 
@@ -99,13 +110,24 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecRune.png", DecodeType
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+{{< highlight cpp>}}
+
+//recognize Aztec Rune Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecRune.png", DecodeType::Aztec);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
+
 
 {{< /tab >}}
 

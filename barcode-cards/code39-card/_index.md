@@ -68,14 +68,20 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
-
+    {{< highlight csharp>}}
+    //generate Code39 Barcode
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code39Extended, u"Aspose");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+    gen->Save(path + u"Code39.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+    {{< /highlight >}}
+    
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -100,13 +106,21 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize Code39 Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"Code39.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Code39Standard, DecodeType::Code39Extended}));
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
 
 {{< /tab >}}
 

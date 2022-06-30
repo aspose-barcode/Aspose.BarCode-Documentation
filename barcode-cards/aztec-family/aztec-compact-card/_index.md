@@ -70,14 +70,30 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!--->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
 
+    //generate Aztec Compact Barcode  
+
+    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Aztec, u"Åspóse.Barcóde©");
+    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+
+    //set symbol mode Compact
+
+    gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::BarCode::Generation::AztecSymbolMode::Compact);
+
+    //set error correction capacity to 10% (can be from 5% to 95%)
+
+    gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecErrorLevel(10);
+    gen->Save(path + u"AztecCompact.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+
+    {{< /highlight >}}
+    
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -102,13 +118,23 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeT
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+<!---> Insert Code <-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+    {{< highlight csharp>}}
+    //recognize Aztec Compact Barcode
+    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecCompact.png", DecodeType::Aztec);
+    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+    {
+        System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
+        System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
+    }
+    {{< /highlight >}}
+
 
 {{< /tab >}}
 
+{{< /tabs >}}
