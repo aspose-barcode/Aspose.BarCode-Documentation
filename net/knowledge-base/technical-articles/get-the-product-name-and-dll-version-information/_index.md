@@ -1,9 +1,29 @@
 ---
-title: Get the Product Name and DLL Version Information
+title: Get Product Name and DLL Version
 type: docs
-weight: 70
+description: "How to Obtain the Information about Product Name and DLL Version"
+keywords: "Aspose Barcode, aspose barcode library, aspose version, aspose dll version, aspose c# version"
+weight: 20
 url: /net/get-the-product-name-and-dll-version-information/
 ---
 
-Aspose.BarCode for .NET provides static fields in [BuildVersionInfo](https://apireference.aspose.com/barcode/net/aspose.barcode/buildversioninfo) class for getting information about product name, DLL version, release date, etc. The following code snippet demonstrates how to print the product and DLL info on screen:
-{{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-ManageBarCodes-GetDLLVersionInformation-GetDLLVersionInformation.cs" >}}
+The system information about the ***Aspose.BarCode*** library can be obtained using structure [*BuildVersionInfo*](https://apireference.aspose.com/barcode/net/aspose.barcode/buildversioninfo/) that provides the following data:
+- Assembly version
+- File version
+- Product title
+- Major product version
+- Minor product version
+- Product release date
+  
+The following code sample illustrates how to implement this feature.
+  
+{{< highlight csharp>}}
+//the code shows the system information about Aspose.BarCode dll
+Console.WriteLine("Assembly version: " + BuildVersionInfo.AssemblyVersion);
+Console.WriteLine("File Version: " + BuildVersionInfo.FileVersion);
+Console.WriteLine("Product: " + BuildVersionInfo.Product);
+Console.WriteLine("Product Major: " + BuildVersionInfo.ProductMajor);
+Console.WriteLine("Product Minor: " + BuildVersionInfo.ProductMinor);
+Console.WriteLine("Release Date: " + BuildVersionInfo.ReleaseDate);
+{{< /highlight >}}
+

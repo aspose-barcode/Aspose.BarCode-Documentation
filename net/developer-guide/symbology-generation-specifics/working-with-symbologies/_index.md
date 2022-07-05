@@ -1,10 +1,13 @@
 ---
-title: Working with Symbologies
+title: Working with Barcode Types
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in C# .NET, Barcode types in Aspose.BarCode for .NET, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF 417, Generate MicroQR, Generate Data Matrix"
 weight: 10
 url: /net/symbologies-for-barcodes/
+aliases:
+- /net/managing-2d-barcodes/
+-
 ---
 This article introduces general information about barcode symbologies and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 
 
@@ -27,8 +30,8 @@ Barcodes have multiple applications in various spheres, such as retail, industry
 - **Managing admission desks**. Cinema tickets, event passes, travel itineraries, and other similar documents may have unique barcodes to get verified, in this way, facilitating and speeding up various admission processes. Moreover, this technology allows reducing printing costs.
 - **Storing business and personal data**. Nowadays, barcodes and specifically, QR codes, are widely used to store information about organizations and persons. In many cases, such barcode labels can be read simply by a smartphone and provide quick and simple access to information for any user.  
 
-## **Symbology Definition**
-Barcode symbology defines the way of encoding information in a barcode image. Each barcode symbology relies on a unique way of encoding data characters.    
+## **Barcode Type Definition**
+Barcode types define the way of encoding information in a barcode image. Each of them relies on a unique way of encoding data characters.    
 
 **One-dimensional (1D)**, or linear, barcodes represent data by varying the width and spacing of parallel lines. In general, a linear barcode is composed of a leading margin, start character, message characters, check character (if any), stop character, and a trailing margin. Based on this framework, all known symbologies define their own encoding principles. In 1D barcodes, bars represent the binary digits, 0 and 1, that may constitute various sequences to encode numbers and then get processed by a digital unit.  
   
