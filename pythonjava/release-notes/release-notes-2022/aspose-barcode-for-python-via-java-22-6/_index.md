@@ -20,17 +20,17 @@ This page contains release notes information for [Aspose.BarCode for Python via 
 
 Added const Generation.EncodeTypes.GS_1_COMPOSITE_BAR
 
-Added enum Generation.TwoDComponentType
-Added enum value Generation.TwoDComponentType.AUTO
-Added enum value Generation.TwoDComponentType.CC_A
-Added enum value Generation.TwoDComponentType.CC_B
-Added enum value Generation.TwoDComponentType.CC_C
+Added enum Generation.TwoDComponentType  
+Added enum value Generation.TwoDComponentType.AUTO  
+Added enum value Generation.TwoDComponentType.CC_A  
+Added enum value Generation.TwoDComponentType.CC_B  
+Added enum value Generation.TwoDComponentType.CC_C  
 
-Added function Generation.BarcodeParameters.getGS1CompositeBar():GS1CompositeBarParameters
-Added function Generation.BarcodeParameters.setGS1CompositeBar(GS1CompositeBarParameters):void
-Added class Generation.GS1CompositeBarParameters
-Added property Generation.GS1CompositeBarParameters.getLinearComponentType():number
-Added property Generation.GS1CompositeBarParameters.setLinearComponentType(number):void
-Added property Generation.GS1CompositeBarParameters.getTwoDComponentType():number
-Added property Generation.GS1CompositeBarParameters.setTwoDComponentType(number):void
-Added function Generation.GS1CompositeBarParameters.toString():string
+Added function Generation.BarcodeParameters.getGS1CompositeBar():GS1CompositeBarParameters  
+Added function Generation.BarcodeParameters.setGS1CompositeBar(GS1CompositeBarParameters):void  
+Added class Generation.GS1CompositeBarParameters  
+Added property Generation.GS1CompositeBarParameters.getLinearComponentType():number  
+Added property Generation.GS1CompositeBarParameters.setLinearComponentType(number):void  
+Added property Generation.GS1CompositeBarParameters.getTwoDComponentType():number  
+Added property Generation.GS1CompositeBarParameters.setTwoDComponentType(number):void  
+Added function Generation.GS1CompositeBarParameters.toString():string  
