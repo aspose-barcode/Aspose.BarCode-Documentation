@@ -1,10 +1,12 @@
 ---
-title: Patch Code Symbology
+title: Patch Code
 type: docs
 description: "Aspose.BarCode for Java enables Patch Code barcode generation"
 keywords: "Generate Patch Code Barcodes, Create Patch Code, How to Generate Patch Code Barcodes, Aspose.BarCode for Java"
 weight: 140
 url: /java/patch-codes/
+aliases: 
+- /java/how-to-generate-a-patch-code/
 ---
 {{% alert color="primary" %}}[Generate Patch Code Barcodes Online](https://products.aspose.app/barcode/generate/patchcode): You can check the quality of ***Aspose.BarCode*** generation for Patch Code barcodes and view the results online.{{% /alert %}}
 
@@ -22,7 +24,7 @@ Following *Patch Code* barcodes correspond tp six basic *Patch Code* patterns.
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="patchcodei.png">|<img src="patchcodeii.png">|<img src="patchcodeiii.png">|<img src="patchcodeiv.png">|<img src="patchcodet.png">|<img src="patchcodevi.png">|
   
-The following code sample shows how to work with different *Patch Code* patterns.
+<!--The following code sample shows how to work with different *Patch Code* patterns.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
@@ -46,7 +48,7 @@ gen.Save($"{path}PatchCodeT.png", BarCodeImageFormat.Png);
 //Patch VI
 gen.CodeText = "Patch VI";
 gen.Save($"{path}PatchCodeVI.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 
 ## **Patch Code Generation Modes**
@@ -70,7 +72,7 @@ Following *Patch Code* barcodes have been created with and without complementary
 | :-: | :-: | :-: |
 | |<a href="patchcodea4withoutqr.png"> <p align="center"><img src="patchcodea4withoutqr.png" width="40%" height="40%" alttext="Patch Code Barcode Without QR"></p></a>|<a href="patchcodea4withqr.png"> <p align="center"><img src="patchcodea4withqr.png" width="40%" height="40%" alttext="Patch Code Barcode With QR"></p></a>|
   
-The following code sample shows how to manage *Patch Code* generation and how to enable displaying a complementary *QR Code* add-on.
+<!--The following code sample shows how to manage *Patch Code* generation and how to enable displaying a complementary *QR Code* add-on.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
@@ -82,4 +84,4 @@ gen.Parameters.Barcode.PatchCode.PatchFormat = PatchFormat.A4;
 gen.Parameters.Barcode.PatchCode.ExtraBarcodeText = "Aspose page extra info";
 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
 gen.Save($"{path}PatchCodeA4WithQR.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->

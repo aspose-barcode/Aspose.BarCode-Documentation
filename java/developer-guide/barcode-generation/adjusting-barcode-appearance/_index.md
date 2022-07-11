@@ -5,6 +5,13 @@ weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode"
 url: /java/working-with-barcode-image/
+aliases:
+- /java/specify-symbologies-for-barcodes/
+- /java/set-code-text-for-barcode/
+- /java/control-the-appearance-of-code-text/
+- /java/manage-the-barcode-caption/
+- /java/basic-features/
+- /java/barcode-image-basic-features/
 ---
 In the present article, you can find details about customizing various parameters of barcodes to be generated, such as barcode label size, rotation angle, barcode paddings, and barcode image borders.
 
@@ -32,7 +39,7 @@ The barcode label shown below has been generated using the *None* mode.
 
 <p align="center"><img src="autosizemodenone.png"></p>
   
-The following code sample explains how to set the *AutoSizeMode* property to *None*.  
+<!--The following code sample explains how to set the *AutoSizeMode* property to *None*.  
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
@@ -41,7 +48,7 @@ gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}AutoSizeModeNone.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}-->
   
 
 ### **AutoSizeMode.Interpolation**
@@ -51,7 +58,7 @@ The barcode label generated through the *Interpolation* mode is demonstrated bel
 
 <p align="center"><img src="autosizemodeinterpolation.png"></p> 
 
-The following code snippet shows how to enable *AutoSizeMode.INTERPOLATION*.
+<!--The following code snippet shows how to enable *AutoSizeMode.INTERPOLATION*.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
@@ -60,7 +67,7 @@ gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}AutoSizeModeInterpolation.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
   
 ### **AutoSizeMode.Nearest** 
 To set barcode image size, the *Nearest* mode uses only the values specified using *setImageHeight* and *setImageWidth* methods similarly to the *Interpolation* mode. In this mode, [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) aims at finding the most suitable image size to avoid barcode proportion distortion and readability deterioration.  
@@ -69,7 +76,7 @@ The barcode label created through the *Nearest* mode is provided below.
   
 <p align="center"><img src="autosizemodenearest.png"></p>
   
-The following code snippet shows how to set the *Nearest* mode.
+<!--The following code snippet shows how to set the *Nearest* mode.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
@@ -78,7 +85,7 @@ gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 ## **Barcode Rotation**
 In ***Aspose.BarCode for Java***, barcode image rotation can be set through the *setRotationAngle* method of class [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BaseGenerationParameters). Passing a value in degrees to this method allows generating a barcode image rotated at the desired angle clockwise or counterclockwise.  
@@ -89,7 +96,7 @@ The sample barcode labels rotated by various angles are shown below.
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="rotationangle+90.png">|<img src="rotationangle-90.png">|<img src="rotationangle+45.png">|<img src="rotationangle-45.png">|<img src="rotationangle180.png">|
   
-The following code sample explains how to rotate barcode images at different angles.
+<!--The following code sample explains how to rotate barcode images at different angles.
    
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -103,7 +110,7 @@ gen.Parameters.RotationAngle = -45;
 gen.Save($"{path}RotationAngle-45.png", BarCodeImageFormat.Png);
 gen.Parameters.RotationAngle = 180;
 gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
   
 ## **Customizing Barcode Borders and Padding**
 ***Aspose.BarCode for Java*** allows customizing barcode image borders and paddings. Corresponding methods are described further.
@@ -117,7 +124,7 @@ Barcode labels demonstrated below have been generated using different border sty
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="bordersolid.png">|<img src="borderdash.png">|<img src="borderdot.png">|<img src="borderdashdot.png">|<img src="borderdashdotdot.png">|
   
-The following code snippet demonstrates how to set different border styles.
+<!--The following code snippet demonstrates how to set different border styles.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
@@ -135,7 +142,7 @@ gen.Parameters.Border.DashStyle = BorderDashStyle.DashDot;
 gen.Save($"{path}BorderDashDot.png", BarCodeImageFormat.Png);
 gen.Parameters.Border.DashStyle = BorderDashStyle.DashDotDot;
 gen.Save($"{path}BorderDashDotDot.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
 
 ### **Paddings**
 Paddings from the edges of a barcode image or its borders can be set in four directions using a special class called [Aspose.BarCode.Generation.Padding](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Padding) and its methods: *setLeft*, *setRight*, *setTop*, and *setBottom*. By default, padding values are 5 points in all directions.
@@ -144,7 +151,7 @@ Paddings from the edges of a barcode image or its borders can be set in four dir
 | :-: | :-: | :-: |  
 | |<img src="padding10millimeters.png">|<img src="padding10pixels.png">| 
 
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 //set border
 gen.Parameters.Border.Visible = true;
@@ -162,7 +169,7 @@ gen.Parameters.Barcode.Padding.Top.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Right.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Bottom.Millimeters = 10;
 gen.Save($"{path}Padding10Millimeters.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
   
 ## **Bar Width Reduction**
 The other important property that needs to be determined accurately is bar width. Setting an approriate value of this parameter is critical to assure successful barcode scanning. Due to the so-called ink floating phenomenon, some barcode printing techniques may result in increasing actual bar width after printing out barcode images. This happens often in commercial printing in cases when conventional printing presses are used. To ensure that printed barcode images will be printed out with appropriate bar width, setting a bar width reduction value may be required.  
@@ -176,7 +183,7 @@ The sample barcodes shown below have been generated with and without applying ba
 |**Code 128**|<img src="code128barwidthreduction0.png" width="50%" height="50%">|<img src="code128barwidthreduction3.png" width="50%" height="50%">| 
 |**Data Matrix**|<img src="datamatrixbarwidthreduction0.png" width="50%" height="50%">|<img src="datamatrixbarwidthreduction4.png" width="50%" height="50%">|
   
-The following code snippet explains how to implement bar width reduction.
+<!--The following code snippet explains how to implement bar width reduction.
    
 {{< highlight csharp>}}
 //Code 128
@@ -198,5 +205,5 @@ gen.Save($"{path}DataMatrixBarWidthReduction0.png", BarCodeImageFormat.Png);
 //DataMatrix with 4 pix barwidth rediction
 gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
 gen.Save($"{path}DataMatrixBarWidthReduction4.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
   

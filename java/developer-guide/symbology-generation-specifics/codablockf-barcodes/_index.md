@@ -4,10 +4,10 @@ type: docs
 weight: 130
 url: /java/codablockf-barcodes/
 ---
-{{% alert color="primary" %}}[Generate Codablock-F Barcodes Online](https://products.aspose.app/barcode/generate/codablock?type=codablockf): You can check the quality of ***Aspose.BarCode*** generation for Codablock-F barcodes and view the results online.{{% /alert %}}
+{{% alert color="primary" %}}[Generate Codablock-F Barcodes Online](https://products.aspose.app/barcode/generate/codablock?type=codablockf): You can check the quality of ***Aspose.BarCode*** generation for Codablock-F barcodes and view results online.{{% /alert %}}
 
 ## **Overview**
-*Codablock-F* is a stacked multiple-row barcode type that enables creating barcodes that include many *Code128* barcodes. This symbology allows encoding at most 2,725 digits and contains from 2 to 44 rows with from 4 to 62 characters. *Codablock-F* benefits from two principle differences compared with the basic *Code128* symbology. It provides flexible settings of barcode layout in terms of the number of rows and columns and thus allows organizing vertical and horizontal space more efficiently. Moreover, it contains two additional check digits (calculated using the modulo 86 algorithm) for a *Codablock-F* barcode besides obligatory checksum controls that are included in each row of *Code128* barcodes. Finally, *Codablock-F* can be detected using laser scanners.
+*Codablock-F* is a stacked multiple-row barcode type that enables creating barcodes that include many *Code 128* barcodes. This symbology allows encoding at most 2,725 digits and contains from 2 to 44 rows with from 4 to 62 characters. *Codablock-F* benefits from two principle differences compared with the basic *Code 128* symbology. It provides flexible settings of barcode layout in terms of the number of rows and columns and thus allows organizing vertical and horizontal space more efficiently. Moreover, it contains two additional check digits (calculated using the modulo 86 algorithm) for a *Codablock-F* barcode besides obligatory checksum controls that are included in each row of *Code 128* barcodes. Finally, *Codablock-F* can be detected using laser scanners.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
@@ -21,7 +21,7 @@ Following barcode images have been created using various aspect ratio settings.
 | :-: | :-: | :-: |
 | |<img src="codablockfaspectratio15.png">|<img src="codablockfaspectratio30.png">|
   
-The following code sample shows how to modify the height of a *Codablock-F* barcode.
+<!--The following code sample shows how to modify the height of a *Codablock-F* barcode.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose");
@@ -32,7 +32,7 @@ gen.Save($"{path}CodablockFAspectRatio15.png", BarCodeImageFormat.Png);
 //set CodablockF aspect ratio 30
 gen.Parameters.Barcode.Codablock.AspectRatio = 30;
 gen.Save($"{path}CodablockFAspectRatio30.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 
 ## **Layout Settings**
@@ -44,7 +44,7 @@ Barcode images provided below have been generated using different layout setting
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="codablockfcol4.png">|<img src="codablockfrow4.png">|<img src="codablockfrow6col4.png">|
   
-The following code snippet illustrates how to customize layout settings for *Codablock-F* barcodes.
+<!--The following code snippet illustrates how to customize layout settings for *Codablock-F* barcodes.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose.Barcode");
@@ -61,4 +61,4 @@ gen.Save($"{path}CodablockFRow4.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.Codablock.Columns = 4;
 gen.Parameters.Barcode.Codablock.Rows = 6;
 gen.Save($"{path}CodablockFRow6Col4.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->

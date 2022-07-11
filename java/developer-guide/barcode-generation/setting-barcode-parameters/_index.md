@@ -4,9 +4,13 @@ type: docs
 weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
-url: /java/setting-barcode-parameters/
+url: /java/advanced-features/
+aliases:
+- /java/set-height-of-the-bars-in-the-barcode-image/
+- /java/manage-x-dimension-and-y-dimension/
+
 ---
-In this article, it is described how to manage settings provided by ***Aspose.BarCode for Java*** to adjust barcode measurement units (millimeters, inches, points, or pixels) and barcode image resolution.
+This article describes how to manage settings provided by ***Aspose.BarCode for Java*** to adjust barcode measurement units (millimeters, inches, points, or pixels) and barcode image resolution.
   
 ## **Overview**
 Cartesian coordinate systems use coordinates of pixels or drawable objects to represent image data for raster or vector images. To link these coordinates to real-world measurement units, such as millimeters or inches, ***Aspose.BarCode for Java*** includes a special class called [*Unit*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Unit) and its method called *updateResolution* that is intended to manage barcode resolution measured in dots per inch (dpi). Class [*Unit*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Unit) provides various methods that serve to convert barcode size values defined in pixels, millimeters, inches, or points to any of the supported measurement units automatically. In this way, the size of elements in real-world measurement units can be converted into pixels to generate barcode images.  
@@ -22,7 +26,7 @@ Barcode labels created using various unit settings are shown below.
 | :-: | :-: | :-: |
 | |<image src="unitin3pixels.png">|<image src="unitin2millimeters.png">|
   
-The following code sample explains how to manage various resolution settings.
+<!--The following code sample explains how to manage various resolution settings.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
@@ -32,7 +36,7 @@ gen.Save($"{path}UnitIn3Pixels.png", BarCodeImageFormat.Png);
 //set unit size in 2 millimeters
 gen.Parameters.Barcode.XDimension.Millimeters = 2;
 gen.Save($"{path}UnitIn2Millimeters.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}-->
 
 ## **Image Resolution**
 ***Aspose.BarCode for Java*** allows developers to customize barcode image resolution settings using class [*Unit*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Unit). This class includes the *updateResolution* method to modify barcode image resolution and the *setPixels* method to convert all non-pixel size measurements into digital coordinates in pixels. To convert size values into requested supported untis, special methods can be used: *setInches*, *setMillimeters*, *setDocument*, *setPoint*, and *setPixels*. 
@@ -43,7 +47,7 @@ Barcode images with different resolution settings are given below.
 | :-: | :-: | :-: |
 | |<image src="unitin1millimeterresolution96.png">|<image src="unitin1millimeterresolution300.png">|
   
-The following code snippet demonstrates how to manage resolution settings.
+<!--The following code snippet demonstrates how to manage resolution settings.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
@@ -55,4 +59,4 @@ gen.Save($"{path}UnitIn1MillimeterResolution96.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.XDimension.Millimeters = 1;
 gen.Parameters.Resolution = 300;
 gen.Save($"{path}UnitIn1MillimeterResolution300.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}-->

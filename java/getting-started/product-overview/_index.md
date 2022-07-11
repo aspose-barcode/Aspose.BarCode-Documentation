@@ -3,6 +3,8 @@ title: Product Overview
 type: docs
 weight: 10
 url: /java/product-overview/
+aliases:
+- /barcode/java/1-1-1-introduction/
 ---
 
 ***Aspose.BarCode for Java*** is a robust and reliable barcode generation and recognition component written in Java that allows developers to quickly and easily add barcode generation and recognition functionality to Java applications. It is available for the Java SE, Java EE, and Java ME platforms.

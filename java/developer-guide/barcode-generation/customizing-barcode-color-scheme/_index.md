@@ -25,7 +25,7 @@ The barcode image with background color set to *Color.Green* is provided below.
    
 <p align="center"><image src="colorbackground.png"></p>
 
-The following code sample explains how to adjust barcode background color.
+<!--The following code sample explains how to adjust barcode background color.
     
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
@@ -40,7 +40,7 @@ gen.Parameters.CaptionBelow.Text = "Caption Below";
 //set background color
 gen.Parameters.BackColor = Color.Green;
 gen.Save($"{path}ColorBackground.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
   
 ## **Bar Color**
 To manage the color of bars, the *setBarColor* method of [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) class needs to be used. By default, bar color is set to *Black*.  
@@ -49,7 +49,7 @@ The barcode image below has been generated with the bar color setting *Color.Gre
   
 <p align="center"><image src="colorbarcode.png"></p>
   
-The code snippet provided below explains how to modify bar color.  
+<!--The code snippet provided below explains how to modify bar color.  
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
@@ -64,14 +64,14 @@ gen.Parameters.CaptionBelow.Text = "Caption Below";
 //set barcode color
 gen.Parameters.Barcode.BarColor = Color.Green;
 gen.Save($"{path}ColorBarcode.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
 
 ## **Border Color**
 Barcode border color can be adjusted through the *setColor* method of class [*BorderParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BorderParameters). The default border color is *Black*. The barcode image below has been generated with border color set to *Color.Green*.
   
 <p align="center"><image src="colorborder.png"></p>
   
-The following code snippet shows how to customize border color in a barcode image.  
+<!--The following code snippet shows how to customize border color in a barcode image.  
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
@@ -88,14 +88,14 @@ gen.Parameters.Border.Width.Pixels = 5;
 //set color of border
 gen.Parameters.Border.Color = Color.Green;
 gen.Save($"{path}ColorBorder.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+{{< /highlight >}}--> 
 
 ## **Main Text Color**
 ***Aspose.BarCode for Java*** provides the possibility to customize the color of main text label displayed on a barcode image. It can be done by calling the *setColor* method of class [*CodeTextParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters). The default setting of main text color is *Black*. The sample barcode image shown below has been generated with the customized barcode text color setting (*Color.Green*).
   
 <p align="center"><image src="colorcodetext.png"></p>
   
-The following code snippet demonstrates how to change barcode text color.
+<!--The following code snippet demonstrates how to change barcode text color.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
@@ -110,16 +110,16 @@ gen.Parameters.CaptionBelow.Text = "Caption Below";
 //set codetext color
 gen.Parameters.Barcode.CodeTextParameters.Color = Color.Green;
 gen.Save($"{path}ColorCodetext.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ## **Caption Color**
-In ***Aspose.BarCode for Java***, barcode images can be generated with top and bottom captions. Caption color can be customized using the *setTextColor* method of class [*CaptionParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters). Barcode images below have been created with the color setting set to *Color.Green*.
+In ***Aspose.BarCode for Java***, barcode images can be generated with top and bottom captions. Caption color can be customized using the *setTextColor* method of class [*CaptionParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters). Sample images below have been created with the color setting set to *Color.Green*.
   
-|Barcode Caption Color|   |
+|Caption Color|   |
 |:--| :-: |
 |<image src="colorcaptionabove.png">|<image src="colorcaptionbelow.png">|
   
-The following code snippet demonstrates how to modify color for top and bottom captions.
+<!--The following code snippet demonstrates how to modify color for top and bottom captions.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
@@ -137,5 +137,5 @@ gen.Save($"{path}ColorCaptionAbove.png", BarCodeImageFormat.Png);
 //set Bottom Caption color
 gen.Parameters.CaptionAbove.TextColor = Color.Black;
 gen.Parameters.CaptionBelow.TextColor = Color.Green;
-gen.Save($"{path}ColorCaptionBelow.png", BarCodeImageFormat.Png);
+gen.Save($"{path}ColorCaptionBelow.png", BarCodeImageFormat.Png);-->
 {{< /highlight >}} 

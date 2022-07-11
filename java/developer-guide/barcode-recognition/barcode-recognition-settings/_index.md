@@ -4,7 +4,7 @@ type: docs
 description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for Java according to business needs"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode Java"
 weight: 20
-url: /java/barcode-recognition-settings/
+url: /barcode/java/optimize-scan/
 ---
 
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}

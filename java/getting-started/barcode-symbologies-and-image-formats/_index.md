@@ -1,20 +1,20 @@
 ---
-title: Barcode Symbologies and Image Formats
+title: Barcode Types and Image Formats
 type: docs
 weight: 20
 url: /java/supported-file-formats/
 ---
-***Aspose.BarCode for Java*** supports more than 60 [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in various industries, i.e., linear (1D), matrix (2D), and postal symbologies. The detailed description about barcode generation for different symbologies can be found in section [Generation Specifics for Symbologies](/barcode/java/advanced-features/)
+***Aspose.BarCode for Java*** supports more than 60 [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in various industries, i.e., linear (1D), matrix (2D), and postal barcodes. The detailed description about barcode generation for different types can be found in section [Generation Specifics for Barcode Types](/barcode/java/symbology/)
     
-**Linear symbologies**, or *1D barcodes*, relate to the first generation of one-dimensional (1D) barcode types that decode data by changing the widths of black and white parallel lines. Particular 1D standards support encoding only numbers, while others allow encoding also letters and special symbols.  
+**Linear barcode types**, or *1D barcodes*, relate to the first generation of one-dimensional (1D) barcode types that decode data by changing the widths of black and white parallel lines. Particular 1D standards support encoding only numbers, while others allow encoding also letters and special symbols.  
 
-**Matrix symbologies**, also referred as *2D barcode types*, have been developed as an advanced way to encode data. Two-dimensional (2D) symbologies imply creating barcodes composed of various figures and shapes. These barcode standards are deemed to have better efficiency compared with 1D symbologies owing to their improved data density and data recovery mechanisms.  
+**Matrix barcode types**, also referred as *2D barcode types*, have been developed as an advanced way to encode data. Two-dimensional (2D) types imply creating barcodes composed of various figures and shapes. These barcode standards are deemed to have better efficiency compared with 1D barcodes owing to their improved data density and data recovery mechanisms.  
   
-**Postal symbologies** are special barcode standards introduced by postal services in various countries.
+**Postal types** are special barcode standards introduced by postal services in various countries.
   
 <table> 
 <tr> <th></th><th></th> 
-<th>Supported Symbologies</th> 
+<th>Supported Barcode Types</th> 
 </tr> 
 <tr> <th rowspan="2">1D (Linear)</th> 
 <th>Numeric Only</th> 
@@ -27,18 +27,17 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 <td>Code 128, Code 39, Code 93, Code 16K, Codablock-F, DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, VIN</td> 
  </tr> 
 <tr> <th colspan ="2" >2D</th> 
-<td>QR Code, Micro QR Code, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec, DataMatrix, DotCode, GS1 DataMatrix, GS1 QR Code, MaxiCode</td> 
+<td>QR Code, Micro QR Code, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec Code, Data Matrix, DotCode, GS1 DataMatrix, GS1 QR Code, MaxiCode</td> 
  </tr> 
  <tr> <th colspan ="2">Postal</th> 
-<td>Australia Post, AustralianPostParcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, SwissPostParcel, USPS OneCode</td> 
+<td>Australia Post, Australian Post Parcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, Swiss Post Parcel, USPS OneCode</td> 
  </tr> 
 </tr> 
 </table>
-
+  
 ## **Image Formats**
 ***Aspose.BarCode for Java*** enables outputting barcode images using five most common raster image file formats and two vector image formats. The latter ones are available for rendering only by the SQL Server Reporting Services engine. Image formats supported for input and output are listed below.
-
-
+  
 |**Format**|**Description**|**Recognition**|**Generation**|
 | :- | :- | :- | :- |
 |[JPEG](https://docs.fileformat.com/Image/JPEG/)|File format standardized by the Joint Photographic Experts Group|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -49,3 +48,4 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 |[EXIF](https://docs.fileformat.com/image/exif/)|Exchangeable Image File Format|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[EMF](https://docs.fileformat.com/Image/EMF/)|Enhanced Metafile Format| |{{< emoticons/tick >}}|
 |[SVG](https://docs.fileformat.com/page-description-language/SVG/)|Scalable Vector Graphics Format| |{{< emoticons/tick >}} |
+  

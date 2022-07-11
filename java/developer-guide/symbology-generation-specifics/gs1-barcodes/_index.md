@@ -1,20 +1,23 @@
 ---
-title: GS1-Compatible Symbologies
+title: GS1 Barcode Types
 type: docs
 weight: 90
-url: /java/gs1-symbologies/
+url: /java/gs1-types/
+aliases:
+- /java/generating-gs1-128-ai-8102-coupon-extended-barcode/
+- /java/generating-upca-and-gs1-databar-coupon-barcode/
 ---
 {{% alert color="primary" %}}[Generate GS1 Code 128 and](https://products.aspose.app/barcode/generate/code128?type=gs1code128) [GS1 DataMatrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix?type=gs1datamatrix): You can test the quality of ***Aspose.BarCode*** generation for GS1 barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-GS1 is one of the main developers of data processing and encoding standards for barcodes. It is an international non-profit organization that introduces standardizied machine data reading methods for item tracking based on the mechanism of automatic identification and data capture (AIDC). GS1 has proposed using application identifiers (AIs) that are defined as identification codes to encode information about items or goods. Such codes serve as prefixes that may be added to barcodes or RFID tags to store some extra information. Moreover, GS1 has introduced special encoding standards for many symbologies.  
+GS1 is one of the main developers of data processing and encoding standards for barcodes. It is an international non-profit organization that introduces standardizied machine data reading methods for item tracking based on the mechanism of automatic identification and data capture (AIDC). GS1 has proposed using application identifiers (AIs) that are defined as identification codes to encode information about items or goods. Such codes serve as prefixes that may be added to barcodes or RFID tags to store some extra information. Moreover, GS1 has introduced special encoding standards for various types.  
   
-Symbologies that are compatible with all GS1 Application Identifiers or the GS1AI_01 type only are listed in the table below.  
+The barcode types compatible with all GS1 Application Identifiers or the GS1AI_01 type only are listed in the table below.  
   
 |<p align="center">**Compatibility with GS1 AIs**</p>|<p align="center">**Supported Symbologies**</p>|
 |---|---|
-|Supports All GS1 AIs|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 DataMatrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
-|Supports Only GS1AI_01|DataBar OmniDirectional, DataBar Stacked OmniDirectional, DatabarLimited, DataBar Truncated, DataBar Stacked, EAN14, ITF14|
+|Supports All GS1 AIs|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 Data Matrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
+|Supports Only GS1AI_01|DataBar Omnidirectional, DataBar Stacked Omnidirectional, Databar Limited, DataBar Truncated, DataBar Stacked, EAN 14, ITF 14|
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -23,28 +26,26 @@ Symbologies that are compatible with all GS1 Application Identifiers or the GS1A
 <p align="center"><mark>"(Application_Identifier_1)Application_Data(Application_Identifier_2)Application_Data"</mark></p> 
 
 As an example, it is possibe to set the string "(01)12345678901231(21)ASPOSE(30)9876" as barcode text using the *setCodeText* method.  
-  
-Following code samples are given to show how to create *Code 128* and *DataMatrix* barcodes according to the GS1-compatible format.  
-  
+      
 **GS1 Code 128**  
-   
-{{< highlight csharp>}}
+  
+<!--Following code samples are given to show how to create *Code 128* and *DataMatrix* barcodes according to the GS1-compatible format.{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1Code128, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 <p align="center"><img src="gs1code128example.png"></p>
-  
+    
 **GS1 DataMatrix**  
   
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1DataMatrix, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Parameters.Barcode.DataMatrix.Columns = 36;
 gen.Parameters.Barcode.DataMatrix.Rows = 12;
 gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 <p align="center"><img src="gs1datamatrixexample.png"></p>
   
@@ -60,23 +61,33 @@ In ***Aspose.BarCode for Java***, developers can generated aforementioned barcod
   
 As an example, it is possible to pass the string "123456789012(8110)ASPOSE" to the *setCodeText* method. 
   
-Following code snippets explain how to create *UpcaGs1DatabarCoupon* and *UpcaGs1DatabarCoupon* barcodes.  
+<!--Following code snippets explain how to create *UpcaGs1DatabarCoupon* and *UpcaGs1DatabarCoupon* barcodes.-->  
   
 ### **UPC-A + DataBar Expanded**
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="gs1couponupcadatabar.png"></p>
+  
+{{< highlight csharp>}}  
+BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.UPCA_GS_1_DATABAR_COUPON);
+
+// UPCA part is "514141100906", GS1Databar part is "(8110)001234502239811110555"
+generator.setCodeText("512345678900(8110)001234502239811110555");
+
+generator.save("UpcaGs1DatabarCoupon.png");
+
+{{< /highlight >}}
 
 ### **UPC-A + GS1 Code 128**
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="gs1couponupcacode128.png"></p>
 
@@ -89,7 +100,7 @@ Following *UPC-A GS1 DataBar Coupon* barcodes have been created with different s
 | :-: | :-: | :-: |
 | |<img src="gs1couponspace30pixels.png">|<img src="gs1couponspace50pixels.png">|
   
-The following code sample demonstrates how to manage the size of spacing between primary barcodes and their coupon add-ons.
+<!--The following code sample demonstrates how to manage the size of spacing between primary barcodes and their coupon add-ons.
     
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "123456789012(8110)ASPOSE");
@@ -100,4 +111,4 @@ gen.Save($"{path}Gs1CouponSpace30Pixels.png", BarCodeImageFormat.Png);
 //set coupon supplement space 50 pixels
 gen.Parameters.Barcode.Coupon.SupplementSpace.Pixels = 50;
 gen.Save($"{path}Gs1CouponSpace50Pixels.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->

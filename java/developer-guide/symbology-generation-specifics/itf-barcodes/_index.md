@@ -1,5 +1,5 @@
 ---
-title: ITF Symbologies
+title: ITF Barcode Family
 type: docs
 weight: 120
 url: /java/itf-barcodes/
@@ -23,7 +23,7 @@ Following barcodes have been generated with different frame settings.
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="itf14bordernone.png">|<img src="itf14borderframe.png">|<img src="itf14borderbar.png">|<img src="itf14borderframeout.png">|<img src="itf14borderbarout.png">|
   
-The following code sample shows how to manage the frame style for *ITF 14* barcodes.
+<!--The following code sample shows how to manage the frame style for *ITF 14* barcodes.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
@@ -43,7 +43,7 @@ gen.Save($"{path}ITF14BorderFrame.png", BarCodeImageFormat.Png);
 //ITF border type FrameOut
 gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.FrameOut;
 gen.Save($"{path}ITF14BorderFrameOut.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 ### **Frame Thickness Settings**
 Developers can customize thickness settings for *ITF* barcodes according to particular industrial needs through the *setItfBorderThickness* method of class [*ITFParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The default settings for borfer thickness is equal to 12 pt.
@@ -54,7 +54,7 @@ Following *ITF 14* barcodes have been created setting different border thickness
 | :-: | :-: | :-: |
 | |<img src="itf14bordersize5pixels.png">|<img src="itf14bordersize15pixels.png">|
   
-The following code snippet demonstrates to manage border thickness for *ITF 14* barcodes.
+<!--The following code snippet demonstrates to manage border thickness for *ITF 14* barcodes.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
@@ -66,7 +66,7 @@ gen.Save($"{path}ITF14BorderSize5Pixels.png", BarCodeImageFormat.Png);
 //ITF border size 15 Pixels
 gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 15;
 gen.Save($"{path}ITF14BorderSize15Pixels.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 ## **Quiet Zone Settings**
 ***Aspose.BarCode for Java*** allows developers to modify the quiet zone size for *ITF* barcodes through the *setQuietZoneCoef* method of class [*ITFParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The quiet zone is determined as as a relative coefficient to the value of *XDimension*.  
@@ -77,7 +77,7 @@ Following *ITF 14* barcodes have been created with different quiet zone settings
 | :-: | :-: | :-: |
 | |<img src="itf14quietzone10.png">|<img src="itf14quietzone30.png">|
   
-The following code snippet shows how to manage the size of the quiet zone for *ITF 14* barcodes.
+<!--The following code snippet shows how to manage the size of the quiet zone for *ITF 14* barcodes.
   
 {{< highlight csharp>}}
 arcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
@@ -89,4 +89,4 @@ gen.Save($"{path}ITF14QuietZone10.png", BarCodeImageFormat.Png);
 //ITF quiet zone 30 * XDimension
 gen.Parameters.Barcode.ITF.QuietZoneCoef = 30;
 gen.Save($"{path}ITF14QuietZone30.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->

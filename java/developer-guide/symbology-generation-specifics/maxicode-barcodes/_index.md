@@ -1,5 +1,5 @@
 ---
-title: MaxiCode Symbology
+title: MaxiCode Barcodes
 type: docs
 weight: 80
 url: /java/maxicode-barcodes/
@@ -7,7 +7,7 @@ url: /java/maxicode-barcodes/
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-*MaxiCode* is a 2D symbology used to encode textual data and streams of bytes. *MaxiCode* barcodes contain special round bullseye finder patterns consisting of 3 circles, 6 orientation patterns, and 33 rows composed of 29 or 30 hexagonal modules. This barcode standard has been developed for postal services and is recommended for industrial tasks. Its encoding capacity may vary according to properties of encoded information and may reach up to 60 bytes or 90 alphanumeric characters or 140 numerical digits. The *MaxiCode* symbology supports Reed-Solomon error correction.
+*MaxiCode* is a 2D barcode type used to encode textual data and streams of bytes. *MaxiCode* barcodes contain special round bullseye finder patterns consisting of 3 circles, 6 orientation patterns, and 33 rows composed of 29 or 30 hexagonal modules. This barcode standard has been developed for postal services and is recommended for industrial tasks. Its encoding capacity may vary according to properties of encoded information and may reach up to 60 bytes or 90 alphanumeric characters or 140 numerical digits. The *MaxiCode* symbology supports Reed-Solomon error correction.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -33,7 +33,7 @@ Following *MaxiCode* barcodes have been generated applying Formats 1 and 2 of *E
 | :-: | :-: | :-: |
 | |<img src="maxicodeencodemode2first.png" width="40%" height="40%">|<img src="maxicodeencodemode2second.png" width="40%" height="40%">|
   
-The following code sample shows how to switch between different encoding modes.
+<!--The following code sample shows how to switch between different encoding modes.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "");
@@ -54,10 +54,11 @@ gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = 2;
 //(Postal Code 9 digits)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)
 gen.CodeText = $"123456789{gs}056{gs}001{gs}ADDITIONAL DATA{eot}";
 gen.Save($"{path}MaxiCodeEncodeMode2Second.png", BarCodeImageFormat.Png);
-{{< /highlight >}}  
+{{< /highlight >}}-->  
   
 ### **Encoding Modes 4, 5, and 6**
-*Encoding modes 4, 5, and 6* can be used to encode arbitrary textual data or streams of bytes. The following code snippet explains how to encode byte streams using *Encoding Mode 4*.
+*Encoding modes 4, 5, and 6* can be used to encode arbitrary textual data or streams of bytes. 
+<!--The following code snippet explains how to encode byte streams using *Encoding Mode 4*.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©");
@@ -65,7 +66,7 @@ gen.Parameters.Barcode.XDimension.Pixels = 15;
 //set MaxiCode encode mode to 4
 gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = 4;
 gen.Save($"{path}MaxiCodeEncodeMode4.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 <p align="center"><img src="maxicodeencodemode4.png" width="20%" height="20%"></p>
 
@@ -74,7 +75,7 @@ gen.Save($"{path}MaxiCodeEncodeMode4.png", BarCodeImageFormat.Png);
   
 <p align="center"><img src="maxicodeaspectratio0.5.png" width="20%" height="20%"></p>
   
-The following code sample shows how to customize *Aspect Ratio* for *MaxiCode* barcodes.
+<!--The following code sample shows how to customize *Aspect Ratio* for *MaxiCode* barcodes.
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©");
@@ -82,4 +83,4 @@ gen.Parameters.Barcode.XDimension.Pixels = 15;
 //set aspect ratio 0.5
 gen.Parameters.Barcode.MaxiCode.AspectRatio = 0.5f;
 gen.Save($"{path}MaxiCodeAspectRatio0.5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->

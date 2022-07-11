@@ -5,6 +5,8 @@ description: "This article explains how to import and export barcodes to XML usi
 keywords: "Export barcode to XML, Import barcode from XML, barcode in XML, Aspose.BarCode, Read Barcode Java"
 weight: 80
 url: /java/barcode-generation-in-xml/
+aliases:
+- /java/barcode-in-xml/
 ---
 
 ## **Overview**
@@ -13,7 +15,8 @@ url: /java/barcode-generation-in-xml/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Export Barcode Generation Data to XML**
-As stated above, ***Aspose.BarCode for Java*** provides two ways of outputting the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator): to an XML file using the *exportToXml(java.io.String xmlFile)* method or a stream through the *exportToXml(java.lang.OutputStream xml)* method. The following code sample shows how to perform data serialization to an XML file.   
+As stated above, ***Aspose.BarCode for Java*** provides two ways of outputting the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator): to an XML file using the *exportToXml(java.io.String xmlFile)* method or a stream through the *exportToXml(java.lang.OutputStream xml)* method. 
+<!--The following code sample shows how to perform data serialization to an XML file.   
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
@@ -35,10 +38,11 @@ gen.ExportToXml($"{path}generatorMacroPdf417.xml");
 gen.Save($"{path}BarcodeGeneratorOriginal.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-<p align="center"><img src="barcodegeneratororiginal.png"></p>
+<p align="center"><img src="barcodegeneratororiginal.png"></p>-->
 
 ## **Import Barcode Generation Data from XML**
-It is possible to import the current state of of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream using the *importFromXml(java.io.InputStream xml)* function. The following code snippet shows how to import data from an XML file.   
+It is possible to import the current state of of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream using the *importFromXml(java.io.InputStream xml)* function. 
+<!--The following code snippet shows how to import data from an XML file.   
 
 {{< highlight csharp>}}
 //load BarcodeGenerator from file
@@ -46,13 +50,14 @@ BarcodeGenerator gen = BarcodeGenerator.ImportFromXml($"{path}generatorMacroPdf4
 //generate loaded
 gen.Save($"{path}BarcodeGeneratorLoaded.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
+-->
 
 <p align="center"><img src="barcodegeneratorloaded.png"></p>
 
 ## **Saving and Loading Barcode Data from Stream**
-The following code sample illustrates how to export and import information from streams through two speacial methods: *exportToXml(java.lang.OutputStream xml)* and *importFromXml(java.io.InputStream xml)*. 
+To export and import information from streams, two special methods need to be called: *exportToXml(java.lang.OutputStream xml)* and *importFromXml(java.io.InputStream xml)*. 
 
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 
@@ -65,6 +70,6 @@ ms.Position = 0;
 gen = BarcodeGenerator.ImportFromXml(ms);
 //generate loaded
 gen.Save($"{path}BarcodeGeneratorFromStream.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="barcodegeneratorfromstream.png"></p>

@@ -5,6 +5,9 @@ description: "This article explains how to Generate and Read Swiss QR Codes usin
 keywords: "Generate Swiss QR Codes, How to Create Swiss Barcodes, Swiss QR Code, Aspose.BarCode, Generate Barcodes in Java"
 weight: 10
 url: /java/swiss-qr-code/
+aliases:
+- /barcode/java/read-swiss-qr-code/
+- /barcode/java/generate-swiss-qr-code/
 ---
 
 ## **Overview**

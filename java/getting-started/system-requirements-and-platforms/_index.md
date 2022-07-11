@@ -3,6 +3,8 @@ title: System Requirements
 type: docs
 weight: 40
 url: /java/supported-platforms/
+aliases:
+- /java/1-1-2-system-requirements/
 ---
 
 Aspose.BarCode for Java allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications. Aspose.BarCode for Java is written entirely in Java, depends only on standard Java libraries and can be used in any Java application on any platform supported by Java.
