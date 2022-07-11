@@ -54,6 +54,7 @@ See the article [Aztec Barcode Family](/barcode/info-cards/aztec-full-range/)
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //generate Aztec Compact Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
 {
@@ -64,19 +65,44 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen.Parameters.Barcode.Aztec.AztecErrorLevel = 10;
     gen.Save($"{path}AztecCompact.png", BarCodeImageFormat.Png);
 }
+
 {{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecCompact.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.AZTEC, "Åspóse.Barcóde©");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(4);
+            //set symbol mode FullRange
+            bg.getParameters().getBarcode().getAztec().setAztecSymbolMode(AztecSymbolMode.COMPACT);
+            //set error correction capacity to 10% (can be from 5% to 95%)
+            bg.getParameters().getBarcode().getAztec().setAztecErrorLevel(10);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
  
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
 
     //generate Aztec Compact Barcode  
 
@@ -92,7 +118,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecErrorLevel(10);
     gen->Save(path + u"AztecCompact.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-    {{< /highlight >}}
+{{< /highlight >}}
     
 {{< /tab >}}
 
@@ -118,13 +144,30 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeT
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecCompact.png";//"path/to/image.png";
+      
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.AZTEC);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
  
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize Aztec Compact Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecCompact.png", DecodeType::Aztec);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -132,7 +175,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeT
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 
 {{< /tab >}}

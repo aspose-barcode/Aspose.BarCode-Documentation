@@ -74,7 +74,33 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "CompactPDF417.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.PDF_417, "Aspose");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            //set Pdf417 truncated or Compact Pdf417
+            bg.getParameters().getBarcode().getPdf417().setPdf417Truncate(true);
+            //set 3 columns
+            bg.getParameters().getBarcode().getPdf417().setColumns(3);
+            //set error level 2
+            bg.getParameters().getBarcode().getPdf417().setPdf417ErrorLevel(Pdf417ErrorLevel.LEVEL_2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }       
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
@@ -117,7 +143,23 @@ using (BarCodeReader read = new BarCodeReader($"{path}CompactPDF417.png", Decode
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "CompactPDF417.png";//"path/to/image.png";
+     
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.PDF_417,DecodeType.COMPACT_PDF_417,DecodeType.MACRO_PDF_417);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 

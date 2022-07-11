@@ -63,18 +63,39 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarLimited, "
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarLimited.png";//"path/to/image.png";
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATABAR_LIMITED, "(01)12345678901231");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate DataBar Limited Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarLimited, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarLimited.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -100,13 +121,29 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarLimited.png", Decod
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarLimited.png";//"path/to/image.png";
+      
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATABAR_LIMITED);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize DataBar Limited Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarLimited.png", DecodeType::DatabarLimited);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -114,7 +151,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarLimited.png", Decod
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

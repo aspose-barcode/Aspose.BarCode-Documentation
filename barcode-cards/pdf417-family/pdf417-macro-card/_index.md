@@ -79,7 +79,44 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "MacroPDF417.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.PDF_417, "Åspóse.Barcóde©");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            //set 3 columns
+            bg.getParameters().getBarcode().getPdf417().setColumns(3);
+            //set error level 2
+            bg.getParameters().getBarcode().getPdf417().setPdf417ErrorLevel(Pdf417ErrorLevel.LEVEL_2);
+            //set metadata
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroFileID(12345678);
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroSegmentID(12);
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroSegmentsCount(20);
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroFileName("file01");
+            //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
+            //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
+            //for the example we use random number
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroChecksum(1234);
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroFileSize(400000);
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroTimeStamp(new GregorianCalendar(2019, Calendar.FEBRUARY, 11).getTime());
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroAddressee("street");
+            bg.getParameters().getBarcode().getPdf417().setPdf417MacroSender("aspose");
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
@@ -143,7 +180,33 @@ using (BarCodeReader read = new BarCodeReader($"{path}MacroPDF417.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "MacroPDF417.png";//"path/to/image.png";
+        
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.PDF_417,DecodeType.COMPACT_PDF_417,DecodeType.MACRO_PDF_417);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+            System.out.println("Pdf417MacroFileID:" + result.getExtended().getPdf417().getMacroPdf417FileID());
+            System.out.println("Pdf417MacroSegmentID:" + result.getExtended().getPdf417().getMacroPdf417SegmentID());
+            System.out.println("Pdf417MacroSegmentsCount:" + result.getExtended().getPdf417().getMacroPdf417SegmentsCount());
+            System.out.println("Pdf417MacroFileName:" + result.getExtended().getPdf417().getMacroPdf417FileName());
+            System.out.println("Pdf417MacroChecksum:" + result.getExtended().getPdf417().getMacroPdf417Checksum());
+            System.out.println("Pdf417MacroFileSize:" + result.getExtended().getPdf417().getMacroPdf417FileSize());
+            System.out.println("Pdf417MacroTimeStamp:" + result.getExtended().getPdf417().getMacroPdf417TimeStamp().toString());
+            System.out.println("Pdf417MacroAddressee:" + result.getExtended().getPdf417().getMacroPdf417Addressee());
+            System.out.println("Pdf417MacroSender:" + result.getExtended().getPdf417().getMacroPdf417Sender());
+           
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 

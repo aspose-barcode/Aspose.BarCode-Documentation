@@ -99,15 +99,36 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen.Parameters.Barcode.Aztec.AztecErrorLevel = 10;
     gen.Save($"{path}AztecFullRange.png", BarCodeImageFormat.Png);
 }
+
 {{< /highlight >}}
 
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-
- 
-
+{{< highlight csharp>}}
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecFullRange.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.AZTEC, "Åspóse.Barcóde©");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(4);
+            //set symbol mode FullRange
+            bg.getParameters().getBarcode().getAztec().setAztecSymbolMode(AztecSymbolMode.FULL_RANGE);
+            //set error correction capacity to 10% (can be from 5% to 95%)
+            bg.getParameters().getBarcode().getAztec().setAztecErrorLevel(10);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    } 
+{{< /highlight >}}
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
@@ -137,6 +158,7 @@ gen->Save(path + u"AztecFullRange.png", Aspose::BarCode::Generation::BarCodeImag
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //recognize Aztec Full Range Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}AztecFullRange.png", DecodeType.Aztec))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -150,7 +172,23 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecFullRange.png", Decod
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecFullRange.png";//"path/to/image.png";
+     
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.AZTEC);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
  
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -166,7 +204,8 @@ for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
  
 
 {{< /tab >}}

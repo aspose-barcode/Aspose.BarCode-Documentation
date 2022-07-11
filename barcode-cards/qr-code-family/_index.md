@@ -142,13 +142,38 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
 
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "qr.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(4);
+            bg.getParameters().getBarcode().getQR().setQrEncodeType(QREncodeType.FORCE_QR);
+            bg.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI_ENCODING);
+            bg.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_L);
+            bg.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
+            bg.getParameters().getBarcode().getQR().setQrVersion(QRVersion.VERSION_05);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}}
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate QR Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose常に先を行く");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
@@ -162,7 +187,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
     //set version 5 can be Auto
     gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::Version05);
     gen->Save(path + u"QR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+{{< /highlight >}}
     
 {{< /tab >}}
 
@@ -188,21 +214,39 @@ using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "qr.png";//"path/to/image.png";
+    
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.QR);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for(BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
-    //recognize QR Barcode
+{{< highlight csharp>}}
+
+    //recognize QR Code
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"QR.png", DecodeType::QR);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

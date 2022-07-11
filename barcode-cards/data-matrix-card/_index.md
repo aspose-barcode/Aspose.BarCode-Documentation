@@ -113,6 +113,7 @@ In the study directed by The Center of Automatic Identification at Ohio Universi
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //generate Data Matrix Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©"))
 {
@@ -124,20 +125,45 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
     gen.Parameters.Barcode.DataMatrix.Rows = 22;
     gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
 }
+
 {{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndReadDataMatrix()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataMatrix.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATA_MATRIX, "Åspóse.Barcóde©");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(4);
+            bg.getParameters().getBarcode().getDataMatrix().setDataMatrixEcc(DataMatrixEccType.ECC_200);
+            bg.getParameters().getBarcode().getDataMatrix().setColumns(22);
+            bg.getParameters().getBarcode().getDataMatrix().setRows(22);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
-    //generate DataMatrix Barcode        
+{{< highlight csharp>}}
+
+    //generate Data Matrix Barcode        
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DataMatrix, u"Åspóse.Barcóde©");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
     //set DataMatrix Ecc to 200
@@ -146,7 +172,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
     gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Columns(22);
     gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
     gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+{{< /highlight >}}
     
 {{< /tab >}}
 
@@ -159,6 +186,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //recognize Data Matrix Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeType.DataMatrix))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -166,27 +194,45 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeTyp
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
+
 {{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndReadDataMatrix()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataMatrix.png";//"path/to/image.png";
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATA_MATRIX);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}}  
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
-    //recognize DataMatrix Barcode
+{{< highlight csharp>}}
+
+    //recognize Data Matrix Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataMatrix.png", DecodeType::DataMatrix);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

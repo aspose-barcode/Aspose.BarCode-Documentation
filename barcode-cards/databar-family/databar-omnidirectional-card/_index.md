@@ -77,19 +77,40 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirect
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarOmnidirectional.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATABAR_OMNI_DIRECTIONAL, "(01)12345678901231");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    //GENERATE
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate DataBar OmniDirectional Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarOmniDirectional, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarOmniDirectional.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+    
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -115,14 +136,30 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarOmnidirectional.png";//"path/to/image.png";
+    
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATABAR_OMNI_DIRECTIONAL,DecodeType.DATABAR_STACKED_OMNI_DIRECTIONAL);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
- //RECOGNIZE
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize DataBar OmniDirectional Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectional.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -130,7 +167,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -155,18 +193,40 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmn
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarOmnidirectionalStacked.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATABAR_STACKED_OMNI_DIRECTIONAL, "(01)12345678901231");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarOmniDirectionalStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -192,13 +252,30 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStac
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarOmnidirectionalStacked.png";//"path/to/image.png";
+    
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATABAR_OMNI_DIRECTIONAL,DecodeType.DATABAR_STACKED_OMNI_DIRECTIONAL);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -206,7 +283,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStac
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

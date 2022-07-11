@@ -56,31 +56,53 @@ Main limitations of this type are quite low data density and inability to verify
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //generate Code39 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
 }
+
 {{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "Code39.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.CODE_39_EXTENDED, "123");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(4);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    } 
+    
+{{< /highlight >}}    
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate Code39 Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code39Extended, u"Aspose");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"Code39.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
-    
+
+{{< /highlight >}}  
     
 {{< /tab >}}
 
@@ -93,6 +115,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //recognize Code39 Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -100,19 +123,35 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
+
 {{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "Code39.png";//"path/to/image.png";
+     
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.CODE_39_STANDARD, DecodeType.CODE_39_EXTENDED);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    } 
 
+{{< /highlight >}}
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize Code39 Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"Code39.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Code39Standard, DecodeType::Code39Extended}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -120,7 +159,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

@@ -86,7 +86,27 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Asp
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "MicroPDF417.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.MICRO_PDF_417, "Aspose");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
@@ -124,7 +144,23 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroPDF417.png", DecodeTy
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "MicroPDF417.png";//"path/to/image.png";
+       
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.MICRO_PDF_417);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 

@@ -85,19 +85,42 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, 
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarExpanded.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATABAR_EXPANDED, "(01)12345678901231");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            bg.getParameters().getBarcode().getDataBar().setAllowOnlyGS1Encoding(true);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate DataBar Expanded Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarExpanded, u"(01)12345678901231(21)SERIAL1234");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->get_Parameters()->get_Barcode()->get_DataBar()->set_IsAllowOnlyGS1Encoding(true);
     gen->Save(path + u"DataBarExpanded.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -123,13 +146,30 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpanded.png", Deco
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarExpanded.png";//"path/to/image.png";
+        
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATABAR_EXPANDED,DecodeType.DATABAR_EXPANDED_STACKED);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize DataBar Expanded Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarExpanded.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarExpanded, DecodeType::DatabarExpandedStacked}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -137,7 +177,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpanded.png", Deco
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -165,13 +206,37 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedSt
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarExpandedStacked.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.DATABAR_EXPANDED_STACKED, "(01)12345678901231");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            bg.getParameters().getBarcode().getDataBar().setAllowOnlyGS1Encoding(true);
+            //set 3 rows
+            bg.getParameters().getBarcode().getDataBar().setRows(3);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate DataBar Expanded Stacked Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarExpandedStacked, u"(01)12345678901231(21)SERIAL1234");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
@@ -179,7 +244,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedSt
     //set 3 rows
     gen->get_Parameters()->get_Barcode()->get_DataBar()->set_Rows(3);
     gen->Save(path + u"DataBarExpandedStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+    
+{{< /highlight >}}
 
 {{< /tab >}}
 
@@ -205,13 +271,30 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpandedStacked.png
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}} 
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "DataBarExpandedStacked.png";//"path/to/image.png";
+    
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.DATABAR_EXPANDED,DecodeType.DATABAR_EXPANDED_STACKED);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize DataBar Expanded Stacked Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarExpandedStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarExpanded, DecodeType::DatabarExpandedStacked}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -219,7 +302,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarExpandedStacked.png
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

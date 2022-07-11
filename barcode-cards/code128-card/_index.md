@@ -64,30 +64,53 @@ Code 128 utilizes four different bar sizes, and therefore, it requires high-qual
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //generate Code128 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}Code128.png", BarCodeImageFormat.Png);
 }
+
 {{< /highlight >}} 
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
- 
+{{< highlight csharp>}}
 
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "Code128.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.CODE_128, "Aspose");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
+{{< /highlight >}}  
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //generate Code128 Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code128, u"Aspose");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"Code128.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+    
+{{< /highlight >}}
     
 {{< /tab >}}
 
@@ -113,13 +136,31 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.C
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "Code128.png";//"path/to/image.png";
+    
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.CODE_128);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
+
+{{< /highlight >}}  
  
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+{{< highlight csharp>}}
+
     //recognize Code128 Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"Code128.png", DecodeType::Code128);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -127,7 +168,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.C
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 {{< /tab >}}
 

@@ -53,6 +53,7 @@ Aztec Rune allows creating very compact matrix barcodes that still provide damag
 {{< tab tabNum="1" >}}
 
 {{< highlight csharp>}}
+
 //generate Aztec Rune Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
 {
@@ -67,7 +68,27 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecRune.png";//"path/to/image.png";
+        //generate
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.CODE_39_EXTENDED, "Aspose");
+        {
+            bg.getParameters().getBarcode().getXDimension().setPixels(2);
+            try
+            {
+                bg.save(filePath, BarCodeImageFormat.PNG);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
  
+{{< /highlight >}} 
 
 {{< /tab >}}
 
@@ -84,7 +105,6 @@ gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::B
 gen->Save(path + u"AztecRune.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 {{< /highlight >}}
-
 
 {{< /tab >}}
 
@@ -110,7 +130,23 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecRune.png", DecodeType
 
 {{< tab tabNum="2" >}}
 
+{{< highlight csharp>}}
+
+public void generateAndRead()
+    {
+        String filePath = Global.getTestDataFolder("cards") + "AztecRune.png";//"path/to/image.png";
+        
+        //recognize
+        BarCodeReader br = new BarCodeReader(filePath, DecodeType.CODE_39_EXTENDED);
+        BarCodeResult[] barCodeResults = br.readBarCodes();
+        for (BarCodeResult result : barCodeResults)
+        {
+            System.out.println("CodeType: " + result.getCodeTypeName());
+            System.out.println("CodeText: " + result.getCodeText());
+        }
+    }
  
+{{< /highlight >}} 
 
 {{< /tab >}}
 
@@ -126,7 +162,8 @@ for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+{{< /highlight >}}
 
 
 {{< /tab >}}
