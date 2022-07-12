@@ -1,5 +1,5 @@
 ---
-title: Integrate Aspose.BarCode forh .NET with Aspose.Cells
+title: Integrate Aspose.BarCode for .NET with Aspose.Cells
 description: "How to Intergrate Aspose.BarCode with Aspose.Cells"
 keywords:
 type: docs
