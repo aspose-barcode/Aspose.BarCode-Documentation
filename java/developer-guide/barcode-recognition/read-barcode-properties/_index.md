@@ -5,8 +5,7 @@ description: "This article describes how to read barcode parameters and encoded 
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcodes in Java"
 weight: 40
 url: /java/read-barcode-properties/
-aliases:
-- /barcode/java/loading-barcode-images/
+
 ---
 
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
@@ -14,7 +13,7 @@ aliases:
 ## **Overview**
 ***Aspose.BarCode for Java*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including symbology, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) and can be fetched using special methods described further in this article.  
 
-The following code snippet illustrates how to get contents of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) instance.
+<!--The following code snippet illustrates how to get contents of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) instance.
  
  BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "12345");
  generator.save("c:\\test.png");
@@ -26,14 +25,14 @@ The following code snippet illustrates how to get contents of the [*BarCodeResul
      System.out.println("BarCode Confidence: " + result.getConfidence());
      System.out.println("BarCode ReadingQuality: " + result.getReadingQuality());
      System.out.println("BarCode Angle: " + result.getRegion().getAngle());
- }  
+ }-->  
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Type and Encoded Data**
 To obtain input barcode data and its symbology, *getCodeText* and *getCodeType* methods of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) can be used. The other method called *getCodeTypeName* returns the text name of the barcode type.
   
-The following code snippet shows how to use these methods.
+<!--The following code snippet shows how to use these methods.
  
 {{< highlight csharp>}}
 //create barcode
@@ -54,12 +53,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRCodetext.png", DecodeTyp
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="qrcodetext.png"></p> 
   
 ## **Reading Barcode Data as Byte Stream**
-It is possible to load barcode data as a byte stream using a special method of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) that is called *getCodeBytes*. The following code sample explains how to fetch barcode data as a byte stream.  
+It is possible to load barcode data as a byte stream using a special method of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) that is called *getCodeBytes*. 
+
+<!--The following code sample explains how to fetch barcode data as a byte stream.  
    
 {{< highlight csharp>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
@@ -87,14 +88,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtCodeBytes.png", DecodeT
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
         Console.WriteLine($"CodeBytes:{BitConverter.ToString(result.CodeBytes)}");
     }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="extcodebytes.png"></p>
 
 ## **Decoding Barcode Text in Unicode**
 For barcodes in which the barcode data is encoded in a Unicode encoding, the library provides the *getCodeText* method that can be used to enable the required encoding in the following format: getCodeText(java.nio.charset.Charset encoding).  
   
-The following code snippet shows how to get barcode data encoded using the UTF8 encoding.
+<!--The following code snippet shows how to get barcode data encoded using the UTF8 encoding.
    
 {{< highlight csharp>}}
 //create encoded Unicode codetext
@@ -113,7 +114,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtUnicodeCodeText.png", D
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
         Console.WriteLine($"GetCodeText:{result.GetCodeText(Encoding.UTF8)}");
     }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="extunicodecodetext.png"></p>
    
@@ -127,7 +128,7 @@ Depending of the quality of barcode reading results, the *getConfidence* method 
 |*MODERATE*|80|This confidence level may be returned for linear and postal barcode types with weak or absent checksum controls. Furthermore, it is necessary to analyze the result of the *getReadingQuality* method. The absolute correctness of barcode reading results is not assured|
 |*STRONG*|100|This confidence level is returned for all 2D symbologies with Reed-Solomon error correction. It means that barcode text has been recognized accurately|
   
-The following code sample shows how to obtain the recognition quality estimate.
+<!--The following code sample shows how to obtain the recognition quality estimate.
   
 {{< highlight csharp>}}
 //recognize image
@@ -142,7 +143,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
         Console.WriteLine($"ReadingQuality:{result.ReadingQuality.ToString()}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 ## **Barcode Position and Orientation Angle**
 To obtain the position of a source barcode and its orientation angle, methods class [*BarCodeRegionParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeRegionParameters) can be used. This class allows getting the information about the barcode region in the following forms:
@@ -151,7 +152,7 @@ To obtain the position of a source barcode and its orientation angle, methods cl
 -	Points – an array of points constituting a barcode
 -	Angle – an orientation angle in degrees
   
-The following code snippet shows how to fetch the information about barcode positiom and orientation angle.
+<!--The following code snippet shows how to fetch the information about barcode positiom and orientation angle.
 
 {{< highlight csharp>}}
 //recognize image
@@ -171,7 +172,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
         Console.WriteLine($"Points:{ptStr}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 <p align="center"><img src="qr_code128.png" width="20%" height="20%"></p>
 
@@ -193,7 +194,7 @@ Metadata from *PDF417* barcodes can be obtained using methods of class [*Pdf417E
 |*getPdf417MacroAddressee*|Gets the address of the file sender|
 |*getPdf417MacroSender*|Returns the name of the file sender|
   
-The following code sample explains how to obtain metadata from a *PDF417* barcode.  
+<!--The following code sample explains how to obtain metadata from a *PDF417* barcode.  
  
 {{< highlight csharp>}}
 //generate Macro PDF417 with metadata
@@ -235,7 +236,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417Meta.png", Decode
         Console.WriteLine($"Pdf417MacroSender:{result.Extended.Pdf417.MacroPdf417Sender}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 <p align="center"><img src="extpdf417meta.png"></p>  
 
@@ -246,7 +247,7 @@ To fetch metadata from *QR Code* barcodes with structured append, ***Aspose.BarC
 - *getQRStructuredAppendModeBarCodesQuantity* - returns the number of barcodes in a composite *QR Code* barcode taht can take values from 2 to 16
 - *getQRStructuredAppendModeParityData* - returns the checksum identifier byte that is usually computed as *XOR* of all bytes in which UTF16BE characters are encoded in two bytes  
   
-The code sample below shows how to fetch metadata from a sample *QR Code* barcode with structured append.
+<!--The code sample below shows how to fetch metadata from a sample *QR Code* barcode with structured append.
    
 {{< highlight csharp>}}
 //generate QR with metadata
@@ -272,14 +273,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtQRMeta.png", DecodeType
         Console.WriteLine($"ParityData:{result.Extended.QR.QRStructuredAppendModeParityData}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="extqrmeta.png"></p>
   
 ### **Reading Metadata from DataBar Barcodes with 2D Components**
 Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DataBarExtendedParameters) that provides a special method called *is2DCompositeComponent*. This methods allows enabling or disabling a 2D component in *DataBar* barcodes.  
   
-The following code snippet shows how to fetch metadata from a sample *DataBar* barcode with a 2D component.
+<!--The following code snippet shows how to fetch metadata from a sample *DataBar* barcode with a 2D component.
   
 {{< highlight csharp>}}
 //generate Databar with metadata
@@ -302,14 +303,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDataBarMeta.png", Decod
         Console.WriteLine($"Is2DCompositeComponent:{result.Extended.DataBar.Is2DCompositeComponent}");
     }
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 <p align="center"><img src="extdatabarmeta.png"></p>
 
 ### **Reading Metadata from 1D Barcodes**
 Some 1D barcode types, i.e. *EAN 13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/OneDExtendedParameters) provides the *getValue* method that allows getting 1D barcode text and the *getCheckSum* method that returns the result of checksum computation.
   
-The following code snippet explains how to get the barcode text of a EAN 13 barcode and its checksum value.
+<!--The following code snippet explains how to get the barcode text of a EAN 13 barcode and its checksum value.
  
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.EAN_13, "1234567890128");
  generator.save("c:\\test.png");
@@ -320,14 +321,14 @@ BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.EAN_13, "123456789
     System.out.println("BarCode CodeText: " + result.getCodeText());
     System.out.println("BarCode Value: " + result.getExtended().getOneD().getValue());
     System.out.println("BarCode Checksum: " + result.getExtended().getOneD().getCheckSum());
-}
+}-->
  
 <p align="center"><img src="ean13.png"></p>
   
 ### **Getting Raw Data from Code 128 Barcodes**
 Input data stored in *Code 128* barcodes can be encoded in three ways: A, B, or C. Class [*Code128ExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/Code128ExtendedParameters) provides a special method called *getCode128DataPortions* that returns decoded parts of barcode input information and the encoding mode.
 
-The following code sample shows how to fetch *Code 128* raw data.
+<!--The following code sample shows how to fetch *Code 128* raw data.
 
  BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "12345");
  generator.save("c:\\test.png");
@@ -337,6 +338,6 @@ The following code sample shows how to fetch *Code 128* raw data.
     System.out.println("BarCode Type: " + result.getCodeTypeName());
     System.out.println("BarCode CodeText: " + result.getCodeText());
     System.out.println("Code128 Data Portions: " + result.getExtended().getCode128());
- }
+ }-->
 
 <p align="center"><img src="code128.png"></p>

@@ -25,7 +25,7 @@ Following *Mailmark 2D* barcode images have been generated using various *Mailma
 | :-: | :-: | :-: | :-: |
 | |<img src="mailmark2dtype7.png">|<img src="mailmark2dtype9.png">|<img src="mailmark2dtype29.png">|
   
-The following code sample explains how to create *Mailmark 2D* barcodes of different subtypes.
+<!--The following code sample explains how to create *Mailmark 2D* barcodes of different subtypes.
   
 {{< highlight csharp>}}
 ComplexBarcodeGenerator generator = null;
@@ -62,12 +62,12 @@ mailmark2D.CustomerContent = "CUSTOM DATA";
 generator = new ComplexBarcodeGenerator(mailmark2D);
 generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark2DType29.png");
-{{< /highlight >}}
+{{< /highlight >}}-->
   
 ## **Mailmark 2D Barcode Recognition**
 Using the ***Aspose.BarCode for Java*** functionality, developers can read *Mailmark 2D* barcodes of all types. First, it is necessary to generate an instance of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) setting it to *DecodeType.DataMatrix*. Thereafter, barcode data can be parsed using the *tryDecodeMailmark2D(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that generates an instance of [*Mailmark2DCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/Mailmark2DCodetext) containing decoded information.  
   
-The following code snippet shows how to read *Mailmark 2D* barcodes.
+<!--The following code snippet shows how to read *Mailmark 2D* barcodes.
 
 {{< highlight csharp>}}
 Console.OutputEncoding = Encoding.Unicode;
@@ -88,4 +88,4 @@ foreach (BarCodeResult result in reader.ReadBarCodes())
     Console.WriteLine($"ReturnToSenderPostCode:{mailmarkResult.ReturnToSenderPostCode}");
     Console.WriteLine($"CustomerContent:{mailmarkResult.CustomerContent}");
 }
-{{< /highlight >}} 
+{{< /highlight >}} -->

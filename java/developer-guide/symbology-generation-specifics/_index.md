@@ -22,7 +22,7 @@ All related information can be found in the articles listed below.
 |2D Types| |   
 |---|---|
 |**Article**|**Description**|
-|[QR and Micro QR Codes](/barcode/java/qr-and-micro-qr-barcode/)|Explains how to generate *QR Code* and *Micro QR Code* barcodes, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
+|[QR Code and Micro QR Code](/barcode/java/qr-and-micro-qr-barcode/)|Explains how to generate *QR Code* and *Micro QR Code*, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
 |[PDF417 Barcode Family](/barcode/java/creating-a-pdf417-barcode/)|Describes how to create *PDF417* barcodes of various types, including *Basic PDF417*, *Micro PDF417*, *Macro PDF417*, and *Compact PDF417*, work with different data encoding modes, adjust the aspect ratio and error correction level, use metadata and special parameters, and customize barcode layout|
 |[Data Matrix](/barcode/java/how-to-create-datamatrix-barcode/)|Specifies how to generate *DataMatrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
 |[Aztec Code](/barcode/java/generating-aztec-barcode/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
@@ -38,7 +38,7 @@ All related information can be found in the articles listed below.
 |[Codablock-F](/barcode/java/codablockf-barcodes/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
 |[Patch Code](/barcode/java/how-to-generate-a-patch-code/)|Describes how to create *PatchCode* barcodes and pages using different patterns and generation modes|
 |[Code16K](/barcode/java/code16k-barcodes/)|Specifies how to generate *Code16K* barcodes with different barcode height and quiet zone settings|
-|[EAN 2 and EAN 5 as Supplement](/barcode/java/use-checksum-and-supplement-data-for-barcodes/)|Explains how to use *EAN 2* and *EAN 5* symbologies for the purpose of supplement barcode generation|
+|[EAN 2 and EAN 5 as Supplement](/barcode/java/use-checksum-and-supplement-data-for-barcodes/)|Explains how to use *EAN 2* and *EAN 5* types for the purpose of supplement barcode generation|
 
 |Postal Types| |
 |---|---|

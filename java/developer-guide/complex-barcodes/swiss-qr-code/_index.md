@@ -22,7 +22,7 @@ To create *Swiss QR Code* barcodes through ***Aspose.BarCode for Java***, first,
 
 <p align="center"><img src="swissqrbill.png"></p>
   
-The following code snippet explains how to create *Swiss QR Code* barcode images.
+<!--The following code snippet explains how to create *Swiss QR Code* barcode images.
   
 {{< highlight csharp>}}
 //create Swiss QR Bill
@@ -58,10 +58,11 @@ generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
 generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
 generator.Save($"{path}SwissQRBill.png");
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ## **Reading Swiss QR Code Barcodes**
-To read complex barcodes, ***Aspose.BarCode for Java*** provides class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that can be used to recognize input data for different complex barcode symbologies, including *Swiss QR Code*. To perform *Swiss QR Code* recognition, developers need to start with creating an instance of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) and setting it to *DecodeType.QR*. Thereafter, barcode data requires parsing through the *TryDecodeSwissQR(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that generates an instance of [*SwissQRCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/SwissQRCodetext) containing barcode text. The following code sample shows how to perform *Swiss QR Code* barcode reading.
+To read complex barcodes, ***Aspose.BarCode for Java*** provides class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that can be used to recognize input data for different complex barcode symbologies, including *Swiss QR Code*. To perform *Swiss QR Code* recognition, developers need to start with creating an instance of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) and setting it to *DecodeType.QR*. Thereafter, barcode data requires parsing through the *TryDecodeSwissQR(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that generates an instance of [*SwissQRCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/SwissQRCodetext) containing barcode text. 
+<!--The following code sample shows how to perform *Swiss QR Code* barcode reading.
   
 {{< highlight csharp>}}
 Console.OutputEncoding = Encoding.Unicode;
@@ -79,4 +80,4 @@ foreach (BarCodeResult result in reader.ReadBarCodes())
     Console.WriteLine($"Creditor:{swissResult.Bill.Creditor.Name}");
     Console.WriteLine($"Debtor:{swissResult.Bill.Debtor.Name}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->

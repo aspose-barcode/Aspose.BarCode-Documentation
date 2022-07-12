@@ -4,7 +4,7 @@ type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcodes in Java"
 weight: 10
-url: /java/optimize-scan/
+url: /java/barcode-reading-presets
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
@@ -31,13 +31,13 @@ In this section, supported recognition presets are described, including *HighPer
 |*MaxBarcodes*|Allows scanning all barcodes possibly presented in an image, including invalid ones. It is recommended for debugging tasks only|
   
 ### **Universal Presets for All Barcode Types**
-***Aspose.BarCode for Java*** suggests various universal recognition presets and corresponding methods to activate them, such as *setHighPerformance*, *setNormalQuality*, and *setHighQuality*. These presets establish linear dependence between reading accuracy and speed for all symbologies. Generally, using the default *NormalQuality* preset is sufficient for most of barcodes that have acceptable scanning quality. 
+***Aspose.BarCode for Java*** suggests various universal recognition presets and corresponding methods to activate them, such as *setHighPerformance*, *setNormalQuality*, and *setHighQuality*. These presets establish linear dependence between reading accuracy and speed for all barcode types. Generally, using the default *NormalQuality* preset is sufficient for most of barcodes that have acceptable scanning quality. 
   
-The following code sample shows how to use universal presets.
+<!--The following code sample shows how to use universal presets.-->
   
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
   
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 Console.WriteLine("QualityPresetsMain:");
 
 //read barcode image with QualitySettings set to HighPerformance
@@ -72,7 +72,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ### **Presets for 1D Barcode Types**
 To scan linear barcodes, ***Aspose.BarCode for Java*** allows using dedicated recognition presets suitable for normal-quality barcodes. These presets provide improved methods for 1D barcode detection and decoding and are useful to work with barcodes of small dimensions or complex documents with multiple text blocks and tables. For example, compared with general recognition settings, *HighQualityDetection* and *MaxQualityDetection* presets allow improving recognition results for 1D barcodes in complex documents. Alternatilvely, such imprment can be implemented using the *NormalQuality* preset and tuning [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) through the *setDetectorSettings* method.  
@@ -81,7 +81,7 @@ The image shown below is a sample document with multiple barcodes that contains 
 
 <p align="center"><img src="many_code128.png" height="45%" width="45%"></p>
   
-The following code sample shows how to tune reading quality parameters to enable correct detection and decoding of all 1D barcodes corresponding to the target symbologies. 
+<!--The following code sample shows how to tune reading quality parameters to enable correct detection and decoding of all 1D barcodes corresponding to the target symbologies. 
 
 {{< highlight csharp>}}
 Console.WriteLine("QualityPresetsOneD:");
@@ -115,13 +115,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ### **Using ***MaxBarCodes*** Preset for Debugging**
 To detect all possible barcodes in an image including invalid ones, ***Aspose.BarCode for Java*** contains a special preset called *MaxBarCodes*. This preset allows restoring up to 1% more barcodes (severely damaged or incorrectly generated) in comparison with the results that can be reached by the *NormalQuality* preset. Similar reading settings can be implemented through the *setAllowIncorrectBarcodes* method.
 The *MaxBarCodes* preset may be used to scan even unreadable barcodes; however, it is intended for debugging tasks only as it may result in considerably augmenting the time needed to complete the reading process and providing invalid decoding outputs. This preset is suggested only for advanced users of the ***Aspose.BarCode*** library. 
   
-The following code sample shows how to use the *MaxBarCodes* preset.
+<!--The following code sample shows how to use the *MaxBarCodes* preset.
 
 {{< highlight csharp>}}
 Console.WriteLine("MaxBarCodesPreset:");
@@ -136,18 +136,18 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ## **Recognition Options**
 
 ### **Fast Detection for High-Quality Barcode Images**
 To recognize high-quality 1D barcodes created through web-based applications, it is suggested to use *setAllowOneDFastBarcodesDetector* and *setFastScanOnly* reading methods. These methods enable fast scanning of target image areas through lightweight scanning techniques. The difference between these two options is that the *setFastScanOnly* method does not enable further barcode search after the failure to idetify more barcodes through lightweight scanning methods.  
   
-The following code snippet explains how to implement fast barcode recognition.  
+<!--The following code snippet explains how to implement fast barcode recognition.-->  
 
 <p align="center"><img src="code128_hq.png" height="20%" width="20%"></p>
 
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 Console.WriteLine("FastScan:");
 
 //read barcode image with FastScan options disabled
@@ -179,16 +179,16 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_hq.png", DecodeTyp
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
-### **Regular Recognition of Barcode Images without Damages**
+### **Regular Recognition of Barcode Images without Damage**
 To decode regular norma-quality barcode images, ***Aspose.BarCode for Java*** applies a method called *setAllowRegularImage* that uses standard recognition techniques. This mode is suggested to be enabled in most cases, as its deactivation may lead to decoding failures for regular barcode images.  
   
-The following code sample shows how to perform regular barcode recognition.
+<!--The following code sample shows how to perform regular barcode recognition.-->
   
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" heigh="20%"></p>
 
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 Console.WriteLine("RegularImage:");
 
 //read barcode image with AllowRegularImage set to false
@@ -214,7 +214,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}aztec_regular_inverse.png"
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ## **Detection of Areas with Potential Barcodes**
 To read barcodes, ***Aspose.BarCode for Java*** first performs the segmentation of a source image and finds areas with potential barcodes. Two barcode region detectors are available: the one with flexible sensitivity implemented in a class called [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) and the other one that relies on the previous detector version that allows correctly identifying about 97% of barcodes without the need in additional settings. [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings) is used by default together with calling the *setNormalQuality* method.
@@ -226,7 +226,7 @@ To read barcodes, ***Aspose.BarCode for Java*** first performs the segmentation 
 -	*HighPerformance*
 -	*MaxQuality*  
   
-The following code sample illustrates how to use [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
+<!--The following code sample illustrates how to use [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
     
 {{< highlight csharp>}}
 Console.WriteLine("OneDDetectorSettings:");
@@ -250,12 +250,12 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ### **Previous Version of Barcode Detector**
 The *setUseOldBarcodeDetector* method allows performing barcode region detection for 1D barcodes using the previous detector version that does not support flexible sensitivity settings. This region detection mode is close to *NormalQuality* and *HighQuality* modes of the new detector implemented in [*BarcodeSvmDetectorSettings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).  
   
-The following code sample explains how to work with the previous version of the barcode region detector. 
+<!--The following code sample explains how to work with the previous version of the barcode region detector. 
 
 {{< highlight csharp>}}
 Console.WriteLine("OneOldBarcodeDetector:");
@@ -279,16 +279,16 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeT
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 ## **Managing Scan Gap during 1D and 2D Barcode Scanning**
-To conduct preliminary detection of large-sized 1D and some 2D symbologies, such as *QR Code*, *PDF417*, or *Aztec*, barcode scanning can be applied with a gap of several lines. This option is intended to avoid unaccaptably long scanning and allows speeding up the decoding process. ***Aspose.BarCode for Java*** supports a special method called *setAllowDetectScanGap* to enable the scan gap. However, if large-sized and tiny barcodes are displayed in an image close to each other, applying this recognition option can lead to a failure to read smaller-sized barcode. When this option is not enabled, reading such combinations of barcodes can be executed successfully at the expense of recognition speed.  
+To conduct preliminary detection of large-sized 1D and some 2D types, such as *QR Code*, *PDF417*, or *Aztec Code*, barcode scanning can be applied with a gap of several lines. This option is intended to avoid unaccaptably long scanning and allows speeding up the decoding process. ***Aspose.BarCode for Java*** supports a special method called *setAllowDetectScanGap* to enable the scan gap. However, if large-sized and tiny barcodes are displayed in an image close to each other, applying this recognition option can lead to a failure to read smaller-sized barcode. When this option is not enabled, reading such combinations of barcodes can be executed successfully at the expense of recognition speed.  
   
-The following code snippet shows how to adjust the scan gap.
+<!--The following code snippet shows how to adjust the scan gap.-->
 
 <p align="center"><img src="code128_big_and_small.png" width="25%" height="25%"></p>
 
-{{< highlight csharp>}}
+<!--{{< highlight csharp>}}
 Console.WriteLine("DetectScanGap:");
 
 //read barcode image with AllowDetectScanGap true
@@ -310,6 +310,6 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_big_and_small.png"
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+{{< /highlight >}}-->
 
 
