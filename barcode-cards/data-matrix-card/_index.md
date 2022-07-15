@@ -163,15 +163,15 @@ public void generateAndReadDataMatrix()
 
 ```cpp
 
-    //generate Data Matrix Barcode        
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DataMatrix, u"Åspóse.Barcóde©");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
-    //set DataMatrix Ecc to 200
-    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_DataMatrixEcc(Aspose::BarCode::Generation::DataMatrixEccType::Ecc200);
-    //set rows 22 columns 22
-    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Columns(22);
-    gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
-    gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Data Matrix Barcode        
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DataMatrix, u"Åspóse.Barcóde©");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+//set DataMatrix Ecc to 200
+gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_DataMatrixEcc(Aspose::BarCode::Generation::DataMatrixEccType::Ecc200);
+//set rows 22 columns 22
+gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Columns(22);
+gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
+gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 ```
     
@@ -185,7 +185,7 @@ public void generateAndReadDataMatrix()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //recognize Data Matrix Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeType.DataMatrix))
@@ -195,13 +195,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataMatrix.png", DecodeTyp
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndReadDataMatrix()
     {
@@ -216,23 +216,23 @@ public void generateAndReadDataMatrix()
         }
     }
 
-{{< /highlight >}}  
+``` 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
-    //recognize Data Matrix Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataMatrix.png", DecodeType::DataMatrix);
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize Data Matrix Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataMatrix.png", DecodeType::DataMatrix);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

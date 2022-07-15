@@ -107,10 +107,10 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate DataBar OmniDirectional Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarOmniDirectional, u"(01)12345678901231");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"DataBarOmniDirectional.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate DataBar OmniDirectional Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarOmniDirectional, u"(01)12345678901231");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"DataBarOmniDirectional.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
 ```
 
@@ -164,9 +164,9 @@ public void generateAndRead()
 
 ```cpp
 
-    //recognize DataBar OmniDirectional Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectional.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize DataBar OmniDirectional Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectional.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
@@ -227,10 +227,10 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate DataBar OmniDirectional Stacked Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"DataBarOmniDirectionalStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate DataBar OmniDirectional Stacked Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"DataBarOmniDirectionalStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 ```
 
@@ -284,9 +284,9 @@ public void generateAndRead()
 
 ```cpp
 
-    //recognize DataBar OmniDirectional Stacked Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize DataBar OmniDirectional Stacked Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());

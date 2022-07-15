@@ -92,10 +92,10 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate DataBar Limited Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarLimited, u"(01)12345678901231");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"DataBarLimited.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate DataBar Limited Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarLimited, u"(01)12345678901231");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"DataBarLimited.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 ```
 
@@ -148,9 +148,9 @@ public void generateAndRead()
 
 ```cpp
 
-    //recognize DataBar Limited Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarLimited.png", DecodeType::DatabarLimited);
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize DataBar Limited Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarLimited.png", DecodeType::DatabarLimited);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());

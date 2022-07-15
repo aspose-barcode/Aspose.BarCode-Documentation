@@ -65,7 +65,7 @@ Code 128 utilizes four different bar sizes, and therefore, it requires high-qual
 
 ```csharp
 
-//generate Code128 Barcode
+//generate the Code 128 barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -106,7 +106,7 @@ public void generateAndRead()
 
 ```cpp
 
-//generate Code128 Barcode
+//generate the Code 128 barcode
 System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code128, u"Aspose");
 gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
 gen->Save(path + u"Code128.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
@@ -123,21 +123,23 @@ gen->Save(path + u"Code128.png", Aspose::BarCode::Generation::BarCodeImageFormat
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
-//recognize Code128 Barcode
+```csharp
+
+//recognize the Code 128 barcode
 using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.Code128))
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}} 
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -153,24 +155,23 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}}  
- 
+``` 
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
-    //recognize Code128 Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"Code128.png", DecodeType::Code128);
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize the Code 128 barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"Code128.png", DecodeType::Code128);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

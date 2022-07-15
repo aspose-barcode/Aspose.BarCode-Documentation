@@ -168,7 +168,6 @@ for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
 
 ```
 
-
 {{< /tab >}}
 
 {{< /tabs >}}

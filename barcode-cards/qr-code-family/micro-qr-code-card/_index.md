@@ -1,6 +1,6 @@
 ---
 title: Micro QR Code
-description: "General description of Micro Qr Code"
+description: "General description of Micro QR Code"
 keywords: "QR Code, qr codes, micro qr, Micro QR Code, what is micro qr, what is qr code, generate micro qr, create micro qr code, read micro qr, how to read qr, qr code structure, how much data can encode micro qr, micro qr code size"
 type: docs
 weight: 20
@@ -133,16 +133,16 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate Micro QR Code
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
-    //encode data as MicroQR
-    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceMicroQR);
-    //set error correction level 7%
-    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
-    //set version M4 can be Auto
-    gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::VersionM4);
-    gen->Save(path + u"MicroQR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Micro QR Code
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
+//encode data as MicroQR
+gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceMicroQR);
+//set error correction level 7%
+gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
+//set version M4 can be Auto
+gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::VersionM4);
+gen->Save(path + u"MicroQR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
 ```
 
@@ -195,9 +195,9 @@ public void generateAndRead()
 
 ```cpp
 
-    //recognize Micro QR Code
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroQR.png", DecodeType::MicroQR);
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize Micro QR Code
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroQR.png", DecodeType::MicroQR);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());

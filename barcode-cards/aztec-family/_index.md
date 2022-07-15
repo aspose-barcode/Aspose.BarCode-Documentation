@@ -161,7 +161,7 @@ gen->Save(path + u"AztecFullRange.png", Aspose::BarCode::Generation::BarCodeImag
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //recognize Aztec Full Range Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}AztecFullRange.png", DecodeType.Aztec))
@@ -170,13 +170,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecFullRange.png", Decod
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -192,13 +193,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
   
-{{< highlight csharp>}}
+```cpp
 
 //recognize Aztec Full Range Barcode     
        
@@ -209,7 +210,7 @@ for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
  
 
 {{< /tab >}}
