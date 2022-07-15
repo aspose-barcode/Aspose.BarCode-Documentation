@@ -125,27 +125,27 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate Macro PDF417 Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    //set 3 columns
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Columns(3);
-    //set error level 2
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417ErrorLevel(Aspose::BarCode::Generation::Pdf417ErrorLevel::Level2);
-    //set metadata
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileID(12345678);
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentID(12);
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentsCount(20);
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileName(u"file01");
-    //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
-    //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
-    //for the example we use random number
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroChecksum(1234);
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileSize(400000);
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroTimeStamp(System::DateTime(2019, 11, 1));
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroAddressee(u"street");
-    gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSender(u"aspose");
-    gen->Save(path + u"MacroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Macro PDF417 Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+//set 3 columns
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Columns(3);
+//set error level 2
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417ErrorLevel(Aspose::BarCode::Generation::Pdf417ErrorLevel::Level2);
+//set metadata
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileID(12345678);
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentID(12);
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSegmentsCount(20);
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileName(u"file01");
+//checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
+//https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
+//for the example we use random number
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroChecksum(1234);
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroFileSize(400000);
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroTimeStamp(System::DateTime(2019, 11, 1));
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroAddressee(u"street");
+gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSender(u"aspose");
+gen->Save(path + u"MacroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 ```
     

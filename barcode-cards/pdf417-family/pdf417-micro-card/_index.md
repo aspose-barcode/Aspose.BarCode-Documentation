@@ -116,10 +116,10 @@ public void generateAndRead()
 
 ```cpp
 
-    //generate Micro PDF417 Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::MicroPdf417, u"Aspose");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"MicroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Micro PDF417 Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::MicroPdf417, u"Aspose");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"MicroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
 ```
     
@@ -173,9 +173,9 @@ public void generateAndRead()
 
 ```cpp
 
-    //recognize Micro PDF417 Barcode
-    System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroPDF417.png", DecodeType::MicroPdf417);
-    for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
+//recognize Micro PDF417 Barcode
+System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroPDF417.png", DecodeType::MicroPdf417);
+for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
     {
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
