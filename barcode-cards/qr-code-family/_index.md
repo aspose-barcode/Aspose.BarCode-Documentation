@@ -119,7 +119,8 @@ However, QR Codes are sensitive to substantial damage to the target pattern as i
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate QR Code
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く"))
 {
@@ -135,14 +136,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に
     gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
     gen.Save($"{path}QR.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -167,12 +168,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}}
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate QR Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose常に先を行く");
@@ -188,7 +190,7 @@ public void generateAndRead()
     gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::Version05);
     gen->Save(path + u"QR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
     
 {{< /tab >}}
 
@@ -200,7 +202,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //Read QR Code
 using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -208,13 +211,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}QR.png", DecodeType.QR))
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -230,13 +234,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize QR Code
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"QR.png", DecodeType::QR);
@@ -246,7 +250,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

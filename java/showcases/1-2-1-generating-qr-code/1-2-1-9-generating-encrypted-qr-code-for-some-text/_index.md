@@ -9,16 +9,16 @@ url: /java/1-2-1-9-generating-encrypted-qr-code-for-some-text/
 To generate an encrypted QR Code for some text, please refer to the following steps:
 
 1. Select the Type: **Encrypted QR Code**
-1. Provide the following information in content section: Encrypted Text 
-   1. Password (Key): enter your password that you want to used for encrypting the text message
-   1. Text: enter the short text message that you want to encrypt 
-1. Customize QR Code Settings (Optional)
-1. Click **Generate Preview** button
+2. Provide the following information in content section: Encrypted Text 
+   - Password (Key): enter your password that you want to used for encrypting the text message
+   - Text: enter the short text message that you want to encrypt 
+3. Customize QR Code Settings (Optional)
+4. Click **Generate Preview** button
 
 You will see the generated encrypted QR Code under the preview section.
 
 ## **Procedure**
-#### **API**
+### **API**
 {{< highlight java >}}
 
  GET /qrcodegen/api/qrcode/generate?data=<Short Message Text>&passKey=<Password>foreColor=&bgColor=&ecc=&size=&format=

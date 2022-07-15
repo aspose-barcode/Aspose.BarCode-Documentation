@@ -1,6 +1,6 @@
 ---
 title: Aztec Code Family
-description: "General Overview on Aztec Code Barcode Type"
+description: "General overview on the Aztec Code full-range barcode type"
 keywords: "Aztec Code, aztec barcode, aztec code full-range, full range aztec barcode, Create aztec barcodes, Read aztec codes, what is aztec code, aztec barcodes, generate aztec code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec generator, aztec reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 40
@@ -88,7 +88,8 @@ Compared with [QR Code](/barcode/info-cards/qr-code/), Aztec Code is more compac
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate Aztec Full Range Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
 {
@@ -100,13 +101,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen.Save($"{path}AztecFullRange.png", BarCodeImageFormat.Png);
 }
 
-{{< /highlight >}}
-
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-{{< highlight csharp>}}
+
+```java
+
 public void generateAndRead()
     {
         String filePath = Global.getTestDataFolder("cards") + "AztecFullRange.png";//"path/to/image.png";
@@ -128,12 +130,14 @@ public void generateAndRead()
             }
         }
     } 
-{{< /highlight >}}
+
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight cpp>}}
+```cpp
 
 //generate Aztec Full Range Barcode
 
@@ -145,7 +149,7 @@ gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::B
 gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecErrorLevel(10);
 gen->Save(path + u"AztecFullRange.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

@@ -121,7 +121,7 @@ using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, Decod
 {{< /highlight >}}-->
 
 ## **Setting Target Barcode Types**
-***Aspose.BarCode for Java*** supports barcode recognition for 60+ various barcode types. To improve the efficiency of the recognition process and to optimize its timing, it is recommended to set target symbologies in advance. Otheriwse, the *DecodeType.ALL_SUPPORTED_TYPES* setting of the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) enum will be used by default meaning that the library will look over all supported barcode types to check for their presence in the source image. Using this setting will increase the time needed to complete barcode recognition. 
+***Aspose.BarCode for Java*** supports barcode recognition for 60+ various barcode types. To improve the efficiency of the recognition process and optimize its timing, it is recommended to set target symbologies in advance. Otheriwse, the *DecodeType.ALL_SUPPORTED_TYPES* setting of the [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) enum will be used by default meaning that the library will look over all supported barcode types to check for their presence in the source image. Using this setting will increase the time needed to complete barcode recognition. 
 
 ### **Listing Target Barcode Types in DecodeType**
 Target barcode types can be specified by grouping them in a list and passing it to the *BarCodeReader()* constructor or the *setBarCodeReadType* method.  
@@ -139,7 +139,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {{< /highlight >}}-->
 
 ### Using ***MultyDecodeType* Mode**
-The other way to specify target symbologies is to determine them using a constructor of class [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType) and then pass it to class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) or the *setBarCodeReadType* method.  
+The other way to specify target barcode types is to determine them using a constructor of class [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType) and then pass it to class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) or the *setBarCodeReadType* method.  
   
 <!--The following code sample demonstrates how to set target symbologies (i.e. *Code 39*, *Code 128*, and *RM4SCC*) using [*MultyDecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType).
   
@@ -155,13 +155,13 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 
 ### **Using Predefined Symbology Sets**
 Class [*DecodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType) provides the following symbology setsfor barcode reading:
--	*ALL_SUPPORTED_TYPES* - all available symbologies
--	*TYPES_1D* - all supported 1D symbologies
--	*TYPES_2D* - all supported 2D symbologies
--	*POSTAL_TYPES* - all available postal symbologies
--	*MOST_COMMON_TYPES* - a set of most widespread symbologies defined according to Aspose recommendations
+-	*ALL_SUPPORTED_TYPES* - all available barcode types
+-	*TYPES_1D* - all supported 1D types
+-	*TYPES_2D* - all supported 2D types
+-	*POSTAL_TYPES* - all available postal types
+-	*MOST_COMMON_TYPES* - a set of most widespread barcode types defined according to Aspose recommendations
 
-The required symbology set can be specified in the *BarCodeReader* constructor or passed to the *setBarCodeReadType* method.
+The required set can be specified in the *BarCodeReader* constructor or passed to the *setBarCodeReadType* method.
   
 <!--The following code snippet shows how to work with the *TYPES_2D* set.
   

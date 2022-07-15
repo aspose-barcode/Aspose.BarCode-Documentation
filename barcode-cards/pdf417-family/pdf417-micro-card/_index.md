@@ -73,20 +73,22 @@ This barcode type is used to create composite codes combined with the GS1 DataBa
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate Micro PDF417 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}MicroPDF417.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -106,18 +108,20 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //generate Micro PDF417 Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::MicroPdf417, u"Aspose");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"MicroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+    
+```
     
 {{< /tab >}}
 
@@ -129,7 +133,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize Micro PDF417 Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}MicroPDF417.png", DecodeType.MicroPdf417))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -137,14 +142,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroPDF417.png", DecodeTy
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -160,13 +165,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //recognize Micro PDF417 Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroPDF417.png", DecodeType::MicroPdf417);
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -174,7 +180,8 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+```
 
 {{< /tab >}}
 

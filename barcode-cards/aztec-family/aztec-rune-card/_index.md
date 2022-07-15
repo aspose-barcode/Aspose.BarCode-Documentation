@@ -1,6 +1,6 @@
 ---
-title: Aztec Rune Code
-description: "Description of Aztec Rune Barcode Type"
+title: Aztec Code Rune
+description: "Description of the Aztec Code Rune barcode type"
 keywords: "Aztec Code, aztec rune code, aztec rune barcode, aztec rune type, Create aztec rune barcodes, Read aztec codes, read aztec rune code, what is aztec rune barcode, aztec rune barcodes, generate aztec rune code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec rune generator, aztec rune reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 20
@@ -52,7 +52,7 @@ Aztec Rune allows creating very compact matrix barcodes that still provide damag
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //generate Aztec Rune Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
@@ -62,13 +62,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "123"))
     gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Rune;
     gen.Save($"{path}AztecRune.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -88,13 +89,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
 //generate Aztec Rune Barcode
     
@@ -104,7 +105,7 @@ gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
 gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecSymbolMode(Aspose::BarCode::Generation::AztecSymbolMode::Rune);
 gen->Save(path + u"AztecRune.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -116,7 +117,8 @@ gen->Save(path + u"AztecRune.png", Aspose::BarCode::Generation::BarCodeImageForm
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize Aztec Rune Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}AztecRune.png", DecodeType.Aztec))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -124,13 +126,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecRune.png", DecodeType
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -146,13 +149,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
 //recognize Aztec Rune Barcode
 System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecRune.png", DecodeType::Aztec);
@@ -163,7 +166,7 @@ for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 
 {{< /tab >}}

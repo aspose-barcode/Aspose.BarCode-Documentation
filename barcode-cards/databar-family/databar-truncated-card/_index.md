@@ -66,7 +66,7 @@ Due to the specifics of their configuration, DataBar Truncated and DataBar Stack
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 //generate DataBar Truncated Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarTruncated, "(01)12345678901231"))
 {
@@ -75,13 +75,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarTruncated,
     gen.Parameters.Barcode.BarHeight.Pixels = 26;
     gen.Save($"{path}DataBarTruncated.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -103,13 +104,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
+
 
     //generate DataBar Truncated Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarTruncated, u"(01)12345678901231");
@@ -118,8 +120,7 @@ public void generateAndRead()
     gen->get_Parameters()->get_Barcode()->get_BarHeight()->set_Pixels(26.0f);
     gen->Save(path + u"DataBarTruncated.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
-
+```
 
 {{< /tab >}}
 
@@ -131,7 +132,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+``` csharp
+
 //recognize DataBar Truncated Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataBarTruncated.png", DecodeType.DatabarTruncated, DecodeType.DatabarStacked))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -139,13 +141,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarTruncated.png", Dec
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java 
 
 public void generateAndRead()
     {
@@ -161,13 +164,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize DataBar Truncated Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarTruncated.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarTruncated, DecodeType::DatabarStacked}));
@@ -177,7 +180,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -189,20 +192,22 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate DataBar Stacked Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStacked, "(01)12345678901231"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}DataBarStacked.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -222,20 +227,20 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate DataBar Stacked Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStacked, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -247,7 +252,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize DataBar Stacked Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataBarStacked.png", DecodeType.DatabarTruncated, DecodeType.DatabarStacked))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -255,13 +261,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarStacked.png", Decod
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -277,13 +284,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize DataBar Stacked Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarTruncated, DecodeType::DatabarStacked}));
@@ -293,7 +300,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
     
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

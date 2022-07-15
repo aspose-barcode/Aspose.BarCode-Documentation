@@ -48,7 +48,8 @@ Macro PDF allows representing multiple files in logical and consecutive sequence
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate Macro PDF417 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©"))
 {
@@ -72,14 +73,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
     gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "aspose";
     gen.Save($"{path}MacroPDF417.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -116,13 +117,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //generate Macro PDF417 Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
@@ -144,7 +146,8 @@ public void generateAndRead()
     gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroAddressee(u"street");
     gen->get_Parameters()->get_Barcode()->get_Pdf417()->set_Pdf417MacroSender(u"aspose");
     gen->Save(path + u"MacroPDF417.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
-    {{< /highlight >}}
+
+```
     
 {{< /tab >}}
 
@@ -156,7 +159,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //read Macro PDF417 Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}MacroPDF417.png", DecodeType.Pdf417, DecodeType.CompactPdf417, DecodeType.MacroPdf417))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -173,14 +177,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}MacroPDF417.png", DecodeTy
         Console.WriteLine("Pdf417MacroAddressee:" + result.Extended.Pdf417.MacroPdf417Addressee);
         Console.WriteLine("Pdf417MacroSender:" + result.Extended.Pdf417.MacroPdf417Sender);
     }
-{{< /highlight >}}
 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -206,13 +210,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //recognize Macro PDF417 Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MacroPDF417.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Pdf417, DecodeType::CompactPdf417, DecodeType::MacroPdf417}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -229,7 +234,8 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"Pdf417MacroAddressee:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417Addressee());
         System::Console::WriteLine(System::String(u"Pdf417MacroSender:") + result->get_Extended()->get_Pdf417()->get_MacroPdf417Sender());
     }
-    {{< /highlight >}}
+
+```
 
 {{< /tab >}}
 

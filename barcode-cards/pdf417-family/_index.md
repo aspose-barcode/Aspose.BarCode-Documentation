@@ -125,7 +125,8 @@ This barcode type allows encoding large amounts of textual and other information
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate PDF417 Basic Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©"))
 {
@@ -136,13 +137,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse
     gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level2;
     gen.Save($"{path}PDF417Basic.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -165,13 +167,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //generate PDF417 Basic Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Pdf417, u"Åspóse.Barcóde©");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
@@ -182,7 +185,7 @@ public void generateAndRead()
     gen->Save(path + u"PDF417Basic.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     {{< /highlight >}}
     
-{{< /tab >}}
+```
 
 {{< /tabs >}}
 
@@ -192,7 +195,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize PDF417 Basic Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}PDF417Basic.png", DecodeType.Pdf417, DecodeType.CompactPdf417, DecodeType.MacroPdf417))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -200,13 +204,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}PDF417Basic.png", DecodeTy
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -222,13 +227,14 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-    {{< highlight csharp>}}
+```cpp
+
     //recognize PDF417 Basic Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"PDF417Basic.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::Pdf417, DecodeType::CompactPdf417, DecodeType::MacroPdf417}));
     for (System::SharedPtr<BarCodeResult> result : read->ReadBarCodes())
@@ -236,7 +242,8 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeType:") + result->get_CodeTypeName());
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
-    {{< /highlight >}}
+
+```
 
 {{< /tab >}}
 

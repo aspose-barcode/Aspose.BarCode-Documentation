@@ -64,20 +64,22 @@ Such barcodes can be scanned omnidirectionally.
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate DataBar OmniDirectional Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirectional, "(01)12345678901231"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}DataBarOmniDirectional.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -97,20 +99,20 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate DataBar OmniDirectional Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarOmniDirectional, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarOmniDirectional.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -122,7 +124,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize DataBar OmniDirectional Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png", DecodeType.DatabarOmniDirectional, DecodeType.DatabarStackedOmniDirectional))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -130,13 +133,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectional.png
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -152,13 +156,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize DataBar OmniDirectional Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectional.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
@@ -168,7 +172,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -180,20 +184,22 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate DataBar OmniDirectional Stacked Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmniDirectional, "(01)12345678901231"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Save($"{path}DataBarOmniDirectionalStacked.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -213,20 +219,20 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DatabarStackedOmniDirectional, u"(01)12345678901231");
     gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
     gen->Save(path + u"DataBarOmniDirectionalStacked.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
@@ -238,7 +244,8 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //recognize DataBar OmniDirectional Stacked Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStacked.png", DecodeType.DatabarOmniDirectional, DecodeType.DatabarStackedOmniDirectional))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -246,13 +253,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}DataBarOmniDirectionalStac
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}} 
+```java
 
 public void generateAndRead()
     {
@@ -268,13 +276,13 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize DataBar OmniDirectional Stacked Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"DataBarOmniDirectionalStacked.png", System::MakeArray<System::SharedPtr<BaseDecodeType>>({DecodeType::DatabarOmniDirectional, DecodeType::DatabarStackedOmniDirectional}));
@@ -284,7 +292,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

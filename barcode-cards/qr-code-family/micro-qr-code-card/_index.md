@@ -80,7 +80,8 @@ Micro QR Code provides improved density and encode data more efficiently compare
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
+
 //generate Micro QR Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose"))
 {
@@ -93,12 +94,15 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose"))
     gen.Parameters.Barcode.QR.QrVersion = QRVersion.VersionM4;
     gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-{{< highlight csharp>}}
+
+```java
+
 public void generateAndRead()
     {
         String filePath = Global.getTestDataFolder("cards") + "MicroQRCode.png";//"path/to/image.png";
@@ -121,12 +125,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}}
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate Micro QR Code
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose");
@@ -139,8 +144,7 @@ public void generateAndRead()
     gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::VersionM4);
     gen->Save(path + u"MicroQR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
-{{< /highlight >}}
-
+```
 
 {{< /tab >}}
 
@@ -152,7 +156,7 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //read Micro QR Code
 using (BarCodeReader read = new BarCodeReader($"{path}MicroQR.png", DecodeType.MicroQR))
@@ -162,13 +166,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}MicroQR.png", DecodeType.M
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -183,13 +187,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize Micro QR Code
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"MicroQR.png", DecodeType::MicroQR);
@@ -199,7 +203,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 

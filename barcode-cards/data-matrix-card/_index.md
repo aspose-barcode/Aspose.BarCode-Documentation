@@ -112,7 +112,7 @@ In the study directed by The Center of Automatic Identification at Ohio Universi
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //generate Data Matrix Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©"))
@@ -126,13 +126,13 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
     gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
 }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndReadDataMatrix()
     {
@@ -155,13 +155,13 @@ public void generateAndReadDataMatrix()
         }
     }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate Data Matrix Barcode        
     System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::DataMatrix, u"Åspóse.Barcóde©");
@@ -173,7 +173,7 @@ public void generateAndReadDataMatrix()
     gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
     gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
     
 {{< /tab >}}
 

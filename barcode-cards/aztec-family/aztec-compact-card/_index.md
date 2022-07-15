@@ -1,6 +1,6 @@
 ---
-title: Aztec Compact Code
-description: "Overview on Aztec Compact Code Barcode Type"
+title: Aztec Code Compact
+description: "Overview on the Aztec Code Compact barcode type"
 keywords: "Aztec Code, aztec compact code, aztec compact barcode, aztec compact type, Create aztec compact barcodes, Read aztec codes, read aztec compact code, what is aztec compact barcode, aztec compact barcodes, generate aztec compact code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec compact generator, aztec compact reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 30
@@ -53,7 +53,7 @@ See the article [Aztec Barcode Family](/barcode/info-cards/aztec-full-range/)
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //generate Aztec Compact Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
@@ -66,13 +66,13 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen.Save($"{path}AztecCompact.png", BarCodeImageFormat.Png);
 }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -96,13 +96,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //generate Aztec Compact Barcode  
 
@@ -118,7 +118,7 @@ public void generateAndRead()
     gen->get_Parameters()->get_Barcode()->get_Aztec()->set_AztecErrorLevel(10);
     gen->Save(path + u"AztecCompact.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}
+```
     
 {{< /tab >}}
 
@@ -130,7 +130,7 @@ public void generateAndRead()
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 //recognize Aztec Compact Barcode
 using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeType.Aztec))
     foreach (BarCodeResult result in read.ReadBarCodes())
@@ -138,13 +138,13 @@ using (BarCodeReader read = new BarCodeReader($"{path}AztecCompact.png", DecodeT
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -160,13 +160,13 @@ public void generateAndRead()
         }
     }
  
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
     //recognize Aztec Compact Barcode
     System::SharedPtr<BarCodeReader> read = System::MakeObject<BarCodeReader>(path + u"AztecCompact.png", DecodeType::Aztec);
@@ -176,8 +176,7 @@ public void generateAndRead()
         System::Console::WriteLine(System::String(u"CodeText:") + result->get_CodeText());
     }
 
-{{< /highlight >}}
-
+```
 
 {{< /tab >}}
 

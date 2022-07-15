@@ -18,7 +18,7 @@ Kodak introduced the *Patch Code* barcode standard to improve the efficiency of 
 ## **Patch Code Patterns**
 ***Aspose.BarCode for Java*** supports *Patch Code* barcode generation using six main patterns. The extended set of patterns suggested by Kodak that has not been standardized is not available. The main six patterns are: *Patch I*, *Patch II*, *Patch III*, *Patch IV*, *Patch T*, and *Patch VI*.  
   
-Following *Patch Code* barcodes correspond tp six basic *Patch Code* patterns.
+Following *Patch Code* barcodes correspond to six basic *Patch Code* patterns.
   
 |<p align="center">**Patch Code Patterns**</p>|<p align="center">**Patch I**</p>|<p align="center">**Patch II**</p>|<p align="center">**Patch III**</p>|<p align="center">**Patch IV**</p>|<p align="center">**Patch T**</p>|<p align="center">**Patch VI**</p>|  
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |

@@ -63,7 +63,7 @@ Code 128 utilizes four different bar sizes, and therefore, it requires high-qual
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //generate Code128 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"))
@@ -72,13 +72,13 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose"
     gen.Save($"{path}Code128.png", BarCodeImageFormat.Png);
 }
 
-{{< /highlight >}} 
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
 
 public void generateAndRead()
     {
@@ -98,19 +98,20 @@ public void generateAndRead()
         }
     }
 
-{{< /highlight >}}  
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
-    //generate Code128 Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code128, u"Aspose");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"Code128.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Code128 Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code128, u"Aspose");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"Code128.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
-{{< /highlight >}}
+```
     
 {{< /tab >}}
 

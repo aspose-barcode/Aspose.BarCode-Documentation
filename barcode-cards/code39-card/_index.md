@@ -55,7 +55,7 @@ Main limitations of this type are quite low data density and inability to verify
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
+```csharp
 
 //generate Code39 Barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "Aspose"))
@@ -64,13 +64,14 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
     gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
 }
 
-{{< /highlight >}}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< highlight csharp>}}
+```java
+
 public void generateAndRead()
     {
         String filePath = Global.getTestDataFolder("cards") + "Code39.png";//"path/to/image.png";
@@ -89,20 +90,20 @@ public void generateAndRead()
         }
     } 
     
-{{< /highlight >}}    
+```   
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< highlight csharp>}}
+```cpp
 
-    //generate Code39 Barcode
-    System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code39Extended, u"Aspose");
-    gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
-    gen->Save(path + u"Code39.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
+//generate Code39 Barcode
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::Code39Extended, u"Aspose");
+gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(2.0f);
+gen->Save(path + u"Code39.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
-{{< /highlight >}}  
+```
     
 {{< /tab >}}
 

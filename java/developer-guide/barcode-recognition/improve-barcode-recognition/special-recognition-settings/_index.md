@@ -8,8 +8,6 @@ url: /java/advanced-barcode-recognition-features/
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
-## **Overview**
- 
 ## **Barcode Images with Gaussian Noise**
 Gaussian noise is one of the most common damages that may deteriorate the quality of a source barcode. Most of difficulties correspond to the cases when barcode images have the monochrome color scheme or the distortion grain is considerably bigger than the minimal element of a barcode. To cope with these effects, median filtering mechanisms suitable for both 1D and 2D symbologies can be applied. Median filtering mechanisms also affect image quality due to the possible removal of some barcode elements together with noise; however, they still may be helpful in improving readability of key barcode modules.
   
@@ -327,9 +325,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}microqr_3d_distorted.png",
 }
 {{< /highlight >}}-->
 
-## **Reading Industrial DataMatrix Barcodes**
-Industrial *DataMatrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable a special parameter called *setAllowDatamatrixIndustrialBarcodes* that allows reading dashed labels in a slow mode. 
-<!--The following code snippet explains how to read sample industrial *DataMatrix* barcodes that are shown in the image below.-->
+## **Reading Industrial Data Matrix Barcodes**
+Industrial *Data Matrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable a special parameter called *setAllowDatamatrixIndustrialBarcodes* that allows reading dashed labels in a slow mode. 
+<!--The following code snippet explains how to read sample industrial *Data Matrix* barcodes that are shown in the image below.-->
 
 <p align="center"><img src="datamatrix_industrial.png" width="30%" height="30%"></p>
 
