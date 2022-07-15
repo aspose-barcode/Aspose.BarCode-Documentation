@@ -1,7 +1,7 @@
 ---
 title: Code 128
 type: docs
-description: "Overview on Key Properties of Code 128 Barcode Type"
+description: "Overview on the key properties of the Code 128 barcode type"
 keywords: "Code 128, code128, Code 128 barcode type, Create code 128 barcode, Read code 128, what is Code 128, Code 128 barcodes, generate code 128, linear barcodes, 1D sbarcode, code 128 specification"
 weight: 120
 url: /info-cards/code-128/

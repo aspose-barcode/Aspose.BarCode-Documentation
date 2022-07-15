@@ -1,6 +1,6 @@
 ---
 title: Code 39
-description: "Overview on main parameters of Code 39 Barcode Type"
+description: "Overview on the main parameters of the Code 39 Barcode Type"
 keywords: "Code 39, code39, Code 39 barcode type, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D barcode, linear barcode type, code39 extended, code 39 specification"
 type: docs
 weight: 110
