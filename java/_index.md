@@ -31,6 +31,6 @@ The following are the links to some useful resources you may need to accomplish 
 - [Install Aspose.BarCode for Java from Maven Repository](/barcode/java/installation/)
 - [Download Aspose.BarCode for Java](https://downloads.aspose.com/barcode/java)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.Barcode-for-Java)
-- [Aspose.BarCode for Java API Reference Guide](https://apireference.aspose.com/barcode/java/)
+- [Aspose.BarCode for Java API Reference Guide](https://reference.aspose.com/barcode/java/)
 - [Aspose.BarCode for Java Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

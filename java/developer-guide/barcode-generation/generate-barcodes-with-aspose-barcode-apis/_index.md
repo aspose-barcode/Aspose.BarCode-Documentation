@@ -14,7 +14,7 @@ Developers might need to generate barcode images at the back end programmaticall
 
 There can be plenty of other reasons to work with barcodes at the back end which depend upon the developer's requirements.
 
-[Aspose.BarCode](https://www.aspose.com/products/barcode/java) provides class [BarcodeGenerator](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) to generate barcodes. Developers can create an instance of this class, set properties and save the barcode image to any location.
+[Aspose.BarCode](https://www.aspose.com/products/barcode/java) provides class [BarcodeGenerator](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) to generate barcodes. Developers can create an instance of this class, set properties and save the barcode image to any location.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-barcode-basic_features-SetCodeText-.java" >}}
   

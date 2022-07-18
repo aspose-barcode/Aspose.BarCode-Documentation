@@ -17,10 +17,10 @@ url: /java/how-to-create-datamatrix-barcode/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Data Matrix ECC Standards**
-To enable the required *Data Matrix* standard, developers can use the *setDataMatrixEcc* method of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). This method allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEccType) enum. The value of *DataMatrixEccType.ECC_200* is set by default.
+To enable the required *Data Matrix* standard, developers can use the *setDataMatrixEcc* method of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). This method allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEccType) enum. The value of *DataMatrixEccType.ECC_200* is set by default.
   
 ### ***ECC 200***
-***Aspose.BarCode for Java*** allows explicitly setting the *ECC 200* standard by calling the *setDataMatrixEcc* method and passing values *ECC_AUTO* or *ECC_200*. *ECC 200* is conpatible with all encoding modes specified in the [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum. Moreover, it allows encoding Unicode characters through the *setCodeTextEncoding* method. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
+***Aspose.BarCode for Java*** allows explicitly setting the *ECC 200* standard by calling the *setDataMatrixEcc* method and passing values *ECC_AUTO* or *ECC_200*. *ECC 200* is conpatible with all encoding modes specified in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum. Moreover, it allows encoding Unicode characters through the *setCodeTextEncoding* method. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
   
 <!--The following code sample shows how to enable the *ECC 200* encoding standard.
   
@@ -35,7 +35,7 @@ gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixecc200basic.png"></p>  
   
 ### ***ECC 000-140***  
-*ECC 000-140* standards can be applied only to a few encoding modes included in the [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum, i.e. *AUTO*, *FULL*, and *ASCII*. All other encoding modes are processed as *FULL* by default. The *setCodeTextEncoding* method  is not applicable to these standards and therefore, encoding Unicode characters is not supported. Barcode layout confirgurations of *ECC 000-140* differ significantly from *ECC 200*. At the same time, different standards corresponding to *ECC 000-140* are quite similar between each other and only have different data recovery capacity, as explained below. 
+*ECC 000-140* standards can be applied only to a few encoding modes included in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum, i.e. *AUTO*, *FULL*, and *ASCII*. All other encoding modes are processed as *FULL* by default. The *setCodeTextEncoding* method  is not applicable to these standards and therefore, encoding Unicode characters is not supported. Barcode layout confirgurations of *ECC 000-140* differ significantly from *ECC 200*. At the same time, different standards corresponding to *ECC 000-140* are quite similar between each other and only have different data recovery capacity, as explained below. 
   
 |<p align="center">**ECC Standard**</p>|<p align="center">**Data Recovery Capacity**</p>|
 | :-: | :-: |
@@ -58,7 +58,7 @@ gen.Save($"{path}DatamatrixEcc000140Basic.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
   
 ## **Encoding Modes**
-***Aspose.BarCode for Java*** supports various encoding modes that are defined in the [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). This enum provides nine encoding modes, as described below. The *AUTO* encoding mode is used by default.
+***Aspose.BarCode for Java*** supports various encoding modes that are defined in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixEncodeMode) enum of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). This enum provides nine encoding modes, as described below. The *AUTO* encoding mode is used by default.
   
 |Encoding Mode|Description|
 |---|---|
@@ -178,7 +178,7 @@ gen.Save($"{path}DatamatrixEncodeModeC40.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixencodemodec40.png"></p> 
   
 ## **Layout Settings**
-The layout for *Data Matrix* barcode generation can be determined through *setRows* and *setColumns* methods of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). If these methods have not been called explicitly, ***Aspose.BarCode for Java*** identifies a layout that is optimal for the size of input data. Barcode layout configurations are different in *ECC 000-140* and *ECC 200* standards. Only *ECC 200* allows modifying the number of rows and columns. In *ECC 000-140* standards, the suitable barcode layout configuration is determined automatically. The *ECC 200* standard prescribes setting even numbers of rows and columns. In other words, it supports the following layout configurations: 8 x 18; 16 x 48; 10 x 10; 144 x 144.
+The layout for *Data Matrix* barcode generation can be determined through *setRows* and *setColumns* methods of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters). If these methods have not been called explicitly, ***Aspose.BarCode for Java*** identifies a layout that is optimal for the size of input data. Barcode layout configurations are different in *ECC 000-140* and *ECC 200* standards. Only *ECC 200* allows modifying the number of rows and columns. In *ECC 000-140* standards, the suitable barcode layout configuration is determined automatically. The *ECC 200* standard prescribes setting even numbers of rows and columns. In other words, it supports the following layout configurations: 8 x 18; 16 x 48; 10 x 10; 144 x 144.
 
 |<p align="center">**Layout Settings**</p>|<p align="center">**22 Rows and 22 Columns**</p>|<p align="center">**12 Rows and 36 Columns**</p>|
 | :-: | :-: | :-: |
@@ -220,7 +220,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="datamatrixmacro.png"></p> 
   
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is one of the most important parameters defined as the ratio between barcode height and width. ***Aspose.BarCode for Java*** provides the *setAspectRatio* method of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters) that allows managing barcode proportions based on the X and Y coordinates. *Aspect Ratio* is determined as a relative coefficient to *XDimension*. Usually, it is recommended to set the value of *Aspect Ratio* equal to 1.
+*Aspect Ratio* is one of the most important parameters defined as the ratio between barcode height and width. ***Aspose.BarCode for Java*** provides the *setAspectRatio* method of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/DataMatrixParameters) that allows managing barcode proportions based on the X and Y coordinates. *Aspect Ratio* is determined as a relative coefficient to *XDimension*. Usually, it is recommended to set the value of *Aspect Ratio* equal to 1.
   
 |<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 0.5**</p>|
 | :-: | :-: | :-: |

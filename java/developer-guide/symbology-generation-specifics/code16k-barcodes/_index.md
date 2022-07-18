@@ -12,7 +12,7 @@ url: /java/code16k-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Height Settings**
-In ***Aspose.BarCode for Java***, it is possible to modify the row height of a *Code16K* barcode through the *setAspectRatio* method of class [*Code16KParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Code16KParameters). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In the *Code16K* standard, the value of *AspectRatio* should be set larger than 8.  
+In ***Aspose.BarCode for Java***, it is possible to modify the row height of a *Code16K* barcode through the *setAspectRatio* method of class [*Code16KParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Code16KParameters). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In the *Code16K* standard, the value of *AspectRatio* should be set larger than 8.  
   
 Following *Code16K* barcodes have been created using various barcode height settings. 
   
@@ -34,7 +34,7 @@ gen.Save($"{path}Code16KAspectRatio20.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Quiet Zone Settings**
-***Aspose.BarCode for Java*** allows modifying the size of quiet zones in *Code16K* barcodes by calling *setQuietZoneLeftCoef* and *setQuietZoneRightCoef* methods of class [*Code16KParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/Code16KParameters). Quiet zone coefficients are determined relatively to the value of *XDimension*.  
+***Aspose.BarCode for Java*** allows modifying the size of quiet zones in *Code16K* barcodes by calling *setQuietZoneLeftCoef* and *setQuietZoneRightCoef* methods of class [*Code16KParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Code16KParameters). Quiet zone coefficients are determined relatively to the value of *XDimension*.  
   
 Following *Code16K* barcodes have been generated using various quiet zone settings.
   

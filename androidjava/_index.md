@@ -26,7 +26,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Aspose.BarCode for Android via Java Features](/barcode/java/aspose-barcode-for-android-via-java-features)
 - [Aspose.BarCode for Android via Java Release Notes](/barcode/java/android-via-java-release-notes)
 - [Aspose.BarCode for Android via Java Product Page](https://products.aspose.com/barcode/android-java)
-- [Aspose.BarCode for Android via Java API Reference Guide](https://apireference.aspose.com/java/barcode) 
+- [Aspose.BarCode for Android via Java API Reference Guide](https://reference.aspose.com/java/barcode) 
 
 
 

@@ -14,18 +14,18 @@ Adding one or more barcodes to a PDF document is a widely requested feature. Thi
 PDF supports vector graphics in general but it has its own vector format and does not allow embedding vector images in a document. Instead, they get converted to a raster format.
 
 It is recommended to work with PDF documents using [**Aspose.PDF**](https://products.aspose.com/pdf/net/) as shown in the examples provided in this article. Before starting to work with this library, developers must consider several specificities explained further. The axis of coordinates used to place objects in [**Aspose.PDF**](https://reference.aspose.com/pdf/net/) increases upwards similarly as in the standard Cartesian coordinate system. However, object coordinates are defined as [**lower-left; lower-bottom; upper-right; upper-top**] instead of using the standard way to set computer coordinates with the start in the [left, top] area. This peculiarity needs to be taken into account if you are going to use the standard coordinate system, see examples given further.  
-[*Resolution*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/resolution) of an embedded barcode image is not related to its placement on a page of a PDF document. The standard resolution of a raster imager equals 96 dpi, which is insufficient for high-quality printing. It is recommended to set a resolution to 300 or 600 dpi for barcode images. This will allow printing high-quality documents through increase the size of the resulting PDF file. Note that PDF uses points instead of pixels (one pixel equals 72 points per inch). This is also explained in the given examples.  
+[*Resolution*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/resolution) of an embedded barcode image is not related to its placement on a page of a PDF document. The standard resolution of a raster imager equals 96 dpi, which is insufficient for high-quality printing. It is recommended to set a resolution to 300 or 600 dpi for barcode images. This will allow printing high-quality documents through increase the size of the resulting PDF file. Note that PDF uses points instead of pixels (one pixel equals 72 points per inch). This is also explained in the given examples.  
   
 [**Aspose.PDF**](https://reference.aspose.com/pdf/net/) provides many options to add barcode images to PDF documents that differ from each other in terms of simplicity or flexibility in managing document contents. In most cases, this operation includes the following steps:
-1.	Create or open a PDF document using [*Aspose.Pdf.Document*](https://apireference.aspose.com/pdf/net/aspose.pdf/document)
-2.	Generate a barcode image setting desired resolution through class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and save it to an object of [*MemoryStream*](https://docs.microsoft.com/dotnet/api/system.io.memorystream)
+1.	Create or open a PDF document using [*Aspose.Pdf.Document*](https://reference.aspose.com/pdf/net/aspose.pdf/document)
+2.	Generate a barcode image setting desired resolution through class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and save it to an object of [*MemoryStream*](https://docs.microsoft.com/dotnet/api/system.io.memorystream)
 3.	Using [**Aspose.PDF**](https://reference.aspose.com/pdf/net/), place the created barcode image onto one or many pages of the PDF document setting its position on a page
 4.	Save the updated PDF document  
     
 ## **How to Add Barcodes to PDF Document**
 
 ### **Standard Way**
-This example shows how to insert barcode images created through [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) using the standard procedure. First, we generate a barcode image with a resolution of 300 dpi. Then, it is added to the selected page [*Aspose.Pdf.Page*](https://apireference.aspose.com/pdf/net/aspose.pdf/page) of a document [*Aspose.Pdf.Document*](https://apireference.aspose.com/pdf/net/aspose.pdf/document) and convert standard coordinates to an object of [*Aspose.Pdf.Rectangle*](https://apireference.aspose.com/pdf/net/aspose.pdf/rectangle). The barcode image is inserted without compression and losses in quality, thus the size of the document increases.  
+This example shows how to insert barcode images created through [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) using the standard procedure. First, we generate a barcode image with a resolution of 300 dpi. Then, it is added to the selected page [*Aspose.Pdf.Page*](https://reference.aspose.com/pdf/net/aspose.pdf/page) of a document [*Aspose.Pdf.Document*](https://reference.aspose.com/pdf/net/aspose.pdf/document) and convert standard coordinates to an object of [*Aspose.Pdf.Rectangle*](https://reference.aspose.com/pdf/net/aspose.pdf/rectangle). The barcode image is inserted without compression and losses in quality, thus the size of the document increases.  
   
 The following code sample explains how to do this. The resulting PDF file is provided below. 
     
@@ -59,7 +59,7 @@ pdfDoc.Save($"{path}AddBarcodeToPDFDocumentDirectly.pdf");
 [**Sample Output for Standard Way**](addbarcodetopdfdocumentdirectly.pdf)
   
 ### **Using PDF Facades**
-This example explains how to add barcodes to PDF documents using [*PdfFileMend*](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) from the [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades/) namespace. It includes similar steps as described above. [*PdfFileMend*](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) provides additional functions, such as inserting an image to several pages simultaneously, using a special insertion mode [*BlendMode*](https://apireference.aspose.com/pdf/net/aspose.pdf/compositingparameters), and some other tools to facilitate image processing.  
+This example explains how to add barcodes to PDF documents using [*PdfFileMend*](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) from the [Aspose.Pdf.Facades](https://reference.aspose.com/pdf/net/aspose.pdf.facades/) namespace. It includes similar steps as described above. [*PdfFileMend*](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdffilemend) provides additional functions, such as inserting an image to several pages simultaneously, using a special insertion mode [*BlendMode*](https://reference.aspose.com/pdf/net/aspose.pdf/compositingparameters), and some other tools to facilitate image processing.  
   
 The following code snippet demonstrates how to implement this option. The resulting PDF file is shown below. 
   
@@ -98,7 +98,7 @@ mender.Save($"{path}AddBarcodeToPDFDocumentWithFacades.pdf");
   
 ### **Using Operators**
 
-This example demonstrates how to insert barcode images into PDF documents using [*Aspose.Pdf.Operator*](https://apireference.aspose.com/pdf/net/aspose.pdf/operator) and its feature [*ConcatenateMatrix*](https://apireference.aspose.com/pdf/net/aspose.pdf.operators/concatenatematrix). This way is more complicated than the others explained above and allows advanced users to flexibly manage barcode image properties.  
+This example demonstrates how to insert barcode images into PDF documents using [*Aspose.Pdf.Operator*](https://reference.aspose.com/pdf/net/aspose.pdf/operator) and its feature [*ConcatenateMatrix*](https://reference.aspose.com/pdf/net/aspose.pdf.operators/concatenatematrix). This way is more complicated than the others explained above and allows advanced users to flexibly manage barcode image properties.  
   
 The following code sample shows how to work with this option. The resulting PDF file is given below. 
    

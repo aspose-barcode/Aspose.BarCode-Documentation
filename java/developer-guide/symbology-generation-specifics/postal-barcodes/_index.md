@@ -19,7 +19,7 @@ Many countries use their own symbologies in postal services. Generally, such bar
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Bar Height Settings**
-By default, ***Aspose.BarCode for Java*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width through the *setBarHeight* method of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters).  
+By default, ***Aspose.BarCode for Java*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width through the *setBarHeight* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters).  
   
 Following *Planet* and *RM4SCC* barcode images have been created varying bar height settings.  
   
@@ -58,7 +58,7 @@ gen.Save($"{path}PostalRM4SCCBarHeight100Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Bar Filling Options**
-***Aspose.BarCode for Java*** enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *setFilledBars* method of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
+***Aspose.BarCode for Java*** enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *setFilledBars* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
   
 Following *Planet* and *RM4SCC* barcode images have been generated using different bar filling settings.
   
@@ -131,7 +131,7 @@ gen.Save($"{path}PostalPostnetBarcode.png", BarCodeImageFormat.Png);
 The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal symbologies. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
 
 ### **Handling Invalid Barcode Text Exception**
-When invalid barcode text in passed to to the *setCodeText* method (in case of *Postnet* and *Planet* symbologies, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) passing *True*<!-- as shown in the following code sample-->.
+When invalid barcode text in passed to to the *setCodeText* method (in case of *Postnet* and *Planet* symbologies, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) passing *True*<!-- as shown in the following code sample-->.
 
 <!--{{< highlight csharp>}}
 BarcodeGenerator gen = null;
@@ -158,7 +158,7 @@ catch (Exception e)
 {{< /highlight >}}-->
 
 ### **Customizing Bar Height**
-By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for Java*** allows modifying bar height for short bars manually. To do this, the *setPostalShortBarHeight* method of class [*PostalParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PostalParameters) needs to be used.  
+By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for Java*** allows modifying bar height for short bars manually. To do this, the *setPostalShortBarHeight* method of class [*PostalParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/PostalParameters) needs to be used.  
   
 Following barcode images have been created variyng short bar height.
   
@@ -249,7 +249,7 @@ gen.Save($"{path}PostalOneCodeBarcode31Digits.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ### **Australia Post Standard**
-The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* method of class [*AustralianPostPatrameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/AustralianPostParameters). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
+The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* method of class [*AustralianPostPatrameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/AustralianPostParameters). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
   
 Barcode data can be prepared using one of the supported formats as explained below.  
   
@@ -259,7 +259,7 @@ Barcode data can be prepared using one of the supported formats as explained bel
 |59|8 digits|16 bars|
 |62|8 digits|31 bars|
   
-The FCC field can be determined through the *setAustralianPostEncodingTable* method that has to be called passing one of the values from the [*CustomerInformationInterpretingType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/CustomerInformationInterpretingType) enumeration listed in the table below.
+The FCC field can be determined through the *setAustralianPostEncodingTable* method that has to be called passing one of the values from the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/CustomerInformationInterpretingType) enumeration listed in the table below.
   
 |Australia Post Encoding Table|Supported Symbols|
 | :-: |---|

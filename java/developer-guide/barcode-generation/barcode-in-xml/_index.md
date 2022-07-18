@@ -10,12 +10,12 @@ aliases:
 ---
 
 ## **Overview**
-***Aspose.BarCode for Java*** enables data serialization and data import from XML through special methods of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator). There are two ways of implementing data serialization: outputting data to an XML-file through the *exportToXml(java.lang.String xmlFile)* method or a stream through the *exportToXml(java.io.OutputStream xml)* method. Uploading data from XML can be done from a file through the *importFromXml(java.lang.String xmlFile)* method or a stream through the *importFromXml(java.io.InputStream xml)* method.
+***Aspose.BarCode for Java*** enables data serialization and data import from XML through special methods of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator). There are two ways of implementing data serialization: outputting data to an XML-file through the *exportToXml(java.lang.String xmlFile)* method or a stream through the *exportToXml(java.io.OutputStream xml)* method. Uploading data from XML can be done from a file through the *importFromXml(java.lang.String xmlFile)* method or a stream through the *importFromXml(java.io.InputStream xml)* method.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Export Barcode Generation Data to XML**
-As stated above, ***Aspose.BarCode for Java*** provides two ways of outputting the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator): to an XML file using the *exportToXml(java.io.String xmlFile)* method or a stream through the *exportToXml(java.lang.OutputStream xml)* method. 
+As stated above, ***Aspose.BarCode for Java*** provides two ways of outputting the current state of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator): to an XML file using the *exportToXml(java.io.String xmlFile)* method or a stream through the *exportToXml(java.lang.OutputStream xml)* method. 
 <!--The following code sample shows how to perform data serialization to an XML file.   
 
 {{< highlight csharp>}}
@@ -41,7 +41,7 @@ gen.Save($"{path}BarcodeGeneratorOriginal.png", BarCodeImageFormat.Png);
 <p align="center"><img src="barcodegeneratororiginal.png"></p>-->
 
 ## **Import Barcode Generation Data from XML**
-It is possible to import the current state of of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream using the *importFromXml(java.io.InputStream xml)* function. 
+It is possible to import the current state of of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream using the *importFromXml(java.io.InputStream xml)* function. 
 <!--The following code snippet shows how to import data from an XML file.   
 
 {{< highlight csharp>}}

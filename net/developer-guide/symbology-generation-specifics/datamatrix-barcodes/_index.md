@@ -17,10 +17,10 @@ The *DataMatrix* symbology is a 2D matrix barcode type that allows generating ba
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **DataMatrix ECC Standard Settings**
-To select the required *DataMatrix* standard for barcode generation, ***Aspose.BarCode for .NET*** provides the [*DataMatrixEcc*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property in class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). This property can be used to set one of the following standards: *ECC 000-140* (a set of the outdated standards) and *ECC 200* (the new universal standard). By default, [*DataMatrixEcc*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) is set to *DataMatrixEccType.Ecc200*.
+To select the required *DataMatrix* standard for barcode generation, ***Aspose.BarCode for .NET*** provides the [*DataMatrixEcc*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property in class [*DataMatrixParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). This property can be used to set one of the following standards: *ECC 000-140* (a set of the outdated standards) and *ECC 200* (the new universal standard). By default, [*DataMatrixEcc*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) is set to *DataMatrixEccType.Ecc200*.
   
 ### ***ECC 200***
-To enable the *ECC 200* standard explicitly, it is required to set the [*DataMatrixEcc*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property to *EccAuto* or *Ecc200*. This standard supports all data encoding modes defined in [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode), including the possibility to work with Unicode characters using [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). Recovery capacity values for error correction are strictly specified in the standard for barcodes of different sizes.  
+To enable the *ECC 200* standard explicitly, it is required to set the [*DataMatrixEcc*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property to *EccAuto* or *Ecc200*. This standard supports all data encoding modes defined in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode), including the possibility to work with Unicode characters using [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). Recovery capacity values for error correction are strictly specified in the standard for barcodes of different sizes.  
   
 The following code snippet illustrates how to set the *ECC 200* encoding standard.
   
@@ -35,7 +35,7 @@ gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixecc200basic.png"></p>  
   
 ### ***ECC 000-140***  
-*ECC 000-140* standards are supported only by the following encoding modes specified in [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode): *Auto*, *ASCII*, and *Full*; other encoding modes in this case are automatically processed as *Full*. The [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding) property and thus encoding Unicode characters do not apply to these standards. *ECC 000-140* standards have barcode layout settings that differ from those of *ECC 200*. Among each other, they vary only in terms of damaged data recovery percentage for different error correction levels, as outlined below. 
+*ECC 000-140* standards are supported only by the following encoding modes specified in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode): *Auto*, *ASCII*, and *Full*; other encoding modes in this case are automatically processed as *Full*. The [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding) property and thus encoding Unicode characters do not apply to these standards. *ECC 000-140* standards have barcode layout settings that differ from those of *ECC 200*. Among each other, they vary only in terms of damaged data recovery percentage for different error correction levels, as outlined below. 
   
 |<p align="center">**Error Correction Level**</p>|<p align="center">**Damage Recovery Capacity**</p>|
 | :-: | :-: |
@@ -58,21 +58,21 @@ gen.Save($"{path}DatamatrixEcc000140Basic.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
   
 ## **Encoding Mode Settings**
-In ***Aspose.BarCode for .NET***, developers can enable different encoding modes by initializing the [*DataMatrixEncodeMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode) property of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). The library supports nine different encoding modes that are listed below. By default, the *Auto* encoding mode is set.
+In ***Aspose.BarCode for .NET***, developers can enable different encoding modes by initializing the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode) property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). The library supports nine different encoding modes that are listed below. By default, the *Auto* encoding mode is set.
   
 |Encoding Mode|Description|
 |---|---|
 |*Auto*|Similar to the *ASCII* encoding mode|
 |*ASCII*|Allows encoding both ASCII symbols and byte streams, but the characters from 128 to 255 are encoded using 2 bytes. To encode an arbitrary byte stream, it is recommended to use the *Full* mode|
 |*Full*|Encodes any character in 8 bits. This mode is the most suitable for encoding byte streams|
-|*Custom*|Always applies the encoding specified in [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding) for any input messages; then, the obtained byte stream is further encoded using the *Full* mode|
+|*Custom*|Always applies the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding) for any input messages; then, the obtained byte stream is further encoded using the *Full* mode|
 |*C40*, *Text*, *EDIFACT*, and *ANSIX12*|Encode only predefined character sets using the specialized industrial encodings, such as C40, Text, EDIFACT, and ANSI X12|
-|*ExtendedCodetext*|Provides flexible encoding controls and the possibility to manually specify the required encoding for a part of [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext)|
+|*ExtendedCodetext*|Provides flexible encoding controls and the possibility to manually specify the required encoding for a part of [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext)|
   
-If an input message to be encoded contains a Unicode character (any symbol with a value greater than 255), the entire message is processed using the encoding specified in [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). This feature is valid for all encoding modes besides *Custom* in which the specified encoding is always enabled. The *Custom* mode is supported only for the *ECC 200* standard. Code samples illustrating how to work with supported encoding modes are provided further in the article.
+If an input message to be encoded contains a Unicode character (any symbol with a value greater than 255), the entire message is processed using the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). This feature is valid for all encoding modes besides *Custom* in which the specified encoding is always enabled. The *Custom* mode is supported only for the *ECC 200* standard. Code samples illustrating how to work with supported encoding modes are provided further in the article.
   
 ### ***Auto* and *ASCII* Encoding Modes**
-*Auto* and *ASCII* encoding modes enable both encoding ASCII symbols and byte streams; however, encoding the characters from 128 to 255 requires 2 bytes. If [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contains Unicode symbols, the input message is re-encoded in the encoding specified in [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding).  
+*Auto* and *ASCII* encoding modes enable both encoding ASCII symbols and byte streams; however, encoding the characters from 128 to 255 requires 2 bytes. If [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contains Unicode symbols, the input message is re-encoded in the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding).  
   
 The following code snippet explains how to set the *Auto* encoding mode.
 
@@ -87,7 +87,7 @@ gen.Save($"{path}DatamatrixEncodeModeAuto.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixencodemodeauto.png"></p> 
 
 ### **Encoding Byte Streams in *Full* Mode**
-The *Full* mode is intended to encode byte streams; each byte is encoded using 8 bits. If [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) includes Unicode symbols, the input data is re-encoded using the encoding specified in [*CodeTextEncoding*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). To display the text under a *DataMatrix* barcode, the [*TwoDDisplayText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property can be initialized (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
+The *Full* mode is intended to encode byte streams; each byte is encoded using 8 bits. If [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) includes Unicode symbols, the input data is re-encoded using the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). To display the text under a *DataMatrix* barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property can be initialized (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
   
 The following code sample illustrates how to enable the *Full* encoding mode.
   
@@ -116,7 +116,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="datamatrixencodemodefullbytes.png"></p> 
 
 ### **Encoding Unicode Text in *Custom* Mode**
-The *Custom* encoding mode always at first re-encodes the contents of [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) into a byte stream; then, the generated byte stream is further processed using the *Full* mode so that each byte is encoded in 8 bits.  
+The *Custom* encoding mode always at first re-encodes the contents of [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) into a byte stream; then, the generated byte stream is further processed using the *Full* mode so that each byte is encoded in 8 bits.  
   
 The following code snippet shows how to work with the *Custom* mode. 
 
@@ -138,11 +138,11 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="datamatrixencodemodecustom.png"></p> 
 
 ### **Extended Encoding Controls in *ExtendedCodetext***
-The *ExtendedCodetext* mode enables encoding the data in [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) by using different encodings for different parts of the input message if required by industrial standards. The following encodings can be combined: *ASCII*, *Auto*, *C40*, *Text*, *EDIFACT*, and *ANSIX12*.  
+The *ExtendedCodetext* mode enables encoding the data in [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) by using different encodings for different parts of the input message if required by industrial standards. The following encodings can be combined: *ASCII*, *Auto*, *C40*, *Text*, *EDIFACT*, and *ANSIX12*.  
   
-The contents of [*Codetext*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) need to be presented in the following form: <mark>"\Encoding_mode_name:text\Encoding_mode_name:text"</mark>. All backslashes \ must be doubled in text.  
+The contents of [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) need to be presented in the following form: <mark>"\Encoding_mode_name:text\Encoding_mode_name:text"</mark>. All backslashes \ must be doubled in text.  
   
-To replace the text under a barcode, the [*TwoDDisplayText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property can be used (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
+To replace the text under a barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property can be used (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
   
 The following code snippet explains how to work with the *ExtendedCodetext* mode.  
   
@@ -180,7 +180,7 @@ gen.Save($"{path}DatamatrixEncodeModeC40.png", BarCodeImageFormat.Png);
 <p align="center"><img src="datamatrixencodemodec40.png"></p> 
   
 ## **Layout Settings**
-To set the required layout for *DataMatrix* barcodes, it is necessary to use [*Rows*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/rows) and [*Columns*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/columns) properties of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). If they are not initialized, the library sets an optimal layout according to the size of the data to be encoded. Barcode layout settings differ for *ECC 000-140* and *ECC 200*. Customizing the number of rows and columns is supported only for *ECC 200*; for *ECC 00-140*, the barcode layout is defined automatically. The *ECC 200* standard implies that barcodes have even numbers of rows and columns; namely, the following layout options are available: 10 x 10; 144 x 144; 8 x 18; 16 x 48.
+To set the required layout for *DataMatrix* barcodes, it is necessary to use [*Rows*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/rows) and [*Columns*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/columns) properties of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). If they are not initialized, the library sets an optimal layout according to the size of the data to be encoded. Barcode layout settings differ for *ECC 000-140* and *ECC 200*. Customizing the number of rows and columns is supported only for *ECC 200*; for *ECC 00-140*, the barcode layout is defined automatically. The *ECC 200* standard implies that barcodes have even numbers of rows and columns; namely, the following layout options are available: 10 x 10; 144 x 144; 8 x 18; 16 x 48.
 
 |<p align="center">**Layout Settings**</p>|<p align="center">**22 Rows and 22 Columns**</p>|<p align="center">**12 Rows and 36 Columns**</p>|
 | :-: | :-: | :-: |
@@ -222,7 +222,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="datamatrixmacro.png"></p> 
   
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is the ratio between the width and height of a barcode. In ***Aspose.BarCode for .NET***, developers can use the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/aspectratio) property of class [*DataMatrixParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters) to adjust barcode proportions according to the X and Y coordinates. This parameter is defined as a relative coefficient to the value of [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). In general, the *Aspect Ratio* value should be set to 1.
+*Aspect Ratio* is the ratio between the width and height of a barcode. In ***Aspose.BarCode for .NET***, developers can use the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/aspectratio) property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters) to adjust barcode proportions according to the X and Y coordinates. This parameter is defined as a relative coefficient to the value of [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). In general, the *Aspect Ratio* value should be set to 1.
   
 |<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 0.5**</p>|
 | :-: | :-: | :-: |

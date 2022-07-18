@@ -14,10 +14,10 @@ For raster image formats, an appropriate resolution value needs to be selected. 
 For vector formats, the resolution does not have a significant influence on the printing quality. This parameter is important to accurately covert millimeters and inches to internal vector units determining the size of fonts and barcode elements. The vector EMF format might not be fully supported on non-Windows systems. In some cases, the raster format may suit better to work with barcode images despite the convenience of the vector format.  
   
 [***Aspose.Cell***](https://products.aspose.com/cells/net/) library is the most suitable tool to work with documents like Excel spreadsheets. The procedure to insert barcode images into an Excel document includes the following steps:
-1.	Create or open an Excel document using [**Aspose.Cells.Workbook**](https://apireference.aspose.com/cells/net/aspose.cells/workbook/) and  then add or select the required sheet
-2.	Generate barcode images in raster or vector formats using class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) 
-3.	Insert a barcode into a cell of the active Excel sheet of an [*Aspose.Cells.Worksheet*](https://apireference.aspose.com/cells/net/aspose.cells/worksheet/) document and get an object of type [*Aspose.Cells.Drawing.Picture*](https://apireference.aspose.com/cells/net/aspose.cells.drawing/picture/)
-4.	Set sizing parameters of the cell or the [*Picture*](https://apireference.aspose.com/cells/net/aspose.cells.drawing/picture/) object
+1.	Create or open an Excel document using [**Aspose.Cells.Workbook**](https://reference.aspose.com/cells/net/aspose.cells/workbook/) and  then add or select the required sheet
+2.	Generate barcode images in raster or vector formats using class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) 
+3.	Insert a barcode into a cell of the active Excel sheet of an [*Aspose.Cells.Worksheet*](https://reference.aspose.com/cells/net/aspose.cells/worksheet/) document and get an object of type [*Aspose.Cells.Drawing.Picture*](https://reference.aspose.com/cells/net/aspose.cells.drawing/picture/)
+4.	Set sizing parameters of the cell or the [*Picture*](https://reference.aspose.com/cells/net/aspose.cells.drawing/picture/) object
 5.	Save the document
   
 Even though the size of Excel cells themselves can be modified, barcodes inside those cells are not just abstract images but representations of machine-readable data in a graphic format. 1D and 2D barcodes have strict requirements for sizing parameters and the aspect ratio to remain readable. Minor geometric distortions are acceptable but significant ones may hinder barcode readability.
@@ -26,7 +26,7 @@ Even though the size of Excel cells themselves can be modified, barcodes inside 
 
 ### **Manual Barcode Resizing**
 
-This example demonstrates how to insert a barcode image with a specific resolution created through [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an object of [*Aspose.Cells.Worksheet*](https://apireference.aspose.com/cells/net/aspose.cells/worksheet/) representing an Excel sheet. Here, the cell size is predefined to fit the size of the barcode image wrapped in an object of [Aspose.Cells.Drawing.Picture](https://apireference.aspose.com/cells/net/aspose.cells.drawing/picture/) that gets positioned in the center of the cell.  
+This example demonstrates how to insert a barcode image with a specific resolution created through [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an object of [*Aspose.Cells.Worksheet*](https://reference.aspose.com/cells/net/aspose.cells/worksheet/) representing an Excel sheet. Here, the cell size is predefined to fit the size of the barcode image wrapped in an object of [Aspose.Cells.Drawing.Picture](https://reference.aspose.com/cells/net/aspose.cells.drawing/picture/) that gets positioned in the center of the cell.  
   
 The following code sample illustrates how to implement this method. The resulting Excel file is provided below. 
   
@@ -77,7 +77,7 @@ excelBook.Save($"{path}AddBarcodeToExcelDocumentWithManualResizing.xlsx", Aspose
   
 ## **Proportional Adjustment of Cell Size**
 
-This example explains how to add a barcode image with a specific resolution generated using [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an Excel sheet linked to an object of [*Aspose.Cells.Worksheet*](https://apireference.aspose.com/cells/net/aspose.cells/worksheet/) so that the cell size is adjusted proportionally to the size of the barcode image represented as an object of [Aspose.Cells.Drawing.Picture](https://apireference.aspose.com/cells/net/aspose.cells.drawing/picture/).  
+This example explains how to add a barcode image with a specific resolution generated using [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an Excel sheet linked to an object of [*Aspose.Cells.Worksheet*](https://reference.aspose.com/cells/net/aspose.cells/worksheet/) so that the cell size is adjusted proportionally to the size of the barcode image represented as an object of [Aspose.Cells.Drawing.Picture](https://reference.aspose.com/cells/net/aspose.cells.drawing/picture/).  
   
 The following code snippet shows how to work with this option. The resulting Excel file is given below. 
   
@@ -120,7 +120,7 @@ excelBook.Save($"{path}AddBarcodeToExcelDocumentWithCellResizing.xlsx", Aspose.C
 
 ## **Adjustment of Barcode Size**
 
-This example shows how to include a barcode image with a specific resolution created through [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an Excel sheet represented as an object of [*Aspose.Cells.Worksheet*](https://apireference.aspose.com/cells/net/aspose.cells/worksheet/). Here, the cell size is fixed, and the barcode image is adjusted to fit in this cell. This can be done through class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) that allows generating barcode images with strict size settings.  
+This example shows how to include a barcode image with a specific resolution created through [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) into a cell of an Excel sheet represented as an object of [*Aspose.Cells.Worksheet*](https://reference.aspose.com/cells/net/aspose.cells/worksheet/). Here, the cell size is fixed, and the barcode image is adjusted to fit in this cell. This can be done through class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) that allows generating barcode images with strict size settings.  
   
 The following code sample demonstrates how to implement this approach. The resulting Excel file can be viewed using the link below. 
     

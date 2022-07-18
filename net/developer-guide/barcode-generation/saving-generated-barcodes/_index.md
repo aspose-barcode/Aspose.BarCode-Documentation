@@ -24,7 +24,7 @@ gen.Save($"{path}StoreImageAsFile.png", BarCodeImageFormat.Png);
 {{< /highlight >}} 
 
 ## **Saving to Stream**
-In some cases, developers may need to save the generated barcode label in the form of a stream (as a binary format). In the .NET framework, a stream is an abstraction of a byte sequence, such as a file, an inter-process communication pipe, a TCP/IP socket, or an input/output device. The *Stream* class and its child classes represent a generic view of various input and output types and allow programmers to abstract away from the details of the operating system and particular devices. To enable this option, class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) calls the public method *Save* that takes *Stream* as an input parameter, as demonstrated in the code sample below.  
+In some cases, developers may need to save the generated barcode label in the form of a stream (as a binary format). In the .NET framework, a stream is an abstraction of a byte sequence, such as a file, an inter-process communication pipe, a TCP/IP socket, or an input/output device. The *Stream* class and its child classes represent a generic view of various input and output types and allow programmers to abstract away from the details of the operating system and particular devices. To enable this option, class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) calls the public method *Save* that takes *Stream* as an input parameter, as demonstrated in the code sample below.  
 
 {{< highlight csharp>}}
 using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Create, FileAccess.Write))
@@ -46,7 +46,7 @@ using (Bitmap bmp = gen.GenerateBarCodeImage())
 
 ## **Outputting in Raster Formats**
 
-***Aspose.BarCode for .NET*** enables saving barcode images to most of the widely used raster image formats, namely, BMP, PNG, GIF, JPEG, and TIFF. You can pass the [BarCodeImageFormat](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeimageformat) enum as a second argument to the BarcodeGenerator.Save method to save a barcode in the desired format. The descriptions of all supported image formats along with corresponding code samples are provided below.
+***Aspose.BarCode for .NET*** enables saving barcode images to most of the widely used raster image formats, namely, BMP, PNG, GIF, JPEG, and TIFF. You can pass the [BarCodeImageFormat](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeimageformat) enum as a second argument to the BarcodeGenerator.Save method to save a barcode in the desired format. The descriptions of all supported image formats along with corresponding code samples are provided below.
 
 ### **BMP Format**
 Files with the .BMP extension correspond to bitmap files that are intended to store bitmap digital images and are independent of a graphics adapter. The BMP file format can store data as two-dimensional digital images in both monochrome and color formats with various color depths. The BMP format implies creating images without compression; accordingly, the generated barcode images will be of a large size, having 24-bit color depth, and without losses and artifacts. 

@@ -56,7 +56,7 @@ In ***Aspose.BarCode for Java***, two generation modes are available for the *Pa
   
 **Patch Code Generation Formats** 
   
-To manage the generation format for *Patch Code* barcodes, developers can use the *setPatchFormat* method of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters). This method refers to the [*PatchFormat*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchFormat) enum that includes the following values: 
+To manage the generation format for *Patch Code* barcodes, developers can use the *setPatchFormat* method of class [*PatchCodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters). This method refers to the [*PatchFormat*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchFormat) enum that includes the following values: 
 - *PatchOnly* - the default mode that is used to generate basic *Patch Code* barcodes are generated 
 - *A4* - this mode is intended to create portrait-oriented A4 pages with *Patch Code* barcodes on borders and a *QR Code* barcode inside the page (optionally)
 - *A4_LANDSCAPE* - this mode is used to generate landscape-oriented A4 pages with *Patch Code* barcodes on borders and a *QR Code* barcode inside the page (optionally) 
@@ -64,7 +64,7 @@ To manage the generation format for *Patch Code* barcodes, developers can use th
 - *US_Letter_LANDSCAPE* - this mode is applied to generate landscape-oriented US pages with *Patch Code* barcodes on borders and a *QR Code* inside the page (optionally)
 
 **Complementary QR Code Settings**  
-As mentioned above, it is possible to place a complementary *QR Code* add-on inside a page (A4 or US Letter) with *Patch Code* barcodes. It can be done by passing some textual data to the *setExtraBarcodeText* method of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters) and then calling the *setLocation* method of class [*CodeTextParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters) with the *NONE* value (the [*CodeLocation*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodeLocation) enum).  
+As mentioned above, it is possible to place a complementary *QR Code* add-on inside a page (A4 or US Letter) with *Patch Code* barcodes. It can be done by passing some textual data to the *setExtraBarcodeText* method of class [*PatchCodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/PatchCodeParameters) and then calling the *setLocation* method of class [*CodeTextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters) with the *NONE* value (the [*CodeLocation*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodeLocation) enum).  
   
 Following *Patch Code* barcodes have been created with and without complementary *QR Code* add-ons.
   

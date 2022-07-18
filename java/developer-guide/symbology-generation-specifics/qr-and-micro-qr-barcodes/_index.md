@@ -24,11 +24,11 @@ It should be noted that considerable damages of target patterns in *QR Code* ima
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out Aspose [Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Generation Modes**
-***Aspose.BarCode for Java*** allows generating *QR Code* or *Micro QR Code* images corresponding to different versions. This can done through two methods of class [*QrParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters), i.e. *setQrEncodeType* (using values from the [*QREncodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeType) enum) and *setQrVersion* (with values from the [*QRVersion*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) enum). By default, the *AUTO* setting is enabled.  
+***Aspose.BarCode for Java*** allows generating *QR Code* or *Micro QR Code* images corresponding to different versions. This can done through two methods of class [*QrParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters), i.e. *setQrEncodeType* (using values from the [*QREncodeType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeType) enum) and *setQrVersion* (with values from the [*QRVersion*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) enum). By default, the *AUTO* setting is enabled.  
   
 The first way to set the required version of *QR Code* or *Micro QR Code* is to use the *setQrVersion* method. If data inputted for encoding does not occupy the entire capacity of the target version, padding characters are used to fill the leftover space. If barcode information exceeds the available capacity, barcode images cannot be generated, and the corresponding exception is thrown.  
   
-The second way to determine the desired *QR Code* generation mode is applicable when [*QrVersion*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) remains set to *AUTO*. In this case, the *setQrEncodeType* method can be used to select the barcode type according to the input data size. The [*QREncodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeType) enum can take the following values:
+The second way to determine the desired *QR Code* generation mode is applicable when [*QrVersion*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) remains set to *AUTO*. In this case, the *setQrEncodeType* method can be used to select the barcode type according to the input data size. The [*QREncodeType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeType) enum can take the following values:
 
 - *AUTO*: firstly, the library aims to identify the most appropriate *Micro QR Code* version from M1 to M4. If no suitable version is found, the library iterates over supported *QR Code* versions from *Version 01* to *Version 40*. If the data to be encoded does not fit to the data capacity of *Version 40*, an exception is thrown.
 - *FORSE_QR*: the most appropriate *QR Code* version is automatically selected among options from *Version 01* to *Version 40*.
@@ -58,7 +58,7 @@ gen.Save($"{path}QREncodeTypeForceQR.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
    
 ### **Manual Version Selection**
-In ***Aspose.BarCode for Java***, developers can manually select the desired *QR Code* version for barcode generation. In this case, it is required to call the *setQRVersion* method of class [*QrParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters) passing a value from the [*QRVersion*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) enum, i.e. from *VERSION_01* to *VERSION_40* for *QR Code* or from *VERSION_M1* to *VERSION_M4* for *Micro QR Code*. The following barcode images are intended to explain how to create *QR Code* barcodes using manual settings to define the requested version.
+In ***Aspose.BarCode for Java***, developers can manually select the desired *QR Code* version for barcode generation. In this case, it is required to call the *setQRVersion* method of class [*QrParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters) passing a value from the [*QRVersion*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QRVersion) enum, i.e. from *VERSION_01* to *VERSION_40* for *QR Code* or from *VERSION_M1* to *VERSION_M4* for *Micro QR Code*. The following barcode images are intended to explain how to create *QR Code* barcodes using manual settings to define the requested version.
   
 |<p align="center">**Version**</p>|<p align="center">**QR Code VERSION_05**</p>|<p align="center">***Micro QR VERSION_M4**</p>|
 | :-: | :-: | :-: |
@@ -76,11 +76,11 @@ gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Encoding Modes**
-***Aspose.BarCode for Java*** enables the variety of widely used data encoding specifications, such as Unicode and others. Developers can select the desired encoding mode through the *setQrEncodeMode* method of class [*QrParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters) passing a value from the [*QrEncodeMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeMode) enum that includes the following options:
+***Aspose.BarCode for Java*** enables the variety of widely used data encoding specifications, such as Unicode and others. Developers can select the desired encoding mode through the *setQrEncodeMode* method of class [*QrParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters) passing a value from the [*QrEncodeMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QREncodeMode) enum that includes the following options:
 -	*AUTO*: information inputted through the *setCodeText* method gets encoded using the value set through the *setCodeTextEncoding* method (UTF8 is applied by default).
 -	*BYTES*: is intended to encode byte streams and allows encoding digits from 0 to 255. In cases when a byte stream includes digits larger than 255, the library applies the *UTF16LE*. 
 -	*UTF_8_BOM* and *UTF_16_BEBOM*: allow encoding barcode data in UTF8 and UTF16BE encodings. The first character is encoded as a byte order mark (BOM) character to denote the enabled encoding. However, the *ECI_ENCODING* mode is recommended for use because it is more suitable to set the encodings suitable for the *QR Code* standard.  
--	*ECI_ENCODING*: applies encodings from the list defined in the [*ECIEncodings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/ECIEncodings) enum.
+-	*ECI_ENCODING*: applies encodings from the list defined in the [*ECIEncodings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ECIEncodings) enum.
 -	*EXTENDED_CODETEXT*: in addition to main information, barcode data must include special control words that are required to establish improved controls over the data encoding process; in this mode, textual parts with various encodings can be stored in one *QR Code* barcode.
   
 ### ***AUTO* Mode**
@@ -154,7 +154,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 ### ***ECI_ENCODING* Mode**
 
-The *ECI_ENCODING* encoding mode suggests applying one of the encodings listed in the [*ECIEncodings*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/ECIEncodings) enum. ***Aspose.BarCode for Java*** supports the variety of widely used encodings. In this mode, the extended channel interpretation (ECI) identifier is added to denote the enabled encoding to transfer the information about it to decoders. It is recommended to use the UTF8 value. 
+The *ECI_ENCODING* encoding mode suggests applying one of the encodings listed in the [*ECIEncodings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ECIEncodings) enum. ***Aspose.BarCode for Java*** supports the variety of widely used encodings. In this mode, the extended channel interpretation (ECI) identifier is added to denote the enabled encoding to transfer the information about it to decoders. It is recommended to use the UTF8 value. 
 <!--The following code snippet explains how to use the *ECI_ENCODING* mode.
   
 {{< highlight csharp>}}
@@ -174,7 +174,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="qrencodemodeeciencoding.png"></p>
   
 ### ***EXTENDED_CODETEXT* Mode**
-***Aspose.BarCode for Java*** supports the *EXTENDED_CODETEXT* mode that allows customizing settings for the *QR Code* generation process manually. This mode enables activating the multi-ECI mode and adding FNC characters (special symbols to differentiate between fields in variable-length identifiers) to work with extended textual information. The library provides a special class called [*ExtCodetextBuilder*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/ExtCodetextBuilder) that facilitate swirking with this encoding mode. When the multi-ECI mode is enabled, barcode information gets processed for all predefined encodings automatically. In all other cases, the encoding defined through the *setCodeTextEncoding* method is applied.    
+***Aspose.BarCode for Java*** supports the *EXTENDED_CODETEXT* mode that allows customizing settings for the *QR Code* generation process manually. This mode enables activating the multi-ECI mode and adding FNC characters (special symbols to differentiate between fields in variable-length identifiers) to work with extended textual information. The library provides a special class called [*ExtCodetextBuilder*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ExtCodetextBuilder) that facilitate swirking with this encoding mode. When the multi-ECI mode is enabled, barcode information gets processed for all predefined encodings automatically. In all other cases, the encoding defined through the *setCodeTextEncoding* method is applied.    
 
 <!--The following code sample shows how to enable the multi-encoding ECI regime when the *EXTENDED_CODETEXT* mode is enabled. 
   
@@ -239,7 +239,7 @@ gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Structured Append Mechanism**
-*QR Code* types (except *Micro QR*) support the possibility to generate composite barcodes using the structured append mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing an object of lass [*QrStructuredAppendParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrStructuredAppendParameters) class. This class provides the following methods: 
+*QR Code* types (except *Micro QR*) support the possibility to generate composite barcodes using the structured append mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing an object of lass [*QrStructuredAppendParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QrStructuredAppendParameters) class. This class provides the following methods: 
 - *setTotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *setSequenceIndicator* - the sequence number of the current barcode (starting from 0)
 - *setParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   
@@ -298,7 +298,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 {{< /highlight >}}-->
 
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for Java***, it is required to use the *setAspectRatio* method of class [*QrParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters). This property is defined as a relative coefficient to the value of *XDimension* parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the *setAspectRatio* method can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
+*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for Java***, it is required to use the *setAspectRatio* method of class [*QrParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/QrParameters). This property is defined as a relative coefficient to the value of *XDimension* parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the *setAspectRatio* method can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
   
 |<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 2**</p>|
 | :-: | :-: | :-: |

@@ -20,7 +20,7 @@ Generally, barcode images are created in black and white colors. However, to add
 - Top and bottom captions
 
 ## **Barcode Background Color**
-Setting color for barcode background can be done by initializing the [*BackColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/backcolor) property of [*BaseGenerationParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters) class. The default background color is set to *White*.  
+Setting color for barcode background can be done by initializing the [*BackColor*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/backcolor) property of [*BaseGenerationParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters) class. The default background color is set to *White*.  
   
 The barcode image generated with adjusted background color settings (*Color.Green*) is demonstrated below.
    
@@ -31,7 +31,7 @@ The following code snippet illustrates how to set a barcode background color.
 {{< gist "aspose-barcode-gists" "c57fb905001e8973548e1ee555a34e68" "barcode-background-color.cs" >}} 
   
 ## **Bar Color**
-To customize the bar color in a barcode image, it is necessary to set the value to the [*BarColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barcolor) property of [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) class. The default bar color is *Black*.  
+To customize the bar color in a barcode image, it is necessary to set the value to the [*BarColor*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barcolor) property of [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) class. The default bar color is *Black*.  
   
 The following image represents the barcode label generated with the customized bar color settings (*Color.Green*).
   
@@ -42,7 +42,7 @@ The code snippet provided below explains how to adjust bar color.
 {{< gist "aspose-barcode-gists" "2656aaf663f8f5d7217dca27f69d9515" "barcode-bar-color.cs" >}}  
 
 ## **Border Color**
-It is possible to vary barcode border color by setting the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*. The barcode image provided below has been created setting border color to (*Color.Green*).
+It is possible to vary barcode border color by setting the [*Color*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters/properties/color) property of class [*BorderParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/borderparameters). By default, the color of borders is set to *Black*. The barcode image provided below has been created setting border color to (*Color.Green*).
   
 <p align="center"><image src="colorborder.png"></p>
   
@@ -51,7 +51,7 @@ The following code example is used to change the color of barcode borders.
 {{< gist "aspose-barcode-gists" "6c50f1bee0d5a51597ff1be3c27297dc" "barcode-border-color.cs" >}}  
 
 ## **Barcode Text Color**
-The color of barcode text that may be placed on a barcode image can be adjusted as well. To do this, it is required to initialize the [*Color*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/color) property in property group [*CodeTextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codetextparameters). By default, the color of barcode text is set to *Black*. The sample barcode image shown below has been generated with the customized barcode text color setting (*Color.Green*).
+The color of barcode text that may be placed on a barcode image can be adjusted as well. To do this, it is required to initialize the [*Color*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/color) property in property group [*CodeTextParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codetextparameters). By default, the color of barcode text is set to *Black*. The sample barcode image shown below has been generated with the customized barcode text color setting (*Color.Green*).
   
 <p align="center"><image src="colorcodetext.png"></p>
   
@@ -60,7 +60,7 @@ The following code snippet demonstrates how to change barcode text color.
 {{< gist "aspose-barcode-gists" "701a80539ae8c01a0c959db324a902ad" "barcode-text-color.cs" >}}  
 
 ## **Caption Color**
-Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
+Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
   
 |Adjusting Caption Color|   |
 |:--| :-: |

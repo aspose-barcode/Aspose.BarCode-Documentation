@@ -12,7 +12,7 @@ url: /java/use-checksum-and-supplement-data-for-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Supplement Barcode Settings**
-Conventional barcodes serve to encode the most important information about items or products. To store additional (supplement) data besides primary barcodes, developers can use a special method called *setSupplementData* of class [*SupplementParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/SupplementParameters). The *setSupplementData* method needs to be called passing 2 or 5 additional numerical digits for *EAN 2* or *EAN 5*, respectively. Thereafter, the library identifies the suitable barcode type automatically based on the entered number of digits. Supplement barcode size is computed automatically according to parameters of the primary barcode.  
+Conventional barcodes serve to encode the most important information about items or products. To store additional (supplement) data besides primary barcodes, developers can use a special method called *setSupplementData* of class [*SupplementParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/SupplementParameters). The *setSupplementData* method needs to be called passing 2 or 5 additional numerical digits for *EAN 2* or *EAN 5*, respectively. Thereafter, the library identifies the suitable barcode type automatically based on the entered number of digits. Supplement barcode size is computed automatically according to parameters of the primary barcode.  
   
 Following barcodes have been created enabling *EAN 2* and *EAN 5* supplements for *EAN 13* barcodes.
 
@@ -35,7 +35,7 @@ gen.Save($"{path}SupplementEAN5.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Adjusting Supplement Spacing**
-To define the size of a gap between the main and supplement barcodes, the library provides the *getSupplementSpace* method of class [*SupplementParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/SupplementParameters).  
+To define the size of a gap between the main and supplement barcodes, the library provides the *getSupplementSpace* method of class [*SupplementParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/SupplementParameters).  
   
 Barcode samples demonstrated below have been generated with different gap settings.  
   

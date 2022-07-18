@@ -21,7 +21,7 @@ The following code snippet demonstrates you how to optimize Barcode Recognition 
 
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageAndOptimizeBarcodeRecognition-OptimizingBarCodeRecognitionProcess-OptimizingBarCodeRecognitionProcess.cpp" >}}
 ## **Better and Faster Image Processing for Barcode Recognition**
-Aspose.BarCode provides better and faster barcode recognition with the [QualitySettings](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.bar_code_recognition.quality_settings/) class which allows to configure recognition quality and speed manually:
+Aspose.BarCode provides better and faster barcode recognition with the [QualitySettings](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.bar_code_recognition.quality_settings/) class which allows to configure recognition quality and speed manually:
 
 The following code example demonstrates how to use QualitySettings.
 

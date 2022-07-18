@@ -13,7 +13,7 @@ url: /java/codablockf-barcodes/
   
 ## **Height Settings**
 
-***Aspose.BarCode for Java*** allows developers to modify the height of each row in a stacked barcode through the *setAspectRatio* method of class [*CodablockParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodablockParameters). *AspectRatio* is determined as a relative coefficient to *XDimension*. For *Codablock-F* barcodes, the value of *AspectRatio* should be set greater than 10.  
+***Aspose.BarCode for Java*** allows developers to modify the height of each row in a stacked barcode through the *setAspectRatio* method of class [*CodablockParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodablockParameters). *AspectRatio* is determined as a relative coefficient to *XDimension*. For *Codablock-F* barcodes, the value of *AspectRatio* should be set greater than 10.  
   
 Following barcode images have been created using various aspect ratio settings. 
   
@@ -36,7 +36,7 @@ gen.Save($"{path}CodablockFAspectRatio30.png", BarCodeImageFormat.Png);
   
 
 ## **Layout Settings**
-To adjust the layout of a *Codablock-F* barcode in terms of the number of columns and rows, *setColumns* and *setRows* methods of class [*CodablockParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodablockParameters) can be used. The maximum values of columns and rows can be 62 and 44, respectively.  
+To adjust the layout of a *Codablock-F* barcode in terms of the number of columns and rows, *setColumns* and *setRows* methods of class [*CodablockParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodablockParameters) can be used. The maximum values of columns and rows can be 62 and 44, respectively.  
   
 Barcode images provided below have been generated using different layout settings.
   

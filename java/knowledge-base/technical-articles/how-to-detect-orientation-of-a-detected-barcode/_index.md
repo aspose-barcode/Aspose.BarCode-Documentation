@@ -7,7 +7,7 @@ url: /java/how-to-detect-orientation-of-a-detected-barcode/
 
 {{% alert color="primary" %}} 
 
-[Aspose.BarCode](https://apireference.aspose.com/barcode/java) allows developers to detect the orientation of a detected barcode by calling the getAngle() method of the BarCodeReader class.
+[Aspose.BarCode](https://reference.aspose.com/barcode/java) allows developers to detect the orientation of a detected barcode by calling the getAngle() method of the BarCodeReader class.
 
 {{% /alert %}} 
 

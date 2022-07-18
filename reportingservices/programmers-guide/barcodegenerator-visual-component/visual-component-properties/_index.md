@@ -5,7 +5,7 @@ weight: 10
 url: /reportingservices/visual-component-properties/
 ---
 ## **Overview**
-***BarcodeGenerator visual component*** properties is a similar to [BarcodeGenerator Parameters]( https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and more detail information about their usage can be obtained from that section. Visual component split on ***Barcode:Appearance***, ***Barcode:Main*** and ***Barcode:Parameters*** sections. ***Barcode:Appearance*** group contains parameters which affect component appearance and visibility, ***Barcode:Main*** group contains main generation parameters which is required in most cases, ***Barcode:Parameters*** includes all other barcode generation parameters.
+***BarcodeGenerator visual component*** properties is a similar to [BarcodeGenerator Parameters]( https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) and more detail information about their usage can be obtained from that section. Visual component split on ***Barcode:Appearance***, ***Barcode:Main*** and ***Barcode:Parameters*** sections. ***Barcode:Appearance*** group contains parameters which affect component appearance and visibility, ***Barcode:Main*** group contains main generation parameters which is required in most cases, ***Barcode:Parameters*** includes all other barcode generation parameters.
 
 <img style="border:1px solid black;" src="properties_01.png" alt="BarcodeGenerator visual component properties" />
 

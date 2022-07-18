@@ -263,7 +263,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}code128_wipedbars.png", De
 {{< /highlight >}}-->
 
 ## **Reading Evidently Incorrect Barcodes**
-In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *setAllowIncorrectBarcodes* and *setReadTinyBarcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeConfidence) being set to *None*, which means that the correctness of recognition is not guaranteed.  
+In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *setAllowIncorrectBarcodes* and *setReadTinyBarcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeConfidence) being set to *None*, which means that the correctness of recognition is not guaranteed.  
   
 The *setReadTinyBarcodes* method facilitates reading small barcode labels in large images. It is ignored if the *setAllowIncorrectBarcodes* method is called passing the *True* value. However, enabling this parameter may result in recognizing false barcodes in place of actual text or tables.  
   

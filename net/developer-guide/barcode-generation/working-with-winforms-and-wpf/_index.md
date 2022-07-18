@@ -72,7 +72,7 @@ public MainWindow()
 {{< /highlight >}}
 
 ## Barcode Generation through WinForms GUI
-***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation through WinForms. To start a new project in this way, follow the steps outlined below:
+***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation through WinForms. To start a new project in this way, follow the steps outlined below:
 1. Create a new project in WinForms
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*

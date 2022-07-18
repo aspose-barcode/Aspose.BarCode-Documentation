@@ -33,8 +33,8 @@ To display the barcode image from the database, the information about this barco
 
 {{< gist "aspose-com-gists" "f801733f5eb53b0777dd38da9db8366a" "Examples-CSharp-TechnicalArticles-BarcodeWithDatabase-RetrieveFromDB.cs" >}}
 
-This method can be also implemented in Windows Forms using [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol).
-After dragging the [BarCodeControl](https://apireference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol) element to the Controls collection of Panel, the barcode image gets visible.
+This method can be also implemented in Windows Forms using [BarCodeControl](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol).
+After dragging the [BarCodeControl](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodecontrol) element to the Controls collection of Panel, the barcode image gets visible.
 
 ### **Advantages**
 This approach has the following advantages:
