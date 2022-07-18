@@ -9,14 +9,14 @@ url: /net/barcode-in-xml/
 ---
  
 ## **Overview**
-In ***Aspose.BarCode for .NET***, it is possible to perform the serialization of the barcode generation state and import it from XML using the specific functionality of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator). The serialization of a [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) instance can be executed in two ways: saving it to an XML-file using the [*ExportToXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) or to a stream through the [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) method.  
+In ***Aspose.BarCode for .NET***, it is possible to perform the serialization of the barcode generation state and import it from XML using the specific functionality of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator). The serialization of a [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) instance can be executed in two ways: saving it to an XML-file using the [*ExportToXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) or to a stream through the [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) method.  
   
-Similarly, loading the barcode generation state from XML can be performed from a file using the [*ImportFromXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/importfromxml/methods/1) method or a stream through the [*ImportFromXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml) method.
+Similarly, loading the barcode generation state from XML can be performed from a file using the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/importfromxml/methods/1) method or a stream through the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml) method.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Export Barcode Generation State to XML**
-As previously mentioned, there are two ways to save the current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): to an XML file through the [*ExportToXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) function or to a stream using the [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) function. The code snippet below illustrates how to implement the serialization of a [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) instance to an XML file.   
+As previously mentioned, there are two ways to save the current state of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): to an XML file through the [*ExportToXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) function or to a stream using the [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) function. The code snippet below illustrates how to implement the serialization of a [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) instance to an XML file.   
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
@@ -41,7 +41,7 @@ gen.Save($"{path}BarcodeGeneratorOriginal.png", BarCodeImageFormat.Png);
 <p align="center"><img src="barcodegeneratororiginal.png"></p>
 
 ## **Import Barcode Generation State from XML**
-The current state of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) can be imported from an XML file using the [*ImportFromXml(String)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/importfromxml/methods/1) function or from a stream through the [*ImportFromXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml) function. The code sample provided below explains how to import the barcode generation state from an XML file.   
+The current state of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) can be imported from an XML file using the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation.barcodegenerator/importfromxml/methods/1) function or from a stream through the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml) function. The code sample provided below explains how to import the barcode generation state from an XML file.   
 
 {{< highlight csharp>}}
 //load BarcodeGenerator from file
@@ -53,7 +53,7 @@ gen.Save($"{path}BarcodeGeneratorLoaded.png", BarCodeImageFormat.Png);
 <p align="center"><img src="barcodegeneratorloaded.png"></p>
 
 ## **Saving and Loading Barcode Generation State from Stream**
-The code snippet given below demonstrates how to save and load the barcode generation state from streams using two corresponding methods: [*ExportToXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) and [*ImportFromXml(Stream)*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml). 
+The code snippet given below demonstrates how to save and load the barcode generation state from streams using two corresponding methods: [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) and [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml). 
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");

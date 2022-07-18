@@ -7,7 +7,7 @@ weight: 20
 url: /net/get-the-product-name-and-dll-version-information/
 ---
 
-The system information about the ***Aspose.BarCode*** library can be obtained using structure [*BuildVersionInfo*](https://apireference.aspose.com/barcode/net/aspose.barcode/buildversioninfo/) that provides the following data:
+The system information about the ***Aspose.BarCode*** library can be obtained using structure [*BuildVersionInfo*](https://reference.aspose.com/barcode/net/aspose.barcode/buildversioninfo/) that provides the following data:
 - Assembly version
 - File version
 - Product title

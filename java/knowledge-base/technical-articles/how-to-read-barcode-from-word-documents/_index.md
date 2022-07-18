@@ -7,7 +7,7 @@ url: /java/how-to-read-barcode-from-word-documents/
 
 {{% alert color="primary" %}} 
 
-This article explains how to use [Aspose.BarCode for Java](https://apireference.aspose.com/java/barcode/) to recognize barcodes from Microsoft Word documents.
+This article explains how to use [Aspose.BarCode for Java](https://reference.aspose.com/java/barcode/) to recognize barcodes from Microsoft Word documents.
 
 {{% /alert %}} 
 ## **Generate Barcode and Insert into Word Document**

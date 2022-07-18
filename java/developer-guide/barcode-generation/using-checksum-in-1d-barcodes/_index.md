@@ -32,7 +32,7 @@ In *Code 39*, checksum controls are optional. The maximum number of digits to be
 The *Code 128* standard uses an improved algorithm for checksum controls compared with *Code 39*. In this algorithm, each barcode digit is weighted based on its position index. 
   
 ## **Checksum Settings**
-Different types use particluar checksum controls (optional or obligatory) and different checksum calculation algorithms. When checksum controls are obligatory, ***Aspose.BarCode for Java*** utilizes the most common algorithm for that symbology. When needed, the checksum character is added as the last barcode character. The [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is intended for checksum calculation in 1D barcodes. It is set to *Yes* for the types with obligatory checksum controls and *No* for those with an optional check digit by default.  
+Different types use particluar checksum controls (optional or obligatory) and different checksum calculation algorithms. When checksum controls are obligatory, ***Aspose.BarCode for Java*** utilizes the most common algorithm for that symbology. When needed, the checksum character is added as the last barcode character. The [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is intended for checksum calculation in 1D barcodes. It is set to *Yes* for the types with obligatory checksum controls and *No* for those with an optional check digit by default.  
   
 Barcode standards with optional and obligatory checksum settings are listed below.
   
@@ -42,7 +42,7 @@ Barcode standards with optional and obligatory checksum settings are listed belo
 |**Obligatory**|Codablock-F, Code 11, Code 128, Code16K, Code 32, Code 93, DataBar Expanded Stacked, DataBar Expanded, DataBar Omnidirectional, DataBar Stacked Omnidirectional, DataBar Stacked, DataBar Limited, DataBar Truncated, EAN 13, EAN 14, EAN 2, EAN 5, EAN 8, GS1 Codablock-F, GS1 Code 128, IATA 2-of-5, ISBN, ISMN, ISSN, ITF 14, ITF6, OPC, SSCC 14, SSCC 18, UPC-A, UPC-E, UpcaGs1DatabarCoupon, VIN|
 
 ### **Optional Checksum Controls**
-Linear barcode types with optional checksum controls do not require check digit calculation by default. For such barcode types, the [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum provides the following options:
+Linear barcode types with optional checksum controls do not require check digit calculation by default. For such barcode types, the [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum provides the following options:
 - **public static final EnableChecksum DEFAULT** and **public static final EnableChecksum NO**. Checksum control is not enabled.
 - **public static final EnableChecksum YES**. The checksum algorithm of the most appropriate type for the given symbology is used.
   
@@ -63,7 +63,7 @@ gen.Save($"{path}OneCSCode39WithChecksum.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
   
 ### **Obligatory Checksum Controls**
-For barcode types with obligatory checksum controls, objects of [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) can be initialized as follows:
+For barcode types with obligatory checksum controls, objects of [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) can be initialized as follows:
 - **public static final EnableChecksum DEFAULT** and **public static final EnableChecksum YES**. Checksum calculation is performed according to the specific algorithm.
 - **public static final EnableChecksum NO**. 
 
@@ -91,7 +91,7 @@ catch (Exception e)
 {{< /highlight >}}-->
   
 ## **Displaying Checksum for Code 128**
-For *Code 128* and *GS1 Code 128*, ***Aspose.BarCode for Java*** allows developers to use a specific method called *setChecksumAlwaysShow* of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). In this case, the checksum digit is displayed in the *CodeText* field as human-readable barcode text. 
+For *Code 128* and *GS1 Code 128*, ***Aspose.BarCode for Java*** allows developers to use a specific method called *setChecksumAlwaysShow* of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). In this case, the checksum digit is displayed in the *CodeText* field as human-readable barcode text. 
   
 |<p align="center">**Checksum Visibility**</p>|<p align="center">**Displayed**</p>|<p align="center">**Hidden**</p>|
 | :-: | :-: | :-: |

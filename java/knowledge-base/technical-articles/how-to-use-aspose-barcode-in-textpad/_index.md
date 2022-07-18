@@ -7,7 +7,7 @@ url: /java/how-to-use-aspose-barcode-in-textpad/
 
 {{% alert color="primary" %}} 
 
-This article explains how to use [Aspose.BarCode for Java](https://apireference.aspose.com/barcode/java) in TextPad.
+This article explains how to use [Aspose.BarCode for Java](https://reference.aspose.com/barcode/java) in TextPad.
 
 {{% /alert %}} 
 ## **Use Aspose.BarCode in TextPad**

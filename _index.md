@@ -31,7 +31,7 @@ The links to some useful resources can be found below.
 - [Install Aspose.BarCode for .NET NuGet Package](https://www.nuget.org/packages/Aspose.Barcode/)
 - [Download Aspose.BarCode for .NET](https://downloads.aspose.com/barcode/net)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET)
-- [Aspose.BarCode for .NET API Reference Guide](https://apireference.aspose.com/net/barcode)
+- [Aspose.BarCode for .NET API Reference Guide](https://reference.aspose.com/net/barcode)
 - [Aspose.BarCode for .NET Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
@@ -60,7 +60,7 @@ Following are the links to some useful resources you may need to accomplish your
 - [Install Aspose.BarCode for Java from Maven Repository](https://docs.aspose.com/barcode/java/installation/)
 - [Download Aspose.BarCode for Java](https://downloads.aspose.com/barcode/java)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.Barcode-for-Java)
-- [Aspose.BarCode for Java API Reference Guide](https://apireference.aspose.com/java/barcode)
+- [Aspose.BarCode for Java API Reference Guide](https://reference.aspose.com/java/barcode)
 - [Aspose.BarCode for Java Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
@@ -84,7 +84,7 @@ The following are the links to some useful resources you may need to accomplish 
 - [Install Aspose.BarCode for C++ NuGet Package](https://www.nuget.org/packages/Aspose.barcode.Cpp/)
 - [Download Aspose.BarCode for C++](https://downloads.aspose.com/barcode/cpp)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.Barcode-for-C)
-- [Aspose.BarCode for C++ API Reference Guide](https://apireference.aspose.com/cpp/barcode)
+- [Aspose.BarCode for C++ API Reference Guide](https://reference.aspose.com/cpp/barcode)
 - [Aspose.BarCode for C++ Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
@@ -106,7 +106,7 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.BarCode for Android via Java Features](/barcode/java/aspose-barcode-for-android-via-java-features)
 - [Aspose.BarCode for Android via Java Release Notes](/barcode/java/android-via-java-release-notes)
 - [Aspose.BarCode for Android via Java Product Page](https://products.aspose.com/barcode/android-java)
-- [Aspose.BarCode for Android via Java API Reference Guide](https://apireference.aspose.com/java/barcode) 
+- [Aspose.BarCode for Android via Java API Reference Guide](https://reference.aspose.com/java/barcode) 
 
 ## Aspose.BarCode for ReportingServices
 {{% alert color="primary" %}} 

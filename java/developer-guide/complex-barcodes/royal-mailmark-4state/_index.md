@@ -16,10 +16,10 @@ The Royal Mail *Mailmark 4-state* standard includes the following subtypes:
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
-To read and generate *Mailmark 4-state* barcode images, ***Aspose.BarCode for Java*** provides special class [*MailmarkCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext).
+To read and generate *Mailmark 4-state* barcode images, ***Aspose.BarCode for Java*** provides special class [*MailmarkCodetext*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext).
 
 ## **Generation of Mailmark 4-State Barcodes**
-Developers can create *Mailmark 4-state* barcodes in ***Aspose.BarCode for Java*** executing the following steps. First, an instance of class [*MailmarkCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext) needs to be created passing the data for encoding. Thereafter, the *generateBarCodeImage()* method of class [*ComplexBarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexBarcodeGenerator) needs to be called to finalize barcode generation.    
+Developers can create *Mailmark 4-state* barcodes in ***Aspose.BarCode for Java*** executing the following steps. First, an instance of class [*MailmarkCodetext*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext) needs to be created passing the data for encoding. Thereafter, the *generateBarCodeImage()* method of class [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexBarcodeGenerator) needs to be called to finalize barcode generation.    
   
 <p align="center"><img src="mailmark4state.png"></p>
   
@@ -43,7 +43,7 @@ generator.Save($"{path}Mailmark4State.png");
 
 
 ## **Recognition of Mailmark 4-State Barcodes**
-To recognize *Mailmark 4-state* barcode images through ***Aspose.BarCode for Java***, first, it is needed to generate an instance of class [*BarCodeReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) setting it to *DecodeType.Mailmark*. Thereafter, barcode data has to be parsed using the *TryDecodeMailmark(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader). This method returns an instance of class [*MailmarkCodetext*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext) with the decoded barcode data.  
+To recognize *Mailmark 4-state* barcode images through ***Aspose.BarCode for Java***, first, it is needed to generate an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) setting it to *DecodeType.Mailmark*. Thereafter, barcode data has to be parsed using the *TryDecodeMailmark(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader). This method returns an instance of class [*MailmarkCodetext*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/MailmarkCodetext) with the decoded barcode data.  
   
 <!--The following code sample explains how to decode *Mailmark 4-state* barcode images.
   

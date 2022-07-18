@@ -15,7 +15,7 @@ If you want to try the fully functional version of ***Aspose.BarCode for .NET***
 ## **License Setting**
 The license is a plain-text XML file that contains various information, such as the product name, the number of developers to access the license, subscription expiry date, and other details. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
   
-License setting can be performed by calling the *SetLicense* method of class [*Aspose.BarCode.License*](https://apireference.aspose.com/barcode/net/aspose.barcode/license). This must be done before executing any actions with the library. The *SetLicense* method can be invoked in different ways: in the initialization section of an application (or a web application), using Singleton, or through a file/stream.
+License setting can be performed by calling the *SetLicense* method of class [*Aspose.BarCode.License*](https://reference.aspose.com/barcode/net/aspose.barcode/license). This must be done before executing any actions with the library. The *SetLicense* method can be invoked in different ways: in the initialization section of an application (or a web application), using Singleton, or through a file/stream.
   
 The details on how to set the license using these methods are provided below in this article.
 
@@ -160,7 +160,7 @@ using (System.Security.Cryptography.DES des = System.Security.Cryptography.DES.C
 ## **Setting Metered License**
 [Aspose.BarCode for .NET](/barcode/net/) allows developers to apply the metered key. It is a new licensing mechanism that can be used along with one of the existing licensing methods. The customers who want to be billed based on the usage of the API features can apply metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
 
-New class [*Metered*](https://apireference.aspose.com/barcode/net/aspose.barcode/metered) has been introduced to apply the metered key. The sample code demonstrating how to set metered public and private keys is provided below.
+New class [*Metered*](https://reference.aspose.com/barcode/net/aspose.barcode/metered) has been introduced to apply the metered key. The sample code demonstrating how to set metered public and private keys is provided below.
   
 {{< highlight csharp >}}
     // set metered public and private keys

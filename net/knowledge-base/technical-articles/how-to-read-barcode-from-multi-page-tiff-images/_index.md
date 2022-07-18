@@ -10,7 +10,7 @@ url: /net/how-to-read-barcode-from-multi-page-tiff-images/
 ## **Overview**
 
 It is often required to read barcodes from multi-page TIFF files. TIFF is a common raster graphics format that allows storing several high-quality images in one document. This format is widely used to save data during automatic scanning.
-***Aspose.BarCode*** enables recognizing barcodes from TIFF documents but it can only read from the first page (or “frame”). To detect barcodes in other frames, it is necessary to process them using side libraries first and then pass the obtained raster images to class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader). The recognition process includes the following steps:
+***Aspose.BarCode*** enables recognizing barcodes from TIFF documents but it can only read from the first page (or “frame”). To detect barcodes in other frames, it is necessary to process them using side libraries first and then pass the obtained raster images to class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader). The recognition process includes the following steps:
 1.	Open the source multi-page TIFF file
 2.	Selected the requested frame that often represents a page of the scanned document
 3.	Read barcodes from the frame
@@ -23,9 +23,9 @@ Further in the article, you can find code examples for extracting frames from a 
 ### **Using Aspose.Imaging**
 
 This example explains how to read barcodes from multi-page TIFF documents using the [**Aspose.Imaging**](https://products.aspose.com/imaging/net/) library that is fully cross-platform and the most convenient way to implement such tasks. The barcode recognition process comprises the following steps:
-1.	Open the source multi-page TIFF document using [*TiffImage*]( https://apireference.aspose.com/imaging/net/aspose.imaging.fileformats.tiff/tiffimage/)
-2.	Select the required page using [*TiffFrame*]( https://apireference.aspose.com/imaging/net/aspose.imaging.fileformats.tiff/tiffframe/)
-3.	Process the obtained image through class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to read barcodes
+1.	Open the source multi-page TIFF document using [*TiffImage*]( https://reference.aspose.com/imaging/net/aspose.imaging.fileformats.tiff/tiffimage/)
+2.	Select the required page using [*TiffFrame*]( https://reference.aspose.com/imaging/net/aspose.imaging.fileformats.tiff/tiffframe/)
+3.	Process the obtained image through class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to read barcodes
 4.	Repeat Steps 2 and 3 until all target pages are processed   
   
 The following code snippet illustrates how to work with this approach.
@@ -59,7 +59,7 @@ using (Aspose.Imaging.Image openImage = Aspose.Imaging.Image.Load($"{path}MultiP
 It is possible to use the standard library called [*System.Drawing*](https://docs.microsoft.com/dotnet/api/system.drawing?view=netframework-4.8) to recognize barcodes from multi-page TIFF files. This library cannot be considered fully cross-platform but works efficiently on Windows-based systems. Barcode recognition includes the following steps:
 1.	Open the source TIFF document using class [*Image*](https://docs.microsoft.com/dotnet/api/system.drawing.image)     
 2.	Select the required page using [*SelectActiveFrame*]( https://docs.microsoft.com/dotnet/api/system.drawing.image.selectactiveframe)
-3.	Process the obtained image using class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to detect and recognize barcodes
+3.	Process the obtained image using class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to detect and recognize barcodes
 4.	Repeat Steps 2 and 3 until all target pages are processed
   
 The following code sample explains how to implement this option.

@@ -13,7 +13,7 @@ url: /net/codablockf-barcodes/
   
 ## **Barcode Height Settings**
 
-In ***Aspose.BarCode for .NET***, developers can set the height of each row in a stacked barcode by initializing the [*AspectRatio*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/aspectratio) property of class [*CodablockParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters). This parameter is defined as a relative coefficient to the value of the [*XDimension*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. It is recommended to set the value of *AspectRatio* greater than 10.  
+In ***Aspose.BarCode for .NET***, developers can set the height of each row in a stacked barcode by initializing the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/aspectratio) property of class [*CodablockParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters). This parameter is defined as a relative coefficient to the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. It is recommended to set the value of *AspectRatio* greater than 10.  
   
 Barcode labels demonstrated below have been generated with different aspect ratio settings. 
   
@@ -36,7 +36,7 @@ gen.Save($"{path}CodablockFAspectRatio30.png", BarCodeImageFormat.Png);
   
 
 ## **Layout Settings**
-To set the layout of *Codablock-F* barcodes by defining the number of rows and columns, it is necessary to initialize the [*Columns*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/columns) and [*Rows*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/rows) properties of class [*CodablockParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters) where the former is the most significant parameter. The maximal values of these properties are limited to 62 and 44 for *Columns* and *Rows*, respectively.  
+To set the layout of *Codablock-F* barcodes by defining the number of rows and columns, it is necessary to initialize the [*Columns*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/columns) and [*Rows*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/rows) properties of class [*CodablockParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters) where the former is the most significant parameter. The maximal values of these properties are limited to 62 and 44 for *Columns* and *Rows*, respectively.  
   
 Barcode images provided below have been generated with different layout settings.
   

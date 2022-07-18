@@ -15,7 +15,7 @@ Input text in *Codabar* barcodes has the following format:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Start and Stop Symbols**
-The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate [CodabarStartSymbol](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstartsymbol) and [CodabarStopSymbol](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstopsymbol) properties included in the [*Codabar*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codabar) group of parameters of class [*BarcodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
+The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate [CodabarStartSymbol](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstartsymbol) and [CodabarStopSymbol](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstopsymbol) properties included in the [*Codabar*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codabar) group of parameters of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
 By default, start and stop characters are set to "A".  
   
 Sample barcode labels demonstrated below have been generated with different settings for start and stop characters.
@@ -59,7 +59,7 @@ foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 16;
 {{< /highlight >}} 
   
-To enable a checksum for this barcode type, it is necessary to initialize the property [*IsChecksumEnabled*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the [*CodabarChecksumMode*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarchecksummode) property. By default, the *Mod16* checksum is applied.  
+To enable a checksum for this barcode type, it is necessary to initialize the property [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the [*CodabarChecksumMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarchecksummode) property. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images provided below have been created with different checksum calculation settings.
 

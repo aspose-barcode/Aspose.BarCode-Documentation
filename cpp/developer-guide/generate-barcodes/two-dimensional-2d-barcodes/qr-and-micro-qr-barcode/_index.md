@@ -12,9 +12,9 @@ QR barcode is a two-dimensional barcode symbology developed in Japan. QR barcode
 - Dirt and damage resistance, a maximum of 30% of codewords can be restored
 - Readable from all directions
 
-Added a [QR ](https://apireference.aspose.com/net/barcode/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.barcode_generator/) Class as [BarcodeParameter](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.base_generation_parameters/). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
+Added a [QR ](https://reference.aspose.com/net/barcode/aspose.barcode.generation/barcodeparameters/properties/qr)property in [BarcodeGenerator](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.barcode_generator/) Class as [BarcodeParameter](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.base_generation_parameters/). This new property works as a QR / MicroQR selector. Select ForceQR (default) for standard QR symbols, Auto for MicroQR.
 
-The following [QR parameters](https://apireference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.qr_parameters/) can be set:
+The following [QR parameters](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.qr_parameters/) can be set:
 
 1. **QrECIEncoding** – Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details about the used references for encoding the data in the symbol. The current implementation consists of all well-known charset encodings. Currently, it is used only for QR 2D barcode.
 1. **QrEncodeMode** - QR symbology type of BarCode's encoding mode. The default mode is Auto.
@@ -22,13 +22,13 @@ The following [QR parameters](https://apireference.aspose.com/cpp/barcode/class
 1. **QrErrorLevel** - Level of Reed-Solomon error correction for QR barcode. From low to high: LevelL, LevelM, LevelQ, LevelH.
 1. **QrVersion** - Version of QR Code. From Version1 to Version40 for QR code and from M1 to M4 for MicroQr. The default value is QRVersion.Auto.
 
-[Enum QREncodeType](https://apireference.aspose.com/cpp/barcode/namespace/aspose.bar_code/#aa4c2fed1eef5f0b49de0b6be68390ca3):
+[Enum QREncodeType](https://reference.aspose.com/cpp/barcode/namespace/aspose.bar_code/#aa4c2fed1eef5f0b49de0b6be68390ca3):
 
 1. **Auto** - mode starts barcode version negotiation from MicroQR V1
 1. **ForceQR** – mode starts barcode version negotiation from QR V1
 1. **ForceMicroQR** - mode starts barcode version negotiation from MicroQR V1 to V4. If data cannot be encoded into MicroQR, an exception is thrown.
 
-Added changes to Enum [QREncodeMode](https://apireference.aspose.com/cpp/barcode/namespace/aspose.bar_code/#aab4027f23f2c64a83532b82be3ac6a6d):
+Added changes to Enum [QREncodeMode](https://reference.aspose.com/cpp/barcode/namespace/aspose.bar_code/#aab4027f23f2c64a83532b82be3ac6a6d):
 
 1. **Auto** - encode CodeText as is non-Unicode charset. If there is any Unicode character, the CodeText will be encoded with the value which is set in CodeTextEncoding.
 1. **Bytes** - encode CodeText as plain bytes. If it detects any Unicode character, the character will be encoded as two bytes, lower byte first;

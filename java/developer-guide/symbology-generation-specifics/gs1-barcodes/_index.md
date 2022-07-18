@@ -22,7 +22,7 @@ The barcode types compatible with all GS1 Application Identifiers or the GS1AI_0
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **GS1 Barcode Generation Standards**
-***Aspose.BarCode for Java*** supports creating barcodes of various symbologies using formats based on GS1 standards. To generate barcodes in this way, developers first need to pass barcode text through the *setCodeText* method of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) using the following format:  
+***Aspose.BarCode for Java*** supports creating barcodes of various symbologies using formats based on GS1 standards. To generate barcodes in this way, developers first need to pass barcode text through the *setCodeText* method of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) using the following format:  
 <p align="center"><mark>"(Application_Identifier_1)Application_Data(Application_Identifier_2)Application_Data"</mark></p> 
 
 As an example, it is possibe to set the string "(01)12345678901231(21)ASPOSE(30)9876" as barcode text using the *setCodeText* method.  
@@ -56,7 +56,7 @@ Specifically, ***Aspose.BarCode for Java*** enables creating barcodes with coupo
 - *UPC-A GS1 DataBar Coupon*: *UPC-A* + *DataBar Expanded* coupon
 - *UPC-A GS1 Code 128 Coupon*: *UPC-A* + *GS1 Code128* coupon
   
-In ***Aspose.BarCode for Java***, developers can generated aforementioned barcodes with coupons using the [*EncodeTypes*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EncodeTypes) class and fields *UPCA_GS_1_CODE_128_COUPON* and *UPCA_GS_1_DATABAR_COUPON* of its subclass [*SymbologyEncodeType*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/SymbologyEncodeType). First, it is needed to call the *setCodeText* method of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) passing barcode text as a string in the special format:  
+In ***Aspose.BarCode for Java***, developers can generated aforementioned barcodes with coupons using the [*EncodeTypes*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EncodeTypes) class and fields *UPCA_GS_1_CODE_128_COUPON* and *UPCA_GS_1_DATABAR_COUPON* of its subclass [*SymbologyEncodeType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/SymbologyEncodeType). First, it is needed to call the *setCodeText* method of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) passing barcode text as a string in the special format:  
 <p align="center"><mark>"UPC-A Input Data(Application Identifier)GS1 Barcode Text"</mark></p>  
   
 As an example, it is possible to pass the string "123456789012(8110)ASPOSE" to the *setCodeText* method. 
@@ -92,7 +92,7 @@ gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
 <p align="center"><img src="gs1couponupcacode128.png"></p>
 
 ## **Spacing Settings for Barcodes with Coupons**
-***Aspose.BarCode for Java*** provides a possibility to modify spacing between primary barcodes and their coupons using the *setSupplementSpace* method of class [*CouponParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CouponParameters).  
+***Aspose.BarCode for Java*** provides a possibility to modify spacing between primary barcodes and their coupons using the *setSupplementSpace* method of class [*CouponParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CouponParameters).  
   
 Following *UPC-A GS1 DataBar Coupon* barcodes have been created with different spacing settings.
      

@@ -6,7 +6,7 @@ url: /cpp/saving-barcode-image/
 ---
 
 ## **Save Barcode Images to different Formats**
-Aspose.BarCode facilitates its developers to save the barcode images to most of the popular image formats. All barcode generating classes (BarcodeGenerator, BarCodeControl or BarCodeWebControl) provided by Aspose.BarCode, have a public method, [Save](https://apireference.aspose.com/net/barcode/aspose.barcode.windows.forms.barcodecontrol/save/methods/1). The BarcodeGenerator.Save method takes an instance of BarCodeImageFormat class. Following image formats can be passed to Save method of the barcode class as an argument:
+Aspose.BarCode facilitates its developers to save the barcode images to most of the popular image formats. All barcode generating classes (BarcodeGenerator, BarCodeControl or BarCodeWebControl) provided by Aspose.BarCode, have a public method, [Save](https://reference.aspose.com/net/barcode/aspose.barcode.windows.forms.barcodecontrol/save/methods/1). The BarcodeGenerator.Save method takes an instance of BarCodeImageFormat class. Following image formats can be passed to Save method of the barcode class as an argument:
 
 - BarCodeImageFormat.Bmp - Specifies the bitmap (BMP) image format.
 - BarCodeImageFormat.Gif - Specifies the Graphics Interchange Format (GIF) image format.

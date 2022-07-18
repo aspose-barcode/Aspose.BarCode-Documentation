@@ -54,7 +54,7 @@ gen.Save($"{path}PatchCodeVI.png", BarCodeImageFormat.Png);
   
 **Setting Generation Format** 
   
-To set the format of *PatchCode* barcodes to be generated, it is necessary to initialize the [*PatchFormat*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters/properties/patchformat) property of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters). This property can take the following values: 
+To set the format of *PatchCode* barcodes to be generated, it is necessary to initialize the [*PatchFormat*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters/properties/patchformat) property of class [*PatchCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters). This property can take the following values: 
 - *PatchOnly* - basic *PatchCode* barcode images are generated. This value is used by default. 
 - *A4* - A4 pages with portrait orientation are outputted having *PatchCode* barcodes on page borders and an optional QR code in the center.
 - *A4_LANDSCAPE* - A4 pages with landscape orientation are created with *PatchCode* barcodes on page borders and an optional QR code in the center. 
@@ -63,7 +63,7 @@ To set the format of *PatchCode* barcodes to be generated, it is necessary to in
 
 **Adding Complementary QR Code**  
   
-To add a complementary QR code to a *PatchCode* barcode page (A4 or US Letter), it is necessary to enter any text value into the [*ExtraBarcodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters/properties/extrabarcodetext) property of class [*PatchCodeParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters) and then set the [*Location*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) property of class [*CodeTextParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) to "*CodeLocation.None*".  
+To add a complementary QR code to a *PatchCode* barcode page (A4 or US Letter), it is necessary to enter any text value into the [*ExtraBarcodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters/properties/extrabarcodetext) property of class [*PatchCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/patchcodeparameters) and then set the [*Location*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/location) property of class [*CodeTextParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters) to "*CodeLocation.None*".  
   
 Images below illustrate the *PatchCode* barcode pages generated with and without adding complementary *QR Code* labels.
   

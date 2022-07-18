@@ -17,7 +17,7 @@ Input text in *Codabar* barcodes has the following format:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Start and Stop Symbols**
-Start and stop digits can be encoded separately using any of four formats (A, B, C, or D). To specify the preferred format, it is possible to use *setCodabarStartSymbol* and *setCodabarStopSymbol* methods from class [*CodabarParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarParameters). The default set of start and stop digits is "A".  
+Start and stop digits can be encoded separately using any of four formats (A, B, C, or D). To specify the preferred format, it is possible to use *setCodabarStartSymbol* and *setCodabarStopSymbol* methods from class [*CodabarParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarParameters). The default set of start and stop digits is "A".  
   
 Following barcode images have been created using various sets of start and stop characters.
   
@@ -60,7 +60,7 @@ foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 16;
 {{< /highlight >}} 
   
-Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum. The required checksum algorithm can be allocated through the [*CodabarChecksumMode*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarChecksumMode) enum. By default, the *Mod16* checksum is applied.  
+Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum. The required checksum algorithm can be allocated through the [*CodabarChecksumMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodabarChecksumMode) enum. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images below have been generated using different checksum control settings.
 

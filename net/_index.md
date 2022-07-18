@@ -30,6 +30,6 @@ The links to some useful resources can be found below.
 - [Install Aspose.BarCode for .NET NuGet Package](https://www.nuget.org/packages/Aspose.Barcode/)
 - [Download Aspose.BarCode for .NET](https://downloads.aspose.com/barcode/net)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET)
-- [Aspose.BarCode for .NET API Reference Guide](https://apireference.aspose.com/barcode/net)
+- [Aspose.BarCode for .NET API Reference Guide](https://reference.aspose.com/barcode/net)
 - [Aspose.BarCode for .NET Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)

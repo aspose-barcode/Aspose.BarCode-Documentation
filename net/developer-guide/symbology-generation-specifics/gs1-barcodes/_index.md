@@ -19,10 +19,10 @@ The table below outlines the barcode types that support all GS1 Application Iden
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Generation according to GS1 Standards**
-***Aspose.BarCode for .NET*** enables barcode generation in formats that are compatible with GS1 standards. To do this for the barcode types that support GS encoding, it is required to initialize the [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) parameter of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) as a string formulated using the predefined format:  
+***Aspose.BarCode for .NET*** enables barcode generation in formats that are compatible with GS1 standards. To do this for the barcode types that support GS encoding, it is required to initialize the [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) parameter of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) as a string formulated using the predefined format:  
 <p align="center"><mark>"(Application_Identifier_1)Application_Data(Application_Identifier_2)Application_Data"</mark></p> 
 
-For example, [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) can take the following value: "(01)12345678901231(21)ASPOSE(30)9876".  
+For example, [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) can take the following value: "(01)12345678901231(21)ASPOSE(30)9876".  
   
 Further, you can see the code snippets provided as examples to illustrate how to generate GS1-compatible barcodes for *Code 128* and *DataMatrix* symbologies along with corresponding sample barcode labels.  
   
@@ -55,10 +55,10 @@ As mentioned above, in ***Aspose.BarCode for .NET***, it is possible to generate
 - *UPC-A GS1 DataBar Coupon* that allows combining *UPC-A* and *DataBar Expanded*
 - *UPC-A GS1 Code 128 Coupon* that allows merging *UPC-A* and *GS1 Code128*
   
-In the library, these two barcode types can be specified by initializing instances of the [*EncodeTypes*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes) class using the following fields: ["*UpcaGs1Code128Coupon*"](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/upcags1code128coupon) and ["*UpcaGs1DatabarCoupon*"](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/upcags1databarcoupon). To generate a barcode with coupon, it is necessary to initialize the [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) parameter of class [*BarcodeGenerator*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) using an input string in the following format:  
+In the library, these two barcode types can be specified by initializing instances of the [*EncodeTypes*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes) class using the following fields: ["*UpcaGs1Code128Coupon*"](https://reference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/upcags1code128coupon) and ["*UpcaGs1DatabarCoupon*"](https://reference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/fields/upcags1databarcoupon). To generate a barcode with coupon, it is necessary to initialize the [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) parameter of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) using an input string in the following format:  
 <p align="center"><mark>"UPC-A Input Data(Application Identifier)GS1 Barcode Text"</mark></p>  
   
-For example, [*CodeText*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) can take the following value: "123456789012(8110)ASPOSE". 
+For example, [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) can take the following value: "123456789012(8110)ASPOSE". 
   
 Below, the code samples are provided to explain how to generate barcodes with coupons for *UpcaGs1DatabarCoupon* and *UpcaGs1DatabarCoupon* barcode types along with corresponding sample barcode labels.  
   
@@ -81,7 +81,7 @@ gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
 <p align="center"><img src="gs1couponupcacode128.png"></p>
 
 ## **Coupon Spacing Settings**
-In ***Aspose.BarCode for .NET***, it is possible to adjust the size of spacing between coupon barcodes placed in the same image. It can be done by setting the [*SupplementSpace*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters/properties/supplementspace) property in class [*CouponParameters*](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters).  
+In ***Aspose.BarCode for .NET***, it is possible to adjust the size of spacing between coupon barcodes placed in the same image. It can be done by setting the [*SupplementSpace*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters/properties/supplementspace) property in class [*CouponParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/couponparameters).  
   
 Sample barcode images provided below have been generated using the *UPC-A GS1 DataBar Coupon* standard and applying different spacing settings.
      

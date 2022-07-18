@@ -11,9 +11,9 @@ url: /java/read-barcode-properties/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## **Overview**
-***Aspose.BarCode for Java*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including symbology, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) and can be fetched using special methods described further in this article.  
+***Aspose.BarCode for Java*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including symbology, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) and can be fetched using special methods described further in this article.  
 
-<!--The following code snippet illustrates how to get contents of the [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) instance.
+<!--The following code snippet illustrates how to get contents of the [*BarCodeResult*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) instance.
  
  BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "12345");
  generator.save("c:\\test.png");
@@ -30,7 +30,7 @@ url: /java/read-barcode-properties/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Type and Encoded Data**
-To obtain input barcode data and its symbology, *getCodeText* and *getCodeType* methods of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) can be used. The other method called *getCodeTypeName* returns the text name of the barcode type.
+To obtain input barcode data and its symbology, *getCodeText* and *getCodeType* methods of class [*BarCodeResult*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) can be used. The other method called *getCodeTypeName* returns the text name of the barcode type.
   
 <!--The following code snippet shows how to use these methods.
  
@@ -58,7 +58,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRCodetext.png", DecodeTyp
 <p align="center"><img src="qrcodetext.png"></p> 
   
 ## **Reading Barcode Data as Byte Stream**
-It is possible to load barcode data as a byte stream using a special method of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) that is called *getCodeBytes*. 
+It is possible to load barcode data as a byte stream using a special method of class [*BarCodeResult*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult) that is called *getCodeBytes*. 
 
 <!--The following code sample explains how to fetch barcode data as a byte stream.  
    
@@ -119,8 +119,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtUnicodeCodeText.png", D
 <p align="center"><img src="extunicodecodetext.png"></p>
    
 ## **Quality Check of Recognition Results**
-Developers may need to check whether barcode reading outputs are accurate and complete. For this purpose, ***Aspose.BarCode for Java*** provides two specific methods of class [*BarCodeResult*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult): *getConfidence* and *getReadingQuality*.  
-Depending of the quality of barcode reading results, the *getConfidence* method returns a instance of the [*BarCodeConfidence*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeConfidence) enum that denotes the recognition confidence level. This enumeration contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *getReadingQuality* method returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
+Developers may need to check whether barcode reading outputs are accurate and complete. For this purpose, ***Aspose.BarCode for Java*** provides two specific methods of class [*BarCodeResult*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult): *getConfidence* and *getReadingQuality*.  
+Depending of the quality of barcode reading results, the *getConfidence* method returns a instance of the [*BarCodeConfidence*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeConfidence) enum that denotes the recognition confidence level. This enumeration contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *getReadingQuality* method returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
   
 |Confidence Level|Quality Value|Description|
 |---|---|---|
@@ -146,7 +146,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
 {{< /highlight >}}-->
   
 ## **Barcode Position and Orientation Angle**
-To obtain the position of a source barcode and its orientation angle, methods class [*BarCodeRegionParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeRegionParameters) can be used. This class allows getting the information about the barcode region in the following forms:
+To obtain the position of a source barcode and its orientation angle, methods class [*BarCodeRegionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeRegionParameters) can be used. This class allows getting the information about the barcode region in the following forms:
 -	Quadrangle – a quadrangle object that bounds a barcode
 -	Rectangle - a rectangle object that bounds a barcode
 -	Points – an array of points constituting a barcode
@@ -180,7 +180,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
 
 ### **Reading Macro PDF417 and Macro PDF417 Metadata**
 
-Metadata from *PDF417* barcodes can be obtained using methods of class [*Pdf417ExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/Pdf417ExtendedParameters) that are listed below.
+Metadata from *PDF417* barcodes can be obtained using methods of class [*Pdf417ExtendedParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/Pdf417ExtendedParameters) that are listed below.
   
 |PDF417 Metadata Method|Description|
 |---|---|
@@ -241,7 +241,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417Meta.png", Decode
 <p align="center"><img src="extpdf417meta.png"></p>  
 
 ### **Reading Metadata from QR Codes with Structured Append**
-To fetch metadata from *QR Code* barcodes with structured append, ***Aspose.BarCode for Java*** provides a special class called [*QRExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QRExtendedParameters). Methods of this class enable reading the information from structured append that is used to combine several *QR Code* barcode into one. This data can be obtained using the following methods:
+To fetch metadata from *QR Code* barcodes with structured append, ***Aspose.BarCode for Java*** provides a special class called [*QRExtendedParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QRExtendedParameters). Methods of this class enable reading the information from structured append that is used to combine several *QR Code* barcode into one. This data can be obtained using the following methods:
 
 - *getQRStructuredAppendModeBarCodeIndex* - returns the sequence number of the current barcode (starting from 0)
 - *getQRStructuredAppendModeBarCodesQuantity* - returns the number of barcodes in a composite *QR Code* barcode taht can take values from 2 to 16
@@ -278,7 +278,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtQRMeta.png", DecodeType
 <p align="center"><img src="extqrmeta.png"></p>
   
 ### **Reading Metadata from DataBar Barcodes with 2D Components**
-Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DataBarExtendedParameters) that provides a special method called *is2DCompositeComponent*. This methods allows enabling or disabling a 2D component in *DataBar* barcodes.  
+Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DataBarExtendedParameters) that provides a special method called *is2DCompositeComponent*. This methods allows enabling or disabling a 2D component in *DataBar* barcodes.  
   
 <!--The following code snippet shows how to fetch metadata from a sample *DataBar* barcode with a 2D component.
   
@@ -308,7 +308,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDataBarMeta.png", Decod
 <p align="center"><img src="extdatabarmeta.png"></p>
 
 ### **Reading Metadata from 1D Barcodes**
-Some 1D barcode types, i.e. *EAN 13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/OneDExtendedParameters) provides the *getValue* method that allows getting 1D barcode text and the *getCheckSum* method that returns the result of checksum computation.
+Some 1D barcode types, i.e. *EAN 13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/OneDExtendedParameters) provides the *getValue* method that allows getting 1D barcode text and the *getCheckSum* method that returns the result of checksum computation.
   
 <!--The following code snippet explains how to get the barcode text of a EAN 13 barcode and its checksum value.
  
@@ -326,7 +326,7 @@ BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.EAN_13, "123456789
 <p align="center"><img src="ean13.png"></p>
   
 ### **Getting Raw Data from Code 128 Barcodes**
-Input data stored in *Code 128* barcodes can be encoded in three ways: A, B, or C. Class [*Code128ExtendedParameters*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/Code128ExtendedParameters) provides a special method called *getCode128DataPortions* that returns decoded parts of barcode input information and the encoding mode.
+Input data stored in *Code 128* barcodes can be encoded in three ways: A, B, or C. Class [*Code128ExtendedParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/Code128ExtendedParameters) provides a special method called *getCode128DataPortions* that returns decoded parts of barcode input information and the encoding mode.
 
 <!--The following code sample shows how to fetch *Code 128* raw data.
 

@@ -11,11 +11,11 @@ aliases:
 
 ## **Overview** 
 
-Often there is a need to read barcodes from PDF documents. Barcodes can be embedded into PDF documents as images in raster or special PDF vector graphics formats. In ***Aspose.BarCode***, to read and decode barcodes through class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader), the source page of a PDF document must be represented as a raster image that may be obtained through the rendering procedure. When it is known that the source PDF document does not contain barcode images in a vector format, it is possible to extract them from the document before decoding. In this case, a single barcode image may get split into several parts thus making it unreadable. The rendering of page contents to a raster image is the most convenient and fault-tolerant way. It is recommended to set the most optimal resolution that equals 300 dpi.  
+Often there is a need to read barcodes from PDF documents. Barcodes can be embedded into PDF documents as images in raster or special PDF vector graphics formats. In ***Aspose.BarCode***, to read and decode barcodes through class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader), the source page of a PDF document must be represented as a raster image that may be obtained through the rendering procedure. When it is known that the source PDF document does not contain barcode images in a vector format, it is possible to extract them from the document before decoding. In this case, a single barcode image may get split into several parts thus making it unreadable. The rendering of page contents to a raster image is the most convenient and fault-tolerant way. It is recommended to set the most optimal resolution that equals 300 dpi.  
   
 [**Aspose.PDF**](https://products.aspose.com/pdf/net/) library can be used to read barcodes from PDF documents. The recognition process includes the following steps:
 1.	Open the source PDF document and render its pages to raster images
-2.	Process the obtained images through class [*BarCodeReader*](https://apireference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to detect and decode barcodes
+2.	Process the obtained images through class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to detect and decode barcodes
 3.	Further processing of the decoding results
   
 ## **How to Read Barcode from PDF Documents**
@@ -23,7 +23,7 @@ Further, you can find a detailed explanation for various methods to read barcode
 
 ### **Using PdfConverter**
 
-This example demonstrates how to read barcodes from a multi-page PDF document using class [*PdfConverter*](https://apireference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter). Setting resolution to 300 dpi provides the most accurate recognition results.
+This example demonstrates how to read barcodes from a multi-page PDF document using class [*PdfConverter*](https://reference.aspose.com/pdf/net/aspose.pdf.facades/pdfconverter). Setting resolution to 300 dpi provides the most accurate recognition results.
 
 {{< highlight csharp>}}
 using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentWithPdf417.pdf"))
@@ -58,7 +58,7 @@ using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentW
 
 
 ### **Using PngDevice**
-This example describes an option that is similar to the approach described above. Here, rendering of the contents from the source PDF file is performed using [*PngDevice*](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice), a special class that facilitates converting PDF document pages to PNG images.
+This example describes an option that is similar to the approach described above. Here, rendering of the contents from the source PDF file is performed using [*PngDevice*](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice), a special class that facilitates converting PDF document pages to PNG images.
   
 {{< highlight csharp>}}
 using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentWithPdf417.pdf"))
@@ -85,7 +85,7 @@ using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentW
 
 ### **Direct Rendering of PDF Pages**
 
-In this example, an object of [*AsposePdf.Page*](https://apireference.aspose.com/pdf/net/aspose.pdf/page) representing the source page of the PDF document is converted to a raster image using the [*ConvertToPNGMemoryStream*](https://apireference.aspose.com/pdf/net/aspose.pdf/page/methods/converttopngmemorystream) method. Unlike for [*PngDevice*](https://apireference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice), the resolution is set automatically and may not always be suitable for successful barcode recognition.
+In this example, an object of [*AsposePdf.Page*](https://reference.aspose.com/pdf/net/aspose.pdf/page) representing the source page of the PDF document is converted to a raster image using the [*ConvertToPNGMemoryStream*](https://reference.aspose.com/pdf/net/aspose.pdf/page/methods/converttopngmemorystream) method. Unlike for [*PngDevice*](https://reference.aspose.com/pdf/net/aspose.pdf.devices/pngdevice), the resolution is set automatically and may not always be suitable for successful barcode recognition.
   
 {{< highlight csharp>}}
 using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentWithPdf417.pdf"))
@@ -106,7 +106,7 @@ using (Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document($"{path}PDFDocumentW
 {{< /highlight >}}
   
 ### **Using Extracted Barcode Images**
-In some cases, it is possible to extract embedded barcode images from the source PDF document and then decode them. This can be done using class [*ImagePlacementAbsorber*](https://apireference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber).
+In some cases, it is possible to extract embedded barcode images from the source PDF document and then decode them. This can be done using class [*ImagePlacementAbsorber*](https://reference.aspose.com/pdf/net/aspose.pdf/imageplacementabsorber).
 The advantage of this method is that it allows recognizing barcodes with original resolution. The drawback is that barcode images in vector formats cannot be extracted as raster ones. Moreover, there is a risk that a single barcode will be split into several unreadable parts as a result of extraction. This approach is recommended for advanced users of the ***Aspose*** library. 
   
 {{< highlight csharp>}}

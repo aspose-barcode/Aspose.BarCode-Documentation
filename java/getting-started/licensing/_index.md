@@ -21,7 +21,7 @@ The license can be loaded from a stream or file using the following locations:
 1. Explicit path
 1. Folder that comprises Aspose.BarCode.jar
 
-You need to call the *setLicense* method of class [*License*](https://apireference.aspose.com/barcode//java/com.aspose.barcode/license) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path, as shown in the following example.
+You need to call the *setLicense* method of class [*License*](https://reference.aspose.com/barcode//java/com.aspose.barcode/license) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path, as shown in the following example.
 
 ### **Apply License From File**
 In this example, Aspose.BarCode will attempt to find the license file in the folder that contains JARs of your application.
@@ -36,7 +36,7 @@ In this example, the license is initialized from a stream.
 ### **Applying Metered Key**
 Aspose.BarCode for Java allows developers to apply metered keys. It is a new licensing mechanism that can be applied along with the existing licensing method. Those customers who want to be billed based on the usage of API features can apply metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
 
-Class [*Metered*](https://apireference.aspose.com/barcode/java/com.aspose.barcode.metered/package-frame) has been introduced to apply the metered key. The sample code snippet demonstrating how to set metered public and private keys is provided below.
+Class [*Metered*](https://reference.aspose.com/barcode/java/com.aspose.barcode.metered/package-frame) has been introduced to apply the metered key. The sample code snippet demonstrating how to set metered public and private keys is provided below.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-ApplyMeteredKey-ApplyMeteredKey.java" >}}
 
