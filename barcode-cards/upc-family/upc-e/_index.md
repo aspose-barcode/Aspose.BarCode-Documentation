@@ -1,17 +1,17 @@
 ---
-title: Code 39
-description: "Overview on main parameters of Code 39 Barcode Type"
+title: UPC-E
+description: "Overview on main parameters of UPC-E Barcode Type"
 keywords: "Code 39, code39, Code 39 barcode type, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D barcode, linear barcode type, code39 extended, code 39 specification"
 type: docs
 weight: 110
-url: /info-cards/code-39/
+url: /info-cards/upc-e/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code39) and [Generate](https://products.aspose.app/barcode/generate/code39) Code 39 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Code 39 is a variable-length barcode type introduced in 1974 by Intermec Corporation. It was the first specification that allowed storing not only numerical digits but also alphabetic symbols. Its encoding set includes 43 symbols, i.e. uppercase English letters (A-Z), numerical digits, and several special characters. Each symbol gets encoded in a set of five bars and four spaces. It enables self-checking and thus it does not require obligatory checksum controls. Code 39 has been widely employed in various industries, including the LOGMARS system developed by the US military.
+The UPC-E barcode is a Universal Product Code, the most widely used barcode in the United States. 
 
-<p align="center"><img alt="Code 39 Barcode" src="code39.png"></p>
+<p align="center"><img alt="UPC-E Barcode" src=".png"></p>
 
 {{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode*** for linear barcode generation and recognition:
 - [**Specific Parameters for 1D barcodes**](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)
@@ -19,62 +19,58 @@ Code 39 is a variable-length barcode type introduced in 1974 by Intermec Corpora
 {{% /alert %}} 
 
 ## **Usage Scenarios**
-Despite being introduced in the mid-'70s, Code 39 remains one of the frequently widely used barcode types even nowadays. It was widely implemented in various applications, such as inventory management, digitalization of name badges, automotive and medical equipment production, airplane construction, defense projects (i.e. LOGMARS), healthcare sector, transportation, and assembly tracking.
+UPC-E is the condensed version of the standard sized UPC-A numeric barcode, used in grocery stores and other retail establishments across the country. The condensed version is used on smaller products whose packages don't have room to place the full sized UPC-A code.
   
 ## **Characteristics**
 ### **Encoding Character Set**
-Code 39 enables encoding characters from the 43-character and 128-character ASCII sets, including uppercase English letters, numerical digits, and special symbols (space, '.', '-', '/', '%', '+', ' * ', and '$'). Symbol ' * ' serves to denote start and stop symbols.
+encodes numerical digits from 0 to 9 only.
 
 ### **Barcode Structure**
-Each Code 39 data symbol is encoded using five bars and four spaces so that three of them are wide and six are narrow.  
-The following structure is supported:
-- Starting quiet zone
-- Start symbol
-- One or more pairs of characters (an optional check digit may be added)
-- Stop symbol
-- Ending quiet zone
-- One-module wide spaces separating symbols within a barcode
+The symbol comprises the following elements:
+
+Leading quiet zone
+
+Guard pattern (start character)
+
+Six symbol characters
+
+Guard pattern (stop character)
+
+Trailing quiet zone
+
+UPC-E encodes six digits of numeric message data together with a number system digit and a check digit, for a total of eight digits.
 
 ### **Size Dimensions**
-To scan Code 38 barcodes manually, it is recommended to set the minimum height to 5.0 mm or 15% of the width. The size of quiet zones should be 10 times wider than the current [X-dimension](/barcode/info-cards/x-dimension/). This standard allows generating labels of different proportions, i.e. 2:1,0 or 3:1,0. The larger is the selected proportion, the larger gets the printed label; however, this also improves readability.
 
 ### **Encoding Capacity and Data Density**
-Code 39 allows generating barcodes of variable length; its average data capacity varies from 20 to 23 alphanumerical characters. Even though it enables encoding the entire ASCII set including 128 symbols, this leads to limitations in terms of density. This happens because symbols from the full ASCII set need to be encoded in two digits and thus occupy a larger space. 
+A UPC-E barcode is half the size of UPC-A, with 6 digits instead of 12. Other than that, the two codes are set up the same way, with a digit at the beginning to designate the type of product being scanned (regular product, coupon, weighted item, etc.) followed by a manufacturer's code, a product code, and, finally, a check digit to ensure accuracy.  
+  
+With four available printing widths for the bars and spaces instead of just two, UPC-E takes about half the number of bars and spaces relative to Interleaved 2 of 5 to represent each character. However, the use of the wider bars and spaces nullifies this space savings. Interleaved 2 of 5 codes pack data more densely than UPC-E does.
 
 ### **Checksum Controls**
-Code 39 does not require setting obligatory checksum controls and thus does not provide high recognition precision. It allows adding an optional check digit computed using the modulo 43 algorithm.
+UPC-A contains a check digit that is based on the modulo 10 (mod 10) algorithm.
 
 ## **Advantages and Limitations**
-Code 39 can be applied to the majority of industrial needs. Such barcodes can be scanned and decoded by most scanners existing in the market.
-Main limitations of this type are quite low data density and inability to verify the correctness of recognition as it does not include default checksum controls. Low data density means that the greater is the amount of information to be encoded, the larger is the size of a barcode label. Code 39 is not applicable in situations when space limitations are critical. Like other 1D barcodes, Code 39 labels can be easily corrupted and become unreadable as a result of ink spread while printing.
+Its condensed size allows it to fit on smaller packages. It also has a check digit, to ensure accuracy when typing a code in by hand.
+It's only a numeric code and cannot encode letters. Additionally, the fixed length limits the amount of information that can be encoded, making it fine for supermarkets, but inadequate for communicating more detailed information.
 
-## **How to Generate and Read Code 39 Barcodes**
+## **How to Generate and Read UPC-E Barcodes**
 ### **Generation Code Samples**
 
 {{< tabs tabTotal="3" tabID="1" tabName1="C#" tabName2="Java" tabName3="C++" >}}
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
-//generate Code39 Barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "Aspose"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
@@ -86,27 +82,16 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
-//recognize Code39 Barcode
-using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 

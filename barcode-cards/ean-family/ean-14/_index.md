@@ -18,11 +18,18 @@ url: /info-cards/ean-14/
 {{% /alert %}} 
 
 ## **Usage Scenarios**
-  
+The EAN barcode is primarily used in supermarkets to identify product at the point of sales.
+
 ## **Characteristics**
 ### **Encoding Character Set**
+encodes numerical digits from 0 to 9 only.
  
 ### **Barcode Structure**
+The code is always 14 numeric digits long:
+- The first two numbers are the Application Identifier of the EAN-128: (01). You cannot change them. They are part of the code.
+- The first digit is the "Logistic Variant", also named as "Packaging indicator".
+- The next 12 digits are representing the product number. General this the EAN-13 number without the check digit.
+- The last digit is the check digit. ActiveBarcode calculates this digit automatically.
 
 ### **Size Dimensions**
 
@@ -39,19 +46,19 @@ url: /info-cards/ean-14/
 
 {{< tab tabNum="1" >}}
 
-Code
+
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
+
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
+
 
 {{< /tab >}}
 
@@ -63,27 +70,16 @@ Code
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
-//recognize Code39 Barcode
-using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 

@@ -1,7 +1,7 @@
 ---
 title: EAN-8
 description: " "
-keywords: "EAN, EAN8, EAN barcodes, ean-8, ean 8 barcode type, Create ean 8 barcode, Read ean 8, what is ean-8, ean 8 barcodes, generate ean-8, linear barcodes, 1D barcode, linear barcode type, ean88 specification"
+keywords: "EAN, EAN8, EAN barcodes, ean-8, ean 8 barcode type, Create ean 8 barcode, Read ean 8, what is ean-8, ean 8 barcodes, generate ean-8, linear barcodes, 1D barcode, linear barcode type, ean8 specification"
 type: docs
 weight: 30
 url: /info-cards/ean-8/
@@ -9,7 +9,8 @@ url: /info-cards/ean-8/
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code39) and [Generate](https://products.aspose.app/barcode/generate/code39) EAN barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-An EAN-8 is a barcode derived from the longer European Article Number (EAN-13) code. EAN-8 barcodes may be used to encode GTIN-8s which are another set of product identifiers from the GS1 System. It begins with a 2- or 3-digit GS1 prefix (which is assigned to each national GS1 authority) 5- or 4-digit item reference element depending on the length of the GS1 prefix, and a checksum digit.
+The EAN-8 barcode is a omnidirectional, numeric 1D barcode with 8 digits, and is the condensed version of the EAN (European Article Number) barcode. EAN / UPC barcodes employ a 1-digit checksum as an error detection mechanism.  
+The EAN-8 standard is described in "ISO/IEC 15420 Information technology - Automatic identification and data capture techniques - EAN/UPC barcode symbology" specification.
 
 <p align="center"><img alt="EAN-8 Barcode" src=" .png"></p>
 
@@ -19,20 +20,49 @@ An EAN-8 is a barcode derived from the longer European Article Number (EAN-13) c
 {{% /alert %}} 
 
 ## **Usage Scenarios**
-It was introduced for use on small packages where an EAN-13 barcode would be too large; for example on cigarettes, pencils, and chewing gum packets.
+The EAN barcode is primarily used in supermarkets to identify product at the point of sales. The EAN-8 barcode is used to label small consumer products, that have reduced physical space for barcode placement, such as a lipstick. This type was developed to be used on small packages or items, such as cigarettes, pencils, or chewing gum packets. It was intended to substitute EAN-13 barcodes that would be not fit on such items due to large size.
+Today, they are almost exclusively used as in-store barcodes, also known as Restricted Circulation Numbers. Those barcodes always start with a "0" or a "2" and are frequently found on chain store products which are not sold elsewhere under the same brand or name.
   
 ## **Characteristics**
 ### **Encoding Character Set**
- 
+EAN-8 encodes numerical digits from 0 to 9 only. 
+
 ### **Barcode Structure**
+EAN-8 barcode's 8 digits are split into two sets of four each.  
+
+The value to encode by EAN-8 has the following structure (a.k.a. GTIN-8):
+- 2 or 3 digits for Number System or Country Code
+- 5 or 4 digits for Product Code
+- 1 digit for checksum
+
+The symbol comprises the following elements:
+
+- Leading quiet zone
+- Guard bar pattern (start character)
+- Four symbol characters
+- Center guard bar pattern (center character)
+- Four symbol characters, including check digit
+- Guard bar pattern (stop character)
+- Trailing quiet zone
 
 ### **Size Dimensions**
+Most barcode symbologies print bars and spaces in only two widths, but with EAN, four different widths are used. This enables each numeric character to be represented by using just two bars and two spaces, which is the fewest number of modules required per character of any type.
+Like with EAN 13, EAN 8 sizes are standardized, with a default module width of 0.33mm and a module height of 22.85mm, for more see the respective section for EAN 13. It has a symbol length of 81 modules
+
+With in-store EAN 8 barcodes it is not uncommon to see codes that are stretched along the full length of a product package. This is to facilitate and speed up scanning the code at checkout.
 
 ### **Encoding Capacity and Data Density**
+Such barcodes contain 8 digits in total, including seven numerical digits and a check symbol. Interleaved 2 of 5 codes pack data more densely than EAN does. The data digits in an EAN-8 symbol identify a particular product and manufacturer. Since a limited number of EAN-8 codes are available in each country, they are issued only for products with insufficient space for a normal EAN-13 symbol. For example, a 2-digit country code permits a total of only 100,000 item numbers.
 
 ### **Checksum Controls**
+Checksum control is based on the modulo 10 method.  
+Starting from the right the numbers are multiplied alternating with "3" and "1" and added up. The sum is integer divided by ten, the reminder is subtracted from ten which yields the check digit.
 
 ## **Advantages and Limitations**
+With four available printing widths for the bars and spaces instead of just two, EAN takes about half the number of bars and spaces relative to Interleaved 2 of 5 to represent each character. However, the use of the wider bars and spaces nullifies this space savings.
+The EAN-8 barcode saves space, providing an accurate identifying code for products such as candy, cigarettes, or other small or individually wrapped items. In addition, the check number helps ensure accuracy when entering in the code by hand. And the flag digits make the code ideal for international use, as opposed to UPC codes, which are limited to the United States.
+
+Limiting the product identification to five data digits means that the product cannot be identified as specifically as the EAN-13, which has one set of digits to identify the manufacturer, and another set to identify the product. Also, while the flag digits can identify the country where the barcode was issued, that may not be the same as where the product itself was manufactured.
 
 ## **How to Generate and Read EAN-8 Barcodes**
 ### **Generation Code Samples**
@@ -41,19 +71,16 @@ It was introduced for use on small packages where an EAN-13 barcode would be too
 
 {{< tab tabNum="1" >}}
 
-Code
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
@@ -65,27 +92,16 @@ Code
 
 {{< tab tabNum="1" >}}
 
-{{< highlight csharp>}}
-//recognize Code39 Barcode
-using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-{{< /highlight >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-->Insert Code<-->
 
 {{< /tab >}}
 
