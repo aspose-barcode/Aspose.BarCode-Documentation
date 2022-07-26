@@ -12,7 +12,7 @@ url: /info-cards/ean-8/
 The EAN-8 barcode is a omnidirectional, numeric 1D barcode with 8 digits, and is the condensed version of the EAN (European Article Number) barcode. EAN / UPC barcodes employ a 1-digit checksum as an error detection mechanism.  
 The EAN-8 standard is described in "ISO/IEC 15420 Information technology - Automatic identification and data capture techniques - EAN/UPC barcode symbology" specification.
 
-<p align="center"><img alt="EAN-8 Barcode" src=" .png"></p>
+<!--<p align="center"><img alt="EAN-8 Barcode" src=" .png"></p>-->
 
 {{% alert color="primary" %}}You can find additional information of classes and properties that are used in ***Aspose.BarCode*** for linear barcode generation and recognition:
 - [**Specific Parameters for 1D barcodes**](https://docs.aspose.com/barcode/net/managing-different-barcode-settings/)

@@ -16,7 +16,7 @@ GTIN (Global Trade Item Number) is a system developed by the GS1 and is an inter
 The EAN barcode group includes the following subtypes: 
 - [EAN 8](/barcode/info-cards/ean-8/)
 - [EAN 13](/barcode/info-cards/ean-13/)
-- [EAN 14](/barcode/info-cards/ean-14/)
-- [EAN 2](/barcode/info-cards/ean-2/)
-- [EAN 5](/barcode/info-cards/ean-5/)
+<!-- - [EAN 14](/barcode/info-cards/ean-14/)
+ [EAN 2](/barcode/info-cards/ean-2/)
+- [EAN 5](/barcode/info-cards/ean-5/)-->
   
