@@ -1,7 +1,7 @@
 ---
 title: Programming Styles of .NET and Java Platforms
 type: docs
-weight: 10
+weight: 140
 url: /java/programming-styles-of-net-and-java-platforms/
 ---
 

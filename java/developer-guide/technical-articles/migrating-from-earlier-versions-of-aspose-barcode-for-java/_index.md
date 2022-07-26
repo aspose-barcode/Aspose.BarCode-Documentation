@@ -1,7 +1,7 @@
 ---
 title: Migrating from Earlier Versions of Aspose.BarCode for Java
 type: docs
-weight: 70
+weight: 180
 url: /java/migrating-from-earlier-versions-of-aspose-barcode-for-java/
 ---
 

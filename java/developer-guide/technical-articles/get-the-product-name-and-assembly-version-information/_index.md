@@ -1,7 +1,7 @@
 ---
 title: Get the Product Name and Assembly Version Information
 type: docs
-weight: 20
+weight: 150
 url: /java/get-the-product-name-and-assembly-version-information/
 ---
 

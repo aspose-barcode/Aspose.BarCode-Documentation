@@ -1,7 +1,7 @@
 ---
 title: Using with Java Mobile Edition (J2ME)
 type: docs
-weight: 60
+weight: 170
 url: /java/using-with-java-mobile-edition-j2me/
 ---
 
