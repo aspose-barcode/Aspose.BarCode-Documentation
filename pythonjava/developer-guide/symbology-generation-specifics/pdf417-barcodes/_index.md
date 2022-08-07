@@ -58,7 +58,7 @@ gen.Save($"{path}MicroPdf417Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Compact PDF417 Symbology**
-*Compact PDF417* has a specification like *Basic PDF417* and *Marco PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.pdf417_parameters/).
+*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.pdf417_parameters/).
   
 <p align="center"><img src="compactpdf417basic.png"></p>
   
@@ -363,7 +363,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 ### **Unicode Metadata**
 In ***Aspose.BarCode for Python via Java***, developers can re-encode optional metadata using the Unicode encoding through the *setPdf417MacroECIEncoding* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.pdf417_parameters/). This method is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
-<!--The following code snippet shows how to encode metadata using the UTF8 encoding in *Marco PDF417* barcodes.
+<!--The following code snippet shows how to encode metadata using the UTF8 encoding in *Macro PDF417* barcodes.
   
 {{< highlight csharp>}}
 Console.OutputEncoding = Encoding.Unicode;

@@ -1,5 +1,5 @@
 ---
-title: Barcode Text Settings
+title: Setting Barcode Text Parameters via Java
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Java"
@@ -38,13 +38,13 @@ gen.Save($"{path}CodetextHide.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
   
 ### **Text Positioning**
-The position of a barcode text label can be modified by customizing two parameters: alignment and location. These parameters can be adjusted through *setLocation* and *setAlignment* methods of class [CodetextParameters](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters).
+The position of a barcode text label can be modified by customizing two parameters: alignment and location. These parameters can be adjusted through *setLocation* and *setAlignment* methods of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters).
   
 #### **Location**
   
-The *setLocation* method allows setting the vertical position of a text label, namely, placing it above or below bars, as shown in figures below. The default setting is *Below*. 
+The *setLocation* method allows setting the vertical position of a text label, namely, placing it above or below bars, as shown in the figures below. The default setting is *Below*. 
   
-|<p align="center">**Text Location**</p>|<p align="center">**Above Barcode**</p>|<p align="center">**Below Barcode**</p>|
+|Text Location|Above Barcode|Below Barcode|
 | :-: | :-: | :-: |
 | |<img src="codetextlocationabove.png">|<img src="codetextlocationbelow.png">|
   
@@ -64,9 +64,9 @@ gen.Save($"{path}CodetextLocationBelow.png", BarCodeImageFormat.Png);
     
 #### **Alignment**
   
-The *setAlignment* method is used to set the horizontal position of a text label in a barcode image: right-side, left-side, or center, as illustrated in figures below. The default setting of barcode text alignment is *Center*. 
+The *setAlignment* method is used to set the horizontal position of a text label in a barcode image: right-side, left-side, or center, as illustrated in the figures below. The default setting of barcode text alignment is *Center*. 
   
-|<p align="center">**Text Alignment**</p>|<p align="center">**Left**</p>|<p align="center">**Center**</p>|<p align="center">**Right**</p>|
+|Text Alignment|Left|Center|Right|
 | :-: | :-: | :-: | :-: |
 | |<img src="codetextaligmentleft.png">|<img src="codetextaligmentcenter.png">|<img src="codetextaligmentright.png">|
   
@@ -154,7 +154,7 @@ gen.Save($"{path}CodetextFontModeManual.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
 
 ### **NoWrap Mode for Text**
-It is possible to avoid line breaks in text that is too long for a single row using the *setNoWrap* method of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters). Whe the *True* setting is enabled, the text label is displayed in a single row reagrdless of the text length. The default setting is *False*. Barcode images shown below have been created with different *NoWrap* settings.
+It is possible to avoid line breaks in a text that is too long for a single row using the *setNoWrap* method of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters). When the *True* setting is enabled, the text label is displayed in a single row regardless of the text length. The default setting is *False*. Barcode images shown below have been created with different *NoWrap* settings.
 
 |<p align="center">**Text Wrapping Mode**</p>|<p align="center">**Wrap**</p>|<p align="center">**No Wrap**</p>|
 | :-: | :-: | :-: |
@@ -177,7 +177,7 @@ gen.Save($"{path}CodetextLongTextNoWrap.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
   
 ## **Replacing Barcode Text in 2D Barcodes**
-To replace barcode text in 2D barcodes with some other text label with improved readability without modifications of the barcode image itself, it is possible to call the *setTwoDDisplayText* method of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters) and pass new text to be placed. This is applicable to selected 2D symbologies, including QR Code, Aztec, DataMatrix, MaxiCode, PDF417, and DotCode.  
+To replace barcode text in 2D barcodes with some other text label with improved readability without modifications to the barcode image itself, it is possible to call the *setTwoDDisplayText* method of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters) and pass new text to be placed. This is applicable to selected 2D symbologies, including QR Code, Aztec Code, Data Matrix, MaxiCode, PDF417, and DotCode.  
   
 The sample barcode image shown below has been created using the *TwoDDisplayText* setting.
   
@@ -195,15 +195,15 @@ gen.Save($"{path}CodetextTwoDDisplayText.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   
 ## **Caption**  
-***Aspose.BarCode for Java*** allows dedvelopers to place additional text labels in a barcode image in form of captions above and below barcodes. As demonstrated in the figure below, such text captions have a parameter called *Padding* that allows modifying spacing size between captions and the nearest element (barcodes, main text label, or borders). Both text captions are disabled by default. If required, they can be shown by one or both simulteneously.
+***Aspose.BarCode for Java*** allows developers to place additional text labels in a barcode image in form of captions above and below barcodes. As demonstrated in the figure below, such text captions have a parameter called *Padding* that allows modifying spacing size between captions and the nearest element (barcodes, main text label, or borders). Both text captions are disabled by default. If required, they can be shown by one or both simultaneously.
      
 <p align="center"><img src="caption_scheme.png"></p>
   
 ### **Caption Visibility**
 
-As stated above, additional text captions *CaptionAbove* and *CaptionBelow* are disabled by default. When required, top and bottom caption labels can be shown independently from each other or enabled simulteneously. The *setVisible* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) can be used to display one or two captions. Then, caption text can be inserted through the *setText* method. If required, caption labels can replace main text in 1D barcodes by enabling the former and disabling the latter. Figures given below demonstrate how caption positioning options.
+As stated above, additional text captions *CaptionAbove* and *CaptionBelow* are disabled by default. When required, top and bottom caption labels can be shown independently from each other or enabled simultaneously. The *setVisible* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) can be used to display one or two captions. Then, caption text can be inserted through the *setText* method. If required, caption labels can replace main text in 1D barcodes by enabling the former and disabling the latter. The figures given below demonstrate how to caption positioning options.
   
-|<p align="center">**Caption Visibility**</p>|<p align="center">**Above**</p>|<p align="center">**Below**</p>|
+|Caption Visibility|Above|Below|
 | :-: | :-: | :-: |
 | |<img src="captionvisibleabove.png">|<img src="captionvisiblebelow.png">|
   
@@ -227,7 +227,7 @@ gen.Save($"{path}CaptionVisibleBelow.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
     
 ### **Text Positioning**
-The *setAlignment* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) allows modifying horizontal positions of caption labels in three directions: right, left, and center. The default position of captions is center. Figures shown below demonstrate barcode images with the top caption label with different alignment positions.
+The *setAlignment* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) allows modifying horizontal positions of caption labels in three directions: right, left, and center. The default position of captions is center. The figures shown below demonstrate barcode images with the top caption label with different alignment positions.
   
 |<p align="center">**Caption Alignment**</p>|<p align="center">**Left**</p>|<p align="center">**Center**</p>|<p align="center">**Right**</p>|
 | :-: | :-: | :-: | :-: |
@@ -254,7 +254,7 @@ gen.Save($"{path}CaptionAlignmentRight.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
    
 ### **Caption Padding**
-The *setPadding* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) can be used to manage spacings for text captions. By default, the spacinng value is set to {5pt; 5pt; 0; 5pt} for the top caption and {0; 5pt; 5pt; 5pt} for the bottom one according to the standard Rectangle setting {Top, Left, Bottom, Right}. This method is inapplicable when captions are disabled. Barcode images shown below have been generated with different padding settings.
+The *setPadding* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) can be used to manage spacings for text captions. By default, the spacing value is set to {5pt; 5pt; 0; 5pt} for the top caption and {0; 5pt; 5pt; 5pt} for the bottom one according to the standard Rectangle setting {Top, Left, Bottom, Right}. This method is inapplicable when captions are disabled. Barcode images shown below have been generated with different padding settings.
   
 |<p align="center">**Caption Padding**</p>|<p align="center">**Is Set to 5 Pixels**</p>|<p align="center">**Is Set to 40 Pixels**</p>|
 | :-: | :-: | :-: |
@@ -284,7 +284,7 @@ gen.Save($"{path}CaptionPadding40Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
 
 ### **Caption Font**
-***Aspose.BarCode for Java*** does not enable automatic font size setting based on barcode size. Accordingly, caption font size requires manual setting. For top and bottom captions, various parameters, including font style and size can be set independently. Caption font can be customized through special methods of class [*FontUnit*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/FontUnit). The default setting for caption font is Arial 8pt regular. 
+***Aspose.BarCode for Java*** does not enable automatic font size settings based on barcode size. Accordingly, caption font size requires manual setting. For top and bottom captions, various parameters, including font style and size can be set independently. Caption font can be customized through special methods of class [*FontUnit*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/FontUnit). The default setting for caption font is Arial 8pt regular. 
 The barcode image shown below explains different caption font settings.
    
 <p align="center"><img src="captionfont.png"></p>
@@ -306,7 +306,7 @@ gen.Save($"{path}CaptionFont.png", BarCodeImageFormat.Png);
 
 ### **NoWrap Mode for Caption**
 
-The *setNoWrap* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) allows disabling text line breaks when a text string is too large to fit in one line. When this method is called passing the *True* value, caption text is always displayed as a single line. Barcode images below show the difference between *setNoWrao.TRUE* and *setNoWrao.FALSE* settings.
+The *setNoWrap* method of class [*CaptionParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CaptionParameters) allows disabling text line breaks when a text string is too large to fit in one line. When this method is called passing the *True* value, caption text is always displayed as a single line. Barcode images below show the difference between *setNoWrap.TRUE* and *setNoWrap.FALSE* settings.
   
 |<p align="center">**Caption Wrapping**</p>|<p align="center">**Is Set to *Wrap***</p>|<p align="center">**Is Set to *No Wrap***</p>|
 | :-: | :-: | :-: |

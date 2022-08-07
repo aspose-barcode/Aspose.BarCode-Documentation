@@ -1,5 +1,5 @@
 ---
-title: Patch Code
+title: Patch Code Generation in Java
 type: docs
 description: "Aspose.BarCode for Java enables Patch Code barcode generation"
 keywords: "Generate Patch Code Barcodes, Create Patch Code, How to Generate Patch Code Barcodes, Aspose.BarCode for Java"
@@ -11,7 +11,7 @@ aliases:
 {{% alert color="primary" %}}[Generate Patch Code Barcodes Online](https://products.aspose.app/barcode/generate/patchcode): You can check the quality of ***Aspose.BarCode*** generation for Patch Code barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-Kodak introduced the *Patch Code* barcode standard to improve the efficiency of automated multi-page document scanning. *Patch Code* barcodes are not intended to encode information. Here, barcode patterns denote various tasks to be executed. ***Aspose.BarCode for Java*** allows generating six *Patch Code* patterns and provide two generation modes: creating barcode images for manual placement on a page or generating entire A4 or US Letter pages. *Patch Code* barcodes are printed out on four sides of a document page. By design, scanning only one of the sides is sufficient to perform barcode reading. This enables barcode recognition for rotated pages.
+Kodak introduced the *Patch Code* barcode standard to improve the efficiency of automated multi-page document scanning. *Patch Code* barcodes are not intended to encode information. Here, barcode patterns denote various tasks to be executed. ***Aspose.BarCode for Java*** allows generating six *Patch Code* patterns and provides two generation modes: creating barcode images for manual placement on a page or generating entire A4 or US Letter pages. *Patch Code* barcodes are printed out on four sides of a document page. By design, scanning only one of the sides is sufficient to perform barcode reading. This enables barcode recognition for rotated pages.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -20,7 +20,7 @@ Kodak introduced the *Patch Code* barcode standard to improve the efficiency of 
   
 Following *Patch Code* barcodes correspond to six basic *Patch Code* patterns.
   
-|<p align="center">**Patch Code Patterns**</p>|<p align="center">**Patch I**</p>|<p align="center">**Patch II**</p>|<p align="center">**Patch III**</p>|<p align="center">**Patch IV**</p>|<p align="center">**Patch T**</p>|<p align="center">**Patch VI**</p>|  
+|Patch Code Patterns|Patch I|Patch II|Patch III|Patch IV|Patch T|Patch VI|  
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="patchcodei.png">|<img src="patchcodeii.png">|<img src="patchcodeiii.png">|<img src="patchcodeiv.png">|<img src="patchcodet.png">|<img src="patchcodevi.png">|
   
@@ -68,9 +68,9 @@ As mentioned above, it is possible to place a complementary *QR Code* add-on ins
   
 Following *Patch Code* barcodes have been created with and without complementary *QR Code* add-ons.
   
-|<p align="center">**Complementary QR Code Add-On**</p>|<p align="center">**Is Disabled**</p>|<p align="center">**Is Enabled**</p>|
+|Complementary QR Code Add-On|Is Disabled|Is Enabled|
 | :-: | :-: | :-: |
-| |<a href="patchcodea4withoutqr.png"> <p align="center"><img src="patchcodea4withoutqr.png" width="40%" height="40%" alttext="Patch Code Barcode Without QR"></p></a>|<a href="patchcodea4withqr.png"> <p align="center"><img src="patchcodea4withqr.png" width="40%" height="40%" alttext="Patch Code Barcode With QR"></p></a>|
+| |<img src="patchcodea4withoutqr.png" width="40%" height="40%" alttext="Patch Code Barcode Without QR">|<img src="patchcodea4withqr.png" width="40%" height="40%" alttext="Patch Code Barcode With QR">|
   
 <!--The following code sample shows how to manage *Patch Code* generation and how to enable displaying a complementary *QR Code* add-on.
   

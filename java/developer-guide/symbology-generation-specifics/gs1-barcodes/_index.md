@@ -1,5 +1,5 @@
 ---
-title: GS1 Barcode Types
+title: Working with GS1 Barcode Types in Java
 type: docs
 weight: 90
 url: /java/gs1-types/
@@ -10,7 +10,7 @@ aliases:
 {{% alert color="primary" %}}[Generate GS1 Code 128 and](https://products.aspose.app/barcode/generate/code128?type=gs1code128) [GS1 DataMatrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix?type=gs1datamatrix): You can test the quality of ***Aspose.BarCode*** generation for GS1 barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-GS1 is one of the main developers of data processing and encoding standards for barcodes. It is an international non-profit organization that introduces standardizied machine data reading methods for item tracking based on the mechanism of automatic identification and data capture (AIDC). GS1 has proposed using application identifiers (AIs) that are defined as identification codes to encode information about items or goods. Such codes serve as prefixes that may be added to barcodes or RFID tags to store some extra information. Moreover, GS1 has introduced special encoding standards for various types.  
+GS1 is one of the main developers of data processing and encoding standards for barcodes. It is an international non-profit organization that introduces standardized machine data reading methods for item tracking based on the mechanism of automatic identification and data capture (AIDC). GS1 has proposed using application identifiers (AIs) that are defined as identification codes to encode information about items or goods. Such codes serve as prefixes that may be added to barcodes or RFID tags to store some extra information. Moreover, GS1 has introduced special encoding standards for various types.  
   
 The barcode types compatible with all GS1 Application Identifiers or the GS1AI_01 type only are listed in the table below.  
   
@@ -25,7 +25,7 @@ The barcode types compatible with all GS1 Application Identifiers or the GS1AI_0
 ***Aspose.BarCode for Java*** supports creating barcodes of various symbologies using formats based on GS1 standards. To generate barcodes in this way, developers first need to pass barcode text through the *setCodeText* method of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) using the following format:  
 <p align="center"><mark>"(Application_Identifier_1)Application_Data(Application_Identifier_2)Application_Data"</mark></p> 
 
-As an example, it is possibe to set the string "(01)12345678901231(21)ASPOSE(30)9876" as barcode text using the *setCodeText* method.  
+As an example, it is possible to set the string "(01)12345678901231(21)ASPOSE(30)9876" as barcode text using the *setCodeText* method.  
       
 **GS1 Code 128**  
   
@@ -50,9 +50,9 @@ gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
 <p align="center"><img src="gs1datamatrixexample.png"></p>
   
 ## **GS1 UPC-A Coupon Barcodes**
-In ***Aspose.BarCode for Java***, it is possible to generate *UPC-A* barcodes with coupon add-ons in the form of *DataBar Expanded* or *GS1 Code128* barcodes displayed nearby the primary barcode label. This can be done also through creating two barcode images separately and then merging them in the same image using special graphic libraries. ***Aspose.BarCode for Java*** allows generating barcodes with coupons in a faster and easier manner.  
+In ***Aspose.BarCode for Java***, it is possible to generate *UPC-A* barcodes with coupon add-ons in the form of *DataBar Expanded* or *GS1 Code128* barcodes displayed nearby the primary barcode label. This can be done also by creating two barcode images separately and then merging them into the same image using special graphic libraries. ***Aspose.BarCode for Java*** allows generating barcodes with coupons in a faster and easier manner.  
   
-Specifically, ***Aspose.BarCode for Java*** enables creating barcodes with coupon using two formats:
+Specifically, ***Aspose.BarCode for Java*** enables creating barcodes with coupons using two formats:
 - *UPC-A GS1 DataBar Coupon*: *UPC-A* + *DataBar Expanded* coupon
 - *UPC-A GS1 Code 128 Coupon*: *UPC-A* + *GS1 Code128* coupon
   
@@ -92,11 +92,11 @@ gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
 <p align="center"><img src="gs1couponupcacode128.png"></p>
 
 ## **Spacing Settings for Barcodes with Coupons**
-***Aspose.BarCode for Java*** provides a possibility to modify spacing between primary barcodes and their coupons using the *setSupplementSpace* method of class [*CouponParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CouponParameters).  
+***Aspose.BarCode for Java*** provides a possibility to modify the size of spacings between primary barcodes and their coupons using the *setSupplementSpace* method of class [*CouponParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CouponParameters).  
   
 Following *UPC-A GS1 DataBar Coupon* barcodes have been created with different spacing settings.
      
-|<p align="center">**Spacing Size**</p>|<p align="center">**Is Set to 30 Pixels**</p>|<p align="center">**Is Set to 50 Pixels**</p>|
+|Spacing Size|Is Set to 30 Pixels|Is Set to 50 Pixels|
 | :-: | :-: | :-: |
 | |<img src="gs1couponspace30pixels.png">|<img src="gs1couponspace50pixels.png">|
   

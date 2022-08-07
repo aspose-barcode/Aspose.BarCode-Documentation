@@ -1,8 +1,9 @@
 ---
-title: Swiss Post Parcel Barcodes
+title: Generating Swiss Post Parcel Barcodes in C#
+linktitle: Swiss Post Parcel Barcodes
 type: docs
 description: "Description of Swiss Post Parcel Barcode Type"
-keywords: "swisspost parcel barcode, create swiss post barcode, generate swiss post barcode, read swiss post barcode, recognize swiss post codes, swiss post parcel codes"
+keywords: swisspost parcel barcode, create swiss post barcode, generate swiss post barcode, read swiss post barcode, recognize swiss post codes, swiss post parcel codes
 weight: 100
 url: /net/barcodes-using-swisspost-parcel-symbology/
 ---
@@ -43,7 +44,8 @@ This example demonstrates how to generate *Swiss Post Parcel* barcodes for *Dome
 |:--:|:--:|:--:|
 | |![Swiss Post Parcel Original](swisspostdomesticmailasis.png)|![Swiss Post Parcel Code](swisspostdomesticmailasdigits.png)|
   
-{{< highlight csharp>}}
+``` csharp
+
 //generate a Swiss Post Domestic Mail barcode with the original identifier
 gen = new BarcodeGenerator(EncodeTypes.SwissPostParcel, "98.34.123456.12345678");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -63,7 +65,8 @@ gen.Save($"{path}SwissPostDomesticMailAsDigits.png", BarCodeImageFormat.Png);
 //read the current barcode value
 foreach (BarCodeResult result in new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.SwissPostParcel).ReadBarCodes())
     Console.WriteLine($"Barcode type:{result.CodeTypeName}, Barcode Data:{result.CodeText}");
-{{< /highlight >}}
+
+```
 
 
 ### **International Mail**
@@ -74,7 +77,8 @@ The code example provided below explains how to generate *Swiss Post Parcel* bar
 |:--:|:--:|:--:|:--:|
 | |![Swiss Post Parcel With Correct Checksum](swisspostinternationalmailasis.png)|![Swiss Post Parcel With Correct Checksum](swisspostinternationalmailwithoutchecksum.png)|![Swiss Post Parcel witth Erroneous Checksum](swisspostinternationalmailwithwrongchecksum.png)|
   
-{{< highlight csharp>}}
+``` csharp
+
 //generate a Swiss Post International Mail barcode
 gen = new BarcodeGenerator(EncodeTypes.SwissPostParcel, "RM999605013CH");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -104,7 +108,8 @@ gen.Save($"{path}SwissPostInternationalMailWithoutChecksum.png", BarCodeImageFor
 //read the current barcode value
 foreach (BarCodeResult result in new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.SwissPostParcel).ReadBarCodes())
     Console.WriteLine($"Barcode type:{result.CodeTypeName}, Barcode Data:{result.CodeText}");
-{{< /highlight >}}
+
+```
 
 
 ### **Additional Service Codes**
@@ -115,7 +120,8 @@ This example shows how to generate *Swiss Post Parcel* barcodes to indicate *Add
 |:--:|:--:|:--:|
 | |![Swiss Post Parcel Additional Service With Original Identifier](swisspostadditionalserviceasis.png)|![Swiss Post Parcel Additional Service As Code 128](swisspostadditionalserviceascode128.png)|
   
-{{< highlight csharp>}}
+``` csharp
+
 //Additional Service codes are:
 //Personal delivery (RMP) 0322
 //Return receipt (AR) 0327
@@ -159,4 +165,5 @@ gen.Save($"{path}SwissPostAdditionalServiceAsCode128.png", BarCodeImageFormat.Pn
 //read the current barcode value
 foreach (BarCodeResult result in new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.SwissPostParcel).ReadBarCodes())
     Console.WriteLine($"Barcode type:{result.CodeTypeName}, Barcode Data:{result.CodeText}");
-{{< /highlight >}}
+
+```

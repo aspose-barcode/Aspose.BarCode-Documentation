@@ -1,5 +1,5 @@
 ---
-title: Codabar Barcodes
+title: Codabar Generation in Java
 type: docs
 weight: 110
 url: /java/codabar-barcodes/

@@ -1,5 +1,5 @@
 ---
-title: Codabar Barcodes
+title: Codabar Barcode Generation in C#
 type: docs
 weight: 110
 url: /net/codabar-barcodes/
@@ -20,13 +20,14 @@ By default, start and stop characters are set to "A".
   
 Sample barcode labels demonstrated below have been generated with different settings for start and stop characters.
   
-|<p align="center">**Start and Stop Characters</p>|<p align="center">**A+A**</p>|<p align="center">**B+B**</p>|<p align="center">**C+C**</p>|<p align="center">**D+D**</p>|
+|Start and Stop Characters|A+A|B+B|C+C|D+D|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="codabarstartastopa.png">|<img src="codabarstartbstopb.png">|<img src="codabarstartcstopc.png">|<img src="codabarstartdstopd.png">|
   
 The following code snippet illustrates how to set different combinations of start and stop characters in *Codabar* barcodes. 
     
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set start A and stop A
@@ -45,31 +46,35 @@ gen.Save($"{path}CodabarStartCStopC.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.Codabar.CodabarStartSymbol = CodabarSymbol.D;
 gen.Parameters.Barcode.Codabar.CodabarStopSymbol = CodabarSymbol.D;
 gen.Save($"{path}CodabarStartDStopD.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
   
 ## **Checksum Settings**
 By default, the *Codabar* symbology does not require using an obligatory checksum; however, it supports two checksum calculation algorithms: Mod10 and Mod16 (the most widely used one). The pseudocode provided below illustrates how these two checksum standards can be implemented.  
 
-{{< highlight csharp>}}
+``` csharp
+
 //Mod10
 foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 10;
 //Mod16
 foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 16;
-{{< /highlight >}} 
+
+```
   
 To enable a checksum for this barcode type, it is necessary to initialize the property [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the [*CodabarChecksumMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarchecksummode) property. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images provided below have been created with different checksum calculation settings.
 
-|<p align="center">**Checksum Calculation**</p>|<p align="center">**Is Set to *None***</p>|<p align="center">**Is Set to *Mod10***</p>|<p align="center">**Is Set to *Mod16***</p>|
+|Checksum Calculation|Is Set to *None*|Is Set to *Mod10*|Is Set to *Mod16*|
 | :-: | :-: | :-: | :-: |
 | |<img src="codabarchecksumnone.png">|<img src="codabarchecksummod10.png">|<img src="codabarchecksummod16.png">|
   
 The following code sample explains how to enable different checksum standards (Mod10 and Mod16) for *Codabar* barcodes. 
 
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set None checksum
@@ -83,4 +88,5 @@ gen.Save($"{path}CodabarChecksumMod10.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
 gen.Parameters.Barcode.Codabar.CodabarChecksumMode = CodabarChecksumMode.Mod16;
 gen.Save($"{path}CodabarChecksumMod16.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```

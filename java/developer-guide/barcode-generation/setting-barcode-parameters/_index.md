@@ -1,5 +1,5 @@
 ---
-title: Barcode Parameters
+title: Managing Barcode Parameters via Java
 type: docs
 weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Java"
@@ -39,7 +39,7 @@ gen.Save($"{path}UnitIn2Millimeters.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Image Resolution**
-***Aspose.BarCode for Java*** allows developers to customize barcode image resolution settings using class [*Unit*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Unit). This class includes the *updateResolution* method to modify barcode image resolution and the *setPixels* method to convert all non-pixel size measurements into digital coordinates in pixels. To convert size values into requested supported untis, special methods can be used: *setInches*, *setMillimeters*, *setDocument*, *setPoint*, and *setPixels*. 
+***Aspose.BarCode for Java*** allows developers to customize barcode image resolution settings using class [*Unit*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Unit). This class includes the *updateResolution* method to modify barcode image resolution and the *setPixels* method to convert all non-pixel size measurements into digital coordinates in pixels. To convert size values into requested supported units, special methods can be used: *setInches*, *setMillimeters*, *setDocument*, *setPoint*, and *setPixels*. 
   
 Barcode images with different resolution settings are given below.
   

@@ -1,5 +1,5 @@
 ---
-title: ITF Barcode Family
+title: ITF Barcode Generation in Java
 type: docs
 weight: 120
 url: /java/itf-barcodes/
@@ -7,19 +7,19 @@ url: /java/itf-barcodes/
 {{% alert color="primary" %}}[Generate ITF Barcodes Online](https://products.aspose.app/barcode/generate/itf): You can check the quality of ***Aspose.BarCode*** generation for ITF barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-The GS1 organization has proposed the *ITF 14* barcode standard as an extention of the *Interleaved 2-of-5* symbology. *ITF 14* is intended to work with trade identifiers in the form of Global Trade Item Numbers (GTIN). This symbology can be used to encode sets of 14 characters with the last one being the check digit. The *ITF 6* standards serves as a special extention of *ITF 14* that is used to encode such properties of trade items as weight. Generally, *ITF* barcodes are designed with frames of various styles with a quiet zone. Frame settings may require customization according to specific industrial requirements. ***Aspose.BarCode for Java*** allows developers to modify such appearance-related properties of *ITF* barcodes through class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). In this article, it is explained how to manage these properties.
+The GS1 organization has proposed the *ITF 14* barcode standard as an extension of *Interleaved 2-of-5*. *ITF 14* is intended to work with trade identifiers in the form of Global Trade Item Numbers (GTIN). This symbology can be used to encode sets of 14 characters with the last one being the check digit. The *ITF 6* standard serves as a special extension of *ITF 14* that is used to encode such properties of trade items as weight. Generally, *ITF* barcodes are designed with frames of various styles with a quiet zone. Frame settings may require customization according to specific industrial requirements. ***Aspose.BarCode for Java*** allows developers to modify such appearance-related properties of *ITF* barcodes through class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). In this article, it is explained how to manage these properties.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Frame Settings**
-*ITF* barcodes usually are generated with frames with various styles types depending on industrial specificities. ***Aspose.BarCode for Java*** enables adjusting appearance-related parameters of *ITF* barcodes, i.e. frame styles and thickness.
+*ITF* barcodes usually are generated with frames with various styles depending on industrial specificities. ***Aspose.BarCode for Java*** enables adjusting appearance-related parameters of *ITF* barcodes, i.e. frame styles and thickness.
  
 ### **Frame Style Settings**
 ***Aspose.BarCode for Java*** supports five styles for *ITF* barcode frames. The required frame style including the one with no frames can be enabled using the [*ITF14BorderType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITF14BorderType) enum. The following styles are available: *None*, *Frame*, *Bar*, *BarOut*, and *FrameOut*. *FrameOut* and *BarOut* imply displaying frames outside the barcode image itself so that the original height is not modified. 
   
 Following barcodes have been generated with different frame settings. 
   
-|<p align="center">**Frame Style**</p>|<p align="center">**No Borders (*None*)**</p>|<p align="center">**Normal Frame (*Frame*)**</p>|<p align="center">**Horizontal Lines (*Bar*)**</p>|<p align="center">**Outside Frame (*FrameOut*)**</p>|<p align="center">**Outside Lines (*BarOut*)**</p>|
+|Frame Style|No Borders (*None*)|Normal Frame (*Frame*)|Horizontal Lines (*Bar*)|Outside Frame (*FrameOut*)|Outside Lines (*BarOut*)|
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="itf14bordernone.png">|<img src="itf14borderframe.png">|<img src="itf14borderbar.png">|<img src="itf14borderframeout.png">|<img src="itf14borderbarout.png">|
   
@@ -46,11 +46,11 @@ gen.Save($"{path}ITF14BorderFrameOut.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   
 ### **Frame Thickness Settings**
-Developers can customize thickness settings for *ITF* barcodes according to particular industrial needs through the *setItfBorderThickness* method of class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The default settings for borfer thickness is equal to 12 pt.
+Developers can customize thickness settings for *ITF* barcodes according to particular industrial needs through the *setItfBorderThickness* method of class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The default settings for border thickness is equal to 12 pt.
   
 Following *ITF 14* barcodes have been created setting different border thickness values.
   
-|<p align="center">**Border Thickness**</p>|<p align="center">**Is Set to 5 Pixels**</p>|<p align="center">**Is Set to 15 Pixels**</p>|
+|Border Thickness|Is Set to 5 Pixels|Is Set to 15 Pixels|
 | :-: | :-: | :-: |
 | |<img src="itf14bordersize5pixels.png">|<img src="itf14bordersize15pixels.png">|
   
@@ -69,18 +69,18 @@ gen.Save($"{path}ITF14BorderSize15Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   
 ## **Quiet Zone Settings**
-***Aspose.BarCode for Java*** allows developers to modify the quiet zone size for *ITF* barcodes through the *setQuietZoneCoef* method of class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The quiet zone is determined as as a relative coefficient to the value of *XDimension*.  
+***Aspose.BarCode for Java*** allows developers to modify the quiet zone size for *ITF* barcodes through the *setQuietZoneCoef* method of class [*ITFParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ITFParameters). The quiet zone is determined as a relative coefficient to the value of *XDimension*.  
   
 Following *ITF 14* barcodes have been created with different quiet zone settings. 
   
-|<p align="center">**Quiet Zone Coefficient**</p>|<p align="center">**Is Set to 10**</p>|<p align="center">**Is Set to 30**</p>|
+|Quiet Zone Coefficient|Is Set to 10|Is Set to 30|
 | :-: | :-: | :-: |
 | |<img src="itf14quietzone10.png">|<img src="itf14quietzone30.png">|
   
 <!--The following code snippet shows how to manage the size of the quiet zone for *ITF 14* barcodes.
   
 {{< highlight csharp>}}
-arcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;
 //ITF quiet zone 10 * XDimension

@@ -1,5 +1,5 @@
 ---
-title: Postal Barcode Types
+title: Postal Barcode Generation in Java
 type: docs
 weight: 170
 url: /java/postal-barcodes/
@@ -10,9 +10,9 @@ aliases:
 {{% alert color="primary" %}}[Generate USPS Planet and](https://products.aspose.app/barcode/generate/planet) [USPS Postnet Barcodes online](https://products.aspose.app/barcode/generate/postnet). You can check the quality of ***Aspose.BarCode*** generation for postal barcodes and view the results online.{{% /alert %}}
 
 ## **Overview**
-Postal symbologies have been introduced to address some problems of 1D barcode types to facilitate postal operations. Such barcode types suggest encoding input information through alterating the height of bars and not the width of bars and spaces as in 1D standards. Postal barcode standards usually ignore horizontal parameters to mitigate the risk of false-positive barcode detection.  
+Postal barcode types have been introduced to address some problems of 1D barcode types to facilitate postal operations. Such barcode types suggest encoding input information by altering the height of bars and not the width of bars and spaces as in 1D standards. Postal barcode standards usually ignore horizontal parameters to mitigate the risk of false-positive barcode detection.  
   
-Many countries use their own symbologies in postal services. Generally, such barcode types are similar to each other in terms of design with some minor distinctions. Postal barcode standards can be classified in two main groups: two-state symbologies that can encode only numerical characters and four-state ones that allow encoding both numerical digits and uppercase English characters.  
+Many countries use their own barcode specifications for postal services. Generally, such barcode types are similar to each other in terms of design with some minor distinctions. Postal barcode standards can be classified into two main groups: two-state ones that can encode only numerical characters and four-state ones that allow encoding both numerical digits and uppercase English characters.  
   
 ***Aspose.BarCode for Java*** can be used to create and read various two- and four-state postal standards, i.e. *RM4SCC*, *Postnet*, *Planet*, *Dutch KIX*, *Australia Post*, *OneCode*, and *Mailmark*. Further, this article describes how to work with postal symbologies using the *Aspose.BarCode* library functional.
   
@@ -21,7 +21,7 @@ Many countries use their own symbologies in postal services. Generally, such bar
 ## **Bar Height Settings**
 By default, ***Aspose.BarCode for Java*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width through the *setBarHeight* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters).  
   
-Following *Planet* and *RM4SCC* barcode images have been created varying bar height settings.  
+Following *Planet* and *RM4SCC* barcode images have been created with varying bar height settings.  
   
 |Bar Height Settings for **Planet**| | |
 |---| :-: | :-: |
@@ -64,12 +64,12 @@ Following *Planet* and *RM4SCC* barcode images have been generated using differe
   
 |Bar Filling for **Planet** Barcodes| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
+|**Bar Filling Settings**|**Filled Bars**|**Empty Bars**|
 | |<img src="postalplanetfilledbars.png">|<img src="postalplanetemptybars.png">|
   
 |Bar Filling for **RM4SCC** Barcodes| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
+|**Bar Filling Settings**|**Filled Bars**|**Empty Bars**|
 | |<img src="postalrm4sccfilledbars.png">|<img src="postalrm4sccemptybars.png">|
   
 <!--The following code snippet shows how to customize the bar filling parameter for *Planet* and *RM4SCC* barcodes.
@@ -89,7 +89,7 @@ gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.FilledBars = false;
 gen.Save($"{path}PostalPlanetEmptyBars.png", BarCodeImageFormat.Png);
-//generate a RM4SCC barcode with empty bars
+//generate an RM4SCC barcode with empty bars
 gen = new BarcodeGenerator(EncodeTypes.RM4SCC, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.FilledBars = false;
@@ -128,10 +128,10 @@ gen.Save($"{path}PostalPostnetBarcode.png", BarCodeImageFormat.Png);
 <p align="center"><img src="postalpostnetbarcode.png"></p>
 
 ## **Specific Properties of Two-State Barcode Generation**
-The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal symbologies. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
+The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal barcodes. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
 
 ### **Handling Invalid Barcode Text Exception**
-When invalid barcode text in passed to to the *setCodeText* method (in case of *Postnet* and *Planet* symbologies, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) passing *True*<!-- as shown in the following code sample-->.
+When invalid barcode text is passed to the *setCodeText* method (in the case of *Postnet* and *Planet*, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) passing *True*<!-- as shown in the following code sample-->.
 
 <!--{{< highlight csharp>}}
 BarcodeGenerator gen = null;
@@ -160,9 +160,9 @@ catch (Exception e)
 ### **Customizing Bar Height**
 By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for Java*** allows modifying bar height for short bars manually. To do this, the *setPostalShortBarHeight* method of class [*PostalParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/PostalParameters) needs to be used.  
   
-Following barcode images have been created variyng short bar height.
+Following barcode images have been created with varying short bar heights.
   
-|<p align="center">**Short Bar Height**</p>|<p align="center">**Is Set to 10 Pixels**</p>|<p align="center">**Is Set to 30 Pixels**</p>|
+|Short Bar Height**|Is Set to 10 Pixels|Is Set to 30 Pixels|
 | :-: | :-: | :-: |  
 | |<img src="postalplanetshortbarheight10pixels.png">|<img src="postalplanetshortbarheight30pixels.png">|
   
@@ -188,7 +188,7 @@ gen.Save($"{path}PostalPlanetShortBarHeight30Pixels.png", BarCodeImageFormat.Png
 ***Aspose.BarCode for Java*** enables generating and reading several four-state postal barcode standards, including *RM4SCC*, *Dutch KIX*, *OneCode*, *Australia Post*, and *Mailmark*. By design, four-state barcode types use four different bar types to encode data: tracker (T), descender (D), ascender (A), and full (F). Therefore, each symbol is encoded in four bars meaning that two bits are encoded in one character. In general, four-state symbologies are designed as variations of the *RM4SCC* standard and support encoding numerical characters and uppercase English letters. All aforementioned four-state barcode types except *Dutch KIX* contain checksum controls. In addition, *Mailmark* and *Australia Post* support Reed-Solomon error correction to enable data recovery. 
 
 ### **RM4SCC Standard**
-The *RM4SCC* symbology can be used to encode numerical characters and uppercase English letters. In this barcode standard, each symbol in a barcode is encoded in four bars among which two bars are enlarged upwards and the other two bars - downwards. Using supported combinations of bars with different length, it is possible to encode up to 36 characters, i.e. 10 digits and 26 letters. *RM4SCC* contains obligatory checksum controls using the modulo 6 algorithm.
+The *RM4SCC* symbology can be used to encode numerical characters and uppercase English letters. In this barcode standard, each symbol in a barcode is encoded in four bars among which two bars are enlarged upwards and the other two bars - downwards. Using supported combinations of bars with different lengths, it is possible to encode up to 36 characters, i.e. 10 digits and 26 letters. *RM4SCC* contains obligatory checksum controls using the modulo 6 algorithm.
    
 <p align="center"><img src="postalrm4sccbarcode.png"></p>
   
@@ -202,7 +202,7 @@ gen.Save($"{path}PostalRM4SCCBarcode.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ### **Dutch KIX Standard**
-The Royal Dutch TPG Post of Netherlands uses the *Dutch KIX* barcode standard to facilitate automatic sorting of mails and process postal codes. It is similar to the RM4SCC symbology and allows encoding numericals and uppercase English letters. By design, it does not require checksum controls and do not contain start and stop symbols.
+The Royal Dutch TPG Post of Netherlands uses the *Dutch KIX* barcode standard to facilitate automatic sorting of mails and process postal codes. It is similar to the RM4SCC symbology and allows encoding numerical digits and uppercase English letters. By design, it does not require checksum controls and does not contain start and stop symbols.
   
 <p align="center"><img src="postaldutchkixbarcode.png"></p>
   
@@ -249,17 +249,17 @@ gen.Save($"{path}PostalOneCodeBarcode31Digits.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ### **Australia Post Standard**
-The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* method of class [*AustralianPostPatrameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/AustralianPostParameters). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
+The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of the available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* method of class [*AustralianPostPatrameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/AustralianPostParameters). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
   
 Barcode data can be prepared using one of the supported formats as explained below.  
   
-|<p align="center">**FCC Field**</p>|<p align="center">**Sorting Code Field**</p>|<p align="center">**Customer Information Field**</p>|  
+|FCC Field|Sorting Code Field|Customer Information Field|  
 | :-: | :-: | :-: |
 |11|8 digits|None|
 |59|8 digits|16 bars|
 |62|8 digits|31 bars|
   
-The FCC field can be determined through the *setAustralianPostEncodingTable* method that has to be called passing one of the values from the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/CustomerInformationInterpretingType) enumeration listed in the table below.
+The FCC field can be determined through the *setAustralianPostEncodingTable* method that has to be called by passing one of the values from the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/CustomerInformationInterpretingType) enumeration listed in the table below.
   
 |Australia Post Encoding Table|Supported Symbols|
 | :-: |---|
@@ -267,9 +267,9 @@ The FCC field can be determined through the *setAustralianPostEncodingTable* met
 |NTable|0-9|
 |Other|0, 1, 2, and 3 that correspond to H, A, D, and T states, respectively|
   
-Following barcode images have been created varying FCC field settings.
+Following barcode images have been created with varying FCC field settings.
   
-|<p align="center">**Australia Post Subtypes**</p>|<p align="center">**FCC 11**</p>|<p align="center">**FCC 59 Table**</p>|<p align="center">**FCC 62N Table**</p>|<p align="center">**FCC 62C Table**</p>|<p align="center">**FCC 62C Other Table**</p>|
+|Australia Post Subtypes|FCC 11|FCC 59 Table|FCC 62N Table|FCC 62C Table|FCC 62C Other Table|
 | :-: | :-: | :-: | :-: | :-: | :-: |  
 | |<img src="postalaustraliapostfcc11.png">|<img src="postalaustraliapostfcc59ntable.png">|<img src="postalaustraliapostfcc62ntable.png">|<img src="postalaustraliapostfcc62ctable.png">|<img src="postalaustraliapostfcc62othertable.png">|
   
@@ -309,12 +309,12 @@ gen.Save($"{path}PostalAustraliaPostFCC62OtherTable.png", BarCodeImageFormat.Png
 {{< /highlight >}}-->
 
 ### **Mailmark Standard**
-The *Mailmark* postal standard has been introduced by Royal Mail of the United Kingdom. In general, its design is similar to *RM4SCC*; however, it has requires entering barcode information in the strict format and does not support adding customer data. This symbology can be used to encode numericals, uppercase English letters, and space. It has checksum controls and supports Reed-Solomon error correction.  
+The *Mailmark* postal standard has been introduced by Royal Mail of the United Kingdom. In general, its design is similar to *RM4SCC*; however, it requires entering barcode information in a strict format and does not support adding customer data. This symbology can be used to encode numerical characters, uppercase English letters, and space. It has checksum controls and supports Reed-Solomon error correction.  
 *Mailmark* has two main subtypes: 
 - **Type L** - allows encoding 26 characters 
 - **Type C** - allows encoding 22 characters
   
-|<p align="center">**Mailmark Subtype**</p>|<p align="center">**Type C**</p>|<p align="center">**Type L**</p>|
+|Mailmark Subtype|Type C|Type L|
 | :-: | :-: | :-: |  
 | |<img src="postalmailmarkctype.png">|<img src="postalmailmarkltype.png">|
   

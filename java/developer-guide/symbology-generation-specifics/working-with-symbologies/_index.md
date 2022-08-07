@@ -1,5 +1,5 @@
 ---
-title: Barcode Type Definition
+title: Working with Barcode Types in Java
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Java, Barcode types in Aspose.BarCode for Java, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
@@ -18,7 +18,7 @@ A barcode is a graphical code composed of parallel lines and spaces of different
 Barcode reading requires using a light beam to identify black and white lines in a barcode label. Barcode scanners contain sensors that emit light signals and decoders that convert signals into text. Such scanners require line-of-sight visibility and can scan only one barcode at a time to read data successfully.  
 Radio-frequency identification (RFID) may be considered an alternative to barcode systems. This technology suggests employing radio waves to transmit the data fetched from RFID tags to RFID readers for further processing and interpretation. RFID tags enable data transmission to readers using sensors fixed on antennas. Such sensors usually have a unique ID so that one reader can scan multiple tags simultaneously without requesting line-of-sight visibility.  
   
-Summing up, RFID systems are more efficient when there is a need to scan a large number of items at once, but they are more expensive and require more sophisticated setups compared with barcode ones. Moreover, RFID has physical limitations in terms of use, such as, for example, working with metals or liquids. In turn, barcode systems are known to be more accurate than RFID. Although they do not allow scanning multiple items simultaneously, they provide better recognition accuracy and reliability as barcode scanners can precisely read only required items.
+Summing up, RFID systems are more efficient when there is a need to scan a large number of items at once, but they are more expensive and require more sophisticated setups compared with barcode ones. Moreover, RFID has physical limitations in terms of use, for example, working with metals or liquids. In turn, barcode systems are known to be more accurate than RFID. Although they do not allow scanning multiple items simultaneously, they provide better recognition accuracy and reliability as barcode scanners can precisely read only required items.
 
 ### **Barcode Usage**
 Barcodes have multiple applications in various spheres, such as retail, industry, healthcare, pharmacy, post and delivery, documentation management, and many others. Some examples of barcode system business applications are mentioned below:
@@ -74,7 +74,7 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 ## **Setting Barcode Type in Aspose.BarCode**
 ***Aspose.BarCode for Java*** supports nearly all widely used barcode types. In general, to generate a barcode image, it is necessary to create an instance of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) with two main parameters to be initialized: data contents to be encoded using the *setCodeText* method and the barcode type in the *setBarcodeType* method. The *setBarcodeType* method is used to define the type of generated barcodes. Developers can assign any options to the *setBarcodeType* property from the list of predefined barcode types supported by class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator). However, not all barcode types enable barcode generation with barcode text in a required format due to the limitations of a barcode type itself.  
   
-Below, two barcode types, *Code 39* and *QR Code*, are considered as examples to demonstrate how to generate barcodes in ***Aspose.BarCode for Java***. 
+Below, two barcode types, *Code 39* and *QR Code*, are considered to demonstrate how to generate barcodes in ***Aspose.BarCode for Java***. 
   
 **Code 39**    
 *Code 39* is a barcode type with variable length. Its specification is limited to 43 characters, including uppercase letters (A-Z), numerical digits, and some special characters (-, ., $, /, +, %, and space). Each character is decoded by nine elements: five bars and four spaces. This type has low data density and does not allow ensuring recognition accuracy as it does not require setting an obligatory checksum by default. 
@@ -189,7 +189,7 @@ gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   
 **GS1 Code 128**  
-*GS1 Code 128* can encode any of ASCII alphanumeric characters similarly to the basic *Code 128* symbology. However, in *GS1 Code 128*, the data encoding format is defined strictly according to the GS1 standards.  
+*GS1 Code 128* can encode any ASCII alphanumeric characters similarly to the basic *Code 128* symbology. However, in *GS1 Code 128*, the data encoding format is defined strictly according to the GS1 standards.  
   
 <p align="center"><image src="gs1code128.png"></p>
   
@@ -370,7 +370,7 @@ public void generateAndRead()
 {{< /highlight >}}
   
 **Compact PDF417**    
-*Compact PDF417* can be used when space limitations are the main concern and barcode damage is unlikely. It has less data density compared with other 2D barcodes; however, owing to its property to have a length 64 times larger than height, it is more suitable for narrow rectangular areas with size limitations.
+*Compact PDF417* can be used when space limitations are the main concern and barcode damage is unlikely. It has less data density compared with other 2D barcodes; however, owing to its property to have a length 64 times larger than its height, it is more suitable for narrow rectangular areas with size limitations.
   
 <p align="center"><image src="compactpdf417.png"></p>
   
@@ -416,7 +416,7 @@ public void generateAndRead()
 ## **Barcode Recognition Precision**
 <a name="precision"></a>
 In some cases, the data fetched after barcode recognition may be incorrect. Generally, 1D barcodes do not include a checksum or contain only simple controls; accordingly, this may result in reading erroneous data from barcodes. In turn, the majority of 2D barcodes rely on the Reed-Solomon error correction, which allows ensuring correct barcode recognition and partially recovering the data from damaged barcodes.  
-The types outlined below, *Interleaved 2 of 5* and *Aztec*, are considered as examples of barcode types with different recognition accuracy.
+The types outlined below, *Interleaved 2-of-5* and *Aztec Code*, have different recognition accuracy.
   
 **Interleaved 2-of-5**  
 *Interleaved 2-of-5* can encode sequences of digits of any length as long as such a sequence contains an even number of digits. By default, it does not require setting a checksum and thus can be read with errors.
@@ -477,7 +477,7 @@ Postal symbologies correspond to the specific industrial barcode types that are 
 
 **Postnet**  
 *Postnet* allows encoding only digits corresponding to ZIP or ZIP+4 codes in half- and full-height bars; its parameters are similar to those of 1D barcodes. In this barcode type, each digit is encoded by a set of five bars, two of which are of full height.
-Two type considered below, *Postnet* and *RM4SCC*, are provided as examples of postal barcodes supported in ***Aspose.Barcode for Java***. 
+The two types considered below, *Postnet* and *RM4SCC*, are provided as examples of postal barcodes supported in ***Aspose.Barcode for Java***. 
 <p align="center"><image src="postnet.png"></p>
   
 <!--The following code example illustrates how to generate a *Postnet* barcode.

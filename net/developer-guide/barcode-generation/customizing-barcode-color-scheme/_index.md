@@ -1,5 +1,5 @@
 ---
-title: Customizing Barcode Color Scheme with C# API
+title: Customizing Barcode Color Scheme in C#
 linktitle: Customizing Barcode Color Scheme
 type: docs
 weight: 60

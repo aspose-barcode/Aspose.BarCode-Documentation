@@ -1,5 +1,5 @@
 ---
-title: Supported Barcode Types
+title: Working with Barcode Types
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Python, Barcode types in Aspose.BarCode for Python, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
@@ -14,7 +14,7 @@ A barcode is a graphical code composed of parallel lines and spaces of different
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
-### **Supported Barcode Types**
+## **Supported Barcode Types**
 All types supported in ***Aspose.BarCode for Python via Java*** are outlined below.
   
 <table> 
@@ -23,19 +23,19 @@ All types supported in ***Aspose.BarCode for Python via Java*** are outlined bel
 </tr> 
 <tr> <th rowspan="2">1D</th> 
 <th>Numerical Only</th> 
-<td>Code 11, Code 32, Codabar, DataBar Omnidirectional, DataBar Stacked Omnidirectional, DataBar Limited, DataBar Truncated, DataBar Stacked, EAN 13, EAN 14, EAN 8,
-IATA 2-of-5, Italian Post 25, Interleaved 2-of-5, ISBN, ISMN, ISSN, ITF 6, ITF 14, Matrix 2-of-5, MSI, OPC, Patch Code, Pharmacode, PZN, SSCC 14, SSCC 18, 
-Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
+<td>Code 11, Code 32, Codabar, DataBar Omnidirectional, DataBar Stacked Omnidirectional, DataBar Limited, DataBar Truncated, DataBar Stacked, EAN-13, EAN-14, EAN-8,
+IATA 2-of-5, Italian Post 25, Interleaved 2-of-5, ISBN, ISMN, ISSN, ITF-6, ITF-14, Matrix 2-of-5, MSI, OPC, Patch Code, Pharmacode, PZN, SSCC-14, SSCC-18, 
+Standard 2-of-5, EAN-5, EAN-2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
 </td> 
 </tr> 
 <tr> <th>Alpha-Numeric</th> 
-<td>Code 128, Code 39, Code 93, Code 16K, CodablockF, DataBar Expanded, DataBar Expanded Stacked, GS1 CodablockF, GS1 Code 128, VIN</td> 
+<td>Code 128, Code 39, Code 93, Code-16K, Codablock-F, DataBar Expanded, DataBar Expanded Stacked, GS1 CodablockF, GS1 Code 128, VIN</td> 
  </tr> 
 <tr> <th colspan ="2" >2D</th> 
 <td>QR Code, Micro QR Code, PDF417, Compact PDF417, Macro PDF417, Micro PDF417, Aztec Code, Data Matrix, DotCode, GS1 Data Matrix, GS1 QR Code, MaxiCode</td> 
  </tr> 
  <tr> <th colspan ="2">Postal</th> 
-<td>Australia Post, AustralianPostParcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, Swiss Post Parcel, USPS OneCode</td> 
+<td>Australia Post, Australian Post Parcel, Deutsche Post Identcode, Deutsche Post Leticode, Planet, Postnet, RM4SCC, SingaporePost, Swiss Post Parcel, USPS OneCode</td> 
  </tr> 
 </tr> 
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Checksum in 1D Barcodes
+title: Setting Checksum for 1D Barcodes via Java
 type: docs
 weight: 80
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Java"
@@ -10,14 +10,14 @@ aliases:
 ---
 
 ## **Overview**
-The idea of using **checksum** (or *check digit*) as an error identification mechanism has been proposed to check for the integrity and accuracy of data encoded in 1D barcodes. Checksum can be used to assure that barcode information has not been lost or damage and that barcode recognition has been executed accurately. Generally, a checksum is the last symbol in a barcode sequence encoded as a character. 1D barcodes may include a checksum digit optionally or obligatory and is calculated based on a special algorithm. Barcode scanner decoders perform checksum controls through mathematical operations based on barcode digits preceding the checksum character and then compare the calculation result with the checksum value.  
+The idea of using **checksum** (or *check digit*) as an error identification mechanism has been proposed to check for the integrity and accuracy of data encoded in 1D barcodes. A checksum digit can be used to assure that barcode information has not been lost or damaged and guarantee accurate barcode recognition. Generally, a checksum is the last symbol in a barcode sequence encoded as a character. 1D barcodes may include an optional or obligatory checksum digit calculated based on a special algorithm. Barcode scanner decoders perform checksum controls through mathematical operations based on barcode digits preceding the checksum character and then compare the calculation result with the checksum value.  
   
-Barcodes of symbologies without obligatory checksum verification comprise self-checking characters. Such barcodes are inherently resistant to errors as any character alteration is viewed as erroneous. Two inconsistent modifications performed in a barcode digit and a scan line simultaneosly may lead to inappropriate barcode recognition. This is called substitution error and can be mititgated by using checksum controls.
+Barcodes without obligatory checksum verification comprise self-checking characters. Such barcodes are inherently resistant to errors as any character alteration is viewed as erroneous. Two inconsistent modifications performed in a barcode digit and a scan line simultaneously may lead to inappropriate barcode recognition. This is called substitution error and can be mitigated by using checksum controls.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
  
 ## **Checksum Definition**
-Most of 1D barcode types have been created in the 70s. For many of them, checksum controls are identified in simple ways: as a sum of all preceding digits modulo the index of the maximum encoded character. As further development, barcode standards introduced at the beginning of the 2000s use more sophisticated checksum verification algorithms.  
+Most 1D barcode types have been created in the 70s. For many of them, checksum controls are identified in a simple way: as a sum of all preceding digits modulo the index of the maximum encoded character. As further development, barcode standards introduced at the beginning of the 2000s use more sophisticated checksum verification algorithms.  
   
 In general, enabling checksum in ***Aspose.BarCode for Java*** for 1D barcodes allows verifying barcodes with minor damages. However, in the case of significantly damaged barcode images, the probability of inaccurate recognition increases.  
   
@@ -32,7 +32,7 @@ In *Code 39*, checksum controls are optional. The maximum number of digits to be
 The *Code 128* standard uses an improved algorithm for checksum controls compared with *Code 39*. In this algorithm, each barcode digit is weighted based on its position index. 
   
 ## **Checksum Settings**
-Different types use particluar checksum controls (optional or obligatory) and different checksum calculation algorithms. When checksum controls are obligatory, ***Aspose.BarCode for Java*** utilizes the most common algorithm for that symbology. When needed, the checksum character is added as the last barcode character. The [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is intended for checksum calculation in 1D barcodes. It is set to *Yes* for the types with obligatory checksum controls and *No* for those with an optional check digit by default.  
+Different types use particular checksum controls (optional or obligatory) and different checksum calculation algorithms. When checksum controls are obligatory, ***Aspose.BarCode for Java*** utilizes the most common algorithm for that symbology. When needed, the checksum character is added as the last barcode character. The [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is intended for checksum calculation in 1D barcodes. It is set to *Yes* for the types with obligatory checksum controls and *No* for those with an optional check digit by default.  
   
 Barcode standards with optional and obligatory checksum settings are listed below.
   

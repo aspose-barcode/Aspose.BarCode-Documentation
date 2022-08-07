@@ -1,5 +1,5 @@
 ---
-title: Codablock-F Barcodes
+title: Codablock-F Generation in Java
 type: docs
 weight: 130
 url: /java/codablockf-barcodes/
@@ -17,7 +17,7 @@ url: /java/codablockf-barcodes/
   
 Following barcode images have been created using various aspect ratio settings. 
   
-|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 15**</p>|<p align="center">**Is Set to 30**</p>|
+|Aspect Ratio|Is Set to 15|Is Set to 30|
 | :-: | :-: | :-: |
 | |<img src="codablockfaspectratio15.png">|<img src="codablockfaspectratio30.png">|
   
@@ -40,7 +40,7 @@ To adjust the layout of a *Codablock-F* barcode in terms of the number of column
   
 Barcode images provided below have been generated using different layout settings.
   
-|<p align="center">**Layout Settings**</p>|<p align="center">**4 Columns**</p>|<p align="center">**4 Rows**</p>|<p align="center">**6 Rows and 4 Columns**</p>|
+|Layout Settings|4 Columns|4 Rows|6 Rows and 4 Columns|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="codablockfcol4.png">|<img src="codablockfrow4.png">|<img src="codablockfrow6col4.png">|
   

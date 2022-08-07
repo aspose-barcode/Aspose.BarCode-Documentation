@@ -30,12 +30,14 @@ The other peculiarity of the *PDF417* barcode family is the extended format of r
 <a name="pdf417"></a>
 The following code snippet illustrates how to generate a *Basic PDF417* barcode.
   
-{{< highlight csharp>}}
+``` csharp
+
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
             gen.Save($"{path}Pdf417Basic.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
 
 
 ## **Micro PDF417 Symbologies**
@@ -46,29 +48,32 @@ The following code snippet illustrates how to generate a *Basic PDF417* barcode.
 <a name="micropdf417"></a>
 The following code sample shows how to create a *Micro PDF417* barcode.
   
-{{< highlight csharp>}}
+``` csharp
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Save($"{path}MicroPdf417Basic.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
 
 ## **Compact PDF417 Symbology**
-The specification of *Compact PDF417* is similar to those of *Basic PDF417* and *Marco PDF417*; however, the right-side metainformation column and the right-side stop pattern are removed to save space for small-sized barcodes. This symbology does not support laser scanning; moreover, due to the absence of metainformation redundancy, it has difficulties with low-quality barcode image recognition. To set the *Compact PDF417* generation mode in ***Aspose.BarCode for .NET***, it is necessary to initialize the [*Pdf417Truncate*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417truncate) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters).
+The specification of *Compact PDF417* is similar to those of *Basic PDF417* and *Macro PDF417*; however, the right-side metainformation column and the right-side stop pattern are removed to save space for small-sized barcodes. This symbology does not support laser scanning; moreover, due to the absence of metainformation redundancy, it has difficulties with low-quality barcode image recognition. To set the *Compact PDF417* generation mode in ***Aspose.BarCode for .NET***, it is necessary to initialize the [*Pdf417Truncate*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417truncate) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters).
   
 <p align="center"><img src="compactpdf417basic.png"></p>
   
 <a name="compactpdf417"></a>
 The following code snippet explains how to generate *Compact PDF417* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 //set Pdf417 truncated or Compact Pdf417
 gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true;
 gen.Save($"{path}CompactPdf417Basic.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
 
 ## **PDF417 Data Encoding Modes**
 To select the data encoding mode in ***Aspose.BarCode for .NET***, it is required to set the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that specifies data compaction regimes to be used during barcode generation. To encode Unicode symbols, two other properties, [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) and [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding), can be used. Detailed explanations and code samples for these properties are provided further in the article.
@@ -78,7 +83,8 @@ Besides encoding Unicode characters into byte streams, the [*Pdf417ECIEncoding*]
   
 The code sample given below illustrates how to set the *ECI Encoding* mode.
   
-{{< highlight csharp>}}
+``` csharp
+
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -90,14 +96,15 @@ gen.Save($"{path}Pdf417ECIEncoding.png", BarCodeImageFormat.Png);
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("Pdf417ECIEncoding:" + result.CodeText);
-{{< /highlight >}}
+
+```
   
 <p align="center"><img src="pdf417eciencoding.png"></p>
   
 ### **Compaction Mode**
 As mentioned above, to select the required data compaction way, the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property needs to be initialized using one of the supported compaction modes are described below.
   
-|<p align="center">**Compaction Mode**</p>|<p align="center">**Description**</p>|
+|Compaction Mode|Description|
 |---|---|
 |**Auto**|Encoding is performed in the most high-density data compaction mode that is selected automatically. In the case when [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contents include a digit greater than 255, data compaction is executed using the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding)|
 |**Binary**|This mode is intended to encode binary byte streams with digits from 0 to 255. If [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contains a digit greater than 255, data compaction is performed using the encoding set in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding)|
@@ -106,13 +113,14 @@ As mentioned above, to select the required data compaction way, the [*Pdf417Comp
   
 Barcode images demonstrated below have been generated using different compaction mode settings.
   
-|<p align="center">**Compaction Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***Binary***</p>|<p align="center">***Text***</p>|<p align="center">***Numeric***</p>|
+|Compaction Mode|***Auto***|***Binary***|***Text***|***Numeric***|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="pdf417compactionauto.png">|<img src="pdf417compactionbinary.png">|<img src="pdf417compactiontext.png">|<img src="pdf417compactionnumeric.png">|
   
 The following code snippet explains how to set different compaction modes.
 
-{{< highlight csharp>}}
+``` csharp
+
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
@@ -132,12 +140,14 @@ The following code snippet explains how to set different compaction modes.
             gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Numeric;
             gen.CodeText = "1234567890";
             gen.Save($"{path}Pdf417CompactionNumeric.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
     
 ### **Unicode Encoding Mode**
 The following code sample demonstrates how to use the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding) property to encode Unicode characters in the *Binary* mode.
   
-{{< highlight csharp>}}
+``` csharp
+
             Console.OutputEncoding = Encoding.Unicode;
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose常に先を行く");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -149,14 +159,16 @@ The following code sample demonstrates how to use the [*CodeTextEncoding*](https
             BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
             foreach (BarCodeResult result in read.ReadBarCodes())
                 Console.WriteLine("Pdf417CodeTextEncoding:" + result.GetCodeText(Encoding.UTF8));
-{{< /highlight >}}
+
+```
   
 <p align="center"><img src="pdf417codetextencoding.png"></p>
   
 ### **Byte Stream Encoding in Binary Mode**
 When it is needed to encode and transmit an array of bytes in a barcode, developers can use the *Binary* mode that can be set in ***Aspose.BarCode for .NET*** using the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). The following code snippet shows how to use this mode to encode an arbitrary stream of bytes. To display the custom text under a barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be set (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).
   
-{{< highlight csharp>}}
+``` csharp
+
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -176,7 +188,8 @@ gen.Save($"{path}Pdf417BytesEncoding.png", BarCodeImageFormat.Png);
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
 foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("Pdf417BytesEncoding:" + BitConverter.ToString(result.CodeBytes));
-{{< /highlight >}}
+
+```
   
 <p align="center"><img src="pdf417bytesencoding.png"></p>
   
@@ -185,7 +198,7 @@ To set the number of rows and columns in *PDF417* barcodes, ***Aspose.BarCode fo
   
 *PDF417* barcode images provided below have been generated using different layout settings.
 
-|<p align="center">**Layout Settings**</p>|<p align="center">**2 Columns**</p>|<p align="center">**6 Rows**</p>|<p align="center">**9 Rows and 6 Columns**</p>|
+|Layout Settings|2 Columns|6 Rows|9 Rows and 6 Columns|
 | :-: | :-: | :-: | :-: |
 | |<img src="pdf417columns2.png">|<img src="pdf417row6.png">|<img src="pdf417row9columns4.png">|
   
@@ -193,28 +206,32 @@ Following code samples explain how to set different layout settings (rows and co
   
 **Basic PDF417**  
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set 4 columns
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Save($"{path}MicroPdf417Columns4.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
   
 **Micro PDF417**
 
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set 4 columns
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Save($"{path}MicroPdf417Columns4.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
 
 ## **Error Correction Level Settings**
 The *PDF417* barcode family applies the Reed-Solomon error correction mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [*Pdf417ErrorLevel*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two error correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that 265 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 614 bytes. All supported EC levels are listed below.  
   
-|<p align="center">**EC Level**</p>|<p align="center">**Number of EC Codewords**</p>|<p align="center">**Error Correction Level**</p>|<p align="center">**Number of EC Codewords**</p>|
+|EC Level|Number of EC Codewords|Error Correction Level|Number of EC Codewords|
 | :-: | :-: | :-: | :-: |
 |**Level 0**|2 EC codewords|**Level 5**|64 EC codewords|
 |**Level 1**|4 EC codewords|**Level 6**|128 EC codewords|
@@ -224,13 +241,14 @@ The *PDF417* barcode family applies the Reed-Solomon error correction mechanism 
   
 *PDF417* barcode images shown below have been created using different error correction level settings.  
   
-|<p align="center">**Error Correction Level**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
+|Error Correction Level|Is Set to 2|Is Set to 5|
 | :-: | :-: | :-: |
 | |<img src="pdf417errorlevel2.png">|<img src="pdf417errorlevel5.png">|
   
 The following code sample explains how to set different error correction levels for *PDF417* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 3;
@@ -240,20 +258,22 @@ gen.Save($"{path}Pdf417ErrorLevel2.png", BarCodeImageFormat.Png);
 //set error level 5
 gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level5;
 gen.Save($"{path}Pdf417ErrorLevel5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
   
 ## **Aspect Ratio Settings**
 *Aspect Ratio* is defined as the ratio between the barcode width and height. In ***Aspose.BarCode for .NET***, to customize barcode proportions using the X and Y coordinates, the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/aspectratio) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) can be used. It is implemented as a relative coefficient to the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. For *PDF417* barcodes, the value of *AspectRatio* should be set between 3 and 5.
 
 *PDF417* barcodes demonstrated below have been created using different aspect ratio settings.  
   
-|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
+|Aspect Ratio|Is Set to 2|Is Set to 5|
 | :-: | :-: | :-: |
 | |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
   
 The following code snippet illustrates how to set different aspect ratio values for *PDF417* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
@@ -263,7 +283,8 @@ The following code snippet illustrates how to set different aspect ratio values 
             //set aspect ratio to 5
             gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
             gen.Save($"{path}Pdf417AspectRatio5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
   
 ## **PDF417 Metadata Encoding**
 *Macro PDF417* and *Micro PDF417* standards enable encoding additional metainformation about data origins and identification. These metadata are encoded in barcodes along with main input information and occupy the same data blocks. Metadata can be classified into permanent and optional ones that are explained further.
@@ -272,14 +293,15 @@ The following code snippet illustrates how to set different aspect ratio values 
 ### **Permanent Metadata Settings**
 Permanent metadata that determine encoding the rest of the fields include the following parameters.
 
-|<p align="center">**Permanent Metadata Field**</p>|<p align="center">**Description**</p>|
+|Permanent Metadata Field|Description|
 |---|---|
 |[*Pdf417MacroFileID*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrofileid)|Unique identifier of a barcode series or PDF417 file that is set manually|
 |[*Pdf417MacroSegmentID*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrosegmentid)|Current segment identifier that starts with 0 and often is accompanied with an optional field called [*Pdf417MacroSegmentsCount*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrosegmentscount) that specifies the number of barcodes in a series|
 
 The following code snippet illustrates how to manage permanent metadata for *MacroPDF417* barcodes.
 
-{{< highlight csharp>}}
+``` csharp
+
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -296,7 +318,8 @@ foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("Pdf417MacroFileID:" + result.Extended.Pdf417.MacroPdf417FileID);
     Console.WriteLine("Pdf417MacroSegmentID:" + result.Extended.Pdf417.MacroPdf417SegmentID.ToString());
 }
-{{< /highlight >}}
+
+```
 
 <p align="center"><img src="macropdf417permanent.png"></p>
 
@@ -315,7 +338,8 @@ Optional metadata include various fields that are listed in the table below.
   
 The following code sample shows how to set optional metadata for *MacroPDF417* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -349,14 +373,16 @@ foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("Pdf417MacroAddressee:" + result.Extended.Pdf417.MacroPdf417Addressee);
     Console.WriteLine("Pdf417MacroSender:" + result.Extended.Pdf417.MacroPdf417Sender);
 }
-{{< /highlight >}}
+
+```
   
 <p align="center"><img src="macropdf417optional.png"></p>
   
 ### **Unicode Metadata Settings**
-If required, it is possible to transmit optional metadata fields in the Unicode encoding by initializing the [*Pdf417MacroECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macroeciencoding) property that converts the data and sends it together with the corresponding encoding identifier. The following code sample illustrates how to use this setting for *Marco PDF417* barcodes.
+If required, it is possible to transmit optional metadata fields in the Unicode encoding by initializing the [*Pdf417MacroECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macroeciencoding) property that converts the data and sends it together with the corresponding encoding identifier. The following code sample illustrates how to use this setting for *Macro PDF417* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -381,7 +407,8 @@ foreach (BarCodeResult result in read.ReadBarCodes())
     Console.WriteLine("Pdf417MacroAddressee:" + result.Extended.Pdf417.MacroPdf417Addressee);
     Console.WriteLine("Pdf417MacroSender:" + result.Extended.Pdf417.MacroPdf417Sender);
 }
-{{< /highlight >}}
+
+```
   
 <p align="center"><img src="macropdf417eciencoding.png"></p>
   
@@ -391,28 +418,32 @@ For the *PDF417* barcode family, ***Aspose.BarCode for .NET*** allows encoding s
 ### **Hardware Reader Initialization**
 To encode the special flag indicating that the barcode data is intended for hardware reader initialization, developers can use the [*IsReaderInitialization*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/isreaderinitialization) property. The following code sample illustrates how to set this field.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 //set flag that indicates that data is encoded for reader initialization
 gen.Parameters.Barcode.Pdf417.IsReaderInitialization = true;
 gen.Save($"{path}Pdf417ReaderInitialization.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
 
 <p align="center"><img src="pdf417readerinitialization.png"></p>
 
 ### ***Code 128* Emulation**
 To indicate that hardware readers must emulate the considered *Micro PDF417* barcode as the data read from a *Code 128* barcode, the [*Code128Emulation*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/code128emulation) field needs to be initialized as demonstrated in the code snippet below. 
   
-{{< highlight csharp>}}
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose");
-            gen.Parameters.Barcode.XDimension.Pixels = 2;
-            gen.Parameters.Barcode.Pdf417.Columns = 3;
-            //set flag that encoded data must be decoded as Code 128
-            gen.Parameters.Barcode.Pdf417.Code128Emulation = Code128Emulation.Code903;
-            gen.Save($"{path}Pdf417Code128Emulation.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+``` csharp
+
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose");
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.Pdf417.Columns = 3;
+//set flag that encoded data must be decoded as Code 128
+gen.Parameters.Barcode.Pdf417.Code128Emulation = Code128Emulation.Code903;
+gen.Save($"{path}Pdf417Code128Emulation.png", BarCodeImageFormat.Png);
+
+```
 
 
 <p align="center"><img src="pdf417code128emulation.png"></p>

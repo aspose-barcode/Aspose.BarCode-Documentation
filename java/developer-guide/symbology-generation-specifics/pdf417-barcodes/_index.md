@@ -1,5 +1,5 @@
 ---
-title: PDF417 Barcode Family
+title: PDF417 Barcode Generation in Java
 type: docs
 description: "Aspose.BarCode for Java can be used to generate different types of PDF417 barcodes."
 keywords: "Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for Java"
@@ -58,7 +58,7 @@ gen.Save($"{path}MicroPdf417Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 
 ## **Compact PDF417 Symbology**
-*Compact PDF417* has a specification like *Basic PDF417* and *Marco PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Pdf417Parameters).
+*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Pdf417Parameters).
   
 <p align="center"><img src="compactpdf417basic.png"></p>
   
@@ -313,9 +313,9 @@ Optional metadata are used to store information about various data properties th
   
 |Optional Metadata Method|Description|
 |---|---|
-|*setPdf417MacroSegmentsCount*|Amount of barcodes in a series|
+|*setPdf417MacroSegmentsCount*|Number of barcodes in a series|
 |*setPdf417MacroFileName*|File name|
-|*setPdf417MacroChecksum*|Barcode checksum ocomputed based on the CCITT-16 polynomial|
+|*setPdf417MacroChecksum*|Checksum computed based on the CCITT-16 polynomial|
 |*setPdf417MacroFileSize*|Overall size of bytes in a barcode series|
 |*setPdf417MacroTimeStamp*|Time spent to generate/send a file|
 |*setPdf417MacroAddressee*|File sender address|
@@ -363,7 +363,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 ### **Unicode Metadata**
 In ***Aspose.BarCode for Java***, developers can re-encode optional metadata using the Unicode encoding through the *setPdf417MacroECIEncoding* method of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/Pdf417Parameters). This method is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
-<!--The following code snippet shows how to encode metadata using the UTF8 encoding in *Marco PDF417* barcodes.
+<!--The following code snippet shows how to encode metadata using the UTF8 encoding in *Macro PDF417* barcodes.
   
 {{< highlight csharp>}}
 Console.OutputEncoding = Encoding.Unicode;

@@ -1,5 +1,5 @@
 ---
-title: Specifics of 1D Barcodes
+title: 1D Barcode Generation in Java
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
@@ -21,7 +21,7 @@ This article describes how to manage these properties using specified classes an
 ## **Setting Bar Height**
 ***Aspose.BarCode for Java*** allows adjusting the height of bars for 1D single-row barcodes. This can be done only when [*AutoSizeMode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/AutoSizeMode) is set to *AutoSizeMode.None*. In this case, regardless of the value specified through the *setXDimension* method, the bar height can be regulated using the *setBarHeight* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). This method cannot be applied to multiple-row barcodes and 2D barcodes.
   
-|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to 40 Pixels**</p>|<p align="center">**Is Set to 80 Pixels**</p>|
+|Bar Height|Is Set to 40 Pixels|Is Set to 80 Pixels|
 | :-: | :-: | :-: |
 | |<img src="barheight40code128.png">|<img src="barheight80code128.png">|
   
@@ -61,7 +61,7 @@ gen.Save($"{path}BarsEmptyCode128.png", BarCodeImageFormat.Png);
 ## **Setting Wide-to-Narrow Ratio**
 Two-width 1D barcodes are based on the binary code principle, meaning that information is encoded using bars and spaces with two options of width: wide and narrow. Two-width barcode symbologies include the following: *Codabar*, *Code 11*, *Code 32*, *Code 39*, *DataLogic 2-of-5*, *IATA 2-of-5*, *Interleaved 2-of-5*, *ITF 6*, *ITF 14*, *Matrix 2-of-5*, *MSI*, *OPC*, *PZN*, *Standard 2-of-5*, and *VIN*.  
   
-In ***Aspose.BarCode for Java***, the **wide-to-narrow ratio** defines the relation between the width of wide and narrow elements. It can be set using the *setWideNarrowRatio* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). The larger if the value of the wide-to-narrow ratio, the larger is the width of the generated barcode. However, the readability also improves with an increase in this parameter. By default, *WideNarrowRatio* is set to 3.  
+In ***Aspose.BarCode for Java***, the **wide-to-narrow ratio** defines the relation between the width of wide and narrow elements. It can be set using the *setWideNarrowRatio* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). The larger the value of the wide-to-narrow ratio, the greater the width of the generated barcode. However, the readability also improves with an increase in this parameter. By default, *WideNarrowRatio* is set to 3.  
   
 |<p align="center">**Wide-to-Narrow Ratio**</p>|<p align="center">**Is Set to 2**</p>|<p align="center">**Is Set to 5**</p>|
 | :-: | :-: | :-: |
@@ -83,9 +83,9 @@ gen.Save($"{path}WideNarrow5Code39.png", BarCodeImageFormat.Png);
 ## **Handling Exception on Incorrect Barcode Text**
 In case when a barcode has not been created correctly due to invalid barcode text, by default, the library can generate additional dummy data to bring the barcode into line with the standard or delete conflicting characters. Thereafter barcode generation is considered successful.  
   
-Developers can change this behaviour by using the *setThrowExceptionWhenCodeTextIncorrect* method of [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). When this property is enabled, an exception is thrown if the barcode text has been found incorrect or incomplete.
+Developers can change this behavior by using the *setThrowExceptionWhenCodeTextIncorrect* method of [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). When this property is enabled, an exception is thrown if the barcode text has been found incorrect or incomplete.
   
-|<p align="center">**Barcode Text Correctness**</p>|<p align="center">**Correct with Valid Barcode Text**</p>|<p align="center">**Adjusted with Invalid Barcode Text**</p>|
+|Barcode Text Correctness|Correct with Valid Barcode Text|Adjusted with Invalid Barcode Text|
 | :-: | :-: | :-: |
 | |<img src="itf6correct.png">|<img src="itf6filled.png">|
   

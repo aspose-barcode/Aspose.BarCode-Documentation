@@ -1,10 +1,10 @@
 ---
-title: Using Checksum in 1D Barcodes with C#
-linktitle: Using Checksum in 1D Barcodes
+title: Setting Checksum for 1D Barcodes in C#
+linktitle: Setting Checksum Controls in 1D Barcodes
 type: docs
 weight: 80
 description: How to Set Checksum for 1D Barcodes in C# API"
-keywords: "Generate Barcodes, Barcode Checksum in Aspose.Barcode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings Aspose.BarCode"
+keywords: Generate Barcodes, Barcode Checksum in Aspose.Barcode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings Aspose.BarCode
 url: /net/use-checksum-and-supplement-data/
 ---
 
@@ -25,19 +25,23 @@ To provide some examples, checksum calculations and settings for the *Code 39* a
   
 In *Code 39*, setting a checksum is optional. Given that the maximal number of characters to be encoded equals 43, the checksum is calculated as the sum of encoded digits modulo 43. The following code snippet illustrates how the checksum is computed for *Code 39*.
   
-{{< highlight csharp>}}
+``` csharp
+
 foreach (var value in encodedCodetext)
     checkSum = (checkSum + value) % 43;
-{{< /highlight >}} 
+
+```
   
 **Code 128 Checksum**  
   
 Compared to *Code 39*, the *Code 128* standard provides an improved algorithm for checksum calculation. In this case, each barcode digit is weighted by the index of its position. The following code sample explains how checksum calculation is performed for *Code 128*.
   
-{{< highlight csharp>}}
+``` csharp
+
 for (var pos = 0; pos < encodedCodetext.Length; ++pos)
     checkSum = (checkSum + encodedCodetext[pos] * (pos + 1)) % 103;
-{{< /highlight >}} 
+
+``` 
   
 ## **Checksum Settings**
 Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) is used to manage checksum calculation for 1D barcodes. By default, this property is set to *Yes* for barcode types with obligatory checksum computation and *No* for those with an optional check digit.  
@@ -54,13 +58,14 @@ By default, 1D barcodes with optional checksum do not impose the necessity of ch
 - *EnableChecksum.Default* and *EnableChecksum.No*. Checksum calculation is not enabled.
 - *EnableChecksum.Yes*. The library generates the checksum of the most appropriate type for the given barcode symbology.
   
-|<p align="center">**Checksum Settings**</p>|<p align="center">**Checksum Enabled**</p>|<p align="center">**Checksum Disabled**</p>|
+|Checksum Settings|Checksum Enabled|Checksum Disabled|
 | :-: | :-: | :-: |
 | |<img src="onecscode39withchecksum.png">|<img src="onecscode39withoutchecksum.png">|
   
 The following code snippet illustrates how to enable and disable the checksum for *Code 39* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "CODE");
 //default value with no checksum
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.No;
@@ -68,7 +73,8 @@ gen.Save($"{path}OneCSCode39WithoutChecksum.png", BarCodeImageFormat.Png);
 //value with checksum
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
 gen.Save($"{path}OneCSCode39WithChecksum.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+
+``` 
   
 ### **Obligatory Checksum Settings**
 For such barcodes, the [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) can be initiated as follows:
@@ -80,7 +86,8 @@ The following sample image illustrates the barcode label generated with obligato
 
 The code sample provided below shows checksum settings for *Code 39*. Upon the attempt to set the *EnableChecksum* property to "*No*", the following exception is thrown: "*Unable to use Code93Extended symbology without checksum*".
 
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "CODE");
 //default value with checksum
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
@@ -95,18 +102,20 @@ catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
-{{< /highlight >}}
+
+```
   
 ## **Displaying Checksum for Code 128**
 For the *Code 128* and *GS1 Code 128* symbologies, the library provides a specific setting [*ChecksumAlwaysShow*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/checksumalwaysshow) of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). When enabled, this setting allows adding the checksum digit in the *CodeText* field and thus displaying it as human-readable barcode text. 
   
-|<p align="center">**Checksum Visibility**</p>|<p align="center">**Displayed**</p>|<p align="center">**Hidden**</p>|
+|Checksum Visibility|Displayed|Hidden|
 | :-: | :-: | :-: |
 | |<img src="onecscode128showchecksum.png">|<img src="onecscode128notshowchecksum.png">|
   
 The code snippet below represents how to enable and disable the *ChecksumAlwaysShow* property.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "CODE");
 //do not display checksum
 gen.Parameters.Barcode.ChecksumAlwaysShow = false;
@@ -114,4 +123,5 @@ gen.Save($"{path}OneCSCode128NotShowChecksum.png", BarCodeImageFormat.Png);
 //display checksum
 gen.Parameters.Barcode.ChecksumAlwaysShow = true;
 gen.Save($"{path}OneCSCode128ShowChecksum.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+
+``` 

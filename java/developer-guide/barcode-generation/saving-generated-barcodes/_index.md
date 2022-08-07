@@ -1,5 +1,5 @@
 ---
-title: Saving Generated Barcodes
+title: Saving Generated Barcodes via Java
 type: docs
 weight: 70
 description: "How to Save Generated Barcodes in Aspose.BarCode for Java"
@@ -10,7 +10,7 @@ url: /java/generate-barcodes-with-aspose-barcode-apis/
 This article outlines the ways of outputting generated barcode images as files, streams, or bitmaps, as well as various raster (PNG, JPEG, BMP, GIF, and TIFF) and vector (SVG and EMF) image file formats.
 
 ## **Overview**
-During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Java*** enables different options of saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap). These options are discussed further.
+During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Java*** enables different options for saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap). These options are discussed further.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -37,7 +37,7 @@ using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Cre
 ## **Saving as Bitmap**
 
 ***Aspose.BarCode for Java*** enables saving barcode images in the form of bitmap objects and then converting it to the required format or using it in graphical transformations. These objects can be fetched from instances of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) through the *generateBarCodeImage* method and then processed further. 
-<!--The following code sample shows how to use this ouutput option in ***Aspose.BarCode for Java***.
+<!--The following code sample shows how to use this output option in ***Aspose.BarCode for Java***.
 
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
@@ -50,7 +50,7 @@ using (Bitmap bmp = gen.GenerateBarCodeImage())
 In ***Aspose.BarCode for Java***, barcode images can be saved to common raster image formats, namely, PNG, GIF, BMP, JPEG, and TIFF. The value of the [*BarCodeImageFormat*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarCodeImageFormat) enum can be passed as the second argument to the *save(java.lang.String filename, BarCodeImageFormat format)* method to output barcode images in the specified format. The description of all supported image formats is given further.
 
 ### **BMP Format**
-BMP images are bitmap files that store bitmap digital images regardless of a graphics adapter. The BMP file format enables storing information as two-dimensional digital images in monochrome and color formats with different color depths. Using the BMP format for image generation results in producing images without compression. In this case, barcode images will have large size and 24-bit color depth. Moreover, they will not contain losses and artifacts. 
+BMP images are bitmap files that store bitmap digital images regardless of a graphics adapter. The BMP file format enables storing information as two-dimensional digital images in monochrome and color formats with different color depths. Using the BMP format for image generation results in producing images without compression. In this case, barcode images will have a large size and 24-bit color depth. Moreover, they will not contain losses and artifacts. 
 <!--The code snippet provided below illustrates how to save barcode images in the BMP format.
 
 {{< highlight csharp>}}
@@ -91,7 +91,7 @@ The GIF barcode image generated using this code is shown below.
 <p align="center"><image src="rasterimagegif.gif"></p>
 
 ### **JPEG Format**
-JPEG is a common image file format used for lossy and compressed image data. As a result of compression, generating JPEG images require finding a trade-off between  image quality and storage size and therefore often have artifacts and graphical noises. This file format is not recommended for barcode generation. The following code sample shows how to create JPEG barcode images.
+JPEG is a common image file format used for lossy and compressed image data. As a result of compression, generating JPEG images require finding a trade-off between image quality and storage size and therefore often have artifacts and graphical noises. This file format is not recommended for barcode generation. The following code sample shows how to create JPEG barcode images.
 
 <!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
@@ -124,7 +124,7 @@ TIFF and TIFFInCMYK barcode images are given below.
 Vector image formats represent images as a set of graphical operations executed consequently on a graphics unit. Vector images can be generated through mathematical formulas that specify points on a grid. This format allows scaling without resolution losses. Accordingly, vector image formats may be more suitable than raster ones in some cases. ***Aspose.BarCode for Java*** supports outputting barcode images in two vector formats: EMF and SVG.
 
 ### **EMF Format**
-Enhanced Metafile (EMF) is a vector image format that is device-independent and is commonly used in Windows operating systems for printing tasks. An EMF image file comprise variable-length records in chronological order. Then, a vector image can be rendered on any output device. Such records can serve to represent objects, drawing commands, and graphics parameters that are critical to render vector images. When a digital device opens an EMF metafile through its graphics environment, dimension paraneters, proportions, color scheme, and other graphics properties of the source image do not get altered on any platform. 
+Enhanced Metafile (EMF) is a vector image format that is device-independent and is commonly used in Windows operating systems for printing tasks. An EMF image file comprises variable-length records in chronological order. Then, a vector image can be rendered on any output device. Such records can serve to represent objects, drawing commands, and graphics parameters that are critical to rendering vector images. When a digital device opens an EMF metafile through its graphics environment, dimension parameters, proportions, color scheme, and other graphics properties of the source image do not get altered on any platform. 
 <!--The following code sample shows how to generate EMF barcode images.
 
 {{< highlight csharp>}}
@@ -137,7 +137,7 @@ gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
 
 
 ### **SVG Format**
-Scalable Vector Graphics (SVG) corresponds to an vector image format based on XML. It is used to create two-dimensional images in web applications. In SVG images, the image appearance is described in XML text. Such files can be scaled to various size measures keeping resolution quality. Accordingly, this vector image format is suitable for websites and graphics printing owing to its capability to resize images in line with various design requirements. 
+Scalable Vector Graphics (SVG) corresponds to a vector image format based on XML. It is used to create two-dimensional images in web applications. In SVG images, the image appearance is described in XML text. Such files can be scaled to various size measures keeping resolution quality. Accordingly, this vector image format is suitable for websites and graphics printing owing to its capability to resize images in line with various design requirements. 
   
 <!--The following code snippet explains how to create SVG barcode images.  
 

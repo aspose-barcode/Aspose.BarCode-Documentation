@@ -1,5 +1,5 @@
 ---
-title: Codablock-F Barcodes
+title: Codablock-F Generation in C#
 type: docs
 weight: 130
 url: /net/codablockf-barcodes/
@@ -17,13 +17,14 @@ In ***Aspose.BarCode for .NET***, developers can set the height of each row in a
   
 Barcode labels demonstrated below have been generated with different aspect ratio settings. 
   
-|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 15**</p>|<p align="center">**Is Set to 30**</p>|
+|Aspect Ratio|Is Set to 15|Is Set to 30|
 | :-: | :-: | :-: |
 | |<img src="codablockfaspectratio15.png">|<img src="codablockfaspectratio30.png">|
   
 The following code snippet explains how to adjust the height of *Codablock-F* barcodes by setting the aspect ratio.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set CodablockF aspect ratio 15
@@ -32,21 +33,23 @@ gen.Save($"{path}CodablockFAspectRatio15.png", BarCodeImageFormat.Png);
 //set CodablockF aspect ratio 30
 gen.Parameters.Barcode.Codablock.AspectRatio = 30;
 gen.Save($"{path}CodablockFAspectRatio30.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```
   
 
 ## **Layout Settings**
 To set the layout of *Codablock-F* barcodes by defining the number of rows and columns, it is necessary to initialize the [*Columns*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/columns) and [*Rows*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters/properties/rows) properties of class [*CodablockParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codablockparameters) where the former is the most significant parameter. The maximal values of these properties are limited to 62 and 44 for *Columns* and *Rows*, respectively.  
   
-Barcode images provided below have been generated with different layout settings.
+The barcode images provided below have been generated with different layout settings.
   
-|<p align="center">**Layout Settings**</p>|<p align="center">**4 Columns**</p>|<p align="center">**4 Rows**</p>|<p align="center">**6 Rows and 4 Columns**</p>|
+|Layout Settings|4 Columns|4 Rows|6 Rows and 4 Columns|
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="codablockfcol4.png">|<img src="codablockfrow4.png">|<img src="codablockfrow6col4.png">|
   
 The following code sample illustrates how to customize layout settings for *Codablock-F* barcodes.
   
-{{< highlight csharp>}}
+``` csharp
+
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set CodablockF columns 4
@@ -61,4 +64,5 @@ gen.Save($"{path}CodablockFRow4.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.Codablock.Columns = 4;
 gen.Parameters.Barcode.Codablock.Rows = 6;
 gen.Save($"{path}CodablockFRow6Col4.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+```

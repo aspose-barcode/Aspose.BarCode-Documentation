@@ -1,18 +1,18 @@
 ---
-title: Working with WinForms and WPF with Barcode C# Library
-linktitle: Working with WinForms and WPF
+title: Barcode Generation using WinForms and WPF in C#
+linktitle: Barcode Generation using WinForms and WPF
 type: docs
-description: "Barcode Generation in Aspose.BarCode for .NET through C# GUI-based frameworks: Windows Forms and WPF"
-keywords: "Generate Barcodes, How to Generate Barcodes in C# .NET, Create Barcodes in WinForms, Generate Barcode WPF, C# Framework, Aspose.BarCode for .NET, C#"
+description: "Barcode Generation in Aspose.BarCode for .NET using C# GUI-based frameworks: Windows Forms and WPF"
+keywords: Generate Barcodes, How to Generate Barcodes in C# .NET, Create Barcodes in WinForms, Generate Barcode WPF, C# Framework, Aspose.BarCode for .NET
 weight: 10
 url: /net/generate-barcodes-with-aspose-barcode-apis/
 ---
-This article provides all necessary information and instructions to perform barcode generation through GUI-based C# tools, such as WinForms and WPF.
+This article provides all necessary information and instructions to perform barcode generation using GUI-based C# tools, such as WinForms and WPF.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## Overview
-***AsposeBarCode for .NET*** enables GUI-based development through standard C# visual component frameworks: Windows Forms and Windows Presentation Foundation.  
+***AsposeBarCode for .NET*** enables GUI-based development using standard C# visual component frameworks: Windows Forms and Windows Presentation Foundation.  
 
 **Windows Forms (WinForms)** is a UI development platform that benefits from wide functionality, including graphics, controls, user input, data biding, and other features. It enables a drag-and-drop visual designer in Visual Studio to facilitate the implementation of Windows applications. WinForms provides various controls that can be added to forms, such as text boxes, buttons, drop-down boxes, radio buttons, and even web pages. To work with custom UI elements, developers can use the *System.Drawing* namespace that includes specified classes to render lines, circles, and other shapes directly on a form.  
   
@@ -24,10 +24,11 @@ Before starting development with the use of GUI-based frameworks, it is necessar
 
 ## License Setting
 
-To work with ***Aspose.BarCode for .NET*** through GUI-based tools, it is necessary to activate the product license in the application code. General information about how to buy a license or get a trial period is available in [Licensing](/barcode/net/licensing/). <a name="licensesetting"></a>
-In this case, the recommended way to install the license is to do that through lazy initialization using the Singleton pattern that serves to call the license setting code through the form initialization constructor, as shown in the code sample below.  
+To work with ***Aspose.BarCode for .NET*** using GUI-based tools, it is necessary to activate the product license in the application code. General information about how to buy a license or get a trial period is available in [Licensing](/barcode/net/licensing/). <a name="licensesetting"></a>
+In this case, the recommended way to install the license is to do that through lazy initialization using the Singleton pattern that serves to call the license setting code via the form initialization constructor, as shown in the code sample below.  
 
-{{< highlight csharp>}}
+``` csharp
+
 internal class LicenseSingleton
 {
     private static LicenseSingleton _instance = new LicenseSingleton();
@@ -45,34 +46,39 @@ internal class LicenseSingleton
 	
 	//lazy initialization before using the library
 	LicenseSingleton.SetLicense();
-{{< /highlight >}} 
+
+```
 
 The following code snippets illustrate how to call license installation code in WinForms and WPF.  
 
 **Calling License Setting Code in WinForms**
   
-  {{< highlight csharp>}}
+``` csharp
+
 public Form1()
 {
     //set license
 	LicenseSingleton.SetLicense();
     InitializeComponent();
 }
-{{< /highlight >}}
+
+```
 
 **Calling License Setting Code in WPF**
   
-{{< highlight csharp>}}
+``` csharp
+
 public MainWindow()
 {
     //set license
     LicenseSingleton.SetLicense();
     InitializeComponent();
 }
-{{< /highlight >}}
 
-## Barcode Generation through WinForms GUI
-***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation through WinForms. To start a new project in this way, follow the steps outlined below:
+```
+
+## Barcode Generation in WinForms GUI
+***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation in WinForms. To start a new project in this way, follow the steps outlined below:
 1. Create a new project in WinForms
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*
@@ -91,9 +97,9 @@ public MainWindow()
   
 <p align="center"> <img src="winforms_04.png"> </p>
   
-## Barcode Generation through WPF
+## Barcode Generation in WPF
 
-***Aspose.BarCode for .NET*** is compatible with the DLL for the **Microsoft WPF framework** to enable building WPF-based applications. Namely, barcode generation and recognition functionality can be deployed by referencing *Aspose.BarCode.WPF.dll* in WPF applications. To implement barcode generation through WPF, follow the steps described below.  
+***Aspose.BarCode for .NET*** is compatible with the DLL for the **Microsoft WPF framework** to enable building WPF-based applications. Barcode generation and recognition functionality can be deployed by referencing *Aspose.BarCode.WPF.dll* in WPF applications. To implement barcode generation in WPF, follow the steps described below.  
 1. Create a new WPF project
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
 - Right-click on *References* and then on *Manage NuGet Packages*  
