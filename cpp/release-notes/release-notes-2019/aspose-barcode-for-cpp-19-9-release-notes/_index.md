@@ -7,7 +7,7 @@ url: /cpp/aspose-barcode-for-cpp-19-9-release-notes/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for C++ 19.9](https://downloads.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c---19.9/).
+This page contains release notes information for [Aspose.BarCode for C++ 19.9](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c---19.9/).
 
 {{% /alert %}} 
 ## **All Changes**

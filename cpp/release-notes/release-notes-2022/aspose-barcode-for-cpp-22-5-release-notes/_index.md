@@ -7,8 +7,8 @@ url: /cpp/aspose-barcode-for-cpp-22-5-release-notes/
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for [Aspose.BarCode for C++ 22.5](https://downloads.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c---22.5/).<br/>
-Please also check [CodePorting.Native Cs2Cpp 22.5 release notes](https://docs.codeporting.com/native/cs2cpp/release-notes/2022/codeporting-native-cs2cpp-22-5/).
+This page contains release notes information for [Aspose.BarCode for C++ 22.5](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c++-22.5/).<br/>
+Please also check [CodePorting.Native Cs2Cpp 22.5 release notes](https://docs.codeporting.com/translator/cs2cpp/release-notes/2022/codeporting-native-cs2cpp-22-5/).
 
 {{% /alert %}}
 ## **All Changes**
