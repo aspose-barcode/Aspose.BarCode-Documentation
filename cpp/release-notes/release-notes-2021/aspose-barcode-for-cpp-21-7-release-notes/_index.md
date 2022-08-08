@@ -24,7 +24,7 @@ This page contains release notes information for [Aspose.BarCode for C++ 21.7](h
 |BARCODECPP-455|Add version details against "File version" for Properties of Aspose.BarCode for C++ Dlls|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
-- Added method System::SharedPtr<Mailmark2DCodetext> Aspose::BarCode::ComplexBarcode::ComplexCodetextReader::TryDecodeMailmark2D(System::String)
+- Added method System::SharedPtr&lt;Mailmark2DCodetext&gt; Aspose::BarCode::ComplexBarcode::ComplexCodetextReader::TryDecodeMailmark2D(System::String)
 - Added enum Aspose::BarCode::ComplexBarcode::Mailmark2DType
 - Added field Aspose::BarCode::ComplexBarcode::Mailmark2DType::Auto
 - Added field Aspose::BarCode::ComplexBarcode::Mailmark2DType::Type_7
@@ -58,4 +58,4 @@ This page contains release notes information for [Aspose.BarCode for C++ 21.7](h
 - Added property setter Aspose::BarCode::ComplexBarcode::Mailmark2DCodetext::set_DataMatrixType(Aspose::BarCode::ComplexBarcode::Mailmark2DType)
 - Added method System::String Aspose::BarCode::ComplexBarcode::Mailmark2DCodetext::GetConstructedCodetext()
 - Added method void Aspose::BarCode::ComplexBarcode::Mailmark2DCodetext::InitFromString(System::String)
-- Added method System::SharedPtr<Aspose::BarCode::Generation::BaseEncodeType> Aspose::BarCode::ComplexBarcode::Mailmark2DCodetext::GetBarcodeType()
+- Added method System::SharedPtr&lt;Aspose::BarCode::Generation::BaseEncodeType&gt; Aspose::BarCode::ComplexBarcode::Mailmark2DCodetext::GetBarcodeType()

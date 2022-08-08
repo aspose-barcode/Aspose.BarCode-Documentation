@@ -18,6 +18,7 @@ This page contains release notes information for [Aspose.BarCode for C++ 19.1](h
 ## **Usage Examples**
 **BARCODENET-37045 - Pdf417 throws Out Of Memory Exception when CodeText has a closing parenthesis ")"**
 
+{{< highlight cpp >}}
 System::SharedPtr<System::Drawing::Font> f = System::MakeObject<System::Drawing::Font>(u"Lucida Console", 12.F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel);
 
 System::SharedPtr<Aspose::BarCode::Generation::BarCodeGenerator> b = System::MakeObject<Aspose::BarCode::Generation::BarCodeGenerator>(Aspose::BarCode::Generation::EncodeTypes::Pdf417);
@@ -36,7 +37,7 @@ b->set_CodeText(u"Sample.Code.Text(Example).20181203_150435");
 
 System::SharedPtr<System::IO::MemoryStream> barcodeStream = System::MakeObject<System::IO::MemoryStream>();
 b->Save(barcodeStream, Aspose::BarCode::BarCodeImageFormat::Svg);
-
+{{< /highlight >}}
 Result:
 Correct SVG image.
 ## **Public API and Backward Incompatible Changes**

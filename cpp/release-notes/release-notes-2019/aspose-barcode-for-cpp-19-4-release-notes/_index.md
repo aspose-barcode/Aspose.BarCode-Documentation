@@ -27,34 +27,36 @@ This page contains release notes information for [Aspose.BarCode for C++ 19.4](h
 Following members have been added:
 
 - Class Aspose::BarCode::Generation::V3::BarcodeGenerator
-- Property getter System::SharedPtr<BaseGenerationParameters> get_Parameters();
-- Property getter System::SharedPtr<BaseEncodeType> get_BarcodeType();
-- Property setter void set_BarcodeType(System::SharedPtr<BaseEncodeType> value);
+- Property getter System::SharedPtr&lt;BaseGenerationParameters&gt; get_Parameters();
+- Property getter System::SharedPtr&lt;BaseEncodeType&gt; get_BarcodeType();
+- Property setter void set_BarcodeType(System::SharedPtr&lt;BaseEncodeType&gt; value);
 - Property getter bool get_IsLicensed();
 - Property getter System::String get_CodeText();
 - Property setter void set_CodeText(System::String value);
-- Constructor BarcodeGenerator(System::SharedPtr<BaseEncodeType> type);
-- Constructor BarcodeGenerator(System::SharedPtr<BaseEncodeType> type, System::String codeText); 
-- Method System::SharedPtr<System::Drawing::Bitmap> GenerateBarCodeImage();
-- Method void Save(System::SharedPtr<System::IO::Stream> stream, BarCodeImageFormat format);
-- Method void Save(System::String filename, BarCodeImageFormat format);Type Aspose::BarCode::Generation::V3::AutoSizeMode
-- Method void Save(System::String filename);Type Aspose::BarCode::Generation::V3::BarcodeParameters
+- Constructor BarcodeGenerator(System::SharedPtr&lt;BaseEncodeType&gt; type);
+- Constructor BarcodeGenerator(System::SharedPtr&lt;BaseEncodeType&gt; type, System::String codeText); 
+- Method System::SharedPtr&lt;System::Drawing::Bitmap&gt; GenerateBarCodeImage();
+- Method void Save(System::SharedPtr&lt;System::IO::Stream&gt; stream, BarCodeImageFormat format);
+- Method void Save(System::String filename, BarCodeImageFormat format);
+- Type Aspose::BarCode::Generation::V3::AutoSizeMode
+- Method void Save(System::String filename);
+- Type Aspose::BarCode::Generation::V3::BarcodeParameters
 - Method void Dispose();
 - Enum Aspose::BarCode::Generation::V3::AutoSizeMode
 - Class Aspose::BarCode::Generation::V3::BarcodeParameters
-- Property getter System::SharedPtr<Unit> get_XDimension();
-- Property setter void set_XDimension(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_BarHeight();
-- Property setter void set_BarHeight(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_XDimension();
+- Property setter void set_XDimension(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_BarHeight();
+- Property setter void set_BarHeight(System::SharedPtr&lt;Unit&gt; value);
 - Property getter Aspose::BarCode::Generation::V3::AutoSizeMode get_AutoSizeMode();
 - Property setter void set_AutoSizeMode(Aspose::BarCode::Generation::V3::AutoSizeMode value);
-- Property getter System::SharedPtr<Unit> get_BarCodeHeight();
-- Property setter void set_BarCodeHeight(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_BarCodeWidth();
-- Property setter void set_BarCodeWidth(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_BarCodeHeight();
+- Property setter void set_BarCodeHeight(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_BarCodeWidth();
+- Property setter void set_BarCodeWidth(System::SharedPtr&lt;Unit&gt; value);
 - Property getter System::Drawing::Color get_ForeColor();
 - Property setter void set_ForeColor(System::Drawing::Color value);
-- Property getter System::SharedPtr<V3::BarcodePadding> get_Padding();
+- Property getter System::SharedPtr&lt;V3::BarcodePadding&gt; get_Padding();
 - Property getter bool get_ChecksumAlwaysShow();
 - Property setter void set_ChecksumAlwaysShow(bool value);
 - Property getter EnableChecksum get_IsChecksumEnabled();
@@ -65,26 +67,26 @@ Following members have been added:
 - Property setter void set_ThrowExceptionWhenCodeTextIncorrect(bool value);
 - Property getter float get_WideNarrowRatio();
 - Property setter void set_WideNarrowRatio(float value);
-- Property getter System::SharedPtr<V3::CodetextParameters> get_CodeTextParameters();
+- Property getter System::SharedPtr&lt;V3::CodetextParameters&gt; get_CodeTextParameters();
 - Property getter bool get_FilledBars();
 - Property setter void set_FilledBars(bool value);
-- Property getter System::SharedPtr<PostalParameters> get_Postal();
-- Property getter System::SharedPtr<AustralianPostParameters> get_AustralianPost();
-- Property getter System::SharedPtr<DataBarParameters> get_DataBar();
-- Property getter System::SharedPtr<CodablockParameters> get_Codablock();
-- Property getter System::SharedPtr<DataMatrixParameters> get_DataMatrix();
-- Property getter System::SharedPtr<Code16KParameters> get_Code16K();
-- Property getter System::SharedPtr<DotCodeParameters> get_DotCode();
-- Property getter System::SharedPtr<ITFParameters> get_ITF();
-- Property getter System::SharedPtr<Pdf417Parameters> get_Pdf417();
-- Property getter System::SharedPtr<QrParameters> get_QR();
-- Property getter System::SharedPtr<SupplementParameters> get_Supplement();
-- Property getter System::SharedPtr<MaxiCodeParameters> get_MaxiCode();
-- Property getter System::SharedPtr<AztecParameters> get_Aztec();
-- Property getter System::SharedPtr<CodabarParameters> get_Codabar();
-- Property getter System::SharedPtr<CouponParameters> get_Coupon();
+- Property getter System::SharedPtr&lt;PostalParameters&gt; get_Postal();
+- Property getter System::SharedPtr&lt;AustralianPostParameters&gt; get_AustralianPost();
+- Property getter System::SharedPtr&lt;DataBarParameters&gt; get_DataBar();
+- Property getter System::SharedPtr&lt;CodablockParameters&gt; get_Codablock();
+- Property getter System::SharedPtr&lt;DataMatrixParameters&gt; get_DataMatrix();
+- Property getter System::SharedPtr&lt;Code16KParameters&gt; get_Code16K();
+- Property getter System::SharedPtr&lt;DotCodeParameters&gt; get_DotCode();
+- Property getter System::SharedPtr&lt;ITFParameters&gt; get_ITF();
+- Property getter System::SharedPtr&lt;Pdf417Parameters&gt; get_Pdf417();
+- Property getter System::SharedPtr&lt;QrParameters&gt; get_QR();
+- Property getter System::SharedPtr&lt;SupplementParameters&gt; get_Supplement();
+- Property getter System::SharedPtr&lt;MaxiCodeParameters&gt; get_MaxiCode();
+- Property getter System::SharedPtr&lt;AztecParameters&gt; get_Aztec();
+- Property getter System::SharedPtr&lt;CodabarParameters&gt; get_Codabar();
+- Property getter System::SharedPtr&lt;CouponParameters&gt; get_Coupon();
 - Class Aspose::BarCode::Generation::V3::CouponParameters
-- Property getter System::SharedPtr<Unit> get_SupplementSpace();
+- Property getter System::SharedPtr&lt;Unit&gt; get_SupplementSpace();
 - Class Aspose::BarCode::Generation::V3::CodabarParameters
 - Property getter Aspose::BarCode::CodabarChecksumMode get_CodabarChecksumMode();
 - Property setter void set_CodabarChecksumMode(Aspose::BarCode::CodabarChecksumMode value);
@@ -99,8 +101,8 @@ Following members have been added:
 - Property setter void set_AztecSymbolMode(Aspose::BarCode::AztecSymbolMode value);
 - Property getter float get_AspectRatio();
 - Property setter void set_AspectRatio(float value);
-- Property getter System::SharedPtr<System::Text::Encoding> get_CodeTextEncoding();
-- Property setter void set_CodeTextEncoding(System::SharedPtr<System::Text::Encoding> value);
+- Property getter System::SharedPtr&lt;System::Text::Encoding&gt; get_CodeTextEncoding();
+- Property setter void set_CodeTextEncoding(System::SharedPtr&lt;System::Text::Encoding&gt; value);
 - Class Aspose::BarCode::Generation::V3::MaxiCodeParameters
 - Property getter int32_t get_MaxiCodeEncodeMode();
 - Property setter void set_MaxiCodeEncodeMode(int32_t value);
@@ -109,7 +111,7 @@ Following members have been added:
 - Class Aspose::BarCode::Generation::V3::SupplementParameters
 - Property getter System::String get_SupplementData();
 - Property setter void set_SupplementData(System::String value);
-- Property getter System::SharedPtr<Unit> get_SupplementSpace();
+- Property getter System::SharedPtr&lt;Unit&gt; get_SupplementSpace();
 - Class Aspose::BarCode::Generation::V3::QrParameters
 - Property getter QREncodeMode get_QrEncodeMode();
 - Property setter void set_QrEncodeMode(QREncodeMode value);
@@ -121,8 +123,8 @@ Following members have been added:
 - Property setter void set_QrVersion(QRVersion value);
 - Property getter float get_AspectRatio();
 - Property setter void set_AspectRatio(float value);
-- Property getter System::SharedPtr<System::Text::Encoding> get_CodeTextEncoding();
-- Property setter void set_CodeTextEncoding(System::SharedPtr<System::Text::Encoding> value);
+- Property getter System::SharedPtr&lt;System::Text::Encoding&gt; get_CodeTextEncoding();
+- Property setter void set_CodeTextEncoding(System::SharedPtr&lt;System::Text::Encoding&gt; value);
 - Class Aspose::BarCode::Generation::V3::Pdf417Parameters
 - Property getter Aspose::BarCode::Pdf417CompactionMode get_Pdf417CompactionMode();
 - Property setter void set_Pdf417CompactionMode(Aspose::BarCode::Pdf417CompactionMode value);
@@ -142,11 +144,11 @@ Following members have been added:
 - Property setter void set_Pdf417MacroSegmentID(int32_t value);
 - Property getter int32_t get_Pdf417MacroSegmentsCount();
 - Property setter void set_Pdf417MacroSegmentsCount(int32_t value);
-- Property getter System::SharedPtr<System::Text::Encoding> get_CodeTextEncoding();
-- Property setter void set_CodeTextEncoding(System::SharedPtr<System::Text::Encoding> value);
+- Property getter System::SharedPtr&lt;System::Text::Encoding&gt; get_CodeTextEncoding();
+- Property setter void set_CodeTextEncoding(System::SharedPtr&lt;System::Text::Encoding&gt; value);
 - Class Aspose::BarCode::Generation::V3::ITFParameters
-- Property getter System::SharedPtr<Unit> get_ItfBorderThickness();
-- Property setter void set_ItfBorderThickness(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_ItfBorderThickness();
+- Property setter void set_ItfBorderThickness(System::SharedPtr&lt;Unit&gt; value);
 - Property getter ITF14BorderType get_ItfBorderType();
 - Property setter void set_ItfBorderType(ITF14BorderType value);
 - Property getter int32_t get_QuietZoneCoef();
@@ -174,8 +176,8 @@ Following members have been added:
 - Property setter void set_Rows(int32_t value);
 - Property getter float get_AspectRatio();
 - Property setter void set_AspectRatio(float value);
-- Property getter System::SharedPtr<System::Text::Encoding> get_CodeTextEncoding();
-- Property setter void set_CodeTextEncoding(System::SharedPtr<System::Text::Encoding> value);
+- Property getter System::SharedPtr&lt;System::Text::Encoding&gt; get_CodeTextEncoding();
+- Property setter void set_CodeTextEncoding(System::SharedPtr&lt;System::Text::Encoding&gt; value);
 - Class Aspose::BarCode::Generation::V3::CodablockParameters
 - Property getter int32_t get_Columns();
 - Property setter void set_Columns(int32_t value);
@@ -191,13 +193,13 @@ Following members have been added:
 - Property getter float get_AspectRatio();
 - Property setter void set_AspectRatio(float value);
 - Class Aspose::BarCode::Generation::V3::AustralianPostParameters
-- Property getter System::SharedPtr<Unit> get_AustralianPostShortBarHeight();
-- Property setter void set_AustralianPostShortBarHeight(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_AustralianPostShortBarHeight();
+- Property setter void set_AustralianPostShortBarHeight(System::SharedPtr&lt;Unit&gt; value);
 - Property getter CustomerInformationInterpretingType get_AustralianPostEncodingTable();
 - Property setter void set_AustralianPostEncodingTable(CustomerInformationInterpretingType value);
 - Class Aspose::BarCode::Generation::V3::PostalParameters
-- Property getter System::SharedPtr<Unit> get_PostalShortBarHeight();
-- Property setter void set_PostalShortBarHeight(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_PostalShortBarHeight();
+- Property setter void set_PostalShortBarHeight(System::SharedPtr&lt;Unit&gt; value);
 - Class Aspose::BarCode::Generation::V3::BaseGenerationParameters
 - Property getter System::Drawing::Color get_BackColor();
 - Property setter void set_BackColor(System::Drawing::Color value);
@@ -205,15 +207,15 @@ Following members have been added:
 - Property setter void set_Resolution(float value);
 - Property getter float get_RotationAngle();
 - Property setter void set_RotationAngle(float value);
-- Property getter System::SharedPtr<V3::CaptionParameters> get_CaptionAbove();
-- Property getter System::SharedPtr<V3::CaptionParameters> get_CaptionBelow();
-- Property getter System::SharedPtr<V3::BarcodeParameters> get_Barcode();
-- Property getter System::SharedPtr<V3::BorderParameters> get_Border();
+- Property getter System::SharedPtr&lt;V3::CaptionParameters&gt; get_CaptionAbove();
+- Property getter System::SharedPtr&lt;V3::CaptionParameters&gt; get_CaptionBelow();
+- Property getter System::SharedPtr&lt;V3::BarcodeParameters&gt; get_Barcode();
+- Property getter System::SharedPtr&lt;V3::BorderParameters&gt; get_Border();
 - Class Aspose::BarCode::Generation::V3::BorderParameters
 - Property getter bool get_Visible();
 - Property setter void set_Visible(bool value);
-- Property getter System::SharedPtr<Unit> get_Width();
-- Property setter void set_Width(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Width();
+- Property setter void set_Width(System::SharedPtr&lt;Unit&gt; value);
 - Property getter BorderDashStyle get_DashStyle();
 - Property setter void set_DashStyle(BorderDashStyle value);
 - Property getter System::Drawing::Color get_Color();
@@ -221,13 +223,13 @@ Following members have been added:
 - Class Aspose::BarCode::Generation::V3::CaptionParameters
 - Property getter System::String get_Text();
 - Property setter void set_Text(System::String value);
-- Property getter System::SharedPtr<FontUnit> get_Font();
+- Property getter System::SharedPtr&lt;FontUnit&gt; get_Font();
 - Property getter bool get_Visible();
 - Property setter void set_Visible(bool value);
 - Property getter System::Drawing::Color get_TextColor();
 - Property setter void set_TextColor(System::Drawing::Color value);
-- Property getter System::SharedPtr<V3::CaptionPadding> get_Padding();
-- Property setter void set_Padding(System::SharedPtr<V3::CaptionPadding> value);
+- Property getter System::SharedPtr&lt;V3::CaptionPadding&gt; get_Padding();
+- Property setter void set_Padding(System::SharedPtr&lt;V3::CaptionPadding&gt; value);
 - Property getter V3::StringAlignment get_Alignment();
 - Property setter void set_Alignment(V3::StringAlignment value);
 - Enum Aspose::BarCode::Generation::V3::FontMode
@@ -235,10 +237,10 @@ Following members have been added:
 - Class Aspose::BarCode::Generation::V3::CodetextParameters
 - Property getter Aspose::BarCode::Generation::V3::FontMode get_FontMode();
 - Property setter void set_FontMode(Aspose::BarCode::Generation::V3::FontMode value);
-- Property getter System::SharedPtr<FontUnit> get_Font();
-- Property setter void set_Font(System::SharedPtr<FontUnit> value);
-- Property getter System::SharedPtr<Unit> get_Space();
-- Property setter void set_Space(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;FontUnit&gt; get_Font();
+- Property setter void set_Font(System::SharedPtr&lt;FontUnit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Space();
+- Property setter void set_Space(System::SharedPtr&lt;Unit&gt; value);
 - Property getter V3::StringAlignment get_Alignment();
 - Property setter void set_Alignment(V3::StringAlignment value);
 - Property getter System::Drawing::Color get_Color();
@@ -246,21 +248,21 @@ Following members have been added:
 - Property getter V3::CodeLocation get_Location();
 - Property setter void set_Location(V3::CodeLocation value);
 - Class Aspose::BarCode::Generation::V3::BarcodePadding
-- Property getter System::SharedPtr<Unit> get_Top();
-- Property setter void set_Top(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Bottom();
-- Property setter void set_Bottom(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Right();
-- Property setter void set_Right(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Left();
-- Property setter void set_Left(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Top();
+- Property setter void set_Top(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Bottom();
+- Property setter void set_Bottom(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Right();
+- Property setter void set_Right(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Left();
+- Property setter void set_Left(System::SharedPtr&lt;Unit&gt; value);
 - Class Aspose::BarCode::Generation::V3::CaptionPadding
-- Property getter System::SharedPtr<Unit> get_Top();
-- Property setter void set_Top(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Bottom();
-- Property setter void set_Bottom(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Right();
-- Property setter void set_Right(System::SharedPtr<Unit> value);
-- Property getter System::SharedPtr<Unit> get_Left();
-- Property setter void set_Left(System::SharedPtr<Unit> value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Top();
+- Property setter void set_Top(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Bottom();
+- Property setter void set_Bottom(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Right();
+- Property setter void set_Right(System::SharedPtr&lt;Unit&gt; value);
+- Property getter System::SharedPtr&lt;Unit&gt; get_Left();
+- Property setter void set_Left(System::SharedPtr&lt;Unit&gt; value);
 - Enum Aspose::BarCode::Generation::V3::StringAlignment

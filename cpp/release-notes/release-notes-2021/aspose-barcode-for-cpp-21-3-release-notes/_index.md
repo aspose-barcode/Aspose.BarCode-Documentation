@@ -587,13 +587,13 @@ Following members have been moved from Aspose::BarCode to Aspose::BarCode::Gener
 - Moved field Aspose::BarCode::Generation::QREncodeenum::ForceQR
 - Moved field Aspose::BarCode::Generation::QREncodeenum::ForceMicroQR
 - Moved enum Aspose::BarCode::Generation::ExtCodetextBuilder
-- Moved method Aspose::BarCode::Generation::ExtCodetextBuilder::#ctor
+- Moved constructor Aspose::BarCode::Generation::ExtCodetextBuilder::ExtCodetextBuilder()
 - Moved method Aspose::BarCode::Generation::ExtCodetextBuilder::Clear
 - Moved method Aspose::BarCode::Generation::ExtCodetextBuilder::AddPlainCodetext(System::String)
 - Moved method Aspose::BarCode::Generation::ExtCodetextBuilder::AddECICodetext(Aspose::BarCode::Generation::ECIEncodings,System::String)
 - Moved method Aspose::BarCode::Generation::ExtCodetextBuilder::GetExtendedCodetext
 - Moved enum Aspose::BarCode::Generation::QrExtCodetextBuilder
-- Moved method Aspose::BarCode::Generation::QrExtCodetextBuilder::#ctor
+- Moved constructor Aspose::BarCode::Generation::QrExtCodetextBuilder::QrExtCodetextBuilder()
 - Moved method Aspose::BarCode::Generation::QrExtCodetextBuilder::AddFNC1FirstPosition
 - Moved method Aspose::BarCode::Generation::QrExtCodetextBuilder::AddFNC1SecondPosition(System::String)
 - Moved method Aspose::BarCode::Generation::QrExtCodetextBuilder::AddFNC1GroupSeparator

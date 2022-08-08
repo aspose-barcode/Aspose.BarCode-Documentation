@@ -58,12 +58,13 @@ This page contains release notes information for [Aspose.Barcode for C++ 18.11](
 # **Usage Examples**
 **BARCODENET-36791 Prepare preview version of new barcode generation API** 
 We would like to introduce the preview version of new barcode generation API. It has been developed to cover real use cases, like document printing and UI design, as well as we try to make it more simple then previous one. New class Aspose.BarCode.Generation.BarCodeGenerator has been added and it has following main features:
-\1. Two different modes of generation depending on your requirements.
+
+Two different modes of generation depending on your requirements.
 If you have restricted requirements of barcode size, then you can set AutoSizeMode = Nearest and required barcode size. Barcode generator will calculate the all other parameters like xDimension, AspectRatio, etc to fit barcode into desired size:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
 
 generator->set_AutoSizeMode(Aspose::BarCode::Generation::AutoSizeMode::Nearest);
 
@@ -79,9 +80,9 @@ generator->Save(u"out.png");
 
 In opposite if doesn't have required size, you can use AutoSizeMode = None and set all generator parameters by yourself.
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
 
 generator->get_XDimension()->set_Pixels(3);
 
@@ -97,9 +98,9 @@ generator->Save(u"out.png");
 
 In addition, if you just want to know the barcode size without saving image you can call method RecalculateValues() and get barcode size.
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
 
 generator->get_XDimension()->set_Pixels(3);
 
@@ -117,11 +118,11 @@ float height = generator->get_BarCodeWidth()->get_Pixels();
 
 Needless to say, that in the complex scenarios AutoSizeMode can be changed from None to Nearest and vice versa to cover all the requirements.
 
-\2. Unit-based system of values. All measurement values can be get and set in pixels, millimeters, inches in the same time. You can easily change the resolution of image and prepare the same barcode for printing, LCD screens or retina-displays.
+Unit-based system of values. All measurement values can be get and set in pixels, millimeters, inches in the same time. You can easily change the resolution of image and prepare the same barcode for printing, LCD screens or retina-displays.
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR, u"Aspose.BarCode sample");
 
 generator->set_AutoSizeMode(Aspose::BarCode::Generation::AutoSizeMode::Nearest);
 
@@ -139,11 +140,11 @@ generator->Save(u"for_printer.png");
 
 
 
-\3. Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the API for new users.
+Properties for specific barcode types are grouped. Such specific properties like QR_EncodeType of DataMatrix_Ecc are grouped by type to simplify all the API for new users.
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::QR);
 
 generator->get_QR()->set_Version(Aspose::BarCode::QRVersion::Version18);
 
@@ -155,19 +156,19 @@ generator->Save(u"qr.png");
 
 
 
-\4. BarCodeGenearator has predefined default codetext, so you can just explore the default codetext format for the specific type.
+BarCodeGenearator has predefined default codetext, so you can just explore the default codetext format for the specific type.
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::AustralianPosteParcel);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::AustralianPosteParcel);
 
 System::String codetext = generator->get_CodeText();//99712345678901234567890103456
 
 {{< /highlight >}}
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::EAN13);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::EAN13);
 
 System::String codetext = generator->get_CodeText();//590123412345
 
@@ -175,14 +176,14 @@ System::String codetext = generator->get_CodeText();//590123412345
 
 
 
-\5. Stay tuned, more features are coming soon! It is a preview version and your feedback are welcome. In the further releases we will add one more generation mode and new UI controls based on new API.
+Stay tuned, more features are coming soon! It is a preview version and your feedback are welcome. In the further releases we will add one more generation mode and new UI controls based on new API.
 
 **BARCODENET-36215 Unable to Read the DatabarExpandedStacked barcode from a PNG image** 
 Sample
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"DatabarExpandedStacked_Sample.png", DecodeType::DatabarExpandedStacked);
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"DatabarExpandedStacked_Sample.png", DecodeType::DatabarExpandedStacked);
 
 while (reader->Read())
 
@@ -205,9 +206,9 @@ Type: DatabarExpandedStacked Text: (8110)106141411234562891101201212085010048000
 **BARCODENET-36941 - Implement UpcaGs1DatabarCoupon for new barcode generation API** 
 Code sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::UpcaGs1DatabarCoupon);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::UpcaGs1DatabarCoupon);
 
 generator->Save(u"UpcaGs1DatabarCoupon.png");
 
@@ -223,9 +224,9 @@ Png image
 **BARCODENET-36930 - Implement Interpolation AutoSize mode** 
 Code sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::DataMatrix);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::DataMatrix);
 
 generator->set_AutoSizeMode(Aspose::BarCode::Generation::AutoSizeMode::Interpolation);
 
@@ -248,9 +249,9 @@ Png image
 **BARCODENET-36942 - Incorrect draw Code16K barcode, without above and below borders** 
 Code sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::Code16K);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::Code16K);
 
 generator->set_AutoSizeMode(Aspose::BarCode::Generation::AutoSizeMode::Nearest);
 
@@ -271,9 +272,9 @@ Png image
 We can use Display2DText property for only displayed text and we can insert '\n' symbols in this case.
 Code sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::String CODICE = u"(90)0843110730<<<<452287005001T8";
+System::String CODICE = u"(90)0843110730<<<<452287005001T8";
 
 System::String displayedText = System::String(u"(90)0843") + System::Environment::get_NewLine() +
 
@@ -304,9 +305,9 @@ Png image
 **BARCODENET-36923 - Implement MaxiCode for new barcode generation API** 
 Code sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::MaxiCode);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::MaxiCode);
 
 generator->set_MaxiCodeEncodeMode(5);
 
@@ -322,9 +323,9 @@ barcode->Save(u"MaxiCode.png");
 
 
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::DotCode);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::DotCode);
 
 generator->set_DotCodeMask(2);
 
@@ -342,9 +343,9 @@ barcode->Save(u"DotCode.png");
 
 **Usage of QualitySettings presets**
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
 
 //set high performance mode
 
@@ -362,9 +363,9 @@ while (reader->Read())
 
 **Usage of QualitySettings Presets with Manual Options Set Up**
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
 
 //set high performance mode
 
@@ -388,9 +389,9 @@ while (reader->Read())
 
 **Usage of QualitySettings Manual Options Set Up**
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"c:\\test.jpg");
 
 //default mode is NormalQuality
 
@@ -412,9 +413,9 @@ while (reader->Read())
 
 **Bitmap with Proceed Recangle Set Up Sample**
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<System::IO::FileStream> lStream = System::MakeObject<System::IO::FileStream>(u"c:\\test.jpg", System::IO::FileMode::Open, System::IO::FileAccess::Read, System::IO::FileShare::Read);
+System::SharedPtr<System::IO::FileStream> lStream = System::MakeObject<System::IO::FileStream>(u"c:\\test.jpg", System::IO::FileMode::Open, System::IO::FileAccess::Read, System::IO::FileShare::Read);
 
 System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>();
 
@@ -432,9 +433,9 @@ while (reader->Read())
 
 **Bitmap With Proceed Rectangles List Set Up Sample** 
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<System::Drawing::Bitmap> lBitmap = System::MakeObject<System::Drawing::Bitmap>(u"c:\\test.jpg");
+System::SharedPtr<System::Drawing::Bitmap> lBitmap = System::MakeObject<System::Drawing::Bitmap>(u"c:\\test.jpg");
 
 System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>();
 
@@ -456,9 +457,9 @@ while (reader->Read())
 **BARCODENET-36940 - Implement UpcaGs1Code128Coupon for new barcode generation API** 
 Sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::UpcaGs1Code128Coupon);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::UpcaGs1Code128Coupon);
 
 generator->set_CodeText(u"514141100906(01)88898765432109");
 
@@ -476,9 +477,9 @@ generator->Save(u"UpcaGs1Code128Coupon_Interpolation_500x200.png");
 **BARCODENET-36962 - Not able to read the barcode** 
 QualitySettings.AllowInvertImage can help with such images:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(fileName, DecodeType::DataMatrix);
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(fileName, DecodeType::DataMatrix);
 
 reader->get_QualitySettings()->set_AllowInvertImage(true);
 
@@ -502,9 +503,9 @@ ASSERT_TRUE(lCodetexts->Contains(u"65359403095957"));
 **BARCODENET-36795 - DPI settings works incorrectly with rotation** 
 Sample:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::Code128);
+System::SharedPtr<BarCodeGenerator> generator = System::MakeObject<BarCodeGenerator>(EncodeTypes::Code128);
 
 generator->set_Resolution(144);
 
@@ -520,9 +521,9 @@ generator->Save(u"rotated_dpi144.png");
 
 Usage of the new DecodeType fields:
 
-{{< highlight java >}}
+{{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"test.png", DecodeType::Types1D);
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(u"test.png", DecodeType::Types1D);
 
 while (reader->Read())
 
@@ -621,9 +622,9 @@ while (reader->Read())
 - Property setter Aspose::BarCode::BarCodeRecognition::QualitySettings::set_AllowDatamatrixIndustrialBarcodes
 - Property getter Aspose::BarCode::BarCodeRecognition::QualitySettings::get_AllowQRMicroQrRestoration
 - Property setter Aspose::BarCode::BarCodeRecognition::QualitySettings::set_AllowQRMicroQrRestoration
-- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr<System::Drawing::Bitmap>, System::ArrayPtr<System::Drawing::Rectangle>)
-- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr<System::Drawing::Bitmap>, System::Drawing::Rectangle)
-- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr<System::IO::Stream>)
+- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr&lt;System::Drawing::Bitmap&gt;, System::ArrayPtr&lt;System::Drawing::Rectangle&gt;)
+- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr&lt;System::Drawing::Bitmap&gt;, System::Drawing::Rectangle)
+- Method Aspose::BarCode::BarCodeRecognition::BarCodeReader::SetBarCodeImage(System::SharedPtr&lt;System::IO::Stream&gt;)
 - Field DecodeType::Types1D
 - Field DecodeType::PostalTypes
 - Field DecodeType::MostCommonTypes

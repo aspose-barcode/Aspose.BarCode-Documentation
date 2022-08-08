@@ -22,7 +22,7 @@ This page contains release notes information for [Aspose.BarCode for C++ 19.2](h
 
 {{< highlight cpp >}}
 
- System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(filename);
+System::SharedPtr<BarCodeReader> reader = System::MakeObject<BarCodeReader>(filename);
 
 while (reader->Read()) ;
 
