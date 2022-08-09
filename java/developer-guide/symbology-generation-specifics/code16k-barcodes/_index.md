@@ -1,5 +1,6 @@
 ---
 title: Code16K Barcode Generation in Java
+linktitle: Code16K
 type: docs
 weight: 150
 url: /java/code16k-barcodes/

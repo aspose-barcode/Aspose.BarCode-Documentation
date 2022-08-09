@@ -1,8 +1,9 @@
 ---
-title: Recognition Settings
+title: Barcode Recognition Settings in Java
+linktitle: Barcode Recognition Settings
 type: docs
 description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for Java according to business needs"
-keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode Java"
+keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode Java
 weight: 20
 url: /java/recognition-settings/
 ---

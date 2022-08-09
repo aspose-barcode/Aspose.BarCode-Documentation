@@ -1,10 +1,11 @@
 ---
-title: Read Barcodes using Barcode Java API
-linktitle: Read Barcodes with Aspose.BarCode APIs
+title: Barcode Recognition using Barcode Java API
+linktitle: Barcode Reading API
+description: "Description of Barcode Java API for barcode recognition"
 type: docs
 weight: 90
 url: /java/read-barcodes-with-aspose-barcode-apis/
-description: Barcode Java API contains two powerful classes, BarCodeGenerator and BarCodeReader, handling barcode image generation and recognition respectively. BarCodeReader reads most commonly used 1D and 2D barcodes, detecting them anywhere.
+
 ---
 
 ## **Scan Barcode from Image**

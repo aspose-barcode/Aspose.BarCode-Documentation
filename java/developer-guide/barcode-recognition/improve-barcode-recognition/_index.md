@@ -1,8 +1,9 @@
 ---
-title: Recognition Quality and Speed
+title: Barcode Recognition Quality and Speed
+linktitle: Barcode Reading Optimization
 type: docs
 description: "This section describes how barcode recognition can be optimized in terms of accuracy and speed."
-keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode Java"
+keywords: Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode Java
 weight: 30
 url: /java/optimize-scan/
 ---

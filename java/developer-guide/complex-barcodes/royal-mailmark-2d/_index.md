@@ -1,8 +1,9 @@
 ---
-title: Mailmark 2D Barcodes
+title: Royal Mail Mailmark 2D Barcodes in Java
+linktitle: Mailmark 2D Barcodes
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for Java"
-keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcodes in Java"
+keywords: Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcodes in Java
 weight: 20
 url: /java/mailmark-2D-barcode/
 ---

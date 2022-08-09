@@ -1,8 +1,9 @@
 ---
-title: Multithread Barcode Reading
+title: Multithread Barcode Recognition in Java
+linktitle: Multithread Barcode Reading
 type: docs
 description: "This article explains how to set mulithread barcode recognition"
-keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode Java"
+keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode Java
 weight: 50
 url: /java/loading-barcode-images/
 ---

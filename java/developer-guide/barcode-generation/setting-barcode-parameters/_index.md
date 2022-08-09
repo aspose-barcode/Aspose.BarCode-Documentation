@@ -1,5 +1,6 @@
 ---
 title: Managing Barcode Parameters via Java
+linktitle: Barcode Parameters
 type: docs
 weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Java"

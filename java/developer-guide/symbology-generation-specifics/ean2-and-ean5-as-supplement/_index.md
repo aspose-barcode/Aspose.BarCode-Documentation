@@ -1,5 +1,6 @@
 ---
 title: Generation of EAN-2 and EAN-5 as Supplement Barcodes in Java
+linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
 weight: 160
 url: /java/use-checksum-and-supplement-data-for-barcodes/

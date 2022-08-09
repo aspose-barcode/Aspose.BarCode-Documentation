@@ -1,5 +1,6 @@
 ---
-title: Barcode Generation
+title: Barcode Generation in Java
+linktitle: Barcode Generation
 type: docs
 weight: 10
 url: /java/generate-barcodes/

@@ -1,5 +1,6 @@
 ---
-title: Generation Specifics for Barcode Types
+title: Generation Specifics for Barcode Types in Java
+linktitle: Symbology Generation Specifics
 type: docs
 weight: 20
 url: /java/symbology/
@@ -38,7 +39,7 @@ All related information can be found in the articles listed below.
 |[Codablock-F](/barcode/java/codablockf-barcodes/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
 |[Patch Code](/barcode/java/how-to-generate-a-patch-code/)|Describes how to create *PatchCode* barcodes and pages using different patterns and generation modes|
 |[Code16K](/barcode/java/code16k-barcodes/)|Specifies how to generate *Code16K* barcodes with different barcode height and quiet zone settings|
-|[EAN 2 and EAN 5 as Supplement](/barcode/java/use-checksum-and-supplement-data-for-barcodes/)|Explains how to use *EAN 2* and *EAN 5* types for the purpose of supplement barcode generation|
+|[EAN-2 and EAN-5 as Supplement](/barcode/java/use-checksum-and-supplement-data-for-barcodes/)|Explains how to use *EAN 2* and *EAN 5* types for the purpose of supplement barcode generation|
 
 |Postal Types| |
 |---|---|

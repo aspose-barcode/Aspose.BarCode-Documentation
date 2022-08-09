@@ -1,5 +1,6 @@
 ---
 title: Data Matrix Generation in Java
+linktitle: Data Matrix
 type: docs
 weight: 60
 url: /java/how-to-create-datamatrix-barcode/

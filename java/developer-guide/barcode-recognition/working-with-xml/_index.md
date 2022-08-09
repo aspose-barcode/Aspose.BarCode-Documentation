@@ -1,5 +1,6 @@
 ---
-title: Barcodes in XML
+title: Working with Barcode Recognition State using XML in Java
+linktitle: Barcode Reading State in XML
 type: docs
 description: "This Article Describes How to Save or Load Barcode Recognition State in the XML format"
 keywords: "Read barcode in XML, Barcode XML Serialization, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcodes in Java"

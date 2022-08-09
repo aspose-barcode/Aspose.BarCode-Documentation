@@ -1,8 +1,9 @@
 ---
-title: Decoding Barcode Properties and Metadata
+title: Decoding Barcode Properties and Metadata in Java
+linktitle: Reading Barcode Metadata
 type: docs
 description: "This article describes how to read barcode parameters and encoded metadata"
-keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcodes in Java"
+keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcodes in Java
 weight: 40
 url: /java/read-barcode-properties/
 

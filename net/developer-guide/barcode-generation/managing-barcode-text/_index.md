@@ -4,7 +4,7 @@ linktitle: Managing Barcode Text
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
-keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
+keywords: Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode
 url: /net/working-with-barcode-text-appearance/
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: DataBar Generation in Java
+linktitle: DataBar
 type: docs
 weight: 100
 url: /java/databar-barcodes/

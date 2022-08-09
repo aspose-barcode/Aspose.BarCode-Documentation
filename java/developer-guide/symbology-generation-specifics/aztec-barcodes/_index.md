@@ -1,5 +1,6 @@
 ---
 title: Aztec Code Generation in Java
+linktitle: Aztec Code
 type: docs
 description: "How to Generate Aztec Code barcodes via Aspose.BarCode for Java"
 keywords: Generate Aztec Barcode, Generate Aztec Code, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Java

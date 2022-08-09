@@ -1,5 +1,6 @@
 ---
 title: Barcode Appearance Adjustment via Java
+linktitle: Barcode Appearance Settings
 type: docs
 weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for Java"

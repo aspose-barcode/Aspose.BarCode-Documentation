@@ -1,5 +1,6 @@
 ---
 title: Setting Barcode Text Parameters via Java
+linktitle: Barcode Text Settings
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Java"

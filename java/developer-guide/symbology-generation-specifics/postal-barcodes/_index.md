@@ -1,5 +1,6 @@
 ---
 title: Postal Barcode Generation in Java
+linktitle: Postal Barcodes
 type: docs
 weight: 170
 url: /java/postal-barcodes/

@@ -1,5 +1,6 @@
 ---
 title: Saving Generated Barcodes via Java
+linktitle: Saving Barcodes
 type: docs
 weight: 70
 description: "How to Save Generated Barcodes in Aspose.BarCode for Java"

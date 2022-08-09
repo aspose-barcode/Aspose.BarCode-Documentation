@@ -1,8 +1,9 @@
 ---
 title: Working with Barcode Types in Java
+linktitle: Working with Barcode Types
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for Java"
-keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Java, Barcode types in Aspose.BarCode for Java, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
+keywords: Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Java, Barcode types in Aspose.BarCode for Java, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix
 weight: 10
 url: /java/barcode-types/
 

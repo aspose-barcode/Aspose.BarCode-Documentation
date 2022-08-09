@@ -1,5 +1,6 @@
 ---
 title: Codablock-F Generation in Java
+linktitle: Codablock-F
 type: docs
 weight: 130
 url: /java/codablockf-barcodes/

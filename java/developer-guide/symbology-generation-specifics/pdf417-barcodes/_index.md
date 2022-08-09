@@ -1,8 +1,9 @@
 ---
 title: PDF417 Barcode Generation in Java
+linktitle: PDF417
 type: docs
 description: "Aspose.BarCode for Java can be used to generate different types of PDF417 barcodes."
-keywords: "Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for Java"
+keywords: Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for Java
 weight: 50
 url: /java/creating-a-pdf417-barcode/
 ---

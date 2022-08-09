@@ -1,5 +1,6 @@
 ---
 title: MaxiCode Generation in Java
+linktitle: MaxiCode
 type: docs
 weight: 80
 url: /java/maxicode-barcodes/

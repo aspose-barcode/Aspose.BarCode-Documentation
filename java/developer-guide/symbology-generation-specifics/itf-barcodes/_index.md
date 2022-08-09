@@ -1,5 +1,6 @@
 ---
 title: ITF Barcode Generation in Java
+linktitle: ITF Barcodes
 type: docs
 weight: 120
 url: /java/itf-barcodes/

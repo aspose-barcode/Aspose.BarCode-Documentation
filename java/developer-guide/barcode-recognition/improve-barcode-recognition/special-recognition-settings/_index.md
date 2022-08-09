@@ -1,8 +1,9 @@
 ---
-title: Special Recognition Cases
+title: Special Barcode Recognition Settings in Java
+linktitle: Special Reading Settings
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions"
-keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrual DataMatrix, Aspose.BarCode, Read Barcodes in Java"
+keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrial DataMatrix, Aspose.BarCode, Read Barcodes in Java"
 weight: 20
 url: /java/advanced-barcode-recognition-features/
 ---

@@ -1,5 +1,6 @@
 ---
 title: Setting Checksum for 1D Barcodes via Java
+linktitle: Checksum Settings for 1D Barcodes
 type: docs
 weight: 80
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Java"

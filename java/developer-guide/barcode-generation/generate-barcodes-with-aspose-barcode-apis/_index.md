@@ -1,5 +1,6 @@
 ---
 title: Barcode Generation in Aspose.BarCode API for Java
+linktitle: Barcode Generation API
 type: docs
 weight: 70
 url: /java/generate-barcodes-with-aspose-barcode-apis/

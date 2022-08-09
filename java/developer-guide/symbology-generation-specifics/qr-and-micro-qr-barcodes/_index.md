@@ -1,5 +1,6 @@
 ---
 title: QR Code and Micro QR Code Generation in Java
+linktitle: QR Codes
 type: docs
 weight: 40
 url: /java/qr-and-micro-qr-barcode/
