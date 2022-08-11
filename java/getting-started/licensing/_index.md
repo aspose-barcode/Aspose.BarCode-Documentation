@@ -3,6 +3,8 @@ title: Licensing
 type: docs
 weight: 50
 url: /java/licensing/
+aliases:
+- /java/1-3-2-apply-aspose-license/
 ---
 
 ## **Overview**

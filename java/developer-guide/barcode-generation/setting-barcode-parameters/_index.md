@@ -1,5 +1,5 @@
 ---
-title: Managing Barcode Parameters via Java
+title: Managing Barcode Parameters
 linktitle: Barcode Parameters
 type: docs
 weight: 40
@@ -9,6 +9,7 @@ url: /java/advanced-features/
 aliases:
 - /java/set-height-of-the-bars-in-the-barcode-image/
 - /java/manage-x-dimension-and-y-dimension/
+- /java/control-barcode-image-quality/
 
 ---
 This article describes how to manage settings provided by ***Aspose.BarCode for Java*** to adjust barcode measurement units (millimeters, inches, points, or pixels) and barcode image resolution.

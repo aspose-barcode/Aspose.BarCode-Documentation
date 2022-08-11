@@ -6,6 +6,8 @@ description: "How to Generate Aztec Code barcodes via Aspose.BarCode for Java"
 keywords: Generate Aztec Barcode, Generate Aztec Code, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Java
 weight: 70
 url: /java/generating-aztec-barcode/
+aliases:
+- /java/creating-an-aztec-barcode/
 ---
 {{% alert color="primary" %}}[Generate Aztec Barcodes Online](https://products.aspose.app/barcode/generate/aztec): You can check the quality of ***Aspose.BarCode*** generation for Aztec barcodes and view the results online.{{% /alert %}}
 

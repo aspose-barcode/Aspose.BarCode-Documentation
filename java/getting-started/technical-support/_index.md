@@ -5,8 +5,7 @@ weight: 60
 description: "How to Contact Technical Support for Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Technical Support for Aspose.BarCode, Aspose.Barcode Forum, C#"
 url: /java/technical-support/
-aliases:
-- /barcode/java/1-1-4-support/
+
 ---
 ## **Free Technical Support**
 Free technical support for ***Aspose.BarCode for Java*** can be received through [**Free Support Forum**](https://forum.aspose.com/c/barcode/13) that can not only assist with technical issues but also give advice to solve any business-related difficulty. In addition, you can refer to this forum if you want to give your feedback or raise a request to implement new product features. More than 190,000 registered users have been assisted using this communication channel.

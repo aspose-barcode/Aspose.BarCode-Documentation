@@ -8,6 +8,8 @@ aliases:
 - /java/two-dimensional-282d-29-barcodes/
 - /java/basic-2d-barcode-features/
 - /java/utility-2d-barcode-features/
+- /java/two-dimensional-2d-barcodes/
+- /java/creating-two-dimensional-2d-barcodes/
 
 ---
 This chapter focuses on the peculiarities of working with various barcode symbologies and corresponding barcode generation specificities in ***Aspose.BarCode for Java***.  

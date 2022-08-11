@@ -4,6 +4,8 @@ linktitle: QR Codes
 type: docs
 weight: 40
 url: /java/qr-and-micro-qr-barcode/
+aliases:
+- /java/creating-a-qr-barcode/
 ---
 {{% alert color="primary" %}}[Generate QR Code Online](https://products.aspose.app/barcode/generate/qr): You can test the quality of ***Aspose.BarCode*** generation for QR Codes and get the results online.{{% /alert %}}
 

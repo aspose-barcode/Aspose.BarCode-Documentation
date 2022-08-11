@@ -6,6 +6,11 @@ weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
 url: /java/control-the-appearance-of-code-text/
+aliases:
+- /java/set-barcode-image-padding/
+- /java/hiding-code-text-that-is-too-long-to-display/
+- /java/manage-the-barcode-caption/
+- /java/control-the-appearance-of-code-text/
 ---
 
 This article describes how to work with text placed on barcode images. ***Aspose.BarCode for Java*** enables customizing various parameters of barcode text: visibility, font, spacings, text location, and wrapping modes.

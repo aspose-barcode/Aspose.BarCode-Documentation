@@ -1,5 +1,5 @@
 ---
-title: Barcode Appearance Adjustment via Java
+title: Barcode Appearance Adjustment
 linktitle: Barcode Appearance Settings
 type: docs
 weight: 30
@@ -7,12 +7,11 @@ description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarC
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode"
 url: /java/working-with-barcode-image/
 aliases:
-- /java/specify-symbologies-for-barcodes/
 - /java/set-code-text-for-barcode/
-- /java/control-the-appearance-of-code-text/
-- /java/manage-the-barcode-caption/
 - /java/basic-features/
 - /java/barcode-image-basic-features/
+- /java/rotate-barcode-image/
+- /java/working-with-image-borders/
 ---
 In the present article, you can find details about customizing various parameters of barcodes to be generated, such as barcode label size, rotation angle, barcode paddings, and barcode image borders.
 

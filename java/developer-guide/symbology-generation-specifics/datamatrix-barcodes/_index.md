@@ -4,6 +4,8 @@ linktitle: Data Matrix
 type: docs
 weight: 60
 url: /java/how-to-create-datamatrix-barcode/
+aliases:
+- /java/creating-two-dimensional-2d-barcodes
 ---
 {{% alert color="primary" %}}[Generate Data Matrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix): You can test the quality of ***Aspose.BarCode*** generation for Data Matrix barcodes and get results online.{{% /alert %}}
 
