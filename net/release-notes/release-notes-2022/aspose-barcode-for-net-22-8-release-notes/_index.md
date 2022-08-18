@@ -22,7 +22,7 @@ This page contains release notes information for [Aspose.BarCode for .NET 22.8](
 
 No API changes 
 
-# **.NET 6 support**
+### **.NET 6 support**
 
-Aspose.BarCode library for **.NET 6** was **added** in this release.
-Some obsolete framework versions were **removed**: .NET 3.0, .NET 3.5 Client, .NET 4.0 Client, .NET 4.5.
+- Aspose.BarCode library for **.NET 6** was **added** in this release.
+- Some obsolete framework versions were **removed**: .NET 3.0, .NET 3.5 Client, .NET 4.0 Client, .NET 4.5.
