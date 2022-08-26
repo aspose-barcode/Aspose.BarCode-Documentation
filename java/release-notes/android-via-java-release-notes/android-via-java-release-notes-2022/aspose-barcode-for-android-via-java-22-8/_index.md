@@ -17,6 +17,10 @@ This page contains release notes information for [Aspose.BarCode for Android via
 |BARCODENET-38254|Improve PDF417 barcodes reading time and memory cost|Enhancement|
 |BARCODENET-38262|Fix PDF417 encoding of a single byte in Text compaction mode|Bug|
 |BARCODENET-38225|Add additional service codes to the SwissPost Parcel Symbology|Enhancement|
+|BARCODEANDROID-785|Parameters barHeight, barCodeHeight and barCodeWidth of BarcodeGeneratorView doesn't affect to rendering barcode image|Bug|
+|BARCODEANDROID-786|Applying the parameter checksumEnabled to BarcodeGeneratorView causes the application to stop|Bug|
+|BARCODEANDROID-787|Applying the parameter filledBars to BarcodeGeneratorView causes the application to stop|Bug|
+|BARCODEANDROID-782|Improve the processing color value for corresponding parameters of BarcodeGeneratorView|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
 
