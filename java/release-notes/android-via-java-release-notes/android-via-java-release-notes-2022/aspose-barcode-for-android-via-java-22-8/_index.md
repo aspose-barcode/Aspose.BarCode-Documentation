@@ -7,7 +7,7 @@ url: /java/aspose-barcode-for-android-via-java-22-8/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Android via Java 22.6](https://downloads.aspose.com/barcode/androidjava/new-releases/aspose.barcode-for-android-via-java-22.8/).
+This page contains release notes information for [Aspose.BarCode for Android via Java 22.8](https://downloads.aspose.com/barcode/androidjava/new-releases/aspose.barcode-for-android-via-java-22.8/).
 
 {{% /alert %}} 
 ## **All Changes**
