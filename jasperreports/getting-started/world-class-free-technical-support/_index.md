@@ -1,19 +1,26 @@
 ---
-title: World Class Free Technical Support
+title: Technical Support
 type: docs
-weight: 20
-url: /jasperreports/world-class-free-technical-support/
+weight: 100
+url: /jasperreports/free-technical-support/
+aliases:
+- /jasperreports/world-class-free-technical-support/
 ---
 
-{{% alert color="primary" %}} 
+## **Free Technical Support**
+Free technical support can be received through [**Free Support Forum**](https://forum.aspose.com/c/barcode/13) that can not only assist with technical issues but also give advice to solve any business-related difficulty. In addition, you can refer to this forum if you want to give your feedback or raise a request to implement new product features. More than 190,000 registered users have been assisted using this communication channel.
 
-Aspose is renowned for its free and unlimited technical support provided directly by the developers of the products. If a new version of a product is available, or if resolving a question results in a fix, all new releases are free if you have an active subscription. 
+## **Blog**
+[**Aspose.BarCode Product Family Blog**](https://blog.aspose.com/category/barcode/) regularly publishes news about new features, technical articles, tutorials, and useful tips. In this blog, you can find information about recent releases and announcements from Aspose team.
 
-{{% /alert %}} 
-### **Getting Support**
-#### **Forums**
-[Aspose's Support Forums](http://www.aspose.com/Community/Forums/) is the place not only to resolve technical issues, but to participate in discussions with the vibrant and growing community of Aspose users. Currently there are over 190,000 users registered at the Aspose website. 
-#### **Blogs**
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) is the place to look for information about the latest releases and about what Aspose developers have to say. 
-#### **Need more support?**
-Aspose offers free support to all users. For companies want that their issue will get prioritized, or who want to influence our product development road map, there are [advanced support options](http://www.aspose.com/corporate/services/support-options.aspx) like Priority Support and Enterprise Support.
+## **Free Consulting**
+If you are willing to resolve a business need with the help of Aspose products and look for more information about it, you can request a consultation through [**Free Consulting**](https://aspose-free-consulting.github.io/) service. An Aspose developer will process your request upon availabilty, and you will be contacted to receive useful explanations about Aspose APIs to implement your business tasks.
+
+## **Extended Support**
+Aspose offers free support to all users. If you want your issue to be resolved with the highest priority are interested in influencing our product development roadmap, there are [advanced support options](http://www.aspose.com/corporate/services/support-options.aspx), such as Priority Support and Enterprise Support.
+
+### **Paid Technical Support**
+If you require to find a solution for your problem as soon as possible, you can refer to [**Paid Support Helpdesk**](https://helpdesk.aspose.com/) service. Requests and questions sent through Paid Support are considered to be of the highest priority and are processed by Aspose developers at the shortest notice.
+
+### **Paid Consulting**
+If you think that your business problem can be solved by introducing some new features or you are willing to receive a professional consultation to implement some specific tasks, you can refer to [**Paid Consulting**](https://consulting.aspose.com/) service at any moment. Aspose team will resolve development tasks while you can focus on achieving your business goals.

@@ -5,11 +5,8 @@ weight: 20
 url: /jasperreports/numeric-only-symbologies/
 ---
 
-{{% alert color="primary" %}} 
-
 Numeric barcode symbologies only encode digits from 0-9. Below is a list of numeric symbologies. 
 
-{{% /alert %}} 
 ### **Numeric Barcode Symbologies**
 #### **UPCA**
 This one-dimensional barcode contains 12 numbers plus a checksum. It is used for consumer products in U.S.

@@ -5,11 +5,9 @@ weight: 40
 url: /jasperreports/fully-alphanumeric-symbologies/
 ---
 
-{{% alert color="primary" %}} 
 
 Fully alphanumeric symbologies contain barcodes that encode character sets, including numerals 0 through 9, the 26 alphabet characters of the English language and ASCII characters, etc.
 
-{{% /alert %}} 
 ### **Alphanumeric Symbologies**
 #### **Code128**
 This one-dimensional barcode is very effective high density code. It is used extensively in different applications world-wide. It permits the encoding of alphanumeric data. Code128 has three types of code sets:

@@ -16,10 +16,8 @@ You also need to copy the following two files in the output folder (build/classe
 - <Aspose.BarCode for JasperReports Installation Folder>/asposebarcode_beans.xml
 - <Aspose.BarCode for JasperReports Installation Folder>/jasperreports_extension.properties
 
-{{% alert color="primary" %}} 
 
 If you are using an IDE, for example Netbeans or Eclipse, you need to modify the project settings to include the JARs listed above. If you are using the javac command for compilation, set the --sourcepath to include the required libraries.
 
-{{% /alert %}} 
 
-If you have any problems with Aspose.BarCode for Jasper Reports, post on the [support forums](http://www.aspose.com/community/forums/aspose.barcode-for-.net-java-and-reporting-services/193/showforum.aspx) and our dedicated support team will help you. 
+If you have any problems with Aspose.BarCode for Jasper Reports, share your question on the [support forums](http://www.aspose.com/community/forums/aspose.barcode-for-.net-java-and-reporting-services/193/showforum.aspx), and our dedicated support team will help you. 

@@ -5,11 +5,8 @@ weight: 30
 url: /jasperreports/partially-alphanumeric-symbologies/
 ---
 
-{{% alert color="primary" %}} 
-
 Partially alphanumeric symbologies contain barcodes that encode numbers and some certain character sets. 
 
-{{% /alert %}} 
 ### **List of Partially Alphanumeric Symbologies**
 #### **Codabar**
 This one-dimensional barcode is used by blood banks, photo labs and libraries. The Codabar symbology is self-checking and no checksum digit is needed. Codabar can encode the following characters:

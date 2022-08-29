@@ -5,8 +5,6 @@ weight: 40
 url: /jasperreports/using-barcode-and-barcode-expression-tags-in-report-jrxml-files/
 ---
 
-{{% alert color="primary" %}} 
-
 <bc:asposebarcode> and <bc:barCodeAttributesExpression> are special tags used in JasperReport files (JRXML) for rendering barcode images in reports with Aspose.BarCode for JasperReports library.
 
 These tags can be used in two ways:
@@ -16,11 +14,10 @@ These tags can be used in two ways:
 
 This article explains how to use them.
 
-{{% /alert %}} 
 ### **Print Barcodes Based on Parameter Values**
 The code example below is an example of how bacodes can be rendered based on parameter values.
 
-{{< highlight csharp >}}
+``` csharp
 
  <componentElement>
 
@@ -40,38 +37,36 @@ The code example below is an example of how bacodes can be rendered based on par
 
 </componentElement>
 
+```
 
-
-{{< /highlight >}}
-
-$P(barCodeAttributes1) is the text inside the <bc:barCodeAttributesExpression> tag. It specifies that it expects a parameter whose name is “barCodeAttributes1” of the parameter type “BarCodeAttributes”, defined in the **com.aspose.barcode.jr** package. 
+*$P(barCodeAttributes1)* is the text inside the <bc:barCodeAttributesExpression> tag. It specifies that it expects a parameter whose name is *barCodeAttributes1* of the parameter type *BarCodeAttributes*, defined in the **com.aspose.barcode.jr** package. 
 
 Before using the parameter, degine it. It can be defined in a JRXML file as shown below.
 
-{{< highlight csharp >}}
+``` csharp
 
  <parameter name="barCodeAttributes1" class="com.aspose.barcode.jr.BarCodeAttributes"/> 
 
-{{< /highlight >}}
+```
 
-JRXML files define the report. Pass the barCodeAttributes1 parameter from the Java source file. 
-Below is sample code for passing a parameter.
+JRXML files define the report. The sample code below shows how to pass the *barCodeAttributes1* parameter from the Java source file.
 
-{{< highlight csharp >}}
+``` csharp
 
  Map<String, BarCodeAttributes> parameters = new HashMap<String, BarCodeAttributes>();
 
 parameters.put("barCodeAttributes1", new BarCodeAttributes("123456", "code11"));
 
-{{< /highlight >}}
+```
 
-In the above Java source file, we created an instance of type Map<key, value>. String type is used as the key and the BarCodeAttributes type is used as the value. 
+In the above Java source file, we created an instance of type *Map<key, value>*. String type is used as the key and the *BarCodeAttributes* type is used as the value. 
 
-After declaration, we added one element to the map. The key given is “barCodeAttributes1” and its value is of type “BarCodeAttributes”. Its constructor takes the codetext and symbology type as arguments. Both codetext and the symbology type are passed as string values. Based on the code snippets above, then, this code will create a Code11 barcode image in the report with the codetext “123456”. 
-### **Print BarCodes Based on Field Values (Using a Data Source)**
+After declaration, we added one element to the map. The key given is “barCodeAttributes1” and its value is of the *BarCodeAttributes* type. Its constructor takes the codetext and symbology type as arguments. Both input text and the barcode type are passed as string values. Based on the code snippets above, then, this code will create a Code 11 barcode image in the report with the input text “123456”. 
+
+### **Print BarCodes Based on Field Values (Using Data Source)**
 Below is code snippet from a JRXML file which renders barcode images from a data source. The ID field is used as codetext.
 
-{{< highlight csharp >}}
+``` csharp
 
  <componentElement>
 
@@ -91,18 +86,16 @@ Below is code snippet from a JRXML file which renders barcode images from a data
 
 </componentElement>
 
+```
 
+*$F(id)* means that a field called is “id” is required. The id field's type should be *BarCodeAttributes*. Below, the "id" field is defined in the JRXML file.
 
-{{< /highlight >}}
-
-$F(id) means that a field called is “id” is required. The id field's type should be “BarCodeAttributes”. Below, the "id" field is defined in the JRXML file.
-
-{{< highlight csharp >}}
+``` csharp
 
  <field name="id" class="com.aspose.barcode.jr.BarCodeAttributes"/>  
 
-{{< /highlight >}}
+```
 
-In the Java source file, pass a data source to the JRXML file. For this example, we use a custom class inherited from JRDataSource. And in the getFieldValue() method, return an instance of type “BarCodeAttributes”, which will be used by the <bc> tags in JRXML files for rendering barcodes. 
+In the Java source file, pass a data source to the JRXML file. For this example, we use a custom class inherited from JRDataSource. The *getFieldValue()* method returns an instance of type *BarCodeAttributes*, which will be used by the <bc> tags in JRXML files for rendering barcodes. 
 
-For more details about using a data source in JasperReports, please read [Printing Barcodes in a Report that uses a Data Source](/barcode/jasperreports/printing-barcodes-in-a-report-that-uses-a-data-source/). 
+For more details about using a data source in JasperReports, please refer to [Printing Barcodes in a Report that uses a Data Source](/barcode/jasperreports/printing-barcodes-in-a-report-that-uses-a-data-source/). 

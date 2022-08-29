@@ -2,7 +2,7 @@
 title: Multithread Barcode Recognition in Java
 linktitle: Multithread Barcode Reading
 type: docs
-description: "This article explains how to set mulithread barcode recognition"
+description: "This article explains how to set multithread barcode recognition"
 keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode Java
 weight: 50
 url: /java/loading-barcode-images/
@@ -11,7 +11,7 @@ url: /java/loading-barcode-images/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
   
 ## **Overview**
-***Aspose.BarCode for Java*** contains class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that is intended to perform barcode reading based on machine vision algorithms. This type of algorithms allows developers to implement parallel processing and thus to increase recognition speed by distributing calculations across several CPU cores.  
+***Aspose.BarCode for Java*** contains class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that is intended to perform barcode reading based on machine vision algorithms. This type of algorithm allows developers to implement parallel processing and thus increase recognition speed by distributing calculations across several CPU cores.  
 
 To perform multithread barcode reading, class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) includes a special class called [*ProcessorSettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/ProcessorSettings) that allows optimizing the load of available CPU cores. Multithreading settings can be managed for all [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) objects and usually do not need special tuning.  
   
@@ -61,7 +61,7 @@ To fix the number of CPU cores available for barcode reading processes, develope
 {{< /highlight >}}-->
 
 ## **Automated Maximal Capacity Settings**
-To enable automated allocation of the maximally possible mutithreading, corresponding settings can be applied<!--, as explained in the code sample below-->. Class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) determines the number of cores automatically.
+To enable automated allocation of the maximally possible multithreading, corresponding settings can be applied<!--, as explained in the code sample below-->. Class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) determines the number of cores automatically.
 
 <!--{{< highlight csharp>}}
 Console.WriteLine("ReadMTAllCores:");

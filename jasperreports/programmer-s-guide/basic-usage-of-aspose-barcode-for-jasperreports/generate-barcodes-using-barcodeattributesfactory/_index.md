@@ -1,19 +1,18 @@
 ---
-title: Generate Barcodes using BarCodeAttributesFactory
+title: Generate Barcodes using Custom Classes
 type: docs
 weight: 50
-url: /jasperreports/generate-barcodes-using-barcodeattributesfactory/
+url: /jasperreports/generate-barcodes-using-custom-class/
+aliases:
+- /jasperreports/generate-barcodes-using-barcodeattributesfactory/
 ---
 
-{{% alert color="primary" %}} 
+The BarCodeAttributesFactory class is also included in the com.aspose.barcode.jr package. This class provides the static overloaded method Create() which accepts arguments, such as input text, barcode type, and so on. 
 
-The BarCodeAttributesFactory class is also included in the com.aspose.barcode.jr package. This class provides the static overloaded method Create() which accepts arguments like codetext, symbology type, and so on. Choose the overloaded method that suites the task at hand. 
-
-{{% /alert %}} 
-### **Generate BarCodes using the BarCodeAttributesFactory**
+### **Generate BarCodes using BarCodeAttributesFactory**
 The BarCodeAttributesFactory.Create() method can be called directly in a JRCML file for generating barcodes. It’s used in the <image> tag, as shown below:
 
-{{< highlight csharp >}}
+``` csharp
 
  <image hAlign="Center">
 
@@ -27,19 +26,18 @@ The BarCodeAttributesFactory.Create() method can be called directly in a JRCML f
 
 </image>
 
+```
 
+The above code sample is included into a JRXML file that renders a Data Matrix barcode image with the barcode text “codetext” and red foreground colour.
 
-{{< /highlight >}}
-
-The above code sample comes from a JRXML file that renders a DataMatrix barcode image with the codetext “codetext” and red foreground colour.
-#### **Creating a Custom Class**
-Generating barcodes using the BarCodeAttributesFactory.Create() method is feasible in those cases when you only need to pass codetext, symbology type and forecolor as parameters. If you want to change other properties, say the border color, background color, bar height, caption, xDimension, or yDimension, do it using a custom class. 
+#### **Creating Custom Classes**
+Generating barcodes using the BarCodeAttributesFactory.Create() method is feasible in those cases when you only need to pass input text, barcode type, and forecolor as parameters. If you want to change other properties, say the border color, background color, bar height, caption, xDimension, or yDimension, do it using a custom class. 
 
 Create a static method in the custom class and create an instance of BarCodeAttributes. You may further call any available setxxx() methods from the BarCodeAttributes class to generate barcodes according to your specific requirements. 
 
 Below is sample code required in the JRXML file for using the custom class.
 
-{{< highlight csharp >}}
+``` csharp
 
  <image>
 
@@ -53,21 +51,19 @@ Below is sample code required in the JRXML file for using the custom class.
 
 </image>
 
+```
 
+In the above JRXML code snippet, we use a new class called *MyAttributesFactory*. The *Create()* method takes five arguments:
 
-{{< /highlight >}}
-
-In the above JRXML code snippet, we used a new class, MyAttributesFactory (will be created later). It’s Create() method takes five arguments:
-
-1. Codetext
-1. Symbology type
+1. Input text
+1. Barcode type
 1. Foreground color
 1. Caption above the barcode
 1. Caption below the barcode
 
-Next, we will create the **MyAttributesFactory.java** file to create the new class. Below is the code for the MyAttributesFactory class. 
+Next, we will create the **MyAttributesFactory.java** file to create the new class. Below is the code for the *MyAttributesFactory* class. 
 
-{{< highlight csharp >}}
+``` csharp
 
  import com.aspose.barcode.jr.BarCodeAttributes;
 
@@ -105,8 +101,6 @@ public class MyAttributesFactory {
 
 }
 
+```
 
-
-{{< /highlight >}}
-
-The Create method in the above class returns an instance of type BarCodeAttributes. Since we are creating the instance ourselves, we can call any available method of the BarCodeAttributes class to customize the barcode image. 
+The *Create()* method in the above class returns an instance of type *BarCodeAttributes*. Since we are creating the instance ourselves, we can call any available method of the BarCodeAttributes class to customize the barcode image. 

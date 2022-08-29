@@ -1,7 +1,9 @@
 ---
-title: Programmer's Guide
+title: Developer Guide
 type: docs
 weight: 20
-url: /jasperreports/programmer-s-guide/
+url: /jasperreports/developer-guide/
+aliases:
+- /jasperreports/programmer-s-guide/
 ---
 

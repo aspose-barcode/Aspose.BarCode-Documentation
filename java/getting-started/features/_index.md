@@ -15,7 +15,7 @@ url: /java/features/
 - Optimization of recognition engine variables
 - Data loading and saving to a stream or a file
 - Label printing
-- Support for complex barcodes (i.e. Swiss QR Code and Royal Mail ) 
+- Support for complex barcodes (i.e. Swiss QR Code and Royal Mail Mailmark) 
 - JSP, Servlet support
 
 ## **Barcode Recognition**

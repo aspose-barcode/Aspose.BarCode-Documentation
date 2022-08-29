@@ -1,16 +1,14 @@
 ---
-title: Sample Reports Gallery
+title: Sample Reports
 type: docs
-weight: 30
+weight: 110
 url: /jasperreports/sample-reports-gallery/
 ---
 
-{{% alert color="primary" %}} 
+The barcode images represented below have been rendered using ***Aspose.BarCode for JasperReports***.  
+  
+**Accounts Sample**
+![todo:image_alt_text](sample-reports-gallery_1.png)  
 
-This gallery shows barcode images in JasperReports, rendered with Aspose.BarCode for JasperReports.
-
-{{% /alert %}} 
-
-Most of the reports shown here come from the standard JasperReports demos and samples.
-### **Accounts Sample ![todo:image_alt_text](sample-reports-gallery_1.png)**
-### **Shipping Report ![todo:image_alt_text](sample-reports-gallery_2.png)**
+**Shipping Report**
+![todo:image_alt_text](sample-reports-gallery_2.png)
