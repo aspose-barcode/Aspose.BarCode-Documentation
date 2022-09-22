@@ -88,6 +88,27 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.BarCode for C++ Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for C++ Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
+## Aspose.BarCode for Reporting Services
+{{% alert color="primary" %}} 
+
+![Aspose.BarCode for Reporting Services](aspose-barcode-for-reportingserices.png)
+
+Welcome to Aspose.BarCode for Reporting Services
+
+Aspose.BarCode for Reporting Services is a unique and robust solution for making your reports unique and more professional. It allows developers to display high-quality barcode labels on SQL reports. These barcode labels can be rendered in various formats: BMP, JPEG, GIF, and PNG.
+
+{{% /alert %}} 
+
+The following are the links to some useful resources you may need to accomplish your tasks.
+
+- [Aspose.BarCode for Reporting Services Online Documentation](/barcode/reportingservices/)
+- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/product-overview/)
+- [Aspose.BarCode for Reporting Services Release Notes](/barcode/reportingservices/release-notes/)
+- [Aspose.BarCode for Reporting Services Product Page](https://products.aspose.com/barcode/reporting-services)
+- [Download Aspose.BarCode for Reporting Services](https://downloads.aspose.com/barcode/reportingservices)
+- [Aspose.BarCode for Reporting Services Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for Reporting Services Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
 ## Aspose.BarCode for Android via Java
 {{% alert color="primary" %}}
 
@@ -108,26 +129,27 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.BarCode for Android via Java Product Page](https://products.aspose.com/barcode/android-java)
 - [Aspose.BarCode for Android via Java API Reference Guide](https://reference.aspose.com/java/barcode) 
 
-## Aspose.BarCode for ReportingServices
+
+## Aspose.BarCode for JasperReports
 {{% alert color="primary" %}} 
 
-![Aspose.BarCode for Reporting Services](aspose-barcode-for-reportingserices.png)
+![Aspose.BarCode for JasperReports](aspose-barcode-for-jasperreports.png)
 
-Welcome to Aspose.BarCode for Reporting Services
+Welcome to the Aspose.BarCode for JasperReports
 
-Aspose.BarCode for Reporting Services is a unique and robust solution for making your reports unique and more professional. It allows developers to display high-quality barcode labels on SQL reports. These barcode labels can be rendered in various formats: BMP, JPEG, GIF, and PNG.
+Aspose.BarCode for JasperReports provides a unique and robust solution to make your reports unique and more professional. It allows developers to display high-quality barcode labels on JasperReports. These barcode labels can be rendered in several formats: BMP, JPEG, GIF, and PNG. Aspose.BarCode for JasperReports is a very lightweight component that supports more than 25 types of most popular barcode symbologies.
 
 {{% /alert %}} 
 
 The following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.BarCode for Reporting Services Online Documentation](/barcode/reportingservices/)
-- [Aspose.BarCode for Reporting Services Features](/barcode/reportingservices/product-overview/)
-- [Aspose.BarCode for Reporting Services Release Notes](/barcode/reportingservices/release-notes/)
-- [Aspose.BarCode for Reporting Services Product Page](https://products.aspose.com/barcode/reporting-services)
-- [Download Aspose.BarCode for Reporting Services](https://downloads.aspose.com/barcode/reportingservices)
-- [Aspose.BarCode for Reporting Services Free Support Forum](https://forum.aspose.com/c/barcode)
-- [Aspose.BarCode for Reporting Services Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.BarCode for JasperReports Online Documentation](/barcode/jasperreports/)
+- [Aspose.BarCode for JasperReports Features](/barcode/jasperreports/features/)
+- [Aspose.BarCode for JasperReports Release Notes](/barcode/jasperreports/release-notes/)
+- [Aspose.BarCode for JasperReports Product Page](https://products.aspose.com/barcode/jasperreports)
+- [Download Aspose.BarCode for JasperReports](https://downloads.aspose.com/barcode/jasperreports)
+- [Aspose.BarCode for JasperReports Free Support Forum](https://forum.aspose.com/c/barcode)
+- [Aspose.BarCode for JasperReports Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.BarCode for SharePoint
 {{% alert color="primary" %}}
@@ -151,24 +173,3 @@ The following are the links to some useful resources you may need to accomplish 
 - [Download Aspose.BarCode for SharePoint](https://downloads.aspose.com/barcode/sharepoint)
 - [Aspose.BarCode for SharePoint Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for SharePoint Paid Support Helpdesk](https://helpdesk.aspose.com/)
-
-## Aspose.BarCode for JasperReports
-{{% alert color="primary" %}} 
-
-![Aspose.BarCode for JasperReports](aspose-barcode-for-jasperreports.png)
-
-Welcome to the Aspose.BarCode for JasperReports
-
-Aspose.BarCode for JasperReports provides a unique and robust solution to make your reports unique and more professional. It allows developers to display high-quality barcode labels on JasperReports. These barcode labels can be rendered in several formats: BMP, JPEG, GIF, and PNG. Aspose.BarCode for JasperReports is a very lightweight component that supports more than 25 types of most popular barcode symbologies.
-
-{{% /alert %}} 
-
-The following are the links to some useful resources you may need to accomplish your tasks.
-
-- [Aspose.BarCode for JasperReports Online Documentation](/barcode/jasperreports/)
-- [Aspose.BarCode for JasperReports Features](/barcode/jasperreports/features/)
-- [Aspose.BarCode for JasperReports Release Notes](/barcode/jasperreports/release-notes/)
-- [Aspose.BarCode for JasperReports Product Page](https://products.aspose.com/barcode/jasperreports)
-- [Download Aspose.BarCode for JasperReports](https://downloads.aspose.com/barcode/jasperreports)
-- [Aspose.BarCode for JasperReports Free Support Forum](https://forum.aspose.com/c/barcode)
-- [Aspose.BarCode for JasperReports Paid Support Helpdesk](https://helpdesk.aspose.com/)
