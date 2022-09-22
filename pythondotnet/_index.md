@@ -9,11 +9,8 @@ is_root: true
 
 {{% alert color="primary" %}} 
 
-![todo:image_alt_text](aspose_barcode-for-python-via-java-128.png)
-
 **Welcome to Aspose.BarCode for Python via .NET**
 
-Aspose.Barcode for Python via .NET is implemented by 
 
 {{% /alert %}} 
 
