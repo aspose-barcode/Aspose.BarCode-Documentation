@@ -25,3 +25,5 @@ This page contains release notes information for [Aspose.BarCode for .NET 22.9](
 - Added field Aspose.BarCode.Generation.Pdf417MacroTerminator.Set
 - Added property Aspose.BarCode.Generation.Pdf417Parameters.Pdf417MacroTerminator
 - Added property Aspose.BarCode.BarCodeRecognition.Pdf417ExtendedParameters.MacroPdf417Terminator
+
+- Default value for property Aspose.BarCode.Generation.CodetextParameters.Location has been changed to CodeLocation.None for all **2D** barcode symbologies.
