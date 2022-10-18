@@ -15,6 +15,7 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 | :- | :- | :- |
 |BARCODENET-38034|Incorrect File ID field encoding in MacroPdf417|Bug|
 |BARCODENET-38344|QR/GS1QR generation throws exception in AutoSizeMode.Nearest|Bug|
+|BARCODEPHP-459|Configure the launching embedded Java server|Enhancement|
 
 ## **Public API and Backward Incompatible Changes**
 
