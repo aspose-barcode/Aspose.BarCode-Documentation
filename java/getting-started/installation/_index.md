@@ -6,7 +6,7 @@ url: /java/installation/
 ---
 
 ## **Installing Aspose.BarCode for Java from Maven Repository**
-Aspose hosts all Java APIs at [Maven repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-barcode). You can easily use [Aspose.BarCode for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-barcode) API directly in your Maven Projects using simple configurations.
+Aspose hosts all Java APIs at [Maven repository](https://releases.aspose.com/java/repo/com/aspose/). You can easily use [Aspose.BarCode for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/) API directly in your Maven Projects using simple configurations.
 
 ### **Specify Maven Repository Configuration**
 First, you need to specify Aspose Maven Repository configuration/location in your Maven **pom.xml** as follows:
@@ -21,7 +21,7 @@ First, you need to specify Aspose Maven Repository configuration/location in you
 
         <name>Aspose Java API</name>
 
-        <url>http://repository.aspose.com/repo/</url>
+        <url>https://releases.aspose.com/java/repo/</url>
 
     </repository>
 
@@ -69,13 +69,13 @@ Aspose.BarCode for Android via Java is platform-independent so it can be used on
 1. Add 'Aspose.BarCode for Android via Java' JAR as a dependency
 
 {{< highlight java >}}
- // 1. Add maven repository into your build.gradle 
+ // 1. Add maven repository into your build.gradle
  repositories {
     mavenCentral()
-    maven { url "http://repository.aspose.com/repo/" }
+    maven { url "https://releases.aspose.com/java/repo/" }
  }
- 
- // 2. Add 'Aspose.BarCode for Android via Java' JAR as a dependency 
+
+ // 2. Add 'Aspose.BarCode for Android via Java' JAR as a dependency
  dependencies {
     ...
     ...
@@ -157,8 +157,8 @@ composer install
 composer install
 {{< /highlight >}}
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 Read more about composer on http://www.getcomposer.com
 
-{{% /alert %}} 
+{{% /alert %}}
