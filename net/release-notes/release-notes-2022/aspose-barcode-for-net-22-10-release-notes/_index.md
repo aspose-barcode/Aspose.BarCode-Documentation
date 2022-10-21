@@ -93,7 +93,8 @@ This page contains release notes information for [Aspose.BarCode for .NET 22.10]
 - Added property Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.MaxiCodeStructuredAppendModeBarcodeId 
 - Added property Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.MaxiCodeStructuredAppendModeBarcodesCount 
 - Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.Equals(System.Object)
-- Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.op_Equality(Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters,Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters)       - Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.op_Inequality(Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters,Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters) 
+- Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.op_Equality(Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters,Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters)
+- Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.op_Inequality(Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters,Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters) 
 - Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.GetHashCode 
 - Added method Aspose.BarCode.BarCodeRecognition.MaxiCodeExtendedParameters.ToString 
 - Added property Aspose.BarCode.WPF.BarcodeGeneratorElement.MaxiCodeMode
