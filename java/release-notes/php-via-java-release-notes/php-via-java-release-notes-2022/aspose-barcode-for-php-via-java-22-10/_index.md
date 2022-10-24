@@ -26,6 +26,5 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 - Added function Generation->Pdf417Parameters->getPdf417MacroTerminator():int
 - Added function Generation->Pdf417Parameters->setPdf417MacroTerminator(int):void
 - Added function Recognition->Pdf417ExtendedParameters->getMacroPdf417Terminator():boolean
-- Added function Recognition->Pdf417ExtendedParameters->setMacroPdf417Terminator(boolean):void
 
 - Default value for Generation->CodetextParameters->setLocation has been changed to CodeLocation::NONE for all **2D** barcode symbologies.

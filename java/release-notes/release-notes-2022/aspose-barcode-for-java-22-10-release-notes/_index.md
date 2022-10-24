@@ -26,6 +26,5 @@ This page contains release notes information for [Aspose.BarCode for Java 22.10]
 - Added method com.aspose.barcode.generation.Pdf417Parameters.getPdf417MacroTerminator():Pdf417MacroTerminator
 - Added method com.aspose.barcode.generation.Pdf417Parameters.setPdf417MacroTerminator(Pdf417MacroTerminator):void
 - Added method com.aspose.barcode.barcoderecognition.Pdf417ExtendedParameters.getMacroPdf417Terminator():boolean
-- Added method com.aspose.barcode.barcoderecognition.Pdf417ExtendedParameters.setMacroPdf417Terminator(boolean):void
 
 - Default value for property com.aspose.barcode.generation.CodetextParameters.Location has been changed to CodeLocation.NONE for all **2D** barcode symbologies.
