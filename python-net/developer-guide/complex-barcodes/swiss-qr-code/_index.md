@@ -19,5 +19,46 @@ To generate a *Swiss QR Code*, it is necessary to create an instance of [*Comple
 
 <p align="center"><img src="swissqrbill.png"></p> 
 
+Following code samples demonstrate how to generate *Swiss QR Code* images.
+
+```python
+    def minimalValidSwissQR(self):
+        swissQRCodetext = complexbarcode.SwissQRCodetext()
+        swissQRCodetext.bill.account = "CH450023023099999999A"
+        swissQRCodetext.bill.creditor.name = "Name"
+        swissQRCodetext.bill.creditor.country_code = "NL"
+        
+        return swissQRCodetext
+```
+
+```python
+    def test_SwissQR_FullyInitialized_Test(self):
+        swissQRCodetext = complexbarcode.SwissQRCodetext()
+        swissQRCodetext.bill.account = "CH450023023099999999A"
+        swissQRCodetext.bill.bill_information= "BillInformation"
+        swissQRCodetext.bill.amount = 1024
+        swissQRCodetext.bill.creditor.name = "Creditor.Name"
+        swissQRCodetext.bill.creditor.address_line1 = "Creditor.AddressLine1"
+        swissQRCodetext.bill.creditor.address_line2 = "Creditor.AddressLine2"
+        swissQRCodetext.bill.creditor.country_code = "NL"
+        swissQRCodetext.bill.unstructured_message = "UnstructuredMessage"
+        swissQRCodetext.bill.reference = "Reference"
+        swissQRCodetext.bill.alternative_schemes = [complexbarcode.AlternativeScheme("AlternativeSchemeInstruction1"), complexbarcode.AlternativeScheme("AlternativeSchemeInstruction2")]
+        swissQRCodetext.bill.debtor = complexbarcode.Address()
+        swissQRCodetext.bill.debtor.name = "Debtor.Name"
+        swissQRCodetext.bill.debtor.address_line1 = "Debtor.AddressLine1"
+        swissQRCodetext.bill.debtor.address_line2 = "Debtor.AddressLine2"
+        swissQRCodetext.bill.debtor.country_code = "LU"
+        
+        cg = complexbarcode.ComplexBarcodeGenerator(swissQRCodetext)
+        res = cg.generateBarCodeImage(generation.BarCodeImageFormat.PNG)
+        
+        cr = barcoderecognition.BarCodeReader(res, barcoderecognition.DecodeType.QR)
+        self.assertEqual(cr.read_bar_codes().length, 1)
+        test = complexbarcode.ComplexCodetextReader.tryDecodeSwissQR(cr.found_bar_codes[0].code_text)
+        
+        self.assertTrue(swissQRCodetext.bill.equals(test.bill))
+```
+
 ## **Read Swiss QR Codes**
 Class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/python-net/aspose.barcode.complexbarcode/complexcodetextreader) is used to extract input data from different complex barcode types, in this case, *Swiss QR Code*. To decode *Swiss QR Codes*, first, it is necessary to create an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcodereader) and set it to the value *DecodeType.QR*. then, the decoded data needs to be parsed using class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/python-net/aspose.barcode.complexbarcode/complexcodetextreader) by calling the *try_decode_swiss_qr(encoded_codetext)* method that returns an instance of [*SwissQRCodetext*](https://reference.aspose.com/barcode/python-net/aspose.barcode.complexbarcode/swissqrcodetext) with the decoded information.

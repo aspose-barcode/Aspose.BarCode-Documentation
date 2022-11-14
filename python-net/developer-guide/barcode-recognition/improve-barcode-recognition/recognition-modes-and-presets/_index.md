@@ -35,6 +35,8 @@ In this section, supported recognition presets are described, including *high_pe
     
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
 
+
+
 ### **Presets for 1D Barcode Types**
 To scan linear barcodes, the barcode library provides dedicated recognition presets suitable for barcodes of normal quality. These presets provide improved 1D barcode detection and decoding and are useful to work with barcodes of small dimensions or complex documents with multiple text blocks and tables. For example, compared with general recognition settings, *high_quality_detection* and *max_quality_detection* presets allow improving recognition results for 1D barcodes in complex documents. Alternatilvely, such imprment can be implemented using the *normal_quality* preset and tuning [*BarcodeSvmDetectorSettings*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcodesvmdetectorsettings/) using the *detector_settings* property.  
   
