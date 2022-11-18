@@ -34,6 +34,8 @@ This page contains release notes information for [Aspose.BarCode for Java 22.11]
 - Added method com.aspose.barcode.generation.MaxiCodeExtCodetextBuilder.getExtendedCodetext():String
 - Added method com.aspose.barcode.generation.MaxiCodeParameters.getMaxiCodeMode():int
 - Added method com.aspose.barcode.generation.MaxiCodeParameters.setMaxiCodeMode(int):void
+- Added method com.aspose.barcode.generation.MaxiCodeParameters.getMaxiCodeEncodeMode():MaxiCodeEncodeMode
+- Added method com.aspose.barcode.generation.MaxiCodeParameters.setMaxiCodeEncodeMode(MaxiCodeEncodeMode)
 - Added method com.aspose.barcode.generation.MaxiCodeParameters.getECIEncoding():int
 - Added method com.aspose.barcode.generation.MaxiCodeParameters.setECIEncoding(int):void
 - Added method com.aspose.barcode.generation.MaxiCodeParameters.getMaxiCodeStructuredAppendModeBarcodeId():int
@@ -56,7 +58,6 @@ This page contains release notes information for [Aspose.BarCode for Java 22.11]
 - Added class com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext
 - Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.#ctor
 - Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.getPostalCode():String
-- Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.setPostalCode(String):vod
 - Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.getCountryCode():int
 - Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.setCountryCode(int):void
 - Added method com.aspose.barcode.complexbarcode.MaxiCodeStructuredCodetext.getServiceCategory():int
