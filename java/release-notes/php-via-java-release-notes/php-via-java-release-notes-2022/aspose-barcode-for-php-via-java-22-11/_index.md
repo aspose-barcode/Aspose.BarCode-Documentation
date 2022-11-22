@@ -14,6 +14,10 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |BARCODENET-37546|Improve MaxiCode decoder|Enhancement|
+|BARCODEJAVA-1456|Double-byte numbers are not output correctly in QR code by Aspose.BarCode for Java|Bug|
+|BARCODENET-38325|Improvement of MaxiCode recognition algorithm|Enhancement|
+|BARCODENET-37844|Exception raised while setting non-printable ASCII character with MaxiCodeEncodeMode=4|Enhancement|
+
 
 ## **Public API and Backward Incompatible Changes**
 
