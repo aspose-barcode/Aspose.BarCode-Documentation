@@ -76,7 +76,7 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 - Added class ComplexBarcode->MaxiCodeStructuredSecondMessage
 - Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->getYear():int
 - Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->setYear(int):void
-- Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->getIdentifiers():List<string>
+- Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->getIdentifiers()
 - Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->add(string):void
 - Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->clear()
 - Added function ComplexBarcode->MaxiCodeStructuredSecondMessage->getMessage():string
