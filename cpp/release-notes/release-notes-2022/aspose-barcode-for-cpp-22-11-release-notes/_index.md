@@ -66,9 +66,9 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::set_DotCodeStructuredAppendModeBarcodeId
 - Added property getter Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::get_DotCodeIsReaderInitialization
 - Added property setter Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::set_DotCodeIsReaderInitialization
-- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::Equals(System::SharedPtr<System::Object>)
-- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::operator ==(System::SharedPtr<DotCodeExtendedParameters> first, System::SharedPtr<DotCodeExtendedParameters> second)
-- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::operator !=(System::SharedPtr<DotCodeExtendedParameters> first, System::SharedPtr<DotCodeExtendedParameters> second)
+- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::Equals(System::SharedPtr&lt;System::Object&gt;)
+- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::operator ==(System::SharedPtr&lt;DotCodeExtendedParameters&gt; first, System::SharedPtr&lt;DotCodeExtendedParameters&gt; second)
+- Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::operator !=(System::SharedPtr&lt;DotCodeExtendedParameters&gt; first, System::SharedPtr&lt;DotCodeExtendedParameters&gt; second)
 - Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::GetHashCode
 - Added method Aspose::BarCode::BarCodeRecognition::DotCodeExtendedParameters::ToString
 
@@ -101,7 +101,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::set_SecondaryAndAdditionalData
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::GetConstructedCodetext
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::InitFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICCombinedCodetext::GetHashCode
 - Added type Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext
 - Added constructor Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::HIBCLICPrimaryDataCodetext
@@ -109,7 +109,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::set_Data
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::GetConstructedCodetext
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::InitFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICPrimaryDataCodetext::GetHashCode
 - Added type Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext
 - Added constructor Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::HIBCLICSecondaryAndAdditionalDataCodetext
@@ -119,7 +119,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::set_LinkCharacter
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::GetConstructedCodetext
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::InitFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCLICSecondaryAndAdditionalDataCodetext::GetHashCode
 - Added type Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData
 - Added constructor Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::SecondaryAndAdditionalData
@@ -137,7 +137,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::set_Quantity
 - Added method Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::ToString
 - Added method Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::ParseFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::SecondaryAndAdditionalData::GetHashCode
 - Added type Aspose::BarCode::ComplexBarcode::PrimaryData
 - Added constructor Aspose::BarCode::ComplexBarcode::PrimaryData::PrimaryData
@@ -149,7 +149,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::PrimaryData::set_UnitOfMeasureID
 - Added method Aspose::BarCode::ComplexBarcode::PrimaryData::ToString
 - Added method Aspose::BarCode::ComplexBarcode::PrimaryData::ParseFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::PrimaryData::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::PrimaryData::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::PrimaryData::GetHashCode
 - Added enum Aspose::BarCode::ComplexBarcode::HIBCLICDateFormat
 - Added field Aspose::BarCode::ComplexBarcode::HIBCLICDateFormat::YYYYMMDD
@@ -169,12 +169,12 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::set_DataLocation
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::GetRecords
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::AddRecord(HIBCPASDataType dataType, System::String data)
-- Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::AddRecord(System::SharedPtr<HIBCPASRecord> record)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::AddRecord(System::SharedPtr&lt;HIBCPASRecord&gt; record)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::Clear
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::GetBarcodeType
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::GetConstructedCodetext
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::InitFromString(System::String)
-- Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASCodetext::GetHashCode
 - Added type Aspose::BarCode::ComplexBarcode::HIBCPASRecord
 - Added constructor Aspose::BarCode::ComplexBarcode::HIBCPASRecord::HIBCPASRecord(HIBCPASDataType, System::String)
@@ -183,7 +183,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCPASRecord::set_DataType
 - Added property getter Aspose::BarCode::ComplexBarcode::HIBCPASRecord::get_Data
 - Added property setter Aspose::BarCode::ComplexBarcode::HIBCPASRecord::set_Data
-- Added method Aspose::BarCode::ComplexBarcode::HIBCPASRecord::Equals(System::SharedPtr<System::Object>)
+- Added method Aspose::BarCode::ComplexBarcode::HIBCPASRecord::Equals(System::SharedPtr&lt;System::Object&gt;)
 - Added method Aspose::BarCode::ComplexBarcode::HIBCPASRecord::GetHashCode
 - Added enum Aspose::BarCode::ComplexBarcode::HIBCPASDataLocation
 - Added field Aspose::BarCode::ComplexBarcode::HIBCPASDataLocation::Patient
@@ -237,7 +237,7 @@ This section lists all public API changes introduced in **Aspose.BarCode for C++
 - Added field Aspose::BarCode::BarCodeRecognition::DecodeType::HIBCDataMatrixPAS
 - Added field Aspose::BarCode::BarCodeRecognition::DecodeType::HIBCQRPAS
 
-- Added method Aspose::BarCode::BarCodeRecognition::MultyDecodeType::Exclude(System::SharedPtr<SingleDecodeType> singleType)
+- Added method Aspose::BarCode::BarCodeRecognition::MultyDecodeType::Exclude(System::SharedPtr&lt;SingleDecodeType&gt; singleType)
 
 ### Removed public APIs:
 
