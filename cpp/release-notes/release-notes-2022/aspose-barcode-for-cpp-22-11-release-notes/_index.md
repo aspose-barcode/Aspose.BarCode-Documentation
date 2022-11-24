@@ -3,7 +3,7 @@ title: Aspose.BarCode for Cpp 22.11 Release Notes
 type: docs
 weight: 10
 url: /cpp/aspose-barcode-for-cpp-22-11-release-notes/
-description: A summary of recent changes, enhancements and bug fixes in Aspose.BarCode for .NET 22.11 release.
+description: A summary of recent changes, enhancements and bug fixes in Aspose.BarCode for C++ 22.11 release.
 keywords:
 - HIBS
 - DotCode
