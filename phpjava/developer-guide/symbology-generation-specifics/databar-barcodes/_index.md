@@ -22,7 +22,7 @@ With the exception of except *DataBar Limited*, all aforementioned subtypes have
 *DataBar* standards can be classified in two types: continuous and stacked. ***Aspose.BarCode for PHP via Java*** provides its own mode to customize the height of barcodes for for each of these types, as explained further in the article.
 
 ### **Continuous Barcode Types**
-*DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded* correspond to continuos barcode types. Here, barcode heigh can be adjusted using the *setBarHeight* method of class [*BarcodeParameters*]().  
+*DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded* correspond to continuos barcode types. Here, barcode heigh can be adjusted using the *setBarHeight* function of class [*BarcodeParameters*](https://reference.aspose.com/barcode/php/classBarcodeParameters).  
   
 Following *DataBar Omnidirectional* barcode images have been created setting various barcode heights.
    
@@ -32,9 +32,9 @@ Following *DataBar Omnidirectional* barcode images have been created setting var
   
   
 ### **Stacked Barcode Types**
-*DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked* can be classified as stacked barcode types. For such barcode types, the heigh of barcodes can be customized by calling the *setAspectRatio* method of class [*DataBarParameters*](). *AspectRatio* is specified as a relative coefficient to the value of *XDimension*.  
+*DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked* can be classified as stacked barcode types. For such barcode types, the heigh of barcodes can be customized by calling the *setAspectRatio* function of class [*DataBarParameters*](https://reference.aspose.com/barcode/php/classDataBarParameters). *AspectRatio* is specified as a relative coefficient to the value of *XDimension*.  
   
-Following *DataBar Stacked Omnidirectional* barcodes have been generated setting different values of the aspect ratio.
+Following *DataBar Stacked Omnidirectional* images have been generated setting different values of the aspect ratio.
   
 |Aspect Ratio|Is Set to 15|Is Set to 30|
 | :-: | :-: | :-: |
@@ -42,7 +42,7 @@ Following *DataBar Stacked Omnidirectional* barcodes have been generated setting
 
 
 ## **DataBar Expanded Stacked Layout Settings**
-The *DataBar Expanded Stacked* subtype supports flexible barcode layout that may be adjuted by changing barcode row and column numbers. ***Aspose.BarCode*** allows adding up to 22 segments to compose at most 10 strings. The barcode layout of *DataBar Expanded Stacked* barcodes can be customized through *setRows* and *setColumns* methods of class [*DataBarParameters*](). It should be noted that first, the number of segments in a row has to be determined using the *setColumns* method.  
+The *DataBar Expanded Stacked* subtype supports flexible barcode layout that may be adjuted by changing barcode row and column numbers. ***Aspose.BarCode*** allows adding up to 22 segments to compose at most 10 strings. The barcode layout of *DataBar Expanded Stacked* barcodes can be customized through *setRows* and *setColumns* functions of class [*DataBarParameters*](https://reference.aspose.com/barcode/php/classDataBarParameters). It should be noted that first, the number of segments in a row has to be determined using the *setColumns* function.  
   
 Following *DataBar Expanded Stacked* barcodes have varying barcode layouts.
   
@@ -52,7 +52,7 @@ Following *DataBar Expanded Stacked* barcodes have varying barcode layouts.
 
 
 ## **Compatibility with GS1 Components**
-Considering that *DataBar Expanded* / *DataBar Expanded Stacked* subtypes enable data encoding in any format, it may be important to ensure compatibilty of the encoded information with GS1 standards. This can be impemented through the *setAllowOnlyGS1Encoding* method of class [*DataBarParameters*](). This method requests checking for compatibility of the encoded data with GS Application Identifiers. An exception is thrown if an inconsistency is identified. This method can also serve to verify the correctness of GTIN values in other *DataBar* subtypes.     
+Considering that *DataBar Expanded* / *DataBar Expanded Stacked* subtypes enable data encoding in any format, it may be important to ensure compatibilty of the encoded information with GS1 standards. This can be impemented through the *setAllowOnlyGS1Encoding* function of class [*DataBarParameters*](https://reference.aspose.com/barcode/php/classDataBarParameters). This function requests checking for compatibility of the encoded data with GS Application Identifiers. An exception is thrown if an inconsistency is identified. It also serves to verify the correctness of GTIN values in other *DataBar* subtypes.     
   
 *DataBar Expanded* barcodes shown below have been generated suing the GS1-compatible and non-compatible data formats.
   
@@ -62,7 +62,7 @@ Considering that *DataBar Expanded* / *DataBar Expanded Stacked* subtypes enable
 
 
 ## **Enabling 2D Component**
-*DataBar* standards allow adding a 2D component linkage flag to enable creating a related 2D barcode that can be printed together with the corresponding *DataBar* barcode. Such a flag is often used in GS1-compatible composite barcode types. The barcode library provides the *set2DCompositeComponent* method of class [*DataBarParameters*]() that allows setting this flag manually for specific industrial standards without changing the data encoded in the main barcode.  
+*DataBar* standards allow adding a 2D component linkage flag to enable creating a related 2D barcode that can be printed together with the corresponding *DataBar* barcode. Such a flag is often used in GS1-compatible composite barcode types. The barcode library provides the *set2DCompositeComponent* function of class [*DataBarParameters*](https://reference.aspose.com/barcode/php/classDataBarParameters) that allows setting this flag manually for specific industrial standards without changing the data encoded in the main barcode.  
   
 *DataBar Expanded* barcodes below have different settings for the 2D component flag.
   

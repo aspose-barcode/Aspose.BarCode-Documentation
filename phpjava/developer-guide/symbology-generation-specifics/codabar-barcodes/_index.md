@@ -16,7 +16,7 @@ Input text in *Codabar* barcodes has the following format:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Start and Stop Symbols**
-Start and stop digits can be encoded separately using any of four formats (A, B, C, or D). To specify the preferred format, it is possible to use *setCodabarStartSymbol* and *setCodabarStopSymbol* methods from class [*CodabarParameters*](). The default set of start and stop digits is "A".  
+Start and stop digits can be encoded separately using any of four formats (A, B, C, or D). To specify the preferred format, it is possible to use *setCodabarStartSymbol* and *setCodabarStopSymbol* functions from class [*CodabarParameters*](https://reference.aspose.com/barcode/php/classCodabarParameters). The default set of start and stop digits is "A".  
   
 Following barcode images have been created using various sets of start and stop characters.
   
@@ -28,7 +28,7 @@ Following barcode images have been created using various sets of start and stop 
 ## **Checksum Settings**
 By default, the *Codabar* standard does not require obligatory checksum controls. If checksum controls are needed, *Codabar* provides two checksum algorithms: Mod10 and Mod16. The pseudocode given below shows how these two checksum algorithms can be used.  
 
-```java
+``` php
 
 //Mod10
 foreach (var value in encodedCodetext)
@@ -39,7 +39,7 @@ foreach (var value in encodedCodetext)
 
 ```
   
-Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*]() enum. The required checksum algorithm can be allocated through the [*CodabarChecksumMode*]() enum. By default, the *Mod16* checksum is applied.  
+Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*](https://reference.aspose.com/barcode/php/classEnableChecksum) class. The required checksum algorithm can be allocated through the [*CodabarChecksumMode*](https://reference.aspose.com/barcode/php/classCodabarChecksumMode) enum. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images below have been generated using different checksum control settings.
 

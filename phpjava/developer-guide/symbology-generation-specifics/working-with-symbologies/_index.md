@@ -4,7 +4,7 @@ type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for PHP via Java"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in PHP, Barcode types in Aspose.BarCode for PHP, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
 weight: 10
-url: /phpjava/generate-barcode-types/
+url: /phpjava/barcode-types-definition/
 
 ---
 This article introduces general information about barcode types and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 
@@ -12,7 +12,7 @@ This article introduces general information about barcode types and describes th
 ## **Overview**
 A barcode is a graphical code composed of parallel lines and spaces of different widths or various figures combined in a visual pattern to encode data. After being generated and printed out, barcode labels get placed on scannable surfaces. Barcodes have been introduced as machine-readable tags to enable fast automatical information fetching from graphic data. A single barcode may correspond to approximately 25 characters for 1D types or 2,000 for 2D ones. The greater the number of characters to be encoded in a single barcode, the larger the generated barcode.
   
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ### **Supported Barcode Types**
 All types supported in ***Aspose.BarCode for PHP via Java*** are listed below.
@@ -42,7 +42,7 @@ Standard 2-of-5, EAN 5, EAN 2, UPC-A, UPC-E, UpcaGs1DatabarCoupon
     
 
 ## **Setting Barcode Type**
-***Aspose.BarCode for PHP via Java*** supports nearly all widely used barcode types. In general, to generate a barcode image, it is necessary to create an instance of class [*BarcodeGenerator*]() with two main parameters to be initialized: data contents to be encoded using the *setCodeText* method and the barcode type in the *setBarcodeType* method. The *setBarcodeType* method is used to define the type of generated barcodes. Developers can assign any options to the *setBarcodeType* property from the list of predefined barcode types supported by class [*BarcodeGenerator*](). However, not all types enable barcode generation with input text in a required format due to the limitations of a barcode type itself.  
+***Aspose.BarCode for PHP via Java*** supports nearly all widely used barcode types. In general, to generate a barcode image, it is necessary to create an instance of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) with two main parameters to be initialized: data contents to be encoded using the *setCodeText* function and the barcode type in the *setBarcodeType* function. The *setBarcodeType* function is used to define the type of generated barcodes. Developers can assign any options to the *setBarcodeType* property from the list of predefined barcode types supported by class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator). However, not all types enable barcode generation with input text in a required format due to the limitations of a barcode type itself.  
   
 Below, two barcode types, *Code 39* and *QR Code*, are considered as examples to demonstrate how to generate barcodes. 
   

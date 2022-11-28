@@ -6,7 +6,7 @@ url: /phpjava/supported-barcode-types-and-file-formats/
 ---
 
 ## **Barcode Types**
-***Aspose.BarCode for PHP via Java*** supports more than 60 [barcode types](/barcode/info-cards/) used in various industries, i.e., linear (1D), matrix (2D), and postal barcodes. The detailed description about barcode generation for different types can be found in section [Generation Specifics for Barcode Types](/barcode/java/symbology/)
+***Aspose.BarCode for PHP via Java*** supports more than 60 [barcode types](/barcode/info-cards/) used in various industries, i.e., linear (1D), matrix (2D), and postal barcodes. The detailed description about barcode generation for different types can be found in section [Generation Specifics for Barcode Types](/phpjava/barcode-type-specifics/).
     
 **1D barcode types** relate to the first generation of one-dimensional (1D) barcode types that decode data by changing the widths of black and white parallel lines. Particular 1D standards support encoding only numbers, while others allow encoding also letters and special symbols.  
 

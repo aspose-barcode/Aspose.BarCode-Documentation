@@ -18,15 +18,15 @@ During barcode generation, it may be required to save barcode images not only in
 ***Aspose.BarCode for PHP via Java*** enables saving generated barcode images as files in the desired format. 
 
 ## **Saving to Stream**
-It may be necessary to output generated barcode images in the form of a stream, in other words, in a binary format. A stream can be viewed as a byte sequence abstraction. To save barcode images as streams, class [*BarcodeGenerator*]() provides the public method *save*.  
+It may be necessary to output generated barcode images in the form of a stream, in other words, in a binary format. A stream can be viewed as a byte sequence abstraction. To save barcode images as streams, class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) provides the public function *save (string $filePath, int $format)*.  
 
 
 ## **Saving as Bitmap**
-***Aspose.BarCode for PHP via Java*** enables saving barcode images in the form of bitmap objects and then converting it to the required format or using it in graphical transformations. These objects can be fetched from instances of class [*BarcodeGenerator*]() through the *generateBarCodeImage* method and then processed further. 
+***Aspose.BarCode for PHP via Java*** enables saving barcode images in the form of bitmap objects and then converting it to the required format or using it in graphical transformations. These objects can be fetched from instances of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) using the *generateBarCodeImage (int $format)* function and then processed further. 
 
 ## **Raster Image Formats**
 
-In ***Aspose.BarCode for PHP via Java***, barcode images can be saved to common raster image formats, namely, PNG, GIF, BMP, JPEG, and TIFF. The value of the [*BarCodeImageFormat*]() enum can be passed as the second argument to the *save()* method to output barcode images in the specified format. The description of all supported image formats is given further.
+In ***Aspose.BarCode for PHP via Java***, barcode images can be saved to common raster image formats, namely, PNG, GIF, BMP, JPEG, and TIFF. The value of the [*BarCodeImageFormat*](https://reference.aspose.com/barcode/php/classBarCodeImageFormat) class can be passed as the second argument to the *save (string $filePath, int $format)* function of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) to download barcode images in the specified format. The description of all supported image formats is given further.
 
 ### **BMP Format**
 BMP images are bitmap files that store bitmap digital images regardless of a graphics adapter. The BMP file format enables storing information as two-dimensional digital images in monochrome and color formats with different color depths. Using the BMP format for image generation results in producing images without compression. In this case, barcode images will have large size and 24-bit color depth. Moreover, they will not contain losses and artifacts. 

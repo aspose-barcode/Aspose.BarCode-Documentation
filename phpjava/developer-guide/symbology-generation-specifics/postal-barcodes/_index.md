@@ -17,38 +17,38 @@ Many countries use their own symbologies in postal services. Generally, such bar
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Bar Height Settings**
-By default, ***Aspose.BarCode for PHP via Java*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width through the *setBarHeight* method of class [*BarcodeParameters*]().  
+By default, ***Aspose.BarCode for PHP via Java*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width through the *setBarHeight* function of class [*BarcodeParameters*](https://reference.aspose.com/barcode/php/classBarcodeParameters).  
   
 Following *Planet* and *RM4SCC* barcode images have been created varying bar height settings.  
   
 |Bar Height Settings for **Planet**| | |
 |---| :-: | :-: |
-|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to None**</p>|<p align="center">**Is Set to 100 Pixels**</p>|
+|<p align="center">**Bar Height**</p>|Is Set to None|Is Set to 100 Pixels|
 | |<img src="postalplanetbarheightnone.png">|<img src="postalplanetbarheight100pixels.png">|
   
 |Bar Height Settings for **RM4SCC**| | |
 |---| :-: | :-: |
-|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to None**</p>|<p align="center">**Is Set to 100 Pixels**</p>|
+|<p align="center">**Bar Height**</p>|Is Set to None|Is Set to 100 Pixels|
 | |<img src="postalrm4sccbarheightnone.png">|<img src="postalrm4sccbarheight100pixels.png">|
   
 
 ## **Bar Filling Options**
-The barcode library enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *setFilledBars* method of class [*BarcodeParameters*](). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
+The barcode library enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *setFilledBars* function of class [*BarcodeParameters*](https://reference.aspose.com/barcode/php/classBarcodeParameters). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
   
-Following *Planet* and *RM4SCC* barcode images have been generated using different bar filling settings.
+Following *Planet* and *RM4SCC* images have been generated using different bar filling settings.
   
 |Bar Filling for **Planet** Barcodes| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
+|**Bar Filling Settings**|Filled Bars|Empty Bars|
 | |<img src="postalplanetfilledbars.png">|<img src="postalplanetemptybars.png">|
   
 |Bar Filling for **RM4SCC** Barcodes| | |
 |---| :-: | :-: |
-|**Bar Filling Settings**|<p align="center">**Filled Bars**</p>|<p align="center">**Empty Bars**</p>|
+|**Bar Filling Settings**|Filled Bars|Empty Bars|
 | |<img src="postalrm4sccfilledbars.png">|<img src="postalrm4sccemptybars.png">|
   
   
-## **Two-State Postal Symbologies**
+## **Two-State Postal Types**
 Using ***Aspose.BarCode for PHP via Java***, developers can create barcodes of two-state postal types, such as *Postnet* and *Planet*. These barcode standards allow encoding only numerical characters and require obligatory checksum controls. Code snippets and sample barcode images provided further demonstrate how to create postal barcodes of *Planet* and *Postnet* types.  
 
 ### **Planet Standard**
@@ -65,10 +65,10 @@ Using ***Aspose.BarCode for PHP via Java***, developers can create barcodes of t
 The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal symbologies. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
 
 ### **Handling Invalid Barcode Text Exception**
-When invalid barcode text in passed to to the *setCodeText* method (in case of *Postnet* and *Planet* symbologies, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*]() implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*]() passing *True*.
+When invalid barcode text in passed to to the *setCodeText* function (in case of *Postnet* and *Planet* symbologies, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* function. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* function of class [*BarcodeParameters*](https://reference.aspose.com/barcode/php/classBarcodeParameters) passing *True*.
 
 ### **Customizing Bar Height**
-By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for PHP via Java*** allows modifying bar height for short bars manually. To do this, the *setPostalShortBarHeight* method of class [*PostalParameters*]() needs to be used.  
+By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for PHP via Java*** allows modifying bar height for short bars manually. To do this, the *setPostalShortBarHeight* function of class [*PostalParameters*](https://reference.aspose.com/barcode/php/classPostalParameters) needs to be used.  
   
 Following barcode images have been created variyng short bar height.
   
@@ -98,7 +98,7 @@ The Royal Dutch TPG Post of Netherlands uses the *Dutch KIX* barcode standard to
   
 
 ### **Australia Post Standard**
-The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* method of class [*AustralianPostPatrameters*](). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
+The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of available encoding types (numerical or alphanumeric characters). These settings can be customized through the *setAustralianPostEncodingTable* function of class [*AustralianPostPatrameters*](https://reference.aspose.com/barcode/php/classAustralianPostParameters). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
   
 Barcode data can be prepared using one of the supported formats as explained below.  
   
@@ -108,7 +108,7 @@ Barcode data can be prepared using one of the supported formats as explained bel
 |59|8 digits|16 bars|
 |62|8 digits|31 bars|
   
-The FCC field can be determined through the *setAustralianPostEncodingTable* method that has to be called passing one of the values from the [*CustomerInformationInterpretingType*]() enum listed in the table below.
+The FCC field can be determined through the *setAustralianPostEncodingTable* function that has to be called passing one of the values from the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/php/classCustomerInformationInterpretingType) class listed in the table below.
   
 |Australia Post Encoding Table|Supported Symbols|
 | :-: |---|
@@ -116,12 +116,43 @@ The FCC field can be determined through the *setAustralianPostEncodingTable* met
 |NTable|0-9|
 |Other|0, 1, 2, and 3 that correspond to H, A, D, and T states, respectively|
   
-Following barcode images have been created varying FCC field settings.
+Following images have been created varying FCC field settings.
   
 |Australia Post Subtypes|FCC 11|FCC 59 Table|FCC 62N Table|FCC 62C Table|FCC 62C Other Table|
 | :-: | :-: | :-: | :-: | :-: | :-: |  
 | |<img src="postalaustraliapostfcc11.png">|<img src="postalaustraliapostfcc59ntable.png">|<img src="postalaustraliapostfcc62ntable.png">|<img src="postalaustraliapostfcc62ctable.png">|<img src="postalaustraliapostfcc62othertable.png">|
   
+  
+**C-Table**  
+  
+``` php
+$generator = new BarcodeGenerator(EncodeTypes::AUSTRALIA_POST, "5912345678ABCde");
+$generator->getParameters()->getBarcode()->getAustralianPost()->setAustralianPostEncodingTable(CustomerInformationInterpretingType::C_TABLE);
+$image = $generator->generateBarcodeImage(BarcodeImageFormat::PNG);
+$reader = new BarCodeReader($image, DecodeType::AUSTRALIA_POST);
+$reader->setCustomerInformationInterpretingType(CustomerInformationInterpretingType::C_TABLE);
+foreach($reader->readBarCodes() as $result)
+{
+    print("BarCode Type: ".$result->getCodeType());
+    print("BarCode CodeText: ".$result->getCodeText());
+}
+```
+  
+
+**N-Table**  
+  
+``` php
+$generator = new BarcodeGenerator(EncodeTypes::AUSTRALIA_POST, "59123456781234567");
+$generator->getParameters()->getBarcode()->getAustralianPost()->setAustralianPostEncodingTable(CustomerInformationInterpretingType::N_TABLE);
+$image = $generator->generateBarcodeImage(BarcodeImageFormat::PNG);
+$reader = new BarCodeReader($image, DecodeType::AUSTRALIA_POST);
+$reader->setCustomerInformationInterpretingType(CustomerInformationInterpretingType::N_TABLE);
+foreach($reader->readBarCodes() as $result)
+{
+   print("BarCode Type: ".$result->getCodeType());
+   print("BarCode CodeText: ".$result->getCodeText());
+}
+```
 
 ### **Mailmark Standard**
 The *Mailmark* postal standard has been introduced by Royal Mail of the United Kingdom. In general, its design is similar to *RM4SCC*; however, it has requires entering barcode information in the strict format and does not support adding customer data. This barcode type can be used to encode numericals, uppercase English letters, and space. It has checksum controls and supports Reed-Solomon error correction.  

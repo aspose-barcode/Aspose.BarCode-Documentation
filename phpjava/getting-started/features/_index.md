@@ -2,10 +2,12 @@
 title: Features
 type: docs
 weight: 30
-url: /java/features/
+url: /phpjava/features/
+aliases:
+- url: /java/aspose-barcode-for-php-via-java-features/
 ---
 
-## **General Features**
+## **Basic Features**
 - Barcode image generation
 - Barcode image scanning, detection, and decoding
 - Support for more than 60 symbologies, including 1D, 2D, and postal barcode types

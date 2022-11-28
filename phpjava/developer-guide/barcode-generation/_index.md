@@ -7,7 +7,7 @@ url: /phpjava/generate-barcodes/
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view results online.{{% /alert %}}
 
-This documentation chapter is dedicated to barcode generation basics and the related questions, such as supported symbologies, barcode appearance-related properties, managing barcode size, customizing barcode text, saving generated barcodes, working with GUI-based development tools, and many other subjects. You can find the required information in the articles specified below.
+This documentation chapter describes barcode generation basics and discusses supported barcode types, appearance-related properties, size and appereance, barcode text, output options, and so on. You can find the required information in the articles specified below.
    
 | Article | Description |
 |---|---|

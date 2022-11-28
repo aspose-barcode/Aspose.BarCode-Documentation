@@ -4,7 +4,7 @@ type: docs
 description: "Generate different types of PDF417 barcodes using Aspose.BarCode for PHP via Java"
 keywords: "Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for PHP"
 weight: 50
-url: /phpjava/generate-pdf417-barcodes/
+url: /phpjava/generate-pdf417/
 ---
 {{% alert color="primary" %}}[Generate PDF417 Barcodes Online](https://products.aspose.app/barcode/generate/pdf417): You can test the quality of ***Aspose.BarCode*** generation for PDF417 barcodes and get the results online.{{% /alert %}}
 
@@ -39,29 +39,29 @@ The layout of *Micro PDF417* supports adding from 4 to 44 rows and from 1 to 4 c
 <a name="micropdf417"></a>
 
 ## **Compact PDF417 Symbology**
-*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* method of class [*Pdf417Parameters*]().
+*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *setPdf417Truncate* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters).
   
 <p align="center"><img src="compactpdf417basic.png"></p>
   
 <a name="compactpdf417"></a>
 
 ## **PDF417 Encoding Modes**
-To enable the required encoding mode for *PDF417* generation, it is necessary to call the *setPdf417CompactionMode* method of class [*Pdf417Parameters*]() that is intended to manage data compaction regimes. Two other methods, i.e. *setPdf417ECIEncoding* and *setCodeTextEncoding*, can be used to enable encoding modes suitable for Unicode symbols. In this article, it is described how to work with different encoding modes.
+To enable the required encoding mode for *PDF417* generation, it is necessary to call the *setPdf417CompactionMode* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters) that is intended to manage data compaction regimes. Two other functions, i.e. *setPdf417ECIEncoding* and *setCodeTextEncoding*, can be used to enable encoding modes suitable for Unicode symbols. In this article, it is described how to work with different encoding modes.
 
 ### **ECI Encoding Mode**
-The *setPdf417ECIEncoding* method can be used to encode Unicode symbols to streams of bytes. Moreover, it allows determining an ECI identifier for the present encoding that can be detected and interpreted by decoders. When this method is called passing any value from the [*ECIEncodings*]() class besides *ECIEncodings.NONE*, information is processed using the determined ECI encoding. At present, ***Aspose.BarCode*** supports all widely used charset encodings included in the [*ECIEncodings*]() class.  
+The *setPdf417ECIEncoding* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters) can be used to encode Unicode symbols to streams of bytes. Moreover, it allows determining an ECI identifier for the present encoding that can be detected and interpreted by decoders. When this function is called passing any value from the [*ECIEncodings*](https://reference.aspose.com/barcode/php/classECIEncodings) class besides *ECIEncodings.NONE*, information is processed using the determined ECI encoding. At present, ***Aspose.BarCode*** supports all widely used charset encodings included in the [*ECIEncodings*](https://reference.aspose.com/barcode/php/classECIEncodings) class.  
     
 <p align="center"><img src="pdf417eciencoding.png"></p>
-  
+ 
 ### **Compaction Mode**
-Developers can enable the desired data compaction mode through the *setPdf417CompactionMode* method passing the value from the [*Pdf417CompactionMode*]() enum.
+Developers can enable the desired data compaction mode through the *setPdf417CompactionMode* function passing the value from the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/php/classPdf417CompactionMode) class.
   
 |Compaction Mode|Description|
 |---|---|
 |**AUTO**|Automatically selects the data compaction mode with the highest data density. If barcode data contains a digit greater than 255, data compaction is performed with the specified encoding|
-|**BINARY**|Encodes binary streams of bytes comprising digits from 0 to 255. If barcode data has a digit greater than 255, data compaction is conducted using the specified encoding|
+|**BINARY**|Encodes binary streams of bytes with digits from 0 to 255. If barcode data has a digit greater than 255, data compaction is conducted using the specified encoding|
 |**NUMERIC**|Legacy mode for numerical digits. Using the *AUTO* mode is recommended|
-|**TEXT**|Legacy mode for alphanumeric characters. Using the *Auto* mode is recommended|
+|**TEXT**|Legacy mode for alphanumeric characters. Using the *AUTO* mode is recommended|
 
 Following barcodes have been created applying various compaction modes.
   
@@ -71,17 +71,17 @@ Following barcodes have been created applying various compaction modes.
   
    
 ### **Unicode Encoding Mode**
-Unicode characters can be encoded using the *setCodeTextEncoding* method. 
+Unicode characters can be encoded using the *setCodeTextEncoding* function. 
   
 <p align="center"><img src="pdf417codetextencoding.png"></p>
   
 ### **Encoding Streams of Bytes in Binary Mode**
-Developers can encode and transmit an array of bytes through the *BINARY* mode that can be enabled through the *setPdf417CompactionMode* method of class [*Pdf417Parameters*](). To show the text line under a barcode, the *setTwoDDisplayText* method must be called. 
+Developers can encode and transmit an array of bytes through the *BINARY* mode that can be enabled through the *setPdf417CompactionMode* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters). To show the text line under a barcode, the *setTwoDDisplayText* function must be called. 
   
 <p align="center"><img src="pdf417bytesencoding.png"></p>
   
 ## **Layout Configuration Settings**
-Developers can define the required layout configuration for *PDF417* generation using dedicated methods of class [*Pdf417Parameters*](), i.e. *setRows* and *setColumns*. All *PDF417* standards besides *Micro PDF417* may have the following configuration settings: from 1 to 30 columns and from 3 to 90 rows. The number of rows and columns can be defined separately. The layout of *Micro PDF417* allows adding from 1 to 4 columns.  
+Developers can define the required layout configuration for *PDF417* generation using dedicated function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters), i.e. *setRows* and *setColumns*. All *PDF417* standards besides *Micro PDF417* may have the following configuration settings: from 1 to 30 columns and from 3 to 90 rows. The number of rows and columns can be defined separately. The layout of *Micro PDF417* allows adding from 1 to 4 columns.  
   
 Following *PDF417* barcodes have different layout configurations.
 
@@ -91,7 +91,7 @@ Following *PDF417* barcodes have different layout configurations.
   
 
 ## **Managing Error Correction Level**
-The *PDF417* barcode family supports Reed-Solomon error correction to provide data recovery and integrity check. *Micro PDF417* enables determining the size of redundant recovery data automatically. Other *PDF417* standards allow customizing the error correction level through the *setPdf417ErrorLevel* method of class [*Pdf417Parameters*](). Each additional pair of error correction codewords serves to recover one unknown error or two known missing digits. A higher error correction level requires storing more codewords and enables more efficient data recovery for damaged barcodes. The maximal level of error correction, i.e. *Level8*, means that 265 errors can be corrected. However, data encoding capacity will decrease by 614 bytes. Available error correction levels are represented in the following table.  
+The *PDF417* barcode family supports Reed-Solomon error correction to provide data recovery and integrity check. *Micro PDF417* enables determining the size of redundant recovery data automatically. Other *PDF417* standards allow customizing the error correction level through the *setPdf417ErrorLevel* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters). Each additional pair of error correction codewords serves to recover one unknown error or two known missing digits. A higher error correction level requires storing more codewords and enables more efficient data recovery for damaged barcodes. The maximal level of error correction, i.e. *Level8*, means that 265 errors can be corrected. However, data encoding capacity will decrease by 614 bytes. Available error correction levels are represented in the following table.  
   
 |Error Correction Level**|Number of Codewords|Error Correction Level|Number of Codewords|
 | :-: | :-: | :-: | :-: |
@@ -109,7 +109,7 @@ Following *PDF417* barcodes have different error correction levels.
   
  
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is one of the main parameters used to manage barcode proportions along X and Y coordinates. *Aspect Ratio* can be determined as the ratio between barcode height and width or as the relative coefficient to the *XDimension* value. Its value can be modified through the *setAspectRatio* method of class [*Pdf417Parameters*](). To generate *PDF417* barcodes, it is recommended to select the value of *AspectRatio* between 3 and 5.
+*Aspect Ratio* is one of the main parameters used to manage barcode proportions along X and Y coordinates. *Aspect Ratio* can be determined as the ratio between barcode height and width or as the relative coefficient to the *XDimension* value. Its value can be modified through the *setAspectRatio* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters). To generate *PDF417* barcodes, it is recommended to select the value of *AspectRatio* between 3 and 5.
 
 Following *PDF417* barcodes have been generated with different aspect ratio values.  
   
@@ -118,24 +118,24 @@ Following *PDF417* barcodes have been generated with different aspect ratio valu
 | |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
   
 ## **Working withPDF417 Metadata**
-*Micro PDF417* and *Macro PDF417* allow adding special metainformation about barcode data. Such metadata can be encoded together with main barcode information sharing the same blocks of data. It is possible to classify barcode metadata into permanent data and optional data as clarified further. All methods mentioned below correspond to class [*Pdf417Parameters*]().
+*Micro PDF417* and *Macro PDF417* allow adding special metainformation about barcode data. Such metadata can be encoded together with main barcode information sharing the same blocks of data. It is possible to classify barcode metadata into permanent data and optional data as clarified further. All functions mentioned below correspond to class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters).
 
 <a name="macropdf417"></a>
 
 ### **Permanent Metadata**
-Permanent metadata can be used to encode different special parameters through the methods listed below.
+Permanent metadata can be used to encode different special parameters using the functions listed below.
   
-|Permanent Metadata Method|Description|
+|Permanent Metadata Functins|Description|
 |---|---|
 |*setPdf417MacroFileID*|Manually adjusted unique identifier used for a series of barcodes or a PDF417 file|
-|*setPdf417MacroSegmentID*|Identifier of the current barcode segment starting from 0. It is often used together with the *setPdf417MacroSegmentsCount* method that allows setting the number of barcodes in a series|
+|*setPdf417MacroSegmentID*|Identifier of the current barcode segment starting from 0. It is often used together with the *setPdf417MacroSegmentsCount* function that allows setting the number of barcodes in a series|
   
 <p align="center"><img src="macropdf417permanent.png"></p>
 
 ### **Optional Metadata**
-Optional metadata are used to store information about various data properties that can be encoded through special methods described below.
+Optional metadata are used to store information about various data properties that can be encoded through special functions described below.
   
-|Optional Metadata Method|Description|
+|Optional Metadata Functions|Description|
 |---|---|
 |*setPdf417MacroSegmentsCount*|Amount of barcodes in a series|
 |*setPdf417MacroFileName*|File name|
@@ -148,7 +148,7 @@ Optional metadata are used to store information about various data properties th
 <p align="center"><img src="macropdf417optional.png"></p>
   
 ### **Unicode Metadata**
-In ***Aspose.BarCode for PHP via Java***, it is possible to re-encode optional metadata using the Unicode encoding through the *setPdf417MacroECIEncoding* method of class [*Pdf417Parameters*](). This method is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
+In ***Aspose.BarCode for PHP via Java***, it is possible to re-encode optional metadata using the Unicode encoding through the *setPdf417MacroECIEncoding* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters). This function is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
 
 <p align="center"><img src="macropdf417eciencoding.png"></p>
   
@@ -156,11 +156,11 @@ In ***Aspose.BarCode for PHP via Java***, it is possible to re-encode optional m
 The barcode library allows encoding specific control parameters for *PDF417* barcodes, i.e. hardware reader initialization and emulation for the *Code 128* type. 
 
 ### **Hardware Reader Initialization**
-The *setReaderInitialization* method of class [*Pdf417Parameters*]() that allows encoding the special flag used to indicate that barcode data will serve for hardware reader initialization. 
+The *setReaderInitialization* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters) that allows encoding the special flag used to indicate that barcode data will serve for hardware reader initialization. 
 
 <p align="center"><img src="pdf417readerinitialization.png"></p>
 
 ### ***Code 128* Emulation**
-In some cases, it may be necessary to make hardware readers emulate information encoded in *Micro PDF417* barcodes in the format of *Code 128* barcode data. This can be done by calling the *setCode128Emulation* method of class [*Pdf417Parameters*]() and passing the required value from the [*Code128Emulation*]() enum. This method is applicable to *Micro PDF417* barcodes only. 
+In some cases, it may be necessary to make hardware readers emulate information encoded in *Micro PDF417* barcodes in the format of *Code 128* barcode data. This can be done by calling the *setCode128Emulation* function of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/php/classPdf417Parameters) and passing the required value from the [*Code128Emulation*](https://reference.aspose.com/barcode/php/classCode128Emulation) class. This function is applicable to *Micro PDF417* barcodes only. 
 
 <p align="center"><img src="pdf417code128emulation.png"></p>
