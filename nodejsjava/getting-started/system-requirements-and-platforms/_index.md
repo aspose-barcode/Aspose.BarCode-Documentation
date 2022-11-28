@@ -2,11 +2,13 @@
 title: System Requirements
 type: docs
 weight: 40
-url: /nodejsjava/supported-platforms/
+url: /nodejsjava/system-requirements/
 ---
 
 ## **System Requirements**
-***Aspose.BarCode for Node.js via Java*** is a platform-independent API and can be used on any platform (Windows, Linux, etc.) where [Node.js](https://nodejs.org/en/download/) and [node-java](https://github.com/joeferner/node-java) bridge are installed. The machine must have Oracle JDK 7 or greater versions before setting up the installation.
+***Aspose.BarCode for Node.js via Java*** is a platform-independent API that can be deployed on any platform (Windows, Linux, Mac OS, etc.). The key requirements is to set up [Node.js](https://nodejs.org/en/download/) and [node-java](https://github.com/joeferner/node-java) and Oracle JDK version 7 or greater.
 
-## **Supported Operating Systems**
-
+## **Supported Platforms**
+- Java Standard Edition 1.4 or greater
+- Java Enterprise Edition
+- Java Mobile Edition 3.0

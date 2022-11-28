@@ -70,77 +70,24 @@ When the *BYTES* encoding mode is used, input information presented in a form of
   
 ### ***UTF_8_BOM* and *UTF_16_BEBOM* Modes**
 The library provides two special encoding modes called *UTF_8_BOM* and *UTF_16_BEBOM* that serve to encode information according to *UTF8* and *UTF16BE* specifications. A byte order mark (BOM) symbol is added as the first digit. 
-<!--The following code sample shows how to enable with the *UTF_16_BEBOM* encoding mode.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set the encode mode to UTF16BE with BOM
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Utf16BEBOM;
-gen.Save($"{path}QrEncodeModeUtfBOM.png", BarCodeImageFormat.Png);
-//attempt to read the barcode
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-read.BarcodeSettings.DetectEncoding = true;
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeUtfBOM:" + result.CodeText);
-{{< /highlight >}}-->
   
 <p align="center"><img src="qrencodemodeutfbom.png"></p>
   
 ### ***ECI_ENCODING* Mode**
 
-The *ECI_ENCODING* encoding mode suggests applying one of the encodings listed in the [*ECIEncodings*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.generation/ECIEncodings) class. ***Aspose.BarCode for Android via Java*** supports the variety of widely used encodings. In this mode, the extended channel interpretation (ECI) identifier is added to denote the enabled encoding to transfer the information about it to decoders. It is recommended to use the UTF8 value. 
-<!--The following code snippet explains how to use the *ECI_ENCODING* mode.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set the encoding mode to ECI_Encoding and ECI to UTF8
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
-gen.Save($"{path}QrEncodeModeECIEncoding.png", BarCodeImageFormat.Png);
-//attempt to read the barcode
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeECIEncoding:" + result.CodeText);
-{{< /highlight >}}-->
+The *ECI_ENCODING* encoding mode suggests applying one of the encodings listed in the [*ECIEncodings*]() class. ***Aspose.BarCode for Node.js via Java*** supports the variety of widely used encodings. In this mode, the extended channel interpretation (ECI) identifier is added to denote the enabled encoding to transfer the information about it to decoders. It is recommended to use the UTF8 value. 
   
 <p align="center"><img src="qrencodemodeeciencoding.png"></p>
   
 ### ***EXTENDED_CODETEXT* Mode**
-***Aspose.BarCode for Android via Java*** supports the *EXTENDED_CODETEXT* mode that allows customizing settings for the *QR Code* generation process manually. This mode enables activating the multi-ECI mode and adding FNC characters (special symbols to differentiate between fields in variable-length identifiers) to work with extended textual information. The library provides a special class called [*QrExtCodetextBuilder*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.generation/QrExtCodetextBuilder) that facilitate using with this encoding mode. When the multi-ECI mode is enabled, barcode information gets processed for all predefined encodings automatically. In all other cases, the encoding defined through the *setCodeTextEncoding* method is applied.    
-
-<!--The following code sample shows how to enable the multi-encoding ECI regime when the *EXTENDED_CODETEXT* mode is enabled. 
-  
-{{< highlight csharp>}}
-//create the extended barcode text
-QrExtCodetextBuilder lTextBuilder = new QrExtCodetextBuilder();
-lTextBuilder.AddECICodetext(ECIEncodings.Win1251, "Aspose");
-lTextBuilder.AddECICodetext(ECIEncodings.UTF8, "常に先");
-lTextBuilder.AddECICodetext(ECIEncodings.UTF16BE, "を行く");
-lTextBuilder.AddPlainCodetext(@"!!!");
-//generate a QR Code
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, lTextBuilder.GetExtendedCodetext());
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set the encoding mode to EXTENDED_CODETEXT
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ExtendedCodetext;
-gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "ExtendedCodetext mode";
-gen.Save($"{path}QrEncodeModeExtendedCodetext.png", BarCodeImageFormat.Png);
-//attempt to read the barcode
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeExtendedCodetext:" + result.CodeText);
-{{< /highlight >}}-->
+***Aspose.BarCode for Node.js via Java*** supports the *EXTENDED_CODETEXT* mode that allows customizing settings for the *QR Code* generation process manually. This mode enables activating the multi-ECI mode and adding FNC characters (special symbols to differentiate between fields in variable-length identifiers) to work with extended textual information. The library provides a special class called [*QrExtCodetextBuilder*]() that facilitate using with this encoding mode. When the multi-ECI mode is enabled, barcode information gets processed for all predefined encodings automatically. In all other cases, the encoding defined through the *setCodeTextEncoding* method is applied.    
   
 <p align="center"><img src="qrencodemodeextendedcodetext.png"></p>
   
 ## **Error Correction Level**
 The *QR Code* group of barcode standards provides four types of Reed-Solomon error correction (EC). The error correction mechanism prescribes storing redundant data to facilitate automatic error detectiion and correctiion in the case of barcode image distortions or damages. Basically, to recover 1% of corrupted data, 2% redundancy is required.  
   
-Following error correction levels are supported for *QR Code* symbologies.
+Following error correction levels are supported for *QR Code*.
   
 |Error Correction Level|Data Recovery Capacity|
 | :-: | :-: |
@@ -155,27 +102,8 @@ For all *QR Code* subtypes with the exception of *Micro QR*, developers can use 
 | :-: | :-: | :-: | :-: | :-: |
 | |<img src="qrerrorlevell.png">|<img src="qrerrorlevelm.png">|<img src="qrerrorlevelq.png">|<img src="qrerrorlevelh.png">|
   
-<!--The following code snippet demonstrates how to enable various error correction levels for *QR Code* barcodes.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is a type of matrix barcode invented in 1994");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set error correction level to L
-gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
-gen.Save($"{path}QrErrorLevelL.png", BarCodeImageFormat.Png);
-//set error correction level to M
-gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelM;
-gen.Save($"{path}QrErrorLevelM.png", BarCodeImageFormat.Png);
-//set error correction level to Q
-gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelQ;
-gen.Save($"{path}QrErrorLevelQ.png", BarCodeImageFormat.Png);
-//set error correction level to H
-gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelH;
-gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
-{{< /highlight >}}-->
-
 ## **Structured Append Mechanism**
-*QR Code* types (except *Micro QR*) support the possibility to generate composite barcodes using the structured append mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Android via Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing an object of lass [*QrStructuredAppendParameters*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.generation/QrStructuredAppendParameters) class. This class provides the following methods: 
+*QR Code* types (except *Micro QR*) support the possibility to generate composite barcodes using the structured append mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for Node.js via Java*** does not enable distributing input barcode data across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done through the *setStructuredAppend* method passing an object of lass [*QrStructuredAppendParameters*]() class. This class provides the following methods: 
 - *setTotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *setSequenceIndicator* - the sequence number of the current barcode (starting from 0)
 - *setParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes   

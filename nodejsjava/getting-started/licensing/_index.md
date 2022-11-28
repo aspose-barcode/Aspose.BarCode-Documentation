@@ -22,12 +22,8 @@ The license can be loaded from a stream or file using the following locations:
 1. Explicit path
 1. Folder that comprises Aspose.BarCode.jar
 
-You need to call the *setLicense* method of class [*License*]() to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path.
+You need to call the *setLicense* method of class [*License*](https://reference.aspose.com/barcode/nodejs/License) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path.
 
-### **Applying Metered Key**
-***Aspose.BarCode for Node.js via Java*** supports metered keys. It is a new licensing mechanism that can be applied along with the existing licensing method. Those customers who want to be billed based on the usage of API features can apply metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
-
-Class [*Metered*]() has been introduced to apply the metered key. 
 
 
 

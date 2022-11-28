@@ -12,8 +12,8 @@ This documentation part introduces the key concepts of barcode recognition in **
    
 |Article|Description|
 |---|---|
-|[Barcode Recognition Basics](/barcode/nodejsjava/barcode-reading-basics/)|Provides an overview of general barcode recognition options and methods|
-|[Recognition Settings](/barcode/nodejsjava/barcode-reading-settings/)|Describes the ways to customize the barcode reading process through different settings|
+|[Barcode Reading Basics](/barcode/nodejsjava/barcode-reading-basics/)|Provides an overview of general barcode recognition options and methods|
+|[Barcode Reading Settings](/barcode/nodejsjava/barcode-reading-settings/)|Describes the ways to customize the barcode reading process through different settings|
 |[Barcode Reading Presets](/barcode/nodejsjava/barcode-reading-presets/)|Represents the way to optimize the recognition process in terms of reading accuracy and recognition speed|
 |[Read Damaged Barcodes](/barcode/nodejsjava/read-damaged-barcodes/)|Describes special cases of quality settings for various barcode types|
 |[Barcode Properties and Metadata](/barcode/nodejsjava/read-barcode-properties/)|Explains how to decode information about the parameters of barcodes and their encoded metadata and additional information when available|
