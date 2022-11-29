@@ -2,7 +2,9 @@
 title: Aspose.BarCode for PHP via Java 20.2
 type: docs
 weight: 30
-url: /java/aspose-barcode-for-php-via-java-20-2/
+url: /phpjava/aspose-barcode-for-php-via-java-20-2/
+aliases:
+- /java/aspose-barcode-for-php-via-java-20-2/
 ---
 
 {{% alert color="primary" %}} 

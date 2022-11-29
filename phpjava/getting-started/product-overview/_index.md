@@ -6,12 +6,12 @@ url: /phpjava/product-overview/
 
 ---
 
-***Aspose.BarCode for PHP via Java*** is a robust and reliable barcode generation and recognition component written in Java that allows developers to quickly and easily add barcode generation and recognition functionality to Java applications.
+***Aspose.BarCode for PHP via Java*** is a robust and reliable barcode generation and recognition component written using PHP and JavaBridge. It allows developers to quickly and easily add barcode generation and recognition functionality to Java applications.
 
 This article presents ***Aspose.BarCode for PHP via Java*** and its main features, including some important technical details. You can get information about its functionality, input and output image formats, important classes, and supported platforms.
 
 ## **Product Description**
-***Aspose.BarCode for PHP via Java*** has many characteristics that make it a flexible and easy-to-use tool. It is a fully functional library that provides both generation and reading functionality. Generated barcodes can be saved in five high-quality raster image formats and two vector ones. The other advantage is that the library facilitates decoding even low-quality or damaged barcode images. Therefore, it enables high recognition efficiency for most of the supported symbologies. There are no printing limitations for barcodes generated through the Aspose.BarCode library. Developers can utilize any type of printers. The quality of printed barcode images will depend only on the resolution of a printer.
+***Aspose.BarCode for PHP via Java*** has many characteristics that make it a flexible and easy-to-use tool. It is a fully functional library that provides both generation and reading functionality. Generated barcodes can be saved in five high-quality raster image formats and two vector ones. The other advantage is that the library facilitates decoding even low-quality or damaged barcode images. Therefore, it enables high recognition efficiency for most of the supported barcode types. There are no printing limitations for barcodes generated through the Aspose.BarCode library. Developers can utilize any type of printers. The quality of printed barcode images will depend only on the resolution of a printer.
 
 The barcode library provides fully featured demos and working examples written in Java to provide developers with a better understanding of our product. Using these demos, developers can quickly test functionality provided by Aspose.BarCode.
 
@@ -29,7 +29,7 @@ The most important features are the following:
 - Saving to or loading from stream or file 
 - Encoding and decoding non-English characters in 2D types
 
-The list of all features can be found in [**Product Features**](https://docs.aspose.com/barcode/phpjava/features/).
+The list of all features can be found in [**Product Features**](/barcode/phpjava/features/).
 
 ## **System Compatibility**
 ***Aspose.BarCode for PHP via Java*** is a platform-independent API that can be run on any platform (Windows, Linux, etc.) where PHP and Java Bridge are installed.

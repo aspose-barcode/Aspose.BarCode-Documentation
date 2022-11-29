@@ -9,7 +9,7 @@ url: /phpjava/read-damaged-barcodes/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
 ## **Barcode Images with Gaussian Noise**
-Gaussian noise is one of the most common damages that may deteriorate the quality of a source barcode. Most of difficulties correspond to the cases when barcode images have the monochrome color scheme or the distortion grain is considerably bigger than the minimal element of a barcode. To cope with these effects, median filtering mechanisms suitable for both 1D and 2D types can be applied. Median filtering mechanisms also affect image quality due to the possible removal of some barcode elements together with noise; however, they still may be helpful in improving readability of key barcode modules.
+Gaussian noise is one of the most common damages that may deteriorate the quality of a source barcode. Most difficulties correspond to the cases when barcode images have a monochrome color scheme or the distortion grain is considerably bigger than the minimal element of a barcode. To cope with these effects, median filtering mechanisms suitable for both 1D and 2D types can be applied. Median filtering mechanisms also affect image quality due to the possible removal of some barcode elements together with noise; however, they still may be helpful in improving the readability of key barcode modules.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -51,7 +51,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ### **Filtering Out White Spots**
-The presence of white spots in barcode images is a frequent problem that appears while sending documents with barcodes through fax transmission. To mitigate this issue, it is possible to use the *setAllowWhiteSpotsRemoving* function that allows filtering out not all Gaussian noise but only white spots.  
+The presence of white spots in barcode images is a frequent problem that appears while sending documents with barcodes through fax transmission. To mitigate this issue, it is possible to use the *setAllowWhiteSpotsRemoving* function, which allows filtering out not all Gaussian noise but only white spots.  
   
 <p align="center"><img src="code128_whitespots.png" width="30%" height="30%"></p>
 
@@ -99,7 +99,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ## **Reading Barcodes with Erased or Displaced Bars**
-While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, the barcode library provides two functions called *setAllowOneDWipedBarsRestoration* and *setCheckMore1DVariants* that allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.  
+While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, the barcode library provides two functions called *setAllowOneDWipedBarsRestoration* and *setCheckMore1DVariants*, which allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.  
   
 <p align="center"><img src="code128_wipedbars.png" width="40%" height="40%"></p>
 
@@ -144,7 +144,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ## **Reading Industrial Data Matrix Barcodes**
-Industrial *Data Matrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable a special parameter called *setAllowDatamatrixIndustrialBarcodes* that allows reading dashed labels in a slow mode. 
+Industrial *Data Matrix* barcodes often have dotted patterns or other decoration elements and are placed onto metallic surfaces, in this way, creating embossed indelible barcode labels. To facilitate the recognition of such barcodes, it is possible to enable the *setAllowDatamatrixIndustrialBarcodes* function, which allows reading dashed labels in a slow mode. 
 
 <p align="center"><img src="datamatrix_industrial.png" width="30%" height="30%"></p>
 

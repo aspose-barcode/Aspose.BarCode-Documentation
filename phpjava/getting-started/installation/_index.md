@@ -3,6 +3,8 @@ title: Installation
 type: docs
 weight: 60
 url: /phpjava/installation/
+aliases:
+- /java/aspose-barcode-for-php-via-java-installation/
 ---
 
 ## **Method 1**
@@ -34,10 +36,11 @@ composer install
 
 ``` php 
 composer install
+
 ```
 
 {{% alert color="primary" %}} 
 
-Read more about composer on http://www.getcomposer.com
+Read more about composer at http://www.getcomposer.com
 
 {{% /alert %}} 

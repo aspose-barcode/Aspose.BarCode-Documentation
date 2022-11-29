@@ -14,13 +14,13 @@ is_root: true
 
 **Welcome to Aspose.BarCode for PHP via Java**
 
-***Aspose.BarCode for PHP via Java*** is a barcode developement library with components to read and create barcodes implemented using Java Bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their PHP applications. This barcode library supports most widely used barcode standards and specifications. It has the ability to export to multiple image formats, such as BMP, GIF, JPEG, PNG, and TIFF.
+***Aspose.BarCode for PHP via Java*** is a barcode developement library with components to read and create barcodes implemented using JavaBridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their PHP applications. This barcode library supports most widely used barcode standards and specifications. It has the ability to export to multiple image formats, such as BMP, GIF, JPEG, PNG, and TIFF.
 
 {{% /alert %}} 
 
 
 ## **Aspose.BarCode for PHP via Java Resources**
-The following are the links to some useful resources you may need to accomplish your tasks.
+The links below correspond to documentation resources with useful information.
 
 - [Aspose.BarCode for PHP via Java Online Documentation](https://docs.aspose.com/barcode/phpjava/)
 - [Aspose.BarCode for PHP via Java Features](https://docs.aspose.com/barcode/phpjava/features/)

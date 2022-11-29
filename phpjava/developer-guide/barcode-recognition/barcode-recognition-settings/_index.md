@@ -10,7 +10,7 @@ url: /phpjava/barcode-reading-settings/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view results online.{{% /alert %}}
   
 ## **Overview**
-In the barcode reading process implemented in ***Aspose.BarCode for PHP via Java***, barcode data decoding is initiated according to the special protocol after scanning the raw data from a graphical representation. Some linear and postal barcode types have passed standardization after their wide implementation, and therefore, it has lead to the presence of incompatible decoding formats. To resolve possible conflicts, class [*BarCodeReader*](https://reference.aspose.com/barcode/php/classBarCodeReader) provides a special class called [*BarcodeSettings*](https://reference.aspose.com/barcode/php/classBarcodeSettings) used to manage barcode decoding settings.
+In the reading process implemented in ***Aspose.BarCode for PHP via Java***, data decoding is initiated according to the special protocol after scanning the raw data from a graphical representation. Some linear and postal barcode types have passed standardization after their wide implementation, and therefore, it has led to the presence of incompatible decoding formats. To resolve possible conflicts, class [*BarCodeReader*](https://reference.aspose.com/barcode/php/classBarCodeReader) provides a special class called [*BarcodeSettings*](https://reference.aspose.com/barcode/php/classBarcodeSettings) used to manage barcode decoding settings.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -52,7 +52,7 @@ Barcoded types with obligatory checksum controls require performing compulsive c
 <p align="center"><img src="code39.png"></p>
 
 ## **Managing Barcodes with Unicode Encodings**
-***Aspose.BarCode for PHP via Java*** provides class [*BarcodeSettings*](https://reference.aspose.com/barcode/php/classBarcodeSettings). It includes the *setDetectEncoding* function that enables the automatic reading of UTF8 and UTF16 Unicode encodings for 2D types and allows re-encoding barcode information into a string with Unicode characters. If this reading mode is turned off, barcode information can be scanned and decoded manually based on the desired encoding.  
+***Aspose.BarCode for PHP via Java*** provides class [*BarcodeSettings*](https://reference.aspose.com/barcode/php/classBarcodeSettings). It includes the *setDetectEncoding* function that enables the automatic reading of UTF8 and UTF16 Unicode encodings for 2D types and allows re-encoding barcode information in a string with Unicode characters. If this reading mode is turned off, barcode information can be scanned and decoded manually based on the desired encoding.  
   
 <p align="center"><img src="qrdetectencoding.png"></p>
 
@@ -101,7 +101,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ## **Read Australia Post Barcodes**
-*Australia Post* is a 4-state postal barcode type implemented by the Australian Post. This type requires including special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields into barcode information. FCC fields are intended to set one of three supported types with various fixed number of bars: 37, 52, or 67 bars. For some FCC, barcodes may comprise a customer information (CI) field that indicates one of the encoding types supporting numerical or alphanumeric characters. Customer information can take 31 bars in 67-length barcodes or 16 bars in 52-length ones. The *Australia Post* symbology has checksum controls and supports Reed-Solomon error correction.  
+*Australia Post* is a 4-state postal barcode type implemented by the Australian Post. This type requires including special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields into barcode information. FCC fields are intended to set one of three supported types with various fixed numbers of bars: 37, 52, or 67 bars. For some FCC, barcodes may comprise a customer information (CI) field that indicates one of the encoding types supporting numerical or alphanumeric characters. Customer information can take 31 bars in 67-length barcodes or 16 bars in 52-length ones. The *Australia Post* symbology has checksum controls and supports Reed-Solomon error correction.  
   
 Because of the possible presence of customer information in barcode information for *Australia Post*, the reading process has some peculiarities. Class [*AustraliaPostSettings*](https://reference.aspose.com/barcode/php/classAustraliaPostSettings) is provided to manage recognition parameters according to specific industrial needs. 
 
@@ -166,7 +166,7 @@ foreach($reader->readBarCodes() as $result)
 <p align="center"><img src="australiapostother.png"></p>
 
 ### **Removal of Filling Patterns**
-The *Australia Post* type requires setting fixed size for each subtype. When the *CTable* format is enabled, the empty space included in the input message is decoded as “z”. To disable this property, the *setIgnoreEndingFillingPatternsForCTable* function needs to be called.  
+The *Australia Post* type requires setting a fixed size for each subtype. When the *CTable* format is enabled, the empty space included in the input message is decoded as “z”. To disable this property, the *setIgnoreEndingFillingPatternsForCTable* function needs to be called.  
     
 <p align="center"><img src="australiapostctableignoreending.png"></p>
 

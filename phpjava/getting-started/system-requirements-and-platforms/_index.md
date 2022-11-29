@@ -2,7 +2,7 @@
 title: System Requirements
 type: docs
 weight: 40
-url: /phpjava/supported-platforms/
+url: /phpjava/system-requirements/
 ---
 
 ***Aspose.BarCode for PHP via Java*** is a platform-independent API that can be used on any platform (Windows, Linux, etc.) where PHP and JavaBridge are installed.

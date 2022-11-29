@@ -11,13 +11,13 @@ url: /phpjava/read-barcode-properties/
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** barcode recognition functionality and view the results online.{{% /alert %}}
   
 ## **Overview**
-***Aspose.BarCode for PHP via Java*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including symbology, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://reference.aspose.com/barcode/php/classBarCodeResult) and can be fetched using special function described further in this article.  
+***Aspose.BarCode for PHP via Java*** not only enables reading information encoded in a barcode but also provides the possibility to analyze its technical properties, including symbology, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://reference.aspose.com/barcode/php/classBarCodeResult) and can be fetched using special functions described further in this article.  
 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/phpjava/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Type and Encoded Data**
-To obtain input barcode data and its type, *getCodeText* and *getCodeType* function of class [*BarCodeResult*](https://reference.aspose.com/barcode/php/classBarCodeResult) can be used. The other function called *getCodeTypeName* returns the text name of the barcode type.
+To obtain input barcode data and its type, *getCodeText* and *getCodeType* functions of class [*BarCodeResult*](https://reference.aspose.com/barcode/php/classBarCodeResult) can be used. The other function called *getCodeTypeName* returns the text name of the barcode type.
 
 ``` php
 $generator = new BarcodeGenerator(EncodeTypes::Code128, "12345");
@@ -39,7 +39,7 @@ It is possible to load barcode data as a byte stream using the *getCodeBytes* fu
   
 ## **Verify Quality of Reading Results**
 Developers may need to check whether barcode reading outputs are accurate and complete. For this purpose, ***Aspose.BarCode for PHP via Java*** provides two specific functions of class [*BarCodeResult*](https://reference.aspose.com/barcode/php/classBarCodeResult): *getConfidence* and *getReadingQuality*.  
-Depending of the quality of barcode reading results, the *getConfidence* function returns a instance of the [*BarCodeConfidence*](https://reference.aspose.com/barcode/php/classBarCodeConfidence) class that denotes the recognition confidence level. This class contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *getReadingQuality* function returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
+Depending on the quality of barcode reading results, the *getConfidence* function returns an instance of the [*BarCodeConfidence*](https://reference.aspose.com/barcode/php/classBarCodeConfidence) class that denotes the recognition confidence level. This class contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *getReadingQuality* function returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
   
 |Confidence Level|Quality Value|Description|
 |---|---|---|
@@ -59,7 +59,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ## **Barcode Position and Orientation Angle**
-To obtain the position of a source barcode and its orientation angle, functions of class [*BarCodeRegionParameters*](https://reference.aspose.com/barcode/php/classBarCodeRegionParameters) can be used. This class allows getting the information about the barcode region in the following forms:
+To obtain the position of a source barcode and its orientation angle, functions of class [*BarCodeRegionParameters*](https://reference.aspose.com/barcode/php/classBarCodeRegionParameters) can be used. This class allows getting information about the barcode region in the following forms:
 -	Quadrangle – a quadrangle object that bounds a barcode
 -	Rectangle - a rectangle object that bounds a barcode
 -	Points – an array of points constituting a barcode
@@ -80,7 +80,7 @@ foreach($reader->readBarCodes() as $result)
 ## **Barcode Metadata**
 
 ### **Read Macro PDF417 and Macro PDF417 Metadata**
-Metadata from *PDF417* barcodes can be obtained using the function of class [*Pdf417ExtendedParameters*](https://reference.aspose.com/barcode/php/classPdf417ExtendedParameters) that are listed below.
+Metadata from *PDF417* barcodes can be obtained using special functions of class [*Pdf417ExtendedParameters*](https://reference.aspose.com/barcode/php/classPdf417ExtendedParameters) listed below.
   
 |PDF417 Metadata Function|Description|
 |---|---|
@@ -115,10 +115,10 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ### **Read Barcode Metadata from QR Codes with Structured Append**
-To fetch metadata from *QR Code* barcodes with structured append, the barcode library provides the [*QRExtendedParameters*](https://reference.aspose.com/barcode/php/classQRExtendedParameters) class. It enables reading the information from structured append that is used to combine several *QR Code* barcode into one. This data can be obtained using the following functions:
+To fetch metadata from *QR Code* barcodes with structured append, the barcode library provides the [*QRExtendedParameters*](https://reference.aspose.com/barcode/php/classQRExtendedParameters) class. It enables reading the information from structured append that is used to combine several QR codes into one. This data can be obtained using the following functions:
 
 - *getQRStructuredAppendModeBarCodeIndex* - returns the sequence number of the current barcode (starting from 0)
-- *getQRStructuredAppendModeBarCodesQuantity* - returns the number of barcodes in a composite *QR Code* barcode taht can take values from 2 to 16
+- *getQRStructuredAppendModeBarCodesQuantity* - returns the number of barcodes in a composite *QR Code*, which can take values from 2 to 16
 - *getQRStructuredAppendModeParityData* - returns the checksum identifier byte that is usually computed as *XOR* of all bytes in which UTF16BE characters are encoded in two bytes  
   
 
@@ -137,7 +137,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ### **Read Barcode Metadata from DataBar with 2D Components**
-Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](https://reference.aspose.com/barcode/php/classDataBarExtendedParameters) that provides the *is2DCompositeComponent* function. It allows enabling or disabling a 2D component in *DataBar* barcodes.  
+Metadata from *DataBar* barcodes with 2D components can be obtained using class  [*DataBarExtendedParameters*](https://reference.aspose.com/barcode/php/classDataBarExtendedParameters) that provides the *is2DCompositeComponent* function. It allows enabling or disabling a 2D component in *DataBar* barcodes.  
   
 <p align="center"><img src="extdatabarmeta.png"></p>
 
@@ -153,7 +153,7 @@ foreach($reader->readBarCodes() as $result)
 ```
 
 ### **Read Metadata from 1D Barcodes**
-Some 1D barcode types, i.e. *EAN-13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://reference.aspose.com/barcode/php/classOneDExtendedParameters) provides the *getValue* function that allows getting 1D barcode text and the *getCheckSum* function that returns the result of checksum computation.
+Some 1D barcode types, i.e. *EAN-13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://reference.aspose.com/barcode/php/classOneDExtendedParameters) provides the *getValue* function, which allows getting 1D barcode text and the *getCheckSum* function that returns the result of checksum computation.
  
 <p align="center"><img src="ean13.png"></p>
 

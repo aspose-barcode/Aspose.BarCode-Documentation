@@ -3,7 +3,6 @@ title: Licensing
 type: docs
 weight: 50
 url: /phpjava/licensing/
-
 ---
 
 ## **Overview**
@@ -17,11 +16,6 @@ Each Aspose license enables a one-year subscription with free upgrades to any ne
 ## **License Setting**
 The license is a plain-text XML file that includes details such as the product name, the number of developers it is licensed for, subscription expiry date, and others. The license file is signed digitally, so it must not be modified in any way. Adding even an extra line break into the license file will result in invalidating the license. You need to activate the license to enable the unlimited use of library functions. You only have to enable the license once per application (or process). 
 
-The license can be loaded from a stream or file using the following locations:
-
-1. Explicit path
-1. Folder that comprises Aspose.BarCode.jar
-
-You need to call the *setLicense* method of class [*License*](https://reference.aspose.com/barcode/php/classLicense/) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path.
+It is needed to call the *setLicense* method of class [*License*](https://reference.aspose.com/barcode/php/classLicense/) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path.
 
 
