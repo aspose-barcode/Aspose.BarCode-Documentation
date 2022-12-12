@@ -18,7 +18,7 @@ Many countries use their own barcode specifications for postal services. General
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Bar Height Settings**
-By default, ***Aspose.BarCode for Python via .NET*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width using the *bar_height* property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/barcodeparameters/).  
+By default, ***Aspose.BarCode for Python via .NET*** enables automatic calculation of bar height and width for postal barcode standards depending on the *XDimension* value. It also enables manually customizing bar height regardless of barcode width using the *bar_height* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/).  
   
 Following *Planet* and *RM4SCC* barcode images have been created with varying bar height settings.  
   
@@ -33,7 +33,7 @@ Following *Planet* and *RM4SCC* barcode images have been created with varying ba
 | |<img src="postalrm4sccbarheightnone.png">|<img src="postalrm4sccbarheight100pixels.png">|
   
 ## **Bar Filling Options**
-***Aspose.BarCode for Python via .NET*** enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *filled_bars* property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/barcodeparameters/). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
+***Aspose.BarCode for Python via .NET*** enables adjusting the appearance of postal barcode images in terms of setting full or empty filling for bars. Developers can generate postal barcodes with empty bars using the *filled_bars* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/). The default value of this parameter is *True*, meaning that the generated postal barcode image will have fully colored bars.  
   
 Following *Planet* and *RM4SCC* barcode images have been generated using different bar filling settings.
   
@@ -65,10 +65,10 @@ The *Postnet* type encodes each digit in five bars so that three bars are full-l
 The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal barcodes. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
 
 ### **Handling Invalid Barcode Text Exception**
-When invalid barcode text is passed to the *code_text* property (in the case of *Postnet* and *Planet*, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/barcodegenerator/) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters using the *code_text* property. In this case, it is necessary to initialize the *throw_exception_when_code_text_incorrect* property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/barcodeparameters/) with the *True* value.
+When invalid barcode text is passed to the *code_text* property (in the case of *Postnet* and *Planet*, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodegenerator/) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters using the *code_text* property. In this case, it is necessary to initialize the *throw_exception_when_code_text_incorrect* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) with the *True* value.
 
 ### **Customizing Bar Height**
-By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for Python via .NET*** allows modifying bar height for short bars manually. To do this, the *postal_short_bar_height* property of class [*PostalParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/postalparameters/) needs to be used.  
+By design, two-state postal barcodes contain long and short bars in such a way that the shorter bars are half-length with respect to the longer bars. ***Aspose.BarCode for Python via .NET*** allows modifying bar height for short bars manually. To do this, the *postal_short_bar_height* property of class [*PostalParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/postalparameters/) needs to be used.  
   
 Following barcode images have been created with varying short bar heights.
   
@@ -100,7 +100,7 @@ The *OneCode* postal symbology allows encoding fixed-length sets of numerical ch
   
 
 ### **Australia Post Standard**
-The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of the available encoding types (numerical or alphanumeric characters). These settings can be customized using the *australian_post_encoding_table* property of class [*AustralianPostPatrameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/australianpostparameters/). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
+The *Australia Post* postal standard uses special two-digit format control code (FCC) fields and eight-digit sorting code (SC) fields to generate barcodes. FCC fields are intended to determine one of three supported subtypes that have various fixed lengths, i.e. 37, 52, or 67 bars. Moreover, barcodes may include a customer information (CI) field to specify one of the available encoding types (numerical or alphanumeric characters). These settings can be customized using the *australian_post_encoding_table* property of class [*AustralianPostPatrameters*](/barcode/python-net/api-reference/aspose.barcode.generation/australianpostparameters/). Customer data can take 31 bars in barcodes with 67 bars or 16 bars in barcodes with 52 bars. *Australia Post* has checksum controls and supports Reed-Solomon error correction.  
   
 Barcode data can be prepared using one of the supported formats as explained below.  
   

@@ -19,15 +19,15 @@ url: /python-net/generate-datamatrix-barcode/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Data Matrix ECC Standards**
-To enable the required *Data Matrix* standard, developers can use the *data_matrix_ecc* property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixparameters/). This property allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixecctype/) enum. The value of *DataMatrixEccType.ECC_200* is set by default.
+To enable the required *Data Matrix* standard, developers can use the *data_matrix_ecc* property of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/). This property allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/) enum. The value of *DataMatrixEccType.ECC_200* is set by default.
   
 ### ***ECC 200***
-***Aspose.BarCode for Python via .NET*** allows explicitly setting the *ECC 200* standard initializing the *data_matrix_ecc* property with values *ECC_AUTO* or *ECC_200*. *ECC_200* is compatible with all encoding modes specified in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixencodemode/) enum. Moreover, it allows encoding Unicode characters using the *code_text_encoding* property. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
+***Aspose.BarCode for Python via .NET*** allows explicitly setting the *ECC 200* standard initializing the *data_matrix_ecc* property with values *ECC_AUTO* or *ECC_200*. *ECC_200* is compatible with all encoding modes specified in the [*DataMatrixEncodeMode*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/) enum. Moreover, it allows encoding Unicode characters using the *code_text_encoding* property. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
     
 <p align="center"><img src="datamatrixecc200basic.png"></p>  
   
 ### ***ECC 000-140***  
-*ECC 000-140* standards can be applied only to a few encoding modes included in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixencodemode/) enum, i.e. *AUTO*, *FULL*, and *ASCII*. All other encoding modes are processed as *FULL* by default. The *code_text_encoding* property does not apply to these standards and therefore, encoding Unicode characters is not supported. Barcode layout configurations of *ECC 000-140* differ significantly from *ECC 200*. At the same time, different standards corresponding to *ECC 000-140* are quite similar to each other and only have different data recovery capacities, as explained below. 
+*ECC 000-140* standards can be applied only to a few encoding modes included in the [*DataMatrixEncodeMode*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/) enum, i.e. *AUTO*, *FULL*, and *ASCII*. All other encoding modes are processed as *FULL* by default. The *code_text_encoding* property does not apply to these standards and therefore, encoding Unicode characters is not supported. Barcode layout configurations of *ECC 000-140* differ significantly from *ECC 200*. At the same time, different standards corresponding to *ECC 000-140* are quite similar to each other and only have different data recovery capacities, as explained below. 
   
 |ECC Standard|Data Recovery Capacity|
 | :-: | :-: |
@@ -40,7 +40,7 @@ To enable the required *Data Matrix* standard, developers can use the *data_matr
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
   
 ## **Encoding Modes**
-***Aspose.BarCode for Python via .NET*** supports various encoding modes that are defined in the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixencodemode/) enum of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixparameters/). This enum provides nine encoding modes, as described below. The *AUTO* encoding mode is used by default.
+***Aspose.BarCode for Python via .NET*** supports various encoding modes that are defined in the [*DataMatrixEncodeMode*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/) enum of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/). This enum provides nine encoding modes, as described below. The *AUTO* encoding mode is used by default.
   
 |Encoding Mode|Description|
 |---|---|
@@ -83,7 +83,7 @@ Various special encoding modes, such as *TEXT*, *C40*, *EDIFACT*, and *ANSIX12*,
 <p align="center"><img src="datamatrixencodemodec40.png"></p> 
   
 ## **Layout Settings**
-The layout for *Data Matrix* barcode generation can be determined using *rows* and *columns* properties of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixparameters/). If these properties have not been initialized, the barcode library identifies a layout that is optimal for the size of input data. Barcode layout configurations are different in *ECC 000-140* and *ECC 200* standards. Only *ECC 200* allows modifying the number of rows and columns. In *ECC 000-140* standards, the suitable barcode layout configuration is determined automatically. The *ECC 200* standard prescribes setting even numbers of rows and columns. In other words, it supports the following layout configurations: 8 x 18; 16 x 48; 10 x 10; 144 x 144.
+The layout for *Data Matrix* barcode generation can be determined using *rows* and *columns* properties of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/). If these properties have not been initialized, the barcode library identifies a layout that is optimal for the size of input data. Barcode layout configurations are different in *ECC 000-140* and *ECC 200* standards. Only *ECC 200* allows modifying the number of rows and columns. In *ECC 000-140* standards, the suitable barcode layout configuration is determined automatically. The *ECC 200* standard prescribes setting even numbers of rows and columns. In other words, it supports the following layout configurations: 8 x 18; 16 x 48; 10 x 10; 144 x 144.
 
 |Layout Settings|22 Rows and 22 Columns|12 Rows and 36 Columns|
 | :-: | :-: | :-: |
@@ -96,7 +96,7 @@ The layout for *Data Matrix* barcode generation can be determined using *rows* a
 <p align="center"><img src="datamatrixmacro.png"></p> 
   
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is one of the most important parameters defined as the ratio between barcode height and width. ***Aspose.BarCode for Python via .NET*** provides the *aspect_ratio* property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/datamatrixparameters/) that allows managing barcode proportions based on the X and Y coordinates. *Aspect Ratio* is determined as a relative coefficient to *XDimension*. Usually, it is recommended to set the value of *Aspect Ratio* equal to 1.
+*Aspect Ratio* is one of the most important parameters defined as the ratio between barcode height and width. ***Aspose.BarCode for Python via .NET*** provides the *aspect_ratio* property of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/) that allows managing barcode proportions based on the X and Y coordinates. *Aspect Ratio* is determined as a relative coefficient to *XDimension*. Usually, it is recommended to set the value of *Aspect Ratio* equal to 1.
   
 |Aspect Ratio|Is Set to 1|Is Set to 0.5|
 | :-: | :-: | :-: |

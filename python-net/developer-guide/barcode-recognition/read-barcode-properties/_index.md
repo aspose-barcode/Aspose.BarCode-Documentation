@@ -9,27 +9,27 @@ url: /python-net/read-barcode-properties/
 ---
  
 ## **Overview**
-***Aspose.BarCode for Python via .NET*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including barcode type, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcoderesult/) and can be fetched using properties described further in this article.  
+***Aspose.BarCode for Python via .NET*** not only enables reading information encoded in a barcode but also provides a possibility to analyze its technical properties, including barcode type, orientation angle, position, and metadata. This data is stored in objects of class [*BarCodeResult*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderesult/) and can be fetched using properties described further in this article.  
 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Type and Encoded Data**
-To obtain input barcode data and its type, *code_text* and *code_type* properties of class [*BarCodeResult*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcoderesult/) can be used. The other property called *code_type_name* returns the text name of the barcode type.
+To obtain input barcode data and its type, *code_text* and *code_type* properties of class [*BarCodeResult*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderesult/) can be used. The other property called *code_type_name* returns the text name of the barcode type.
 
 ## **Barcode Position and Orientation Angle**
-To obtain the position of a source barcode and its orientation angle, class [*BarCodeRegionParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcoderegionparameters/) can be used. This class allows getting the information about the barcode region in the following forms:
+To obtain the position of a source barcode and its orientation angle, class [*BarCodeRegionParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderegionparameters/) can be used. This class allows getting the information about the barcode region in the following forms:
 -	Quadrangle – a quadrangle object that bounds a barcode
 -	Rectangle - a rectangle object that bounds a barcode
 -	Points – an array of points constituting a barcode
 -	Angle – an orientation angle in degrees
 
 ## **Reading Barcode Data as Byte Stream**
-It is possible to load barcode data as a byte stream using a property of class [*BarCodeResult*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcoderesult/) that is called *code_bytes*. 
+It is possible to load barcode data as a byte stream using a property of class [*BarCodeResult*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderesult/) that is called *code_bytes*. 
   
 ## **Quality Check of Recognition Results**
-Developers may need to check whether barcode reading outputs are accurate and complete. For this purpose, class [*BarCodeResult*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcoderesult/) contains two properties: *confidence* and *reading_quality*.  
-Depending of the quality of barcode reading results, the *confidence* property returns a instance of the [*BarCodeConfidence*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcodeconfidence/) enum that denotes the recognition confidence level. This enumeration contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *reading_quality* property returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
+Developers may need to check whether barcode reading outputs are accurate and complete. For this purpose, class [*BarCodeResult*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderesult/) contains two properties: *confidence* and *reading_quality*.  
+Depending of the quality of barcode reading results, the *confidence* property returns a instance of the [*BarCodeConfidence*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodeconfidence/) enum that denotes the recognition confidence level. This enumeration contains values *STRONG*, *NONE*, and *MODERATE* that are discussed below. The *reading_quality* property returns an estimate of recognition quality corresponding to the confidence level, as explained in the table below.
   
 |Confidence Level|Quality Value|Description|
 |---|---|---|
@@ -41,23 +41,23 @@ Depending of the quality of barcode reading results, the *confidence* property r
 ## **Barcode Metadata**
 
 ### **Reading Metadata from 1D Barcodes**
-Some 1D barcode types, i.e. *EAN 13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/databarextendedparameters/) provides the *value* property that allows getting 1D barcode text and the *check_sum* property that returns the result of checksum computation.
+Some 1D barcode types, i.e. *EAN 13*, allow separating barcode input information itself from the checksum value. To do this, class [*OneDExtendedParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/databarextendedparameters/) provides the *value* property that allows getting 1D barcode text and the *check_sum* property that returns the result of checksum computation.
 
 ### **Reading Metadata from QR Codes with Structured Append**
-To fetch metadata from *QR Code* barcodes with structured append, the barcode library provides a class called [*QRExtendedParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/qrextendedparameters/) that enables reading the information from structured append used to combine several *QR Code* barcodes into one. This data can be obtained using the following properties:
+To fetch metadata from *QR Code* barcodes with structured append, the barcode library provides a class called [*QRExtendedParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/qrextendedparameters/) that enables reading the information from structured append used to combine several *QR Code* barcodes into one. This data can be obtained using the following properties:
 
 - *qr_structured_append_mode_bar_code_index* - returns the sequence number of the current barcode (starting from 0)
 - *qr_structured_append_mode_bar_codes_quantity* - returns the number of barcodes in a composite *QR Code* barcode taht can take values from 2 to 16
 - *qr_sructured_append_mode_parity_data* - returns the checksum identifier byte that is usually computed as *XOR* of all bytes in which UTF16BE characters are encoded in two bytes  
     
 ### **Getting Raw Data from Code 128 Barcodes**
-Input data stored in *Code 128* barcodes can be encoded in three ways: A, B, or C. Class [*Code128ExtendedParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/code128extendedparameters/) provides a property called *code_128_data_portions* that returns decoded parts of barcode input information and the encoding mode.
+Input data stored in *Code 128* barcodes can be encoded in three ways: A, B, or C. Class [*Code128ExtendedParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/code128extendedparameters/) provides a property called *code_128_data_portions* that returns decoded parts of barcode input information and the encoding mode.
 
 ### **Reading Metadata from DataBar Barcodes with 2D Components**
-Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/) that provides a property called *is_2d_composite_component*. This property allows enabling or disabling a 2D component in *DataBar* barcodes. 
+Metadata from *DataBar* barcodes with 2D components can be obtained using class called [*DataBarExtendedParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/) that provides a property called *is_2d_composite_component*. This property allows enabling or disabling a 2D component in *DataBar* barcodes. 
 
 ### **Reading Macro PDF417 and Macro PDF417 Metadata**
-Metadata from *PDF417* barcodes can be obtained using the properties of class [*Pdf417ExtendedParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/pdf417extendedparameters/) listed below.
+Metadata from *PDF417* barcodes can be obtained using the properties of class [*Pdf417ExtendedParameters*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/pdf417extendedparameters/) listed below.
   
 |PDF417 Metadata Property|Description|
 |---|---|

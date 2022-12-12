@@ -41,7 +41,7 @@ The layout of *Micro PDF417* supports adding from 4 to 44 rows and from 1 to 4 c
 <a name="micropdf417"></a>
 
 ## **Compact PDF417 Symbology**
-*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *pdf_417_truncate* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/).
+*Compact PDF417* has a specification like *Basic PDF417* and *Macro PDF417*. The difference is that in *Compact PDF417* barcodes, the right-side metainformation column and the corresponding stop pattern are eliminated to decrease barcode size. This is the only barcode type in the *PDF417* family that does not support laser scanning. It should be also noted that reading low-quality barcode images may have issues due to the lack of metainformation redundancy. To enable the *Compact PDF417* mode, developers can use the *pdf_417_truncate* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/).
   
 <p align="center"><img src="compactpdf417basic.png"></p>
   
@@ -49,15 +49,15 @@ The layout of *Micro PDF417* supports adding from 4 to 44 rows and from 1 to 4 c
 
 
 ## **PDF417 Encoding Modes**
-To enable the required encoding mode for *PDF417* generation, it is necessary to use the *pdf_417_compaction_mode* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/) that is intended to manage data compaction regimes. Two other properties, i.e. *pdf_417_eci_encoding* and *code_text_encoding*, can be used to enable encoding modes suitable for Unicode symbols. In this article, it is described how to work with different encoding modes.
+To enable the required encoding mode for *PDF417* generation, it is necessary to use the *pdf_417_compaction_mode* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/) that is intended to manage data compaction regimes. Two other properties, i.e. *pdf_417_eci_encoding* and *code_text_encoding*, can be used to enable encoding modes suitable for Unicode symbols. In this article, it is described how to work with different encoding modes.
 
 ### **ECI Encoding Mode**
-The *pdf_417_eci_encoding* property can be used to encode Unicode symbols to streams of bytes. Moreover, it allows determining an ECI identifier for the present encoding that can be detected and interpreted by decoders. When this property is initialized using any value from the [*ECIEncodings*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/eciencodings/) enum besides *ECIEncodings.NONE*, information is processed using the determined ECI encoding. At present, ***Aspose.BarCode*** supports all widely used charset encodings included in the [*ECIEncodings*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/eciencodings/) enum.  
+The *pdf_417_eci_encoding* property can be used to encode Unicode symbols to streams of bytes. Moreover, it allows determining an ECI identifier for the present encoding that can be detected and interpreted by decoders. When this property is initialized using any value from the [*ECIEncodings*](/barcode/python-net/api-reference/aspose.barcode.generation/eciencodings/) enum besides *ECIEncodings.NONE*, information is processed using the determined ECI encoding. At present, ***Aspose.BarCode*** supports all widely used charset encodings included in the [*ECIEncodings*](/barcode/python-net/api-reference/aspose.barcode.generation/eciencodings/) enum.  
   
 <p align="center"><img src="pdf417eciencoding.png"></p>
   
 ### **Compaction Mode**
-Developers can enable the desired data compaction mode initializing the *pdf_417_compaction_mode* property with a value from the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417compactionmode/) enum.
+Developers can enable the desired data compaction mode initializing the *pdf_417_compaction_mode* property with a value from the [*Pdf417CompactionMode*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417compactionmode/) enum.
   
 |Compaction Mode|Description|
 |---|---|
@@ -79,12 +79,12 @@ The *code_text_encoding* property can be used to encode Unicode characters.
 <p align="center"><img src="pdf417codetextencoding.png"></p>
   
 ### **Encoding Streams of Bytes in Binary Mode**
-Developers can encode and transmit an array of bytes in the *BINARY* mode that can be enabled using the *pdf_417_compaction_mode* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/). To show the text line under a barcode, the *two_d_display_text* property can be used. 
+Developers can encode and transmit an array of bytes in the *BINARY* mode that can be enabled using the *pdf_417_compaction_mode* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/). To show the text line under a barcode, the *two_d_display_text* property can be used. 
   
 <p align="center"><img src="pdf417bytesencoding.png"></p>
   
 ## **Layout Configuration Settings**
-Developers can define the required layout configuration for *PDF417* generation using the *rows* and *columns* properties of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/). All *PDF417* standards besides *Micro PDF417* may have the following configuration settings: from 1 to 30 columns and from 3 to 90 rows. The number of rows and columns can be defined separately. The layout of *Micro PDF417* allows adding from 1 to 4 columns.  
+Developers can define the required layout configuration for *PDF417* generation using the *rows* and *columns* properties of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/). All *PDF417* standards besides *Micro PDF417* may have the following configuration settings: from 1 to 30 columns and from 3 to 90 rows. The number of rows and columns can be defined separately. The layout of *Micro PDF417* allows adding from 1 to 4 columns.  
   
 Following *PDF417* barcodes have different layout configurations.
 
@@ -93,7 +93,7 @@ Following *PDF417* barcodes have different layout configurations.
 | |<img src="pdf417columns2.png">|<img src="pdf417row6.png">|<img src="pdf417row9columns4.png">|
   
 ## **Managing Error Correction Level**
-The *PDF417* barcode family supports Reed-Solomon error correction to provide data recovery and integrity check. *Micro PDF417* enables determining the size of redundant recovery data automatically. Other *PDF417* standards allow customizing the error correction level using the *pdf_417_error_level* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/). Each additional pair of error correction codewords serves to recover one unknown error or two known missing digits. A higher error correction level requires storing more codewords and enables more efficient data recovery for damaged barcodes. The maximal level of error correction, i.e. *Level8*, means that 265 errors can be corrected. However, data encoding capacity will decrease by 614 bytes. Available error correction levels are represented in the following table.  
+The *PDF417* barcode family supports Reed-Solomon error correction to provide data recovery and integrity check. *Micro PDF417* enables determining the size of redundant recovery data automatically. Other *PDF417* standards allow customizing the error correction level using the *pdf_417_error_level* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/). Each additional pair of error correction codewords serves to recover one unknown error or two known missing digits. A higher error correction level requires storing more codewords and enables more efficient data recovery for damaged barcodes. The maximal level of error correction, i.e. *Level8*, means that 265 errors can be corrected. However, data encoding capacity will decrease by 614 bytes. Available error correction levels are represented in the following table.  
   
 |Error Correction Level|Number of Codewords|
 | :-: | :-: |
@@ -115,7 +115,7 @@ Following *PDF417* barcodes have different error correction levels.
   
   
 ## **Aspect Ratio Settings**
-In ***Aspose.BarCode for Python via .NET***, *Aspect Ratio* is one of the main parameters used to manage barcode proportions along X and Y coordinates. *Aspect Ratio* can be determined as the ratio between barcode height and width or as the relative coefficient to the *XDimension* value. Its value can be modified using the *aspect_ratio* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/). To generate *PDF417* barcodes, it is recommended to select the value of *AspectRatio* between 3 and 5.
+In ***Aspose.BarCode for Python via .NET***, *Aspect Ratio* is one of the main parameters used to manage barcode proportions along X and Y coordinates. *Aspect Ratio* can be determined as the ratio between barcode height and width or as the relative coefficient to the *XDimension* value. Its value can be modified using the *aspect_ratio* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/). To generate *PDF417* barcodes, it is recommended to select the value of *AspectRatio* between 3 and 5.
 
 Following *PDF417* barcodes have been generated with different aspect ratio values.  
   
@@ -125,7 +125,7 @@ Following *PDF417* barcodes have been generated with different aspect ratio valu
   
  
 ## **Working withPDF417 Metadata**
-*Micro PDF417* and *Macro PDF417* allow adding special metainformation about barcode data. Such metadata can be encoded together with main barcode information sharing the same blocks of data. It is possible to classify barcode metadata into permanent data and optional data as clarified further. All properties mentioned below correspond to class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/).
+*Micro PDF417* and *Macro PDF417* allow adding special metainformation about barcode data. Such metadata can be encoded together with main barcode information sharing the same blocks of data. It is possible to classify barcode metadata into permanent data and optional data as clarified further. All properties mentioned below correspond to class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/).
 
 <a name="macropdf417"></a>
 
@@ -157,7 +157,7 @@ Optional metadata are used to store information about various data properties th
 <p align="center"><img src="macropdf417optional.png"></p>
   
 ### **Unicode Metadata**
-In ***Aspose.BarCode for Python via .NET***, developers can re-encode optional metadata using the Unicode encoding using the *pdf_417_macro_eci_encoding* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/). This property is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
+In ***Aspose.BarCode for Python via .NET***, developers can re-encode optional metadata using the Unicode encoding using the *pdf_417_macro_eci_encoding* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/). This property is intended to perform the conversion of metadata and send it along with the related encoding identifier. 
   
 <p align="center"><img src="macropdf417eciencoding.png"></p>
   
@@ -165,12 +165,12 @@ In ***Aspose.BarCode for Python via .NET***, developers can re-encode optional m
 In ***Aspose.BarCode for Python via .NET***, developers can encode specific control parameters for *PDF417* barcodes, i.e. hardware reader initialization and emulation for the *Code 128* symbology. 
 
 ### **Hardware Reader Initialization**
-***Aspose.BarCode for Python via .NET*** provides the *is_reader_initialization* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/) that allows encoding the special flag used to indicate that barcode data will serve for hardware reader initialization. 
+***Aspose.BarCode for Python via .NET*** provides the *is_reader_initialization* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/) that allows encoding the special flag used to indicate that barcode data will serve for hardware reader initialization. 
 
 <p align="center"><img src="pdf417readerinitialization.png"></p>
 
 ### ***Code 128* Emulation**
-In some cases, it may be necessary to make hardware readers emulate information encoded in *Micro PDF417* barcodes in the format of *Code 128* barcode data. This can be done by initializing the *code_128_emulation* property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/pdf417parameters/) using a value from the [*Code128Emulation*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/code128emulation/) enum. This property is applicable to *Micro PDF417* barcodes only. 
+In some cases, it may be necessary to make hardware readers emulate information encoded in *Micro PDF417* barcodes in the format of *Code 128* barcode data. This can be done by initializing the *code_128_emulation* property of class [*Pdf417Parameters*](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/) using a value from the [*Code128Emulation*](/barcode/python-net/api-reference/aspose.barcode.generation/code128emulation/) enum. This property is applicable to *Micro PDF417* barcodes only. 
 
 
 <p align="center"><img src="pdf417code128emulation.png"></p>

@@ -28,7 +28,7 @@ The main barcode text label contains short text information detached from bars b
 
   
 ### **Text Positioning**
-The position of a barcode text label can be modified by customizing two parameters: alignment and location. These parameters can be adjusted through *location* and *alignment* properties of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/).
+The position of a barcode text label can be modified by customizing two parameters: alignment and location. These parameters can be adjusted through *location* and *alignment* properties of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/).
   
 #### **Alignment**
   
@@ -49,7 +49,7 @@ The *location* property allows setting the vertical position of a text label, na
 | |<img src="codetextlocationabove.png">|<img src="codetextlocationbelow.png">|
   
 ### **Spacing between Bars and Text Label**
-The default spacing (gap) between bars and a text label is equal to 2pt. It is possible to modify this spacing using the *space* property of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/). This property is not applicable to specific barcode types, including EAN-13, EAN-8, UPC-E, UPC-A, ISMN, ISBN, ISSN, and UpcaGs1DatabarCoupon.  
+The default spacing (gap) between bars and a text label is equal to 2pt. It is possible to modify this spacing using the *space* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). This property is not applicable to specific barcode types, including EAN-13, EAN-8, UPC-E, UPC-A, ISMN, ISBN, ISSN, and UpcaGs1DatabarCoupon.  
   
 Sample barcode images shown below have been created with various spacing settings (five and forty pixels).
   
@@ -59,7 +59,7 @@ Sample barcode images shown below have been created with various spacing setting
   
   
 ### **Font Settings**
-To manage barcode text font, ***Aspose.BarCode for Python via .NET*** provides *font* and *font_mode* properties of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/). The default font setting is Arial 5pt regular. This setting is ignored if the *Auto* mode is enabled using the *font_mode* property. This property is used to manage font size settings automatically. If it is called passing the *Auto* value, font size is determined automatically based on *x_dimension* in such a way that the text label should take only one text line. *FontMode.Auto* is recommended when *AutoSizeMode.Nearest* or *AutoSizeMode.Interpolation* settings are enabled. Alternatilvely, setting *FontMode.Manual* allows managing font size manually. Other font parameters, including font style, are set similarly in both *Auto* and *Manual* modes.  
+To manage barcode text font, ***Aspose.BarCode for Python via .NET*** provides *font* and *font_mode* properties of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). The default font setting is Arial 5pt regular. This setting is ignored if the *Auto* mode is enabled using the *font_mode* property. This property is used to manage font size settings automatically. If it is called passing the *Auto* value, font size is determined automatically based on *x_dimension* in such a way that the text label should take only one text line. *FontMode.Auto* is recommended when *AutoSizeMode.Nearest* or *AutoSizeMode.Interpolation* settings are enabled. Alternatilvely, setting *FontMode.Manual* allows managing font size manually. Other font parameters, including font style, are set similarly in both *Auto* and *Manual* modes.  
   
 Barcode images shown below have been created with these two font modes. 
     
@@ -69,7 +69,7 @@ Barcode images shown below have been created with these two font modes.
   
 
 ### **NoWrap Mode for Text**
-It is possible to avoid line breaks in a text that is too long for a single row using the *no_wrap* property of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/). When the *True* setting is enabled, the text label is displayed in a single row regardless of the text length. The default setting is *False*. Barcode images shown below have been created with different *NoWrap* settings.
+It is possible to avoid line breaks in a text that is too long for a single row using the *no_wrap* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). When the *True* setting is enabled, the text label is displayed in a single row regardless of the text length. The default setting is *False*. Barcode images shown below have been created with different *NoWrap* settings.
 
 |Text Wrapping Mode|Wrap|No Wrap|
 | :-: | :-: | :-: |
@@ -77,7 +77,7 @@ It is possible to avoid line breaks in a text that is too long for a single row 
   
   
 ## **Replacing Barcode Text in 2D Barcodes**
-To replace barcode text in 2D barcodes with some other text label with improved readability without modifications to the barcode image itself, it is possible to call the *two_d_display_text* property of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/) and pass new text to be placed. This is applicable to selected 2D type, including QR Code, Aztec Code, Data Matrix, MaxiCode, PDF417, and DotCode.  
+To replace barcode text in 2D barcodes with some other text label with improved readability without modifications to the barcode image itself, it is possible to call the *two_d_display_text* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/) and pass new text to be placed. This is applicable to selected 2D type, including QR Code, Aztec Code, Data Matrix, MaxiCode, PDF417, and DotCode.  
   
 The sample barcode image shown below has been created using the *two_d_display_text* setting.
   
@@ -90,14 +90,14 @@ The sample barcode image shown below has been created using the *two_d_display_t
 
 ### **Caption Visibility**
 
-As stated above, additional text captions *Caption_Above* and *Caption_Below* are disabled by default. When required, top and bottom caption labels can be shown independently from each other or enabled simultaneously. The *visible* property of class [*CaptionParameters*](https://reference.aspose.com/barcode/python-net-aspose.barcode.generation/captionparameters/) can be used to display one or two captions. Then, caption text can be inserted through the *text* property. If required, caption labels can replace main text in 1D barcodes by enabling the former and disabling the latter. The figures given below demonstrate how to caption positioning options.
+As stated above, additional text captions *Caption_Above* and *Caption_Below* are disabled by default. When required, top and bottom caption labels can be shown independently from each other or enabled simultaneously. The *visible* property of class [*CaptionParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/) can be used to display one or two captions. Then, caption text can be inserted through the *text* property. If required, caption labels can replace main text in 1D barcodes by enabling the former and disabling the latter. The figures given below demonstrate how to caption positioning options.
   
 |Caption Visibility|Above|Below|
 | :-: | :-: | :-: |
 | |<img src="captionvisibleabove.png">|<img src="captionvisiblebelow.png">|
 
 ### **Text Positioning**
-The *alignment* property of class [*CaptionParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/captionparameters/) allows modifying horizontal positions of caption labels in three directions: right, left, and center. The default position of captions is center. The figures shown below demonstrate barcode images with the top caption label with different alignment positions.
+The *alignment* property of class [*CaptionParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/) allows modifying horizontal positions of caption labels in three directions: right, left, and center. The default position of captions is center. The figures shown below demonstrate barcode images with the top caption label with different alignment positions.
   
 |Caption Alignment|Left|Center|Right|
 | :-: | :-: | :-: | :-: |
@@ -105,7 +105,7 @@ The *alignment* property of class [*CaptionParameters*](https://reference.aspose
   
    
 ### **Caption Padding**
-The *padding* property of class [*CaptionParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/captionparameters/) can be used to manage spacings for text captions. By default, the spacing value is set to {5pt; 5pt; 0; 5pt} for the top caption and {0; 5pt; 5pt; 5pt} for the bottom one according to the standard Rectangle setting {Top, Left, Bottom, Right}. This property is inapplicable when captions are disabled. Barcode images shown below have been generated with different padding settings.
+The *padding* property of class [*CaptionParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/) can be used to manage spacings for text captions. By default, the spacing value is set to {5pt; 5pt; 0; 5pt} for the top caption and {0; 5pt; 5pt; 5pt} for the bottom one according to the standard Rectangle setting {Top, Left, Bottom, Right}. This property is inapplicable when captions are disabled. Barcode images shown below have been generated with different padding settings.
   
 |Caption Padding|Is Set to 5 Pixels|Is Set to 40 Pixels|
 | :-: | :-: | :-: |
@@ -113,14 +113,14 @@ The *padding* property of class [*CaptionParameters*](https://reference.aspose.c
   
 
 ### **Caption Font**
-***Aspose.BarCode for Python via .NET*** does not enable automatic font size settings based on barcode size. Accordingly, caption font size requires manual setting. For top and bottom captions, various parameters, including font style and size can be set independently. Caption font can be customized using the properties of class [*FontUnit*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/fontunit/). The default setting for caption font is Arial 8pt regular. 
+***Aspose.BarCode for Python via .NET*** does not enable automatic font size settings based on barcode size. Accordingly, caption font size requires manual setting. For top and bottom captions, various parameters, including font style and size can be set independently. Caption font can be customized using the properties of class [*FontUnit*](/barcode/python-net/api-reference/aspose.barcode.generation/fontunit/). The default setting for caption font is Arial 8pt regular. 
 The barcode image shown below explains different caption font settings.
    
 <p align="center"><img src="captionfont.png"></p>
   
 
 ### **NoWrap Mode for Caption**
-The *no_wrap* property of class [*CaptionParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/captionparameters/) allows disabling text line breaks when a text string is too large to fit in one line. When this property is initiated using the *True* value, caption text is always displayed as a single line. Barcode images below show the difference between *true* and *false* settings.
+The *no_wrap* property of class [*CaptionParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/) allows disabling text line breaks when a text string is too large to fit in one line. When this property is initiated using the *True* value, caption text is always displayed as a single line. Barcode images below show the difference between *true* and *false* settings.
   
 |Caption Wrapping|*no_wrap* Is Set to *False*|*no_wrap* Is Set to *True*|
 | :-: | :-: | :-: |

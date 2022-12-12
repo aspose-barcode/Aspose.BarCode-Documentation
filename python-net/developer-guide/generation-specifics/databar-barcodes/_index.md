@@ -23,7 +23,7 @@ Except for *DataBar Limited*, all aforementioned subtypes have two-row and multi
 *DataBar* standards can be classified into two types: continuous and stacked. ***Aspose.BarCode for Python via .NET*** provides a special mode to customize the height of barcodes for each of these types, as explained further in the article.
 
 ### **Continuous Barcode Types**
-*DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded* correspond to continuous barcode types. For such symbologies, barcode height can be adjusted using the *bar_height* property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/barcodeparameters/).  
+*DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded* correspond to continuous barcode types. For such symbologies, barcode height can be adjusted using the *bar_height* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/).  
   
 The following *DataBar Omnidirectional* barcode images have been created setting various barcode heights.
    
@@ -32,7 +32,7 @@ The following *DataBar Omnidirectional* barcode images have been created setting
 | |<img src="databarbarheight30pixels.png">|<img src="databarbarheight60pixels.png">|
     
 ### **Stacked Barcode Types**
-*DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked* can be classified as stacked barcode types. For such symbologies, the height of barcodes can be customized using the *aspect_ratio* property of class [*DataBarParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/databarparameters/). *AspectRatio* is specified as a relative coefficient to the value of *XDimension*.  
+*DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked* can be classified as stacked barcode types. For such symbologies, the height of barcodes can be customized using the *aspect_ratio* property of class [*DataBarParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/databarparameters/). *AspectRatio* is specified as a relative coefficient to the value of *XDimension*.  
   
 The following *DataBar Stacked Omnidirectional* barcodes have been generated setting different values of the aspect ratio.
   
@@ -42,7 +42,7 @@ The following *DataBar Stacked Omnidirectional* barcodes have been generated set
   
  
 ## **DataBar Expanded Stacked Layout Settings**
-The *DataBar Expanded Stacked* subtype supports a flexible layout that may be adjusted by changing barcode row and column numbers. ***Aspose.BarCode*** allows adding up to 22 segments to compose at most 10 strings. The layout of *DataBar Expanded Stacked* barcodes can be customized using *rows* and *columns* properties of class [*DataBarParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/databarparameters/). It should be noted that first, the number of segments in a row has to be determined using the *columns* property.  
+The *DataBar Expanded Stacked* subtype supports a flexible layout that may be adjusted by changing barcode row and column numbers. ***Aspose.BarCode*** allows adding up to 22 segments to compose at most 10 strings. The layout of *DataBar Expanded Stacked* barcodes can be customized using *rows* and *columns* properties of class [*DataBarParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/databarparameters/). It should be noted that first, the number of segments in a row has to be determined using the *columns* property.  
   
 Following *DataBar Expanded Stacked* barcodes have varying barcode layouts.
   
@@ -51,7 +51,7 @@ Following *DataBar Expanded Stacked* barcodes have varying barcode layouts.
 | |<img src="databarcols4.png">|<img src="databarrows3.png">|<img src="databarcols6rows10.png">|
     
 ## **Compatibility with GS1 Components**
-Considering that *DataBar Expanded* / *DataBar Expanded Stacked* subtypes enable data encoding in any format, it may be important to ensure compatibility of the encoded information with GS1 standards. This can be implemented through the *is_allow_only_gs1_encoding* property of class [*DataBarParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/databarparameters/). This property requests checking for compatibility of the encoded data with GS Application Identifiers. An exception is thrown if an inconsistency is identified. It can also serve to verify the correctness of GTIN values in other *DataBar* subtypes.     
+Considering that *DataBar Expanded* / *DataBar Expanded Stacked* subtypes enable data encoding in any format, it may be important to ensure compatibility of the encoded information with GS1 standards. This can be implemented through the *is_allow_only_gs1_encoding* property of class [*DataBarParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/databarparameters/). This property requests checking for compatibility of the encoded data with GS Application Identifiers. An exception is thrown if an inconsistency is identified. It can also serve to verify the correctness of GTIN values in other *DataBar* subtypes.     
   
 Following *DataBar Expanded* barcodes have been generated using the GS1-compatible and non-compatible data formats.
   
@@ -60,7 +60,7 @@ Following *DataBar Expanded* barcodes have been generated using the GS1-compatib
 | |<img src="databargs1rightencoding.png">|<img src="databargs1variableencoding.png">|
     
 ## **Enabling 2D Component**
-*DataBar* standards allow adding a 2D component linkage flag to enable creating a related 2D barcode that can be printed together with the corresponding *DataBar* barcode. Such a flag is often used in GS1-compatible composite barcode types. ***Aspose.BarCode for Python via .NET*** provides the *is_2d_composite_component* property of class [*DataBarParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/databarparameters/) that allows setting this flag manually for specific industrial standards without changing the data encoded in the main barcode.  
+*DataBar* standards allow adding a 2D component linkage flag to enable creating a related 2D barcode that can be printed together with the corresponding *DataBar* barcode. Such a flag is often used in GS1-compatible composite barcode types. ***Aspose.BarCode for Python via .NET*** provides the *is_2d_composite_component* property of class [*DataBarParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/databarparameters/) that allows setting this flag manually for specific industrial standards without changing the data encoded in the main barcode.  
   
 The following *DataBar Expanded* barcodes have different settings for the 2D component flag.
   

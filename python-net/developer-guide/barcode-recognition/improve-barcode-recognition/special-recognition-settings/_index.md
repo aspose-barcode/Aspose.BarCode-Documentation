@@ -8,12 +8,12 @@ url: /python-net/special-barcode-reading-cases/
 ---
 
 ## **Barcode Images with Gaussian Noise**
-Gaussian noise is one of the most common damages that may deteriorate the quality of a source barcode. Most of difficulties correspond to the cases when barcode images have the monochrome color scheme or the distortion grain is considerably bigger than the minimal element of a barcode. To cope with these effects, median filtering mechanisms suitable for both 1D and 2D symbologies can be applied. Median filtering mechanisms also affect image quality due to the possible removal of some barcode elements together with noise; however, they still may be helpful in improving readability of key barcode modules. ***Aspose.BarCode for Python via .NET*** contains class [*QualitySettings*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/qualitysettings/) that is used to enable and disable various algorithms to read barcodes with damages or artifacts. 
+Gaussian noise is one of the most common damages that may deteriorate the quality of a source barcode. Most of difficulties correspond to the cases when barcode images have the monochrome color scheme or the distortion grain is considerably bigger than the minimal element of a barcode. To cope with these effects, median filtering mechanisms suitable for both 1D and 2D symbologies can be applied. Median filtering mechanisms also affect image quality due to the possible removal of some barcode elements together with noise; however, they still may be helpful in improving readability of key barcode modules. ***Aspose.BarCode for Python via .NET*** contains class [*QualitySettings*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/qualitysettings/) that is used to enable and disable various algorithms to read barcodes with damages or artifacts. 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ### **Median Filtering for 1D Barcodes**
-One-dimensional filtering for linear barcodes can be set using the *allow_salt_and_paper_filtering* property of class [*QualitySettings*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/qualitysettings/). In this case, the filtering window size is selected automatically.  
+One-dimensional filtering for linear barcodes can be set using the *allow_salt_and_paper_filtering* property of class [*QualitySettings*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/qualitysettings/). In this case, the filtering window size is selected automatically.  
 
 <p align="center"><img src="saltandpaper.png" width="30%" height="30%"></p>
 
@@ -55,7 +55,7 @@ To read colored barcodes on a colored background, the barcode library provides t
 <p align="center"><img src="qr_color.png" width="15%" height="15%"></p>
 
 ## **Reading Evidently Incorrect Barcodes**
-In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *setAllowIncorrectBarcodes* and *setReadTinyBarcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](https://reference.aspose.com/barcode/python-net/aspose.barcode.barcoderecognition/barcodeconfidence/) being set to *None*, which means that the correctness of recognition is not guaranteed.  
+In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *setAllowIncorrectBarcodes* and *setReadTinyBarcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodeconfidence/) being set to *None*, which means that the correctness of recognition is not guaranteed.  
   
 The *read_tiny_barcodes* property facilitates reading small barcode labels in large images. It is ignored if the *allow_incorrect_barcodes* property is called passing the *True* value. However, enabling this parameter may result in recognizing false barcodes in place of actual text or tables.  
   

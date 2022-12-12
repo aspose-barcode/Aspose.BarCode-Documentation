@@ -21,7 +21,7 @@ The *Aztec Code* barcode type supports three subtypes:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/pythonnet/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Generation Modes**
-The preferred generation mode can be set using the [*AztecSymbolMode*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/aztecsymbolmode/) enum. The following modes are supported:
+The preferred generation mode can be set using the [*AztecSymbolMode*](/barcode/python-net/api-reference/aspose.barcode.generation/aztecsymbolmode/) enum. The following modes are supported:
 - *AUTO*: identifies the most suitable *Aztec Code* type with the data capacity that is sufficient to encode the data stored in the *code_text* property
 - *COMPACT*: allows generating *Compact Aztec Code* barcodes with at most 4 layers and 27x27 modules
 - *FULL_RANGE*: creates *Full-Range Aztec Code* barcodes with at most 32 layers and 151x151 modules
@@ -35,18 +35,18 @@ Following *Aztec Code* barcode images have been generated through various genera
   
 
 ## **Encoding Byte Streams**
-In ***Aspose.BarCode for Python via .NET***, streams of bytes can be encoded as *Aztec Code* barcodes. To display the text label, it is required to use the *two_d_display_text* property of class [*CodetextParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/codetextparameters/). 
+In ***Aspose.BarCode for Python via .NET***, streams of bytes can be encoded as *Aztec Code* barcodes. To display the text label, it is required to use the *two_d_display_text* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). 
   
 <p align="center"><img src="aztecbytesencoding.png"></p>
   
 ## **Encoding Unicode Symbols**
-In ***Aspose.BarCode for Python via .NET***, Unicode symbols can be encoded using the *code_text_encoding* property of class [*AztecParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/aztecparameters/). This property is applicable to all *Aztec Code* barcodes except *Rune*.
+In ***Aspose.BarCode for Python via .NET***, Unicode symbols can be encoded using the *code_text_encoding* property of class [*AztecParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/aztecparameters/). This property is applicable to all *Aztec Code* barcodes except *Rune*.
 
   
 <p align="center"><img src="azteccodetextencoding.png"></p>
   
 ## **Error Correction Settings**
-*Aztec Code* barcodes include recovery information that can occupy from 5 to 95% of the entire encoded data stream. It is recommended to set this parameter to 23%. To select the required error correction level, it is necessary to use the *aztec_error_level* property of class [*AztecParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/aztecparameters/).  
+*Aztec Code* barcodes include recovery information that can occupy from 5 to 95% of the entire encoded data stream. It is recommended to set this parameter to 23%. To select the required error correction level, it is necessary to use the *aztec_error_level* property of class [*AztecParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/aztecparameters/).  
   
 Following barcode images have been created using various error correction levels.
   
@@ -56,7 +56,7 @@ Following barcode images have been created using various error correction levels
   
 
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is defined as the ratio between the barcode width and height. To modify proportions using the X and Y coordinates, the barcode library provides the *aspect_ratio* property of class [*AztecParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/aztecparameters/). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In general, it is recommended to set *AspectRatio* equal to 1. If the proportions of *Aztec Code* barcodes to be generated need to be adjusted, this can be done using the *aspect_ratio* property.  
+*Aspect Ratio* is defined as the ratio between the barcode width and height. To modify proportions using the X and Y coordinates, the barcode library provides the *aspect_ratio* property of class [*AztecParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/aztecparameters/). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In general, it is recommended to set *AspectRatio* equal to 1. If the proportions of *Aztec Code* barcodes to be generated need to be adjusted, this can be done using the *aspect_ratio* property.  
   
 Following barcodes have been generated with various values of the aspect ratio.
   

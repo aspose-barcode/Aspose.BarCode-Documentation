@@ -13,7 +13,7 @@ url: /python-net/generate-code16k-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Height Settings**
-In ***Aspose.BarCode for Python via .NET***, it is possible to modify the row height of a *Code16K* barcode using the *aspect_ratio* property of class [*Code16KParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/code16kparameters/). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In the *Code16K* standard, the value of *AspectRatio* should be set larger than 8.  
+In ***Aspose.BarCode for Python via .NET***, it is possible to modify the row height of a *Code16K* barcode using the *aspect_ratio* property of class [*Code16KParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/code16kparameters/). *AspectRatio* is determined as a relative coefficient to the value of *XDimension*. In the *Code16K* standard, the value of *AspectRatio* should be set larger than 8.  
   
 The following *Code16K* barcodes have been created using various barcode height settings. 
   
@@ -23,7 +23,7 @@ The following *Code16K* barcodes have been created using various barcode height 
   
 
 ## **Quiet Zone Settings**
-***Aspose.BarCode for Python via .NET*** allows modifying the size of quiet zones in *Code16K* barcodes using *quiet_zone_left_loef* and *quiet_zone_right_coef* properties of class [*Code16KParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/code16kparameters/). Quiet zone coefficients are determined relatively to the value of *XDimension*.  
+***Aspose.BarCode for Python via .NET*** allows modifying the size of quiet zones in *Code16K* barcodes using *quiet_zone_left_loef* and *quiet_zone_right_coef* properties of class [*Code16KParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/code16kparameters/). Quiet zone coefficients are determined relatively to the value of *XDimension*.  
   
 The following *Code16K* barcodes have been generated using various quiet zone settings.
   

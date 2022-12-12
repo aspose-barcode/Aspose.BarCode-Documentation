@@ -13,7 +13,7 @@ url: /python-net/generate-supplement-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Supplement Barcode Settings**
-Conventional barcodes serve to encode the most important information about items or products. To store additional (supplement) data besides primary barcodes, developers can use the *supplement_data* property of class [*SupplementParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/supplementparameters/). This property needs to take 2 or 5 additional numerical digits for *EAN-2* or *EAN-5*, respectively. Thereafter, the library identifies the suitable barcode type automatically based on the entered number of digits. Supplement barcode size is computed automatically according to the parameters of the primary barcode.  
+Conventional barcodes serve to encode the most important information about items or products. To store additional (supplement) data besides primary barcodes, developers can use the *supplement_data* property of class [*SupplementParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/supplementparameters/). This property needs to take 2 or 5 additional numerical digits for *EAN-2* or *EAN-5*, respectively. Thereafter, the library identifies the suitable barcode type automatically based on the entered number of digits. Supplement barcode size is computed automatically according to the parameters of the primary barcode.  
   
 The following barcodes have been created enabling *EAN-2* and *EAN-5* supplements for *EAN-13* barcodes.
 
@@ -22,7 +22,7 @@ The following barcodes have been created enabling *EAN-2* and *EAN-5* supplement
 | |<img src="supplementean2.png">|<img src="supplementean5.png">|
   
 ## **Adjusting Supplement Spacing**
-To define the size of a gap between the main and supplement barcodes, the library provides the *supplement_space* property of class [*SupplementParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/supplementparameters/).  
+To define the size of a gap between the main and supplement barcodes, the library provides the *supplement_space* property of class [*SupplementParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/supplementparameters/).  
   
 The barcode samples demonstrated below have been generated with different gap settings.  
   

@@ -13,7 +13,7 @@ url: /python-net/generate-maxicode-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Encoding Modes**
-***Aspose.BarCode for Python via .NET*** supports several encoding modes for the *MaxiCode* type that can be managed using the *maxi_code_encode_mode* property of class [*MaxiCodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/maxicodeparameters/): 
+***Aspose.BarCode for Python via .NET*** supports several encoding modes for the *MaxiCode* type that can be managed using the *maxi_code_encode_mode* property of class [*MaxiCodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeparameters/): 
 - *Encoding Modes 2 and 3* - these specific industrial standards apply to the transportation industry and aim to encode shipping information
 - *Encoding Modes 4 and 5* - these modes are used to encode arbitrary textual data or streams of bytes; they differ in terms of encoding capacity and the number of codewords reserved for error correction
 - *Encoding Mode 6* - this mode is similar to *Encoding Mode 4*; however, barcode data is used only to program hardware readers
@@ -41,7 +41,7 @@ Following *MaxiCode* barcodes have been generated applying Formats 1 and 2 of *E
 <p align="center"><img src="maxicodeencodemode4.png" width="20%" height="20%"></p>
 
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is one of the most important parameters for barcode generation that is determined as the ratio between barcode height and width. The *aspect_ratio* property of class [*MaxiCodeParameters*](https://reference.aspose.com/barcode/python-net/aspose.barcode.generation/maxicodeparameters/) can be used to modify barcode proportions corresponding to X and Y coordinates. *Aspect Ratio* is defined as a relative coefficient to the *XDimension* value. For *MaxiCode* barcode generation, it is recommended to set the value of *Aspect Ratio* to 1. The following *MaxiCode* has been created with the *Aspect Ratio* equal to 0.5.
+*Aspect Ratio* is one of the most important parameters for barcode generation that is determined as the ratio between barcode height and width. The *aspect_ratio* property of class [*MaxiCodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeparameters/) can be used to modify barcode proportions corresponding to X and Y coordinates. *Aspect Ratio* is defined as a relative coefficient to the *XDimension* value. For *MaxiCode* barcode generation, it is recommended to set the value of *Aspect Ratio* to 1. The following *MaxiCode* has been created with the *Aspect Ratio* equal to 0.5.
   
 <p align="center"><img src="maxicodeaspectratio0.5.png" width="20%" height="20%"></p>
   
