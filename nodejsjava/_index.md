@@ -13,7 +13,7 @@ is_root: true
 
 **Welcome to Aspose.BarCode for Node.js via Java**
 
-***Aspose.BarCode for Node.js via Java*** is implemented using Node.js and Java through nodejs-java bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their Node.js applications. The barcode library provides demos and working examples written in Node.js for developers to have a better understanding of our product. Using these demos, developers can quickly learn about the features provided by Aspose.BarCode. 
+***Aspose.BarCode for Node.js via Java*** is implemented using Node.js and Java through the nodejs-java bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their Node.js applications. The barcode library provides demos and working examples written in Node.js for developers to have a better understanding of our product. Using these demos, developers can quickly learn about the features provided by Aspose.BarCode. 
 It supports the most advanced barcode standards and specifications. It has the ability to export barcodes in the following image formats: BMP, GIF, JPEG, PNG, and TIFF. 
 
 {{% /alert %}} 

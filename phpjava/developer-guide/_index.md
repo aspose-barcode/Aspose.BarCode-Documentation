@@ -2,7 +2,7 @@
 title: Developer Guide
 type: docs
 weight: 20
-url: /androidjava/developer-guide/
+url: /phpjava/developer-guide/
 ---
 
 
