@@ -11,13 +11,12 @@ url: /python-net/system-requirements/
 |---|---|
 |**Microsoft Windows**|Microsoft Windows 7 or later: x64 / x86|
 |**Microsoft Windows Server**|Microsoft Windows Server 2008 and later: x64 / x86|
-|**Linux**|Any Linux x64 or x86 with installed .Net (Mono, .Net Core) and [libgdiplus](https://docs.telerik.com/reporting/knowledge-base/how-to-build-and-install-libgdiplus-linux)|
-|**MacOS**|Any MacOS x64 or x86 with installed .Net (Mono, .Net Core) and [libgdiplus](https://formulae.brew.sh/formula/mono-libgdiplus)|
+|**Linux**|Any Linux x64 or x86 with installed [libgdiplus](https://docs.telerik.com/reporting/knowledge-base/how-to-build-and-install-libgdiplus-linux)|
 
 ## **Development Environment**
 
-- Python 3.5 or higher
+- Python 3.6 or higher
 - GCC-6 runtime libraries (or later)
 - .NET Core Runtime dependencies
-- For Python 3.5-3.7: the *pymalloc* build of Python
+- For Python 3.6-3.7: the *pymalloc* build of Python
 - *libpython* shared Python library

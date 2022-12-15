@@ -18,10 +18,10 @@ The *PDF417* layout configuration is composed of multiple rows and columns. Basi
   
 |PDF417 Standard|Description|
 |---|---|
-|[**Basic PDF417**](#pdf417)|Can be used to work with documents of any quality and supports laser scanning|
-|[**Micro PDF417**](#micropdf417)|Allows minimizing the barcode area and can be used as an add-on for GS1 composite symbologies or applied to high-quality documents|
-|[**Macro PDF417**](#macropdf417)|Provides increased encoding capacity and supports metainformation|
-|[**Compact PDF417**](#compactpdf417)|Supports optional metainformation and can be useful in cases of limited printing space. It suggests omitting the right-side block of metadata and removing the stop pattern is removed. Laser scanning is not supported; only photo scanning is available. It is applicable to high-quality documents only|
+|[**Basic PDF417**](#basic-pdf417-and-macro-pdf417-types)|Can be used to work with documents of any quality and supports laser scanning|
+|[**Micro PDF417**](#micro-pdf417-symbology)|Allows minimizing the barcode area and can be used as an add-on for GS1 composite symbologies or applied to high-quality documents|
+|[**Macro PDF417**](#basic-pdf417-and-macro-pdf417-types)|Provides increased encoding capacity and supports metainformation|
+|[**Compact PDF417**](#compact-pdf417-symbology)|Supports optional metainformation and can be useful in cases of limited printing space. It suggests omitting the right-side block of metadata and removing the stop pattern is removed. Laser scanning is not supported; only photo scanning is available. It is applicable to high-quality documents only|
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -145,7 +145,7 @@ Optional metadata are used to store information about various data properties th
   
 |Optional Metadata Property|Description|
 |---|---|
-|pdf_417_macro_segments_count*|Number of barcodes in a series|
+|*pdf_417_macro_segments_count*|Number of barcodes in a series|
 |*pdf_417_macro_file_name*|File name|
 |*pdf_417_macro_checksum*|Checksum computed based on the CCITT-16 polynomial|
 |*pdf_417_macro_file_size*|Overall size of bytes in a barcode series|

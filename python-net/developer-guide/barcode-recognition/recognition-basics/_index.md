@@ -8,7 +8,7 @@ url: /python-net/read-barcodes/
 ---
 
 ## **Overview**
-Class [*BarCodeReader*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodereader/) in ***Aspose.BarCode for Python via .NET*** is the most important to implement barcode recognition for more than 60 symbologies. First, it is necessary to identify a barcode source that can be represented as a file, a stream, or a bitmap object. After that, target barcode types need to be specified using values from the [*DecodeType*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/) enum. By default, the library uses the *DecodeType.ALL_SUPPORTED_TYPES* setting that implies iterating over all supported barcode types to check for their presence in the source image. In this case, barcode scanning and recognition take much more time. Developers can specify explicitly not only the desired types but also a target region or regions in the source image. This allows optimizing the scanning process by avoiding areas without barcodes. Target regions can be determined using a class called [*Quadrangle*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/quadrangle/).
+Class [*BarCodeReader*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodereader/) in ***Aspose.BarCode for Python via .NET*** is the most important to implement barcode recognition for more than 60 symbologies. First, it is necessary to identify a barcode source that can be represented as a file, a stream, or a bitmap object. After that, target barcode types need to be specified using values from the [*DecodeType*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/) enum. By default, the library uses the *DecodeType.ALL_SUPPORTED_TYPES* setting that implies iterating over all supported barcode types to check for their presence in the source image. In this case, barcode scanning and recognition take much more time. Developers can specify explicitly not only the desired types but also a target region or regions in the source image. This allows optimizing the scanning process by avoiding areas without barcodes. Target regions can be determined using a class called [*Quadrangle*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/quadrangle/).
 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
@@ -45,7 +45,7 @@ In ***Aspose.BarCode for Python via .NET***, a stream (in a binary format) can b
 ***Aspose.BarCode for Python via .NET*** supports barcode recognition for 60+ various barcode types. To improve the efficiency of the recognition process and optimize its timing, it is recommended to set target symbologies in advance. Otheriwise, the *ALL_SUPPORTED_TYPES* setting of the [*DecodeType*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/) enum will be used by default meaning that the library will look over all supported barcode types to check for their presence in the source image. Using this setting will increase the time needed to complete barcode recognition. 
 
 ### **Listing Target Barcode Types in DecodeType**
-Target barcode types can be specified by grouping them in a list and passing it to the *BarCodeReader()* constructor or the *setBarCodeReadType* method.  
+Target barcode types can be specified by grouping them in a list and passing it to the *BarCodeReader()* constructor or the *set_bar_code_read_type* method.  
 
 ### Using ***MultyDecodeType* Mode**
 The other way to specify target barcode types is to determine them using a constructor of class [*MultyDecodeType*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/multydecodetype/) and then pass it to class [*BarCodeReader*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodereader/) or the *set_bar_code_read_type* method.  
@@ -59,16 +59,6 @@ Class [*DecodeType*](/barcode/python-net/api-reference/aspose.barcode.barcoderec
 -	*MOST_COMMON_TYPES* - a set of most widespread barcode types defined according to Aspose recommendations
 
 The required set can be specified in the *BarCodeReader* constructor or passed to the *bar_code_read_type* property.
-
-
-## **Setting Target Barcode Regions**
-In ***Aspose.BarCode for Python via .NET***, it is possible to specify target areas for barcode detection by creating one or several objects of the [*Quadrangle*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/quadrangle/) class. Setting target regions allows improving recognition efficiency and avoiding the regions without any barcodes. Target areas have to be determined accurately as the Aspose barcode library applies heuristic approaches to identify target barcode detection areas. Focusing on too many image regions can lead to recognition efficiency deterioration.
-
-### **Unique Target Region**
-To set one target area for barcode recognition, it is necessary to create an object of the [*Quadrangle*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/quadrangle/) type and then pass it to the *BarCodeReader* constructor or the *set_bar_code_image* method.  
-  
-### **Several Target Regions**
-It is possible to set several target areas for barcode detection within one source image. This can be done in the same way as described above for one target region, i.e., using the *BarCodeReader* constructor or the *bar_code_image* property.  
   
 ## **Recognition Abortion**
 Class [*BarCodeReader*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodereader/) enables two ways to interrupt the recognition process if it becomes unfeasible to complete. The first one is to initialize the *time_out* property that defines a timeout value for the barcode reading process . By default, the *TimeOut* value is set to 0.  

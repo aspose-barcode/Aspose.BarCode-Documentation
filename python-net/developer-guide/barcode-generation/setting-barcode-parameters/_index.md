@@ -15,16 +15,16 @@ Cartesian coordinate systems use coordinates of pixels or drawable objects to re
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-dotnet/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Measuring Barcode Size in Various Units**
-Class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) allows developers to manage measurement units for barcode parameters and can be modified using the properties of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/), such as *bar_code_height*, *bar_code_width*, and *x_dimension*. Class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) can be used to convert measurement units into the desired ones: *Millimeters*, *Pixels*, *Inches*, *Point* (1/72 inch), or *Document* (1/300 inch). By default, *Millimeters* are used as size measurement units.  
+Class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) allows developers to manage measurement units for barcode parameters and can be modified using the properties of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/), such as *bar_code_height*, *bar_code_width*, and *x_dimension*. Class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) can be used to convert measurement units into the desired ones: *millimeters*, *pixels*, *inches*, *point* (1/72 inch), or *document* (1/300 inch). By default, *millimeters* are used as size measurement units.  
   
 Barcode labels created using various unit settings are shown below.
    
-|Size Units|Pixels|Millimeters|
+|Size Units|pixels|millimeters|
 | :-: | :-: | :-: |
 | |<image src="unitin3pixels.png">|<image src="unitin2millimeters.png">|
 
 ## **Image Resolution**
-***Aspose.BarCode for Python via .NET*** allows developers to customize barcode image resolution settings using class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/). This class includes the *resolution* properties to modify barcode image resolution and the *pixels* properties to convert all non-pixel size measurements into digital coordinates in pixels. To convert size values into requested supported units, the following properties can be used: *inches*, *millimeters*, *document*, *point*, and *pixels*. 
+***Aspose.BarCode for Python via .NET*** allows developers to customize barcode image resolution settings using class [*Unit*](/barcode/python-net/api-reference/aspose.barcode.generation/unit/). This class includes the *resolution* property to modify barcode image resolution and the *pixels* property to convert all non-pixel size measurements into digital coordinates in pixels. To convert size values into requested supported units, the following properties can be used: *inches*, *millimeters*, *document*, *point*, and *pixels*. 
   
 Barcode images with different resolution settings are given below.
   

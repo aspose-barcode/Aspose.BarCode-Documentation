@@ -20,7 +20,6 @@ The most important features are the following:
 - Reading barcodes at any angle and from images of any quality
 - Customization of barcode appearance (size, height, resolution, color, rotation angle, text label and captions, X-dimension, wide-to-narrow-ratio, and others)
 - Optimization of recognition engine variables to achieve the desired trade-off between reading accuracy and speed
-- Target scanning region selection
 - Barcode generation using special modes, such as ECI, error correction, or embedded metadata
 - Image rotation at any angle 
 - Saving to or loading from stream or file 

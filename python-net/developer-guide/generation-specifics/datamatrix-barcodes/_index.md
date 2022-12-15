@@ -19,10 +19,10 @@ url: /python-net/generate-datamatrix-barcode/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Data Matrix ECC Standards**
-To enable the required *Data Matrix* standard, developers can use the *data_matrix_ecc* property of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/). This property allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/) enum. The value of *DataMatrixEccType.ECC_200* is set by default.
+To enable the required *Data Matrix* standard, developers can use the *data_matrix_ecc* property of class [*DataMatrixParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/). This property allows setting one of the supported standards: *ECC 000-140* (outdated standards) or *ECC 200* (recent universal standard) using the values available in the [*DataMatrixEccType*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/) enum. The value of *DataMatrixEccType.ECC200* is set by default.
   
 ### ***ECC 200***
-***Aspose.BarCode for Python via .NET*** allows explicitly setting the *ECC 200* standard initializing the *data_matrix_ecc* property with values *ECC_AUTO* or *ECC_200*. *ECC_200* is compatible with all encoding modes specified in the [*DataMatrixEncodeMode*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/) enum. Moreover, it allows encoding Unicode characters using the *code_text_encoding* property. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
+***Aspose.BarCode for Python via .NET*** allows explicitly setting the *ECC 200* standard initializing the *data_matrix_ecc* property with values *ECC_AUTO* or *ECC200*. *ECC200* is compatible with all encoding modes specified in the [*DataMatrixEncodeMode*](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/) enum. Moreover, it allows encoding Unicode characters using the *code_text_encoding* property. The capacity of additional recovery information required for error correction is precisely limited for barcodes according to their size.  
     
 <p align="center"><img src="datamatrixecc200basic.png"></p>  
   
@@ -31,11 +31,11 @@ To enable the required *Data Matrix* standard, developers can use the *data_matr
   
 |ECC Standard|Data Recovery Capacity|
 | :-: | :-: |
-|**ECC_000**|Only error detection|
-|**ECC_050**|2.8%|
-|**ECC_080**|5.5%|
-|**ECC_100**|12.6%|
-|**ECC_140**|25%| 
+|**ECC000**|Only error detection|
+|**ECC050**|2.8%|
+|**ECC080**|5.5%|
+|**ECC100**|12.6%|
+|**ECC140**|25%| 
     
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
   

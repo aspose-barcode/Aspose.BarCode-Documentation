@@ -30,7 +30,7 @@ In *Code 39*, setting a checksum is optional. Given that the maximal number of c
 Compared to *Code 39*, the *Code 128* standard provides an improved algorithm for checksum calculation. In this case, each barcode digit is weighted by the index of its position. 
   
 ## **Checksum Settings**
-Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The *is_checksum_enabled* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) is used to manage checksum calculation for 1D barcodes. By default, this property is set to *Yes* for barcode types with obligatory checksum computation and *No* for those with an optional check digit.  
+Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The *is_checksum_enabled* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) is used to manage checksum calculation for 1D barcodes. By default, this property is set to *YES* for barcode types with obligatory checksum computation and *NO* for those with an optional check digit.  
   
 Below, the lists of barcode standards with optional and obligatory checksum settings are provided.
   
@@ -41,8 +41,8 @@ Below, the lists of barcode standards with optional and obligatory checksum sett
 
 ### **Optional Checksum Settings**
 By default, 1D barcodes with optional checksum do not impose the necessity of check digit calculation. For such barcodes, the *is_checksum_enabled* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) can be set in the following ways:
-- *EnableChecksum.Default* and *EnableChecksum.No*. Checksum calculation is not enabled.
-- *EnableChecksum.Yes*. The library generates the checksum of the most appropriate type for the given barcode symbology.
+- [*EnableChecksum.DEFAULT*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/) and [*EnableChecksum.NO*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/). Checksum calculation is not enabled.
+- [*EnableChecksum.YES*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/). The library generates the checksum of the most appropriate type for the given barcode symbology.
   
 |Checksum Settings|Checksum Enabled|Checksum Disabled|
 | :-: | :-: | :-: |
@@ -51,8 +51,8 @@ By default, 1D barcodes with optional checksum do not impose the necessity of ch
   
 ### **Obligatory Checksum Settings**
 For such barcodes, the *is_checksum_enabled* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) can be initiated as follows:
-- *EnableChecksum.Default* and *EnableChecksum.Yes*. Checksum calculation is performed according to the specific algorithm.
-- *EnableChecksum.No*. Depending on the given symbology, the library throws an exception or ignores this setting.
+- [*EnableChecksum.DEFAULT*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/) and [*EnableChecksum.YES*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/). Checksum calculation is performed according to the specific algorithm.
+- [*EnableChecksum.NO*](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/). Depending on the given symbology, the library throws an exception or ignores this setting.
 
 The following sample image illustrates the barcode label generated with obligatory checksum settings.     
 <p align="center"><img src="onecscode93withchecksum.png"></p>

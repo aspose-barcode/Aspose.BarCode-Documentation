@@ -1,9 +1,9 @@
 ---
-title: Generate Postal Barcodes
+title: Postal Barcodes
 linktitle: Postal Barcodes
 type: docs
 weight: 170
-url: /python-net/generate-postal-barcodes/
+url: /python-net/postal-barcodes/
 
 ---
 {{% alert color="primary" %}}[Generate USPS Planet and](https://products.aspose.app/barcode/generate/planet) [USPS Postnet Barcodes online](https://products.aspose.app/barcode/generate/postnet). You can check the quality of ***Aspose.BarCode*** generation for postal barcodes and view the results online.{{% /alert %}}
@@ -13,7 +13,7 @@ Postal barcode types have been introduced to address some problems of 1D barcode
   
 Many countries use their own barcode specifications for postal services. Generally, such barcode types are similar to each other in terms of design with some minor distinctions. Postal barcode standards can be classified into two main groups: two-state ones that can encode only numerical characters and four-state ones that allow encoding both numerical digits and uppercase English characters.  
   
-***Aspose.BarCode for Python via .NET*** can be used to create and read various two- and four-state postal standards, i.e. *RM4SCC*, *Postnet*, *Planet*, *Dutch KIX*, *Australia Post*, *OneCode*, and *Mailmark*. Further, this article describes how to work with postal symbologies using the *Aspose.BarCode* library functional.
+***Aspose.BarCode for Python via .NET*** can be used to create and read various two- and four-state postal standards, i.e. *RM4SCC*, *Postnet*, *Planet*, *Dutch KIX*, *Australia Post*, *OneCode*, and *Mailmark*. Further, this article describes how to work with postal symbologies using the *Aspose.BarCode for Python via .NET* library functional.
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
@@ -62,7 +62,7 @@ The *Postnet* type encodes each digit in five bars so that three bars are full-l
 <p align="center"><img src="postalpostnetbarcode.png"></p>
 
 ## **Specific Properties of Two-State Barcode Generation**
-The ***Aspose.BarCode*** library has several specificities in the way of working with two-state postal barcodes. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
+The ***Aspose.BarCode for Python via .NET*** library has several specificities in the way of working with two-state postal barcodes. They are associated with handling invalid barcode text and changing bar length. These special cases are outlined further.
 
 ### **Handling Invalid Barcode Text Exception**
 When invalid barcode text is passed to the *code_text* property (in the case of *Postnet* and *Planet*, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodegenerator/) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters using the *code_text* property. In this case, it is necessary to initialize the *throw_exception_when_code_text_incorrect* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) with the *True* value.

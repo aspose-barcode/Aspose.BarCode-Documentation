@@ -13,4 +13,4 @@ pip install *package_name*
 
 The barcode library source code is available at hosted on Pypi (Python Package Index) repository as an installable package. It can be obtained by running the following command: 
 
-pip install Aspose.BarCode-for-Python-via-NET
+pip install aspose-barcode-for-python-via-net

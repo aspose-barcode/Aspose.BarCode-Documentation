@@ -23,10 +23,8 @@ url: /python-net/features/
 - Read barcodes from various image raster and vector formats, including JPEG, TIFF, PNG, BMP, and GIF
 - Read barcodes with image resolution from 75 to 600 dpi
 - Decode damaged, blurred, or noised barcodes
-- Set target regions to find barcodes in a source image
 - Set target barcode types for recognition
 - Customize recognition engine variables to optimize reading speed and quality through manual settings or embedded presets
-- Read all barcodes placed in the scanned region
 - Perform checksum validation for 1D and postal barcodes
 
 ## **Generate Barcodes**

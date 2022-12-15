@@ -69,7 +69,7 @@ Barcode images shown below have been created with these two font modes.
   
 
 ### **NoWrap Mode for Text**
-It is possible to avoid line breaks in a text that is too long for a single row using the *no_wrap* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). When the *True* setting is enabled, the text label is displayed in a single row regardless of the text length. The default setting is *False*. Barcode images shown below have been created with different *NoWrap* settings.
+It is possible to avoid line breaks in a text that is too long for a single row using the *no_wrap* property of class [*CodetextParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/). When the *True* setting is enabled, the text label is displayed in a single row regardless of the text length. The default setting is *False*. Barcode images shown below have been created with different *no_wrap* settings.
 
 |Text Wrapping Mode|Wrap|No Wrap|
 | :-: | :-: | :-: |

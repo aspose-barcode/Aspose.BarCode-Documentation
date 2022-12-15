@@ -10,7 +10,7 @@ url: /python-net/swiss-qr-code/
 ## **Overview**
 *Swiss QR Code* has been created to automate payment digital operations in Switzerland. Currently, payment bills and receipts issued there need to be marked with a *Swiss QR Code* that stores the details about transactions. Unlike usual *QR Codes*, *Swiss QR Codes* have the Swiss cross sign in the center.  
   
-The *Swiss QR Code* standard has been introduced to work with QR bills in electronic payments. A *Swiss QR Code* contains all necessary payment information required to execute payments or process a QR invoice. ***Aspose.BarCode for Python via .NET*** includes [*SwissQRBill*](/barcode/python-net/api-reference/) and [*SwissQRCodetext*](/barcode/python-net/api-reference/aspose.barcode.complexbarcode/swissqrcodetext) classes to work with *Swiss QR* codes.  
+The *Swiss QR Code* standard has been introduced to work with QR bills in electronic payments. A *Swiss QR Code* contains all necessary payment information required to execute payments or process a QR invoice. ***Aspose.BarCode for Python via .NET*** includes [*SwissQRBill*](/barcode/python-net/api-reference/aspose.barcode.complexbarcode/swissqrbill/) and [*SwissQRCodetext*](/barcode/python-net/api-reference/aspose.barcode.complexbarcode/swissqrcodetext) classes to work with *Swiss QR* codes.  
   
 General rules for creating *Swiss QR Codes* and payment documents are described in the ["Swiss Implementation Guidelines for the QR-bill"](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-en.pdf) standard that relies on the ISO 20022 standard.
 

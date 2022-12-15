@@ -39,7 +39,7 @@ In some cases, distortions caused by excessive scaling of a barcode image can be
 <p align="center"><img src="datamatrix_waved.png" width="20%" height="20%"></p>
 
 ## **Reading Barcodes with Erased or Displaced Bars**
-While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, the barcode library provides two properties: *allow_one_d_wiped_bars_restoration* and *setCheckMore1DVariants* that allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.  
+While scanning or sending barcode images using fax transmission, the problem of displaced or erased bars in 1D barcode labels often appears, especially, in those printed out using ink-jet printers. To resolve this issue, the barcode library provides two properties: *allow_one_d_wiped_bars_restoration* and *check_more_1d_variants* that allow selecting the most suitable recognition option according to the checksum value and other barcode elements. However, it should be noted that enabling these settings may result in incorrect recognition of 1D barcodes.  
   
 <p align="center"><img src="code128_wipedbars.png" width="40%" height="40%"></p>
 
@@ -55,7 +55,7 @@ To read colored barcodes on a colored background, the barcode library provides t
 <p align="center"><img src="qr_color.png" width="15%" height="15%"></p>
 
 ## **Reading Evidently Incorrect Barcodes**
-In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *setAllowIncorrectBarcodes* and *setReadTinyBarcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodeconfidence/) being set to *None*, which means that the correctness of recognition is not guaranteed.  
+In cases when it is necessary just to detect the presence of barcodes regardless of their validity and corresponding recognition correctness, it is possible to enable two special settings called *allow_incorrect_barcodes* and *read_tiny_barcodes*. The first one is used to attempt performing partial barcode recognition even if the reading process has provided incorrect results; in this case, the barcode data is decoded with [*BarCodeConfidence*](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodeconfidence/) being set to *NONE*, which means that the correctness of recognition is not guaranteed.  
   
 The *read_tiny_barcodes* property facilitates reading small barcode labels in large images. It is ignored if the *allow_incorrect_barcodes* property is called passing the *True* value. However, enabling this parameter may result in recognizing false barcodes in place of actual text or tables.  
   
