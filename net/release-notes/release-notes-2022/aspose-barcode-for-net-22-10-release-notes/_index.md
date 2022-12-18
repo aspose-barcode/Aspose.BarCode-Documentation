@@ -7,7 +7,7 @@ url: /net/aspose-barcode-for-net-22-10-release-notes/
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for .NET 22.10](https://downloads.aspose.com/barcode/net/new-releases/aspose.barcode-for-.net-22.10/).
+This article contains release notes information for [Aspose.BarCode for .NET 22.10](https://downloads.aspose.com/barcode/net/new-releases/aspose.barcode-for-.net-22.10/).
 
 {{% /alert %}} 
 ## **All Changes**
