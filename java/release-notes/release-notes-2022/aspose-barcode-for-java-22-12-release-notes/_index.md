@@ -17,6 +17,10 @@ This page contains release notes information for [Aspose.BarCode for Java 22.12]
 |BARCODENET-38380|Add support for HIBC LIC|Enhancement|
 |BARCODENET-38391|Improve DotCode encoder and decoder|Enhancement|
 |BARCODENET-37724|Incorrect generation and recognition DotCode|Bug|
+|BARCODEJAVA-1457|JPG to BarCode: Converting jpg file throws "IllegalAccessError: superclass access check failed" error|Bug|
+|BARCODEJAVA-1507|Exception "java.lang.ArrayIndexOutOfBoundsException:" when generating QR code value|Bug|
+|BARCODEJAVA-1506|Incorrect test result - expected -1 but found -16777216|Bug|
+|BARCODEJAVA-1367|Evaluate PDF417 barcodes reading with minimized time and memory cost|Quality issue|
 
 ## **Public API and Backward Incompatible Changes**
 
@@ -58,7 +62,7 @@ Enhanced support of DotCode symbology
 - Added method com.aspose.barcode.generation.DotCodeParameters.toString():String
 
 - Added method com.aspose.barcode.barcoderecognition.BarCodeExtendedParameters.getOneD():OneDExtendedParameters
-- Added type com.aspose.barcode.barcoderecognition.DotCodeExtendedParameters
+- Added class com.aspose.barcode.barcoderecognition.DotCodeExtendedParameters
 - Added method com.aspose.barcode.barcoderecognition.DotCodeExtendedParameters.getDotCodeStructuredAppendModeBarcodesCount():int
 - Added method com.aspose.barcode.barcoderecognition.DotCodeExtendedParameters.getDotCodeStructuredAppendModeBarcodeId():int
 - Added method com.aspose.barcode.barcoderecognition.DotCodeExtendedParameters.getDotCodeIsReaderInitialization():boolean
