@@ -222,5 +222,3 @@ Enhanced support of DotCode symbology
 - Added field Recognition.DecodeType.HIBC_AZTEC_PAS
 - Added field Recognition.DecodeType.HIBC_DATA_MATRIX_PAS
 - Added field Recognition.DecodeType.HIBCQRPAS
-
-- Added function Recognition.MultyDecodeType.Eexclude(SingleDecodeType):MultyDecodeType
