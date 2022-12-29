@@ -155,7 +155,7 @@ Enhanced support of DotCode symbology
 - Added function ComplexBarcode.HIBCPASCodetext.setDataLocation(number)
 - Added function ComplexBarcode.HIBCPASCodetext.getRecords():array
 - Added function ComplexBarcode.HIBCPASCodetext.addRecord(number, string)
-- Added function ComplexBarcode.HIBCPASCodetext.addRecord(HIBCPASRecord)
+- Added function ComplexBarcode.HIBCPASCodetext.addHIBCPASRecord(HIBCPASRecord)
 - Added function ComplexBarcode.HIBCPASCodetext.clear()
 - Added function ComplexBarcode.HIBCPASCodetext.getBarcodeType()
 - Added function ComplexBarcode.HIBCPASCodetext.getConstructedCodetext():string
