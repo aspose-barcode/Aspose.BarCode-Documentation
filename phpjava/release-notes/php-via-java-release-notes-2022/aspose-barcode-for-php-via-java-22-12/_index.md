@@ -113,10 +113,10 @@ Enhanced support of DotCode symbology
 - Added function ComplexBarcode->HIBCLICSecondaryAndAdditionalDataCodetext->equals(Object)
 - Added function ComplexBarcode->HIBCLICSecondaryAndAdditionalDataCodetext->hashCode()
 - Added class ComplexBarcode->SecondaryAndAdditionalData
-- Added function ComplexBarcode->SecondaryAndAdditionalData->getExpiryDateFormat():HIBCLICDateFormat
-- Added function ComplexBarcode->SecondaryAndAdditionalData->setExpiryDateFormat(HIBCLICDateFormat)
-- Added function ComplexBarcode->SecondaryAndAdditionalData->getExpiryDate():Date
-- Added function ComplexBarcode->SecondaryAndAdditionalData->setExpiryDate(Date)
+- Added function ComplexBarcode->SecondaryAndAdditionalData->getExpiryDateFormat():int
+- Added function ComplexBarcode->SecondaryAndAdditionalData->setExpiryDateFormat(int)
+- Added function ComplexBarcode->SecondaryAndAdditionalData->getExpiryDate():DateTime
+- Added function ComplexBarcode->SecondaryAndAdditionalData->setExpiryDate(DateTime)
 - Added function ComplexBarcode->SecondaryAndAdditionalData->getLotNumber():string
 - Added function ComplexBarcode->SecondaryAndAdditionalData->setLotNumber(string)
 - Added function ComplexBarcode->SecondaryAndAdditionalData->getSerialNumber():string
@@ -151,12 +151,12 @@ Enhanced support of DotCode symbology
 - Added const ComplexBarcode->HIBCLICDateFormat::None
 - Added function ComplexBarcode->ComplexCodetextReader->tryDecodeHIBCPAS(string)
 - Added class ComplexBarcode->HIBCPASCodetext
-- Added function ComplexBarcode->HIBCPASCodetext->setBarcodeType(BaseEncodeType)
+- Added function ComplexBarcode->HIBCPASCodetext->setBarcodeType(int)
 - Added function ComplexBarcode->HIBCPASCodetext->getDataLocation():int
 - Added function ComplexBarcode->HIBCPASCodetext->setDataLocation(int)
 - Added function ComplexBarcode->HIBCPASCodetext->getRecords():array
 - Added function ComplexBarcode->HIBCPASCodetext->addRecord(int, string)
-- Added function ComplexBarcode->HIBCPASCodetext->addRecord(HIBCPASRecord)
+- Added function ComplexBarcode->HIBCPASCodetext->addHIBCPASRecord(HIBCPASRecord)
 - Added function ComplexBarcode->HIBCPASCodetext->clear()
 - Added function ComplexBarcode->HIBCPASCodetext->getBarcodeType()
 - Added function ComplexBarcode->HIBCPASCodetext->getConstructedCodetext():string
