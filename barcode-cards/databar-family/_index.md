@@ -1,5 +1,5 @@
 ---
-title: DataBar Family
+title: DataBar Barcodes
 description: "Overview of the DataBar Barcode Family"
 keywords: "DataBar, data bar barcode, databar barcode type, Create databar barcodes, databar stacked, Read databar codes, what is databar, databar stacked barcodes, generate databar barcode, matrix barcodes, 1D barcodes, stacked linear barcodes, gs1, gs1 barcodes, gs1 databar, databar generator, databar reader, recognise data bar codes, scan databar barcode, databar family, databar expanded, databar limited, databar truncated"
 type: docs

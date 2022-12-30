@@ -3,13 +3,13 @@ title: Code 128
 type: docs
 description: "Overview on the key properties of the Code 128 barcode type"
 keywords: "Code 128, code128, Code 128 barcode type, Create code 128 barcode, Read code 128, what is Code 128, Code 128 barcodes, generate code 128, linear barcodes, 1D sbarcode, code 128 specification"
-weight: 120
+weight: 140
 url: /info-cards/code-128/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code128) and [Generate](https://products.aspose.app/barcode/generate/code128) Code 128 barcodes online. You can check ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
 
 ## **Overview**
-Code 128 is an efficient linear (1D) barcode type with relatively high data density that allows encoding alphanumeric data. It was introduced in 1981 by Ted Williams from Laserlight Corporation to address the issue of storing both textual and numeric information without deteriorating data density. By design, Code 128 enables encoding numerical inputs more efficiently  owing to double-density data compression. It supports validity checks through checksum controls and byte parity verification.
+Code 128 is an efficient linear (1D) barcode type with relatively high data density that allows encoding alphanumeric data. It was introduced in 1981 by Ted Williams from Laserlight Corporation to address the issue of storing both textual and numeric information without deteriorating data density. By design, Code 128 enables encoding numerical inputs more efficiently owing to double-density data compression. It supports validity checks through checksum controls and byte parity verification.
   
 The detailed specification for Code 128 is provided in standard ISO/IEC 15417:2007.
   

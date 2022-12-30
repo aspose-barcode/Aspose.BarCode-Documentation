@@ -1,5 +1,5 @@
 ---
-title: PDF417 Family
+title: PDF417 Barcodes
 description: "General information about the PDF417 barcode family"
 keywords: "PDF417 barcode, pdf 417 barcodes, pdf417 symbology, Create pdf417 barcodes, Read pdf417 barcode, what is pdf417 barcode, pdf 417 barcodes, generate pdf417, matrix barcodes, 2D symbology, pdf417 specification, pdf417 generator, pdf417 reader, recognize pdf 417, scan pdf417"
 type: docs

@@ -1,5 +1,5 @@
 ---
-title: QR Code Family
+title: QR Code and Micro QR Code
 description: "Detailed Information about QR Code Specification"
 keywords: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
 type: docs

@@ -1,6 +1,6 @@
 ---
-title: Aztec Code Family
-description: "General overview on the Aztec Code full-range barcode type"
+title: Aztec Codes
+description: "Definition of the Aztec Code full-range barcode type"
 keywords: "Aztec Code, aztec barcode, aztec code full-range, full range aztec barcode, Create aztec barcodes, Read aztec codes, what is aztec code, aztec barcodes, generate aztec code, matrix barcodes, 2D symbology, 2D barcodes, aztec specification, aztec generator, aztec reader, recognise aztec codes, scan aztec barcode"
 type: docs
 weight: 40

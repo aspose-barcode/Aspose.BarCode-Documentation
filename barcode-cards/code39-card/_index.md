@@ -3,7 +3,7 @@ title: Code 39
 description: "Overview on the main parameters of the Code 39 Barcode Type"
 keywords: "Code 39, code39, Code 39 barcode type, Create code 39 barcode, Read code 39, what is Code39, Code 39 barcodes, generate code39, linear barcodes, 1D barcode, linear barcode type, code39 extended, code 39 specification"
 type: docs
-weight: 110
+weight: 130
 url: /info-cards/code-39/
 ---
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/code39) and [Generate](https://products.aspose.app/barcode/generate/code39) Code 39 barcodes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
