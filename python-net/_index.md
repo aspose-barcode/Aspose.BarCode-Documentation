@@ -8,6 +8,7 @@ is_root: true
 ---
 
 {{% alert color="primary" %}} 
+<img src="aspose_barcode-for-python-net.svg" alt="Aspose.BarCode for Python via .NET" width="20%"/>
 
 **Welcome to Aspose.BarCode for Python via .NET**
 ***Aspose.Barcode for Python via .NET*** is an API that allows developers to quickly and easily embed barcode reading and generation functionality to their Python applications. It supports the most widespread barcode standards and specifications. 
