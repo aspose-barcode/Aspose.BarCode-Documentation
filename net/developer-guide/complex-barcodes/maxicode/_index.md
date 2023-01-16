@@ -1,7 +1,7 @@
 ---
 title: MaxiCode
 type: docs
-weight: 80
+weight: 40
 url: /net/complex-maxicode/
 ---
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}
