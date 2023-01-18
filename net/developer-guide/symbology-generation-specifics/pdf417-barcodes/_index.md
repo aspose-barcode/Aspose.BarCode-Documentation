@@ -1,5 +1,6 @@
 ---
-title: PDF417 Barcode Family
+title: Generate PDF417 Barcodes in C#
+linktitle: PDF417
 type: docs
 description: "Aspose.BarCode for .NET can be used to generate different types of PDF417 barcodes."
 keywords: "Generate PDF417 Barcode, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for .NET, C#"
@@ -15,7 +16,7 @@ The other peculiarity of the *PDF417* barcode family is the extended format of r
   
 |<p align="center">**PDF417 Standard**</p>|<p align="center">**Description**</p>|
 |---|---|
-|[**Basic PDF417**](#pdf417)|Basic *PDF417* symbology that is intended for work with documents of any quality and provides the possibility of laser scanning|
+|[**Basic PDF417**](#pdf417)|Basic *PDF417* that is intended for work with documents of any quality and provides the possibility of laser scanning|
 |[**Micro PDF417**](#micropdf417)|Specialized *PDF417* standard that allows saving print space and is intended for joint use with two-component barcodes based on GS1 composite symbologies or for work with high-quality documents|
 |[**Macro PDF417**](#macropdf417)|*PDF417* barcode type with the possibility to add metainformation|
 |[**Compact PDF417**](#compactpdf417)|*PDF417* standard that can be with or without metainformation and is intended to address space limitations; in such barcodes, the right-side block of metadata is omitted, and the stop pattern is removed. This barcode type does not support laser scanning (only photo scanning can be used) and requires high-quality documents for successful recognition|

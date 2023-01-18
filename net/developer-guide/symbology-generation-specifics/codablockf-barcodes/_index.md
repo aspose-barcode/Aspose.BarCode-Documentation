@@ -1,5 +1,6 @@
 ---
-title: Codablock-F Generation in C#
+title: Generate Codablock-F Barcodes in C#
+linktitle: Codablock-F
 type: docs
 weight: 130
 url: /net/codablockf-barcodes/

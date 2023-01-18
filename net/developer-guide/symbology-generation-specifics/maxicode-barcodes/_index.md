@@ -1,5 +1,6 @@
 ---
 title: Generate MaxiCode Barcodes in C#
+linktitle: MaxiCode
 type: docs
 weight: 80
 url: /net/maxicode-barcodes/
@@ -117,7 +118,7 @@ using (var gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "犬Right狗"))
 ### **Encoding Mode *Bytes***
 The *Bytes* mode is used to encode streams of bytes. Any Unicode symbol presented in the input text will be encoded as 2 bytes with the first byte being the least significant one.
 
-<p align="center"><img src="maxicodeencodemodebytes.png"></p>
+<p align="center"><img src="maxicodeencodemodebytes.png" width="20%" height="20%"></p>
 
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };

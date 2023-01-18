@@ -1,6 +1,6 @@
 ---
-title: Generating Swiss Post Parcel Barcodes in C#
-linktitle: Swiss Post Parcel Barcodes
+title: Generate Swiss Post Parcel Barcodes in C#
+linktitle: Swiss Post Parcel
 type: docs
 description: "Description of Swiss Post Parcel Barcode Type"
 keywords: swisspost parcel barcode, create swiss post barcode, generate swiss post barcode, read swiss post barcode, recognize swiss post codes, swiss post parcel codes

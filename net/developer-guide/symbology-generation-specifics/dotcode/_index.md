@@ -25,9 +25,9 @@ The DotCode standard sets the following restrictions on the number of rows and c
 -	Sum of the numbers of rows and columns in a DotCode barcode must be an odd number.
 It is also possible to define the odd number of rows or columns only. In this case, the second layout parameter will be set automatically. If the manually specified number of rows and columns is not enough to generate a DotCode barcode, an exception will be thrown.  
   
-| |12 Rows|Columns|26 Rows and 29 Columns|
+| |12 Rows|18 Columns|26 Rows and 29 Columns|
 |--|--|--|--|
-| |<p align="center"><img src="dotcoderows12.png"></p>|<p align="center"><img src="dotcodecolumns18.png"></p>|<p align="center"><img src="dotcoderows26columns29.png"></p>|
+| |<p align="center"><img src="dotcoderows12.png" width="40%" height="40%"></p>|<p align="center"><img src="dotcodecolumns18.png" width="40%" height="40%"></p>|<p align="center"><img src="dotcoderows26columns29.png" width="40%" height="40%"></p>|
   
 The following code sample explains how to set the layout for a generated DotCode barcode.
 
@@ -57,12 +57,10 @@ The barcode library supports three different encoding modes to generate DotCode 
 - *ExtendedCodetext*. Besides the main input data, information passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property includes special control words. These words provide extended controls over the data encoding process and allow inserting textual parts with different encodings into a single barcode. 
 To set the required encoding mode, it is necessary to initialize the [*DotCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodeencodemode/) of class [*DotCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/).
 
-### ***Auto* Encoding Mode***
-In the *Auto* encoding mode, the barcode data is encoded using the value passed to the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property. The ISO-8859-1 encoding is applied by default.  
+### ***Auto* Encoding Mode**
+In the *Auto* encoding mode, the barcode data is encoded using the value passed to the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property. The ISO-8859-1 encoding is applied by default. The following code sample shows how to generate DotCode barcode in the *Auto* mode.    
   
-<p align="center"><img src="dotcodeencodemodeauto.png"></p>
-  
-The following code sample shows how to generate DotCode barcode in the *Auto* mode.
+<p align="center"><img src="dotcodeencodemodeauto.png" width="40%" height="40%"></p>
   
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Right狗"))
@@ -75,12 +73,10 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Righ
 }
 ```
 
-### ***Bytes* Encoding Mode***
-The *Bytes* mode is used to encode byte streams. If the input data includes a Unicode symbol, the barcode library encodes it with two bytes.  
+### ***Bytes* Encoding Mode**
+The *Bytes* mode is used to encode byte streams. If the input data includes a Unicode symbol, the barcode library encodes it with two bytes. The code sample below explains how to work with the *Bytes* encoding mode.   
 
-<p align="center"><img src="dotcodeencodemodebytes.png"></p>
-  
-The code sample below explains how to work with the *Bytes* encoding mode.  
+<p align="center"><img src="dotcodeencodemodebytes.png" width="40%" height="40%"></p>  
   
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
@@ -101,11 +97,11 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, codetext
 }
 ```
 
-### **Extended Codetext**
+### ***Extended Codetext* Mode**
 In the *Extended Codetext* mode, the input data passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property contains special control words in addition to main information. Such words activate extended controls over data encoding and enable storing textual parts with different encodings in a single barcode. To generate DotCode barcodes in this format, it is recommended to use class [*DotCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeextcodetextbuilder/). To generate DotCode barcodes in this format, it is recommended to use class [*DotCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeextcodetextbuilder/).   
 The following code sample demonstrate how to use the *Extended Codetext* mode.  
 
-<p align="center"><img src="dotcodeextendedcodetext.png"></p>
+<p align="center"><img src="dotcodeextendedcodetext.png" width="20%" height="20%"></p>
 
 
 ```csharp
@@ -134,11 +130,11 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, codetext
 ### **Structured Append Mode**
 The barcode library supports a special generation mode to create DotCode barcodes with a structured append. This mode allows combining up to 35 DotCode barcodes. To enable this generation mode, it is necessary to initialize the following properties:
 -	[*DotCodeStructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodestructuredappendmodebarcodescount/2) – the number of barcodes to be combined (value from 1 to 35)
--	[*DotCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodestructuredappendmodebarcodeid/) – the position of a barcode in the set (value from 1 to DotCodeStructuredAppendModeBarcodesCount)
+-	[*DotCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodestructuredappendmodebarcodeid/) – the position of a barcode in the set (value from 1 to DotCodeStructuredAppendModeBarcodesCount)  
   
-<p align="center"><img src="dotcodestructuredappendmode.png"></p>
-
-The following code sample shows how to enable the *Structured Append* mode.  
+The following code sample shows how to enable the *Structured Append* mode.    
+  
+<p align="center"><img src="dotcodestructuredappendmode.png" width="60%" height="60%"></p>
 
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"))
@@ -152,11 +148,9 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"
 ```
 
 ## **Aspect Ratio**
-By default, the ratio between X and Y coordinates in a DotCode barcode equals to 1. To manually adjust this ratio with custom values, developers can initialize the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/aspectratio/) property of class [*DotCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/), which is relative to the value of [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/xdimension/).  
+By default, the ratio between X and Y coordinates in a DotCode barcode equals to 1. To manually adjust this ratio with custom values, developers can initialize the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/aspectratio/) property of class [*DotCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/), which is relative to the value of [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/xdimension/). The code sample below explains how to modify the aspect ratio in a generated DotCode barcode.   
 
 <p align="center"><img src="dotcodeaspectratio0.5.png"></p>
-  
-The code sample below explains how to modify the aspect ratio in a generated DotCode barcode.
   
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"))

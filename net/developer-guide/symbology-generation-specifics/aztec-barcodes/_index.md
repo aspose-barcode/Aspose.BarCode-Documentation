@@ -1,5 +1,5 @@
 ---
-title: Aztec Code Barcodes in C#
+title: Aztec Code
 type: docs
 description: "Aspose.BarCode for .NET allows generating square-grid high-density two-dimensional Aztec barcodes."
 keywords: Generate Aztec Barcode, Generate Aztec code, How to Generate Aztec barcodes, Aspose.BarCode for .NET

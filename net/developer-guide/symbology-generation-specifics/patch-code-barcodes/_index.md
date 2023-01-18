@@ -1,5 +1,5 @@
 ---
-title: PatchCode Barcodes
+title: Patch Code Barcodes
 type: docs
 description: "Aspose.BarCode for .NET enables PatchCode barcode generation."
 keywords: "Generate Patch Code Barcode, Create PatchCode, How to Generate Patch Code barcodes, Aspose.BarCode for .NET, C#"

@@ -1,5 +1,6 @@
 ---
-title: Codabar Barcode Generation in C#
+title: Generate Codabar Barcodes in C#
+linktitle: Codabar
 type: docs
 weight: 110
 url: /net/codabar-barcodes/
