@@ -18,7 +18,7 @@ All related information can be found in the articles listed below.
 |2D Types| |   
 |---|---|
 |**Article**|**Description**|
-|[QR Code and Micro QR Code](/barcode/python-net//generate-qr-code/)|Explains how to generate *QR Code* and *Micro QR Code*, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
+|[QR Code and Micro QR Code](/barcode/python-net/generate-qr-code/)|Explains how to generate *QR Code* and *Micro QR Code*, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
 |[PDF417 Barcodes](/barcode/python-net/generate-pdf417-barcodes/)|Describes how to create *PDF417* barcodes of various types, including *Basic PDF417*, *Micro PDF417*, *Macro PDF417*, and *Compact PDF417*, work with different data encoding modes, adjust the aspect ratio and error correction level, use metadata and special parameters, and customize barcode layout|
 |[Data Matrix](/barcode/python-net/generate-datamatrix-barcode/)|Specifies how to generate *DataMatrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
 |[Aztec Code](/barcode/python-net/generate-aztec-code/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
@@ -33,7 +33,7 @@ All related information can be found in the articles listed below.
 |[ITF Barcodes](/barcode/python-net/generate-itf-barcodes/)|Describes how to generate *ITF* barcodes and customize frame styles and quiet zone settings|
 |[Codablock-F](/barcode/python-net/generate-codablockf/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
 |[Patch Code](/barcode/python-net/generate-patch-code/)|Describes how to create *Patch Code* barcodes and pages using different patterns and generation modes|
-|[Code16K](/barcode/python-net)|Specifies how to generate *Code16K* barcodes with different barcode height and quiet zone settings|
+|[Code16K](/barcode/python-net/generate-code16k-barcodes/)|Specifies how to generate *Code16K* barcodes with different barcode height and quiet zone settings|
 |[EAN-2 and EAN-5 as Supplement](/barcode/python-net/generate-supplement-barcodes/)|Explains how to use *EAN 2* and *EAN 5* types for the purpose of supplement barcode generation|
 
 |Postal Types| |

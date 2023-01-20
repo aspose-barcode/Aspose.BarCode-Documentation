@@ -1,5 +1,5 @@
 ---
-title: MaxiCode
+title: Complex MaxiCode Barcodes
 type: docs
 weight: 40
 url: /net/complex-maxicode/
@@ -43,21 +43,24 @@ Class [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.
 The code sample provided below illustrates how to generate *MaxiCode* using the input data where the secondary part is represented as an unstructured message.
 
 ``` csharp
-//create MaxiCode in mode 3 with standard second message
-MaxiCodeCodetextMode3 maxiCodeCodetext = new MaxiCodeCodetextMode3();
-maxiCodeCodetext.PostalCode = "B1050";
+//create MaxiCode in mode 2 with structured second message
+MaxiCodeCodetextMode2 maxiCodeCodetext = new MaxiCodeCodetextMode2();
+maxiCodeCodetext.PostalCode = "524032140";
 maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create standard second message
-MaxiCodeStandartSecondMessage maxiCodeStandartSecondMessage = new MaxiCodeStandartSecondMessage();
-maxiCodeStandartSecondMessage.Message = "Second message";
-maxiCodeCodetext.SecondMessage = maxiCodeStandartSecondMessage;
+//create structured second message
+MaxiCodeStructuredSecondMessage maxiCodeStructuredSecondMessage = new MaxiCodeStructuredSecondMessage();
+maxiCodeStructuredSecondMessage.Add("634 ALPHA DRIVE");
+maxiCodeStructuredSecondMessage.Add("PITTSBURGH");
+maxiCodeStructuredSecondMessage.Add("PA");
+maxiCodeStructuredSecondMessage.Year = 99;
+maxiCodeCodetext.SecondMessage = maxiCodeStructuredSecondMessage;
 
 //encode message
 using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
 {
-    complexGenerator.Save($"{path}MaxiCodeMode3StandardSecondMessage.png");
+     complexGenerator.Save($"{path}MaxiCodeMode2StructuredSecondMessage.png");
 }
 ```
   
@@ -95,18 +98,18 @@ Class [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.
 The code sample below demonstrates how to generate *MaxiCode* passing the input data with the secondary part being formatted as an unstructured message.
 
 ``` csharp
-//create MaxiCode in mode 3 with standard second message
+//create MaxiCode in mode 3 with a standard second message
 MaxiCodeCodetextMode3 maxiCodeCodetext = new MaxiCodeCodetextMode3();
 maxiCodeCodetext.PostalCode = "B1050";
 maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create standard second message
+//create a standard second message
 MaxiCodeStandartSecondMessage maxiCodeStandartSecondMessage = new MaxiCodeStandartSecondMessage();
 maxiCodeStandartSecondMessage.Message = "Second message";
 maxiCodeCodetext.SecondMessage = maxiCodeStandartSecondMessage;
 
-//encode message
+//encode the message
 using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
 {
     complexGenerator.Save($"{path}MaxiCodeMode3StandardSecondMessage.png");
@@ -118,13 +121,13 @@ using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(ma
 The following code sample can be used to create *MaxiCode* with the input data having the secondary part being a structured message.
 
 ``` csharp
-//create MaxiCode in mode 3 with structured second message
+//create MaxiCode in mode 3 with a structured second message
 MaxiCodeCodetextMode3 maxiCodeCodetext = new MaxiCodeCodetextMode3();
 maxiCodeCodetext.PostalCode = "B1050";
 maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create structured second message
+//create a structured second message
 MaxiCodeStructuredSecondMessage maxiCodeStructuredSecondMessage = new MaxiCodeStructuredSecondMessage();
 maxiCodeStructuredSecondMessage.Add("634 ALPHA DRIVE");
 maxiCodeStructuredSecondMessage.Add("PITTSBURGH");
@@ -132,7 +135,7 @@ maxiCodeStructuredSecondMessage.Add("PA");
 maxiCodeStructuredSecondMessage.Year = 99;
 maxiCodeCodetext.SecondMessage = maxiCodeStructuredSecondMessage;
 
-//encode message
+//encode the message
 using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
 {
     complexGenerator.Save($"{path}MaxiCodeMode3StructuredSecondMessage.png");
@@ -163,7 +166,7 @@ To read *MaxiCode* barcode, it is necessary to create an instance of class [*Bar
 The code sample given below shows how to decode a *MaxiCode* barcode with the input data having a structured secondary message.
 
 ``` csharp
-//recognize MaxiCode in mode 2 with standard second message
+//recognize MaxiCode in mode 2 with a standard second message
 using (BarCodeReader reader = new BarCodeReader($"{path}MaxiCodeMode2StandardSecondMessage.png", DecodeType.MaxiCode))
 {
     foreach (BarCodeResult result in reader.ReadBarCodes())

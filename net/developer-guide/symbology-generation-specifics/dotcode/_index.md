@@ -60,7 +60,7 @@ To set the required encoding mode, it is necessary to initialize the [*DotCodeEn
 ### ***Auto* Encoding Mode**
 In the *Auto* encoding mode, the barcode data is encoded using the value passed to the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property. The ISO-8859-1 encoding is applied by default. The following code sample shows how to generate DotCode barcode in the *Auto* mode.    
   
-<p align="center"><img src="dotcodeencodemodeauto.png" width="40%" height="40%"></p>
+<p align="center"><img src="dotcodeencodemodeauto.png" width="20%" height="20%"></p>
   
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Right狗"))
@@ -76,7 +76,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Righ
 ### ***Bytes* Encoding Mode**
 The *Bytes* mode is used to encode byte streams. If the input data includes a Unicode symbol, the barcode library encodes it with two bytes. The code sample below explains how to work with the *Bytes* encoding mode.   
 
-<p align="center"><img src="dotcodeencodemodebytes.png" width="40%" height="40%"></p>  
+<p align="center"><img src="dotcodeencodemodebytes.png" width="20%" height="20%"></p>  
   
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
@@ -134,7 +134,7 @@ The barcode library supports a special generation mode to create DotCode barcode
   
 The following code sample shows how to enable the *Structured Append* mode.    
   
-<p align="center"><img src="dotcodestructuredappendmode.png" width="60%" height="60%"></p>
+<p align="center"><img src="dotcodestructuredappendmode.png" width="20%" height="20%"></p>
 
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"))

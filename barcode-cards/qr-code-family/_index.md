@@ -9,7 +9,7 @@ url: /info-cards/qr-code/
 
 {{% alert color="primary" %}}[Read](https://products.aspose.app/barcode/recognize/qr) and [Generate](https://products.aspose.app/barcode/generate/qr) QR Codes online. You can test the quality of ***Aspose.BarCode*** functionality and view results.{{% /alert %}}
   
-{{% alert color="primary" %}}[Generate](https://products.aspose.app/barcode/wifi-qr) Wi-Fi QR Codes online for free: share Wi-Fi password in QR Codes{{% /alert %}}
+{{% alert color="primary" %}}[Generate Wi-Fi QR Codes](https://products.aspose.app/barcode/wifi-qr) online for free: share Wi-Fi password in QR Codes{{% /alert %}}
 
 ## **Overview**
 QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily scanned by smartphones and other devices equipped with digital image sensors. The idea has been proposed as an improvement of conventional linear barcode types to adress the need to store much larger amounts of information. This barcode type provides a very high recognition speed and increased encoding capacity. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. The operations of scanning and decoding can be executed using smartphone cameras and special scanner applications (mobile tagging) that are usually embedded into modern mobile devices. After capturing a QR label, a special application converts it into readable text or more often, into an URL link. 

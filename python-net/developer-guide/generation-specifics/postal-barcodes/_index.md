@@ -3,7 +3,7 @@ title: Postal Barcodes
 linktitle: Postal Barcodes
 type: docs
 weight: 170
-url: /python-net/postal-barcodes/
+url: /python-net/generate-postal-barcodes/
 
 ---
 {{% alert color="primary" %}}[Generate USPS Planet and](https://products.aspose.app/barcode/generate/planet) [USPS Postnet Barcodes online](https://products.aspose.app/barcode/generate/postnet). You can check the quality of ***Aspose.BarCode*** generation for postal barcodes and view the results online.{{% /alert %}}
