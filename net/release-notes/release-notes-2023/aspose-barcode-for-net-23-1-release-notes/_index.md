@@ -4,7 +4,7 @@ date: "2023-01-20"
 author: "Konstantin Alkhimov"
 type: docs
 weight: 10
-url: /net/aspose-barcode-for-net-22-12-release-notes/
+url: /net/aspose-barcode-for-net-23-1-release-notes/
 description: A summary of recent changes, enhancements and bug fixes in Aspose.BarCode for .NET 23.1.0 (January 2023) release.
 keywords:
 - 2023
