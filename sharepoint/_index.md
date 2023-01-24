@@ -13,7 +13,7 @@ is_root: true
 
 **Welcome to Aspose.BarCode for SharePoint**
 
-Aspose.BarCode for SharePoint is a flexible solution that allows you to add barcode type columns to SharePoint lists.
+Aspose.BarCode for SharePoint is a flexible solution that allows adding barcode type columns to SharePoint lists.
 
 Aspose.BarCode for SharePoint is designed to be used with Microsoft SharePoint Server 2010. There are no additional system requirements.
 

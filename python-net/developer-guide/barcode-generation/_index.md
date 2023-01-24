@@ -14,7 +14,7 @@ This documentation chapter is dedicated to barcode generation basics and the rel
 |[Customizing Barcode Appearance](/barcode/python-net/manage-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
 |[Managing Barcode Parameters](/barcode/python-net/barcode-parameters/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
 |[Barcode Text Settings](/barcode/python-net/barcode-text-settings/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
-|[Adjusting Barcode Color Scheme](/barcode/python-net/customize-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|
+|[Adjusting Barcode Color Scheme](/barcode/python-net/change-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|
 |[Saving Generated Barcodes](/barcode/python-net/save-generated-barcodes/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
 |[Checksum Settings in 1D Barcodes](/barcode/python-net/barcode-checksum-settings/)|Describes checksum settings for 1D barcodes|
 

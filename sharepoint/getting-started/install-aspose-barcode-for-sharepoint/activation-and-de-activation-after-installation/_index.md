@@ -5,14 +5,14 @@ weight: 20
 url: /sharepoint/activation-and-de-activation-after-installation/
 ---
 
-{{% alert color="primary" %}} 
+
 
 After installing Aspose.BarCode for SharePoint, activate the features at the root website. This article explains how to de-activate or activate Aspose.BarCodes.
 
 The installation process automatically activate the Aspose.BarCode for SharePoint features. 
 
-{{% /alert %}} 
-### **Accessing the Site Collection Features**
+
+## **Accessing the Site Collection Features**
 To activate or de-activate features:
 
 1. Click the **Site Actions** menu and select **Site Settings**.
