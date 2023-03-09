@@ -32,13 +32,13 @@ The first way to set the required version of *QR Code* or *Micro QR Code* is to 
 The second way to determine the desired *QR Code* generation mode is applicable when [*QrVersion*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.q_r_version/) remains set to *AUTO*. In this case, the *setQrEncodeType* method can be used to select the barcode type according to the input data size. The [*QREncodeType*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.q_r_encode_type/) enum can take the following values:
 
 - *AUTO*: firstly, the library aims to identify the most appropriate *Micro QR Code* version from M1 to M4. If no suitable version is found, the library iterates over supported *QR Code* versions from *Version 01* to *Version 40*. If the data to be encoded does not fit to the data capacity of *Version 40*, an exception is thrown.
-- *FORSE_QR*: the most appropriate *QR Code* version is automatically selected among options from *Version 01* to *Version 40*.
-- *FORSE_MICRO_QR*: the library aims at selecting the most applicable *Micro QR Code* version from M1 to M4. If the input data exceeds the data capacity of the M4 verion, an exception is thrown. 
+- *FORCE_QR*: the most appropriate *QR Code* version is automatically selected among options from *Version 01* to *Version 40*.
+- *FORCE_MICRO_QR*: the library aims at selecting the most applicable *Micro QR Code* version from M1 to M4. If the input data exceeds the data capacity of the M4 verion, an exception is thrown. 
   
 ### **Automatic Version Setting**
 The following sample barcodes images are given to explain how to create different types of *QR Code* using varios automatic version setting modes.
   
-|Generation Mode|*AUTO*|*FORSE_QR*|*FORSE_MICRO_QR*|
+|Generation Mode|*AUTO*|*FORCE_QR*|*FORCE_MICRO_QR*|
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
   

@@ -31,13 +31,13 @@ The first option is to initialize the [*QrVersion*](https://reference.aspose.com
 The second option can be used when [*QrVersion*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) is set to *Auto*. In this case, the [*QrEncodeType*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) field can be initialized to select the barcode type according to the input data size. This property can take the following values:
 
 - *Auto*. First, the most suitable *Micro QR Code* version (from M1 to M4) is searched; then, *QR Code* versions (from *Version01* to *Version40*) are iterated over to find the most appropriate one. If the capacity of *Version40* is not sufficient for the input information, an exception is thrown.
-- *ForseQR*. The most suitable *QR Code* version (from *Version01* to *Version40*) is set.
-- *ForseMicroQR*. The most suitable *Micro QR Code* version (from *M1* to *M4*) is selected. If the capacity of *M4* is not sufficient to encode the inputted data, an exception is thrown. 
+- *ForceQR*. The most suitable *QR Code* version (from *Version01* to *Version40*) is set.
+- *ForceMicroQR*. The most suitable *Micro QR Code* version (from *M1* to *M4*) is selected. If the capacity of *M4* is not sufficient to encode the inputted data, an exception is thrown. 
   
 ### **Automatic Sizing**
 The code sample and barcode images below are provided to illustrate how to generate *QR Code* barcodes of various types using automatic size settings.
   
-|<p align="center">**Size Setting Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***ForseQR***</p>|<p align="center">***ForseMicroQR***</p>|
+|<p align="center">**Size Setting Mode**</p>|<p align="center">***Auto***</p>|<p align="center">***ForceQR***</p>|<p align="center">***ForceMicroQR***</p>|
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
   
@@ -49,10 +49,10 @@ gen.Parameters.Barcode.QR.QrVersion = QRVersion.Auto;
 //Set Auto QR encode type
 gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.Auto;
 gen.Save($"{path}QREncodeTypeAuto.png", BarCodeImageFormat.Png);
-//Set ForceMicroQR QR encode type
+//Set the ForceMicroQR QR encode type
 gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceMicroQR;
 gen.Save($"{path}QREncodeTypeForceMicroQR.png", BarCodeImageFormat.Png);
-//Set ForceQR QR encode type
+//Set the ForceQR QR encode type
 gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceQR;
 gen.Save($"{path}QREncodeTypeForceQR.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
@@ -90,7 +90,7 @@ The *Auto* data encoding mode utilizes the information from the [*CodeTextEncodi
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 Console.OutputEncoding = Encoding.Unicode;
-//set encode mode to Auto
+//set the encode mode to Auto
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Auto;
 //set CodeText encoding to UTF8
 gen.Parameters.Barcode.QR.CodeTextEncoding = Encoding.UTF8;

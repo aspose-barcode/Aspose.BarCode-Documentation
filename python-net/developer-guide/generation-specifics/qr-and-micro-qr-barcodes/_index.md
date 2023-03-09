@@ -11,7 +11,7 @@ url: /python-net/generate-qr-code/
 ## **Overview**
 *QR Code* corresponds to a group of 2D square types that benefits from high data density and allows encoding streams of bytes and textual data composed of Unicode symbols. ***Aspose.BarCode for Python via .NET*** supports Extended Channel Interpretation (ECI) to encode Unicode data and provides various encoding modes; UTF8 is one of the most widely used encoding modes.  
   
-Reserving the minimum possible amount of data for error correction, the *QR Code* standard can be used to encode at most 7,089 numerical digits or 4,296 alphanumeric characters or 2,953 bytes. The other standard, *Micro QR Code*, allows encoding up to 35 numerical digits or 21 alphanumeric characters or 15 bytes. *Micro QR Code* serves to create considerably small *QR Code* images. However, it does not enable Extended Channel Interpretation (ECI) and does not allow encoding Unicode characters. In particular, *Micro Qr Code* barcodes corresponding to the *M1* version can encode at most five numerical digits; the *M2* version allows encoding up to ten numerical or six alphanumeric characters. This encoding capacity is usually suitable to work with industrial markers.  
+Reserving the minimum possible amount of data for error correction, the *QR Code* standard can be used to encode at most 7,089 numerical digits or 4,296 alphanumeric characters or 2,953 bytes. The other standard, *Micro QR Code*, allows encoding up to 35 numerical digits or 21 alphanumeric characters or 15 bytes. *Micro QR Code* serves to create considerably small *QR Code* images. However, it does not enable Extended Channel Interpretation (ECI) and does not allow encoding Unicode characters. In particular, *Micro QR Code* barcodes corresponding to the *M1* version can encode at most five numerical digits; the *M2* version allows encoding up to ten numerical or six alphanumeric characters. This encoding capacity is usually suitable to work with industrial markers.  
 
 The main advantages of the *QR Code* symbology can be outlined as follows:
 - large data density
@@ -33,13 +33,13 @@ The first way to set the required version of *QR Code* or *Micro QR Code* is to 
 The second way to determine the desired *QR Code* generation mode is applicable when [*QrVersion*](/barcode/python-net/api-reference/aspose.barcode.generation/qrversion/) remains set to *AUTO*. In this case, the *qr_encode_type* property can be used to select the barcode type according to the input data size. The [*QREncodeType*](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodetype/) enum can take the following values:
 
 - *AUTO*: firstly, the library aims to identify the most appropriate *Micro QR Code* version from M1 to M4. If no suitable version is found, the library iterates over supported *QR Code* versions from *Version 01* to *Version 40*. If the data to be encoded does not fit the data capacity of *Version 40*, an exception is thrown.
-- *FORSE_QR*: the most appropriate *QR Code* version is automatically selected among options from *Version 01* to *Version 40*.
-- *FORSE_MICRO_QR*: the library aims at selecting the most applicable *Micro QR Code* version from M1 to M4. If the input data exceeds the data capacity of the M4 version, an exception is thrown. 
+- *FORCE_QR*: the most appropriate *QR Code* version is automatically selected among options from *Version 01* to *Version 40*.
+- *FORCE_MICRO_QR*: the library aims at selecting the most applicable *Micro QR Code* version from M1 to M4. If the input data exceeds the data capacity of the M4 version, an exception is thrown. 
   
 ### **Automatic Version Setting**
 The following barcode images are given to explain how to create different types of *QR Code* using various automatic version setting modes.
   
-|Generation Mode|***AUTO***|***FORSE_QR***|***FORSE_MICRO_QR***|
+|Generation Mode|***AUTO***|***FORCE_QR***|***FORCE_MICRO_QR***|
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
      
