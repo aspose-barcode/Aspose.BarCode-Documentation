@@ -14,7 +14,7 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
-|BARCODENET-37820|Investigate replacing System.Drawing.Common to Aspose.Drawing for .NET|Enhancement|
+|BARCODEJAVA-1539|The DotCode type image obtained from BarcodeGenerator is not recognized|Bug|
 |BARCODENET-37948|Investigate replacement of Reed-Solomon library|Enhancement|
 
 
