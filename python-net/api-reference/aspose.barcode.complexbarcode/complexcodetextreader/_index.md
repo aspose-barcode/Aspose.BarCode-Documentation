@@ -18,6 +18,9 @@ The ComplexCodetextReader type exposes the following members:
 |try_decode_swiss_qr(encoded_codetext)|Decodes SwissQR codetext.|
 |try_decode_mailmark_2d(encoded_codetext)|Decodes Royal Mail Mailmark 2D codetext.|
 |try_decode_mailmark(encoded_codetext)|Decodes Royal Mail Mailmark 2D codetext.|
+|try_decode_maxi_code(maxi_code_mode, encoded_codetext)|Decodes MaxiCode codetext.|
+|try_decode_hibclic(encoded_codetext)|Decodes HIBC LIC codetext.|
+|try_decode_hibcpas(encoded_codetext)|Decodes HIBC PAS codetext.|
 
 ### See Also
 

@@ -3,7 +3,7 @@ title: OneDExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 160
+weight: 180
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/onedextendedparameters/
 ---
 

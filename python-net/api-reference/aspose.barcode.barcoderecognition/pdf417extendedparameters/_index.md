@@ -3,7 +3,7 @@ title: Pdf417ExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 170
+weight: 190
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/pdf417extendedparameters/
 ---
 
@@ -25,6 +25,7 @@ The Pdf417ExtendedParameters type exposes the following members:
 |macro_pdf_417_addressee|Macro PDF417 addressee name (optional).|
 |macro_pdf_417_time_stamp|Macro PDF417 time stamp (optional).|
 |macro_pdf_417_checksum|Macro PDF417 checksum (optional).|
+|macro_pdf_417_terminator|Indicates whether the segment is the last segment of a Macro PDF417 file.|
 
 ### See Also
 

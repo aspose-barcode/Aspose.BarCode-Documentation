@@ -27,6 +27,8 @@ The Aspose.BarCode.BarCodeRecognition contains tools for the 1D/2D barcodes reco
 |[Code128ExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/code128extendedparameters/)|Stores special data of Code128 recognized barcode|
 |[DataBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/databarextendedparameters/)|Stores a DataBar additional information of recognized barcode|
 |[DecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/)|Specify the type of barcode to read.|
+|[DotCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/dotcodeextendedparameters/)|Stores special data of DotCode recognized barcode|
+|[MaxiCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/maxicodeextendedparameters/)|Stores a MaxiCode additional information of recognized barcode|
 |[MultyDecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/multydecodetype/)|Composite decode type.|
 |[OneDExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/onedextendedparameters/)|Stores special data of 1D recognized barcode like separate codetext and checksum|
 |[Pdf417ExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/pdf417extendedparameters/)|Stores a MacroPdf417 metadata information of recognized barcode|

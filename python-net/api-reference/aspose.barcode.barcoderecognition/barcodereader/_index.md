@@ -34,14 +34,10 @@ The BarCodeReader type exposes the following members:
 | :- | :- |
 |processor_settings|Gets a settings of using processor cores.|
 |timeout|Gets or sets the timeout of recognition process in milliseconds.|
-|checksum_validation|Enable checksum validation during recognition for 1D barcodes.<br/>        Default is treated as Yes for symbologies which must contain checksum, as No where checksum only possible.<br/>        Checksum never used: Codabar<br/>        Checksum is possible: Code39 Standard/Extended, Standard2of5, Interleaved2of5, Matrix2of5, ItalianPost25, DeutschePostIdentcode, DeutschePostLeitcode, VIN<br/>        Checksum always used: Rest symbologies|
-|strip_fnc|Strip FNC1, FNC2, FNC3 characters from codetext. Default value is false.|
-|customer_information_interpreting_type|Gets or sets the Interpreting Type for the Customer Information of AustralianPost BarCode.Default is CustomerInformationInterpretingType.Other.|
 |found_bar_codes|Gets recognized [BarCodeResult](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderesult/)s array|
 |found_count|Gets recognized barcodes count|
 |quality_settings|QualitySettings allows to configure recognition quality and speed manually.<br/>            You can quickly set up QualitySettings by embedded presets: HighPerformance, NormalQuality, <br/>            HighQuality, MaxBarCodes or you can manually configure separate options.<br/>            Default value of QualitySettings is NormalQuality.|
 |barcode_settings|The main BarCode decoding parameters. Contains parameters which make influence on recognized data.|
-|detect_encoding|A flag which force engine to detect codetext encoding for Unicode codesets.|
 ## Methods
 | Name | Description |
 | :- | :- |

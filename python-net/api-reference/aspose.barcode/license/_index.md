@@ -19,8 +19,8 @@ The License type exposes the following members:
 ## Methods
 | Name | Description |
 | :- | :- |
-|set_license(license_name)|Licenses the component.|
-|set_license(stream)|Licenses the component.|
+|set_license(license_name)|Licenses the library.|
+|set_license(stream)|Licenses the library.|
 
 ### See Also
 

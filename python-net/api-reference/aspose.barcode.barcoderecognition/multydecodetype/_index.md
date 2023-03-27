@@ -3,7 +3,7 @@ title: MultyDecodeType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 150
+weight: 170
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/multydecodetype/
 ---
 
@@ -32,6 +32,7 @@ The MultyDecodeType type exposes the following members:
 |try_parse(parsing_type, result)|Converts the string representation of a MultyDecodeType to its instance.<br/>            A return value indicates whether the conversion succeeded or failed.|
 |contains_any(decode_types)|Is contain any of types|
 |add(single_type)|Adds one more [SingleDecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/singledecodetype/) to the MultyDecodeType.|
+|exclude(single_type)|Excludes [SingleDecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/singledecodetype/) from the MultyDecodeType and returns new MultyDecodeType instance.|
 |contains_all(barcode_types)|Check if this contains all types from barcode types.|
 |get_single_types()|Represents a list of single types.|
 

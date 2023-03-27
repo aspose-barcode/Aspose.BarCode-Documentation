@@ -15,12 +15,8 @@ The BarcodeParameters type exposes the following members:
 ## Properties
 | Name | Description |
 | :- | :- |
-|x_dimension|x-dimension is the smallest width of the unit of BarCode bars or spaces.<br/>            Increase this will increase the whole barcode image width.<br/>            Ignored if [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
-|bar_height|Height of 1D barcodes' bars in [Unit](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) value.<br/>            Ignored if [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
-|auto_size_mode|Specifies the different types of automatic sizing modes.<br/>            Default value: AutoSizeMode.None.|
-|bar_code_height|BarCode image height when [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
-|bar_code_width|BarCode image width when [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
-|fore_color|Bars color.<br/>            Default value: Color.Black.|
+|x_dimension|x-dimension is the smallest width of the unit of BarCode bars or spaces.<br/>            Increase this will increase the whole barcode image width.<br/>            Ignored if [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/basegenerationparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
+|bar_height|Height of 1D barcodes' bars in [Unit](/barcode/python-net/api-reference/aspose.barcode.generation/unit/) value.<br/>            Ignored if [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/basegenerationparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
 |bar_color|Bars color.<br/>            Default value: Color.Black.|
 |padding|Barcode paddings.<br/>            Default value: 5pt 5pt 5pt 5pt.|
 |checksum_always_show|Always display checksum digit in the human readable text for Code128 and GS1Code128 barcodes.|

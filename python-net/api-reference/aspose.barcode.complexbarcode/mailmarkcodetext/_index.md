@@ -3,7 +3,7 @@ title: MailmarkCodetext
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 70
+weight: 130
 url: /python-net/api-reference/aspose.barcode.complexbarcode/mailmarkcodetext/
 ---
 

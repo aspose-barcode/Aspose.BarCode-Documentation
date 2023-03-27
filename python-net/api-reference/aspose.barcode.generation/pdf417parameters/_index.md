@@ -3,7 +3,7 @@ title: Pdf417Parameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 250
+weight: 270
 url: /python-net/api-reference/aspose.barcode.generation/pdf417parameters/
 ---
 
@@ -33,6 +33,7 @@ The Pdf417Parameters type exposes the following members:
 |code_text_encoding|Gets or sets the encoding of codetext.<br/>            Default value: UTF-8|
 |pdf_417eci_encoding|Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details<br/>            about the used references for encoding the data in the symbol. Not applied for Macro PDF417 text fields.<br/>            Current implementation consists all well known charset encodings.|
 |pdf_417_macro_eci_encoding|Extended Channel Interpretation Identifiers. Applies for Macro PDF417 text fields.|
+|pdf_417_macro_terminator|Used to tell the encoder whether to add Macro PDF417 Terminator (codeword 922) to the segment. <br/>            Applied only for Macro PDF417.|
 |is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol<br/>            as programming for reader initialization.|
 |code_128_emulation|Function codeword for Code 128 emulation. Applied for MicroPDF417 only.  Ignored for PDF417 and MacroPDF417 barcodes.|
 

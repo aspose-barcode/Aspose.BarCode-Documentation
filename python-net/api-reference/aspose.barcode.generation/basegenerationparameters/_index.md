@@ -15,6 +15,7 @@ The BaseGenerationParameters type exposes the following members:
 ## Properties
 | Name | Description |
 | :- | :- |
+|use_anti_alias|Gets or sets a value indicating whether is used anti-aliasing mode to render image|
 |back_color|Background color of the barcode image.<br/>            Default value: Color.White.<br/>            See aspose.pydrawing.Color.|
 |resolution|Gets or sets the resolution of the BarCode image.<br/>            One value for both dimensions.<br/>            Default value: 96 dpi.|
 |rotation_angle|BarCode image rotation angle, measured in degree, e.g. RotationAngle = 0 or RotationAngle = 360 means no rotation.<br/>            If RotationAngle NOT equal to 90, 180, 270 or 0, it may increase the difficulty for the scanner to read the image.<br/>            Default value: 0.|

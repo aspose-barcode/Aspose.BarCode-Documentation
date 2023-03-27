@@ -83,7 +83,18 @@ The DecodeType type exposes the following members:
 |CODE32|Specifies that the data should be decoded with Code32 blank specification|
 |DATA_LOGIC_2OF_5|Specifies that the data should be decoded with DataLogic 2 of 5 blank specification|
 |DOT_CODE|Specifies that the data should be decoded with DotCode blank specification|
+|GS1_DOT_CODE|Specifies that the data should be decoded with GS1 DotCode blank specification|
 |DUTCH_KIX|Specifies that the data should be decoded with DotCode blank specification|
+|HIBC_CODE_39LIC|Specifies that the data should be decoded with HIBC LIC Code39 blank specification|
+|HIBC_CODE_128LIC|Specifies that the data should be decoded with HIBC LIC Code128 blank specification|
+|HIBC_AZTEC_LIC|Specifies that the data should be decoded with HIBC LIC Aztec blank specification|
+|HIBC_DATA_MATRIX_LIC|Specifies that the data should be decoded with HIBC LIC DataMatrix blank specification|
+|HIBCQRLIC|Specifies that the data should be decoded with HIBC LIC QR blank specification|
+|HIBC_CODE_39PAS|Specifies that the data should be decoded with HIBC PAS Code39 blank specification|
+|HIBC_CODE_128PAS|Specifies that the data should be decoded with HIBC PAS Code128 blank specification|
+|HIBC_AZTEC_PAS|Specifies that the data should be decoded with HIBC PAS Aztec blank specification|
+|HIBC_DATA_MATRIX_PAS|Specifies that the data should be decoded with HIBC PAS DataMatrix blank specification|
+|HIBCQRPAS|Specifies that the data should be decoded with HIBC PAS QR blank specification|
 |TYPES_1D|Specifies that data will be checked with all of 1D barcode symbologies|
 |TYPES_2D|Specifies that data will be checked with all of 2D barcode symbologies|
 |POSTAL_TYPES|Specifies that data will be checked with all of 1.5D Postal barcode symbologies, like Planet, Postnet, AustraliaPost, OneCode, RM4SCC, DutchKIX|
