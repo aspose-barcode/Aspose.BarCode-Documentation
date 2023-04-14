@@ -5,7 +5,7 @@ weight: 20
 url: /reportingservices/barcode-types-and-image-formats/
 ---
 ## **Supported Barcode Types**
-***Aspose.BarCode for Reporting Services*** supports over 60 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries. These include linear (1D), Postal and 2D barcode symbols.
+***Aspose.BarCode for Reporting Services*** supports over 70 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries. These include linear (1D), Postal and 2D barcode symbols.
 
 ### **Linear (1D) barcodes**
 ***Linear barcode types*** is a first generation of one-dimensional barcodes that consists from bars and spaces of various widths that create specific patterns. Linear barcodes, supported by ***Aspose.BarCode for Reporting Services***, include following barcode types:

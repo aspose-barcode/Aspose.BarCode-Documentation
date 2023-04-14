@@ -14,3 +14,4 @@ To find out more about ***Aspose.BarCode for Reporting Services*** development p
 - [BarcodeGenerator Class](/barcode/reportingservices/barcodegenerator-class/) – provides information about BarcodeGenerator Class and bacode label generation with Custom Code.
 - [Display BarCodes in Report Header and Footer](/barcode/reportingservices/display-barcodes-in-report-header-and-footer/) – provides information about barcode label generation in report header or footer.
 - [Dynamically Display Barcodes in Table](/barcode/reportingservices/dynamically-display-barcodes-in-table/) – provides information about hiding or showing barcode with report expressions.
+- [Migration from obsolete Barcode Visual Component](/barcode/reportingservices/migration-from-obsolete-barcode-visual-component/) – provides information about migrating from obsolete Barcode Visual Component.
