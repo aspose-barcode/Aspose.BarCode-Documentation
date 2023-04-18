@@ -34,12 +34,12 @@ This option suggests adding a reference to a NuGet package through editing the s
 <Project Sdk="Microsoft.NET.Sdk">
 	<!--Reference to Aspose.Barcode-->
 	<ItemGroup>
-		<PackageReference Include="Aspose.BarCode" Version="21.10.0.0" />
+		<PackageReference Include="Aspose.BarCode" Version="23.3.1" />
 	</ItemGroup>	
 	<!--Reference to .Net Core libraries if .Net Core application-->
 	<ItemGroup Condition="$(DefineConstants.Contains(NETCOREAPP))">
-		<PackageReference Include="System.Drawing.Common" Version="5.0.2" />
-		<PackageReference Include="System.Text.Encoding.CodePages" Version="5.0.0" />
+		<PackageReference Include="Aspose.Drawing.Common" Version="23.3.0" />
+		<PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
 	</ItemGroup>	
 </Project>
 {{< /highlight >}}

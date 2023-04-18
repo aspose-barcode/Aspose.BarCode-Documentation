@@ -4,7 +4,7 @@ type: docs
 weight: 50
 url: /reportingservices/migration-from-obsolete-barcode-visual-component/
 ---
-## Overview
+## **Overview**
 
 In this section we overview how to migrate from obsolete ***Barcode Visual Component***, which is used in [***Aspose.Barcode for Reporting Services***](https://releases.aspose.com/barcode/reportingservices/) 20.6 and previous versions, to ***BarcodeGenerator Visual Component***, which is used in ***Aspose.Barcode for Reporting Services*** 21.3 and newer versions.
 
@@ -14,7 +14,7 @@ This can lead to the situation when barcode components from previously created r
 
 In case of using ***BarCodeBuilder*** builder in Custom Code of previous reports you can render barcode image with [***BarcodeGenerator*** class](/barcode/reportingservices/barcodegenerator-class/).
 
-## Report with obsolete Barcode Visual Component
+## **Report with obsolete Barcode Visual Component**
 
 As an example, we created project with obsolete ***Barcode Visual Component*** which you can [download](vsrep2019_old.zip). The visual representation you can see in the table:
 
@@ -22,7 +22,7 @@ As an example, we created project with obsolete ***Barcode Visual Component*** w
 | :- | :- |
 | <img style="border:1px solid black;" src="oldreport_design.png" alt="Report with Barcode Visual Component Design in Visual Studio" /> | <img style="border:1px solid black;" src="oldreport_ssrs.png" alt="Report with Barcode Visual Component Preview in SQL Server Reporting Services Image" /> |
 
-## Error with report opening with Barcode Visual Component
+## **Error with report opening with Barcode Visual Component**
 
 
 In case of opening of the project with obsolete ***Barcode Visual Component*** in ***Visual Studio*** or ***SQL Server Reporting Services*** with installed ***BarcodeGenerator Visual Component*** you can see the following error message or just blank image on the place of the barcode.
@@ -31,7 +31,7 @@ In case of opening of the project with obsolete ***Barcode Visual Component*** i
 | :- | :- |
 | <img style="border:1px solid black;" src="errorreport_design.png" alt="Report with Barcode Visual Component With Error Design in Visual Studio" /> | <img style="border:1px solid black;" src="errorreport_ssrs.png" alt="Report with Barcode Visual Component With Error Preview in SQL Server Reporting Services Image" /> |
 
-## How to fix report
+## **How to fix report**
 
 You can fix the issue in two ways:
 - rename ***Barcode*** type in all of barcode reports components to ***BarcodeGenerator***;
@@ -44,7 +44,7 @@ Both of these ways make your reports workable with basic parameters like Barcode
 | <img style="border:1px solid black;" src="fixedreport_design.png" alt="Report with BarcodeGenerator Visual Component Fixed Design in Visual Studio" /> | <img style="border:1px solid black;" src="fixedreport_ssrs.png" alt="Report with BarcodeGenerator Visual Component Fixed Preview in SQL Server Reporting Services Image" /> |
 
 
-### Replace Barcode to BarcodeGenerator
+### **Replace Barcode to BarcodeGenerator**
 
 The simplest way to resolve this problem is directly opening ***“x.rdl”*** report code and manually rename the component type from ***Barcode*** to ***BarcodeGenerator***. However, you have to do this for every ***Barcode*** component in any old report.
 {{< highlight xml>}}
@@ -64,7 +64,7 @@ The simplest way to resolve this problem is directly opening ***“x.rdl”*** r
 </Report>
 {{< /highlight >}}
 
-### Add Barcode to config files
+### **Add Barcode to config files**
 
 Other way, you can manually add ***Barcode*** component mapping to ***Visual Studio*** and ***SQL Server Reporting Services*** configuration files. 
 
@@ -150,7 +150,7 @@ For ***SQL Server Reporting Services*** you need to add the following code to:
 </configuration>
 {{< /highlight >}}
 
-## Mapping of the main properties
+## **Mapping of the main properties**
 
 ***Barcode*** and ***BarcodeGenerator Visual Components*** have custom properties which can have different names but can do the same. The properties can be manually edited in CustomProperties RDL code or setup by ***Property*** window of ***BarcodeGenerator*** component. We provide the table which describe the properties from both components, their values and descriptions.
 
@@ -173,7 +173,7 @@ In case of property has default value, the property is removed from CustomProper
 | _borderColor | _border_Color | Black | Color of the barcode border. |
 | _borderVisible | _border_Visible <br/> _border_Width | True <br/> 1px | Set the barcode border visibility state and size of the border. |
 
-## Final migration result
+## **Final migration result**
 
 The fully fixed barcode you can [download](vsrep2019_edited.zip) and view the rendering result in the following table:
 

@@ -10,7 +10,7 @@ url: /net/product-features/
 ## **General Features**
 - Barcode generation
 - Barcode recognition
-- Symbology specification (60+ symbologies: 1D, 2D, and postal types)
+- Symbology specification (70+ symbologies: 1D, 2D, and postal types)
 - Managing barcode appearance-related parameters
 - Image rotation
 - Encoding and decoding non-English characters in 2D types

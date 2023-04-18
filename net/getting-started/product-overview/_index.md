@@ -10,18 +10,19 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ## **Product Description**
 
-***Aspose.BarCode for .NET*** is a multifunctional component library implemented through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear and matrix) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 60 symbologies (1D, 2D including QR codes, and postal ones). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
+***Aspose.BarCode for .NET*** is a multifunctional component library implemented through Managed C# to address various barcode processing tasks. It allows deploying generation and recognition functionality for different barcode types (linear and matrix) at any angle in a fast and easy way. This library enables compatibility with most of the existing barcode specifications and standards, supporting over 70 symbologies (1D, 2D including QR codes, and postal ones). The detailed listing of all available barcode symbologies is provided in [Barcode Types and Image Formats](/barcode/net/barcode-types-and-image-formats/).  
   
-***Aspose.BarCode for .NET*** can be used for development in three ways: through a console application, Windows Forms, or Windows Presentation Foundation (WPF). For developers who want to create barcodes in the backend, the library provides the corresponding class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator). Alternatively, using GUI controls in ***Aspose.BarCode for .NET***, developers can drag and drop controls onto Windows Forms and set properties in the GUI-based mode. Finally, ***Aspose.BarCode for .NET*** supports the WPF framework to facilitate the development of WPF-based barcode applications.  
+***Aspose.BarCode for .NET*** can be used for development in different ways: through a console application, a web appication, .Net MAUI mobile application, Windows Forms, or Windows Presentation Foundation (WPF). For developers who want to create barcodes in the backend, the library provides the corresponding class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator). Alternatively, using GUI controls in ***Aspose.BarCode for .NET***, developers can drag and drop controls onto Windows Forms and set properties in the GUI-based mode. Finally, ***Aspose.BarCode for .NET*** supports the WPF framework to facilitate the development of WPF-based barcode applications.  
   
 ***Aspose.BarCode for .NET*** benefits from important characteristics that make it an efficient, flexible, and easy-to-use tool. First, it is a fully functional library that enables both generating and reading barcodes. Moreover, barcodes can be saved in various high-quality image formats including two vector ones. The other key advantage is that the library allows recognizing barcodes even of very low quality or being significantly distorted. Accordingly, the recognition precision is high for most of the available barcode types.
+
 ***Aspose.BarCode for .NET*** provides full-featured demos and code samples written in C# to give developers a better understanding of the library and its capabilities.
 
 ## Main Features
 
 ***Aspose.BarCode for .NET*** supports multiple features to address specific business needs. It is noteworthy that it enables a wide range of functionality for setting an efficient barcode processing system. One of the most important functions is the possibility to customize the appearance parameters of generated barcodes, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. Moreover, this library provides rich barcode reading and imaging functionality.  
 The main features include: 
-- Barcode generation and recognition of 60+ symbologies (including QR codes)
+- Barcode generation and recognition of 70+ symbologies (including QR codes)
 - Reading 1D and 2D barcodes at any angle and from any image quality
 - Wide range of options to manipulate barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
 - Customizing recognition engine variables to reach the best trade-off between reading speed and quality
@@ -36,7 +37,7 @@ The main features include:
 The full list of features can be found in [Product Features](/barcode/net/product-features/).  
 
 ## **System Compatibility**
-***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with System.Drawing.Common (.Net 5 included) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, Xamarin, UWP, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
+***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 7 included) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, .Net MAUI, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
 
 ## **Licensing**
 License is required to obtain access to the advanced functionality of ***Aspose.BarCode for .NET***. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. 
