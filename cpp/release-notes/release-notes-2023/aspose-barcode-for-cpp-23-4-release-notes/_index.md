@@ -13,7 +13,7 @@ keywords:
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for [Aspose.BarCode for C++ 23.4](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c++-23.4/).<br/>
+This page contains release notes information for [Aspose.BarCode for C++ 23.4](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c++-23.4/).&lt;br/&gt;
 Please also check [CodePorting.Native Cs2Cpp 23.4 release notes](https://docs.codeporting.com/translator/cs2cpp/release-notes/2023/codeporting-translator-cs2cpp-23-4/).
 
 {{% /alert %}}
@@ -27,8 +27,8 @@ Please also check [CodePorting.Native Cs2Cpp 23.4 release notes](https://docs.co
 ## Public API changes and backwards compatibility
 
 The following API was added:
-- Added property getter System::SharedPtr<Code128Parameters> Aspose::BarCode::Generation::BarcodeParameters::get_Code128() const;
-- Added property setter void Aspose::BarCode::Generation::BarcodeParameters::set_Code128(System::SharedPtr<Code128Parameters> value);
+- Added property getter System::SharedPtr&lt;Code128Parameters&gt; Aspose::BarCode::Generation::BarcodeParameters::get_Code128() const;
+- Added property setter void Aspose::BarCode::Generation::BarcodeParameters::set_Code128(System::SharedPtr&lt;Code128Parameters&gt; value);
 - Added enum Aspose::BarCode::Generation::Code128EncodeMode
 - Added class Aspose::BarCode::Generation::Code128Parameters
 - Added property getter Aspose::BarCode::Generation::Code128EncodeMode Aspose::BarCode::Generation::Code128Parameters::get_Code128EncodeMode() const;
