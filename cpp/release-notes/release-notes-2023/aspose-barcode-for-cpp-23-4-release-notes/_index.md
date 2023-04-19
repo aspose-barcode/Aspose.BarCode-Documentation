@@ -13,7 +13,7 @@ keywords:
 
 {{% alert color="primary" %}}
 
-This page contains release notes information for [Aspose.BarCode for C++ 23.4](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c++-23.4/).&lt;br/&gt;
+This page contains release notes information for [Aspose.BarCode for C++ 23.4](https://releases.aspose.com/barcode/cpp/new-releases/aspose.barcode-for-c++-23.4/).<br/>
 Please also check [CodePorting.Native Cs2Cpp 23.4 release notes](https://docs.codeporting.com/translator/cs2cpp/release-notes/2023/codeporting-translator-cs2cpp-23-4/).
 
 {{% /alert %}}
