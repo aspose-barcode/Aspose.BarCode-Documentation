@@ -29,8 +29,8 @@ Please also check [CodePorting.Native Cs2Cpp 23.3 release notes](https://docs.co
 Added UseAntiAlias getter and setter to BarcodeGenerator. Property UseAntiAlias indicates whether is used anti-aliasing mode to render image. Anti-aliasing mode is applied to barcode and text drawing.
 
 The following API was added:
-- Added property getter bool Aspose.BarCode.Generation.BaseGenerationParameters.get_UseAntiAlias() const;
-- Added property setter void Aspose.BarCode.Generation.BaseGenerationParameters.set_UseAntiAlias(bool value);
+- Added property getter bool Aspose::BarCode::Generation::BaseGenerationParameters::get_UseAntiAlias() const;
+- Added property setter void Aspose::BarCode::Generation::BaseGenerationParameters::set_UseAntiAlias(bool value);
 
 The following obsolete API was removed:
 - Removed property getter Aspose::BarCode::Generation::AutoSizeMode Aspose::BarCode::Generation::BarcodeParameters::get_AutoSizeMode() const;
