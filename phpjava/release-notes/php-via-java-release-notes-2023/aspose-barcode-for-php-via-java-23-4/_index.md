@@ -23,8 +23,8 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 
 ## **Public API and Backward Incompatible Changes**
 The following API was added:
-- Generation->BaseGenerationParameters.setUseAntiAlias(bool)
-- Generation->BaseGenerationParameters.getUseAntiAlias():bool
+- Generation->BaseGenerationParameters->setUseAntiAlias(bool)
+- Generation->BaseGenerationParameters->getUseAntiAlias():bool
 
 The following obsolete API was removed:
 - Generation->BarcodeParameters->setAutoSizeMode(AutoSizeMode)
