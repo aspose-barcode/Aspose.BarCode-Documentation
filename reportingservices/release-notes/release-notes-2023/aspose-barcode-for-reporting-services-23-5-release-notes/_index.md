@@ -26,28 +26,10 @@ This page contains release notes information for [Aspose.BarCode for Reporting S
 - Added property Aspose.BarCode.ReportingServices.HanXinRSUI.HanXinVersion		
 
 ```cs
-// ECI mode
-var codetext = "ΑΒΓΔΕ";
+var codetext = "1234567890ABCDEFGabcdefg,Han Xin Code";
 using (var generator = new BarcodeGenerator(EncodeTypes.HanXin, codetext))
 {
-    generator.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.ECI;
-    generator.Parameters.Barcode.HanXin.HanXinECIEncoding = ECIEncodings.ISO_8859_7;
-    generator.Save("test.bmp");
-}
-
-// Unicode mode
-var codetext = "abcd АБВ ıntəˈnæʃənəl テスト 안녕하세요 테스트 테스트";
-using (var generator = new BarcodeGenerator(EncodeTypes.HanXin, codetext))
-{
-    generator.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Unicode;
-    generator.Save("test.bmp");
-}
-
-// URI mode
-var codetext = "https://www.test.com/%BC%DE%%%ab/search=test";
-using (var generator = new BarcodeGenerator(EncodeTypes.HanXin, codetext))
-{
-    generator.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.URI;
+    generator.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Auto;
     generator.Save("test.bmp");
 }
 ```
