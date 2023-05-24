@@ -3,7 +3,7 @@ title: FontUnit
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 200
+weight: 210
 url: /python-net/api-reference/aspose.barcode.generation/fontunit/
 ---
 

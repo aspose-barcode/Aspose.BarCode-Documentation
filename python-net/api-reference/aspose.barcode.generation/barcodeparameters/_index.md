@@ -42,6 +42,7 @@ The BarcodeParameters type exposes the following members:
 |supplement|Supplement parameters. Used for Interleaved2of5, Standard2of5, EAN13, EAN8, UPCA, UPCE, ISBN, ISSN, ISMN.|
 |maxi_code|MaxiCode parameters.|
 |aztec|Aztec parameters.|
+|code128|Code128 parameters.|
 |codabar|Codabar parameters.|
 |coupon|Coupon parameters. Used for UpcaGs1DatabarCoupon, UpcaGs1Code128Coupon.|
 

@@ -23,6 +23,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[CaptionParameters](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/)|Caption parameters.|
 |[CodabarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codabarparameters/)|Codabar parameters.|
 |[CodablockParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codablockparameters/)|Codablock parameters.|
+|[Code128Parameters](/barcode/python-net/api-reference/aspose.barcode.generation/code128parameters/)|Code128 parameters.|
 |[Code16KParameters](/barcode/python-net/api-reference/aspose.barcode.generation/code16kparameters/)|Code16K parameters.|
 |[CodetextParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/)|Codetext parameters.|
 |[CouponParameters](/barcode/python-net/api-reference/aspose.barcode.generation/couponparameters/)|Coupon parameters. Used for UpcaGs1DatabarCoupon, UpcaGs1Code128Coupon.|
@@ -58,6 +59,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[CodabarChecksumMode](/barcode/python-net/api-reference/aspose.barcode.generation/codabarchecksummode/)|Specifies the checksum algorithm for Codabar|
 |[CodabarSymbol](/barcode/python-net/api-reference/aspose.barcode.generation/codabarsymbol/)|Specifies the start or stop symbol of the Codabar barcode specification.|
 |[Code128Emulation](/barcode/python-net/api-reference/aspose.barcode.generation/code128emulation/)|Function codewords for Code 128 emulation. Applied for MicroPDF417 only. Ignored for PDF417 and MacroPDF417 barcodes.|
+|[Code128EncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/code128encodemode/)|Encoding mode for Code128 barcodes.|
 |[CodeLocation](/barcode/python-net/api-reference/aspose.barcode.generation/codelocation/)|Codetext location|
 |[DataMatrixEccType](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/)|Specify the type of the ECC to encode.|
 |[DataMatrixEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/)|DataMatrix encoder's encoding mode, default to Auto|
@@ -71,7 +73,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[MaxiCodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodemode/)|Encoding mode for MaxiCode barcodes.|
 |[PatchFormat](/barcode/python-net/api-reference/aspose.barcode.generation/patchformat/)|PatchCode format. Choose PatchOnly to generate single PatchCode. Use page format to generate Patch page with PatchCodes as borders|
 |[Pdf417CompactionMode](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417compactionmode/)|Pdf417 barcode compaction mode|
-|[Pdf417ErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417errorlevel/)|pdf417 barcode's error correction level, from level 0 to level 9, level 0 means no error correction, level 9 means best error correction|
+|[Pdf417ErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417errorlevel/)|pdf417 barcode's error correction level, from level 0 to level 9, level 0 means no error correction, level 8 means best error correction|
 |[Pdf417MacroTerminator](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417macroterminator/)|Used to tell the encoder whether to add Macro PDF417 Terminator (codeword 922) to the segment. <br/>            Applied only for Macro PDF417.|
 |[QREncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodemode/)|Encoding mode for QR barcodes. It is recommended to Use Auto with CodeTextEncoding = Encoding.UTF8 for Latin symbols or digits and Utf8BOM for Unicode symbols.|
 |[QREncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodetype/)|QR / MicroQR selector mode. Select ForceQR for standard QR symbols, Auto for MicroQR.<br/>            ForceMicroQR is used for strongly MicroQR symbol generation if it is possible.|

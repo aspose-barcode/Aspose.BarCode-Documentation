@@ -5,6 +5,7 @@ weight: 50
 url: /reportingservices/release-notes/
 ---
 
+- [Release Notes - 2023](/barcode/reportingservices/release-notes-2023/)
 - [Release Notes - 2022](/barcode/reportingservices/release-notes-2022/)
 - [Release Notes - 2021](/barcode/reportingservices/release-notes-2021/)
 - [Release Notes - 2020](/barcode/reportingservices/release-notes-2020/)
