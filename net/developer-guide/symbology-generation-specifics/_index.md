@@ -21,6 +21,7 @@ All related information can be found in the articles listed below.
 |[DataMatrix Barcodes](/barcode/net/datamatrix-barcode)|Specifies how to generate *DataMatrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
 |[Aztec Barcodes](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
 |[MaxiCode Barcodes](/barcode/net/maxicode-barcodes/)|Provides information about *MaxiCode* barcode generation, the use of different data encoding modes, and the adjustment of the aspect ratio settings|
+|[Han Xin Code](/barcode/net/hanxin-barcodes/)|Specifies how to create *Han Xin* barcode, the use of different data encoding modes, and the adjustment of version and error correction level|
   
 |1D Barcodes| |
 |---|---|
