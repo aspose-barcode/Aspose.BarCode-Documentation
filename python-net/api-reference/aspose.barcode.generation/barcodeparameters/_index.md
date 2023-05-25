@@ -45,6 +45,7 @@ The BarcodeParameters type exposes the following members:
 |code128|Code128 parameters.|
 |codabar|Codabar parameters.|
 |coupon|Coupon parameters. Used for UpcaGs1DatabarCoupon, UpcaGs1Code128Coupon.|
+|han_xin|HanXin parameters.|
 
 ### See Also
 

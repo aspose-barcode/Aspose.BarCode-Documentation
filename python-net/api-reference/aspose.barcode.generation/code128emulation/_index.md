@@ -3,7 +3,7 @@ title: Code128Emulation
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 430
+weight: 440
 url: /python-net/api-reference/aspose.barcode.generation/code128emulation/
 ---
 
