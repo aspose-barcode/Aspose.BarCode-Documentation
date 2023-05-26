@@ -25,7 +25,7 @@ Method setCode128(Code128Parameters) was added to com.aspose.barcode.generation.
 Method Code128EncodeMode getCode128EncodeMode() was added to com.aspose.barcode.generation.Code128Parameters
 Method setCode128EncodeMode(Code128EncodeMode) was added to com.aspose.barcode.generation.Code128Parameters
 
-```cs
+```java
 //Generate code 128 with ISO 15417 encoding
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "ABCD1234567890");
 generator.getParameters().getBarcode().getCode128().setCode128EncodeMode(Code128EncodeMode.AUTO);
