@@ -21,7 +21,6 @@ This page contains release notes information for [Aspose.BarCode for Java 23.5](
 
 com.aspose.barcode.generation.Code128EncodeMode enum was added to select allowed code128 codesets.
 Method getCode128():Code128Parameters was added to com.aspose.barcode.generation.BarcodeParameters
-Method setCode128(Code128Parameters) was added to com.aspose.barcode.generation.BarcodeParameters
 Method Code128EncodeMode getCode128EncodeMode() was added to com.aspose.barcode.generation.Code128Parameters
 Method setCode128EncodeMode(Code128EncodeMode) was added to com.aspose.barcode.generation.Code128Parameters
 
