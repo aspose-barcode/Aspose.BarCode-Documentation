@@ -23,7 +23,7 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 
 Generation->Code128EncodeMode class was added to select allowed code128 codesets.
 Function getCode128():Code128Parameters was added to Generation->BarcodeParameters
-Function Code128EncodeMode getCode128EncodeMode():int was added to Generation->Code128Parameters
+Function getCode128EncodeMode():int was added to Generation->Code128Parameters
 Function setCode128EncodeMode(int) was added to Generation->Code128Parameters
 
 ```php
