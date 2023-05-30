@@ -23,14 +23,3 @@ Generation.Code128EncodeMode enum was added to select allowed code128 codesets.
 Function getCode128() was added to Generation.BarcodeParameters
 Function getCode128EncodeMode() was added to Generation.Code128Parameters
 Function setCode128EncodeMode(value) was added to Generation.Code128Parameters
-
-```python
-#Generate code 128 with ISO 15417 encoding
-generator = BarcodeGenerator(EncodeTypes.CODE_128, "ABCD1234567890")
-generator.getParameters().getBarcode().getCode128().setCode128EncodeMode(Code128EncodeMode.AUTO)
-generator.save(filePath, BarCodeImageFormat.PNG)
-#Generate code 128 only with Codeset A encoding
-generator = BarcodeGenerator(EncodeTypes.CODE_128, "ABCD1234567890")
-generator.getParameters().getBarcode().getCode128().setCode128EncodeMode(Code128EncodeMode.CODE_A)
-generator.save(filePath, BarCodeImageFormat.PNG)
-```
