@@ -167,5 +167,88 @@ using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 }
 ```
 
-### ***Extended* Mode - TBD**
-*Extended* mode will allow more flexible combinations of other modes, this mode is currently in development.
+### ***Extended* Mode**
+*Extended* mode allow combinations of all modes including internal ones: Auto, Binary, Text, Numeric, URI, Unicode, ECI, Common Chinese Region One, Common Chinese Region Two, GB18030 Two Byte, GB18030 Four Byte. 
+
+Codetext can be built manually with prefixes and doubled backslashes, e.g.: `@"\auto:abc\000009:ΑΒΓΔΕ\auto:ab\\c"` or using the HanXinExtCodetextBuilder. 
+
+If the codetext contains an ECI fragment, then only the following modes can be in that codetext after ECI fragment: Auto, Binary, Text, Numeric, URI, ECI.
+
+Following examples illustrate how to use all the modes:
+
+``` csharp
+// Extended mode example 1
+var str = @"\auto:abc\000009:ΑΒΓΔΕ\auto:abc";
+
+var expectedStr = str.Replace(@"\auto:", "");
+expectedStr = expectedStr.Replace(@"\000009:", "");
+
+// expectedStr == "abcΑΒΓΔΕabc"
+
+using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
+{
+    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    var img = bg.GenerateBarCodeImage();
+
+    using (var r = new BarCodeReader(img, DecodeType.HanXin))
+    {
+        var found = r.ReadBarCodes();
+        Assert.AreEqual(1, found.Length);
+        Assert.AreEqual(expectedStr, found[0].CodeText);
+    }
+}
+
+// Extended mode example 2
+var str = @"\gb180302b:漄\gb180304b:㐁\region1:全\region2:螅\numeric:123\text:qwe\unicode:ıntəˈnæʃənəl" +
+     @"\000009:ΑΒΓΔΕ\auto:abc\binary:abc\uri:backslashes_should_be_doubled\\000555:test";
+
+var expectedStr = @"漄㐁全螅123qweıntəˈnæʃənəlΑΒΓΔΕabcabcbackslashes_should_be_doubled\000555:test";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
+{
+    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    var img = bg.GenerateBarCodeImage();
+
+    using (var r = new BarCodeReader(img, DecodeType.HanXin))
+    {
+        var found = r.ReadBarCodes();
+        Assert.AreEqual(1, found.Length);
+        Assert.AreEqual(expectedStr, found[0].CodeText);
+    }
+}
+
+// Extended mode example 3
+// Using HanXinExtCodetextBuilder for Extended mode (same codetext as in previous example)
+// Create codetext
+var codeTextBuilder = new HanXinExtCodetextBuilder();
+codeTextBuilder.AddGB18030TwoByte("漄");
+codeTextBuilder.AddGB18030FourByte("㐁");
+codeTextBuilder.AddCommonChineseRegionOne("全");
+codeTextBuilder.AddCommonChineseRegionTwo("螅");
+codeTextBuilder.AddNumeric("123");
+codeTextBuilder.AddText("qwe");
+codeTextBuilder.AddUnicode("ıntəˈnæʃənəl");
+codeTextBuilder.AddECI("ΑΒΓΔΕ", 9);
+codeTextBuilder.AddAuto("abc");
+codeTextBuilder.AddBinary("abc");
+codeTextBuilder.AddURI(@"backslashes_should_be_doubled\000555:test");
+
+var expectedStr = @"漄㐁全螅123qweıntəˈnæʃənəlΑΒΓΔΕabcabcbackslashes_should_be_doubled\000555:test";
+
+// Generate codetext
+var str = codeTextBuilder.GetExtendedCodetext();
+
+// Generate
+using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
+{
+    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    var img = bg.GenerateBarCodeImage();
+
+    using (var r = new BarCodeReader(img, DecodeType.HanXin))
+    {
+        var found = r.ReadBarCodes();
+        Assert.AreEqual(1, found.Length);
+        Assert.AreEqual(expectedStr, found[0].CodeText);
+    }
+}
+```
