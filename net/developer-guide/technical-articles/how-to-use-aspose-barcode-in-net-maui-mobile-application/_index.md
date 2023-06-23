@@ -24,8 +24,8 @@ At first you need to create ***.Net MAUI App***. You can do this in ***Visual St
 {{< highlight xml>}}
 <!--Reference to Aspose libraries-->
 <ItemGroup>
-	<PackageReference Include="Aspose.BarCode" Version="23.3.1" />
-	<PackageReference Include="Aspose.Drawing.Common" Version="23.3.0" />
+	<PackageReference Include="Aspose.BarCode" Version="23.5.0" />
+	<PackageReference Include="Aspose.Drawing.Common" Version="23.5.0" />
 	<PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
 </ItemGroup>
 {{< /highlight >}}

@@ -29,8 +29,8 @@ url: /net/system-requirements/
 |<p align="center">**Framework**</p>|<p align="center">**Supported Versions**</p>|<p align="center">**Additional Requirements**</p>|
 |---|---|---|
 |.NET Framework|2.0 / 3.5 / 4.0 / 4.6 / 4.7 / 4.8| |
-|.NET Standard|2.0 / 2.1| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 23.3.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 7.0.0+|
-|.NET Core| 3.1 / .Net 5.0 / .Net 6.0 / .Net 7.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 23.3.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 7.0.0+|
+|.NET Standard|2.0 / 2.1| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 23.5.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 7.0.0+|
+|.NET Core| 3.1 / .Net 5.0 / .Net 6.0 / .Net 7.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 23.5.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 7.0.0+|
 
 
 ## **Development Environments**
