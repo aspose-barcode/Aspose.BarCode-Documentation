@@ -18,7 +18,7 @@ keywords:
 
 {{% alert color="primary" %}} 
 
-This article contains release notes information for [**Aspose.BarCode for .NET 23.5 (May 2024)**](https://downloads.aspose.com/barcode/net/new-releases/aspose.barcode-for-.net-23.5/).
+This article contains release notes information for [**Aspose.BarCode for .NET 23.5 (May 2023)**](https://downloads.aspose.com/barcode/net/new-releases/aspose.barcode-for-.net-23.5/).
 
 {{% /alert %}} 
 ## **All Changes**
