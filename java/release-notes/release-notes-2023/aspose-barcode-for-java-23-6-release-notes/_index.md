@@ -32,9 +32,9 @@ In this release:
 - com.aspose.barcode.generation.HanXinVersion enum was added to select allowed Han Xin versions, Auto and Version01 - Version84.
 - com.aspose.barcode.generation.HanXinParameters class was added
 - methods getHanXin():HanXinParameters and setHanXin(HanXinParameters) were added to com.aspose.barcode.generation.BarcodeParameters.
-- HanXinEncodeMode was added to HanXinParameters.
-- HanXinErrorLevel was added to HanXinParameters.
-- HanXinVersion was added to HanXinParameters.
-- HanXinECIEncoding was added to HanXinParameters.
-- HanXin and GS1HanXin were added to com.aspose.barcode.generation.EncodeTypes.
-- HanXin and GS1HanXin were added to com.aspose.barcode.barcoderecognition.DecodeType.
+- methods getHanXinEncodeMode() and setHanXinEncodeMode(HanXinEncodeMode) were added to HanXinParameters.
+- methods getHanXinErrorLevel() and setHanXinErrorLevel(HanXinErrorLevel) were added to HanXinParameters.
+- methods getHanXinVersion() and setHanXinVersion(HanXinVersion) were added to HanXinParameters.
+- methods getHanXinECIEncoding() and setHanXinECIEncoding(int) were added to HanXinParameters.
+- HAN_XIN and GS_1_HAN_XIN values were added to com.aspose.barcode.generation.EncodeTypes.
+- HAN_XIN and GS_1_HAN_XIN values were added to com.aspose.barcode.barcoderecognition.DecodeType.
