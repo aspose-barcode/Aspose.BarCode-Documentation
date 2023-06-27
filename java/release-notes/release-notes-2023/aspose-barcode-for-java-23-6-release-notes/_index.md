@@ -30,7 +30,7 @@ In this release:
 - com.aspose.barcode.generation.HanXinEncodeMode enum was added to select allowed Han Xin encoding modes.
 - com.aspose.barcode.generation.HanXinErrorLevel enum was added to select allowed Han Xin error correction levels from L1 to L4.
 - com.aspose.barcode.generation.HanXinVersion enum was added to select allowed Han Xin versions, Auto and Version01 - Version84.
-- com.aspose.barcode.generation.HanXinParameters enum was added
+- com.aspose.barcode.generation.HanXinParameters class was added
 - methods getHanXin():HanXinParameters and setHanXin(HanXinParameters) were added to com.aspose.barcode.generation.BarcodeParameters.
 - HanXinEncodeMode was added to HanXinParameters.
 - HanXinErrorLevel was added to HanXinParameters.
