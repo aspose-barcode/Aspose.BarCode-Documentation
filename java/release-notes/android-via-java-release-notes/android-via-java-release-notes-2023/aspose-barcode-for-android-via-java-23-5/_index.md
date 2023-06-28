@@ -2,7 +2,7 @@
 title: Aspose.BarCode for Android via Java 23.5
 type: docs
 weight: 960
-url: /java/aspose-barcode-for-android-via-java-23-4/
+url: /java/aspose-barcode-for-android-via-java-23-5/
 ---
 
 {{% alert color="primary" %}} 
