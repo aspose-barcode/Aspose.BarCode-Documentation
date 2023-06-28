@@ -28,6 +28,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[CodetextParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codetextparameters/)|Codetext parameters.|
 |[CouponParameters](/barcode/python-net/api-reference/aspose.barcode.generation/couponparameters/)|Coupon parameters. Used for UpcaGs1DatabarCoupon, UpcaGs1Code128Coupon.|
 |[DataBarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/databarparameters/)|Databar parameters.|
+|[DataMatrixExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixextcodetextbuilder/)|Extended codetext generator for 2D DataMatrix barcodes for ExtendedCodetext Mode of DataMatrixEncodeMode|
 |[DataMatrixParameters](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixparameters/)|DataMatrix parameters.|
 |[DotCodeExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/dotcodeextcodetextbuilder/)|Extended codetext generator for 2D DotCode barcodes for ExtendedCodetext Mode of DotCodeEncodeMode|
 |[DotCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/dotcodeparameters/)|DotCode parameters.|
@@ -64,6 +65,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[CodeLocation](/barcode/python-net/api-reference/aspose.barcode.generation/codelocation/)|Codetext location|
 |[DataMatrixEccType](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/)|Specify the type of the ECC to encode.|
 |[DataMatrixEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/)|DataMatrix encoder's encoding mode, default to Auto|
+|[DataMatrixVersion](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixversion/)|Specify the type of the ECC to encode.|
 |[DotCodeEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/dotcodeencodemode/)|Encoding mode for DotCode barcodes.|
 |[ECIEncodings](/barcode/python-net/api-reference/aspose.barcode.generation/eciencodings/)|Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details <br/>            about the used references for encoding the data in the symbol.<br/>            Current implementation consists all well known charset encodings.<br/>            Currently, it is used only for QR 2D barcode.|
 |[EnableChecksum](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/)|Enable checksum during generation for 1D barcodes.<br/>        Default is treated as Yes for symbologies which must contain checksum, as No where checksum only possible.<br/>        Checksum never used: Codabar<br/>        Checksum is possible: Code39 Standard/Extended, Standard2of5, Interleaved2of5, Matrix2of5, ItalianPost25, DeutschePostIdentcode, DeutschePostLeitcode, VIN<br/>        Checksum always used: Rest symbologies|

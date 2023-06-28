@@ -22,6 +22,7 @@ The BarCodeExtendedParameters type exposes the following members:
 |data_bar|Gets a DataBar additional information[DataBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/databarextendedparameters/) of recognized barcode|
 |maxi_code|Gets a MaxiCode additional information[MaxiCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/maxicodeextendedparameters/) of recognized barcode|
 |dot_code|Gets a DotCode additional information[DotCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/dotcodeextendedparameters/) of recognized barcode|
+|data_matrix|Gets a DotCode additional information[DotCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/dotcodeextendedparameters/) of recognized barcode|
 
 ### See Also
 

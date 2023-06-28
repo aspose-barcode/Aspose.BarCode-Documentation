@@ -3,7 +3,7 @@ title: TwoDComponentType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 690
+weight: 710
 url: /python-net/api-reference/aspose.barcode.generation/twodcomponenttype/
 ---
 

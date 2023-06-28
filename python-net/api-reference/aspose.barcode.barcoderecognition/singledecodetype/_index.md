@@ -3,7 +3,7 @@ title: SingleDecodeType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 230
+weight: 240
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/singledecodetype/
 ---
 

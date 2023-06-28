@@ -3,7 +3,7 @@ title: DotCodeParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 180
+weight: 190
 url: /python-net/api-reference/aspose.barcode.generation/dotcodeparameters/
 ---
 

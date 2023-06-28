@@ -3,7 +3,7 @@ title: AztecSymbolMode
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 380
+weight: 390
 url: /python-net/api-reference/aspose.barcode.generation/aztecsymbolmode/
 ---
 
