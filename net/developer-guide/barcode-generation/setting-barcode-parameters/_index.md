@@ -1,11 +1,13 @@
 ---
-title: Setting Barcode Parameters in C#
-linktitle: Setting Barcode Parameters
+title: Set Barcode Size and Resolution in C#
+linktitle: Set Barcode Size and Resolution
 type: docs
 weight: 40
 description: "How to Set Size Units for Barcodes in Aspose.BarCode for .NET"
 keywords: Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode
-url: /net/setting-barcode-parameters/
+url: /net/set-barcode-size/
+aliases:
+- /net/setting-barcode-parameters/
 ---
 This article outlines the capabilities provided by ***Aspose.BarCode for .NET*** to customize barcode measurement units (inches, millimeters, points, or pixels) and the resolution of generated barcode images.
   
@@ -15,7 +17,7 @@ In ***Aspose.BarCode for .NET***, to link the values of such coordinates to real
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Measuring Barcode Size in Different Units**
+## **Define Barcode Size in Different Units**
 Class [*Unit*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/unit) is used to set measurement units for various parameters of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator), such as *BarCodeHeight*, *BarCodeWidth*, *XDimension*, *FontUnit*, and some others. In ***Aspose.BarCode for .NET***, this class is implemented as an internal representation of .NET class [*GraphicsUnit Enum*](https://docs.microsoft.com/uk-ua/dotnet/api/system.drawing.graphicsunit?view=windowsdesktop-5.0). Class *Unit* allows converting different measurement units into the desired ones: *Inches*, *Millimeters*, *Pixels*, *Point* (1/72 inch), or *Document* (1/300 inch). The default size measurement unit for barcode generation is *Millimeters*.  
   
 Barcode images generated using different unit settings (three pixels and two millimeters) are demonstrated below.
@@ -38,7 +40,7 @@ gen.Save($"{path}UnitIn2Millimeters.png", BarCodeImageFormat.Png);
 
 ``` 
 
-## **Managing Image Resolution**
+## **Set Barcode Resolution**
 ***Aspose.BarCode for .NET*** enables custom settings for barcode image resolution. To implement this, [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) class provides the [*Resolution*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/resolution) property that is used to get or set the resolution of a barcode image and is intended to convert all non-pixel barcode size values into digital coordinates measured in pixels. The *Resolution* property is defined uniformly for all dimensions of a barcode image and is measured in dpi. Its default value equals 96 dpi.  
   
 Barcode labels created with different resolution settings (96 dpi and 300 dpi) are shown below.
