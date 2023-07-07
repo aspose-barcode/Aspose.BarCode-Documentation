@@ -18,9 +18,10 @@ All related information can be found in the articles listed below.
 |**Article**|**Description**|
 |[QR and Micro QR Codes](/barcode/net/qr-and-micro-qr-barcode/)|Explains how to generate *QR Code* and *Micro QR Code* barcodes, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
 |[PDF417 Barcode Family](/barcode/net/pdf417-and-macropdf417-barcode/)|Describes how to create *PDF417* barcodes of various types, including *Basic PDF417*, *Micro PDF417*, *Macro PDF417*, and *Compact PDF417*, work with different data encoding modes, adjust the aspect ratio and error correction level, use metadata and special parameters, and customize barcode layout|
-|[DataMatrix Barcodes](/barcode/net/datamatrix-barcode)|Specifies how to generate *DataMatrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
-|[Aztec Barcodes](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
-|[MaxiCode Barcodes](/barcode/net/maxicode-barcodes/)|Provides information about *MaxiCode* barcode generation, the use of different data encoding modes, and the adjustment of the aspect ratio settings|
+|[Data Matrix](/barcode/net/datamatrix-barcode)|Specifies how to generate *Data Matrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
+|[Aztec Code](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
+|[MaxiCode](/barcode/net/maxicode-barcodes/)|Provides information about *MaxiCode* barcode generation, the use of different data encoding modes, and the adjustment of the aspect ratio settings|
+|[Han Xin Code](/barcode/net/generate-hanxin-code/)|Describes the technical specification of Han Xing Code, supported encoding modes, and error correction mechanism|
   
 |1D Barcodes| |
 |---|---|
