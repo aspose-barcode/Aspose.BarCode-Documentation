@@ -1,5 +1,5 @@
 ---
-title: Aspose::BarCode for Cpp 23.7 Release Notes
+title: Aspose.BarCode for Cpp 23.7 Release Notes
 type: docs
 weight: 10
 url: /cpp/aspose-barcode-for-cpp-23-7-release-notes/
