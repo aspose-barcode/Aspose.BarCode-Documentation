@@ -1,5 +1,5 @@
 ---
-title: How to create custom barcodes with IBarcodeGenerator
+title: Сreate Custom Barcodes with IBarcodeGenerator
 description: "How to create custom barcodes from MS Word documents with IBarcodeGenerator, Aspose.Words and Aspose.BarCode"
 keywords: Aspose.Words, Aspose.BarCode, IBarcodeGenerator
 type: docs
@@ -9,22 +9,22 @@ url: /net/how-to-create-custom-barcodes-with-ibarcodegenerator/
 
 ## **Overview**
 
-***Microsoft Word*** document format supports built-in barcodes which can be embeded with [***DisplayBarcode***](https://support.microsoft.com/en-au/office/field-codes-displaybarcode-6d81eade-762d-4b44-ae81-f9d3d9e07be3) and [***MergeBarcode***](https://support.microsoft.com/en-au/office/field-codes-mergebarcode-812fc43f-cb53-4782-8f9f-290ed08d34f3) field codes. [***Aspose.Words***](https://products.aspose.com/words/net/) with ***Aspose.BarCode*** together allow to render built-in  barcodes into images during word document conversion into other formats. 
+***Microsoft Word*** supports the use of built-in barcodes, which can be inserted into a document using [*DisplayBarcode*](https://support.microsoft.com/en-au/office/field-codes-displaybarcode-6d81eade-762d-4b44-ae81-f9d3d9e07be3) and [*MergeBarcode*](https://support.microsoft.com/en-au/office/field-codes-mergebarcode-812fc43f-cb53-4782-8f9f-290ed08d34f3) field codes. The combined usage of [***Aspose.Words***](https://products.aspose.com/words/net/) and [***Aspose.BarCode***](https://products.aspose.com/barcode/net/) enables converting built-in barcodes into images as a result of saving an MS Word document in other formats. 
 
-Barcodes conversion into images is provided by [***IBarcodeGenerator***](https://reference.aspose.com/words/net/aspose.words.fields/ibarcodegenerator/) interface which receives barcode options with [***BarcodeParameters***](https://reference.aspose.com/words/net/aspose.words.fields/barcodeparameters/) structure and creates [raster barcode image](https://en.wikipedia.org/wiki/Raster_graphics). 
+The [***Aspose.BarCode***](https://products.aspose.com/barcode/net/) library provides the [***IBarcodeGenerator***](https://reference.aspose.com/words/net/aspose.words.fields/ibarcodegenerator/) interface, which can be used to convert barcodes embedded into Word documents into images. It gets barcode properties using the [*BarcodeParameters*](https://reference.aspose.com/words/net/aspose.words.fields/barcodeparameters/) field and then creates a barcode image in a [raster format](https://en.wikipedia.org/wiki/Raster_graphics). 
 
-Main issue of this approach that any [raster image is resolution dependent](https://en.wikipedia.org/wiki/Raster_graphics#Resolution) which does not allow you to create barcode image with barcode element which is less than pixel. ***Aspose.Words*** has embedded resolution [96 ppi](https://en.wikipedia.org/wiki/Image_resolution#Pixel_count) for the images generated with ***IBarcodeGenerator*** and makes restriction to minimal barcode size. To solve this problem, you can [manually add barcode images](/barcode/net/add-barcode-to-word-document/) with selected resolution to Word document and save it to required format.
+The main limitation of this approach is that raster images are [resolution-dependent](https://en.wikipedia.org/wiki/Raster_graphics#Resolution), imposing the restriction on the size of barcode elements, which must be no less than one pixel. ***Aspose.Words*** supports the embedded resolution of [96 ppi](https://en.wikipedia.org/wiki/Image_resolution#Pixel_count) for images generated with ***IBarcodeGenerator*** and thus restricts the minimal size of a barcode image. To resolve this issue, developers can [manually insert barcode images](/barcode/net/add-barcode-to-word-document/) with a target resolution into a Word document and then save them in the required format.
 
-This article describes how to properly use ***IBarcodeGenerator*** with ***Aspose.Words*** with ***Aspose.BarCode*** to render barcode images into other formats.
+This article describes how to use ***IBarcodeGenerator*** jointly with ***Aspose.Words*** and ***Aspose.BarCode*** to convert built-in barcode images into other formats.
 
-The example project can be downloaded [here](custombarcode.zip).
+The sample project can be downloaded [here](custombarcode.zip).
 
-## **IBarcodeGenerator implementation with Aspose.BarCode**
+## **Implement IBarcodeGenerator using Aspose.BarCode**
 
-This section shows how properly to implement ***IBarcodeGenerator*** with all possible field values. The main problem here is impossibility to create really tiny barcode image because ***IBarcodeGenerator*** does not support image resolution and minimal barcode element (cell or bar) cannot be less than 1 pixel.
+This section explains how to call the ***IBarcodeGenerator*** interface using all possible field codes. The main limitation is the impossibility to create tiny barcode images because ***IBarcodeGenerator*** does not support setting a custom image resolution, and therefore, the minimal size of a barcode element (a cell or a bar) cannot be less than 1 pixel. The following code sample demonstrates how to generate various barcodes with customized properties using ***IBarcodeGenerator***. 
 
-{{< highlight csharp>}}
-//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+``` csharp
+//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved
 using System;
 using System.IO;
 using Aspose.Words.Fields;
@@ -225,13 +225,13 @@ namespace Aspose.BarCode.Utils
                 gen.Parameters.Barcode.BarColor = CustomBarcodeGeneratorUtils.ConvertColor(parameters.ForegroundColor, gen.Parameters.Barcode.BarColor);
                 gen.Parameters.BackColor = CustomBarcodeGeneratorUtils.ConvertColor(parameters.BackgroundColor, gen.Parameters.BackColor);
 
-                //show or hide text
+                //display or hide text
                 if (!parameters.DisplayText)
                     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 else
                     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
 
-                //qr error level
+                //QR Code error correction level
                 gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelH;
                 if (!string.IsNullOrEmpty(parameters.ErrorCorrectionLevel))
                     gen.Parameters.Barcode.QR.QrErrorLevel = CustomBarcodeGeneratorUtils.GetQRCorrectionLevel(parameters.ErrorCorrectionLevel, gen.Parameters.Barcode.QR.QrErrorLevel);
@@ -240,7 +240,7 @@ namespace Aspose.BarCode.Utils
                 if (!string.IsNullOrEmpty(parameters.SymbolRotation))
                     gen.Parameters.RotationAngle = CustomBarcodeGeneratorUtils.GetRotationAngle(parameters.SymbolRotation, gen.Parameters.RotationAngle);
 
-                //scalingFactor
+                //scaling factor
                 double scalingFactor = 1;
                 if (!string.IsNullOrEmpty(parameters.ScalingFactor))
                     scalingFactor = CustomBarcodeGeneratorUtils.ScaleFactor(parameters.ScalingFactor, scalingFactor);
@@ -255,7 +255,7 @@ namespace Aspose.BarCode.Utils
                 if (!string.IsNullOrEmpty(parameters.SymbolHeight))
                     gen.Parameters.Barcode.BarHeight.Pixels = (float)Math.Max(5.0, Math.Round(CustomBarcodeGeneratorUtils.TwipsToPixels(parameters.SymbolHeight, gen.Parameters.Barcode.BarHeight.Pixels) * scalingFactor));
 
-                //Style of a Point of Sale barcode
+                //Style of a Point-of-Sale barcode
                 if (!string.IsNullOrEmpty(parameters.PosCodeStyle))
                     CustomBarcodeGeneratorUtils.SetPosCodeStyle(gen, parameters.PosCodeStyle, parameters.BarcodeValue);
 
@@ -277,16 +277,16 @@ namespace Aspose.BarCode.Utils
         }
     }
 }
-{{< /highlight >}}
+```
 
-## **Render built-in barcode from Word document to PDF**
+## **Convert Built-in Barcodes from Word to PDF**
 
-Now we can set up our ***CustomBarcodeGenerator*** to [***FieldOptions***](https://reference.aspose.com/words/net/aspose.words.fields/fieldoptions/), add barcode field to Word document and convert it to PDF.
+The next step is to set up ***CustomBarcodeGenerator*** using the values from [***FieldOptions***](https://reference.aspose.com/words/net/aspose.words.fields/fieldoptions/), add a barcode image to a Word document, and then convert it into a PDF file. The code sample below demostrates how it can be implemented.
 
-{{< highlight csharp>}}
+``` csharp
 internal static void CreateDocumentWithBarcode(string barcodeField, string documentName)
 {
-    //path of Data
+    //source data path
     string path = @".\..\..\..\Data\";
     Directory.CreateDirectory(path);
     
@@ -306,21 +306,21 @@ internal static void CreateDocumentWithBarcode(string barcodeField, string docum
 
     wordDoc.Save($"{path}{documentName}.pdf", pso);
 }
-{{< /highlight >}}
+```
 
-## **Rendered results**
+## **Conversion Results**
 
 
-| **Built-in  barcode** | **Word** | **PDF** | **Description** |
+| Built-in Barcode | MS Word | PDF | Description |
 | :-: | :-: | :-: | :-: |
-| *"DISPLAYBARCODE “Aspose.Barcode” QR"* | ![simpleQR_word.png](simpleQR_word.png) | ![simpleQR_pdf.png](simpleQR_pdf.png) | Standard QR barcode |
-| *"DISPLAYBARCODE “Aspose.Barcode” QR \\f  0x00FF00 \\b 0xFF0000"* | ![colorQR_word.png](colorQR_word.png) | ![colorQR_pdf.png](colorQR_pdf.png)|  QR barcode with bckground and foreground colors |
-| *"DISPLAYBARCODE “ASPOSE BARCODE” CODE39 \\t"* | ![displayTextCODE39_word.png](displayTextCODE39_word.png) | ![displayTextCODE39_pdf.png ](displayTextCODE39_pdf.png)|  CODE39 barcode with visible text |
-| *"DISPLAYBARCODE “Aspose.Barcode” QR \\q 3"* | ![errorLevel3QR_word.png](errorLevel3QR_word.png) | ![errorLevel3QR_pdf.png](errorLevel3QR_pdf.png)|  QR barcode with LevelH error correction|
-| *"DISPLAYBARCODE “Aspose.Barcode” QR \\r 1"* | ![rotatedQR_word.png](rotatedQR_word.png) | ![rotatedQR_pdf.png](rotatedQR_pdf.png)|  Rotated QR barcode |
-| *"DISPLAYBARCODE “Aspose.Barcode” QR \\s 25"* | ![scaledQR_word.png](scaledQR_word.png) | ![scaledQR_pdf.png](scaledQR_pdf.png) |  Scaled to 25% QR barcode |
-| *"DISPLAYBARCODE “ASPOSE BARCODE” CODE39 \\h 1200"* | ![heightCODE39_word.png](heightCODE39_word.png) | ![heightCODE39_pdf.png](heightCODE39_pdf.png) |  CODE39  with height 1200 twips (1/1440 inch)|
+| *"DISPLAYBARCODE “Aspose.Barcode” QR"* | ![simpleQR_word.png](simpleQR_word.png) | ![simpleQR_pdf.png](simpleQR_pdf.png) | Standard QR Code |
+| *"DISPLAYBARCODE “Aspose.Barcode” QR \\f  0x00FF00 \\b 0xFF0000"* | ![colorQR_word.png](colorQR_word.png) | ![colorQR_pdf.png](colorQR_pdf.png)|  QR Code with custom background and foreground color settings|
+| *"DISPLAYBARCODE “ASPOSE BARCODE” CODE39 \\t"* | ![displayTextCODE39_word.png](displayTextCODE39_word.png) | ![displayTextCODE39_pdf.png ](displayTextCODE39_pdf.png)|  Code 39 barcode with displayed text |
+| *"DISPLAYBARCODE “Aspose.Barcode” QR \\q 3"* | ![errorLevel3QR_word.png](errorLevel3QR_word.png) | ![errorLevel3QR_pdf.png](errorLevel3QR_pdf.png)|  QR Code with the error correction value set to Level H|
+| *"DISPLAYBARCODE “Aspose.Barcode” QR \\r 1"* | ![rotatedQR_word.png](rotatedQR_word.png) | ![rotatedQR_pdf.png](rotatedQR_pdf.png)|  Rotated QR Code |
+| *"DISPLAYBARCODE “Aspose.Barcode” QR \\s 25"* | ![scaledQR_word.png](scaledQR_word.png) | ![scaledQR_pdf.png](scaledQR_pdf.png) |  QR Code scaled to 25% |
+| *"DISPLAYBARCODE “ASPOSE BARCODE” CODE39 \\h 1200"* | ![heightCODE39_word.png](heightCODE39_word.png) | ![heightCODE39_pdf.png](heightCODE39_pdf.png) |  Code 39  with the height of 1200 twips (1/1440 inch)|
 | *"DISPLAYBARCODE “501234567890” EAN13 \\p STD"* | ![standardEAN13_word.png](standardEAN13_word.png) | ![standardEAN13_pdf.png](standardEAN13_pdf.png)| Standard EAN13 barcode|
-| *"DISPLAYBARCODE “50123456789012” EAN13 \\p SUP2"* | ![supplement2EAN13_word.png](supplement2EAN13_word.png) | ![supplement2EAN13_pdf.png ](supplement2EAN13_pdf.png)|  EAN13 barcode with Supplement(EAN2) |
-| *"DISPLAYBARCODE “50123456789012345” EAN13 \\p SUP5"* | ![supplement5EAN13_word.png](supplement5EAN13_word.png) | ![supplement5EAN13_pdf.png](supplement5EAN13_pdf.png)|  EAN13 barcode with Supplement(EAN5) |
-| *"DISPLAYBARCODE “501234567890” EAN13 \\p CASE"* | ![caseEAN13_word.png](caseEAN13_word.png) | ![caseEAN13_pdf.png](caseEAN13_pdf.png)|  EAN13 barcode with frame |
+| *"DISPLAYBARCODE “50123456789012” EAN13 \\p SUP2"* | ![supplement2EAN13_word.png](supplement2EAN13_word.png) | ![supplement2EAN13_pdf.png ](supplement2EAN13_pdf.png)|  EAN13 barcode with supplement (EAN2) |
+| *"DISPLAYBARCODE “50123456789012345” EAN13 \\p SUP5"* | ![supplement5EAN13_word.png](supplement5EAN13_word.png) | ![supplement5EAN13_pdf.png](supplement5EAN13_pdf.png)|  EAN13 barcode with supplement (EAN5) |
+| *"DISPLAYBARCODE “501234567890” EAN13 \\p CASE"* | ![caseEAN13_word.png](caseEAN13_word.png) | ![caseEAN13_pdf.png](caseEAN13_pdf.png)|  EAN13 barcode with a frame |
