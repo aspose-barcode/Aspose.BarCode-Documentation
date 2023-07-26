@@ -24,29 +24,29 @@ In this release we've improved DataMatrix encoding and added new modes.
 ### DataMatrix API changes
 
 Removed:
-- field com.com.aspose.barcode.generation.DataMatrixEncodeMode.FULL
-- field com.com.aspose.barcode.generation.DataMatrixEncodeMode.CUSTOM
+- field com.aspose.barcode.generation.DataMatrixEncodeMode.FULL
+- field com.aspose.barcode.generation.DataMatrixEncodeMode.CUSTOM
 
 Added:
-- field com.com.aspose.barcode.generation.DataMatrixEncodeMode.BYTES
-- class com.com.aspose.barcode.generation.DataMatrixVersion
-- field com.com.aspose.barcode.generation.DataMatrixVersion.AUTO
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ROWS_COLUMNS
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_9x9
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_050_11x11
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_100_13x13
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_100_15x15
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_17x17
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_19x19
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_21x21
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_23x23
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_25x25
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_27x27
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_29x29
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_31x31
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_33x33
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_35x35
-- field com.com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_37x37
+- field com.aspose.barcode.generation.DataMatrixEncodeMode.BYTES
+- class com.aspose.barcode.generation.DataMatrixVersion
+- field com.aspose.barcode.generation.DataMatrixVersion.AUTO
+- field com.aspose.barcode.generation.DataMatrixVersion.ROWS_COLUMNS
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_9x9
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_050_11x11
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_100_13x13
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_100_15x15
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_17x17
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_19x19
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_21x21
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_23x23
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_25x25
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_27x27
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_29x29
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_31x31
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_33x33
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_35x35
+- field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_37x37
 - field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_39x39
 - field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_41x41
 - field com.aspose.barcode.generation.DataMatrixVersion.ECC000_140_43x43
@@ -104,7 +104,9 @@ Added:
 - class com.aspose.barcode.generation.DataMatrixExtCodetextBuilder
 - method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.addECICodetextWithEncodeMode(int,com.aspose.barcode.generation.DataMatrixEncodeMode,String)
 - method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.addCodetextWithEncodeMode(com.aspose.barcode.generation.DataMatrixEncodeMode,String)
-- method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.getExtendedCodetext
+- method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.addECICodetext(int,String)
+- method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.addPlainCodetext(String)
+- method com.aspose.barcode.generation.DataMatrixExtCodetextBuilder.getExtendedCodetext()
 - method com.aspose.barcode.generation.DataMatrixParameters.getStructuredAppendBarcodeId():int
 - method com.aspose.barcode.generation.DataMatrixParameters.setStructuredAppendBarcodeId(int)
 - method com.aspose.barcode.generation.DataMatrixParameters.getStructuredAppendBarcodesCount():int
@@ -124,6 +126,7 @@ Added:
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.getStructuredAppendBarcodeId():int
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.getStructuredAppendFileId():int
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.isReaderProgramming():boolean
+- method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.isEmpty():boolean
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.equals(Object)
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.op_Equality(com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters,com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters)
 - method com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters.op_Inequality(com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters,com.aspose.barcode.barcoderecognition.DataMatrixExtendedParameters)
