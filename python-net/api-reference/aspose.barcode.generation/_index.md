@@ -36,6 +36,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[ExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/extcodetextbuilder/)|Helper class for automatic codetext generation of the Extended Codetext Mode|
 |[FontUnit](/barcode/python-net/api-reference/aspose.barcode.generation/fontunit/)|Defines a particular format for text, including font face, size, and style attributes<br/>            where size in Unit value property.|
 |[GS1CompositeBarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/gs1compositebarparameters/)|GS1 Composite bar parameters.|
+|[HanXinExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinextcodetextbuilder/)|Extended codetext generator for Han Xin Code for Extended Mode of HanXinEncodeMode|
 |[HanXinParameters](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinparameters/)|Han Xin parameters.|
 |[ITFParameters](/barcode/python-net/api-reference/aspose.barcode.generation/itfparameters/)|ITF parameters.|
 |[MaxiCodeExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeextcodetextbuilder/)|Extended codetext generator for MaxiCode barcodes for ExtendedCodetext Mode of MaxiCodeEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|

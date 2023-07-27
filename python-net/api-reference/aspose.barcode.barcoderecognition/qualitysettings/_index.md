@@ -41,6 +41,7 @@ The QualitySettings type exposes the following members:
 |allow_datamatrix_industrial_barcodes|Allows engine for Datamatrix to recognize dashed industrial Datamatrix barcodes. <br/>            Slow mode which helps only for dashed barcodes which consist from spots.|
 |allow_qr_micro_qr_restoration|Allows engine for QR/MicroQR to recognize damaged MicroQR barcodes.|
 |allow_one_d_wiped_bars_restoration|Allows engine for 1D barcodes to recognize barcodes with single wiped/glued bars in pattern.|
+|allow_additional_restorations|Allows engine using additional image restorations to recognize corrupted barcodes. At this time, it is used only in MicroPdf417 barcode type.|
 |detector_settings|Barcode detector settings.|
 
 ### See Also
