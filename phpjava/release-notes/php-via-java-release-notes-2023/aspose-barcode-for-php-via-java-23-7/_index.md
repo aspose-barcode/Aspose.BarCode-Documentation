@@ -126,3 +126,40 @@ Added:
 - function Recognition->DataMatrixExtendedParameters->getStructuredAppendBarcodeId():int
 - function Recognition->DataMatrixExtendedParameters->getStructuredAppendFileId():int
 - function Recognition->DataMatrixExtendedParameters->isReaderProgramming():bool
+
+```PHP
+//Auto mode
+  $codetext = "犬Right狗";
+  $generator = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext))
+  $generator->getParameters()->getBarcode()->getMaxiCode()->setECIEncoding(ECIEncodings::UTF8);
+  $generator->save("test.bmp");
+
+
+ //Bytes mode
+ $encodedArr = array( 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 );
+ *
+ //encode array to string
+ $strBld = "";
+ foreach($encodedArr as $bval)
+     strBld.= bval;
+ $codetext = $strBld;
+ $generator1 = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext))
+ $generator->getParameters()->getBarcode()->getMaxiCode()->setMaxiCodeEncodeMode(MaxiCodeEncodeMode.BYTES);
+ $generator->save("test.bmp");
+
+ //Extended codetext mode
+ //create codetext
+ $textBuilder = new MaxiCodeExtCodetextBuilder();
+ $textBuilder->addECICodetext(ECIEncodings::Win1251, "Will");
+ $textBuilder->addECICodetext(ECIEncodings::UTF8, "犬Right狗");
+ $textBuilder->addECICodetext(ECIEncodings::UTF16BE, "犬Power狗");
+ $textBuilder->addPlainCodetext("Plain text");
+ *
+ // generate codetext
+ $codetext = $textBuilder->getExtendedCodetext();
+ $generator = new BarcodeGenerator(EncodeTypes::MaxiCode, $codetext);
+ $generator->getParameters()->getBarcode()->getMaxiCode()->setMaxiCodeEncodeMode(MaxiCodeEncodeMode::EXTENDED_CODETEXT);
+ $generator->getParameters()->getBarcode()->getMaxiCode()->setTwoDDisplayText("My Text");
+ $generator->save("test.bmp");
+```
+
