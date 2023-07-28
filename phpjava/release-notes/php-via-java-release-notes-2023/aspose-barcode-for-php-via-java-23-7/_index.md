@@ -132,7 +132,7 @@ Added:
   $codetext = "犬Right狗";
   $generator = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext))
   $generator->getParameters()->getBarcode()->getMaxiCode()->setECIEncoding(ECIEncodings::UTF8);
-  $generator->save("test.bmp");
+  $generator->save("test.bmp", BarCodeImageFormat::BMP);
 
 
  //Bytes mode
@@ -141,11 +141,13 @@ Added:
  //encode array to string
  $strBld = "";
  foreach($encodedArr as $bval)
-     strBld.= bval;
+ {
+     strBld.= $bval;
+ }
  $codetext = $strBld;
- $generator1 = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext))
+ $generator = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext))
  $generator->getParameters()->getBarcode()->getMaxiCode()->setMaxiCodeEncodeMode(MaxiCodeEncodeMode.BYTES);
- $generator->save("test.bmp");
+ $generator->save("test.bmp", BarCodeImageFormat::BMP);
 
  //Extended codetext mode
  //create codetext
@@ -157,9 +159,8 @@ Added:
  *
  // generate codetext
  $codetext = $textBuilder->getExtendedCodetext();
- $generator = new BarcodeGenerator(EncodeTypes::MaxiCode, $codetext);
+ $generator = new BarcodeGenerator(EncodeTypes::MAXI_CODE, $codetext);
  $generator->getParameters()->getBarcode()->getMaxiCode()->setMaxiCodeEncodeMode(MaxiCodeEncodeMode::EXTENDED_CODETEXT);
- $generator->getParameters()->getBarcode()->getMaxiCode()->setTwoDDisplayText("My Text");
  $generator->save("test.bmp");
 ```
 
