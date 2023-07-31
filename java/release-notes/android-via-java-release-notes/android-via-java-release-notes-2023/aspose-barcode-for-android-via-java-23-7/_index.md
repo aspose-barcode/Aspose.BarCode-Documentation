@@ -1,15 +1,15 @@
 ---
-title: Aspose.BarCode for Java 23.7 Release Notes
+title: Aspose.BarCode for Android via Java 23.7
 type: docs
 weight: 940
-url: /java/aspose-barcode-for-java-23-7-release-notes/
+url: /java/aspose-barcode-for-android-via-java-23-7/
 ---
 
-{{% alert color="primary" %}}
+{{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Java 23.7](https://downloads.aspose.com/barcode/java/new-releases/aspose.barcode-for-java-23.7/).
+This page contains release notes information for [Aspose.BarCode for Android via Java 23.7](https://downloads.aspose.com/barcode/androidjava/new-releases/aspose.barcode-for-android-via-java-23.7/).
 
-{{% /alert %}}
+{{% /alert %}} 
 ## **All Changes**
 
 |**Key**|**Summary**|**Category**|
