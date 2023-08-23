@@ -3,7 +3,7 @@ title: CodabarParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 90
+weight: 100
 url: /python-net/api-reference/aspose.barcode.generation/codabarparameters/
 ---
 

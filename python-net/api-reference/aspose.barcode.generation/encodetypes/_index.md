@@ -3,7 +3,7 @@ title: EncodeTypes
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 200
+weight: 210
 url: /python-net/api-reference/aspose.barcode.generation/encodetypes/
 ---
 
@@ -53,6 +53,7 @@ The EncodeTypes type exposes the following members:
 |DATA_MATRIX|2D barcode symbology DataMatrix|
 |QR|Specifies that the data should be encoded with QR Code barcode specification|
 |AZTEC|Specifies that the data should be encoded with Aztec barcode specification|
+|GS1_AZTEC|Specifies that the data should be encoded with GS1 Aztec barcode specification. The codetext must contains parentheses for AI.|
 |PDF417|Specifies that the data should be encoded with Pdf417 barcode specification|
 |MACRO_PDF417|Specifies that the data should be encoded with MacroPdf417 barcode specification|
 |GS1_DATA_MATRIX|2D barcode symbology DataMatrix with GS1 string format|

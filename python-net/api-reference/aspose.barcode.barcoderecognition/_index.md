@@ -15,6 +15,7 @@ The Aspose.BarCode.BarCodeRecognition contains tools for the 1D/2D barcodes reco
 | :- | :- |
 |[AustraliaPostCustomerInformationDecoder](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/australiapostcustomerinformationdecoder/)|Public interface for Customer Information Field decoding which is used in AustraliaPost symbology. Implementation should be provided by user.|
 |[AustraliaPostSettings](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/australiapostsettings/)|AustraliaPost decoding parameters. Contains parameters which make influence on recognized data of AustraliaPost symbology.|
+|[AztecExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/aztecextendedparameters/)|Stores special data of Aztec recognized barcode|
 |[BarCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodeextendedparameters/)|Stores extended parameters of recognized barcode|
 |[BarCodeReader](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcodereader/)|BarCodeReader encapsulates an image which may contain one or several barcodes, it then can perform ReadBarCodes operation to detect barcodes.|
 |[BarCodeRegionParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/barcoderegionparameters/)|Represents the recognized barcode's region and barcode angle|
@@ -29,6 +30,7 @@ The Aspose.BarCode.BarCodeRecognition contains tools for the 1D/2D barcodes reco
 |[DataMatrixExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/datamatrixextendedparameters/)|Stores special data of DataMatrix recognized barcode|
 |[DecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/)|Specify the type of barcode to read.|
 |[DotCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/dotcodeextendedparameters/)|Stores special data of DotCode recognized barcode|
+|[GS1CompositeBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/gs1compositebarextendedparameters/)|Stores special data of GS1 Composite Bar recognized barcode|
 |[MaxiCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/maxicodeextendedparameters/)|Stores a MaxiCode additional information of recognized barcode|
 |[MultyDecodeType](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/multydecodetype/)|Composite decode type.|
 |[OneDExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/onedextendedparameters/)|Stores special data of 1D recognized barcode like separate codetext and checksum|

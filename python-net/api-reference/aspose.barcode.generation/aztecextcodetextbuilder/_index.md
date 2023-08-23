@@ -1,21 +1,21 @@
 ---
-title: MaxiCodeExtCodetextBuilder
+title: AztecExtCodetextBuilder
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 280
-url: /python-net/api-reference/aspose.barcode.generation/maxicodeextcodetextbuilder/
+weight: 20
+url: /python-net/api-reference/aspose.barcode.generation/aztecextcodetextbuilder/
 ---
 
-## MaxiCodeExtCodetextBuilder class
+## AztecExtCodetextBuilder class
 
-Extended codetext generator for MaxiCode barcodes for ExtendedCodetext Mode of MaxiCodeEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.
+Extended codetext generator for Aztec barcodes for ExtendedCodetext Mode of AztecEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.
 
-The MaxiCodeExtCodetextBuilder type exposes the following members:
+The AztecExtCodetextBuilder type exposes the following members:
 ## Constructors
 | Name | Description |
 | :- | :- |
-|MaxiCodeExtCodetextBuilder()|Initializes a new instance of the MaxiCodeExtCodetextBuilder class|
+|AztecExtCodetextBuilder()|Initializes a new instance of the AztecExtCodetextBuilder class|
 ## Methods
 | Name | Description |
 | :- | :- |

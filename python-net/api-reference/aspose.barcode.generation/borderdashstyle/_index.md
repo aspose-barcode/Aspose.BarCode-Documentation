@@ -3,7 +3,7 @@ title: BorderDashStyle
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 430
+weight: 450
 url: /python-net/api-reference/aspose.barcode.generation/borderdashstyle/
 ---
 

@@ -3,7 +3,7 @@ title: Pdf417ExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 200
+weight: 220
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/pdf417extendedparameters/
 ---
 
@@ -27,6 +27,7 @@ The Pdf417ExtendedParameters type exposes the following members:
 |macro_pdf_417_checksum|Macro PDF417 checksum (optional).|
 |macro_pdf_417_terminator|Indicates whether the segment is the last segment of a Macro PDF417 file.|
 |is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol as programming for reader initialization.|
+|is_linked|Flag that indicates that the barcode must be linked to 1D barcode.|
 
 ### See Also
 

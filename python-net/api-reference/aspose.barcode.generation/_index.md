@@ -14,6 +14,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 | Class | Description |
 | :- | :- |
 |[AustralianPostParameters](/barcode/python-net/api-reference/aspose.barcode.generation/australianpostparameters/)|AustralianPost barcode parameters.|
+|[AztecExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/aztecextcodetextbuilder/)|Extended codetext generator for Aztec barcodes for ExtendedCodetext Mode of AztecEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
 |[AztecParameters](/barcode/python-net/api-reference/aspose.barcode.generation/aztecparameters/)|Aztec parameters.|
 |[BarcodeGenerator](/barcode/python-net/api-reference/aspose.barcode.generation/barcodegenerator/)|BarcodeGenerator for backend barcode images generation.<br/>            <br/>            supported symbologies:<br/>            1D:<br/>            Codabar, Code11, Code128, Code39Standard, Code39Extended<br/>            Code93Standard, Code93Extended, EAN13, EAN8, Interleaved2of5,<br/>            MSI, Standard2of5, UPCA, UPCE, ISBN, GS1Code128, Postnet, Planet<br/>            EAN14, SCC14, SSCC18, ITF14, SingaporePost ...<br/>            2D:<br/>            Aztec, DataMatrix, PDf417, QR code ...|
 |[BarcodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/)|Barcode generation parameters.|
@@ -55,6 +56,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 | Enumeration | Description |
 | :- | :- |
 |[AutoSizeMode](/barcode/python-net/api-reference/aspose.barcode.generation/autosizemode/)|Specifies the different types of automatic sizing modes.|
+|[AztecEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/aztecencodemode/)|Encoding mode for Aztec barcodes.|
 |[AztecSymbolMode](/barcode/python-net/api-reference/aspose.barcode.generation/aztecsymbolmode/)|Specifies the Aztec symbol mode.|
 |[BarCodeImageFormat](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeimageformat/)|Specifies the file format of the image.|
 |[BarcodeClassifications](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeclassifications/)|Symbology classification|

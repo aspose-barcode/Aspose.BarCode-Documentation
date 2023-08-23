@@ -3,7 +3,7 @@ title: BarCodeConfidence
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 250
+weight: 270
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/barcodeconfidence/
 ---
 

@@ -3,7 +3,7 @@ title: BarCodeExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 30
+weight: 40
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/barcodeextendedparameters/
 ---
 
@@ -22,7 +22,9 @@ The BarCodeExtendedParameters type exposes the following members:
 |data_bar|Gets a DataBar additional information[DataBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/databarextendedparameters/) of recognized barcode|
 |maxi_code|Gets a MaxiCode additional information[MaxiCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/maxicodeextendedparameters/) of recognized barcode|
 |dot_code|Gets a DotCode additional information[DotCodeExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/dotcodeextendedparameters/) of recognized barcode|
-|data_matrix|Gets a DotCode additional information[DataMatrixExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/datamatrixextendedparameters/) of recognized barcode|
+|data_matrix|Gets a DataMatrix additional information[DataMatrixExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/datamatrixextendedparameters/) of recognized barcode|
+|aztec|Gets a Aztec additional information[AztecExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/aztecextendedparameters/) of recognized barcode|
+|gs1_composite_bar|Gets a GS1CompositeBar additional information[GS1CompositeBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/gs1compositebarextendedparameters/) of recognized barcode|
 
 ### See Also
 

@@ -3,7 +3,7 @@ title: GS1CompositeBarParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 230
+weight: 240
 url: /python-net/api-reference/aspose.barcode.generation/gs1compositebarparameters/
 ---
 
@@ -15,8 +15,9 @@ The GS1CompositeBarParameters type exposes the following members:
 ## Properties
 | Name | Description |
 | :- | :- |
-|linear_component_type|Linear component type|
+|linear_component_type|Linear component type: GS1Code128, UPCE, EAN8, UPCA, EAN13, DatabarStacked, DatabarStackedOmniDirectional, DatabarLimited, DatabarOmniDirectional, DatabarExpanded, DatabarExpandedStacked|
 |two_d_component_type|2D component type|
+|is_allow_only_gs1_encoding|If this flag is set, it allows only GS1 encoding standard for GS1CompositeBar 2D Component|
 
 ### See Also
 

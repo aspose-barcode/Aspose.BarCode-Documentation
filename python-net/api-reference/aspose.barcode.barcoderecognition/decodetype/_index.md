@@ -3,7 +3,7 @@ title: DecodeType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 150
+weight: 160
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/
 ---
 
@@ -51,6 +51,7 @@ The DecodeType type exposes the following members:
 |GS1_DATA_MATRIX|Specifies that the data should be decoded with GS1DataMatrix barcode symbology|
 |QR|Specifies that the data should be decoded with QR Code barcode specification|
 |AZTEC|Specifies that the data should be decoded with Aztec barcode specification|
+|GS1_AZTEC|Specifies that the data should be decoded with GS1 Aztec barcode specification|
 |PDF417|Specifies that the data should be decoded with Pdf417 barcode symbology|
 |MACRO_PDF417|Specifies that the data should be decoded with MacroPdf417 barcode specification|
 |MICRO_PDF417|Specifies that the data should be decoded with MicroPdf417 barcode specification|
@@ -79,24 +80,25 @@ The DecodeType type exposes the following members:
 |COMPACT_PDF417|Specifies that the data should be decoded with CompactPdf417 (Pdf417Truncated) barcode specification|
 |GS1QR|Specifies that the data should be decoded with GS1 QR barcode specification|
 |MAXI_CODE|Specifies that the data should be decoded with MaxiCode barcode specification|
-|MICR_E13B|Specifies that the data should be decoded with MICR E-13B blank specification|
-|CODE32|Specifies that the data should be decoded with Code32 blank specification|
-|DATA_LOGIC_2OF_5|Specifies that the data should be decoded with DataLogic 2 of 5 blank specification|
-|DOT_CODE|Specifies that the data should be decoded with DotCode blank specification|
-|GS1_DOT_CODE|Specifies that the data should be decoded with GS1 DotCode blank specification|
-|DUTCH_KIX|Specifies that the data should be decoded with DotCode blank specification|
-|HIBC_CODE_39LIC|Specifies that the data should be decoded with HIBC LIC Code39 blank specification|
-|HIBC_CODE_128LIC|Specifies that the data should be decoded with HIBC LIC Code128 blank specification|
-|HIBC_AZTEC_LIC|Specifies that the data should be decoded with HIBC LIC Aztec blank specification|
-|HIBC_DATA_MATRIX_LIC|Specifies that the data should be decoded with HIBC LIC DataMatrix blank specification|
-|HIBCQRLIC|Specifies that the data should be decoded with HIBC LIC QR blank specification|
-|HIBC_CODE_39PAS|Specifies that the data should be decoded with HIBC PAS Code39 blank specification|
-|HIBC_CODE_128PAS|Specifies that the data should be decoded with HIBC PAS Code128 blank specification|
-|HIBC_AZTEC_PAS|Specifies that the data should be decoded with HIBC PAS Aztec blank specification|
-|HIBC_DATA_MATRIX_PAS|Specifies that the data should be decoded with HIBC PAS DataMatrix blank specification|
-|HIBCQRPAS|Specifies that the data should be decoded with HIBC PAS QR blank specification|
-|HAN_XIN|Specifies that the data should be decoded with Han Xin Code blank specification|
-|GS1_HAN_XIN|Specifies that the data should be decoded with GS1 Han Xin Code blank specification|
+|MICR_E13B|Specifies that the data should be decoded with MICR E-13B barcode specification|
+|CODE32|Specifies that the data should be decoded with Code32 barcode specification|
+|DATA_LOGIC_2OF_5|Specifies that the data should be decoded with DataLogic 2 of 5 barcode specification|
+|DOT_CODE|Specifies that the data should be decoded with DotCode barcode specification|
+|GS1_DOT_CODE|Specifies that the data should be decoded with GS1 DotCode barcode specification|
+|DUTCH_KIX|Specifies that the data should be decoded with DotCode barcode specification|
+|HIBC_CODE_39LIC|Specifies that the data should be decoded with HIBC LIC Code39 barcode specification|
+|HIBC_CODE_128LIC|Specifies that the data should be decoded with HIBC LIC Code128 barcode specification|
+|HIBC_AZTEC_LIC|Specifies that the data should be decoded with HIBC LIC Aztec barcode specification|
+|HIBC_DATA_MATRIX_LIC|Specifies that the data should be decoded with HIBC LIC DataMatrix barcode specification|
+|HIBCQRLIC|Specifies that the data should be decoded with HIBC LIC QR barcode specification|
+|HIBC_CODE_39PAS|Specifies that the data should be decoded with HIBC PAS Code39 barcode specification|
+|HIBC_CODE_128PAS|Specifies that the data should be decoded with HIBC PAS Code128 barcode specification|
+|HIBC_AZTEC_PAS|Specifies that the data should be decoded with HIBC PAS Aztec barcode specification|
+|HIBC_DATA_MATRIX_PAS|Specifies that the data should be decoded with HIBC PAS DataMatrix barcode specification|
+|HIBCQRPAS|Specifies that the data should be decoded with HIBC PAS QR barcode specification|
+|HAN_XIN|Specifies that the data should be decoded with Han Xin Code barcode specification|
+|GS1_HAN_XIN|Specifies that the data should be decoded with GS1 Han Xin Code barcode specification|
+|GS1_COMPOSITE_BAR|Specifies that the data should be decoded with GS1 Composite Bar barcode specification|
 |TYPES_1D|Specifies that data will be checked with all of 1D barcode symbologies|
 |TYPES_2D|Specifies that data will be checked with all of 2D barcode symbologies|
 |POSTAL_TYPES|Specifies that data will be checked with all of 1.5D Postal barcode symbologies, like Planet, Postnet, AustraliaPost, OneCode, RM4SCC, DutchKIX|
