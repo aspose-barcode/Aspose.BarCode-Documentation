@@ -5,11 +5,13 @@ type: docs
 description: "Aspose.BarCode for .NET can be used to generate different types of PDF417 barcodes."
 keywords: "Generate PDF417 Barcode, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for .NET, C#"
 weight: 50
-url: /net/pdf417-and-macropdf417-barcode/
+url: /net/pdf417-barcodes/
+aliases:
+- /net/pdf417-and-macropdf417-barcode/
 ---
 {{% alert color="primary" %}}[Generate PDF417 Barcodes Online](https://products.aspose.app/barcode/generate/pdf417): You can test the quality of ***Aspose.BarCode*** generation for PDF417 barcodes and get the results online.{{% /alert %}}
 
-## Overview
+## **Overview**
 *PDF417* is a group of 2D variable-length stacked symbologies that are similar to matrix barcodes in terms of various parameters. This standard supports laser scanning for high-quality documents (except *Compact PDF417* that requires photo scanning). *PDF417* barcodes have data density that is lower than that of matrix symbologies but several times greater compared to basic 1D stacked barcode types. *PDF417* standards enable encoding both byte streams and Unicode symbols. Moreover, *PDF417* barcodes include additional information for data recovery through Reed-Solomon error correction.  
   
 The other peculiarity of the *PDF417* barcode family is the extended format of representing metadata so that one file can be divided into several barcodes and then transmitted on a printed document indicating file date, name, checksum, and other information. However, metadata require additional space in a barcode image. The layout of *PDF417* barcodes includes rows and columns. The basic *PDF417* standard can encode up to 1,108 bytes or 1,850 alphanumeric (2,710 numerical) symbols in up to 30 columns and 90 rows while *Micro PDF417* is capable of encoding at most 150 bytes of data or 266 alphanumeric (366 numerical) characters in up to 4 columns and 44 rows.  
@@ -23,7 +25,7 @@ The other peculiarity of the *PDF417* barcode family is the extended format of r
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **PDF417 and Macro PDF417 Symbology**
+## **PDF417 and Macro PDF417**
 *PDF417* and *Macro PDF417* barcodes may contain from 1 to 30 columns with input data, 2 columns with auxiliary metainformation (such as row indicator, the number of rows and columns) and then, start and stop patterns. The number of rows can vary from 3 to 90. The main distinction between *Macro PDF417* and *Basic PDF417* is the possibility to encode additional metadata about barcode contents. This redundancy associated with auxiliary metadata allows reading such barcodes using laser scanners as well as reducing barcode image quality requirements. The specificities of using *Macro PDF417* in ***Aspose.BarCode for .NET*** are discussed further in the corresponding [**subsection**](#macropdf417).
   
 <p align="center"><img src="pdf417basic.png"></p>
@@ -41,7 +43,7 @@ The following code snippet illustrates how to generate a *Basic PDF417* barcode.
 ```
 
 
-## **Micro PDF417 Symbologies**
+## **Micro PDF417**
 *Micro PDF417* can include from 1 to 4 columns and from 4 to 44 rows; the maximal and minimal numbers of rows depend on the number of columns according to the predefined combinations of rows, columns, and error correction codewords. In addition, each barcode contains two columns with metadata that serve as targets for barcode location in an image. In general, *Micro PDF417* is used for work with high-quality documents due to barcode recognition difficulties; at the same time, these barcodes can be read by laser scanners. 
 
 <p align="center"><img src="micropdf417basic.png"></p>
@@ -57,7 +59,7 @@ gen.Save($"{path}MicroPdf417Basic.png", BarCodeImageFormat.Png);
 
 ```
 
-## **Compact PDF417 Symbology**
+## **Compact PDF417**
 The specification of *Compact PDF417* is similar to those of *Basic PDF417* and *Macro PDF417*; however, the right-side metainformation column and the right-side stop pattern are removed to save space for small-sized barcodes. This symbology does not support laser scanning; moreover, due to the absence of metainformation redundancy, it has difficulties with low-quality barcode image recognition. To set the *Compact PDF417* generation mode in ***Aspose.BarCode for .NET***, it is necessary to initialize the [*Pdf417Truncate*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417truncate) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters).
   
 <p align="center"><img src="compactpdf417basic.png"></p>

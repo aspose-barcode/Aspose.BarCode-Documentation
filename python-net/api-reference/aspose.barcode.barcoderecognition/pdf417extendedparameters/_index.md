@@ -26,6 +26,7 @@ The Pdf417ExtendedParameters type exposes the following members:
 |macro_pdf_417_time_stamp|Macro PDF417 time stamp (optional).|
 |macro_pdf_417_checksum|Macro PDF417 checksum (optional).|
 |macro_pdf_417_terminator|Indicates whether the segment is the last segment of a Macro PDF417 file.|
+|is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol as programming for reader initialization.|
 
 ### See Also
 

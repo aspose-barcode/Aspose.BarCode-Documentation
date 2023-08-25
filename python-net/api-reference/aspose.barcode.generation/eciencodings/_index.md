@@ -3,7 +3,7 @@ title: ECIEncodings
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 520
+weight: 530
 url: /python-net/api-reference/aspose.barcode.generation/eciencodings/
 ---
 

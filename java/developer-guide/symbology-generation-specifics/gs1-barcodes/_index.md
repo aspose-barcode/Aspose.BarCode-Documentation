@@ -1,10 +1,12 @@
 ---
-title: Working with GS1 Barcode Types in Java
-linktitle: GS1 Barcodes
+title: Generate GS1 Barcodes in C#
+linktitle: GS1 Barcode Types
 type: docs
 weight: 90
-url: /java/gs1-types/
+url: /java/gs1-barcodes/
 aliases:
+
+- /java/gs1-types/
 - /java/generating-gs1-128-ai-8102-coupon-extended-barcode/
 - /java/generating-upca-and-gs1-databar-coupon-barcode/
 ---

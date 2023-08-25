@@ -1,41 +1,95 @@
 ---
-title: Generation Specifics for Barcode Types
+title: Specific Parameters of 2D Barcode Types in Aspose.BarCode via .NET
+linktitle: Generate 2D Barcodes
 type: docs
 weight: 20
-url: /net/generate-barcode-with-different-symbology/
+url: /net/2d-barcode-types/
+aliases:
+- /net/managing-2d-barcodes/
 ---
-This chapter focuses on the peculiarities of working with various barcode types and corresponding barcode generation specificities in ***Aspose.BarCode for .NET***.  
-All related information can be found in the articles listed below.
-  
-|General Information| |   
-|---|---|
-|**Article**|**Description**|
-|[Working with Barcode Types](/barcode/net/symbologies-for-barcodes/)|Provides detailed information about barcode specifications supported in ***Aspose.Barcode***|
-|[Specific Parameters for 1D Barcodes](/barcode/net/managing-different-barcode-settings/)|Outlines how to set various generation parameters that are specific for 1D barcodes, such as bar height, bar filling, and wide-to-narrow ratio|
-    
-|2D Barcodes| |   
-|---|---|
-|**Article**|**Description**|
-|[QR and Micro QR Codes](/barcode/net/qr-and-micro-qr-barcode/)|Explains how to generate *QR Code* and *Micro QR Code* barcodes, set different generation and data encoding modes, customize the aspect ratio and error correction level, and use the structured append mechanism|
-|[PDF417 Barcode Family](/barcode/net/pdf417-and-macropdf417-barcode/)|Describes how to create *PDF417* barcodes of various types, including *Basic PDF417*, *Micro PDF417*, *Macro PDF417*, and *Compact PDF417*, work with different data encoding modes, adjust the aspect ratio and error correction level, use metadata and special parameters, and customize barcode layout|
-|[DataMatrix Barcodes](/barcode/net/datamatrix-barcode)|Specifies how to generate *DataMatrix* barcodes, set different data encoding modes, use macro characters, adjust barcode layout, and modify the aspect ratio|
-|[Aztec Barcodes](/barcode/net/aztec-barcode/)|Describes how to generate barcode images using the *Aztec* symbology, work with different generation and encoding modes, and adjust the aspect ratio|
-|[MaxiCode Barcodes](/barcode/net/maxicode-barcodes/)|Provides information about *MaxiCode* barcode generation, the use of different data encoding modes, and the adjustment of the aspect ratio settings|
-  
-|1D Barcodes| |
-|---|---|
-|**Article**|**Description**|  
-|[GS1 Barcodes](/barcode/net/generating-barcodes-using-new-barcode-generation-api/)|Explains how to apply GS1 standards to generated barcodes and create *UPC-A Coupon* barcodes|
-|[DataBar Barcodes](/barcode/net/databar-barcodes/)|Represents the specific information about generating *DataBar* barcodes, including barcode height adjustment, layout settings, and GS1 compatibility verification|
-|[Codabar Barcodes](/barcode/net/codabar-barcodes/)|Describes how to generate *Codabar* barcodes, adjust start and stop symbols, and manage checksum settings|
-|[ITF Barcodes](/barcode/net/itf-barcodes/)|Describes how to generate *ITF* barcodes and customize frame styles and quiet zone settings|
-|[Codablock-F Barcodes](/barcode/net/codablockf-barcodes/)|Provides information on how to generate *Codablock-F* barcodes and manage barcode height and layout settings|
-|[PatchCode Barcodes](/barcode/net/how-to-generate-a-patch-code/)|Describes how to create *PatchCode* barcodes and pages using different patterns and generation modes|
-|[Code 16K Barcodes](/barcode/net/code16k-barcodes/)|Specifies how to generate *Code 16K* barcodes with different barcode height and quiet zone settings|
-|[EAN 2 and EAN 5 as Supplement](/barcode/net/ean2-and-ean5-as-supplement/)|Explains how to use *EAN 2* and *EAN 5* symbologies for the purpose of supplement barcode generation|
+**Two-dimensional (2D)** barcodes have been introduced to address the limitations of linear symbologies. 2D barcodes are more complex and can include not only text data but also other types of information: price, quantity, web address, etc. They can be composed of rectangles, dots, hexagons, or other geometric patterns called matrix codes. By storing data both horizontally and vertically to form a square or rectangle, significantly more information can be encoded. Accordingly, 2D barcodes encode much larger amounts of information compared with typical 1D symbologies. 2D symbologies benefit from high readability and can mitigate poor printing quality as they contain additional data so that even if one or more cells are damaged, the barcode is still readable.  
 
-|Postal Standards| |
-|---|---|
-|**Article**|**Description**|  
-|[Postal Barcodes](/barcode/net/postal-barcodes/)|Provides an overview on postal symbologies, including 2-state (*Planet* and *Postnet*) and 4-state standards (*RM4SCC*, *Dutch KIX*, *Mailmark*, and others)|
-|[Swiss Post Parcel Barcodes](/barcode/net/barcodes-using-swisspost-parcel-symbology/)|Explains how to work with the Swiss Post Parcel barcode type|
+**QR Code**  
+*QR Code* is a 2D symbology that is used to encode long strings of alphanumeric data, typically text or URL. A *QR Code* label is composed of an array of black and white squares that can be recognized by smartphones and other readers. The *QR Code* symbology provides high data encoding density. Moreover, it supports the **Reed-Solomon** error correction that allows not only to restore corrupted data but also to ensure correct information decoding.  
+
+<p align="center"><image src="qrcode.png"></p>
+  
+The code sample below can be used to generate a *QR Code* barcode.  
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
+gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
+gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+gen.Parameters.Barcode.XDimension.Pixels = 8;
+gen.Save($"{path}QrCode.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+
+
+**PDF417**  
+The *PDF417* barcode is a 2D high-density symbology that is capable of encoding any sequence of bytes, including text, numbers, files, and actual data bytes. It supports the Reed-Solomon error correction and thus provides high recognition accuracy.
+  
+<p align="center"><image src="pdf417.png"></p>
+  
+The following code snippet illustrates how to generate a *PDF417* barcode.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.Pdf417.Rows = 6;
+gen.Save($"{path}Pdf417.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+
+**Data Matrix**  
+*Data Matrix* is a 2D type that allows encoding large amounts of data in a compact space. A single *Data Matrix* can contain up to 2,335 alphanumeric or 3,116 numerical characters. This is 10 times greater than the standard data density of 1D barcodes.
+  
+<p align="center"><image src="datamatrix.png"></p>
+
+The code example below can be used to create a *Data Matrix* barcode.  
+
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.XDimension.Pixels = 8;
+gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
+
+**Aztec Code**  
+*Aztec Code* is a highly efficient 2D symbology that uses square modules with a unique finder pattern in the middle of a barcode, which allows barcode scanners to identify cell locations required for barcode reading. This barcode type not only enables encoding any sequence of bytes but also ensures correct data recognition.
+  
+<p align="center"><image src="aztecfull.png"></p>
+  
+The code snippet given below shows how to generate an *Aztec* barcode.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.XDimension.Pixels = 8;
+gen.Save($"{path}AztecFull.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 
+
+
+**Micro QR Code**  
+The *Micro QR Code* symbology provides large data density; however, it has a square shape and thus needs square space to be placed. A major feature of *Micro QR Code* is that it has only one position detection pattern instead of three ones for regular *QR Code* and requires a more compact placement area.
+  
+<p align="center"><image src="microqr.png"></p>
+  
+The following code snippet illustrates how to generate a *Micro QR Code*.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");
+gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceMicroQR;
+gen.Parameters.Barcode.XDimension.Pixels = 8;
+gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
+{{< /highlight >}}
+  
+**Compact PDF417**    
+*Compact PDF417* can be used when space limitations are the main concern and symbol damage is unlikely. It has less data density compared with other 2D barcodes; however, owing to its property to have a length 64 times larger than height, it is more suitable for narrow rectangular areas with size limitations.
+  
+<p align="center"><image src="compactpdf417.png"></p>
+  
+The code sample below can be used to create a *Compact PDF417* barcode.
+  
+{{< highlight csharp>}}
+BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+//Compact version of Pdf417
+gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true;
+gen.Parameters.Barcode.Pdf417.Rows = 6;
+gen.Save($"{path}CompactPdf417.png", BarCodeImageFormat.Png);
+{{< /highlight >}} 

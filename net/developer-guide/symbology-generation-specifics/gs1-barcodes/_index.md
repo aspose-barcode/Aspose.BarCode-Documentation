@@ -1,8 +1,11 @@
 ---
-title: GS1 Barcodes
+title: Generate GS1 Barcodes in C#
+linktitle: GS1 Barcode Types
 type: docs
 weight: 90
-url: /net/generating-barcodes-using-new-barcode-generation-api/
+url: /net/gs1-barcodes/
+aliases:
+- /net/generating-barcodes-using-new-barcode-generation-api/
 ---
 {{% alert color="primary" %}}[Generate GS1 Code 128 and](https://products.aspose.app/barcode/generate/code128?type=gs1code128) [GS1 DataMatrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix?type=gs1datamatrix): You can test the quality of ***Aspose.BarCode*** generation for GS1 barcodes and view the results online.{{% /alert %}}
 

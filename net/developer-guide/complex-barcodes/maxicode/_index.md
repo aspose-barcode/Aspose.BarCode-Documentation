@@ -1,8 +1,11 @@
 ---
-title: Complex MaxiCode Barcodes
+title: Complex MaxiCode Settings
+linktitle: MaxiCode
 type: docs
 weight: 40
-url: /net/complex-maxicode/
+url: /net/complex-maxicode-barcodes/
+aliases:
+- /net/complex-maxicode/
 ---
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}
 
@@ -34,7 +37,7 @@ The following special characters are used:
 To simplify the generation and reading of MaxiCode barcodes with complex data formats, the barcode library provides a set of classes: [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetext/), [*MaxiCodeStructuredCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredcodetext/), [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandardcodetext/), [*MaxiCodeSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodesecondmessage/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/). All these classes correspond to [*ComplexBarcode*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/).  
 Classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/) might be specifically useful for developers because the required formats of data to be encoded in MaxiCode modes 2 and 3 are quite complex. 
 
-### **Generation**
+### **Generation Modes**
 
 #### **MaxiCode Mode 2**
 
@@ -160,7 +163,7 @@ using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(ma
 }
 ```
 
-### **Decoding**
+### **Decoding Settings**
 To read *MaxiCode* barcode, it is necessary to create an instance of class [*BarcodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/) and set *DecodeType.MaxiCode*. Then, the fetched data can be transformed by calling the *TryDecodeMaxiCode* method of class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexcodetextreader/) that returns an object of class [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetext/). Objects of this class can be converted into objects of classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), or [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandardcodetext/), depending on the used *Maxicode* data mode.
 
 The code sample given below shows how to decode a *MaxiCode* barcode with the input data having a structured secondary message.

@@ -1,7 +1,8 @@
 ---
-title: DataBar Barcodes
+title: Generate DataBar Barcodes in C#
+linktitle: DataBar
 type: docs
-weight: 100
+weight: 50
 url: /net/databar-barcodes/
 ---
 {{% alert color="primary" %}}[Generate DataBar Barcodes Online](https://products.aspose.app/barcode/generate/databar): You can check the quality of ***Aspose.BarCode*** generation for DataBar barcodes and view the results online.{{% /alert %}}
@@ -125,7 +126,7 @@ catch (Exception e)
 }
 {{< /highlight >}}
   
-## **Enabling 2D Component**
+## **Enable 2D Component**
 Each of the *DataBar* symbologies may contain a specific 2D component linkage flag that indicates the presence of an associated 2D barcode that can be placed alongside the generated *DataBar* barcode label. Usually, such a flag is set in GS1 composite barcode specifications. ***Aspose.BarCode for NET*** enables the [*Is2DCompositeComponent*]( https://reference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters/properties/is2dcompositecomponent) property of class [*DataBarParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/databarparameters) that can be used to set this flag manually when required by particular industrial standards without affecting main information encoded in a barcode.  
   
 *DataBar Expanded* barcode images shown below have been generated with different settings for the 2D component flag.

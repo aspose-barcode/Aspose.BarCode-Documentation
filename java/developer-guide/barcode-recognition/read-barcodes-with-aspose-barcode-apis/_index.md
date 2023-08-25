@@ -1,5 +1,5 @@
 ---
-title: Barcode Recognition using Barcode Java API
+title: Read Barcodes using Barcode Java API
 linktitle: Barcode Reading API
 description: "Description of Barcode Java API for barcode recognition"
 type: docs
@@ -66,12 +66,12 @@ The *getCodeText()* method of class BarCodeReader returns a string representing 
 
 {{< /highlight >}}
 
-## **Recognizing Multiple Symbologies in Single Image**
+## **Recognize Multiple Barcode Types in Single Image**
 There might be situations when there is more than one barcode in an image. Aspose.BarCode can easily recognize all the barcodes of supported symbology types. This can be done by specifying the symbology type or setting Symbology.AllSupportedTypes.
 
 The image below contains two barcodes of the Code39Standard and Pdf417 types.
 
-**Two barcodes, one image**
+**Two barcodes in one image**
 
 |![todo:image_alt_text](http://i.imgur.com/5prpHFS.png)|
 | :- |

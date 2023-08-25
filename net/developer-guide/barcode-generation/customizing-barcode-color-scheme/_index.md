@@ -2,7 +2,7 @@
 title: Customize Barcode Color Scheme in C#
 linktitle: Customize Barcode Color Scheme
 type: docs
-weight: 60
+weight: 40
 description: "How to Customize Color of Barcode Elements in C#"
 keywords: "create barcode c#, barcode color ASP.NET, bar color c#, barcode text color c#, barcode caption c# .NET, Generate Barcodes, Customize Barcode Image, Change Barcode Color, Set Barcode Color, Generate Colored Barcodes, Barcode Color in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET"
 url: /net/customize-barcode-color/
@@ -61,7 +61,7 @@ The following code snippet demonstrates how to change barcode text color.
   
 {{< gist "aspose-barcode-gists" "701a80539ae8c01a0c959db324a902ad" "barcode-text-color.cs" >}}  
 
-## **Set Caption Color**
+## **Set Barcode Caption Color**
 Barcode images created using ***Aspose.BarCode for .NET*** may have top and/or bottom captions according to the will of a developer. The color of these elements can be adjusted by setting the value to the [*TextColor*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/textcolor) property in property group [*CaptionParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters). The following barcode images have been generated using the customized caption color settings (*Color.Green*).
   
 |Adjusting Caption Color|   |

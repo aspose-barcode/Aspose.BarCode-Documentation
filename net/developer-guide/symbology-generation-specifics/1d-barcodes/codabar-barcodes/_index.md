@@ -2,7 +2,7 @@
 title: Generate Codabar Barcodes in C#
 linktitle: Codabar
 type: docs
-weight: 110
+weight: 10
 url: /net/codabar-barcodes/
 ---
 {{% alert color="primary" %}}[Generate Codabar Barcodes Online](https://products.aspose.app/barcode/generate/codabar): You can test the quality of ***Aspose.BarCode*** generation for Codabar barcodes and get the results online.{{% /alert %}}

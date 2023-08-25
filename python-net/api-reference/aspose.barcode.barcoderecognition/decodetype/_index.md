@@ -96,7 +96,7 @@ The DecodeType type exposes the following members:
 |HIBC_DATA_MATRIX_PAS|Specifies that the data should be decoded with HIBC PAS DataMatrix blank specification|
 |HIBCQRPAS|Specifies that the data should be decoded with HIBC PAS QR blank specification|
 |HAN_XIN|Specifies that the data should be decoded with Han Xin Code blank specification|
-|GS1_HAN_XIN|Specifies that the data should be decoded with Han Xin Code blank specification|
+|GS1_HAN_XIN|Specifies that the data should be decoded with GS1 Han Xin Code blank specification|
 |TYPES_1D|Specifies that data will be checked with all of 1D barcode symbologies|
 |TYPES_2D|Specifies that data will be checked with all of 2D barcode symbologies|
 |POSTAL_TYPES|Specifies that data will be checked with all of 1.5D Postal barcode symbologies, like Planet, Postnet, AustraliaPost, OneCode, RM4SCC, DutchKIX|

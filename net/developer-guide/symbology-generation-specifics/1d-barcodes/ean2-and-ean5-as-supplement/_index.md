@@ -1,7 +1,7 @@
 ---
-title: EAN 2 and EAN 5 as Supplement
+title: Generate EAN-2 and EAN-5 Barcodes as Supplement in C#
 type: docs
-weight: 160
+weight: 60
 url: /net/ean2-and-ean5-as-supplement/
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate): You can check the quality of ***Aspose.BarCode*** barcode generation and view the results online.{{% /alert %}}
@@ -34,7 +34,7 @@ gen.Parameters.Barcode.Supplement.SupplementData = "12345";
 gen.Save($"{path}SupplementEAN5.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 
-## **Adjusting Supplement Spacing**
+## **Adjust Spacing Between Main and Supplement Barcodes**
 To define the size of a gap between the main and supplement barcodes, the library provides the [*SupplementSpace*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters/properties/supplementspace) property of class [*SupplementParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters).  
   
 Barcode samples demonstrated below have been generated with different gap settings.  

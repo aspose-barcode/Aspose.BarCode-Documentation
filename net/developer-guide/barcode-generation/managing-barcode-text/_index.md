@@ -1,6 +1,6 @@
 ---
-title: Manage Barcode Text and Captions in C#
-linktitle: Manage Barcode Text
+title: Customize Barcode Text and Captions in C#
+linktitle: Customize Barcode Text
 type: docs
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for .NET"
@@ -249,7 +249,7 @@ gen.Save($"{path}CaptionVisibleBelow.png", BarCodeImageFormat.Png);
 
 ```
     
-### **Set Text Positioning**
+### **Set Caption Positioning**
 The [*Alignment*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/captionparameters/properties/alignment) property is used to adjust the horizontal positioning of captions in three ways: on the left, in the center, or on the right. By default, captions are placed in the center position. The figures below represent the barcode images generated with the top caption aligned in three ways.
   
 |Caption Alignment|Left|Center|Right|

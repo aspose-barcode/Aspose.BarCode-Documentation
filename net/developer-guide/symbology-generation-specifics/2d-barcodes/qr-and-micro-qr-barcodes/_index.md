@@ -1,8 +1,11 @@
 ---
-title: QR and Micro QR Codes
+title: Generate QR Code and Micro QR Code in C#
+linktitle: QR Code and Micro QR Code
 type: docs
 weight: 40
-url: /net/qr-and-micro-qr-barcode/
+url: /net/qr-code-and-micro-qr-code/
+aliases:
+- /net/qr-and-micro-qr-barcode/
 ---
 {{% alert color="primary" %}}[Generate QR Code Online](https://products.aspose.app/barcode/generate/qr): You can test the quality of ***Aspose.BarCode*** generation for QR Codes and get the results online.{{% /alert %}}
 

@@ -2,7 +2,9 @@
 title: Features
 type: docs
 weight: 30
-url: /java/features/
+url: /java/product-features/
+aliases:
+- /java/features/
 ---
 
 ## **General Features**

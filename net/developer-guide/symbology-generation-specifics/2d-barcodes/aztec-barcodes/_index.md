@@ -1,10 +1,13 @@
 ---
-title: Aztec Code
+title: Generate Aztec Code in C#
+linktitle: Aztec Code
 type: docs
 description: "Aspose.BarCode for .NET allows generating square-grid high-density two-dimensional Aztec barcodes."
 keywords: Generate Aztec Barcode, Generate Aztec code, How to Generate Aztec barcodes, Aspose.BarCode for .NET
 weight: 70
-url: /net/aztec-barcode/
+url: /net/aztec-code-barcodes/
+aliases:
+- /net/aztec-barcode/
 ---
 {{% alert color="primary" %}}[Generate Aztec Barcodes Online](https://products.aspose.app/barcode/generate/aztec): You can check the quality of ***Aspose.BarCode*** generation for Aztec barcodes and view the results online.{{% /alert %}}
 
@@ -56,7 +59,7 @@ gen.Save($"{path}AztecSymbolModeRune.png", BarCodeImageFormat.Png);
 
 ```
  
-## **Encoding Byte Streams**
+## **Encode Byte Streams**
 ***Aspose.BarCode for .NET*** allows encoding streams of bytes as *Aztec Code* barcodes. To visualize the text under barcode images, it is necessary to initialize the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)). The code sample provided below shows how to encode a stream of bytes into an *Aztec Code* barcode.
   
 ``` csharp
@@ -85,7 +88,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 <p align="center"><img src="aztecbytesencoding.png"></p>
   
-## **Encoding Unicode Symbols**
+## **Encode Unicode Symbols**
 ***Aspose.BarCode for .NET*** enables encoding Unicode symbols using the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/properties/codetextencoding) property of class [*AztecParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters). This property is valid for all *Aztec Code* subtypes except *Rune*. The following code snippet explains how to set various Unicode encodings.
   
 ``` csharp

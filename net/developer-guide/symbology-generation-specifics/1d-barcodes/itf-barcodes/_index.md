@@ -1,7 +1,8 @@
 ---
-title: ITF Barcodes
+title: Generate ITF Barcodes in C#
+linktitle: ITF
 type: docs
-weight: 120
+weight: 40
 url: /net/itf-barcodes/
 ---
 {{% alert color="primary" %}}[Generate ITF Barcodes Online](https://products.aspose.app/barcode/generate/itf): You can check the quality of ***Aspose.BarCode*** generation for ITF barcodes and view the results online.{{% /alert %}}
