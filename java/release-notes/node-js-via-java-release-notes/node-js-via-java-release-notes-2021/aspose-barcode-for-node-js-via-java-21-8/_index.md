@@ -33,10 +33,10 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 - Added function ComplexBarcode.Mailmark2DCodetext.getVersionID():String
 - Added function ComplexBarcode.Mailmark2DCodetext.setclass(String)
 - Added function ComplexBarcode.Mailmark2DCodetext.getclass():String
-- Added function ComplexBarcode.Mailmark2DCodetext.setSupplyChainID(int)
-- Added function ComplexBarcode.Mailmark2DCodetext.getSupplyChainID():int
-- Added function ComplexBarcode.Mailmark2DCodetext.setItemID(int)
-- Added function ComplexBarcode.Mailmark2DCodetext.getItemID():int
+- Added function ComplexBarcode.Mailmark2DCodetext.setSupplyChainID(number)
+- Added function ComplexBarcode.Mailmark2DCodetext.getSupplyChainID():number
+- Added function ComplexBarcode.Mailmark2DCodetext.setItemID(number)
+- Added function ComplexBarcode.Mailmark2DCodetext.getItemID():number
 - Added function ComplexBarcode.Mailmark2DCodetext.setDestinationPostCodeAndDPS(String)
 - Added function ComplexBarcode.Mailmark2DCodetext.getDestinationPostCodeAndDPS():String
 - Added function ComplexBarcode.Mailmark2DCodetext.setRTSFlag(String)

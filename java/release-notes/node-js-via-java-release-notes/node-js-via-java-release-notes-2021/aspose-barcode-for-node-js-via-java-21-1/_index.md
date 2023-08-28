@@ -25,7 +25,7 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 - Added class Generator.QrStructuredAppendParameters
 - Added function Generator.QrStructuredAppendParameters.getParityByte():byte
 - Added function Generator.QrStructuredAppendParameters.setParityByte(byte)
-- Added function Generator.QrStructuredAppendParameters.getSequenceIndicator():int
-- Added function Generator.QrStructuredAppendParameters.setSequenceIndicator(int)
-- Added function Generator.QrStructuredAppendParameters.getTotalCount():int
-- Added function Generator.QrStructuredAppendParameters.setTotalCount(int)
+- Added function Generator.QrStructuredAppendParameters.getSequenceIndicator():number
+- Added function Generator.QrStructuredAppendParameters.setSequenceIndicator(number)
+- Added function Generator.QrStructuredAppendParameters.getTotalCount():number
+- Added function Generator.QrStructuredAppendParameters.setTotalCount(number)

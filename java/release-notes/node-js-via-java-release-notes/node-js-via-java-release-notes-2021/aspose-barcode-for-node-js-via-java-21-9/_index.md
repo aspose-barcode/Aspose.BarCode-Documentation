@@ -22,7 +22,7 @@ The changes that were made in Recognition.js
 - Added function BarCodeReader.getBarcodeSettings()
 - Added class BarcodeSettings
 - Added function BarcodeSettings.getChecksumValidation()
-- Added function BarcodeSettings.setChecksumValidation(int)
+- Added function BarcodeSettings.setChecksumValidation(number)
 - Added function BarcodeSettings.getStripFNC()
 - Added function BarcodeSettings.setStripFNC(boolean)
 - Added function BarcodeSettings.getDetectEncoding()
@@ -30,10 +30,10 @@ The changes that were made in Recognition.js
 - Added function BarcodeSettings.getAustraliaPost(): AustraliaPostSettings
 - Added class AustraliaPostSettings
 - Added function AustraliaPostSettings.getCustomerInformationInterpretingType()
-- Added function AustraliaPostSettings.setCustomerInformationInterpretingType(int)
+- Added function AustraliaPostSettings.setCustomerInformationInterpretingType(number)
 - Added function AustraliaPostSettings.getIgnoreEndingFillingPatternsForCTable()
 - Added function AustraliaPostSettings.setIgnoreEndingFillingPatternsForCTable(boolean)
 - Added class RecognitionAbortedException
-- Added function RecognitionAbortedException.constructor(String, int)
+- Added function RecognitionAbortedException.constructor(String, number)
 - Added function RecognitionAbortedException.getExecutionTime()
-- Added function RecognitionAbortedException.setExecutionTime(int)
+- Added function RecognitionAbortedException.setExecutionTime(number)
