@@ -61,8 +61,8 @@ $codeTextBuilder->addBinary("abc");
 $codeTextBuilder->addURI("backslashes_should_be_doubled\\000555:test");
 $codeTextBuilder->addGS1("(01)03453120000011(17)191125(10)ABCD1234(21)10");
 $str = $codeTextBuilder->getExtendedCodetext();
+//generate codetext
 $expectedStr = "漄㐁全螅123qweıntəˈnæʃənəlΑΒΓΔΕabcabcbackslashes_should_be_doubled\\000555:test(01)03453120000011(17)191125(10)ABCD1234(21)10";
-
 //generate
 $bg = new BarcodeGenerator(EncodeTypes::HAN_XIN, $str);
 $bg->getParameters()->setResolution(66);
