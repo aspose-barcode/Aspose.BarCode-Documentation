@@ -23,8 +23,8 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 - Added const Generation.Pdf417MacroTerminator.AUTO
 - Added const Generation.Pdf417MacroTerminator.NONE
 - Added const Generation.Pdf417MacroTerminator.SET
-- Added function Generation.Pdf417Parameters.getPdf417MacroTerminator():int
-- Added function Generation.Pdf417Parameters.setPdf417MacroTerminator(int):void
+- Added function Generation.Pdf417Parameters.getPdf417MacroTerminator():number
+- Added function Generation.Pdf417Parameters.setPdf417MacroTerminator(number):void
 - Added function Recognition.Pdf417ExtendedParameters.getMacroPdf417Terminator():boolean
 
 - Default value for Generation.CodetextParameters.setLocation has been changed to CodeLocation.NONE for all **2D** barcode symbologies.
