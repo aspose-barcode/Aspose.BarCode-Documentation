@@ -48,8 +48,8 @@ Enhanced support of DotCode symbology
 - Added function Generation->DotCodeParameters->setAspectRatio(int)
 - Added function Generation->DotCodeParameters->getDotCodeEncodeMode():DotCodeEncodeMode
 - Added function Generation->DotCodeParameters->setDotCodeEncodeMode(DotCodeEncodeMode)
-- Added function Generation->DotCodeParameters->isReaderInitialization():boolean
-- Added function Generation->DotCodeParameters->setReaderInitialization(boolean)
+- Added function Generation->DotCodeParameters->isReaderInitialization():bool
+- Added function Generation->DotCodeParameters->setReaderInitialization(bool)
 - Added function Generation->DotCodeParameters->getDotCodeStructuredAppendModeBarcodeId():int
 - Added function Generation->DotCodeParameters->setDotCodeStructuredAppendModeBarcodeId(int)
 - Added function Generation->DotCodeParameters->getDotCodeStructuredAppendModeBarcodesCount():int
@@ -66,7 +66,7 @@ Enhanced support of DotCode symbology
 - Added class Recognition->DotCodeExtendedParameters
 - Added function Recognition->DotCodeExtendedParameters->getDotCodeStructuredAppendModeBarcodesCount():int
 - Added function Recognition->DotCodeExtendedParameters->getDotCodeStructuredAppendModeBarcodeId():int
-- Added function Recognition->DotCodeExtendedParameters->getDotCodeIsReaderInitialization():boolean
+- Added function Recognition->DotCodeExtendedParameters->getDotCodeIsReaderInitialization():bool
 - Added function Recognition->DotCodeExtendedParameters->equals(Object)
 - Added function Recognition->DotCodeExtendedParameters->hashCode():int
 - Added function Recognition->DotCodeExtendedParameters->toString():string

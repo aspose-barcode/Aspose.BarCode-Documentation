@@ -34,7 +34,7 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 - removed function BarCodeReader.read
 - removed function BarCodeReader.getCodeText
 - removed function BarCodeReader.getCodeText(java.nio.charset.Charset)
-- removed function BarCodeReader.getCodeText(boolean)
+- removed function BarCodeReader.getCodeText(bool)
 - removed function BarCodeReader.getCheckSum
 - removed function BarCodeReader.getAngle
 - removed function BarCodeReader.getRecognitionQuality

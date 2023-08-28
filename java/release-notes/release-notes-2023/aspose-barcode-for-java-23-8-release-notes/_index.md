@@ -34,7 +34,7 @@ Added:
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addAuto(String)
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addBinary(String)
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addURI(String)
-- method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addText(String)[BuildVersionInfo.class](..%2F..%2F..%2F..%2F..%2F..%2F..%2FRelease%2F2023%2F23.8%2Flib%2Fcom%2Faspose%2Fbarcode%2FBuildVersionInfo.class)
+- method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addText(String)
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addNumeric(String)
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addUnicode(String)
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.addCommonChineseRegionOne(String)
