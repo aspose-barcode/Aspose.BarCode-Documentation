@@ -5,11 +5,11 @@ weight: 960
 url: /java/aspose-barcode-for-node-js-via-java-23-5/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for [Aspose.BarCode for Node.js via Java 23.5](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-23.5/).
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **All Changes**
 
 |**Key**|**Summary**|**Category**|

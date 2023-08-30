@@ -1,8 +1,8 @@
 ---
-title: Aspose.BarCode for Node.js via Java 23.7
+title: Aspose.BarCode for Node.js via Java 23.8
 type: docs
-weight: 940
-url: /java/aspose-barcode-for-node-js-via-java-23-7/
+weight: 930
+url: /java/aspose-barcode-for-node-js-via-java-23-8/
 ---
 
 {{% alert color="primary" %}} 
