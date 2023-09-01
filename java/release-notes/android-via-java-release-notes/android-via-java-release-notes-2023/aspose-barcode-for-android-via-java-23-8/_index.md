@@ -30,7 +30,14 @@ This page contains release notes information for [Aspose.BarCode for Android via
 ## Public API changes and backwards compatibility
 
 Added:
-
+- class BarcodeScannerFragmentSettings which encapsulates the settings related to BarcodeScannerFragment 
+- class CameraProcessingFragmentSettings intended for configuring CameraProcessingFragment which allows adjusting the interaction with the camera
+- class RecognitionProcessingFragmentSettings intended for configuring RecognitionProcessingFragment which is responsible for the interface displayed while process recognition running
+- classes intended for configuring background for RecognitionProcessingFragment window : 
+  - class RecognitionProcessFragmentBitmapBackground based on bitmap
+  - class RecognitionProcessFragmentCameraPhotoBackground based on image that is being recognized
+  - class RecognitionProcessFragmentColorBackground based on particular color
+- class RecognitionAreaSettings intended for configuring square of pointer window
 - method com.aspose.barcode.barcoderecognition.QualitySettings.getAllowAdditionalRestorations():boolean
 - method com.aspose.barcode.barcoderecognition.QualitySettings.setAllowAdditionalRestorations(boolean)
 - method com.aspose.barcode.barcoderecognition.Pdf417ExtendedParameters.isReaderInitialization():boolean
