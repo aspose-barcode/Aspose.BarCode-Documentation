@@ -58,6 +58,38 @@ Added:
 - method com.aspose.barcode.generation.HanXinExtCodetextBuilder.getExtendedCodetext
 
 ```Java
+BarcodeScannerFragment barcodeScannerFragment = (BarcodeScannerFragment) getChildFragmentManager().findFragmentByTag("barcode_scanner_fragment_tag");
+BarcodeRecognitionSettings barcodeRecognitionSettings = barcodeScannerFragment.getBarcodeRecognitionSettings();
+BarcodeScannerFragmentSettings barcodeScannerFragmentSettings = barcodeRecognitionSettings.getBarcodeScannerFragmentSettings();
+//CameraProcessingFragmentSettings
+CameraProcessingFragmentSettings cameraProcessingFragmentSettings = barcodeScannerFragmentSettings.getCameraProcessingFragmentSettings();
+cameraProcessingFragmentSettings.setFlashEnabled(true);
+cameraProcessingFragmentSettings.setScannerPreferencesButtonSize(4);
+cameraProcessingFragmentSettings.setRecognizeButtonSize(5);
+cameraProcessingFragmentSettings.setRecognitionButtonContentDescriptionText("Recognition Button");
+cameraProcessingFragmentSettings.setPreferencesButtonContentDescriptionText("Preferences Button");
+//RecognitionAreaSettings
+RecognitionAreaSettings recognitionAreaSettings = cameraProcessingFragmentSettings.getRecognitionAreaSettings();
+recognitionAreaSettings.setOneDLineColor(Color.parseColor("#FFAA00"));
+recognitionAreaSettings.setTwoDLineColor(Color.parseColor("#FFFFAA"));
+recognitionAreaSettings.setTwoDAreaBorderWidth(4);
+recognitionAreaSettings.setOneDAreaBorderWidth(3);
+recognitionAreaSettings.setMaxAreaHeight(5);
+recognitionAreaSettings.setMaxAreaWidth(5);
+recognitionAreaSettings.setTopOffset(10);
+//RecognitionProcessingFragmentSettings
+RecognitionProcessingFragmentSettings recognitionProcessingFragmentSettings = barcodeScannerFragmentSettings.getRecognitionProcessingFragmentSettings();
+recognitionProcessingFragmentSettings.setProgressBarColor(Color.parseColor("#FFBBAA"));
+recognitionProcessingFragmentSettings.setRecognitionProcessLabelTextColor(Color.parseColor("#AABBFF"));
+recognitionProcessingFragmentSettings.setRecognitionCancelButtonTextColor(Color.parseColor("#DDBBCA");
+recognitionProcessingFragmentSettings.setRecognitionCancelButtonTextSize(3);
+recognitionProcessingFragmentSettings.setRecognitionProgressBarSize(4);
+recognitionProcessingFragmentSettings.setRecognitionCancelButtonRightOffset(15);
+recognitionProcessingFragmentSettings.setRecognitionRecognitionLabelTextSize(10);
+recognitionProcessingFragmentSettings.setRecognitionProcessLabelText("Recognition in Process");
+recognitionProcessingFragmentSettings.setRecognitionCancelButtonText("Cancel");
+
+
 // Extended Mode with HanXinExtCodetextBuilder
  HanXinExtCodetextBuilder codeTextBuilder = new HanXinExtCodetextBuilder();
  codeTextBuilder.addGB18030TwoByte("漄");
