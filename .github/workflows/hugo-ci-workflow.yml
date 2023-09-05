@@ -52,6 +52,6 @@ jobs:
           rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/barcode
-          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+          # rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         run: aws s3 ls s3://docs-qa.aspose.com/
