@@ -1,14 +1,15 @@
 name: Hugo-CI
 on:
   push:
-    branches: [ master ]
+    branches: [ master, qa ]
     paths-ignore:
         '.github/**'
 
 jobs:
   job-one:
-    name: Deploy
+    name: Deploy_to_production
     runs-on: [self-hosted, linux, x64, dev4-barcode]
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: hugo build
         run: |
@@ -33,3 +34,24 @@ jobs:
           script: |
             sudo rsync --recursive --delete --force --progress ${{ secrets.PUBLICCONTENTPATH }} ${{ secrets.DEPLOYPATH }}
             sudo nginx -s reload
+
+  job-two:
+    name: Deploy_to_qa
+    runs-on: [self-hosted, linux, x64, dev4-barcode]
+    if: github.ref == 'refs/heads/qa'
+    steps:
+      - name: hugo build
+        run: |
+          cd aspose-barcode-docs
+          git clone https://github.com/aspose-barcode/Aspose.BarCode-Documentation.git || (cd Aspose.BarCode-Documentation && git pull)
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
+          cd lutsk-aspose-prototype
+          git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
+          sudo npm install -D --save autoprefixer
+          sudo npm install -D --save postcss-cli
+          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          rm -rf public
+          hugo --minify --baseURL https://docs.aspose.com/barcode
+          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+      - name: hugo deploy
+        run: aws s3 ls s3://docs-qa.aspose.com/
