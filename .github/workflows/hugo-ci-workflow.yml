@@ -58,4 +58,4 @@ jobs:
           # rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         run: |
-        aws s3 ls s3://docs-qa.aspose.com/
+          aws s3 ls s3://docs-qa.aspose.com/
