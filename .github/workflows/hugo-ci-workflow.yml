@@ -57,13 +57,10 @@ jobs:
           hugo --minify --baseURL https://docs.aspose.com/barcode
           pwd
           ls -l
-          # rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         run: |
-          echo ${{ secrets.PROJECTPATH }} > file1
-          echo ${{ secrets.PUBLICCONTENTPATH }} >> file1
-          echo ${{ secrets.DEPLOYPATH }} >> file1
-          echo ${{ secrets.TRANSFERPATH }} >> file1
           pwd
+          ls
           ls aspose-barcode-docs
           # aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
