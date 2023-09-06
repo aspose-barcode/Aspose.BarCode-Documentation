@@ -52,7 +52,7 @@ jobs:
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-theme.git themes/lutsk-aspose-theme || (cd themes/lutsk-aspose-theme && git pull)
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
-          # rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/barcode
           pwd
@@ -63,6 +63,7 @@ jobs:
           echo ${{ secrets.PROJECTPATH }} > file1
           echo ${{ secrets.PUBLICCONTENTPATH }} >> file1
           echo ${{ secrets.DEPLOYPATH }} >> file1
+          echo ${{ secrets.PROJECTPATH }} >> file1
           pwd
           ls aspose-barcode-docs
           # aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
