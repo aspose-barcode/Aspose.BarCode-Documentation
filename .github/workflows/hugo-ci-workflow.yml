@@ -56,7 +56,7 @@ jobs:
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/barcode
           pwd
-          ll
+          ls -l
           # rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         run: |
