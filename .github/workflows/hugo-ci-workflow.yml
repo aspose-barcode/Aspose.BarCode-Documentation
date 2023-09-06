@@ -60,6 +60,9 @@ jobs:
           # rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         run: |
+          echo ${{ secrets.PROJECTPATH }} > file1
+          echo ${{ secrets.PUBLICCONTENTPATH }} >> file1
+          echo ${{ secrets.DEPLOYPATH }} >> file1
           pwd
           ls aspose-barcode-docs
           # aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
