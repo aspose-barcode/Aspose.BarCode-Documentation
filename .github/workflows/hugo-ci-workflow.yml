@@ -43,7 +43,7 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}    
     if: github.ref == 'refs/heads/qa'
     steps:
-      - name: hugo build
+      - name: hugo build and deploy
         run: |
           cd aspose-barcode-docs
           git clone https://github.com/aspose-barcode/Aspose.BarCode-Documentation.git || (cd Aspose.BarCode-Documentation && git pull)
@@ -54,13 +54,6 @@ jobs:
           sudo npm install -D --save postcss-cli
           rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
-          hugo --minify --baseURL https://docs.aspose.com/barcode
-          pwd
-          ls -l
-          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
-      - name: hugo deploy
-        run: |
-          pwd
-          ls
-          ls aspose-barcode-docs
-          # aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
+          hugo --minify --baseURL https://docs-qa.aspose.com/barcode
+          echo "Deploy to S3"
+          aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
