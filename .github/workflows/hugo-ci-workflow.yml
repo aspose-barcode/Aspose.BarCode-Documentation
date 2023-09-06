@@ -63,7 +63,7 @@ jobs:
           echo ${{ secrets.PROJECTPATH }} > file1
           echo ${{ secrets.PUBLICCONTENTPATH }} >> file1
           echo ${{ secrets.DEPLOYPATH }} >> file1
-          echo ${{ secrets.PROJECTPATH }} >> file1
+          echo ${{ secrets.TRANSFERPATH }} >> file1
           pwd
           ls aspose-barcode-docs
           # aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
