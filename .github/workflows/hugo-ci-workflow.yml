@@ -56,4 +56,4 @@ jobs:
           rm -rf public
           hugo --minify --baseURL https://docs-qa.aspose.com/barcode
           echo "Deploy to S3"
-          aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --only-show-errors
+          aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --delete --only-show-errors
