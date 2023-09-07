@@ -5,8 +5,7 @@ description: "How to Obtain the Information about Product Name and DLL Version"
 keywords: "Aspose Barcode, aspose barcode library, aspose version, aspose dll version, aspose c# version"
 weight: 20
 url: /net/get-product-name-and-dll/
-aliases:
--/net/get-the-product-name-and-dll-version-information/
+aliases: [/net/get-the-product-name-and-dll-version-information/]
 ---
 
 The system information about the ***Aspose.BarCode*** library can be obtained using structure [*BuildVersionInfo*](https://reference.aspose.com/barcode/net/aspose.barcode/buildversioninfo/) that provides the following data:
