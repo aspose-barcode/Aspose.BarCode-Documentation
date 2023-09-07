@@ -1,8 +1,10 @@
 ---
-title: How to Run Aspose.BarCode Examples
+title: How to Run Aspose.BarCode Examples in C#
 type: docs
 weight: 100
-url: /net/how-to-run-aspose-barcode-examples/
+url: /net/run-aspose-barcode-examples/
+aliases:
+- /net/how-to-run-aspose-barcode-examples/
 ---
 
 ## **Software Requirements**

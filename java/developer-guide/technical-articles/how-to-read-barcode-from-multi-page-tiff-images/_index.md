@@ -1,8 +1,11 @@
 ---
-title: How to Read Barcode from Multi-page TIFF Images
+title: Read Barcodes from Multipage TIFF Images in Java
+linktitle: Read Barcodes from Multipage TIFF Images
 type: docs
 weight: 30
-url: /java/how-to-read-barcode-from-multi-page-tiff-images/
+url: /java/read-barcode-from-multipage-tiff/
+aliases:
+- /java/how-to-read-barcode-from-multi-page-tiff-images/
 ---
 
 {{% alert color="primary" %}} 

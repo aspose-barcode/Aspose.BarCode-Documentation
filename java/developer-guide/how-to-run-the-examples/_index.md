@@ -1,13 +1,14 @@
 ---
-title: How to Run Examples
+title: How to Run Aspose.BarCode Examples in C#
 type: docs
 weight: 70
-url: /java/how-to-run-the-examples/
+url: /java/run-aspose-barcode-examples/
 aliases:
 - /barcode/java/1-1-5-contribute/
+- /java/how-to-run-the-examples/
 ---
 
-## **Download from GitHub**
+## **Download Code Examples from GitHub**
 All examples of ***Aspose.BarCode for Java*** are hosted on [Github](https://github.com/aspose-barcode/Aspose.BarCode-for-Java). You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/archive/master.zip).
 
 Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.

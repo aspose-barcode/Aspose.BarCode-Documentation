@@ -18,7 +18,7 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ***Aspose.BarCode for .NET*** provides full-featured demos and code samples written in C# to give developers a better understanding of the library and its capabilities.
 
-## Main Features
+## **Main Features**
 
 ***Aspose.BarCode for .NET*** supports multiple features to address specific business needs. It is noteworthy that it enables a wide range of functionality for setting an efficient barcode processing system. One of the most important functions is the possibility to customize the appearance parameters of generated barcodes, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. Moreover, this library provides rich barcode reading and imaging functionality.  
 The main features include: 

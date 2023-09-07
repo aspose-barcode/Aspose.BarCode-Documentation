@@ -29,7 +29,7 @@ The most important features are the following:
 - Saving to or loading from stream or file 
 - Encoding and decoding non-English characters in 2D types
 
-The list of all features can be found in [**Product Features**](https://docs.aspose.com/barcode/java/features/).
+The list of all features can be found in [**Product Features**](https://docs.aspose.com/barcode/java/product-features/).
 
 ## **System Compatibility**
 Aspose.BarCode for Java supports any operating system where Java JDK/JRE can be installed.  

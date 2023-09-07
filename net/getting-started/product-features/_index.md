@@ -26,9 +26,9 @@ url: /net/product-features/
 - Reading highly blurred or noised images
 - Specifying image areas to scan barcodes
 - Predefining target barcode types
-- Managing recognition engine variables to reach the best trade-off between reading speed and quality (both manually and through embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR/MicroQR barcodes, and others
+- Managing recognition engine variables to reach the best trade-off between reading speed and quality (both manually and through embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR Codes, and others
 - Detecting and then reading all barcodes presented in the scanned region
-- Reading barcodes of different 1D symbologies from a single scanned region
+- Reading barcodes of different 1D types from a single scanned region
 - Defining the angle and region information for all barcodes recognized in an image (using points, quadrangle, or rectangle to specify a bounding barcode region)
 - Performing checksum validation for 1D and postal barcodes
 - Increasing the barcode detection speed through multi-threading

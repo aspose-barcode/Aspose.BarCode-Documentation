@@ -1,11 +1,11 @@
 ---
-title: Saving Generated Barcodes via Java
-linktitle: Saving Barcodes
+title: Save Generated Barcodes in Java
+linktitle: Save Generated Barcodes
 type: docs
-weight: 70
+weight: 50
 description: "How to Save Generated Barcodes in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Save Barcode in Aspose.BarCode for Java, Download Barcode in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF"
-url: /java/generate-barcodes-with-aspose-barcode-apis/
+url: /java/save-barcode-image/
 aliases:
 - /java/save-barcode-image-to-streams/
 - /java/render-barcode-to-graphics-object/
@@ -14,12 +14,12 @@ aliases:
 This article outlines the ways of outputting generated barcode images as files, streams, or bitmaps, as well as various raster (PNG, JPEG, BMP, GIF, and TIFF) and vector (SVG and EMF) image file formats.
 
 ## **Overview**
-During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Java*** enables different options for saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap). These options are discussed further.
+During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Java*** enables different options for saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap. These options are discussed further.
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Saving to File**
-***Aspose.BarCode for Java*** enables saving generated barcode images as files in the desired format. 
+## **Save Barcode to File**
+***Aspose.BarCode for Java*** enables saving generated barcode images as files in the desired format using class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator). 
 <!--The code sample given below explains how to use this setting.  
   
 {{< highlight csharp>}}
@@ -27,7 +27,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}StoreImageAsFile.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
 
-## **Saving to Stream**
+## **Save Barcode to Stream**
 It may be necessary to output generated barcode images in the form of a stream, in other words, in a binary format. A stream can be viewed as a byte sequence abstraction. To save barcode images as streams, class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) provides the public method *save(java.io.OutputStream stream, BarCodeImageFormat format)* that takes *Stream* as an input parameter<!--, as shown in the code snippet below-->.  
 
 <!--{{< highlight csharp>}}
@@ -38,7 +38,7 @@ using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Cre
 }
 {{< /highlight >}}--> 
 
-## **Saving as Bitmap**
+## **Save Barcode as Bitmap**
 
 ***Aspose.BarCode for Java*** enables saving barcode images in the form of bitmap objects and then converting it to the required format or using it in graphical transformations. These objects can be fetched from instances of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) through the *generateBarCodeImage* method and then processed further. 
 <!--The following code sample shows how to use this output option in ***Aspose.BarCode for Java***.
@@ -49,7 +49,7 @@ using (Bitmap bmp = gen.GenerateBarCodeImage())
     bmp.Save($"{path}StoreImageAsBitmap.png", ImageFormat.Png);
 {{< /highlight >}}--> 
 
-## **Raster Image Formats**
+## **Output Barcodes in Raster Formats**
 
 In ***Aspose.BarCode for Java***, barcode images can be saved to common raster image formats, namely, PNG, GIF, BMP, JPEG, and TIFF. The value of the [*BarCodeImageFormat*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarCodeImageFormat) enum can be passed as the second argument to the *save(java.lang.String filename, BarCodeImageFormat format)* method to output barcode images in the specified format. The description of all supported image formats is given further.
 
