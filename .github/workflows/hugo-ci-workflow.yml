@@ -2,8 +2,8 @@ name: Hugo-CI
 on:
   push:
     branches: [ master, qa ]
-    # paths-ignore:
-    #     '.github/**'
+    paths-ignore:
+        '.github/**'
 
 jobs:
   job-one:
@@ -57,3 +57,4 @@ jobs:
           hugo --minify --baseURL https://docs-qa.aspose.com/barcode
           echo "Deploy to S3"
           aws s3 sync ./public/ ${{ secrets.QA_S3_BUCKET }} --delete --only-show-errors
+          curl -d '{"website":"https://docs-qa.aspose.com/barcode/*"}' -H "Content-Type: application/json" -X POST "https://ut8o7juetc.execute-api.us-west-2.amazonaws.com/CloudFront-Invalidation-API"
