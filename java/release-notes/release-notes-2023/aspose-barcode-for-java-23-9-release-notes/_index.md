@@ -16,7 +16,7 @@ This page contains release notes information for [Aspose.BarCode for Java 23.9](
 | :- | :- | :- |
 |BARCODEJAVA-1701|Improve the performance of the product|Enhancement|
 |BARCODEJAVA-1682|Replace the calls of java.util.Date which is discommended by java.time.LocalDateTime in all the public members|Enhancement|
-|BARCODEJAVA-1613|Replace the calls of java.util.Date which is discommended by java.time.LocalDateTime in all the public members|Enhancement|
+|BARCODEJAVA-1613|Aspose.BarCode for Python via Java takes time to detect barcode on the image|Enhancement|
 |BARCODENET-38631|Loading BMP image fails|Bug|
 |BARCODENET-38678|Can’t read data matrix from the JPG image|Bug|
 |BARCODENET-37507|Improve Aztec decoder|Enhancement|
@@ -25,21 +25,29 @@ This page contains release notes information for [Aspose.BarCode for Java 23.9](
 ## Public API changes and backwards compatibility
 
 GS1Aztec barcode type was added to DecodeType and EncodeTypes.
+Class com.aspose.barcode.barcoderecognition.AztecExtendedParameters was added
+It has methods:
+getStructuredAppendBarcodesCount():int
+getStructuredAppendBarcodeId():int
+getStructuredAppendFileId():String
+isReaderInitialization():boolean
 
-New public property Aztec has been added to the BarCodeExtendedParameters of BarCodeResult with the following properties:
-- StructuredAppendBarcodeId
-- StructuredAppendBarcodesCount
-- StructuredAppendFileId
-- IsReaderInitialization
+New public methods have been added to the com.aspose.barcode.barcoderecognition.BarCodeExtendedParameters of BarCodeResult with the following methods:
+getAztec():AztecExtendedParameters
+getGS1CompositeBar():GS1CompositeBarExtendedParameters
+
 
 New public methods have been added to the com.aspose.barcode.generation.AztecParameters
 getAztecEncodeMode():AztecEncodeMode
 setAztecEncodeMode(AztecEncodeMode):void
-
-
-New public methods have been added to the com.aspose.barcode.generation.AztecParameters of BarcodeParameters
 getECIEncoding():int
 setECIEncoding(int):void
+getStructuredAppendBarcodeId():int
+setStructuredAppendBarcodeId(int)
+getStructuredAppendBarcodesCount():int
+setStructuredAppendBarcodesCount(int):void
+getStructuredAppendFileId():String
+setStructuredAppendFileId(String):void
 
 Sample generation and recognition code:
 ```java
