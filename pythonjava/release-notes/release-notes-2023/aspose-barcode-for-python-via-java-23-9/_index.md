@@ -12,7 +12,7 @@ This page contains release notes information for [Aspose.BarCode for Python via 
 {{% /alert %}} 
 ## **All Changes**
 
-|**Key**|**Summary**|**Category**|[Alexander Grinin Forecast 2023H2 OK.md](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDocs%2FSemiannual%20Review%2F20-09-2023%2FAlexander%20Grinin%20Forecast%202023H2%20OK.md)
+|**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |BARCODEJAVA-1701|Improve the performance of the product|Enhancement|
 |BARCODEJAVA-1613|Aspose.BarCode for Python via Java takes time to detect barcode on the image|Enhancement|
