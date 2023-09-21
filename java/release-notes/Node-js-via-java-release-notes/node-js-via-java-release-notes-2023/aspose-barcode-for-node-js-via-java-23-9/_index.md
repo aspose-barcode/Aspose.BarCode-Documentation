@@ -1,22 +1,21 @@
 ---
-title: Aspose.BarCode for Python via Java 23.9
+title: Aspose.BarCode for Node.js via Java 23.9
 type: docs
-weight: 910
-url: /java/aspose-barcode-for-python-via-java-23-9/
+weight: 920
+url: /java/aspose-barcode-for-node-js-via-java-23-9/
 ---
 
 {{% alert color="primary" %}} 
 
-This page contains release notes information for [Aspose.BarCode for Python via Java 23.9](https://downloads.aspose.com/barcode/python-java/new-releases/aspose.barcode-for-python-via-java-23.9/).
+This page contains release notes information for [Aspose.BarCode for Node.js via Java 23.9](https://downloads.aspose.com/barcode/nodejs/new-releases/aspose.barcode-for-node.js-via-java-23.9/).
 
 {{% /alert %}} 
 ## **All Changes**
 
-|**Key**|**Summary**|**Category**|[Alexander Grinin Forecast 2023H2 OK.md](..%2F..%2F..%2F..%2F..%2F..%2F..%2FDocs%2FSemiannual%20Review%2F20-09-2023%2FAlexander%20Grinin%20Forecast%202023H2%20OK.md)
+|**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |BARCODEJAVA-1701|Improve the performance of the product|Enhancement|
 |BARCODEJAVA-1682|Replace the calls of java.util.Date which is discommended by java.time.LocalDateTime in all the public members|Enhancement|
-|BARCODEJAVA-1613|Aspose.BarCode for Python via Java takes time to detect barcode on the image|Enhancement|
 |BARCODENET-38631|Loading BMP image fails|Bug|
 |BARCODENET-38678|Can’t read data matrix from the JPG image|Bug|
 |BARCODENET-37507|Improve Aztec decoder|Enhancement|
