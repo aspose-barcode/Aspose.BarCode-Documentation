@@ -15,7 +15,6 @@ This page contains release notes information for [Aspose.BarCode for Node.js via
 |**Key**|**Summary**|**Category**|
 | :- | :- | :- |
 |BARCODEJAVA-1701|Improve the performance of the product|Enhancement|
-|BARCODEJAVA-1682|Replace the calls of java.util.Date which is discommended by java.time.LocalDateTime in all the public members|Enhancement|
 |BARCODENET-38631|Loading BMP image fails|Bug|
 |BARCODENET-38678|Can’t read data matrix from the JPG image|Bug|
 |BARCODENET-37507|Improve Aztec decoder|Enhancement|
