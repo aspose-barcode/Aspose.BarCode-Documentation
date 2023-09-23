@@ -5,7 +5,7 @@ type: docs
 weight: 10
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
-url: /java/advanced-features/
+url: /java/set-barcode-size/
 aliases:
 - /java/advanced-features/
 - /java/set-height-of-the-bars-in-the-barcode-image/

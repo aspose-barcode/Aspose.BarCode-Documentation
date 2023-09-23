@@ -3,7 +3,9 @@ title: Barcode Library Features
 description:
 type: docs
 weight: 30
-url: /python-net/features/
+url: /python-net/product-features/
+aliases:
+- /python-net/features/
 ---
 
 ## **General Features**

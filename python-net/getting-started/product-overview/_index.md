@@ -25,7 +25,7 @@ The most important features are the following:
 - Saving to or loading from stream or file 
 - Encoding and decoding non-English characters in 2D types
 
-The list of all features can be found in [**Product Features**](/barcode/python-net/features/).
+The list of all features can be found in [**Product Features**](/barcode/python-net/product-features/).
 
 
 ## **Licensing**

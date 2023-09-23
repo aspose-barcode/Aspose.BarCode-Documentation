@@ -13,7 +13,7 @@ This documentation chapter is dedicated to barcode generation basics and the rel
    
 | Article | Description |
 |---|---|
-|[Set Barcode Size and Resolution](/barcode/net/set-barcode-size-and-resolution/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
+|[Set Barcode Size and Resolution](/barcode/net/set-barcode-size/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
 |[Adjust Barcode Appearance](/barcode/net/customize-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
 |[Manage Barcode Text](/barcode/net/set-barcode-text/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
 |[Customize Barcode Color Scheme](/barcode/net/customize-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|

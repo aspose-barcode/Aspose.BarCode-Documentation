@@ -105,7 +105,7 @@ Code39Standard:0058
 ### **Median Filtering for Postal Barcodes**
 One-dimensional median filtering for postal symbologies can be performed using the [*AllowMicroWhiteSpotsRemoving*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowmicrowhitespotsremoving) property. The size of the filtering window is set automatically.  
   
-The following code snippet demonstrates how to perform medial filtering in the case of postal barcodes (as the sample *Planet* barcode given below).
+The following code snippet demonstrates how to perform median filtering in the case of postal barcodes (as the sample *Planet* barcode given below).
 
 <p align="center"><img src="planet_noised.png" width="40%" height="40%"></p>
 
