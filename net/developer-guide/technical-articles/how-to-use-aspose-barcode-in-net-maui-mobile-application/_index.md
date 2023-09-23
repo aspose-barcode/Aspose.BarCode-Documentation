@@ -9,7 +9,7 @@ aliases:
 
 ## **Overview**
 
-This article describes how to use ***Aspose.Barcode*** in [***.Net MAUI***](https://learn.microsoft.com/dotnet/maui/what-is-maui) mobile application. ***.Net MAUI*** technology allows creating applications for the most of mobile OS, like ***iOS***, ***Android*** or ***Tizen***, also for ***MacOS*** and ***Windows***. This allows you to use barcode support anywhere on any device.
+This article describes how to use ***Aspose.Barcode*** in [.Net MAUI](https://learn.microsoft.com/dotnet/maui/what-is-maui) mobile application. ***.Net MAUI*** technology allows creating applications for the most of mobile OS, like ***iOS***, ***Android*** or ***Tizen***, also for ***MacOS*** and ***Windows***. This allows you to use barcode support anywhere on any device.
 
 You can anytime download the [example application](mauibarcode.zip).
 

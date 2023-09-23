@@ -1,5 +1,5 @@
 ---
-title: Features
+title: Barcode Library Features
 type: docs
 weight: 30
 url: /java/product-features/
