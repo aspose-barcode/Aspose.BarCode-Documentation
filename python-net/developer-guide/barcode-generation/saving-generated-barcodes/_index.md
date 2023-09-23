@@ -1,27 +1,30 @@
 ---
-title: Save Generated Barcodes
+title: Save Generated Barcodes in Java
+linktitle: Save Generated Barcodes
 type: docs
 weight: 70
-description: "How to Save Generated Barcodes in Aspose.BarCode for Python"
+description: "How to Save Generated Barcodes in Aspose.BarCode for Python via .NET"
 keywords: "Generate Barcodes, Save Barcode in Python, Download Barcode in Aspose.BarCode for Python, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF"
-url: /python-net/save-generated-barcodes/
+url: /python-net/save-barcode-image/
+aliases:
+- /python-net/save-generated-barcodes/
 ---
 
 This article outlines the ways of outputting generated barcode images as files, streams, or bitmaps, as well as various raster (PNG, JPEG, BMP, GIF, and TIFF) and vector (SVG and EMF) image file formats.
 
 ## **Overview**
-During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Python via .NET*** enables different options for saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap). These options are discussed further.
+During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Python via .NET*** enables different options for saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap. These options are discussed further.
 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Saving to File**
+## **Save to File**
 The library enables saving generated barcode images as files in the desired format.
 
-## **Saving to Stream**
+## **Save to Stream**
 It may be necessary to output generated barcode images in the form of a stream, in other words, in a binary format. A stream can be viewed as a byte sequence abstraction. To save barcode images as streams, class [*BarcodeGenerator*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodegenerator/) provides the public method *save(stream, format)* that takes *Stream* as an input parameter
 
-## **Saving as Bitmap**
+## **Save as Bitmap**
 ***Aspose.BarCode for Python via .NET*** enables saving barcode images in the form of bitmap objects and then converting it to the required format or using it in graphical transformations. These objects can be fetched from instances of class [*BarcodeGenerator*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodegenerator/) through the *generate_bar_code_image()* method and then processed further. 
 
 ## **Raster Image Formats**

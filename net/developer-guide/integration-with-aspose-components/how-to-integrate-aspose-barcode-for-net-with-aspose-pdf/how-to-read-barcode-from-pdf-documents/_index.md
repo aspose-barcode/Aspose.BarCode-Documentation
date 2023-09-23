@@ -1,5 +1,5 @@
 ---
-title: How to Read Barcodes from PDF Documents
+title: Read Barcodes from PDF Documents
 description: "How to Recognize Barcodes from PDF Files"
 keywords:
 type: docs

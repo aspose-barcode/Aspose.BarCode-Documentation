@@ -1,10 +1,13 @@
 ---
-title: Customize Barcode Appearance
+title: Customize Barcode Appearance in Python via.NET
+linktitle: Customize Barcode Appearance
 type: docs
 weight: 30
 description: "How to Customize Barcode Appearance-Related Properties in Aspose.BarCode for Python"
 keywords: "generate barcodes, customize barcode image, change barcode appearance, barcode appearance in Python, customize barcodes, work with barcode image, generate barcodes in Aspose.BarCode"
-url: /python-net/manage-barcode-appearance/
+url: /python-net/customize-barcode-appearance/
+aliases:
+- /python-net/manage-barcode-appearance/
 ---
 This article describes how to adjust barcode parameters, such as size, rotation angle, paddings, and image borders.
 

@@ -1,11 +1,13 @@
 ---
-title: Setting Checksum for 1D Barcodes in C#
-linktitle: Setting Checksum Controls in 1D Barcodes
+title: Set Barcode Checksum Controls in C#
+linktitle: Set Barcode Checksum Controls
 type: docs
 weight: 80
 description: How to Set Checksum for 1D Barcodes in C# API"
 keywords: Generate Barcodes, Barcode Checksum in Aspose.Barcode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings Aspose.BarCode
-url: /net/use-checksum-and-supplement-data/
+url: /net/set-checksum-controls/
+aliases:
+- /net/use-checksum-and-supplement-data/
 ---
 
 ## **Overview**
@@ -43,7 +45,7 @@ for (var pos = 0; pos < encodedCodetext.Length; ++pos)
 
 ``` 
   
-## **Checksum Settings**
+## **Barcode Checksum Settings**
 Various barcode types have different checksum requirements, meaning that the checksum can be set optionally or requested obligatory. Moreover, a barcode standard may use different checksum types. When setting a checksum is requested, the library applies the most widely used checksum type for the corresponding barcode type. When requested, the checksum digit is generated as the last barcode character. The [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) is used to manage checksum calculation for 1D barcodes. By default, this property is set to *Yes* for barcode types with obligatory checksum computation and *No* for those with an optional check digit.  
   
 Below, the lists of barcode standards with optional and obligatory checksum settings are provided.
@@ -53,7 +55,7 @@ Below, the lists of barcode standards with optional and obligatory checksum sett
 |**Optional**|Codabar, Code39, Italian Post 25, Interleaved 2 of 5, Matrix 2 of 5, MSI, Pharmacode, PatchCode, PZN, Standard 2 of 5|
 |**Obligatory**|CodablockF, Code11, Code128, Code16K, Code32, Code93, Databar Expanded Stacked, Databar Expanded, Databar OmniDirectional, Databar Stacked OmniDirectional, Databar Stacked, DatabarLimited, DatabarTruncated, EAN13, EAN14, EAN2, EAN5, EAN8, GS1 CodablockF, GS1 Code128, IATA 2 of 5, ISBN, ISMN, ISSN, ITF14, ITF6, OPC, SSCC14, SSCC18, UPCA, UPCE, UpcaGs1DatabarCoupon, VIN|
 
-### **Optional Checksum Settings**
+### **Optional Checksum Controls**
 By default, 1D barcodes with optional checksum do not impose the necessity of check digit calculation. For such barcodes, the [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) can be set in the following ways:
 - *EnableChecksum.Default* and *EnableChecksum.No*. Checksum calculation is not enabled.
 - *EnableChecksum.Yes*. The library generates the checksum of the most appropriate type for the given barcode symbology.
@@ -76,8 +78,8 @@ gen.Save($"{path}OneCSCode39WithChecksum.png", BarCodeImageFormat.Png);
 
 ``` 
   
-### **Obligatory Checksum Settings**
-For such barcodes, the [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) can be initiated as follows:
+### **Obligatory Checksum Controls**
+For barcodes with obligatory checksum control, the [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters) can be initiated as follows:
 - *EnableChecksum.Default* and *EnableChecksum.Yes*. Checksum calculation is performed according to the specific algorithm.
 - *EnableChecksum.No*. Depending on the given symbology, the library throws an exception or ignores this setting.
 
@@ -105,8 +107,8 @@ catch (Exception e)
 
 ```
   
-## **Displaying Checksum for Code 128**
-For the *Code 128* and *GS1 Code 128* symbologies, the library provides a specific setting [*ChecksumAlwaysShow*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/checksumalwaysshow) of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). When enabled, this setting allows adding the checksum digit in the *CodeText* field and thus displaying it as human-readable barcode text. 
+## **Display Checksum for Code 128**
+For *Code 128* and *GS1 Code 128* symbologies, the library provides a specific setting [*ChecksumAlwaysShow*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/checksumalwaysshow) of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). When enabled, this setting allows adding the checksum digit in the *CodeText* field and thus displaying it as human-readable barcode text. 
   
 |Checksum Visibility|Displayed|Hidden|
 | :-: | :-: | :-: |

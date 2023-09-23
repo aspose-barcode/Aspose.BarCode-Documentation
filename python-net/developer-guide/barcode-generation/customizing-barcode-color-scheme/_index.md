@@ -1,10 +1,13 @@
 ---
-title: Customize Barcode Color Scheme
+title: Customize Barcode Color Scheme in Python via .NET
+linktitle: Customize Barcode Color Scheme
 type: docs
 weight: 60
 description: "How to Adjust Color Schemes of Barcode Elements in Aspose.BarCode for Python"
 keywords: "generate barcodes, customize barcode image, change barcode color, set barcode color, generate colored barcodes, barcode color in Python, work with barcode image in Aspose.BarCode, generate barcodes in Aspose.BarCode"
-url: /python-net/change-barcode-color/
+url: /python-net/customize-barcode-color/
+aliases:
+- /python-net/change-barcode-color/
 ---
 This article explains how to adjust color of barcode key elements in ***Aspose.BarCode for Python via .NET***.
 

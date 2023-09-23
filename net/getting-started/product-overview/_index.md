@@ -18,7 +18,7 @@ The present article introduces ***Aspose.BarCode for .NET*** and its main concep
 
 ***Aspose.BarCode for .NET*** provides full-featured demos and code samples written in C# to give developers a better understanding of the library and its capabilities.
 
-## Main Features
+## **Main Features**
 
 ***Aspose.BarCode for .NET*** supports multiple features to address specific business needs. It is noteworthy that it enables a wide range of functionality for setting an efficient barcode processing system. One of the most important functions is the possibility to customize the appearance parameters of generated barcodes, such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and others. Moreover, this library provides rich barcode reading and imaging functionality.  
 The main features include: 
@@ -44,7 +44,7 @@ License is required to obtain access to the advanced functionality of ***Aspose.
 More information about how to buy and set the license is provided in [Licensing](/barcode/net/licensing/). If you want to try ***Aspose.BarCode for .NET***, you can request a temporary license for 30 days. Please refer to [How to get a Temporary License](https://purchase.aspose.com/temporary-license) for details.
 
 ## **Library Contents**
-***Aspose.BarCode for .NET*** includes three main classes: [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to perform barcode scanning and recognizing, [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) to provide barcode generation according to the desired format requirements, and [*ComplexBarcode*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode) to work with specific barcodes, for example, such as Swiss QR Code. 
+***Aspose.BarCode for .NET*** includes two main classes: [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) to perform barcode scanning and recognizing, [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) to provide barcode generation according to the desired format requirements. A namespace denoted as [*ComplexBarcode*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode) serves to work with specific barcodes, such as Swiss QR Code, MaxiCode, and HIBC LIC. 
   
 ### **Class BarCodeReader**
 ***Aspose.BarCode for .NET*** contains class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) that is aimed at handling barcode image recognition. [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) has the following basic settings. First, it is required to specify the symbology type in the constructor of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) and call the [*BarCodeReader.ReadBarCodes()*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/readbarcodes) method to read barcodes from an image. Then, class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) applies machine vision algorithms to extract machine-readable tags from the captured image.  

@@ -1,13 +1,14 @@
 ---
-title: Barcode Generation Data in XML via Java
+title: Barcode Generation State in XML via Java
 linktitle: Barcode Generation in XML
 type: docs
 description: "This article explains how to import and export barcodes to XML using Aspose.BarCode for Java."
 keywords: "Export barcode to XML, Import barcode from XML, barcode in XML, Aspose.BarCode, Read Barcode Java"
 weight: 80
-url: /java/barcode-generation-in-xml/
+url: /java/barcode-generation-state-in-xml/
 aliases:
 - /java/barcode-in-xml/
+- /java/barcode-generation-in-xml/
 ---
 
 ## **Overview**
@@ -55,7 +56,7 @@ gen.Save($"{path}BarcodeGeneratorLoaded.png", BarCodeImageFormat.Png);
 
 <p align="center"><img src="barcodegeneratorloaded.png"></p>
 
-## **Saving and Loading Barcode Data from Stream**
+## **Save and Load Barcode Data from Stream**
 To export and import information from streams, two special methods need to be called: *exportToXml(java.lang.OutputStream xml)* and *importFromXml(java.io.InputStream xml)*. 
 
 <!--{{< highlight csharp>}}
