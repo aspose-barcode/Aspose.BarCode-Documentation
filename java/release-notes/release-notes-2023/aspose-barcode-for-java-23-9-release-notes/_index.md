@@ -25,6 +25,8 @@ This page contains release notes information for [Aspose.BarCode for Java 23.9](
 ## Public API changes and backwards compatibility
 
 GS1Aztec barcode type was added to DecodeType and EncodeTypes.
+GS_1_AZTEC and GS_1_COMPOSITE_BAR added to com.aspose.barcode.barcoderecognition.DecodeType
+GS_1_AZTEC  added to Generation.EncodeTypes
 Class com.aspose.barcode.barcoderecognition.AztecExtendedParameters was added
 It has methods:
 getStructuredAppendBarcodesCount():int
