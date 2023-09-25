@@ -1,10 +1,8 @@
 ---
-title: Barcode Library Features
+title: Features
 type: docs
 weight: 30
-url: /java/product-features/
-aliases:
-- /java/features/
+url: /java/features/
 ---
 
 ## **General Features**

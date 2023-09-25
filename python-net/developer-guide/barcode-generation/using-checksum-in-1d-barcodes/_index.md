@@ -1,13 +1,10 @@
 ---
-title: Set Barcode Checksum Controls in Java
-linktitle: Set Barcode Checksum Controls
+title: Set Checksum in 1D Barcodes
 type: docs
 weight: 80
 description: "How to Set Checksum for 1D Barcodes in Python via C#"
 keywords: Generate Barcodes, Barcode Checksum in Aspose.Barcode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings Aspose.BarCode
-url: /python-net/set-checksum-controls/
-aliases:
-- /python-net/barcode-checksum-settings/
+url: /python-net/barcode-checksum-settings/
 ---
 
 ## **Overview**
@@ -21,7 +18,7 @@ Some symbologies without compulsory checksum are composed of self-checking chara
 The majority of 1D barcode standards have been introduced in the 70s; for most of them, the checksum is defined in a rather simple way, as a sum of all preceding barcode characters modulo the index of the maximal encoded character. In contrast, the *DataBar* group of barcode standards introduced at the beginning of the 2000s relies on the much more sophisticated checksum verification algorithm that is similar to those of modern data transmission protocols.  
 In general, enabling checksum in ***Aspose.BarCode for Python via .NET*** for 1D barcodes allows verifying barcodes with minor damages. However, in the case of significantly corrupted barcode labels, the probability of incorrect barcode reading increases.  
   
-To provide some examples, checksum calculations and settings for *Code 39* and *Code 128* are discussed below.  
+To provide some examples, checksum calculations and settings for the *Code 39* and *Code 128* symbologies are discussed below.  
   
 **Code 39 Checksum**
   
@@ -60,7 +57,7 @@ For such barcodes, the *is_checksum_enabled* property of class [*BarcodeParamete
 The following sample image illustrates the barcode label generated with obligatory checksum settings.     
 <p align="center"><img src="onecscode93withchecksum.png"></p>
   
-## **Display Checksum for Code 128**
+## **Displaying Checksum for Code 128**
 For the *Code 128* and *GS1 Code 128* types, the library provides the *checksum_always_show* property of class [*BarcodeParameters*](/barcode/python-net/api-reference/aspose.barcode.generation/barcodeparameters/). When enabled, this setting allows adding the checksum digit in the *CodeText* field and thus displaying it as human-readable barcode text. 
   
 |Checksum Visibility|Displayed|Hidden|

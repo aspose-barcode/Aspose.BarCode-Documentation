@@ -1,6 +1,5 @@
 ---
-title: Barcode Generation Basics - Create Barcodes in Python via Java 
-linktitle: Barcode Generation Basics 
+title: Barcode Generation
 type: docs
 weight: 10
 url: /python-java/barcode-generation/
@@ -12,12 +11,11 @@ This documentation chapter is dedicated to barcode generation basics and the rel
    
 | Article | Description |
 |---|---|
-|[Set Barcode Size and Resolution](/barcode/python-java/set-barcode-size-and-resolution/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
-|[Adjust Barcode Appearance](/barcode/python-java/customize-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
-|[Customize Barcode Text](/barcode/python-java/set-barcode-text/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
+|[Adjust Barcode Appearance](/barcode/python-java/manage-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
+|[Set Barcode Parameters](/barcode/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
+|[Manage Barcode Text](/barcode/python-java/barcode-text-settings/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
 |[Customize Barcode Color Scheme](/barcode/python-java/customize-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|
-|[Save Generated Barcodes](/barcode/python-java/save-barcode-image/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
-|[Set Checksum Controls in 1D Barcodes](/barcode/python-java/set-checksum-controls/)|Describes checksum settings for 1D barcodes|
-  
+|[Save Generated Barcodes](/barcode/python-java/save-generated-barcodes/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
+|[Use Checksum in 1D Barcodes](/barcode/python-java/set-barcode-parameters/)|Describes checksum settings for 1D barcodes|
 
   

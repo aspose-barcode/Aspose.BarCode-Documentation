@@ -1,13 +1,10 @@
 ---
-title: Save Generated Barcodes in Python via Java
-linktitle: Save Generated Barcodes
+title: Saving Generated Barcodes
 type: docs
 weight: 70
-description: "How to Save Generated Barcodes in Aspose.BarCode for Python via Java"
+description: "How to Save Generated Barcodes in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Save Barcode in Python, Download Barcode in Aspose.BarCode for Python, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF"
-url: /python-java/save-barcode-image/
-aliases:
-- /python-java/save-generated-barcodes/
+url: /python-java/save-generated-barcodes/
 ---
 
 This article outlines the ways of outputting generated barcode images as files, streams, or bitmaps, as well as various raster (PNG, JPEG, BMP, GIF, and TIFF) and vector (SVG and EMF) image file formats.
@@ -15,7 +12,7 @@ This article outlines the ways of outputting generated barcode images as files, 
 ## **Overview**
 During barcode generation, it may be required to save barcode images not only in common raster image formats but also as streams or vector files. ***Aspose.BarCode for Python via Java*** enables different options of saving generated barcodes: five common image formats, two vector formats, and some other ways, such as outputting barcode labels to a file, stream, or a bitmap). These options are discussed further.
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Saving to File**
 ***Aspose.BarCode for Python via Java*** enables saving generated barcode images as files in the desired format. 

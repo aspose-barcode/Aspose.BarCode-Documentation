@@ -1,13 +1,10 @@
 ---
 title: Integrate Aspose.BarCode for .NET with Aspose.Words
-linktitle: Integration with Aspose.Words
 description: "How to Integrate Aspose.BarCode and Aspose.Words for .NET"
 keywords:
 type: docs
 weight: 30
-url: /net/integrate-with-aspose-words/
-aliases: 
-- /net/how-to-integrate-aspose-barcode-for-net-with-aspose-words/
+url: /net/how-to-integrate-aspose-barcode-for-net-with-aspose-words/
 ---
 
 This section outlines how to add and read barcode images in Microsoft Word files by integrating [***Aspose.BarCode***](https://products.aspose.com/barcode/net/) and [***Aspose.Words***](https://products.aspose.com/words/net/) libraries for .NET:

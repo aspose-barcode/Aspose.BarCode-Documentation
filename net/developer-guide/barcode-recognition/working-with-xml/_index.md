@@ -1,5 +1,5 @@
 ---
-title: Work with Barcode Recognition State in XML
+title: Working with Barcode Recognition State in XML
 type: docs
 description: "This Article Describes How to Save or Load Barcode Recognition State in the XML format"
 keywords: "Read barcode in XML, Barcode XML Serialization, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
@@ -15,7 +15,7 @@ It should be noted that the serialization of the information about a barcode ima
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Save Barcode Recognition State to XML**
+## **Saving Barcode Recognition State to XML**
 ***Aspose.BarCode for .NET*** provides two ways to obtain the current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): to an XML file through the [*ImportToXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition.barcodereader/importfromxml/methods/1) function or a stream using the [*ImportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml) function. The code snippet below illustrates how to perform the serialization of the barcode recognition state to an XML file.   
 
 {{< highlight csharp>}}
@@ -30,7 +30,7 @@ using (BarCodeReader read = new BarCodeReader())
 }
 {{< /highlight >}}
 
-## **Load Barcode Recognition State from XML**
+## **Loading Barcode Recognition State from XML**
 The current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) can be loaded from an XML file through the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition.barcodereader/importfromxml/methods/1) function or from a stream through the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml) function. The target barcode image needs to be specified using the group of properties called [*SetBarCodeImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/setbarcodeimage/index). The following code snippet explains how to load the state of a [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) object from an XML file. 
 
 {{< highlight csharp>}}
@@ -51,7 +51,7 @@ using (BarCodeReader read = BarCodeReader.ImportFromXml($"{path}readerPdf417.xml
 {{< /highlight >}}
 
 
-## **Load and Save Barcode Recognition State from Stream**
+## **Loading and Saving Barcode Recognition State from Stream**
 ***Aspose.BarCode for .NET*** enables saving the barcode recognition state or loading it from streams using special functions [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/exporttoxml) and [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml), respectively. The target barcode image needs to be set explicitly using the group of properties called [*SetBarCodeImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/setbarcodeimage/index). The following code snippet demonstrates how to save the barcode recognition state and load it from a stream. 
 
 {{< highlight csharp>}}

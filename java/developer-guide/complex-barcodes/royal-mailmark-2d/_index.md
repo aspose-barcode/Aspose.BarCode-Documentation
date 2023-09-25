@@ -1,14 +1,11 @@
 ---
-title: Generate and Read Royal Mail Mailmark 2D Barcodes in Java
-linktitle: Mailmark 2D Type
+title: Royal Mail Mailmark 2D Barcodes in Java
+linktitle: Mailmark 2D Barcodes
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for Java"
 keywords: Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcodes in Java
 weight: 20
-url: /java/mailmark-2D-barcodes/
-aliases:
-- /java/mailmark-2D-barcode/
-
+url: /java/mailmark-2D-barcode/
 ---
 
 ## **Overview**
@@ -20,7 +17,7 @@ To process *Mailmark 2D* barcode images, ***Aspose.BarCode for Java*** provides 
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Generate Mailmark 2D Barcodes**
+## **Generation of Mailmark 2D Barcodes**
 Developers can create *Mailmark 2D* barcodes in the following manner. First, it is necessary to generate an instance of class [*Mailmark2DCodetext*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/Mailmark2DCodetext) entering information to be encoded. Then, the method *generateBarCodeImage()* of class [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexBarcodeGenerator) needs to be called to complete barcode generation. The [*Mailmark2DType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/Mailmark2DType) enumeration is intended to determine the desired *Mailmark 2D* subtype ofor the generated barcode.  
   
 Following *Mailmark 2D* barcode images have been generated using various *Mailmark 2D* subtypes.
@@ -68,7 +65,7 @@ generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark2DType29.png");
 {{< /highlight >}}-->
   
-## **Read Mailmark 2D Barcodes**
+## **Mailmark 2D Barcode Recognition**
 Using the ***Aspose.BarCode for Java*** functionality, developers can read *Mailmark 2D* barcodes of all types. First, it is necessary to generate an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) setting it to *DecodeType.DataMatrix*. Thereafter, barcode data can be parsed using the *tryDecodeMailmark2D(java.lang.String encodedCodetext)* method of class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/ComplexCodetextReader) that generates an instance of [*Mailmark2DCodetext*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/Mailmark2DCodetext) containing decoded information.  
   
 <!--The following code snippet shows how to read *Mailmark 2D* barcodes.

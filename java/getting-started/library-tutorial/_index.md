@@ -6,7 +6,7 @@ url: /java/barcode-generation-and-recognition-tutorial/
 ---
 This tutorial explains how to use ***Aspose.BarCode for Java*** to generate a PDF417 barcode image and then read a barcode from this image.
 
-In the task considered in this tutorial, we use Eclipse as an IDE, which is free and could be downloaded here:
+In the task considered in this tutorial, we use Eclipse as the IDE, which is free and could be downloaded at:
 <http://www.eclipse.org/downloads/>
 
 ## **Barcode Generation**

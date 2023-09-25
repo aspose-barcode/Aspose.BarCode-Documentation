@@ -3,35 +3,235 @@ title: Product Overview
 type: docs
 weight: 10
 url: /cpp/product-overview/
-
 ---
 
-***Aspose.BarCode for C++*** is a robust and reliable barcode generation and recognition component written in C++ that allows developers to quickly and easily add barcode generation and recognition functionality to C++ applications.
+{{% alert color="primary" %}} 
 
-This article presents ***Aspose.BarCode for C++*** and its main features, including some important technical details. You can get information about its functionality, input and output image formats, important classes, and supported platforms.
+<img src="aspose_barcode-for-cpp.png" alt="Aspose.BarCode for C++" style="zoom:50%;" />
+**![todo:image_alt_text]()**
 
+**Welcome to Aspose.BarCode for C++** 
+
+Aspose.BarCode for C++ is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their C++ applications. Aspose.BarCode conforms to most of the barcode standards and specifications available now-a-days. Aspose.BarCode for C++ doesn't just create barcodes but it provides a complete framework to control almost everything about them. The API is easy to use, installable on different platforms and has a rich functionality as compared to other commercially available software.
+
+{{% /alert %}} 
 ## **Product Description**
-***Aspose.BarCode for C++*** has many characteristics that make it a flexible and easy-to-use tool. It is a fully functional library that provides both generation and reading functionality. Generated barcodes can be saved in five high-quality raster image formats and two vector ones. The other advantage is that the library facilitates decoding even low-quality or damaged barcode images. Therefore, it enables high recognition efficiency for most of the supported symbologies. There are no printing limitations for barcodes generated through the Aspose.BarCode library. Developers can utilize any type of printers. The quality of printed barcode images will depend only on the resolution of a printer.
+Aspose.BarCode for C++ library allows the developers to add barcode generation & recognition capabilities to their own C++ applications.
 
-***Aspose.BarCode for C++*** provides fully featured demos and working examples written in C++ to provide developers with a better understanding of our product. Using these demos, developers can quickly test functionality provided by Aspose.BarCode.
+Aspose.BarCode for C++ not only creates barcodes but also can export the generated barcodes to a verity of image formats in high quality. Moreover, the developers can easily manipulate the appearance of the generated barcodes such as background color, bar color, image quality, rotation angle, x-dimension, captions, size, resolution and much more.
+### **General Barcode Features**
+- Specify different kinds of symbologies.
+- Barcode code text (data to be encoded to barcode image) can be set and its appearance-related properties like font, background color, foreground color, alignment and location (hide, above, below) etc. can also be modified.
+- The barcode caption and its font, background color, foreground color, alignment and location (hide, above, below) can be managed.
+- Checksum and supplement data are supported.
+- Bar height of the barcode images can be customized.
+- X-dimension and Y-dimension are also supported for 2D barcodes.
+- Code128 encoding is exceptionally optimized.
+- Wide to narrow ratio can be achieved for supported symbologies.
+- WYSIWYG editing of barcodes is also supported using GUI-based controls.
+### **Recognition Features**
+- Barcode Recognition Aspose.BarCode.BarCodeReader reads most common 1D, 2D barcodes anywhere at any angle from an image
+- Specify an area in the image to scan the barcode
+- Get region information for the barcodes recognized in the image
+### **Barcode Imaging Features**
+- Manipulate the barcode image borders, border color, style, margins, width etc.
+- Barcode image color, back color and bar color can be modified.
+- Rotate barcode images to any degree.
+- High-quality barcode images.
+- Anti-Aliasing for barcode images.
+- Barcode image margins can be managed.
+- Customized resolution.
+- Size in inches and millimetres.
+- Auto Sizing of barcode images.
+- Create barcode images in any desired image format like BMP, JPEG, GIF, PNG, TIFF, etc.
+- Render barcode images on any device and create device resolution dependent images.
+### **Utility Features**
+- Save barcode images to streams.
+- Print barcode images.
+### **Input Image Formats**
+- JPEG
+- TIFF
+- PNG
+- BMP
+- GIF
+- EXIF
+### **Output Image Formats**
+- JPEG
+- TIFF
+- PNG
+- BMP
+- GIF
+- EXIF
+- EMF
+- SVG
+### **Platforms Supported**
+- Windows Forms
+- Web Forms
+- WPF
+## **Supported Barcode Symbologies**
+### **Numeric Only Symbologies**
+- EAN13
+- EAN8
+- UPCA
+- UPCE
+- ISBN
+- ISMN
+- ISSN
+- Interleaved2of5
+- Standard2of5
+- MSI
+- Code11
+- Codabar
+- Postnet
+- Planet
+- EAN14(SCC14)
+- SSCC18
+- ITF14
+- IATA 2 of 5
+- DatabarOmniDirectional
+- DatabarStackedOmniDirectional
+- DatabarExpandedStacked
+- DatabarStacked
+- DatabarLimited
+- DatabarTruncated
+### **Alpha-Numeric Symbologies**
+- GS1Code128
+- Code128
+- Code39 Extended
+- Code39 Standard
+- Code93 Extended
+- Code93 Standard
+- Australia Post
+- Italian Post 25
+- Matrix 2 of 5
+- DatabarExpanded
+- PatchCode
+### **2D Symbologies**
+- PDF417
+- DataMatrix
+- Aztec
+- QR
+- MicroQR
+- GS1DataMatrix
+- Code16K
+- CompactPDF417
 
-### **Main Features**
-***Aspose.BarCode for C++*** benefits from a great variety of features that can serve to address various business needs. One of the most important functions is the customization of barcode appearance-related properties, including barcode size, color of barcode elements, rotation angle, image quality, X-dimension, resolution, text captions, and many others. Moreover, rich barcode reading and imaging functionality is available.  
-  
-The most important features are the following: 
-- Barcode generation and recognition for over 60 barcode types
-- Reading barcodes at any angle and from images of any quality
-- Customization of barcode appearance (size, height, resolution, color, rotation angle, text label and captions, X-dimension, wide-to-narrow-ratio, and others)
-- Optimization of recognition engine variables to achieve the desired trade-off between reading accuracy and speed
-- Target scanning region selection
-- Barcode generation using special modes, such as ECI, error correction, or embedded metadata
-- Image rotation at any angle 
-- Saving to or loading from stream or file 
-- Encoding and decoding non-English characters in 2D types
+Aspose.BarCode supports both encoding and decoding (generation and recognition) for all the listed symbologies.
+## **Edition Types**
+Aspose.BarCode offers only one edition type: Enterprise. The features of Enterprise Edition are summarized in the following table.
 
+|**Features**|**Aspose.BarCode for C++**|
+| :- | :- |
+|**General**| |
+|Programmers Guide and API Reference in HTML format|X|
+|API Reference in Microsoft Help format|X|
+|Fully featured demos|X|
+|**Barcode Generation Symbologies**| |
+|Code128|X|
+|Code39 Standard|X|
+|Code39 Extended|X|
+|Code93 Standard|X|
+|Code93 Extended|X|
+|Code11|X|
+|Codabar|X|
+|ISSN|X|
+|ISBN|X|
+|ISMN|X|
+|GS1DataMatrix|X|
+|EAN13|X|
+|EAN8|X|
+|GS1Code128|X|
+|Interleaved2of5|X|
+|Standard2of5|X|
+|MSI|X|
+|Postnet|X|
+|Planet|X|
+|UPCA|X|
+|UPCE|X|
+|EAN14(SCC14)|X|
+|SSCC18|X|
+|ITF14|X|
+|BarCode supplement|X|
+|PDF417|X|
+|QR|X|
+|Aztec|X|
+|Datamatrix|X|
+|Australia Post|X|
+|Matrix 2 of 5|X|
+|Italian Post 25|X|
+|IATA 2 of 5|X|
+|Code16K|X|
+|**BarCode Recognition Symbologies**| |
+|Code128|X|
+|Code39 Standard|X|
+|Code39 Extended|X|
+|Code93 Standard|X|
+|Code93 Extended|X|
+|Code11|X|
+|Codabar|X|
+|ISSN|X|
+|ISBN|X|
+|ISMN|X|
+|GS1DataMatrix|X|
+|EAN13|X|
+|EAN8|X|
+|GS1Code128|X|
+|Interleaved2of5|X|
+|Standard2of5|X|
+|Postnet|X|
+|Planet|X|
+|UPCA|X|
+|UPCE|X|
+|EAN14(SCC14)|X|
+|SSCC18|X|
+|ITF14|X|
+|BarCode supplement|X|
+|PDF417|X|
+|QR|X|
+|MSI|X|
+|Aztec|X|
+|Datamatrix|X|
+|Matrix 2 of 5|X|
+|Australia Post|X|
+|Italian Post 25|X|
+|IATA 2 of 5|X|
+|Code16K|X|
+|**Image Formats**| |
+|Bitmap|X|
+|Jpeg|X|
+|Gif|X|
+|png|X|
+|Tiff|X|
+|**Barcode Features**| |
+|Font Handling|X|
+|X-Dimension|X|
+|Y-Dimension|X|
+|Bar Height Customization|X|
+|Bar size Customization|X|
+|Encoding and decoding of Non-English Characters|X|
+|Checksum|X|
+|Supplement Data|X|
+|wide narrow ratio|X|
+|Background Color|X|
+|Fore Color|X|
+|Barcode Alignment & Location|X|
+|WYSIWYG Editing|X|
+|**Image Formatting Features**| |
+|Background Color|X|
+|Fore Color|X|
+|Border Style|X|
+|Image Margin|X|
+|Rotation at any angle|X|
+|Customized Resolution|X|
+|Caption Above|X|
+|Caption Below|X|
+|Auto Sizing|X|
+|High Image Quality|X|
+|Image Scaling|X|
+|**Other Features**| |
+|Enumerate local available printers and resolutions|X|
+|Http Handler Support|X|
+|Median smoothing image processing for recognition|X|
+|HLS image processing for recognition|X|
+|Grayscale image processing for recognition|X|
 
-## **Licensing**
-License is required to get access to the advanced functionality of ***Aspose.BarCode for C++***. The evaluation mode allows generating barcodes without any restrictions. However, watermarks are displayed on generated barcode images. Barcode recognition functionality is provided without limitations only for Code 39 barcodes. For all other barcode types, 30% of the decoded text will be masked. More information about how to buy and set the license is provided in [**Licensing**](/barcode/cpp/licensing/). If you want to evaluate the full functionality of ***Aspose.BarCode for C++***, you can obtain a temporary license that is valid for 30 days. Please refer to [How to get a Temporary License](https://purchase.aspose.com/temporary-license) for details.
-
-## **Main Classes**
-***Aspose.BarCode for C++*** contains three main classes: [*BarCodeReader*](https://reference.aspose.com/barcode/cpp/class/aspose.bar_code.bar_code_recognition.bar_code_reader/) for barcode scanning and reading, [*BarcodeGenerator*](https://reference.aspose.com/barcode/cpp/class/aspose.bar_code.generation.barcode_generator/) for barcode generation according to the specified format requirements, and [*ComplexBarcode*](https://reference.aspose.com/barcode/cpp/namespace/aspose.bar_code.complex_barcode/) to manage special barcodes, i.e. Swiss QR Code. 

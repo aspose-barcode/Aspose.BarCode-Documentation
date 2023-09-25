@@ -1,13 +1,10 @@
 ---
-title: Customize Barcode Text and Captions in Python via .NET
-linktitle: Customize Barcode Text
+title: Manage Barcode Text Settings
 type: docs
 weight: 50
-description: "How to Set Barcode Text and Captions in Aspose.BarCode for Python via .NET"
+description: "How to Set Barcode Text and Captions in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Python, Work with Barcode Image in Aspose.BarCode for Python, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
-url: /python-net/set-barcode-text/
-aliases:
-- /python-net/barcode-text-settings/
+url: /python-net/barcode-text-settings/
 ---
 
 This article describes how to work with text placed on barcode images. ***Aspose.BarCode for Python via .NET*** enables customizing various parameters of barcode text: visibility, font, spacings, text location, and wrapping modes.

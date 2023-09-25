@@ -1,15 +1,13 @@
 ---
-title: Aspose.Barcode in .Net MAUI Mobile Application
+title: How to use Aspose.Barcode in .Net MAUI mobile application
 type: docs
 weight: 30
-url: /net/aspose-barcode-in-net-maui-mobile-application/
-aliases:
-- /net/how-to-use-aspose-barcode-in-net-maui-mobile-application/
+url: /net/how-to-use-aspose-barcode-in-net-maui-mobile-application/
 ---
 
 ## **Overview**
 
-This article describes how to use ***Aspose.Barcode*** in [.Net MAUI](https://learn.microsoft.com/dotnet/maui/what-is-maui) mobile application. ***.Net MAUI*** technology allows creating applications for the most of mobile OS, like ***iOS***, ***Android*** or ***Tizen***, also for ***MacOS*** and ***Windows***. This allows you to use barcode support anywhere on any device.
+This article describes how to use ***Aspose.Barcode*** in [ ***.Net MAUI*** ](https://learn.microsoft.com/dotnet/maui/what-is-maui) mobile application. ***.Net MAUI*** technology allows to develop application for the most of mobile OS, like ***iOS***, ***Android*** or ***Tizen***, also for ***MacOS*** and ***Windows***. This allows you to use barcode support anywhere on any device.
 
 You can anytime download the [example application](mauibarcode.zip).
 
@@ -17,7 +15,7 @@ You can anytime download the [example application](mauibarcode.zip).
 
 <img style="border:1px solid black;" src="project_create.png" alt="Create .Net MAUI App project" />
 
-First, you need to create ***.Net MAUI App***. You can do this in ***Visual Studio 2022***. For this you need to:
+At first you need to create ***.Net MAUI App***. You can do this in ***Visual Studio 2022***. For this you need to:
 1. Open ***Visual Studio 2022*** and select “Create a new project”.
 2. Select ***.Net MAUI App***.
 3. Set the application name and folder.
@@ -36,7 +34,7 @@ After project creation you have to create Android Emulator. How to do this you c
 
 ## **Application Appearance**
 
-***Visual Studio*** does not have visual designer for ***.Net MAUI*** pages, and thus we need to add the following markup to ***“x.xaml”*** Main Page and add empty ***OnDrawBarcodeBtn***, ***OnReadBarcodeBtn*** functions to the page code ***“x.xaml.cs”***:
+Because ***Visual Studio*** does not have visual designer for ***.Net MAUI*** pages, we need to add the following markup to ***“x.xaml”*** Main Page and add empty ***OnDrawBarcodeBtn***, ***OnReadBarcodeBtn*** functions to the page code ***“x.xaml.cs”***:
 {{< highlight xml>}}
 <ScrollView>
     <VerticalStackLayout
@@ -269,7 +267,7 @@ public static MauiApp CreateMauiApp()
 {{< /highlight >}}
 
 
-## **Generate Barcodes**
+## **Generate Barcode**
 
 The following code generates barcode image and shows in the application:
 {{< highlight csharp>}}

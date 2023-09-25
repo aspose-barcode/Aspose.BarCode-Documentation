@@ -1,13 +1,10 @@
 ---
 title: Integrate Aspose.BarCode for .NET with Aspose.Cells
-linktitle: Integration with Aspose.Cells
 description: "How to Intergrate Aspose.BarCode with Aspose.Cells"
 keywords:
 type: docs
 weight: 50
-url: /net/integrate-with-aspose-cells/
-aliases:
-- /net/how-to-integrate-aspose-barcode-for-net-with-aspose-cells/
+url: /net/how-to-integrate-aspose-barcode-for-net-with-aspose-cells/
 ---
 
 ## **Overview**

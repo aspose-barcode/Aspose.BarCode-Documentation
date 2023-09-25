@@ -1,13 +1,12 @@
 ---
-title: Customize Barcode Appearance in Java
-linktitle: Customize Barcode Appearance
+title: Barcode Appearance Adjustment
+linktitle: Barcode Appearance Settings
 type: docs
-weight: 20
+weight: 30
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode"
-url: /java/customize-barcode-appearance/
+url: /java/working-with-barcode-image/
 aliases:
-- /java/working-with-barcode-image/
 - /java/set-code-text-for-barcode/
 - /java/basic-features/
 - /java/barcode-image-basic-features/
@@ -23,7 +22,7 @@ In the present article, you can find details about customizing various parameter
   
 <p align="center"><img src="barcode_view_scheme.png"></p>
  
-## **Set Barcode Sizing Mode**
+## **Barcode Image Sizing Modes**
 
 In general, ***Aspose.BarCode for Java*** defines barcode image size in terms of height and width automatically. The library enables developers to manage image size settings manually by determining the height and width of barcode labels through *setImageHeight(Unit value)* and *setImageWidth(Unit value)* methods of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BaseGenerationParameters).  
   
@@ -88,7 +87,7 @@ gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   
-## **Set Barcode Rotation Angle**
+## **Barcode Rotation**
 In ***Aspose.BarCode for Java***, barcode image rotation can be set through the *setRotationAngle* method of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BaseGenerationParameters). Passing a value in degrees to this method allows generating a barcode image rotated at the desired angle clockwise or counterclockwise.  
   
 The sample barcode labels rotated by various angles are shown below.
@@ -113,7 +112,7 @@ gen.Parameters.RotationAngle = 180;
 gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
   
-## **Customize Barcode Borders and Padding**
+## **Customizing Barcode Borders and Padding**
 ***Aspose.BarCode for Java*** allows customizing barcode image borders and paddings. Corresponding methods are described further.
   
 ### **Border Settings**
