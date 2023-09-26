@@ -6,9 +6,7 @@ weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Python via Java, Work with Barcode Image in Aspose.BarCode for Python, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
 url: /python-java/set-barcode-size/
-aliases:
-/python-java/set-barcode-parameters/
-
+aliases: /python-java/set-barcode-parameters/
 ---
 This article describes how to manage settings provided by ***Aspose.BarCode for Python via Java*** to adjust barcode measurement units (millimeters, inches, points, or pixels) and barcode image resolution.
   

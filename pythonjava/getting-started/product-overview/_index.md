@@ -3,7 +3,6 @@ title: Product Overview
 type: docs
 weight: 10
 url: /python-java/product-overview/
-
 ---
 
 ***Aspose.BarCode for Python via Java*** is a robust and reliable barcode generation and recognition component written in Python that allows developers to quickly and easily add barcode generation and recognition functionality to Python applications.

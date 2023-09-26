@@ -6,7 +6,6 @@ description: "This Article Describes How to Read Barcodes of Different Symbologi
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcodes in Python"
 weight: 10
 url: /python-java/basic-barcode-recognition/
-
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
 

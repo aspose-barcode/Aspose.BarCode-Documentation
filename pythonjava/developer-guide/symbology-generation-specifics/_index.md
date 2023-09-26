@@ -3,7 +3,6 @@ title: Generation Specifics for Barcode Types
 type: docs
 weight: 20
 url: /python-java/barcode-type-generation/
-
 ---
 This chapter focuses on the peculiarities of working with various barcode symbologies and corresponding barcode generation specificities in ***Aspose.BarCode for Python via Java***.  
 All related information can be found in the articles listed below.
