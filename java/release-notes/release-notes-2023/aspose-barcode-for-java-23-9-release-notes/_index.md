@@ -155,6 +155,6 @@ generator.getParameters().getBarcode().getAztec().setLayersCount(8);
 BufferedImage image = generator.generateBarCodeImage();
 BarCodeReader reader = new BarCodeReader(image, DecodeType.AZTEC);
 reader.readBarCodes();
-        System.out.println("Codetext:" + reader.getFoundBarCodes()[0].getCodeText());
+System.out.println("Codetext:" + reader.getFoundBarCodes()[0].getCodeText());
 ```
 
