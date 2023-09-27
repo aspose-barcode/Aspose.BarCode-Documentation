@@ -57,7 +57,7 @@ String codetext = "犬Right狗";
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.AZTEC, codetext);
 generator.getParameters().getBarcode().getAztec().setECIEncoding(ECIEncodings.UTF8);
 generator.save(filePath, BarCodeImageFormat.PNG);
-BufferedImage image = generator.generateBarCodeImage();
+Bitmap image = generator.generateBarCodeImage();
 BarCodeReader reader = new BarCodeReader(image, DecodeType.AZTEC);
 BarCodeResult[] barCodeResults = reader.readBarCodes();
 System.out.println("Codetext: " + barCodeResults[0].getCodeText());
@@ -122,7 +122,7 @@ BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.AZTEC, "Aspose");
 generator.getParameters().getBarcode().getAztec().setStructuredAppendBarcodeId(3);
 generator.getParameters().getBarcode().getAztec().setStructuredAppendBarcodesCount(5);
 generator.getParameters().getBarcode().getAztec().setStructuredAppendFileId("ABCD");
-BufferedImage image = generator.generateBarCodeImage();
+Bitmap image = generator.generateBarCodeImage();
 BarCodeReader reader = new BarCodeReader(image, DecodeType.AZTEC);
 reader.readBarCodes();
 System.out.println("Barcode ID: " + reader.getFoundBarCodes()[0].getExtended().getAztec().getStructuredAppendBarcodeId());
@@ -139,7 +139,7 @@ Sample generation and recognition code:
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.AZTEC, "Aspose");
 //set flag that indicates that data is encoded for reader programming
 generator.getParameters().getBarcode().getAztec().setReaderInitialization(true);
-BufferedImage image = generator.generateBarCodeImage();
+Bitmap image = generator.generateBarCodeImage();
 BarCodeReader reader = new BarCodeReader(image, DecodeType.AZTEC);
 reader.readBarCodes();
 System.out.println("Is reader programming: " + reader.getFoundBarCodes()[0].getExtended().getAztec().isReaderInitialization());
@@ -152,7 +152,7 @@ Sample generation and recognition code:
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.AZTEC, "Aspose");
 generator.getParameters().getBarcode().getAztec().setLayersCount(8);
-BufferedImage image = generator.generateBarCodeImage();
+Bitmap image = generator.generateBarCodeImage();
 BarCodeReader reader = new BarCodeReader(image, DecodeType.AZTEC);
 reader.readBarCodes();
 System.out.println("Codetext:" + reader.getFoundBarCodes()[0].getCodeText());
