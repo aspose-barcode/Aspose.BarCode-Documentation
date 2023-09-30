@@ -1,8 +1,8 @@
 ---
-title: Android via Java Release Notes - 2022
+title: Android via Java Release Notes - 2023
 type: docs
-weight: 8
-url: /java/android-via-java-release-notes-2022/
+weight: 7
+url: /java/android-via-java-release-notes-2023/
 ---
 
 

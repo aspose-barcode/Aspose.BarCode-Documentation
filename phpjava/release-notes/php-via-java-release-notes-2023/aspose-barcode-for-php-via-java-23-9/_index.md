@@ -4,14 +4,14 @@ type: docs
 weight: 9000
 url: /phpjava/aspose-barcode-for-php-via-java-23-9/
 aliases:
-- /java/aspose-barcode-for-php-via-java-23-9/
+  - /java/aspose-barcode-for-php-via-java-23-9/
 ---
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 This page contains release notes information for [Aspose.BarCode for PHP via Java 23.9](https://downloads.aspose.com/barcode/php/new-releases/aspose.barcode-for-php-via-java-23.9/).
 
-{{% /alert %}} 
+{{% /alert %}}
 ## **All Changes**
 
 |**Key**|**Summary**|**Category**|
@@ -25,6 +25,14 @@ This page contains release notes information for [Aspose.BarCode for PHP via Jav
 ## Public API changes and backwards compatibility
 
 GS1Aztec barcode type was added to DecodeType and EncodeTypes.
+Constants GS_1_AZTEC and GS_1_COMPOSITE_BAR added to Recognition.DecodeType.  
+Constant GS_1_AZTEC  added to Generation.EncodeTypes.  
+Class Recognition.GS1CompositeBarExtendedParameters was added.
+It contains methods:
+getOneDType()
+getOneDCodeText()
+getTwoDType()
+getTwoDCodeText()
 Class Recognition.AztecExtendedParameters was added
 It has methods:
 getStructuredAppendBarcodesCount()
@@ -33,7 +41,8 @@ getStructuredAppendFileId()
 isReaderInitialization()
 equals(obj)
 
-New public methods have been added to the Recognition.BarCodeExtendedParameters with the following methods:
+New public methods have been added to the Recognition.BarCodeExtendedParameters:
+getDataMatrix()
 getAztec()
 getGS1CompositeBar()
 
