@@ -2,7 +2,7 @@
 title: Generate Data Matrix Barcodes in C#
 linktitle: Data Matrix
 type: docs
-weight: 60
+weight: 40
 url: /net/datamatrix-barcode/
 ---
 {{% alert color="primary" %}}[Generate Data Matrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix): You can test the quality of ***Aspose.BarCode*** generation for DataMatrix barcodes and get the results online.{{% /alert %}}

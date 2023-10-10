@@ -4,6 +4,7 @@ type: docs
 description: "This article describes how to decode FNC symbols in GS1 barcodes in Aspose.BarCode for .NET according to business needs"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode C#"
 weight: 20
+notoc: true
 url: /net/decode-fnc-symbols/
 ---
 

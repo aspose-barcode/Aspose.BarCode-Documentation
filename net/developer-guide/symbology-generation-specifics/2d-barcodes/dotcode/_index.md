@@ -2,7 +2,7 @@
 title: Generate DotCode Barcodes in C#
 linktitle: DotCode
 type: docs
-weight: 190
+weight: 60
 url: /net/dotcode-barcodes/
 aliases:
 - /net/dotcode/

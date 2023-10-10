@@ -2,7 +2,7 @@
 title: Generate QR Code and Micro QR Code in C#
 linktitle: QR Code and Micro QR Code
 type: docs
-weight: 40
+weight: 10
 url: /net/qr-code-and-micro-qr-code/
 aliases:
 - /net/qr-and-micro-qr-barcode/

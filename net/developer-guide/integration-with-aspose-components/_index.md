@@ -3,7 +3,7 @@ title: Integration with Aspose Libraries
 description: "How to Integrate Aspose.BarCode with Other Aspose Products"
 keywords:
 type: docs
-weight: 40
+weight: 50
 url: /net/integration-with-aspose-libraries/
 ---
 

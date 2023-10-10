@@ -2,6 +2,7 @@
 title: Barcode with Logos
 type: docs
 weight: 50
+notoc: true
 url: /net/barcode-with-image-in-place-of-codetext/
 ---
 

@@ -2,7 +2,7 @@
 title: Generate MaxiCode Barcodes in C#
 linktitle: MaxiCode
 type: docs
-weight: 80
+weight: 50
 url: /net/maxicode-barcodes/
 ---
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}

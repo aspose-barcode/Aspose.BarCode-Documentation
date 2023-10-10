@@ -3,7 +3,8 @@ title: Technical Articles
 type: docs
 description: "Technical Articles about Aspose.BarCode Library and Its Functionality"
 keywords: "Aspose.Barcode for .NET, generate barcodes in c#, read barcodes in c#, aspose barcode info"
-weight: 80
+weight: 60
+notoc: true
 url: /net/technical-articles/
 aliases:
 - /net/reporting/

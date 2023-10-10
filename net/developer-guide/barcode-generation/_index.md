@@ -4,6 +4,7 @@ linktitle: Barcode Generation Basics
 type: docs
 weight: 10
 url: /net/barcode-generation/
+notoc: true
 keywords: Barcode C# library, Generate Barcodes in C#
 description: Barcode C# library includes supported symbologies, barcode appearance-related features, adjusting barcode size, changing barcode text, saving created barcodes, dealing with GUI-based development tools. The essential information can be found in the articles listed below.
 ---

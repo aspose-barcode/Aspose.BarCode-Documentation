@@ -5,6 +5,7 @@ description: "How to Integrate Aspose.BarCode and Aspose.Words for .NET"
 keywords:
 type: docs
 weight: 30
+notoc: true
 url: /net/integrate-with-aspose-words/
 aliases: 
 - /net/how-to-integrate-aspose-barcode-for-net-with-aspose-words/

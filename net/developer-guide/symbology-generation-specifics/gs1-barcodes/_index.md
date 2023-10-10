@@ -2,7 +2,7 @@
 title: Generate GS1 Barcodes in C#
 linktitle: GS1 Barcode Types
 type: docs
-weight: 90
+weight: 40
 url: /net/gs1-barcodes/
 aliases:
 - /net/generating-barcodes-using-new-barcode-generation-api/
