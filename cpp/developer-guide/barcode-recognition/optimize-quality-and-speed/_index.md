@@ -3,6 +3,7 @@ title: Recognition Quality and Speed
 type: docs
 description: "This section describes how barcode recognition can be optimized in terms of accuracy and speed."
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C++"
+notoc: true
 weight: 20
 url: /cpp/improve-barcode-recognition/
 
@@ -14,8 +15,6 @@ Barcode recognition is based on machine vision techniques and utilizes sophistic
   
 ***Aspose.BarCode for C++*** allows optimizing the barcode recognition process in terms of speed and quality depending on particular business needs and specificities. The library provides a special class called [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) that can be used to implement flexible settings for barcode recognition and to reach the required trade-off between reading capacity and speed according to the quality of source barcode images.
   
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
-
    
 |Article|Description|
 |---|---|

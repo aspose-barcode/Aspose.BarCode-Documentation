@@ -1,5 +1,6 @@
 ---
 title: Generate and Read Swiss QR Code in C++
+linktitle: Swiss QR Code
 type: docs
 description: "This article explains how to Generate and Read Swiss QR Codes using Aspose.BarCode for C++"
 keywords: "Generate Swiss QR Codes, How to Create Swiss Barcodes, Swiss QR Code, Aspose.BarCode, Generate Barcode C++"

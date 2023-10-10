@@ -15,7 +15,7 @@ As a result of barcode reading, ***Aspose.BarCode for .NET*** allows not only de
 |[Get Barcode Placement Region and Orientation Angle](/barcode/net/get-placement-and-orientation/)|Explains how to get information about barcode coordinates and rotation angle|
 |[Get Barcode Type and Encoded Data](/barcode/net/get-barcode-type-and-data/)|Demostrates how to fetch the barcode type and data stored in this barcode|
 |[Get Barcode Metadata](/barcode/net/read-barcode-metadata/)|Describes how to retrieve barcode metadata|
-
+  
 
 
 

@@ -2,7 +2,7 @@
 title: Specific Parameters of Postal Barcode Types
 linktitle: Postal Barcodes
 type: docs
-weight: 170
+weight: 30
 url: /cpp/postal-barcode-types/
 ---
 

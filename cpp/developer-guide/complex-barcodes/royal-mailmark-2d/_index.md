@@ -1,5 +1,6 @@
 ---
 title: Generate and Read Mailmark 2D Barcodes in C++
+linktitle: Mailmark 2D
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for C++"
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode C++"

@@ -2,6 +2,7 @@
 title: Getting Started
 type: docs
 weight: 10
+notoc: true
 url: /cpp/getting-started/
 ---
 

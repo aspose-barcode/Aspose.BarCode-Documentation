@@ -2,6 +2,7 @@
 title: Barcode Generation Basics - Create Barcodes in C++ 
 linktitle: Barcode Generation Basics 
 type: docs
+notoc: true
 weight: 10
 url: /cpp/barcode-generation/
 aliases:
