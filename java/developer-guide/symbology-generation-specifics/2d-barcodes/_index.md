@@ -1,8 +1,9 @@
 ---
 title: Specific Parameters of 2D Barcode Types in Aspose.BarCode via Java
-linktitle: Generate 2D Barcodes
+linktitle: 2D Barcode Types
 type: docs
 weight: 20
+notoc: true
 url: /java/2d-barcode-types/
 aliases:
 - /java/two-dimensional-282d-29-barcodes/

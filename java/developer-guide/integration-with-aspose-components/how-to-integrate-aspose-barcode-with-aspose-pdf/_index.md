@@ -4,12 +4,12 @@ type: docs
 description: "This article explains How to Integrate Aspose.BarCode with Aspose.PDF. Add a Barcode Image to the PDF Document."
 keywords: "Barcode in PDF, Barcode Image to PDF, Create PDF with Barcode, Aspose.BarCode, Generate Barcode Java"
 weight: 9
+notoc: true
 url: /java/integrate-with-aspose-pdf/
 aliases:
 - /java/how-to-integrate-aspose-barcode-with-aspose-pdf/
 ---
 
-## **Overview**
 
 PDF documents have become a popular medium for generating reports or other official documents in many organizations. Aspose Pty Ltd. provides a component, Aspose.PDF to generate PDF documents. Developers can add barcodes to their PDF documents by integrating Aspose.BarCode with Aspose.PDF. 
   

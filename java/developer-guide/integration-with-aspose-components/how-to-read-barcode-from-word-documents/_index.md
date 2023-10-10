@@ -3,6 +3,7 @@ title: Read Barcodes from Word Documents
 type: docs
 weight: 10
 url: /java/read-barcode-from-word-document/
+notoc: true
 aliases:
 - /java/how-to-read-barcode-from-word-documents/
 ---

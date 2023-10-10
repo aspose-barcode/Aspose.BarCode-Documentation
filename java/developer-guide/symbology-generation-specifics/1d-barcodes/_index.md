@@ -4,7 +4,7 @@ linktitle: 1D Barcode Types
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
-weight: 20
+weight: 10
 url: /java/1d-barcode-types/
 aliases:
 - /java/managing-different-barcode-settings/
