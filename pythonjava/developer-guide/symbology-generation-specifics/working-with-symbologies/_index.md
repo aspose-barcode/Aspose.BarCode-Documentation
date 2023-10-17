@@ -271,8 +271,7 @@ public void generateAndReadDataMatrix()
         {
             bg.getParameters().getBarcode().getXDimension().setPixels(4);
             bg.getParameters().getBarcode().getDataMatrix().setDataMatrixEcc(DataMatrixEccType.ECC_200);
-            bg.getParameters().getBarcode().getDataMatrix().setColumns(22);
-            bg.getParameters().getBarcode().getDataMatrix().setRows(22);
+            bg.getParameters().getBarcode().getDataMatrix().setDataMatrixVersion(DataMatrixVersion.ECC200_22x22);
             try
             {
                 bg.save(filePath, BarCodeImageFormat.PNG);

@@ -141,8 +141,7 @@ public void generateAndReadDataMatrix()
         {
             bg.getParameters().getBarcode().getXDimension().setPixels(4);
             bg.getParameters().getBarcode().getDataMatrix().setDataMatrixEcc(DataMatrixEccType.ECC_200);
-            bg.getParameters().getBarcode().getDataMatrix().setColumns(22);
-            bg.getParameters().getBarcode().getDataMatrix().setRows(22);
+            bg.getParameters().getBarcode().getDataMatrix().setDataMatrixVersion(DataMatrixVersion.ECC200_22x22);
             try
             {
                 bg.save(filePath, BarCodeImageFormat.PNG);
@@ -168,8 +167,7 @@ gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
 //set DataMatrix Ecc to 200
 gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_DataMatrixEcc(Aspose::BarCode::Generation::DataMatrixEccType::Ecc200);
 //set rows 22 columns 22
-gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Columns(22);
-gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_Rows(22);
+gen->get_Parameters()->get_Barcode()->get_DataMatrix()->set_DataMatrixVersion(Aspose::BarCode::Generation::DataMatrixVersion::EСС200_22x22);
 gen->Save(path + u"DataMatrix.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
 
 ```
