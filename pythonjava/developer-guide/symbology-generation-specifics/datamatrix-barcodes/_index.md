@@ -191,12 +191,10 @@ gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set ECC type to Ecc200
 gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
 //set rows 22 columns 22
-gen.Parameters.Barcode.DataMatrix.Columns = 22;
-gen.Parameters.Barcode.DataMatrix.Rows = 22;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_22x22;
 gen.Save($"{path}DatamatrixRows22Columns22Ecc200.png", BarCodeImageFormat.Png);
 //set rows 12 columns 36
-gen.Parameters.Barcode.DataMatrix.Columns = 36;
-gen.Parameters.Barcode.DataMatrix.Rows = 12;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_12x36;
 gen.Save($"{path}DatamatrixRows12Columns36Ecc200.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
 

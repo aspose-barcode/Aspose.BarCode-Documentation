@@ -45,8 +45,7 @@ gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
 <!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1DataMatrix, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
-gen.Parameters.Barcode.DataMatrix.Columns = 36;
-gen.Parameters.Barcode.DataMatrix.Rows = 12;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_12x36;
 gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   

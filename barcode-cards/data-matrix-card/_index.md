@@ -121,8 +121,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
     //set DataMatrix Ecc to 200
     gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
     //set rows 22 columns 22
-    gen.Parameters.Barcode.DataMatrix.Columns = 22;
-    gen.Parameters.Barcode.DataMatrix.Rows = 22;
+    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_22x22;
     gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
 }
 
