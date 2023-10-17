@@ -2,12 +2,14 @@
 title: Supported Barcode Types
 type: docs
 weight: 20
+feedback: BARCODE
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, C#"
+notoc: true
 url: /net/barcode-types/
 aliases: /net/barcode-types-and-image-formats/
 ---
-## **Supported Barcode Types**
+
 ***Aspose.BarCode for .NET*** supports over 70 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. The detailed information about generating barcodes using various barcode standards can be found in section [Generation Specifics for Symbologies](/barcode/net/generate-barcode-with-different-symbology/)
     
 **Linear barcode types**, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.  

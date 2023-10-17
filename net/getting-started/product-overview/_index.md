@@ -2,6 +2,7 @@
 title: Product Overview
 type: docs
 weight: 10
+feedback: BARCODE
 description: "Aspose.BarCode for .NET: Product Description, Main Features, and General Information"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/product-overview/

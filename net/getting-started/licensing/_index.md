@@ -1,6 +1,7 @@
 ---
 title: Licensing
 type: docs
+feedback: BARCODE
 weight: 70
 description: "Setting the License for Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode License, Aspose.BarCode Licensing, Get License for Aspose.Barcode, C#"
@@ -9,10 +10,10 @@ url: /net/licensing/
 ## **Overview**
 ***Aspose.BarCode for .NET*** without the license can be used to generate barcode labels without restrictions; in this case, a watermark will be placed on the resulting barcode image (words “Aspose”). Moreover, the unlicensed version of the library allows reading all types of barcodes; however, only the *Code39* symbology can be used without limitations; for all other barcode types, 30% of the decrypted text will be masked with " * ". All other actions with barcodes through ***Aspose.BarCode for .NET*** require setting the license first. The license activates access to the entire functionality of the library so that you can perform barcode generation and recognition without any limitations and watermarks.  
 
-## **How to Obtain the License**
+## **How to Obtain License**
 If you want to try the fully functional version of ***Aspose.BarCode for .NET***, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information. To obtain the possibility of using the library without limitations, a commercial license is required. You can get all information about pricing and conditions [here](https://purchase.aspose.com/admin/pricing/barcode/net). 
 
-## **License Setting**
+## **Set-up License**
 The license is a plain-text XML file that contains various information, such as the product name, the number of developers to access the license, subscription expiry date, and other details. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
   
 License setting can be performed by calling the *SetLicense* method of class [*Aspose.BarCode.License*](https://reference.aspose.com/barcode/net/aspose.barcode/license). This must be done before executing any actions with the library. The *SetLicense* method can be invoked in different ways: in the initialization section of an application (or a web application), using Singleton, or through a file/stream.
@@ -79,7 +80,7 @@ using (System.IO.Stream stream = System.Reflection.Assembly.GetExecutingAssembly
 	(new Aspose.BarCode.License()).SetLicense(stream);
 {{< /highlight >}}
 
-### **Additional Ways**
+### **Additional Set-up Ways**
 Additionally, the license can be set using the name of the corresponding file or embedded resource. If the license name is passed to the *SetLicense* method without specifying the full path, the library will search it in the following locations:  
 - Root directory of the .exe file
 - Folder that contains the *Aspose.BarCode.dll* library
@@ -157,7 +158,7 @@ using (System.Security.Cryptography.DES des = System.Security.Cryptography.DES.C
 (new Aspose.BarCode.License()).SetLicense(decryptedStream);
 {{< /highlight >}}
 
-## **Setting Metered License**
+## **Set Metered License**
 [Aspose.BarCode for .NET](/barcode/net/) allows developers to apply the metered key. It is a new licensing mechanism that can be used along with one of the existing licensing methods. The customers who want to be billed based on the usage of the API features can apply metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
 
 New class [*Metered*](https://reference.aspose.com/barcode/net/aspose.barcode/metered) has been introduced to apply the metered key. The sample code demonstrating how to set metered public and private keys is provided below.

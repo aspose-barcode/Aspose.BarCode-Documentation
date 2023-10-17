@@ -2,6 +2,7 @@
 title: Product Features
 type: docs
 weight: 30
+feedback: BARCODE
 description: "Product Features of Aspose.BarCode for .NET: Barcode Generation, Recognition, Customization of Barcode Appearance-Related Parameters"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/product-features/
@@ -19,7 +20,7 @@ url: /net/product-features/
 - Label printing
 - Working with complex barcodes (e.g. Swiss QR Code) 
 
-## **Barcode Recognition**
+## **Barcode Recognition Features**
 - Class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): reading 1D and 2D barcodes at any angle from an image
 - Supporting popular image formats: JPEG, TIFF, PNG, BMP, and GIF
 - Reading images with resolution from 75 to 600 dpi
@@ -34,7 +35,7 @@ url: /net/product-features/
 - Increasing the barcode detection speed through multi-threading
 - Scanning from multi-page TIFF through System.Drawing
 
-## **Barcode Generation**
+## **Barcode Generation Features**
 - Class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): generating barcode labels according to required settings
 - Providing a wide range of options to customize barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
 - Saving barcode labels in various image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
@@ -46,7 +47,7 @@ url: /net/product-features/
 - Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
 - Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256
 
-## **Barcode Imaging**
+## **Barcode Imaging Features**
 - Customizing barcode image borders, border color, style, margins, and width
 - Customizing barcode image color, background color, and bar color
 - Customizing bar height

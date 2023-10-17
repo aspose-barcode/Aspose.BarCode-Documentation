@@ -1,6 +1,7 @@
 ---
 title: System Requirements
 type: docs
+feedback: BARCODE
 weight: 40
 description: "Aspose.BarCode for .NET: Systems Requirements and Supported .NET Platforms"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode, C#"
@@ -26,7 +27,7 @@ url: /net/system-requirements/
 ## **Supported Frameworks**
 ***Aspose.BarCode for .NET*** can be used to create any type of x86 or x64 (32-bit or 64-bit) .NET application. Supported .NET frameworks are outlined below.
   
-|<p align="center">**Framework**</p>|<p align="center">**Supported Versions**</p>|<p align="center">**Additional Requirements**</p>|
+|Framework|Supported Versions|Additional Requirements|
 |---|---|---|
 |.NET Framework|2.0 / 3.5 / 4.0 / 4.6 / 4.7 / 4.8| |
 |.NET Standard|2.0 / 2.1| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 23.5.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 7.0.0+|
