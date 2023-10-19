@@ -3,6 +3,7 @@ title: Generate Codablock-F Barcodes in C#
 linktitle: Codablock-F
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /net/codablockf-barcodes/
 ---
 {{% alert color="primary" %}}[Generate Codablock-F Barcodes Online](https://products.aspose.app/barcode/generate/codablock?type=codablockf): You can check the quality of ***Aspose.BarCode*** generation for Codablock-F barcodes and view the results online.{{% /alert %}}

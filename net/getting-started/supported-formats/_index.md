@@ -2,7 +2,7 @@
 title: Supported Image Formats
 type: docs
 weight: 30
-feedback: BARCODE
+feedback: BARCODECOM
 description: "Image Formats Supported in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, C#"
 url: /net/image-formats/

@@ -4,6 +4,7 @@ linktitle: Integration with Aspose.Cells
 description: "How to Intergrate Aspose.BarCode with Aspose.Cells"
 keywords:
 type: docs
+feedback: BARCODECOM
 weight: 50
 url: /net/integrate-with-aspose-cells/
 aliases:

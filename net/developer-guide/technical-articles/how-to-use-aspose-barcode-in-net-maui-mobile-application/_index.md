@@ -1,7 +1,9 @@
 ---
 title: Aspose.Barcode in .Net MAUI Mobile Application
+linktitle: Barcodes in MAUI App
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /net/aspose-barcode-in-net-maui-mobile-application/
 aliases:
 - /net/how-to-use-aspose-barcode-in-net-maui-mobile-application/

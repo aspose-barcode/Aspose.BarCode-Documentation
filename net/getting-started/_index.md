@@ -4,7 +4,7 @@ type: docs
 weight: 10
 description: "General overview on Aspose.BarCode for .NET"
 notoc: true
-feedback: BARCODE
+feedback: BARCODECOM
 keywords: "Generate Barcodes, Read Barcodes, QR codes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/getting-started/
 ---

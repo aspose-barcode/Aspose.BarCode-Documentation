@@ -3,6 +3,7 @@ title: Specific Parameters of 2D Barcode Types in Aspose.BarCode via .NET
 linktitle: 2D Barcode Types
 type: docs
 weight: 20
+feedback: BARCODECOM
 notoc: true
 url: /net/2d-barcode-types/
 aliases:

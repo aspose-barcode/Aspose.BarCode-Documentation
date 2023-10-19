@@ -3,6 +3,7 @@ title: Set Barcode Size and Resolution in C#
 linktitle: Set Barcode Size and Resolution
 type: docs
 weight: 10
+feedback: BARCODECOM
 description: "How to Set Size Units for Barcodes in Aspose.BarCode for .NET"
 keywords: Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode
 url: /net/set-barcode-size/

@@ -3,6 +3,7 @@ title: Generate Han Xin Code Barcodes in C#
 linktitle: Han Xin Code
 type: docs
 weight: 70
+feedback: BARCODECOM
 url: /net/hanxin-code-barcodes/
 aliases:
 - /net/generate-hanxin-code/

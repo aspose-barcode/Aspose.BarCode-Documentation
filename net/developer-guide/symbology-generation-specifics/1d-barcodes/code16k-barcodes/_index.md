@@ -3,6 +3,7 @@ title: Generate Code 16K Barcodes in C#
 linktitle: Code 16K
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /net/code16k-barcodes/
 ---
 {{% alert color="primary" %}}[Generate Code 16K Barcodes Online](https://products.aspose.app/barcode/generate/code16k): You can test the quality of ***Aspose.BarCode*** generation for Code 16K barcodes and get the results online.{{% /alert %}}

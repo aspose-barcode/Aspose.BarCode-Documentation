@@ -2,6 +2,7 @@
 title: Generate and Read HIBC LIC Barcodes in C#
 linktitle: HIBC LIC
 type: docs
+feedback: BARCODECOM
 weight: 50
 url: /net/hibc-lic-barcodes/
 aliases:

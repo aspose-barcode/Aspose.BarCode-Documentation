@@ -5,6 +5,7 @@ type: docs
 description: "Aspose.BarCode for .NET enables Patch Code barcode generation."
 keywords: "Generate Patch Code Barcode, Create Patch Code, How to Generate Patch Code barcodes, Aspose.BarCode for .NET, C#"
 weight: 70
+feedback: BARCODECOM
 url: /net/patch-code-barcodes/
 aliases:
 - net/generate-patch-code/

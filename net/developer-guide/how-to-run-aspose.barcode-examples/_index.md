@@ -2,6 +2,7 @@
 title: How to Run Aspose.BarCode Examples in C#
 type: docs
 weight: 100
+feedback: BARCODECOM
 url: /net/run-aspose-barcode-examples/
 aliases:
 - /net/how-to-run-aspose-barcode-examples/

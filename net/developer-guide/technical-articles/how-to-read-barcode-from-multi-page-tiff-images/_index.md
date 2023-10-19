@@ -1,10 +1,11 @@
 ---
 title: Read Barcodes from Multipage TIFF Images in C#
-linktitle: Read Barcodes from Multipage TIFF Images
+linktitle: Read Barcodes from TIFF
 description: "How to Recognize Barcodes from TIFF Files"
 keywords: "read barcodes from tiff, barcodes in tiff file, multi-page tiff document, recognize barcode from tiff, find barcodes in tiff document"
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /net/read-barcode-from-multipage-tiff/
 aliases:
 - /net/how-to-read-barcode-from-multi-page-tiff-images/

@@ -3,6 +3,7 @@ title: Specific Parameters of Postal Barcode Types
 linktitle: Postal Barcodes
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /net/postal-barcode-types/
 ---
 

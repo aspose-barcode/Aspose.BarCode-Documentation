@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions"
 keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrual DataMatrix, Aspose.BarCode, Read Barcode C#"
 weight: 40
+feedback: BARCODECOM
 url: /net/read-non-typical-barcodes/
 
 ---

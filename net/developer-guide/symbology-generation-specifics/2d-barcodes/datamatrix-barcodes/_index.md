@@ -2,6 +2,7 @@
 title: Generate Data Matrix Barcodes in C#
 linktitle: Data Matrix
 type: docs
+feedback: BARCODECOM
 weight: 40
 url: /net/datamatrix-barcode/
 ---

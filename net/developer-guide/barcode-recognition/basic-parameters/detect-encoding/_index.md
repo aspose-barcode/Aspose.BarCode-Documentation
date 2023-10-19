@@ -4,6 +4,7 @@ type: docs
 description: "This article describes how to decode barcodes with Unicode encoding"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode C#"
 weight: 80
+feedback: BARCODECOM
 url: /net/read-unicode-encodings/
 ---
 

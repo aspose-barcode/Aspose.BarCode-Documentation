@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for .NET."
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode C#"
 weight: 20
+feedback: BARCODECOM
 url: /net/mailmark-2D-barcodes/
 aliases:
 - /net/mailmark-2D-barcode/

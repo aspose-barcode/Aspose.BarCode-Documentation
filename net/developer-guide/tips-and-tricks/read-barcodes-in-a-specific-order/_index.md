@@ -2,6 +2,7 @@
 title: Read Barcodes in Specific Order
 type: docs
 weight: 130
+feedback: BARCODECOM
 notoc: true
 url: /net/read-barcodes-in-a-specific-order/
 ---

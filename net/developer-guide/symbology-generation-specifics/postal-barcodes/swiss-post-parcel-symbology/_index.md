@@ -5,6 +5,7 @@ type: docs
 description: "Description of Swiss Post Parcel Barcode Type"
 keywords: swisspost parcel barcode, create swiss post barcode, generate swiss post barcode, read swiss post barcode, recognize swiss post codes, swiss post parcel codes
 weight: 100
+feedback: BARCODECOM
 url: /net/swiss-post-parcel-barcodes/
 aliases:
 - /net/barcodes-using-swisspost-parcel-symbology/

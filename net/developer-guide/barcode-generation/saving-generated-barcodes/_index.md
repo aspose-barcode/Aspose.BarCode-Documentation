@@ -3,6 +3,7 @@ title: Save Generated Barcodes in C#
 linktitle: Save Generated Barcodes
 type: docs
 weight: 50
+feedback: BARCODECOM
 description: Save Barcodes to File, Stream, Image Formats like BMP, PNG, GIF, JPEG, EMF, SVG using C# API
 keywords: Generate Barcodes, Save Barcode in Aspose.BarCode for .NET, Download Barcode in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF
 url: /net/save-barcode-image/

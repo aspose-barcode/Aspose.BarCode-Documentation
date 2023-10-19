@@ -1,7 +1,7 @@
 ---
 title: System Requirements
 type: docs
-feedback: BARCODE
+feedback: BARCODECOM
 weight: 40
 description: "Aspose.BarCode for .NET: Systems Requirements and Supported .NET Platforms"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode, C#"
@@ -9,10 +9,10 @@ url: /net/system-requirements/
 ---
 
 ## **Overview**
-***Aspose.BarCode for .NET*** is a robust and reliable library for barcode generation and recognition written in managed C#. Using this library, developers can add barcode generation and recognition functionality to their Microsoft .NET applications in a fast and easy manner. ***Aspose.BarCode for .NET*** is compatible with any type of x86 or x64 (32-bit or 64-bit) .NET application (including WinForms, WPF, .Net MAUI and .NET Core). The library supports all versions of the Microsoft .NET from .NET Framework 2.0 to .Net 7.
+***Aspose.BarCode for .NET*** is a robust and reliable library for barcode generation and recognition written in managed C#. Using this library, developers can add barcode generation and recognition functionality to their Microsoft .NET applications in a fast and easy manner. It is compatible with any type of x86 or x64 (32-bit or 64-bit) .NET application (including WinForms, WPF, .Net MAUI and .NET Core). The library supports all versions of the Microsoft .NET from .NET Framework 2.0 to .Net 7.
 
 ## **Supported Operating Systems**
-***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system with the installed .NET framework 2.0 or later / .Net Core 2.1 or later with with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 7 included).
+The barcode library supports any 32-bit or 64-bit operating system with the installed .NET framework 2.0 or later / .Net Core 2.1 or later with with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 7 included).
   
 |Operating System|Compatible Versions|
 |---|---|

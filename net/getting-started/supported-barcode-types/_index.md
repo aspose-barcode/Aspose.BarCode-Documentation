@@ -2,7 +2,7 @@
 title: Supported Barcode Types
 type: docs
 weight: 20
-feedback: BARCODE
+feedback: BARCODECOM
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, C#"
 notoc: true

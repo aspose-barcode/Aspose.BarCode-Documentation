@@ -4,6 +4,7 @@ description: "How to Read Barcodes from MS Word Files Using Aspose.BarCode and A
 keywords:
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /net/recognize-barcode-from-word-document/
 ---
 ## **Overview**

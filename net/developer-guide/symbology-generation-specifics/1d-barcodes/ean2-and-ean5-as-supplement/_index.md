@@ -1,7 +1,9 @@
 ---
 title: Generate EAN-2 and EAN-5 Barcodes as Supplement in C#
+linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /net/ean2-and-ean5-as-supplement/
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate): You can check the quality of ***Aspose.BarCode*** barcode generation and view the results online.{{% /alert %}}

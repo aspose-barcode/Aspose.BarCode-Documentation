@@ -3,6 +3,7 @@ title: Generate and Read Swiss QR Code in C#
 type: docs
 description: "This article explains how to Generate and Read Swiss QR Codes using Aspose.BarCode for .NET"
 keywords: "Generate Swiss QR Codes, How to Create Swiss Barcodes, Swiss QR Code, Aspose.BarCode, Generate Barcode C#"
+feedback: BARCODECOM
 weight: 10
 url: /net/swiss-qr-code/
 ---

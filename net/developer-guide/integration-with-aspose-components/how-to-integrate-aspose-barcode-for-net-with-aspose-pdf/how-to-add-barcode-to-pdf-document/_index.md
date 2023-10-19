@@ -3,6 +3,7 @@ title: Add Barcodes to PDF Documents
 description: "How to Insert Barcodes to PDF Files"
 keywords:
 type: docs
+feedback: BARCODECOM
 weight: 10
 url: /net/add-barcode-to-pdf-document/
 ---

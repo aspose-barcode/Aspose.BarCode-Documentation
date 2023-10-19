@@ -3,6 +3,7 @@ title: Customize Barcode Appearance in C#
 linktitle: Customize Barcode Appearance
 type: docs
 weight: 20
+feedback: BARCODECOM
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
 url: /net/customize-barcode-appearance/

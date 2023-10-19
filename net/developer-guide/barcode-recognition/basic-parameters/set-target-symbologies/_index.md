@@ -2,6 +2,7 @@
 title: Set Target Barcode Types for Recognition
 linktitle: Set Target Barcode Types
 type: docs
+feedback: BARCODECOM
 description: "This Article Describes How to Set Target Barcode Types for Recognition"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
 weight: 20

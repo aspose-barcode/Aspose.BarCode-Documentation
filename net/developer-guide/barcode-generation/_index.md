@@ -3,6 +3,7 @@ title: Barcode Generation Basics - Create Barcodes in C#
 linktitle: Barcode Generation Basics 
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /net/barcode-generation/
 notoc: true
 keywords: Barcode C# library, Generate Barcodes in C#

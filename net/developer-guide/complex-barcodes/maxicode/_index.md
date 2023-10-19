@@ -3,6 +3,7 @@ title: Complex MaxiCode Settings
 linktitle: MaxiCode
 type: docs
 weight: 40
+feedback: BARCODECOM
 url: /net/complex-maxicode-barcodes/
 aliases:
 - /net/complex-maxicode/

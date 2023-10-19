@@ -2,6 +2,7 @@
 title: Export and Import Barcode Generation State via XML in C#
 linktitle: Barcode Generation State in XML
 type: docs
+feedback: BARCODECOM
 description: This article explains how to import and export barcode the generation state to the XML format with C# API or Library."
 keywords: "Export barcode to XML, Import barcode from XML, Barcode in XML, Aspose.BarCode, Read Barcode C#"
 weight: 80

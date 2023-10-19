@@ -3,6 +3,7 @@ title: Generate DataBar Barcodes in C#
 linktitle: DataBar
 type: docs
 weight: 50
+feedback: BARCODECOM
 url: /net/databar-barcodes/
 ---
 {{% alert color="primary" %}}[Generate DataBar Barcodes Online](https://products.aspose.app/barcode/generate/databar): You can check the quality of ***Aspose.BarCode*** generation for DataBar barcodes and view the results online.{{% /alert %}}

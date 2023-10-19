@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 4-State Barcodes using Aspose.BarCode for .NET"
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode C#"
 weight: 30
+feedback: BARCODECOM
 url: /net/mailmark-4state-barcodes/
 aliases:
 - /net/mailmark-4state-barcode/

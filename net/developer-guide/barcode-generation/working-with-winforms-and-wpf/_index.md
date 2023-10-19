@@ -5,6 +5,7 @@ type: docs
 description: "Barcode Generation in Aspose.BarCode for .NET using C# GUI-based frameworks: Windows Forms and WPF"
 keywords: Generate Barcodes, How to Generate Barcodes in C# .NET, Create Barcodes in WinForms, Generate Barcode WPF, C# Framework, Aspose.BarCode for .NET
 weight: 90
+feedback: BARCODECOM
 url: /net/generate-barcodes-using-aspose-apis/
 aliases:
 - /net/generate-barcodes-using-csharp-apis/

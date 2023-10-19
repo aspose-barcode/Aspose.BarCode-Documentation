@@ -2,7 +2,7 @@
 title: Product Features
 type: docs
 weight: 30
-feedback: BARCODE
+feedback: BARCODECOM
 description: "Product Features of Aspose.BarCode for .NET: Barcode Generation, Recognition, Customization of Barcode Appearance-Related Parameters"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Use Advanced Settings to Style and Customize Barcodes, Aspose.BarCode, C#"
 url: /net/product-features/

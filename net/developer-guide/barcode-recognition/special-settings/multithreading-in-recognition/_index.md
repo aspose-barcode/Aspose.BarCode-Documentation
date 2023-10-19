@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how to set mulithread barcode recognition"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode C#"
 weight: 50
+feedback: BARCODECOM
 url: /net/multithread-barcode-reading/
 ---
   
