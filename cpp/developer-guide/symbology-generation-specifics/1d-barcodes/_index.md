@@ -1,5 +1,5 @@
 ---
-title: Specific Parameters of 1D Barcode Types
+title: Specific Parameters of 1D Barcodes
 linktitle: 1D Barcode Types
 type: docs
 description: "How to Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for C++"

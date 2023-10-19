@@ -1,5 +1,5 @@
 ---
-title: Specific Parameters of 2D Barcode Types in Aspose.BarCode via C++
+title: Specific Parameters of 2D Barcodes
 linktitle: 2D Barcode Types
 type: docs
 notoc: true

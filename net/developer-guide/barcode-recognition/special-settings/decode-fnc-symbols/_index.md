@@ -9,7 +9,6 @@ notoc: true
 url: /net/decode-fnc-symbols/
 ---
 
-## **Decode GS1 Barcodes with FNC Symbols**
 The GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-4) among which FNC1 is the most widespread one and is used for GS1 Application Identifier (AI) marking. When the library detects that a barcode does not correspond to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNC#>”. Such messages can be deleted from the recognition results by setting the [*StripFNC*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.  
   
 The following code sample shows how to work with FCN symbols while reading a *Code 128* barcode demonstrated below.

@@ -1,6 +1,6 @@
 ---
 title: Generate ITF Barcode Generation in Java
-linktitle: ITF Barcodes
+linktitle: ITF
 type: docs
 weight: 40
 feedback: BARCODECOM

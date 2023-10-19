@@ -1,8 +1,8 @@
 ---
 title: Generate Barcodes with Aspose.BarCode APIs in C++
-linktitle: Aspose.BarCode APIs
+linktitle: Aspose.BarCode API
 type: docs
-weight: 80
+weight: 100
 feedback: BARCODECOM
 url: /cpp/generate-barcodes-using-aspose-apis/
 aliases:
@@ -17,6 +17,6 @@ Developers can generate barcode images on the back end programmatically rather t
 - Developers have to store barcode images to some other location after creating them at runtime
 - Developers want to integrate barcode generation feature to some other application
 
-There can be plenty of other reasons for working with barcodes on the back end which depend upon the developer's requirements. Aspose.BarCode provides a Non-GUI based class, [BarcodeGenerator](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.barcode_generator/) that serves the purpose. Developers can create an instance of this class, set some properties and then save the barcode image to any location according to their customized settings. Please, review the example below to have a better idea.
+There can be plenty of other reasons for working with barcodes on the back end which depend upon the developer's requirements. Aspose.BarCode provides a Non-GUI based class, [*BarcodeGenerator*](https://reference.aspose.com/cpp/barcode/class/aspose.bar_code.generation.barcode_generator/) that serves the purpose. Developers can create an instance of this class, set some properties and then save the barcode image to any location according to their customized settings. Please, review the example below to have a better idea.
 
 {{< gist "aspose-com-gists" "19ae78b7730b34bc9f7a146a61e496ea" "Examples-CPP-ManageBarCodes-SetCodeText-SetCodeText.cpp" >}}
