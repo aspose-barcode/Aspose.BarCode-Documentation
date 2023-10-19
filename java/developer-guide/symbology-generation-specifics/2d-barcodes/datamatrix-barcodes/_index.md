@@ -3,6 +3,7 @@ title: Generate Data Matrix Barcodes in Java
 linktitle: Data Matrix
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /java/datamatrix-barcode/
 aliases:
 - /java/creating-two-dimensional-2d-barcodes

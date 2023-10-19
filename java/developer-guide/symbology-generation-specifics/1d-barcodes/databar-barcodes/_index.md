@@ -3,6 +3,7 @@ title: Generate DataBar Barcodes in Java
 linktitle: DataBar
 type: docs
 weight: 50
+feedback: BARCODECOM
 url: /java/databar-barcodes/
 aliases:
 - /java/generate-segments-per-row-barcode/

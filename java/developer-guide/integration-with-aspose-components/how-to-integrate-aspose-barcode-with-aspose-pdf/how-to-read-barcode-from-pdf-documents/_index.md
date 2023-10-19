@@ -2,6 +2,7 @@
 title: Read Barcodes from PDF Documents
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /java/read-barcode-from-pdf-document/
 aliases:
 - /java/how-to-read-barcode-from-pdf-documents/

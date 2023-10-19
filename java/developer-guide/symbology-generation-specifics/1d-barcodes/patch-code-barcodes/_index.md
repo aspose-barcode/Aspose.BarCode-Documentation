@@ -5,6 +5,7 @@ type: docs
 description: "Aspose.BarCode for Java enables Patch Code barcode generation"
 keywords: Generate Patch Code Barcodes, Create Patch Code, How to Generate Patch Code Barcodes, Aspose.BarCode for Java
 weight: 70
+feedback: BARCODECOM
 url: /java/patch-code-barcodes/
 aliases: 
 - /java/patch-codes/

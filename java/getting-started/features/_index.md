@@ -2,6 +2,7 @@
 title: Barcode Library Features
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /java/product-features/
 aliases:
 - /java/features/

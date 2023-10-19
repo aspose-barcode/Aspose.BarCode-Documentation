@@ -4,6 +4,7 @@ description: "How to Insert Barcodes to PDF Files"
 keywords:
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /java/add-barcode-to-pdf-document/
 ---
 

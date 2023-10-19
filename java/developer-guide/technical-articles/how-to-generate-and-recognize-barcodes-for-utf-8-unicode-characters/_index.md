@@ -4,6 +4,7 @@ type: docs
 description: "This article explains How to Generate and Recognize Barcodes for UTF 8 (Unicode) characters."
 keywords: "UTF-8 Barcode, Unicode Character Barcode, generate barcode for UTF-8, recognize barcode for UTF-8, Aspose.BarCode, Generate Barcode Java"
 weight: 40
+feedback: BARCODECOM
 url: /java/how-to-generate-and-recognize-barcodes-for-utf-8-unicode-characters/
 ---
 

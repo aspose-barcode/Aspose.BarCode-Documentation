@@ -2,6 +2,7 @@
 title: Installing and Using Aspose.BarCode Java (Maven) for Eclipse
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /java/installing-and-using-aspose-barcode-java-maven-for-eclipse/
 ---
 

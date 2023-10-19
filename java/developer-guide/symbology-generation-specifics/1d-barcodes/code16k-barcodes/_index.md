@@ -2,6 +2,7 @@
 title: Generate Code 16K Barcodes in Java
 linktitle: Code 16K
 type: docs
+feedback: BARCODECOM
 weight: 30
 url: /java/code16k-barcodes/
 ---

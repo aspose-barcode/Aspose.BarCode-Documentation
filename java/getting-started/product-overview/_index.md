@@ -2,18 +2,17 @@
 title: Product Overview
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /java/product-overview/
 
 ---
 
-***Aspose.BarCode for Java*** is a robust and reliable barcode generation and recognition component written in Java that allows developers to quickly and easily add barcode generation and recognition functionality to Java applications.
-
-This article presents ***Aspose.BarCode for Java*** and its main features, including some important technical details. You can get information about its functionality, input and output image formats, important classes, and supported platforms.
+***Aspose.BarCode for Java*** is a robust and reliable barcode generation and recognition component written in Java that allows developers to quickly and easily add barcode generation and recognition functionality to Java applications. This article describes its main features, including some important technical details. You can get information about its functionality, input and output image formats, important classes, and supported platforms.
 
 ## **Product Description**
 ***Aspose.BarCode for Java*** has many characteristics that make it a flexible and easy-to-use tool. It is a fully functional library that provides both generation and reading functionality. Generated barcodes can be saved in five high-quality raster image formats and two vector ones. The other advantage is that the library facilitates decoding even low-quality or damaged barcode images. Therefore, it enables high recognition efficiency for most of the supported symbologies. There are no printing limitations for barcodes generated through the Aspose.BarCode library. Developers can utilize any type of printers. The quality of printed barcode images will depend only on the resolution of a printer.
 
-***Aspose.BarCode for Java*** provides fully featured demos and working examples written in Java to provide developers with a better understanding of our product. Using these demos, developers can quickly test functionality provided by Aspose.BarCode.
+Developers can download fully featured demos and working examples written in Java to provide developers with a better understanding of our product. Using these demos, developers can quickly test functionality provided by Aspose.BarCode.
 
 ### **Main Features**
 ***Aspose.BarCode for Java*** benefits from a great variety of features that can serve to address various business needs. One of the most important functions is the customization of barcode appearance-related properties, including barcode size, color of barcode elements, rotation angle, image quality, X-dimension, resolution, text captions, and many others. Moreover, rich barcode reading and imaging functionality is available.  

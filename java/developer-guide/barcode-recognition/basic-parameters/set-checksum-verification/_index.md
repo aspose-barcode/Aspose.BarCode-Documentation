@@ -1,6 +1,7 @@
 ---
 title: Set Barcode Checksum Verification
 linktitle: Set Checksum Verification
+feedback: BARCODECOM
 type: docs
 description: "This article describes how to set checksum verification in Aspose.BarCode for Java"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode in Java"

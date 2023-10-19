@@ -2,6 +2,7 @@
 title: Aspose.BarCode for .NET
 description: Aspose.BarCode for .NET API allows .NET programmers to control and manipulate barcode scanning, barcode reading and qr scanning functionalities. It provides a group of classes to work with barcodes on the backend, as well as GUI-based controls to process barcodes. Free evaluation version is available.
 type: docs
+feedback: BARCODECOM
 weight: 10
 url: /net/
 is_root: true

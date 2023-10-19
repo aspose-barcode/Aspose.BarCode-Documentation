@@ -2,14 +2,15 @@
 title: Recognition Quality and Speed
 type: docs
 description: "This section describes how barcode recognition can be optimized in terms of accuracy and speed."
-keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C#"
+keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode Java"
 notoc: true
 weight: 20
+feedback: BARCODECOM
 url: /java/improve-barcode-recognition/
 
 ---
 
-This documentation part provides a detailed description of various recognition quality settings that can be customized to optimize the accuracy and speed of barcode reading in ***Aspose.BarCode for .NET***.
+This documentation part provides a detailed description of various recognition quality settings that can be customized to optimize the accuracy and speed of barcode reading in ***Aspose.BarCode for Java***.
 
 Barcode reading relies on machine vision mechanisms and uses various mathematical algorithms for object detection. Same as in other computer vision tasks, source image quality is crucial to convert an arbitrary image to machine-readable code. Low-quality barcode images may result being unreadable depending on specific recognition standards. There are different approaches to read barcodes of unacceptable quality. However, running such methods takes extra CPU computation time and may lead to the considerable increase in recognition time.
 

@@ -3,6 +3,7 @@ title: Generate Codabar Barcodes in Java
 linktitle: Codabar
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /java/codabar-barcodes/
 aliases:
 - /java/set-start-and-stop-symbols-of-codabar-barcode/

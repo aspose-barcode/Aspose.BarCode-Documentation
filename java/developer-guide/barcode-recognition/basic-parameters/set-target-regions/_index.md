@@ -3,8 +3,9 @@ title: Set Target Regions for Recognition
 linktitle: Set Target Regions
 type: docs
 description: "This Article Describes How to Set Target Regions in Source Image for Recognition"
-keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
+keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Java"
 weight: 30
+feedback: BARCODECOM
 url: /java/set-target-regions/
 aliases:
 - /java/barcode-regions/

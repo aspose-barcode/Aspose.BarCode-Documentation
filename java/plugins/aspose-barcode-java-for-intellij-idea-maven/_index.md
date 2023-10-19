@@ -1,6 +1,7 @@
 ---
 title: Aspose.BarCode Java for IntelliJ IDEA - Maven
 type: docs
+feedback: BARCODECOM
 weight: 30
 url: /java/aspose-barcode-java-for-intellij-idea-maven/
 ---

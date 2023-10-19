@@ -3,6 +3,7 @@ title: Getting Started
 type: docs
 weight: 10
 notoc: true
+feedback: BARCODECOM
 url: /java/getting-started/
 aliases:
 - /barcode/java/1-1-getting-started/

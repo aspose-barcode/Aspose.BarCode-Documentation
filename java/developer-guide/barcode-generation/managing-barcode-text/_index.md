@@ -3,6 +3,7 @@ title: Customize Barcode Text and Captions in Java
 linktitle: Customize Barcode Text
 type: docs
 weight: 50
+feedback: BARCODECOM
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
 url: /java/set-barcode-text/

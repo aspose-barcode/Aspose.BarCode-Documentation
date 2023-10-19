@@ -1,6 +1,7 @@
 ---
 title: Generate Codablock-F Barcodes in Java
 linktitle: Codablock-F
+feedback: BARCODECOM
 type: docs
 weight: 20
 url: /java/codablockf-barcodes/

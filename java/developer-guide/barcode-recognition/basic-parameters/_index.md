@@ -3,8 +3,9 @@ title: Basic Barcode Recognition Parameters
 linktitle: Basic Reading Parameters
 type: docs
 description: "This Article Describes How Basic Recognition Parameters"
-keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
+keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode Java"
 weight: 10
+feedback: BARCODECOM
 url: /java/basic-recognition-parameters/
 aliases: 
 - /java/barcode-recognition-basics/

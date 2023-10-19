@@ -1,7 +1,8 @@
 ---
-title: How to Run Aspose.BarCode Examples in C#
+title: How to Run Aspose.BarCode Examples in Java
 type: docs
 weight: 70
+feedback: BARCODECOM
 url: /java/run-aspose-barcode-examples/
 aliases:
 - /barcode/java/1-1-5-contribute/

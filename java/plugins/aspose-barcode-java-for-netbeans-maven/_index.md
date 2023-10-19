@@ -2,6 +2,7 @@
 title: Aspose.BarCode Java for NetBeans - Maven
 type: docs
 weight: 70
+feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-netbeans-maven/
 ---
 

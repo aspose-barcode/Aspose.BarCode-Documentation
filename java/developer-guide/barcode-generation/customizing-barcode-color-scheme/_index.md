@@ -3,6 +3,7 @@ title: Customize Barcode Color Scheme in Java
 linktitle: Customize Barcode Color Scheme
 type: docs
 weight: 40
+feedback: BARCODECOM
 description: "How to Adjust Color Schemes of Barcode Elements in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Color, Set Barcode Color, Generate Colored Barcodes, Barcode Color in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode"
 url: /java/customize-barcode-color/

@@ -1,6 +1,6 @@
 ---
-title: Generate GS1 Barcodes in C#
-linktitle: GS1 Barcode Types
+title: GS1 Barcode Standards
+linktitle: GS1 Barcodes
 type: docs
 weight: 40
 url: /java/gs1-barcodes/

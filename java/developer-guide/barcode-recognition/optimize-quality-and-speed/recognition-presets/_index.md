@@ -2,15 +2,16 @@
 title: Recognition Quality Presets
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
-keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C#"
+keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode Java"
 weight: 20
+feedback: BARCODECOM
 url: /java/recognition-quality-presets/
 aliases:
 - /java/barcode-reading-presets
 ---
 
 ## **Overview**
-***Aspose.BarCode for Java*** contains class [*QualitySettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) that is used to enable and disable various algorithms to read barcodes with damages or artifacts. See the article [**Recognition Specificities**](/barcode/java/recognition-specificities/) for additional information about special recognition cases. In addition, class [*QualitySettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) allows customizing the trade-off between recognition quality and speed in common cases. Corresponding methods are grouped into dedicated presets that allow improving image recovery and barcode reading for various scenarios.
+***Aspose.BarCode for Java*** contains class [*QualitySettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) that is used to enable and disable various algorithms to read barcodes with damages or artifacts. In addition, class [*QualitySettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/QualitySettings) allows customizing the trade-off between recognition quality and speed in common cases. Corresponding methods are grouped into dedicated presets that allow improving image recovery and barcode reading for various scenarios.
 
 ## **Recognition Presets**
 In this section, supported recognition presets are described, including *HighPerformance*, *NormalQuality*, *HighQuality*, *MaxBarCodes*, and others, as represented in the table below. By default, the *NormalQuality* preset is applied. 

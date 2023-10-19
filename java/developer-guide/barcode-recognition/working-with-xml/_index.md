@@ -6,6 +6,7 @@ description: "This Article Describes How to Save or Load Barcode Recognition Sta
 keywords: "Read barcode in XML, Barcode XML Serialization, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcodes in Java"
 weight: 50
 url: /java/barcode-reading-in-xml/
+feedback: BARCODECOM
 aliases:
 - /java/barcode-in-xml/
 ---

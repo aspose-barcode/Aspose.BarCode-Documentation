@@ -1,7 +1,8 @@
 ---
 title: Aspose.Barcode Java For Struts
 type: docs
-weight: 10
+weight: 110
+feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-struts/
 ---
 

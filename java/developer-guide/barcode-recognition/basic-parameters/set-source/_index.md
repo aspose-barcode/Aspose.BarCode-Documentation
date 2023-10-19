@@ -2,7 +2,8 @@
 title: Set Barcode Source
 type: docs
 description: "This Article Describes How to Set Barcode Source for Recognition"
-keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
+keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Java"
+feedback: BARCODECOM
 weight: 10
 url: /java/set-barcode-source/
 

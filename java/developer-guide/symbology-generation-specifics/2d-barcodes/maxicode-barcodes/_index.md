@@ -3,6 +3,7 @@ title: Generate MaxiCode Barcodes in Java
 linktitle: MaxiCode
 type: docs
 weight: 80
+feedback: BARCODECOM
 url: /java/maxicode-barcodes/
 ---
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}

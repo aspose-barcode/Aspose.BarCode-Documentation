@@ -1,8 +1,9 @@
 ---
-title: Barcode Generation Specifics in C#
+title: Barcode Generation Specifics in Java
 linktitle: Barcode Generation Specifics
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /java/generate-barcode-types/
 aliases:
 - /java/barcode-types/

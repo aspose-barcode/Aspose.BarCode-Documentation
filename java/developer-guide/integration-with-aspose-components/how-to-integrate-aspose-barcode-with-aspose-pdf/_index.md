@@ -5,6 +5,7 @@ description: "This article explains How to Integrate Aspose.BarCode with Aspose.
 keywords: "Barcode in PDF, Barcode Image to PDF, Create PDF with Barcode, Aspose.BarCode, Generate Barcode Java"
 weight: 9
 notoc: true
+feedback: BARCODECOM
 url: /java/integrate-with-aspose-pdf/
 aliases:
 - /java/how-to-integrate-aspose-barcode-with-aspose-pdf/

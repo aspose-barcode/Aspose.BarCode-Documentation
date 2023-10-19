@@ -5,6 +5,7 @@ type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 4-State Barcodes using Aspose.BarCode for Java"
 keywords: Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode Java
 weight: 30
+feedback: BARCODECOM
 url: /java/mailmark-4state-barcodes/
 aliases:
 - /java/mailmark-4state-barcode/

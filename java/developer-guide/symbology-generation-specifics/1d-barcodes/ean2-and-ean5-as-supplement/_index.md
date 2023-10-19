@@ -3,6 +3,7 @@ title: Generate EAN-2 and EAN-5 Barcodes as Supplement in Java
 linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /java/ean2-and-ean5-as-supplement/
 aliases:
 - /java/use-checksum-and-supplement-data-for-barcodes/

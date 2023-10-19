@@ -2,6 +2,7 @@
 title: Technical Support
 type: docs
 weight: 60
+feedback: BARCODECOM
 description: "How to Contact Technical Support for Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Java, Technical Support for Aspose.BarCode, Aspose.Barcode Forum"
 url: /java/technical-support/

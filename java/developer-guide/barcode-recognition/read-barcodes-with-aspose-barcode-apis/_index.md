@@ -3,6 +3,7 @@ title: Read Barcodes using Barcode Java API
 linktitle: Barcode Reading API
 description: "Description of Barcode Java API for barcode recognition"
 type: docs
+feedback: BARCODECOM
 weight: 90
 url: /java/read-barcodes-with-aspose-barcode-apis/
 

@@ -2,6 +2,7 @@
 title: System Requirements
 type: docs
 weight: 40
+feedback: BARCODECOM
 url: /java/system-requirements/
 aliases:
 - /java/supported-platforms/

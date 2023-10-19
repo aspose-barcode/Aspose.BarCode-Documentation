@@ -5,6 +5,7 @@ type: docs
 description: "This Article Describes How to Set Target Barcode Types for Recognition"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Java"
 weight: 20
+feedback: BARCODECOM
 url: /java/set-target-barcode-types/
 ---
 

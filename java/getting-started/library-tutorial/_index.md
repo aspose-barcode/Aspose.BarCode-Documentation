@@ -2,6 +2,7 @@
 title: Barcode Generation and Recognition Tutorial
 type: docs
 weight: 80
+feedback: BARCODECOM
 url: /java/barcode-generation-and-recognition-tutorial/
 ---
 This tutorial explains how to use ***Aspose.BarCode for Java*** to generate a PDF417 barcode image and then read a barcode from this image.

@@ -3,6 +3,7 @@ title: Set Barcode Checksum Controls in Java
 linktitle: Set Barcode Checksum Controls
 type: docs
 weight: 80
+feedback: BARCODECOM
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Barcode Checksum in Aspose.Barcode for Java, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings in Aspose.BarCode for Java"
 url: /java/set-checksum-controls/

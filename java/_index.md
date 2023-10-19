@@ -3,6 +3,7 @@ title: Aspose.BarCode for Java
 description: Aspose.BarCode for Java API allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications.
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /java/
 is_root: true
 ---

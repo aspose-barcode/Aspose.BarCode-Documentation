@@ -1,6 +1,7 @@
 ---
 title: Installing and Using Aspose.BarCode for NetBeans - Maven
 type: docs
+feedback: BARCODECOM
 weight: 10
 url: /java/installing-and-using-aspose-barcode-for-netbeans-maven/
 ---

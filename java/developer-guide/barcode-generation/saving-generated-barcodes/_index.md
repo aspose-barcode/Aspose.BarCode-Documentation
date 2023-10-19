@@ -3,6 +3,7 @@ title: Save Generated Barcodes in Java
 linktitle: Save Generated Barcodes
 type: docs
 weight: 50
+feedback: BARCODECOM
 description: "How to Save Generated Barcodes in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Save Barcode in Aspose.BarCode for Java, Download Barcode in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF"
 url: /java/save-barcode-image/

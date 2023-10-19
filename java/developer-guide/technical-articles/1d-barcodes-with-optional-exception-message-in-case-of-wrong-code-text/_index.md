@@ -1,23 +1,23 @@
 ---
-title: 1D Barcodes with Optional Exception Message in Case of Wrong Code Text
+title: 1D Barcodes with Optional Exception Message in Case of Incorrect Text
+linktitle: Set Optional Exception Message
 type: docs
 weight: 120
+feedback: BARCODECOM
 url: /java/1d-barcodes-with-optional-exception-message-in-case-of-wrong-code-text/
 ---
 
-{{% alert color="primary" %}} 
 
-The BarCodeBuilder.setThrowExceptionWhenCodeTextIncorrect method is only used for 1D barcodes. It allows developers to choose what happens if the code text used when generating a barcode is not valid. There are two choices:
+The BarCodeBuilder.setThrowExceptionWhenCodeTextIncorrect method is only used for 1D barcodes. It allows developers to choose what happens if the barcode text used when generating a barcode is not valid. There are two choices:
 
-- Filter the code text and generate with allowed characters.
-- Throw an exception.
+- Filter out the input text and generate a barcode with allowed characters
+- Throw an exception
 
-{{% /alert %}} 
 
-If the code text is incorrect and the value for the ThrowExceptionWhenCodeTextIncorrect property is set to true, an exception is thrown. Otherwise, the code text is corrected to match the barcode's specification, with the following exceptions:
+If the barcode text is incorrect and the value for the ThrowExceptionWhenCodeTextIncorrect property is set to true, an exception is thrown. Otherwise, the barcode text is corrected to match the barcode specification, with the following exceptions:
 
-- An exception is always thrown for the Databar symbology if the code text is incorrect.
-- An exception is never thrown for AustraliaPost, SingapurePost, Code39Extended, Code93Extended, Code16K, Code128 symbologies, even if the code text is incorrect.
+- An exception is always thrown for the Databar symbology if the barcode text is incorrect.
+- An exception is never thrown for AustraliaPost, SingapurePost, Code39Extended, Code93Extended, Code16K, Code128 symbologies, even if the barcode text is incorrect.
 
 The code below shows how to use the method.
 

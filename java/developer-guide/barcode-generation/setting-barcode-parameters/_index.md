@@ -3,6 +3,7 @@ title: Set Barcode Size and Resolution in Java
 linktitle: Set Barcode Size and Resolution
 type: docs
 weight: 10
+feedback: BARCODECOM
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Java, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
 url: /java/set-barcode-size/

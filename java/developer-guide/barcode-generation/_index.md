@@ -3,6 +3,7 @@ title: Barcode Generation Basics - Create Barcodes in Java
 linktitle: Barcode Generation Basics 
 type: docs
 weight: 10
+feedback: BARCODECOM
 notoc: true
 url: /java/barcode-generation/
 aliases:
