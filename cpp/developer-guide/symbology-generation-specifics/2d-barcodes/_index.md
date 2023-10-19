@@ -4,7 +4,11 @@ linktitle: 2D Barcode Types
 type: docs
 notoc: true
 weight: 20
+feedback: BARCODECOM
 url: /cpp/2d-barcode-types/
+aliases:
+- /cpp/two-dimensional-2d-barcodes/
+- /cpp/managing-2d-barcodes/
 ---
 **Two-dimensional (2D)** barcodes have been introduced to address the limitations of linear symbologies. 2D barcodes are more complex and can include not only text data but also other types of information: price, quantity, web address, etc. They can be composed of rectangles, dots, hexagons, or other geometric patterns called matrix codes. By storing data both horizontally and vertically to form a square or rectangle, significantly more information can be encoded. Accordingly, 2D barcodes encode much larger amounts of information compared with typical 1D symbologies. 2D symbologies benefit from high readability and can mitigate poor printing quality as they contain additional data so that even if one or more cells are damaged, the barcode is still readable.  
 

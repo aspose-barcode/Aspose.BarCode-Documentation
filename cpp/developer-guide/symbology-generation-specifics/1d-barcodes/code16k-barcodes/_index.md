@@ -2,6 +2,7 @@
 title: Generate Code 16K Barcodes in C++
 linktitle: Code 16K
 type: docs
+feedback: BARCODECOM
 weight: 30
 url: /cpp/code16k-barcodes/
 ---
@@ -13,7 +14,7 @@ url: /cpp/code16k-barcodes/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Height Settings**
-***Aspose.BarCode for C++*** allows adjusting the height of each row in a *Code 16K* barcode by initializing the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters/properties/aspectratio) property of class [Code16KParameters](https://reference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters). *AspectRatio* is defined as a relative coefficient to the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. In the *Code 16K* symbology, it is recommended to set the value of *AspectRatio* greater than 8.  
+***Aspose.BarCode for C++*** allows adjusting the height of each row in a *Code 16K* barcode by initializing the *AspectRatio* property of class *Code16KParameters*. *AspectRatio* is defined as a relative coefficient to the value of the *XDimension* property. In the *Code 16K* symbology, it is recommended to set the value of *AspectRatio* greater than 8.  
   
 Sample *Code 16K* barcode labels demonstrated below have been generated with different barcode height settings. 
   
@@ -23,7 +24,7 @@ Sample *Code 16K* barcode labels demonstrated below have been generated with dif
   
 
 ## **Quiet Zone Settings**
-For the *Code 16K* symbology, ***Aspose.BarCode for C++*** enables adjusting the size of quiet zones on the left and right sides of a barcode by setting the [QuietZoneLeftCoef](https://reference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters/properties/quietzoneleftcoef) and [QuietZoneRightCoef](https://reference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters/properties/quietzonerightcoef) properties respectively. These properties correspond to class [Code16KParameters](https://reference.aspose.com/barcode/net/aspose.barcode.generation/code16kparameters) and are defined as relative coefficients to the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter.  
+For the *Code 16K* symbology, ***Aspose.BarCode for C++*** enables adjusting the size of quiet zones on the left and right sides of a barcode by setting the *QuietZoneLeftCoef* and *QuietZoneRightCoef* properties respectively. These properties correspond to class *Code16KParameters* and are defined as relative coefficients to the value of the *XDimension* parameter.  
   
 *Code 16K* barcode images demonstrated below have been created using different settings of quiet zones.
   

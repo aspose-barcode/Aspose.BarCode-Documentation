@@ -3,6 +3,7 @@ title: Getting Started
 type: docs
 weight: 10
 notoc: true
+feedback: BARCODECOM
 url: /cpp/getting-started/
 ---
 

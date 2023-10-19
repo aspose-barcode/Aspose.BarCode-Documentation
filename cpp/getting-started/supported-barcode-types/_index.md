@@ -2,13 +2,13 @@
 title: Supported Barcode Types
 type: docs
 weight: 20
+feedback: BARCODECOM
 url: /cpp/barcode-types/
 aliases:
 - /cpp/barcode-supported-symbologies/
 ---
 
-## **Barcode Types**
-***Aspose.BarCode for Cpp*** supports more than 60 [barcode types](/barcode/info-cards/) used in various industries, i.e., linear (1D), matrix (2D), and postal barcodes.
+***Aspose.BarCode for C++*** supports more than 60 [barcode types](/barcode/info-cards/) used in various industries, i.e., linear (1D), matrix (2D), and postal barcodes.
     
 **Linear barcode types**, or *1D barcodes*, relate to the first generation of one-dimensional (1D) barcode types that decode data by changing the widths of black and white parallel lines. Particular 1D standards support encoding only numbers, while others allow encoding also letters and special symbols.  
 

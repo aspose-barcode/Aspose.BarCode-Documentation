@@ -2,6 +2,7 @@
 title: Specific Parameters of Postal Barcode Types
 linktitle: Postal Barcodes
 type: docs
+feedback: BARCODECOM
 weight: 30
 url: /cpp/postal-barcode-types/
 ---
@@ -16,7 +17,7 @@ url: /cpp/postal-barcode-types/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact Aspose [Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Barcode Height Settings**
-In ***Aspose.BarCode for C++***, the height and the width of *postal* barcodes are calculated automatically based on the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. However, it is possible to manually adjust the barcode height regardless of the width by initializing the [*BarHeight*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
+In ***Aspose.BarCode for C++***, the height and the width of *postal* barcodes are calculated automatically based on the value of the *XDimension* property. However, it is possible to manually adjust the barcode height regardless of the width by initializing the *BarHeight* property of class *BarcodeParameters*.  
   
 Sample *Planet* and *RM4SCC* barcode images provided below have been generated with different bar height settings.  
   
@@ -32,7 +33,7 @@ Sample *Planet* and *RM4SCC* barcode images provided below have been generated w
   
 
 ## **Bar Filling Settings**
-In ***Aspose.BarCode for C++***, developers can customize the appearance of *Postal* barcodes by setting bars to have an empty filling. It can be done using the [*FilledBars*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters). By default, the value of this property is set to *True* that results in generating barcode images with filled bars.  
+In ***Aspose.BarCode for C++***, developers can customize the appearance of *Postal* barcodes by setting bars to have an empty filling. It can be done using the *FilledBars* property of class *BarcodeParameters*. By default, the value of this property is set to *True* that results in generating barcode images with filled bars.  
   
 *Planet* and *RM4SCC* barcodes labels shown below have been created with different settings for the bar filling property.
   
@@ -64,10 +65,10 @@ The *Postnet* barcode type implies encoding each character using five bars where
 In ***Aspose.BarCode for C++***, the generation of 2-state postal barcodes (*Planet* or *Postnet*) has several peculiarities related to the ways of handling incorrect input text and modifying the length of bars. These specifics are explained below.
 
 ### **Incorrect Input Text Handling**
-By default, in case of passing incorrect input text to the [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) property (for *Planet* or *Postnet* barcodes, any symbols besides numerical ones), class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) filters out the characters that do not match the required specification and creates a barcode based on the correct numerical digits only. However, if it is required to handle invalid symbols in [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) by throwing an exception, the [*ThrowExceptionWhenCodeTextIncorrect*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property needs to be set to *True*. As a result, the following exceptions will be thrown: "*Exception: Symbology Planet - codetext is invalid*"; "*Exception: Symbology Postnet - codetext is invalid*".  
+By default, in case of passing incorrect input text to the *CodeText* property (for *Planet* or *Postnet* barcodes, any symbols besides numerical ones), class [*BarcodeGenerator*](https://reference.aspose.com/barcode/cpp/class/aspose.bar_code.complex_barcode.complex_barcode_generator/) filters out the characters that do not match the required specification and creates a barcode based on the correct numerical digits only. However, if it is required to handle invalid symbols in *CodeText* by throwing an exception, the *ThrowExceptionWhenCodeTextIncorrect* property needs to be set to *True*. As a result, the following exceptions will be thrown: "*Exception: Symbology Planet - codetext is invalid*"; "*Exception: Symbology Postnet - codetext is invalid*".  
 
 ### **Short Bar Height Settings**
-In general, **2-state** barcodes are composed of long and short bars so that the latter is usually defined as the half-length of the former. In ***Aspose.BarCode for C++***, it is possible to customize the height of short bars manually by initializing the [*PostalShortBarHeight*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/postalparameters/properties/postalshortbarheight) property of class [*PostalParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/postalparameters).  
+In general, **2-state** barcodes are composed of long and short bars so that the latter is usually defined as the half-length of the former. In ***Aspose.BarCode for C++***, it is possible to customize the height of short bars manually by initializing the *PostalShortBarHeight* property of class *PostalParameters*.  
   
 Sample barcode labels demonstrated below have been generated with different short bar settings.
   
@@ -99,7 +100,7 @@ The *OneCode* standard can be used to encode messages composed of numerical digi
   
 
 ### **Australia Post Symbology**
-In the *Australia Post* symbology, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. They are predefined in the [*AustralianPostEncodingTable*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/australianpostparameters/properties/australianpostencodingtable) property. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The *Australia Post* standard contains a checksum and information used for Reed-Solomon data recovery.  
+In the *Australia Post* symbology, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. They are predefined in the *AustralianPostEncodingTable* property. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The *Australia Post* standard contains a checksum and information used for Reed-Solomon data recovery.  
   
 Input messages can be defined using one of the following formats specified in the table below.  
   
@@ -109,7 +110,7 @@ Input messages can be defined using one of the following formats specified in th
 |59|8 digits|16 bars|
 |62|8 digits|31 bars|
   
-The value of the FCC field can be defined using the [*AustralianPostEncodingTable*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/australianpostparameters/properties/australianpostencodingtable) property that needs to be initialized with one of the values from the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/net/aspose.barcode/customerinformationinterpretingtype) enumeration (as represented in the table below).
+The value of the FCC field can be defined using the *AustralianPostEncodingTable* property that needs to be initialized with one of the values from the *CustomerInformationInterpretingType* enumeration (as represented in the table below).
   
 |Australia Post Encoding Table|Supported Symbols|
 | :-: |---|

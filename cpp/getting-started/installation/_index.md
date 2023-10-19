@@ -2,6 +2,7 @@
 title: Installation
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /cpp/installation/
 ---
 

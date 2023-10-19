@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C#"
 weight: 50
+feedback: BARCODECOM
 url: /cpp/detect-barcode-regions/
 ---
 

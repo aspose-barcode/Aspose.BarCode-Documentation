@@ -4,6 +4,7 @@ description: Aspose.BarCode for C++ API allows C++ developers to control and man
 type: docs
 weight: 30
 notoc: true
+feedback: BARCODECOM
 url: /cpp/
 is_root: true
 ---
@@ -12,14 +13,14 @@ is_root: true
 
 <img src="aspose_barcode-for-cpp.png" alt="Aspose.BarCode for C++ Product Logo" style="zoom:50%;" />
 
-**Welcome to Aspose.BarCode for C++.** 
+**Welcome to Aspose.BarCode for C++** 
 
 Aspose.BarCode for C++ is a set of barcode generation and recognition components built to allow developers to add barcode functionality in their C++ applications. Aspose.BarCode conforms to most of the barcode standards and specifications available nowadays. Aspose.BarCode for C++ does not just create barcodes but it provides a complete framework to control almost everything about them. The API is easy to use, installable on different platforms and has a rich functionality as compared to other commercially available software.
 
 {{% /alert %}} 
   
 ## **Aspose.BarCode for C++ Resources**
-The following are the links to some useful resources you may need to accomplish your tasks.
+The following links lead to some useful resources you may need to accomplish your tasks.
 
 - [Aspose.BarCode for C++ Online Documentation](/barcode/cpp/)
 - [Aspose.BarCode for C++ Features](/barcode/cpp/product-overview/)

@@ -2,6 +2,7 @@
 title: Licensing
 type: docs
 weight: 50
+feedback: BARCODECOM
 url: /cpp/licensing/
 ---
 

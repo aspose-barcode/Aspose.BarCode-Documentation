@@ -2,6 +2,7 @@
 title: Features
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /cpp/product-features/
 aliases:
 - /cpp/features/

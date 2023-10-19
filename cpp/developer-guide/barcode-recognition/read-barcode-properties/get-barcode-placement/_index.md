@@ -5,6 +5,7 @@ type: docs
 description: "This article describes how to read barcode parameters"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcode C++"
 weight: 20
+feedback: BARCODECOM
 url: /cpp/get-placement-and-orientation/
 ---  
   

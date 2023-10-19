@@ -3,7 +3,8 @@ title: Generate Codabar Barcodes in C++
 linktitle: Codabar
 type: docs
 weight: 10
-url: /net/codabar-barcodes/
+feedback: BARCODECOM
+url: /cpp/codabar-barcodes/
 ---
 {{% alert color="primary" %}}[Generate Codabar Barcodes Online](https://products.aspose.app/barcode/generate/codabar): You can test the quality of ***Aspose.BarCode*** generation for Codabar barcodes and get the results online.{{% /alert %}}
 
@@ -16,7 +17,7 @@ Input text in *Codabar* barcodes has the following format:
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Start and Stop Symbols**
-The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate [CodabarStartSymbol](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstartsymbol) and [CodabarStopSymbol](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarstopsymbol) properties included in the [*Codabar*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/codabar) group of parameters of class [*BarcodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters).  
+The library allows encoding start and stop characters independently with any of four supported formats: A, B, C, or D. To set the required format, it is necessary to initiate *CodabarStartSymbol* and *CodabarStopSymbol* properties included in the *Codabar* group of parameters of class *BarcodeParameters*.  
 By default, start and stop characters are set to "A".  
   
 Sample barcode labels demonstrated below have been generated with different settings for start and stop characters.
@@ -29,7 +30,7 @@ Sample barcode labels demonstrated below have been generated with different sett
 ## **Checksum Settings**
 By default, the *Codabar* symbology does not require using an obligatory checksum; however, it supports two checksum calculation algorithms: Mod10 and Mod16 (the most widely used one). The pseudocode provided below illustrates how these two checksum standards can be implemented.  
   
-To enable a checksum for this barcode type, it is necessary to initialize the property [*IsChecksumEnabled*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/ischecksumenabled) by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the [*CodabarChecksumMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codabarparameters/properties/codabarchecksummode) property. By default, the *Mod16* checksum is applied.  
+To enable a checksum for this barcode type, it is necessary to initialize the *IsChecksumEnabled* property by setting the mode *EnableChecksum.Yes* and define the required checksum algorithm in the *CodabarChecksumMode* property. By default, the *Mod16* checksum is applied.  
   
 *Codabar* barcode images provided below have been created with different checksum calculation settings.
 

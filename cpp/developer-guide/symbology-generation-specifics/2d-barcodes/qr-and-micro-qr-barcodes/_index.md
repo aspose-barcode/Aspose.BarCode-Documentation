@@ -2,8 +2,11 @@
 title: Generate QR Code and Micro QR Code in C++
 linktitle: QR Code and Micro QR Code
 type: docs
+feedback: BARCODECOM
 weight: 40
 url: /cpp/qr-code-and-micro-qr-code/
+aliases:
+- /cpp/qr-and-micro-qr-barcode/
 ---
 {{% alert color="primary" %}}[Generate QR Code Online](https://products.aspose.app/barcode/generate/qr): You can test the quality of ***Aspose.BarCode*** generation for QR Codes and get the results online.{{% /alert %}}
 
@@ -25,11 +28,11 @@ However, *QR Code* barcodes are sensitive to substantial damages of a target pat
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out Aspose [Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **QR and Micro QR Code Generation Modes**
-In ***Aspose.BarCode for C++***, it is possible to select *QR Code* or *Micro QR Code* barcodes and its versions to be generated using two properties of class [*QrParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters): [*QrEncodeType*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) and [*QrVersion*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) that are set to *Auto* by default.  
+In ***Aspose.BarCode for C++***, it is possible to select *QR Code* or *Micro QR Code* barcodes and its versions to be generated using two properties of class *QrParameters*: *QrEncodeType* and *QrVersion* that are set to *Auto* by default.  
   
-The first option is to initialize the [*QrVersion*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) field that allows setting the required version of *QR Code* or *Micro QR Code*. If the inputted information is less than the capacity of the selected version, the remaining space is filled with padding symbols; if it is surplus, an exception is thrown.  
+The first option is to initialize the *QrVersion* field that allows setting the required version of *QR Code* or *Micro QR Code*. If the inputted information is less than the capacity of the selected version, the remaining space is filled with padding symbols; if it is surplus, an exception is thrown.  
   
-The second option can be used when [*QrVersion*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrversion) is set to *Auto*. In this case, the [*QrEncodeType*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodetype) field can be initialized to select the barcode type according to the input data size. This property can take the following values:
+The second option can be used when *QrVersion* is set to *Auto*. In this case, the *QrEncodeType* field can be initialized to select the barcode type according to the input data size. This property can take the following values:
 
 - *Auto*. First, the most suitable *Micro QR Code* version (from M1 to M4) is searched; then, *QR Code* versions (from *Version01* to *Version40*) are iterated over to find the most appropriate one. If the capacity of *Version40* is not sufficient for the input information, an exception is thrown.
 - *ForceQR*. The most suitable *QR Code* version (from *Version01* to *Version40*) is set.
@@ -44,7 +47,7 @@ Barcode images below are provided to illustrate how to generate *QR Code* barcod
   
   
 ### **Manual Version Selection**
-***Aspose.BarCode for C++*** enables manual settings for the required version of *QR Code* barcodes to be generated. To do this, it is necessary to initialize the [*QRVersion*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrversion) property of class [*QrParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the values from *Version 01* to *Version 40* for *QR Code* and from *M1* to *M4* for *Micro QR Code*. Sample barcode labels demonstrated below are given to explain how to generate *QR Code* barcodes by setting the required version manually.
+***Aspose.BarCode for C++*** enables manual settings for the required version of *QR Code* barcodes to be generated. To do this, it is necessary to initialize the *QRVersion* property of class *QrParameters*. This property can take the values from *Version 01* to *Version 40* for *QR Code* and from *M1* to *M4* for *Micro QR Code*. Sample barcode labels demonstrated below are given to explain how to generate *QR Code* barcodes by setting the required version manually.
   
 |<p align="center">**QR Version**</p>|<p align="center">**Is Set to *QR Version 05***</p>|<p align="center">**Is Set to *Micro QR Version M4***</p>|
 | :-: | :-: | :-: |
@@ -52,20 +55,20 @@ Barcode images below are provided to illustrate how to generate *QR Code* barcod
   
 
 ## **Data Encoding Modes**
-***Aspose.BarCode for C++*** supports several most widespread data encoding modes, including the Unicode standard. To set the required encoding mode, it is necessary to initialize the [*QrEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodemode) property of class [*QrParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the following values:
--	*Auto*. This encoding mode implies that the data passed to [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) is encoded according to the value of the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding) property that gets the encoding of the inputted symbols (by default, it is set to *UTF8*).
+***Aspose.BarCode for C++*** supports several most widespread data encoding modes, including the Unicode standard. To set the required encoding mode, it is necessary to initialize the *QrEncodeMode* property of class *QrParameters*. This property can take the following values:
+-	*Auto*. This encoding mode implies that the data passed to *CodeText* is encoded according to the value of the *CodeTextEncoding* property that gets the encoding of the inputted symbols (by default, it is set to *UTF8*).
 -	*Bytes*. This mode is used to work with streams of bytes and can encode values from 0 to 255. If a byte stream contains digits greater than 255, the *UTF16LE* encoding is applied. 
 -	*Utf8BOM* and *Utf16BEBOM*. These modes are applied to encode the input data using UTF8 and UTF16BE encodings, respectively; a byte order mark (BOM) character is added to indicate the used encoding. Note that it is preferable to use the *ECIEncoding* mode as it allows setting the encodings that are explicitly specified in the *QR Code* standard.  
--	*ECIEncoding*. This data encoding mode implies using the encoding listed in [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding).
+-	*ECIEncoding*. This data encoding mode implies using the encoding listed in *QrECIEncoding*.
 -	*ExtendedCodetext*. In this mode, information passed to the *CodeText* property contains control words besides the main text to be encoded. These control words are intended to set advanced control over data encoding and allow including text with different encodings into a single *QR Code* barcode.
   
 ### ***Auto* Mode**
-The *Auto* data encoding mode utilizes the information from the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding) property to encode the input data. In case the text encoding is not defined explicitly in *CodeTextEncoding*, the binary encoding mode is applied. 
+The *Auto* data encoding mode utilizes the information from the *CodeTextEncoding* property to encode the input data. In case the text encoding is not defined explicitly in *CodeTextEncoding*, the binary encoding mode is applied. 
   
 <p align="center"><img src="qrencodemodeauto.png"></p>
 
 ### ***Bytes* Mode**
-The *Bytes* data encoding mode implies representing an input byte stream as an array of characters and then as a string. It allows encoding values from 0 to 255. In the case when a byte stream includes digits greater than 255, such a character is encoded as two bytes using the UTF16LE encoding (the lower byte first). To visualize the text under a *QR Code* barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be initialized (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
+The *Bytes* data encoding mode implies representing an input byte stream as an array of characters and then as a string. It allows encoding values from 0 to 255. In the case when a byte stream includes digits greater than 255, such a character is encoded as two bytes using the UTF16LE encoding (the lower byte first). To visualize the text under a *QR Code* barcode, the *TwoDDisplayText* property needs to be initialized.  
   
   
 <p align="center"><img src="qrencodemodebytes.png"></p>
@@ -76,12 +79,12 @@ The *Utf8BOM* and *Utf16BEBOM* data encoding modes are used to encode the input 
 <p align="center"><img src="qrencodemodeutfbom.png"></p>
   
 ### ***ECIEncoding* Mode**
-In the *ECIEncoding* data encoding mode, the input data is processed using one of the encodings specified in [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding). The present library implementation includes all well-known charset encodings. In addition, the extended channel interpretation identifier that corresponds to the current encoding is set. In this way, information about the way of decoding the barcode data is passed to decoders. The *QrECIEncoding.UTF8* mode is the most preferable. 
+In the *ECIEncoding* data encoding mode, the input data is processed using one of the encodings specified in *QrECIEncoding*. The present library implementation includes all well-known charset encodings. In addition, the extended channel interpretation identifier that corresponds to the current encoding is set. In this way, information about the way of decoding the barcode data is passed to decoders. The *QrECIEncoding.UTF8* mode is the most preferable. 
   
 <p align="center"><img src="qrencodemodeeciencoding.png"></p>
   
 ### ***ExtendedCodetext* Mode**
-***Aspose.BarCode for C++*** provides an advanced data encoding mode called *ExtendedCodetext* that enables flexible manual settings for *QR Code* barcode generation. Particularly, this mode includes specific encoding capabilities, such as using the multi-ECI mode and setting FNC symbols (characters used to detect and distinguish fields in variable-length application identifiers). Developers can facilitate the generation of barcodes with extended barcode text using class [*QrExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrextcodetextbuilder). To replace the text displayed under the generated barcode, it is necessary to initialize the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property. In the case of setting the multi-ECI mode, data processing is performed for each predefined encoding automatically. Otherwise, the information inputted into [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) is encoded according to the value of [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding).    
+***Aspose.BarCode for C++*** provides an advanced data encoding mode called *ExtendedCodetext* that enables flexible manual settings for *QR Code* barcode generation. Particularly, this mode includes specific encoding capabilities, such as using the multi-ECI mode and setting FNC symbols (characters used to detect and distinguish fields in variable-length application identifiers). Developers can facilitate the generation of barcodes with extended barcode text using class *QrExtCodetextBuilder*. To replace the text displayed under the generated barcode, it is necessary to initialize the *TwoDDisplayText* property. In the case of setting the multi-ECI mode, data processing is performed for each predefined encoding automatically. Otherwise, the information inputted into *CodeText* is encoded according to the value of *CodeTextEncoding*.    
 
   
 <p align="center"><img src="qrencodemodeextendedcodetext.png"></p>
@@ -106,7 +109,7 @@ The *QR Code* family supports four levels of Reed-Solomon error correction. This
   
 
 ## **Structured Append Mechanism**
-*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for C++*** does not enable distributing information inputted into [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the [*StructuredAppend*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/structuredappend) property using the following fields: 
+*QR Code* symbologies (except *Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for C++*** does not enable distributing information inputted into *CodeText* across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the *StructuredAppend* property using the following fields: 
 - *TotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *SequenceIndicator* - the sequence number of the current barcode (starting from 0)
 - *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
@@ -119,7 +122,7 @@ Sample barcode images provided below have been created using the structured appe
   
 
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for C++***, it is required to set the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/aspectratio) property of class [*QrParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property is defined as a relative coefficient to the value of the [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the [*AspectRatio*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/aspectratio) property can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
+*Aspect Ratio* is the ratio between the height and the width of a barcode. To adjust barcode proportions using the X and Y coordinates in ***Aspose.BarCode for C++***, it is required to set the *AspectRatio* property of class *QrParameters*. This property is defined as a relative coefficient to the value of the *XDimension* parameter. Generally, the value of *AspectRatio* should be set to 1. When it is necessary to adjust the proportions of generated *QR Code* barcodes, the *AspectRatio* property can be used. Sample barcode labels shown below have been generated using different aspect ratio settings.  
   
 |<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 2**</p>|
 | :-: | :-: | :-: |

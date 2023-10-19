@@ -2,6 +2,7 @@
 title: System Requirements
 type: docs
 weight: 40
+feedback: BARCODECOM
 url: /cpp/system-requirements/
 
 ---
@@ -15,6 +16,6 @@ url: /cpp/system-requirements/
 
 
 ##  **Development Environments** 
-***Aspose.BarCode for C++*** can be irun in any development environment supporting C++. Specifically, the following environment can be used:
+***Aspose.BarCode for C++*** can be run in any development environment supporting C++. Specifically, the following environment can be used:
 
 - Microsoft Visual Studio 2017 or later

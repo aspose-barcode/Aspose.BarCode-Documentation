@@ -1,7 +1,9 @@
 ---
 title: Generate EAN-2 and EAN-5 Barcodes as Supplement in C++
+linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /cpp/ean2-and-ean5-as-supplement/
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate): You can check the quality of ***Aspose.BarCode*** barcode generation and view the results online.{{% /alert %}}
@@ -12,7 +14,7 @@ url: /cpp/ean2-and-ean5-as-supplement/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
   
 ## **Supplement Barcode Settings**
-The main information about a product or an item needs to be encoded in the primary barcode. To insert additional (supplement) information, ***Aspose.BarCode for C++*** provides a specific property that is called [*SupplementData*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters/properties/supplementdata) and is defined in class [*SupplementParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters) corresponding to the [*Supplement*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/supplement) property group. The [*SupplementData*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters/properties/supplementdata) property is initialized by inputting 2 or 5 additional numerical digits for *EAN 2* or *EAN 5*, respectively. Then, the required barcode type is defined automatically according to the specified number of digits. Then, the size of a supplement barcode is calculated automatically depending on the main barcode parameters.  
+The main information about a product or an item needs to be encoded in the primary barcode. To insert additional (supplement) information, ***Aspose.BarCode for C++*** provides a specific property that is called *SupplementData* and is defined in class *SupplementParameters* corresponding to the *Supplement* property group. The *SupplementData* property is initialized by inputting 2 or 5 additional numerical digits for *EAN 2* or *EAN 5*, respectively. Then, the required barcode type is defined automatically according to the specified number of digits. Then, the size of a supplement barcode is calculated automatically depending on the main barcode parameters.  
   
 Barcode labels provided below have been generated with *EAN 2* and *EAN 5* supplement data settings enabled for *EAN 13* barcodes.
 
@@ -22,7 +24,7 @@ Barcode labels provided below have been generated with *EAN 2* and *EAN 5* suppl
   
 
 ## **Adjust Spacing Between Main and Supplement Barcodes**
-To define the size of a gap between the main and supplement barcodes, the library provides the [*SupplementSpace*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters/properties/supplementspace) property of class [*SupplementParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/supplementparameters).  
+To define the size of a gap between the main and supplement barcodes, the library provides the *SupplementSpace* property of class *SupplementParameters*.  
   
 Barcode samples demonstrated below have been generated with different gap settings.  
   
