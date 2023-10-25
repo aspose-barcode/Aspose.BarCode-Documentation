@@ -55,6 +55,7 @@ The DecodeType type exposes the following members:
 |PDF417|Specifies that the data should be decoded with Pdf417 barcode symbology|
 |MACRO_PDF417|Specifies that the data should be decoded with MacroPdf417 barcode specification|
 |MICRO_PDF417|Specifies that the data should be decoded with MicroPdf417 barcode specification|
+|GS1_MICRO_PDF_417|Specifies that the data should be decoded with MicroPdf417 barcode specification|
 |CODABLOCK_F|Specifies that the data should be decoded with CodablockF barcode specification|
 |AUSTRALIA_POST|Specifies that the data should be decoded with Australia Post barcode specification|
 |POSTNET|Specifies that the data should be decoded with Postnet barcode specification|
