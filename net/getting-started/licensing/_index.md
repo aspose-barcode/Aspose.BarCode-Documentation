@@ -13,7 +13,7 @@ url: /net/licensing/
 ## **How to Obtain License**
 If you want to try the fully functional version of ***Aspose.BarCode for .NET***, you can request a 30-day temporary license. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information. To obtain the possibility of using the library without limitations, a commercial license is required. You can get all information about pricing and conditions [here](https://purchase.aspose.com/admin/pricing/barcode/net). 
 
-## **Set-up License**
+## **How to Install License**
 The license is a plain-text XML file that contains various information, such as the product name, the number of developers to access the license, subscription expiry date, and other details. The file is digitally signed, so it must not be modified, as adding an extra line break into the file invalidates the license. You need to set the license before generating barcodes without a watermark. You only have to set the license once per application (or process).  
   
 License setting can be performed by calling the *SetLicense* method of class [*Aspose.BarCode.License*](https://reference.aspose.com/barcode/net/aspose.barcode/license). This must be done before executing any actions with the library. The *SetLicense* method can be invoked in different ways: in the initialization section of an application (or a web application), using Singleton, or through a file/stream.
@@ -80,8 +80,8 @@ using (System.IO.Stream stream = System.Reflection.Assembly.GetExecutingAssembly
 	(new Aspose.BarCode.License()).SetLicense(stream);
 {{< /highlight >}}
 
-### **Additional Set-up Ways**
-Additionally, the license can be set using the name of the corresponding file or embedded resource. If the license name is passed to the *SetLicense* method without specifying the full path, the library will search it in the following locations:  
+### **Additional Installation Ways**
+The license can be configured using the name of the corresponding file or embedded resource. If the license name is passed to the *SetLicense* method without specifying the full path, the library will search it in the following locations:  
 - Root directory of the .exe file
 - Folder that contains the *Aspose.BarCode.dll* library
 - Folder that contains the assembly calling *Aspose.BarCode.dll*

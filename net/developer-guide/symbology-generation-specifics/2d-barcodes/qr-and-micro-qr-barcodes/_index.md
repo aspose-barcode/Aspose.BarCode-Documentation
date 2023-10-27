@@ -109,7 +109,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 <p align="center"><img src="qrencodemodeauto.png"></p>
 
 ### ***Bytes* Mode**
-The *Bytes* data encoding mode implies representing an input byte stream as an array of characters and then as a string. It allows encoding values from 0 to 255. In the case when a byte stream includes digits greater than 255, such a character is encoded as two bytes using the UTF16LE encoding (the lower byte first). The code sample provided below explains how to use the *Bytes* encoding mode. To visualize the text under a *QR Code* barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be initialized (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).  
+The *Bytes* data encoding mode implies representing an input byte stream as an array of characters and then as a string. It allows encoding values from 0 to 255. In the case when a byte stream includes digits greater than 255, such a character is encoded as two bytes using the UTF16LE encoding (the lower byte first). The code sample provided below explains how to use the *Bytes* encoding mode. To visualize the text under a *QR Code* barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be initialized.  
   
 {{< highlight csharp>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9};
