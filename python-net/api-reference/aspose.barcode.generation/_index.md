@@ -44,7 +44,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[MaxiCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeparameters/)|MaxiCode parameters.|
 |[Padding](/barcode/python-net/api-reference/aspose.barcode.generation/padding/)|Paddings parameters.|
 |[PatchCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/patchcodeparameters/)|PatchCode parameters.|
-|[Pdf417Parameters](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/)|PDF417 parameters. Contains PDF417, MacroPDF417 and MicroPDF417 parameters.<br/>            MacroPDF417 requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.<br/>            MicroPDF417 in Structured Append mode (same as MacroPDF417 mode) requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.|
+|[Pdf417Parameters](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/)|PDF417 parameters. Contains PDF417, MacroPDF417, MicroPDF417 and GS1MicroPdf417 parameters.<br/>            MacroPDF417 requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.<br/>            MicroPDF417 in Structured Append mode (same as MacroPDF417 mode) requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.|
 |[PostalParameters](/barcode/python-net/api-reference/aspose.barcode.generation/postalparameters/)|Postal parameters. Used for Postnet, Planet.|
 |[QrExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/qrextcodetextbuilder/)|Extended codetext generator for 2D QR barcodes for ExtendedCodetext Mode of QrEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
 |[QrParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrparameters/)|QR parameters.|
@@ -63,7 +63,6 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[BorderDashStyle](/barcode/python-net/api-reference/aspose.barcode.generation/borderdashstyle/)|Specifies the style of dashed border lines.|
 |[CodabarChecksumMode](/barcode/python-net/api-reference/aspose.barcode.generation/codabarchecksummode/)|Specifies the checksum algorithm for Codabar|
 |[CodabarSymbol](/barcode/python-net/api-reference/aspose.barcode.generation/codabarsymbol/)|Specifies the start or stop symbol of the Codabar barcode specification.|
-|[Code128Emulation](/barcode/python-net/api-reference/aspose.barcode.generation/code128emulation/)|Function codewords for Code 128 emulation. Applied for MicroPDF417 only. Ignored for PDF417 and MacroPDF417 barcodes.|
 |[Code128EncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/code128encodemode/)|Encoding mode for Code128 barcodes.|
 |[CodeLocation](/barcode/python-net/api-reference/aspose.barcode.generation/codelocation/)|Codetext location|
 |[DataMatrixEccType](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixecctype/)|Specify the type of the ECC to encode.|

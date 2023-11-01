@@ -9,7 +9,7 @@ url: /python-net/api-reference/aspose.barcode.generation/pdf417parameters/
 
 ## Pdf417Parameters class
 
-PDF417 parameters. Contains PDF417, MacroPDF417 and MicroPDF417 parameters.<br/>            MacroPDF417 requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.<br/>            MicroPDF417 in Structured Append mode (same as MacroPDF417 mode) requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.
+PDF417 parameters. Contains PDF417, MacroPDF417, MicroPDF417 and GS1MicroPdf417 parameters.<br/>            MacroPDF417 requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.<br/>            MicroPDF417 in Structured Append mode (same as MacroPDF417 mode) requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.
 
 The Pdf417Parameters type exposes the following members:
 ## Properties
@@ -35,7 +35,9 @@ The Pdf417Parameters type exposes the following members:
 |pdf_417_macro_eci_encoding|Extended Channel Interpretation Identifiers. Applies for Macro PDF417 text fields.|
 |pdf_417_macro_terminator|Used to tell the encoder whether to add Macro PDF417 Terminator (codeword 922) to the segment. <br/>            Applied only for Macro PDF417.|
 |is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol<br/>            as programming for reader initialization.|
-|code_128_emulation|Function codeword for Code 128 emulation. Applied for MicroPDF417 only.  Ignored for PDF417 and MacroPDF417 barcodes.|
+|macro_characters|Macro Characters 05 and 06 values are used to obtain more compact encoding in special modes.<br/>            Can be used only with MicroPdf417 and encodes 916 and 917 MicroPdf417 modes<br/>            Default value: MacroCharacters.None.|
+|is_linked|Defines linked modes with GS1MicroPdf417, MicroPdf417 and Pdf417 barcodes<br/>            With GS1MicroPdf417 symbology encodes 906, 907, 912, 913, 914, 915 “Linked” UCC/EAN-128 modes<br/>            With MicroPdf417 and Pdf417 symbologies encodes 918 linkage flag to associated linear component other than an EAN.UCC|
+|is_code_128_emulation|Can be used only with MicroPdf417 and encodes Code 128 emulation modes<br/>            Can encode FNC1 in second position modes 908 and 909, also can encode 910 and 911 which just indicate that recognized MicroPdf417 can be interpret as Code 128|
 
 ### See Also
 

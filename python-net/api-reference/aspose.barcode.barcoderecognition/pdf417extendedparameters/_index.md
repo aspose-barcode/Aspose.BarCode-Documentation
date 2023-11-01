@@ -28,6 +28,7 @@ The Pdf417ExtendedParameters type exposes the following members:
 |macro_pdf_417_terminator|Indicates whether the segment is the last segment of a Macro PDF417 file.|
 |is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol as programming for reader initialization.|
 |is_linked|Flag that indicates that the barcode must be linked to 1D barcode.|
+|is_code_128_emulation|Flag that indicates that the MicroPdf417 barcode encoded with 908, 909, 910 or 911 Code 128 emulation codewords.|
 
 ### See Also
 

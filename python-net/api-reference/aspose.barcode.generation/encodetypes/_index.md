@@ -58,6 +58,7 @@ The EncodeTypes type exposes the following members:
 |MACRO_PDF417|Specifies that the data should be encoded with MacroPdf417 barcode specification|
 |GS1_DATA_MATRIX|2D barcode symbology DataMatrix with GS1 string format|
 |MICRO_PDF417|Specifies that the data should be encoded with MicroPdf417 barcode specification|
+|GS1_MICRO_PDF_417|Specifies that the data should be encoded with GS1MicroPdf417 barcode specification|
 |GS1QR|2D barcode symbology QR with GS1 string format|
 |MAXI_CODE|Specifies that the data should be encoded with MaxiCode barcode specification|
 |DOT_CODE|Specifies that the data should be encoded with DotCode barcode specification|
