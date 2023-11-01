@@ -27,7 +27,7 @@ The links to some useful resources can be found below.
 
 - [Aspose.BarCode for .NET Product Overview and Features](/barcode/net/product-overview/)
 - [Aspose.BarCode for .NET Release Notes](https://releases.aspose.com/barcode/net/release-notes/)
-- [Aspose.BarCode for .NET Product Page](https://products.aspose.com/barcode/net)
+- [Aspose.BarCode for .NET Product Page](https://products.aspose.com/barcode/net)
 - [Install Aspose.BarCode for .NET NuGet Package](https://www.nuget.org/packages/Aspose.Barcode/)
 - [Download Aspose.BarCode for .NET](https://releases.aspose.com/barcode/net/)
 - [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET)
