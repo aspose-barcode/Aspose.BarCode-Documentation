@@ -2,6 +2,7 @@
 title: How to use Aspose.BarCode in TextPad
 type: docs
 weight: 90
+feedback: BARCODECOM
 url: /java/how-to-use-aspose-barcode-in-textpad/
 ---
 

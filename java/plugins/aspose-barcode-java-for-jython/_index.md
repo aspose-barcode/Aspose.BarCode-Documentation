@@ -2,6 +2,7 @@
 title: Aspose.BarCode Java For Jython
 type: docs
 weight: 60
+feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-jython/
 ---
 

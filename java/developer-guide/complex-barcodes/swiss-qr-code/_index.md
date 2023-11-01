@@ -1,10 +1,11 @@
 ---
-title: Swiss QR Codes in Java
+title: Generate and Read Swiss QR Codes in Java
 linktitle: Swiss QR Code 
 type: docs
 description: "This article explains how to generate and read Swiss QR Codes using Aspose.BarCode for Java"
 keywords: Generate Swiss QR Codes, How to Create Swiss QR Barcodes, Swiss QR Code, Aspose.BarCode, Generate Barcodes in Java
 weight: 10
+feedback: BARCODECOM
 url: /java/swiss-qr-code/
 aliases:
 - /barcode/java/read-swiss-qr-code/

@@ -1,13 +1,14 @@
 ---
 title: Technical Support
 type: docs
+feedback: BARCODECOM
 weight: 60
 description: "How to Contact Technical Support for Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Technical Support for Aspose.BarCode, Aspose.Barcode Forum, C#"
 url: /net/technical-support/
 ---
 ## **Free Technical Support**
-Free technical support for ***Aspose.BarCode for .NET*** can be obtained through [**Free Support Forum**](https://forum.aspose.com/c/barcode/13) that can help not only with resolving technical issues but also with getting advice to solve any business problem. Moreover, on this forum, you can share your feedback and raise requests to add new product features. Over 190,000 registered users have received assistance through this communication channel.
+Free technical support for ***Aspose.BarCode for .NET*** can be obtained through [**Free Support Forum**](https://forum.aspose.com/c/barcode/13) that can help not only with resolving technical issues but also with getting advice to solve any business problem. Moreover, in this forum, you can share your feedback and raise requests to add new product features. Over 190,000 registered users have received assistance through this communication channel.
 
 ## **Blog**
 [**Aspose.BarCode Product Family Blog**](https://blog.aspose.com/category/barcode/) publishes news about recently added features, fixes, technical articles, tips, and tutorial videos. In this blog, you can always get information about the most recent releases and important announcements from Aspose developers.

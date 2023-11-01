@@ -1,11 +1,14 @@
 ---
-title: Saving Generated Barcodes in C#
-linktitle: Saving Generated Barcodes
+title: Save Generated Barcodes in C#
+linktitle: Save Generated Barcodes
 type: docs
-weight: 70
+weight: 50
+feedback: BARCODECOM
 description: Save Barcodes to File, Stream, Image Formats like BMP, PNG, GIF, JPEG, EMF, SVG using C# API
 keywords: Generate Barcodes, Save Barcode in Aspose.BarCode for .NET, Download Barcode in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF
-url: /net/saving-barcode-image/
+url: /net/save-barcode-image/
+aliases:
+- /net/saving-barcode-image/
 ---
 
 This article describes different ways of saving generated barcode images to files, streams, or bitmaps, as well as outputting barcode labels in various raster (BMP, PNG, JPEG, GIF, and TIFF) and vector (EMF and SVG) image formats.
@@ -15,7 +18,7 @@ In the process of barcode development, it may be necessary to save barcodes not 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Saving to File**
+## **Save Barcode to File**
 ***Aspose.BarCode for .NET*** allows saving the generated barcode label directly as a file of the desired format. The code snippet provided below shows how to implement this option.  
   
 ``` csharp
@@ -25,7 +28,7 @@ gen.Save($"{path}StoreImageAsFile.png", BarCodeImageFormat.Png);
 
 ```
 
-## **Saving to Stream**
+## **Save Barcode to Stream**
 In some cases, developers may need to save the generated barcode label in the form of a stream (as a binary format). In the .NET framework, a stream is an abstraction of a byte sequence, such as a file, an inter-process communication pipe, a TCP/IP socket, or an input/output device. The *Stream* class and its child classes represent a generic view of various input and output types and allow programmers to abstract away from the details of the operating system and particular devices. To enable this option, class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator) calls the public method *Save* that takes *Stream* as an input parameter, as demonstrated in the code sample below.  
 
 ``` csharp
@@ -38,7 +41,7 @@ using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Cre
 
 ```
 
-## **Saving as Bitmap**
+## **Save Barcode as Bitmap**
 
 ***Aspose.BarCode for .NET*** allows outputting a barcode image in the form of a bitmap object and then saving it in the desired format or using it in further graphical transformations. Such objects can be obtained from instances of class *BarcodeGenerator* by calling the *GenerateBarCodeImage* method and then get processed as required. The following code snippet illustrates how to implement this option in ***Aspose.BarCode for .NET***.
 
@@ -50,7 +53,7 @@ using (Bitmap bmp = gen.GenerateBarCodeImage())
 
 ```
 
-## **Outputting in Raster Formats**
+## **Output Barcodes in Raster Formats**
 
 ***Aspose.BarCode for .NET*** enables saving barcode images to most of the widely used raster image formats, namely, BMP, PNG, GIF, JPEG, and TIFF. You can pass the [BarCodeImageFormat](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeimageformat) enum as a second argument to the BarcodeGenerator.Save method to save a barcode in the desired format. The descriptions of all supported image formats along with corresponding code samples are provided below.
 
@@ -134,7 +137,7 @@ The examples of barcode labels created in TIFF and TIFFInCMYK formats are provid
 | :-: | :-: | :-: |
 | |<a href="rasterimagetiff.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFF format"></a>|<a href="rasterimagetiffincmyk.tiff"><img src="rasterimagepng.png" alttext="Saving to TIFFInCMYK format"></a>|
   
-## **Outputting in Vector Formats**
+## **Output Barcodes in Vector Formats**
 Vector data formats allow representing an image as a set of graphical operations that are consequently executed on a user's graphics unit. Namely, vector images can be created using mathematical formulas that establish points on a grid. Vector images can be scaled without losing resolution; therefore, vector files are more preferable for some tasks compared with raster files. At present, ***Aspose.BarCode for .NET*** allows saving barcode labels in two vector formats: EMF and SVG.
 
 ### **EMF Format**

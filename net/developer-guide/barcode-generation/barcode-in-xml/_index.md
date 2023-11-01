@@ -1,11 +1,14 @@
 ---
-title: Exporting and Importing Barcode Generation State via XML in C#
-linktitle: Working with Barcode Generation State in XML
+title: Export and Import Barcode Generation State via XML in C#
+linktitle: Barcode Generation State in XML
 type: docs
+feedback: BARCODECOM
 description: This article explains how to import and export barcode the generation state to the XML format with C# API or Library."
 keywords: "Export barcode to XML, Import barcode from XML, Barcode in XML, Aspose.BarCode, Read Barcode C#"
 weight: 80
-url: /net/barcode-in-xml/
+url: /net/barcode-generation-state-in-xml/
+aliases:
+- /barcode/net/barcode-in-xml/
 ---
  
 ## **Overview**
@@ -56,7 +59,7 @@ gen.Save($"{path}BarcodeGeneratorLoaded.png", BarCodeImageFormat.Png);
 
 <p align="center"><img src="barcodegeneratorloaded.png"></p>
 
-## **Saving and Loading Barcode Generation State from Stream**
+## **Save and Load Barcode Generation State from Stream**
 The code snippet given below demonstrates how to save and load the barcode generation state from streams using two corresponding methods: [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) and [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/methods/importfromxml). 
 
 ``` csharp

@@ -11,11 +11,10 @@ This documentation chapter is dedicated to barcode generation basics and the rel
    
 | Article | Description |
 |---|---|
-|[Customizing Barcode Appearance](/barcode/python-net/manage-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
-|[Managing Barcode Parameters](/barcode/python-net/barcode-parameters/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
-|[Barcode Text Settings](/barcode/python-net/barcode-text-settings/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
-|[Adjusting Barcode Color Scheme](/barcode/python-net/change-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|
-|[Saving Generated Barcodes](/barcode/python-net/save-generated-barcodes/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vectore ones)|
-|[Checksum Settings in 1D Barcodes](/barcode/python-net/barcode-checksum-settings/)|Describes checksum settings for 1D barcodes|
-
+|[Set Barcode Size and Resolution](/barcode/python-net/set-barcode-size-and-resolution/)|Outlines the capabilities to customize the barcode measurement units and the resolution of generated barcode images|
+|[Adjust Barcode Appearance](/barcode/python-net/customize-barcode-appearance/)|Explains how to adjust barcode appearance-related properties, such as size, rotation angle, paddings, borders, and bar width reduction|
+|[Customize Barcode Text](/barcode/python-net/set-barcode-text/)|Describes the ways to manage various parameters of barcode text and captions, including visibility, location, font, spacings, and wrapping modes|
+|[Customize Barcode Color Scheme](/barcode/python-net/customize-barcode-color/)|Represents the available options to customize the color scheme of barcodes and their elements|
+|[Save Generated Barcodes](/barcode/python-net/save-barcode-image/)|Explains how to save generated barcode images in different ways (saving to stream, file, or bitmap) and various output image formats (raster and vector ones)|
+|[Set Checksum Controls in 1D Barcodes](/barcode/python-net/set-checksum-controls/)|Describes checksum settings for 1D barcodes|
   

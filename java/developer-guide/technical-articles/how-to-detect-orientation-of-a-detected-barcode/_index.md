@@ -2,6 +2,7 @@
 title: How to Detect Orientation of a Detected Barcode
 type: docs
 weight: 110
+feedback: BARCODECOM
 url: /java/how-to-detect-orientation-of-a-detected-barcode/
 ---
 

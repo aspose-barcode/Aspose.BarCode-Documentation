@@ -1,13 +1,15 @@
 ---
-title: Barcode Specifications
+title: Barcode Standards
 type: docs
 description: "Information Cards for Most Popular Barcode Types"
-keywords: "barcode, generate barcode image, barcode type, 1D barcodes, 2D barcodes, 1D barcode types, linear barcode, how to create barcodes, UPC, UPC-A, GTIN, EAN, EAN13, EAN 13, EAN 8, QR Code, Micro QR Code, PDF417, MacroPDF417, MicroPDF417, Compact PDF417, Data Matrix, Aztec Code, Aztec Rune, Aztec Compact, Code 39, Code 128, GS1, DataBar, bar code, barcode generator, what is barcode, barcode symbol, barcode symbology"
+keywords: "barcode, barcode standards, barcode specifications, generate barcode image, barcode type, 1D barcodes, 2D barcodes, 1D barcode types, linear barcode, how to create barcodes, UPC, UPC-A, GTIN, EAN, EAN13, EAN 13, EAN 8, QR Code, Micro QR Code, PDF417, MacroPDF417, MicroPDF417, Compact PDF417, Data Matrix, Aztec Code, Aztec Rune, Aztec Compact, Code 39, Code 128, GS1, DataBar, bar code, barcode generator, what is barcode, barcode symbol, barcode symbology"
 weight: 150
-url: /info-cards/
+url: /barcode-standards/
+aliases:
+- /info-cards/
 ---
 
-This section provides general information about most popular barcode specifications presented in the form of detailed information cards. **Aspose.BarCode** supports creating and scanning barcodes for over 60 types, including 1D, 2D, and postal ones. References for information cards are listed below.
+This section provides general information about most popular barcode standards presented in the form of detailed information cards. **Aspose.BarCode** supports creating and scanning barcodes for over 60 types, including 1D, 2D, and postal ones. References for information cards are listed below.
   
 |Information Cards| | | |
 |:-:|:-:|:-:|:-:|

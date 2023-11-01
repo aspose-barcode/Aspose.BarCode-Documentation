@@ -2,6 +2,7 @@
 title: Licensing
 type: docs
 weight: 50
+feedback: BARCODECOM
 url: /java/licensing/
 aliases:
 - /java/1-3-2-apply-aspose-license/
@@ -15,7 +16,7 @@ If you want to try the full version of ***Aspose.BarCode for Java***, you can tr
 
 Each Aspose license enables a one-year subscription with free upgrades to any new releases or fixes that are published during this period. Technical support is provided for free unlimitedly both to licensed and evaluation users.
 
-## **License Setting**
+## **How to Install License**
 The license is a plain-text XML file that includes details such as the product name, the number of developers it is licensed for, subscription expiry date, and others. The license file is signed digitally, so it must not be modified in any way. Adding even an extra line break into the license file will result in invalidating the license. You need to activate the license to enable the unlimited use of library functions. You only have to enable the license once per application (or process). 
 
 The license can be loaded from a stream or file using the following locations:
@@ -25,17 +26,17 @@ The license can be loaded from a stream or file using the following locations:
 
 You need to call the *setLicense* method of class [*License*](https://reference.aspose.com/barcode//java/com.aspose.barcode/license) to apply the license to the component. The easiest way to activate the license is to place the license file into the same folder as Aspose.BarCode.jar and specify the license file name without a path, as shown in the following example.
 
-### **Apply License From File**
+### **Configure License From File**
 In this example, Aspose.BarCode will attempt to find the license file in the folder that contains JARs of your application.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-ApplyALicense-ApplyALicense.java" >}}
 
-### **Apply License From Stream**
+### **Configure License From Stream**
 In this example, the license is initialized from a stream.
 
 {{< gist "aspose-com-gists" "9dea2dd38be50330a824dd05da062a97" "Examples-src-main-java-com-aspose-barcode-examples-ApplyLicenseFromStream-ApplyLicenseFromStream.java" >}}
 
-### **Applying Metered Key**
+### **Configure Metered Key**
 Aspose.BarCode for Java allows developers to apply metered keys. It is a new licensing mechanism that can be applied along with the existing licensing method. Those customers who want to be billed based on the usage of API features can apply metered licensing. For more details, please refer to [Metered Licensing FAQ](https://purchase.aspose.com/faqs/licensing/metered).
 
 Class [*Metered*](https://reference.aspose.com/barcode/java/com.aspose.barcode.metered/package-frame) has been introduced to apply the metered key. The sample code snippet demonstrating how to set metered public and private keys is provided below.

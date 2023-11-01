@@ -1,11 +1,15 @@
 ---
-title: Barcode Generation using WinForms and WPF in C#
-linktitle: Barcode Generation using WinForms and WPF
+title: Generate Barcodes using WinForms and WPF in C#
+linktitle: Generate Barcodes using WinForms and WPF
 type: docs
 description: "Barcode Generation in Aspose.BarCode for .NET using C# GUI-based frameworks: Windows Forms and WPF"
 keywords: Generate Barcodes, How to Generate Barcodes in C# .NET, Create Barcodes in WinForms, Generate Barcode WPF, C# Framework, Aspose.BarCode for .NET
-weight: 10
-url: /net/generate-barcodes-with-aspose-barcode-apis/
+weight: 90
+feedback: BARCODECOM
+url: /net/generate-barcodes-using-aspose-apis/
+aliases:
+- /net/generate-barcodes-using-csharp-apis/
+- /net/generate-barcodes-with-aspose-barcode-apis/
 ---
 This article provides all necessary information and instructions to perform barcode generation using GUI-based C# tools, such as WinForms and WPF.
 
@@ -77,7 +81,7 @@ public MainWindow()
 
 ```
 
-## Barcode Generation in WinForms GUI
+## Generate Barcodes in WinForms GUI
 ***Aspose.BarCode for .NET*** includes a control class called [*BarCodeGeneratorControl*](https://reference.aspose.com/barcode/net/aspose.barcode.windows.forms/barcodegeneratorcontrol) that is inherited from *System.Windows.Forms.Control* class. *BarcodeGeneratorControl* class is the key component that enables barcode generation in WinForms. To start a new project in this way, follow the steps outlined below:
 1. Create a new project in WinForms
 2. Add the ***Aspose.BarCode for .NET*** library using NuGet:
@@ -97,7 +101,7 @@ public MainWindow()
   
 <p align="center"> <img src="winforms_04.png"> </p>
   
-## Barcode Generation in WPF
+## Generate Barcodes in WPF
 
 ***Aspose.BarCode for .NET*** is compatible with the DLL for the **Microsoft WPF framework** to enable building WPF-based applications. Barcode generation and recognition functionality can be deployed by referencing *Aspose.BarCode.WPF.dll* in WPF applications. To implement barcode generation in WPF, follow the steps described below.  
 1. Create a new WPF project

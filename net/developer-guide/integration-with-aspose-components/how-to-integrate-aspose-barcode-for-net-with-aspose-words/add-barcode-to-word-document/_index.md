@@ -3,6 +3,7 @@ title: Add Barcodes to Word Documents
 description: "How to Add Barcodes to MS Word Files Using Aspose.BarCode and Aspose.Words"
 keywords:
 type: docs
+feedback: BARCODECOM
 weight: 10
 url: /net/add-barcode-to-word-document/
 ---

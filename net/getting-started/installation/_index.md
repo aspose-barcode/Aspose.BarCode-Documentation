@@ -1,6 +1,7 @@
 ---
 title: Installation
 type: docs
+feedback: BARCODECOM
 description: "Installation of Aspose.BarCode for .NET: Through NuGet Package, Referencing, or Manual Installation"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Install Aspose.BarCode with NuGet, Aspose.BarCode Installation, Install Aspose.BarCode for .NET, C#"
 weight: 50

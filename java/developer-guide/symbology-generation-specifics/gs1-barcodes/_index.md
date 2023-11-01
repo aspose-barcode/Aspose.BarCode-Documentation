@@ -1,10 +1,12 @@
 ---
-title: Working with GS1 Barcode Types in Java
+title: GS1 Barcode Standards
 linktitle: GS1 Barcodes
 type: docs
-weight: 90
-url: /java/gs1-types/
+weight: 40
+url: /java/gs1-barcodes/
 aliases:
+
+- /java/gs1-types/
 - /java/generating-gs1-128-ai-8102-coupon-extended-barcode/
 - /java/generating-upca-and-gs1-databar-coupon-barcode/
 ---
@@ -15,7 +17,7 @@ GS1 is one of the main developers of data processing and encoding standards for 
   
 The barcode types compatible with all GS1 Application Identifiers or the GS1AI_01 type only are listed in the table below.  
   
-|<p align="center">**Compatibility with GS1 AIs**</p>|<p align="center">**Supported Symbologies**</p>|
+|Compatibility with GS1 AIs|Supported Types|
 |---|---|
 |Supports All GS1 AIs|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 Data Matrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
 |Supports Only GS1AI_01|DataBar Omnidirectional, DataBar Stacked Omnidirectional, Databar Limited, DataBar Truncated, DataBar Stacked, EAN 14, ITF 14|
@@ -38,13 +40,12 @@ gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
   
 <p align="center"><img src="gs1code128example.png"></p>
     
-**GS1 DataMatrix**  
+**GS1 Data Matrix**  
   
 <!--{{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1DataMatrix, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
-gen.Parameters.Barcode.DataMatrix.Columns = 36;
-gen.Parameters.Barcode.DataMatrix.Rows = 12;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_12x36;
 gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
   

@@ -3,6 +3,7 @@ title: Decode Non-English Characters in 2D Barcodes
 type: docs
 description: "This article explains how to read non-English characters in 2D Barcode. How to recognize PDF417 barcode with Turkish and Chinese characters."
 keywords: "Pdf417 Barcode with Turkish Characters, Pdf417 Barcode with Chinese Characters, PDF417 Barcode, Non-English Character Barcode, Aspose.BarCode, Read Barcode Java"
+feedback: BARCODECOM
 weight: 100
 url: /java/decode-non-english-characters-in-2d-barcodes/
 ---

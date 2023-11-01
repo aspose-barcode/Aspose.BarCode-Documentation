@@ -1,8 +1,9 @@
 ---
-title: How to Read Barcodes from PDF Documents
+title: Read Barcodes from PDF Documents
 description: "How to Recognize Barcodes from PDF Files"
 keywords:
 type: docs
+feedback: BARCODECOM
 weight: 20
 url: /net/read-barcode-from-pdf-document/
 aliases: 

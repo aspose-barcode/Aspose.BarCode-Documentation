@@ -5,7 +5,6 @@ description: "Description of Various Barcode Types Supported in Aspose.BarCode f
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Python, Barcode types in Aspose.BarCode for Python, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
 weight: 10
 url: /python-java/managing-barcode-types/
-
 ---
 This article introduces general information about barcode types and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 
 
@@ -272,8 +271,7 @@ public void generateAndReadDataMatrix()
         {
             bg.getParameters().getBarcode().getXDimension().setPixels(4);
             bg.getParameters().getBarcode().getDataMatrix().setDataMatrixEcc(DataMatrixEccType.ECC_200);
-            bg.getParameters().getBarcode().getDataMatrix().setColumns(22);
-            bg.getParameters().getBarcode().getDataMatrix().setRows(22);
+            bg.getParameters().getBarcode().getDataMatrix().setDataMatrixVersion(DataMatrixVersion.ECC200_22x22);
             try
             {
                 bg.save(filePath, BarCodeImageFormat.PNG);

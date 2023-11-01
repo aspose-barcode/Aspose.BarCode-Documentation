@@ -2,6 +2,7 @@
 title: Read Barcodes in a Specific Order
 type: docs
 weight: 130
+feedback: BARCODECOM
 url: /java/read-barcodes-in-a-specific-order/
 ---
 

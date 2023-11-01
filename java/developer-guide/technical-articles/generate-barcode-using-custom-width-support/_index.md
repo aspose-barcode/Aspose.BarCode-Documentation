@@ -1,7 +1,8 @@
 ---
-title: Generate Barcode Using Custom Width Support
+title: Generate Barcode Using Custom Width
 type: docs
 weight: 80
+feedback: BARCODECOM
 url: /java/generate-barcode-using-custom-width-support/
 ---
 

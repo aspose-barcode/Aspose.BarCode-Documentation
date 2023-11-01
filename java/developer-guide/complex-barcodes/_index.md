@@ -2,6 +2,7 @@
 title: Complex Barcode Types in Java
 linktitle: Complex Barcodes
 type: docs
-weight: 40
+weight: 30
+notoc: true
 url: /java/complex-barcodes/
 ---

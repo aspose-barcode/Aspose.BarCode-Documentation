@@ -1,13 +1,15 @@
 ---
-title: Working with Barcode Recognition State using XML in Java
+title: Work with Barcode Recognition State using XML in Java
 linktitle: Barcode Reading State in XML
 type: docs
 description: "This Article Describes How to Save or Load Barcode Recognition State in the XML format"
 keywords: "Read barcode in XML, Barcode XML Serialization, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcodes in Java"
 weight: 50
-url: /java/barcode-in-xml/
+url: /java/barcode-reading-in-xml/
+feedback: BARCODECOM
+aliases:
+- /java/barcode-in-xml/
 ---
-{{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 
 ## **Overview**
 ***Aspose.BarCode for Java*** provides class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) that enables serializing the current barcode recognition state and saving it using the XML format to a file through the *exportToXml(java.lang.String xmlFile)* method or a stream through the *exportToXml(java.io.OutputStream xmlStream)* method. In addition, it is possible to import the barcode state in the XML format from a file or a stream using corresponding methods *importFromXml(java.lang.String xmlFile)* and *importFromXml(java.io.InputStream xmlStream)*. 
@@ -16,7 +18,7 @@ However, serializing cannot be implemented automatically for some barcode data, 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Outputting Barcode Recognition State in XML Format**
+## **Output Barcode Recognition State in XML Format**
 In ***Aspose.BarCode for Java***, there are two options to save the current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader): to an XML file using the *exportToXml(java.lang.String xmlFile)* method or a stream using the *exportToXml(java.io.OutputStream xmlStream)* method. 
 <!--The following code sample explains how to output the barcode recognition state to an XML file.   
 
@@ -32,7 +34,7 @@ using (BarCodeReader read = new BarCodeReader())
 }
 {{< /highlight >}}-->
 
-## **Loading Barcode Recognition State from XML**
+## **Load Barcode Recognition State from XML**
 The current barcode recognition state corresponding to an object of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) can be loaded from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream through the *importFromXml(java.io.InputStream xmlStream)* method. The source barcode image needs to be determined using the *setBarCodeImage* method. 
 <!--The following code sample shows how to get the state of a [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) object from an XML file. 
 
@@ -54,7 +56,7 @@ using (BarCodeReader read = BarCodeReader.ImportFromXml($"{path}readerPdf417.xml
 {{< /highlight >}}-->
 
 
-## **Loading and Saving Barcode Recognition State from Stream**
+## **Load and Save Barcode Recognition State from Stream**
 In ***Aspose.BarCode for Java***, it is possible to save or load the barcode reading state from a stream using special methods *exportToXml(java.io.OutputStream xmlStream)* and *importFromXml(java.io.InputStream xmlStream)*. The source barcode image needs to be specified explicitly using the *setBarCodeImage()* method. 
 <!--The following code sample shows how to save or load the barcode recognition state from a stream. 
 

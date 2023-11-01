@@ -2,6 +2,7 @@
 title: Programming Styles of .NET and Java Platforms
 type: docs
 weight: 140
+feedback: BARCODECOM
 url: /java/programming-styles-of-net-and-java-platforms/
 ---
 

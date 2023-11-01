@@ -1,12 +1,15 @@
 ---
-title: HIBC LIC Barcodes
+title: Generate and Read HIBC LIC Barcodes in C#
+linktitle: HIBC LIC
 type: docs
+feedback: BARCODECOM
 weight: 50
-url: /net/hibc-lic/
+url: /net/hibc-lic-barcodes/
+aliases:
+- /net/hibc-lic/
 ---
 
 ## **Overview**
-
 HIBCC Licensed Identification Code (LIC) is a standardized identifier that is used to track products, packages, and containers. This special barcode standard is mainly used to mark goods produced for the healthcare sphere. It has been introduced by Healthcare Industry Bar Code Council (HIBCC), a non-profit organization aimed to develop and promote the use of standardized barcode types in the healthcare industry. The data elements encoded in the HIBC LIC may include the product identifier, the lot number, the expiration date, and other information about the product. Each field is encoded in a specific format, and the HIBCC provides guidelines on how to encode data in the HIBC LIC.  
 ***Aspose.BarCode for .NET*** provides tools to generate and read barcodes using the HIBC LIC standard. Main barcode data can be encoded using of the following types: Code 39, Code 128, Aztec Code, Data Matrix, or QR Code. A barcode type has to be set in the [*BarcodeType*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/barcodetype/) property. To select the required HIBC LIC format for generated barcode, developers need to use class [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexbarcodegenerator/) together with special classes for HIBC LIC, including [*HIBCLICComplexCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/hibcliccomplexcodetext/), [*HIBCLICCombinedCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/hibcliccombinedcodetext/), [*HIBCLICPrimaryDataCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/hibcliccombinedcodetext/primarydata/), and [*HIBCLICSecondaryAndAdditionalDataCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/hibcliccombinedcodetext/secondaryandadditionaldata/). 
 

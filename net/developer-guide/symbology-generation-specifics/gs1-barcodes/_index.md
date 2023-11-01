@@ -1,8 +1,12 @@
 ---
-title: GS1 Barcodes
+title: GS1 Barcode Types
+linktitle: GS1 Barcodes
 type: docs
-weight: 90
-url: /net/generating-barcodes-using-new-barcode-generation-api/
+weight: 40
+feedback: BARCODECOM
+url: /net/gs1-barcodes/
+aliases:
+- /net/generating-barcodes-using-new-barcode-generation-api/
 ---
 {{% alert color="primary" %}}[Generate GS1 Code 128 and](https://products.aspose.app/barcode/generate/code128?type=gs1code128) [GS1 DataMatrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix?type=gs1datamatrix): You can test the quality of ***Aspose.BarCode*** generation for GS1 barcodes and view the results online.{{% /alert %}}
 
@@ -13,7 +17,7 @@ The table below outlines the barcode types that support all GS1 Application Iden
   
 |<p align="center">**Compatibility with GS1 AIs**</p>|<p align="center">**Barcode Types**</p>|
 |---|---|
-|All GS1 Application Indentifiers Are Supported|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 DataMatrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
+|All GS1 Application Identifiers Are Supported|DataBar Expanded, DataBar Expanded Stacked, GS1 Codablock-F, GS1 Code 128, GS1 DataMatrix, GS1 QR Code, UPC-A GS1 DataBar Coupon, UPC-A GS1 Code 128 Coupon|
 |Only GS1AI_01 Is Supported|DataBar OmniDirectional, DataBar Stacked OmniDirectional, DatabarLimited, DataBar Truncated, DataBar Stacked, EAN14, ITF14|
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
@@ -36,13 +40,12 @@ gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
   
 <p align="center"><img src="gs1code128example.png"></p>
   
-**GS1 DataMatrix**  
+**GS1 Data Matrix**  
   
 {{< highlight csharp>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1DataMatrix, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
-gen.Parameters.Barcode.DataMatrix.Columns = 36;
-gen.Parameters.Barcode.DataMatrix.Rows = 12;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_12x36;
 gen.Save($"{path}Gs1DataMatrixExample.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -85,7 +88,7 @@ In ***Aspose.BarCode for .NET***, it is possible to adjust the size of spacing b
   
 Sample barcode images provided below have been generated using the *UPC-A GS1 DataBar Coupon* standard and applying different spacing settings.
      
-|<p align="center">**Supplement Space**</p>|<p align="center">**Is Set to 30 Pixels**</p>|<p align="center">**Is Set to 50 Pixels**</p>|
+|Supplement Space|Is Set to 30 Pixels|Is Set to 50 Pixels|
 | :-: | :-: | :-: |
 | |<img src="gs1couponspace30pixels.png">|<img src="gs1couponspace50pixels.png">|
   

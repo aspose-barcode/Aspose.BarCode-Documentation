@@ -1,7 +1,9 @@
 ---
 title: How to Save Retrieve Barcodes to and from Database in .NET
+linktitle: Store Barcodes in Database
 type: docs
 weight: 10
+feedback: BARCODECOM
 url: /net/how-to-save-retrieve-barcodes-to-and-from-database-in-net/
 aliases: 
 - /net/databases/

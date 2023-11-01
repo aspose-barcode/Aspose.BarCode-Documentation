@@ -1,6 +1,7 @@
 ---
 title: Save Barcode Images to and Retrieve from MySQL Database
 type: docs
+feedback: BARCODECOM
 weight: 60
 url: /java/save-barcode-images-to-and-retrieve-from-mysql-database/
 ---

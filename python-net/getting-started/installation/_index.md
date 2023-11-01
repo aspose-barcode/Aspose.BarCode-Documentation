@@ -6,7 +6,7 @@ url: /python-net/installation/
 ---
 
 
-## Install from Hosted Package
+## **Install from Hosted Package**
 
 The barcode library source code is available at hosted on Pypi (Python Package Index) repository as an installable package. It can be obtained by running the following command: 
 

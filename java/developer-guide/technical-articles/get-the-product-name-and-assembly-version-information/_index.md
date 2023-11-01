@@ -2,6 +2,7 @@
 title: Get the Product Name and Assembly Version Information
 type: docs
 weight: 150
+feedback: BARCODECOM
 url: /java/get-the-product-name-and-assembly-version-information/
 ---
 

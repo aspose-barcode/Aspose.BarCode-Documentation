@@ -1,10 +1,14 @@
 ---
-title: Mailmark 2D Barcodes
+title: Generate and Read Mailmark 2D Barcodes in C#
+linktitle: Mailmark 2D
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for .NET."
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode C#"
 weight: 20
-url: /net/mailmark-2D-barcode/
+feedback: BARCODECOM
+url: /net/mailmark-2D-barcodes/
+aliases:
+- /net/mailmark-2D-barcode/
 ---
 
 ## **Overview**
@@ -16,7 +20,7 @@ To work with *Mailmark 2D* barcodes in ***Aspose.BarCode for .NET***, it is nece
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **How to Generate Mailmark 2D Barcode**
+## **Generate Mailmark 2D Barcodes**
 To generate *Mailmark 2D* barcodes, ***Aspose.BarCode for .NET*** provides class [*Mailmark2DCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/mailmark2dcodetext) to specify barcode fields and class [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexbarcodegenerator) to generate barcodes. The [*Mailmark2DType*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/mailmark2dtype) enumeration is used to select the type of a *Mailmark 2D* barcode to be generated.  
   
 Sample *Mailmark 2D* barcodes demonstrated below have been created setting different *Mailmark 2D* types.
@@ -64,7 +68,7 @@ generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark2DType29.png");
 {{< /highlight >}}
   
-## **How to Read Mailmark 2D Barcode**
+## **Read Mailmark 2D Barcodes**
 To read and parse Royal Mail *Mailmark 2D* barcodes in ***Aspose.BarCode for .NET***, first, it is required to create an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) and set it to the value *DecodeType.DataMatrix*. Then, the obtained information can be parsed further in class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexcodetextreader) by calling the [*TryDecodeMailmark2D*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexcodetextreader/methods/trydecodemailmark2d) method that returns an instance of [*Mailmark2DCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/mailmark2dcodetext) with the decoded barcode data.  
   
 The following code snippet explains how to read *Mailmark 2D* barcodes.

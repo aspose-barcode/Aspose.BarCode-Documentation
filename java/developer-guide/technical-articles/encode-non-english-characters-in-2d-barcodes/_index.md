@@ -4,6 +4,7 @@ type: docs
 description: "This article explains how to generate barcode with non-English characters. How to generate a PDF417 barcode with Turkish and Chinese characters."
 keywords: "Pdf417 Barcode with Turkish Characters, Pdf417 Barcode with Chinese Characters, PDF417 Barcode, Non-English Character Barcode, Aspose.BarCode, Generate Barcode Java"
 weight: 70
+feedback: BARCODECOM
 url: /java/encode-non-english-characters-in-2d-barcodes/
 ---
 

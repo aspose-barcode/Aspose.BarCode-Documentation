@@ -4,6 +4,7 @@ description: "How to create custom barcodes from MS Word documents with IBarcode
 keywords: Aspose.Words, Aspose.BarCode, IBarcodeGenerator
 type: docs
 weight: 30
+feedback: BARCODECOM
 url: /net/how-to-create-custom-barcodes-with-ibarcodegenerator/
 ---
 

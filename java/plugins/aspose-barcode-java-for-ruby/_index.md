@@ -1,7 +1,8 @@
 ---
 title: Aspose.BarCode Java For Ruby
 type: docs
-weight: 20
+weight: 100
+feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-ruby/
 ---
 

@@ -2,6 +2,7 @@
 title: How to Print Barcode Images on BIRT Reports
 type: docs
 weight: 50
+feedback: BARCODECOM
 url: /java/how-to-print-barcode-images-on-birt-reports/
 ---
 

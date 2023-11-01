@@ -1,10 +1,11 @@
 ---
 title: Integrate Aspose.BarCode for .NET with Aspose.PDF
-description:
-keywords:
+linktitle: Integration with Aspose.PDF
 type: docs
 weight: 10
-url: /net/how-to-integrate-aspose-barcode-for-net-with-aspose-pdf/
+url: /net/integrate-with-aspose-pdf/
+aliases:
+- /net/how-to-integrate-aspose-barcode-for-net-with-aspose-pdf/
 ---
 
 In this section, it is described how to insert and recognize barcode images in Microsoft Word files using together [***Aspose.BarCode***](https://products.aspose.com/barcode/net/) and [***Aspose.Pdf***](https://products.aspose.com/pdf/net/) libraries for .NET:

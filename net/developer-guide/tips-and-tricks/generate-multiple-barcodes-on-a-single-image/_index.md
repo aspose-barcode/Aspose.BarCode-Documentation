@@ -2,6 +2,8 @@
 title: Generate Multiple Barcodes within Single Image
 type: docs
 weight: 150
+notoc: true
+feedback: BARCODECOM
 url: /net/generate-multiple-barcodes-on-a-single-image/
 ---
 

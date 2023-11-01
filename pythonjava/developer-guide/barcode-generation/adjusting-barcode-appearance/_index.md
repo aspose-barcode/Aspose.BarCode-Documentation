@@ -1,14 +1,16 @@
 ---
-title: Barcode Appearance Customization
+title: Customize Barcode Appearance in Java
+linktitle: Customize Barcode Appearance
 type: docs
 weight: 30
 description: "How to Customize Barcode Appearance-Related Properties in Aspose.BarCode for Python"
 keywords: "generate barcodes, customize barcode image, change barcode appearance, barcode appearance in Python, customize barcodes, work with barcode image, generate barcodes in Aspose.BarCode"
-url: /python-java/manage-barcode-appearance/
+url: /python-java/customize-barcode-appearance/
+aliases: /python-java/manage-barcode-appearance/
 ---
 In the present article, you can find details about customizing various parameters of barcodes to be generated, such as barcode label size, rotation angle, barcode paddings, and barcode image borders.
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/python-java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Overview**
 ***Aspose.BarCode for Python via Java*** provides class [*BarcodeGenerator*](https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.barcode_generator/) to generate barcodes in line with the predefined settings so that each element of a barcode image gets its fixed position relatively to other elements, as shown in the scheme below. A barcode label comprises the following parts: barcode text, bars, top and bottom captions, image borders, and paddings. All elements besides barcode bars are optional.

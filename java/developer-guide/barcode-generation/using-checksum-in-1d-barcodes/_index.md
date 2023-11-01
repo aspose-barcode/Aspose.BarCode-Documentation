@@ -1,13 +1,15 @@
 ---
-title: Setting Checksum for 1D Barcodes via Java
-linktitle: Checksum Settings for 1D Barcodes
+title: Set Barcode Checksum Controls in Java
+linktitle: Set Barcode Checksum Controls
 type: docs
 weight: 80
+feedback: BARCODECOM
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Barcode Checksum in Aspose.Barcode for Java, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings in Aspose.BarCode for Java"
-url: /java/checksum-in-1d-barcodes/
+url: /java/set-checksum-controls/
 aliases:
-- - /barcode/java/use-checksum-and-supplement-data-for-barcodes/
+- /barcode/java/use-checksum-and-supplement-data-for-barcodes/
+- /barcode/java/checksum-in-1d-barcodes/
 ---
 
 ## **Overview**
@@ -17,7 +19,7 @@ Barcodes without obligatory checksum verification comprise self-checking charact
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
  
-## **Checksum Definition**
+## **Definition of Checksum**
 Most 1D barcode types have been created in the 70s. For many of them, checksum controls are identified in a simple way: as a sum of all preceding digits modulo the index of the maximum encoded character. As further development, barcode standards introduced at the beginning of the 2000s use more sophisticated checksum verification algorithms.  
   
 In general, enabling checksum in ***Aspose.BarCode for Java*** for 1D barcodes allows verifying barcodes with minor damages. However, in the case of significantly damaged barcode images, the probability of inaccurate recognition increases.  
@@ -32,7 +34,7 @@ In *Code 39*, checksum controls are optional. The maximum number of digits to be
   
 The *Code 128* standard uses an improved algorithm for checksum controls compared with *Code 39*. In this algorithm, each barcode digit is weighted based on its position index. 
   
-## **Checksum Settings**
+## **Barcode Checksum Settings**
 Different types use particular checksum controls (optional or obligatory) and different checksum calculation algorithms. When checksum controls are obligatory, ***Aspose.BarCode for Java*** utilizes the most common algorithm for that symbology. When needed, the checksum character is added as the last barcode character. The [*EnableChecksum*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EnableChecksum) enum is intended for checksum calculation in 1D barcodes. It is set to *Yes* for the types with obligatory checksum controls and *No* for those with an optional check digit by default.  
   
 Barcode standards with optional and obligatory checksum settings are listed below.
@@ -91,7 +93,7 @@ catch (Exception e)
 }
 {{< /highlight >}}-->
   
-## **Displaying Checksum for Code 128**
+## **Display Checksum for Code 128**
 For *Code 128* and *GS1 Code 128*, ***Aspose.BarCode for Java*** allows developers to use a specific method called *setChecksumAlwaysShow* of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters). In this case, the checksum digit is displayed in the *CodeText* field as human-readable barcode text. 
   
 |<p align="center">**Checksum Visibility**</p>|<p align="center">**Displayed**</p>|<p align="center">**Hidden**</p>|

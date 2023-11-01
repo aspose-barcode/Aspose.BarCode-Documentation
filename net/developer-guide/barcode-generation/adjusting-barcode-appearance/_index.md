@@ -1,11 +1,14 @@
 ---
-title: Adjusting Barcode Appearance using C#
-linktitle: Adjusting Barcode Appearance
+title: Customize Barcode Appearance in C#
+linktitle: Customize Barcode Appearance
 type: docs
-weight: 30
+weight: 20
+feedback: BARCODECOM
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for .NET, Work with Barcode Image in Aspose.BarCode for .NET, Generate Barcodes in Aspose.BarCode"
-url: /net/image-formatting-and-display-settings/
+url: /net/customize-barcode-appearance/
+aliases:
+- /net/image-formatting-and-display-settings/
 ---
 This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
 
@@ -16,11 +19,11 @@ In ***Aspose.BarCode for .NET***, class [*BarcodeGenerator*](https://reference.a
   
 <p align="center"><img src="barcode_view_scheme.png"></p>
  
-## **Barcode Image Sizing Modes**
+## **Set Barcode Sizing Mode**
 
 In the general case, ***Aspose.BarCode for .NET*** adjusts the size of a barcode image (width and height) automatically. However, it is possible to customize the image size settings manually by specifying the height and width of a barcode image using [*ImageHeight*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/imagewidth) properties of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters).  
   
-The size of a barcode image can be managed according to different sizing modes that can be set by initializing the [*AutoSizeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) property of class *BaseGenerationParameters*. This parameter can take the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes imply that barcode image size gets adjusted according to the required values of width and height while most of the other parameters are ignored. In contrast, the *None* mode defines the size of a barcode image ignoring width and height but considers other parameters, for example, such as [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). By default, *AutoSizeMode* is set to "*None"*.  
+The size of a barcode image can be managed according to different sizing modes that can be set by initializing the [*AutoSizeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) property of class *BaseGenerationParameters*. This parameter can take the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes imply that barcode image size gets adjusted according to the required values of width and height while most of the other parameters are ignored. In contrast, the *None* mode defines the size of a barcode image ignoring width and height but considers other parameters, for example, such as [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodeparameters/properties/xdimension). By default, *AutoSizeMode* is set to "*None*".  
    
 Below, the available barcode sizing modes are described in detail along with sample barcode labels and code snippets.
 
@@ -86,7 +89,7 @@ gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
 
 ```
   
-## **Barcode Rotation**
+## **Set Barcode Rotation Angle**
 ***Aspose.BarCode for .NET*** enables barcode image rotation that can be performed by initializing the [*RotationAngle*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters/properties/rotationangle) property of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/basegenerationparameters). Setting this property to a value in degrees results in generating a barcode image rotated according to the required angle clockwise or counterclockwise.  
   
 The sample barcode images rotated by different angles are represented below.
@@ -113,7 +116,7 @@ gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
 
 ```
   
-## **Customizing Barcode Borders and Padding**
+## **Customize Barcode Borders and Padding**
 ***Aspose.BarCode for .NET*** enables adjusting barcode borders and paddings during barcode generation. By default, borders are placed tightly to image edges; then, corresponding paddings may be specified.
   
 ### **Border Settings**
