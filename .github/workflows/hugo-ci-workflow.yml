@@ -14,6 +14,8 @@ jobs:
       - name: hugo build
         run: |
           cd aspose-barcode-docs
+          pwd
+          id
           git clone --branch master https://github.com/aspose-barcode/Aspose.BarCode-Documentation.git || (cd Aspose.BarCode-Documentation && git checkout master && git pull)
           git clone --single-branch --branch master https://git.dev.dynabic.com/containerize-hugo/lutsk-aspose-prototype.git || (cd lutsk-aspose-prototype && git pull)
           cd lutsk-aspose-prototype
