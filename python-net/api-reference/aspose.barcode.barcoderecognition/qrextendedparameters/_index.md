@@ -3,7 +3,7 @@ title: QRExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 230
+weight: 220
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/qrextendedparameters/
 ---
 

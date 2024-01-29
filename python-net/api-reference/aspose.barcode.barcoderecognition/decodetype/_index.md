@@ -3,7 +3,7 @@ title: DecodeType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 160
+weight: 150
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/decodetype/
 ---
 
@@ -100,6 +100,7 @@ The DecodeType type exposes the following members:
 |HAN_XIN|Specifies that the data should be decoded with Han Xin Code barcode specification|
 |GS1_HAN_XIN|Specifies that the data should be decoded with GS1 Han Xin Code barcode specification|
 |GS1_COMPOSITE_BAR|Specifies that the data should be decoded with GS1 Composite Bar barcode specification|
+|RECT_MICRO_QR|Specifies that the data should be decoded with RectMicroQR (rMQR) Code barcode specification|
 |TYPES_1D|Specifies that data will be checked with all of 1D barcode symbologies|
 |TYPES_2D|Specifies that data will be checked with all of 2D barcode symbologies|
 |POSTAL_TYPES|Specifies that data will be checked with all of 1.5D Postal barcode symbologies, like Planet, Postnet, AustraliaPost, OneCode, RM4SCC, DutchKIX|

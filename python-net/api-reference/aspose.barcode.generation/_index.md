@@ -79,6 +79,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[MacroCharacter](/barcode/python-net/api-reference/aspose.barcode.generation/macrocharacter/)|Macro Characters 05 and 06 values are used to obtain more compact encoding in special modes.<br/>            05 Macro craracter is translated to "[)>\u001E05\u001D" as decoded data header and "\u001E\u0004" as decoded data trailer.<br/>            06 Macro craracter is translated to "[)>\u001E06\u001D" as decoded data header and "\u001E\u0004" as decoded data trailer.|
 |[MaxiCodeEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeencodemode/)|Encoding mode for MaxiCode barcodes.|
 |[MaxiCodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodemode/)|Encoding mode for MaxiCode barcodes.|
+|[MicroQRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/microqrversion/)|Version of MicroQR Code.<br/>            From M1 to M4.|
 |[PatchFormat](/barcode/python-net/api-reference/aspose.barcode.generation/patchformat/)|PatchCode format. Choose PatchOnly to generate single PatchCode. Use page format to generate Patch page with PatchCodes as borders|
 |[Pdf417CompactionMode](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417compactionmode/)|Pdf417 barcode compaction mode|
 |[Pdf417ErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417errorlevel/)|pdf417 barcode's error correction level, from level 0 to level 9, level 0 means no error correction, level 8 means best error correction|
@@ -87,5 +88,6 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[QREncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodetype/)|QR / MicroQR selector mode. Select ForceQR for standard QR symbols, Auto for MicroQR.<br/>            ForceMicroQR is used for strongly MicroQR symbol generation if it is possible.|
 |[QRErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/qrerrorlevel/)|Level of Reed-Solomon error correction. From low to high: LevelL, LevelM, LevelQ, LevelH.|
 |[QRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/qrversion/)|Version of QR Code.<br/>            From Version1 to Version40 for QR code and from M1 to M4 for MicroQr.|
+|[RectMicroQRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/rectmicroqrversion/)|Version of RectMicroQR Code.<br/>            From version R7x43 to version R17x139.|
 |[TextAlignment](/barcode/python-net/api-reference/aspose.barcode.generation/textalignment/)|Text alignment.|
 |[TwoDComponentType](/barcode/python-net/api-reference/aspose.barcode.generation/twodcomponenttype/)|Type of 2D component|

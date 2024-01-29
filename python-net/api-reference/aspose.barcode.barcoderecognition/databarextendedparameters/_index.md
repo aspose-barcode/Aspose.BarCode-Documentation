@@ -3,7 +3,7 @@ title: DataBarExtendedParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 140
+weight: 130
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/databarextendedparameters/
 ---
 

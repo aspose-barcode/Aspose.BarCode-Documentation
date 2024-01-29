@@ -63,7 +63,9 @@ The EncodeTypes type exposes the following members:
 |MAXI_CODE|Specifies that the data should be encoded with MaxiCode barcode specification|
 |DOT_CODE|Specifies that the data should be encoded with DotCode barcode specification|
 |HAN_XIN|Specifies that the data should be encoded with Han Xin barcode specification|
-|GS1_HAN_XIN|2D barcode symbology QR with GS1 string format|
+|GS1_HAN_XIN|2D barcode symbology HanXin with GS1 string format|
+|MICRO_QR|Specifies that the data should be encoded with MicroQR Code barcode specification|
+|RECT_MICRO_QR|Specifies that the data should be encoded with RectMicroQR (rMQR) Code barcode specification|
 |AUSTRALIA_POST|Represents Australia Post Customer BarCode|
 |POSTNET|Specifies that the data should be encoded with Postnet barcode specification|
 |PLANET|Specifies that the data should be encoded with Planet barcode specification|

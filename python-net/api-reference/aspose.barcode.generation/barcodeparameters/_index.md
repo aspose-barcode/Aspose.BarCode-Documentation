@@ -38,7 +38,7 @@ The BarcodeParameters type exposes the following members:
 |dot_code|DotCode parameters.|
 |itf|ITF parameters.|
 |pdf417|PDF417 parameters.|
-|qr|QR parameters.|
+|qr|QR, MicroQR and RectMicroQR parameters.|
 |supplement|Supplement parameters. Used for Interleaved2of5, Standard2of5, EAN13, EAN8, UPCA, UPCE, ISBN, ISSN, ISMN.|
 |maxi_code|MaxiCode parameters.|
 |aztec|Aztec parameters.|
