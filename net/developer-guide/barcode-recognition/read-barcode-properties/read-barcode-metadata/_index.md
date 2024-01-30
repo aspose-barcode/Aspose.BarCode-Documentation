@@ -16,6 +16,7 @@ To read metadata from *PDF417* and *Micro PDF417* barcodes, ***Aspose.BarCode fo
 ### **Read Structured Append and Macro fields from PDF417 and Micro PDF417 Barcodes**  
 
 Described in the table Structured Append and Macro fields can be read from *PDF417* and *Micro PDF417* Barcodes:
+
 |PDF417 Metadata Field|Description|
 |---|---|
 |[*Pdf417MacroFileID*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrofileid)|Unique identifier of a barcode series or PDF417 file|
@@ -27,7 +28,7 @@ Described in the table Structured Append and Macro fields can be read from *PDF4
 |[*Pdf417MacroTimeStamp*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrotimestamp)|Time of creating/sending the file|
 |[*Pdf417MacroAddressee*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macroaddressee)|Address of the file sender|
 |[*Pdf417MacroSender*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417macrosender)|Name of the file sender|
-  
+
 The following code snippet shows how to get Structured Append and Macro fields from a sample *PDF417* barcode provided below.    
  
 ``` csharp
