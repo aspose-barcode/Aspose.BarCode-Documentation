@@ -11,11 +11,11 @@ aliases:
 ## **Software Requirements**
 The following requirements need to be fulfilled before downloading and running the code samples of ***Aspose.BarCode for .NET*** applications.
 
-1. Visual Studio version 2019 or later
+1. Visual Studio version 2022 or later
 2. The project with examples uses the *NuGet Automatic Package Restore* feature. Therefore, active Internet connection is necessary to install this package. If you have any problems with automatic restoring or downloading the project through NuGet, you can check this [article](https://docs.microsoft.com/nuget/consume-packages/package-restore-troubleshooting) or ask for help on [**Aspose Technical Forum**](https://forum.aspose.com/c/barcode/13)
 
 ## **Download Examples from GitHub**
-All code examples available for ***Aspose.BarCode for .NET*** are hosted on [GitHub](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/tree/master/Examples). The project requires at least fully updated Visual Studio 2019 with .Net Framework 4.8 and .Net 5 or later versions installed.    
+All code examples available for ***Aspose.BarCode for .NET*** are hosted on [GitHub](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET/tree/master/Examples). The project requires at least fully updated Visual Studio 2022 with .Net Framework 4.8 and .Net 6.0 or later versions installed.    
 To work with it, the following steps should be executed:
 1. Either clone the repository using a preferred GitHub client or download the ZIP file from [here](https://github.com/asposebarcode/Aspose_BarCode_NET/archive/master.zip)
 2. Extract the contents of the ZIP file to any folder on your computer. All examples are located in **Examples** folder

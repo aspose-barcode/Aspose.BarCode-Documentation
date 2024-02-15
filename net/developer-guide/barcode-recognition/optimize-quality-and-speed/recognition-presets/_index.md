@@ -1,42 +1,61 @@
 ---
 title: Recognition Quality Presets
 type: docs
-description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
+description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different quality options presets and setting various options"
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C#"
-weight: 20
+weight: 10
 feedback: BARCODECOM
 url: /net/recognition-quality-presets/
+aliases:
+- /net/recognition-quality-modes/
+- /net/recognition-modes-and-presets/
 
 ---
-
-## **Manage Reading Speed and Quality Using Presets**
-***Aspose.BarCode for .NET*** provides class [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) that allows enabling and disabling various algorithms for image recovery to read barcodes with distortions or artifacts. See the article [**Recognition Specifics**](/barcode/net/recognition-specifics/) for more information about special cases of barcode recognition. Moreover, class [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) provides special parameters to customize the trade-off between reading speed and quality in regular situations. Such parameters are grouped into several presets that facilitate image recovery and barcode reading for different recognition scenarios.
+{{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
+## **Overview**
+***Aspose.BarCode for .NET*** provides class [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) that allows enabling and disabling various algorithms for image recovery to read barcodes with distortions or artifacts. In this way, class [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) provides special parameters to customize the trade-off between reading speed and quality in regular situations. Such parameters are grouped into several presets that facilitate image recovery and barcode reading for different recognition scenarios.
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Supported Presets**
-This section provides detailed information about supported recognition presets, including *NormalQuality*, *HighPerformance*, *HighQuality*, *MaxBarCodes*, manually configured options, and others, as listed in the table below. By default, [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) uses the *NormalQuality* preset. 
+This section provides detailed information about supported recognition presets, including *NormalQuality*, *HighPerformance*, *HighQuality*, *MaxQuality, as listed in the table below. By default, [*QualitySettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings) uses the *NormalQuality* preset.
 
 |Recognition Preset|Description|
 |---|---|
-|[*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality)|Suitable for the most of barcodes with regular quality|
-|[*HighQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality)|Intended for work with low-quality barcodes; it allows reading and decoding diagonal and severely corrupted barcodes|
-|[*HighPerformance*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance)|Suggested for high-quality barcode images|
-|[*HighQualityDetection*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highqualitydetection)|Similar to the *NormalQuality* one but has the [*DetectorSettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/detectorsettings) parameter set to [*HighQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesvmdetectorsettings/properties/highquality)|
-|[*MaxQualityDetection*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxqualitydetection)|Similar to the *NormalQuality* one but with the [*DetectorSettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/detectorsettings) set to [*MaxQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodesvmdetectorsettings/properties/maxquality). It is applicable to detect diagonal and damaged barcodes|
-|[*MaxBarcodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes)|Allows reading all potential barcodes in an image, even incorrect ones. It is recommended for use for debugging purposes only|
-  
-### **Universal Presets for All Barcode Types**
-***Aspose.BarCode for .NET*** provides several universal recognition quality setting presets, such as [*HighPerformance*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance), [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality), and [*HighQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality). These presets allow establishing linear dependence between recognition quality and speed for all barcode types, including 1D, 2D, and postal symbologies. In most cases, the [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) preset used by default is sufficient for the majority of barcodes that provide normal scanning quality. 
-  
-The following code snippet illustrates how to apply universal recognition presets to the sample image provided below.
-  
-<p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
-  
-{{< highlight csharp>}}
-Console.WriteLine("QualityPresetsMain:");
+|[*HighPerformance*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance)| Suggested for high-quality barcode images |
+|[*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality)| Suitable for the most of barcodes with regular quality |
+|[*HighQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality)| Intended for work with low-quality barcodes |
+|[*MaxQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality)| Intended for work with low-quality barcodes and uses all of the recognition methods. The recognuizton quality almost the same as *HighQuality* |
 
-//read barcode image with QualitySettings set to HighPerformance
-Console.WriteLine("QualitySettings: HighPerformance");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128, 
+
+## **Supported Options**
+This section provides detailed information about supported manually configured options, including *XDimension*, *BarcodeQuality*, *Deconvolution*, *InverseImage*, *ComplexBackground*, and others, as listed in the table below. 
+
+|Recognition Options|Description|
+|---|---|
+|[*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension)| Recognition mode which uses knowledge about barcode minimal element: matrix cell or bar. The knowledge about barcode minimal element is used to cutoff noise, text and non-barcode elements to increase performance. With using [*UseMinimalXDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/xdimensionmode/) other property [*MinimalXDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension) is used to set minimal barcode element |
+|[*MinimalXDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension)| Minimal size of [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension) in pixels which is used with [*UseMinimalXDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/xdimensionmode/) |
+|[*BarcodeQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/barcodequality)| Mode which selects and enables methods to recognize barcode elements with the selected quality. Barcode elements with lower quality requires more heavy recognition methods which slows the recognition |
+|[*Deconvolution*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/deconvolution)| Deconvolution (image restorations) mode defines level of image degradation. Originally deconvolution is a function which can restore image degraded (convoluted) by any natural function like blur, during obtaining image by camera. Because we cannot detect image function which corrupt the image, we have to check most well-known functions like [sharp](https://en.wikipedia.org/wiki/Kernel_(image_processing)) or [mathematical morphology](https://en.wikipedia.org/wiki/Mathematical_morphology) |
+|[*InverseImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/inverseimage)| Mode which enables or disables additional recognition of barcodes on images with inverted colors (luminance) |
+|[*ComplexBackground*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/complexbackground)| Mode which enables or disables additional recognition of color barcodes on color images |
+|[*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes)| Mode allows engine to recognize barcodes which has incorrect checksum or incorrect values. Mode can be used to recognize or mark damaged barcodes with incorrect text |
+
+## **Deference in Barcode Reading with Quality Presets**
+***Aspose.BarCode for .NET*** provides several universal recognition quality setting presets, such as [*HighPerformance*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance), [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality), [*HighQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality) and [*MaxQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality). These presets allow establishing dependence between recognition quality and speed for all barcode types. In most cases, the [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) preset, used by default is sufficient for the majority of barcodes that provide normal scanning quality.
+
+The following table shows difference in recognition quality, depends on preset.
+
+<p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
+
+| HighPerformance Preset | NormalQuality Preset | HighQuality Preset | MaxQuality Preset | MaxQuality Preset and Incorrect Barcodes|
+|---|---|---|---|---|
+| Recognized barcodes: **5** | Recognized barcodes: **7** | Recognized barcodes: **10** | Recognized barcodes: **10** | Recognized barcodes: **12** |
+
+``` csharp
+Console.WriteLine("ReadQualityPresets:");
+//recognize image with HighPerformance
+Console.WriteLine("ReadQualityPresets: HighPerformance");
+using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
     DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
 {
     read.QualitySettings = QualitySettings.HighPerformance;
@@ -45,8 +64,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//read barcode image with QualitySettings set to NormalQuality
-Console.WriteLine("QualitySettings: NormalQuality");
+//recognize image with NormalQuality
+Console.WriteLine("ReadQualityPresets: NormalQuality");
 using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
     DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
 {
@@ -56,8 +75,8 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
 
-//read barcode image with QualitySettings set to HighQuality
-Console.WriteLine("QualitySettings: HighQuality");
+//recognize image with HighQuality
+Console.WriteLine("ReadQualityPresets: HighQuality");
 using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
     DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
 {
@@ -66,142 +85,139 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
-  
-<details>  
-<summary>View the results of code execution</summary>
-  
-QualityPresetsMain:  
-- QualitySettings: **HighPerformance**  
-Barcodes read: 2  
-Code128:Aspose Code 04  
-Aztec:Aspose Regular  
-- QualitySettings: **NormalQuality**  
-Barcodes read: 6  
-Code128:Aspose Code 04  
-Aztec:Aspose Regular  
-Code39Extended:/YYAD25HL  
-DataMatrix:D19-WQ9-F91046-0811  
-Code39Extended:0058  
-Planet:990000837284  
-- QualitySettings: **HighQuality**  
-Barcodes read: 8  
-Code128:Aspose Code 04  
-Aztec:Aspose Regular  
-Aztec:Aspose Inverse  
-Code128:JJBEA129955634111200235  
-MicroQR:FV50CE  
-DataMatrix:D19-WQ9-F91046-0811  
-Code39Extended:0058  
-Planet:990000837284  
-  
-</details>
 
-### **Presets for 1D Barcode Types**
-To read 1D barcodes, ***Aspose.BarCode for .NET*** provides special quality setting presets that are intended for working with normal quality barcodes and at the same time, enable improved parameters for the detection and recognition of 1D barcodes. These presets can be particularly useful in cases when it is necessary to scan barcodes of small dimensions that are difficult for detecting and recognizing from complex documents with many textual blocks and tables. Specifically, using [*HighQualityDetection*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/highqualitydetection) and [*MaxQualityDetection*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxqualitydetection) presets allows getting much better recognition results for 1D barcodes in complex documents compared with basic settings. Similar improvements can be achieved by using the [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) preset and specifying the appropriate settings in [*DetectorSettings*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/detectorsettings).  
-  
-The image below illustrates an example of a document with various barcodes presented in this document along with textual parts and illustrations. 
-
-<p align="center"><img src="many_code128.png" height="45%" width="45%"></p>
-  
-The following code snippet explains how to set recognition quality parameters to ensure accurate detection and decoding of all 1D barcodes of target symbologies. 
-
-{{< highlight csharp>}}
-Console.WriteLine("QualityPresetsOneD:");
-
-//read barcode image with QualitySettings set to NormalQuality
-Console.WriteLine("QualitySettings: NormalQuality");
-using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeType.Code128))
-{
-    read.QualitySettings = QualitySettings.NormalQuality;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
-}
-
-//read barcode image with QualitySettings set to HighQualityDetection
-Console.WriteLine("QualitySettings: HighQualityDetection");
-using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeType.Code128))
-{
-    read.QualitySettings = QualitySettings.HighQualityDetection;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
-}
-
-//read barcode image with QualitySettings set to MaxQualityDetection
-Console.WriteLine("QualitySettings: MaxQualityDetection");
-using (BarCodeReader read = new BarCodeReader($"{path}many_code128.png", DecodeType.Code128))
-{
-    read.QualitySettings = QualitySettings.MaxQualityDetection;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
-}
-{{< /highlight >}}
-
-<details>  
-<summary>View the results of code execution</summary>
-  
-QualityPresetsOneD:  
-- QualitySettings: **NormalQuality**  
-Barcodes read: 2  
-Code128:Aspose Code 03  
-Code128:Aspose Code 04  
-- QualitySettings: **HighQualityDetection**  
-Barcodes read: 4  
-Code128:Aspose Diag 01  
-Code128:Aspose Code 02  
-Code128:Aspose Code 03  
-Code128:Aspose Code 04  
-- QualitySettings: **MaxQualityDetection**  
-Barcodes read: 5  
-Code128:Aspose Diag 01  
-Code128:Aspose Code 02  
-Code128:Aspose Code 03  
-Code128:Aspose Code 01  
-Code128:Aspose Code 04  
-  
-</details>
-
-### **Preset ***MaxBarCodes*** for Debugging**
-To read all barcodes potentially presented in an image including incorrect ones, ***Aspose.BarCode for .NET*** provides a special preset called [*MaxBarCodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes). This preset applies recognition quality settings that allow recovering up to 1% more barcodes (severely corrupted or erroneous ones) compared with the results achievable using the [*NormalQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) preset. Similar recognition quality settings can be enabled using the [*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) property.
-Although the [*MaxBarCodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes) mode may be useful to decode barcodes that otherwise are unreadable, it should be used for debugging purposes only, as applying this parameter may lead to notably increasing the time required to complete the recognition process and producing incorrect recognition outputs. This preset is recommended for use only for advanced users of the ***Aspose.BarCode*** library. 
-  
-The following code snippet explains how to work with the [*MaxBarCodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/maxbarcodes) preset.
-
-{{< highlight csharp>}}
-Console.WriteLine("MaxBarCodesPreset:");
-
-//read barcode image with QualitySettings set to MaxBarCodes
-Console.WriteLine("QualitySettings: MaxBarCodes");
+//recognize image with MaxQuality
+Console.WriteLine("ReadQualityPresets: MaxQuality");
 using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
     DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
 {
-    read.QualitySettings = QualitySettings.MaxBarCodes;
+    read.QualitySettings = QualitySettings.MaxQuality;
     Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+
+//recognize image with MaxQuality and Incorrect Barcodes
+Console.WriteLine("ReadQualityPresets: MaxQuality and Incorrect Barcodes");
+using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
+    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
+{
+    read.QualitySettings = QualitySettings.MaxQuality;
+    read.QualitySettings.AllowIncorrectBarcodes = true;
+    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
+    foreach (BarCodeResult result in read.FoundBarCodes)
+        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+}
+```
 
 <details>  
 <summary>View the results of code execution</summary>
-  
-MaxBarCodesPreset:  
-- QualitySettings: MaxBarCodes  
-Barcodes read: 11  
-Code128:Aspose Code 04  
-Code128:Aspose Code 01  
-Aztec:Aspose Regular  
-Aztec:Aspose Inverse  
-Code128:JJBEA129955634111200235  
-MicroQR:FV50CE  
-QR:Aspose QR  
-DataMatrix:D19-WQ9-F91046-0811  
-Pdf417:Aspose Pdf417  
-Code39Extended:0058  
-Planet:990000837284  
-  
+
+```text
+ReadQualityPresets:
+ReadQualityPresets: HighPerformance
+Barcodes read: 5
+Code128:Aspose Code 04
+Aztec:Aspose Regular
+Code39Extended:/YYAD25HL
+MicroQR:FV50CE
+Code39Extended:0058
+ReadQualityPresets: NormalQuality
+Barcodes read: 7
+Code128:Aspose Code 04
+Aztec:Aspose Regular
+Code39Extended:/YYAD25HL
+MicroQR:FV50CE
+DataMatrix:D19-WQ9-F91046-0811
+Code39Extended:0058
+Planet:990000837284
+ReadQualityPresets: HighQuality
+Barcodes read: 10
+Code128:Aspose Code 04
+Code128:Aspose Code 01
+Aztec:Aspose Regular
+Aztec:Aspose Inverse
+Code128:JJBEA129955634111200235
+Code128:EASYAPANEXO
+MicroQR:FV50CE
+DataMatrix:D19-WQ9-F91046-0811
+Code39Extended:0058
+Planet:990000837284
+ReadQualityPresets: MaxQuality
+Barcodes read: 10
+Code128:Aspose Code 04
+Code128:Aspose Code 01
+Aztec:Aspose Regular
+Aztec:Aspose Inverse
+Code128:JJBEA129955634111200235
+Code128:EASYAPANEXO
+MicroQR:FV50CE
+DataMatrix:D19-WQ9-F91046-0811
+Code39Extended:0058
+Planet:990000837284
+ReadQualityPresets: MaxQuality and Incorrect Barcodes
+Barcodes read: 12
+Code128:Aspose Code 04
+Code128:Aspose Code 01
+Aztec:Aspose Regular
+Aztec:Aspose Inverse
+Code128:JJBEA129955634111200235
+Code128:EASYAPANEXO
+MicroQR:FV50CE
+QR:Aspose QR
+DataMatrix:D19-WQ9-F91046-0811
+Pdf417:Aspose Pdf417
+Code39Extended:0058
+Planet:990000837284
+```
+
 </details>
 
+## **Read Evidently Incorrect Barcodes**
+To read all barcodes potentially presented in an image including incorrect ones, ***Aspose.BarCode for .NET*** provides a special option called [*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes). This option tries to mark or partially recognize barcodes which could not pass checksum check and can be used only for debugging purposes. In this case, the barcode data is decoded with the [*Confidence*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) level being *None*, which means that the correctness of recognition is not guaranteed.  
+
+The following code snippet explains how to force the recognition of the barcode known as unreadable:
+
+<p align="center"><img src="pdf417_qr_corrupted.png" width="30%" height="30%"></p>
+
+| Incorrect Barcodes: disabled | Incorrect Barcodes: enabled |
+|---|---|
+| Recognized barcodes: **0** | Recognized barcodes: **2** |
+
+``` csharp
+Console.WriteLine("ReadIncorrectBarcodes:");
+//recognize image with disabled AllowIncorrectBarcodes
+Console.WriteLine("AllowIncorrectBarcodes: false");
+using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.QR, DecodeType.Pdf417))
+{
+    read.QualitySettings.AllowIncorrectBarcodes = false;
+    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
+    foreach (BarCodeResult result in read.FoundBarCodes)
+        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+}
+
+//recognize image with enambled AllowIncorrectBarcodes
+Console.WriteLine("AllowIncorrectBarcodes: true");
+using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.QR, DecodeType.Pdf417))
+{
+    read.QualitySettings.AllowIncorrectBarcodes = true;
+    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
+    foreach (BarCodeResult result in read.FoundBarCodes)
+        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+}
+```
+
+<details>  
+<summary>View the results of code execution</summary>
+
+```text  
+ReadIncorrectBarcodes:
+AllowIncorrectBarcodes: false
+Barcodes read: 0
+AllowIncorrectBarcodes: true
+Barcodes read: 2
+Pdf417:Aspose Pdf417
+QR:Aspose QR
+```
+
+</details>

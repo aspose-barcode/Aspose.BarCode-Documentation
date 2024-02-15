@@ -18,70 +18,67 @@ It should be noted that the serialization of the information about a barcode ima
 
 ## **Save Barcode Recognition State to XML**
 ***Aspose.BarCode for .NET*** provides two ways to obtain the current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): to an XML file through the [*ImportToXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition.barcodereader/importfromxml/methods/1) function or a stream using the [*ImportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml) function. The code snippet below illustrates how to perform the serialization of the barcode recognition state to an XML file.   
-
-{{< highlight csharp>}}
+``` csharp
 //init barcode reader
 using (BarCodeReader read = new BarCodeReader())
 {
-    read.SetBarCodeReadType(DecodeType.Pdf417);
     read.BarcodeSettings.StripFNC = true;
-    read.QualitySettings.MedianSmoothingWindowSize = 5;
+    read.QualitySettings.XDimension = XDimensionMode.Small;
     ////serialize BarCodeReader to file
     read.ExportToXml($"{path}readerPdf417.xml");
 }
-{{< /highlight >}}
+```
 
 ## **Load Barcode Recognition State from XML**
 The current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) can be loaded from an XML file through the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition.barcodereader/importfromxml/methods/1) function or from a stream through the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml) function. The target barcode image needs to be specified using the group of properties called [*SetBarCodeImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/setbarcodeimage/index). The following code snippet explains how to load the state of a [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader) object from an XML file. 
 
-{{< highlight csharp>}}
+``` csharp
 //load BarCodeReader from file
 Console.WriteLine("BarCodeReaderSerialization:");
 using (BarCodeReader read = BarCodeReader.ImportFromXml($"{path}readerPdf417.xml"))
 {
-    //set the recognized file because it is not stored
+    //set the recognized file and barcode type because they are not stored
     read.SetBarCodeImage($"{recpath}many_pdf417.png");
+    read.SetBarCodeReadType(DecodeType.Pdf417);
     //initialized data
     Console.WriteLine($"StripFNC:{read.BarcodeSettings.StripFNC}");
-    Console.WriteLine($"MedianSmoothingWindowSize:{read.QualitySettings.MedianSmoothingWindowSize}");
+    Console.WriteLine($"MedianSmoothingWindowSize:{read.QualitySettings.XDimension.ToString()}");
     //read
     Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 
 ## **Load and Save Barcode Recognition State from Stream**
 ***Aspose.BarCode for .NET*** enables saving the barcode recognition state or loading it from streams using special functions [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/exporttoxml) and [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml), respectively. The target barcode image needs to be set explicitly using the group of properties called [*SetBarCodeImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/methods/setbarcodeimage/index). The following code snippet demonstrates how to save the barcode recognition state and load it from a stream. 
 
-{{< highlight csharp>}}
-//stream 
-MemoryStream ms = new MemoryStream();
-
+``` csharp
 //init barcode reader
 using (BarCodeReader read = new BarCodeReader())
 {
     read.SetBarCodeReadType(DecodeType.Pdf417);
     read.BarcodeSettings.StripFNC = true;
-    read.QualitySettings.MedianSmoothingWindowSize = 5;
+    read.QualitySettings.XDimension = XDimensionMode.Small;
     ////serialize BarCodeReader to stream
     read.ExportToXml(ms);
     ms.Position = 0;
 }
 
-//load an instance of BarCodeReader from stream
+//load BarCodeReader from file
 Console.WriteLine("BarCodeReaderStreamSerialization:");
 using (BarCodeReader read = BarCodeReader.ImportFromXml(ms))
 {
-    //set the recognized file because it is not stored
+    //set the recognized file and barcode type because they are not stored
     read.SetBarCodeImage($"{recpath}many_pdf417.png");
+    read.SetBarCodeReadType(DecodeType.Pdf417);
     //initialized data
     Console.WriteLine($"StripFNC:{read.BarcodeSettings.StripFNC}");
-    Console.WriteLine($"MedianSmoothingWindowSize:{read.QualitySettings.MedianSmoothingWindowSize}");
+    Console.WriteLine($"MedianSmoothingWindowSize:{read.QualitySettings.XDimension.ToString()}");
     //read
     Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
