@@ -13,9 +13,10 @@ You can locate Aspose.BarCode for Reporting Services library with system tools. 
 <img style="border:1px solid black;" src="add_componenttovs_01.png" alt="Locate Aspose.BarCode.ReportingServices.dll" />
 
 Other way you can locate the library in predefined folder:
- - **VS2019** folder: ***C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS***
+- **VS2022** folder: ***C:\Program Files\Microsoft Visual Studio\2022\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS***
+- **VS2019** folder: ***C:\Program Files (x86)\Microsoft Visual Studio\2019\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS***
 - **VS2017** folder: ***C:\Program Files (x86)\Microsoft Visual Studio\2017\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS***
-- **VS2015** folder: ***C:\Program Files\Microsoft Visual Studio 14.0\Common7\IDE\PrivateAssemblies***
+- **VS2015** folder: ***C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PrivateAssemblies***
 - **VS2013** folder: ***C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PrivateAssemblies***
 - **VS2012** folder: ***C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\PrivateAssemblies***
 - **VS2010** folder: ***C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies***

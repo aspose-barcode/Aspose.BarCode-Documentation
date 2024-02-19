@@ -7,10 +7,10 @@ url: /reportingservices/product-overview/
 ## **Product Description**
 ***Aspose.BarCode for Reporting Services*** is designed to use with all exists on the market Microsoft Reporting Services engines. It is designed for both: easy visual barcode labels development and rich barcode generation with special barcode options.
 
-***Aspose.BarCode for Reporting Services*** allows visually create more then 70 barcode label formats. These barcode labels can be rendered with high resolution in various formats: ***BMP***, ***JPEG***, ***GIF***, ***TIFF*** and ***PNG***. Moreover, ***Aspose.BarCode for Reporting Services*** library supports ***Custom Code*** features and allows to use all of ***Aspose.BarCode for .Net*** rich generation features.
+***Aspose.BarCode for Reporting Services*** allows visually create more then 80 barcode label formats. These barcode labels can be rendered with high resolution in various formats: ***BMP***, ***JPEG***, ***GIF***, ***TIFF*** and ***PNG***. Moreover, ***Aspose.BarCode for Reporting Services*** library supports ***Custom Code*** features and allows to use all of ***Aspose.BarCode for .Net*** rich generation features.
 
 ## **Features**
-- Generate 60+ barcode symbologies visually with light weight [Custom Report Items](https://docs.microsoft.com/sql/reporting-services/custom-report-items/custom-report-items) component or with a few lines of code.
+- Generate 80+ barcode symbologies visually with light weight [Custom Report Items](https://docs.microsoft.com/sql/reporting-services/custom-report-items/custom-report-items) component or with a few lines of code.
 - Wide range of options to manipulate barcode image appearance.
 - Generate barcodes with special barcode parameters, like error correction mode, ECI or embedded metadata.
 - Create device resolution dependent barcode images.

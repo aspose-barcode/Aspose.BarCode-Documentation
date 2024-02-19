@@ -5,81 +5,29 @@ weight: 20
 url: /reportingservices/barcode-types-and-image-formats/
 ---
 ## **Supported Barcode Types**
-***Aspose.BarCode for Reporting Services*** supports over 70 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries. These include linear (1D), Postal and 2D barcode symbols.
+***Aspose.BarCode for Reporting Services*** supports over 80 different [barcode types](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes) used in a variety of industries. These include linear (1D), Postal and 2D barcode symbols.
 
-### **Linear (1D) barcodes**
-***Linear barcode types*** is a first generation of one-dimensional barcodes that consists from bars and spaces of various widths that create specific patterns. Linear barcodes, supported by ***Aspose.BarCode for Reporting Services***, include following barcode types:
-- Code 11, 
-- Code 128, 
-- Code 32, 
-- Code 39, 
-- Code 93, 
-- Codabar, 
-- Code 16K, 
-- CodablockF, 
-- Databar OmniDirectional, 
-- Databar Stacked OmniDirectional, 
-- Databar Limited, 
-- Databar Truncated,
-- Databar Stacked, 
-- Databar Expanded, 
-- Databar Expanded Stacked, 
-- EAN 13, 
-- EAN 14, 
-- EAN 8, 
-- GS1 CodablockF, 
-- GS1 Code 128, 
-- IATA 2 of 5, 
-- Italian Post 25, 
-- Interleaved 2 of 5, 
-- ISBN
-- ISMN, 
-- ISSN, 
-- ITF 14, 
-- ITF 6, 
-- Matrix 2 of 5, 
-- MSI, 
-- OPC, 
-- PatchCode, 
-- Pharmacode, 
-- PZN, 
-- SSCC 14, 
-- SSCC 18, 
-- Standard 2 of 5, 
-- EAN 5, 
-- EAN 2, 
-- UPC A, 
-- UPC E, 
-- UpcaGs1DatabarCoupon, 
-- VIN.
+**Linear barcode types**, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding only numbers, while others permit encoding also letters.  
 
-### **Postal barcodes**
-***Postal barcode types*** are barcode types which are used by Postal Services in variety of countries. Postal barcodes, supported by ***Aspose.BarCode for Reporting Services***, include following barcode types:
-- Australia Post, 
-- AustralianPosteParcel, 
-- Deutsche Post Identcode, 
-- Deutsche Post Leticode, 
-- Planet, 
-- Postnet, 
-- RM4SCC, 
-- SingaporePost, 
-- SwissPostParcel, 
-- USPS OneCode.
+**DataBar barcodes** (former RSS-14) are 1D and 1D staked barcodes, which were developed to efficiently encode [*GS1 Application Identifier*](https://ref.gs1.org/ai/?lang=en) data.
 
-### **2D barcodes**
-A matrix codes, also known a ***2D barcodes***, is a two-dimensional way to represent information. They are more effective because can contain more data per unit area and most of them are self-correctable. 2D barcodes, supported by ***Aspose.BarCode for Reporting Services***, include following barcode types:
-- Aztec, 
-- Compact PDF 417, 
-- Data Matrix, 
-- DotCode, 
-- GS1 Data Matrix, 
-- GS1 QR, 
-- MaxiCode, 
-- Macro PDF 417, 
-- Micro PDF 417, 
-- PDF 417, 
-- QR, 
-- MicroQR.
+**Matrix barcodes**, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information. Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.  
+  
+**Postal barcodes** are specific symbologies used by postal services in different countries.
+
+**HIBC barcodes** encode data in [special format](https://www.hibcc.org/udi-labeling-standards/barcode-standards/) which is used in Health Industry. As transport, the barcodes use other 1D and 2D barcodes and encode data as Alpha-Numeric.
+
+**GS1 barcodes** use other 1D and 2D barcodes to encode [*GS1 Application Identifier*](https://ref.gs1.org/ai/?lang=en) data.
+
+|Barcode Family|Barcode Types|
+|---|---|
+| 1D Numeric (Linear) |Codabar, Code11, Code128, DataLogic2of5, EAN13, EAN14, EAN8, IATA2of5, ISBN, ISMN, ISSN, ITF14, ITF6, Interleaved2of5, ItalianPost25, MSI, Matrix2of5, OPC, PZN, PatchCode, Pharmacode, SCC14, SSCC18, Standard2of5, UPCA, UPCE|
+| 1D Alpha-Numeric (Linear) |CodablockF, Code128, Code16K, Code32, Code39Extended, Code39Standard, Code93Extended, Code93Standard, VIN|
+| DataBar (RSS-14) |DatabarExpanded, DatabarExpandedStacked, DatabarLimited, DatabarOmniDirectional, DatabarStacked, DatabarStackedOmniDirectional, DatabarTruncated|
+| 2D |Aztec, CompactPdf417, DataMatrix, DotCode, HanXin, MacroPdf417, MaxiCode, MicroPdf417, MicroQR, Pdf417, QR, RectMicroQR(rMQR), Swiss QR Code|
+| Postal |AustraliaPost, AustralianPosteParcel, DeutschePostIdentcode, DeutschePostLeitcode, DutchKIX, Mailmark, Mailmark 2D, OneCode, Planet, Postnet, RM4SCC, SingaporePost, SwissPostParcel|
+| HIBC |HIBCAztecLIC, HIBCAztecPAS, HIBCCode128LIC, HIBCCode128PAS, HIBCCode39LIC, HIBCCode39PAS, HIBCDataMatrixLIC, HIBCDataMatrixPAS, HIBCQRLIC, HIBCQRPAS|
+| GS1 |GS1Aztec, GS1CodablockF, GS1Code128, GS1CompositeBar (GS1 Composite barcode), GS1DataMatrix, GS1DotCode, GS1HanXin, GS1MicroPdf417, GS1QR, UpcaGs1Code128Coupon, UpcaGs1DatabarCoupon|
 
 ## **Supported Image Formats**
 Aspose.BarCode for Reporting Services supports rendering barcode labels in 5 image file formats. These formats can be generated by ***BarcodeGenerator visual component*** and ***BarcodeGenerator class***. The following image formats are supported:

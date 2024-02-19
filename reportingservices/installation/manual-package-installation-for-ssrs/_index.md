@@ -21,6 +21,7 @@ You need proper ***Aspose.BarCode for Reporting Services*** library version whic
 - The **SSRS 2016** assembly is located in the ***Bin\SSRS2016*** directory. 
 - The **SSRS 2017** assembly is located in the ***Bin\SSRS2017*** directory.
 - The **SSRS 2019** assembly is located in the ***Bin\SSRS2019*** directory.
+- The **SSRS 2022** assembly is located in the ***Bin\SSRS2022*** directory.
 
 ## **Locate and copy dll to Report Server installation directory**
 You need to copy proper Aspose.BarCode for Reporting Services library to Report Server directory. You can locate Report Server directories by following paths:
@@ -29,7 +30,7 @@ You need to copy proper Aspose.BarCode for Reporting Services library to Report 
 - The **SSRS 2012** binary folder is located in the ***C:\Program Files\Microsoft SQL Server\MSRS11.X\Reporting Services\ReportServer\bin*** directory.
 - The **SSRS 2014** binary folder is located in the ***C:\Program Files\Microsoft SQL Server\MSRS12.X\Reporting Services\ReportServer\bin*** directory.
 - The **SSRS 2016** binary folder is located in the ***C:\Program Files\Microsoft SQL Server\MSRS13.X\Reporting Services\ReportServer\bin*** directory.
-- The **SSRS 2017** and **SSRS 2019** binary folder is located in the same ***C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin*** directory.
+- The **SSRS 2017**, **SSRS 2019** and **SSRS 2022** binary folder is located in the same ***C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin*** directory.
 
 ## **Register Visual Component**
 To use visual component, you need to register it in configuration file ***rsreportserver.config*** which is located in Report Server installation directory. You need to add the following rows:
