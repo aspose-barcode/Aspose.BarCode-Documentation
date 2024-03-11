@@ -1,22 +1,21 @@
 ---
-title: CodeLocation
+title: ImageParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 510
-url: /python-net/api-reference/aspose.barcode.generation/codelocation/
+weight: 280
+url: /python-net/api-reference/aspose.barcode.generation/imageparameters/
 ---
 
-## CodeLocation enumeration
+## ImageParameters class
 
-Codetext location
+Image parameters.
 
-## Members
-| Member name | Description |
+The ImageParameters type exposes the following members:
+## Properties
+| Name | Description |
 | :- | :- |
-|BELOW|Codetext below barcode.|
-|ABOVE|Codetext above barcode.|
-|NONE|Hide codetext.|
+|svg|SVG parameters|
 
 ### See Also
 

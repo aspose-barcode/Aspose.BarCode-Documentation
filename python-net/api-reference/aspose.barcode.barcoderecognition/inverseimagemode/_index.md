@@ -14,7 +14,7 @@ Mode which enables or disables additional recognition of barcodes on images with
 ## Members
 | Member name | Description |
 | :- | :- |
-|AUTO|At this time the same as Disabled. Disables additional recognition of barcodes on inverse images.|
+|AUTO|Disables additional recognition of barcodes on inverse images for all barcode types except QR Code.|
 |DISABLED|Disables additional recognition of barcodes on inverse images.|
 |ENABLED|Enables additional recognition of barcodes on inverse images|
 

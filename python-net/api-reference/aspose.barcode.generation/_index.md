@@ -40,6 +40,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[HanXinExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinextcodetextbuilder/)|Extended codetext generator for Han Xin Code for Extended Mode of HanXinEncodeMode|
 |[HanXinParameters](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinparameters/)|Han Xin parameters.|
 |[ITFParameters](/barcode/python-net/api-reference/aspose.barcode.generation/itfparameters/)|ITF parameters.|
+|[ImageParameters](/barcode/python-net/api-reference/aspose.barcode.generation/imageparameters/)|Image parameters.|
 |[MaxiCodeExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeextcodetextbuilder/)|Extended codetext generator for MaxiCode barcodes for ExtendedCodetext Mode of MaxiCodeEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
 |[MaxiCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeparameters/)|MaxiCode parameters.|
 |[Padding](/barcode/python-net/api-reference/aspose.barcode.generation/padding/)|Paddings parameters.|
@@ -50,6 +51,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[QrParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrparameters/)|QR parameters.|
 |[QrStructuredAppendParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrstructuredappendparameters/)|QR structured append parameters.|
 |[SupplementParameters](/barcode/python-net/api-reference/aspose.barcode.generation/supplementparameters/)|Supplement parameters. Used for Interleaved2of5, Standard2of5, EAN13, EAN8, UPCA, UPCE, ISBN, ISSN, ISMN.|
+|[SvgParameters](/barcode/python-net/api-reference/aspose.barcode.generation/svgparameters/)|SVG parameters.|
 |[SymbologyEncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/symbologyencodetype/)|Symbology encode type. See EncodeTypes to get instance.|
 |[Unit](/barcode/python-net/api-reference/aspose.barcode.generation/unit/)|Specifies the size value in different units (Pixel, Inches, etc.).|
 ## Enumerations

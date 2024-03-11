@@ -3,7 +3,7 @@ title: ITF14BorderType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 600
+weight: 620
 url: /python-net/api-reference/aspose.barcode.generation/itf14bordertype/
 ---
 
