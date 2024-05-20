@@ -23,7 +23,6 @@ The QrParameters type exposes the following members:
 |micro_qr_version|Version of MicroQR Code. From version M1 to version M4.<br/>            Default value is MicroQRVersion.Auto.|
 |rect_micro_qr_version|Version of RectMicroQR Code. From version R7x59 to version R17x139.<br/>            Default value is RectMicroQRVersion.Auto.|
 |aspect_ratio|Height/Width ratio of 2D BarCode module.|
-|code_text_encoding|Gets or sets the encoding of codetext.<br/>            Default value: UTF-8|
 |structured_append|QR structured append parameters.<br/>            Structured append mode is not suppported by MicroQR and RectMicroQR barcodes.|
 
 ### See Also

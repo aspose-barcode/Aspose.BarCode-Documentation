@@ -26,7 +26,6 @@ The DataMatrixParameters type exposes the following members:
 |columns|Columns count.|
 |rows|Rows count.|
 |aspect_ratio|Height/Width ratio of 2D BarCode module.|
-|code_text_encoding|Gets or sets the encoding of codetext.<br/>            Default value: UTF-8|
 |eci_encoding|Gets or sets ECI encoding. Used when DataMatrixEncodeMode is Auto.<br/>            Default value: ISO-8859-1|
 
 ### See Also

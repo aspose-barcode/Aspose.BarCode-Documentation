@@ -3,7 +3,7 @@ title: CustomerInformationInterpretingType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 970
+weight: 980
 url: /python-net/api-reference/aspose.barcode/customerinformationinterpretingtype/
 ---
 

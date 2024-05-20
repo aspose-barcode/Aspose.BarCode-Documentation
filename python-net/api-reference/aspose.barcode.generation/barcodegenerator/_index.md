@@ -26,6 +26,8 @@ The BarcodeGenerator type exposes the following members:
 ## Methods
 | Name | Description |
 | :- | :- |
+|set_code_text(code_bytes)|Set codetext as sequence of bytes.|
+|set_code_text(code_text, encoding)|Encodes codetext with byte order mark (BOM) using specified encoding.|
 |save(stream, format)|Save barcode image to stream in specific format.|
 |save(filename, format)|Save barcode image to specific file in specific format.|
 |save(filename)|Save barcode image to specific file in specific format.|
