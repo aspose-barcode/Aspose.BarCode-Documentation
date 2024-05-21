@@ -174,119 +174,88 @@ gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
 gen.Save($"{path}MicroPdf417AspectRatio5.png", BarCodeImageFormat.Png);
 ```
 
-## **PDF417 Data Encoding Modes**
-To select the data encoding mode in ***Aspose.BarCode for .NET***, it is required to set the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters) that specifies data compaction regimes to be used during barcode generation. To encode Unicode symbols, two other properties, [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) and [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding), can be used. Detailed explanations and code samples for these properties are provided further in the article.
+## **PDF417 Encoding Modes**
 
-### **ECI Encoding Mode**
-Besides encoding Unicode characters into byte streams, the [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417eciencoding) property allows setting the ECI identifier for the current encoding that can be read and correctly interpreted by decoders. In the case of setting this property using any value that differs from *ECIEncodings.NONE*, data processing is performed using the specified ECI encoding. The present library implementation includes all well-known charset encodings that are listed in the [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings) enumeration.  
-  
-The code sample given below illustrates how to set the *ECI Encoding* mode.
-  
-``` csharp
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
-gen.Parameters.Barcode.Pdf417.Columns = 3;
-//set UTF8 ECI encoding
-gen.Parameters.Barcode.Pdf417.Pdf417ECIEncoding = ECIEncodings.UTF8;
-gen.Save($"{path}Pdf417ECIEncoding.png", BarCodeImageFormat.Png);
-//try to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("Pdf417ECIEncoding:" + result.CodeText);
-```
-  
-<p align="center"><img src="pdf417eciencoding.png"></p>
-  
-### **Compaction Mode**
-As mentioned above, to select the required data compaction way, the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property needs to be initialized using one of the supported compaction modes are described below.
-  
-|Compaction Mode|Description|
-|---|---|
-|**Auto**|Encoding is performed in the most high-density data compaction mode that is selected automatically. In the case when [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contents include a digit greater than 255, data compaction is executed using the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding)|
-|**Binary**|This mode is intended to encode binary byte streams with digits from 0 to 255. If [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) contains a digit greater than 255, data compaction is performed using the encoding set in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding)|
-|**Text**|Legacy mode to encode alphanumeric data. It is recommended to use the *Auto* mode|
-|**Numeric**|Legacy mode to encode numerical digits. It is recommended to use the *Auto* mode|
-  
-Barcode images demonstrated below have been generated using different compaction mode settings.
-  
-|Compaction Mode|***Auto***|***Binary***|***Text***|***Numeric***|
-| :-: | :-: | :-: | :-: | :-: |
-| |<img src="pdf417compactionauto.png">|<img src="pdf417compactionbinary.png">|<img src="pdf417compactiontext.png">|<img src="pdf417compactionnumeric.png">|
-  
-The following code snippet explains how to set different compaction modes.
+The barcode library supports different encoding modes to generate *Pdf417* barcodes. The required mode can be selected by setting the [*Pdf417EncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/pdf417encodemode) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). The possible values are defined in the [*Pdf417EncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417encodemode/) enumeration. These modes are briefly described below:
+
+- *Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value. 
+- *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
+- *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
+- *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
+
+### **Encoding Mode *Auto***
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/pdf417eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/pdf417eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026"). The following code sample shows how to generate Pdf417 barcode in the *Auto* mode.    
+
+<p align="center"><img src="pdf417encodemodeauto.png" width="20%" height="20%"></p>
 
 ``` csharp
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
-gen.Parameters.Barcode.Pdf417.Columns = 3;
-//Set compaction mode to Auto
-gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Auto;
-gen.CodeText = "Åspóse.Barcóde©";
-gen.Save($"{path}Pdf417CompactionAuto.png", BarCodeImageFormat.Png);
-//Set compaction mode to Binary
-gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Binary;
-gen.CodeText = "Åspóse.Barcóde©";
-gen.Save($"{path}Pdf417CompactionBinary.png", BarCodeImageFormat.Png);
-//Set compaction mode to Text
-gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Text;
-gen.CodeText = "ASPOSE";
-gen.Save($"{path}Pdf417CompactionText.png", BarCodeImageFormat.Png);
-//Set compaction mode to Numeric
-gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Numeric;
-gen.CodeText = "1234567890";
-gen.Save($"{path}Pdf417CompactionNumeric.png", BarCodeImageFormat.Png);
+using (var gen = new BarcodeGenerator(EncodeTypes.Pdf417, "犬Right狗"))
+{
+    gen.Save($"{path}Pdf417EncodyModeAuto.png", BarCodeImageFormat.Png);
+}
+
 ```
-    
-### **Unicode Encoding Mode**
-The following code sample demonstrates how to use the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/codetextencoding) property to encode Unicode characters in the *Binary* mode.
-  
-``` csharp
-Console.OutputEncoding = Encoding.Unicode;
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
-gen.Parameters.Barcode.Pdf417.Columns = 3;
-//set UTF8 encoding
-gen.Parameters.Barcode.Pdf417.CodeTextEncoding = Encoding.UTF8;
-gen.Save($"{path}Pdf417CodeTextEncoding.png", BarCodeImageFormat.Png);
-//try to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("Pdf417CodeTextEncoding:" + result.GetCodeText(Encoding.UTF8));
-```
-  
-<p align="center"><img src="pdf417codetextencoding.png"></p>
-  
-### **Byte Stream Encoding in Binary Mode**
-When it is needed to encode and transmit an array of bytes in a barcode, developers can use the *Binary* mode that can be set in ***Aspose.BarCode for .NET*** using the [*Pdf417CompactionMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417compactionmode) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). The following code snippet shows how to use this mode to encode an arbitrary stream of bytes. To display the custom text under a barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be set (see more information about this property [here](https://docs.aspose.com/barcode/net/working-with-barcode-text-appearance/#replacing-barcode-text-in-2d-barcodes/)).
+
+### **Encoding Mode *Binary***
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
+
+<p align="center"><img src="pdf417encodemodebinary.png" width="20%" height="20%"></p>  
   
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417))
+{
+    bg.SetCodeText(encodedArr);
+    //set Pdf417 encode mode to Binary
+    gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Binary;
+    gen.Save($"{path}Pdf417EncodeModeBinary.png", BarCodeImageFormat.Png);
 
-//encode array to string
-StringBuilder strBld = new StringBuilder();
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-
-//encode in Pdf417 code
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, strBld.ToString());
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
-gen.Parameters.Barcode.Pdf417.Columns = 3;
-//set encode mode to Binary
-gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Binary;
-gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
-gen.Save($"{path}Pdf417BytesEncoding.png", BarCodeImageFormat.Png);
-
-//try to recognize
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("Pdf417BytesEncoding:" + BitConverter.ToString(result.CodeBytes));
+}
 ```
-  
-<p align="center"><img src="pdf417bytesencoding.png"></p>
+
+### **Encoding Mode *ECI***
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/pdf417eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*Pdf417ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/pdf417eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
+
+The following code sample demonstrates how to use the *ECI* mode.
+
+<p align="center"><img src="pdf417encodemodeeci.png" width="20%" height="20%"></p>
+
+```csharp
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.Pdf417, str))
+{
+    bg.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.ECI;
+    bg.Parameters.Barcode.Pdf417.Pdf417ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = bg.GenerateBarCodeImage();
+}
+```
+
+### **Encoding Mode *Extended***
+In this mode, the information passed to the [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property includes control words besides the main input data. Control words serve to enable extended control over the data encoding process and allow developers to store textual sequences with different encodings in one barcode. To generate *Pdf417* barcodes in this format, it is recommended to use class [*Pdf417ExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417extcodetextbuilder/).
+
+``` csharp
+//create codetext
+Pdf417ExtCodetextBuilder textBuilder = new Pdf417ExtCodetextBuilder();
+textBuilder.AddECICodetext(ECIEncodings.Win1251, "Will");
+textBuilder.AddECICodetext(ECIEncodings.UTF8, "犬Right狗");
+textBuilder.AddECICodetext(ECIEncodings.UTF16BE, "犬Power狗");
+textBuilder.AddPlainCodetext("Plain text");
+
+//generate codetext
+string codetext = textBuilder.GetExtendedCodetext();
+
+//generate
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, codetext))
+{
+    gen.Parameters.Barcode.XDimension.Pixels = 15;
+    //set encode mode to Extended
+    gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Extended;
+    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
+    gen.Save($"{path}Pdf417EncodeModeExtended.png", BarCodeImageFormat.Png);
+}
+```
 
 ## **PDF417 Error Correction Level Settings**
 The *PDF417* barcode family applies the [Reed-Solomon error correction](https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction) mechanism to perform data recovery and integrity check. In *Micro PDF417* barcodes, the amount of redundant recovery information is defined automatically. To set the error correction level for *Basic PDF417*, *Macro PDF417*, and *Compact PDF417* in ***Aspose.BarCode for .NET***, developers can use the [*Pdf417ErrorLevel*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters/properties/pdf417errorlevel) property of class [*Pdf417Parameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/pdf417parameters). Adding each two errors correction (EC) codewords allows recovering one unknown error or two known character removals. The higher is the EC level, the larger is the number of EC codewords in a barcode and accordingly, the better is the result of data recovery for severely damaged barcode images. The maximal *Level8* implies that from 255 to 511 errors can be corrected; at the same time, the barcode encoding capacity will be reduced by 512 bytes. All supported EC levels are listed below.    

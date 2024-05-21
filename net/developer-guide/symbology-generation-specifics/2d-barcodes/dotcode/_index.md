@@ -55,57 +55,66 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"
 ```
 
 ## **Set Encoding Mode**
-The barcode library supports three different encoding modes to generate DotCode barcodes. These modes are briefly described below:
-- *Auto*. The data is processed using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property. By default, ISO-8859-1 is used.
-- *Bytes*. This mode is intended to encode streams of bytes. If the input text contains a Unicode symbol, it will be encoded with two bytes.
-- *ExtendedCodetext*. Besides the main input data, information passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property includes special control words. These words provide extended controls over the data encoding process and allow inserting textual parts with different encodings into a single barcode. 
-To set the required encoding mode, it is necessary to initialize the [*DotCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodeencodemode/) property of class [*DotCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/).
+The barcode library supports different encoding modes to generate DotCode barcodes. The required mode can be selected by setting the [*DotCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodeencodemode/) property of class [*DotCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/). The possible values are defined in the [*DotCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeencodemode/) enumeration. These modes are briefly described below:
+
+- *Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value. 
+- *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
+- *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
+- *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
 
 ### ***Auto* Encoding Mode**
-In the *Auto* encoding mode, the barcode data is encoded using the value passed to the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property. The ISO-8859-1 encoding is applied by default. The following code sample shows how to generate DotCode barcode in the *Auto* mode.    
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026"). The following code sample shows how to generate DotCode barcode in the *Auto* mode.    
   
 <p align="center"><img src="dotcodeencodemodeauto.png" width="20%" height="20%"></p>
   
 ``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Right狗"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 10;
-
-    //set DotCode ECI encoding to UTF8
-    gen.Parameters.Barcode.DotCode.ECIEncoding = ECIEncodings.UTF8;
     gen.Save($"{path}DotCodeEncodeModeAuto.png", BarCodeImageFormat.Png);
 }
 ```
 
-### ***Bytes* Encoding Mode**
-The *Bytes* mode is used to encode byte streams. If the input data includes a Unicode symbol, the barcode library encodes it with two bytes. The code sample below explains how to work with the *Bytes* encoding mode.   
+### ***Binary* Encoding Mode**
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
-<p align="center"><img src="dotcodeencodemodebytes.png" width="20%" height="20%"></p>  
+<p align="center"><img src="dotcodeencodemodebinary.png" width="20%" height="20%"></p>  
   
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-
-//encode an array to a string
-StringBuilder strBld = new StringBuilder();
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-var codetext = strBld.ToString();
-
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, codetext))
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 10;
-    //set DotCode encode mode to Bytes
-    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Bytes;
-    gen.Save($"{path}DotCodeEncodeModeBytes.png", BarCodeImageFormat.Png);
+    bg.SetCodeText(encodedArr);
+    //set DotCode encode mode to Binary
+    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Binary;
+    gen.Save($"{path}DotCodeEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
 ```
 
-### ***Extended Codetext* Mode**
-In the *Extended Codetext* mode, the input data passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property contains special control words in addition to main information. Such words activate extended controls over data encoding and enable storing textual parts with different encodings in a single barcode. To generate DotCode barcodes in this format, it is recommended to use class [*DotCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeextcodetextbuilder/). To generate DotCode barcodes in this format, it is recommended to use class [*DotCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeextcodetextbuilder/).   
-The following code sample demonstrate how to use the *Extended Codetext* mode.  
+### ***ECI* Encoding Mode**
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
 
-<p align="center"><img src="dotcodeextendedcodetext.png" width="20%" height="20%"></p>
+The following code sample demonstrates how to use the *ECI* mode.
+
+<p align="center"><img src="dotcodeencodemodeeci.png" width="20%" height="20%"></p>
+
+```csharp
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.DotCode, str))
+{
+    bg.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.ECI;
+    bg.Parameters.Barcode.DotCode.ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = bg.GenerateBarCodeImage();
+}
+```
+
+### ***Extended* Encoding Mode**
+In the *Extended Codetext* mode, the input data passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property contains special control words in addition to main information. Such words activate extended controls over data encoding and enable storing textual parts with different encodings in a single barcode. To generate DotCode barcodes in this format, it is recommended to use class [*DotCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeextcodetextbuilder/).  
+The following code sample demonstrate how to use the *Extended* mode.  
+
+<p align="center"><img src="dotcodeencodemodeextended.png" width="20%" height="20%"></p>
 
 
 ```csharp
@@ -124,10 +133,8 @@ string codetext = textBuilder.GetExtendedCodetext();
 //generate a DotCode barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, codetext))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 10;
-
-    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.ExtendedCodetext;
-    gen.Save($"{path}DotCodeExtendedCodetext.png", BarCodeImageFormat.Png);
+    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Extended;
+    gen.Save($"{path}DotCodeExtended.png", BarCodeImageFormat.Png);
 }
 ```
 

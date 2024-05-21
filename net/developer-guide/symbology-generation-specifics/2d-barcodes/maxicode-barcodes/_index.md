@@ -93,57 +93,66 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspó
 
 
 ## **Encoding Mode Settings**
-The barcode library enables three data encoding modes for *MaxiCode* barcode generation. Developers can set the required encoding mode using the [*MaxiCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/maxicodeencodemode) property of class [*MaxiCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters) and the corresponding enum [*MaxiCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeencodemode/). The following encoding modes are supported: 
+The barcode library supports different encoding modes to generate *MaxiCode* barcodes. The required mode can be selected by setting the [*MaxiCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/maxicodeencodemode) property of class [*MaxiCodeParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters). The possible values are defined in the [*MaxiCodeEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeencodemode/) enumeration. These modes are briefly described below:
 
-- *Auto* - the barcode data is encoded using the value from the [*ECIEncoding*]( https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) property
-- *Bytes* - encodes byte streams
-- *ExtendedCodetext* - uses special control words to enable the use of different encodings at once
+- *Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value. 
+- *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
+- *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
+- *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
 
 ### **Encoding Mode *Auto***
-The data gets processed with the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) property. By default, ISO-8859-1 is applied.
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026"). The following code sample shows how to generate MaxiCode barcode in the *Auto* mode.    
 
 <p align="center"><img src="maxicodeencodemodeauto.png" width="20%" height="20%"></p>
 
 ``` csharp
 using (var gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "犬Right狗"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 15;
-
-    //set MaxiCode ECI encoding to UTF8
-    gen.Parameters.Barcode.MaxiCode.ECIEncoding = ECIEncodings.UTF8;
     gen.Save($"{path}MaxiCodeEncodyModeAuto.png", BarCodeImageFormat.Png);
 }
 
 ```
 
-### **Encoding Mode *Bytes***
-The *Bytes* mode is used to encode streams of bytes. Any Unicode symbol presented in the input text will be encoded as 2 bytes with the first byte being the least significant one.
+### **Encoding Mode *Binary***
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
-<p align="center"><img src="maxicodeencodemodebytes.png" width="20%" height="20%"></p>
-
+<p align="center"><img src="maxicodeencodemodebinary.png" width="20%" height="20%"></p>  
+  
 ``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-
-//encode array to string
-StringBuilder strBld = new StringBuilder();
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-var codetext = strBld.ToString();
-
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, codetext))
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 15;
-    //set MaxiCode encode mode to Bytes
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.Bytes;
-    gen.Save($"{path}MaxiCodeEncodeModeBytes.png", BarCodeImageFormat.Png);
+    bg.SetCodeText(encodedArr);
+    //set MaxiCode encode mode to Binary
+    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.Binary;
+    gen.Save($"{path}MaxiCodeEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
 ```
 
-### **Encoding Mode *ExtendedCodeText***
+### **Encoding Mode *ECI***
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
+
+The following code sample demonstrates how to use the *ECI* mode.
+
+<p align="center"><img src="maxicodeencodemodeeci.png" width="20%" height="20%"></p>
+
+```csharp
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.MaxiCode, str))
+{
+    bg.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.ECI;
+    bg.Parameters.Barcode.MaxiCode.ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = bg.GenerateBarCodeImage();
+}
+```
+
+### **Encoding Mode *Extended***
 In this mode, the information passed to the [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property includes control words besides the main input data. Control words serve to enable extended control over the data encoding process and allow developers to store textual sequences with different encodings in one barcode. To generate *MaxiCode* barcodes in this format, it is recommended to use class [*MaxiCodeExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/maxicodeextcodetextbuilder/).
 
-<p align="center"><img src="maxicodeencodemodeextendedcodetext.png" width="20%" height="20%"></p>
+<p align="center"><img src="maxicodeencodemodeextended.png" width="20%" height="20%"></p>
 
 ``` csharp
 //create codetext
@@ -160,10 +169,10 @@ string codetext = textBuilder.GetExtendedCodetext();
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, codetext))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
-    //set encode mode to ExtendedCodetext
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.ExtendedCodetext;
-    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "ExtendedCodetext mode";
-    gen.Save($"{path}MaxiCodeEncodeModeExtendedCodetext.png", BarCodeImageFormat.Png);
+    //set encode mode to Extended
+    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.Extended;
+    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
+    gen.Save($"{path}MaxiCodeEncodeModeExtended.png", BarCodeImageFormat.Png);
 }
 ```
 

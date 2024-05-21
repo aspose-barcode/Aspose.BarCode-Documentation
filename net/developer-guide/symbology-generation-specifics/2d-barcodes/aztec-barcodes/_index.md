@@ -62,70 +62,70 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
  
 ## **Set Encoding Mode**
 
-***Aspose.BarCode for .NET*** supports three different encoding modes to generate *Aztec Code* barcodes. These modes are briefly described below:
-- *Auto*. The data is processed using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) property. By default, ISO-8859-1 is used.
-- *Bytes*. This mode is intended to encode streams of bytes. If the input text contains a Unicode symbol, it will be encoded with two bytes.
-- *ExtendedCodetext*. Besides the main input data, information passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property includes special control words. These words provide extended controls over the data encoding process and allow inserting textual parts with different encodings into a single barcode. 
+The barcode library supports different encoding modes to generate *Aztec* barcodes. The required mode can be selected by setting the [*AztecEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/aztecencodemode) property of class [*AztecParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters). The possible values are defined in the [*AztecEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecencodemode/) enumeration. These modes are briefly described below:
 
-To set the required encoding mode, it is necessary to initialize the [*AztecEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/aztecencodemode/) property of class [*AztecParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/).
+- *Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value. 
+- *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
+- *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
+- *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
 
 
 ### ***Auto* Encoding Mode**
-
-In the *Auto* encoding mode, the barcode data is encoded using the value passed to the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) property. The ISO-8859-1 encoding is applied by default. The following code sample shows how to generate *Aztec Code* barcode in the *Auto* mode.
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026"). The following code sample shows how to generate Aztec barcode in the *Auto* mode.    
   
-<p align="center"><img src="aztecencodemodeauto.png" width="15%" height="15%"></p>
+<p align="center"><img src="aztecencodemodeauto.png" width="20%" height="20%"></p>
   
-{{< highlight csharp>}}
+``` csharp
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "犬Right狗"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 15;
-
-    //set Aztec ECI encoding to UTF8
-    gen.Parameters.Barcode.Aztec.ECIEncoding = ECIEncodings.UTF8;
     gen.Save($"{path}AztecEncodeModeAuto.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+```
 
-### ***Bytes* Encoding Mode**
-The *Bytes* mode is used to encode byte streams. If the input data includes a Unicode symbol, the barcode library encodes it with two bytes. The code sample below explains how to work with the *Bytes* encoding mode.   
+### ***Binary* Encoding Mode**
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
-<p align="center"><img src="aztecencodemodebytes.png" width="15%" height="15%"></p>
-
-{{< highlight csharp>}}
+<p align="center"><img src="aztecencodemodebytes.png" width="20%" height="20%"></p>  
+  
+``` csharp
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-
-//encode array to string
-StringBuilder strBld = new StringBuilder();
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-
-//encode in Aztec code
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, strBld.ToString()))
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set encode mode Bytes
-    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Bytes;
-    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
-    gen.Save($"{path}AztecEncodeModeBytes.png", BarCodeImageFormat.Png);
+    bg.SetCodeText(encodedArr);
+    //set Aztec encode mode to Binary
+    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Binary;
+    gen.Save($"{path}AztecEncodeModeBinary.png", BarCodeImageFormat.Png);
 
-    //try to recognize
-    using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Aztec))
-    {
-        foreach (BarCodeResult result in read.ReadBarCodes())
-            Console.WriteLine("AztecEncodeModeBytes:" + BitConverter.ToString(result.CodeBytes));
-    }
 }
-{{< /highlight >}}
+```
 
-### ***Extended Codetext* Mode**
-In the *Extended Codetext* mode, the input data passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property contains special control words in addition to main information. Such words activate extended controls over data encoding and enable storing textual parts with different encodings in a single barcode. To generate *Aztec Code* barcodes in this format, it is recommended to use class [*AztecExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecextcodetextbuilder/). 
+### ***ECI* Encoding Mode**
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
 
-The following code sample demonstrate how to use the *Extended Codetext* mode. 
+The following code sample demonstrates how to use the *ECI* mode.
 
-<p align="center"><img src="aztecencodemodeextendedcodetext.png" width="15%" height="15%"></p>
+<p align="center"><img src="aztecencodemodeeci.png" width="20%" height="20%"></p>
 
-{{< highlight csharp>}}
+```csharp
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.Aztec, str))
+{
+    bg.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.ECI;
+    bg.Parameters.Barcode.Aztec.ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = bg.GenerateBarCodeImage();
+}
+```
+
+### ***Extended* Encoding Mode**
+In the *Extended Codetext* mode, the input data passed to the [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/codetext/) property contains special control words in addition to main information. Such words activate extended controls over data encoding and enable storing textual parts with different encodings in a single barcode. To generate Aztec barcodes in this format, it is recommended to use class [*AztecExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecextcodetextbuilder/).  
+The following code sample demonstrate how to use the *Extended* mode.  
+
+<p align="center"><img src="aztecencodemodeextended.png" width="20%" height="20%"></p>
+
+
+```csharp
 //create codetext
 AztecExtCodetextBuilder textBuilder = new AztecExtCodetextBuilder();
 textBuilder.AddECICodetext(ECIEncodings.Win1251, "Will");
@@ -140,12 +140,12 @@ string codetext = textBuilder.GetExtendedCodetext();
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, codetext))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
-    //set encode mode to ExtendedCodetext
-    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.ExtendedCodetext;
-    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "ExtendedCodetext mode";
-    gen.Save($"{path}AztecEncodeModeExtendedCodetext.png", BarCodeImageFormat.Png);
+    //set encode mode to Extended
+    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecncodeMode.Extended;
+    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
+    gen.Save($"{path}AztecEncodeModeExtended.png", BarCodeImageFormat.Png);
 }
-{{< /highlight >}}
+```
 
 ## **Layout Settings**
 

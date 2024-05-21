@@ -64,23 +64,21 @@ gen.Save($"{path}DatamatrixEcc000140Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
-  
+   
 ## **Encoding Mode Settings**
 In ***Aspose.BarCode for .NET***, developers can enable different encoding modes by initializing the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixencodemode) property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters). The library supports nine different encoding modes that are listed below. By default, the *Auto* encoding mode is set.
   
 |Encoding Mode|Description|
 |---|---|
-|*Auto*|Similar to the *ASCII* encoding mode|
-|*ASCII*|Allows encoding both ASCII symbols and byte streams, but the characters from 128 to 255 are encoded using 2 bytes. To encode an arbitrary byte stream, it is recommended to use the *Full* mode|
-|*Bytes*|Encodes any character in 8 bits. This mode is the most suitable for encoding byte streams|
+|*Auto*|In Auto mode, the CodeText is encoded with maximum data compactness|
+|*ASCII*|Allows encoding both ASCII symbols and byte streams, but the characters from 128 to 255 are encoded using 2 bytes|
+|*Binary*|Encodes any character in 8 bits. This mode is the most suitable for encoding byte streams|
 |*C40*, *Text*, *EDIFACT*, and *ANSIX12*|Encode only predefined character sets using the specialized industrial encodings, such as C40, Text, EDIFACT, and ANSI X12|
-|*ExtendedCodetext*|Provides flexible encoding controls and the possibility to manually specify the required encoding for a part of [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext)|
+|*ECI*|The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications|
+|*Extended*|Provides flexible encoding controls and the possibility to manually specify the required encoding for a part of [*Codetext*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext)|
   
-If an input message to be encoded contains a Unicode character (any symbol with a value greater than 255), the entire message is processed using the encoding specified in [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). This feature is valid for all encoding modes besides *Custom* in which the specified encoding is always enabled. The *Custom* mode is supported only for the *ECC 200* standard. Code samples illustrating how to work with supported encoding modes are provided further in the article.
-
 ### ***Auto* Encoding Modes**
-
-The *Auto* mode enables automatic switching between different encoding modes to reach the smallest possible barcode size. In this mode, the data gets processed using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/eciencoding/) property. By default, ISO-8859-1 is set.  
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
   
 The following code snippet explains how to set the *Auto* encoding mode.   
 
@@ -91,8 +89,6 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspo
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set encode mode to Auto
     gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
-    gen.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.UTF8;
-
     gen.Save($"{path}DataMatrixEncodeModeAuto.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -116,43 +112,49 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspo
   
 <p align="center"><img src="datamatrixencodemodeascii.png"></p> 
 
-### ***Bytes* Mode**
-The *Bytes* mode is intended to work with byte streams; each byte is encoded using 8 bits. The following code sample illustrates how to enable the *Bytes* encoding mode.
-  
+### ***Binary* Mode**
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
+
 {{< highlight csharp>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-
-//encode array to string
-StringBuilder strBld = new StringBuilder();
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-
-//encode in DataMatrix code
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, strBld.ToString()))
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set encode mode to bytes
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Bytes;
-    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
-    gen.Save($"{path}DataMatrixEncodeModeBytes.png", BarCodeImageFormat.Png);
+    bg.SetCodeText(encodedArr);
+    //set DataMatrix encode mode to Binary
+    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
+    gen.Save($"{path}DataMatrixEncodeModeBinary.png", BarCodeImageFormat.Png);
 
-    //try to recognize
-    using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DataMatrix))
-    {
-        foreach (BarCodeResult result in read.ReadBarCodes())
-            Console.WriteLine("DataMatrixEncodeModeBytes:" + BitConverter.ToString(result.CodeBytes));
-    }
 }
 {{< /highlight >}}
 
-<p align="center"><img src="datamatrixencodemodebytes.png"></p> 
+<p align="center"><img src="datamatrixencodemodebinary.png"></p> 
 
+### ***ECI* Encoding Mode**
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
 
-### **Extended Encoding Controls in *ExtendedCodetext***
-The *Extended Codetext* mode enables adding special control characters to the main barcode text. They serve to set extended control over data encoding and allow manually switching between different encoding schemes and ECI modes within a single barcode. To generate barcodes in this mode, it is recommended to use class [*DataMatrixExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixextcodetextbuilder/).
+The following code sample demonstrates how to use the *ECI* mode.
 
-The following code snippet explains how to work with the *ExtendedCodetext* mode.  
+<p align="center"><img src="datamatrixencodemodeeci.png" width="10%"></p> 
+
+```csharp
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var bg = new BarcodeGenerator(EncodeTypes.DataMatrix, str))
+{
+    bg.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ECI;
+    bg.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = bg.GenerateBarCodeImage();
+}
+```
+
+### ***Extended* Encoding Mode**
+The *Extended* mode enables adding special control characters to the main barcode text. They serve to set extended control over data encoding and allow manually switching between different encoding schemes and ECI modes within a single barcode. To generate barcodes in this mode, it is recommended to use class [*DataMatrixExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/datamatrixextcodetextbuilder/).
+
+The following code snippet explains how to work with the *Extended* mode.  
   
+<p align="center"><img src="datamatrixencodemodeextended.png"></p> 
+
 {{< highlight csharp>}}
 //create barcode text
 DataMatrixExtCodetextBuilder codetextBuilder = new DataMatrixExtCodetextBuilder();
@@ -168,22 +170,20 @@ string codetext = codetextBuilder.GetExtendedCodetext();
 using (var generator = new BarcodeGenerator(EncodeTypes.DataMatrix, codetext))
 {
     generator.Parameters.Barcode.XDimension.Pixels = 4;
-    generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended Codetext";
-    //set encode mode to ExtendedCodetext
-    generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ExtendedCodetext;
+    generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended";
+    //set encode mode to Extended
+    generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Extended;
 
-    generator.Save($"{path}DatamatrixExtendedCodetext.png", BarCodeImageFormat.Png);
+    generator.Save($"{path}DatamatrixExtended.png", BarCodeImageFormat.Png);
 
     //attempt to recognize the generated barcode
     using (var reader = new BarCodeReader(generator.GenerateBarCodeImage(), DecodeType.DataMatrix))
     {
         foreach (BarCodeResult result in reader.ReadBarCodes())
-            Console.WriteLine("DatamatrixExtendedCodetext:" + result.CodeText);
+            Console.WriteLine("DatamatrixExtended:" + result.CodeText);
     }
 }
 {{< /highlight >}}
-  
-<p align="center"><img src="datamatrixextendedcodetext.png"></p> 
   
 ### **Industrial Encoding Modes: *C40*, *Text*, *EDIFACT*, and *ANSIX12***
 *C40*, *Text*, *EDIFACT*, and *ANSIX12* encoding modes can be used to encode information using specialized industrial encodings. These modes are intended for specific industrial tasks only.  
