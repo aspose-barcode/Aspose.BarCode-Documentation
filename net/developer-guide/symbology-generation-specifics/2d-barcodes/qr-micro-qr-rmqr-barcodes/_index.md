@@ -97,125 +97,92 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.RectMicroQR, "ASP
    
 ## **Data Encoding Modes**
 ***Aspose.BarCode for .NET*** supports several most widespread data encoding modes, including the Unicode standard. To set the required encoding mode, it is necessary to initialize the [*QrEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qrencodemode) property of class [*QrParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters). This property can take the following values:
--	*Auto*. This encoding mode implies that the data passed to [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) is encoded according to the value of the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding) property that gets the encoding of the inputted symbols (by default, it is set to *UTF8*).
--	*Bytes*. This mode is used to work with streams of bytes and can encode values from 0 to 255. If a byte stream contains digits greater than 255, the *UTF16LE* encoding is applied. 
--	*Utf8BOM* and *Utf16BEBOM*. These modes are applied to encode the input data using UTF8 and UTF16BE encodings, respectively; a byte order mark (BOM) character is added to indicate the used encoding. Note that it is preferable to use the *ECIEncoding* mode as it allows setting the encodings that are explicitly specified in the *QR Code* standard.  
--	*ECIEncoding*. This data encoding mode implies using the encoding listed in [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding).
--	*ExtendedCodetext*. In this mode, information passed to the *CodeText* property contains control words besides the main text to be encoded. These control words are intended to set advanced control over data encoding and allow including text with different encodings into a single *QR Code* barcode.
+-	*Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value. 
+-   *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
+-   *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
+-   *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
   
 ### ***Auto* Mode**
-The *Auto* data encoding mode utilizes the information from the [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding) property to encode the input data. In case the text encoding is not defined explicitly in *CodeTextEncoding*, the binary encoding mode is applied. The code snippet provided below demonstrates how to use the *Auto* encoding mode.
-  
+In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are encoded in kanji mode if possible, or they are re-encoded using the encoding specified in the [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/qreciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/qreciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026"). The following code sample shows how to generate QR Code barcode in the *Auto* mode.    
+
 {{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set the encode mode to Auto
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Auto;
-//set CodeText encoding to UTF8
-gen.Parameters.Barcode.QR.CodeTextEncoding = Encoding.UTF8;
-gen.Save($"{path}QrEncodeModeAuto.png", BarCodeImageFormat.Png);
-//attempt to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-read.BarcodeSettings.DetectEncoding = true;
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeAuto:" + result.CodeText);
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く"))
+{
+    gen.Save($"{path}QrEncodeModeAuto.png", BarCodeImageFormat.Png);
+
+    //attempt to recognize it
+    using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR)){
+        foreach (BarCodeResult result in read.ReadBarCodes())
+            Console.WriteLine("QrEncodeModeAuto:" + result.CodeText);
+    }
+}
 {{< /highlight >}}
   
-<p align="center"><img src="qrencodemodeauto.png"></p>
+<p align="center"><img src="qrencodemodeauto.png" width="10%"></p>
 
-### ***Bytes* Mode**
-The *Bytes* data encoding mode implies representing an input byte stream as an array of characters and then as a string. It allows encoding values from 0 to 255. In the case when a byte stream includes digits greater than 255, such a character is encoded as two bytes using the UTF16LE encoding (the lower byte first). The code sample provided below explains how to use the *Bytes* encoding mode. To visualize the text under a *QR Code* barcode, the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property needs to be initialized.  
-  
+### ***Binary* Mode**
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
+
 {{< highlight csharp>}}
-byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9};
-
-//encode array to string
-StringBuilder strBld = new StringBuilder(); ;
-foreach(byte bval in encodedArr)
-    strBld.Append((char)bval);
-
-//encode in QR code
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, strBld.ToString());
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set encode mode to Bytes
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Bytes;
-gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
-gen.Save($"{path}QrEncodeModeBytes.png", BarCodeImageFormat.Png);
-
-//attempt to recognize
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeBytes:" + BitConverter.ToString(result.CodeBytes));
+byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR))
+{
+    gen.SetCodeText(encodedArr);
+    //set QR Code encode mode to Binary
+    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Binary;
+    gen.Save($"{path}QrEncodeModeBinary.png", BarCodeImageFormat.Png);
+}
 {{< /highlight >}}
   
-<p align="center"><img src="qrencodemodebytes.png"></p>
-  
-### ***Utf8BOM* and *Utf16BEBOM* Modes**
-The *Utf8BOM* and *Utf16BEBOM* data encoding modes are used to encode the input data using *UTF8* and *UTF16BE* standards, respectively, using a byte order mark (BOM) character that is placed before the first data symbol. The following code snippet shows how to work with the *Utf16BEBOM* encoding mode.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set encode mode to UTF16BE with BOM
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Utf16BEBOM;
-gen.Save($"{path}QrEncodeModeUtfBOM.png", BarCodeImageFormat.Png);
-//attempt to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-read.BarcodeSettings.DetectEncoding = true;
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeUtfBOM:" + result.CodeText);
-{{< /highlight >}}
-  
-<p align="center"><img src="qrencodemodeutfbom.png"></p>
-  
-### ***ECIEncoding* Mode**
-In the *ECIEncoding* data encoding mode, the input data is processed using one of the encodings specified in [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/qreciencoding). The present library implementation includes all well-known charset encodings. In addition, the extended channel interpretation identifier that corresponds to the current encoding is set. In this way, information about the way of decoding the barcode data is passed to decoders. The *QrECIEncoding.UTF8* mode is the most preferable. The code sample given below explains how to set the *ECIEncoding* encoding mode.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set encode mode to ECIEncoding and ECI to UTF8
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
-gen.Save($"{path}QrEncodeModeECIEncoding.png", BarCodeImageFormat.Png);
-//attempt to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeECIEncoding:" + result.CodeText);
-{{< /highlight >}}
-  
-<p align="center"><img src="qrencodemodeeciencoding.png"></p>
-  
-### ***ExtendedCodetext* Mode**
-***Aspose.BarCode for .NET*** provides an advanced data encoding mode called *ExtendedCodetext* that enables flexible manual settings for *QR Code* barcode generation. Particularly, this mode includes specific encoding capabilities, such as using the multi-ECI mode and setting FNC symbols (characters used to detect and distinguish fields in variable-length application identifiers). Developers can facilitate the generation of barcodes with extended barcode text using class [*QrExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrextcodetextbuilder). To replace the text displayed under the generated barcode, it is necessary to initialize the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property. In the case of setting the multi-ECI mode, data processing is performed for each predefined encoding automatically. Otherwise, the information inputted into [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) is encoded according to the value of [*CodeTextEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/codetextencoding).    
+<p align="center"><img src="qrencodemodebinary.png" width="10%"></p>
 
-The following code snippet illustrates how to use the multi-encoding ECI regime when the *ExtendedCodetext* mode is applied. 
+
+### ***ECI* Mode**
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/qreciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*QrECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/qreciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
+
+The following code sample demonstrates how to use the *ECI* mode.
+
+{{< highlight csharp>}}
+// ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+var str = "ΑΒΓΔΕ";
+
+using (var gen = new BarcodeGenerator(EncodeTypes.QR, str))
+{
+    gen.Parameters.Barcode.QR.QrEncodeMode = QrEncodeMode.ECI;
+    gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.ISO_8859_7;
+    var img = gen.GenerateBarCodeImage();
+}
+{{< /highlight >}}
+  
+<p align="center"><img src="qrencodemodeeci.png" width="10%"></p>
+  
+### ***Extended* Mode**
+***Aspose.BarCode for .NET*** provides an advanced data encoding mode called *Extended* that enables flexible manual settings for *QR Code* barcode generation. Particularly, this mode includes specific encoding capabilities, such as using the multi-ECI mode and setting FNC symbols (characters used to detect and distinguish fields in variable-length application identifiers). Developers can facilitate the generation of barcodes with extended barcode text using class [*QrExtCodetextBuilder*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrextcodetextbuilder). To replace the text displayed under the generated barcode, it is necessary to initialize the [*TwoDDisplayText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/codetextparameters/properties/twoddisplaytext) property.
+The following code snippet illustrates how to use the multi-encoding ECI regime when the *Extended* mode is applied. 
   
 {{< highlight csharp>}}
 //generate extended codetext
-QrExtCodetextBuilder lTextBuilder = new QrExtCodetextBuilder();
-lTextBuilder.AddECICodetext(ECIEncodings.Win1251, "Aspose");
-lTextBuilder.AddECICodetext(ECIEncodings.UTF8, "常に先");
-lTextBuilder.AddECICodetext(ECIEncodings.UTF16BE, "を行く");
-lTextBuilder.AddPlainCodetext(@"!!!");
+QrExtCodetextBuilder textBuilder = new QrExtCodetextBuilder();
+textBuilder.AddECICodetext(ECIEncodings.Win1251, "Aspose");
+textBuilder.AddECICodetext(ECIEncodings.UTF8, "常に先");
+textBuilder.AddECICodetext(ECIEncodings.UTF16BE, "を行く");
+textBuilder.AddPlainCodetext(@"!!!");
+
 //generate barcode
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, lTextBuilder.GetExtendedCodetext());
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-Console.OutputEncoding = Encoding.Unicode;
-//set the encoding mode to ExtendedCodetext
-gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ExtendedCodetext;
-gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "ExtendedCodetext mode";
-gen.Save($"{path}QrEncodeModeExtendedCodetext.png", BarCodeImageFormat.Png);
-//attempt to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("QrEncodeModeExtendedCodetext:" + result.CodeText);
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, textBuilder.GetExtendedCodetext())){
+    //set the encoding mode to Extended
+    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Extended;
+    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
+    gen.Save($"{path}QrEncodeModeExtended.png", BarCodeImageFormat.Png);
+    //attempt to recognize it
+    using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR)){
+        foreach (BarCodeResult result in read.ReadBarCodes())
+            Console.WriteLine("QrEncodeModeExtended:" + result.CodeText);
+    }
+}
 {{< /highlight >}}
   
-<p align="center"><img src="qrencodemodeextendedcodetext.png"></p>
+<p align="center"><img src="qrencodemodeextended.png" width="10%"></p>
   
 ## **Error Correction Level Settings**
 The *QR Code* family supports four levels of Reed-Solomon error correction. This mechanism requires adding redundant information to a barcode so as to enable detecting and correcting errors automatically in the case of barcode label damages. In general, to restore 1% of errors, 2% redundancy is needed.  
