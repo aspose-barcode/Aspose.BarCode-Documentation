@@ -39,6 +39,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[GS1CompositeBarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/gs1compositebarparameters/)|GS1 Composite bar parameters.|
 |[HanXinExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinextcodetextbuilder/)|Extended codetext generator for Han Xin Code for Extended Mode of HanXinEncodeMode|
 |[HanXinParameters](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinparameters/)|Han Xin parameters.|
+|[HslaColor](/barcode/python-net/api-reference/aspose.barcode.generation/hslacolor/)|Class for representing HSLA color (Hue, Saturation, Lightness, Alpha)|
 |[ITFParameters](/barcode/python-net/api-reference/aspose.barcode.generation/itfparameters/)|ITF parameters.|
 |[ImageParameters](/barcode/python-net/api-reference/aspose.barcode.generation/imageparameters/)|Image parameters.|
 |[MaxiCodeExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeextcodetextbuilder/)|Extended codetext generator for MaxiCode barcodes for ExtendedCodetext Mode of MaxiCodeEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
@@ -92,5 +93,6 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[QRErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/qrerrorlevel/)|Level of Reed-Solomon error correction. From low to high: LevelL, LevelM, LevelQ, LevelH.|
 |[QRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/qrversion/)|Version of QR Code.<br/>            From Version1 to Version40 for QR code and from M1 to M4 for MicroQr.|
 |[RectMicroQRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/rectmicroqrversion/)|Version of RectMicroQR Code.<br/>            From version R7x43 to version R17x139.|
+|[SvgColorMode](/barcode/python-net/api-reference/aspose.barcode.generation/svgcolormode/)|Possible modes for filling color in svg file, RGB is default and supported by SVG 1.1.<br/>            RGBA, HSL, HSLA is allowed in SVG 2.0 standard.<br/>            Even in RGB opacity will be set through "fill-opacity" parameter|
 |[TextAlignment](/barcode/python-net/api-reference/aspose.barcode.generation/textalignment/)|Text alignment.|
 |[TwoDComponentType](/barcode/python-net/api-reference/aspose.barcode.generation/twodcomponenttype/)|Type of 2D component|

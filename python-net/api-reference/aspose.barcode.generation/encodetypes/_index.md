@@ -19,10 +19,9 @@ The EncodeTypes type exposes the following members:
 |NONE|Unspecified encode type.|
 |CODABAR|Specifies that the data should be encoded with CODABAR barcode specification|
 |CODE11|Specifies that the data should be encoded with CODE 11 barcode specification|
-|CODE_39_STANDARD|Specifies that the data should be encoded with Standard CODE 39 barcode specification|
-|CODE_39_EXTENDED|Specifies that the data should be encoded with Extended CODE 39 barcode specification|
-|CODE_93_STANDARD|Specifies that the data should be encoded with Standard CODE 93 barcode specification|
-|CODE_93_EXTENDED|Specifies that the data should be encoded with Extended CODE 93 barcode specification|
+|CODE39|Specifies that the data should be encoded with Code 39 basic charset barcode specification: ISO/IEC 16388|
+|CODE_39_FULL_ASCII|Specifies that the data should be encoded with Code 39 full ASCII charset barcode specification: ISO/IEC 16388|
+|CODE93|Specifies that the data should be encoded with CODE 93 barcode specification|
 |CODE128|Specifies that the data should be encoded with CODE 128 barcode specification|
 |GS1_CODE_128|Specifies that the data should be encoded with GS1 Code 128 barcode specification. The codetext must contains parentheses for AI.|
 |EAN8|Specifies that the data should be encoded with EAN-8 barcode specification|

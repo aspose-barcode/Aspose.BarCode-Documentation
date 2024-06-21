@@ -3,7 +3,7 @@ title: SvgParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 390
+weight: 400
 url: /python-net/api-reference/aspose.barcode.generation/svgparameters/
 ---
 
@@ -17,6 +17,7 @@ The SvgParameters type exposes the following members:
 | :- | :- |
 |is_explicit_size_in_pixels|Does SVG image contain explicit size in pixels (recommended)<br/>            Default value: true.|
 |is_text_drawn_in_text_element|Does SVG image contain text as text element rather than paths (recommended)<br/>            Default value: true.|
+|svg_color_mode|Possible modes for filling color in svg file, RGB is default and supported by SVG 1.1.<br/>            RGBA, HSL, HSLA is allowed in SVG 2.0 standard.<br/>            Even in RGB opacity will be set through "fill-opacity" parameter|
 
 ### See Also
 

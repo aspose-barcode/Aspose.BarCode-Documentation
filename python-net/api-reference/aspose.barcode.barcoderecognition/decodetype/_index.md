@@ -19,10 +19,9 @@ The DecodeType type exposes the following members:
 |NONE|Unspecified decode type.|
 |CODABAR|Specifies that the data should be decoded with CODABAR barcode specification|
 |CODE11|Specifies that the data should be decoded with CODE 11 barcode specification|
-|CODE_39_STANDARD|Specifies that the data should be decoded with Standard CODE 39 barcode specification|
-|CODE_39_EXTENDED|Specifies that the data should be decoded with Extended CODE 39 barcode specification|
-|CODE_93_STANDARD|Specifies that the data should be decoded with Standard CODE 93 barcode specification|
-|CODE_93_EXTENDED|Specifies that the data should be decoded with Extended CODE 93 barcode specification|
+|CODE39|Specifies that the data should be decoded with Code 39 basic charset barcode specification: ISO/IEC 16388|
+|CODE_39_FULL_ASCII|Specifies that the data should be decoded with Code 39 full ASCII charset barcode specification: ISO/IEC 16388|
+|CODE93|Specifies that the data should be decoded with CODE 93 barcode specification|
 |CODE128|Specifies that the data should be decoded with CODE 128 barcode specification|
 |GS1_CODE_128|Specifies that the data should be decoded with GS1 CODE 128 barcode specification|
 |EAN8|Specifies that the data should be decoded with EAN-8 barcode specification|

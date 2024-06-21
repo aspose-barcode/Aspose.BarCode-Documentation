@@ -3,7 +3,7 @@ title: Pdf417MacroTerminator
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 710
+weight: 720
 url: /python-net/api-reference/aspose.barcode.generation/pdf417macroterminator/
 ---
 
