@@ -44,7 +44,7 @@ The DecodeType type exposes the following members:
 |DEUTSCHE_POST_IDENTCODE|Specifies that the data should be decoded with DeutschePost Ident code barcode specification|
 |DEUTSCHE_POST_LEITCODE|Specifies that the data should be decoded with DeutschePost Leit code barcode specification|
 |OPC|Specifies that the data should be decoded with OPC barcode specification|
-|PZN|Specifies that the data should be decoded with PZN barcode specification. This symbology is also known as Pharma Zentral Nummer|
+|PZN|Specifies that the data should be decoded with PZN barcode specification. This symbology is also known as Pharma Zentral Nummer. PZN7 and PZN8 are supported.|
 |PHARMACODE|Specifies that the data should be decoded with Pharmacode barcode. This symbology is also known as Pharmaceutical Binary Code|
 |DATA_MATRIX|Specifies that the data should be decoded with DataMatrix barcode symbology|
 |GS1_DATA_MATRIX|Specifies that the data should be decoded with GS1DataMatrix barcode symbology|
