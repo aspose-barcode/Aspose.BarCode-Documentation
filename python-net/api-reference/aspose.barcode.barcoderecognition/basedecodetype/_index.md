@@ -3,7 +3,7 @@ title: BaseDecodeType
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 100
+weight: 90
 url: /python-net/api-reference/aspose.barcode.barcoderecognition/basedecodetype/
 ---
 

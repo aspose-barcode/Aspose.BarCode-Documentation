@@ -16,4 +16,4 @@ Barcode label can be rendered as ***Image*** with standard Report Item Image com
 
 Main disadvantage of this method that barcode value can be visible only in runtime: preview or server deploying.
 
-<img style="border:1px solid black;" src="customcodecreview.png" alt="BarcodeGenerator class in Design and Preview Time" />
+<img style="border:1px solid black;" src="customcodepreview.png" alt="BarcodeGenerator class in Design and Preview Time" />

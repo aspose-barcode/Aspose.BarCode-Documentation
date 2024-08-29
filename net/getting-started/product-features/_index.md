@@ -11,7 +11,7 @@ url: /net/product-features/
 ## **General Features**
 - Barcode generation
 - Barcode recognition
-- Symbology specification (70+ symbologies: 1D, 2D, and postal types)
+- Symbology specification (80+ symbologies: 1D, 2D, DataBar, Postal, HIBC, GS1 types)
 - Managing barcode appearance-related parameters
 - Image rotation
 - Encoding and decoding non-English characters in 2D types
@@ -34,6 +34,7 @@ url: /net/product-features/
 - Performing checksum validation for 1D and postal barcodes
 - Increasing the barcode detection speed through multi-threading
 - Scanning from multi-page TIFF through System.Drawing
+- Scanning from PDF format via [*Aspose.PDF*](https://products.aspose.com/pdf/)
 
 ## **Barcode Generation Features**
 - Class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): generating barcode labels according to required settings
@@ -46,6 +47,7 @@ url: /net/product-features/
 - Setting an encoding type for 2D barcodes: Error Checking and Correcting (ECC) or Extended Channel Interpretation (ECI)
 - Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
 - Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256
+- Embedding barcodes to Word and PDF formats via [*Aspose.Words*](https://products.aspose.com/words/) and [*Aspose.PDF*](https://products.aspose.com/pdf/)
 
 ## **Barcode Imaging Features**
 - Customizing barcode image borders, border color, style, margins, and width

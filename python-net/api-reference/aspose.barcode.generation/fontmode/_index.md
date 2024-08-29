@@ -3,7 +3,7 @@ title: FontMode
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 560
+weight: 590
 url: /python-net/api-reference/aspose.barcode.generation/fontmode/
 ---
 

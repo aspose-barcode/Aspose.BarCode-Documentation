@@ -44,15 +44,15 @@ using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, "1234567890"))
 
 ## **Encoding Mode Settings**
 The barcode library supports different encoding modes to generate Han Xin barcodes. The required mode can be selected by setting the [*HanXinEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters/hanxinencodemode/) property of class [*HanXinParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters). The possible values are defined in the [*HanXinEncodeMode*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinencodemode/) enumeration. These modes are briefly described below:
-- *Auto*. This mode enables a sequence of *Numeric*, *Text*, *Binary* and 4 *GB18030* (Chinese) modes changing automatically. *Numeric*, *Text*, and 4 *GB18030* modes are internal modes, so users cannot select them explicitly. It is set by default, but it may be not suitable for some Unicode characters.
-- *Binary*. The *Binary* mode encodes binary data in any form and encodes them in their binary byte. Every byte in *Binary* mode is represented by 8 bits.
+- *Auto*. In Auto mode, the CodeText is encoded with maximum data compactness. This is the default value.
+- *Binary*. The *Binary* mode is used to encode binary data with maximum data compactness. 
 - *ECI*. The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications.
 - *Unicode*. The *Unicode* mode designs a way to represent any text data reference to UTF8 encoding/charset in Han Xin Code.
 - *URI*. The *URI* mode indicates the data represented in Han Xin Code is Uniform Resource Identifier (URI) reference to [*RFC 3986*](https://datatracker.ietf.org/doc/html/rfc3986).
-- *Extended*. *Extended* mode allows setting more flexible combinations of other modes. This mode is currently not supported, but its implementation is planned in future.
+- *Extended*. The *Extended* mode provides flexible encoding controls and allows for manually specifying the required encoding for a part of Codetext.
 
 ### ***Auto* Encoding Mode**
-In the *Auto* encoding mode, the barcode data can be encoded using *Numeric*, *Text*, *Binary*, and 4 *GB18030* (Chinese) modes. 
+This mode automatically changes between *Numeric*, *Text*, *Binary*, and 4 *GB18030* (Chinese) modes to achieve the best data compactness. This is the default value.
 
 The following code sample shows how to generate Han Xin barcodes using the *Auto* mode.
   
@@ -68,29 +68,22 @@ using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 ```
 
 ### ***Binary* Encoding Mode**
-The *Bytes* mode serves to encode byte streams. The code sample below explains how to work with this encoding mode.
-  
+The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
+
 ``` csharp
 // Binary mode 
-var str = "IJK";
 
-using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
+byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
+using (BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.HanXin))
 {
+    bg.SetCodeText(encodedArr);
     bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Binary;
     var img = bg.GenerateBarCodeImage();
-
-    using (var r = new BarCodeReader(img, DecodeType.HanXin))
-    {
-        var found = r.ReadBarCodes();
-        Assert.AreEqual(1, found.Length);
-        var binary = "494a4b";
-        Assert.AreEqual(binary.ToLower(), found[0].CodeText.ToLower());
-    }
 }
 ```
 
 ### ***ECI* Mode**
-The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. The data sequence is encoded according to the rules of other modes. The [*HanXinECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters/hanxineciencoding/) property of class [*HanXinParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters) needs to be initialized according to charset / ECI assignment value. By default, this property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).ISO_8859_1 (ISO/IEC 8859-1 Latin alphabet No. 1 encoding. ECI Id:"\000003").
+The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*HanXinECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters/hanxineciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*HanXinECIEncoding*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/hanxinparameters/hanxineciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
 
 The following code sample demonstrates how to use the *ECI* mode.
 

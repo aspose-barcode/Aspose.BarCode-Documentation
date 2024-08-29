@@ -3,7 +3,7 @@ title: Pdf417Parameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 320
+weight: 340
 url: /python-net/api-reference/aspose.barcode.generation/pdf417parameters/
 ---
 
@@ -16,6 +16,7 @@ The Pdf417Parameters type exposes the following members:
 | Name | Description |
 | :- | :- |
 |pdf_417_compaction_mode|Pdf417 symbology type of BarCode's compaction mode.<br/>            Default value: Pdf417CompactionMode.Auto.|
+|pdf_417_encode_mode|Identifies Pdf417 encode mode. <br/>            Default value: Auto.|
 |pdf_417_error_level|Gets or sets Pdf417 symbology type of BarCode's error correction level<br/>            ranging from level0 to level8, level0 means no error correction info,<br/>            level8 means best error correction which means a larger picture.|
 |pdf_417_truncate|Whether Pdf417 symbology type of BarCode is truncated (to reduce space). <br/>            Also known as CompactPDF417. Rigth row indicator and right stop pattern are removed in this mode.|
 |columns|Columns count.|
@@ -30,7 +31,6 @@ The Pdf417Parameters type exposes the following members:
 |pdf_417_macro_addressee|MacroPdf417 barcode addressee name (optional field).<br/>            MicroPDF417 barcode addressee name (optional field for Structured Append mode)|
 |pdf_417_macro_file_size|MacroPdf417 file size (optional field).<br/>            MicroPDF417 file size (optional field for Structured Append mode)<br/>            The file size field contains the size in bytes of the entire source file.|
 |pdf_417_macro_checksum|MacroPdf417 barcode checksum (optional field).<br/>            MicroPDF417 barcode checksum (optional field for Structured Append mode)<br/>            The checksum field contains the value of the 16-bit (2 bytes) CRC checksum using the CCITT-16 polynomial. x^16 + x^12 + x^5 + 1|
-|code_text_encoding|Gets or sets the encoding of codetext.<br/>            Default value: UTF-8|
 |pdf_417eci_encoding|Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details<br/>            about the used references for encoding the data in the symbol. Not applied for Macro PDF417 text fields.<br/>            Current implementation consists all well known charset encodings.|
 |pdf_417_macro_eci_encoding|Extended Channel Interpretation Identifiers. Applies for Macro PDF417 text fields.|
 |pdf_417_macro_terminator|Used to tell the encoder whether to add Macro PDF417 Terminator (codeword 922) to the segment. <br/>            Applied only for Macro PDF417.|

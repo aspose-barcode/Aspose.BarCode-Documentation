@@ -25,7 +25,6 @@ The AztecParameters type exposes the following members:
 |layers_count|Gets or sets layers count of Aztec symbol. Layers count should be in range from 1 to 3 for Compact mode and<br/>            in range from 1 to 32 for Full Range mode.<br/>            Default value: 0 (auto).|
 |is_reader_initialization|Used to instruct the reader to interpret the data contained within the symbol<br/>            as programming for reader initialization.|
 |aspect_ratio|Height/Width ratio of 2D BarCode module.|
-|code_text_encoding|Gets or sets the encoding of codetext.<br/>            Default value: UTF-8|
 
 ### See Also
 

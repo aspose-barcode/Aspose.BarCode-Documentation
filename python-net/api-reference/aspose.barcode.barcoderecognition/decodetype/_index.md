@@ -19,10 +19,9 @@ The DecodeType type exposes the following members:
 |NONE|Unspecified decode type.|
 |CODABAR|Specifies that the data should be decoded with CODABAR barcode specification|
 |CODE11|Specifies that the data should be decoded with CODE 11 barcode specification|
-|CODE_39_STANDARD|Specifies that the data should be decoded with Standard CODE 39 barcode specification|
-|CODE_39_EXTENDED|Specifies that the data should be decoded with Extended CODE 39 barcode specification|
-|CODE_93_STANDARD|Specifies that the data should be decoded with Standard CODE 93 barcode specification|
-|CODE_93_EXTENDED|Specifies that the data should be decoded with Extended CODE 93 barcode specification|
+|CODE39|Specifies that the data should be decoded with Code 39 basic charset barcode specification: ISO/IEC 16388|
+|CODE_39_FULL_ASCII|Specifies that the data should be decoded with Code 39 full ASCII charset barcode specification: ISO/IEC 16388|
+|CODE93|Specifies that the data should be decoded with CODE 93 barcode specification|
 |CODE128|Specifies that the data should be decoded with CODE 128 barcode specification|
 |GS1_CODE_128|Specifies that the data should be decoded with GS1 CODE 128 barcode specification|
 |EAN8|Specifies that the data should be decoded with EAN-8 barcode specification|
@@ -45,7 +44,7 @@ The DecodeType type exposes the following members:
 |DEUTSCHE_POST_IDENTCODE|Specifies that the data should be decoded with DeutschePost Ident code barcode specification|
 |DEUTSCHE_POST_LEITCODE|Specifies that the data should be decoded with DeutschePost Leit code barcode specification|
 |OPC|Specifies that the data should be decoded with OPC barcode specification|
-|PZN|Specifies that the data should be decoded with PZN barcode specification. This symbology is also known as Pharma Zentral Nummer|
+|PZN|Specifies that the data should be decoded with PZN barcode specification. This symbology is also known as Pharma Zentral Nummer. PZN7 and PZN8 are supported.|
 |PHARMACODE|Specifies that the data should be decoded with Pharmacode barcode. This symbology is also known as Pharmaceutical Binary Code|
 |DATA_MATRIX|Specifies that the data should be decoded with DataMatrix barcode symbology|
 |GS1_DATA_MATRIX|Specifies that the data should be decoded with GS1DataMatrix barcode symbology|
@@ -100,6 +99,7 @@ The DecodeType type exposes the following members:
 |HAN_XIN|Specifies that the data should be decoded with Han Xin Code barcode specification|
 |GS1_HAN_XIN|Specifies that the data should be decoded with GS1 Han Xin Code barcode specification|
 |GS1_COMPOSITE_BAR|Specifies that the data should be decoded with GS1 Composite Bar barcode specification|
+|RECT_MICRO_QR|Specifies that the data should be decoded with RectMicroQR (rMQR) Code barcode specification|
 |TYPES_1D|Specifies that data will be checked with all of 1D barcode symbologies|
 |TYPES_2D|Specifies that data will be checked with all of 2D barcode symbologies|
 |POSTAL_TYPES|Specifies that data will be checked with all of 1.5D Postal barcode symbologies, like Planet, Postnet, AustraliaPost, OneCode, RM4SCC, DutchKIX|

@@ -18,12 +18,9 @@ Barcode recognition is based on machine vision techniques and utilizes sophistic
   
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/net/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-   
 |Article|Description|
 |---|---|
-|[Recognition Modes](/barcode/net/recognition-quality-modes/)|Gives an overview of available modes to optimize barcode reading quality and speed|
 |[Recognition Quality Presets](/barcode/net/recognition-quality-presets/)|Gives an overview of supported presets to manage reading quality settings|
-|[Read Damaged Barcodes](/barcode/net/read-damaged-barcodes/)|Describes special quality settings and median filtering options that can be used to improve recognition results in cases of various distortions barcode images, such as Gaussian noise, white spots, visual artifacts, erased bars, severely corrupted QR Codes, and others|
-|[Read Non-typical Barcodes](/barcode/net/read-non-typical-barcodes/)|Describes special quality settings that can be used to improve recognition results in cases of non-typical barcode images, such as colored barcodes on a colored background, inverted images, or industrial Data Matrix barcodes|
-|[Detect Potential Barcode Regions](/barcode/net/detect-barcode-regions/)|Explains different ways to detect potential barcodes in an image|
-  
+|[Recognition XDimension Mode](/barcode/net/recognition-xdimension/)|Describes [*XDimension*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension) setting and its influence on barcode recognition with different scan resolutions|
+|[Recognition Barcode Quality and Deconvolution Modes](/barcode/net/recognition-barcode-quality-deconvolution/)|Describes [*BarcodeQuality*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/barcodequality) and [*Deconvolution*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/deconvolution) settings and their influence on barcode recognition with image distortions |
+|[Recognition Color Schemes Modes](/barcode/net/recognition-color-scheme/)|Describes [*InverseImage*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/inverseimage) and [*ComplexBackground*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qualitysettings/properties/complexbackground) settings and their influence on barcode recognition with different color schemes |

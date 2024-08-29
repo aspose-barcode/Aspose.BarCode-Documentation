@@ -25,6 +25,7 @@ The BarCodeExtendedParameters type exposes the following members:
 |data_matrix|Gets a DataMatrix additional information[DataMatrixExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/datamatrixextendedparameters/) of recognized barcode|
 |aztec|Gets a Aztec additional information[AztecExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/aztecextendedparameters/) of recognized barcode|
 |gs1_composite_bar|Gets a GS1CompositeBar additional information[GS1CompositeBarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/gs1compositebarextendedparameters/) of recognized barcode|
+|codabar|Gets a Codabar additional information[CodabarExtendedParameters](/barcode/python-net/api-reference/aspose.barcode.barcoderecognition/codabarextendedparameters/) of recognized barcode|
 
 ### See Also
 

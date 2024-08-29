@@ -26,6 +26,7 @@ Following package folders contain Visual Studio SSRS versions:
 - The **Visual Studio 2017** with **SSRS14.X** version is located in the ***Bin\VS2017SSRS14*** directory.
 - The **Visual Studio 2017** with **SSRS15.X** version is located in the ***Bin\VS2017SSRS15*** directory.
 - The **Visual Studio 2019** with **SSRS15.X** version is located in the ***Bin\VS2019SSRS15*** directory.
+- The **Visual Studio 2022** with **SSRS16.X** version is located in the ***Bin\VS2022SSRS16*** directory.
 
 ## **Locate and copy dll to Reporting Services Extension directory**
 You need to copy proper ***Aspose.BarCode for Reporting Services*** library to Visual Studio Reporting Services Extension directory. Some version of Visual Studios require library copping into two folders because visual component, built by Custom Report Item technology and Custom Code can be run from different folders. You can locate Visual Studio Reporting Services Extension directories by following paths:
@@ -37,6 +38,8 @@ You need to copy proper ***Aspose.BarCode for Reporting Services*** library to V
 - The ***VS 2017 SSRS Custom Code*** folder is located in the ***C:\Program Files (x86)\Microsoft Visual Studio\2017\\{Edition}\Common7\IDE\PrivateAssemblies*** directory.
 - The ***VS 2019 SSRS Extension*** folder is located in the ***C:\Program Files (x86)\Microsoft Visual Studio\2019\\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS*** directory.
 - The ***VS 2019 SSRS Custom Code*** folder is located in the ***C:\Program Files (x86)\Microsoft Visual Studio\2019\\{Edition}\Common7\IDE\PrivateAssemblies*** directory.
+- The ***VS 2022 SSRS Extension*** folder is located in the ***C:\Program Files\Microsoft Visual Studio\2022\\{Edition}\Common7\IDE\CommonExtensions\Microsoft\SSRS*** directory.
+- The ***VS 2022 SSRS Custom Code*** folder is located in the ***C:\Program Files\Microsoft Visual Studio\2022\\{Edition}\Common7\IDE\PrivateAssemblies*** directory.
 
 ## **Register Visual Component**
 To use visual component, you need to register it in configuration file ***RSReportDesigner.config*** which is located in Visual Studio Reporting Services Extension directory. You need to add the following rows:

@@ -39,7 +39,9 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[GS1CompositeBarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/gs1compositebarparameters/)|GS1 Composite bar parameters.|
 |[HanXinExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinextcodetextbuilder/)|Extended codetext generator for Han Xin Code for Extended Mode of HanXinEncodeMode|
 |[HanXinParameters](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinparameters/)|Han Xin parameters.|
+|[HslaColor](/barcode/python-net/api-reference/aspose.barcode.generation/hslacolor/)|Class for representing HSLA color (Hue, Saturation, Lightness, Alpha)|
 |[ITFParameters](/barcode/python-net/api-reference/aspose.barcode.generation/itfparameters/)|ITF parameters.|
+|[ImageParameters](/barcode/python-net/api-reference/aspose.barcode.generation/imageparameters/)|Image parameters.|
 |[MaxiCodeExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeextcodetextbuilder/)|Extended codetext generator for MaxiCode barcodes for ExtendedCodetext Mode of MaxiCodeEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
 |[MaxiCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeparameters/)|MaxiCode parameters.|
 |[Padding](/barcode/python-net/api-reference/aspose.barcode.generation/padding/)|Paddings parameters.|
@@ -50,6 +52,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[QrParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrparameters/)|QR parameters.|
 |[QrStructuredAppendParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrstructuredappendparameters/)|QR structured append parameters.|
 |[SupplementParameters](/barcode/python-net/api-reference/aspose.barcode.generation/supplementparameters/)|Supplement parameters. Used for Interleaved2of5, Standard2of5, EAN13, EAN8, UPCA, UPCE, ISBN, ISSN, ISMN.|
+|[SvgParameters](/barcode/python-net/api-reference/aspose.barcode.generation/svgparameters/)|SVG parameters.|
 |[SymbologyEncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/symbologyencodetype/)|Symbology encode type. See EncodeTypes to get instance.|
 |[Unit](/barcode/python-net/api-reference/aspose.barcode.generation/unit/)|Specifies the size value in different units (Pixel, Inches, etc.).|
 ## Enumerations
@@ -69,7 +72,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[DataMatrixEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixencodemode/)|DataMatrix encoder's encoding mode, default to Auto|
 |[DataMatrixVersion](/barcode/python-net/api-reference/aspose.barcode.generation/datamatrixversion/)|Specify the type of the ECC to encode.|
 |[DotCodeEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/dotcodeencodemode/)|Encoding mode for DotCode barcodes.|
-|[ECIEncodings](/barcode/python-net/api-reference/aspose.barcode.generation/eciencodings/)|Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details <br/>            about the used references for encoding the data in the symbol.<br/>            Current implementation consists all well known charset encodings.<br/>            Currently, it is used only for QR 2D barcode.|
+|[ECIEncodings](/barcode/python-net/api-reference/aspose.barcode.generation/eciencodings/)|Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details <br/>            about the used references for encoding the data in the symbol.|
 |[EnableChecksum](/barcode/python-net/api-reference/aspose.barcode.generation/enablechecksum/)|Enable checksum during generation for 1D barcodes.<br/>        Default is treated as Yes for symbologies which must contain checksum, as No where checksum only possible.<br/>        Checksum never used: Codabar<br/>        Checksum is possible: Code39 Standard/Extended, Standard2of5, Interleaved2of5, Matrix2of5, ItalianPost25, DeutschePostIdentcode, DeutschePostLeitcode, VIN<br/>        Checksum always used: Rest symbologies|
 |[FontMode](/barcode/python-net/api-reference/aspose.barcode.generation/fontmode/)|Font size mode.|
 |[HanXinEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/hanxinencodemode/)|Han Xin Code encoding mode. It is recommended to use Auto with ASCII / Chinese characters or Unicode for Unicode characters.|
@@ -79,13 +82,17 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[MacroCharacter](/barcode/python-net/api-reference/aspose.barcode.generation/macrocharacter/)|Macro Characters 05 and 06 values are used to obtain more compact encoding in special modes.<br/>            05 Macro craracter is translated to "[)>\u001E05\u001D" as decoded data header and "\u001E\u0004" as decoded data trailer.<br/>            06 Macro craracter is translated to "[)>\u001E06\u001D" as decoded data header and "\u001E\u0004" as decoded data trailer.|
 |[MaxiCodeEncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodeencodemode/)|Encoding mode for MaxiCode barcodes.|
 |[MaxiCodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/maxicodemode/)|Encoding mode for MaxiCode barcodes.|
+|[MicroQRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/microqrversion/)|Version of MicroQR Code.<br/>            From M1 to M4.|
 |[PatchFormat](/barcode/python-net/api-reference/aspose.barcode.generation/patchformat/)|PatchCode format. Choose PatchOnly to generate single PatchCode. Use page format to generate Patch page with PatchCodes as borders|
 |[Pdf417CompactionMode](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417compactionmode/)|Pdf417 barcode compaction mode|
+|[Pdf417EncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417encodemode/)|Pdf417 barcode encode mode|
 |[Pdf417ErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417errorlevel/)|pdf417 barcode's error correction level, from level 0 to level 9, level 0 means no error correction, level 8 means best error correction|
 |[Pdf417MacroTerminator](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417macroterminator/)|Used to tell the encoder whether to add Macro PDF417 Terminator (codeword 922) to the segment. <br/>            Applied only for Macro PDF417.|
-|[QREncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodemode/)|Encoding mode for QR barcodes. It is recommended to Use Auto with CodeTextEncoding = Encoding.UTF8 for Latin symbols or digits and Utf8BOM for Unicode symbols.|
+|[QREncodeMode](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodemode/)|Encoding mode for QR barcodes.|
 |[QREncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/qrencodetype/)|QR / MicroQR selector mode. Select ForceQR for standard QR symbols, Auto for MicroQR.<br/>            ForceMicroQR is used for strongly MicroQR symbol generation if it is possible.|
 |[QRErrorLevel](/barcode/python-net/api-reference/aspose.barcode.generation/qrerrorlevel/)|Level of Reed-Solomon error correction. From low to high: LevelL, LevelM, LevelQ, LevelH.|
 |[QRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/qrversion/)|Version of QR Code.<br/>            From Version1 to Version40 for QR code and from M1 to M4 for MicroQr.|
+|[RectMicroQRVersion](/barcode/python-net/api-reference/aspose.barcode.generation/rectmicroqrversion/)|Version of RectMicroQR Code.<br/>            From version R7x43 to version R17x139.|
+|[SvgColorMode](/barcode/python-net/api-reference/aspose.barcode.generation/svgcolormode/)|Possible modes for filling color in svg file, RGB is default and supported by SVG 1.1.<br/>            RGBA, HSL, HSLA is allowed in SVG 2.0 standard.<br/>            Even in RGB opacity will be set through "fill-opacity" parameter|
 |[TextAlignment](/barcode/python-net/api-reference/aspose.barcode.generation/textalignment/)|Text alignment.|
 |[TwoDComponentType](/barcode/python-net/api-reference/aspose.barcode.generation/twodcomponenttype/)|Type of 2D component|

@@ -21,6 +21,7 @@ The BaseGenerationParameters type exposes the following members:
 |rotation_angle|BarCode image rotation angle, measured in degree, e.g. RotationAngle = 0 or RotationAngle = 360 means no rotation.<br/>            If RotationAngle NOT equal to 90, 180, 270 or 0, it may increase the difficulty for the scanner to read the image.<br/>            Default value: 0.|
 |caption_above|Caption Above the BarCode image. See [CaptionParameters](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/).|
 |caption_below|Caption Below the BarCode image. See [CaptionParameters](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/).|
+|image|Image parameters. See [ImageParameters](/barcode/python-net/api-reference/aspose.barcode.generation/imageparameters/).|
 |auto_size_mode|Specifies the different types of automatic sizing modes.<br/>            Default value: AutoSizeMode.None.|
 |image_height|BarCode image height when [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/basegenerationparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|
 |image_width|BarCode image width when [auto_size_mode](/barcode/python-net/api-reference/aspose.barcode.generation/basegenerationparameters/) property is set to AutoSizeMode.Nearest or AutoSizeMode.Interpolation.|

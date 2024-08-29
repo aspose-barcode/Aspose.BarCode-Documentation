@@ -3,13 +3,13 @@ title: ECIEncodings
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 540
+weight: 570
 url: /python-net/api-reference/aspose.barcode.generation/eciencodings/
 ---
 
 ## ECIEncodings enumeration
 
-Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details <br/>            about the used references for encoding the data in the symbol.<br/>            Current implementation consists all well known charset encodings.<br/>            Currently, it is used only for QR 2D barcode.
+Extended Channel Interpretation Identifiers. It is used to tell the barcode reader details <br/>            about the used references for encoding the data in the symbol.
 
 ## Members
 | Member name | Description |
@@ -38,8 +38,15 @@ Extended Channel Interpretation Identifiers. It is used to tell the barcode read
 |UTF8|ISO/IEC 10646 UTF-8 encoding. ECI Id:"\000026"|
 |US_ASCII|ISO/IEC 646:1991 International Reference Version of ISO 7-bit coded character set encoding. ECI Id:"\000027"|
 |BIG5|Big 5 (Taiwan) Chinese Character Set encoding. ECI Id:"\000028"|
-|GB18030|GB (PRC) Chinese Character Set encoding. ECI Id:"\000029"|
+|GB2312|GB2312 Chinese Character Set encoding. ECI Id:"\000029"|
 |EUC_KR|Korean Character Set encoding. ECI Id:"\000030"|
+|GBK|GBK (extension of GB2312 for Simplified Chinese)  encoding. ECI Id:"\000031"|
+|GB18030|GGB18030 Chinese Character Set encoding. ECI Id:"\000032"|
+|UTF16LE|ISO/IEC 10646 UTF-16LE encoding. ECI Id:"\000033"|
+|UTF32BE|ISO/IEC 10646 UTF-32BE encoding. ECI Id:"\000034"|
+|UTF32LE|ISO/IEC 10646 UTF-32LE encoding. ECI Id:"\000035"|
+|INVARIANT|ISO/IEC 646: ISO 7-bit coded character set - Invariant Characters set encoding. ECI Id:"\000170"|
+|BINARY|8-bit binary data. ECI Id:"\000899"|
 |NONE|No Extended Channel Interpretation|
 
 ### See Also

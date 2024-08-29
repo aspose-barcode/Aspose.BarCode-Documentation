@@ -3,7 +3,7 @@ title: ITFParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 270
+weight: 280
 url: /python-net/api-reference/aspose.barcode.generation/itfparameters/
 ---
 
