@@ -4,7 +4,7 @@ type: docs
 feedback: BARCODECOM
 weight: 70
 description: "Setting the License for Aspose.BarCode for JavaScript via C++"
-keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in JavaScript, Aspose.Bar.Code License, Aspose.Bar.Code Licensing, Get License for Aspose.Barcode"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in JavaScript, Aspose.BarCode License, Aspose.BarCode Licensing, Get License for Aspose.Barcode"
 url: /javascript-cpp/licensing/
 ---
 
