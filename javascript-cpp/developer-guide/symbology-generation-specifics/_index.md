@@ -7,8 +7,6 @@ keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate 
 weight: 20
 feedback: BARCODECOM
 url: /javascript-cpp/generate-barcode-types/
-- /javascript-cpp/symbologies-for-barcodes/
--
 ---
 This section introduces general information about barcode symbologies and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 
 

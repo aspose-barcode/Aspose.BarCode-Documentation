@@ -6,8 +6,6 @@ keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan
 weight: 10
 feedback: BARCODECOM
 url: /javascript-cpp/recognition-quality-presets/
-- /javascript-cpp/recognition-modes-and-presets/
-
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 ## **Overview**

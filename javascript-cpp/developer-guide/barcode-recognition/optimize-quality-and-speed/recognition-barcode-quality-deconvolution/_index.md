@@ -6,8 +6,6 @@ keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read 
 weight: 30
 feedback: BARCODECOM
 url: /javascript-cpp/recognition-barcode-quality-deconvolution/
-- /javascript-cpp/recognition-specifics/
-
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 ## **Overview**

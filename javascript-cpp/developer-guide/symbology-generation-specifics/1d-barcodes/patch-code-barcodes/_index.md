@@ -7,7 +7,6 @@ keywords: "Generate Patch Code Barcode, Create Patch Code, How to Generate Patch
 weight: 70
 feedback: BARCODECOM
 url: /javascript-cpp/patch-code-barcodes/
-- /javascript-cpp/how-to-generate-a-patch-code/
 ---
 {{% alert color="primary" %}}[Generate Patch Code Barcodes Online](https://products.aspose.app/barcode/generate/patchcode): You can check the quality of ***Aspose.BarCode*** generation for PatchCode barcodes and view the results online.{{% /alert %}}
 
