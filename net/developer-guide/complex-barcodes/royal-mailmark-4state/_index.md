@@ -52,17 +52,14 @@ To read and parse Royal Mail *Mailmark 4-state* barcodes in ***Aspose.BarCode fo
 The following code snippet is given to demonstrate how to read *Mailmark 4-state* barcodes.
   
 {{< highlight csharp>}}
-//create Mailmark 4-State Barcode
-MailmarkCodetext mailmarkCode = new MailmarkCodetext();
-mailmarkCode.Format = 4;
-mailmarkCode.VersionID = 1;
-mailmarkCode.Class = "0";
-mailmarkCode.SupplychainID = 384224;
-mailmarkCode.ItemID = 16563762;
-mailmarkCode.DestinationPostCodePlusDPS = "EF61AH8T ";
+// Initialize a BarCodeReader instance to read Mailmark barcodes
+using (var reader = new BarCodeReader("Mailmark4State.png", DecodeType.Mailmark))
+{
+    // Read and recognize all barcodes present in the image
+    var recognized = reader.ReadBarCodes();
 
-//encode Mailmark 4-State Barcode
-ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(mailmarkCode);
-generator.Parameters.Barcode.XDimension.Pixels = 4;
-generator.Save($"{path}Mailmark4State.png");
+    // Decode the CodeText into a MailmarkCodetext object representing the 4-state Royal Mailmark data
+    MailmarkCodetext result = ComplexCodetextReader.TryDecodeMailmark(recognized[0].CodeText);
+}
+
 {{< /highlight >}}
