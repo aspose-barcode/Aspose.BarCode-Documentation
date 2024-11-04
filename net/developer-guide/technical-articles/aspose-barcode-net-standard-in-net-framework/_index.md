@@ -10,7 +10,7 @@ url: /net/aspose-barcode-net-standard-in-net-framework/
 ---
 
 ## **Overview**
-This article describes how to use **Aspose.Barcode for .Net** [*.Net Standard*](https://learn.microsoft.com/dotnet/standard/net-standard) libraries with [*.Net Framework*](https://learn.microsoft.com/uk-ua/dotnet/core/porting/third-party-deps#net-framework-compatibility-mode) v4.6.2 projects. Aspose.Barcode for .Net uses [*System.Drawing*](https://learn.microsoft.com/dotnet/api/system.drawing) for any .NET Framework library version and [*Aspose.Drawing.Common*](https://www.nuget.org/packages/Aspose.Drawing.Common/) for .Net Standard and [*.Net Core*](https://learn.microsoft.com/dotnet/core/introduction) versions. In this way to use .Net Standard versions of *Aspose.Barcode* with .Net Framework projects it is needed to add some manual changes to configuration project files.
+This article describes how to use **Aspose.Barcode for .Net** [*.Net Standard*](https://learn.microsoft.com/dotnet/standard/net-standard) libraries with [*.Net Framework*](https://learn.microsoft.com/uk-ua/dotnet/core/porting/third-party-deps#net-framework-compatibility-mode) v4.7.2 projects. Aspose.Barcode for .Net uses [*System.Drawing*](https://learn.microsoft.com/dotnet/api/system.drawing) for any .NET Framework library version and [*Aspose.Drawing.Common*](https://www.nuget.org/packages/Aspose.Drawing.Common/) for .Net Standard and [*.Net Core*](https://learn.microsoft.com/dotnet/core/introduction) versions. In this way to use .Net Standard versions of *Aspose.Barcode* with .Net Framework projects it is needed to add some manual changes to configuration project files.
 
 You can anytime download the [example application](aspose.barcode.netstandard.zip).
 
@@ -43,12 +43,8 @@ You need to edit ***packages.config*** and replace all ***targetFramework to*** 
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-  <package id="Aspose.BarCode" version="24.1.0" targetFramework="netstandard2.0" />
-  <package id="Aspose.Drawing.Common" version="24.2.0" targetFramework="netstandard2.0" />
-  <package id="System.Buffers" version="4.5.1" targetFramework="netstandard2.0" />
-  <package id="System.Memory" version="4.5.5" targetFramework="netstandard2.0" />
-  <package id="System.Numerics.Vectors" version="4.5.0" targetFramework="netstandard2.0" />
-  <package id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" targetFramework="netstandard2.0" />
+  <package id="Aspose.BarCode" version="24.10.0" targetFramework="netstandard2.0" />
+  <package id="Aspose.Drawing.Common" version="24.10.0" targetFramework="netstandard2.0" />
   <package id="System.Text.Encoding.CodePages" version="8.0.0" targetFramework="netstandard2.0" />
 </packages>
 ```
@@ -58,29 +54,16 @@ You need to edit Aspose.Barcode.NetStandard.csproj and also replace all paths in
 
 ``` xml
 <ItemGroup>
-  <Reference Include="Aspose.BarCode, Version=24.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-    <HintPath>..\packages\Aspose.BarCode.24.1.0\lib\netstandard2.0\Aspose.BarCode.dll</HintPath>
+  <Reference Include="Aspose.BarCode, Version=24.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <HintPath>..\packages\Aspose.BarCode.24.10.0\lib\netstandard2.0\Aspose.BarCode.dll</HintPath>
   </Reference>
-  <Reference Include="Aspose.Drawing.Common, Version=24.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-    <HintPath>..\packages\Aspose.Drawing.Common.24.2.0\lib\netstandard2.0\Aspose.Drawing.Common.dll</HintPath>
-  </Reference>
-  <Reference Include="System" />
-  <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Buffers.4.5.1\lib\netstandard2.0\System.Buffers.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Memory.4.5.5\lib\netstandard2.0\System.Memory.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll</HintPath>
-  </Reference>
-  <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-    <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+  <Reference Include="Aspose.Drawing.Common, Version=24.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <HintPath>..\packages\Aspose.Drawing.Common.24.10.0\lib\netstandard2.0\Aspose.Drawing.Common.dll</HintPath>
   </Reference>
   <Reference Include="System.Text.Encoding.CodePages, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
     <HintPath>..\packages\System.Text.Encoding.CodePages.8.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
   </Reference>
-</ItemGroup> 
+</ItemGroup>
 ```
 
 ## **Use Aspose.Barcode for .Net Standard Library**
