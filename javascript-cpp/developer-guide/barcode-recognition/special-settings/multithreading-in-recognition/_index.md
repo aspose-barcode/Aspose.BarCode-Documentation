@@ -25,7 +25,7 @@ To define multithread recognition settings manually, the following parameters ca
 ## **Single-Thread Recognition**
 In cases when there is a reason not to use additional CPU cores and to perform single-thread barcode recognition, this can be implemented by setting corresponding parameters [*UseAllCores*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/useallcores), [*UseOnlyThisCoresCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/useonlythiscorescount), and [*MaxAdditionalAllowedThreads*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) of class [*ProcessorSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings) as demonstrated in the code sample provided below.
   
-{{< highlight csharp>}}
+```javascript
 Console.WriteLine("ReadMTSingleCore:");
 
 //Set single-thread recognition
@@ -43,7 +43,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeTy
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 <details>  
 <summary>View the results of code execution</summary>
@@ -63,7 +63,7 @@ Pdf417:Aspose PDF417 04
 ## **Using Fixed Number of Cores for Recognition**
 To fix the number of CPU cores that can be allocated for barcode recognition, it is required to apply specific settings to multithreading parameters [*UseAllCores*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/useallcores), [*UseOnlyThisCoresCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/useonlythiscorescount), and [*MaxAdditionalAllowedThreads*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings/properties/maxadditionalallowedthreads) of class [*ProcessorSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.common/processorsettings) as explained in the code sample given below.
 
-{{< highlight csharp>}}
+```javascript
 Console.WriteLine("ReadMTRestrictedCores:");
 
 //allowed cores
@@ -92,7 +92,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeTy
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 <details>  
 <summary>View the results of code execution</summary>
@@ -113,7 +113,7 @@ Pdf417:Aspose PDF417 04
 ## **Automated Settings with Allocating Maximal Capacity for Recognition**
 To set automated allocation of the maximal possible number of cores for barcode recognition, the following settings need to be applied as shown in the code sample below. In this case, class [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) defines the number of required cores without the need for explicit manual instructions.
 
-{{< highlight csharp>}}
+```javascript
 Console.WriteLine("ReadMTAllCores:");
 
 //Init ThreadPool options
@@ -138,7 +138,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}many_pdf417.png", DecodeTy
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 <details>  
 <summary>View the results of code execution</summary>

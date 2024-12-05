@@ -161,7 +161,7 @@ To read metadata from *QR Code* barcodes, it is necessary to use a group of prop
   
 The code snippet given below explains how to get metadata for a sample *QR Code* image with structured append.
    
-{{< highlight csharp>}}
+```javascript
 //generate QR with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -185,7 +185,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtQRMeta.png", DecodeType
         Console.WriteLine($"ParityData:{result.Extended.QR.QRStructuredAppendModeParityData}");
     }
 }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="extqrmeta.png"></p>
 
@@ -403,7 +403,7 @@ To read metadata from *DataBar* barcodes with 2D components, the library provide
   
 The following code sample illustrates how to get metadata from a sample *DataBar* barcode with a 2D component (shown below).
   
-{{< highlight csharp>}}
+```javascript
 //generate Databar with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "ASPOSE.BARCODE"))
 {
@@ -424,14 +424,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDataBarMeta.png", Decod
         Console.WriteLine($"Is2DCompositeComponent:{result.Extended.DataBar.Is2DCompositeComponent}");
     }
 }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="extdatabarmeta.png"></p>
 
 ## **Read Metadata from 1D Barcodes**
 For some 1D symbologies, such as, for example, *EAN 13*, it is possible to separate the decoded barcode data into barcode information itself and the checksum value. This can be done using a group of properties called [*OneDExtendedParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/onedextendedparameters) that provides the following fields: [*Value*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/onedextendedparameters/properties/value) that stores the decoded 1D barcode text and [*CheckSum*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/onedextendedparameters/properties/checksum) that contains the result of checksum calculation.
   
-{{< highlight csharp>}}
+```javascript
 //generate EAN 13 with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128"))
 {
@@ -451,7 +451,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}EAN13.png", DecodeType.EAN
         Console.WriteLine($"CheckSum:{result.Extended.OneD.CheckSum}");
     }
 }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="ean13.png"></p>
   
@@ -459,7 +459,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}EAN13.png", DecodeType.EAN
 The input data in *Code 128* barcodes can be encoded in three different modes: A, B, or C. The library provides a group of properties called [*Code128ExtendedParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/code128extendedparameters) with a special field called [*Code128DataPortions*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/code128extendedparameters/properties/code128dataportions
 ) that stores decoded parts of the input data together with information about their encoding mode.
 
-{{< highlight csharp>}}
+```javascript
 //generate Code 128 with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose1234"))
 {
@@ -481,6 +481,6 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code128.png", DecodeType.C
         Console.WriteLine($"Code128DataPortions:{data}");
     }
 }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="code128.png"></p>

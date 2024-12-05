@@ -24,7 +24,7 @@ Barcode labels provided below have been generated with *EAN 2* and *EAN 5* suppl
   
 The following code sample explains how to generate supplement barcodes using *EAN 2* and *EAN 5* symbologies.
     
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 20;
@@ -34,7 +34,7 @@ gen.Save($"{path}SupplementEAN2.png", BarCodeImageFormat.Png);
 //set EAN 5 supplement
 gen.Parameters.Barcode.Supplement.SupplementData = "12345";
 gen.Save($"{path}SupplementEAN5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
 
 ## **Adjust Spacing Between Main and Supplement Barcodes**
 To define the size of a gap between the main and supplement barcodes, the library provides the [*SupplementSpace*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/supplementparameters/properties/supplementspace) property of class [*SupplementParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/supplementparameters).  
@@ -47,7 +47,7 @@ Barcode samples demonstrated below have been generated with different gap settin
   
 The following code snippet explains how to set the size of the spacing between the main and supplement barcodes in case of using the *EAN 13* symbology.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Supplement.SupplementData = "12345";
@@ -57,4 +57,4 @@ gen.Save($"{path}SupplementSpace20Pixels.png", BarCodeImageFormat.Png);
 //set supplement space 40 pixels
 gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 40;
 gen.Save($"{path}SupplementSpace40Pixels.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```

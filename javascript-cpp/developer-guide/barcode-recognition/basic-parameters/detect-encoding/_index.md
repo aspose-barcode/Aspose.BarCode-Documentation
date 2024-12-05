@@ -14,7 +14,7 @@ In ***Aspose.BarCode for JavaScript via C++***, there is a special parameter cal
   
 The following code snippet shows how to automatically decode barcodes with UTF8 and UTF16 Unicode encodings (a sample *QR Code* barcode image shown below has been considered). 
 
-{{< highlight csharp>}}
+```javascript
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -46,7 +46,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="qrdetectencoding.png"></p>
 

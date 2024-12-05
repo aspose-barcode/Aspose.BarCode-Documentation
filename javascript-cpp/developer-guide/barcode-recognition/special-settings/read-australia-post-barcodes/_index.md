@@ -29,7 +29,7 @@ The *Australia Post* symbology allows encoding additional customer information i
   
 The following code snippet explains how to set the decoding format using the *CTable* option for the barcode image shown below. 
   
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE"))
 {
@@ -50,7 +50,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="australiapostctable.png"></p>
 
@@ -58,7 +58,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
   
 The following code sample shows how to apply the decoding format with the *NTable* option while reading the barcode image provided below. 
   
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
 {
@@ -79,7 +79,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="australiapostntable.png"></p>
 
@@ -87,7 +87,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
   
 The following code snippet demonstrates how to set the *Other* decoding format for the barcode image given below. 
   
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210"))
 {
@@ -108,7 +108,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", D
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="australiapostother.png"></p>
 
@@ -117,7 +117,7 @@ The *Australia Post* standard imposes using fixed size for each subtype. When ba
   
 The following code sample illustrates how to eliminate filling patters while using the *CTable* decoding mode for the barcode image demonstrated below. 
 
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567END"))
 {
@@ -153,7 +153,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="australiapostctableignoreending.png"></p>
 
@@ -163,7 +163,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
   
 The following code snippet explains how to decode customer information inputted in the *NTable* format while reading the sample *Australia Post* barcode shown below. 
 
-{{< highlight csharp>}}
+```javascript
 class NTableDecoder : AustraliaPostCustomerInformationDecoder
 {
     string[] N_Table = { "00", "01", "02", "10", "11", "12", "20", "21", "22", "30" };
@@ -208,6 +208,6 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCustomerInfor
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="australiapostcustomerinformationdecoder.png"></p>

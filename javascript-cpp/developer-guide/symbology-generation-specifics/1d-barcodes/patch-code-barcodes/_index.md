@@ -26,7 +26,7 @@ Sample barcode labels provided below illustrate six basic *Patch Code* barcode t
   
 The following code snippet explains how to generate *Patch Code* barcodes using available patterns.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
 gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Manual;
 gen.Parameters.Barcode.CodeTextParameters.Font.Size.Pixels = 20;
@@ -48,7 +48,7 @@ gen.Save($"{path}PatchCodeT.png", BarCodeImageFormat.Png);
 //Patch VI
 gen.CodeText = "Patch VI";
 gen.Save($"{path}PatchCodeVI.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
 
 
 ## **Generation Modes**
@@ -75,7 +75,7 @@ Images below illustrate the *Patch Code* barcode pages generated with and withou
   
 The following code snippet explains how to set the required format for a *Patch Code* barcode to be generated and how to add a complementary QR code.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
 //create a PatchCode barcode without complimentary QR
 gen.Parameters.Barcode.PatchCode.PatchFormat = PatchFormat.A4;
@@ -85,4 +85,4 @@ gen.Parameters.Barcode.PatchCode.PatchFormat = PatchFormat.A4;
 gen.Parameters.Barcode.PatchCode.ExtraBarcodeText = "Aspose page extra info";
 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
 gen.Save($"{path}PatchCodeA4WithQR.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```

@@ -84,10 +84,10 @@ Below, two barcode types, *Code 39* and *QR Code*, are considered as examples to
   
 The code snippet provided below illustrates how to generate a barcode using the *Code 39* symbology.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "$&This Code#*");
 gen.Save($"{path}Code39Extended.png", BarCodeImageFormat.Png);
-{{< /highlight >}}  
+```  
   
 
 ## **Data Encoding Formats**
@@ -103,11 +103,11 @@ Further in the article, several barcode types (*EAN 13*, *Code 11*, *GS1 Code 12
 
 The following code snippet explains how to generate *EAN13* barcodes.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+``` 
   
 **Code 11**  
 The *Code 11* symbology allows encoding a string of any length (theoretically, unlimited), including numerical digits and the dash sign (-).
@@ -116,10 +116,10 @@ The *Code 11* symbology allows encoding a string of any length (theoretically, u
   
 The following code sample demonstrates how to create a *Code 11* barcode.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "1234-5678");
 gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
   
 **GS1 Code 128**  
 *GS1 Code 128* can encode any of ASCII alphanumeric characters similarly to the basic *Code 128* symbology. However, in *GS1 Code 128*, the data encoding format is defined strictly according to the GS1 standards.  
@@ -128,11 +128,11 @@ gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
   
 The code example provided below can be used to generate a *GS1 Code128* barcode.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1Code128, "(02)04006664241007(37)1");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}GS1Code128.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
   
   
 ## **Data Density**
@@ -155,10 +155,10 @@ The *Interleaved 2-of-5* symbology can encode sequences of digits of any length 
   
 The following code example describes how to generate *Interleaved 2 of 5* barcodes.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Interleaved2of5, "1234567890");
 gen.Save($"{path}Interleaved2of5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
   
   
 ## **Postal Types** 
@@ -171,11 +171,11 @@ Two symbologies considered below, *Postnet* and *RM4SCC* are provided as example
   
 The following code example illustrates how to generate a *Postnet* barcode.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Postnet, "1159628792");
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}Postnet.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+``` 
 
 **RM4SCC**  
 *RM4SCC* is capable of encoding only digits and English alphabet capital characters. Its parameters are similar to those of 1D barcodes. In this barcode type, each character corresponds to four bars so that two of them are extended upwards and the other two - downwards. The combination of such bars with variable height provides combinations to encode 36 possible characters: 10 numerical and 26 alphabetical ones.
@@ -184,10 +184,10 @@ gen.Save($"{path}Postnet.png", BarCodeImageFormat.Png);
 
 The code snippet given below shows how to generate a *Postnet* barcode.
    
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.RM4SCC, "N101HU9Z");
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}RM4SCC.png", BarCodeImageFormat.Png);
-{{< /highlight >}} 
+``` 
 
 

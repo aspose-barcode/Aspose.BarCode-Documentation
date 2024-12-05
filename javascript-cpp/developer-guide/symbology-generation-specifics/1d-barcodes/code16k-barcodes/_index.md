@@ -24,7 +24,7 @@ Sample *Code 16K* barcode labels demonstrated below have been generated with dif
   
 The following code snippet shows how to set the height of *Code 16K* barcodes by defining the aspect ratio.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K aspect ratio 10
@@ -33,7 +33,7 @@ gen.Save($"{path}Code16KAspectRatio10.png", BarCodeImageFormat.Png);
 //set Code 16K aspect ratio 20
 gen.Parameters.Barcode.Code16K.AspectRatio = 20;
 gen.Save($"{path}Code16KAspectRatio20.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
 
 ## **Quiet Zone Settings**
 For the *Code 16K* symbology, ***Aspose.BarCode for JavaScript via C++*** enables adjusting the size of quiet zones on the left and right sides of a barcode by setting the [QuietZoneLeftCoef](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/code16kparameters/properties/quietzoneleftcoef) and [QuietZoneRightCoef](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/code16kparameters/properties/quietzonerightcoef) properties respectively. These properties correspond to class [Code16KParameters](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/code16kparameters) and are defined as relative coefficients to the value of the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) parameter.  
@@ -46,7 +46,7 @@ For the *Code 16K* symbology, ***Aspose.BarCode for JavaScript via C++*** enable
   
 The following code sample illustrates how to customize quiet zone settings for *Code 16K* barcodes.
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K quiet zone 10
@@ -57,4 +57,4 @@ gen.Save($"{path}Code16KQuietZoneL10R10.png", BarCodeImageFormat.Png);
 gen.Parameters.Barcode.Code16K.QuietZoneLeftCoef = 20;
 gen.Parameters.Barcode.Code16K.QuietZoneRightCoef = 20;
 gen.Save($"{path}Code16KQuietZoneL20R20.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```

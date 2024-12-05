@@ -27,7 +27,7 @@ As a result of barcode reading, the [*Confidence*](https://reference.aspose.com/
   
 The following code snippet explains how to get the recognition quality estimate for a sample barcode image.
   
-{{< highlight csharp>}}
+```javascript
 //recognize image
 Console.WriteLine("ReadExtQuality:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
@@ -40,6 +40,6 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
         Console.WriteLine($"ReadingQuality:{result.ReadingQuality.ToString()}");
     }
 }
-{{< /highlight >}}
+```
 
   

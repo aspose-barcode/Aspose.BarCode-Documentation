@@ -27,7 +27,7 @@ To generate a *Mailmark 4-state* barcode in ***Aspose.BarCode for JavaScript via
   
 The following code snippet explains how to generate *Mailmark 4-state* barcodes.
   
-{{< highlight csharp>}}
+```javascript
 //create Mailmark 4-State Barcode
 MailmarkCodetext mailmarkCode = new MailmarkCodetext();
 mailmarkCode.Format = 4;
@@ -41,7 +41,7 @@ mailmarkCode.DestinationPostCodePlusDPS = "EF61AH8T ";
 ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(mailmarkCode);
 generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark4State.png");
-{{< /highlight >}}
+```
 
 
 ## **Read Mailmark 4-State Barcode**
@@ -49,7 +49,7 @@ To read and parse Royal Mail *Mailmark 4-state* barcodes in ***Aspose.BarCode fo
   
 The following code snippet is given to demonstrate how to read *Mailmark 4-state* barcodes.
   
-{{< highlight csharp>}}
+```javascript
 //create Mailmark 4-State Barcode
 MailmarkCodetext mailmarkCode = new MailmarkCodetext();
 mailmarkCode.Format = 4;
@@ -63,4 +63,4 @@ mailmarkCode.DestinationPostCodePlusDPS = "EF61AH8T ";
 ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(mailmarkCode);
 generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark4State.png");
-{{< /highlight >}}
+```

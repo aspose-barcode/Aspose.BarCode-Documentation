@@ -23,7 +23,7 @@ In ***Aspose.BarCode for JavaScript via C++***, barcode recognition is performed
   
 The following code snippet explains how to specify several target barcode types to be recognized in a single image, in this case, *PDF417*, *QR Code*, *Code 39*, and *Code 128*, as can be seen in the sample image provided below. As such, barcodes that do not correspond to the target symbologies (*DataMatrix* and *RM4SCC* barcodes in the given example) will be ignored.
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -31,7 +31,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="multiple_codes.png" hight="50%" width="50%"></p>  
 
@@ -41,7 +41,7 @@ To get barcode recognition results, it is necessary to call the [*ReadBarCodes*]
   
 The following code sample illustrates how to load recognition results for the image provided above.
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -52,7 +52,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
     foreach (BarCodeResult result in reader.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 ## **Manual and Timeout Methods of Recognition Abortion**
 Class [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) allows aborting the recognition process in case it is not further feasible. It can be done in two ways. The first option is to use the [*TimeOut*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/properties/timeout) property to interrupt the recognition process in case of exceeding the timeout value. By default, [*TimeOut*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/properties/timeout) is set to 0.  
@@ -63,7 +63,7 @@ Both recognition abortion ways result in throwing an exception called [*Recognit
   
 The following code snippet demonstrates an example of aborting the recognition process with the exception "*Recognition is aborted. Execution time: 342 ms*".
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -78,4 +78,4 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
         Console.WriteLine(e.Message);
     }
 }
-{{< /highlight >}}
+```

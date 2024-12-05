@@ -13,7 +13,7 @@ To get the data encoded in a barcode and identify its type, class [*BarCodeResul
   
 The following code sample explains how to get the data encoded in a barcode and its type for the sample barcode image provided below (in this case, a *QR Code* label).
  
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -32,7 +32,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRCodetext.png", DecodeTyp
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
     }
 }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="qrcodetext.png"></p> 
   
@@ -41,7 +41,7 @@ In cases when it is necessary to get the data encoded in a barcode in the form o
   
 The following code snippet illustrates how to obtain barcode data as a stream of bytes for the sample *PDF417* barcode image provided below.  
    
-{{< highlight csharp>}}
+```javascript
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -67,7 +67,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtCodeBytes.png", DecodeT
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
         Console.WriteLine($"CodeBytes:{BitConverter.ToString(result.CodeBytes)}");
     }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="extcodebytes.png"></p>
 
@@ -76,7 +76,7 @@ In cases when the barcode data is encoded using a particular Unicode encoding, i
   
 The following code snippet shows how to get the data encoded in UTF8 as a result of reading a sample *Data Matrix* barcode given below.
    
-{{< highlight csharp>}}
+```javascript
 //create encoded Unicode codetext
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
 {
@@ -93,7 +93,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtUnicodeCodeText.png", D
         Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
         Console.WriteLine($"GetCodeText:{result.GetCodeText(Encoding.UTF8)}");
     }
-{{< /highlight >}}
+```
 
 <p align="center"><img src="extunicodecodetext.png"></p>
    

@@ -17,7 +17,7 @@ In some cases, developers may need to get information about the placement region
   
 The following code sample illustrates how to get the information about barcode placement region and orientation angle for the example barcode image provided below.
 
-{{< highlight csharp>}}
+```javascript
 //recognize image
 Console.WriteLine("ReadExtRegion:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
@@ -35,7 +35,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeTyp
         Console.WriteLine($"Points:{ptStr}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="qr_code128.png" width="20%" height="20%"></p>
 

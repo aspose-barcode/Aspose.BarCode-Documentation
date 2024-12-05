@@ -23,7 +23,7 @@ To generate a *Swiss QR Code* barcode using  ***Aspose.BarCode for JavaScript vi
   
 The code sample given below demonstrates how to generate a *Swiss QR Code* barcode.
   
-{{< highlight csharp>}}
+```javascript
 //create Swiss QR Bill
 SwissQRCodetext swissQRCode = new SwissQRCodetext();
 swissQRCode.Bill.Version = SwissQRBill.QrBillStandardVersion.V2_0;
@@ -57,12 +57,12 @@ generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
 generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
 generator.Save($"{path}SwissQRBill.png");
-{{< /highlight >}}
+```
 
 ## **Read Swiss QR Code**
 ***Aspose.BarCode for JavaScript via C++*** includes class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) that is used to decode barcode input text according to the specified complex barcode type, in this case, *Swiss QR Code*. To read *Swiss QR Code* barcodes, first, it is necessary to create an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) and set it to the value *DecodeType.QR*; then, the obtained barcode contents need to be parsed in class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) by calling the [*TryDecodeSwissQR*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/methods/trydecodeswissqr) method that returns an instance of [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext) with the decoded barcode information. The code snippet below illustrates how to implement Swiss QR code recognition.
   
-{{< highlight csharp>}}
+```javascript
 Console.OutputEncoding = Encoding.Unicode;
 //recognize Swiss QR Code
 BarCodeReader reader = new BarCodeReader($"{path}SwissQRBill.png", DecodeType.QR);
@@ -78,4 +78,4 @@ foreach (BarCodeResult result in reader.ReadBarCodes())
     Console.WriteLine($"Creditor:{swissResult.Bill.Creditor.Name}");
     Console.WriteLine($"Debtor:{swissResult.Bill.Debtor.Name}");
 }
-{{< /highlight >}}
+```

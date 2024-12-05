@@ -29,7 +29,7 @@ Sample *Mailmark 2D* barcodes demonstrated below have been created setting diffe
   
 The following code snippet illustrates how to generate *Mailmark 2D* barcodes of types 7, 9, and 29.
   
-{{< highlight csharp>}}
+```javascript
 ComplexBarcodeGenerator generator = null;
 
 //create Mailmark 2D Code
@@ -64,14 +64,14 @@ mailmark2D.CustomerContent = "CUSTOM DATA";
 generator = new ComplexBarcodeGenerator(mailmark2D);
 generator.Parameters.Barcode.XDimension.Pixels = 4;
 generator.Save($"{path}Mailmark2DType29.png");
-{{< /highlight >}}
+```
   
 ## **Read Mailmark 2D Barcodes**
 To read and parse Royal Mail *Mailmark 2D* barcodes in ***Aspose.BarCode for JavaScript via C++***, first, it is required to create an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) and set it to the value *DecodeType.DataMatrix*. Then, the obtained information can be parsed further in class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) by calling the [*TryDecodeMailmark2D*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/methods/trydecodemailmark2d) method that returns an instance of [*Mailmark2DCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/mailmark2dcodetext) with the decoded barcode data.  
   
 The following code snippet explains how to read *Mailmark 2D* barcodes.
 
-{{< highlight csharp>}}
+```javascript
 Console.OutputEncoding = Encoding.Unicode;
 //recognize Mailmark 2D Code
 BarCodeReader reader = new BarCodeReader($"{path}Mailmark2DType9.png", DecodeType.DataMatrix);
@@ -90,4 +90,4 @@ foreach (BarCodeResult result in reader.ReadBarCodes())
     Console.WriteLine($"ReturnToSenderPostCode:{mailmarkResult.ReturnToSenderPostCode}");
     Console.WriteLine($"CustomerContent:{mailmarkResult.CustomerContent}");
 }
-{{< /highlight >}} 
+``` 

@@ -19,7 +19,7 @@ Target symbologies for barcode recognition can be specified as a list and passed
   
 The following code snippet demonstrates how to set target symbologies (*Code 39*, *Code 128*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype).
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
@@ -27,14 +27,14 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 ## ***MultyDecodeType* Mode**
 The other way to set target symbologies for recognition is to list the required barcode types in a constructor of class [*MultyDecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/multydecodetype) and then to pass an instance of this class to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeReadType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodereadtype/methods/1) method.  
   
 The following code sample explains how to define target symbologies for barcode reading (in this case, *Code 39*, *Code 128*, and *RM4SCC*) through [*MultyDecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/multydecodetype).
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(new MultyDecodeType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC));
@@ -42,7 +42,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 ## **Predefined Sets of Types**
 Class [*DecodeTypes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype) contains various predefined sets of symbologies for recognition, including the following ones:
@@ -56,12 +56,12 @@ Class [*DecodeTypes*](https://reference.aspose.com/barcode/javascript-cpp/aspose
   
 The following code snippet illustrates how to specify target barcode types using the predefined set called *Types2D*.
   
-{{< highlight csharp>}}
+```javascript
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Types2D))
 {
     Console.WriteLine("ReadTypes2D:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 

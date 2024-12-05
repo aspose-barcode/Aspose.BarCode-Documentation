@@ -20,7 +20,7 @@ Symbologies with obligatory checksum always require performing checksum control 
   
 The following code snippet explains how to manage checksum validation settings for the symbology with obligatory checksum (in this case, a sample *Code 11* barcode image provided below has been considered). 
  
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456"))
 {
@@ -56,7 +56,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
         Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="code11.png"></p> 
 
@@ -65,7 +65,7 @@ For symbologies with optional checksum control, [*ChecksumValidation*](https://r
   
 The following code sample illustrates the options of reading barcodes with optional checksum (a *Code 39* barcode image shown below has been used). 
   
-{{< highlight csharp>}}
+```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "123456"))
 {
@@ -102,7 +102,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
         Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
     }
 }
-{{< /highlight >}}
+```
   
 <p align="center"><img src="code39.png"></p>
 

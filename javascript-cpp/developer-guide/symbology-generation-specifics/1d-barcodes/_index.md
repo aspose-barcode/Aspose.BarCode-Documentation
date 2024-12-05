@@ -28,7 +28,7 @@ This article describes how to manage these properties using specified classes an
   
 The code snippet below explains how to set different values of bar height for *Code 128*.
      
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set BarHeight 40
@@ -37,7 +37,7 @@ gen.Save($"{path}BarHeight40Code128.png", BarCodeImageFormat.Png);
 //set BarHeight 80
 gen.Parameters.Barcode.BarHeight.Pixels = 80;
 gen.Save($"{path}BarHeight80Code128.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
   
 ## **Bar Filling Modes**
 For 1D barcodes, ***Aspose.BarCode for JavaScript via C++*** provides a specific mode to generate barcodes with empty bars instead of filled ones. Such a modification can be done using the [*FilledBars*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/filledbars) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters). This property is set to *True* by default and is valid only for 1D barcodes. 
@@ -48,7 +48,7 @@ For 1D barcodes, ***Aspose.BarCode for JavaScript via C++*** provides a specific
   
 The following code sample demonstrates how to adjust the bar filling mode for *Code 128*.
 
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set bars filled
@@ -57,7 +57,7 @@ gen.Save($"{path}BarsFilledCode128.png", BarCodeImageFormat.Png);
 //set bars empty
 gen.Parameters.Barcode.FilledBars = false;
 gen.Save($"{path}BarsEmptyCode128.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
 
 ## **Wide-to-Narrow Ratio**
 Two-width 1D barcodes are based on the binary code principle, meaning that information is encoded using bars and spaces with two options of width: wide and narrow. Two-width barcode symbologies include the following: *Codabar*, *Code 11*, *Code 32*, *Code 39*, *DataLogic 2-of-5*, *IATA 2-of-5*, *Interleaved 2-of-5*, *ITF 6*, *ITF 14*, *Matrix 2-of-5*, *MSI*, *OPC*, *PZN*, *Standard 2-of-5*, and *VIN*.  
@@ -70,7 +70,7 @@ In ***Aspose.BarCode for JavaScript via C++***, the **wide-to-narrow ratio** def
   
 The code snippet provided below illustrates how to adjust the setting of the wide-to-narrow ratio for *Code 39*.  
 
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Wide-to-Narrow Ratio to 2
@@ -79,7 +79,7 @@ gen.Save($"{path}WideNarrow2Code39.png", BarCodeImageFormat.Png);
 //set Wide-to-Narrow Ratio to 5
 gen.Parameters.Barcode.WideNarrowRatio = 5;
 gen.Save($"{path}WideNarrow5Code39.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+```
   
 ## **Handle Exceptions on Incorrect Barcode Text**
 In case when a barcode has not been created correctly due to invalid barcode text, by default, the library can generate additional dummy data to bring the barcode into line with the standard or delete conflicting characters. Thereafter barcode generation is considered successful.  
@@ -92,7 +92,7 @@ Developers can change this behaviour by setting the [*ThrowExceptionWhenCodeText
   
 The code sample given below illustrates how to set the [*ThrowExceptionWhenCodeTextIncorrect*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property. In this example, the following exception will be thrown: "*Symbology ITF 6 - codetext is invalid*". 
   
-{{< highlight csharp>}}
+```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF6, "123457");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //correct codetext with correction check
@@ -114,4 +114,4 @@ catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
-{{< /highlight >}}
+```

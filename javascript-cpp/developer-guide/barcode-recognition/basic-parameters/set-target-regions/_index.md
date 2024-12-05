@@ -21,7 +21,7 @@ The following code samples illustrate how to set a target recognition region in 
 
 **Set Target Region Using Class BarCodeReader**
 
-{{< highlight csharp>}}
+```javascript
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -32,10 +32,10 @@ using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, 
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 **Set Target Region Using SetBarCodeImage Method**
-{{< highlight csharp>}}
+```javascript
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -47,14 +47,14 @@ using (BarCodeReader reader = new BarCodeReader())
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
 
 ## **Set Multiple Target Regions**
 In cases when it is required to specify several regions for barcode reading in the same source image, developers can define target areas in the same way as for the single region, namely, using the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage/methods/1) method.  
   
 The following code snippet explains how to multiple target areas for barcode reading in the source image.
   
-{{< highlight csharp>}}
+```javascript
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader())
 {
@@ -68,4 +68,4 @@ using (BarCodeReader reader = new BarCodeReader())
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
 }
-{{< /highlight >}}
+```
