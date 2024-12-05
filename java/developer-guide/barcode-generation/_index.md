@@ -8,7 +8,7 @@ notoc: true
 url: /java/barcodegeneration/
 aliases:
 - /java/barcodegenerator-overview/
-- /java/generate-barcodes/
+- /java/generatebarcodes/
 ---
 {{% alert color="primary" %}}[Generate Barcodes Online](https://products.aspose.app/barcode/generate). You can test the quality of ***Aspose.BarCode*** generation and view the results online.{{% /alert %}}
 
