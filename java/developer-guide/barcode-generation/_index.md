@@ -5,7 +5,7 @@ type: docs
 weight: 10
 feedback: BARCODECOM
 notoc: true
-url: /java/barcodegeneration/
+url: /java/barcode-generation/
 aliases:
 - /java/barcodegenerator-overview/
 - /java/generatebarcodes/
