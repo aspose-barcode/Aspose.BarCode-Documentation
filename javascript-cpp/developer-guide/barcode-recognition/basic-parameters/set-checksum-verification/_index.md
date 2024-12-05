@@ -10,98 +10,98 @@ url: /javascript-cpp/set-checksum-verification/
 ---
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
-
 ## **Overview**
-In many 1D and postal symbologies, data integrity verification and decoding are based on checksum control mechanisms. Class [*BarcodeSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings
-) provides the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property that is used to manage checksum settings for data validation and decoding. In general, barcode standards can be divided into two groups: those with obligatory checksum and those with optional one. Depending on this, the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) field can take different values; hence, the barcode recognition process will change according to particular checksum settings.  
+In many 1D and postal symbologies, data integrity verification and decoding rely on checksum control mechanisms. The [*BarcodeSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings) class has the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property for managing checksum settings for data validation and decoding. Barcode standards can generally be divided into two groups: those that require a checksum and those that have an optional checksum. The [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) field can be set to different values, affecting the barcode recognition process based on the checksum settings.
 
 ## **Checksum Validation for Barcodes with Obligatory Checksum**
-Symbologies with obligatory checksum always require performing checksum control when the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property is set to *ChecksumValidation.Default* or *ChecksumValidation.On*. Otherwise, this parameter can take the value *ChecksumValidation.Off* that disables checksum controls for barcode type with obligatory checksum and thus allows reading data from incorrectly generated barcodes. However, in this case, the probability of inaccurate recognition increases considerably.  
-  
-The following code snippet explains how to manage checksum validation settings for the symbology with obligatory checksum (in this case, a sample *Code 11* barcode image provided below has been considered). 
+For symbologies with an obligatory checksum, checksum control is always performed when the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property is set to *ChecksumValidation.Default* or *ChecksumValidation.On*. If set to *ChecksumValidation.Off*, checksum control is disabled, allowing data reading from incorrectly generated barcodes. However, this increases the likelihood of inaccurate recognition.
+
+The following code snippet demonstrates how to configure checksum validation for symbologies with an obligatory checksum (e.g., the *Code 11* barcode image shown below).
+
  
 ```javascript
-//create barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
+// Create a Code 11 barcode
+var gen = new BarCodeInstance.BarcodeGenerator("Code11", "123456");
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Read barcode image with ChecksumValidation.Default being set
+console.log("ReadChecksumCode11:");
+console.log("ChecksumValidation: Default");
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code11");
+reader.BarcodeSettings.ChecksumValidation = BarCodeInstance.ChecksumValidation.Default;
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`1D Value: ${result.Extended.OneD.Value}`);
+    console.log(`1D CheckSum: ${result.Extended.OneD.CheckSum}`);
 }
 
-//read barcode image with ChecksumValidation.Default being set
-Console.WriteLine("ReadChecksumCode11:");
-Console.WriteLine("ChecksumValidation: Default");
-using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Code11))
-{
-    read.BarcodeSettings.ChecksumValidation = ChecksumValidation.Default;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"1D Value:{result.Extended.OneD.Value}");
-        Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
-    }
+// Read barcode image with ChecksumValidation.Off being set
+console.log("ChecksumValidation: Off");
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code11");
+reader.BarcodeSettings.ChecksumValidation = BarCodeInstance.ChecksumValidation.Off;
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`1D Value: ${result.Extended.OneD.Value}`);
+    console.log(`1D CheckSum: ${result.Extended.OneD.CheckSum}`);
 }
 
-//read barcode image with ChecksumValidation.Off being set
-Console.WriteLine("ChecksumValidation: Off");
-using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Code11))
-{
-    read.BarcodeSettings.ChecksumValidation = ChecksumValidation.Off;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"1D Value:{result.Extended.OneD.Value}");
-        Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
-    }
-}
+gen.delete();
+reader.delete();
+
 ```
   
 <p align="center"><img src="code11.png"></p> 
 
 ## **Checksum Validation for Barcodes with Optional Checksum**
-For symbologies with optional checksum control, [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) can be set in such a way to enable checksum checking, namely, it needs to take the value *ChecksumValidation.On*. Otherwise, when the values *ChecksumValidation.Default* and *ChecksumValidation.Off* are used, checksum validation is omitted.  
-  
-The following code sample illustrates the options of reading barcodes with optional checksum (a *Code 39* barcode image shown below has been used). 
+For symbologies with optional checksum control, the [*ChecksumValidation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/checksumvalidation) property can be set to enable checksum checking by using the value *ChecksumValidation.On*. If the property is set to *ChecksumValidation.Default* or *ChecksumValidation.Off*, checksum validation will be skipped.
+
+The following code sample demonstrates how to configure barcode reading with optional checksum (a *Code 39* barcode image is used as an example).
+
   
 ```javascript
-//create barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "123456"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
-    gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
+// Create a Code 39 Extended barcode
+var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "123456");
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.IsChecksumEnabled = BarCodeInstance.EnableChecksum.Yes;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Read barcode image with ChecksumValidation.Default being set
+console.log("ReadChecksumCode39:");
+console.log("ChecksumValidation: Default");
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code39FullASCII");
+reader.BarcodeSettings.ChecksumValidation = BarCodeInstance.ChecksumValidation.Default;
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`1D Value: ${result.Extended.OneD.Value}`);
+    console.log(`1D CheckSum: ${result.Extended.OneD.CheckSum}`);
 }
 
-//read barcode image with ChecksumValidation.Default being set
-Console.WriteLine("ReadChecksumCode39:");
-Console.WriteLine("ChecksumValidation: Default");
-using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
-{
-    read.BarcodeSettings.ChecksumValidation = ChecksumValidation.Default;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"1D Value:{result.Extended.OneD.Value}");
-        Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
-    }
+// Read barcode image with ChecksumValidation.On being set
+console.log("ChecksumValidation: On");
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code39FullASCII");
+reader.BarcodeSettings.ChecksumValidation = BarCodeInstance.ChecksumValidation.On;
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`1D Value: ${result.Extended.OneD.Value}`);
+    console.log(`1D CheckSum: ${result.Extended.OneD.CheckSum}`);
 }
 
-//read barcode image with ChecksumValidation.On being set
-Console.WriteLine("ChecksumValidation: On");
-using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
-{
-    read.BarcodeSettings.ChecksumValidation = ChecksumValidation.On;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"1D Value:{result.Extended.OneD.Value}");
-        Console.WriteLine($"1D CheckSum:{result.Extended.OneD.CheckSum}");
-    }
-}
+gen.delete();
+reader.delete();
+
 ```
   
 <p align="center"><img src="code39.png"></p>

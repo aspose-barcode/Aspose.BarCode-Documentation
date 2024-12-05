@@ -30,7 +30,7 @@ using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, 
 {
     Console.WriteLine("ReadWithRegion:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 
@@ -45,7 +45,7 @@ using (BarCodeReader reader = new BarCodeReader())
     reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
     Console.WriteLine("ReadSetBarCodeRegion:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 
@@ -66,6 +66,6 @@ using (BarCodeReader reader = new BarCodeReader())
     reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
     Console.WriteLine("ReadMultipleRegions:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```

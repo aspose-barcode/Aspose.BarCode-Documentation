@@ -8,62 +8,83 @@ url: /javascript-cpp/complex-maxicode-barcodes/
 ---
 {{% alert color="primary" %}}[Generate MaxiCode Barcodes Online](https://products.aspose.app/barcode/generate/maxicode): You can test the quality of ***Aspose.BarCode*** generation for MaxiCode barcodes and view the results online.{{% /alert %}}
 
-## **Overview**
-*MaxiCode* is a 2D matrix barcode type can be used to encode textual data and streams of bytes. *MaxiCode* barcodes contain a round bullseye finder pattern consisting of three concentric circles, six orientation patterns, and 33 rows with 29 or 30 hexagonal modules. Data capacity is at most 60 bytes or 140 numerical (90 alphanumeric) digits. *MaxiCode* has been introduced for postal services; it is intended for industrial standard support and is not recommended for business-as-usual use.  
-You can find more information about this barcode type on [this page](/net/maxicode-barcodes/).
-  
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+## Overview
+*MaxiCode* is a 2D matrix barcode designed to encode textual data and byte streams. It features a round bullseye finder pattern, six orientation patterns, and 33 rows with 29 or 30 hexagonal modules. It can encode up to 60 bytes or 140 numerical (or 90 alphanumeric) digits. Initially introduced for postal services, *MaxiCode* supports industrial standards but is not commonly used in regular business applications.  
+For more details, visit [this page](/javascript-cpp/maxicode-barcodes/).
 
-## **MaxiCode Mode Settings**
-In ***Aspose.BarCode for JavaScript via C++***, developers can set different generation modes to create *MaxiCode* barcodes using the [*MaxiCodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/maxicodeparameters/maxicodemode) property of class [*MaxiCodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/maxicodeparameters). The following data modes are supported: 
-- *Modes 2 and 3* - special industrial standards that are used in the transportation industry to store the information about shipping along with additional data
-- *Modes 4 and 5* - can store arbitrary text information or byte streams and differ from each other only by the number of codewords for error correction and potential data capacity
-- *Mode 6* - is the same as *Mode 4*, but the barcode information is used to set up hardware readers
+## MaxiCode Mode Settings
+Using ***Aspose.BarCode for JavaScript via C++***, developers can generate *MaxiCode* barcodes by configuring the [*MaxiCodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/maxicodeparameters/maxicodemode) property of the [*MaxiCodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/maxicodeparameters) class. The following modes are supported:
 
-These modes are described further in the article.   
+- **Modes 2 and 3**: Used in the transportation industry to encode shipping information and additional data.
+- **Modes 4 and 5**: Store arbitrary text or byte streams, differing in error correction codewords and data capacity.
+- **Mode 6**: Similar to Mode 4, but used to configure hardware readers.
+
+Details of these modes are covered in subsequent sections.
+
 
 ### **MaxiCode Modes 2 and 3**
-For correct barcode generation, *MaxiCodeModes 2 and 3* need the input data being organized in the predefined formats that can be summarized as follows:  
-- <mark>Format1: “[)>(rs)01(gs)(Postal Code)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)”</mark>
-- <mark>Format2: “(Postal Code 9 digits)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)”</mark>
-  
-The following special characters are used:
-- Group separator Unicode character: (gs) - \u001d
-- Record separator Unicode character: (rs) - \u001e
-- End-of-transmission Unicode character: (eot) - \u0004
+To generate barcodes correctly, *MaxiCode Modes 2 and 3* require input data to follow specific predefined formats:
+
+- **Format 1:** `[)>(rs)01(gs)(Postal Code)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)`  
+- **Format 2:** `(Postal Code 9 digits)(gs)(Country Code)(gs)(Service Category)(gs)(Secondary Message)(eot)`
+
+Special characters used in these formats:
+- **Group separator (gs):** Unicode \u001d  
+- **Record separator (rs):** Unicode \u001e  
+- **End-of-transmission (eot):** Unicode \u0004  
+
+---
 
 ## **MaxiCode Barcodes with Complex Data Modes**
-To simplify the generation and reading of MaxiCode barcodes with complex data formats, the barcode library provides a set of classes: [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/), [*MaxiCodeStructuredCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredcodetext/), [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandardcodetext/), [*MaxiCodeSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodesecondmessage/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/). All these classes correspond to [*ComplexBarcode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/).  
-Classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/) might be specifically useful for developers because the required formats of data to be encoded in MaxiCode modes 2 and 3 are quite complex. 
+To facilitate the creation and reading of MaxiCode barcodes with complex data, the library includes these classes:  
+- [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/)  
+- [*MaxiCodeStructuredCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredcodetext/)  
+- [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/)  
+- [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/)  
+- [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandardcodetext/)  
+- [*MaxiCodeSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodesecondmessage/)  
+- [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/)  
+- [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/)  
 
+These classes are part of [*ComplexBarcode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/).  
+
+Developers may find the following classes particularly helpful for handling the complex data formats of MaxiCode Modes 2 and 3:  
+- [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/)  
+- [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/)  
+- [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/)  
+- [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/)
 ### **Generation Modes**
 
 #### **MaxiCode Mode 2**
 
-Class [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/) can be used to generate barcodes applying the *MaxiCode Mode 2*.  
-  
-The code sample provided below illustrates how to generate *MaxiCode* using the input data where the secondary part is represented as an unstructured message.
+The class [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/) is used to generate barcodes in *MaxiCode Mode 2*.  
+
+The example below demonstrates how to create a *MaxiCode* barcode using input data where the secondary part is an unstructured message.
+
 
 ```javascript
-//create MaxiCode in mode 2 with structured second message
-MaxiCodeCodetextMode2 maxiCodeCodetext = new MaxiCodeCodetextMode2();
+// Create MaxiCode in Mode 2 with structured second message
+var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode2();
 maxiCodeCodetext.PostalCode = "524032140";
-maxiCodeCodetext.CountryCode = 056;
-maxiCodeCodetext.ServiceCategory = 999;
+maxiCodeCodetext.CountryCode = 56; // Country code for Brazil
+maxiCodeCodetext.ServiceCategory = 999; // Service category
 
-//create structured second message
-MaxiCodeStructuredSecondMessage maxiCodeStructuredSecondMessage = new MaxiCodeStructuredSecondMessage();
+// Create structured second message
+var maxiCodeStructuredSecondMessage = new BarCodeInstance.MaxiCodeStructuredSecondMessage();
 maxiCodeStructuredSecondMessage.Add("634 ALPHA DRIVE");
 maxiCodeStructuredSecondMessage.Add("PITTSBURGH");
 maxiCodeStructuredSecondMessage.Add("PA");
-maxiCodeStructuredSecondMessage.Year = 99;
+maxiCodeStructuredSecondMessage.Year = 99; // Year
+
+// Assign structured second message to the MaxiCode
 maxiCodeCodetext.SecondMessage = maxiCodeStructuredSecondMessage;
 
-//encode message
-using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
-{
-     complexGenerator.Save($"{path}MaxiCodeMode2StructuredSecondMessage.png");
-}
+// Generate and save the MaxiCode barcode
+var complexGenerator = new BarCodeInstance.ComplexBarcodeGenerator(maxiCodeCodetext);
+document.getElementById("img").src = complexGenerator.GenerateBarCodeImage(); // Display MaxiCode image
+
+complexGenerator.delete();
+
 ```
   
 <p align="center"><img src="maxicodemode2standardsecondmessage.png" width="20%" height="20%"></p>
@@ -71,123 +92,132 @@ using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(ma
 The following code sample shows how to create *MaxiCode* with the secondary part of the input data being a structured message.
 
 ```javascript
-//create MaxiCode in mode 2 with structured second message
-MaxiCodeCodetextMode2 maxiCodeCodetext = new MaxiCodeCodetextMode2();
+// Create MaxiCode in mode 2 with structured second message
+var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode2();
 maxiCodeCodetext.PostalCode = "524032140";
-maxiCodeCodetext.CountryCode = 056;
+maxiCodeCodetext.CountryCode = 56;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create structured second message
-MaxiCodeStructuredSecondMessage maxiCodeStructuredSecondMessage = new MaxiCodeStructuredSecondMessage();
+// Create structured second message
+var maxiCodeStructuredSecondMessage = new BarCodeInstance.MaxiCodeStructuredSecondMessage();
 maxiCodeStructuredSecondMessage.Add("634 ALPHA DRIVE");
 maxiCodeStructuredSecondMessage.Add("PITTSBURGH");
 maxiCodeStructuredSecondMessage.Add("PA");
 maxiCodeStructuredSecondMessage.Year = 99;
 maxiCodeCodetext.SecondMessage = maxiCodeStructuredSecondMessage;
 
-//encode message
-using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
-{
-     complexGenerator.Save($"{path}MaxiCodeMode2StructuredSecondMessage.png");
-}
+// Encode message
+var complexGenerator = new BarCodeInstance.ComplexBarcodeGenerator(maxiCodeCodetext);
+document.getElementById("img").src = complexGenerator.GenerateBarCodeImage(); // Display MaxiCode image
+
+complexGenerator.delete();
+
 ```
   
 <p align="center"><img src="maxicodemode2structuredsecondmessage.png" width="20%" height="20%"></p>
 
 #### **MaxiCode Mode 3**
-Class [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/) allows developers to create *MaxiCode* barcodes using the *Mode 3* to get the required data format.  
-  
-The code sample below demonstrates how to generate *MaxiCode* passing the input data with the secondary part being formatted as an unstructured message.
+The [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/) class enables developers to create *MaxiCode* barcodes in *Mode 3* for the required data format.
+
+The following code sample shows how to generate a *MaxiCode* barcode with the input data formatted as an unstructured message in the secondary part.
+
 
 ```javascript
-//create MaxiCode in mode 3 with a standard second message
-MaxiCodeCodetextMode3 maxiCodeCodetext = new MaxiCodeCodetextMode3();
+// Create MaxiCode in mode 3 with a standard second message
+var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode3();
 maxiCodeCodetext.PostalCode = "B1050";
 maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create a standard second message
-MaxiCodeStandartSecondMessage maxiCodeStandartSecondMessage = new MaxiCodeStandartSecondMessage();
+// Create a standard second message
+var maxiCodeStandartSecondMessage = new BarCodeInstance.MaxiCodeStandartSecondMessage();
 maxiCodeStandartSecondMessage.Message = "Second message";
 maxiCodeCodetext.SecondMessage = maxiCodeStandartSecondMessage;
 
-//encode the message
-using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
-{
-    complexGenerator.Save($"{path}MaxiCodeMode3StandardSecondMessage.png");
-}
+// Encode the message
+var complexGenerator = new BarCodeInstance.ComplexBarcodeGenerator(maxiCodeCodetext);
+document.getElementById("img").src = complexGenerator.GenerateBarCodeImage(); // Display barcode image
+
+complexGenerator.delete();
+
 ```
   
 <p align="center"><img src="maxicodemode3standardsecondmessage.png" width="20%" height="20%"></p>
 
-The following code sample can be used to create *MaxiCode* with the input data having the secondary part being a structured message.
+The following code sample demonstrates how to create a *MaxiCode* barcode with the input data formatted to include the secondary part as a structured message.
+
 
 ```javascript
-//create MaxiCode in mode 3 with a structured second message
-MaxiCodeCodetextMode3 maxiCodeCodetext = new MaxiCodeCodetextMode3();
+// Create MaxiCode in mode 3 with a structured second message
+var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode3();
 maxiCodeCodetext.PostalCode = "B1050";
 maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
-//create a structured second message
-MaxiCodeStructuredSecondMessage maxiCodeStructuredSecondMessage = new MaxiCodeStructuredSecondMessage();
+// Create a structured second message
+var maxiCodeStructuredSecondMessage = new BarCodeInstance.MaxiCodeStructuredSecondMessage();
 maxiCodeStructuredSecondMessage.Add("634 ALPHA DRIVE");
 maxiCodeStructuredSecondMessage.Add("PITTSBURGH");
 maxiCodeStructuredSecondMessage.Add("PA");
 maxiCodeStructuredSecondMessage.Year = 99;
 maxiCodeCodetext.SecondMessage = maxiCodeStructuredSecondMessage;
 
-//encode the message
-using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
-{
-    complexGenerator.Save($"{path}MaxiCodeMode3StructuredSecondMessage.png");
-}
+// Encode the message
+var complexGenerator = new BarCodeInstance.ComplexBarcodeGenerator(maxiCodeCodetext);
+document.getElementById("img").src = complexGenerator.GenerateBarCodeImage(); // Display barcode image
+
+complexGenerator.delete();
+
 ```
 
 <p align="center"><img src="maxicodemode3structuredsecondmessage.png" width="20%" height="20%"></p>
 
 #### **Modes 4, 5, and 6**
 
-Class [*MaxiCodeCodetextMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/) can be used to generate *MaxiCode* barcodes with the data formats suitable for *Modes 4, 5, and 6*. To set the required generation regime, it is necessary to initialize the *Mode* property.
+The [*MaxiCodeCodetextMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/) class can be used to generate *MaxiCode* barcodes with data formats suitable for *Modes 4, 5, and 6*. To specify the desired mode, set the *Mode* property accordingly.
+
 
 ```javascript
-MaxiCodeStandardCodetext maxiCodeCodetext = new MaxiCodeStandardCodetext();
-maxiCodeCodetext.Mode = MaxiCodeMode.Mode4;
+// Create MaxiCode in standard mode 4 with a standard message
+var maxiCodeCodetext = new BarCodeInstance.MaxiCodeStandardCodetext();
+maxiCodeCodetext.Mode = BarCodeInstance.MaxiCodeMode.Mode4;
 maxiCodeCodetext.Message = "MaxiCode standard codetext";
 
-//encode message
-using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
-{
-    complexGenerator.Save($"{path}MaxiCodeStandardCodetext.png");
-}
+// Encode the message
+var complexGenerator = new BarCodeInstance.ComplexBarcodeGenerator(maxiCodeCodetext);
+document.getElementById("img").src = complexGenerator.GenerateBarCodeImage(); // Display barcode image
+
+complexGenerator.delete();
+
 ```
 
 ### **Decoding Settings**
-To read *MaxiCode* barcode, it is necessary to create an instance of class [*BarcodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/) and set *DecodeType.MaxiCode*. Then, the fetched data can be transformed by calling the *TryDecodeMaxiCode* method of class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/) that returns an object of class [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/). Objects of this class can be converted into objects of classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/), or [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandardcodetext/), depending on the used *Maxicode* data mode.
+To read a *MaxiCode* barcode, create an instance of the [*BarcodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/) class and set *DecodeType.MaxiCode*. The data can then be processed using the *TryDecodeMaxiCode* method from the [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/) class, which returns an object of the [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/) class. This object can be converted to instances of [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetextmode3/), or [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodestandardcodetext/), depending on the *MaxiCode* data mode used.
 
-The code sample given below shows how to decode a *MaxiCode* barcode with the input data having a structured secondary message.
+The following code sample shows how to decode a *MaxiCode* barcode with input data formatted as a structured secondary message.
+
 
 ```javascript
-//recognize MaxiCode in mode 2 with a standard second message
-using (BarCodeReader reader = new BarCodeReader($"{path}MaxiCodeMode2StandardSecondMessage.png", DecodeType.MaxiCode))
-{
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-    {
-        MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.MaxiCodeMode, result.CodeText);
-        MaxiCodeCodetextMode2 maxiCodeStructuredCodetext = complexCodetext as MaxiCodeCodetextMode2;
-        if (maxiCodeStructuredCodetext == null)
-            continue;
+// Recognize MaxiCode in mode 2 with a standard second message
+var reader = new BarCodeInstance.BarCodeReader(`${path}MaxiCodeMode2StandardSecondMessage.png`, "MaxiCode");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    var complexCodetext = BarCodeInstance.ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.MaxiCodeMode, result.CodeText);
+    var maxiCodeStructuredCodetext = complexCodetext instanceof BarCodeInstance.MaxiCodeCodetextMode2 ? complexCodetext : null;
+    if (!maxiCodeStructuredCodetext) continue;
 
-        Console.WriteLine("PostalCode: " + maxiCodeStructuredCodetext.PostalCode);
-        Console.WriteLine("CountryCode: " + maxiCodeStructuredCodetext.CountryCode);
-        Console.WriteLine("ServiceCategory: " + maxiCodeStructuredCodetext.ServiceCategory);
+    console.log("PostalCode: " + maxiCodeStructuredCodetext.PostalCode);
+    console.log("CountryCode: " + maxiCodeStructuredCodetext.CountryCode);
+    console.log("ServiceCategory: " + maxiCodeStructuredCodetext.ServiceCategory);
 
-        MaxiCodeStandartSecondMessage secondMessage = maxiCodeStructuredCodetext.SecondMessage as MaxiCodeStandartSecondMessage;
-        if (secondMessage == null)
-            continue;
+    var secondMessage = maxiCodeStructuredCodetext.SecondMessage instanceof BarCodeInstance.MaxiCodeStandartSecondMessage ? maxiCodeStructuredCodetext.SecondMessage : null;
+    if (!secondMessage) continue;
 
-        Console.WriteLine("Second message:" + secondMessage.Message);
-    }
+    console.log("Second message: " + secondMessage.Message);
 }
+
+reader.delete();
+
 ```
 

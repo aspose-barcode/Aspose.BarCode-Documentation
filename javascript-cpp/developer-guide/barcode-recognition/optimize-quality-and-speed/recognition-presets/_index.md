@@ -9,211 +9,160 @@ url: /javascript-cpp/recognition-quality-presets/
 ---
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can check the quality of Aspose.BarCode recognition and view the results online.{{% /alert %}}
 ## **Overview**
-***Aspose.BarCode for JavaScript via C++*** provides class [*QualitySettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings) that allows enabling and disabling various algorithms for image recovery to read barcodes with distortions or artifacts. In this way, class [*QualitySettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings) provides special parameters to customize the trade-off between reading speed and quality in regular situations. Such parameters are grouped into several presets that facilitate image recovery and barcode reading for different recognition scenarios.
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+***Aspose.BarCode for JavaScript via C++*** provides the [*QualitySettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings) class, enabling developers to fine-tune various algorithms for image recovery and barcode recognition. This functionality helps handle distortions or artifacts in barcode images. The class also provides preset parameters to balance reading speed and quality, catering to different recognition scenarios.
+
+{{% alert color="primary" %}}*If you need clarifications, reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask questions at the [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Supported Presets**
-This section provides detailed information about supported recognition presets, including *NormalQuality*, *HighPerformance*, *HighQuality*, *MaxQuality, as listed in the table below. By default, [*QualitySettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings) uses the *NormalQuality* preset.
+Below is a summary of supported recognition presets in [*QualitySettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings), including *NormalQuality*, *HighPerformance*, *HighQuality*, and *MaxQuality*. By default, the *NormalQuality* preset is used.
 
-|Recognition Preset|Description|
-|---|---|
-|[*HighPerformance*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance)| Suggested for high-quality barcode images |
-|[*NormalQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality)| Suitable for the most of barcodes with regular quality |
-|[*HighQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality)| Intended for work with low-quality barcodes |
-|[*MaxQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality)| Intended for work with low-quality barcodes and uses all of the recognition methods. The recognuizton quality almost the same as *HighQuality* |
+| **Recognition Preset** | **Description** |
+|-------------------------|-----------------|
+| [*HighPerformance*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance) | Recommended for high-quality barcode images. |
+| [*NormalQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) | Suitable for most barcodes with regular quality. |
+| [*HighQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality) | Designed for low-quality barcodes. |
+| [*MaxQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality) | Targets low-quality barcodes and employs all recognition methods, offering recognition quality close to *HighQuality*. |
+
 
 
 ## **Supported Options**
-This section provides detailed information about supported manually configured options, including *XDimension*, *BarcodeQuality*, *Deconvolution*, *InverseImage*, *ComplexBackground*, and others, as listed in the table below. 
+Aspose.BarCode for JavaScript via C++ offers a variety of manually configurable options to enhance barcode recognition performance and quality. These options, including *XDimension*, *BarcodeQuality*, *Deconvolution*, *InverseImage*, *ComplexBackground*, and others, are described in the table below.
 
-|Recognition Options|Description|
-|---|---|
-|[*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension)| Recognition mode which uses knowledge about barcode minimal element: matrix cell or bar. The knowledge about barcode minimal element is used to cutoff noise, text and non-barcode elements to increase performance. With using [*UseMinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/xdimensionmode/) other property [*MinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension) is used to set minimal barcode element |
-|[*MinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension)| Minimal size of [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension) in pixels which is used with [*UseMinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/xdimensionmode/) |
-|[*BarcodeQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/barcodequality)| Mode which selects and enables methods to recognize barcode elements with the selected quality. Barcode elements with lower quality requires more heavy recognition methods which slows the recognition |
-|[*Deconvolution*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/deconvolution)| Deconvolution (image restorations) mode defines level of image degradation. Originally deconvolution is a function which can restore image degraded (convoluted) by any natural function like blur, during obtaining image by camera. Because we cannot detect image function which corrupt the image, we have to check most well-known functions like [sharp](https://en.wikipedia.org/wiki/Kernel_(image_processing)) or [mathematical morphology](https://en.wikipedia.org/wiki/Mathematical_morphology) |
-|[*InverseImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/inverseimage)| Mode which enables or disables additional recognition of barcodes on images with inverted colors (luminance) |
-|[*ComplexBackground*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/complexbackground)| Mode which enables or disables additional recognition of color barcodes on color images |
-|[*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes)| Mode allows engine to recognize barcodes which has incorrect checksum or incorrect values. Mode can be used to recognize or mark damaged barcodes with incorrect text |
+| **Recognition Option** | **Description** |
+|-------------------------|-----------------|
+| [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension) | Recognition mode utilizing knowledge of the minimal barcode element (e.g., matrix cell or bar). This helps cut off noise, text, and non-barcode elements to improve performance. Works alongside [*UseMinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/xdimensionmode/) and [*MinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension). |
+| [*MinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/minimalxdimension) | Specifies the minimal size of the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/xdimension) in pixels, used in conjunction with [*UseMinimalXDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/xdimensionmode/). |
+| [*BarcodeQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/barcodequality) | Enables methods to recognize barcode elements with the selected quality. Higher-quality barcode elements may require more complex recognition methods, potentially slowing the process. |
+| [*Deconvolution*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/deconvolution) | Defines the level of image degradation restoration (deconvolution). Attempts to recover barcodes obscured by factors such as blur using well-known functions like [sharp](https://en.wikipedia.org/wiki/Kernel_(image_processing)) or [mathematical morphology](https://en.wikipedia.org/wiki/Mathematical_morphology). |
+| [*InverseImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/inverseimage) | Enables or disables additional recognition of barcodes in images with inverted colors (e.g., white bars on a black background). |
+| [*ComplexBackground*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/complexbackground) | Enables or disables recognition of color barcodes on complex or colorful backgrounds. |
+| [*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) | Allows recognition of barcodes with incorrect checksum or values. Useful for identifying or marking damaged barcodes with erroneous text. |
 
-## **Deference in Barcode Reading with Quality Presets**
-***Aspose.BarCode for JavaScript via C++*** provides several universal recognition quality setting presets, such as [*HighPerformance*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance), [*NormalQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality), [*HighQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality) and [*MaxQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality). These presets allow establishing dependence between recognition quality and speed for all barcode types. In most cases, the [*NormalQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) preset, used by default is sufficient for the majority of barcodes that provide normal scanning quality.
+## **Difference in Barcode Reading with Quality Presets**
 
-The following table shows difference in recognition quality, depends on preset.
+Aspose.BarCode for JavaScript via C++ offers four universal recognition quality presets: 
+- [*HighPerformance*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highperformance)
+- [*NormalQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/normalquality) (default)
+- [*HighQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/highquality)
+- [*MaxQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/maxquality)
+
+These presets enable developers to balance recognition quality and speed for various barcode types. For most barcodes with standard scanning quality, the default *NormalQuality* preset is usually sufficient.
+
+The table below illustrates the difference in recognition results for the same barcodes based on the preset used:
 
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
 
-| HighPerformance Preset | NormalQuality Preset | HighQuality Preset | MaxQuality Preset | MaxQuality Preset and Incorrect Barcodes|
-|---|---|---|---|---|
+| **HighPerformance Preset** | **NormalQuality Preset** | **HighQuality Preset** | **MaxQuality Preset** | **MaxQuality Preset and Incorrect Barcodes** |
+|----------------------------|--------------------------|-------------------------|------------------------|---------------------------------------------|
 | Recognized barcodes: **5** | Recognized barcodes: **7** | Recognized barcodes: **10** | Recognized barcodes: **10** | Recognized barcodes: **12** |
 
+### **Key Observations:**
+- **HighPerformance** focuses on speed, identifying fewer barcodes in complex scenarios.
+- **NormalQuality** balances speed and accuracy, making it ideal for standard use cases.
+- **HighQuality** enables advanced algorithms for low-quality or partially damaged barcodes.
+- **MaxQuality** utilizes all available recognition methods, ensuring maximum detection at the cost of performance.
+- Combining *MaxQuality* with the *AllowIncorrectBarcodes* mode further increases recognition for damaged or incomplete barcodes.
+
+
 ```javascript
-Console.WriteLine("ReadQualityPresets:");
-//recognize image with HighPerformance
-Console.WriteLine("ReadQualityPresets: HighPerformance");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
-    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
-{
-    read.QualitySettings = QualitySettings.HighPerformance;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+console.log("ReadQualityPresets:");
+// recognize image with HighPerformance
+console.log("ReadQualityPresets: HighPerformance");
+var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
+reader.QualitySettings = BarCodeInstance.QualitySettings.HighPerformance;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
 
-//recognize image with NormalQuality
-Console.WriteLine("ReadQualityPresets: NormalQuality");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
-    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
-{
-    read.QualitySettings = QualitySettings.NormalQuality;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+// recognize image with NormalQuality
+console.log("ReadQualityPresets: NormalQuality");
+var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
+reader.QualitySettings = BarCodeInstance.QualitySettings.NormalQuality;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
 
-//recognize image with HighQuality
-Console.WriteLine("ReadQualityPresets: HighQuality");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
-    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
-{
-    read.QualitySettings = QualitySettings.HighQuality;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+// recognize image with HighQuality
+console.log("ReadQualityPresets: HighQuality");
+var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
+reader.QualitySettings = BarCodeInstance.QualitySettings.HighQuality;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
 
-//recognize image with MaxQuality
-Console.WriteLine("ReadQualityPresets: MaxQuality");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
-    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
-{
-    read.QualitySettings = QualitySettings.MaxQuality;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+// recognize image with MaxQuality
+console.log("ReadQualityPresets: MaxQuality");
+var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
+reader.QualitySettings = BarCodeInstance.QualitySettings.MaxQuality;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
 
-//recognize image with MaxQuality and Incorrect Barcodes
-Console.WriteLine("ReadQualityPresets: MaxQuality and Incorrect Barcodes");
-using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
-    DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
-{
-    read.QualitySettings = QualitySettings.MaxQuality;
-    read.QualitySettings.AllowIncorrectBarcodes = true;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+// recognize image with MaxQuality and Incorrect Barcodes
+console.log("ReadQualityPresets: MaxQuality and Incorrect Barcodes");
+var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
+reader.QualitySettings = BarCodeInstance.QualitySettings.MaxQuality;
+reader.QualitySettings.AllowIncorrectBarcodes = true;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+reader.delete();
+
 ```
-
-<details>  
-<summary>View the results of code execution</summary>
-
-```text
-ReadQualityPresets:
-ReadQualityPresets: HighPerformance
-Barcodes read: 5
-Code128:Aspose Code 04
-Aztec:Aspose Regular
-Code39Extended:/YYAD25HL
-MicroQR:FV50CE
-Code39Extended:0058
-ReadQualityPresets: NormalQuality
-Barcodes read: 7
-Code128:Aspose Code 04
-Aztec:Aspose Regular
-Code39Extended:/YYAD25HL
-MicroQR:FV50CE
-DataMatrix:D19-WQ9-F91046-0811
-Code39Extended:0058
-Planet:990000837284
-ReadQualityPresets: HighQuality
-Barcodes read: 10
-Code128:Aspose Code 04
-Code128:Aspose Code 01
-Aztec:Aspose Regular
-Aztec:Aspose Inverse
-Code128:JJBEA129955634111200235
-Code128:EASYAPANEXO
-MicroQR:FV50CE
-DataMatrix:D19-WQ9-F91046-0811
-Code39Extended:0058
-Planet:990000837284
-ReadQualityPresets: MaxQuality
-Barcodes read: 10
-Code128:Aspose Code 04
-Code128:Aspose Code 01
-Aztec:Aspose Regular
-Aztec:Aspose Inverse
-Code128:JJBEA129955634111200235
-Code128:EASYAPANEXO
-MicroQR:FV50CE
-DataMatrix:D19-WQ9-F91046-0811
-Code39Extended:0058
-Planet:990000837284
-ReadQualityPresets: MaxQuality and Incorrect Barcodes
-Barcodes read: 12
-Code128:Aspose Code 04
-Code128:Aspose Code 01
-Aztec:Aspose Regular
-Aztec:Aspose Inverse
-Code128:JJBEA129955634111200235
-Code128:EASYAPANEXO
-MicroQR:FV50CE
-QR:Aspose QR
-DataMatrix:D19-WQ9-F91046-0811
-Pdf417:Aspose Pdf417
-Code39Extended:0058
-Planet:990000837284
-```
-
-</details>
-
 ## **Read Evidently Incorrect Barcodes**
-To read all barcodes potentially presented in an image including incorrect ones, ***Aspose.BarCode for JavaScript via C++*** provides a special option called [*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes). This option tries to mark or partially recognize barcodes which could not pass checksum check and can be used only for debugging purposes. In this case, the barcode data is decoded with the [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) level being *None*, which means that the correctness of recognition is not guaranteed.  
 
-The following code snippet explains how to force the recognition of the barcode known as unreadable:
+Aspose.BarCode for JavaScript via C++ includes an option called [*AllowIncorrectBarcodes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/qualitysettings/properties/allowincorrectbarcodes) that enables the recognition of potentially problematic barcodes in an image, even if they fail checksum validation. This is particularly useful for debugging purposes, as it allows the library to mark or partially recognize barcodes that are incomplete or corrupted.
+
+When the *AllowIncorrectBarcodes* mode is enabled, the recognition process proceeds with a [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) level set to *None*. This means that while the barcode is decoded, its accuracy is not guaranteed.
+
+The code snippet below demonstrates how to force the recognition of barcodes that might otherwise be unreadable:
 
 <p align="center"><img src="pdf417_qr_corrupted.png" width="30%" height="30%"></p>
 
-| Incorrect Barcodes: disabled | Incorrect Barcodes: enabled |
-|---|---|
-| Recognized barcodes: **0** | Recognized barcodes: **2** |
+### **Recognition Results:**
+| **Incorrect Barcodes: disabled** | **Incorrect Barcodes: enabled** |
+|----------------------------------|---------------------------------|
+| Recognized barcodes: **0**        | Recognized barcodes: **2**      |
+
+### **Explanation:**
+- **Disabled mode**: The engine does not recognize the corrupted barcodes.
+- **Enabled mode**: The engine attempts to recognize and decode the barcodes, even if their checksums fail, leading to partial or inaccurate results. This mode is suitable for situations where developers want to extract data for further investigation or troubleshooting.
+
 
 ```javascript
-Console.WriteLine("ReadIncorrectBarcodes:");
-//recognize image with disabled AllowIncorrectBarcodes
-Console.WriteLine("AllowIncorrectBarcodes: false");
-using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.QR, DecodeType.Pdf417))
-{
-    read.QualitySettings.AllowIncorrectBarcodes = false;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+console.log("ReadIncorrectBarcodes:");
+// recognize image with disabled AllowIncorrectBarcodes
+console.log("AllowIncorrectBarcodes: false");
+var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR", "Pdf417");
+reader.QualitySettings.AllowIncorrectBarcodes = false;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
 
-//recognize image with enambled AllowIncorrectBarcodes
-Console.WriteLine("AllowIncorrectBarcodes: true");
-using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", DecodeType.QR, DecodeType.Pdf417))
-{
-    read.QualitySettings.AllowIncorrectBarcodes = true;
-    Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
-    foreach (BarCodeResult result in read.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+// recognize image with enabled AllowIncorrectBarcodes
+console.log("AllowIncorrectBarcodes: true");
+var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR", "Pdf417");
+reader.QualitySettings.AllowIncorrectBarcodes = true;
+console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+reader.delete();
+
 ```
 
-<details>  
-<summary>View the results of code execution</summary>
-
-```text  
-ReadIncorrectBarcodes:
-AllowIncorrectBarcodes: false
-Barcodes read: 0
-AllowIncorrectBarcodes: true
-Barcodes read: 2
-Pdf417:Aspose Pdf417
-QR:Aspose QR
-```
-
-</details>

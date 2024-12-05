@@ -9,42 +9,49 @@ keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance
 url: /javascript-cpp/customize-barcode-appearance/
 
 ---
-This article provides all necessary information about adjusting barcode appearance-related properties, including image size, rotation angle, paddings, and borders.
+This article provides detailed information on how to adjust properties related to barcode appearance, including image size, rotation angle, paddings, and borders.
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Overview**
-In ***Aspose.BarCode for JavaScript via C++***, class [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) allows creating barcode labels according to the specified scenario where each element has the fixed position relative to other elements in a barcode image, as shown in the scheme below. A barcode image may include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode label itself are optional.
-  
+In ***Aspose.BarCode for JavaScript via C++***, the [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) class enables the creation of barcode labels with elements positioned relative to each other in the barcode image, as shown in the diagram below. A barcode image can include the following elements: barcode bars, borders, paddings, top and bottom captions, and barcode text. All elements besides the barcode itself are optional.
+
 <p align="center"><img src="barcode_view_scheme.png"></p>
- 
+
 ## **Set Barcode Sizing Mode**
 
-In the general case, ***Aspose.BarCode for JavaScript via C++*** adjusts the size of a barcode image (width and height) automatically. However, it is possible to customize the image size settings manually by specifying the height and width of a barcode image using [*ImageHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imagewidth) properties of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters).  
-  
-The size of a barcode image can be managed according to different sizing modes that can be set by initializing the [*AutoSizeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) property of class *BaseGenerationParameters*. This parameter can take the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes imply that barcode image size gets adjusted according to the required values of width and height while most of the other parameters are ignored. In contrast, the *None* mode defines the size of a barcode image ignoring width and height but considers other parameters, for example, such as [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension). By default, *AutoSizeMode* is set to "*None*".  
-   
-Below, the available barcode sizing modes are described in detail along with sample barcode labels and code snippets.
+By default, ***Aspose.BarCode for JavaScript via C++*** automatically adjusts the size of a barcode image (width and height). However, you can manually set the image size using the [*ImageHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imagewidth) properties of the [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters) class.
 
-### **AutoSizeMode.None** 
-As mentioned previously, when the *None* mode is set, the size of the generated barcode image is based on various parameters while the values of width and height are not taken into consideration. The main parameter used to define barcode size is the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) property. It specifies the minimum size value of bars for 1D barcodes or cells for 2D ones. Then, this value is used to calculate most of the other barcode parameters.  
-  
-Barcode symbologies usually specify the minimum value (*XDimension*) to ensure compatibility between scanning and printing equipment used in open systems (barcode labels need to be readable by scanners utilized in different companies). *X-Dimension* determines the density of a symbology, in other words, defines the amount of information that can be stored in a barcode. When *X-Dimension* is small, the area required to display each character in a barcode label is less compared with the case when *X-Dimension* is large; thus a barcode can store more information per linear inch and is considered to be of higher density. Otherwise, increasing the width of the narrowest element (*X-Dimension*) enlarges the space required for each character and reduces the number of characters per inch.  
-    
-The barcode image provided below has been created in the *None* mode.
+The barcode image size can be controlled by different sizing modes, set with the [*AutoSizeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) property of the *BaseGenerationParameters* class. This property can have the following values: *Interpolation*, *Nearest*, and *None*. The *Interpolation* and *Nearest* modes adjust the barcode image size according to the specified width and height, while most other settings are ignored. The *None* mode defines the barcode image size by ignoring the width and height, but other parameters, such as [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension), are considered. By default, *AutoSizeMode* is set to "*None*".
+
+Below, detailed descriptions of available barcode sizing modes are provided, along with sample barcode images and code snippets.
+
+
+### **AutoSizeMode.None**
+
+When the *None* mode is selected, the barcode image size is determined by properties other than width and height. The primary property used is [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension), which sets the minimum size for bars in 1D barcodes or cells in 2D barcodes. This value helps calculate other barcode parameters.
+
+The *XDimension* ensures compatibility between scanning and printing equipment, as barcodes need to be readable by different scanners. A smaller *X-Dimension* means more data can be stored in the barcode, as each character takes up less space. Conversely, a larger *X-Dimension* increases the size of each character and reduces the amount of data per inch.
+
+The barcode image below shows an example generated in *None* mode.
 
 <p align="center"><img src="autosizemodenone.png"></p>
-  
-The following code snippet illustrates how to set the *AutoSizeMode* property to *None*.  
+
+The code snippet below demonstrates how to set *AutoSizeMode* to *None*.
+ 
 
 ```javascript
-
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
-gen.Parameters.AutoSizeMode = AutoSizeMode.None;
+// Generate a DataMatrix barcode with custom image size settings
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
+gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.None;
 gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
-gen.Save($"{path}AutoSizeModeNone.png", BarCodeImageFormat.Png);
+
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
   
@@ -59,160 +66,221 @@ The following code sample explains how to initialize the *AutoSizeMode* property
   
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
-gen.Parameters.AutoSizeMode = AutoSizeMode.Interpolation;
+// Generate a DataMatrix barcode with interpolation auto size mode and custom image size settings
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
+gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.Interpolation;
 gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
-gen.Save($"{path}AutoSizeModeInterpolation.png", BarCodeImageFormat.Png);
+
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
   
-### **AutoSizeMode.Nearest** 
-The *Nearest* mode uses only the values of [*ImageHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) to set the size of the resulting barcode image similarly to *Interpolation*. However, in this case, *BarcodeGenerator* seeks to specify the most appropriate image size to avoid distorting barcode proportions and deteriorating its readability.  
-  
-The resulting barcode image generated using the *Nearest* mode is demonstrated below.
-  
+### **AutoSizeMode.Nearest**
+
+The *Nearest* mode uses the [*ImageHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/imageheight) and [*ImageWidth*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/autosizemode) values to determine the barcode image size, similar to *Interpolation*. However, in *Nearest* mode, *BarcodeGenerator* aims to choose the most suitable size to maintain the barcode proportions and ensure readability.
+
+The barcode image below shows the result of using the *Nearest* mode.
+
 <p align="center"><img src="autosizemodenearest.png"></p>
-  
-The following code snippet shows how to set the *Nearest* mode.
+
+The code snippet below demonstrates how to set the *AutoSizeMode* property to *Nearest*.
+
   
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
-gen.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
+// Generate a DataMatrix barcode with nearest auto size mode and custom image size settings
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
+gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.Nearest;
 gen.Parameters.ImageWidth.Pixels = 300;
 gen.Parameters.ImageHeight.Pixels = 300;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
-gen.Save($"{path}AutoSizeModeNearest.png", BarCodeImageFormat.Png);
+
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
-  
 ## **Set Barcode Rotation Angle**
-***Aspose.BarCode for JavaScript via C++*** enables barcode image rotation that can be performed by initializing the [*RotationAngle*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/rotationangle) property of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters). Setting this property to a value in degrees results in generating a barcode image rotated according to the required angle clockwise or counterclockwise.  
-  
-The sample barcode images rotated by different angles are represented below.
-  
+
+***Aspose.BarCode for JavaScript via C++*** allows barcode image rotation by setting the [*RotationAngle*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/rotationangle) property of the [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters) class. By assigning a value in degrees, the barcode image can be rotated clockwise or counterclockwise to the specified angle.
+
+The sample barcode images below demonstrate the effect of different rotation angles:
+
 |Rotation Angle|Is Set to +90°|Is Set to -90°|Is Set to +45°|Is Set to -45°|Is Set to 180°| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="rotationangle+90.png">|<img src="rotationangle-90.png">|<img src="rotationangle+45.png">|<img src="rotationangle-45.png">|<img src="rotationangle180.png">|
-  
-The following code snippet illustrates how to set various rotation angles.
+
+The code snippet below shows how to set different rotation angles.
+
    
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
+// Generate a Code128 barcode with various rotation angles
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
+
+// Set and save barcode with 90-degree rotation
 gen.Parameters.RotationAngle = 90;
-gen.Save($"{path}RotationAngle+90.png", BarCodeImageFormat.Png);
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set and save barcode with -90-degree rotation
 gen.Parameters.RotationAngle = -90;
-gen.Save($"{path}RotationAngle-90.png", BarCodeImageFormat.Png);
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set and save barcode with 45-degree rotation
 gen.Parameters.RotationAngle = 45;
-gen.Save($"{path}RotationAngle+45.png", BarCodeImageFormat.Png);
+document.getElementById("img3").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set and save barcode with -45-degree rotation
 gen.Parameters.RotationAngle = -45;
-gen.Save($"{path}RotationAngle-45.png", BarCodeImageFormat.Png);
+document.getElementById("img4").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set and save barcode with 180-degree rotation
 gen.Parameters.RotationAngle = 180;
-gen.Save($"{path}RotationAngle180.png", BarCodeImageFormat.Png);
+document.getElementById("img5").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
-  
 ## **Customize Barcode Borders and Padding**
-***Aspose.BarCode for JavaScript via C++*** enables adjusting barcode borders and paddings during barcode generation. By default, borders are placed tightly to image edges; then, corresponding paddings may be specified.
-  
+
+***Aspose.BarCode for JavaScript via C++*** allows you to customize barcode borders and padding during barcode generation. By default, barcode borders are positioned close to the image edges, and padding can be adjusted as needed.
+
 ### **Border Settings**
-According to the default settings, a barcode image is generated without borders; however, they can be specified explicitly according to five different styles: solid, dashed, dotted, dash-dot, and dash dot dot. Border appearance can be adjusted using the [*Border*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/border) property of class [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters). In turn, this property gets an instance of class [*BorderParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters) that contains all barcode configuration settings. In addition, this class enables adjusting border thickness (that can be defined in any supported [**units**](http://localhost:1313/barcode/javascript-cpp/setting-barcode-parameters/#measuring-barcode-size-in-different-units)) and color by initializing the [*Width*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/width) and [*Color*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/color) properties, respectively.  
-  
-Barcode images provided below are the sample barcode labels generated using different border styles. The border style can be customized by initializing the [*DashStyle*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/dashstyle) of class *BorderParameters*.
-  
+
+By default, barcode images are generated without borders. However, borders can be added and customized using five styles: solid, dashed, dotted, dash-dot, and dash dot dot. The [*Border*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters/properties/border) property of the [*BaseGenerationParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/basegenerationparameters) class is used to set border configurations. This property receives an instance of the [*BorderParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters) class, which manages all border settings.
+
+You can adjust the border thickness and color by setting the [*Width*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/width) and [*Color*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/color) properties, respectively, and specify supported [**units**](http://localhost:1313/barcode/javascript-cpp/setting-barcode-parameters/#measuring-barcode-size-in-different-units).
+
+The following barcode images illustrate sample barcode labels generated with different border styles. You can change the border style by setting the [*DashStyle*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/borderparameters/properties/dashstyle) property of the *BorderParameters* class.
+
 |Border Style|Solid|Dashed|Dotted|Dash Dot|Dash Dot Dot| 
 | :-: | :-: | :-: | :-: | :-: | :-: | 
 | |<img src="bordersolid.png">|<img src="borderdash.png">|<img src="borderdot.png">|<img src="borderdashdot.png">|<img src="borderdashdotdot.png">|
-  
-The following code sample explains how to set the required barcode border style.
+
+The following code sample demonstrates how to set the barcode border style.
+
   
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
-//set border visible
+// Generate a Code128 barcode with various border styles and settings
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
+
+// Set border visible and size properties
 gen.Parameters.Border.Visible = true;
-//set border size to 5 pixels
 gen.Parameters.Border.Width.Pixels = 5;
-gen.Parameters.Border.DashStyle = BorderDashStyle.Solid;
-gen.Save($"{path}BorderSolid.png", BarCodeImageFormat.Png);
-gen.Parameters.Border.DashStyle = BorderDashStyle.Dash;
-gen.Save($"{path}BorderDash.png", BarCodeImageFormat.Png);
-gen.Parameters.Border.DashStyle = BorderDashStyle.Dot;
-gen.Save($"{path}BorderDot.png", BarCodeImageFormat.Png);
-gen.Parameters.Border.DashStyle = BorderDashStyle.DashDot;
-gen.Save($"{path}BorderDashDot.png", BarCodeImageFormat.Png);
-gen.Parameters.Border.DashStyle = BorderDashStyle.DashDotDot;
-gen.Save($"{path}BorderDashDotDot.png", BarCodeImageFormat.Png);
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Solid;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set border style to Dash
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Dash;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set border style to Dot
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Dot;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set border style to DashDot
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.DashDot;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set border style to DashDotDot
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.DashDotDot;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
-
 ### **Paddings**
-The border paddings from the edges of a barcode image or its borders can be set in four directions by initializing the [Padding](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/padding) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters). The *Padding* property creates an instance of class [Aspose.BarCode.Generation.Padding](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/padding) that specifies the *Left*, *Right*, *Top*, and *Bottom* padding settings. The default values are set to 5 points in all directions.
-  
+
+The border paddings for a barcode image or its borders can be set in four directions using the [Padding](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/padding) property of the [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters) class. This property creates an instance of the [Aspose.BarCode.Generation.Padding](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/padding) class, which specifies the *Left*, *Right*, *Top*, and *Bottom* padding settings. By default, the padding values are set to 5 points for all directions.
+
 |Padding|Millimeters|Pixels|  
 | :-: | :-: | :-: |  
-| |<img src="padding10millimeters.png">|<img src="padding10pixels.png">| 
+| |<img src="padding10millimeters.png">|<img src="padding10pixels.png">|  
+
 
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
-//set border
+// Generate a Code128 barcode with various padding settings and border properties
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
+
+// Set border properties
 gen.Parameters.Border.Visible = true;
 gen.Parameters.Border.Width.Pixels = 5;
-gen.Parameters.Border.DashStyle = BorderDashStyle.Solid;
-//set padding to 10 pixels
+gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Solid;
+
+// Set padding to 10 pixels
 gen.Parameters.Barcode.Padding.Left.Pixels = 10;
 gen.Parameters.Barcode.Padding.Top.Pixels = 10;
 gen.Parameters.Barcode.Padding.Right.Pixels = 10;
 gen.Parameters.Barcode.Padding.Bottom.Pixels = 10;
-gen.Save($"{path}Padding10Pixels.png", BarCodeImageFormat.Png);
-//set padding to 10 millimeters
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set padding to 10 millimeters
 gen.Parameters.Barcode.Padding.Left.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Top.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Right.Millimeters = 10;
 gen.Parameters.Barcode.Padding.Bottom.Millimeters = 10;
-gen.Save($"{path}Padding10Millimeters.png", BarCodeImageFormat.Png);
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+
+gen.delete();
+
 
 ``` 
-  
 ## **Bar Width Reduction**
-The width of bars in a barcode is an important parameter that requires to be set with high precision to ensure proper barcode scanning. Depending on the way of barcode printing, the initially specified width of bars may increase after printing out barcode labels due to ink floating. This effect is common in commercial printing where conventional printing presses are widely used. Therefore, to ensure that printed barcode labels have acceptable bar width, it may be necessary to set an appropriate bar width reduction value.  
-  
-Bar width reduction (BWR) is a method to adjust a graphic design file of a barcode aiming to compensate for ink floating. ***Aspose.BarCode for JavaScript via C++*** allows adjusting the width of bars in generated barcodes by setting the [*BarWidthReduction*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/barwidthreduction) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters). Initializing this property with the required value results in decreasing the width of bars or the size of cells in 1D and 2D barcodes, respectively. The BWR value for a particular printer is defined by printer manufacturers and can be found in dedicated tables. Note that adjusting this parameter does not have any impact in the case of laser printers.  
-  
-The sample barcodes shown below have been generated with and without applying bar width reduction.
-  
+
+The width of bars in a barcode is a crucial parameter that must be set precisely to ensure proper scanning. Depending on the printing method, the initial bar width may increase due to ink spread, which is common in commercial printing using traditional presses. To maintain acceptable bar width on printed barcode labels, it may be necessary to apply a bar width reduction (BWR).
+
+Bar width reduction (BWR) is a technique used to modify the graphic design of a barcode to compensate for ink spread. In ***Aspose.BarCode for JavaScript via C++***, the width of bars in generated barcodes can be adjusted by setting the [*BarWidthReduction*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/barwidthreduction) property of the [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters) class. Setting this property reduces the width of bars or cell sizes in 1D and 2D barcodes. The BWR value for a specific printer can be found in manufacturer tables. Note that this setting has no effect for laser printers.
+
+Below are sample barcodes generated with and without bar width reduction.
+
 |Barcode Type|Bar Width Reduction 0|Bar Width Reduction 3|  
 | :-: | :-: | :-: |  
 |**Code 128**|<img src="code128barwidthreduction0.png" width="50%" height="50%">|<img src="code128barwidthreduction3.png" width="50%" height="50%">| 
 |**Data Matrix**|<img src="datamatrixbarwidthreduction0.png" width="50%" height="50%">|<img src="datamatrixbarwidthreduction4.png" width="50%" height="50%">|
-  
-The following code example describes how to set bar width reduction.
-   
+
+The following code sample shows how to set bar width reduction.
+
 ```javascript
 
-//Code 128
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 10;
-//Code 128 without barwidth rediction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 0;
-gen.Save($"{path}Code128BarWidthReduction0.png", BarCodeImageFormat.Png);
-//Code 128 with 4 pix barwidth rediction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
-gen.Save($"{path}Code128BarWidthReduction4.png", BarCodeImageFormat.Png);
+// Generate Code128 and DataMatrix barcodes with various bar width reduction settings
 
-//DataMatrix
-gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
+// Code128 barcode generation
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 10;
-//DataMatrix without barwidth rediction
+
+// Code 128 without bar width reduction
 gen.Parameters.Barcode.BarWidthReduction.Pixels = 0;
-gen.Save($"{path}DataMatrixBarWidthReduction0.png", BarCodeImageFormat.Png);
-//DataMatrix with 4 pix barwidth rediction
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Code 128 with 4 pixels bar width reduction
 gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
-gen.Save($"{path}DataMatrixBarWidthReduction4.png", BarCodeImageFormat.Png);
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// DataMatrix barcode generation
+gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
+gen.Parameters.Barcode.XDimension.Pixels = 10;
+
+// DataMatrix without bar width reduction
+gen.Parameters.Barcode.BarWidthReduction.Pixels = 0;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// DataMatrix with 4 pixels bar width reduction
+gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ``` 
   

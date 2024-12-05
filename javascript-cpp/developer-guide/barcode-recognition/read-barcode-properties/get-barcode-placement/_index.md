@@ -9,32 +9,45 @@ weight: 20
 url: /javascript-cpp/get-placement-and-orientation/
 ---  
   
-In some cases, developers may need to get information about the placement region of a source barcode and its orientation angle. To enable such a possibility, ***Aspose.BarCode for JavaScript via C++*** provides a group of properties called [*RegionParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderegionparameters) that stores the following information:
--	Quadrangle – a quadrangle object that bounds a barcode
--	Rectangle - a rectangle object that bounds a barcode
--	Points – an array of points constituting a barcode
--	Angle – an orientation angle in degrees
-  
-The following code sample illustrates how to get the information about barcode placement region and orientation angle for the example barcode image provided below.
+## **Get Barcode Placement and Orientation Information**
+
+To retrieve information about the placement region and orientation angle of a source barcode, ***Aspose.BarCode for JavaScript via C++*** provides a group of properties called [*RegionParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderegionparameters). This group stores the following details:
+
+- **Quadrangle** – an object that bounds the barcode.
+- **Rectangle** – an object that bounds the barcode.
+- **Points** – an array of points that make up the barcode.
+- **Angle** – the orientation angle in degrees.
+
+The following code sample demonstrates how to retrieve information about the barcode placement region and orientation angle from a sample barcode image.
+
 
 ```javascript
-//recognize image
-Console.WriteLine("ReadExtRegion:");
-using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
-{
-    foreach (BarCodeResult result in read.ReadBarCodes())
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose1234");
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Read Code 128 barcode with region information
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code128");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    var result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`Quadrangle: ${result.Region.Quadrangle.toString()}`);
+    console.log(`Angle: ${result.Region.Angle.toString()}`);
+    console.log(`Rectangle: ${result.Region.Rectangle.toString()}`);
+    let ptStr = "";
+    for(var j = 0; j < result.Region.PointsCount; j++)
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"Quadrangle:{result.Region.Quadrangle.ToString()}");
-        Console.WriteLine($"Angle:{result.Region.Angle.ToString()}");
-        Console.WriteLine($"Rectangle:{result.Region.Rectangle.ToString()}");
-        string ptStr = "";
-        foreach (Point pt in result.Region.Points)
-            ptStr += pt.ToString() + "";
-        Console.WriteLine($"Points:{ptStr}");
+        var pt = result.Region.GetPoint(j);
+        ptStr += pt.toString() + " ";
     }
+    console.log(`Points: ${ptStr}`);
 }
+
+gen.delete();
+reader.delete();
+
 ```
   
 <p align="center"><img src="qr_code128.png" width="20%" height="20%"></p>

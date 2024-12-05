@@ -7,45 +7,52 @@ feedback: BARCODECOM
 url: /javascript-cpp/itf-barcodes/
 ---
 {{% alert color="primary" %}}[Generate ITF Barcodes Online](https://products.aspose.app/barcode/generate/itf): You can check the quality of ***Aspose.BarCode*** generation for ITF barcodes and view the results online.{{% /alert %}}
-
 ## **Overview**
-The *ITF 14* type has been introduced by GS1 based on the *Interleaved 2-of-5* standard to encode trade identifiers defined as Global Trade Item Numbers (GTIN). This barcode type allows encoding a set of 14 digits where the last one is a check digit. The *ITF 6* symbology is mainly used as an addition to *ITF 14* to encode the quantity or weight of a trade item. *ITF* barcode labels usually have borders or frames of different types with a quiet zone. Such appearance-related settings may vary depending on particular industrial needs. In ***Aspose.BarCode for JavaScript via C++***, parameters of generated *ITF* barcodes can be adjusted using the [*ITF*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/itf) property group of class [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters). Further in the article, these properties are discussed in detail along with the instructions on their use and corresponding code samples.
-  
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+The *ITF 14* barcode type, developed by GS1 based on the *Interleaved 2-of-5* standard, is used to encode Global Trade Item Numbers (GTIN). This type supports 14-digit encoding, with the last digit being a check digit. The *ITF 6* symbology complements *ITF 14* by encoding additional information such as the quantity or weight of the item. *ITF* barcodes typically feature various types of borders or frames with a quiet zone, which can be customized based on specific industrial needs. In ***Aspose.BarCode for JavaScript via C++***, these parameters can be modified using the [*ITF*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/itf) property group in the [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters) class. This section details these properties and provides examples for their usage.
+
+{{% alert color="primary" %}}*For any clarifications, feel free to contact [Aspose Technical Support](/barcode/javascript-cpp/technical-support/), ask questions at the [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13), or reach out to [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Frame Settings**
-As mentioned above, *ITF* barcode labels may have frames of different types depending on industrial needs. ***Aspose.BarCode for JavaScript via C++*** allows customizing the appearance of *ITF* barcode frames according to specific requirements. Namely, it is possible to adjust frame style and thickness, as explained below.
- 
+*ITF* barcodes can have customized frames based on industrial requirements. ***Aspose.BarCode for JavaScript via C++*** allows developers to modify the frame style and thickness to meet specific needs.
+
 ### **Frame Style for ITF 14 and ITF 6**
-In ***Aspose.BarCode for JavaScript via C++***, developers can set five different styles for *ITF* barcode frames, including the absence of such. It can be done by using the [*ItfBorderType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/itf14bordertype) enumeration that provides the following options: *None*, *Frame*, *Bar*, *FrameOut*, and *BarOut*. Note that *FrameOut* and *BarOut* allow placing the frame outside a barcode image without affecting its original height. 
-  
-Sample barcode labels provided below illustrate how the appearance of barcode frames will change depending on particular settings. 
-  
+Five frame styles are available for *ITF* barcodes in ***Aspose.BarCode for JavaScript via C++***, including an option for no frame. The frame style is set using the [*ItfBorderType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/itf14bordertype) enumeration, which includes the following options: *None*, *Frame*, *Bar*, *FrameOut*, and *BarOut*. The *FrameOut* and *BarOut* options create a frame outside the barcode image without altering its height.
+
+The examples below show how different frame styles affect the appearance of the barcode.
+
 |Frame Style|No Borders (*None*)|Normal Frame (*Frame*)|Horizontal Lines (*Bar*)|Outside Frame (*FrameOut*)|Outside Lines (*BarOut*)|
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="itf14bordernone.png">|<img src="itf14borderframe.png">|<img src="itf14borderbar.png">|<img src="itf14borderframeout.png">|<img src="itf14borderbarout.png">|
-  
-The following code snippet explains how to adjust the frame style considering the *ITF 14* symbology as an example.
-  
-```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
+The following code snippet demonstrates how to set the frame style for *ITF 14* barcodes.
+
+```javascript
+// Generate ITF-14 barcodes with different border types
+var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-//ITF border type None
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.None;
-gen.Save($"{path}ITF14BorderNone.png", BarCodeImageFormat.Png);
-//ITF border type Bar
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Bar;
-gen.Save($"{path}ITF14BorderBar.png", BarCodeImageFormat.Png);
-//ITF border type BarOut
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.BarOut;
-gen.Save($"{path}ITF14BorderBarOut.png", BarCodeImageFormat.Png);
-//ITF border type Frame
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;
-gen.Save($"{path}ITF14BorderFrame.png", BarCodeImageFormat.Png);
-//ITF border type FrameOut
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.FrameOut;
-gen.Save($"{path}ITF14BorderFrameOut.png", BarCodeImageFormat.Png);
+
+// ITF border type None
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.None;
+document.getElementById("imgNone").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF border type Bar
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Bar;
+document.getElementById("imgBar").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF border type BarOut
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.BarOut;
+document.getElementById("imgBarOut").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF border type Frame
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Frame;
+document.getElementById("imgFrame").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF border type FrameOut
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.FrameOut;
+document.getElementById("imgFrameOut").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
   
@@ -62,15 +69,21 @@ The following code sample shows how to set different border thickness values usi
   
 ```javascript
 
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
+// Generate ITF-14 barcodes with different border sizes
+var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;
-//ITF border size 5 Pixels
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Frame;
+
+// ITF border size 5 Pixels
 gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 5;
-gen.Save($"{path}ITF14BorderSize5Pixels.png", BarCodeImageFormat.Png);
-//ITF border size 15 Pixels
+document.getElementById("img5").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF border size 15 Pixels
 gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 15;
-gen.Save($"{path}ITF14BorderSize15Pixels.png", BarCodeImageFormat.Png);
+document.getElementById("img15").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```
   
@@ -86,15 +99,20 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can customize the siz
 The following code sample illustrates how to adjust the appearance of the quiet zone for *ITF 14* barcodes.
   
 ```javascript
-
-arcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
+// Generate ITF-14 barcodes with different quiet zone sizes
+var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;
-//ITF quiet zone 10 * XDimension
+gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Frame;
+
+// ITF quiet zone 10 * XDimension
 gen.Parameters.Barcode.ITF.QuietZoneCoef = 10;
-gen.Save($"{path}ITF14QuietZone10.png", BarCodeImageFormat.Png);
-//ITF quiet zone 30 * XDimension
+document.getElementById("img10").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// ITF quiet zone 30 * XDimension
 gen.Parameters.Barcode.ITF.QuietZoneCoef = 30;
-gen.Save($"{path}ITF14QuietZone30.png", BarCodeImageFormat.Png);
+document.getElementById("img30").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 
 ```

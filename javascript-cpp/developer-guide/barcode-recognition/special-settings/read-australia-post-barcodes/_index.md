@@ -9,47 +9,47 @@ url: /javascript-cpp/read-australia-post/
 ---
 
 {{% alert color="primary" %}}[Read Barcodes Online](https://products.aspose.app/barcode/recognize): You can test the quality of ***Aspose.BarCode*** recognition functionality and view the results online.{{% /alert %}}
-  
 ## **Overview**
-*Australia Post* is a 4-state postal symbology used in the Australian Post. In this barcode standard, input messages include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields are used to indicate one of three available barcode types with different fixed lengths: 37, 52, or 67 bars. Depending on FCC, barcodes may contain a customer information (CI) field that identifies one of the encoding types that support numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard contains a checksum and information used for Reed-Solomon data recovery.  
-*See more details about this symbology [here](/barcode/javascript-cpp/postal-barcodes/#australia-post-symbology)*.  
-  
-Due to the possibility to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has some specifics. In ***Aspose.BarCode for JavaScript via C++***, developers can use class [*AustraliaPostSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings) to customize recognition parameters for this barcode standard according to particular requirements. Further, the main properties of class [*AustraliaPostSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings) are explained in detail.
+*Australia Post* is a 4-state postal symbology used in the Australian Post. Input messages in this barcode standard include specific 2-digit format control code (FCC) fields and 8-digit sorting code (SC) fields. FCC fields indicate one of three available barcode types with fixed lengths of 37, 52, or 67 bars. Depending on the FCC, barcodes may include a customer information (CI) field that identifies one of the encoding types supporting numerical or alphanumeric symbols. Customer information can occupy 16 bars in 52-length barcodes or 31 bars in 67-length ones. The Australia Post standard also includes a checksum and Reed-Solomon data recovery information.  
+*Learn more about this symbology [here](/barcode/javascript-cpp/postal-barcodes/#australia-post-symbology)*.
+
+Given the option to add customer information in barcode input data, barcode recognition for *Australia Post* barcodes has specific considerations. In ***Aspose.BarCode for JavaScript via C++***, the [*AustraliaPostSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings) class can be used to customize recognition settings for this barcode standard based on requirements. The main properties of [*AustraliaPostSettings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings) are detailed below.
 
 ## **Decode Customer Information in Standard Formats**
-The *Australia Post* symbology allows encoding additional customer information in three different formats; automatic recognition of the format used for encoding is not possible. In ***Aspose.BarCode for JavaScript via C++***, the required decoding format can be set in the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype) field that can take the following values as explained in the table below.
-  
+The *Australia Post* symbology supports encoding additional customer information in three formats, but automatic recognition of the format used is not possible. In ***Aspose.BarCode for JavaScript via C++***, the required decoding format can be set using the [*CustomerInformationInterpretingType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/australiapostsettings/properties/customerinformationinterpretingtype) property, which accepts the following values:
+
 |Australia Post Encoding Table|Supported Symbols|
 |---|---|
-|CTable|Numerical digits, English letters, space symbol, and #|
-|NTable|Numerical digits|
-|Other|0, 1, 2, and 3 that correspond to H, A, D, and T states, respectively|
-  
-**CTable**  
-  
-The following code snippet explains how to set the decoding format using the *CTable* option for the barcode image shown below. 
+|CTable|Numerical digits, English letters, space, and #|
+|NTable|Numerical digits only|
+|Other|0, 1, 2, and 3 corresponding to H, A, D, and T states|
+
+**CTable**
+
+The following code snippet demonstrates how to set the decoding format to *CTable* for the barcode image shown below.
+
   
 ```javascript
-//create barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
-    gen.Save($"{path}AustraliaPostCTable.png", BarCodeImageFormat.Png);
+// Generate Australia Post barcode with C Table encoding
+var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "6201234567ASPOSE");
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.CTable;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display the barcode image
+
+// Read barcode image
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "AustraliaPost");
+reader.BarcodeSettings.AustraliaPost.CustomerInformationInterpretingType = BarCodeInstance.CustomerInformationInterpretingType.CTable;
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    var result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
 }
 
-//read barcode image
-Console.WriteLine("ReadAustraliaPostCTable:");
-using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", DecodeType.AustraliaPost))
-{
-    read.BarcodeSettings.AustraliaPost.CustomerInformationInterpretingType = CustomerInformationInterpretingType.CTable;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-}
+gen.delete();
+reader.delete();
+
 ```
   
 <p align="center"><img src="australiapostctable.png"></p>
@@ -75,7 +75,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
     read.BarcodeSettings.AustraliaPost.CustomerInformationInterpretingType = CustomerInformationInterpretingType.NTable;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
@@ -104,7 +104,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostOther.png", D
     read.BarcodeSettings.AustraliaPost.CustomerInformationInterpretingType = CustomerInformationInterpretingType.Other;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
@@ -136,7 +136,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
     read.BarcodeSettings.AustraliaPost.IgnoreEndingFillingPatternsForCTable = true;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
@@ -149,7 +149,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
     read.BarcodeSettings.AustraliaPost.IgnoreEndingFillingPatternsForCTable = false;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
@@ -204,7 +204,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCustomerInfor
     read.BarcodeSettings.AustraliaPost.CustomerInformationDecoder = new NTableDecoder();
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }

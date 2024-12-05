@@ -29,7 +29,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 {
     Console.WriteLine("ReadSimpleExample:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
   
@@ -50,7 +50,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
     Console.WriteLine("ReadFoundBarCodes:");
     Console.WriteLine($"BarCodes count:{reader.FoundCount.ToString()}");
     foreach (BarCodeResult result in reader.FoundBarCodes)
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 

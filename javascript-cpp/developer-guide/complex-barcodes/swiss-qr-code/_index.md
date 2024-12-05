@@ -8,74 +8,87 @@ feedback: BARCODECOM
 weight: 10
 url: /javascript-cpp/swiss-qr-code/
 ---
+## Overview
+The *Swiss QR Code* symbology was developed in Switzerland to facilitate digital payments. Currently, all payment receipts and bills in Switzerland feature a *Swiss QR Code* that encodes payment details. Unlike standard *QR Code* barcodes, *Swiss QR Code* labels include the Swiss cross symbol at the center.
 
-## **Overview**
-The *Swiss QR Code* symbology has been developed in Switzerland to automate digital payments. At present, all payment receipts and bills in Switzerland are intended to have a *Swiss QR Code* barcode that encrypts payment details. To distinguish from basic *QR Code*, *Swiss QR Code* labels have the Swiss cross sign in the center.  
-  
-Specifically, the *Swiss QR Code* standard is used to work with QR bills in electronic payments. A *Swiss QR Code* barcode contains all necessary payment information required to launch payments or to process a QR invoice. ***Aspose.BarCode for JavaScript via C++*** includes [*SwissQRBill*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrbill) and [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext) classes that provide various properties to work with *Swiss QR* codes.  
-  
-The general rules for creating *Swiss QR Code* barcodes and corresponding payment documents are defined in a specific standard called ["Swiss Implementation Guidelines for the QR-bill"](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-en.pdf) that relies on the ISO 20022 standard.
+The *Swiss QR Code* standard is specifically designed for QR bills in electronic payments. A *Swiss QR Code* barcode contains all the payment information needed to process a payment or handle a QR invoice. ***Aspose.BarCode for JavaScript via C++*** offers [*SwissQRBill*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrbill) and [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext) classes, which provide various properties for working with *Swiss QR Codes*.
 
-## **Generate Swiss QR Code**
-To generate a *Swiss QR Code* barcode using  ***Aspose.BarCode for JavaScript via C++***, it is necessary to create an instance of [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexbarcodegenerator) and specify the information to be encoded into [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext).  
+The creation rules for *Swiss QR Code* barcodes and payment documents are detailed in the "Swiss Implementation Guidelines for the QR-bill," which follows the ISO 20022 standard and can be found [here](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-en.pdf).
+
+## Generate Swiss QR Code
+To generate a *Swiss QR Code* using ***Aspose.BarCode for JavaScript via C++***, create an instance of [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext).
 
 <p align="center"><img src="swissqrbill.png"></p>
-  
-The code sample given below demonstrates how to generate a *Swiss QR Code* barcode.
+
+The following code sample shows how to generate a *Swiss QR Code* barcode.
+
   
 ```javascript
-//create Swiss QR Bill
-SwissQRCodetext swissQRCode = new SwissQRCodetext();
-swissQRCode.Bill.Version = SwissQRBill.QrBillStandardVersion.V2_0;
+// Create Swiss QR Bill
+var swissQRCode = new BarCodeInstance.SwissQRCodetext();
+swissQRCode.Bill.Version = BarCodeInstance.QrBillStandardVersion.V2_0;
 swissQRCode.Bill.Account = "CH4431999123000889012";
-swissQRCode.Bill.Amount = 1000.25m;
+swissQRCode.Bill.Amount = "1000.25";
 swissQRCode.Bill.Currency = "CHF";
 swissQRCode.Bill.Reference = "210000000003139471430009017";
-swissQRCode.Bill.Creditor = new Address
-{
-    Name = "Muster & Söhne",
-    Street = "Musterstrasse",
-    HouseNo = "12b",
-    PostalCode = "8200",
-    Town = "Zürich",
-    CountryCode = "CH"
-};
 
-swissQRCode.Bill.Debtor = new Address
-{
-    Name = "Muster AG",
-    Street = "Musterstrasse",
-    HouseNo = "1",
-    PostalCode = "3030",
-    Town = "Bern",
-    CountryCode = "CH"
-};
+swissQRCode.Bill.Creditor.Name = "Muster & Söhne";
+swissQRCode.Bill.Creditor.Street = "Musterstrasse";
+swissQRCode.Bill.Creditor.HouseNo = "12b";
+swissQRCode.Bill.Creditor.PostalCode = "8200";
+swissQRCode.Bill.Creditor.Town = "Zürich";
+swissQRCode.Bill.Creditor.CountryCode = "CH";
 
-//encode Swiss QR Bill
-ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(swissQRCode);
+swissQRCode.Bill.Debtor.Name = "Muster AG";
+swissQRCode.Bill.Debtor.Street = "Musterstrasse";
+swissQRCode.Bill.Debtor.HouseNo = "1";
+swissQRCode.Bill.Debtor.PostalCode = "3030";
+swissQRCode.Bill.Debtor.Town = "Bern";
+swissQRCode.Bill.Debtor.CountryCode = "CH";
+
+// Encode Swiss QR Bill
+var generator = swissQRCode.GetGenerator();
 generator.Parameters.Barcode.XDimension.Pixels = 4;
-generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
-generator.Save($"{path}SwissQRBill.png");
+generator.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QREncodeMode.ECIEncoding;
+generator.Parameters.Barcode.QR.QrECIEncoding = BarCodeInstance.ECIEncodings.UTF8;
+document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display QR code image
+
+swissQRCode.delete();
+generator.delete();
+
 ```
 
-## **Read Swiss QR Code**
-***Aspose.BarCode for JavaScript via C++*** includes class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) that is used to decode barcode input text according to the specified complex barcode type, in this case, *Swiss QR Code*. To read *Swiss QR Code* barcodes, first, it is necessary to create an instance of class [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) and set it to the value *DecodeType.QR*; then, the obtained barcode contents need to be parsed in class [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) by calling the [*TryDecodeSwissQR*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/methods/trydecodeswissqr) method that returns an instance of [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext) with the decoded barcode information. The code snippet below illustrates how to implement Swiss QR code recognition.
-  
+## Read Swiss QR Code
+***Aspose.BarCode for JavaScript via C++*** provides the [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) class for decoding complex barcode input, such as *Swiss QR Code*. To read a *Swiss QR Code* barcode, follow these steps:
+
+1. Create an instance of [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) and set its value to *DecodeType.QR*.
+2. Use the [*ComplexCodetextReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader) class to parse the barcode contents.
+3. Call the [*TryDecodeSwissQR*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/complexcodetextreader/methods/trydecodeswissqr) method, which returns an instance of [*SwissQRCodetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/swissqrcodetext) containing the decoded information.
+
+The code sample below demonstrates how to implement *Swiss QR Code* recognition.
+
 ```javascript
-Console.OutputEncoding = Encoding.Unicode;
-//recognize Swiss QR Code
-BarCodeReader reader = new BarCodeReader($"{path}SwissQRBill.png", DecodeType.QR);
-foreach (BarCodeResult result in reader.ReadBarCodes())
+
+// Read Swiss QR Bill from the image
+var reader = new BarCodeInstance.BarCodeReader(document.getElementById("img").src, "QR");
+reader.ReadBarCodes();
+
+if(reader.FoundCount == 1)
 {
-    SwissQRCodetext swissResult = ComplexCodetextReader.TryDecodeSwissQR(result.CodeText);
-    if (null == swissResult) continue;
-    Console.WriteLine($"Version:{swissResult.Bill.Version}");
-    Console.WriteLine($"Account:{swissResult.Bill.Account}");
-    Console.WriteLine($"Amount:{swissResult.Bill.Amount}");
-    Console.WriteLine($"Currency:{swissResult.Bill.Currency}");
-    Console.WriteLine($"Reference:{swissResult.Bill.Reference}");
-    Console.WriteLine($"Creditor:{swissResult.Bill.Creditor.Name}");
-    Console.WriteLine($"Debtor:{swissResult.Bill.Debtor.Name}");
+    var result = reader.FoundBarCodes(0);
+
+    var swissResult = BarCodeInstance.ComplexCodetextReader.TryDecodeSwissQR(result.CodeText);
+    if (swissResult.IsEmpty) return;
+    
+    console.log(`Version: ${swissResult.Bill.Version}`);
+    console.log(`Account: ${swissResult.Bill.Account}`);
+    console.log(`Amount: ${swissResult.Bill.Amount}`);
+    console.log(`Currency: ${swissResult.Bill.Currency}`);
+    console.log(`Reference: ${swissResult.Bill.Reference}`);
+    console.log(`Creditor: ${swissResult.Bill.Creditor.Name}`);
+    console.log(`Debtor: ${swissResult.Bill.Debtor.Name}`);
+        
 }
+reader.delete();
+
 ```

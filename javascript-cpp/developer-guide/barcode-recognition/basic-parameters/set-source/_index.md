@@ -26,7 +26,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 {
     Console.WriteLine("ReadFromFile:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
   
@@ -40,7 +40,7 @@ using (BarCodeReader reader = new BarCodeReader())
     reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
     Console.WriteLine("ReadSetBarCodeImageFromFile:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 
@@ -54,7 +54,7 @@ using (BarCodeReader reader = new BarCodeReader(bmp, DecodeType.Pdf417, DecodeTy
 {
     Console.WriteLine("ReadFromBitmap:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 
@@ -70,7 +70,7 @@ using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, Decod
 {
     Console.WriteLine("ReadFromStream:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
 }
 ```
 

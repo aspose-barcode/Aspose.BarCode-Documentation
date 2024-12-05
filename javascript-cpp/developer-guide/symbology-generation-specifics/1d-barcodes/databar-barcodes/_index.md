@@ -7,90 +7,109 @@ feedback: BARCODECOM
 url: /javascript-cpp/databar-barcodes/
 ---
 {{% alert color="primary" %}}[Generate DataBar Barcodes Online](https://products.aspose.app/barcode/generate/databar): You can check the quality of ***Aspose.BarCode*** generation for DataBar barcodes and view the results online.{{% /alert %}}
-
 ## **Overview**
-The *DataBar* symbology was introduced at the beginning of the 2000s as a part of the GS1 group of standards. The purpose was to mitigate the problems associated with the use of barcode types developed in the 70s. At the same time, it was necessary to keep the most important feature of 1D barcodes, namely, the possibility of being scanned by laser readers. The *DataBar* standard includes the following barcode types: 
+The *DataBar* symbology was introduced in the early 2000s as part of the GS1 standards to address issues with older barcode types from the 1970s. It retains the capability of being scanned by laser readers and includes the following types:
+
 - *DataBar Omnidirectional* / *DataBar Stacked Omnidirectional*
 - *DataBar Truncated* / *DataBar Stacked*
 - *DataBar Limited*
 - *DataBar Expanded* / *DataBar Expanded Stacked*
-  
-All *DataBar* standards except *DataBar Limited* can be represented both in two-row or multiple-row (up to 10 rows) forms. This allows adjusting the barcode layout and fitting it in the available area in the case of limited horizontal space. These symbologies have been developed specifically to encode GS1 identification codes for trade items (so-called Application Identifiers, see more in [GS1 Barcodes](/barcode/javascript-cpp/generating-barcodes-using-new-barcode-generation-api/)). Accordingly, all *DataBar* symbologies except *DataBar Expanded* and *DataBar Expanded Stacked* can be used to encode only trade identifiers defined as Global Trade Item Number (GTIN) exclusively in *GTIN12* or *GTIN13* digital formats using the 14-digit data structure. In turn, *DataBar Expanded* enables encoding any set of application identifiers; moreover, it allows including additional information in any form as it supports English alphabet characters (uppercase and lowercase), numerical digits, and 21 punctuation symbols.  
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
+All *DataBar* types, except *DataBar Limited*, can be represented in two-row or multi-row formats (up to 10 rows), making them adaptable for areas with limited horizontal space. These symbologies are designed to encode GS1 identification codes for trade items (Application Identifiers). Most *DataBar* types encode only Global Trade Item Numbers (GTIN) in *GTIN12* or *GTIN13* formats using a 14-digit structure. However, *DataBar Expanded* supports encoding a wider range of Application Identifiers and additional information, including alphanumeric characters and punctuation.
 
 ## **Barcode Height Settings**
-*DataBar* symbologies can be divided into two main groups: continuous and stacked. In ***Aspose.BarCode for JavaScript via C++***, for each of them there is its own way to adjust barcode height. Details on how to modify barcode height along with code samples and examples of generated barcodes are provided further in the article. 
+*DataBar* symbologies are categorized into continuous and stacked types. ***Aspose.BarCode for JavaScript via C++*** provides specific methods for adjusting the height of each group. Below are details and examples.
 
 ### **Continuous Barcodes**
-For continuous symbologies, such as *DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*, barcode heigh can be set using the [*BarHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/barheight) property of class [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters).  
-  
-Sample *DataBar Omnidirectional* barcode labels provided below have been generated using different bar height settings.
-   
-|<p align="center">**Bar Height**</p>|<p align="center">**Is Set to 30 Pixels**</p>|<p align="center">**Is Set to 60 Pixels**</p>|
+For continuous symbologies (*DataBar Omnidirectional*, *DataBar Truncated*, *DataBar Limited*, and *DataBar Expanded*), barcode height can be configured using the [*BarHeight*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/barheight) property of the [*BarcodeParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters) class.
+
+The examples below show *DataBar Omnidirectional* barcodes generated with different bar height settings.
+
+|<p align="center">**Bar Height**</p>|<p align="center">**30 Pixels**</p>|<p align="center">**60 Pixels**</p>|
 | :-: | :-: | :-: |
 | |<img src="databarbarheight30pixels.png">|<img src="databarbarheight60pixels.png">|
-  
-The following code snippet illustrates how to adjust barcode height for continuos barcodes using the *DataBar Omnidirectional* symbology as an example.
+
+The following code snippet demonstrates how to set barcode height for continuous barcodes using *DataBar Omnidirectional* as an example.
+
   
 ```javascript
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirectional, "(01)12345678901231");
+// Generate GS1 DataBar OmniDirectional barcode with different bar heights
+var gen = new BarCodeInstance.BarcodeGenerator("DatabarOmniDirectional", "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-//set barheight 30 pixels
+
+// Set bar height to 30 pixels
 gen.Parameters.Barcode.BarHeight.Pixels = 30;
-gen.Save($"{path}DatabarBarHeight30Pixels.png", BarCodeImageFormat.Png);
-//set barheight 60 pixels
+document.getElementById("img30").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set bar height to 60 pixels
 gen.Parameters.Barcode.BarHeight.Pixels = 60;
-gen.Save($"{path}DatabarBarHeight60Pixels.png", BarCodeImageFormat.Png);
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 ```
-  
 ### **Stacked Barcodes**
-In stacked symbologies, such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode heigh can be customized by initializing the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/aspectratio) property of class [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters). This parameter is defined as a relative coefficient to the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) property.  
-  
-*DataBar Stacked Omnidirectional* barcode images represented below as examples have been created with different aspect ratio settings.
-  
-|<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 15**</p>|<p align="center">**Is Set to 30**</p>|
+For stacked symbologies such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode height can be adjusted using the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/aspectratio) property in the [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters) class. 
+
+The *AspectRatio* is a relative coefficient to the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, allowing customization of the barcode's vertical layout.
+
+The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with varying aspect ratio settings.
+
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**15**</p>|<p align="center">**30**</p>|
 | :-: | :-: | :-: |
 | |<img src="databaraspectratio15.png">|<img src="databaraspectratio30.png">|
-  
-The following code sample explains how to customize barcode height by setting the aspect ratio for stacked symbologies considering *DataBar Stacked Omnidirectional* barcodes as an example.
+
+The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
+
   
 ```javascript
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmniDirectional, "(01)12345678901231");
+// Generate GS1 DataBar Stacked OmniDirectional barcode with different aspect ratios
+var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-//set DataBar AspectRatio 15
+
+// Set DataBar AspectRatio to 15
 gen.Parameters.Barcode.DataBar.AspectRatio = 15;
-gen.Save($"{path}DatabarAspectRatio15.png", BarCodeImageFormat.Png);
-//set DataBar AspectRatio 30
+document.getElementById("img15").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set DataBar AspectRatio to 30
 gen.Parameters.Barcode.DataBar.AspectRatio = 30;
-gen.Save($"{path}DatabarAspectRatio30.png", BarCodeImageFormat.Png);
+document.getElementById("img30").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 ```
-  
-## **Layout Settings for DataBar Expanded Stacked Barcodes**
-The *DataBar Expanded Stacked* symbology provides flexible settings for barcode layout by varying the number of rows and columns in a barcode. The ***Aspose.BarCode for JavaScript via C++*** library enables combining 22 data segments to form up to 10 strings. Developers can set the values independently for [*Rows*]( https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/rows) and [*Columns*]( https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/columns) properties of class [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters). The value set in the *Columns* property is the most significant parameter; at first, it is required to specify how many segments need to be placed in a row.  
-  
-Sample *DataBar Expanded Stacked* barcode labels given below have been generated with different barcode layout settings.
-  
-|<p align="center">**Layout Settings**</p>|<p align="center">**4 Columns**</p>|<p align="center">**3 Rows**</p>|<p align="center">**6 Columns and 10 Rows**</p>|
-| :-: | :-: | :-: | :-: |
-| |<img src="databarcols4.png">|<img src="databarrows3.png">|<img src="databarcols6rows10.png">|
-  
-The following code snippet shows how to specify various layout settings for *DataBar Expanded Stacked* barcodes.
+ ### **Stacked Barcodes**
+For stacked symbologies such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode height can be adjusted using the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/aspectratio) property in the [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters) class. 
+
+The *AspectRatio* is a relative coefficient to the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, allowing customization of the barcode's vertical layout.
+
+The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with varying aspect ratio settings.
+
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**15**</p>|<p align="center">**30**</p>|
+| :-: | :-: | :-: |
+| |<img src="databaraspectratio15.png">|<img src="databaraspectratio30.png">|
+
+The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
+
    
 ```javascript
-//set 4 columns
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "Databar Expanded Stacked long");
+// Generate GS1 DataBar Expanded Stacked barcode with various column and row configurations
+// Set 4 columns
+var gen = new BarCodeInstance.BarcodeGenerator("DatabarExpandedStacked", "Databar Expanded Stacked long");
 gen.Parameters.Barcode.DataBar.Columns = 4;
-gen.Save($"{path}DatabarCols4.png", BarCodeImageFormat.Png);
-//set 3 rows
-gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "Databar Expanded Stacked long");
+document.getElementById("img4").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set 3 rows
 gen.Parameters.Barcode.DataBar.Rows = 3;
-gen.Save($"{path}DatabarRows3.png", BarCodeImageFormat.Png);
-//set 6 columns 10 rows
-gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "Databar Expanded Stacked long");
+document.getElementById("img3").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set 6 columns and 10 rows
 gen.Parameters.Barcode.DataBar.Columns = 6;
 gen.Parameters.Barcode.DataBar.Rows = 10;
-gen.Save($"{path}DatabarCols6Rows10.png", BarCodeImageFormat.Png);
+document.getElementById("img60").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 ```
   
 ## **Compatibility with GS1 Components**
@@ -105,46 +124,55 @@ Given that *DataBar Expanded* and *DataBar Expanded Stacked* symbologies, in the
 The following code snippet explains how to enable the verification of compatibility with GS1 standards for *DataBar Expanded* barcodes. In case when the *IsAllowOnlyGS1Encoding* is set, and the used encoding does not match GS1 standards, the following exception is thrown: "*Exception: Wrong GS1 Application Identifiers format*".  
   
 ```javascript
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, "");
-//right codetext with GS1Encoding check
+// Generate GS1 DataBar Expanded barcode with GS1 encoding checks and variable codetext handling
+var gen = new BarCodeInstance.BarcodeGenerator("DatabarExpanded", "");
+
+// Correct codetext with GS1Encoding check
 gen.CodeText = "(01)12345678901231";
 gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = true;
-gen.Save($"{path}DatabarGS1RightEncoding.png", BarCodeImageFormat.Png);
-//variable codetext without GS1Encoding check
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Variable codetext without GS1Encoding check
 gen.CodeText = "ASPOSE";
 gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = false;
-gen.Save($"{path}DatabarGS1VariableEncoding.png", BarCodeImageFormat.Png);
-//variable codetext with GS1Encoding check
-try
-{
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Variable codetext with GS1Encoding check (throws error)
+try {
     gen.CodeText = "ASPOSE";
     gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = true;
-    gen.GenerateBarCodeImage();
+    document.getElementById("img").src = gen.GenerateBarCodeImage(); // Attempt to generate barcode
+} catch (e) {
+    console.error(e.message);
 }
-catch (Exception e)
-{
-    Console.WriteLine(e.Message);
-}
+
+gen.delete();
+
 ```
-  
-## **Enable 2D Component**
-Each of the *DataBar* symbologies may contain a specific 2D component linkage flag that indicates the presence of an associated 2D barcode that can be placed alongside the generated *DataBar* barcode label. Usually, such a flag is set in GS1 composite barcode specifications. ***Aspose.BarCode for NET*** enables the [*Is2DCompositeComponent*]( https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/is2dcompositecomponent) property of class [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters) that can be used to set this flag manually when required by particular industrial standards without affecting main information encoded in a barcode.  
-  
-*DataBar Expanded* barcode images shown below have been generated with different settings for the 2D component flag.
-  
-|<p align="center">**2D Component**</p>|<p align="center">**Is Disabled**</p>|<p align="center">**Is Enabled**</p>|
+### **Stacked Barcodes**
+For stacked symbologies such as *DataBar Stacked Omnidirectional*, *DataBar Stacked*, and *DataBar Expanded Stacked*, barcode height can be adjusted using the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters/properties/aspectratio) property in the [*DataBarParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/databarparameters) class. 
+
+The *AspectRatio* is a relative coefficient to the [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension) property, allowing customization of the barcode's vertical layout.
+
+The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with varying aspect ratio settings.
+
+|<p align="center">**Aspect Ratio**</p>|<p align="center">**15**</p>|<p align="center">**30**</p>|
 | :-: | :-: | :-: |
-| |<img src="databar2dcomponentdisabled.png">|<img src="databar2dcomponentenabled.png">|
-  
-The following code example illustrates how to enable and disable the linkage to a 2D component for composite *DataBar Expanded* barcodes.
+| |<img src="databaraspectratio15.png">|<img src="databaraspectratio30.png">|
+
+The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
+
     
 ```javascript
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, "(01)12345678901231");
+// Generate GS1 DataBar Expanded barcode with 2D component flag enabled/disabled
+var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
-//disable 2D component flag
-gen.Parameters.Barcode.DataBar.Is2DCompositeComponent = false;
-gen.Save($"{path}Databar2DComponentDisabled.png", BarCodeImageFormat.Png);
-//enable 2D component flag
-gen.Parameters.Barcode.DataBar.Is2DCompositeComponent = true;
-gen.Save($"{path}Databar2DComponentEnabled.png", BarCodeImageFormat.Png);
+
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.Parameters.Barcode.AspectRatio = 2;
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 ```

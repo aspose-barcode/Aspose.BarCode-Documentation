@@ -8,43 +8,44 @@ feedback: BARCODECOM
 notoc: true
 url: /javascript-cpp/decode-fnc-symbols/
 ---
+The GS1 association uses FNC symbols to manage decoding for *Code 128* and other barcode types. There are four types of FNC symbols (FNC1-4), with FNC1 being the most common, used for GS1 Application Identifier (AI) marking. When the library detects a barcode that does not match any GS1 type (e.g., *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNJavaScript>”. These messages can be removed from the recognition results by setting the [*StripFNC*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.
 
-The GS1 association utilizes FNC symbols to manage decoding for *Code 128* and some other barcode types. There are four types of FNC symbols (FNC1-4) among which FNC1 is the most widespread one and is used for GS1 Application Identifier (AI) marking. When the library detects that a barcode does not correspond to any of GS1 types (e.g. *Code 128* or *GS1 Code 128*), the decoder outputs FNC symbols as “<FNJavaScript>”. Such messages can be deleted from the recognition results by setting the [*StripFNC*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodesettings/properties/stripfnc) property to false.  
-  
-The following code sample shows how to work with FCN symbols while reading a *Code 128* barcode demonstrated below.
+The following code snippet demonstrates how to handle FNC symbols when reading a *Code 128* barcode as shown below.
+
 
 ```javascript
-//create barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose" + FNC1 + FNC2 + FNC3))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Save($"{path}Code128FNC.png", BarCodeImageFormat.Png);
+// Create barcode
+var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose<FNC1><FNC2><FNC3>");
+gen.Parameters.Barcode.XDimension.Pixels = 2;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display the barcode image
+
+// Read barcode image with StripFNC set to false
+console.log("ReadWithStripFNC:");
+console.log("StripFNC: false");
+var read = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code128");
+read.BarcodeSettings.StripFNC = false;
+read.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    var result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+}
+read.delete();
+
+// Read barcode image with StripFNC set to true
+console.log("StripFNC: true");
+var read = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Code128");
+read.BarcodeSettings.StripFNC = true;
+read.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    var result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
 }
 
-//read barcode image with StripFNC set to False
-Console.WriteLine("ReadWithStripFNC:");
-Console.WriteLine("StripFNC: false");
-using (BarCodeReader read = new BarCodeReader($"{path}Code128FNC.png", DecodeType.Code128))
-{
-    read.BarcodeSettings.StripFNC = false;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-}
+gen.delete();
+read.delete();
 
-//read barcode image with StripFNC set to True
-Console.WriteLine("StripFNC: true");
-using (BarCodeReader read = new BarCodeReader($"{path}Code128FNC.png", DecodeType.Code128))
-{
-    read.BarcodeSettings.StripFNC = true;
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-    }
-}
 ```
   
 <p align="center"><img src="code128fnc.png"></p>

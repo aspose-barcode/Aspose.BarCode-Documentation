@@ -13,33 +13,36 @@ url: /javascript-cpp/check-recognition-quality/
 
 ## **Overview**
 
-In many cases, it is necessary to estimate whether the barcode has been recognized accurately. In ***Aspose.BarCode for JavaScript via C++***, this can be done using two specific properties of class [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult): [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) and [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality).  
+In many cases, it is important to assess whether a barcode has been accurately recognized. In ***Aspose.BarCode for JavaScript via C++***, this can be done using the [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) and [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) properties of the [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult) class.
 
 ## **Verify Barcode Reading Quality**
 
-As a result of barcode reading, the [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) property returns a value from the [*BarCodeConfidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration that corresponds to the recognition confidence level. Possible values of the [*BarCodeConfidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration (*None*, *Moderate*, and *Strong*) are explained in the table below. The [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) parameter returns the estimate of recognition quality according to the identified confidence level: 0 for *None*; from 1 to 99; 100 for *Strong*.
-  
+The [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/confidence) property returns a value from the [*BarCodeConfidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration, indicating the confidence level of the recognition. The [*BarCodeConfidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodeconfidence) enumeration has three possible values: *None*, *Moderate*, and *Strong*. The [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) property provides an estimate of recognition quality based on the confidence level: 0 for *None*; values from 1 to 99; and 100 for *Strong*.
+
 |Confidence Level|Reading Quality Value|Description|
 |---|---|---|
-|None|0|If the confidence level returns *None*, it usually means that the source barcode is incorrect and its input data has been decoded with errors. However, it is still possible to get its type and place orientation in the source image, as well as partially decode inputted data|
-|Moderate|80|Is returned for 1D and postal barcodes with weak or missing checksum settings. In this case, it is required to analyze the value of [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality); however, even in the case of high values (close to 80), the absolute correctness of barcode recognition is not guaranteed|
-|Strong|100|Is returned for all 2D barcode types with Reed-Solomon error correction in case the quality setting has not been set to *QualitySettings.AllowIncorrectBarcodes*. When this confidence level is returned, it means that barcode text has been decoded correctly, and the recognition process has been completed successfully|
-  
-The following code snippet explains how to get the recognition quality estimate for a sample barcode image.
+|None|0|A *None* confidence level indicates that the source barcode may be incorrect and its data may contain errors. However, the barcode type and orientation in the image can still be determined, and partial data decoding is possible.|
+|Moderate|80|Returned for 1D and postal barcodes with weak or missing checksum settings. The [*ReadingQuality*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/readingquality) value should be analyzed. Even with high values (close to 80), absolute recognition accuracy is not guaranteed.|
+|Strong|100|Returned for all 2D barcodes with Reed-Solomon error correction when the *QualitySettings.AllowIncorrectBarcodes* setting is not enabled. This indicates that the barcode text has been decoded correctly and the recognition process was successful.|
+
+The following code snippet shows how to obtain the recognition quality estimate for a sample barcode image.
+
   
 ```javascript
-//recognize image
-Console.WriteLine("ReadExtQuality:");
-using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
-{
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"Confidence:{result.Confidence.ToString()}");
-        Console.WriteLine($"ReadingQuality:{result.ReadingQuality.ToString()}");
-    }
+// Recognize image
+console.log("ReadExtQuality:");
+var reader = new BarCodeInstance.BarCodeReader("img.png", "QR");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`Confidence: ${result.Confidence}`);
+    console.log(`ReadingQuality: ${result.ReadingQuality}`);
 }
+
+reader.delete();
+
 ```
 
   

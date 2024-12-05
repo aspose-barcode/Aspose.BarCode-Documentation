@@ -12,37 +12,28 @@ url: /javascript-cpp/set-target-barcode-types/
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Overview**
-***Aspose.BarCode for JavaScript via C++*** supports more than 60 barcode types for recognition. To minimize the time required to complete recognition and avoid attempts to recognize outdated barcodes that are still used as a legacy of some industrial systems, it is recommended to select target barcode symbologies that will be considered for recognition. However, in the case when there is no information about precise symbologies that can be presented in a source image, it is possible to use the default setting *DecodeType.AllSupportedTypes* for the [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype) property so that the source image will be checked for the presence of all supported barcode types. This setting results in the increased time required to complete barcode recognition. 
+**Aspose.BarCode for JavaScript via C++** supports over 60 barcode types for recognition. To reduce recognition time and avoid processing outdated barcodes still used in some legacy industrial systems, it is recommended to specify the target barcode symbologies for recognition. If the exact symbologies in a source image are unknown, the default setting *DecodeType.AllSupportedTypes* can be used for the [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype) property. This will check the source image for all supported barcode types, though it may increase the recognition time.
 
-## **List Barcode Types Defined in DecodeType**
-Target symbologies for barcode recognition can be specified as a list and passed to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeReadType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodereadtype/methods/1) method.  
-  
-The following code snippet demonstrates how to set target symbologies (*Code 39*, *Code 128*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype).
+## **List of Barcode Types in DecodeType**
+Target barcode symbologies can be defined as a list and provided to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeReadType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodereadtype/methods/1) method.
+
+The following code snippet shows how to set target symbologies (*Code 39*, *Code 128*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype).
+
   
 ```javascript
-using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
-{
-    reader.SetBarCodeReadType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
-    Console.WriteLine("ReadDecodeTypeList:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+var reader = new BarCodeInstance.BarCodeReader(`${path}multiple_codes.png`);
+reader.SetBarCodeReadType("Code39Extended", "Code128,RM4SCC");
+console.log("ReadDecodeTypeList:");
+var barcodes = reader.ReadBarCodes();
+for (var i = 0; i < barcodes.length; i++) {
+    const result = barcodes[i];
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+reader.delete();
+
 ```
 
-## ***MultyDecodeType* Mode**
-The other way to set target symbologies for recognition is to list the required barcode types in a constructor of class [*MultyDecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/multydecodetype) and then to pass an instance of this class to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeReadType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodereadtype/methods/1) method.  
-  
-The following code sample explains how to define target symbologies for barcode reading (in this case, *Code 39*, *Code 128*, and *RM4SCC*) through [*MultyDecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/multydecodetype).
-  
-```javascript
-using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
-{
-    reader.SetBarCodeReadType(new MultyDecodeType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC));
-    Console.WriteLine("ReadMultyDecodeType:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
-}
-```
 
 ## **Predefined Sets of Types**
 Class [*DecodeTypes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype) contains various predefined sets of symbologies for recognition, including the following ones:
@@ -57,11 +48,15 @@ Class [*DecodeTypes*](https://reference.aspose.com/barcode/javascript-cpp/aspose
 The following code snippet illustrates how to specify target barcode types using the predefined set called *Types2D*.
   
 ```javascript
-using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Types2D))
-{
-    Console.WriteLine("ReadTypes2D:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Types2D");
+console.log("ReadTypes2D:");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    var result = reader.FoundBarCodes(i);
+    console.log(`CodeType: ${result.CodeType}`);
+    console.log(`CodeText: ${result.CodeText}`);
 }
+reader.delete();
+
 ```
 

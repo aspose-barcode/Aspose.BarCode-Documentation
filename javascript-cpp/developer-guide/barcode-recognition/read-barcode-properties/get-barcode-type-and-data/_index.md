@@ -9,92 +9,36 @@ url: /javascript-cpp/get-barcode-type-and-data/
 ---
   
 ## **Decode Barcode Type and Data**
-To get the data encoded in a barcode and identify its type, class [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult) provides the two most important fields, [*CodeText*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codetext) and [*CodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codetype), respectively. The other parameter [*CodeTypeName*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codetypename) represents the text name of a barcode symbology.
-  
-The following code sample explains how to get the data encoded in a barcode and its type for the sample barcode image provided below (in this case, a *QR Code* label).
+
+To retrieve the data encoded in a barcode and determine its type, the class [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult) provides the key fields:
+
+- **[*CodeText*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codetext)** – the decoded data from the barcode.
+- **[*CodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codetype)** – the type of barcode.
+
+
+The following code sample shows how to extract the data and barcode type from a sample barcode image (in this case, a *QR Code*).
+
  
 ```javascript
-//create barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Save($"{path}QRCodetext.png", BarCodeImageFormat.Png);
+// Create a QR barcode
+var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display QR code image
+
+// Recognize the QR barcode from the image
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "QR");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`CodeText: ${result.CodeText}`);
+    console.log(`CodeType: ${result.CodeType}`);
 }
 
-//recognize image
-Console.WriteLine("ReadExtCodetext:");
-using (BarCodeReader read = new BarCodeReader($"{path}QRCodetext.png", DecodeType.QR))
-{
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"CodeType:{result.CodeType.ToString()}");
-        Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
-    }
-}
+gen.delete();
+reader.delete();
+
 ```
 
 <p align="center"><img src="qrcodetext.png"></p> 
-  
-## **Read Barcode Data as Byte Stream**
-In cases when it is necessary to get the data encoded in a barcode in the form of a byte stream, it can be read from the specific field of class [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult) that is called [*CodeBytes*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/properties/codebytes).  
-  
-The following code snippet illustrates how to obtain barcode data as a stream of bytes for the sample *PDF417* barcode image provided below.  
-   
-```javascript
-byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-
-//encode array to string
-StringBuilder strBld = new StringBuilder(encodedArr.Length);
-foreach (byte bval in encodedArr)
-    strBld.Append((char)bval);
-
-//encode array of bytes
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, strBld.ToString()))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Binary;
-    gen.Parameters.Barcode.Pdf417.Columns = 2;
-    gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
-    gen.Save($"{path}ExtCodeBytes.png", BarCodeImageFormat.Png);
-}
-
-//attempt to recognize array of bytes
-Console.WriteLine("ReadExtCodeBytes:");
-using (BarCodeReader read = new BarCodeReader($"{path}ExtCodeBytes.png", DecodeType.Pdf417))
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
-        Console.WriteLine($"CodeBytes:{BitConverter.ToString(result.CodeBytes)}");
-    }
-```
-
-<p align="center"><img src="extcodebytes.png"></p>
-
-## **Decode Barcode Data in Unicode Format**
-In cases when the barcode data is encoded using a particular Unicode encoding, it can be read by calling the [*GetCodeText*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult/methods/getcodetext) method and specifying the required encoding.  
-  
-The following code snippet shows how to get the data encoded in UTF8 as a result of reading a sample *Data Matrix* barcode given below.
-   
-```javascript
-//create encoded Unicode codetext
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.DataMatrix.CodeTextEncoding = Encoding.UTF8;
-    gen.Save($"{path}ExtUnicodeCodeText.png", BarCodeImageFormat.Png);
-}
-
-//try to recognize Unicode codetext
-Console.WriteLine("ReadExtUnicodeCodeText:");
-using (BarCodeReader read = new BarCodeReader($"{path}ExtUnicodeCodeText.png", DecodeType.DataMatrix))
-    foreach (BarCodeResult result in read.ReadBarCodes())
-    {
-        Console.WriteLine($"CodeTypeName:{result.CodeTypeName}");
-        Console.WriteLine($"GetCodeText:{result.GetCodeText(Encoding.UTF8)}");
-    }
-```
-
-<p align="center"><img src="extunicodecodetext.png"></p>
    
   

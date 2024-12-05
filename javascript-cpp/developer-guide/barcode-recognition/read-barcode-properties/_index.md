@@ -8,15 +8,13 @@ feedback: BARCODECOM
 notoc: true
 url: /javascript-cpp/read-barcode-properties/
 ---
-  
-As a result of barcode reading, ***Aspose.BarCode for JavaScript via C++*** allows not only decoding the main data stored in a barcode, but also getting information about its technical parameters, such as type, placement region, orientation angle, and metadata. The library saves this information in a specific object type called [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult) so that each instance of this class corresponds to one processed barcode. In the articles listed below, it is explained how to get the required information about barcode properties using the functionality of ***Aspose.BarCode for JavaScript via C++***.
+As a result of barcode reading, ***Aspose.BarCode for JavaScript via C++*** allows you to decode not only the main data stored in a barcode but also technical details such as type, placement region, orientation angle, and metadata. This information is stored in an object of type [*BarCodeResult*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcoderesult), where each instance corresponds to one processed barcode. The following articles explain how to retrieve information about barcode properties using ***Aspose.BarCode for JavaScript via C++***:
 
-|Article|Description|
+| Article | Description |
 |---|---|
-|[Get Barcode Placement Region and Orientation Angle](/barcode/javascript-cpp/get-placement-and-orientation/)|Explains how to get information about barcode coordinates and rotation angle|
-|[Get Barcode Type and Encoded Data](/barcode/javascript-cpp/get-barcode-type-and-data/)|Demostrates how to fetch the barcode type and data stored in this barcode|
-|[Get Barcode Metadata](/barcode/javascript-cpp/read-barcode-metadata/)|Describes how to retrieve barcode metadata|
-  
+| [Get Barcode Placement Region and Orientation Angle](/barcode/javascript-cpp/get-placement-and-orientation/) | Explains how to get information about barcode coordinates and rotation angle. |
+| [Get Barcode Type and Encoded Data](/barcode/javascript-cpp/get-barcode-type-and-data/) | Demonstrates how to fetch the barcode type and data stored in the barcode. |
+| [Get Barcode Metadata](/barcode/javascript-cpp/read-barcode-metadata/) | Describes how to retrieve barcode metadata. |
 
 
 

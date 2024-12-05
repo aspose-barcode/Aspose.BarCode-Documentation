@@ -30,7 +30,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
     read.BarcodeSettings.DetectEncoding = true;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
@@ -42,7 +42,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}QRDetectEncoding.png", Dec
     read.BarcodeSettings.DetectEncoding = false;
     foreach (BarCodeResult result in read.ReadBarCodes())
     {
-        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+        Console.WriteLine($"CodeType:{result.CodeType}");
         Console.WriteLine($"CodeText:{result.CodeText}");
     }
 }
