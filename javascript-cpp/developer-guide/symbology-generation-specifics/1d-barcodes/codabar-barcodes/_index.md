@@ -49,6 +49,8 @@ gen.Parameters.Barcode.Codabar.CodabarStartSymbol = BarCodeInstance.CodabarSymbo
 gen.Parameters.Barcode.Codabar.CodabarStopSymbol = BarCodeInstance.CodabarSymbol.D;
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
+gen.delete();
+
 ```
   
 ## **Checksum Settings**
@@ -82,4 +84,5 @@ gen.Parameters.Barcode.IsChecksumEnabled = BarCodeInstance.EnableChecksum.Yes;
 gen.Parameters.Barcode.Codabar.CodabarChecksumMode = BarCodeInstance.CodabarChecksumMode.Mod16;
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
+gen.delete();
 ```

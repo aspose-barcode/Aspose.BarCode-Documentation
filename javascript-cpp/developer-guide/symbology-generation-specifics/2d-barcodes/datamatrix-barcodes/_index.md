@@ -9,89 +9,117 @@ url: /javascript-cpp/datamatrix-barcode/
 {{% alert color="primary" %}}[Generate Data Matrix Barcodes Online](https://products.aspose.app/barcode/generate/datamatrix): You can test the quality of ***Aspose.BarCode*** generation for DataMatrix barcodes and get the results online.{{% /alert %}}
 
 ## **Overview**
-*Data Matrix* is a 2D matrix barcode type that allows generating barcodes of rectangular and square shapes. It is a widely used industrial barcode standard that enables encoding both sets of characters and byte streams. In the maximal configuration, *Data Matrix* barcodes include 144 rows and columns and contain up to 1,555 bytes or 3,116 numerical (2,335 ASCII) symbols. Moreover, *Data Matrix* implies including additional recovery information that is used for data integrity check and error correction so that even severely damaged barcodes can be recognized. This symbology supports two main standards that are described below.  
-   
-|<p align="center">**Data Matrix Standard**</p>|<p align="center">**Description**</p>|
-|---|---|
-|*ECC 000-140*|A set of the outdated standards that support only square-shaped configuration, rely on obsolete encoding methods, and enable error correction based on convolutional codes. They are not recommended for use and are currently applied only to work with industrial tasks based on outdated instructions|
-|*ECC 200*|The actual standard that supports both square and rectangular barcodes, enables modern encoding methods, and provides Reed-Solomon error correction. It is recommended for use in all up-to-date applications|
-  
+*Data Matrix* is a 2D matrix barcode that can be generated in both rectangular and square shapes. It is an industrially common barcode standard used for encoding character sets and byte streams. In its maximum configuration, *Data Matrix* barcodes have up to 144 rows and columns, supporting up to 1,555 bytes or 3,116 numeric (2,335 ASCII) characters. They also include additional recovery data for error correction, ensuring data integrity even if the barcode is damaged. The symbology supports two main standards, detailed below.
+
+| **Data Matrix Standard** | **Description** |
+|--------------------------|-----------------|
+| *ECC 000-140*            | An older set of standards that only support square configurations, use outdated encoding methods, and rely on convolutional code error correction. These are not recommended for use and are primarily for legacy industrial tasks. |
+| *ECC 200*                | The current standard that supports both square and rectangular barcodes. It uses modern encoding techniques and Reed-Solomon error correction. Recommended for all contemporary applications. |
 
 ### **Data Matrix Rectangular Extension**
 
-Data Matrix Rectangular Extension (DMRE) has been introduced as a part of the Data Matrix standard to enable the creation of rectangular symbols. This subtype supports all capabilities of *ECC 200* and uses the Reed-Solomon error correction algorithm to detect and fix recognition errors. To generate DMRE barcodes, it is necessary to initialize the [*DataMatrixVersion*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/datamatrixversion/) parameter using the values from DMRE_8x48 to DMRE_26x64.
+The Data Matrix Rectangular Extension (DMRE) is part of the Data Matrix standard that allows for rectangular barcode creation. This subtype incorporates all *ECC 200* features and uses Reed-Solomon error correction for error detection and correction. To create DMRE barcodes, set the [*DataMatrixVersion*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/datamatrixversion/) parameter to values from DMRE_8x48 to DMRE_26x64.
 
-{{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
-
+{{% alert color="primary" %}}For questions or further clarification, reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/), visit the [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13), or contact the [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).{{% /alert %}}
 
 ## **Data Matrix ECC Standard Settings**
-To select the required *Data Matrix* standard for barcode generation, ***Aspose.BarCode for JavaScript via C++*** provides the [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property in class [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters). This property can be used to set one of the following standards: *ECC 000-140* (a set of the outdated standards) and *ECC 200* (the new universal standard). By default, [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) is set to *DataMatrixEccType.Ecc200*.
-  
+To choose the *Data Matrix* standard for barcode generation, use the [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property in the [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters) class. This property lets you set either *ECC 000-140* (older standards) or *ECC 200* (the modern standard). By default, [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) is set to *DataMatrixEccType.Ecc200*.
+
 ### ***ECC 200***
-To enable the *ECC 200* standard explicitly, it is required to set the [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property to *EccAuto* or *Ecc200*. This standard supports all data encoding modes defined in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode), including the possibility to work with Unicode characters using [*CodeTextEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). Recovery capacity values for error correction are strictly specified in the standard for barcodes of different sizes.  
+To explicitly enable the *ECC 200* standard, set the [*DataMatrixEcc*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/datamatrixecc) property to *EccAuto* or *Ecc200*. This standard supports all data encoding modes defined in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode), including Unicode support using [*CodeTextEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding). Error correction capacity is defined by the standard for different barcode sizes.
+
+The following code snippet demonstrates how to set the *ECC 200* encoding standard.
+
   
-The following code snippet illustrates how to set the *ECC 200* encoding standard.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
+```javascript
+// Create a DataMatrix barcode generator instance with the string "Åspóse.Barcóde©"
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
+
+// Set the X dimension to 4 pixels
 gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set DataMatrix ECC to 140
-gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
-gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+// Set DataMatrix ECC to 200 (Ecc200)
+gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc200;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
   
 <p align="center"><img src="datamatrixecc200basic.png"></p>  
   
 ### ***ECC 000-140***  
-*ECC 000-140* standards are supported only by the following encoding modes specified in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode): *Auto*, *ASCII*, and *Bytes*; other encoding modes in this case are automatically processed as *Bytes*. [*CodeTextEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding), [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/), *StructuredAppend*, [*MacroCharacters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/macrocharacters/), and [*IsReaderProgramming*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/isreaderprogramming/) properties are not supported in these standards. *ECC 000-140* standards have barcode layout settings that differ from those of *ECC 200*. Among each other, they vary only in terms of damaged data recovery percentage for different error correction levels, as outlined below. 
+The *ECC 000-140* standards are compatible only with certain encoding modes defined in [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode): *Auto*, *ASCII*, and *Bytes*. All other encoding modes are automatically processed as *Bytes*. The following properties are not supported in these standards: [*CodeTextEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/codetextencoding), [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/), *StructuredAppend*, [*MacroCharacters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/macrocharacters/), and [*IsReaderProgramming*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/isreaderprogramming/).
+
+The *ECC 000-140* standards feature different barcode layout settings compared to *ECC 200*, varying mainly in damage recovery capacities for different error correction levels as shown below:
+
+| Error Correction Level | Damage Recovery Capacity |
+|------------------------|--------------------------|
+| **Ecc000**             | Only error detection     |
+| **Ecc050**             | 2.8%                     |
+| **Ecc080**             | 5.5%                     |
+| **Ecc100**             | 12.6%                    |
+| **Ecc140**             | 25%                      |
+
+The following code snippet demonstrates how to enable the *ECC 140* standard.
+
   
-|Error Correction Level|Damage Recovery Capacity|
-| :-: | :-: |
-|**Ecc000**|Only error detection|
-|**Ecc050**|2.8%|
-|**Ecc080**|5.5%|
-|**Ecc100**|12.6%|
-|**Ecc140**|25%| 
-  
-The following code sample shows how to enable the *ECC 140* standard.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
+```javascript
+// Create a DataMatrix barcode generator instance with the string "Åspóse.Barcóde©"
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
+
+// Set the X dimension to 4 pixels
 gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set DataMatrix ECC to 140
-gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc140;
-gen.Save($"{path}DatamatrixEcc000140Basic.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+
+// Set DataMatrix ECC to 140
+gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc140;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
   
 <p align="center"><img src="datamatrixecc000140basic.png"></p>
    
 ## **Encoding Mode Settings**
-In ***Aspose.BarCode for JavaScript via C++***, developers can enable different encoding modes by initializing the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode) property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters). The library supports nine different encoding modes that are listed below. By default, the *Auto* encoding mode is set.
-  
-|Encoding Mode|Description|
-|---|---|
-|*Auto*|In Auto mode, the CodeText is encoded with maximum data compactness|
-|*ASCII*|Allows encoding both ASCII symbols and byte streams, but the characters from 128 to 255 are encoded using 2 bytes|
-|*Binary*|Encodes any character in 8 bits. This mode is the most suitable for encoding byte streams|
-|*C40*, *Text*, *EDIFACT*, and *ANSIX12*|Encode only predefined character sets using the specialized industrial encodings, such as C40, Text, EDIFACT, and ANSI X12|
-|*ECI*|The Extended Channel Interpretation (ECI) mode indicates the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications|
-|*Extended*|Provides flexible encoding controls and the possibility to manually specify the required encoding for a part of [*Codetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator/properties/codetext)|
-  
-### ***Auto* Encoding Modes**
-In Auto mode, the CodeText is encoded with maximum data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
-  
-The following code snippet explains how to set the *Auto* encoding mode.   
+In ***Aspose.BarCode for JavaScript via C++***, developers can select different encoding modes by initializing the [*DataMatrixEncodeMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixencodemode) property within the [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters) class. The library offers nine distinct encoding modes, with *Auto* set as the default.
 
-{{< highlight csharp>}}
+| Encoding Mode | Description |
+|---------------|-------------|
+| *Auto*        | Encodes CodeText with maximum data compactness. |
+| *ASCII*       | Supports encoding ASCII symbols and byte streams; characters 128-255 use 2 bytes. |
+| *Binary*      | Encodes characters in 8 bits, ideal for byte streams. |
+| *C40*, *Text*, *EDIFACT*, *ANSIX12* | Encode specific character sets using specialized industrial encodings. |
+| *ECI*         | Indicates that encoded data follows the ECI protocol as defined by AIM ECI Specifications. |
+| *Extended*    | Provides advanced encoding controls, allowing manual specification of encoding for part of the [*Codetext*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator/properties/codetext). |
 
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set encode mode to Auto
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
-    gen.Save($"{path}DataMatrixEncodeModeAuto.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
+### ***Auto* Encoding Mode**
+In Auto mode, CodeText is encoded to maximize data compactness. Unicode characters are re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) property, and an ECI identifier is added. If an unsupported character is encountered in the chosen ECI encoding, an exception is triggered. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) is set to [*ECIEncodings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID: "\000026").
+
+The following code snippet illustrates how to set the *Auto* encoding mode.
+
+
+```javascript
+
+// Create a DataMatrix barcode generator instance with the string "Aspose常に先を行く"
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose常に先を行く");
+
+// Set the X dimension to 4 pixels
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+
+// Set encode mode to Auto
+gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.Auto;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
 
 <p align="center"><img src="datamatrixencodemodeauto.png"></p>   
 
@@ -100,103 +128,135 @@ The *ASCII* encoding mode enables both encoding ASCII symbols and byte streams; 
   
 The following code sample shows how to use the *ASCII* encoding mode.
 
-{{< highlight csharp>}}
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set encode mode to ASCII
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ASCII;
-    gen.Save($"{path}DataMatrixEncodeModeASCII.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
+```javascript
+// Create a DataMatrix barcode generator instance with the string "Aspose"
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
+
+// Set the X dimension to 4 pixels
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+
+// Set encode mode to ASCII
+gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.ASCII;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
   
 <p align="center"><img src="datamatrixencodemodeascii.png"></p> 
 
 ### ***Binary* Mode**
 The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
-{{< highlight csharp>}}
-byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
-{
-    bg.SetCodeText(encodedArr);
-    //set DataMatrix encode mode to Binary
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
-    gen.Save($"{path}DataMatrixEncodeModeBinary.png", BarCodeImageFormat.Png);
+```javascript
+// Create a DataMatrix barcode generator instance with binary data
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix");
 
-}
-{{< /highlight >}}
+// Set the code text to binary data
+var encodedArr = [0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9];
+var b64encoded = btoa(String.fromCharCode.apply(null, encodedArr));
+gen.SetCodeTextBase64(b64encoded);
+
+// Set the DataMatrix encode mode to Binary
+gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.Binary;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
 
 <p align="center"><img src="datamatrixencodemodebinary.png"></p> 
 
 ### ***ECI* Encoding Mode**
-The Extended Channel Interpretation (ECI) mode indicates that the encoded data is interpreted according to the ECI protocol defined by the AIM ECI Specifications. When the ECI mode is selected, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) parameter, with an ECI identifier inserted. If a character is found that is not supported by the selected ECI encoding, an exception is thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID:"\000026").
+The Extended Channel Interpretation (ECI) mode ensures that the encoded data is processed according to the ECI protocol as defined by the AIM ECI Specifications. When ECI mode is enabled, the entire CodeText is re-encoded using the encoding specified in the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) property, with an ECI identifier added. If a character unsupported by the selected ECI encoding is found, an exception will be thrown. By default, the [*ECIEncoding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/eciencoding/) property is set to [*ECIEncodings*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/eciencodings/).UTF8 (ECI ID: "\000026").
 
-The following code sample demonstrates how to use the *ECI* mode.
+The following code sample shows how to use the *ECI* mode.
+
 
 <p align="center"><img src="datamatrixencodemodeeci.png" width="10%"></p> 
 
-```csharp
+```javascript
 // ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
+// Create a DataMatrix barcode generator instance with ECI mode for Greek characters
 var str = "ΑΒΓΔΕ";
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", str);
 
-using (var bg = new BarcodeGenerator(EncodeTypes.DataMatrix, str))
-{
-    bg.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ECI;
-    bg.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.ISO_8859_7;
-    var img = bg.GenerateBarCodeImage();
-}
+// Set the encode mode to ECI
+gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.ECI;
+gen.Parameters.Barcode.DataMatrix.ECIEncoding = BarCodeInstance.ECIEncodings.ISO_8859_7;
+
+// Display the barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
 ```
 
 ### ***Extended* Encoding Mode**
-The *Extended* mode enables adding special control characters to the main barcode text. They serve to set extended control over data encoding and allow manually switching between different encoding schemes and ECI modes within a single barcode. To generate barcodes in this mode, it is recommended to use class [*DataMatrixExtCodetextBuilder*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixextcodetextbuilder/).
+The *Extended* mode allows the inclusion of special control characters within the main barcode text. These characters enable advanced control over data encoding and allow switching between different encoding schemes and ECI modes within a single barcode. To generate barcodes in this mode, it is recommended to use the [*DataMatrixExtCodetextBuilder*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixextcodetextbuilder/) class.
 
-The following code snippet explains how to work with the *Extended* mode.  
+The following code snippet demonstrates how to use the *Extended* mode.
+ 
   
 <p align="center"><img src="datamatrixencodemodeextended.png"></p> 
 
-{{< highlight csharp>}}
+```javascript
 //create barcode text
-DataMatrixExtCodetextBuilder codetextBuilder = new DataMatrixExtCodetextBuilder();
-codetextBuilder.AddECICodetext(ECIEncodings.UTF8, "犬Right狗");
-codetextBuilder.AddECICodetextWithEncodeMode(ECIEncodings.UTF8, DataMatrixEncodeMode.C40, "ABCDE");
+// Create an extended Data Matrix codetext builder and add different types of codetext
+var codetextBuilder = new BarCodeInstance.DataMatrixExtCodetextBuilder();
+codetextBuilder.AddECICodetext(BarCodeInstance.ECIEncodings.UTF8, "犬Right狗");
+codetextBuilder.AddECICodetextWithEncodeMode(BarCodeInstance.ECIEncodings.UTF8, BarCodeInstance.DataMatrixEncodeMode.C40, "ABCDE");
 codetextBuilder.AddPlainCodetext("test");
-codetextBuilder.AddCodetextWithEncodeMode(DataMatrixEncodeMode.Text, "abcde");
+codetextBuilder.AddCodetextWithEncodeMode(BarCodeInstance.DataMatrixEncodeMode.Text, "abcde");
 
-//generate barcode text
-string codetext = codetextBuilder.GetExtendedCodetext();
+// Generate the barcode text
+var codetext = codetextBuilder.GetExtendedCodetext();
 
-//generate a Data Matrix barcode
-using (var generator = new BarcodeGenerator(EncodeTypes.DataMatrix, codetext))
-{
-    generator.Parameters.Barcode.XDimension.Pixels = 4;
-    generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended";
-    //set encode mode to Extended
-    generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Extended;
+// Create a Data Matrix barcode generator instance
+var generator = new BarCodeInstance.BarcodeGenerator("DataMatrix", codetext);
+generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended";
+// Set the encode mode to Extended
+generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.Extended;
 
-    generator.Save($"{path}DatamatrixExtended.png", BarCodeImageFormat.Png);
+// Display the generated barcode image
+document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display barcode image
 
-    //attempt to recognize the generated barcode
-    using (var reader = new BarCodeReader(generator.GenerateBarCodeImage(), DecodeType.DataMatrix))
-    {
-        foreach (BarCodeResult result in reader.ReadBarCodes())
-            Console.WriteLine("DatamatrixExtended:" + result.CodeText);
-    }
+// Attempt to recognize the generated barcode
+var reader = new BarCodeInstance.BarCodeReader(generator.GenerateBarCodeImage(), "DataMatrix");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log("DatamatrixExtended: " + result.CodeText);
 }
-{{< /highlight >}}
+
+generator.delete();
+reader.delete();
+
+```
   
 ### **Industrial Encoding Modes: *C40*, *Text*, *EDIFACT*, and *ANSIX12***
 *C40*, *Text*, *EDIFACT*, and *ANSIX12* encoding modes can be used to encode information using specialized industrial encodings. These modes are intended for specific industrial tasks only.  
   
 The following code sample explains how to set the *C40* encoding mode.
   
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE.BARCODE");
+```javascript
+// Create a Data Matrix barcode generator instance with C40 encoding mode
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE.BARCODE");
 gen.Parameters.Barcode.XDimension.Pixels = 6;
-//set encode mode to C40
-gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
-gen.Save($"{path}DatamatrixEncodeModeC40.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+// Set the encode mode to C40
+gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.C40;
+
+// Display the generated barcode image
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
   
 <p align="center"><img src="datamatrixencodemodec40.png"></p> 
   
@@ -210,96 +270,112 @@ Data Matrix enables different layout variants, which can be set to generate barc
 | :-: | :-: | :-: | :-: |
 | |<img src="datamatrixrows12columns64ecc200.png">|<img src="datamatrixrows22columns22ecc200.png">|<img src="datamatrixrows29columns29ecc140.png">|
   
-{{< highlight csharp>}}
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set ECC type to Ecc200
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
-    //set rows 22 columns 22
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_22x22;
-    gen.Save($"{path}DatamatrixRows22Columns22Ecc200.png", BarCodeImageFormat.Png);
-    //set rows 12 columns 64
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.DMRE_12x64;
-    gen.Save($"{path}DatamatrixRows12Columns64Ecc200.png", BarCodeImageFormat.Png);
+```javascript
+// Generate a DataMatrix barcode with Ecc200 and 22x22 rows/columns
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc200;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = BarCodeInstance.DataMatrixVersion.ECC200_22x22;
+document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
 
-    //set ECC type to Ecc140
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc140;
-    //set rows 23 columns 23
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC000_140_29x29;
-    gen.Save($"{path}DatamatrixRows29Columns29Ecc140.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
+// Generate a DataMatrix barcode with Ecc200 and 12x64 rows/columns
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = BarCodeInstance.DataMatrixVersion.DMRE_12x64;
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Set ECC type to Ecc140 and generate a DataMatrix barcode with 29x29 rows/columns
+gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc140;
+gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = BarCodeInstance.DataMatrixVersion.ECC000_140_29x29;
+document.getElementById("img3").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
 
 ## **Using Macro Characters**
-In ***Aspose.BarCode for JavaScript via C++***, developers can use so-called macro characters for *Data Matrix* barcode generation. *Data Matrix* enables abbreviating industry-specific headers and trailers in one character. This feature allows reducing the number of characters required to encode data using specific structured formats and can be enabled to address some specific industrial requirements. A macro character needs to be placed be in the first character position.
+In ***Aspose.BarCode for JavaScript via C++***, developers can utilize macro characters when generating *Data Matrix* barcodes. Macro characters allow for the abbreviation of industry-specific headers and trailers into a single character. This feature helps reduce the number of characters needed for encoding data in certain structured formats, catering to specific industrial needs. The macro character should be placed in the first character position.
 
-The following code snippet illustrates how to work with macro characters while generating *Data Matrix* barcodes.
-  
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
+The following code snippet demonstrates how to use macro characters when generating *Data Matrix* barcodes.
+
+```javascript
+// Generate a DataMatrix barcode with macro character set to 05
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set macro character to 05
-gen.Parameters.Barcode.DataMatrix.MacroCharacters = MacroCharacter.Macro05;
-gen.Save($"{path}DatamatrixMacro.png", BarCodeImageFormat.Png);
+gen.Parameters.Barcode.DataMatrix.MacroCharacters = BarCodeInstance.MacroCharacter.Macro05;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
-//attempt to recognize it
-BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DataMatrix);
-foreach (BarCodeResult result in read.ReadBarCodes())
-    Console.WriteLine("DatamatrixMacro:" + result.CodeText);
-{{< /highlight >}}
+// Attempt to recognize the generated barcode
+var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "DataMatrix");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log("DatamatrixMacro:" + result.CodeText);
+}
+
+gen.delete();
+reader.delete();
+
+```
   
 <p align="center"><img src="datamatrixmacro.png"></p> 
   
 ## **Aspect Ratio Settings**
-*Aspect Ratio* is the ratio between the width and height of a barcode. In ***Aspose.BarCode for JavaScript via C++***, developers can use the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/aspectratio) property of class [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters) to adjust barcode proportions according to the X and Y coordinates. This parameter is defined as a relative coefficient to the value of [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension). In general, the *Aspect Ratio* value should be set to 1.
-  
+*Aspect Ratio* refers to the relationship between the width and height of a barcode. In ***Aspose.BarCode for JavaScript via C++***, the [*AspectRatio*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/properties/aspectratio) property of the [*DataMatrixParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters) class allows developers to adjust the barcode's proportions based on the X and Y coordinates. This parameter is defined as a relative coefficient to the value of [*XDimension*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/xdimension). Typically, the *Aspect Ratio* should be set to 1.
+
 |<p align="center">**Aspect Ratio**</p>|<p align="center">**Is Set to 1**</p>|<p align="center">**Is Set to 0.5**</p>|
 | :-: | :-: | :-: |
 | |<img src="datamatrixaspectratio1.png">|<img src="datamatrixaspectratio0.5.png">|
+
   
-{{< highlight csharp>}}
-BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
+```javascript
+// Generate a DataMatrix barcode with aspect ratio 1
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
-//set aspect ratio 1
 gen.Parameters.Barcode.DataMatrix.AspectRatio = 1;
-gen.Save($"{path}DatamatrixAspectRatio1.png", BarCodeImageFormat.Png);
-//set aspect ratio 0.5
-gen.Parameters.Barcode.DataMatrix.AspectRatio = 0.5f;
-gen.Save($"{path}DatamatrixAspectRatio0.5.png", BarCodeImageFormat.Png);
-{{< /highlight >}}
+document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+// Generate a DataMatrix barcode with aspect ratio 0.5
+gen.Parameters.Barcode.DataMatrix.AspectRatio = 0.5;
+document.getElementById("img05").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
 
 ## **Structured Append**
-*Structured Append* is a special mode, which allows combining together up to 16 Data Matrix symbols. To enable this mode, it is required to initialize three parameters described below:
--	[*StructuredAppendBarcodesCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendbarcodescount/) - the number of barcodes (from 2 to 16)
--	[*StructuredAppendBarcodeId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendbarcodeid/) - the position of a barcode in a set (from 1 to *StructuredAppendBarcodesCount*)
--	[*StructuredAppendFileId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendfileid/) - the identifier of a file (from 1 to 64516)
+*Structured Append* is a special mode that allows combining up to 16 Data Matrix symbols. To activate this mode, you need to initialize the following parameters:
 
-{{< highlight csharp>}}
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set DataMatrix strucutured append mode
-    gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodeId = 3;
-    gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodesCount = 5;
-    gen.Parameters.Barcode.DataMatrix.StructuredAppendFileId = 150;
-    gen.Save($"{path}DataMatrixStructuredAppend.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
+- [*StructuredAppendBarcodesCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendbarcodescount/): Specifies the total number of barcodes (ranging from 2 to 16).
+- [*StructuredAppendBarcodeId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendbarcodeid/): Indicates the position of a barcode within the set (from 1 to *StructuredAppendBarcodesCount*).
+- [*StructuredAppendFileId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendfileid/): Represents the identifier of a file (ranging from 1 to 64516).
+
+
+```javascript
+// Generate a DataMatrix barcode with structured append mode
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodeId = 3;
+gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodesCount = 5;
+gen.Parameters.Barcode.DataMatrix.StructuredAppendFileId = 150;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
 
 <p align="center"><img src="datamatrixstructuredappend.png"></p> 
 
 ## **Hardware Reader Initialization**
 To encode a special flag denoting that barcode data is intended to initialize a hardware barcode reader, it is required to set the [*IsReaderProgramming*]( https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/isreaderprogramming/) property. The following code snippet explains how to use this property.  
   
-{{< highlight csharp>}}
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose"))
-{
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set flag that indicates that data is encoded for reader programming
-    gen.Parameters.Barcode.DataMatrix.IsReaderProgramming = true;
-    gen.Save($"{path}DataMatrixReaderProgramming.png", BarCodeImageFormat.Png);
-}
-{{< /highlight >}}
+```javascript
+// Generate a DataMatrix barcode with reader programming flag enabled
+var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
+gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.DataMatrix.IsReaderProgramming = true;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+
+gen.delete();
+
+```
   
 <p align="center"><img src="datamatrixreaderprogramming.png"></p>   
