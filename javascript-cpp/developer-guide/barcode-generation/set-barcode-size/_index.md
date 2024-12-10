@@ -28,6 +28,7 @@ Barcode images generated with different unit settings (three pixels and two mill
 The following code snippet shows how to set up these configurations as in the provided barcode images.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a DataMatrix barcode generator with unit size settings
@@ -58,6 +59,7 @@ The barcode images below show examples created with different resolution setting
 The following code example illustrates how to set the resolution for a barcode image.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a DataMatrix barcode with unit size settings in millimeters and different resolutions

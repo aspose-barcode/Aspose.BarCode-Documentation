@@ -25,6 +25,7 @@ The following code sample demonstrates how to generate HIBC LIC barcodes and enc
 
 <p align="center"><img src="hibclicprimary.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create a HIBC LIC barcode
 // Create HIBC LIC Primary Data Codetext
@@ -54,6 +55,7 @@ The following code sample shows how to generate HIBC LIC barcodes and encode sec
 
 <p align="center"><img src="hibclicsecondary.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create HIBC LIC Secondary and Additional Data Codetext
 var complexCodetext = new BarCodeInstance.HIBCLICSecondaryAndAdditionalDataCodetext();
@@ -85,6 +87,7 @@ The following code sample illustrates how to generate HIBC LIC barcodes with com
 
 <p align="center"><img src="hibcliccombined.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create HIBC LIC Combined Codetext
 var complexCodetext = new BarCodeInstance.HIBCLICCombinedCodetext();
@@ -121,6 +124,7 @@ To decode HIBC LIC barcodes, start by creating an instance of the [*BarCodeReade
 The following code sample illustrates how to read HIBC LIC barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Recognize a HIBC LIC Combined barcode
 var reader = new BarCodeInstance.BarCodeReader(`${path}HIBCLICCombined.png`, "HIBCQRLIC");

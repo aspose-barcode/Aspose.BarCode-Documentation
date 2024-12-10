@@ -19,6 +19,7 @@ To retrieve the data encoded in a barcode and determine its type, the class [*Ba
 The following code sample shows how to extract the data and barcode type from a sample barcode image (in this case, a *QR Code*).
 
  
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a QR barcode
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");

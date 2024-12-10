@@ -19,6 +19,7 @@ It is important to note that automatic serialization of barcode image informatio
 ## **Save Barcode Recognition State to XML**
 ***Aspose.BarCode for JavaScript via C++*** offers two methods to export the current state of the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) class to XML: the [*ExportToXml(String)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/exporttoxml/methods/1) method for file export and [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/methods/exporttoxml) for stream export. The code snippet below demonstrates how to serialize the barcode recognition state to an XML file.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a BarCodeReader instance and configure settings
 var read = new BarCodeInstance.BarCodeReader();
@@ -37,6 +38,7 @@ read.delete();
 The [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) class allows the current recognition state to be loaded from an XML file using the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/importfromxml/methods/1) method or from a stream using the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/methods/importfromxml) method. The barcode image must be specified using the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader/methods/setbarcodeimage/index) properties. The following code snippet shows how to load the state of a [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) object from an XML file.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Load BarCodeReader 
 var read = BarCodeInstance.BarCodeReader.ImportFromXml(xmlString);

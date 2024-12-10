@@ -32,6 +32,7 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can decide whether ba
 The following code snippet explains how to hide barcode text.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a Pdf417 barcode generator with custom settings
@@ -67,6 +68,7 @@ The [*Location*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barc
 The following code snippet shows how to set the barcode text location.
 
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a Pdf417 barcode generator with custom settings
@@ -100,6 +102,7 @@ The [*Alignment*](https://reference.aspose.com/barcode/javascript-cpp/aspose.bar
 The following code example shows how to set the desired barcode text alignment.
 
      
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with various code text alignments
@@ -136,6 +139,7 @@ The images below show barcodes with different spacing settings (5 pixels and 40 
 The following code snippet demonstrates how to modify the spacing between the barcode label and the text.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with different code text spacing
@@ -171,6 +175,7 @@ The following images show barcodes generated with different font settings.
 The following code snippet demonstrates how to set the barcode text font in *Auto* mode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with automatic font settings
@@ -197,6 +202,7 @@ gen.delete();
   
 The code snippet provided below explains how to set barcode text font in the *Manual* mode.
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a PDF417 barcode with manual font settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -229,6 +235,7 @@ The images below show the difference between barcode text wrapping when *NoWrap*
 The following code sample demonstrates how to enable and disable the *NoWrap* mode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with text wrapping settings for long codetext
@@ -262,6 +269,7 @@ The barcode image below shows an example where the barcode text has been replace
 The following code snippet demonstrates how to replace barcode text for 2D barcodes.
 
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with replaced visible codetext
@@ -295,6 +303,7 @@ The images below show examples of captions displayed on barcode images.
 The following code snippet demonstrates how to make captions visible.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with captions above and below
@@ -332,6 +341,7 @@ The [*Alignment*](https://reference.aspose.com/barcode/javascript-cpp/aspose.bar
 The following code sample demonstrates how to adjust the caption alignment.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with caption alignment settings
@@ -369,6 +379,7 @@ The [*Padding*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barco
 The following code snippet shows how to set the caption padding.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with caption padding settings
@@ -409,6 +420,7 @@ The barcode image below demonstrates how to apply specific font settings for cap
 The following code snippet illustrates how to adjust the caption font settings.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with a custom caption font
@@ -439,6 +451,7 @@ The [*NoWrap*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcod
 
 The following code snippet demonstrates how to enable the *NoWrap* mode for a barcode caption.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a PDF417 barcode with caption text wrapping settings

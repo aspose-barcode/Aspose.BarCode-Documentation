@@ -19,6 +19,7 @@ For symbologies with an obligatory checksum, checksum control is always performe
 The following code snippet demonstrates how to configure checksum validation for symbologies with an obligatory checksum (e.g., the *Code 11* barcode image shown below).
 
  
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a Code 11 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code11", "123456");
@@ -65,6 +66,7 @@ For symbologies with optional checksum control, the [*ChecksumValidation*](https
 The following code sample demonstrates how to configure barcode reading with optional checksum (a *Code 39* barcode image is used as an example).
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a Code 39 Extended barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "123456");

@@ -28,6 +28,7 @@ Examples of checksum calculations and settings for *Code 39* and *Code 128* symb
 In *Code 39*, the checksum is optional. The checksum is calculated as the sum of encoded digits modulo 43, as the maximum number of characters to be encoded is 43. The following code snippet demonstrates how to compute the checksum for *Code 39*.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 for (var i = 0; i < encodedCodetext.length; i++) {
@@ -42,6 +43,7 @@ for (var i = 0; i < encodedCodetext.length; i++) {
 The *Code 128* standard uses an advanced algorithm for checksum calculation compared to *Code 39*. In this method, each digit in the barcode is weighted by its position index. The following code sample demonstrates how to perform checksum calculation for *Code 128*.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 for (var pos = 0; pos < encodedCodetext.length; ++pos) {
@@ -72,6 +74,7 @@ By default, 1D barcodes with optional checksum do not require the calculation of
 The following code snippet demonstrates how to enable and disable checksum for *Code 39* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a Code39FullASCII barcode generator with no checksum
@@ -99,6 +102,7 @@ The following image demonstrates a barcode label generated with obligatory check
 The code snippet below shows how to set checksum options for *Code 39*. If the *EnableChecksum* property is set to "*No*", the following exception is raised: "*Unable to use Code93Extended symbology without checksum*".
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a Code93 barcode generator with checksum enabled
@@ -129,6 +133,7 @@ For *Code 128* and *GS1 Code 128* symbologies, the library includes the [*Checks
 The following code snippet demonstrates how to enable and disable the *ChecksumAlwaysShow* property.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a Code128 barcode generator with checksum display settings

@@ -33,6 +33,7 @@ Below are examples of *Planet* and *RM4SCC* barcodes with different bar height s
 
 The following code snippet shows how to adjust the height of *Planet* and *RM4SCC* postal barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Set Planet barcode BarHeight none
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
@@ -79,6 +80,7 @@ Below are examples of *Planet* and *RM4SCC* barcodes generated with different ba
 The following code sample demonstrates how to adjust the bar filling settings for *Planet* and *RM4SCC* postal barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Set Planet barcode filled bars
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
@@ -114,6 +116,7 @@ gen.delete();
 ### **Planet Symbology**
 In the *Planet* symbology, each character is represented by five bars, with three bars being full-length and two bars being half-length. The following code snippet demonstrates how to generate a *Planet* barcode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -128,6 +131,7 @@ gen.delete();
 ### **Postnet Symbology**
 The *Postnet* barcode type encodes each character using five bars, with three bars being full-length and two bars being half-length. The following code sample demonstrates how to create a *Postnet* barcode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Postnet", "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -148,6 +152,7 @@ By default, if incorrect input text is passed to the [*CodeText*](https://refere
 If it is necessary to raise an exception for invalid symbols in [*CodeText*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator/properties/codetext), set the [*ThrowExceptionWhenCodeTextIncorrect*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property to *True*, as shown in the code snippet below. This will result in the following exceptions being thrown: "*Exception: Symbology Planet - codetext is invalid*"; "*Exception: Symbology Postnet - codetext is invalid*".
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "1234567WRONG");
 gen.Parameters.Barcode.ThrowExceptionWhenCodeTextIncorrect = true;
@@ -180,6 +185,7 @@ Below are examples of barcode labels generated with different short bar height s
 The following code snippet illustrates how to customize the short bar length in 2-state postal barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Set Planet barcode ShortBarHeight 10 pixels
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
@@ -210,6 +216,7 @@ The *RM4SCC* symbology encodes numerical digits and uppercase English letters. E
 The following code sample demonstrates how to generate *RM4SCC* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -226,6 +233,7 @@ The *Dutch KIX* symbology is used by the Royal Dutch TPG Post in the Netherlands
 
 The following code snippet demonstrates how to generate *Dutch KIX* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("DutchKIX", "123456ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -244,6 +252,7 @@ The *OneCode* standard is used to encode messages composed of numerical digits, 
 
 The following code sample demonstrates how to generate *OneCode* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create OneCode with 20 digits
 var gen = new BarCodeInstance.BarcodeGenerator("OneCode", "12345678901234567890");
@@ -302,6 +311,7 @@ The following barcode images illustrate different FCC field settings in *Austral
 
 The following code snippet demonstrates how to generate *Australia Post* barcodes with different settings.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create AustraliaPost FCC 11
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "1101234567");
@@ -358,6 +368,7 @@ The *Mailmark* symbology was developed by the Royal Mail of the United Kingdom. 
 The following code sample demonstrates how to generate *Mailmark* barcodes of different types.
 
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create Mailmark C Type
 var gen = new BarCodeInstance.BarcodeGenerator("Mailmark", "21B2254800659JW5O9QA6Y");

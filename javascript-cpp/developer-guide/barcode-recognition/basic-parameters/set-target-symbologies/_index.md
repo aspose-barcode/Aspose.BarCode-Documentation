@@ -20,6 +20,7 @@ Target barcode symbologies can be defined as a list and provided to the [*BarCod
 The following code snippet shows how to set target symbologies (*Code 39*, *Code 128*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/decodetype).
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var reader = new BarCodeInstance.BarCodeReader(`${path}multiple_codes.png`);
 reader.SetBarCodeReadType("Code39Extended", "Code128,RM4SCC");
@@ -47,6 +48,7 @@ Class [*DecodeTypes*](https://reference.aspose.com/barcode/javascript-cpp/aspose
   
 The following code snippet illustrates how to specify target barcode types using the predefined set called *Types2D*.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var reader = new BarCodeInstance.BarCodeReader(gen.GenerateBarCodeImage(), "Types2D");
 console.log("ReadTypes2D:");

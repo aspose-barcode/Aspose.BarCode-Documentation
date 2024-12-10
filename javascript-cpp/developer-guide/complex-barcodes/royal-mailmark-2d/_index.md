@@ -30,6 +30,7 @@ Below are examples of *Mailmark 2D* barcodes created using types **7**, **9**, a
 The following code snippet demonstrates how to generate *Mailmark 2D* barcodes for all three types.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create Mailmark 2D Code
 var mailmark2D = new BarCodeInstance.Mailmark2DCodetext();
@@ -81,6 +82,7 @@ To decode Royal Mail *Mailmark 2D* barcodes using ***Aspose.BarCode for JavaScri
 The following code snippet demonstrates how to read *Mailmark 2D* barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //recognize Mailmark 2D Code
 // Read and decode Mailmark 2D Type 9 Barcode

@@ -35,6 +35,7 @@ Sample *Aztec Code* barcodes created using different generation modes are shown 
 
 To set the required generation mode for *Aztec Code* in JavaScript, use the following code snippet:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
 
@@ -72,6 +73,7 @@ The following code snippet shows how to generate an Aztec barcode in the *Auto* 
 
 <p align="center"><img src="aztecencodemodeauto.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "犬Right狗");
 gen.Parameters.Barcode.Aztec.AztecEncodeMode = BarCodeInstance.AztecEncodeMode.Auto;
@@ -85,6 +87,7 @@ The following code snippet demonstrates how to use the *ECI* mode.
 
 <p align="center"><img src="aztecencodemodeeci.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "ΑΒΓΔΕ");
 gen.Parameters.Barcode.Aztec.AztecEncodeMode = BarCodeInstance.AztecEncodeMode.ECI;
@@ -99,6 +102,7 @@ The following code snippet demonstrates how to use the *Extended* mode.
 
 <p align="center"><img src="aztecencodemodeextended.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create codetext
 var textBuilder = new BarCodeInstance.AztecExtCodetextBuilder();
@@ -128,6 +132,7 @@ The following code snippet demonstrates how to set the layout for a generated *A
 | :-: | :-: | :-: |
 | | <img src="azteclayerscountauto.png"> | <img src="azteclayerscount10.png" width="50%" height="50%"> |
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "4px";
@@ -149,6 +154,7 @@ Sample barcodes demonstrated below have been generated with different error corr
 | :-: | :-: | :-: |
 | | <img src="aztecerrorlevel5.png"> | <img src="aztecerrorlevel50.png"> |
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde© is a powerful library to generate & recognize 1D & 2D barcodes");
 gen.Parameters.Barcode.XDimension = "4px";
@@ -173,6 +179,7 @@ The following code sample shows how to enable the *Structured Append* mode.
 
 <p align="center"><img src="aztecstructuredappendmode.png" width="15%" height="15%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Aspose");
 gen.Parameters.Barcode.XDimension = "15px";
@@ -187,6 +194,7 @@ document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 To encode a special flag indicating that the data encoded in a *Aztec Code* barcode is intended to initialize a hardware reader, set the [*IsReaderInitialization*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/aztecparameters/isreaderinitialization/) property. The following code sample shows how to enable this property.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Aspose");
 gen.Parameters.Barcode.XDimension = "10px";
@@ -206,6 +214,7 @@ The barcode images demonstrated below have been created using different aspect r
 
 The following code snippet shows how to manage aspect ratio settings for *Aztec Code*.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "4px";

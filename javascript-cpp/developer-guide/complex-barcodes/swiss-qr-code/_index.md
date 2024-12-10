@@ -23,6 +23,7 @@ To generate a *Swiss QR Code* using ***Aspose.BarCode for JavaScript via C++***,
 The following code sample shows how to generate a *Swiss QR Code* barcode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create Swiss QR Bill
 var swissQRCode = new BarCodeInstance.SwissQRCodetext();
@@ -67,6 +68,7 @@ generator.delete();
 
 The code sample below demonstrates how to implement *Swiss QR Code* recognition.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Read Swiss QR Bill from the image

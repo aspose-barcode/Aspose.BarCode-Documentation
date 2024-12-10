@@ -37,6 +37,7 @@ The table below illustrates the impact of different [*XDimension*](https://refer
 | **Recognized barcodes: 2** | **Recognized barcodes: 5** | **Recognized barcodes: 5** |
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Recognize image with XDimension Normal
 console.log("XDimensionMode: Normal");
@@ -84,6 +85,7 @@ readerMinimal.delete();
 | **Recognized barcodes: 2**   | **Recognized barcodes: 3** |
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Recognize image with XDimension Normal

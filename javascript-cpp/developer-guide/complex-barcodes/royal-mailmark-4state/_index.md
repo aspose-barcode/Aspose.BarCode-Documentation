@@ -25,6 +25,7 @@ To create a *Mailmark 4-state* barcode instantiate the [*MailmarkCodetext*](http
 Below is an example demonstrating how to generate *Mailmark 4-state* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create Mailmark 4-State Barcode
 var mailmarkCode = new BarCodeInstance.MailmarkCodetext();
@@ -51,6 +52,7 @@ To read and parse Royal Mail *Mailmark 4-state* barcodes in ***Aspose.BarCode fo
   
 The following code snippet is given to demonstrate how to read *Mailmark 4-state* barcodes.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create Mailmark 4-State Barcode
 var mailmarkCode = new BarCodeInstance.MailmarkCodetext();

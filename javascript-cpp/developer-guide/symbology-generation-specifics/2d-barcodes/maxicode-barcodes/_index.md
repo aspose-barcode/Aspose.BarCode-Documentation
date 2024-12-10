@@ -41,6 +41,7 @@ The sample *MaxiCode* barcodes below were created using Formats 1 and 2 of *Maxi
 
 The following code snippet demonstrates how to work with *MaxiCode* modes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // [)>(RS)01(GS)(Postal Code)(GS)(Country Code)(GS)(Service Category)(GS)(Secondary Message)(EOT)
 var gs = "\u001d";
@@ -75,6 +76,7 @@ gen.delete();
 ### **MaxiCode Modes 4, 5, and 6**
 *MaxiCode* barcodes generated in these modes can store the arbitrary text data or byte streams. The code sample given below shows how to use the *MaxiCode Mode 4*.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 15;
@@ -103,6 +105,7 @@ In *Auto* mode, the CodeText is encoded to achieve maximum data compactness. Uni
 
 <p align="center"><img src="maxicodeencodemodeauto.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "犬Right狗");
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -117,6 +120,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 
 <p align="center"><img src="maxicodeencodemodebinary.png" width="20%" height="20%"></p>  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var encodedArr = new Uint8Array([0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9]);
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode");
@@ -159,6 +163,7 @@ In *Extended* mode, the data passed to the [*CodeText*](https://reference.aspose
 
 <p align="center"><img src="maxicodeencodemodeextended.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create codetext
 var textBuilder = new BarCodeInstance.MaxiCodeExtCodetextBuilder();
@@ -190,6 +195,7 @@ gen.delete();
 
 The following code snippet demonstrates how to configure the *Aspect Ratio* for *MaxiCode* barcode generation.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 15;
@@ -212,6 +218,7 @@ The structured append mode is a special generation mode that enables the combina
 
 <p align="center"><img src="maxicodestructuredappendmode.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 15;

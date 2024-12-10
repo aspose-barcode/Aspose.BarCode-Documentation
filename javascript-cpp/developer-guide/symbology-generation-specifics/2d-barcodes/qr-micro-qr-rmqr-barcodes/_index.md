@@ -40,6 +40,7 @@ The code sample and barcode images below are provided to illustrate how to gener
 | |<img src="qrversionauto.png">|<img src="qrversion05.png">|
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -64,6 +65,7 @@ The code sample and barcode images below are provided to illustrate how to gener
 | :-: | :-: | :-: |
 | |<img src="microqrversionauto.png">|<img src="microqrversionm4.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MicroQR", "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -88,6 +90,7 @@ The code sample and barcode images below are provided to illustrate how to gener
 | :-: | :-: | :-: |
 | |<img src="rectmicroqrversionauto.png">|<img src="rectmicroqrversionr11x77.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("RectMicroQR", "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -117,6 +120,7 @@ In Auto mode, the CodeText is encoded with maximum data compactness. Unicode cha
 
 The following code sample demonstrates how to generate a QR Code barcode in *Auto* mode:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Aspose常に先を行く");
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -141,6 +145,7 @@ The Extended Channel Interpretation (ECI) mode indicates that the encoded data i
 The following code sample demonstrates how to use the *ECI* mode:
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var str = "ΑΒΓΔΕ";
 
@@ -161,6 +166,7 @@ gen.delete();
 The code snippet below demonstrates how to use the multi-encoding ECI mode in *Extended* mode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate extended codetext
 var textBuilder = new BarCodeInstance.QrExtCodetextBuilder();
@@ -209,6 +215,7 @@ The *QR Code* standards offer the following error correction levels:
 
 The following code sample shows how to set the error correction level for generating a *QR Code*.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a new BarcodeGenerator instance for QR code generation
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "A QR code is a type of matrix barcode invented in 1994");
@@ -254,6 +261,7 @@ The sample barcode images below illustrate the results of different aspect ratio
 
 The following code snippet shows how to set the *AspectRatio* value for *QR Code* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a QR code with Aspect Ratio set to 1
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");

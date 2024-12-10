@@ -20,6 +20,7 @@ Similarly, you can load the barcode generation state from an XML source using th
 You can save the state of a [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) instance to an XML file using the [*ExportToXml(String)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation.barcodegenerator/exporttoxml/methods/1) method or to a stream with the [*ExportToXml(Stream)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator/methods/exporttoxml) method. The following code example demonstrates how to serialize a [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) instance to an XML file.
   
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a Macro PDF417 barcode with metadata and export settings
@@ -54,6 +55,7 @@ gen.delete();
 You can import the state of a [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) instance from an XML file using the [*ImportFromXml(String)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation.barcodegenerator/importfromxml/methods/1) method or from a stream using the [*ImportFromXml(Stream)*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator/methods/importfromxml) method. The code example below shows how to import the barcode generation state from an XML file.
   
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Load BarcodeGenerator from XML file

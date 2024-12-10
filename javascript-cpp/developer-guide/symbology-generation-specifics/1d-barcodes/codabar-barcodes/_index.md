@@ -29,6 +29,7 @@ Below are examples of barcode labels generated with different combinations of st
 The following code snippet demonstrates how to configure different combinations of start and stop characters in *Codabar* barcodes:
 
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Codabar", "-12345-");
 gen.Parameters.Barcode.XDimention = "2px";
@@ -67,6 +68,7 @@ Below are sample barcode images generated with different checksum calculation se
 The following code sample demonstrates how to enable different checksum algorithms, *Mod10* and *Mod16*, for *Codabar* barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 var gen = new BarCodeInstance.BarcodeGenerator("Codabar", "-12345-");

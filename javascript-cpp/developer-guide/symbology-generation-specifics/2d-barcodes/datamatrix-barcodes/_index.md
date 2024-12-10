@@ -31,6 +31,7 @@ To explicitly enable the *ECC 200* standard, set the [*DataMatrixEcc*](https://r
 The following code snippet demonstrates how to set the *ECC 200* encoding standard.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DataMatrix barcode generator instance with the string "Åspóse.Barcóde©"
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -66,6 +67,7 @@ The *ECC 000-140* standards feature different barcode layout settings compared t
 The following code snippet demonstrates how to enable the *ECC 140* standard.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DataMatrix barcode generator instance with the string "Åspóse.Barcóde©"
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -103,6 +105,7 @@ In Auto mode, CodeText is encoded to maximize data compactness. Unicode characte
 The following code snippet illustrates how to set the *Auto* encoding mode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Create a DataMatrix barcode generator instance with the string "Aspose常に先を行く"
@@ -128,6 +131,7 @@ The *ASCII* encoding mode enables both encoding ASCII symbols and byte streams; 
   
 The following code sample shows how to use the *ASCII* encoding mode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DataMatrix barcode generator instance with the string "Aspose"
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
@@ -150,6 +154,7 @@ gen.delete();
 ### ***Binary* Mode**
 The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DataMatrix barcode generator instance with binary data
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix");
@@ -179,6 +184,7 @@ The following code sample shows how to use the *ECI* mode.
 
 <p align="center"><img src="datamatrixencodemodeeci.png" width="10%"></p> 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
 // Create a DataMatrix barcode generator instance with ECI mode for Greek characters
@@ -204,6 +210,7 @@ The following code snippet demonstrates how to use the *Extended* mode.
   
 <p align="center"><img src="datamatrixencodemodeextended.png"></p> 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create barcode text
 // Create an extended Data Matrix codetext builder and add different types of codetext
@@ -244,6 +251,7 @@ reader.delete();
   
 The following code sample explains how to set the *C40* encoding mode.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a Data Matrix barcode generator instance with C40 encoding mode
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE.BARCODE");
@@ -270,6 +278,7 @@ Data Matrix enables different layout variants, which can be set to generate barc
 | :-: | :-: | :-: | :-: |
 | |<img src="datamatrixrows12columns64ecc200.png">|<img src="datamatrixrows22columns22ecc200.png">|<img src="datamatrixrows29columns29ecc140.png">|
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with Ecc200 and 22x22 rows/columns
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -296,6 +305,7 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can utilize macro cha
 
 The following code snippet demonstrates how to use macro characters when generating *Data Matrix* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with macro character set to 05
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
@@ -326,6 +336,7 @@ reader.delete();
 | |<img src="datamatrixaspectratio1.png">|<img src="datamatrixaspectratio0.5.png">|
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with aspect ratio 1
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -349,6 +360,7 @@ gen.delete();
 - [*StructuredAppendFileId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/structuredappendfileid/): Represents the identifier of a file (ranging from 1 to 64516).
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with structured append mode
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
@@ -367,6 +379,7 @@ gen.delete();
 ## **Hardware Reader Initialization**
 To encode a special flag denoting that barcode data is intended to initialize a hardware barcode reader, it is required to set the [*IsReaderProgramming*]( https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/datamatrixparameters/isreaderprogramming/) property. The following code snippet explains how to use this property.  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with reader programming flag enabled
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");

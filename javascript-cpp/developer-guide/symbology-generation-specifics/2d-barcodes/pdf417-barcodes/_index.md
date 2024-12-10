@@ -36,6 +36,7 @@ url: /javascript-cpp/pdf417-barcodes/
 
 <p align="center"><img src="pdf417basic.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -53,6 +54,7 @@ gen.delete();
 
 <p align="center"><img src="compactpdf417basic.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a compact Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -73,6 +75,7 @@ gen.delete();
 
 <p align="center"><img src="micropdf417basic.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Micro Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
@@ -97,6 +100,7 @@ The *PDF417* barcode images below were generated using different layout settings
 | :-: | :-: | :-: | :-: |
 | |<img src="pdf417columns2.png">|<img src="pdf417row6.png">|<img src="pdf417row9columns4.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with 2 columns
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -137,6 +141,7 @@ gen.delete();
 | :-: | :-: | :-: | :-: |
 | |<img src="micropdf417columns2.png">|<img src="micropdf417row6.png">|<img src="micropdf417row8columns4.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a MicroPdf417 barcode with 2 columns
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "ASPOSE");
@@ -170,6 +175,7 @@ The *PDF417* barcodes shown below were generated using different aspect ratio se
 | :-: | :-: | :-: |
 | |<img src="pdf417aspectratio2.png">|<img src="pdf417aspectratio5.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with an aspect ratio of 2
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -196,6 +202,7 @@ gen.delete();
 | :-: | :-: | :-: |
 | |<img src="micropdf417aspectratio2.png">|<img src="micropdf417aspectratio5.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a MicroPdf417 barcode with an aspect ratio of 2
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
@@ -229,6 +236,7 @@ In Auto mode, the CodeText is encoded with the highest level of data compactness
 
 <p align="center"><img src="pdf417encodemodeauto.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with automatic encoding mode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "犬Right狗");
@@ -244,6 +252,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 
 <p align="center"><img src="pdf417encodemodebinary.png" width="20%" height="20%"></p>  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with binary encoding mode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417");
@@ -265,6 +274,7 @@ The code sample below shows how to implement the *ECI* mode.
 
 <p align="center"><img src="pdf417encodemodeeci.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
 var str = "ΑΒΓΔΕ";
@@ -295,6 +305,7 @@ The *PDF417* barcode family applies the [Reed-Solomon error correction](https://
 | |<img src="pdf417errorlevel2.png">|<img src="pdf417errorlevel5.png">|
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Set error level to 2
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -330,6 +341,7 @@ The main metadata fields define essential information required for encoding addi
 The code snippet below demonstrates how to configure main metadata for *Macro PDF417* barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
@@ -379,6 +391,7 @@ Optional metadata fields allow for additional information to be encoded in *Macr
 Below is an example of how to configure optional metadata for *Macro PDF417* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
@@ -432,6 +445,7 @@ Optional metadata fields can be transmitted in Unicode encoding by configuring t
 
 The following code sample demonstrates how to set this up for *Macro PDF417* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
@@ -481,6 +495,7 @@ reader.delete();
 ### **UCC/EAN-128 Modes**
 Codewords *903*, *904*, and *905* in *GS1 Micro PDF417* barcodes allow for encoding GS1 CodeText in a short form without a linked state. Codeword *905* can encode GS1 text with the "01" application identifier in the shortest form.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 MicroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(01)12345678901231(240)ABCD123456789012345");
@@ -512,6 +527,7 @@ Codewords *906*, *907*, *912*, *914*, *915* of *GS1 Micro PDF417* barcode allow 
 #### **Linked UCC/EAN-128 906 and 907 modes**
 Codewords *906* and *907* allow to encode any GS1 Application Identifiers in short mode. You can see this in the following example.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 MicroPDF417 barcode with linked mode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(01)12345678901231(240)ABCD123456789012345");
@@ -545,6 +561,7 @@ Codeword *912* allows to encode GS1 Application Identifiers “17”, “15”, 
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | |<img src="gs1micropdf417mode912_17_10.png">|<img src="gs1micropdf417mode912_15_10.png">|<img src="gs1micropdf417mode912_13_21.png">|<img src="gs1micropdf417mode912_11_21.png">|<img src="gs1micropdf417mode912_17.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a GS1 Micro Pdf417 barcode for (17)991231(10)ABCD
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(17)991231(10)ABCD");
@@ -580,6 +597,7 @@ Codeword *914* allows in short form encoding “10” GS1 AI as the first identi
 | :-: | :-: | :-: |
 | |<img src="gs1micropdf417mode914.png">|<img src="gs1micropdf417mode915.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a GS1 Micro Pdf417 barcode for (10)ABCD12345(240)ABCD
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(10)ABCD12345(240)ABCD");
@@ -605,6 +623,7 @@ The *PDF417* barcode family supports special control parameters in ***Aspose.Bar
 ### **Hardware Reader Initialization**
 To encode the special flag "921," which indicates that the barcode data is intended for hardware reader initialization, developers can use the [*IsReaderInitialization*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/pdf417parameters/properties/isreaderinitialization) property. The following code sample shows how to set this property.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with reader initialization flag set
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Aspose");
@@ -632,6 +651,7 @@ reader.delete();
 ### **Linkage Flag to Non EAN.UCC Linear Component**
 You can encode special flag “918” indicating that current barcode is associated with linear component in any composite symbology. You can use [*IsLinked*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/pdf417parameters/islinked/) property for this.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Pdf417 barcode with the "IsLinked" flag set for NON EAN.UCC Linked mode 918
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Aspose");
@@ -664,6 +684,7 @@ Special flags “908”, “909”, “910”, and “911” can be used to indi
 | |<img src="micropdf417iscode128emulation_fnc1a.png">|<img src="micropdf417iscode128emulation_fnc199.png">|<img src="micropdf417iscode128emulation.png">|
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Encodes MicroPdf417 in Code 128 emulation mode with FNC1 in second position and Application Indicator "a", mode 908.
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "a\u001d1222322323");
@@ -721,6 +742,7 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can use macro charact
 | :-: | :-: | :-: |
 | |<img src="micropdf417macrocharacters_macro05.png">|<img src="micropdf417macrocharacters_macro06.png">|
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Encodes MicroPdf417 Codewords 916 Macro strings 05
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "12345ABC");

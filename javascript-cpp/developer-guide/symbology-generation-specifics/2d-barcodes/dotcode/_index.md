@@ -32,6 +32,7 @@ It is possible to specify only the number of rows or columns, with the other lay
 The following code sample demonstrates how to set the layout for a generated DotCode barcode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DotCode barcode with specified column and row settings
 
@@ -72,6 +73,7 @@ In Auto mode, the CodeText is encoded with maximum data compactness. Unicode cha
 
 <p align="center"><img src="dotcodeencodemodeauto.png" width="20%" height="20%"></p>
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DotCode barcode with mixed character data
 
@@ -90,6 +92,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 
 <p align="center"><img src="dotcodeencodemodebinary.png" width="20%" height="20%"></p>  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DotCode barcode with binary encoded data
 
@@ -118,6 +121,7 @@ The following code sample demonstrates how to use the *ECI* mode.
 
 <p align="center"><img src="dotcodeencodemodeeci.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // ECI mode, Latin/Greek alphabet encoding. ECI ID:"\000009"
 var str = "ΑΒΓΔΕ";
@@ -146,6 +150,7 @@ The following code sample demonstrates how to use the *Extended* mode.
 <p align="center"><img src="dotcodeencodemodeextended.png" width="20%" height="20%"></p>
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create codetext
 // Create an instance of DotCodeExtCodetextBuilder
@@ -194,6 +199,7 @@ The following code sample demonstrates how to enable the *Structured Append* mod
 
 <p align="center"><img src="dotcodestructuredappendmode.png" width="20%" height="20%"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DotCode barcode generator instance with the string "Aspose"
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
@@ -217,6 +223,7 @@ By default, the ratio between X and Y coordinates in a DotCode barcode equals to
 
 <p align="center"><img src="dotcodeaspectratio0.5.png"></p>
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DotCode barcode generator instance with the string "Aspose"
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
@@ -237,6 +244,7 @@ gen.delete();
 ## **Hardware Reader Initialization**
 To encode a special flag indicating that the data in a DotCode barcode is intended to initialize a hardware reader, you can set the [*IsReaderInitialization*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/dotcodeparameters/isreaderinitialization/) property. The following code sample demonstrates how to enable this property.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create a DotCode barcode generator instance with the string "Aspose"
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");

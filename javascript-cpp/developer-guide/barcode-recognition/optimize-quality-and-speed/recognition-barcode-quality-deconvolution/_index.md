@@ -69,6 +69,7 @@ To optimize the recognition quality of barcodes, the **[BarcodeQuality](https://
 These settings allow you to fine-tune the barcode recognition engine based on your image quality and processing needs.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // recognize image with BarcodeQualityMode High, DeconvolutionMode Fast
 console.log("BarcodeQualityMode: High, DeconvolutionMode: Fast");

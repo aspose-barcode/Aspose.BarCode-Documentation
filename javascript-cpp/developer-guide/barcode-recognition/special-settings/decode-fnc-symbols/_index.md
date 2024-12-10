@@ -13,6 +13,7 @@ The GS1 association uses FNC symbols to manage decoding for *Code 128* and other
 The following code snippet demonstrates how to handle FNC symbols when reading a *Code 128* barcode as shown below.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose<FNC1><FNC2><FNC3>");

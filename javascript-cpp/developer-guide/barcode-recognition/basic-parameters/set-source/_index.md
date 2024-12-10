@@ -11,66 +11,75 @@ url: /javascript-cpp/set-barcode-source/
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
-## **Overview**
+## Overview
 
-In ***Aspose.BarCode for JavaScript via C++***, a source for barcode recognition can be defined in three different ways: as an image file, as a stream, or as a bitmap. Reading barcodes from files can be done using five supported image formats: BMP, PNG, JPEG, GIF, or TIFF. The implementation details for three possible modes are provided further. 
+In ***Aspose.BarCode for JavaScript via C++***, you can define the barcode recognition source in three ways: as an image file, a stream, or a bitmap. Supported image formats for barcode reading include BMP, PNG, JPEG, GIF, and TIFF. Implementation details for each mode are provided below.
 
-## **Read Barcodes from File**
-To set the barcode recognition source as an image file, it is necessary to specify the full or relative path to this file in the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or call the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage/methods/4) method to pass the path to the already existing object of [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader).  
-  
-The following code snippet shows how to set the barcode reading source as a file by specifying the path to the required image.
+## Read Barcodes from File
 
+To set an image file as the source for barcode recognition, specify the full or relative path to the file in the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor, or use the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage) method to pass the path to an existing [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) object.
+
+### Example
+The following code snippet demonstrates how to set an image file as the barcode reading source by specifying the path to the image.
+
+
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
-using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
-    DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
-{
-    Console.WriteLine("ReadFromFile:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
+// Read multiple barcode types from an image file
+var reader = new BarCodeInstance.BarCodeReader(`${path}multiple_codes.png`,
+        "Pdf417,DataMatrix,QR,Code39Extended,Code128,RM4SCC");
+
+console.log("ReadFromFile:");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+reader.delete();
 ```
   
 The code sample below illustrates how to define the path to the already created recognition source object.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
-using (BarCodeReader reader = new BarCodeReader())
-{
-    //set path to image
-    reader.SetBarCodeImage($"{path}multiple_codes.png");
-    reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
-    Console.WriteLine("ReadSetBarCodeImageFromFile:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
+// Read multiple barcode types from an image file using SetBarCodeImage
+var reader = new BarCodeInstance.BarCodeReader();
+reader.SetBarCodeImage(`${path}multiple_codes.png`);
+reader.SetBarCodeReadType("Pdf417,DataMatrix,QR,Code39Extended,Code128,RM4SCC");
+
+console.log("ReadSetBarCodeImageFromFile:");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+reader.delete();
+
 ```
 
-## **Read Barcodes from Bitmap**
-In ***Aspose.BarCode for JavaScript via C++***, it is possible to get a barcode image for reading in the form of a graphical object, namely, a bitmap. IN the .NET framework, bitmap objects are used to process images composed of pixel data. To set the recognition source as a bitmap, it is necessary to pass the created bitmap object to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage/methods/4) method similarly to the case of using a raster image file.
+## **Read Barcodes from Base64 image string**
+In ***Aspose.BarCode for JavaScript via C++***, it is possible to read barcodes from base64 image string. To set the recognition source as base64 image string, it is necessary to pass the base64 image string to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage) method similarly to the case of using a raster image file.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
-using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
-using (BarCodeReader reader = new BarCodeReader(bmp, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
-    DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
-{
-    Console.WriteLine("ReadFromBitmap:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
-}
-```
+// Generate a QR barcode
+var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE.BARCODE");
+const base64image = gen.GenerateBarCodeImage(); // Generate base64 barcode image
 
-## **Read Barcodes from Stream**
-***Aspose.BarCode for JavaScript via C++*** enables the possibility to load the source barcode image from a stream (in a binary format) that is viewed as an abstraction of a byte sequence. In many cases, it may be convenient to set a recognition source as a stream object that is universal and can be accessed without a file system. In ***Aspose.BarCode for JavaScript via C++***, the source stream for barcode recognition can be passed to the [*BarCodeReader*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/barcodereader) constructor or the [*SetBarCodeImage*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition.barcodereader/setbarcodeimage/methods/4) method.
-  
-The following code snippet explains how to set a source stream for barcode recognition.
+// Read multiple barcode types from a bitmap image
+var reader = new BarCodeInstance.BarCodeReader(base64image, "Pdf417,DataMatrix,QR,Code39Extended,Code128,RM4SCC");
 
-```javascript
-using (Stream stream = new FileStream($"{path}multiple_codes.png", FileMode.Open, FileAccess.Read))
-using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
-    DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
-{
-    Console.WriteLine("ReadFromStream:");
-    foreach (BarCodeResult result in reader.ReadBarCodes())
-        Console.WriteLine($"{result.CodeType}:{result.CodeText}");
+console.log("ReadFromBitmap:");
+reader.ReadBarCodes();
+for (var i = 0; i < reader.FoundCount; i++) {
+    const result = reader.FoundBarCodes(i);
+    console.log(`${result.CodeType}: ${result.CodeText}`);
 }
+
+gen.delete();
+reader.delete();
+
 ```
 

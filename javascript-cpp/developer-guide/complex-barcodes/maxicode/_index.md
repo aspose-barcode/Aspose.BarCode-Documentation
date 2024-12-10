@@ -62,6 +62,7 @@ The class [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/javascr
 The example below demonstrates how to create a *MaxiCode* barcode using input data where the secondary part is an unstructured message.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create MaxiCode in Mode 2 with structured second message
 var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode2();
@@ -91,6 +92,7 @@ complexGenerator.delete();
   
 The following code sample shows how to create *MaxiCode* with the secondary part of the input data being a structured message.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create MaxiCode in mode 2 with structured second message
 var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode2();
@@ -122,6 +124,7 @@ The [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/javascript-cp
 The following code sample shows how to generate a *MaxiCode* barcode with the input data formatted as an unstructured message in the secondary part.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create MaxiCode in mode 3 with a standard second message
 var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode3();
@@ -147,6 +150,7 @@ complexGenerator.delete();
 The following code sample demonstrates how to create a *MaxiCode* barcode with the input data formatted to include the secondary part as a structured message.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create MaxiCode in mode 3 with a structured second message
 var maxiCodeCodetext = new BarCodeInstance.MaxiCodeCodetextMode3();
@@ -177,6 +181,7 @@ complexGenerator.delete();
 The [*MaxiCodeCodetextMode*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.complexbarcode/maxicodecodetext/) class can be used to generate *MaxiCode* barcodes with data formats suitable for *Modes 4, 5, and 6*. To specify the desired mode, set the *Mode* property accordingly.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create MaxiCode in standard mode 4 with a standard message
 var maxiCodeCodetext = new BarCodeInstance.MaxiCodeStandardCodetext();
@@ -197,6 +202,7 @@ To read a *MaxiCode* barcode, create an instance of the [*BarcodeReader*](https:
 The following code sample shows how to decode a *MaxiCode* barcode with input data formatted as a structured secondary message.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Recognize MaxiCode in mode 2 with a standard second message
 var reader = new BarCodeInstance.BarCodeReader(`${path}MaxiCodeMode2StandardSecondMessage.png`, "MaxiCode");

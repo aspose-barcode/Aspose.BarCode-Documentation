@@ -19,6 +19,7 @@ When working with barcodes, you might need to save them in different formats, in
 With ***Aspose.BarCode for JavaScript via C++***, you can save barcodes directly to a file in your desired format. Below are examples showing how to save barcodes in different formats.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "12345678");
 gen.Save("StoreImageAsFile.png");
@@ -33,6 +34,7 @@ gen.SaveExt("StoreImageAsFile.png", BarCodeInstance.BarCodeImageFormat.Png);
 ***Aspose.BarCode for JavaScript via C++*** allows you to output a barcode image as a bitmap object, which can then be saved in various formats or used for further graphical transformations. To obtain such a bitmap object, you can use the `GenerateBarCodeImage` method from the `BarcodeGenerator` class. The following code snippet demonstrates how to implement this functionality in ***Aspose.BarCode for JavaScript via C++***.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "12345678");
@@ -49,6 +51,7 @@ Files with the .BMP extension are bitmap files designed to store bitmap digital 
 
 The following code snippet demonstrates how to save barcode images in BMP format.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as a BMP image
@@ -67,6 +70,7 @@ Portable Network Graphics (PNG) is a raster file format that supports lossless d
 
 The following code example demonstrates how to save barcode images in the PNG format.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as a PNG image
@@ -85,6 +89,7 @@ Graphics Interchange Format (GIF) is a lossless raster image format that support
 
 The following code snippet demonstrates how to save barcode images in the GIF format.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as a GIF image
@@ -105,6 +110,7 @@ JPEG (Joint Photographic Experts Group) is a widely used image format that suppo
 The following code snippet shows how to save barcode images in the JPEG format.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as a JPEG image
@@ -123,6 +129,7 @@ Tagged Image File Format (TIFF) is a high-quality raster image format that suppo
 
 The following code snippet demonstrates how to generate barcode images in both standard TIFF and TIFFInCMYK formats.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as a TIFF image
@@ -146,6 +153,7 @@ Vector formats represent images as mathematical equations and graphical operatio
 ### **EMF Format**
 Enhanced Metafile (EMF) is a vector image format used primarily in Windows for printing. EMF files store image data in a series of variable-length records that describe drawing commands and graphics properties. This allows the image to be rendered consistently across different devices and platforms. The code snippet below demonstrates how to generate barcode images in the EMF format.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as an EMF vector image
@@ -176,6 +184,7 @@ Scalable Vector Graphics (SVG) is an XML-based vector image format used to rende
 
 The following code sample describes how to generate barcode images in the SVG format.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // JavaScript code for generating and saving a Code128 barcode as an SVG vector image

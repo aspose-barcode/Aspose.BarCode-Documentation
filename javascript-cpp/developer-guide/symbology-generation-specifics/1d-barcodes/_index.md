@@ -32,6 +32,7 @@ The library provides options to adjust bar height for single-row 1D barcodes. Th
 The following example demonstrates how to set different bar heights for a *Code 128* barcode.
 
      
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Code128 barcode with specified bar heights
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
@@ -64,6 +65,7 @@ For 1D barcodes, ***Aspose.BarCode for JavaScript via C++*** allows generating b
 Below is an example of how to configure the bar filling mode for a *Code 128* barcode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Code128 barcode with filled and empty bars
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
@@ -98,6 +100,7 @@ In ***Aspose.BarCode for JavaScript via C++***, the **wide-to-narrow ratio** det
 Below is an example of how to set the wide-to-narrow ratio for a *Code 39* barcode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Code39Extended barcode with different Wide-to-Narrow ratios
 var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "ASPOSE");
@@ -130,6 +133,7 @@ This behavior can be modified by setting the [*ThrowExceptionWhenCodeTextIncorre
 
 The following code snippet demonstrates how to set the [*ThrowExceptionWhenCodeTextIncorrect*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodeparameters/properties/throwexceptionwhencodetextincorrect) property. In this case, an exception message such as "*Symbology ITF 6 - codetext is invalid*" will be thrown if the text is incorrect.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an ITF6 barcode with correct code text and correction check enabled
 var gen = new BarCodeInstance.BarcodeGenerator("ITF6", "123457");

@@ -64,6 +64,7 @@ The table below illustrates the difference in recognition results for the same b
 - Combining *MaxQuality* with the *AllowIncorrectBarcodes* mode further increases recognition for damaged or incomplete barcodes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 console.log("ReadQualityPresets:");
 // recognize image with HighPerformance
@@ -140,6 +141,7 @@ The code snippet below demonstrates how to force the recognition of barcodes tha
 - **Enabled mode**: The engine attempts to recognize and decode the barcodes, even if their checksums fail, leading to partial or inaccurate results. This mode is suitable for situations where developers want to extract data for further investigation or troubleshooting.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 console.log("ReadIncorrectBarcodes:");
 // recognize image with disabled AllowIncorrectBarcodes

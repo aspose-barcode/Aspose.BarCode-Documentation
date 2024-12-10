@@ -27,6 +27,7 @@ The sample barcode labels below show the six basic *Patch Code* barcode types.
 The following code snippet demonstrates how to generate *Patch Code* barcodes using the available patterns.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate PatchCode barcodes with custom font size and text
 var gen = new BarCodeInstance.BarcodeGenerator("PatchCode", "Patch I");
@@ -84,6 +85,7 @@ Below are images of *Patch Code* barcode pages with and without a complementary 
 | |<a href="patchcodea4withoutqr.png"> <p align="center"><img src="patchcodea4withoutqr.png" width="40%" height="40%" alt="Patch Code Barcode Without QR"></p></a>|<a href="patchcodea4withqr.png"> <p align="center"><img src="patchcodea4withqr.png" width="40%" height="40%" alt="Patch Code Barcode With QR"></p></a>|
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Create PatchCode barcodes with and without complimentary QR
 var gen = new BarCodeInstance.BarcodeGenerator("PatchCode", "Patch I");

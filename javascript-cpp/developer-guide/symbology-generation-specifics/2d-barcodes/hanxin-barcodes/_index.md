@@ -26,6 +26,7 @@ By default, the [*HanXinVersion*](https://reference.aspose.com/barcode/javascrip
 The following code sample demonstrates how to set the Han Xin Code version.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a HanXin barcode with Auto version (default)
 var gen = new BarCodeInstance.BarcodeGenerator("HanXin", "1234567890");
@@ -54,6 +55,7 @@ The *Auto* mode automatically switches between different encoding types such as 
 The following code sample demonstrates how to generate Han Xin barcodes using the *Auto* encoding mode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Text + Region One + Region Two + GB18030 2 Byte
 var str = "abc123全ň全漄灟漄灟螅全ň螅螅螅";
@@ -69,6 +71,7 @@ gen.delete();
 ### ***Binary* Encoding Mode**
 The *Binary* mode serves to encode byte streams. If a Unicode character is encountered, an exception is thrown. The code sample below explains how to work with this encoding mode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Binary mode 
 var gen = new BarCodeInstance.BarcodeGenerator("HanXin");
@@ -105,6 +108,7 @@ The *Unicode* mode provides a way to store text data entered in the UTF8 encodin
   
 The following code sample shows how to enable the *Unicode* mode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var str = "abcd АБВ ıntəˈnæʃənəl 语言语言 แผ่นดินฮั่นเสื่ ∑ f(i) = ∏ 🖨 🚘✉🥇⚽ 你好測試測試 こんにちは テスト テスト 안녕하세요 테스트 테스트";
 
@@ -118,6 +122,7 @@ gen.delete();
 ### **Encoding Mode: *URI***
 The *URI* mode indicates that the data in the Han Xin Code represents a Uniform Resource Identifier (URI) as defined by [*RFC 3986*](https://datatracker.ietf.org/doc/html/rfc3986).
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // URI mode 
 var str = "https://www.test.com/%BC%DE%ab/search=test";
@@ -151,6 +156,7 @@ If the barcode text contains an ECI segment, only the following modes can be use
 The following code examples demonstrate the use of all these modes.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Extended mode example 1
 var str = "\\auto:abc\\000009:ΑΒΓΔΕ\\auto:abc";
@@ -227,6 +233,7 @@ The desired error correction level can be set using the [*HanXinErrorLevel*](htt
 The following code sample shows how to configure the error correction level.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("HanXin", "1234567890");
 

@@ -21,6 +21,7 @@ To retrieve information about the placement region and orientation angle of a so
 The following code sample demonstrates how to retrieve information about the barcode placement region and orientation angle from a sample barcode image.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose1234");
 gen.Parameters.Barcode.XDimension.Pixels = 2;

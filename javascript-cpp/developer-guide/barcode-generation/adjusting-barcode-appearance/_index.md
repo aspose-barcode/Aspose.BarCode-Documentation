@@ -40,6 +40,7 @@ The barcode image below shows an example generated in *None* mode.
 The code snippet below demonstrates how to set *AutoSizeMode* to *None*.
  
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with custom image size settings
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
@@ -64,6 +65,7 @@ The sample barcode image created using the *Interpolation* mode is shown below.
 
 The following code sample explains how to initialize the *AutoSizeMode* property with the *Interpolation* value.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a DataMatrix barcode with interpolation auto size mode and custom image size settings
@@ -91,6 +93,7 @@ The barcode image below shows the result of using the *Nearest* mode.
 The code snippet below demonstrates how to set the *AutoSizeMode* property to *Nearest*.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a DataMatrix barcode with nearest auto size mode and custom image size settings
@@ -119,6 +122,7 @@ The sample barcode images below demonstrate the effect of different rotation ang
 The code snippet below shows how to set different rotation angles.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a Code128 barcode with various rotation angles
@@ -167,6 +171,7 @@ The following barcode images illustrate sample barcode labels generated with dif
 The following code sample demonstrates how to set the barcode border style.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a Code128 barcode with various border styles and settings
@@ -207,6 +212,7 @@ The border paddings for a barcode image or its borders can be set in four direct
 | |<img src="padding10millimeters.png">|<img src="padding10pixels.png">|  
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate a Code128 barcode with various padding settings and border properties
@@ -251,6 +257,7 @@ Below are sample barcodes generated with and without bar width reduction.
 
 The following code sample shows how to set bar width reduction.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate Code128 and DataMatrix barcodes with various bar width reduction settings

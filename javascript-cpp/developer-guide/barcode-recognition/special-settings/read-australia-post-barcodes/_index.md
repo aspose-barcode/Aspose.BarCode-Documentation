@@ -29,6 +29,7 @@ The *Australia Post* symbology supports encoding additional customer information
 The following code snippet demonstrates how to set the decoding format to *CTable* for the barcode image shown below.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Australia Post barcode with C Table encoding
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "6201234567ASPOSE");
@@ -58,6 +59,7 @@ reader.delete();
   
 The following code sample shows how to apply the decoding format with the *NTable* option while reading the barcode image provided below. 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
@@ -87,6 +89,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
   
 The following code snippet demonstrates how to set the *Other* decoding format for the barcode image given below. 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210"))
@@ -117,6 +120,7 @@ The *Australia Post* standard imposes using fixed size for each subtype. When ba
   
 The following code sample illustrates how to eliminate filling patters while using the *CTable* decoding mode for the barcode image demonstrated below. 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567END"))
@@ -163,6 +167,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
   
 The following code snippet explains how to decode customer information inputted in the *NTable* format while reading the sample *Australia Post* barcode shown below. 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 class NTableDecoder : AustraliaPostCustomerInformationDecoder
 {

@@ -26,6 +26,7 @@ The examples below show how different frame styles affect the appearance of the 
 
 The following code snippet demonstrates how to set the frame style for *ITF 14* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate ITF-14 barcodes with different border types
 var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
@@ -67,6 +68,7 @@ Depending on specific industrial requirements, the library enables adjusting bor
   
 The following code sample shows how to set different border thickness values using the *ITF 14* symbology as an example.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate ITF-14 barcodes with different border sizes
@@ -98,6 +100,7 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can customize the siz
   
 The following code sample illustrates how to adjust the appearance of the quiet zone for *ITF 14* barcodes.
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate ITF-14 barcodes with different quiet zone sizes
 var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");

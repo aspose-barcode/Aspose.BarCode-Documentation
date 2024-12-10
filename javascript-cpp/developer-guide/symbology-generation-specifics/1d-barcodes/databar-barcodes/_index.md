@@ -32,6 +32,7 @@ The examples below show *DataBar Omnidirectional* barcodes generated with differ
 The following code snippet demonstrates how to set barcode height for continuous barcodes using *DataBar Omnidirectional* as an example.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 DataBar OmniDirectional barcode with different bar heights
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarOmniDirectional", "(01)12345678901231");
@@ -62,6 +63,7 @@ The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with va
 The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 DataBar Stacked OmniDirectional barcode with different aspect ratios
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");
@@ -92,6 +94,7 @@ The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with va
 The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 DataBar Expanded Stacked barcode with various column and row configurations
 // Set 4 columns
@@ -123,6 +126,7 @@ Given that *DataBar Expanded* and *DataBar Expanded Stacked* symbologies, in the
   
 The following code snippet explains how to enable the verification of compatibility with GS1 standards for *DataBar Expanded* barcodes. In case when the *IsAllowOnlyGS1Encoding* is set, and the used encoding does not match GS1 standards, the following exception is thrown: "*Exception: Wrong GS1 Application Identifiers format*".  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 DataBar Expanded barcode with GS1 encoding checks and variable codetext handling
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarExpanded", "");
@@ -163,6 +167,7 @@ The examples below illustrate *DataBar Stacked Omnidirectional* barcodes with va
 The following code snippet demonstrates how to set the aspect ratio for stacked symbologies, using *DataBar Stacked Omnidirectional* as an example.
 
     
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate GS1 DataBar Expanded barcode with 2D component flag enabled/disabled
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");

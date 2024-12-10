@@ -16,6 +16,7 @@ url: /javascript-cpp/2d-barcode-types/
 
 The following code sample demonstrates how to generate a *QR Code* barcode:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Aspose常に先を行く");
 gen.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QREncodeMode.ECIEncoding;
@@ -31,6 +32,7 @@ The *PDF417* barcode is a 2D high-density symbology capable of encoding a wide r
 
 The following code snippet illustrates how to generate a *PDF417* barcode in JavaScript:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("PDF417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.PDF417.Rows = 6;
@@ -43,6 +45,7 @@ document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 To create a *Data Matrix* barcode, use the following JavaScript code:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "8px";
@@ -55,6 +58,7 @@ document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 To generate an *Aztec* barcode, use the following JavaScript code:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "8px";
@@ -67,6 +71,7 @@ The *Micro QR Code* symbology offers high data density in a compact square shape
 
 To generate a *Micro QR Code*, use the following JavaScript code:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.QR.QrEncodeType = BarCodeInstance.QREncodeType.ForceMicroQR;
@@ -81,6 +86,7 @@ document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 To generate a *Compact PDF417* barcode, use the following JavaScript code:
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 // Compact version of Pdf417

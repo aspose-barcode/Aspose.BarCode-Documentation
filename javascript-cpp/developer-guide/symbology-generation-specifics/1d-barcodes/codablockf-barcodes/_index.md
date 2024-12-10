@@ -23,6 +23,7 @@ Below are examples of *Codablock-F* barcodes with different aspect ratio setting
 ### Code Example
 The following code demonstrates how to adjust the height of *Codablock-F* barcodes using the aspect ratio.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // Generate CodablockF barcode with different aspect ratios
@@ -57,6 +58,7 @@ Below are examples of *Codablock-F* barcodes with different layout settings:
 ### Code Example
 The following code demonstrates how to set layout settings for *Codablock-F* barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate CodablockF barcode with specified columns and rows
 var gen = new BarCodeInstance.BarcodeGenerator("CodablockF", "Aspose.Barcode");

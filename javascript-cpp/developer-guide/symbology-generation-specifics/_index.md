@@ -68,6 +68,7 @@ The following are the barcode types supported by ***Aspose.BarCode for JavaScrip
 Below is a code snippet to generate a barcode using the *Code 39* symbology.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Code39Extended barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "$&This Code#*");
@@ -92,6 +93,7 @@ Below, we present examples of different barcode types, such as *EAN 13*, *Code 1
 Here's an example code snippet to generate *EAN 13* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an EAN13 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
@@ -110,6 +112,7 @@ The *Code 11* symbology supports encoding a string of any length (theoretically 
 The following code sample shows how to generate a *Code 11* barcode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Code11 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code11", "1234-5678");
@@ -127,6 +130,7 @@ gen.delete();
 The code example below demonstrates how to create a *GS1 Code 128* barcode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a GS1 Code128 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1Code128", "(02)04006664241007(37)1");
@@ -155,6 +159,7 @@ Sometimes, data read from barcodes can be incorrect. 1D barcodes often do not in
 The code example below shows how to generate an *Interleaved 2-of-5* barcode.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an Interleaved 2 of 5 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Interleaved2of5", "1234567890");
@@ -175,6 +180,7 @@ The *Postnet* symbology encodes only digits corresponding to ZIP or ZIP+4 codes 
 
 The code example below shows how to generate a *Postnet* barcode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Postnet barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Postnet", "1159628792");
@@ -193,6 +199,7 @@ gen.delete();
 The following code snippet demonstrates how to generate an *RM4SCC* barcode.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an RM4SCC barcode
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123ABC");

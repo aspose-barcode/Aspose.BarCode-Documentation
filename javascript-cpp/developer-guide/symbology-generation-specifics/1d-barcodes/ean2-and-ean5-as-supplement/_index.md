@@ -23,6 +23,7 @@ Below are examples of *EAN 13* barcodes with *EAN 2* and *EAN 5* supplement sett
 
 The code snippet below demonstrates how to generate supplement barcodes using *EAN 2* and *EAN 5* symbologies.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate EAN-13 barcodes with different supplements
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
@@ -52,6 +53,7 @@ The barcode examples below show different gap settings between the main and supp
 The following code snippet demonstrates how to set the spacing between the main and supplement barcodes for the *EAN 13* symbology.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate EAN-13 barcode with different supplement space settings
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");

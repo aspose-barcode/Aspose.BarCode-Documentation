@@ -42,6 +42,7 @@ The following table shows the difference in barcode recognition quality based on
 This mode is particularly useful when dealing with non-standard barcode presentations or scanned documents with varying contrast and luminance.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 // recognize image with Inverse image mode Disabled
@@ -98,6 +99,7 @@ The table below illustrates the effect of enabling or disabling the *ComplexBack
 This mode is particularly valuable when dealing with images that contain barcodes on complex or multicolored backgrounds, where standard recognition might not suffice.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // recognize image with Complex background mode Disabled
 console.log("ComplexBackgroundMode: Disabled");

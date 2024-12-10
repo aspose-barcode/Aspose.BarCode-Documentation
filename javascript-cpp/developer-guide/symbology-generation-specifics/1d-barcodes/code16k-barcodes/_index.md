@@ -24,6 +24,7 @@ Below are examples of *Code 16K* barcodes with different height settings:
 The following code demonstrates how to set the height for *Code 16K* barcodes by defining the aspect ratio.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Code 16K barcode with different aspect ratios
 var gen = new BarCodeInstance.BarcodeGenerator("Code16K", "Aspose.Barcode");
@@ -54,6 +55,7 @@ Below are examples of *Code 16K* barcodes with different quiet zone settings:
 The following code demonstrates how to customize the quiet zone settings for *Code 16K* barcodes.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate Code 16K barcode with different quiet zone settings
 var gen = new BarCodeInstance.BarcodeGenerator("Code16K", "Aspose.Barcode");

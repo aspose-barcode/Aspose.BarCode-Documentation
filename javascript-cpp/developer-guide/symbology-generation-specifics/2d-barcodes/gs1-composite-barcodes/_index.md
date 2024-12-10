@@ -34,6 +34,7 @@ The *2D* component types include:
 <p align="center"><img src="GS1Composite1D_EAN8.png"></p>
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with EAN8 linear component
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, "20123451|(10)ABCD0123(240)0123456789"))
@@ -49,6 +50,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
 - **1D Components Type**: [UPCA](/barcode/info-cards/upc-a/)<br> **Encoding**: 12 Digits (GTIN-12)<br> **2D component**: CC_A, CC_B. Both 4-columns.
 <p align="center"><img src="GS1Composite1D_UPCA.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "001234567895|(10)ABCD0123(240)0123456789");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -64,6 +66,7 @@ gen.delete();
 - **1D Components Type**: [EAN13](/barcode/info-cards/ean-13/)<br> **Encoding**: 13 Digits (GTIN-13) <br> **2D component**: CC_A, CC_B. Both 4-columns.
 <p align="center"><img src="GS1Composite1D_EAN13.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "2001234567893|(10)ABCD0123(240)0123456789");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -79,6 +82,7 @@ gen.delete();
 - **1D Components Type**: [UPCE](/barcode/info-cards/upc-e/)<br> **Encoding**: 8 Digits (GTIN-12 with zeros suppress) <br> **2D component**: CC_A, CC_B. Both 2-columns.
 <p align="center"><img src="GS1Composite1D_UPCE.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with UPCE linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "04252614|(10)ABCD0123(240)0123456789");
@@ -95,6 +99,7 @@ gen.delete();
 - **1D Components Type**: [Databar OmniDirectional](/barcode/info-cards/databar-omnidirectional/)<br> **Encoding**: 16 Digits (AI 01 and GTIN-14)<br> **2D component**: CC_A, CC_B. Both 4-columns.
 <p align="center"><img src="GS1Composite1D_DatabarOmniDirectional.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with DatabarOmniDirectional linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
@@ -111,6 +116,7 @@ gen.delete();
 - **1D Components Type**: [Databar Stacked OmniDirectional](/barcode/info-cards/databar-omnidirectional/)<br> **Encoding**: 16 Digits (AI 01 and GTIN-14)<br> **2D component**: CC_A, CC_B. Both 2-columns. 
 <p align="center"><img src="GS1Composite1D_DatabarStackedOmniDirectional.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -126,6 +132,7 @@ gen.delete();
 - **1D Components Type**: [Databar Stacked](/barcode/info-cards/databar-truncated/)<br> **Encoding**: 16 Digits (AI 01 and GTIN-14)<br> **2D component**: CC_A, CC_B. Both 2-columns.
 <p align="center"><img src="GS1Composite1D_DatabarStacked.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with DatabarStacked linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
@@ -142,6 +149,7 @@ gen.delete();
 - **1D Components Type**: [Databar Limited](/barcode/info-cards/databar-limited/)<br> **Encoding**: 15 Digits (AI 01 and GTIN-14 without checksum)<br> **2D component**: CC_A, CC_B. Both 3-columns. 
 <p align="center"><img src="GS1Composite1D_DatabarLimited.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with DatabarLimited linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)15012345678907|(10)ABCD0123(240)0123456789");
@@ -158,6 +166,7 @@ gen.delete();
 - **1D Components Type**: [Databar Expanded](/barcode/info-cards/databar-expanded/)<br> **Encoding**: Up to 74 Digits or variable length of [ISO/IEC 646](https://www.iso.org/standard/4777.html)<br> **2D component**: CC_A, CC_B. Both 4-columns.
 <p align="center"><img src="GS1Composite1D_DatabarExpanded.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with DatabarExpanded linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345(15)991231|(10)ABCD0123(240)0123456789");
@@ -174,6 +183,7 @@ gen.delete();
 - **1D Components Type**:[Databar Expanded Stacked](/barcode/info-cards/databar-expanded/) <br> **Encoding**: Up to 74 Digits or variable length of [ISO/IEC 646](https://www.iso.org/standard/4777.html)<br> **2D component**: CC_A, CC_B. Both 4-columns.
 <p align="center"><img src="GS1Composite1D_DatabarExpandedStacked.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with DatabarExpandedStacked linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345(15)991231|(10)ABCD0123(240)0123456789");
@@ -190,6 +200,7 @@ gen.delete();
 - **1D Components Type**: [GS1 Code128](/barcode/javascript-cpp/gs1-barcodes/#barcode-generation-according-to-gs1-standards)<br> **Encoding**: Up to 48 Digits or variable length of [ISO/IEC 646](https://www.iso.org/standard/4777.html)<br> **2D component**: CC_A (4-columns), CC_B (4-columns), CC_C (variable length).
 <p align="center"><img src="GS1Composite1D_GS1Code128.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with GS1Code128 linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
@@ -221,6 +232,7 @@ These symbols can be used freely in [non-GS1 encoding mode](https://reference.as
 <p align="center"><img src="GS1Composite2D_CC_A.png"></p>
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with CC_A 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
@@ -237,6 +249,7 @@ gen.delete();
 - **CC_B** - is 2D component, used [MicroPDF417](/barcode/javascript-cpp/pdf417-barcodes/#micro-pdf417) symbology to encode 2D binary data. Can encode up to 338 digits or any [ISO/IEC 646](https://www.iso.org/standard/4777.html) symbols with variable length. Can be used with any 1D linear component.
 <p align="center"><img src="GS1Composite2D_CC_B.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with CC_B 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
@@ -253,6 +266,7 @@ gen.delete();
 - **CC_C** - is 2D component, used [PDF417](/barcode/javascript-cpp/pdf417-barcodes/#pdf417-and-macro-pdf417) symbology to encode 2D binary data. Can encode up to 2361 digits or any [ISO/IEC 646](https://www.iso.org/standard/4777.html) symbols with variable length. Can be used only with [GS1 Code128](/barcode/javascript-cpp/gs1-barcodes/#barcode-generation-according-to-gs1-standards).
 <p align="center"><img src="GS1Composite2D_CC_C.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with CC_C 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
@@ -270,6 +284,7 @@ gen.delete();
 Sometimes we need to encode *non GS1* data in *2D* component. For this you can use property [IsAllowOnlyGS1Encoding](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/gs1compositebarparameters/isallowonlygs1encoding/).
 <p align="center"><img src="GS1Composite2D_NotGS1TwoDSupplement.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode with not GS1 complaint 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|Aspose.Barcode");
@@ -297,6 +312,7 @@ This mode allows encoding any sequence of [ISO/IEC 646](https://www.iso.org/stan
 **Digits encoding**:
 <p align="center"><img src="GS1CompositeMode_0_Digits.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 0: Digits
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|0123456789");
@@ -314,6 +330,7 @@ gen.delete();
 **Uppercase letters encoding**:
 <p align="center"><img src="GS1CompositeMode_0_CapitalLetters.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 0: Capital Letters
 // Generate a GS1 Composite barcode with GS1Code128 linear component
@@ -332,6 +349,7 @@ gen.delete();
 **Lowercase letters encoding**:
 <p align="center"><img src="GS1CompositeMode_0_Letters.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 0: Letters
 // Generate a GS1 Composite barcode with GS1Code128 linear component
@@ -351,6 +369,7 @@ gen.delete();
 **Punctuation encoding**:
 <p align="center"><img src="GS1CompositeMode_0_Punctuation.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 0: Punctuation
 // Generate a GS1 Composite barcode with GS1Code128 linear component
@@ -372,6 +391,7 @@ In *Mode 10* you can encode supplement *2D* data with *GS1 AI* *11*, *17*, *10* 
 **GS1 AI 10 encoding**:
 <p align="center"><img src="GS1CompositeMode_10_AI10.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 10: AI 10(Batch or lot number)
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (10) data
@@ -389,6 +409,7 @@ gen.delete();
 **GS1 AI 11 encoding**:
 <p align="center"><img src="GS1CompositeMode_10_AI11.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 10: AI 11(Production date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (11) data
@@ -406,6 +427,7 @@ gen.delete();
 **GS1 AI 17 encoding**:
 <p align="center"><img src="GS1CompositeMode_10_AI17.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 10: AI 17(Expiration date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (17) data
@@ -423,6 +445,7 @@ gen.delete();
 **GS1 AI 11 with AI 10 encoding**:
 <p align="center"><img src="GS1CompositeMode_10_AI11_AI10.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 10: AI 10(Batch or lot number) AI 11(Production date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and multiple AI data (11) and (10)
@@ -443,6 +466,7 @@ In *Mode 11* you can encode *GS1 AI 90* and following data with maximal compacti
 
 <p align="center"><img src="GS1CompositeMode_11.png"></p>
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 //Encode GS1Composite barcode Encodation Method 11: AI 90 (containing alphanumeric data)
 // Generate a GS1 Composite barcode with GS1Code128 linear component and multiple AI data (90) and (10)

@@ -31,6 +31,7 @@ Below are code snippets that demonstrate how to generate GS1-compatible barcodes
 
 **GS1 Code 128**
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1Code128", "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -43,6 +44,7 @@ gen.delete();
   
 **GS1 Data Matrix**  
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1DataMatrix", "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
@@ -70,6 +72,7 @@ Below, the code samples are provided to explain how to generate barcodes with co
 
 ### **UPC-A + DataBar Expanded**
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -79,6 +82,7 @@ gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
 <p align="center"><img src="gs1couponupcadatabar.png"></p>
 
 ### **UPC-A + GS1 Code 128**
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("UpcaGs1Code128Coupon", "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -99,6 +103,7 @@ Sample barcode images provided below have been generated using the *UPC-A GS1 Da
 
 The following code snippet shows how to modify the size of spacing between coupon barcodes.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("UpcaGs1Code128Coupon", "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;

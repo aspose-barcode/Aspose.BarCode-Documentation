@@ -45,6 +45,7 @@ This example demonstrates how to generate *Swiss Post Parcel* barcodes for *Dome
 |:--:|:--:|:--:|
 | |![Swiss Post Parcel Original](swisspostdomesticmailasis.png)|![Swiss Post Parcel Code](swisspostdomesticmailasdigits.png)|
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 
 //generate a Swiss Post Domestic Mail barcode with the original identifier
@@ -102,6 +103,7 @@ The following example demonstrates how to generate **Swiss Post Parcel** barcode
 |                                | ![Correct Checksum](swisspostinternationalmailasis.png) | ![Without Checksum](swisspostinternationalmailwithoutchecksum.png) | ![Erroneous Checksum](swisspostinternationalmailwithwrongchecksum.png) |
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Swiss Post International Mail barcode with a correct checksum
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "RM999605013CH");
@@ -168,6 +170,7 @@ This example demonstrates how to generate *Swiss Post Parcel* barcodes for indic
 | :--: | :--: | :--: |
 |  | ![Swiss Post Parcel Additional Service With Original Identifier](swisspostadditionalserviceasis.png) | ![Swiss Post Parcel Additional Service As Code 128](swisspostadditionalserviceascode128.png) |
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Additional Service codes:
 // Personal delivery (RMP) 0322
@@ -205,6 +208,7 @@ gen.delete();
 reader.delete();
 ```
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Additional Service codes:
 // Personal delivery (RMP) 0322

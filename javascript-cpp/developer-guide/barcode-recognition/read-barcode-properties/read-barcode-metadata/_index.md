@@ -31,6 +31,7 @@ The table below describes the Structured Append and Macro fields that can be rea
 The following code snippet demonstrates how to extract Structured Append and Macro fields from a sample *PDF417* barcode provided below.
 
  
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPdf417 with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
@@ -80,6 +81,7 @@ read.delete();
 
 Special modes indicators can be read from [*Pdf417ExtendedParameters*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/pdf417extendedparameters). To check if a barcode contains initialization or reprogramming instructions for the barcode reader, use the [*IsReaderInitialization*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/pdf417extendedparameters/isreaderinitialization/) property.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPdf417 with Reader Initialization
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
@@ -108,6 +110,7 @@ read.delete();
 
 To read the linked state of *PDF417* and *Micro PDF417* barcodes, use the [*IsLinked*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/pdf417extendedparameters/islinked/) property. This property is set when modes 906, 907, 912, 914, 915, 918, or 920 are present in the barcode data.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPdf417 with Linked state
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
@@ -134,6 +137,7 @@ reader.delete();
 
 To read the Code128 emulation state in *Micro PDF417* barcodes, use the [*IsCode128Emulation*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/pdf417extendedparameters/iscode128emulation/) property. This property is set when modes 908, 909, 910, or 911 are present in the barcode data.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate MacroPdf417 with Code128 Emulation state
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Aspose.Barcode");
@@ -169,6 +173,7 @@ To read metadata from *QR Code* barcodes, use the [*QrExtendedParameters*](https
 The following code snippet demonstrates how to retrieve metadata from a sample *QR Code* image with structured append.
 
    
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate QR with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
@@ -209,6 +214,7 @@ Metadata from *Aztec Code* barcodes can be accessed using the [*AztecExtendedPar
 
 The code snippet below illustrates how to retrieve metadata from a sample *Aztec Code* barcode.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an Aztec barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
@@ -246,6 +252,7 @@ Metadata from *DataMatrix* barcodes can be accessed using the [*DataMatrixExtend
 The [*IsReaderProgramming*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/datamatrixextendedparameters/isreaderprogramming/) property can be used to determine if the barcode data includes instructions for initializing or reprogramming the barcode reader.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with Reader Programming metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -275,6 +282,7 @@ The *Structured Append* properties indicate if the *DataMatrix* is part of a bar
 - [*StructuredAppendFileId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/datamatrixextendedparameters/structuredappendfileid/) – a value from 1 to 64516 that identifies the group of the sequence.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DataMatrix barcode with Structured Append metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
@@ -308,6 +316,7 @@ Metadata can be read from *DotCode* barcodes using the group of properties calle
 - [*DotCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/dotcodeextendedparameters/dotcodestructuredappendmodebarcodeid/) – the identifier of the barcode in the sequence, starting from 1 and must be less than or equal to the total number of barcodes.
 - [*DotCodeStructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/dotcodeextendedparameters/dotcodestructuredappendmodebarcodescount/) – the total number of barcodes in the sequence, ranging from 1 to 35.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a DotCode barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Åspóse.Barcóde©");
@@ -343,6 +352,7 @@ Metadata from *MaxiCode* barcodes can be read using [*MaxiCodeExtendedParameters
 - [*MaxiCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/maxicodeextendedparameters/maxicodestructuredappendmodebarcodeid/) – the barcode's sequence ID, starting from 1 and not exceeding the total number of barcodes.
 - [*MaxiCodeStructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/maxicodeextendedparameters/maxicodestructuredappendmodebarcodescount/) – the total number of barcodes in the sequence, between 2 and 8.
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a MaxiCode barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
@@ -379,6 +389,7 @@ reader.delete();
 - [*TwoDCodeText*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/gs1compositebarextendedparameters/twodcodetext/) – the value of the *2D* barcode in the *GS1 Composite* barcode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a GS1 Composite Bar barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
@@ -413,6 +424,7 @@ To read metadata from *DataBar* barcodes containing 2D components, use the [*Dat
 The following code sample demonstrates how to read metadata from a sample *DataBar* barcode with a 2D component (shown below).
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Databar barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarExpandedStacked", "ASPOSE.BARCODE");
@@ -446,6 +458,7 @@ For certain 1D symbologies, such as *EAN 13*, you can separate the decoded barco
 - [*CheckSum*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/onedextendedparameters/properties/checksum) – contains the result of the checksum calculation.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate an EAN 13 barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
@@ -477,6 +490,7 @@ reader.delete();
 - [*Code128DataPortions*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.barcoderecognition/code128extendedparameters/properties/code128dataportions) – stores the decoded parts of the input data along with information about their encoding mode.
 
 
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Generate a Code 128 barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose1234");

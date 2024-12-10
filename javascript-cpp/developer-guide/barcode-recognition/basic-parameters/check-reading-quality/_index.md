@@ -28,6 +28,7 @@ The [*Confidence*](https://reference.aspose.com/barcode/javascript-cpp/aspose.ba
 The following code snippet shows how to obtain the recognition quality estimate for a sample barcode image.
 
   
+[How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 // Recognize image
 console.log("ReadExtQuality:");
