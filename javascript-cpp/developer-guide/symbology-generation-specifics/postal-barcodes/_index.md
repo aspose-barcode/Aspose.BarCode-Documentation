@@ -37,27 +37,27 @@ The following code snippet shows how to adjust the height of *Planet* and *RM4SC
 ```javascript
 // Set Planet barcode BarHeight none
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set RM4SCC barcode BarHeight none
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set Planet barcode BarHeight 100 pixels
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 100;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "100px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set RM4SCC barcode BarHeight 100 pixels
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 100;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "100px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 ```
@@ -84,26 +84,26 @@ The following code sample demonstrates how to adjust the bar filling settings fo
 ```javascript
 // Set Planet barcode filled bars
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set RM4SCC barcode filled bars
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set Planet barcode empty bars
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.FilledBars = false;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set RM4SCC barcode empty bars
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.FilledBars = false;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -119,9 +119,9 @@ In the *Planet* symbology, each character is represented by five bars, with thre
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 20;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
+gen.Parameters.Barcode.Postal.PostalShortBarHeight = "20px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -134,9 +134,9 @@ The *Postnet* barcode type encodes each character using five bars, with three ba
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Postnet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 20;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
+gen.Parameters.Barcode.Postal.PostalShortBarHeight = "20px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -189,17 +189,17 @@ The following code snippet illustrates how to customize the short bar length in 
 ```javascript
 // Set Planet barcode ShortBarHeight 10 pixels
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
+gen.Parameters.Barcode.Postal.PostalShortBarHeight = "10px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set Planet barcode ShortBarHeight 30 pixels
 var gen = new BarCodeInstance.BarcodeGenerator("Planet", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 30;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
+gen.Parameters.Barcode.Postal.PostalShortBarHeight = "30px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -219,8 +219,8 @@ The following code sample demonstrates how to generate *RM4SCC* barcodes.
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123456ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -236,8 +236,8 @@ The following code snippet demonstrates how to generate *Dutch KIX* barcodes.
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("DutchKIX", "123456ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -256,29 +256,29 @@ The following code sample demonstrates how to generate *OneCode* barcodes.
 ```javascript
 // Create OneCode with 20 digits
 var gen = new BarCodeInstance.BarcodeGenerator("OneCode", "12345678901234567890");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create OneCode with 25 digits
 var gen = new BarCodeInstance.BarcodeGenerator("OneCode", "1234567890123456789012345");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create OneCode with 29 digits
 var gen = new BarCodeInstance.BarcodeGenerator("OneCode", "12345678901234567890123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create OneCode with 31 digits
 var gen = new BarCodeInstance.BarcodeGenerator("OneCode", "1234567890123456789012345678901");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -315,39 +315,39 @@ The following code snippet demonstrates how to generate *Australia Post* barcode
 ```javascript
 // Create AustraliaPost FCC 11
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "1101234567");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create AustraliaPost FCC 59 NTable
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "590123456701234");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.NTable;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create AustraliaPost FCC 62 NTable
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "620123456701234");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.NTable;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create AustraliaPost FCC 62 CTable
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "6201234567ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.CTable;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create AustraliaPost FCC 62
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "6201234567321032103210");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.Other;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -372,15 +372,15 @@ The following code sample demonstrates how to generate *Mailmark* barcodes of di
 ```javascript
 // Create Mailmark C Type
 var gen = new BarCodeInstance.BarcodeGenerator("Mailmark", "21B2254800659JW5O9QA6Y");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Create Mailmark L Type
 var gen = new BarCodeInstance.BarcodeGenerator("Mailmark", "41038422416563762EF61AH8T");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 

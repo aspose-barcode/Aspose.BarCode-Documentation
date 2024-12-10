@@ -33,8 +33,8 @@ The following code snippet demonstrates how to set the decoding format to *CTabl
 ```javascript
 // Generate Australia Post barcode with C Table encoding
 var gen = new BarCodeInstance.BarcodeGenerator("AustraliaPost", "6201234567ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
-gen.Parameters.Barcode.BarHeight.Pixels = 50;
+gen.Parameters.Barcode.XDimension = "4px";
+gen.Parameters.Barcode.BarHeight = "50px";
 gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = BarCodeInstance.CustomerInformationInterpretingType.CTable;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display the barcode image
 
@@ -64,8 +64,8 @@ The following code sample shows how to apply the decoding format with the *NTabl
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.BarHeight.Pixels = 50;
+    gen.Parameters.Barcode.XDimension = "4px";
+    gen.Parameters.Barcode.BarHeight = "50px";
     gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
     gen.Save($"{path}AustraliaPostNTable.png", BarCodeImageFormat.Png);
 }
@@ -94,8 +94,8 @@ The following code snippet demonstrates how to set the *Other* decoding format f
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.BarHeight.Pixels = 50;
+    gen.Parameters.Barcode.XDimension = "4px";
+    gen.Parameters.Barcode.BarHeight = "50px";
     gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.Other;
     gen.Save($"{path}AustraliaPostOther.png", BarCodeImageFormat.Png);
 }
@@ -125,8 +125,8 @@ The following code sample illustrates how to eliminate filling patters while usi
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567END"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.BarHeight.Pixels = 50;
+    gen.Parameters.Barcode.XDimension = "4px";
+    gen.Parameters.Barcode.BarHeight = "50px";
     gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
     gen.Save($"{path}AustraliaPostCTableIgnoreEnding.png", BarCodeImageFormat.Png);
 }
@@ -196,8 +196,8 @@ class NTableDecoder : AustraliaPostCustomerInformationDecoder
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.BarHeight.Pixels = 50;
+    gen.Parameters.Barcode.XDimension = "4px";
+    gen.Parameters.Barcode.BarHeight = "50px";
     gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
     gen.Save($"{path}AustraliaPostCustomerInformationDecoder.png", BarCodeImageFormat.Png);
 }

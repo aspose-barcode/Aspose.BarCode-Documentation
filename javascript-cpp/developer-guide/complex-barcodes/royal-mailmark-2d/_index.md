@@ -48,7 +48,7 @@ mailmark2D.ReturnToSenderPostCode = "QWE2";
 mailmark2D.DataMatrixType = BarCodeInstance.Mailmark2DType.Type_7;
 mailmark2D.CustomerContent = "CUSTOM";
 var generator = mailmark2D.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img7").src = generator.GenerateBarCodeImage(); // Display barcode image for Type 7
 
 
@@ -56,7 +56,7 @@ document.getElementById("img7").src = generator.GenerateBarCodeImage(); // Displ
 mailmark2D.DataMatrixType = BarCodeInstance.Mailmark2DType.Type_9;
 mailmark2D.CustomerContent = "CUSTOM DATA";
 generator = mailmark2D.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img9").src = generator.GenerateBarCodeImage(); // Display barcode image for Type 9
 
 
@@ -64,7 +64,7 @@ document.getElementById("img9").src = generator.GenerateBarCodeImage(); // Displ
 mailmark2D.DataMatrixType = BarCodeInstance.Mailmark2DType.Type_29;
 mailmark2D.CustomerContent = "CUSTOM DATA";
 generator = mailmark2D.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display barcode image for Type 29
 
 mailmark2D.delete();

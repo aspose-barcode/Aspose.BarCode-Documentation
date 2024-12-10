@@ -35,7 +35,7 @@ The following code snippet demonstrates how to extract Structured Append and Mac
 ```javascript
 // Generate MacroPdf417 with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 5;
 gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
 gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
@@ -85,7 +85,7 @@ Special modes indicators can be read from [*Pdf417ExtendedParameters*](https://r
 ```javascript
 // Generate MacroPdf417 with Reader Initialization
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 5;
 gen.Parameters.Barcode.Pdf417.IsReaderInitialization = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -114,7 +114,7 @@ To read the linked state of *PDF417* and *Micro PDF417* barcodes, use the [*IsLi
 ```javascript
 // Generate MacroPdf417 with Linked state
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.IsLinked = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -141,7 +141,7 @@ To read the Code128 emulation state in *Micro PDF417* barcodes, use the [*IsCode
 ```javascript
 // Generate MacroPdf417 with Code128 Emulation state
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Aspose.Barcode");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.IsCode128Emulation = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -177,7 +177,7 @@ The following code snippet demonstrates how to retrieve metadata from a sample *
 ```javascript
 // Generate QR with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 3;
 gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 1;
 gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = 123;
@@ -218,7 +218,7 @@ The code snippet below illustrates how to retrieve metadata from a sample *Aztec
 ```javascript
 // Generate an Aztec barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.Aztec.AztecSymbolMode = BarCodeInstance.AztecSymbolMode.FullRange;
 gen.Parameters.Barcode.Aztec.IsReaderInitialization = true;
 gen.Parameters.Barcode.Aztec.StructuredAppendBarcodeId = 2;
@@ -256,7 +256,7 @@ The [*IsReaderProgramming*](https://reference.aspose.com/barcode/javascript-cpp/
 ```javascript
 // Generate a DataMatrix barcode with Reader Programming metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.IsReaderProgramming = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -286,7 +286,7 @@ The *Structured Append* properties indicate if the *DataMatrix* is part of a bar
 ```javascript
 // Generate a DataMatrix barcode with Structured Append metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodesCount = 4;
 gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodeId = 2;
 gen.Parameters.Barcode.DataMatrix.StructuredAppendFileId = 4321;
@@ -320,7 +320,7 @@ Metadata can be read from *DotCode* barcodes using the group of properties calle
 ```javascript
 // Generate a DotCode barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DotCode.IsReaderInitialization = true;
 gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodesCount = 4;
 gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 2;
@@ -393,7 +393,7 @@ reader.delete();
 ```javascript
 // Generate a GS1 Composite Bar barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_C;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -428,7 +428,7 @@ The following code sample demonstrates how to read metadata from a sample *DataB
 ```javascript
 // Generate a Databar barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarExpandedStacked", "ASPOSE.BARCODE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.DataBar.Rows = 2;
 gen.Parameters.Barcode.DataBar.Is2DCompositeComponent = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -462,7 +462,7 @@ For certain 1D symbologies, such as *EAN 13*, you can separate the decoded barco
 ```javascript
 // Generate an EAN 13 barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Read EAN 13 metadata
@@ -494,7 +494,7 @@ reader.delete();
 ```javascript
 // Generate a Code 128 barcode with metadata
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose1234");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Read Code 128 metadata with data portions

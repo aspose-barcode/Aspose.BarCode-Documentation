@@ -160,8 +160,7 @@ Enhanced Metafile (EMF) is a vector image format used primarily in Windows for p
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "12345678");
 // Saving the barcode image as an EMF file
 gen.SaveExt("VectorImageEmf.emf", BarCodeInstance.BarCodeImageFormat.Emf);
-
-
+gen.delete();
 ``` 
  The examples of barcode labels created in TIFF and TIFFInCMYK formats are provided below.
 
@@ -191,8 +190,7 @@ The following code sample describes how to generate barcode images in the SVG fo
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "12345678");
 // Saving the barcode image as an SVG file
 gen.SaveExt("VectorImageSvg.svg", BarCodeInstance.BarCodeImageFormat.Svg);
-
-
+gen.delete();
 ``` 
   
 The example of a barcode label created in the SVG format is provided below.

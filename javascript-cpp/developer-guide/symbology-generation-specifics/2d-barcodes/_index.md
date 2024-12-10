@@ -23,6 +23,7 @@ gen.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QREncodeMode.ECIEncodin
 gen.Parameters.Barcode.QR.QrECIEncoding = BarCodeInstance.ECIEncodings.UTF8;
 gen.Parameters.Barcode.XDimension = "8px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```
 
 **PDF417**  
@@ -35,8 +36,9 @@ The following code snippet illustrates how to generate a *PDF417* barcode in Jav
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("PDF417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.PDF417.Rows = 6;
+gen.Parameters.Barcode.Pdf417.Rows = 6;
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```
 **Data Matrix**  
 *Data Matrix* is a 2D barcode type that allows encoding large amounts of data in a compact space. A single *Data Matrix* can hold up to 2,335 alphanumeric or 3,116 numerical characters, which is approximately ten times denser than standard 1D barcodes.
@@ -50,6 +52,7 @@ To create a *Data Matrix* barcode, use the following JavaScript code:
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "8px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```
 **Aztec Code**  
 *Aztec Code* is a highly efficient 2D symbology that uses square modules with a unique finder pattern in the center of the barcode. This allows barcode scanners to identify cell locations required for reading. The *Aztec Code* symbology supports encoding any sequence of bytes and ensures accurate data recognition.
@@ -63,6 +66,7 @@ To generate an *Aztec* barcode, use the following JavaScript code:
 var gen = new BarCodeInstance.BarcodeGenerator("Aztec", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension = "8px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```
 **Micro QR Code**  
 The *Micro QR Code* symbology offers high data density in a compact square shape. Unlike the regular *QR Code*, which has three position detection patterns, the *Micro QR Code* has only one. This makes it ideal for applications where space is limited.
@@ -77,6 +81,7 @@ var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.QR.QrEncodeType = BarCodeInstance.QREncodeType.ForceMicroQR;
 gen.Parameters.Barcode.XDimension = "8px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```
 
 **Compact PDF417**  
@@ -93,4 +98,5 @@ var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true;
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 document.getElementById("img").src = gen.GenerateBarCodeImage();
+gen.delete();
 ```

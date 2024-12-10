@@ -23,7 +23,7 @@ The following code sample shows how to extract the data and barcode type from a 
 ```javascript
 // Create a QR barcode
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display QR code image
 
 // Recognize the QR barcode from the image

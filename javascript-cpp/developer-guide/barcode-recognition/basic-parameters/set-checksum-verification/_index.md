@@ -23,7 +23,7 @@ The following code snippet demonstrates how to configure checksum validation for
 ```javascript
 // Create a Code 11 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code11", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Read barcode image with ChecksumValidation.Default being set
@@ -70,7 +70,7 @@ The following code sample demonstrates how to configure barcode reading with opt
 ```javascript
 // Create a Code 39 Extended barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "123456");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.IsChecksumEnabled = BarCodeInstance.EnableChecksum.Yes;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 

@@ -40,7 +40,7 @@ The following code sample demonstrates how to set the layout for a generated Dot
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
 
 // Set the XDimension (dot size) to 10 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // Set columns to 18 and save the image
 gen.Parameters.Barcode.DotCode.Columns = 18;
@@ -205,7 +205,7 @@ The following code sample demonstrates how to enable the *Structured Append* mod
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
 
 // Set the X dimension to 10 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // Set DotCode structured append mode
 gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 3;
@@ -229,7 +229,7 @@ By default, the ratio between X and Y coordinates in a DotCode barcode equals to
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
 
 // Set the X dimension to 10 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // Set aspect ratio to 0.5
 gen.Parameters.Barcode.DotCode.AspectRatio = 0.5;
@@ -250,7 +250,7 @@ To encode a special flag indicating that the data in a DotCode barcode is intend
 var gen = new BarCodeInstance.BarcodeGenerator("DotCode", "Aspose");
 
 // Set the X dimension to 10 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // Set flag indicating that the data is encoded for reader initialization
 gen.Parameters.Barcode.DotCode.IsReaderInitialization = true;

@@ -97,7 +97,7 @@ Here's an example code snippet to generate *EAN 13* barcodes.
 ```javascript
 // Generate an EAN13 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -134,7 +134,7 @@ The code example below demonstrates how to create a *GS1 Code 128* barcode.
 ```javascript
 // Generate a GS1 Code128 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1Code128", "(02)04006664241007(37)1");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -184,7 +184,7 @@ The code example below shows how to generate a *Postnet* barcode.
 ```javascript
 // Generate a Postnet barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Postnet", "1159628792");
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.Barcode.XDimension = "3px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -203,7 +203,7 @@ The following code snippet demonstrates how to generate an *RM4SCC* barcode.
 ```javascript
 // Generate an RM4SCC barcode
 var gen = new BarCodeInstance.BarcodeGenerator("RM4SCC", "123ABC");
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.Barcode.XDimension = "3px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();

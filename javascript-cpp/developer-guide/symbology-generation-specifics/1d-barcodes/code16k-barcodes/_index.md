@@ -28,7 +28,7 @@ The following code demonstrates how to set the height for *Code 16K* barcodes by
 ```javascript
 // Generate Code 16K barcode with different aspect ratios
 var gen = new BarCodeInstance.BarcodeGenerator("Code16K", "Aspose.Barcode");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set Code 16K aspect ratio 10
 gen.Parameters.Barcode.Code16K.AspectRatio = 10;
@@ -59,7 +59,7 @@ The following code demonstrates how to customize the quiet zone settings for *Co
 ```javascript
 // Generate Code 16K barcode with different quiet zone settings
 var gen = new BarCodeInstance.BarcodeGenerator("Code16K", "Aspose.Barcode");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set Code 16K quiet zone 10 (left and right)
 gen.Parameters.Barcode.Code16K.QuietZoneLeftCoef = 10;

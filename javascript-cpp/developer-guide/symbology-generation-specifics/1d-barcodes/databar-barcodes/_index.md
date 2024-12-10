@@ -36,14 +36,14 @@ The following code snippet demonstrates how to set barcode height for continuous
 ```javascript
 // Generate GS1 DataBar OmniDirectional barcode with different bar heights
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarOmniDirectional", "(01)12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set bar height to 30 pixels
-gen.Parameters.Barcode.BarHeight.Pixels = 30;
+gen.Parameters.Barcode.BarHeight = "30px";
 document.getElementById("img30").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set bar height to 60 pixels
-gen.Parameters.Barcode.BarHeight.Pixels = 60;
+gen.Parameters.Barcode.BarHeight = "60px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -67,7 +67,7 @@ The following code snippet demonstrates how to set the aspect ratio for stacked 
 ```javascript
 // Generate GS1 DataBar Stacked OmniDirectional barcode with different aspect ratios
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set DataBar AspectRatio to 15
 gen.Parameters.Barcode.DataBar.AspectRatio = 15;
@@ -171,12 +171,12 @@ The following code snippet demonstrates how to set the aspect ratio for stacked 
 ```javascript
 // Generate GS1 DataBar Expanded barcode with 2D component flag enabled/disabled
 var gen = new BarCodeInstance.BarcodeGenerator("DatabarStackedOmniDirectional", "(01)12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
-gen.Parameters.Barcode.AspectRatio = 2;
-document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
+gen.Parameters.Barcode.DataBar.AspectRatio = 2;
+document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
 

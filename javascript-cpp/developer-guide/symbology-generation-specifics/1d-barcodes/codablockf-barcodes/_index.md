@@ -28,7 +28,7 @@ The following code demonstrates how to adjust the height of *Codablock-F* barcod
 
 // Generate CodablockF barcode with different aspect ratios
 var gen = new BarCodeInstance.BarcodeGenerator("CodablockF", "Aspose");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set CodablockF aspect ratio to 15
 gen.Parameters.Barcode.Codablock.AspectRatio = 15;
@@ -62,7 +62,7 @@ The following code demonstrates how to set layout settings for *Codablock-F* bar
 ```javascript
 // Generate CodablockF barcode with specified columns and rows
 var gen = new BarCodeInstance.BarcodeGenerator("CodablockF", "Aspose.Barcode");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set CodablockF to 4 columns
 gen.Parameters.Barcode.Codablock.Columns = 4;

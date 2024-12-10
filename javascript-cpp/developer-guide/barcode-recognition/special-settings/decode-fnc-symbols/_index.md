@@ -17,7 +17,7 @@ The following code snippet demonstrates how to handle FNC symbols when reading a
 ```javascript
 // Create barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose<FNC1><FNC2><FNC3>");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display the barcode image
 
 // Read barcode image with StripFNC set to false

@@ -34,7 +34,7 @@ Below are code snippets that demonstrate how to generate GS1-compatible barcodes
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1Code128", "(01)12345678901231(21)ASPOSE(30)9876");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -47,7 +47,7 @@ gen.delete();
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1DataMatrix", "(01)12345678901231(21)ASPOSE(30)9876");
-gen.Parameters.Barcode.XDimension.Pixels = 8;
+gen.Parameters.Barcode.XDimension = "8px";
 gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = BarCodeInstance.DataMatrixVersion.ECC200_12x36;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -75,7 +75,7 @@ Below, the code samples are provided to explain how to generate barcodes with co
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon, "123456789012(8110)ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
 ```
 
@@ -85,7 +85,7 @@ gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("UpcaGs1Code128Coupon", "123456789012(8110)ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
@@ -106,17 +106,17 @@ The following code snippet shows how to modify the size of spacing between coupo
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("UpcaGs1Code128Coupon", "123456789012(8110)ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set coupon supplement space 30 pixels
-gen.Parameters.Barcode.Coupon.SupplementSpace.Pixels = 30;
+gen.Parameters.Barcode.Coupon.SupplementSpace = "30px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 var gen = new BarCodeInstance.BarcodeGenerator("UpcaGs1Code128Coupon", "123456789012(8110)ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 // Set coupon supplement space 50 pixels
-gen.Parameters.Barcode.Coupon.SupplementSpace.Pixels = 50;
+gen.Parameters.Barcode.Coupon.SupplementSpace = "50px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 

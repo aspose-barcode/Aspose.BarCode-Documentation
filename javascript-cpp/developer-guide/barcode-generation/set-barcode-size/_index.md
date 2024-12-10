@@ -12,12 +12,20 @@ This article outlines the capabilities provided by ***Aspose.BarCode for JavaScr
 
 ## **Overview**
 In Cartesian coordinate systems, image data are represented as the coordinates of pixels or drawable objects for raster or vector images, respectively.  
-In ***Aspose.BarCode for JavaScript via C++***, to link these coordinates to real-world measurement units, such as inches or millimeters, the [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) class includes the [*Unit*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/unit) class with its [*Resolution*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/unit/properties/resolution) property, which is measured in dots per inch (dpi). The *Unit* class automatically converts barcode size values defined in pixels, millimeters, inches, or points into the selected measurement units. This conversion allows real-world measurements to be translated into pixels for barcode image generation.
+In ***Aspose.BarCode for JavaScript via C++***, to link these coordinates to real-world measurement units, such as inches or millimeters, the [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) class uses common notation like "1px", "2mm", "3in", "4pt". 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out [Aspose Technical Support](/barcode/javascript-cpp/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 
 ## **Define Barcode Size in Different Units**
-The [*Unit*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/unit) class sets measurement units for parameters of the [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) class, such as *BarCodeHeight*, *BarCodeWidth*, *XDimension*, and *FontUnit*. In ***Aspose.BarCode for JavaScript via C++***, this class represents the .NET [*GraphicsUnit Enum*](https://docs.microsoft.com/uk-ua/dotnet/api/system.drawing.graphicsunit?view=windowsdesktop-5.0). The *Unit* class supports conversions between measurement units: *Inches*, *Millimeters*, *Pixels*, *Point* (1/72 inch), or *Document* (1/300 inch). By default, the size measurement unit for barcode generation is *Millimeters*.
+The [*BarcodeGenerator*](https://reference.aspose.com/barcode/javascript-cpp/aspose.barcode.generation/barcodegenerator) class provides several parameters to configure the size of a barcode. These include:
+
+- **BarCodeHeight**  
+- **BarCodeWidth**  
+- **XDimension**  
+- **FontUnit**  
+
+You can adjust these parameters to customize the barcode dimensions according to your requirements.
+
 
 Barcode images generated with different unit settings (three pixels and two millimeters) are shown below.
 
@@ -35,12 +43,12 @@ The following code snippet shows how to set up these configurations as in the pr
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 
 // Set unit size in 3 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.Barcode.XDimension = "3px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image with unit in 3 pixels
 
 // Set unit size in 2 millimeters
-gen.Parameters.Barcode.XDimension.Millimeters = 2;
-document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image with unit in 2 millimeters
+gen.Parameters.Barcode.XDimension = "2mm";
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image with unit in 2 millimeters
 
 // Cleanup
 gen.delete();
@@ -66,14 +74,14 @@ The following code example illustrates how to set the resolution for a barcode i
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 
 // Set unit size to 1 millimeter and resolution to 96 DPI
-gen.Parameters.Barcode.XDimension.Millimeters = 1;
+gen.Parameters.Barcode.XDimension = "1mm";
 gen.Parameters.Resolution = 96;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set unit size to 1 millimeter and resolution to 300 DPI
-gen.Parameters.Barcode.XDimension.Millimeters = 1;
+gen.Parameters.Barcode.XDimension = "1mm";
 gen.Parameters.Resolution = 300;
-document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
+document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
 

@@ -25,7 +25,7 @@ You can save the state of a [*BarcodeGenerator*](https://reference.aspose.com/ba
 
 // Generate a Macro PDF417 barcode with metadata and export settings
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 
 // Set PDF417 metadata

@@ -37,7 +37,7 @@ The following code snippet demonstrates how to set the *ECC 200* encoding standa
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
 
 // Set the X dimension to 4 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 
 // Set DataMatrix ECC to 200 (Ecc200)
 gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc200;
@@ -73,7 +73,7 @@ The following code snippet demonstrates how to enable the *ECC 140* standard.
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
 
 // Set the X dimension to 4 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 
 // Set DataMatrix ECC to 140
 gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc140;
@@ -112,7 +112,7 @@ The following code snippet illustrates how to set the *Auto* encoding mode.
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose常に先を行く");
 
 // Set the X dimension to 4 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 
 // Set encode mode to Auto
 gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.Auto;
@@ -137,7 +137,7 @@ The following code sample shows how to use the *ASCII* encoding mode.
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
 
 // Set the X dimension to 4 pixels
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 
 // Set encode mode to ASCII
 gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.ASCII;
@@ -225,7 +225,7 @@ var codetext = codetextBuilder.GetExtendedCodetext();
 
 // Create a Data Matrix barcode generator instance
 var generator = new BarCodeInstance.BarcodeGenerator("DataMatrix", codetext);
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended";
 // Set the encode mode to Extended
 generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.Extended;
@@ -255,7 +255,7 @@ The following code sample explains how to set the *C40* encoding mode.
 ```javascript
 // Create a Data Matrix barcode generator instance with C40 encoding mode
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE.BARCODE");
-gen.Parameters.Barcode.XDimension.Pixels = 6;
+gen.Parameters.Barcode.XDimension = "6px";
 // Set the encode mode to C40
 gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = BarCodeInstance.DataMatrixEncodeMode.C40;
 
@@ -282,7 +282,7 @@ Data Matrix enables different layout variants, which can be set to generate barc
 ```javascript
 // Generate a DataMatrix barcode with Ecc200 and 22x22 rows/columns
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = BarCodeInstance.DataMatrixEccType.Ecc200;
 gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = BarCodeInstance.DataMatrixVersion.ECC200_22x22;
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -309,7 +309,7 @@ The following code snippet demonstrates how to use macro characters when generat
 ```javascript
 // Generate a DataMatrix barcode with macro character set to 05
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.MacroCharacters = BarCodeInstance.MacroCharacter.Macro05;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -340,7 +340,7 @@ reader.delete();
 ```javascript
 // Generate a DataMatrix barcode with aspect ratio 1
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.AspectRatio = 1;
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -364,7 +364,7 @@ gen.delete();
 ```javascript
 // Generate a DataMatrix barcode with structured append mode
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodeId = 3;
 gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodesCount = 5;
 gen.Parameters.Barcode.DataMatrix.StructuredAppendFileId = 150;
@@ -383,7 +383,7 @@ To encode a special flag denoting that barcode data is intended to initialize a 
 ```javascript
 // Generate a DataMatrix barcode with reader programming flag enabled
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "Aspose");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.DataMatrix.IsReaderProgramming = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 

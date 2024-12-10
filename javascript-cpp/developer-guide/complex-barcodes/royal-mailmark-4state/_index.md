@@ -38,7 +38,7 @@ mailmarkCode.DestinationPostCodePlusDPS = "EF61AH8T ";
 
 // Encode Mailmark 4-State Barcode
 var generator = mailmarkCode.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display barcode image
 
 mailmarkCode.delete();
@@ -65,7 +65,7 @@ mailmarkCode.DestinationPostCodePlusDPS = "EF61AH8T ";
 
 // Encode Mailmark 4-State Barcode
 var generator = mailmarkCode.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display barcode image
 
 generator.delete();

@@ -27,8 +27,8 @@ The code snippet below demonstrates how to generate supplement barcodes using *E
 ```javascript
 // Generate EAN-13 barcodes with different supplements
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 20;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.Supplement.SupplementSpace = "20px";
 
 // Set EAN-2 supplement
 gen.Parameters.Barcode.Supplement.SupplementData = "12";
@@ -57,15 +57,15 @@ The following code snippet demonstrates how to set the spacing between the main 
 ```javascript
 // Generate EAN-13 barcode with different supplement space settings
 var gen = new BarCodeInstance.BarcodeGenerator("EAN13", "1234567890128");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Supplement.SupplementData = "12345";
 
 // Set supplement space to 20 pixels
-gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 20;
+gen.Parameters.Barcode.Supplement.SupplementSpace = "20px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set supplement space to 40 pixels
-gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 40;
+gen.Parameters.Barcode.Supplement.SupplementSpace = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();

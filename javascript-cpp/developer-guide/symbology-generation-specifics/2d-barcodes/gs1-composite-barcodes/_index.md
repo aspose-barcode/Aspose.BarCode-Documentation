@@ -39,7 +39,7 @@ The *2D* component types include:
 //Encode GS1Composite barcode with EAN8 linear component
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, "20123451|(10)ABCD0123(240)0123456789"))
 {
-    gen.Parameters.Barcode.XDimension.Pixels = 2;
+    gen.Parameters.Barcode.XDimension = "2px";
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_A;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.EAN8;
@@ -53,7 +53,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "001234567895|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "UPCA"; // Set linear component to UPCA
@@ -69,7 +69,7 @@ gen.delete();
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "2001234567893|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "EAN13"; // Set linear component to EAN13
@@ -86,7 +86,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with UPCE linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "04252614|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "UPCE"; // Set linear component to UPCE
@@ -103,7 +103,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with DatabarOmniDirectional linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarOmniDirectional"; // Set linear component to Databar OmniDirectional
@@ -119,7 +119,7 @@ gen.delete();
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarStackedOmniDirectional"; // Set linear component to Databar Stacked OmniDirectional
@@ -136,7 +136,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with DatabarStacked linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)24012345678905|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarStacked"; // Set linear component to Databar Stacked
@@ -153,7 +153,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with DatabarLimited linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)15012345678907|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarLimited"; // Set linear component to Databar Limited
@@ -170,7 +170,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with DatabarExpanded linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345(15)991231|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarExpanded"; // Set linear component to Databar Expanded
@@ -187,7 +187,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with DatabarExpandedStacked linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345(15)991231|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "DatabarExpandedStacked"; // Set linear component to Databar Expanded Stacked
@@ -204,7 +204,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with GS1Code128 linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -236,7 +236,7 @@ These symbols can be used freely in [non-GS1 encoding mode](https://reference.as
 ```javascript
 //Encode GS1Composite barcode with CC_A 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -253,7 +253,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with CC_B 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_B;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -270,7 +270,7 @@ gen.delete();
 ```javascript
 //Encode GS1Composite barcode with CC_C 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|(10)ABCD0123(240)0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_C;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -288,7 +288,7 @@ Sometimes we need to encode *non GS1* data in *2D* component. For this you can u
 ```javascript
 //Encode GS1Composite barcode with not GS1 complaint 2D component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106(3202)012345|Aspose.Barcode");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_C;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -316,7 +316,7 @@ This mode allows encoding any sequence of [ISO/IEC 646](https://www.iso.org/stan
 ```javascript
 //Encode GS1Composite barcode Encodation Method 0: Digits
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|0123456789");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_B;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128"; // Set linear component to GS1 Code 128
@@ -335,7 +335,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 0: Capital Letters
 // Generate a GS1 Composite barcode with GS1Code128 linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_B;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -354,7 +354,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 0: Letters
 // Generate a GS1 Composite barcode with GS1Code128 linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|abcdefghijklmnopqrstuvwxyz");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_B;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -374,7 +374,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 0: Punctuation
 // Generate a GS1 Composite barcode with GS1Code128 linear component
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|!\"%&'()*+,-./:;<=>?_ ");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_B;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -396,7 +396,7 @@ In *Mode 10* you can encode supplement *2D* data with *GS1 AI* *11*, *17*, *10* 
 //Encode GS1Composite barcode Encodation Method 10: AI 10(Batch or lot number)
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (10) data
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|(10)0123");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -414,7 +414,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 10: AI 11(Production date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (11) data
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|(11)991231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -432,7 +432,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 10: AI 17(Expiration date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and AI (17) data
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|(17)991231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -450,7 +450,7 @@ gen.delete();
 //Encode GS1Composite barcode Encodation Method 10: AI 10(Batch or lot number) AI 11(Production date (YYMMDD))
 // Generate a GS1 Composite barcode with GS1Code128 linear component and multiple AI data (11) and (10)
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|(11)991231(10)0123");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";
@@ -471,7 +471,7 @@ In *Mode 11* you can encode *GS1 AI 90* and following data with maximal compacti
 //Encode GS1Composite barcode Encodation Method 11: AI 90 (containing alphanumeric data)
 // Generate a GS1 Composite barcode with GS1Code128 linear component and multiple AI data (90) and (10)
 var gen = new BarCodeInstance.BarcodeGenerator("GS1CompositeBar", "(01)98898765432106|(90)9K12(10)0123");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = BarCodeInstance.TwoDComponentType.CC_A;
 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = "GS1Code128";

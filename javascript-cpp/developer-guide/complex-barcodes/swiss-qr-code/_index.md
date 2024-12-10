@@ -49,7 +49,7 @@ swissQRCode.Bill.Debtor.CountryCode = "CH";
 
 // Encode Swiss QR Bill
 var generator = swissQRCode.GetGenerator();
-generator.Parameters.Barcode.XDimension.Pixels = 4;
+generator.Parameters.Barcode.XDimension = "4px";
 generator.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QREncodeMode.ECIEncoding;
 generator.Parameters.Barcode.QR.QrECIEncoding = BarCodeInstance.ECIEncodings.UTF8;
 document.getElementById("img").src = generator.GenerateBarCodeImage(); // Display QR code image

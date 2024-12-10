@@ -40,7 +40,7 @@ complexCodetext.Data.UnitOfMeasureID = 1;
 
 // Encode HIBC LIC data
 var gen = new BarCodeInstance.ComplexBarcodeGenerator(complexCodetext);
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display HIBC LIC barcode
 
 gen.delete();
@@ -73,7 +73,7 @@ complexCodetext.LinkCharacter = 'S'; // Set link character
 
 // Encode HIBC LIC Code
 var gen = new BarCodeInstance.ComplexBarcodeGenerator(complexCodetext);
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display HIBC LIC barcode
 
 gen.delete();
@@ -110,7 +110,7 @@ complexCodetext.SecondaryAndAdditionalData.DateOfManufacture = new Date(); // Cu
 
 // Encode HIBC LIC Combined Code
 var gen = new BarCodeInstance.ComplexBarcodeGenerator(complexCodetext);
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display HIBC LIC combined barcode
 
 gen.delete();

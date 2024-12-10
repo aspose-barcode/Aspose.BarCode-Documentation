@@ -45,9 +45,9 @@ The code snippet below demonstrates how to set *AutoSizeMode* to *None*.
 // Generate a DataMatrix barcode with custom image size settings
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.None;
-gen.Parameters.ImageWidth.Pixels = 300;
-gen.Parameters.ImageHeight.Pixels = 300;
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.ImageWidth = "300px";
+gen.Parameters.ImageHeight = "300px";
+gen.Parameters.Barcode.XDimension = "3px";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -71,9 +71,9 @@ The following code sample explains how to initialize the *AutoSizeMode* property
 // Generate a DataMatrix barcode with interpolation auto size mode and custom image size settings
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.Interpolation;
-gen.Parameters.ImageWidth.Pixels = 300;
-gen.Parameters.ImageHeight.Pixels = 300;
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.ImageWidth = "300px";
+gen.Parameters.ImageHeight = "300px";
+gen.Parameters.Barcode.XDimension = "3px";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -99,9 +99,9 @@ The code snippet below demonstrates how to set the *AutoSizeMode* property to *N
 // Generate a DataMatrix barcode with nearest auto size mode and custom image size settings
 var gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
 gen.Parameters.AutoSizeMode = BarCodeInstance.AutoSizeMode.Nearest;
-gen.Parameters.ImageWidth.Pixels = 300;
-gen.Parameters.ImageHeight.Pixels = 300;
-gen.Parameters.Barcode.XDimension.Pixels = 3;
+gen.Parameters.ImageWidth = "300px";
+gen.Parameters.ImageHeight = "300px";
+gen.Parameters.Barcode.XDimension = "3px";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -179,7 +179,7 @@ var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
 
 // Set border visible and size properties
 gen.Parameters.Border.Visible = true;
-gen.Parameters.Border.Width.Pixels = 5;
+gen.Parameters.Border.Width = "5px";
 gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Solid;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -220,21 +220,21 @@ var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
 
 // Set border properties
 gen.Parameters.Border.Visible = true;
-gen.Parameters.Border.Width.Pixels = 5;
+gen.Parameters.Border.Width = "5px";
 gen.Parameters.Border.DashStyle = BarCodeInstance.BorderDashStyle.Solid;
 
 // Set padding to 10 pixels
-gen.Parameters.Barcode.Padding.Left.Pixels = 10;
-gen.Parameters.Barcode.Padding.Top.Pixels = 10;
-gen.Parameters.Barcode.Padding.Right.Pixels = 10;
-gen.Parameters.Barcode.Padding.Bottom.Pixels = 10;
+gen.Parameters.Barcode.Padding.Left = "10px";
+gen.Parameters.Barcode.Padding.Top = "10px";
+gen.Parameters.Barcode.Padding.Right = "10px";
+gen.Parameters.Barcode.Padding.Bottom = "10px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set padding to 10 millimeters
-gen.Parameters.Barcode.Padding.Left.Millimeters = 10;
-gen.Parameters.Barcode.Padding.Top.Millimeters = 10;
-gen.Parameters.Barcode.Padding.Right.Millimeters = 10;
-gen.Parameters.Barcode.Padding.Bottom.Millimeters = 10;
+gen.Parameters.Barcode.Padding.Left = "10mm";
+gen.Parameters.Barcode.Padding.Top = "10mm";
+gen.Parameters.Barcode.Padding.Right = "10mm";
+gen.Parameters.Barcode.Padding.Bottom = "10mm";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 
@@ -264,26 +264,26 @@ The following code sample shows how to set bar width reduction.
 
 // Code128 barcode generation
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // Code 128 without bar width reduction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 0;
+gen.Parameters.Barcode.BarWidthReduction = "0px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Code 128 with 4 pixels bar width reduction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
+gen.Parameters.Barcode.BarWidthReduction = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // DataMatrix barcode generation
 gen = new BarCodeInstance.BarcodeGenerator("DataMatrix", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 10;
+gen.Parameters.Barcode.XDimension = "10px";
 
 // DataMatrix without bar width reduction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 0;
+gen.Parameters.Barcode.BarWidthReduction = "0px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // DataMatrix with 4 pixels bar width reduction
-gen.Parameters.Barcode.BarWidthReduction.Pixels = 4;
+gen.Parameters.Barcode.BarWidthReduction = "4px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();

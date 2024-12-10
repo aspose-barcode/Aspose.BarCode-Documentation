@@ -53,7 +53,7 @@ var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", codetext);
 // Set MaxiCode mode to 2
 gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = BarCodeInstance.MaxiCodeMode.Mode2;
 
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "MaxiCode Mode 2";
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -64,7 +64,7 @@ gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", codetext);
 // Set MaxiCode mode to 2
 gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = BarCodeInstance.MaxiCodeMode.Mode2;
 
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "MaxiCode Mode 2";
 document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -79,7 +79,7 @@ gen.delete();
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 // Set MaxiCode encode mode to 4
 gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = BarCodeInstance.MaxiCodeMode.Mode4;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -177,7 +177,7 @@ var codetext = textBuilder.GetExtendedCodetext();
 
 // Generate barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", codetext);
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 // Set encode mode to Extended
 gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = BarCodeInstance.MaxiCodeEncodeMode.Extended;
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
@@ -198,7 +198,7 @@ The following code snippet demonstrates how to configure the *Aspect Ratio* for 
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 // Set aspect ratio to 0.5
 gen.Parameters.Barcode.MaxiCode.AspectRatio = 0.5;
 
@@ -221,7 +221,7 @@ The structured append mode is a special generation mode that enables the combina
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MaxiCode", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 15;
+gen.Parameters.Barcode.XDimension = "15px";
 // Set MaxiCode structured append mode with barcode ID
 gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 3;
 gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 5;

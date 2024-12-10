@@ -24,7 +24,7 @@ The following code sample demonstrates how to retrieve information about the bar
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "Aspose1234");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Read Code 128 barcode with region information

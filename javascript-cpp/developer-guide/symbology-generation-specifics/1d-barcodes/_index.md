@@ -36,14 +36,14 @@ The following example demonstrates how to set different bar heights for a *Code 
 ```javascript
 // Generate Code128 barcode with specified bar heights
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set bar height to 40 pixels
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set bar height to 80 pixels
-gen.Parameters.Barcode.BarHeight.Pixels = 80;
+gen.Parameters.Barcode.BarHeight = "80px";
 document.getElementById("img2").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -69,7 +69,7 @@ Below is an example of how to configure the bar filling mode for a *Code 128* ba
 ```javascript
 // Generate Code128 barcode with filled and empty bars
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set bars filled
 gen.Parameters.Barcode.FilledBars = true;
@@ -104,7 +104,7 @@ Below is an example of how to set the wide-to-narrow ratio for a *Code 39* barco
 ```javascript
 // Generate Code39Extended barcode with different Wide-to-Narrow ratios
 var gen = new BarCodeInstance.BarcodeGenerator("Code39FullASCII", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set Wide-to-Narrow Ratio to 2
 gen.Parameters.Barcode.WideNarrowRatio = 2;
@@ -137,7 +137,7 @@ The following code snippet demonstrates how to set the [*ThrowExceptionWhenCodeT
 ```javascript
 // Generate an ITF6 barcode with correct code text and correction check enabled
 var gen = new BarCodeInstance.BarcodeGenerator("ITF6", "123457");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.CodeText = "12345";
 gen.Parameters.Barcode.ThrowExceptionWhenCodeTextIncorrect = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image

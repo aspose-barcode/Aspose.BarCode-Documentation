@@ -40,7 +40,7 @@ var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 
 // Set the number of rows to 12 and unit size to 2 pixels
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Hide the code text
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None;
@@ -76,7 +76,7 @@ var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 
 // Set the number of rows to 12 and unit size to 2 pixels
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set code text location to above the barcode and save
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.Above;
@@ -108,7 +108,7 @@ The following code example shows how to set the desired barcode text alignment.
 // Generate a PDF417 barcode with various code text alignments
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set Codetext Left alignment
 gen.Parameters.Barcode.CodeTextParameters.Alignment = BarCodeInstance.TextAlignment.Left;
@@ -145,14 +145,14 @@ The following code snippet demonstrates how to modify the spacing between the ba
 // Generate a PDF417 barcode with different code text spacing
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set codetext space to 5 pixels
-gen.Parameters.Barcode.CodeTextParameters.Space.Pixels = 5;
+gen.Parameters.Barcode.CodeTextParameters.Space = "5px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set codetext space to 40 pixels
-gen.Parameters.Barcode.CodeTextParameters.Space.Pixels = 40;
+gen.Parameters.Barcode.CodeTextParameters.Space = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -181,14 +181,14 @@ The following code snippet demonstrates how to set the barcode text font in *Aut
 // Generate a PDF417 barcode with automatic font settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set automatic font mode and specify font properties
 gen.Parameters.Barcode.CodeTextParameters.FontMode = BarCodeInstance.FontMode.Auto;
 gen.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Times New Roman";
 gen.Parameters.Barcode.CodeTextParameters.Font.Style = BarCodeInstance.FontStyle.Underline;
 // Font size is ignored when FontMode is set to Auto
-gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 10;
+gen.Parameters.Barcode.CodeTextParameters.Font.Size = "10pt";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -207,14 +207,14 @@ The code snippet provided below explains how to set barcode text font in the *Ma
 // Generate a PDF417 barcode with manual font settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set manual font mode and specify font properties
 gen.Parameters.Barcode.CodeTextParameters.FontMode = BarCodeInstance.FontMode.Manual;
 gen.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Times New Roman";
 gen.Parameters.Barcode.CodeTextParameters.Font.Style = BarCodeInstance.FontStyle.Underline;
 // Set font size
-gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 10;
+gen.Parameters.Barcode.CodeTextParameters.Font.Size = "10pt";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -241,9 +241,9 @@ The following code sample demonstrates how to enable and disable the *NoWrap* mo
 // Generate a PDF417 barcode with text wrapping settings for long codetext
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Extremely long codetext for one row");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.CodeTextParameters.FontMode = BarCodeInstance.FontMode.Manual;
-gen.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 12;
+gen.Parameters.Barcode.CodeTextParameters.Font.Size = "12pt";
 
 // Text wrapping mode on
 gen.Parameters.Barcode.CodeTextParameters.NoWrap = false;
@@ -275,7 +275,7 @@ The following code snippet demonstrates how to replace barcode text for 2D barco
 // Generate a PDF417 barcode with replaced visible codetext
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Replace visible codetext for 2D barcodes
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Replace Codetext";
@@ -309,12 +309,12 @@ The following code snippet demonstrates how to make captions visible.
 // Generate a PDF417 barcode with captions above and below
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // Set top caption visible
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Text = "Caption Above";
-gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+gen.Parameters.CaptionAbove.Font.Size = "14pt";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set top caption invisible
@@ -323,7 +323,7 @@ gen.Parameters.CaptionAbove.Visible = false;
 // Set bottom caption visible
 gen.Parameters.CaptionBelow.Visible = true;
 gen.Parameters.CaptionBelow.Text = "Caption Below";
-gen.Parameters.CaptionBelow.Font.Size.Point = 14;
+gen.Parameters.CaptionBelow.Font.Size = "14pt";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -347,10 +347,10 @@ The following code sample demonstrates how to adjust the caption alignment.
 // Generate a PDF417 barcode with caption alignment settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Text = "Caption Above";
-gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+gen.Parameters.CaptionAbove.Font.Size = "14pt";
 
 // Set caption above left alignment
 gen.Parameters.CaptionAbove.Alignment = BarCodeInstance.TextAlignment.Left;
@@ -385,23 +385,23 @@ The following code snippet shows how to set the caption padding.
 // Generate a PDF417 barcode with caption padding settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Text = "Caption Above";
-gen.Parameters.CaptionAbove.Font.Size.Point = 14;
+gen.Parameters.CaptionAbove.Font.Size = "14pt";
 
 // Set all padding values around the caption to 5 pixels
-gen.Parameters.CaptionAbove.Padding.Left.Pixels = 5;
-gen.Parameters.CaptionAbove.Padding.Top.Pixels = 5;
-gen.Parameters.CaptionAbove.Padding.Right.Pixels = 5;
-gen.Parameters.CaptionAbove.Padding.Bottom.Pixels = 5;
+gen.Parameters.CaptionAbove.Padding.Left = "5px";
+gen.Parameters.CaptionAbove.Padding.Top = "5px";
+gen.Parameters.CaptionAbove.Padding.Right = "5px";
+gen.Parameters.CaptionAbove.Padding.Bottom = "5px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // Set all padding values around the caption to 40 pixels
-gen.Parameters.CaptionAbove.Padding.Left.Pixels = 40;
-gen.Parameters.CaptionAbove.Padding.Top.Pixels = 40;
-gen.Parameters.CaptionAbove.Padding.Right.Pixels = 40;
-gen.Parameters.CaptionAbove.Padding.Bottom.Pixels = 40;
+gen.Parameters.CaptionAbove.Padding.Left = "40px";
+gen.Parameters.CaptionAbove.Padding.Top = "40px";
+gen.Parameters.CaptionAbove.Padding.Right = "40px";
+gen.Parameters.CaptionAbove.Padding.Bottom = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 
@@ -426,14 +426,14 @@ The following code snippet illustrates how to adjust the caption font settings.
 // Generate a PDF417 barcode with a custom caption font
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Text = "Caption Above";
 
 // Set caption font properties
 gen.Parameters.CaptionAbove.Font.FamilyName = "Lucida Handwriting";
 gen.Parameters.CaptionAbove.Font.Style = BarCodeInstance.FontStyle.Underline;
-gen.Parameters.CaptionAbove.Font.Size.Point = 10;
+gen.Parameters.CaptionAbove.Font.Size = "10pt";
 
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -457,10 +457,10 @@ The following code snippet demonstrates how to enable the *NoWrap* mode for a ba
 // Generate a PDF417 barcode with caption text wrapping settings
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Text = "Caption Above";
-gen.Parameters.CaptionAbove.Font.Size.Point = 28;
+gen.Parameters.CaptionAbove.Font.Size = "28pt";
 
 // Set caption text wrapping mode
 gen.Parameters.CaptionAbove.NoWrap = false;

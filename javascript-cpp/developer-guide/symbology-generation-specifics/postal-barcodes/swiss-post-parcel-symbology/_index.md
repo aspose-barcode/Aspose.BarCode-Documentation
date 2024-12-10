@@ -50,8 +50,8 @@ This example demonstrates how to generate *Swiss Post Parcel* barcodes for *Dome
 
 //generate a Swiss Post Domestic Mail barcode with the original identifier
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "98.34.123456.12345678");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 //read the current barcode value
@@ -68,8 +68,8 @@ reader.delete();
 
 //generate a Swiss Post Domestic Mail barcode with the 18-digit code
 gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "983412345612345678");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 //read the current barcode value
@@ -107,8 +107,8 @@ The following example demonstrates how to generate **Swiss Post Parcel** barcode
 ```javascript
 // Generate a Swiss Post International Mail barcode with a correct checksum
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "RM999605013CH");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 // Read the generated barcode
@@ -125,8 +125,8 @@ reader.delete();
 
 // Generate a Swiss Post International Mail barcode with an erroneous checksum
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "RM999605017CH");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 // Read the generated barcode
@@ -143,8 +143,8 @@ reader.delete();
 
 // Generate a Swiss Post International Mail barcode without a checksum
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "RM99960501CH");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 document.getElementById("img").src = gen.GenerateBarCodeImage();
 
 // Read the generated barcode
@@ -186,13 +186,13 @@ This example demonstrates how to generate *Swiss Post Parcel* barcodes for indic
 
 // Generate a Swiss Post Additional Service barcode
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "0327");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Alignment = BarCodeInstance.TextAlignment.Left; // Align text to the left
 gen.Parameters.CaptionAbove.Text = "AR"; // Display "AR" above the barcode
-gen.Parameters.CaptionAbove.Font.Size.Pixels = 24;
+gen.Parameters.CaptionAbove.Font.Size = "24px";
 gen.Parameters.CaptionAbove.Font.Style = BarCodeInstance.FontStyle.Bold;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -224,13 +224,13 @@ reader.delete();
 
 // Generate a Swiss Post Additional Service barcode
 var gen = new BarCodeInstance.BarcodeGenerator("SwissPostParcel", "0327");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Alignment = BarCodeInstance.TextAlignment.Left; // Align text to the left
 gen.Parameters.CaptionAbove.Text = "AR"; // Display "AR" above the barcode
-gen.Parameters.CaptionAbove.Font.Size.Pixels = 24;
+gen.Parameters.CaptionAbove.Font.Size = "24px";
 gen.Parameters.CaptionAbove.Font.Style = BarCodeInstance.FontStyle.Bold;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -247,13 +247,13 @@ reader.delete();
 
 // Generate a Swiss Post Additional Service barcode in the form of Code 128
 var gen = new BarCodeInstance.BarcodeGenerator("Code128", "0327");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
-gen.Parameters.Barcode.BarHeight.Pixels = 40;
+gen.Parameters.Barcode.XDimension = "2px";
+gen.Parameters.Barcode.BarHeight = "40px";
 gen.Parameters.Barcode.CodeTextParameters.Location = BarCodeInstance.CodeLocation.None; // No code text display
 gen.Parameters.CaptionAbove.Visible = true;
 gen.Parameters.CaptionAbove.Alignment = BarCodeInstance.TextAlignment.Left; // Align text to the left
 gen.Parameters.CaptionAbove.Text = "AR"; // Display "AR" above the barcode
-gen.Parameters.CaptionAbove.Font.Size.Pixels = 24;
+gen.Parameters.CaptionAbove.Font.Size = "24px";
 gen.Parameters.CaptionAbove.Font.Style = BarCodeInstance.FontStyle.Bold;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 

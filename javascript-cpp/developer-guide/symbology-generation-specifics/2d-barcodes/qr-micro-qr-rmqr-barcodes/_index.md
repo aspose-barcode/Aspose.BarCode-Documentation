@@ -43,14 +43,14 @@ The code sample and barcode images below are provided to illustrate how to gener
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 // Auto (by default)
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set QR version 05
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.QrVersion = BarCodeInstance.QRVersion.Version05;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -68,14 +68,14 @@ The code sample and barcode images below are provided to illustrate how to gener
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("MicroQR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 // Auto (by default)
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set MicroQR M4 version
 var gen = new BarCodeInstance.BarcodeGenerator("MicroQR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.MicroQRVersion = BarCodeInstance.MicroQRVersion.M4;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -93,14 +93,14 @@ The code sample and barcode images below are provided to illustrate how to gener
 [How to get *BarCodeInstance*](/barcode/javascript-cpp/get-barcode-module-instance/)
 ```javascript
 var gen = new BarCodeInstance.BarcodeGenerator("RectMicroQR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 // Auto (by default)
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Set RectMicroQR R11x77 version
 var gen = new BarCodeInstance.BarcodeGenerator("RectMicroQR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.RectMicroQrVersion = BarCodeInstance.RectMicroQRVersion.R11x77;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -150,7 +150,7 @@ The following code sample demonstrates how to use the *ECI* mode:
 var str = "ΑΒΓΔΕ";
 
 var gen = new BarCodeInstance.BarcodeGenerator("QR", str);
-gen.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QrEncodeMode.ECI;
+gen.Parameters.Barcode.QR.QrEncodeMode = BarCodeInstance.QREncodeMode.ECI;
 gen.Parameters.Barcode.QR.ECIEncoding = BarCodeInstance.ECIEncodings.ISO_8859_7;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -219,7 +219,7 @@ The following code sample shows how to set the error correction level for genera
 ```javascript
 // Create a new BarcodeGenerator instance for QR code generation
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "A QR code is a type of matrix barcode invented in 1994");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 
 // Set error level L and save the QR code image
 gen.Parameters.Barcode.QR.QrErrorLevel = BarCodeInstance.QRErrorLevel.LevelL;
@@ -228,21 +228,21 @@ gen.delete();
 
 // Set error level M and save the QR code image
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "A QR code is a type of matrix barcode invented in 1994");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.QrErrorLevel = BarCodeInstance.QRErrorLevel.LevelM;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display QR image
 gen.delete();
 
 // Set error level Q and save the QR code image
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "A QR code is a type of matrix barcode invented in 1994");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.QrErrorLevel = BarCodeInstance.QRErrorLevel.LevelQ;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display QR image
 gen.delete();
 
 // Set error level H and save the QR code image
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "A QR code is a type of matrix barcode invented in 1994");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.QrErrorLevel = BarCodeInstance.QRErrorLevel.LevelH;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display QR image
 gen.delete();
@@ -265,14 +265,14 @@ The following code snippet shows how to set the *AspectRatio* value for *QR Code
 ```javascript
 // Generate a QR code with Aspect Ratio set to 1
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.AspectRatio = 1;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Generate a QR code with Aspect Ratio set to 2
 var gen = new BarCodeInstance.BarcodeGenerator("QR", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 4;
+gen.Parameters.Barcode.XDimension = "4px";
 gen.Parameters.Barcode.QR.AspectRatio = 2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 

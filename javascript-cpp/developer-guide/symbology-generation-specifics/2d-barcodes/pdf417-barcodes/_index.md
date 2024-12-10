@@ -40,7 +40,7 @@ url: /javascript-cpp/pdf417-barcodes/
 ```javascript
 // Generate a Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -58,7 +58,7 @@ gen.delete();
 ```javascript
 // Generate a compact Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true; // Set to truncated (compact) mode
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -79,7 +79,7 @@ gen.delete();
 ```javascript
 // Generate a Micro Pdf417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 
@@ -104,14 +104,14 @@ The *PDF417* barcode images below were generated using different layout settings
 ```javascript
 // Generate a Pdf417 barcode with 2 columns
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
 
 // Generate a Pdf417 barcode with 6 rows
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 0;
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -119,7 +119,7 @@ gen.delete();
 
 // Generate a Pdf417 barcode with 4 columns and 9 rows
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.Rows = 9;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -145,7 +145,7 @@ gen.delete();
 ```javascript
 // Generate a MicroPdf417 barcode with 2 columns
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "ASPOSE");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
 gen.delete();
@@ -179,7 +179,7 @@ The *PDF417* barcodes shown below were generated using different aspect ratio se
 ```javascript
 // Generate a Pdf417 barcode with an aspect ratio of 2
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.AspectRatio = 2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -187,7 +187,7 @@ gen.delete();
 
 // Generate a Pdf417 barcode with an aspect ratio of 5
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -206,7 +206,7 @@ gen.delete();
 ```javascript
 // Generate a MicroPdf417 barcode with an aspect ratio of 2
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.AspectRatio = 2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -214,7 +214,7 @@ gen.delete();
 
 // Generate a MicroPdf417 barcode with an aspect ratio of 5
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.AspectRatio = 5;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -309,7 +309,7 @@ The *PDF417* barcode family applies the [Reed-Solomon error correction](https://
 ```javascript
 // Set error level to 2
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = BarCodeInstance.Pdf417ErrorLevel.Level2;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode with error level 2
@@ -317,7 +317,7 @@ gen.delete();
 
 // Set error level to 5
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = BarCodeInstance.Pdf417ErrorLevel.Level5;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode with error level 5
@@ -345,7 +345,7 @@ The code snippet below demonstrates how to configure main metadata for *Macro PD
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 
 // Set metadata
@@ -395,7 +395,7 @@ Below is an example of how to configure optional metadata for *Macro PDF417* bar
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 
 // Set metadata
@@ -449,7 +449,7 @@ The following code sample demonstrates how to set this up for *Macro PDF417* bar
 ```javascript
 // Generate MacroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("MacroPdf417", "Åspóse.Barcóde©");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 
 // Set metadata
@@ -499,7 +499,7 @@ Codewords *903*, *904*, and *905* in *GS1 Micro PDF417* barcodes allow for encod
 ```javascript
 // Generate GS1 MicroPDF417 barcode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(01)12345678901231(240)ABCD123456789012345");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 
 // Save barcode image
@@ -531,7 +531,7 @@ Codewords *906* and *907* allow to encode any GS1 Application Identifiers in sho
 ```javascript
 // Generate GS1 MicroPDF417 barcode with linked mode
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(01)12345678901231(240)ABCD123456789012345");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.IsLinked = true;
 
@@ -565,7 +565,7 @@ Codeword *912* allows to encode GS1 Application Identifiers “17”, “15”, 
 ```javascript
 // Generate a GS1 Micro Pdf417 barcode for (17)991231(10)ABCD
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(17)991231(10)ABCD");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 2;
 gen.Parameters.Barcode.Pdf417.IsLinked = true;
 document.getElementById("img17_10").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -601,7 +601,7 @@ Codeword *914* allows in short form encoding “10” GS1 AI as the first identi
 ```javascript
 // Generate a GS1 Micro Pdf417 barcode for (10)ABCD12345(240)ABCD
 var gen = new BarCodeInstance.BarcodeGenerator("GS1MicroPdf417", "(10)ABCD12345(240)ABCD");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.IsLinked = true;
 document.getElementById("img10").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -627,7 +627,7 @@ To encode the special flag "921," which indicates that the barcode data is inten
 ```javascript
 // Generate a Pdf417 barcode with reader initialization flag set
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Aspose");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.IsReaderInitialization = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -655,7 +655,7 @@ You can encode special flag “918” indicating that current barcode is associa
 ```javascript
 // Generate a Pdf417 barcode with the "IsLinked" flag set for NON EAN.UCC Linked mode 918
 var gen = new BarCodeInstance.BarcodeGenerator("Pdf417", "Aspose");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 gen.Parameters.Barcode.Pdf417.IsLinked = true;
 document.getElementById("img").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -688,7 +688,7 @@ Special flags “908”, “909”, “910”, and “911” can be used to indi
 ```javascript
 // Encodes MicroPdf417 in Code 128 emulation mode with FNC1 in second position and Application Indicator "a", mode 908.
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "a\u001d1222322323");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.IsCode128Emulation = true;
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image
@@ -746,7 +746,7 @@ In ***Aspose.BarCode for JavaScript via C++***, developers can use macro charact
 ```javascript
 // Encodes MicroPdf417 Codewords 916 Macro strings 05
 var gen = new BarCodeInstance.BarcodeGenerator("MicroPdf417", "12345ABC");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 gen.Parameters.Barcode.Pdf417.MacroCharacters = BarCodeInstance.MacroCharacter.Macro05;
 document.getElementById("img1").src = gen.GenerateBarCodeImage(); // Display barcode image

@@ -30,7 +30,7 @@ The following code snippet demonstrates how to set the frame style for *ITF 14* 
 ```javascript
 // Generate ITF-14 barcodes with different border types
 var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 
 // ITF border type None
 gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.None;
@@ -73,15 +73,15 @@ The following code sample shows how to set different border thickness values usi
 
 // Generate ITF-14 barcodes with different border sizes
 var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Frame;
 
 // ITF border size 5 Pixels
-gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 5;
+gen.Parameters.Barcode.ITF.ItfBorderThickness = "5px";
 document.getElementById("img5").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 // ITF border size 15 Pixels
-gen.Parameters.Barcode.ITF.ItfBorderThickness.Pixels = 15;
+gen.Parameters.Barcode.ITF.ItfBorderThickness = "15px";
 document.getElementById("img15").src = gen.GenerateBarCodeImage(); // Display barcode image
 
 gen.delete();
@@ -104,7 +104,7 @@ The following code sample illustrates how to adjust the appearance of the quiet 
 ```javascript
 // Generate ITF-14 barcodes with different quiet zone sizes
 var gen = new BarCodeInstance.BarcodeGenerator("ITF14", "12345678901231");
-gen.Parameters.Barcode.XDimension.Pixels = 2;
+gen.Parameters.Barcode.XDimension = "2px";
 gen.Parameters.Barcode.ITF.ItfBorderType = BarCodeInstance.ITF14BorderType.Frame;
 
 // ITF quiet zone 10 * XDimension
