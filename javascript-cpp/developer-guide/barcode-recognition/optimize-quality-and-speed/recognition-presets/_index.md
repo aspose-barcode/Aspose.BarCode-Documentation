@@ -71,7 +71,7 @@ console.log("ReadQualityPresets:");
 console.log("ReadQualityPresets: HighPerformance");
 var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
 reader.QualitySettings = BarCodeInstance.QualitySettings.HighPerformance;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -81,7 +81,7 @@ for (var i = 0; i < reader.FoundCount; i++) {
 console.log("ReadQualityPresets: NormalQuality");
 var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
 reader.QualitySettings = BarCodeInstance.QualitySettings.NormalQuality;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -91,7 +91,7 @@ for (var i = 0; i < reader.FoundCount; i++) {
 console.log("ReadQualityPresets: HighQuality");
 var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
 reader.QualitySettings = BarCodeInstance.QualitySettings.HighQuality;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -101,7 +101,7 @@ for (var i = 0; i < reader.FoundCount; i++) {
 console.log("ReadQualityPresets: MaxQuality");
 var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
 reader.QualitySettings = BarCodeInstance.QualitySettings.MaxQuality;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -112,7 +112,7 @@ console.log("ReadQualityPresets: MaxQuality and Incorrect Barcodes");
 var reader = new BarCodeInstance.BarCodeReader(`${path}barcodes_different_quality.png`, "Code128,Code39Extended,Planet,QR,MicroQR,Pdf417,DataMatrix,Aztec");
 reader.QualitySettings = BarCodeInstance.QualitySettings.MaxQuality;
 reader.QualitySettings.AllowIncorrectBarcodes = true;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -146,9 +146,9 @@ The code snippet below demonstrates how to force the recognition of barcodes tha
 console.log("ReadIncorrectBarcodes:");
 // recognize image with disabled AllowIncorrectBarcodes
 console.log("AllowIncorrectBarcodes: false");
-var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR", "Pdf417");
+var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR,Pdf417");
 reader.QualitySettings.AllowIncorrectBarcodes = false;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
@@ -156,9 +156,9 @@ for (var i = 0; i < reader.FoundCount; i++) {
 
 // recognize image with enabled AllowIncorrectBarcodes
 console.log("AllowIncorrectBarcodes: true");
-var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR", "Pdf417");
+var reader = new BarCodeInstance.BarCodeReader(`${path}pdf417_qr_corrupted.png`, "QR,Pdf417");
 reader.QualitySettings.AllowIncorrectBarcodes = true;
-console.log(`Barcodes read: ${reader.ReadBarCodes().length}`);
+reader.ReadBarCodes();
 for (var i = 0; i < reader.FoundCount; i++) {
     const result = reader.FoundBarCodes(i);
     console.log(`${result.CodeType}: ${result.CodeText}`);
