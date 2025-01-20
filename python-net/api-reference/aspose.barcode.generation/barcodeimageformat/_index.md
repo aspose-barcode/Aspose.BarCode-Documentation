@@ -22,6 +22,7 @@ Specifies the file format of the image.
 |TIFF_IN_CMYK|Specifies the Tagged Image File Format (TIFF) image format in CMYK color model. <br/>            (Supported only on Windows platform, on *nix platforms is saved as Tiff)|
 |EMF|Specifies the Enhanced Metafile (EMF) image format.<br/>            (Supported only on Windows platform, on *nix platforms is saved as PNG)|
 |SVG|Specifies the Scalable Vector Graphics (SVG) image format.|
+|PDF|Specifies the Portable Document Format (PDF) image format.|
 
 ### See Also
 
