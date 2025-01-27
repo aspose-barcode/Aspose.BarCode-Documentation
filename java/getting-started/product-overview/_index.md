@@ -54,9 +54,7 @@ Aspose.BarCode for Java supports any operating system where Java JDK/JRE can be 
 
 ## **Supported Platforms**
 
-- Java Standard Edition 1.4 or greater
-- Java Enterprise Edition
-- Java Mobile Edition 3.0
+- Java Standard Edition version 1.8 or later
 
 ## **Licensing**
 

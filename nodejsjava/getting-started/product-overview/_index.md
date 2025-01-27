@@ -35,9 +35,6 @@ The list of all features can be found in [**Product Features**](https://docs.asp
 ***Aspose.BarCode for Node.js via Java*** is a platform-independent API that can be run on any platform (Windows, Linux, etc.) where Node.js and Java Bridge are installed.
 
 ## **Supported Platforms**
-- Java Standard Edition 1.4 or greater
-- Java Enterprise Edition
-- Java Mobile Edition 3.0
 
 ## **Licensing**
 License is required to get access to the advanced functionality of ***Aspose.BarCode for Node.js via Java***. The evaluation mode allows generating barcodes without any restrictions. However, watermarks are displayed on generated barcode images. Barcode recognition functionality is provided without limitations only for Code 39 barcodes. For all other barcode types, 30% of the decoded text will be masked. More information about how to buy and set the license is provided in [**Licensing**](/barcode/nodejsjava/licensing/). If you want to evaluate the full functionality of ***Aspose.BarCode for Node.js via Java***, you can obtain a temporary license that is valid for 30 days. Please refer to [How to get a Temporary License](https://purchase.aspose.com/temporary-license) for details.

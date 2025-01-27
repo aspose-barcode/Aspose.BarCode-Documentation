@@ -38,9 +38,7 @@ url: /java/aspose-barcode-for-android-via-java-features/
 #### **Utility Features**
 - Print barcode images.
 ### **Platforms Supported**
-- Java Standard Edition 1.4 or greater.
-- Java Enterprise Edition.
-- Java Mobile Edition 3.0.
+- Android SDK 26, Android 8.0 (Oreo).
 ### **Supported Barcode Symbologies**
 #### **Numeric Only Symbologies**
 - EAN13
