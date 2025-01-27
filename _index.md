@@ -41,28 +41,48 @@ The links to some useful resources can be found below.
 
 ![Aspose.BarCode for Java Product Logo](home_2.png)
 
-Welcome to Aspose.BarCode for Java
+Welcome to ***Aspose.BarCode for Java***
 
-Aspose.BarCode for Java is a robust and reliable barcode generation and recognition component, written in Java, it allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications.
+***Aspose.BarCode for Java*** is a robust and reliable barcode generation and recognition component, written in Java, it allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications.
 
-Aspose.BarCode for Java supports the most established barcode standards and barcode specifications. It can export to multiple image formats including: BMP, GIF, JPEG, PNG, and TIFF.
+***Aspose.BarCode for Java*** supports the most established barcode standards and barcode specifications.  
+It can export to multiple image formats:  
+- BMP
+- GIF
+- JPEG
+- PNG
+- TIFF
+- TIFF_IN_CMYK
+- EMF
+- SVG
+- PDF
 
-This section introduces Aspose.BarCode for Java and its features, gives examples as case studies, and lists some customers who choose to use Aspose.BarCode in their solutions. This section also includes information about Aspose.BarCode for Java [installation](https://docs.aspose.com/barcode/java/installation/), [evaluation](https://docs.aspose.com/barcode/java/licensing/) and [licensing](https://docs.aspose.com/barcode/java/licensing/). 
+Why Choose ***Aspose.BarCode for Java*** to Manage Barcodes? 
+
+***Aspose.BarCode for Java*** offers a versatile and powerful solution for managing barcodes.
+One key advantage is the ability to adjust barcode recognition engine variables, allowing you to balance reading quality and speed.
+One of its standout features is the ability to configure barcode recognition engine variables, allowing you to strike the perfect balance between reading quality and speed. This flexibility even enables the recognition of severely corrupted barcodes, ensuring reliability in challenging scenarios.
+The library also provides extensive customization options for barcode appearance and parameters. You can adjust settings such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and more, tailoring the output to fit your specific requirements.  
+Furthermore, ***Aspose.BarCode for Java*** supports a wide range of symbologies and offers robust functionality for both barcode generation and recognition. This makes it easy to implement barcode solutions that seamlessly integrate into your business processes, meeting your unique operational needs.
+
+
+This section introduces Aspose.BarCode for Java and its features, gives examples as case studies, and lists some customers who choose to use Aspose.BarCode in their solutions. This section also includes information about Aspose.BarCode for Java <a href="/barcode/java/installation/" target="_blank">installation</a>, <a href="/barcode/java/licensing/" target="_blank">evaluation and licensing</a>.
 
 {{% /alert %}} 
 
 Following are the links to some useful resources you may need to accomplish your tasks.
 
-- [Aspose.BarCode for Java Online Documentation](/barcode/java/)
-- [Aspose.BarCode for Java Features](https://docs.aspose.com/barcode/java/product-overview/)
-- [Aspose.BarCode for Java Release Notes](https://docs.aspose.com/barcode/java/release-notes/)
-- [Aspose.BarCode for Java Product Page](https://products.aspose.com/barcode/java)
-- [Install Aspose.BarCode for Java from Maven Repository](https://docs.aspose.com/barcode/java/installation/)
-- [Download Aspose.BarCode for Java](https://downloads.aspose.com/barcode/java)
-- [Download Code Examples from GitHub Repository](https://github.com/aspose-barcode/Aspose.Barcode-for-Java)
-- [Aspose.BarCode for Java API Reference Guide](https://reference.aspose.com/java/barcode)
-- [Aspose.BarCode for Java Free Support Forum](https://forum.aspose.com/c/barcode)
-- [Aspose.BarCode for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- <a href="/barcode/java/" target="_blank">Aspose.BarCode for Java Online Documentation</a>
+- <a href="/barcode/java/product-overview/" target="_blank">Aspose.BarCode for Java Features</a>
+- <a href="/barcode/java/release-notes/" target="_blank">Aspose.BarCode for Java Release Notes</a>
+- <a href="https://products.aspose.com/barcode/java" target="_blank">Aspose.BarCode for Java Product Page</a>
+- <a href="/barcode/java/installation/" target="_blank">Install Aspose.BarCode for Java from Maven Repository</a>
+- <a href="https://downloads.aspose.com/barcode/java" target="_blank">Download Aspose.BarCode for Java</a>
+- <a href="https://github.com/aspose-barcode/Aspose.Barcode-for-Java" target="_blank">Download Code Examples from GitHub Repository</a>
+- <a href="https://reference.aspose.com/java/barcode" target="_blank">Aspose.BarCode for Java API Reference Guide</a>
+- <a href="https://forum.aspose.com/c/barcode" target="_blank">Aspose.BarCode for Java Free Support Forum</a>
+- <a href="https://helpdesk.aspose.com/" target="_blank">Aspose.BarCode for Java Paid Support Helpdesk</a>
+
 
 ## Aspose.BarCode for C++
 {{% alert color="primary" %}}
