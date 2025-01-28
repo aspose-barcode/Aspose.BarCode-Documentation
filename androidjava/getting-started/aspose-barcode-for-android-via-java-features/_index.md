@@ -45,7 +45,7 @@ url: /java/aspose-barcode-for-android-via-java-features/
 - EMF
 - PDF
 ### **Platforms Supported**
-- Android SDK 26, Android 8.0 (Oreo).
+- Starting with Android SDK 26 and Android 8.0 (Oreo).
 ### **Supported Barcode Symbologies**
 ***Aspose.BarCode for Android via Java*** supports over 80
 different <a href="https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes" target="_blank">barcode types</a> used in a
