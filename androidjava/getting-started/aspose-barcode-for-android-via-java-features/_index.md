@@ -30,54 +30,44 @@ url: /java/aspose-barcode-for-android-via-java-features/
 - Create barcode images to image formats like JPEG, TIFF, PNG, TIFF, WMF, metafile etc.
 - Render barcode images on any device and create device resolution dependent images.
 #### **Input Image Formats**
-- JPG
+- JPEG
 - PNG
+- GIF
+- BMP
+- WEBP
+- HEIF/HEIC
 #### **Output Image Formats**
-- JPG
+- JPEG
 - PNG
-#### **Utility Features**
-- Print barcode images.
+- GIF
+- BMP
+- WEBP
+- EMF
+- PDF
 ### **Platforms Supported**
 - Android SDK 26, Android 8.0 (Oreo).
 ### **Supported Barcode Symbologies**
-#### **Numeric Only Symbologies**
-- EAN13
-- EAN8
-- UPCA
-- UPCE
-- BooklandEAN
-- Interleaved2of5
-- Standard2of5
-- MSI
-- Code11
-- Codabar
-- Postnet
-- Planet
-- EAN14(SCC14)
-- SSCC18
-- ITF14
-- Leticode
-- OPC
-#### **Alpha-Numeric Symbologies**
-- Code128
-- EAN128
-- Code39 Extended
-- Code39 Standard
-- Code93 Extended
-- Code93 Standard
-- Australia Post
-- Matrix 2 of 5
-- PZN
-- Deutsche Post Identcode
-- VIN
-#### **2D Symbologies**
-- Pdf417
-- DataMatrix
-- Aztec
-- QR
+***Aspose.BarCode for Android via Java*** supports over 80
+different <a href="https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes" target="_blank">barcode types</a> used in a
+variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. The detailed information
+about generating barcodes using various barcode standards can be found in
+section <a href="/barcode/java/generate-barcode-types/" target="_blank">Generation Specifics for Symbologies</a>.
 
-{{% alert color="primary" %}} 
+**Linear barcode types**, or *1D barcodes*, correspond to the first generation of one-dimensional barcodes (1D) that are
+used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding
+only numbers, while others permit encoding also letters.
 
-Aspose.BarCode for Android via Java provides encoding and decoding features for all above-mentioned symbologies, with exception of Australia Post and Aztec. At the moment we only support encoding for these two symbols.
+**DataBar barcodes** (former RSS-14) are 1D and 1D staked barcodes, which were developed to efficiently encode [*GS1
+Application Identifier*](https://ref.gs1.org/ai/?lang=en) data.
 
-{{% /alert %}}
+**Matrix barcodes**, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information.
+Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more
+efficient, as such barcodes contain more data per unit area, and most of them are self-correctable.
+
+**Postal barcodes** are specific symbologies used by postal services in different countries.
+
+**HIBC barcodes** encode data in [special format](https://www.hibcc.org/udi-labeling-standards/barcode-standards/) which
+is used in Health Industry. As transport, the barcodes use other 1D and 2D barcodes and encode data as Alpha-Numeric.
+
+**GS1 barcodes** use other 1D and 2D barcodes to encode [*GS1 Application Identifier*](https://ref.gs1.org/ai/?lang=en)
+data.
