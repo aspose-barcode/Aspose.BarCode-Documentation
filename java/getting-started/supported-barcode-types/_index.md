@@ -18,8 +18,9 @@ section <a href="/barcode/java/generate-barcode-types/" target="_blank">Generati
 used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding
 only numbers, while others permit encoding also letters.
 
-**DataBar barcodes** (former RSS-14) are 1D and 1D staked barcodes, which were developed to efficiently encode [*GS1
-Application Identifier*](https://ref.gs1.org/ai/?lang=en) data.
+**DataBar barcodes** (former RSS-14) are 1D and 1D stacked barcodes, which were developed to efficiently encode 
+<a href="https://ref.gs1.org/ai/?lang=en" target="_blank">*GS1 Application Identifier*</a> data.
+
 
 **Matrix barcodes**, also known as *2D barcodes*, have been introduced as a two-dimensional way to encode information.
 Two-dimensional (2D) barcodes are generated using various symbols and shapes. This barcode type is considered to be more
@@ -27,11 +28,12 @@ efficient, as such barcodes contain more data per unit area, and most of them ar
 
 **Postal barcodes** are specific symbologies used by postal services in different countries.
 
-**HIBC barcodes** encode data in [special format](https://www.hibcc.org/udi-labeling-standards/barcode-standards/) which
-is used in Health Industry. As transport, the barcodes use other 1D and 2D barcodes and encode data as Alpha-Numeric.
+**HIBC barcodes** encode data in <a href="https://www.hibcc.org/udi-labeling-standards/barcode-standards/" target="_blank">special format</a> 
+which is used in Health Industry. As transport, the barcodes use other 1D and 2D barcodes and encode data as Alpha-Numeric.
 
-**GS1 barcodes** use other 1D and 2D barcodes to encode [*GS1 Application Identifier*](https://ref.gs1.org/ai/?lang=en)
-data.
+
+**GS1 barcodes** use other 1D and 2D barcodes to encode 
+<a href="https://ref.gs1.org/ai/?lang=en" target="_blank">*GS1 Application Identifier*</a> data.
 
 | Barcode Family            | Barcode Types                                                                                                                                                                                                                   |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
