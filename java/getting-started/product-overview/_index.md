@@ -113,12 +113,76 @@ is valid for 30 days.
 Please refer to <a href="https://purchase.aspose.com/temporary-license" target="_blank">How to get a Temporary
 License</a> for details.
 
-## **Main Classes**
+## **Library Contents**
 
-***Aspose.BarCode for Java*** contains two main classes: [
-*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) for
-barcode scanning and reading, [
-*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) for
-barcode generation according to the specified format requirements. Namespace [
-*ComplexBarcode*](https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/package-frame) is
-developed separately to manage sophisticated barcode types, i.e. Swiss QR Code, MaxiCode, and HIBC LIC.
+***Aspose.BarCode for Java*** includes three main classes:  
+<a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader" target="_blank"><em>
+BarCodeReader</em></a> for barcode recognition,  
+<a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator" target="_blank"><em>
+BarcodeGenerator</em></a> for barcode generation according to the required format,
+<a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode" target="_blank"><em>  
+ComplexBarcode</em></a>, which handles specific barcode types such as Swiss QR Code, MaxiCode, and HIBC LIC.
+
+### **Class BarCodeReader**
+
+***Aspose.BarCode for Java*** provides
+the <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader" target="_blank"><em>
+BarCodeReader</em></a> class for barcode image recognition. To use it, first specify the symbology type in the constructor of <em>
+BarCodeReader</em> and then call
+the <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader#readBarCodes--" target="_blank"><em>
+readBarCodes()</em></a> method to read barcodes from an image. The <em>BarCodeReader</em> class utilizes computer vision algorithms to
+extract machine-readable data from the provided image.
+
+Image reading and barcode region identification can be performed for all detected barcodes in an image. 
+Before recognition, barcodes must be distinguished from other text lines or objects by detecting their edges.
+To achieve this, the <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader#readBarCodes--" target="_blank"><em>
+BarCodeReader.readBarCodes()</em></a> method is used. 
+Then, the barcode region is determined
+using <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeResult#getRegion--" target="_blank"><em>
+BarCodeResult.getRegion()</em></a>, which returns the detected barcode area along with its orientation angle.
+
+The class provides features for optimizing the balance between recognition speed and accuracy:
+
+- **Multi-threading support** – Utilizes multiple CPU cores to accelerate barcode recognition.
+- **Barcode type selection** – Defining only the required barcode types instead of using  
+  <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/decodetype/#ALL-SUPPORTED-TYPES" target="_blank"><em>DecodeType.ALL_SUPPORTED_TYPES</em></a> 
+  improves performance by reducing processing time.
+- **Quality settings** – Provides adjustable recognition parameters to handle various image conditions and distortions.
+- **Region selection** – Enables targeting specific areas in an image for optimized barcode detection.
+
+
+### **Class BarcodeGenerator**
+
+One of the key features of ***Aspose.BarCode for Java*** is barcode generation. 
+To generate a barcode, developers need to specify the symbology, set the code text (data to be encoded), 
+and configure appearance-related properties.
+
+The <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator" target="_blank"><em>
+BarcodeGenerator</em></a> class supports various 1D and 2D barcode types, including QR codes, and provides a unified interface for
+barcode creation. Developers can instantiate this class, configure the necessary properties, and save the generated barcode image
+according to customized settings.
+
+Two main parameters must be set:
+- <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator#setCodeText-java.lang.String-" target="_blank"><em>
+  CodeText</em></a> – Specifies the data to be encoded.
+- <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/EncodeTypes" target="_blank"><em>
+  EncodeTypes</em></a> – Defines the barcode symbology.
+
+The <em>EncodeTypes</em> property allows developers to assign any barcode type from the predefined set of supported symbologies
+available in the <em>BarcodeGenerator</em> class.
+
+### **ComplexBarcode**
+The <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode" target="_blank"><em>ComplexBarcode</em></a> 
+namespace enables the generation of barcodes that encode structured financial and postal data. 
+Currently, it supports the Swiss QR Code and Royal Mail 2D Mailmark symbologies.
+
+Swiss QR Code is used for managing QR bills in payment systems, replacing traditional payment slips. It contains all the necessary
+payment details required to initiate transactions or process QR invoices.
+
+The <em>ComplexBarcode</em> namespace includes the 
+<a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/SwissQRBill" target="_blank"><em> 
+SwissQRBill</em></a> and <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.complexbarcode/SwissQRCodetext" 
+target="_blank"><em>SwissQRCodetext</em></a> classes, which provide various functionalities for working with Swiss QR Codes, such 
+as retrieving or setting the creditor's account
+number, defining alternative payment schemes, specifying the payment amount, currency, and more.  
+
