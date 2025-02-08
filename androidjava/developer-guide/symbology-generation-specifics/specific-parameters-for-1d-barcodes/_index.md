@@ -22,7 +22,7 @@ This article describes how to manage these properties using specified classes an
   
 <!--The code snippet below explains how to set different values of bar height for *Code 128*.
      
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set BarHeight 40
@@ -42,7 +42,7 @@ For 1D barcodes, ***Aspose.BarCode for Android via Java*** provides a specific m
   
 <!--The following code sample demonstrates how to adjust the bar filling mode for *Code 128*.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set bars filled
@@ -64,7 +64,7 @@ In ***Aspose.BarCode for Android via Java***, the **wide-to-narrow ratio** defin
   
 <!--The code snippet provided below illustrates how to adjust the setting of the wide-to-narrow ratio for *Code 39*.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Wide-to-Narrow Ratio to 2
@@ -88,7 +88,7 @@ Developers can change this behaviour by using the *setThrowExceptionWhenCodeText
 
 In this example, the following exception will be thrown: "*Symbology ITF 6 - codetext is invalid*". 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF6, "123457");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //correct codetext with correction check

@@ -24,7 +24,7 @@ The library contains the *ReadBarCodes* method of class [*BarCodeReader*](https:
   
 <!--The following code snippet expplains how to specify target barcode types (i.e. *PDF417*, *QR Code*, *Code 128*, and *Code 39*). In this example, other barcodes (*DataMatrix* and *RM4SCC*) will be omitted.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -41,7 +41,7 @@ To load barcode recognition outputs, it is needed to call the *ReadBarCodes* met
   
 <!--The following code snippet explains how to obtain recognition results.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -62,7 +62,7 @@ First of all, barcodes can be scanned and recognized from image files. The full 
   
 <!--The following code snippet shows how to read barcodes from a file by specifying the path to the source image.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -74,7 +74,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
   
 <!--The following code snippet shows how to determine the path to the already existing recognition source object.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader())
 {
     //set path to image
@@ -91,7 +91,7 @@ In ***Aspose.BarCode for Android via Java***, it is possible to use a graphical 
   
 <!--The following code sample demonstrates how to set a bitmap object for barcode reading.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader(bmp, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
@@ -107,7 +107,7 @@ In ***Aspose.BarCode for Android via Java***, a stream (in a binary format) can 
   
 <!--The following code sample shows how to specify a source stream for barcode recognition.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Stream stream = new FileStream($"{path}multiple_codes.png", FileMode.Open, FileAccess.Read))
 using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
@@ -126,7 +126,7 @@ Target barcode types can be specified by grouping them in a list and passing it 
   
 <!--The following code snippet shows how to determine target barcode types (i.e. *Code 128*,*Code 39*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.barcoderecognition/DecodeType).
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
@@ -141,7 +141,7 @@ The other way to specify target barcode types is to determine them using a const
   
 <!--The following code sample demonstrates how to set target symbologies (i.e. *Code 39*, *Code 128*, and *RM4SCC*) using [*MultyDecodeType*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.barcoderecognition/MultyDecodeType).
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(new MultyDecodeType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC));
@@ -163,7 +163,7 @@ The required set can be specified in the *BarCodeReader* constructor or passed t
   
 <!--The following code snippet shows how to work with the *TYPES_2D* set.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Types2D))
 {
     Console.WriteLine("ReadTypes2D:");
@@ -182,7 +182,7 @@ To set one target area for barcode recognition, it is necessary to create an obj
 
 **Setting Target Region Using Class BarCodeReader**
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -196,7 +196,7 @@ using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, 
 {{< /highlight >}}
 
 **Setting Target Region Using SetBarCodeImage Method**
-{{< highlight csharp>}}
+{{< highlight java>}}
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -215,7 +215,7 @@ It is also possible to set several target areas for barcode detection within the
   
 <!--The following code snippet shows how to specify several target regions in the source image.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader())
 {
@@ -240,7 +240,7 @@ Both aforementioned methods throw an exception called [*RecognitionAbortedExcept
   
 <!--The following code snippet shows how to interrupt the recognition process.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {

@@ -23,7 +23,7 @@ Following *Code16K* barcodes have been created using various barcode height sett
   
 <!--The following code sample explains how to determine the height of *Code16K* barcode rows.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K aspect ratio 10
@@ -45,7 +45,7 @@ Following *Code16K* barcodes have been generated using various quiet zone settin
   
 <!--The following code snippet shows how to modify quiet zone settings for *Code16K* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K quiet zone 10

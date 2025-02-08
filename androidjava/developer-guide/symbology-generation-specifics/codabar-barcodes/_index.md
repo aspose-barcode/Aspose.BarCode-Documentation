@@ -26,7 +26,7 @@ Following barcode images have been created using various sets of start and stop 
   
 <!--The following code sample shows how to use various start and stop digits in *Codabar* barcodes. 
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set start A and stop A
@@ -71,7 +71,7 @@ Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*](http
   
 <!--The following code snippet shows how to set different checksum control modes (Mod10 and Mod16) for *Codabar* barcodes. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set None checksum

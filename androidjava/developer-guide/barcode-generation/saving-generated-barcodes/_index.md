@@ -24,7 +24,7 @@ contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert
 format.
 <!--The code sample given below explains how to use this setting.  
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 gen.Save($"{path}StoreImageAsFile.png", BarCodeImageFormat.Png);
 {{< /highlight >}}--> 
@@ -36,7 +36,7 @@ format. A stream can be viewed as a byte sequence abstraction. To save barcode i
 *BarcodeGenerator*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.generation/BarcodeGenerator)
 provides the public method *save*<!--, as shown in the code snippet below-->.
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 using (Stream str = new FileStream($"{path}StoreImageAsStream.png", FileMode.Create, FileAccess.Write))
 {
     BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
@@ -53,7 +53,7 @@ from instances of class [
 through the *generateBarCodeImage* method and then processed further.
 <!--The following code sample shows how to use this output option in ***Aspose.BarCode for Android via Java***.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 using (Bitmap bmp = gen.GenerateBarCodeImage())
     bmp.Save($"{path}StoreImageAsBitmap.png", ImageFormat.Png);
@@ -76,7 +76,7 @@ compression. In this case, barcode images will have large size and 24-bit color 
 contain losses and artifacts.
 <!--The code snippet provided below illustrates how to save barcode images in the BMP format.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as BMP
 gen.Save($"{path}RasterImageBmp.bmp", BarCodeImageFormat.Bmp);
@@ -93,7 +93,7 @@ format is the most preferable to generate barcode labels. Images created using t
 depth and no losses.
 <!--The following code sample explains how to save barcode images in the PNG format.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Png
 gen.Save($"{path}RasterImagePng.png", BarCodeImageFormat.Png);
@@ -110,7 +110,7 @@ creating both static and animated images. ***Aspose.BarCode for Android via Java
 only for black and white raster images. The code following code snippet explains how to generate barcodes in
 the GIF format.
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Gif
 gen.Save($"{path}RasterImageGif.gif", BarCodeImageFormat.Gif);
@@ -127,7 +127,7 @@ generating JPEG images require finding a trade-off between image quality and sto
 have artifacts and graphical noises. This file format is not recommended for barcode generation. The following
 code sample shows how to create JPEG barcode images.
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Jpeg
 gen.Save($"{path}RasterImageJpeg.jpeg", BarCodeImageFormat.Jpeg);
@@ -143,7 +143,7 @@ Tagged Image File Format (TIFF) is a lossless raster image format that allows cr
 quality and 32-bit color. Only a variation of this format, TIFFInCMYK, supports the CMYK color scheme. The
 code snippet provided below explains how to generate barcode images in the TIFF format.
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Tiff
 gen.Save($"{path}RasterImageTiff.tiff", BarCodeImageFormat.Tiff);
@@ -175,7 +175,7 @@ opens an EMF metafile through its graphics environment, dimension paraneters, pr
 other graphics properties of the source image do not get altered on any platform.
 <!--The following code sample shows how to generate EMF barcode images.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Emf
 gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
@@ -193,7 +193,7 @@ design requirements.
 
 <!--The following code snippet explains how to create SVG barcode images.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "12345678");
 //save as Svg
 gen.Save($"{path}VectorImageSvg.svg", BarCodeImageFormat.Svg);

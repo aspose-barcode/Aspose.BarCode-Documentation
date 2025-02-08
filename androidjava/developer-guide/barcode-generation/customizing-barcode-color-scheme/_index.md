@@ -27,7 +27,7 @@ The barcode image with background color set to *Color.Green* is provided below.
 
 <!--The following code sample explains how to adjust barcode background color.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
@@ -51,7 +51,7 @@ The barcode image below has been generated with the bar color setting *Color.Gre
   
 <!--The code snippet provided below explains how to modify bar color.  
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
@@ -73,7 +73,7 @@ Barcode border color can be adjusted through the *setColor* method of class [*Bo
   
 <!--The following code snippet shows how to customize border color in a barcode image.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
@@ -97,7 +97,7 @@ gen.Save($"{path}ColorBorder.png", BarCodeImageFormat.Png);
   
 <!--The following code snippet demonstrates how to change barcode text color.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
@@ -121,7 +121,7 @@ In ***Aspose.BarCode for Android in Java***, barcode images can be generated wit
   
 <!--The following code snippet demonstrates how to modify color for top and bottom captions.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Parameters.Barcode.XDimension.Pixels = 3;
