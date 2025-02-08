@@ -6,29 +6,53 @@ url: /java/aspose-barcode-for-android-via-java-features/
 ---
 
 ## **Aspose.BarCode for Android via Java**
-### **General Barcode Features**
-- Specify different kinds of symbologies.
-- Barcode Code text (data to be encoded to barcode image) can be set and its appearance-related properties like font, back color, fore color, alignment and location (hide, above, below) etc. can also be modified.
-- Barcode Caption and its font, back color, fore color, alignment and location (hide, above, below) can be managed.
-- Checksum and Supplement Data are supported.
-- The bar height of the barcode images can be customized.
-- X-dimension, Y-dimension (for 2D BarCodes) are also supported.
-- Code128 encoding is exceptionally optimized.
-- Wide to Narrow Ratio can be achieved for supported symbologies.
-### **Barcode Recognition Features**
-- Aspose.BarCode.BarCodeReader reads the most common 1D, 2D barcodes anywhere at any angle from an image.
-### **Barcode Imaging Features**
-- Manipulate barcode image borders, border color, style, margins & width etc.
-- Barcode image color, back color, and bar color can be modified.
-- Rotate barcode images to any degree.
-- High-Quality barcode images.
-- Anti-Aliasing for barcode images.
-- Barcode Image MarginsF can be managed.
-- Customized Resolution.
-- Size in inches and millimeters.
-- Auto Sizing of barcode images.
-- Create barcode images to image formats like JPEG, TIFF, PNG, TIFF, WMF, metafile etc.
-- Render barcode images on any device and create device resolution dependent images.
+### **General Features of Aspose.BarCode for Android via Java**
+- Generate and identify barcodes efficiently
+- Support for **80+ barcode symbologies**, including **1D, 2D, DataBar, Postal, HIBC, and GS1 types**
+- Customize barcode appearance settings
+- Rotate barcode images as needed
+- Encode and decode **non-English characters** in 2D barcodes
+- Fine-tune recognition engine parameters for better accuracy
+- Save and load barcodes from **streams or files**
+- Print barcode labels efficiently
+- Work with **complex barcodes**, such as **Swiss QR Code**
+
+## **Barcode Recognition Features**
+
+- **BarCodeReader class**: Read **1D and 2D barcodes** at any angle from an image
+- Support for multiple **image formats**
+- Reading images with resolutions ranging from 75 to 600 dpi
+- **Recognize barcodes in challenging conditions**, such as **blurry, noisy, or damaged images**
+- **Specify targeted scan areas** within an image for faster and more precise recognition
+- **Predefine barcode symbologies** to optimize the recognition process
+- **Fine-tune the recognition engine** for the best balance between speed and accuracy (manually or using built-in presets).  
+  Examples of supported scenarios:
+    - Color barcodes on color backgrounds
+    - Dashed industrial **DataMatrix** barcodes
+    - Scaled-down images
+    - Damaged barcodes with incorrect text
+    - Corrupted **QR Codes** and more
+
+- **Detect and read all barcodes** within the specified scan region
+<!-- **Read multiple barcode types** 1D and 2D from a single scanned area -->
+- **Read multiple barcode** from a single scanned area
+- **Retrieve angle and region information** for each recognized barcode (bounding region can be defined using points, quadrangles, or rectangles)
+- **Perform checksum validation** for **1D and postal barcodes**
+- **Enhance detection speed** using **multi-threading**
+- **Extract barcodes from PDFs** using **Aspose.PDF**
+
+## **Barcode Generation Features in Aspose.BarCode for Android via Java**
+
+- **Class <a href="https://reference.aspose.com/java/barcode/com.aspose.barcode.generation/BarcodeGenerator" target="_blank">BarcodeGenerator</a>**: Generate barcode labels with customizable settings
+- **Extensive barcode customization options**, including size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow ratio, and more
+- Save barcodes in multiple image formats
+- **Configure barcode encoding types and parameters** for enhanced flexibility
+- **Support checksum addition** for **1D barcodes** and **supplementary data**
+- **Adjust X- and Y-dimensions** for **2D barcodes**
+- **Fine-tune wide-to-narrow ratios** for supported symbologies to improve recognition accuracy
+- **Set encoding types for 2D barcodes**, including **Error Checking and Correcting (ECC)** and **Extended Channel Interpretation (ECI)**
+- **Encode DataMatrix barcodes** using **X12, EDIFACT, and Base 256**
+
 #### **Input Image Formats**
 - JPEG
 - PNG
@@ -45,7 +69,7 @@ url: /java/aspose-barcode-for-android-via-java-features/
 - EMF
 - PDF
 ### **Platforms Supported**
-- Starting with Android SDK 26 and Android 8.0 (Oreo).
+- Supported starting from Android 8.0 (Oreo) - SDK 26.
 ### **Supported Barcode Symbologies**
 ***Aspose.BarCode for Android via Java*** supports over 80
 different <a href="https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes" target="_blank">barcode types</a> used in a
