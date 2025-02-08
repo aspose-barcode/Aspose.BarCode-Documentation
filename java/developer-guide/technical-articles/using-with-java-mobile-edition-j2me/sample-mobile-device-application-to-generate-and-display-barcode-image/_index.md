@@ -34,7 +34,7 @@ To render the barcode image on the screen, use a custom item.
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  package hello;
 
@@ -213,7 +213,7 @@ public class SampleBarCodeItem extends CustomItem {
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  private SampleBarCodeItem bc;
 
@@ -269,7 +269,7 @@ generateBarcode is a public method, given in the code snippet below. This method
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  // Method to generate the barcode and render on device screen
 

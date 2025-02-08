@@ -49,7 +49,7 @@ The BarCodeReader class' getReadType() method returns the symbology type of the
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  BarCodeReadType symbologyType = reader.getReadType();
 
@@ -61,7 +61,7 @@ The *getCodeText()* method of class BarCodeReader returns a string representing 
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  String strCodeText = reader.getCodeText();
 

@@ -57,7 +57,7 @@ generator.save(dataDir + "testRune25.png");
 In ***Aspose.BarCode for Java***, streams of bytes can be encoded as *Aztec Code* barcodes. To display the text label, it is required to call the *setTwoDDisplayText* method of class [*CodetextParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/CodetextParameters). 
 <!--The following code snippet explains how to encode a byte stream into an *Aztec* barcode.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -85,7 +85,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 In ***Aspose.BarCode for Java***, Unicode symbols can be encoded using the *setCodeTextEncoding* method of class [*AztecParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/AztecParameters). This method is applicable to all *Aztec Code* barcodes except *Rune*.
 <!--The following code sample demonstrates how to specify different Unicode encodings.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -111,7 +111,7 @@ Following barcode images have been created using various error correction levels
   
 <!--The following code snippet shows how to specify the preferred error correction level for *Aztec* barcodes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde© is a powerful library to generate & recognize 1D & 2D barcodes");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
@@ -134,7 +134,7 @@ Following barcodes have been generated with various values of the aspect ratio.
   
 <!--The following code sample demonstrates how to customize the aspect ratio for *Aztec* barcodes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set aspect ratio to 1

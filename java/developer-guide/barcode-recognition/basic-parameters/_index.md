@@ -31,7 +31,7 @@ In ***Aspose.BarCode for Java***, barcode reading is performed according to the 
   
 <!--The following code snippet explains how to specify target barcode types (i.e. *PDF417*, *QR Code*, *Code 128*, and *Code 39*). In this example, other barcodes (*DataMatrix* and *RM4SCC*) will be omitted.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -48,7 +48,7 @@ To load barcode recognition outputs, it is needed to call the *ReadBarCodes* met
   
 <!--The following code snippet explains how to obtain recognition results.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -70,7 +70,7 @@ Both aforementioned methods throw an exception called [*RecognitionAbortedExcept
   
 <!--The following code snippet shows how to interrupt the recognition process.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {

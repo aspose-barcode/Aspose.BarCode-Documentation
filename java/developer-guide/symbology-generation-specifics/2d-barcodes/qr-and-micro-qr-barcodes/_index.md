@@ -46,7 +46,7 @@ The following barcode images are given to explain how to create different types 
 | :-: | :-: | :-: | :-: |
 | |<img src="qrencodetypeauto.png">|<img src="qrencodetypeforceqr.png">|<img src="qrencodetypeforcemicroqr.png">|
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set Auto version
@@ -69,7 +69,7 @@ In ***Aspose.BarCode for Java***, developers can manually select the desired *QR
 | :-: | :-: | :-: |
 | |<img src="qrversion05.png">|<img src="qrversionm4.png">|
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set MicroQR 4 version
@@ -92,7 +92,7 @@ gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
 To encode input data when the *AUTO* encoding mode is enabled, the library applies the encoding defined through the *setCodeTextEncoding* method. If the required encoding is not specified explicitly, UTF8 is applied. 
 <!--The following code sample shows how to enable the *AUTO* encoding mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 Console.OutputEncoding = Encoding.Unicode;
@@ -114,7 +114,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 When the *BYTES* encoding mode is used, input information presented in a form of a plain byte stream is transformed into an array of symbols and then to a string. Digits from 0 to 255 can be encoded. If a byte stream contains digits larger than 255, this symbol gets encoded as two bytes in the UTF16LE encoding (the lower byte is put first). 
 <!--The following code snippet illustrates how to work with the *BYTES* encoding mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9};
 
 //encode an array to a string
@@ -141,7 +141,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 ### ***UTF_8_BOM* and *UTF_16_BEBOM* Modes**
 The library provides two special encoding modes called *UTF_8_BOM* and *UTF_16_BEBOM*, which serve to encode information according to *UTF8* and *UTF16BE* specifications. A byte order mark (BOM) symbol is added as the first digit. The following code sample shows how to enable with the *UTF_16_BEBOM* encoding mode.
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 Console.OutputEncoding = Encoding.Unicode;
@@ -162,7 +162,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 The *ECI_ENCODING* encoding mode suggests applying one of the encodings listed in the [*ECIEncodings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/ECIEncodings) enum. ***Aspose.BarCode for Java*** supports the variety of widely used encodings. In this mode, the extended channel interpretation (ECI) identifier is added to denote the enabled encoding to transfer the information about it to decoders. It is recommended to use the UTF8 value. 
 <!--The following code snippet explains how to use the *ECI_ENCODING* mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 Console.OutputEncoding = Encoding.Unicode;
@@ -183,7 +183,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 
 <!--The following code sample shows how to enable the multi-encoding ECI regime when the *EXTENDED_CODETEXT* mode is enabled. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create the extended barcode text
 QrExtCodetextBuilder lTextBuilder = new QrExtCodetextBuilder();
 lTextBuilder.AddECICodetext(ECIEncodings.Win1251, "Aspose");
@@ -226,7 +226,7 @@ For all *QR Code* subtypes with the exception of *Micro QR* developers can use a
   
 <!--The following code snippet demonstrates how to enable various error correction levels for *QR Code* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is a type of matrix barcode invented in 1994");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set error correction level to L
@@ -255,7 +255,7 @@ Sample barcode images provided below have been created using the structured appe
 | :-: | :-: | :-: |
 | |<img src="qrstructuredappendfirst.png">|<img src="qrstructuredappendsecond.png">|
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = null;
 BarCodeReader read = null;
 Console.OutputEncoding = Encoding.Unicode;
@@ -311,7 +311,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
   
 <!--The following code snippet explains how to set the required value of *AspectRatio* for *QR Code* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set Aspect Ratio to 1

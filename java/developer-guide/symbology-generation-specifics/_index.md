@@ -87,7 +87,7 @@ Below, two barcode types, *Code 39* and *QR Code*, are considered to demonstrate
   
 <!--The code snippet provided below illustrates how to generate and read *Code 39* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 
 public void generateAndRead()
     {
@@ -132,7 +132,7 @@ Further in the article, several barcode types (*EAN 13*, *Code 11*, *GS1 Code 12
 
 <!--The following code snippet explains how to generate *EAN13* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
@@ -145,7 +145,7 @@ gen.Save($"{path}Ean13.png", BarCodeImageFormat.Png);
   
 <!--The following code sample demonstrates how to create a *Code 11* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "1234-5678");
 gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
@@ -157,7 +157,7 @@ gen.Save($"{path}Code11.png", BarCodeImageFormat.Png);
   
 <!--The code example provided below can be used to generate a *GS1 Code128* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 public void generateAndRead()
     {
         String filePath = Global.getTestDataFolder("cards") + "Code128.png";//"path/to/image.png";
@@ -199,7 +199,7 @@ The barcode types discussed below, *Code93* and *Data Matrix*, are provided as e
   
 <!--The following code sample shows how to generate a *Code93* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "$&This Code#*");
 gen.Save($"{path}Code93Extended.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
@@ -216,7 +216,7 @@ Further, two barcode types, *Micro QR Code* and *Compact PDF417*, are considered
   
 <!--The following code snippet illustrates how to generate and read *Micro QR Codes*.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 
 
 public void generateAndRead()
@@ -259,7 +259,7 @@ public void generateAndRead()
   
 <!--The code sample below can be used to create and recognize *Compact PDF417* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 
 public void generateAndRead()
     {
@@ -308,7 +308,7 @@ The types outlined below, *Interleaved 2-of-5* and *Aztec Code*, have different 
   
 <!--The following code example describes how to generate *Interleaved 2-of-5* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Interleaved2of5, "1234567890");
 gen.Save($"{path}Interleaved2of5.png", BarCodeImageFormat.Png);
 {{< /highlight >}}-->
@@ -324,7 +324,7 @@ The two types considered below, *Postnet* and *RM4SCC*, are provided as examples
   
 <!--The following code example illustrates how to generate a *Postnet* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Postnet, "1159628792");
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}Postnet.png", BarCodeImageFormat.Png);
@@ -337,7 +337,7 @@ gen.Save($"{path}Postnet.png", BarCodeImageFormat.Png);
 
 <!--The code snippet given below shows how to generate a *Postnet* barcode.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.RM4SCC, "N101HU9Z");
 gen.Parameters.Barcode.XDimension.Pixels = 3;
 gen.Save($"{path}RM4SCC.png", BarCodeImageFormat.Png);

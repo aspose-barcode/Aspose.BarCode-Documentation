@@ -14,7 +14,7 @@ url: /java/read-non-typical-barcodes/
 
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" height="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("InvertImage:");
 
 //read barcode image with AllowInvertImage set to false
@@ -44,7 +44,7 @@ To read colored barcodes on a colored background, ***Aspose.BarCode for Java*** 
   
 <p align="center"><img src="qr_color.png" width="15%" height="15%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("ComplexBackground:");
 
 //read barcode image with AllowComplexBackground set to false
@@ -75,7 +75,7 @@ Industrial *Data Matrix* barcodes often have dotted patterns or other decoration
 
 <p align="center"><img src="datamatrix_industrial.png" width="30%" height="30%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("DatamatrixIndustrialBarcodes:");
 
 //read barcode image with AllowDatamatrixIndustrialBarcodes set to false

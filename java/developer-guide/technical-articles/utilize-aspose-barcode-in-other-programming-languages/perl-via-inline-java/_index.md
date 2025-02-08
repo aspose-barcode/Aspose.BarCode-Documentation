@@ -27,7 +27,7 @@ The following code will generate a barcode and save the barcode image.
 
 **Perl**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
 
 

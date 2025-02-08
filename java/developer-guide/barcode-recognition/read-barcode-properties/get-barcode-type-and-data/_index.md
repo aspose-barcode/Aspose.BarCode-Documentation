@@ -13,7 +13,7 @@ To obtain input barcode data and its symbology, *getCodeText* and *getCodeType* 
   
 <!--The following code snippet shows how to use these methods.
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -41,7 +41,7 @@ It is possible to load barcode data as a byte stream using a special method of c
 
 <!--The following code sample explains how to fetch barcode data as a byte stream.  
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -76,7 +76,7 @@ For barcodes in which the barcode data is encoded in a Unicode encoding, the lib
   
 <!--The following code snippet shows how to get barcode data encoded using the UTF8 encoding.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create encoded Unicode codetext
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
 {

@@ -35,7 +35,7 @@ All constants are integer values in Aspose.BarCode for Java whereas in the .NET 
 
 **.NET**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  public void Save(string fileName, ImageFormat fileFormat)
 

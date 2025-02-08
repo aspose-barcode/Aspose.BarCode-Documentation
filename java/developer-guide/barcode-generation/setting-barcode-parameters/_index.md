@@ -32,7 +32,7 @@ Barcode labels created using various unit settings are shown below.
   
 <!--The following code sample explains how to manage various resolution settings.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 //set unit size in 3 pixels
 gen.Parameters.Barcode.XDimension.Pixels = 3;
@@ -53,7 +53,7 @@ Barcode images with different resolution settings are given below.
   
 <!--The following code snippet demonstrates how to manage resolution settings.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 //set unit size in 1 millimeter, resolution 96
 gen.Parameters.Barcode.XDimension.Millimeters = 1;

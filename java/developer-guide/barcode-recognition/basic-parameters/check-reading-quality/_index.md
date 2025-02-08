@@ -20,7 +20,7 @@ Depending of the quality of barcode reading results, the *getConfidence* method 
   
 <!--The following code sample shows how to obtain the recognition quality estimate.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //recognize image
 Console.WriteLine("ReadExtQuality:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))

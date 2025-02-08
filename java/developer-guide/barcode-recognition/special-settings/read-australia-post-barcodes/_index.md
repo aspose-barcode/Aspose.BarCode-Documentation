@@ -27,7 +27,7 @@ The *Australia Post* standard enables encoding additional customer data in three
   
 <!--The following code sample shows how to enable the decoding format through the *CTable* option. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE"))
 {
@@ -56,7 +56,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
   
 The following code snippet explains how to use the *NTable* decoding format. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
 {
@@ -85,7 +85,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
   
 <!--The following code sample shows how to use the *Other* decoding format. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210"))
 {
@@ -115,7 +115,7 @@ The *Australia Post* symbology requires setting a fixed size for each subtype. W
   
 <!--The following code snippet shows how to remove filling empty patterns for the *CTable* decoding mode. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567END"))
 {
@@ -160,7 +160,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTableIgnoreE
   
 <!--The following code snippet explains how to decode customer data in the *NTable* format. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 class NTableDecoder : AustraliaPostCustomerInformationDecoder
 {
     string[] N_Table = { "00", "01", "02", "10", "11", "12", "20", "21", "22", "30" };

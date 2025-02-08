@@ -17,7 +17,7 @@ Barcoded types with obligatory checksum controls require performing compulsive c
   
 <!--The following code sample shows how to adjust checksum settings for the barcode type with obligatory checksum controls (namely, *Code 11*). 
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456"))
 {
@@ -62,7 +62,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
   
 <!--The following code snippet illustrates recognition options for symbologies with optional checksum controls (i.e. *Code 39*). 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "123456"))
 {

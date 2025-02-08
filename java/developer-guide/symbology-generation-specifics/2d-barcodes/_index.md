@@ -23,7 +23,7 @@ aliases:
   
 <!--The code sample below can be used to generate a *QR Code* barcode.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
 gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
 gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
@@ -39,7 +39,7 @@ The *PDF417* barcode is a 2D high-density symbology that is capable of encoding 
   
 <!--The following code snippet illustrates how to generate a *PDF417* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 6;
 gen.Save($"{path}Pdf417.png", BarCodeImageFormat.Png);
@@ -52,7 +52,7 @@ gen.Save($"{path}Pdf417.png", BarCodeImageFormat.Png);
 
 <!--The code example below can be used to create a *DataMatrix* barcode.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
@@ -65,7 +65,7 @@ gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
   
 <!--The code snippet given below shows how to generate an *Aztec* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Save($"{path}AztecFull.png", BarCodeImageFormat.Png);
@@ -79,7 +79,7 @@ The *Micro QR Code* symbology provides large data density; however, it has a squ
   
 <!--The following code snippet illustrates how to generate a *Micro QR Code*.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceMicroQR;
 gen.Parameters.Barcode.XDimension.Pixels = 8;
@@ -93,7 +93,7 @@ gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
   
 <!--The code sample below can be used to create a *Compact PDF417* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 //Compact version of Pdf417
 gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true;

@@ -32,7 +32,7 @@ In this section, supported recognition presets are described, including *HighPer
   
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("QualityPresetsMain:");
 
 //read barcode image with QualitySettings set to HighPerformance
@@ -78,7 +78,7 @@ The image shown below is a sample document with multiple barcodes that contains 
   
 <!--The following code sample shows how to tune reading quality parameters to enable correct detection and decoding of all 1D barcodes corresponding to the target symbologies. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("QualityPresetsOneD:");
 
 //read barcode image with QualitySettings set to NormalQuality
@@ -118,7 +118,7 @@ The *MaxBarCodes* preset may be used to scan even unreadable barcodes; however, 
   
 <!--The following code sample shows how to use the *MaxBarCodes* preset.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("MaxBarCodesPreset:");
 
 //read barcode image with QualitySettings set to MaxBarCodes

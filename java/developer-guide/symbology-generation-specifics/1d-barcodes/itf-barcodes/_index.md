@@ -27,7 +27,7 @@ Following barcodes have been generated with different frame settings.
   
 <!--The following code sample shows how to manage the frame style for *ITF 14* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //ITF border type None
@@ -58,7 +58,7 @@ Following *ITF 14* barcodes have been created setting different border thickness
   
 <!--The following code snippet demonstrates to manage border thickness for *ITF 14* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;
@@ -81,7 +81,7 @@ Following *ITF 14* barcodes have been created with different quiet zone settings
   
 <!--The following code snippet shows how to manage the size of the quiet zone for *ITF 14* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.ITF14, "12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.Frame;

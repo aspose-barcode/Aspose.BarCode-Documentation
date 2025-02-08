@@ -22,7 +22,7 @@ However, serializing cannot be implemented automatically for some barcode data, 
 In ***Aspose.BarCode for Java***, there are two options to save the current state of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader): to an XML file using the *exportToXml(java.lang.String xmlFile)* method or a stream using the *exportToXml(java.io.OutputStream xmlStream)* method. 
 <!--The following code sample explains how to output the barcode recognition state to an XML file.   
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //init barcode reader
 using (BarCodeReader read = new BarCodeReader())
 {
@@ -38,7 +38,7 @@ using (BarCodeReader read = new BarCodeReader())
 The current barcode recognition state corresponding to an object of class [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) can be loaded from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream through the *importFromXml(java.io.InputStream xmlStream)* method. The source barcode image needs to be determined using the *setBarCodeImage* method. 
 <!--The following code sample shows how to get the state of a [*BarCodeReader*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarCodeReader) object from an XML file. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //load BarCodeReader from file
 Console.WriteLine("BarCodeReaderSerialization:");
 using (BarCodeReader read = BarCodeReader.ImportFromXml($"{path}readerPdf417.xml"))
@@ -60,7 +60,7 @@ using (BarCodeReader read = BarCodeReader.ImportFromXml($"{path}readerPdf417.xml
 In ***Aspose.BarCode for Java***, it is possible to save or load the barcode reading state from a stream using special methods *exportToXml(java.io.OutputStream xmlStream)* and *importFromXml(java.io.InputStream xmlStream)*. The source barcode image needs to be specified explicitly using the *setBarCodeImage()* method. 
 <!--The following code sample shows how to save or load the barcode recognition state from a stream. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //stream 
 MemoryStream ms = new MemoryStream();
 

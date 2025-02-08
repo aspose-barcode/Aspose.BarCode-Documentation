@@ -20,7 +20,7 @@ To read barcodes, ***Aspose.BarCode for Java*** first performs the segmentation 
   
 <!--The following code sample illustrates how to use [*BarcodeSvmDetectorSettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("OneDDetectorSettings:");
 
 //read barcode image with DetectorSettings set to HighPerformance
@@ -49,7 +49,7 @@ The *setUseOldBarcodeDetector* method allows performing barcode region detection
   
 <!--The following code sample explains how to work with the previous version of the barcode region detector. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("OneOldBarcodeDetector:");
 
 //read barcode image with UseOldBarcodeDetector set to false
@@ -80,7 +80,7 @@ To conduct preliminary detection of large-sized 1D and some 2D types, such as *Q
 
 <p align="center"><img src="code128_big_and_small.png" width="25%" height="25%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("DetectScanGap:");
 
 //read barcode image with AllowDetectScanGap true

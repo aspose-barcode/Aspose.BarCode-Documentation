@@ -32,7 +32,7 @@ As an example, it is possible to set the string "(01)12345678901231(21)ASPOSE(30
       
 **GS1 Code 128**  
   
-<!--Following code samples are given to show how to create *Code 128* and *DataMatrix* barcodes according to the GS1-compatible format.{{< highlight csharp>}}
+<!--Following code samples are given to show how to create *Code 128* and *DataMatrix* barcodes according to the GS1-compatible format.{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1Code128, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
@@ -42,7 +42,7 @@ gen.Save($"{path}GS1Code128Example.png", BarCodeImageFormat.Png);
     
 **GS1 Data Matrix**  
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1DataMatrix, "(01)12345678901231(21)ASPOSE(30)9876");
 gen.Parameters.Barcode.XDimension.Pixels = 8;
 gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_12x36;
@@ -66,7 +66,7 @@ As an example, it is possible to pass the string "123456789012(8110)ASPOSE" to t
 <!--Following code snippets explain how to create *UpcaGs1DatabarCoupon* and *UpcaGs1DatabarCoupon* barcodes.-->  
   
 ### **UPC-A + DataBar Expanded**
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
@@ -74,7 +74,7 @@ gen.Save($"{path}Gs1CouponUpcaDatabar.png", BarCodeImageFormat.Png);
 
 <p align="center"><img src="gs1couponupcadatabar.png"></p>
   
-{{< highlight csharp>}}  
+{{< highlight java>}}  
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.UPCA_GS_1_DATABAR_COUPON);
 
 // UPCA part is "514141100906", GS1Databar part is "(8110)001234502239811110555"
@@ -85,7 +85,7 @@ generator.save("UpcaGs1DatabarCoupon.png");
 {{< /highlight >}}
 
 ### **UPC-A + GS1 Code 128**
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Save($"{path}Gs1CouponUpcaCode128.png", BarCodeImageFormat.Png);
@@ -104,7 +104,7 @@ Following *UPC-A GS1 DataBar Coupon* barcodes have been created with different s
   
 <!--The following code sample demonstrates how to manage the size of spacing between primary barcodes and their coupon add-ons.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "123456789012(8110)ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set coupon supplement space 30 pixels

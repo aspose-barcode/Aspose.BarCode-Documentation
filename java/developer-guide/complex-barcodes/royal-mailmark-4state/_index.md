@@ -30,7 +30,7 @@ Developers can create *Mailmark 4-state* barcodes in ***Aspose.BarCode for Java*
   
 <!--The following code sample shows how to create *Mailmark 4-state* barcode images.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create Mailmark 4-State Barcode
 MailmarkCodetext mailmarkCode = new MailmarkCodetext();
 mailmarkCode.Format = 4;
@@ -52,7 +52,7 @@ To recognize *Mailmark 4-state* barcode images through ***Aspose.BarCode for Jav
   
 <!--The following code sample explains how to decode *Mailmark 4-state* barcode images.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create Mailmark 4-State Barcode
 MailmarkCodetext mailmarkCode = new MailmarkCodetext();
 mailmarkCode.Format = 4;

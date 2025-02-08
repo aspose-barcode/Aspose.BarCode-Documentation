@@ -37,7 +37,7 @@ Following *MaxiCode* barcodes have been generated applying Formats 1 and 2 of *E
   
 <!--The following code sample shows how to switch between different encoding modes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "");
 gen.Parameters.Barcode.XDimension.Pixels = 15;
 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "MaxiCode Mode 2";
@@ -62,7 +62,7 @@ gen.Save($"{path}MaxiCodeEncodeMode2Second.png", BarCodeImageFormat.Png);
 *Encoding modes 4, 5, and 6* can be used to encode arbitrary textual data or streams of bytes. 
 <!--The following code snippet explains how to encode byte streams using *Encoding Mode 4*.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 15;
 //set MaxiCode encode mode to 4
@@ -79,7 +79,7 @@ gen.Save($"{path}MaxiCodeEncodeMode4.png", BarCodeImageFormat.Png);
   
 <!--The following code sample shows how to customize *Aspect Ratio* for *MaxiCode* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 15;
 //set aspect ratio 0.5

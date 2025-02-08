@@ -21,7 +21,7 @@ To set one target area for barcode recognition, it is necessary to create an obj
 
 **Setting Target Region Using Class BarCodeReader**
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -35,7 +35,7 @@ using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, 
 {{< /highlight >}}
 
 **Setting Target Region Using SetBarCodeImage Method**
-{{< highlight csharp>}}
+{{< highlight java>}}
 //specify the rectangle of a 2D barcode in the source image
 Rectangle rect2D = new Rectangle(0, 0, 430, 440);
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
@@ -54,7 +54,7 @@ It is also possible to set several target areas for barcode detection within one
   
 <!--The following code snippet shows how to specify several target regions in the source image.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader())
 {

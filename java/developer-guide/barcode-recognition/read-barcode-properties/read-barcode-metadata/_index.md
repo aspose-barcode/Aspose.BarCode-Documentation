@@ -26,7 +26,7 @@ Metadata from *PDF417* barcodes can be obtained using methods of class [*Pdf417E
   
 <!--The following code sample explains how to obtain metadata from a *PDF417* barcode.  
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate Macro PDF417 with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©"))
 {
@@ -79,7 +79,7 @@ To fetch metadata from *QR Code* barcodes with structured append, ***Aspose.BarC
   
 <!--The code sample below shows how to fetch metadata from a sample *QR Code* barcode with structured append.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate QR with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -112,7 +112,7 @@ Metadata from *DataBar* barcodes with 2D components can be obtained using class 
   
 <!--The following code snippet shows how to fetch metadata from a sample *DataBar* barcode with a 2D component.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate Databar with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "ASPOSE.BARCODE"))
 {

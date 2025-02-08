@@ -12,7 +12,7 @@ url: /java/read-unicode-encodings/
   
 <!--The following code sample explains how to decode barcodes with UTF8 and UTF16 Unicode encodings automatically (namely, *QR Code* has been used). 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;

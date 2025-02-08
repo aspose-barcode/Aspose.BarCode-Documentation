@@ -43,7 +43,7 @@ The barcode label shown below has been generated using the *None* mode.
   
 <!--The following code sample explains how to set the *AutoSizeMode* property to *None*.  
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 gen.Parameters.AutoSizeMode = AutoSizeMode.None;
 gen.Parameters.ImageWidth.Pixels = 300;
@@ -62,7 +62,7 @@ The barcode label generated through the *Interpolation* mode is demonstrated bel
 
 <!--The following code snippet shows how to enable *AutoSizeMode.INTERPOLATION*.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 gen.Parameters.AutoSizeMode = AutoSizeMode.Interpolation;
 gen.Parameters.ImageWidth.Pixels = 300;
@@ -80,7 +80,7 @@ The barcode label created through the *Nearest* mode is provided below.
   
 <!--The following code snippet shows how to set the *Nearest* mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 gen.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
 gen.Parameters.ImageWidth.Pixels = 300;
@@ -100,7 +100,7 @@ The sample barcode labels rotated by various angles are shown below.
   
 <!--The following code sample explains how to rotate barcode images at different angles.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.RotationAngle = 90;
 gen.Save($"{path}RotationAngle+90.png", BarCodeImageFormat.Png);
@@ -128,7 +128,7 @@ Barcode labels demonstrated below have been generated using different border sty
   
 <!--The following code snippet demonstrates how to set different border styles.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 //set border visible
 gen.Parameters.Border.Visible = true;
@@ -153,7 +153,7 @@ Paddings from the edges of a barcode image or its borders can be set in four dir
 | :-: | :-: | :-: |  
 | |<img src="padding10millimeters.png">|<img src="padding10pixels.png">| 
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 //set border
 gen.Parameters.Border.Visible = true;
@@ -187,7 +187,7 @@ The sample barcodes shown below have been generated with and without applying ba
   
 <!--The following code snippet explains how to implement bar width reduction.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //Code 128
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 10;

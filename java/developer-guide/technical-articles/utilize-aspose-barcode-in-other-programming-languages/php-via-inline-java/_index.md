@@ -18,7 +18,7 @@ The below PHP script will use JPype and use Aspose.BarCode for Java class BarCod
 
 **PHP**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  <?php
  

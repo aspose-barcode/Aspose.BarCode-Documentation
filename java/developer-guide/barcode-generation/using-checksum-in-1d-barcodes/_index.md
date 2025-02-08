@@ -55,7 +55,7 @@ Linear barcode types with optional checksum controls do not require check digit 
   
 <!--The following code sample explains how to enable and disable checksum controls for *Code 39*.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "CODE");
 //default value with no checksum
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.No;
@@ -76,7 +76,7 @@ The following barcode image has been generated with obligatory checksum enabled.
 
 <!--The code snippet given below illustrates checksum settings for *Code 39*. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "CODE");
 //default value with checksum
 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
@@ -102,7 +102,7 @@ For *Code 128* and *GS1 Code 128*, ***Aspose.BarCode for Java*** allows develope
   
 <!--The code sample below explains how to manage checksum display settings.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "CODE");
 //do not display checksum
 gen.Parameters.Barcode.ChecksumAlwaysShow = false;

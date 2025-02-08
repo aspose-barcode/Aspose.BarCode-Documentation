@@ -26,7 +26,7 @@ The following barcodes have been created enabling *EAN-2* and *EAN-5* supplement
   
 <!--The following code snippet explains how to generate supplement barcodes using *EAN-2* and *EAN-5*.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Supplement.SupplementSpace.Pixels = 20;
@@ -49,7 +49,7 @@ The barcode samples demonstrated below have been generated with different gap se
   
 <!--The following code sample shows how to modify the spacing between main and supplement barcodes for a *EAN 13* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN13, "1234567890128");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Supplement.SupplementData = "12345";

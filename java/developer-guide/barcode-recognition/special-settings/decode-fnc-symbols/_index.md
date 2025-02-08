@@ -13,7 +13,7 @@ The GS1 association suggests using FNC characters to decode some symbologies, in
   
 <!--The following code snippet explains how to manage FCN symbols.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose" + FNC1 + FNC2 + FNC3))
 {

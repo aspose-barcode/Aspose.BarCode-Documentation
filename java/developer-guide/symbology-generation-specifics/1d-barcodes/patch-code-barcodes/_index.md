@@ -29,7 +29,7 @@ Following *Patch Code* barcodes correspond to six basic *Patch Code* patterns.
   
 <!--The following code sample shows how to work with different *Patch Code* patterns.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
 gen.Parameters.Barcode.CodeTextParameters.FontMode = FontMode.Manual;
 gen.Parameters.Barcode.CodeTextParameters.Font.Size.Pixels = 20;
@@ -77,7 +77,7 @@ Following *Patch Code* barcodes have been created with and without complementary
   
 <!--The following code sample shows how to manage *Patch Code* generation and how to enable displaying a complementary *QR Code* add-on.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PatchCode, "Patch I");
 //create a PatchCode barcode without complimentary QR
 gen.Parameters.Barcode.PatchCode.PatchFormat = PatchFormat.A4;

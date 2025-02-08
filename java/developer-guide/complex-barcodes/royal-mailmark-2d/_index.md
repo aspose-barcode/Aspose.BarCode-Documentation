@@ -32,7 +32,7 @@ Following *Mailmark 2D* barcode images have been generated using various *Mailma
   
 <!--The following code sample explains how to create *Mailmark 2D* barcodes of different subtypes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 ComplexBarcodeGenerator generator = null;
 
 //create Mailmark 2D barcode
@@ -74,7 +74,7 @@ Using the ***Aspose.BarCode for Java*** functionality, developers can read *Mail
   
 <!--The following code snippet shows how to read *Mailmark 2D* barcodes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.OutputEncoding = Encoding.Unicode;
 //recognize Mailmark 2D barcode
 BarCodeReader reader = new BarCodeReader($"{path}Mailmark2DType9.png", DecodeType.DataMatrix);

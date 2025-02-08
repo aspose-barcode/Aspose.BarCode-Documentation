@@ -17,7 +17,7 @@ First of all, barcodes can be scanned and recognized from image files. The full 
   
 <!--The following code snippet shows how to read barcodes from a file by specifying the path to the source image.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
 {
@@ -29,7 +29,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
   
 <!--The following code snippet shows how to determine the path to the already existing recognition source object.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader())
 {
     //set path to image
@@ -46,7 +46,7 @@ In ***Aspose.BarCode for Java***, it is possible to use a graphical object or a 
   
 <!--The following code sample demonstrates how to set a bitmap object for barcode reading.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader(bmp, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
@@ -62,7 +62,7 @@ In ***Aspose.BarCode for Java***, a stream (in a binary format) can be also used
   
 <!--The following code sample shows how to specify a source stream for barcode recognition.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (Stream stream = new FileStream($"{path}multiple_codes.png", FileMode.Open, FileAccess.Read))
 using (BarCodeReader reader = new BarCodeReader(stream, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
     DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))

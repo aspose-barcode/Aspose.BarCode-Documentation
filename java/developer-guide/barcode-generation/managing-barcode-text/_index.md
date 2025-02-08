@@ -36,7 +36,7 @@ The main barcode text label contains short text information detached from bars b
    
 <!--The following code sample shows how to disable barcode text.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -58,7 +58,7 @@ The *setLocation* method allows setting the vertical position of a text label, n
   
 <!--The following code snippet explains how to modify the location of a barcode text label.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -80,7 +80,7 @@ The *setAlignment* method is used to set the horizontal position of a text label
   
 <!--The following code snippet explains how to manage barcode text alignment.
      
-{{< highlight csharp>}}
+{{< highlight java>}}
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
             gen.Parameters.Barcode.Pdf417.Rows = 12;
             gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -106,7 +106,7 @@ Sample barcode images shown below have been created with various spacing setting
   
 <!--The following code sample explains how to manage spacings between bars and a text label.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -131,7 +131,7 @@ Barcode images shown below have been created with these two font modes.
   
 The following code snippet explains how to customize text font in the *Auto* mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -148,7 +148,7 @@ gen.Save($"{path}CodetextFontModeAuto.png", BarCodeImageFormat.Png);
   
 The following code sample shows how to manage text font in the *Manual* mode.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -170,7 +170,7 @@ It is possible to avoid line breaks in a text that is too long for a single row 
   
 <!--The following code snippet allows enabling and disabling the *NoWrap* mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Extremely long codetext for one row");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -193,7 +193,7 @@ The sample barcode image shown below has been created using the *TwoDDisplayText
   
 <!--The following code snippet explains how to replace barcode text for 2D barcodes.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -216,7 +216,7 @@ As stated above, additional text captions *CaptionAbove* and *CaptionBelow* are 
   
 <!--The following code sample shows how to manage text captions.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -242,7 +242,7 @@ The *setAlignment* method of class [*CaptionParameters*](https://reference.aspos
   
 <!--The following code snippet shows how to adjust caption alignment.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -269,7 +269,7 @@ The *setPadding* method of class [*CaptionParameters*](https://reference.aspose.
   
 <!--The following code explains how to manage caption paddings.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -298,7 +298,7 @@ The barcode image shown below explains different caption font settings.
   
 <!--The following code snippet is given to demonstrate how to manage caption font parameters.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;
@@ -321,7 +321,7 @@ The *setNoWrap* method of class [*CaptionParameters*](https://reference.aspose.c
   
 <!--The following code sample illustrates how to manage the *NoWrap* setting for barcode captions.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.Pdf417.Rows = 12;
 gen.Parameters.Barcode.XDimension.Pixels = 2;

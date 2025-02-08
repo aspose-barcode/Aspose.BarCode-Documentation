@@ -20,7 +20,7 @@ Create a new schema and table in MySQL using the following SQL statement:
 
 **SQL**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  DROP TABLE IF EXISTS test.product;
 

@@ -126,7 +126,7 @@ Use the BIRT runtime engine and Aspose.BarCode for Java to generate the barcode 
 
 **Java**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  import java.awt.Image;
 

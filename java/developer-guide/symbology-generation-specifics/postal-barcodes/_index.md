@@ -37,7 +37,7 @@ Following *Planet* and *RM4SCC* barcode images have been created with varying ba
   
 <!--The following code snippet explains how to adjust bar height in *Planet* and *RM4SCC* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //set Planet barcode BarHeight none
 gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
@@ -76,7 +76,7 @@ Following *Planet* and *RM4SCC* barcode images have been generated using differe
   
 <!--The following code snippet shows how to customize the bar filling parameter for *Planet* and *RM4SCC* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //generate a Planet barcode with filled bars
 gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
@@ -105,7 +105,7 @@ In ***Aspose.BarCode for Java***, developers can generate barcodes using various
 The *Planet* symbology suggests encoding each character in five bars. Among them, three bars are full-length, and two bars are half-length.  
 <!--The following code sample explains how to create *Planet* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
@@ -119,7 +119,7 @@ gen.Save($"{path}PostalPlanetBarcode.png", BarCodeImageFormat.Png);
 The *Postnet* symbology encodes each digit in five bars so that three bars are full-length and two bars are half-length.  
 <!--The following code snippet demonstrates how to generate *Postnet* barcodes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Postnet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
@@ -135,7 +135,7 @@ The ***Aspose.BarCode*** library has several specificities in the way of working
 ### **Incorrect Input Text Handling**
 When invalid barcode text is passed to the *setCodeText* method (in the case of *Postnet* and *Planet*, this means entering any characters besides numerical digits), the default approach implemented in class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) implies the necessity to filter out erroneous symbols that do not comply with the specification and then to generate a barcode image encoding suitable characters only. If developers need to establish special controls for such situations, they can request throwing an exception upon entering invalid characters through the *setCodeText* method. In this case, it is necessary to call the *setThrowExceptionWhenCodeTextIncorrect* method of class [*BarcodeParameters*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeParameters) passing *True*<!-- as shown in the following code sample-->.
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = null;
 gen = new BarcodeGenerator(EncodeTypes.Planet, "1234567WRONG");
 gen.Parameters.Barcode.ThrowExceptionWhenCodeTextIncorrect = true;
@@ -170,7 +170,7 @@ Following barcode images have been created with varying short bar heights.
   
 <!--The following code sample explains how to adjust short bar height in two-state postal barcodes.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //set Planet barcode ShortBarHeight 10 pixels
 gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
@@ -196,7 +196,7 @@ The *RM4SCC* symbology can be used to encode numerical characters and uppercase 
   
 <!--The following code sample shows how to generate *RM4SCC* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.RM4SCC, "123456ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
@@ -210,7 +210,7 @@ The Royal Dutch TPG Post of Netherlands uses the *Dutch KIX* barcode standard to
   
 <!--The following code snippet shows how to create *Dutch KIX* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DutchKIX, "123456ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
@@ -226,7 +226,7 @@ The *OneCode* postal symbology allows encoding fixed-length sets of numerical ch
   
 <!--The following code sample explains how to generate *OneCode* barcodes.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //create OneCode with 20 digits
 gen = new BarcodeGenerator(EncodeTypes.OneCode, "12345678901234567890");
@@ -277,7 +277,7 @@ Following barcode images have been created with varying FCC field settings.
   
 <!--The following code snippet demonstrates how to create *Australia Post* barcodes of different types.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //create AustraliaPost FCC 11
 gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "1101234567");
@@ -322,7 +322,7 @@ The *Mailmark* postal standard has been introduced by Royal Mail of the United K
   
 <!--The following code sample explains how to generate *Mailmark* barcodes of different types.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = null;
 //create Mailmark C Type
 gen = new BarcodeGenerator(EncodeTypes.Mailmark, "21B2254800659JW5O9QA6Y");

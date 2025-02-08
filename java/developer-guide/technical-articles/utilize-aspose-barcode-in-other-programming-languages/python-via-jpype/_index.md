@@ -16,7 +16,7 @@ The below Python code will use JPype and use Aspose.BarCode for Java class [Barc
 
 **Python**
 
-{{< highlight csharp >}}
+{{< highlight java >}}
 
  import jpype
  import os.path

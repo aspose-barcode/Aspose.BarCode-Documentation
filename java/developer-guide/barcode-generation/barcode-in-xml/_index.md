@@ -21,7 +21,7 @@ aliases:
 As stated above, ***Aspose.BarCode for Java*** provides two ways of outputting the current state of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator): to an XML file using the *exportToXml(java.io.String xmlFile)* method or a stream through the *exportToXml(java.lang.OutputStream xml)* method. 
 <!--The following code sample shows how to perform data serialization to an XML file.   
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 4;
@@ -47,7 +47,7 @@ gen.Save($"{path}BarcodeGeneratorOriginal.png", BarCodeImageFormat.Png);
 It is possible to import the current state of of class [*BarcodeGenerator*](https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator) from an XML file through the *importFromXml(java.lang.String xmlFile)* method or a stream using the *importFromXml(java.io.InputStream xml)* function. 
 <!--The following code snippet shows how to import data from an XML file.   
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //load BarcodeGenerator from file
 BarcodeGenerator gen = BarcodeGenerator.ImportFromXml($"{path}generatorMacroPdf417.xml");
 //generate loaded
@@ -60,7 +60,7 @@ gen.Save($"{path}BarcodeGeneratorLoaded.png", BarCodeImageFormat.Png);
 ## **Save and Load Barcode Data from Stream**
 To export and import information from streams, two special methods need to be called: *exportToXml(java.lang.OutputStream xml)* and *importFromXml(java.io.InputStream xml)*. 
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 

@@ -15,7 +15,7 @@ To recognize high-quality 1D barcodes created through web-based applications, it
 
 <p align="center"><img src="code128_hq.png" height="20%" width="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("FastScan:");
 
 //read barcode image with FastScan options disabled
@@ -56,7 +56,7 @@ To decode regular norma-quality barcode images, ***Aspose.BarCode for Java*** ap
   
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" heigh="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("RegularImage:");
 
 //read barcode image with AllowRegularImage set to false

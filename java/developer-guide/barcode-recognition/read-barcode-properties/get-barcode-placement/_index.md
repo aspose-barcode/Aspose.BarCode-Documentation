@@ -18,7 +18,7 @@ To obtain the position of a source barcode and its orientation angle, methods of
   
 <!--The following code snippet shows how to fetch the information about barcode positiom and orientation angle.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //recognize image
 Console.WriteLine("ReadExtRegion:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))

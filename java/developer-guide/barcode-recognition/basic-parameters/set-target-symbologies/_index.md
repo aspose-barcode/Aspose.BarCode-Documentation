@@ -17,7 +17,7 @@ Target barcode types can be specified by grouping them in a list and passing it 
   
 <!--The following code snippet shows how to determine target barcode types (i.e. *Code 128*,*Code 39*, and *RM4SCC*) using [*DecodeType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/DecodeType).
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
@@ -32,7 +32,7 @@ The other way to specify target barcode types is to determine them using a const
   
 <!--The following code sample demonstrates how to set target symbologies (i.e. *Code 39*, *Code 128*, and *RM4SCC*) using [*MultyDecodeType*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/MultyDecodeType).
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png"))
 {
     reader.SetBarCodeReadType(new MultyDecodeType(DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC));
@@ -54,7 +54,7 @@ The required set can be specified in the *BarCodeReader* constructor or passed t
   
 <!--The following code snippet shows how to work with the *TYPES_2D* set.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", DecodeType.Types2D))
 {
     Console.WriteLine("ReadTypes2D:");
