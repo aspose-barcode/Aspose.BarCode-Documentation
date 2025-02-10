@@ -18,7 +18,6 @@ For specific information about ***Aspose.BarCode for Java***, see the following 
 |[Product Overview](/barcode/java/product-overview/)|Describes the product and its purpose, functionality, key advantages, barcode types, and compatibility|
 |[Supported Barcode Types](/barcode/java/barcode-types/)|Represents all supported barcode types (including 1D, 2D, and postal ones)|
 |[Supported Image Formats](/barcode/java/image-formats/)|Describes all image file formats available for input and output|
-|[Product Features](/barcode/java/product-features/)|Lists barcode processing features, including generation, recognition, imaging, and others|
 |[System Requirements](/barcode/java/system-requirements/)|Outlines supported operating systems and technical requirements|
 |[Installation](/barcode/java/installation/)|Describes how to install and start using the library|
 |[Licensing](/barcode/java/licensing/)|Explains why to get the license and how to deploy it|

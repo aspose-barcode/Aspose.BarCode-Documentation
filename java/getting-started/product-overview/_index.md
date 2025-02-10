@@ -67,10 +67,6 @@ The most important features are the following:
 - **Saving and loading barcodes** from files or data streams
 - **Encoding and decoding non-English characters** in 2D barcode formats
 
-The list of all features can be found
-in <a href="https://docs.aspose.com/barcode/java/product-features/" target="_blank"><strong>Product
-Features</strong></a>.
-
 ## **Supported Platforms and System Compatibility**
 
 Aspose.BarCode for Java is compatible with any operating system that supports Java JDK/JRE. It requires Java SE 1.8 or
