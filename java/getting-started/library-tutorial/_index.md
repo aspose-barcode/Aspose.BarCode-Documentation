@@ -20,6 +20,7 @@ This example demonstrates how to generate and read a PDF417 barcode containing n
     BarCodeReader reader = new BarCodeReader(new ByteArrayInputStream(outputStream.toByteArray()), DecodeType.PDF_417);
     BarCodeResult[] results = reader.readBarCodes();
 
-    System.out.println("Code Type : " + results[0].getCodeTypeName());
-    System.out.println("Code Text : " + results[0].getCodeText(StandardCharsets.UTF_8));
+    System.out.printf("Code Type: %s%n", results[0].getCodeTypeName());
+    System.out.printf("Code Text: %s%n", results[0].getCodeText(StandardCharsets.UTF_8));
+
 {{</highlight>}}
