@@ -7,51 +7,68 @@ url: /java/installation/
 ---
 
 ## **Install Aspose.BarCode for Java from Maven Repository**
-Aspose hosts all Java APIs at [Maven repository](https://releases.aspose.com/java/repo/com/aspose/). You can easily use [Aspose.BarCode for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/) API directly in your Maven Projects using simple configurations.
 
-### **Specify Maven Repository Configuration**
-First, you need to specify an Aspose Maven Repository configuration/location in your Maven **pom.xml** as follows:
+Aspose hosts all Java APIs in the <a href="https://repository.aspose.com/repo/" target="_blank">Maven repository</a>.  
+You can easily use <a href="https://repository.aspose.com/repo/com/aspose/aspose-barcode/" target="_blank">Aspose.BarCode for Java</a>  
+API directly in your Maven projects by adding the following configurations to `pom.xml`.
 
-{{< highlight java >}}
-
- <repositories>
-
-    <repository>
-
-        <id>AsposeJavaAPI</id>
-
-        <name>Aspose Java API</name>
-
-        <url>https://releases.aspose.com/java/repo/</url>
-
-    </repository>
-
+{{<highlight xml>}}
+<repositories>
+   <repository>
+     <id>aspose-barcode-java</id>
+     <name>Aspose Barcode Java</name>
+     <url>https://releases.aspose.com/java/repo/</url>
+  </repository>
 </repositories>
-
 {{< /highlight >}}
 
-### **Define Aspose.BarCode for Java API Dependency**
-Then, it is required to define an ***Aspose.BarCode for Java*** API dependency in your **pom.xml** as follows:
-
-{{< highlight java >}}
-
- <dependencies>
-
+{{<highlight xml>}}
+<dependencies>
     <dependency>
-
         <groupId>com.aspose</groupId>
-
         <artifactId>aspose-barcode</artifactId>
-
-        <version>20.10</version>
-
-		<classifier>jdk17</classifier>
-
+        <version>25.1</version>
     </dependency>
-
 </dependencies>
+{{</highlight>}}
+or
+{{<highlight xml>}}
+<dependencies>
+    <dependency>
+        <groupId>com.aspose</groupId>
+        <artifactId>aspose-barcode</artifactId>
+        <version>25.1</version>
+        <classifier>jdk18</classifier>
+    </dependency>
+</dependencies>
+{{</highlight>}}
+
+and JavaDoc
+{{<highlight xml>}}
+    <dependency>
+        <groupId>com.aspose</groupId>
+        <artifactId>aspose-barcode</artifactId>
+        <version>25.1</version>
+        <classifier>javadoc</classifier>
+        <scope>provided</scope>
+    </dependency>
+{{</highlight>}}
+
+For Gradle-based applications, you should use the following settings:
+
+{{<highlight gradle>}}
+repositories {
+    maven {
+        url "https://repository.aspose.com/repo/"
+    }
+}
+dependencies {
+    implementation group: 'com.aspose', name: 'aspose-barcode', version: '25.1'
+    // Alternative version with JDK 18 classifier
+    implementation group: 'com.aspose', name: 'aspose-barcode', classifier: 'jdk18', version: '25.1'
+    // JavaDoc dependency
+    implementation group: 'com.aspose', name: 'aspose-barcode', classifier: 'javadoc', version: '25.1'
+}
 
 {{< /highlight >}}
-
-After completing the above steps, the ***Aspose.BarCode for Java*** dependency will be defined in your Maven Project.
 
