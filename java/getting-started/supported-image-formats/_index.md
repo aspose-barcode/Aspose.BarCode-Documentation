@@ -14,6 +14,7 @@ aliases:
 |:---------------------------------------------------------------------------------------------|:-----------------------------------------------------------------|:------------------------|:------------------------|
 | <a href="https://docs.fileformat.com/Image/JPEG/" target="_blank">JPEG</a>                   | File format standardized by the Joint Photographic Experts Group | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
 | <a href="https://docs.fileformat.com/Image/TIFF/" target="_blank">TIFF</a>                   | Tagged Image File Format                                         | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
+| <a href="https://en.wikipedia.org/wiki/TIFF" target="_blank">TIFF CMYK</a>                   | Tagged Image File Format with CMYK color model support           | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
 | <a href="https://docs.fileformat.com/Image/PNG/" target="_blank">PNG</a>                     | Portable Network Graphics Image                                  | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
 | <a href="https://docs.fileformat.com/Image/BMP/" target="_blank">BMP</a>                     | Bitmap Image File                                                | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
 | <a href="https://docs.fileformat.com/Image/GIF/" target="_blank">GIF</a>                     | Graphical Interchange Format Image                               | {{< emoticons/tick >}}  | {{< emoticons/tick >}}  |
