@@ -47,40 +47,39 @@ Below, we demonstrate how to achieve this with just a few additional lines of co
 {{< highlight java >}}
 public class LicenseSingleton
 {
-private static LicenseSingleton instance;
-private LicenseSingleton(String pathToLicenseFile)
-{
-try
-{
-// Initialize the license
-com.aspose.barcode.License license = new com.aspose.barcode.License();
-license.setLicense(pathToLicenseFile);
-}
-catch (Exception e)
-{
-e.printStackTrace();
-}
+    private static LicenseSingleton instance;
+    private LicenseSingleton(String pathToLicenseFile)
+    {
+      try
+      {
+      // Initialize the license
+       com.aspose.barcode.License license = new com.aspose.barcode.License();
+       license.setLicense(pathToLicenseFile);
+      }
+      catch (Exception e)
+      {
+        e.printStackTrace();
+      }
+    } 
 }
 
 public static synchronized void setLicense()
 {
-if (instance == null)
-{
-instance = new LicenseSingleton(pathToLicenseFile);
-}
-}
+    if (instance == null)
+    {
+      instance = new LicenseSingleton(pathToLicenseFile);
+    }
 }
 {{< /highlight >}}
 
 You can now initialize the license in your code by simply calling LicenseSingleton.setLicense():
 {{< highlight java >}}
 LicenseSingleton.setLicense();
-BarCodeReader reader = new BarCodeReader(Global.pathCombine(Global.getBarcodeJavaIssuesTestImagePath("
-BARCODJAVA10990"), "w8imytaxform-vertical.tif"), DecodeType.CODE_39_FULL_ASCII);
+BarCodeReader reader = new BarCodeReader(path, DecodeType.CODE_39_FULL_ASCII);
 for (BarCodeResult result : reader.readBarCodes())
 {
-System.out.printf("CodeText: %s%n", result.getCodeText());;
-System.out.printf("CodeType: %s%n", result.getCodeType());;
+  System.out.printf("CodeText: %s%n", result.getCodeText());;
+  System.out.printf("CodeType: %s%n", result.getCodeType());;
 }
 {{< /highlight >}}
 
@@ -103,11 +102,11 @@ License license = new License();
 Path filePath = Paths.get(pathToLicenseFile);
 try (InputStream inputStream = Files.newInputStream(filePath))
 {
-license.setLicense(inputStream);
+  license.setLicense(inputStream);
 }
 catch (IOException e)
 {
-e.printStackTrace();
+  e.printStackTrace();
 }
 {{< /highlight >}}
 
