@@ -3,7 +3,7 @@ title: System Requirements
 type: docs
 weight: 40
 feedback: BARCODECOM
-url: /java/system-requirements1/
+url: /java/requirements-compatibility/
 ---
 
 ***Aspose.BarCode for Java*** enables developers to seamlessly integrate barcode generation and recognition
