@@ -14,7 +14,7 @@ url: /androidjava/multithread-barcode-reading/
 
 To perform multithread barcode reading, class [*BarCodeReader*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.barcoderecognition/BarCodeReader) includes a special class called [*ProcessorSettings*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.barcoderecognition/ProcessorSettings) that allows optimizing the load of available CPU cores. Multithreading settings can be managed for all [*BarCodeReader*](https://reference.aspose.com/barcode/androidjava/com.aspose.barcode.barcoderecognition/BarCodeReader) objects and usually do not need special tuning.  
   
-<!--***Aspose.BarCode for Java*** implements multithreading based on a special system parameter called **ThreadPoolExecutor**. Minimum and maximum values of cores that can be used for multithreading can be specified using **setCorePoolSize()** and **setMaximumPoolSize()** system methods.--> 
+<!--***Aspose.BarCode for Android via Java*** implements multithreading based on a special system parameter called **ThreadPoolExecutor**. Minimum and maximum values of cores that can be used for multithreading can be specified using **setCorePoolSize()** and **setMaximumPoolSize()** system methods.--> 
 
 {{% alert color="primary" %}}*If you need any clarifications, feel free to reach out to [Aspose Technical Support](/barcode/java/technical-support/): ask your questions at [Aspose.Barcode Forum](https://forum.aspose.com/c/barcode/13) or contact [Aspose Paid Support Helpdesk](https://helpdesk.aspose.com/).*{{% /alert %}}
 

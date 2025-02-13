@@ -28,9 +28,7 @@ developers.
 <p>Following are the links to some useful resources you may need to accomplish your tasks:</p>
 
 <ul>
-
-[//]: # (    <li><a href="/barcode/androidjava/" target="_blank">Aspose.BarCode for Java Online Documentation</a></li>)
-    <li><a href="/barcode/java/aspose-barcode-for-android-via-java-features/" target="_blank">Aspose.BarCode for Android via Java Features</a></li>
+    <li><a href="/barcode/android/product-overview/" target="_blank">Product Overview</a></li>
     <li><a href="https://releases.aspose.com/barcode/androidjava/release-notes/" target="_blank">Aspose.BarCode for Android via Java Release Notes</a></li>
     <li><a href="https://products.aspose.com/barcode/android-java/" target="_blank">Aspose.BarCode for Android via Java Product Page</a></li>
     <li><a href="https://reference.aspose.com/java/barcode/" target="_blank">Aspose.BarCode for Android via Java API Reference Guide</a></li>

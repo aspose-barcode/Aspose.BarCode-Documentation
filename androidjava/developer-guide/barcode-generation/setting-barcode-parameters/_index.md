@@ -3,7 +3,7 @@ title: Barcode Parameters
 type: docs
 weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Android"
-keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Java, Work with Barcode Image in Aspose.BarCode for Android, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
+keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Android via Java, Work with Barcode Image in Aspose.BarCode for Android, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"
 url: /androidjava/barcode-generation-parameters/
 
 ---
