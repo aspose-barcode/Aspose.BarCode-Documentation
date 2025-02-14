@@ -5,12 +5,29 @@ weight: 60
 feedback: BARCODECOM
 url: /java/installation/
 ---
+## **Ways to Obtain the Product**
 
-## **Install Aspose.BarCode for Java from Maven Repository**
+You can obtain ***Aspose.BarCode for Java*** using two methods:
 
-Aspose hosts all Java APIs in the <a href="https://repository.aspose.com/repo/" target="_blank">Maven repository</a>.  
-You can easily use <a href="https://repository.aspose.com/repo/com/aspose/aspose-barcode/" target="_blank">Aspose.BarCode for Java</a>  
-API directly in your Maven projects by adding the following configurations to `pom.xml`.
+### **1. Download the ZIP File from the Website**
+
+You can get the product directly from the <a href="https://releases.aspose.com/barcode/java/" target="_blank">official 
+website</a>.
+
+For example, if you want to download
+<a href="https://releases.aspose.com/barcode/java/25-1/#package-explorer" target="_blank">aspose-barcode-25.1-java.zip</a>,
+you can do so from the link above.
+
+This ZIP file contains the library, API documentation as a JAR file, and other artifacts such as the README and
+license-related files.
+
+### **2. Get from Maven Repository**
+
+Aspose hosts all Java APIs in the Maven repository.  
+Alternatively, you can obtain the library from the Maven repository:
+<a href="https://repository.aspose.com/repo/com/aspose/aspose-barcode/" target="_blank">Aspose.BarCode for Java</a>.
+
+You can easily integrate the product into your Gradle projects by adding the following configurations to `pom.xml`.
 
 {{<highlight xml>}}
 <repositories>
