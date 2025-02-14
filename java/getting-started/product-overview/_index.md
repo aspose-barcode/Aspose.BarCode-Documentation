@@ -24,10 +24,10 @@ processing.
 
 ***Aspose.BarCode for Java*** is a powerful and versatile library designed to streamline barcode processing tasks
 in Java applications. Implemented with managed code, it offers seamless functionality for generating and recognizing
-a wide variety of barcode types, both linear and matrix, at any angle—quickly and effortlessly.
+a wide variety of barcode types, both 1D (one-dimensional) и 2D (two-dimensional), at any angle—quickly and effortlessly.
 
-This library is fully compatible with most existing barcode specifications and standards, supporting over 80
-symbologies.
+This library is fully compatible with most existing barcode specifications and standards, supporting over
+80 barcode symbologies
 
 The detailed listing of all available barcode types is provided
 in <a href="/barcode/java/barcode-types/" target="_blank">Supported Barcode Types</a>.
@@ -38,14 +38,10 @@ Generated barcodes can be saved in five high-quality raster image formats and tw
 The other advantage is that the library facilitates decoding even low-quality or damaged barcode images.
 Therefore, it enables high recognition efficiency for most supported symbology types.
 
-Developers can download fully featured demos and working examples written in Java to better understand our product.
-Developers can download the fully functional **Aspose.BarCode for Java** library and working examples
-to test the full version and better understand our product.   
-Developers can download the fully functional **Aspose.BarCode for Java** library and working examples to test the full
-version and better understand our product.   
-The library is available for direct
-download <a href="https://releases.aspose.com/barcode/java/" target="_blank">here</a> and can also be included via Maven
-from <a href="https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/" target="_blank">this repository</a>.
+Developers can download the fully functional ***Aspose.BarCode for Java*** library and working examples to test its full
+capabilities and better understand our product.
+The library is available for direct download <a href="https://releases.aspose.com/barcode/java/" target="_blank">here</a> 
+and can also be included via Maven from <a href="https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/" target="_blank">this repository</a>.
 
 ## **Main Features**
 
@@ -65,7 +61,7 @@ The most important features are the following:
 - **Generating barcodes with special modes**, such as ECI, error correction, and embedded metadata
 - **Rotating images** at any angle
 - **Saving and loading barcodes** from files or data streams
-- **Encoding and decoding non-English characters** in 2D barcode formats
+- **Encoding and decoding non-ASCII characters** in 2D barcode formats
 
 ## **Platform and Java Compatibility**
 
@@ -141,7 +137,7 @@ To generate a barcode, developers need to specify the symbology, set the code te
 and configure appearance-related properties.
 
 The <a href="https://reference.aspose.com/barcode/java/com.aspose.barcode.generation/BarcodeGenerator" target="_blank"><em>
-BarcodeGenerator</em></a> class supports various 1D and 2D barcode types, including QR codes, and provides a unified interface for
+BarcodeGenerator</em></a> class supports various 1D and 2D barcode types and provides a unified interface for
 barcode creation. Developers can instantiate this class, configure the necessary properties, and save the generated barcode image
 according to customized settings.
 
