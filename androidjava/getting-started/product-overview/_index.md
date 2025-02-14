@@ -67,7 +67,7 @@ generate barcode with customizable settings
 - WEBP
 - EMF
 - PDF
-## **Platforms Supported**
+## **Supported Platforms**
 - Supported starting from Android 8.0 (Oreo) - SDK 26.
 ## **Supported Barcode Symbologies**
 ***Aspose.BarCode for Android via Java*** supports over 80

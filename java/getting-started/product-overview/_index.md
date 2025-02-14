@@ -47,7 +47,7 @@ The library is available for direct
 download <a href="https://releases.aspose.com/barcode/java/" target="_blank">here</a> and can also be included via Maven
 from <a href="https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/" target="_blank">this repository</a>.
 
-### **Main Features**
+## **Main Features**
 
 ***Aspose.BarCode for Java*** offers a wide range of features to meet various business needs. One of its key
 capabilities is the customization of barcode appearance-related properties, including barcode size, element colors,
@@ -67,29 +67,16 @@ The most important features are the following:
 - **Saving and loading barcodes** from files or data streams
 - **Encoding and decoding non-English characters** in 2D barcode formats
 
-## **Supported Platforms and System Compatibility**
+## ** Java Environment Compatibility **
 
-Aspose.BarCode for Java is compatible with any operating system that supports Java JDK/JRE. It requires Java SE 1.8 or
-later and works with various JDK distributions, including:
+Aspose.BarCode for Java is compatible with any operating system that supports Java JDK/JRE. 
+It requires Java SE 1.8 or later and works with various JDK distributions, including:
 
 - **Oracle JDK**
 - **BellSoft Liberica JDK**
 - **Amazon Corretto**
 - **OpenJDK**
 - **and others**
-
-<!--
-***Aspose.BarCode for Android via Java*** is platform-independent so it can be used on any platform where the Android
-Runtime environment is installed and will run on Android systems running Android OS 2.0 or greater.
-***Aspose.BarCode for Node.js*** via Java is a platform-independent API that is compatible with any platform (Windows,
-Linux, MacOS etc.) where Node.js and Node-Java bridge are installed. The machine must have Oracle JDK 7 or greater
-versions installed before setting up the library.
-***Aspose.BarCode for PHP via Java*** is a platform-independent API that can be run on any platform (Windows, Linux,
-etc.) where PHP and Java Bridge are installed.
-
-
-## **Supported Platforms**
--->
 
 ## **Licensing**
 
