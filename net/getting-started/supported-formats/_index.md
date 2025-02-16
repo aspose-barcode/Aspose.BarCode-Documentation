@@ -14,7 +14,7 @@ url: /net/image-formats/
 | :------: | :------: | 
 |[JPEG](https://docs.fileformat.com/Image/JPEG/) | [EMF](https://docs.fileformat.com/Image/EMF/)|
 |[TIFF](https://docs.fileformat.com/Image/TIFF/)|[SVG](https://docs.fileformat.com/page-description-language/SVG/)|
-|[PNG](https://docs.fileformat.com/Image/PNG/) |
+|[PNG](https://docs.fileformat.com/Image/PNG/) |[PDF](https://docs.fileformat.com/pdf/)|
 |[BMP](https://docs.fileformat.com/Image/BMP/) |
 |[GIF](https://docs.fileformat.com/Image/GIF/) |
   
