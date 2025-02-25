@@ -49,32 +49,32 @@ The insertBOM parameter affects the generated barcode image only in specific cas
 
 #### **Combinations of Barcode types and encodings where `insertBOM` affects the generated image**
 
-| **Barcode type**          | **Encoding**          | **Does `insertBOM` affect?** | **Reason for impact**                                                        |
-|---------------------------|----------------------|------------------------------|------------------------------------------------------------------------------|
-| **QR Code**               | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | BOM adds extra bytes at the beginning of data, altering the encoded content. |
-| **Micro QR Code**         | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Same as QR Code.                                                             |
-| **DataMatrix**            | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Encoding with BOM modifies encoded data.                                     |
-| **GS1 DataMatrix**        | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Similar to DataMatrix.                                                       |
-| **PDF417**                | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Encoding changes affect data representation.                                 |
-| **MicroPDF417**           | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Same as PDF417.                                                              |
-| **Aztec**                 | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | BOM adds bytes, altering encoded data.                                       |
-| **MaxiCode**              | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Encoding changes impact the final representation.                            |
-| **Code 128**              | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | BOM affects the encoded text by adding extra bytes.                          |
-| **GS1-128 (UCC/EAN-128)** | UTF-8 / UTF-16 / UTF-32 | ✅ Yes                        | Similar to Code 128.                                                         |
+| **Barcode type**          | **Encoding**              | **Does `insertBOM` affect?**  | **Reason for impact**                                                        |
+|---------------------------|---------------------------|-------------------------------|------------------------------------------------------------------------------|
+| **QR Code**               | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | BOM adds extra bytes at the beginning of data, altering the encoded content. |
+| **Micro QR Code**         | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Same as QR Code.                                                             |
+| **DataMatrix**            | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Encoding with BOM modifies encoded data.                                     |
+| **GS1 DataMatrix**        | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Similar to DataMatrix.                                                       |
+| **PDF417**                | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Encoding changes affect data representation.                                 |
+| **MicroPDF417**           | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Same as PDF417.                                                              |
+| **Aztec**                 | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | BOM adds bytes, altering encoded data.                                       |
+| **MaxiCode**              | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Encoding changes impact the final representation.                            |
+| **Code 128**              | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | BOM affects the encoded text by adding extra bytes.                          |
+| **GS1-128 (UCC/EAN-128)** | UTF-8 / UTF-16 / UTF-32   | ✅ Yes                         | Similar to Code 128.                                                         |
 
 ---
 
 #### **Combinations of Barcode types and encodings where `insertBOM` does not affect the generated image**
 
-| **Barcode type**             | **Encoding**       | **Does `insertBOM` affect?** | **Reason for no impact**                            |
-|------------------------------|-------------------|------------------------------|-----------------------------------------------------|
-| **Code 39**                  | Any               | ❌ No                         | Supports only ASCII characters, BOM is ignored.     |
-| **Code 93**                  | Any               | ❌ No                         | Same as Code 39.                                    |
-| **EAN-13 / EAN-8**           | Any               | ❌ No                         | Only numeric data, BOM does not apply.              |
-| **UPC-A / UPC-E**            | Any               | ❌ No                         | Only digits, encoding does not matter.              |
-| **Interleaved 2 of 5**       | Any               | ❌ No                         | Only numeric data, encoding does not affect output. |
-| **MSI**                      | Any               | ❌ No                         | Only numeric data.                                  |
-| **Codabar**                  | Any               | ❌ No                         | Limited character set, encoding has no effect.      |
+| **Barcode type**             | **Encoding** | **Does `insertBOM` affect?** | **Reason for no impact**                            |
+|------------------------------|--------------|------------------------------|-----------------------------------------------------|
+| **Code 39**                  | Any          | ❌ No                         | Supports only ASCII characters, BOM is ignored.     |
+| **Code 93**                  | Any          | ❌ No                         | Same as Code 39.                                    |
+| **EAN-13 / EAN-8**           | Any          | ❌ No                         | Only numeric data, BOM does not apply.              |
+| **UPC-A / UPC-E**            | Any          | ❌ No                         | Only digits, encoding does not matter.              |
+| **Interleaved 2 of 5**       | Any          | ❌ No                         | Only numeric data, encoding does not affect output. |
+| **MSI**                      | Any          | ❌ No                         | Only numeric data.                                  |
+| **Codabar**                  | Any          | ❌ No                         | Limited character set, encoding has no effect.      |
 | **ITF (Interleaved 2 of 5)** | Any          | ❌ No                         | Only numbers, encoding does not change the result.  |
 
 ---
