@@ -19,7 +19,7 @@ Usage examples of method.
  public class ExampleUsageInsertBom
  {
 
-    private static final String folderPath = "PathToFolder");
+    private static final String folderPath = "PathToFolder";
 
     @Test
     public void test() throws IOException
