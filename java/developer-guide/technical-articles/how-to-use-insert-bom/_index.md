@@ -79,7 +79,7 @@ The insertBOM parameter affects the generated barcode image only in specific cas
 
 ---
 
-### Conclusion (Revised)
+### ***Summary***
 
 - **`insertBOM` affects** the barcode image when using **UTF-8, UTF-16, or UTF-32** encodings in barcodes that support multibyte characters (**QR Code, DataMatrix, PDF417, Aztec, MaxiCode, Code 128, etc.**).
 - **`insertBOM` does not affect** the barcode if the barcode type supports **only numeric characters or a restricted character set** (**EAN-13, UPC, Code 39, Codabar, etc.**).
