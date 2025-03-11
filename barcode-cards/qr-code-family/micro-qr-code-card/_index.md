@@ -15,7 +15,7 @@ Micro QR (Quick Response) code is a variant of [QR Code](/barcode/info-cards/qr-
 <p align="center"><img src="microqrcodesample.png"></p>
 
 {{% alert color="primary" %}}You can find the detailed description of classes and properties that are used in ***Aspose.BarCode*** for Micro QR Code generation and recognition:
-- [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-and-micro-qr-barcode/)
+- [**QR Code in Aspose.BarCode for .NET**](/barcode/net/qr-micro-qr-and-rmqr/)
 
 {{% /alert %}} 
 
@@ -83,15 +83,13 @@ Micro QR Code provides improved density and encode data more efficiently compare
 ```csharp
 
 //generate Micro QR Barcode
-using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose"))
+using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroQR, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //encode data as MicroQR
-    gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceMicroQR;
     //set error correction level 7%
     gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
     //set version M4 can be Auto
-    gen.Parameters.Barcode.QR.QrVersion = QRVersion.VersionM4;
+    gen.Parameters.Barcode.QR.MicroQRVersion = MicroQRVersion.M4;
     gen.Save($"{path}MicroQR.png", BarCodeImageFormat.Png);
 }
 
@@ -107,13 +105,12 @@ public void generateAndRead()
     {
         String filePath = Global.getTestDataFolder("cards") + "MicroQRCode.png";//"path/to/image.png";
         //generate
-        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.QR, "Aspose");
+        BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.MicroQR, "Aspose");
         {
             bg.getParameters().getBarcode().getXDimension().setPixels(4);
-            bg.getParameters().getBarcode().getQR().setQrEncodeType(QREncodeType.FORCE_MICRO_QR);
             bg.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_L);
             bg.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
-            bg.getParameters().getBarcode().getQR().setQrVersion(QRVersion.VERSION_M4);
+            bg.getParameters().getBarcode().getQR().setMicroQRVersion(MicroQRVersion.M4);
             try
             {
                 bg.save(filePath, BarCodeImageFormat.PNG);
@@ -134,14 +131,12 @@ public void generateAndRead()
 ```cpp
 
 //generate Micro QR Code
-System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose");
+System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::MicroQR, u"Aspose");
 gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
-//encode data as MicroQR
-gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceMicroQR);
 //set error correction level 7%
 gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
 //set version M4 can be Auto
-gen->get_Parameters()->get_Barcode()->get_QR()->set_QrVersion(Aspose::BarCode::Generation::QRVersion::VersionM4);
+gen->get_Parameters()->get_Barcode()->get_QR()->set_MicroQRVersion(Aspose::BarCode::Generation::MicroQRVersion::M4);
 gen->Save(path + u"MicroQR.png", Aspose::BarCode::Generation::BarCodeImageFormat::Png);
     
 ```
