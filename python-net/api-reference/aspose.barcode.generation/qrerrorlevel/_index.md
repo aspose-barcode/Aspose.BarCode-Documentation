@@ -3,7 +3,7 @@ title: QRErrorLevel
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 750
+weight: 770
 url: /python-net/api-reference/aspose.barcode.generation/qrerrorlevel/
 ---
 

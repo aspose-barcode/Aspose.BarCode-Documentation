@@ -3,7 +3,7 @@ title: TextAlignment
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 790
+weight: 810
 url: /python-net/api-reference/aspose.barcode.generation/textalignment/
 ---
 

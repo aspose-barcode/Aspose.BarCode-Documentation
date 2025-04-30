@@ -3,7 +3,7 @@ title: BarCodeImageFormat
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 460
+weight: 480
 url: /python-net/api-reference/aspose.barcode.generation/barcodeimageformat/
 ---
 
