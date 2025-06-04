@@ -3,7 +3,7 @@ title: QRVersion
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 760
+weight: 780
 url: /python-net/api-reference/aspose.barcode.generation/qrversion/
 ---
 

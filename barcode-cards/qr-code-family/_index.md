@@ -1,5 +1,5 @@
 ---
-title: QR Code and Micro QR Code
+title: QR Code, Micro QR Code and Rectangular Micro QR Code
 description: "Detailed Information about QR Code Specification"
 keywords: "QR Code, qr codes, qr, what is qr, what is qr code, generate qr, create qr code, read qr, how to read qr, qr code structure, how much data can encode qr"
 type: docs
@@ -14,8 +14,8 @@ url: /info-cards/qr-code/
 ## **Overview**
 QR (Quick Response) Codes are machine-readable labels with patterns composed of black and white squares that can be easily scanned by smartphones and other devices equipped with digital image sensors. The idea has been proposed as an improvement of conventional linear barcode types to adress the need to store much larger amounts of information. This barcode type provides a very high recognition speed and increased encoding capacity. Conceptually, a QR Code can be considered as a means to store information digitally, like flash drives that keep digital data physically. The operations of scanning and decoding can be executed using smartphone cameras and special scanner applications (mobile tagging) that are usually embedded into modern mobile devices. After capturing a QR label, a special application converts it into readable text or more often, into an URL link. 
   
-Apart from 40 basic configurations, this standard supports a special option called Micro QR Code that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. See more information in the article about [Micro QR Codes](/barcode/info-cards/micro-qr-code/). The specification for this barcode type has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
-  
+Apart from 40 basic configurations, this standard supports a special option called [Micro QR Code](/barcode/info-cards/micro-qr-code/) that is useful to address space limitations in applications in which the capacity of 35 characters or less is sufficient. Additionally, the standard includes [Rectangular Micro QR Code](/barcode/info-cards/rect-micro-qr-code/), which provides a more compact rectangular shape. This variant is particularly suitable for applications with constrained printing areas. The specification for these barcode types has been published in [ISO/IEC 18004:2015](https://www.iso.org/standard/62021.html).
+
 <p align="center"><img src="qrcodesample.png"></p>
   
 {{% alert color="primary" %}}You can find the detailed description of classes and properties used in ***Aspose.BarCode*** for QR Code generation and recognition:
@@ -54,9 +54,9 @@ The key elements include the following:
 ### **Size Dimensions**
 Basic QR Code supports configurations that range from Version 1 to Version 40. The minimal size of a barcode image is 21 x 21 modules (Version 1) or 5.25 mm x 5.25 mm excluding the quiet zone. The maximal size (Version 40) equals to 177 x 177 modules. Each higher version contains four additional modules per side and has its own module configuration. To ensure successful scanning by most smartphones, QR labels should have a size of at least 2 cm x 2 cm (0.8 x 0.8 inches).  
   
-|QR Code Version 5|Micro QR Code Version 4|
-| :-: | :-: |
-|<img src="qrcodeversion05.png">|<img src="qrcodeversionm4.png">|
+|QR Code Version 5|Micro QR Code Version 4|Rectangular Micro QR Code Version R7x43|
+| :-: | :-: | :-: |
+|<img src="qrcodeversion05.png">|<img src="qrcodeversionm4.png">|<img src="rectmicroqrversionr7x43.png">|
   
 <details>  
 <summary>Read more</summary>
@@ -127,8 +127,6 @@ However, QR Codes are sensitive to substantial damage to the target pattern as i
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //encode data as QR
-    gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceQR;
     //set error correction level 7%
     gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
     //set ECI encoding UTF8
@@ -154,7 +152,6 @@ public void generateAndRead()
         BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
         {
             bg.getParameters().getBarcode().getXDimension().setPixels(4);
-            bg.getParameters().getBarcode().getQR().setQrEncodeType(QREncodeType.FORCE_QR);
             bg.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI_ENCODING);
             bg.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_L);
             bg.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
@@ -181,8 +178,6 @@ public void generateAndRead()
 //generate QR Barcode
 System::SharedPtr<BarcodeGenerator> gen = System::MakeObject<BarcodeGenerator>(EncodeTypes::QR, u"Aspose常に先を行く");
 gen->get_Parameters()->get_Barcode()->get_XDimension()->set_Pixels(4.0f);
-//encode data as QR
-gen->get_Parameters()->get_Barcode()->get_QR()->set_QrEncodeType(Aspose::BarCode::Generation::QREncodeType::ForceQR);
 //set error correction level 7%
 gen->get_Parameters()->get_Barcode()->get_QR()->set_QrErrorLevel(Aspose::BarCode::Generation::QRErrorLevel::LevelL);
 //set ECI encoding UTF8

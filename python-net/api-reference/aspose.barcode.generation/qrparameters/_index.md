@@ -3,7 +3,7 @@ title: QrParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 370
+weight: 390
 url: /python-net/api-reference/aspose.barcode.generation/qrparameters/
 ---
 

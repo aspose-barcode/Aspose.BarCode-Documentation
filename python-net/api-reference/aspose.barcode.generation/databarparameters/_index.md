@@ -3,7 +3,7 @@ title: DataBarParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 160
+weight: 170
 url: /python-net/api-reference/aspose.barcode.generation/databarparameters/
 ---
 

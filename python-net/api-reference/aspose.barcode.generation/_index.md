@@ -21,6 +21,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[BaseEncodeType](/barcode/python-net/api-reference/aspose.barcode.generation/baseencodetype/)|Base class for SymbologyEncodeType.|
 |[BaseGenerationParameters](/barcode/python-net/api-reference/aspose.barcode.generation/basegenerationparameters/)|Barcode image generation parameters.|
 |[BorderParameters](/barcode/python-net/api-reference/aspose.barcode.generation/borderparameters/)|Barcode image border parameters|
+|[CMYKColor](/barcode/python-net/api-reference/aspose.barcode.generation/cmykcolor/)|Class for CMYK color. Null means CMYK is not used, default RGB color is in use.|
 |[CaptionParameters](/barcode/python-net/api-reference/aspose.barcode.generation/captionparameters/)|Caption parameters.|
 |[CodabarParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codabarparameters/)|Codabar parameters.|
 |[CodablockParameters](/barcode/python-net/api-reference/aspose.barcode.generation/codablockparameters/)|Codablock parameters.|
@@ -47,6 +48,7 @@ The Aspose.BarCode.Generation containing general classes for the implementation 
 |[Padding](/barcode/python-net/api-reference/aspose.barcode.generation/padding/)|Paddings parameters.|
 |[PatchCodeParameters](/barcode/python-net/api-reference/aspose.barcode.generation/patchcodeparameters/)|PatchCode parameters.|
 |[Pdf417Parameters](/barcode/python-net/api-reference/aspose.barcode.generation/pdf417parameters/)|PDF417 parameters. Contains PDF417, MacroPDF417, MicroPDF417 and GS1MicroPdf417 parameters.<br/>            MacroPDF417 requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.<br/>            MicroPDF417 in Structured Append mode (same as MacroPDF417 mode) requires two fields: Pdf417MacroFileID and Pdf417MacroSegmentID. All other fields are optional.|
+|[PdfParameters](/barcode/python-net/api-reference/aspose.barcode.generation/pdfparameters/)|PDF parameters.|
 |[PostalParameters](/barcode/python-net/api-reference/aspose.barcode.generation/postalparameters/)|Postal parameters. Used for Postnet, Planet.|
 |[QrExtCodetextBuilder](/barcode/python-net/api-reference/aspose.barcode.generation/qrextcodetextbuilder/)|Extended codetext generator for 2D QR barcodes for ExtendedCodetext Mode of QrEncodeMode<br/>        Use TwoDDisplayText property of BarcodeGenerator to set visible text to removing managing characters.|
 |[QrParameters](/barcode/python-net/api-reference/aspose.barcode.generation/qrparameters/)|QR parameters.|
