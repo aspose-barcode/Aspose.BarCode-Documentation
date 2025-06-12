@@ -110,12 +110,11 @@ Following are the links to some useful resources you may need to accomplish your
 - <a href="/barcode/phpjava/product-overview/" target="_blank">Aspose.BarCode for PHP via Java Product Overview</a>
 - <a href="https://releases.aspose.com/barcode/php/release-notes/" target="_blank">Aspose.BarCode for PHP via Java Release Notes</a>
 - <a href="https://products.aspose.com/barcode/php-java/" target="_blank">Aspose.BarCode for PHP via Java Product Page</a>
-- <a href="/barcode/java/installation/" target="_blank">Install Aspose.BarCode for Java from Maven Repository</a>
-- <a href="https://downloads.aspose.com/barcode/java" target="_blank">Download Aspose.BarCode for Java</a>
-- <a href="https://github.com/aspose-barcode/Aspose.Barcode-for-Java" target="_blank">Download Code Examples from GitHub Repository</a>
-- <a href="https://reference.aspose.com/java/barcode" target="_blank">Aspose.BarCode for Java API Reference Guide</a>
-- <a href="https://forum.aspose.com/c/barcode" target="_blank">Aspose.BarCode for Java Free Support Forum</a>
-- <a href="https://helpdesk.aspose.com/" target="_blank">Aspose.BarCode for Java Paid Support Helpdesk</a>
+- <a href="https://packagist.org/packages/aspose/barcode" target="_blank">Install Aspose.BarCode for PHP via Java from Packagist.org</a>
+- <a href="https://releases.aspose.com/barcode/php/" target="_blank">Download Aspose.BarCode for PHP via Java</a>
+- <a href="https://reference.aspose.com/barcode/php/" target="_blank">Aspose.BarCode for PHP via Java API Reference</a>
+- <a href="https://forum.aspose.com/c/barcode" target="_blank">Aspose.BarCode for PHP via Java Free Support Forum</a>
+- <a href="https://helpdesk.aspose.com/" target="_blank">Aspose.BarCode for PHP via Java Paid Support Helpdesk</a>
 
 
 ## Aspose.BarCode for C++

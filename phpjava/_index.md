@@ -7,7 +7,6 @@ is_root: true
 ---
 
 ### Aspose.BarCode for PHP via Java
-
 **Aspose.BarCode for PHP via Java** is a powerful barcode processing library that enables developers 
 to easily generate and recognize barcodes in PHP applications. 
 Built using Apache Thrift, it bridges PHP and Java to deliver robust functionality.
@@ -22,19 +21,10 @@ including **BMP**, **GIF**, **JPEG**, **PNG**, **TIFF**, **EMF**, **SVG**, and *
 - Barcode generation and recognition for PHP applications
 - Support for most common 1D and 2D barcode symbologies
 - High-performance processing through Java integration
-- Flexible output to various raster and vector image formats
-
-
-### Key Features
-
-- Barcode generation and recognition for PHP applications
-- Support for most common 1D and 2D barcode symbologies
-- High-performance processing through Java integration
 - Flexible output to various raster image formats
 
 
 ### Aspose.BarCode for PHP via Java Resources
-
 - <a href="/barcode/phpjava/product-overview/" target="_blank">Aspose.BarCode for PHP via Java Product Overview</a>
 - <a href="https://releases.aspose.com/barcode/php/release-notes/" target="_blank">Aspose.BarCode for PHP via Java Release Notes</a>
 - <a href="https://products.aspose.com/barcode/php-java/" target="_blank">Aspose.BarCode for PHP via Java Product Page</a>
