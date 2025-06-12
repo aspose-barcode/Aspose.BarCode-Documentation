@@ -9,7 +9,7 @@ url: /java/product-overview/
 ***Aspose.BarCode for Java*** is a robust and reliable barcode generation and recognition component written in Java that
 allows developers to quickly and easily add barcode generation and recognition functionality to Java applications. It
 provides a group of classes to work with barcodes on the backend, as well as GUI-based controls.
-_**Aspose.BarCode for Java**_ offers a versatile and powerful solution for managing barcodes. One key advantage is the
+***Aspose.BarCode for Java*** offers a versatile and powerful solution for managing barcodes. One key advantage is the
 ability to adjust barcode recognition engine variables, allowing you to balance reading quality and speed. One of its
 standout features is the ability to configure barcode recognition engine variables, allowing you to strike the perfect
 balance between reading quality and speed. This flexibility even enables the recognition of severely corrupted barcodes,
@@ -45,13 +45,12 @@ and can also be included via Maven from <a href="https://releases.aspose.com/jav
 
 ## **Main Features**
 
-***Aspose.BarCode for Java*** offers a wide range of features to meet various business needs. One of its key
-capabilities is the customization of barcode appearance-related properties, including barcode size, element colors,
+***Aspose.BarCode for Java*** offers a wide range of features to meet various business needs. 
+One of its key capabilities is the customization of barcode appearance-related properties, including barcode size, element colors,
 rotation angle, image quality, X-dimension, resolution, text captions, and more.
 The library offers excellent capabilities for barcode recognition and image processing.
 
 The most important features are the following:
-
 - **Barcode generation and recognition** for 80+ barcode types
 - **Reading barcodes** at any angle and from images of various quality levels
 - **Customizing barcode appearance**, including size, height, resolution, colors, rotation angle, text labels, captions,
