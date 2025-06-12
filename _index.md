@@ -83,6 +83,40 @@ Following are the links to some useful resources you may need to accomplish your
 - <a href="https://forum.aspose.com/c/barcode" target="_blank">Aspose.BarCode for Java Free Support Forum</a>
 - <a href="https://helpdesk.aspose.com/" target="_blank">Aspose.BarCode for Java Paid Support Helpdesk</a>
 
+## Aspose.BarCode for PHP via Java
+
+{{% alert color="primary" %}}
+
+![Aspose.BarCode for Java Product Logo](home_2.png)
+
+This library supports a wide range of popular barcode standards and specifications,
+making it suitable for various business and industrial applications.
+It provides seamless export capabilities to multiple file formats,
+including **BMP**, **GIF**, **JPEG**, **PNG**, **TIFF**, **EMF**, **SVG**, and **PDF**.
+
+Why Choose ***Aspose.BarCode for PHP via Java*** to Manage Barcodes?
+
+***Aspose.BarCode for PHP via Java*** offers a versatile and powerful solution for managing barcodes.
+One key advantage is the ability to adjust barcode recognition engine variables, allowing you to balance reading quality and speed.
+One of its standout features is the ability to configure barcode recognition engine variables, allowing you to strike the perfect balance between reading quality and speed. This flexibility even enables the recognition of severely corrupted barcodes, ensuring reliability in challenging scenarios.
+The library also provides extensive customization options for barcode appearance and parameters. You can adjust settings such as background color, bar color, rotation angle, X-dimension, image quality, resolution, captions, size, and more, tailoring the output to fit your specific requirements.  
+Furthermore, ***Aspose.BarCode for PHP via Java*** supports a wide range of symbologies and offers robust functionality for both barcode generation and recognition. This makes it easy to implement barcode solutions that seamlessly integrate into your business processes, meeting your unique operational needs.
+
+{{% /alert %}}
+
+Following are the links to some useful resources you may need to accomplish your tasks.
+
+- <a href="/barcode/phpjava/" target="_blank">Aspose.BarCode for PHP via Java Online Documentation</a>
+- <a href="/barcode/phpjava/product-overview/" target="_blank">Aspose.BarCode for PHP via Java Product Overview</a>
+- <a href="https://releases.aspose.com/barcode/php/release-notes/" target="_blank">Aspose.BarCode for PHP via Java Release Notes</a>
+- <a href="https://products.aspose.com/barcode/php-java/" target="_blank">Aspose.BarCode for PHP via Java Product Page</a>
+- <a href="/barcode/java/installation/" target="_blank">Install Aspose.BarCode for Java from Maven Repository</a>
+- <a href="https://downloads.aspose.com/barcode/java" target="_blank">Download Aspose.BarCode for Java</a>
+- <a href="https://github.com/aspose-barcode/Aspose.Barcode-for-Java" target="_blank">Download Code Examples from GitHub Repository</a>
+- <a href="https://reference.aspose.com/java/barcode" target="_blank">Aspose.BarCode for Java API Reference Guide</a>
+- <a href="https://forum.aspose.com/c/barcode" target="_blank">Aspose.BarCode for Java Free Support Forum</a>
+- <a href="https://helpdesk.aspose.com/" target="_blank">Aspose.BarCode for Java Paid Support Helpdesk</a>
+
 
 ## Aspose.BarCode for C++
 {{% alert color="primary" %}}

@@ -34,7 +34,7 @@ This section introduces Aspose.BarCode for Java and its features, gives examples
 **Aspose.BarCode for Java Resources**
 The following are the links to some useful resources you may need to accomplish your tasks.
 
-- <a href="/barcode/java/product-overview/" target="_blank">Aspose.BarCode for Java Features</a>
+- <a href="/barcode/java/product-overview/" target="_blank">Aspose.BarCode for Java Product Overview</a>
 - <a href="https://releases.aspose.com/barcode/java/release-notes/" target="_blank">Aspose.BarCode for Java Release Notes</a>
 - <a href="https://products.aspose.com/barcode/java" target="_blank">Aspose.BarCode for Java Product Page</a>
 - <a href="https://releases.aspose.com/java/repo/com/aspose/aspose-barcode/" target="_blank">Aspose.BarCode for Java from Maven Repository</a>
