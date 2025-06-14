@@ -55,16 +55,16 @@ or refer to your operating system’s package manager.
 **2 Download from Company WebSite**
 
 Download zip archive from <a href="https://releases.aspose.com/barcode/php/" target="_blank">Aspose Company website</a>.
-This archive contains 
-- folder `doc` with `aspose-barcode-php-25.5-javadoc.zip` which is the compressed API Docs
-- folder `licence` that contains `End User License Agreement` and `Third Party Licenses` describing files
-- folder `lib` that contains PHP files and JAR file of product
-- folder `bin` that contains scripts for launch Java server
-- README.md
+This archive contains
+- doc/ — includes aspose-barcode-php-25.5-javadoc.zip, a compressed version of the API docs
+- license/ — contains the End User License Agreement and Third Party Licenses
+- lib/ — includes PHP source files and the product JAR file
+- bin/ — includes scripts for launching the Java server
+- README.md — general instructions
 
-You may copy content of lib folder to suitable folder in your application like `barcode-lib`
-and copy `bin` folder to your application. Correct the command line in the scripts depending on
-where you situated the lib files. For example like:
+You may copy the contents of the lib/ folder into a suitable directory in your application 
+(e.g., barcode-lib) and the bin/ folder as well.
+Then, update the command lines in the scripts to reflect your folder structure, for example:
 ```cmd
 set JAR_PATH=%SCRIPT_DIR%..\barcode-lib\aspose-barcode-php-25.5.jar
 ```
@@ -73,9 +73,9 @@ or
 JAR_PATH="$SCRIPT_DIR/../barcode-lib/aspose-barcode-php-25.5.jar"
 ```
 
-### Running and testing
-Launch Java Apache Thrift server by `start_server.cmd` or `start_server.sh`.
-You will see console with messages like
+### Running and Testing
+Launch the Java Apache Thrift server using start_server.cmd or start_server.sh.
+The console output will look like:
 ```log
 Starting Thrift server...
 Thrift server started! Logs are in server.log.
