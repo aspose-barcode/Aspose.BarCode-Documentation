@@ -8,19 +8,21 @@ aliases:
 ---
 
 ### Installation Options
-You have several options to install product. 
 
-**Clone from GitHub**
-- Clone the Aspose.BarCode from GitHub repository
-  <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-PHP-via-Java/tree/master" target="_blank">
-  Aspose.BarCode for PHP via Java Repository </a> 
+You have several options to install the product.
 
-```
+#### **Clone from GitHub**
+
+Clone the Aspose.BarCode from the GitHub repository:  
+[Aspose.BarCode for PHP via Java Repository](https://github.com/aspose-barcode/Aspose.BarCode-for-PHP-via-Java/tree/master)
+
+```bash
 git clone git@github.com:aspose-barcode/Aspose.BarCode-for-PHP-via-Java.git
 ```
 
-**Install by composer**
-- Example of composer.json
+#### **Install via Composer**
+
+Example of `composer.json`:
 
 ```json
 {
@@ -35,22 +37,27 @@ git clone git@github.com:aspose-barcode/Aspose.BarCode-for-PHP-via-Java.git
   }
 }
 ```
+
 Then run:
-``` bash
+
+```bash
 composer install
 ```
-⚠️ GD Extension Required
-Note: This library requires the <a href="https://www.php.net/manual/en/book.image.php" target="_blank">GD extension</a> 
-to be installed and enabled in your PHP environment.
-Composer does not install PHP extensions — it only verifies their presence during installation.
 
-If ext-gd is missing, you may encounter the following error:
+> **GD Extension Required**  
+> This library requires the [GD extension](https://www.php.net/manual/en/book.image.php) to be installed and enabled in your PHP environment.  
+> Composer **does not install PHP extensions** — it only verifies their presence during installation.
+
+If `ext-gd` is missing, you may encounter the following error:
+
 ```
 - aspose/barcode 25.5.5 requires ext-gd * -> it is missing from your system.
 ```
-Need help installing GD? 
-See instructions <a href="https://www.php.net/manual/en/image.installation.php" target="_blank">here</a>, 
+
+Need help installing GD?  
+See the [official PHP GD installation guide](https://www.php.net/manual/en/image.installation.php),  
 or refer to your operating system’s package manager.
+
 
 
 **2 Download from Company WebSite**
