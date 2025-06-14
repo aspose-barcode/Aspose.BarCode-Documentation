@@ -7,9 +7,10 @@ aliases:
 - /java/aspose-barcode-for-php-via-java-installation/
 ---
 
-## 📦 Installation Options
-You have several options to install product.
-**1 Clone from GitHub**
+### Installation Options
+You have several options to install product. 
+
+**Clone from GitHub**
 - Clone the Aspose.BarCode from GitHub repository
   <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-PHP-via-Java/tree/master" target="_blank">
   Aspose.BarCode for PHP via Java Repository </a> 
@@ -18,7 +19,7 @@ You have several options to install product.
 git clone git@github.com:aspose-barcode/Aspose.BarCode-for-PHP-via-Java.git
 ```
 
-**2 Install by composer**
+**Install by composer**
 - Example of composer.json
 
 ```json
