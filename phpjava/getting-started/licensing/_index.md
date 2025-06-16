@@ -1,7 +1,7 @@
 ---
 title: Licensing
 type: docs
-weight: 30
+weight: 40
 url: /phpjava/licensing/
 ---
 

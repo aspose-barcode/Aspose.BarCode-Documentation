@@ -1,16 +1,16 @@
 ---
 title: Installation
 type: docs
-weight: 20
+weight: 30
 url: /phpjava/installation/
 aliases:
 - /java/aspose-barcode-for-php-via-java-installation/
 ---
-## **Platform and Compatibility**
+### **Platform and Compatibility**
 
 **Aspose.BarCode for PHP via Java** is a platform-independent product that can be used on any operating system — including **Windows**, **Linux**, and **Solaris** — where both PHP and Java are installed.
 
-### System Requirements
+### **System Requirements**
 
 - **PHP**: Version 7.4 or higher
 - **Java**: JDK 1.8 or higher
@@ -25,9 +25,7 @@ It requires Java SE 1.8 or later and works with various JDK distributions, inclu
 
 This flexibility ensures that **Aspose.BarCode for PHP via Java** can integrate seamlessly into most environments, whether for development, testing, or production.
 
-## Installation
-
-### Installation Options
+### **Installation Options**
 
 You have several options to install the product:
 
@@ -103,9 +101,7 @@ set JAR_PATH=%SCRIPT_DIR%..\barcode-lib\aspose-barcode-php-25.5.jar
 JAR_PATH="$SCRIPT_DIR/../barcode-lib/aspose-barcode-php-25.5.jar"
 ```
 
----
-
-### Running and Testing
+### **Running and Testing**
 
 Start the Java Apache Thrift server using `start_server.cmd` or `start_server.sh`.
 

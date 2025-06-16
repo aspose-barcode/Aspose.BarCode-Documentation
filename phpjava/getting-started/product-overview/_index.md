@@ -65,5 +65,4 @@ valid for 30 days to evaluate the full feature set.
 - <a href="https://reference.aspose.com/barcode/php/classBarCodeReader" target="_blank">BarCodeReader</a> – for scanning and decoding barcodes
 - <a href="https://reference.aspose.com/barcode/php/classBarcodeGenerator" target="_blank">BarcodeGenerator</a> – for generating barcodes with specific formatting
 - <a href="https://reference.aspose.com/barcode/php/classComplexBarcodeGenerator" target="_blank">ComplexBarcodeGenerator</a> 
-- and <a href="https://reference.aspose.com/barcode/php/classComplexCodetextReader" target="_blank">ComplexCodetextReader</a> – 
-- for handling advanced barcodes such as Swiss QR Code and MailMark
+and <a href="https://reference.aspose.com/barcode/php/classComplexCodetextReader" target="_blank">ComplexCodetextReader</a> for handling advanced barcodes such as Swiss QR Code and MailMark

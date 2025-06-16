@@ -5,7 +5,7 @@ weight: 50
 feedback: BARCODECOM
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Java, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, Java"
-url: /java/barcode-types/
+url: /phpjava/barcode-types/
 ---
 
 ***Aspose.BarCode for Java*** supports over 80
