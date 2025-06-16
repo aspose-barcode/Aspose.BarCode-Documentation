@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 type: docs
-weight: 10
+weight: 20
 url: /phpjava/getting-started/
 ---
 

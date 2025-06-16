@@ -1,7 +1,7 @@
 ---
 title: Features
 type: docs
-weight: 30
+weight: 10
 url: /phpjava/features/
 aliases:
 - /java/aspose-barcode-for-php-via-java-features/

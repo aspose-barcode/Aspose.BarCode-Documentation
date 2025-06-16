@@ -1,13 +1,31 @@
 ---
 title: Installation
 type: docs
-weight: 60
+weight: 20
 url: /phpjava/installation/
 aliases:
 - /java/aspose-barcode-for-php-via-java-installation/
 ---
+## **Platform and Compatibility**
 
-# Installation
+**Aspose.BarCode for PHP via Java** is a platform-independent product that can be used on any operating system — including **Windows**, **Linux**, and **Solaris** — where both PHP and Java are installed.
+
+### System Requirements
+
+- **PHP**: Version 7.4 or higher
+- **Java**: JDK 1.8 or higher
+
+It requires Java SE 1.8 or later and works with various JDK distributions, including but not limited to:
+
+- **Oracle JDK**
+- **BellSoft Liberica JDK**
+- **Amazon Corretto**
+- **OpenJDK**
+- **Other compatible distributions**
+
+This flexibility ensures that **Aspose.BarCode for PHP via Java** can integrate seamlessly into most environments, whether for development, testing, or production.
+
+## Installation
 
 ### Installation Options
 
