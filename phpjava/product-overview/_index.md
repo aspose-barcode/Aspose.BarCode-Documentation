@@ -6,39 +6,20 @@ url: /phpjava/product-overview/
 
 ---
 
-***Aspose.BarCode for PHP via Java*** is a robust and reliable barcode generation and recognition component 
-developed using PHP, Java and Apache Thrift. 
-It allows developers to quickly and easily add barcode generation and recognition functionality to PHP applications.
+# Aspose.BarCode for PHP via Java
 
-## **Product Description**
+**Aspose.BarCode for PHP via Java** is a powerful and reliable component for barcode generation and recognition, 
+developed using PHP, Java, and Apache Thrift. It enables developers to quickly and easily integrate barcode functionality into PHP applications.
 
-***Aspose.BarCode for PHP via Java*** is a powerful and versatile library designed to streamline barcode processing tasks
-in Java applications. Implemented with managed code, it offers seamless functionality for generating and recognizing
-a wide variety of barcode types, both 1D (one-dimensional) и 2D (two-dimensional), at any angle—quickly and effortlessly.
+## Product Description
 
-This library is fully compatible with most existing barcode specifications and standards, supporting over
-80 barcode symbologies
+**Aspose.BarCode for PHP via Java** is a versatile library designed to streamline barcode processing tasks in 
+PHP applications via Java. It offers robust capabilities for generating and recognizing both 1D (one-dimensional) 
+and 2D (two-dimensional) barcode types at any angle—quickly and efficiently.
 
-The detailed listing of all available barcode types is provided
-in <a href="/barcode/phpjava/barcode-types/" target="_blank">Supported Barcode Types</a>.
+This library supports over **80 barcode symbologies**, fully compatible with most industry standards and specifications.
 
-***Aspose.BarCode for PHP via Java*** has many characteristics that make it a flexible and easy-to-use tool.
-It is a fully functional library that provides both generation and reading functionality.
-Generated barcodes can be saved in five high-quality raster image formats and two vector ones.
-The other advantage is that the library facilitates decoding even low-quality or damaged barcode images.
-Therefore, it enables high recognition efficiency for most supported symbology types.
-
-Developers can download the fully functional ***Aspose.BarCode for PHP via Java*** library and working examples to test its full
-capabilities and better understand our product.
-The library is available for direct download <a href="https://releases.aspose.com/barcode/php/" target="_blank">here</a>
-and can also be installed via Packagist <a href="https://packagist.org/packages/aspose/barcode" target="_blank">this repository</a>.
-
-### **Product Features**
-***Aspose.BarCode for PHP via Java*** benefits from a great variety of features that can serve to address various business needs. 
-One of the most important functions is the customization of barcode appearance-related properties, 
-including barcode size, color of barcode elements, rotation angle, 
-image quality, X-dimension, resolution, text captions, and many others. 
-Moreover, rich barcode reading and imaging functionality is available.  
+A comprehensive list of supported barcode types is available in <a href="/barcode/phpjava/barcode-types/" target="_blank">Supported Barcode Types</a>.
 
 The most important features are the following:
 - **Barcode generation and recognition** for 80+ barcode types
@@ -51,29 +32,38 @@ The most important features are the following:
 - **Rotating images** at any angle
 - **Saving and loading barcodes** from files or data streams
 - **Encoding and decoding non-ASCII characters** in 2D barcode formats
+See <a href="/barcode/phpjava/features/" target="_blank">The List of Product Features</a> for more details.
 
-<a href="/barcode/phpjava/features/" target="_blank">The List of Product Features</a>
+The fully functional library can be downloaded for evaluation:
 
-## **System Compatibility**
-***Aspose.BarCode for PHP via Java*** is a platform-independent API that can be run on any platform (Windows, Linux, etc.) where PHP and Java Bridge are installed.
+- <a href="https://releases.aspose.com/barcode/php/" target="_blank">Download the Library</a>
+- <a href="https://packagist.org/packages/aspose/barcode" target="_blank">Packagist Repository</a>
 
-## **Supported Platforms**
+## System Compatibility
 
-## **Licensing**
-License is required to get access to the advanced functionality of ***Aspose.BarCode for PHP via Java***. 
-The evaluation mode allows generating barcodes without any restrictions. 
-However, watermarks are displayed on generated barcode images. 
-Barcode recognition functionality is provided without limitations only for Code 39 barcodes. 
-For all other barcode types, 30% of the decoded text will be masked. 
-More information about how to buy and set the license is provided in
-<a href="/barcode/phpjava/licensing/" target="_blank">Licensing</a>. 
-If you want to evaluate the full functionality of ***Aspose.BarCode for PHP via Java***, 
-you can obtain a temporary license that is valid for 30 days.
-<a href="https://purchase.aspose.com/temporary-license" target="_blank">How to get a Temporary License</a>
+**Aspose.BarCode for PHP via Java** is a platform-independent API that works on any system (Windows, Linux, etc.) 
+where PHP and Java are installed.
 
-## **Main Classes**
-***Aspose.BarCode for PHP via Java*** contains three main classes: 
-[*BarCodeReader*](https://reference.aspose.com/barcode/php/classBarCodeReader) for barcode scanning and reading, 
-[*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) for barcode generation according to the specified format requirements. 
-Classes [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/php/classComplexBarcodeGenerator) and [*ComplexCodetextReader*](https://reference.aspose.com/barcode/php/classComplexCodetextReader) 
-are introduced to manage complex barcodes, such as *Swiss QR Code* or *MailMark*. 
+## Licensing
+
+A valid license is required to access the full capabilities of **Aspose.BarCode for PHP via Java**.
+
+In evaluation mode:
+- Barcode generation is unrestricted but includes a watermark
+- Recognition is fully enabled for Code 39 only
+- For other symbologies, 30% of the decoded text will be masked
+
+Learn more in <a href="/barcode/phpjava/licensing/" target="_blank">Licensing</a>.
+
+You can request a <a href="https://purchase.aspose.com/temporary-license" target="_blank">Temporary License</a> 
+valid for 30 days to evaluate the full feature set.
+
+## Main Classes
+
+**Aspose.BarCode for PHP via Java** provides the following core classes:
+
+- <a href="https://reference.aspose.com/barcode/php/classBarCodeReader" target="_blank">BarCodeReader</a> – for scanning and decoding barcodes
+- <a href="https://reference.aspose.com/barcode/php/classBarcodeGenerator" target="_blank">BarcodeGenerator</a> – for generating barcodes with specific formatting
+- <a href="https://reference.aspose.com/barcode/php/classComplexBarcodeGenerator" target="_blank">ComplexBarcodeGenerator</a> 
+- and <a href="https://reference.aspose.com/barcode/php/classComplexCodetextReader" target="_blank">ComplexCodetextReader</a> – 
+- for handling advanced barcodes such as Swiss QR Code and MailMark
