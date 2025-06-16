@@ -65,10 +65,15 @@ The evaluation mode allows generating barcodes without any restrictions.
 However, watermarks are displayed on generated barcode images. 
 Barcode recognition functionality is provided without limitations only for Code 39 barcodes. 
 For all other barcode types, 30% of the decoded text will be masked. 
-More information about how to buy and set the license is provided in [**Licensing**](/barcode/phpjava/licensing/). 
+More information about how to buy and set the license is provided in
+<a href="/barcode/phpjava/licensing/" target="_blank">Licensing</a>. 
 If you want to evaluate the full functionality of ***Aspose.BarCode for PHP via Java***, 
-you can obtain a temporary license that is valid for 30 days. 
-Please refer to [How to get a Temporary License](https://purchase.aspose.com/temporary-license) for details.
+you can obtain a temporary license that is valid for 30 days.
+<a href="https://purchase.aspose.com/temporary-license" target="_blank">How to get a Temporary License</a>
 
 ## **Main Classes**
-***Aspose.BarCode for PHP via Java*** contains three main classes: [*BarCodeReader*](https://reference.aspose.com/barcode/php/classBarCodeReader) for barcode scanning and reading, [*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) for barcode generation according to the specified format requirements. Classes [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/php/classComplexBarcodeGenerator) and [*ComplexCodetextReader*](https://reference.aspose.com/barcode/php/classComplexCodetextReader) are introduced to manage complex barcodes, such as *Swiss QR Code* or *MailMark*. 
+***Aspose.BarCode for PHP via Java*** contains three main classes: 
+[*BarCodeReader*](https://reference.aspose.com/barcode/php/classBarCodeReader) for barcode scanning and reading, 
+[*BarcodeGenerator*](https://reference.aspose.com/barcode/php/classBarcodeGenerator) for barcode generation according to the specified format requirements. 
+Classes [*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/php/classComplexBarcodeGenerator) and [*ComplexCodetextReader*](https://reference.aspose.com/barcode/php/classComplexCodetextReader) 
+are introduced to manage complex barcodes, such as *Swiss QR Code* or *MailMark*. 
