@@ -38,44 +38,51 @@ Every license includes:
 
 ## **License File**
 
-The license is an XML file that contains key information about the purchased license, including:
+The license is an XML file that contains essential information about your license, including:
 
 - `License Type`
 - `Order ID`
-- `Product Names` to which the license applies
-- `Customer` information
-- `Edition Type` of the license
-- `Serial Number` of the issued license
+- `Product Names` the license applies to
+- `Customer` details
+- `Edition Type`
+- `Serial Number`
 
 A **trial license** includes an additional field, `LicenseExpiry`, 
-which defines the date until which the license remains valid. 
+which specifies the expiration date. 
 After this date, the trial license becomes inactive.
 
-Both **trial** and **commercial** licenses include a `SubscriptionExpiry` field. 
-This defines the end of the update subscription period. 
-Until this date, the customer is entitled to receive all product updates.
-> ⚠️ **Note:** Typically, the `LicenseExpiry` date is earlier than the `SubscriptionExpiry`.  
-> Therefore, for trial licenses, the `SubscriptionExpiry` value has no practical effect.
-
-
-Aspose.BarCode typically delivers monthly updates that may include:
+Both **trial** and **commercial** licenses include a `SubscriptionExpiry` field, 
+which defines the period during which you are entitled to receive product updates, 
+such as:
 
 - Bug fixes
-- Performance improvements
+- Performance enhancements
 - New feature additions
 
+> ⚠️ **Note:** Typically, the `LicenseExpiry` date is earlier than the `SubscriptionExpiry`.  
+> Therefore, for trial licenses, the `SubscriptionExpiry` has no practical effect.
+
 > ⚠️ **Do not modify the license file.**  
-> The license file is digitally signed. 
-> Any changes — including extra spaces or line breaks — 
-> will result in the file being corrupted and failing validation.
+> The license is digitally signed. 
+> Any changes — including additional spaces or line breaks — 
+> will corrupt the file and cause validation to fail.
+
+---
 
 ## **Applying a License**
-Customer can apply license file in several ways.
-1. #### Applying for whole session:
-The license must be set before any barcode generation or recognition operations.
-Once set, the license remains in effect and does not need to be reapplied for each request.
 
-Example for **BarcodeGenerator** and **BarCodeReader**
+There are two ways to apply a license in 
+**Aspose.BarCode for PHP via Java**.
+
+---
+
+### 1. Applying License for the Entire Session
+
+The license is set once and remains valid for 
+all subsequent operations in the session.
+You do not need to pass it with each request.
+
+#### Example: `BarcodeGenerator` and `BarCodeReader`
 
 ```php
     $license = new License();
@@ -97,7 +104,7 @@ Example for **BarcodeGenerator** and **BarCodeReader**
     Assert::assertTrue($license->isLicensed());
 ```
 
-Example for **ComplexBarcodeGenerator** and **BarCodeReader**
+Example: **ComplexBarcodeGenerator** and **BarCodeReader**
 
 ```php
       //Prepare Mailmark Codetext
@@ -125,19 +132,22 @@ Example for **ComplexBarcodeGenerator** and **BarCodeReader**
       Assert::assertTrue($license->isLicensed());
 ```
 
-2. ####  Passing license with each individual request to the Java backend:
- In this mode, the license is not applied globally.
- The PHP code explicitly passes the license with each individual request to the Java backend.
- After Java processes the request and returns the result to PHP, the license state is cleared on the Java side
- and the application reverts to a non-licensed state until new request with passing license file.
-  Only 3 methods has parameter `bool $passLicense`:
+2. ####  Passing License with Each Request to the Java backend (Per-Call Licensing) :
+In this mode, the license is not applied globally. 
+Instead, it is passed explicitly with each individual request from PHP to the Java backend. 
+Once the request completes, the license is cleared, and the system reverts to an unlicensed state.
+
+Only three methods support the bool $passLicense parameter:
 ```php  
-       Generation -> BarcodeGenerator -> generateBarCodeImage(int $format, bool $passLicense = false): string
-       Recognition -> BarCodeReader -> readBarCodes(bool $passLicense = false): array
-       ComplexBarcode -> ComplexBarcodeGenerator -> generateBarcodeImage(int $format, bool $passLicense = false): string
+       // Generation
+       BarcodeGenerator::generateBarCodeImage(int $format, bool $passLicense = false): string
+       // Recognition
+       BarCodeReader::readBarCodes(bool $passLicense = false): array
+       // Complex Barcode
+       ComplexBarcodeGenerator::generateBarcodeImage(int $format, bool $passLicense = false): string
  ``` 
 
-Example for **BarcodeGenerator** and **BarCodeReader**
+Example: **BarcodeGenerator** and **BarCodeReader**
 
 ```php
        $license = new License();
@@ -156,7 +166,7 @@ Example for **BarcodeGenerator** and **BarCodeReader**
        Assert::assertFalse($license->isLicensed());
 ```
 
-Example for **ComplexBarcodeGenerator** and **BarCodeReader**
+Example: **ComplexBarcodeGenerator** and **BarCodeReader**
 
 ```php
        //Prepare Mailmark Codetext
