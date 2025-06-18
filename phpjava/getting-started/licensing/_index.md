@@ -82,7 +82,7 @@ The license is set once and remains valid for
 all subsequent operations in the session.
 You do not need to pass it with each request.
 
-#### Example: `BarcodeGenerator` and `BarCodeReader`
+Example: `BarcodeGenerator` and `BarCodeReader`
 
 ```php
     $license = new License();
@@ -132,7 +132,7 @@ Example: **ComplexBarcodeGenerator** and **BarCodeReader**
       Assert::assertTrue($license->isLicensed());
 ```
 
-2. ####  Passing License with Each Request to the Java backend (Per-Call Licensing) :
+2. ###  Passing License with Each Request (Per-Call Licensing) :
 In this mode, the license is not applied globally. 
 Instead, it is passed explicitly with each individual request from PHP to the Java backend. 
 Once the request completes, the license is cleared, and the system reverts to an unlicensed state.
