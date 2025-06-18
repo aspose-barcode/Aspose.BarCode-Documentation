@@ -38,11 +38,15 @@ Every license includes:
 
 ## **Applying a License**
 
-The license is a digitally signed XML file that contains:
+The license is a XML file that contains key information about baied license including
+`License Type`, `Order ID`, `Products Names` for which it allowed to be applied,
+information about `Customer`, `Edition Type` of License, `Serial Number` of given License.
+The trial license contains field `LicenseExpiry` and can be used only until this date is reached.
+Both trial and commercial licenses contain field  `SubscriptionExpiry`. 
+Until this date is reached the customer can obtain updates of his product.
+Product gives updates ussually every month in new release.
+These updates incudes bug fixing, improvements and adding new features.
 
-- Product details
-- Licensed developer count
-- Subscription expiration date
 
 > ⚠️ **Do not modify the license file.** Even minor changes (e.g., extra spaces or line breaks) will invalidate the
 > file.
