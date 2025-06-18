@@ -6,32 +6,49 @@ url: /phpjava/licensing/
 ---
 
 ## **Overview**
-The evaluation mode of ***Aspose.BarCode for PHP via Java*** allows generating barcode images without restrictions. 
-However, a watermark will be displayed on the resulting barcode image (words “Aspose”). 
-The unlicensed version can be used to read barcodes of all supported types. 
-Please note that only *Code 39* can be decoded without limitations; 
-as a result of reading barcodes corresponding to other types, 30% of decoded text will be masked with " * ". 
-All other actions with barcodes using this barcode library need setting a license. 
-After purchasing a license, you will get access to the whole functionality of the library and the ability
-to perform barcode generation and reading without limitations and watermark placement.  
 
-## **How to Obtain License**
-If you want to try the full version of ***Aspose.BarCode for PHP via Java***, 
-you can try a temporary license that is valid for 30 days. 
-Please read [How to get a Temporary License?](https://purchase.aspose.com/temporary-license) for more information. 
-To use the library without limitations, purchasing a commercial license is necessary. 
-You can get all information about pricing and conditions [here](https://purchase.aspose.com/admin/pricing/barcode/php-java). 
+The evaluation version of **Aspose.BarCode for PHP via Java** allows full barcode generation functionality but adds a
+watermark (“Aspose”) to each generated image. It also supports barcode recognition for all types; however, only 
+*Code 39* can be fully decoded. For all other symbologies, 30% of the recognized text will be replaced with asterisks ("*").
 
-Each Aspose license enables a one-year subscription with free upgrades 
-to any new releases or fixes that are published during this period. 
-Technical support is provided for free unlimitedly both to licensed and evaluation users.
+Any additional functionality—such as saving clean images, full barcode decoding, and advanced settings—requires applying
+a valid license.
 
-## **License Setting**
-The license is a plain-text XML file that includes details such as the product name, 
-the number of developers it is licensed for, subscription expiry date, and others. 
-The license file is signed digitally, so it must not be modified in any way. 
-Adding even an extra line break into the license file will result in invalidating the license. 
-You need to activate the license to enable the unlimited use of library functions. 
+Once a license is applied, all limitations are removed, including watermarking and masked output, unlocking full access
+to barcode generation and recognition capabilities.
 
+---
 
+## **How to Obtain a License**
 
+To evaluate the full version without restrictions, you can request a **30-day temporary license**.  
+More information is available here: <a href="https://purchase.aspose.com/temporary-license" target="_blank">How to get a
+Temporary License?</a>
+
+For production use, a commercial license is required. License pricing and details are available at:  
+<a href="https://purchase.aspose.com/admin/pricing/barcode/php-java" target="_blank">Pricing for Aspose.BarCode for PHP
+via Java</a>
+
+Every license includes:
+
+- **1-year subscription**: Access to all updates and bug fixes during the subscription period.
+- **Free technical support**: Available to both licensed and evaluation users without limitations.
+
+---
+
+## **Applying a License**
+
+The license is a digitally signed XML file that contains:
+
+- Product details
+- Licensed developer count
+- Subscription expiration date
+
+> ⚠️ **Do not modify the license file.** Even minor changes (e.g., extra spaces or line breaks) will invalidate the
+> file.
+
+To enable the full functionality of the library, you must apply the license using the provided API methods.
+
+```php
+$license = new Java("com.aspose.barcode.License");
+$license->setLicense("path/to/Aspose.BarCode.Java.lic");
