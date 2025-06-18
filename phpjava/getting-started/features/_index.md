@@ -10,7 +10,7 @@ aliases:
 ## Features of Aspose.BarCode for PHP via Java
 
 ### 🧾 Barcode Generation
-- Generate barcodes in over **60 symbologies**, including standard **1D** and **2D** types, as well as specialized **postal formats** such as **Royal Mail Mailmark** and **Australia Post**
+- Generate barcodes in over **80 symbologies**, including standard **1D** and **2D** types, as well as specialized **postal formats** such as **Royal Mail Mailmark** and **Australia Post**
 - Customize **barcode appearance**: size, rotation, resolution, colors, captions, margins, **bar height**, **X-dimension**, and more
 - Support for **error correction** (**ECC**, **ECI**) and **checksum controls**
 - Export barcodes to popular **raster and vector formats**: **JPEG**, **PNG**, **BMP**, **GIF**, **TIFF**, **EMF**, **SVG**
