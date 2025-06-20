@@ -16,7 +16,6 @@ Use the links below for detailed information:
 | <a href="/barcode/python-java/barcode-types/" target="_blank">Supported Barcode Types</a> | List of supported 1D, 2D, and postal barcodes |
 | <a href="/barcode/python-java/image-formats/" target="_blank">Supported Image Formats</a> | Supported input and output image formats |
 | <a href="/barcode/python-java/product-features/" target="_blank">Product Features</a> | Barcode generation, recognition, and imaging features |
-| <a href="/barcode/python-java/system-requirements/" target="_blank">System Requirements</a> | Supported platforms and technical prerequisites |
 | <a href="/barcode/python-java/installation/" target="_blank">Installation</a> | How to install and start using the library |
 | <a href="/barcode/python-java/licensing/" target="_blank">Licensing</a> | Licensing options and deployment instructions |
 | <a href="/barcode/python-java/technical-support/" target="_blank">Technical Support</a> | How to get technical assistance |
