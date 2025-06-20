@@ -4,18 +4,19 @@ type: docs
 weight: 10
 url: /python-java/getting-started/
 ---
+This section covers the core concepts of ***Aspose.BarCode for Python via Java***, 
+including features, supported barcode types, 
+image formats, installation, and system requirements.
 
-This section introduces the basic concepts of ***Aspose.BarCode for Python via Java***. It represents the information about features, supported barcode types (including QR codes), functionality, the available input and output image formats, installation process, and other key aspects. New users can refer to this page as a starting point to get familiar with ***Aspose.BarCode for Python via Java*** and its technical requirements.   
+Use the links below for detailed information:
 
-For general information about the barcode library, see the articles listed below.
-  
-|Article|Description|
-|-------|-----------|
-|[Product Overview](/barcode/python-java/product-overview/)|Describes the product and its purpose, functionality, key advantages, barcode types, and compatibility|
-|[Supported Barcode Types](/barcode/python-java/barcode-types/)|Represents all supported barcode types (including 1D, 2D, and postal ones)|
-|[Supported Image Formats](/barcode/python-java/image-formats/)|Describes all image file formats available for input and output|
-|[Product Features](/barcode/python-java/product-features/)|Lists barcode processing features, including generation, recognition, imaging, and others|
-|[System Requirements](/barcode/python-java/system-requirements/)|Outlines supported operating systems and technical requirements|
-|[Installation](/barcode/python-java/installation/)|Describes how to install and start using the library|
-|[Licensing](/barcode/python-java/licensing/)|Explains why to get the license and how to deploy it|
-|[Technical Support](/barcode/python-java/technical-support/)|Provides information about the ways to contact technical support|
+| Article | Description |
+|---------|-------------|
+| <a href="/barcode/python-java/product-overview/" target="_blank">Product Overview</a> | Overview of features, barcode types, compatibility, and usage |
+| <a href="/barcode/python-java/barcode-types/" target="_blank">Supported Barcode Types</a> | List of supported 1D, 2D, and postal barcodes |
+| <a href="/barcode/python-java/image-formats/" target="_blank">Supported Image Formats</a> | Supported input and output image formats |
+| <a href="/barcode/python-java/product-features/" target="_blank">Product Features</a> | Barcode generation, recognition, and imaging features |
+| <a href="/barcode/python-java/system-requirements/" target="_blank">System Requirements</a> | Supported platforms and technical prerequisites |
+| <a href="/barcode/python-java/installation/" target="_blank">Installation</a> | How to install and start using the library |
+| <a href="/barcode/python-java/licensing/" target="_blank">Licensing</a> | Licensing options and deployment instructions |
+| <a href="/barcode/python-java/technical-support/" target="_blank">Technical Support</a> | How to get technical assistance |
