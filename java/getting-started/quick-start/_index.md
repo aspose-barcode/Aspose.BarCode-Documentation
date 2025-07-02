@@ -1,5 +1,5 @@
 ---
-title: Quick Start - Code Examples
+title: Quick Start
 type: docs
 weight: 80
 feedback: BARCODECOM
@@ -7,10 +7,10 @@ url: /java/quick-start
 ---
 
 
-## **How to read barcodes on image**
+## **How to Read Barcodes from an Image**
+This example demonstrates how to recognize a Code 128 barcode from an image file.
+
 {{<highlight java>}}
-    public void recognitionExample() throws Exception
-    {
         String fileName = "code128.gif";
         String licensePath =  "Aspose.BarCode.Java.lic";
         License license = new License();
@@ -21,14 +21,13 @@ url: /java/quick-start
         {
             System.out.println("Code Type : " + barCodeResult.getCodeTypeName());
             System.out.println("Code Text : " + barCodeResult.getCodeText());
-    }
-}
+        }
 {{</highlight>}}
 
-## **How to generate barcode and save to the file**
+## **How to Generate a Barcode and Save to a File**
+This example shows how to generate a QR code and save it as a PNG file.
+
 {{<highlight java>}}
-    public void generationExample() throws Exception
-    {
         String licensePath =  "Aspose.BarCode.Java.lic";
         License license = new License();
         license.setLicense(licensePath);
@@ -44,14 +43,12 @@ url: /java/quick-start
             System.out.println("Code Type : " + barCodeResult.getCodeTypeName());
             System.out.println("Code Text : " + barCodeResult.getCodeText());
         }
-    }
 {{</highlight>}}
 
-## **How to generate barcode and read complex barcode**
+## **How to Generate and Read a Complex Barcode**
+This example demonstrates how to generate and read a complex Mailmark 2D barcode.
 {{<highlight java>}}
-public void generationAndReadComplexBarcodeExample() throws Exception
-{
-    String licensePath = Global.getTestDataFolder("License/sha256/Aspose/Java/Aspose.BarCode.Java.256.lic");
+    String licensePath =  "Aspose.BarCode.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     Mailmark2DCodetext mailmark2DCodetext = new Mailmark2DCodetext();
@@ -74,12 +71,14 @@ public void generationAndReadComplexBarcodeExample() throws Exception
         Mailmark2DCodetext mailmark2DCodetextActual = ComplexCodetextReader.tryDecodeMailmark2D(barCodeReader.getFoundBarCodes()[0].getCodeText());
         System.out.println("Codetext: " + mailmark2DCodetextActual.getConstructedCodetext());
     }
-}
 {{</highlight>}}
 
 ## **How to Work with Non-ASCII Symbols**
 This example demonstrates how to generate and read a PDF417 barcode containing non-ASCII text.
 {{<highlight java>}}
+    String licensePath =  "Aspose.BarCode.Java.lic";
+    License license = new License();
+    license.setLicense(licensePath);
     ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.PDF_417);
     gen.setCodeText("sýkora je malý pták", StandardCharsets.UTF_8);
