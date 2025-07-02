@@ -6,43 +6,72 @@ feedback: BARCODECOM
 url: /java/quick-start
 ---
 
+This section provides quick code samples to help you get started with barcode 
+generation and recognition using Aspose.BarCode for Java.
 
 ## **How to Read Barcodes from an Image**
 This example demonstrates how to recognize a Code 128 barcode from an image file.
 
 {{<highlight java>}}
-        String fileName = "code128.gif";
-        String licensePath =  "Aspose.BarCode.Java.lic";
-        License license = new License();
-        license.setLicense(licensePath);
-        BarCodeReader reader = new BarCodeReader(fileName, DecodeType.CODE_128);
-        BarCodeResult[] barCodeResults = reader.readBarCodes();
-        for (BarCodeResult barCodeResult : barCodeResults)
-        {
-            System.out.println("Code Type : " + barCodeResult.getCodeTypeName());
-            System.out.println("Code Text : " + barCodeResult.getCodeText());
-        }
+    String fileName = "code128.gif";
+    String licensePath =  "Aspose.BarCode.Java.lic";
+    License license = new License();
+    license.setLicense(licensePath);
+    BarCodeReader reader = new BarCodeReader(fileName, DecodeType.CODE_128);
+    BarCodeResult[] barCodeResults = reader.readBarCodes();
+    for (BarCodeResult result : barCodeResults)
+    {
+        // Read symbology type and code text
+        System.out.printf("Symbology Type: %s%n", result.getCodeType());
+        System.out.printf("CodeText: %s%n", result.getCodeText());
+    }
 {{</highlight>}}
+## **How to Read Barcodes from a Stream**
+This example demonstrates how to recognize a Code 128 barcode from a stream.
+
+{{< highlight java >}}
+    String licensePath =  "Aspose.BarCode.Java.lic";
+    License license = new License();
+    license.setLicense(licensePath);
+    String filePath = folderPath + "image.png";
+    try (FileInputStream fileStream = new FileInputStream(filePath))
+    {
+        BarCodeReader reader = new BarCodeReader(fileStream);
+        for (BarCodeResult result : reader.readBarCodes())
+        {
+        System.out.printf("Symbology Type: %s%n", result.getCodeType());
+        System.out.printf("CodeText: %s%n", result.getCodeText());
+        }
+    }
+    catch (IOException e)
+    {
+        e.printStackTrace();
+    }
+{{< /highlight >}}
 
 ## **How to Generate a Barcode and Save to a File**
 This example shows how to generate a QR code and save it as a PNG file.
 
 {{<highlight java>}}
-        String licensePath =  "Aspose.BarCode.Java.lic";
-        License license = new License();
-        license.setLicense(licensePath);
-        String codeText = "01234567";
-        SymbologyEncodeType encodeType = EncodeTypes.QR;
-        BarcodeGenerator generator = new BarcodeGenerator(encodeType, codeText);
-        String pathToFile = folder + "qr.png";
-        generator.save(pathToFile);
-        BarCodeReader reader = new BarCodeReader(pathToFile, DecodeType.QR);
-        BarCodeResult[] barCodeResults = reader.readBarCodes();
-        for (BarCodeResult barCodeResult : barCodeResults)
-        {
-            System.out.println("Code Type : " + barCodeResult.getCodeTypeName());
-            System.out.println("Code Text : " + barCodeResult.getCodeText());
-        }
+    String licensePath =  "Aspose.BarCode.Java.lic";
+    License license = new License();
+    license.setLicense(licensePath);
+    String codeText = "01234567";
+    SymbologyEncodeType encodeType = EncodeTypes.QR;
+    // Instantiate the BarcodeGenerator object and set barcode properties
+    BarcodeGenerator generator = new BarcodeGenerator(encodeType, codeText);
+    generator.getParameters().getBarcode().getXDimension().setMillimeters(1f);
+    // Save the barcode image to the specified directory in PNG format
+    String pathToFile = folder + "qr.png";
+    generator.save(pathToFile);
+    BarCodeReader reader = new BarCodeReader(pathToFile, DecodeType.QR);
+    BarCodeResult[] barCodeResults = reader.readBarCodes();
+    for (BarCodeResult barCodeResult : barCodeResults)
+    {
+        // Read symbology type and code text
+        System.out.printf("Symbology Type: %s%n", result.getCodeType());
+        System.out.printf("CodeText: %s%n", result.getCodeText());
+    }
 {{</highlight>}}
 
 ## **How to Generate and Read a Complex Barcode**
@@ -87,5 +116,7 @@ This example demonstrates how to generate and read a PDF417 barcode containing n
     BarCodeResult[] results = reader.readBarCodes();
     System.out.printf("Code Type: %s%n", results[0].getCodeTypeName());
     System.out.printf("Code Text: %s%n", results[0].getCodeText(StandardCharsets.UTF_8));
-
 {{</highlight>}}
+
+
+
