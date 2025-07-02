@@ -3,12 +3,12 @@ title: Supported Barcode Types
 type: docs
 weight: 50
 feedback: BARCODECOM
-description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for Java"
+description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for PHP via Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Java, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, Java"
 url: /phpjava/barcode-types/
 ---
 
-***Aspose.BarCode for Java*** supports over 80
+***Aspose.BarCode for PHP via Java*** supports over 80
 different <a href="https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes" target="_blank">barcode types</a> used in a
 variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. The detailed information
 about generating barcodes using various barcode standards can be found in
