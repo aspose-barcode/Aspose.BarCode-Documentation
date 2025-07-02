@@ -28,7 +28,7 @@ efficiently and at any rotation angle. It supports over **80 barcode symbologies
 A complete list of supported barcode types is available on the  
 <a href="/barcode/python-java/barcode-types/" target="_blank">Supported Barcode Types</a> page.
 
-### Key Features
+## Key Features
 
 - **Generate and recognize** more than 80 barcode types
 - **Read barcodes** at any angle and from low-quality or distorted images
@@ -54,14 +54,25 @@ regardless of the underlying platform.
 
 ## Licensing
 
-A valid license is required to access the full capabilities of **Aspose.BarCode for PHP via Java**.
+A valid license is required to unlock the full capabilities of **Aspose.BarCode for Python via Java**.
 
-In evaluation mode:
-- Barcode generation is unrestricted but includes a watermark
-- Recognition is fully enabled for Code 39 only
-- For other symbologies, 30% of the decoded text will be masked
+In **evaluation mode**, the library operates with the following limitations:
 
-Learn more in <a href="/barcode/python-java/licensing/" target="_blank">Licensing</a>.
+- Barcode **generation** is fully functional but includes a watermark
+- Barcode **recognition** is unrestricted for **Code 39** only
+- For all other symbologies, only **30% of the decoded text** will be visible
 
-You can request a <a href="https://purchase.aspose.com/temporary-license" target="_blank">Temporary License</a>
-valid for 30 days to evaluate the full feature set.
+For more information, see the  
+<a href="/barcode/python-java/licensing/" target="_blank">Licensing</a> page.
+
+You can request a free  
+<a href="https://purchase.aspose.com/temporary-license" target="_blank">Temporary License</a>  
+to evaluate the product without limitations.
+
+**Aspose.BarCode for PHP via Java** provides the following core classes:
+
+- <a href="https://reference.aspose.com/barcode/python-java/class/asposebarcode.recognition.bar_code_reader/" target="_blank">BarCodeReader</a> – for scanning and decoding barcodes
+- <a href="https://reference.aspose.com/barcode/python-java/class/asposebarcode.generation.barcode_generator/" target="_blank">BarcodeGenerator</a> – for generating barcodes with specific formatting
+- <a href="https://reference.aspose.com/barcode/python-java/class/asposebarcode.complex_barcode.complex_barcode_generator/" target="_blank">ComplexBarcodeGenerator</a>
+  and <a href="https://reference.aspose.com/barcode/python-java/class/asposebarcode.complex_barcode.complex_codetext_reader/" target="_blank">ComplexCodetextReader</a> for handling advanced barcodes such as Swiss QR Code and MailMark
+

@@ -1,7 +1,7 @@
 ---
 title: Licensing
 type: docs
-weight: 50
+weight: 40
 url: /nodejsjava/licensing/
 
 ---

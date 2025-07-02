@@ -2,12 +2,13 @@
 title: Supported Barcode Types
 type: docs
 weight: 50
-url: /python-java/barcode-types/
-aliases:
-- /python-java/barcode-supported-symbologies/
+feedback: BARCODECOM
+description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for Node.js via Java"
+keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Java, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, Java"
+url: /nodejsjava/barcode-types/
 ---
 
-***Aspose.BarCode for Python via Java*** supports over 80
+***Aspose.BarCode for Node.js via Java*** supports over 80
 different <a href="https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes" target="_blank">barcode types</a> used in a
 variety of industries, namely, 1D (linear), 2D (including QR codes), and postal symbologies. The detailed information
 about generating barcodes using various barcode standards can be found in
@@ -17,7 +18,7 @@ section <a href="/barcode/java/generate-barcode-types/" target="_blank">Generati
 used to represent information by varying the widths and spacings of parallel lines. Some 1D symbologies allow encoding
 only numbers, while others permit encoding also letters.
 
-**DataBar barcodes** (former RSS-14) are 1D and 1D stacked barcodes, which were developed to efficiently encode
+**DataBar barcodes** (former RSS-14) are 1D and 1D stacked barcodes, which were developed to efficiently encode 
 <a href="https://ref.gs1.org/ai/?lang=en" target="_blank">*GS1 Application Identifier*</a> data.
 
 
@@ -27,11 +28,11 @@ efficient, as such barcodes contain more data per unit area, and most of them ar
 
 **Postal barcodes** are specific symbologies used by postal services in different countries.
 
-**HIBC barcodes** encode data in <a href="https://www.hibcc.org/udi-labeling-standards/barcode-standards/" target="_blank">special format</a>
+**HIBC barcodes** encode data in <a href="https://www.hibcc.org/udi-labeling-standards/barcode-standards/" target="_blank">special format</a> 
 which is used in Health Industry. As transport, the barcodes use other 1D and 2D barcodes and encode data as Alpha-Numeric.
 
 
-**GS1 barcodes** use other 1D and 2D barcodes to encode
+**GS1 barcodes** use other 1D and 2D barcodes to encode 
 <a href="https://ref.gs1.org/ai/?lang=en" target="_blank">*GS1 Application Identifier*</a> data.
 
 | Barcode Family            | Barcode Types                                                                                                                                                                                                                   |

@@ -9,25 +9,30 @@ is_root: true
 
 {{% alert color="primary" %}}
 
-![todo:image_alt_text](aspose-barcode-for-node-js-via-java-home_1)
+![Aspose.BarCode for Node.js via Java](aspose-barcode-for-node-js-via-java-home_1)
 
-**Welcome to Aspose.BarCode for Node.js via Java**
-
-***Aspose.BarCode for Node.js via Java*** is implemented using Node.js and Java through the nodejs-java bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their Node.js applications. The barcode library provides demos and working examples written in Node.js for developers to have a better understanding of our product. Using these demos, developers can quickly learn about the features provided by Aspose.BarCode.
-It supports the most advanced barcode standards and specifications. It has the ability to export barcodes in the following image formats: BMP, GIF, JPEG, PNG, and TIFF.
+**Aspose.BarCode for Node.js via Java** is a powerful library implemented 
+using Node.js and Java through the Node.js–Java bridge.
+It enables developers to quickly and easily add barcode generation and recognition 
+capabilities to their Node.js applications.
+Aspose.BarCode supports a wide range of modern barcode standards and specifications.  
+It allows exporting barcodes to various image formats.
 
 {{% /alert %}}
 
+---
 
-## **Aspose.BarCode for Node.js via Java Resources**
-The following are the links to some useful resources you may need to accomplish your tasks.
+## Aspose.BarCode for Node.js via Java Resources
 
-- [Aspose.BarCode for Java Online Documentation](https://docs.aspose.com/barcode/nodejsjava/)
-- [Aspose.BarCode for Node.js via Java Features](https://docs.aspose.com/barcode/nodejsjava/features/)
-- [Aspose.BarCode for Node.js via Java Installation](https://docs.aspose.com/barcode/nodejsjava/installation/)
-- [Aspose.BarCode for Node.js via Java Release Notes](https://releases.aspose.com/barcode/nodejs/release-notes/)
-- [Aspose.BarCode for Node.js via Java Product Page](https://products.aspose.com/barcode/nodejs-java)
-- [Download Aspose.BarCode for Node.js via Java](https://releases.aspose.com/barcode/nodejs/)
-- [Aspose.BarCode for Node.js via Java API Reference Guide](https://reference.aspose.com/barcode/nodejs/)
-- [Aspose.BarCode for Node.js via Java Free Support Forum](https://forum.aspose.com/c/barcode)
-- [Aspose.BarCode for Node.js via Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+The following resources will help you get started and work efficiently with Aspose.BarCode for Node.js via Java:
+
+- <a href="https://docs.aspose.com/barcode/nodejsjava/" target="_blank">Aspose.BarCode for Java Online Documentation</a>
+- <a href="https://docs.aspose.com/barcode/nodejsjava/features/" target="_blank">Features Overview</a>
+- <a href="https://docs.aspose.com/barcode/nodejsjava/installation/" target="_blank">Installation Guide</a>
+- <a href="https://releases.aspose.com/barcode/nodejs/release-notes/" target="_blank">Release Notes</a>
+- <a href="https://products.aspose.com/barcode/nodejs-java" target="_blank">Product Page</a>
+- <a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">Download Aspose.BarCode</a>
+- <a href="https://reference.aspose.com/barcode/nodejs/" target="_blank">API Reference Guide</a>
+- <a href="https://forum.aspose.com/c/barcode" target="_blank">Free Support Forum</a>
+- <a href="https://helpdesk.aspose.com/" target="_blank">Paid Support Helpdesk</a>
+
