@@ -45,6 +45,13 @@ If you do not want to use npm to install the package, you can download Aspose.Ba
 #### **Steps:**
 
 1. **Download** the ZIP file and extract its contents.
+This archive contains:
+
+``doc`` — API documentation
+``license`` — End User License Agreement and third-party licenses
+``libs`` — Java JAR file and supporting files
+``examples`` — code examples
+``readme.txt`` — general instructions
 
 2. **Copy the extracted folder** (for example, `libs` or `barcode-lib`) into your project directory.  
    You can rename it if you wish (for example, to `barcode-lib`).
@@ -93,13 +100,7 @@ console.log("codeType", barCodeResult.getCodeTypeName());
 
 
 
-This archive contains:
 
-doc/ — API documentation
-license/ — End User License Agreement and third-party licenses
-libs/ — Java JAR file and supporting files
-examples/ — code examples
-readme.txt — general instructions
 
 
 
