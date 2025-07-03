@@ -83,13 +83,13 @@ or refer to your operating system’s package manager.
 Download the ZIP archive from the <a href="https://releases.aspose.com/barcode/Node.js/" target="_blank">Aspose website</a>.  
 This archive contains:
 
-- `doc/` — includes `aspose-barcode-Node.js-25.5-javadoc.zip`, the compressed API docs
+- `doc/` — includes `aspose-barcode-nodejs-25.5-apidoc.zip`, the compressed API docs
 - `license/` — contains the End User License Agreement and third-party licenses
-- `lib/` — includes Node.js source files and the product JAR file
-- `bin/` — includes scripts for launching the Java server
-- `README.md` — general instructions
+- `libs/` — includes Node.js source files and the product JAR file
+- `examples/` — includes source of example files
+- `readme.txt` — general instructions
 
-You can copy the contents of the `lib/` folder into a suitable directory in your application (e.g., `barcode-lib`)
+You can copy the contents of the `libs/` folder into a suitable directory in your application (e.g., `barcode-lib`)
 and the `bin/` folder as well.  
 Then, update the command lines in the scripts to reflect your folder structure, for example:
 
