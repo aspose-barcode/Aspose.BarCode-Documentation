@@ -37,30 +37,59 @@ or specific version
 npm i aspose.barcode@25.6.0
 ```
 The library will be installed to `node_modules`.
-#### **2. Manual ZIP Installation**
-   If you do not use npm for installation, you can download Aspose.BarCode for Node.js via Java as a ZIP archive from the
-   <a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">official Aspose website</a>.
+### **Manual ZIP Installation**
 
-Steps:
-Download the ZIP file and extract its contents.
+If you do not want to use npm to install the package, you can download Aspose.BarCode for Node.js via Java as a ZIP archive from the  
+<a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">official Aspose website</a>.
 
-Copy the libs folder from the extracted archive into your project directory. 
-You can rename it (e.g., to barcode-lib), but do not place it inside node_modules.
-Example project structure:
+#### **Steps:**
 
-your-project/
-├── barcode-lib/
-│   ├── index.js
-│   ├── lib/
-│   │   ├── AsposeBarcode.js
-│   │   ├── Joint.js
-│   │   ├── ...other .js files
-│   │   └── aspose-barcode-nodejs-25.5.jar
-│   └── package.json
-├── node_modules/
-├── package.json
-├── index.js
-└── ...
+1. **Download** the ZIP file and extract its contents.
+
+2. **Copy the extracted folder** (for example, `libs` or `barcode-lib`) into your project directory.  
+   You can rename it if you wish (for example, to `barcode-lib`).
+
+   **Example project structure:**
+
+    your-project/
+    ├── barcode-lib/
+    │ ├── index.js
+    │ └── lib/
+    │ ├── AsposeBarcode.js
+    │ ├── ...other .js files
+    │ └── aspose-barcode-nodejs-25.5.jar
+    ├── node_modules/
+    ├── package.json
+    ├── index.js
+    └── ...
+3. **Add the required dependency** to your project's `package.json` if it is not already there:
+```json
+"dependencies": {
+  "java": "^0.12.1"
+}
+```
+Then run:
+```bash
+npm install
+```
+4. Use the library in your code:
+
+```javascript
+const { AsposeBarcode } = require('./barcode-lib');
+const { BarcodeGenerator, EncodeTypes, BarCodeImageFormat, BarCodeReader, License } = AsposeBarcode;
+const license = new License();
+license.setLicense('Aspose.Total.lic');
+const generator = new BarcodeGenerator(EncodeTypes.CODE_11, "12345678");
+const base64Image = generator.generateBarCodeImage(BarCodeImageFormat.PNG);
+const reader = new BarCodeReader(base64Image);
+const resultsArray = reader.readBarCodes();
+const barCodeResult = resultsArray[0];
+console.log("codeText", barCodeResult.getCodeText());
+console.log("codeType", barCodeResult.getCodeTypeName());
+```
+
+
+
 
 
 
