@@ -14,7 +14,7 @@ This example demonstrates how to recognize a Code 128 barcode from an image file
 
 {{<highlight java>}}
     String fileName = folder + "code_128.gif";
-    String licensePath = "Aspose.BarCode.Android.Java.lic");
+    String licensePath = "Aspose.BarCode.Android.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     BarCodeReader reader = new BarCodeReader(fileName, DecodeType.CODE_128);
@@ -29,7 +29,7 @@ This example demonstrates how to recognize a Code 128 barcode from an image file
 This example demonstrates how to recognize a Code 128 barcode from a stream.
 
 {{< highlight java >}}
-    String licensePath =  "Aspose.BarCode.Java.lic";
+    String licensePath =  "Aspose.BarCode.Android.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     String filePath = folder + "code_128.gif";
@@ -101,7 +101,7 @@ This example demonstrates how to generate and read a complex Mailmark 2D barcode
 ## **How to Work with Non-ASCII Symbols**
 This example demonstrates how to generate and read a PDF417 barcode containing non-ASCII text.
 {{<highlight java>}}
-    String licensePath =  "Aspose.BarCode.Java.lic";
+    String licensePath =  "Aspose.BarCode.Android.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
