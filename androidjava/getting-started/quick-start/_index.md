@@ -21,8 +21,8 @@ This example demonstrates how to recognize a Code 128 barcode from an image file
     BarCodeResult[] barCodeResults = reader.readBarCodes();
     for (BarCodeResult barCodeResult : barCodeResults)
     {
-    Log.d("Quick Start","Code Type : " + barCodeResult.getCodeTypeName());
-    Log.d("Quick Start","Code Text : " + barCodeResult.getCodeText());
+        Log.d("Quick Start","Code Type : " + barCodeResult.getCodeTypeName());
+        Log.d("Quick Start","Code Text : " + barCodeResult.getCodeText());
     }
 {{</highlight>}}
 ## **How to Read Barcodes from a Stream**
@@ -32,14 +32,14 @@ This example demonstrates how to recognize a Code 128 barcode from a stream.
     String licensePath =  "Aspose.BarCode.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
-    String filePath = folderPath + "image.png";
+    String filePath = folder + "code_128.gif";
     try (FileInputStream fileStream = new FileInputStream(filePath))
     {
         BarCodeReader reader = new BarCodeReader(fileStream);
         for (BarCodeResult result : reader.readBarCodes())
         {
-        System.out.printf("Symbology Type: %s%n", result.getCodeType());
-        System.out.printf("CodeText: %s%n", result.getCodeText());
+            Log.d("Quick Start","Symbology Type: " + result.getCodeType());
+            Log.d("Quick Start","CodeText: " + result.getCodeText());
         }
     }
     catch (IOException e)
