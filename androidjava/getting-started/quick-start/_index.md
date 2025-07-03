@@ -14,7 +14,7 @@ This example demonstrates how to recognize a Code 128 barcode from an image file
 
 {{<highlight java>}}
     String fileName = folder + "code_128.gif";
-    String licensePath = Global.getTestDataFolder("License/sha256/Aspose.BarCode.Android.Java.256.lic");
+    String licensePath = "Aspose.BarCode.Android.Java.lic");
     License license = new License();
     license.setLicense(licensePath);
     BarCodeReader reader = new BarCodeReader(fileName, DecodeType.CODE_128);
@@ -52,31 +52,30 @@ This example demonstrates how to recognize a Code 128 barcode from a stream.
 This example shows how to generate a QR code and save it as a PNG file.
 
 {{<highlight java>}}
-    String licensePath =  "Aspose.BarCode.Java.lic";
+    String licensePath = "Aspose.BarCode.Android.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     String codeText = "01234567";
     SymbologyEncodeType encodeType = EncodeTypes.QR;
-    // Instantiate the BarcodeGenerator object and set barcode properties
     BarcodeGenerator generator = new BarcodeGenerator(encodeType, codeText);
-    generator.getParameters().getBarcode().getXDimension().setMillimeters(1f);
-    // Save the barcode image to the specified directory in PNG format
-    String pathToFile = folder + "qr.png";
+    Context context = InstrumentationRegistry.getInstrumentation().getTargetContext();
+    File imageFile = new File(context.getFilesDir(), "qr.png");
+    String pathToFile = imageFile.getPath();
     generator.save(pathToFile);
+    Log.d("QuickStart", "Barcode saved to " + pathToFile);
     BarCodeReader reader = new BarCodeReader(pathToFile, DecodeType.QR);
     BarCodeResult[] barCodeResults = reader.readBarCodes();
     for (BarCodeResult barCodeResult : barCodeResults)
     {
-        // Read symbology type and code text
-        System.out.printf("Symbology Type: %s%n", result.getCodeType());
-        System.out.printf("CodeText: %s%n", result.getCodeText());
+        Log.d("Quick Start","Code Type : " + barCodeResult.getCodeTypeName());
+        Log.d("Quick Start","Code Text : " + barCodeResult.getCodeText());
     }
 {{</highlight>}}
 
 ## **How to Generate and Read a Complex Barcode**
 This example demonstrates how to generate and read a complex Mailmark 2D barcode.
 {{<highlight java>}}
-    String licensePath =  "Aspose.BarCode.Java.lic";
+    String licensePath = "Aspose.BarCode.Android.Java.lic";
     License license = new License();
     license.setLicense(licensePath);
     Mailmark2DCodetext mailmark2DCodetext = new Mailmark2DCodetext();
@@ -92,13 +91,11 @@ This example demonstrates how to generate and read a complex Mailmark 2D barcode
     mailmark2DCodetext.setDataMatrixType(Mailmark2DType.TYPE_29);
     mailmark2DCodetext.setCustomerContent("CUSTOM_DATA");
     ComplexBarcodeGenerator cg = new ComplexBarcodeGenerator(mailmark2DCodetext);
-    BufferedImage res = cg.generateBarCodeImage();
-    BarCodeReader barCodeReader = new BarCodeReader(res, DecodeType.DATA_MATRIX);
-    {
-        System.out.println("Found barcodes: " + barCodeReader.readBarCodes().length);
-        Mailmark2DCodetext mailmark2DCodetextActual = ComplexCodetextReader.tryDecodeMailmark2D(barCodeReader.getFoundBarCodes()[0].getCodeText());
-        System.out.println("Codetext: " + mailmark2DCodetextActual.getConstructedCodetext());
-    }
+    Bitmap bitmap = cg.generateBarCodeImage();
+    BarCodeReader barCodeReader = new BarCodeReader(bitmap, DecodeType.DATA_MATRIX);
+    Log.d("Quick Start", "Found barcodes: " + barCodeReader.readBarCodes().length);
+    Mailmark2DCodetext mailmark2DCodetextActual = ComplexCodetextReader.tryDecodeMailmark2D(barCodeReader.getFoundBarCodes()[0].getCodeText());
+    Log.d("Quick Start","Codetext: " + mailmark2DCodetextActual.getConstructedCodetext());
 {{</highlight>}}
 
 ## **How to Work with Non-ASCII Symbols**
@@ -113,8 +110,11 @@ This example demonstrates how to generate and read a PDF417 barcode containing n
     gen.save(outputStream, BarCodeImageFormat.PNG);
     BarCodeReader reader = new BarCodeReader(new ByteArrayInputStream(outputStream.toByteArray()), DecodeType.PDF_417);
     BarCodeResult[] results = reader.readBarCodes();
-    System.out.printf("Code Type: %s%n", results[0].getCodeTypeName());
-    System.out.printf("Code Text: %s%n", results[0].getCodeText(StandardCharsets.UTF_8));
+    for (BarCodeResult result : results)
+    {
+        Log.d("Quick Start","Code Type : " + result.getCodeTypeName());
+        Log.d("Quick Start","Code Text : " + result.getCodeText(StandardCharsets.UTF_8));
+    }
 {{</highlight>}}
 
 
