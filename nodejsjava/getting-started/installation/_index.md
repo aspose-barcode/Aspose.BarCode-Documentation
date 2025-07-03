@@ -37,12 +37,12 @@ or specific version
 npm i aspose.barcode@25.6.0
 ```
 The library will be installed to `node_modules`.
-### **Manual ZIP Installation**
+#### **2. Manual ZIP Installation**
 
 If you do not want to use npm to install the package, you can download Aspose.BarCode for Node.js via Java as a ZIP archive from the  
 <a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">official Aspose website</a>.
 
-#### **Steps:**
+##### **Steps:**
 
 1. **Download** the ZIP file and extract its contents.
 This archive contains:
