@@ -1,7 +1,7 @@
 ---
 title: Supported Barcode Types
 type: docs
-weight: 30
+weight: 50
 feedback: BARCODECOM
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for Android via Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Java, Barcode Type, Matrix Barcodes, 1D Barcode, 2D Barcode, QR Code, MicroQR Code, Code 128, Aspose.BarCode, Java"

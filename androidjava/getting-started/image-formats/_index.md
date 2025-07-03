@@ -1,7 +1,7 @@
 ---
 title: Supported Image Formats
 type: docs
-weight: 20
+weight: 60
 feedback: BARCODECOM
 url: /androidjava/image-formats/
 ---

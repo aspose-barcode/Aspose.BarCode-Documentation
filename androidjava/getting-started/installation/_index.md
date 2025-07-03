@@ -1,7 +1,7 @@
 ---
 title: Installation
 type: docs
-weight: 50
+weight: 30
 feedback: BARCODECOM
 url: /androidjava/installation/
 ---
@@ -34,12 +34,10 @@ to `build.gradle`.
           url "https://repository.aspose.com/repo/"
         }
      }
-
     dependencies {
         implementation group: 'com.aspose', name: 'aspose-barcode-android-java', version: '25.1', ext: 'aar'
         // JavaDoc dependency
         implementation group: 'com.aspose', name: 'aspose-barcode-android-java', classifier: 'javadoc', version: '25.1'
     }
-
-{{< /highlight >}}
+    {{< /highlight >}}
 
