@@ -85,7 +85,7 @@ npm install
 const { AsposeBarcode } = require('./barcode-lib');
 const { BarcodeGenerator, EncodeTypes, BarCodeImageFormat, BarCodeReader, License } = AsposeBarcode;
 const license = new License();
-license.setLicense('Aspose.Total.lic');
+license.setLicense('Aspose.BarCode.NodeJsviaJava.lic');
 const generator = new BarcodeGenerator(EncodeTypes.CODE_11, "12345678");
 const base64Image = generator.generateBarCodeImage(BarCodeImageFormat.PNG);
 const reader = new BarCodeReader(base64Image);
@@ -93,6 +93,7 @@ const resultsArray = reader.readBarCodes();
 const barCodeResult = resultsArray[0];
 console.log("codeText", barCodeResult.getCodeText());
 console.log("codeType", barCodeResult.getCodeTypeName());
+process.exit(0);
 ```
 
 
