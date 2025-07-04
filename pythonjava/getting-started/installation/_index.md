@@ -32,99 +32,98 @@ You have several options to install the product:
 #### **1. Install via pypi.org**
 Install from
 <a href="https://pypi.org/project/aspose-barcode-for-python-via-java/" target="_blank">Aspose.Barcode for Python via Java Repository</a>
+Install latest version:
 ```bash
 pip install aspose-barcode-for-python-via-java
 ```
-
-#### **2. Install via Composer**
-
-Example `composer.json`:
-
-```json
-{
-  "require": {
-    "aspose/barcode": "25.5.5",
-    "ext-gd": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "MyApp\\": "src/"
-    }
-  }
-}
-```
-
-Then run:
-
+Install specific version to particular environment
 ```bash
-composer install
+pip install aspose-barcode-for-python-via-java==25.6.0 --upgrade -t ./venv_external
 ```
+#### **2. Download from Aspose Website**
 
-> **GD Extension Required**  
-> This library requires the <a href="https://www.php.net/manual/en/book.image.php" target="_blank">GD extension</a> to be installed and enabled in your PHP environment.  
-> Composer **does not install PHP extensions** — it only verifies their presence during installation.
-
-If `ext-gd` is missing, you may encounter the following error:
-
-```
-- aspose/barcode 25.5.5 requires ext-gd * -> it is missing from your system.
-```
-
-Need help installing GD?  
-See the <a href="https://www.php.net/manual/en/image.installation.php" target="_blank">official PHP GD installation guide</a>,  
-or refer to your operating system’s package manager.
-
-#### **3. Download from Aspose Website**
-
-Download the ZIP archive from the <a href="https://releases.aspose.com/barcode/php/" target="_blank">Aspose website</a>.  
+Download the ZIP archive from the <a href="https://releases.aspose.com/barcode/python-java/" target="_blank">Aspose website</a>.  
 This archive contains:
 
-- `doc/` — includes `aspose-barcode-php-25.5-javadoc.zip`, the compressed API docs
-- `license/` — contains the End User License Agreement and third-party licenses
-- `lib/` — includes PHP source files and the product JAR file
-- `bin/` — includes scripts for launching the Java server
-- `README.md` — general instructions
+- `doc` — includes `aspose-barcode-python-xx.x-api-docs.zip`, the compressed API docs
+- `license` — contains the End User License Agreement and third-party licenses
+- `lib` — contains Python source files and the product's JAR file
+- `readme.txt` — general instructions
 
-You can copy the contents of the `lib/` folder into a suitable directory in your application (e.g., `barcode-lib`)
-and the `bin/` folder as well.  
-Then, update the command lines in the scripts to reflect your folder structure, for example:
-
-**Windows:**
-```cmd
-set JAR_PATH=%SCRIPT_DIR%..\barcode-lib\aspose-barcode-php-25.5.jar
+Steps:
+1. Unzip the Package
+   Unzip the downloaded archive to any directory on your computer.
+   This will create a folder containing the following structure:
+<pre>
+lib
+├── asposebarcode/
+    ├── jlib/
+    │   └── aspose-barcode-python-xx.x.jar
+    ├── __init__.py
+    ├── Assist.py
+    ├── ComplexBarcode.py
+    ├── Generation.py
+    └── Recognition.py
+</pre>
+2. Install Required Python Version
+ Make sure you have Python 3.7 installed on your system.
+ You can check your Python version with:
+```python
+ python --version
 ```
-
-**Linux/macOS:**
-```bash
-JAR_PATH="$SCRIPT_DIR/../barcode-lib/aspose-barcode-php-25.5.jar"
-```
+3. Add the lib Folder to Your Project.
+   The lib folder contains all necessary Python files. 
+   Make sure to keep this directory in your project root, 
+   or do not change its location after unzipping.
+<pre>
+lib
+├── asposebarcode/
+    ├── jlib/
+    │   └── aspose-barcode-python-xx.x.jar
+    ├── __init__.py
+    ├── Assist.py
+    ├── ComplexBarcode.py
+    ├── Generation.py
+    └── Recognition.py
+</pre>
 
 ### **Running and Testing**
+Run a basic Python test:
 
-Start the Java Apache Thrift server using `start_server.cmd` or `start_server.sh`.
+```python
+import sys
+import os
+import unittest
 
-Example console output:
-```log
-Starting Thrift server...
-Thrift server started! Logs are in server.log.
-Initializing Thrift server on port 9090...
-? Thrift server started successfully on port 9090
-```
+from asposebarcode.Recognition import BarCodeReader, DecodeType, QualitySettings
 
-Run a basic PHP test:
+sys.path.insert(0, "./lib")
 
-```php
-$license = new License();
-$license->setLicense(PHP_LICENSE_PATH);
-$codeText = "12345678";
-$encodeType = EncodeTypes::CODE_11;
-$generator = new BarcodeGenerator($encodeType, $codeText);
-$base64Image = $generator->generateBarCodeImage(BarCodeImageFormat::PNG);
-$reader = new BarCodeReader($base64Image, null, null);
-$resultsArray = $reader->readBarCodes();
-$barCodeResult = $resultsArray[0];
-$codeText = $barCodeResult->getCodeText();
-$codeType = $barCodeResult->getCodeTypeName();
-print("codeText " . $codeText);
-print("codeType " . $codeType);
+from asposebarcode import Assist, ComplexBarcode, Generation, Recognition
+from asposebarcode.Generation import BarcodeGenerator, EncodeTypes
+
+
+class BarcodeGeneratorTests(unittest.TestCase):
+	def __init__(self, methodName: str = "runTest"):
+		super().__init__(methodName)
+		self.folder = "testdata"
+		self.image_path = os.path.join(self.folder, "code_128.png")
+		self.pythonLicensePath = os.path.join(self.folder, "Aspose.BarCode.Python.Java.lic")
+
+	def test_generate_barcode_image(self):
+		license = Assist.License()
+		license.setLicense(self.pythonLicensePath)
+		generator = BarcodeGenerator(EncodeTypes.CODE_128, "123456")
+		image = generator.generateBarCodeImage()
+		generator.save(self.image_path, Generation.BarCodeImageFormat.PNG)
+
+	def test_recognize_barcode_image(self):
+		license = Assist.License()
+		license.setLicense(self.pythonLicensePath)
+		barcodeReader = BarCodeReader(self.image_path,None, DecodeType.CODE_128)
+		barcodeReader.setQualitySettings(QualitySettings.getMaxQuality())
+		results = barcodeReader.readBarCodes()
+		for result in results:
+			print("Code Type:", result.getCodeTypeName())
+			print("Code Text:", result.getCodeText())
 ```
