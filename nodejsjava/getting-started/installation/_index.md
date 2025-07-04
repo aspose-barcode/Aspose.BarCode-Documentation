@@ -42,8 +42,6 @@ The library will be installed to `node_modules`.
 If you do not want to use npm to install the package, you can download Aspose.BarCode for Node.js via Java as a ZIP archive from the  
 <a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">official Aspose website</a>.
 
-##### **Steps:**
-
 1. **Download** the ZIP file and extract its contents.
 This archive contains:
 
@@ -57,7 +55,7 @@ This archive contains:
    You can rename it if you wish (for example, to `barcode-lib`).
 
    **Example project structure:**
-
+<pre> 
     your-project/
     ├── barcode-lib/
     │ ├── index.js
@@ -69,6 +67,7 @@ This archive contains:
     ├── package.json
     ├── index.js
     └── ...
+</pre>
 3. **Add the required dependency** to your project's `package.json` if it is not already there:
 ```json
 "dependencies": {
