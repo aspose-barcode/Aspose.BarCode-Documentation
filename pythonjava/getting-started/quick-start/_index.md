@@ -44,14 +44,14 @@ This example shows how to generate a QR code and save it as a PNG file.
 This example demonstrates how to generate and read a complex Mailmark 2D barcode.
 {{<highlight python>}}
     license = Assist.License()
-    license.setLicense(self.pythonLicensePath)
+    license.setLicense(pythonLicensePath)
     swissQRCodetext = ComplexBarcode.SwissQRCodetext(None)
     swissQRCodetext.getBill().setAccount("CH450023023099999999A")
     swissQRCodetext.getBill().getCreditor().setName("Name")
     swissQRCodetext.getBill().getCreditor().setCountryCode("NL")
     swissQRCodetext.getBill().setBillInformation("BillInformation")
     complexBarcodeGenerator = ComplexBarcodeGenerator(swissQRCodetext)
-    file_path = os.path.join(self.folder, "swiss_qr_codetext.png")
+    file_path = os.path.join(folder, "swiss_qr_codetext.png")
     complexBarcodeGenerator.save(file_path, BarCodeImageFormat.PNG)
     barCodeReader = BarCodeReader(file_path, None, Recognition.DecodeType.QR)
     barCodeResults = barCodeReader.readBarCodes()

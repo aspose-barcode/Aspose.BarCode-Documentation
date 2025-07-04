@@ -104,8 +104,7 @@ from asposebarcode.Generation import BarcodeGenerator, EncodeTypes
 
 
 class BarcodeTests(unittest.TestCase):
-	def __init__(self, methodName: str = "runTest"):
-		super().__init__(methodName)
+	def __init__(self):
 		self.folder = "testdata"
 		self.image_path = os.path.join(self.folder, "code_128.png")
 		self.pythonLicensePath = os.path.join(self.folder, "Aspose.BarCode.Python.Java.lic")
