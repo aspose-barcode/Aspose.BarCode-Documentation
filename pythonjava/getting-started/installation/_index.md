@@ -103,7 +103,7 @@ from asposebarcode import Assist, ComplexBarcode, Generation, Recognition
 from asposebarcode.Generation import BarcodeGenerator, EncodeTypes
 
 
-class BarcodeGeneratorTests(unittest.TestCase):
+class BarcodeTests(unittest.TestCase):
 	def __init__(self, methodName: str = "runTest"):
 		super().__init__(methodName)
 		self.folder = "testdata"
