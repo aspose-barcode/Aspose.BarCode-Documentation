@@ -5,7 +5,6 @@ weight: 60
 feedback: BARCODECOM
 url: /java/image-formats/
 ---
-  
 ***Aspose.BarCode for Java*** enables outputting barcode images using five most common raster image file formats and two vector image formats. The latter ones are available for rendering only by the SQL Server Reporting Services engine. Image formats supported for input and output are listed below.
 
 | **Format**                                                                                   | **Description**                                                  | **Recognition**         | **Generation**          |
