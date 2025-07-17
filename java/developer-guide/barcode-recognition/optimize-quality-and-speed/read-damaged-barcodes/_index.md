@@ -4,6 +4,8 @@ linktitle: Read Damaged Barcodes
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions"
 keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrual DataMatrix, Aspose.BarCode, Read Barcode Java"
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /java/read-damaged-barcodes/

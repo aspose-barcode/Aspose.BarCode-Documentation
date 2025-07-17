@@ -3,6 +3,8 @@ title: Special Barcode Recognition Cases
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions"
 keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrual Data Matrix, Aspose.BarCode, Read Barcodes in Android"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /androidjava/special-recognition-cases/
 ---

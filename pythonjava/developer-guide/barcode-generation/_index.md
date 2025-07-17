@@ -2,6 +2,8 @@
 title: Barcode Generation Basics - Create Barcodes in Python via Java 
 linktitle: Barcode Generation Basics 
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /python-java/barcode-generation/
 

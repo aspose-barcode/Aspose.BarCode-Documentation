@@ -3,6 +3,8 @@ title: Read Australia Post Barcodes
 type: docs
 description: "This article describes how to decode Australia Post barcodes in Aspose.BarCode for Java"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode in Java"
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /java/read-australia-post/

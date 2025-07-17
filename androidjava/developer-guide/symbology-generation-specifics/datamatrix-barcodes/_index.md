@@ -2,6 +2,8 @@
 title: Data Matrix Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Android to generate Data Matrix barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /androidjava/datamatrix-generation/
 ---

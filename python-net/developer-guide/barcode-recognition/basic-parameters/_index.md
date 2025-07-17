@@ -4,6 +4,8 @@ linktitle: Basic Reading Parameters
 type: docs
 description: "This Article Describes How Basic Recognition Parameters"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Python"
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /python-net/basic-recognition-parameters/
 aliases:

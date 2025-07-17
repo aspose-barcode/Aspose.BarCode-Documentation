@@ -4,6 +4,8 @@ linktitle: Barcode Reading API
 description: "Description of Barcode Java API for barcode recognition"
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 90
 url: /java/read-barcodes-with-aspose-barcode-apis/
 

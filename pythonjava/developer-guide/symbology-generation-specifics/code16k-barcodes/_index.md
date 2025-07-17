@@ -2,6 +2,8 @@
 title: Code-16K Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Python to generate Code16K barcodes"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 url: /python-java/generate-code16k/
 ---

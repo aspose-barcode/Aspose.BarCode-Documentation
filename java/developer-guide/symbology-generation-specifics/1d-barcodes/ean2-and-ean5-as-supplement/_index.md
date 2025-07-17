@@ -2,6 +2,8 @@
 title: Generate EAN-2 and EAN-5 Barcodes as Supplement in Java
 linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 feedback: BARCODECOM
 url: /java/ean2-and-ean5-as-supplement/

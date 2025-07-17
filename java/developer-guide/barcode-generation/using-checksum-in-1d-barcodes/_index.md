@@ -2,6 +2,8 @@
 title: Set Barcode Checksum Controls in Java
 linktitle: Set Barcode Checksum Controls
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 feedback: BARCODECOM
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Java"

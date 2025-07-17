@@ -1,6 +1,8 @@
 ---
 title: Modify Barcode Color Scheme
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 description: "How to Adjust Color Schemes of Barcode Elements in Aspose.BarCode for Node.js via Java"
 keywords: "generate barcodes, customize barcode image, change barcode color, set barcode color, generate colored barcodes, barcode color in Node.js, work with barcode image in Aspose.BarCode, generate barcodes in Aspose.BarCode"

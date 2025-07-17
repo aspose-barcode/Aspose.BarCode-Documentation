@@ -1,6 +1,8 @@
 ---
 title: Read Barcodes from PDF Documents
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /java/read-barcode-from-pdf-document/

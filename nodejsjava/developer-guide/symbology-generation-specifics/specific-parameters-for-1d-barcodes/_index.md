@@ -3,6 +3,8 @@ title: Set Parameters for 1D Barcode Types
 type: docs
 description: "Set Specific Display Parameters for 1D Barcodes in Aspose.BarCode for Node.js via Java"
 keywords: "Generate Barcodes, Customize 1D Barcode Image, Adjust Bar Height in Aspose.BarCode for Node.js, Work with Barcode Image in Aspose.BarCode for Node.js, Generate Barcodes in Aspose.BarCode, Customized Linear Barcodes, Change Bar Height, Set Empty Bar Filling for 1D Barcodes, Barcode Wide-to-Narrow Ratio, Set Wide-to-Narrow Ratio in Aspose.BarCode"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /nodejsjava/set-barcode-parameters/
 ---

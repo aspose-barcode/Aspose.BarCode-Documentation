@@ -2,6 +2,8 @@
 title: Generate Postal Barcodes
 type: docs
 description: "Use Aspose.BarCode for Node.js via Java to generate postal barcodes"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 170
 url: /nodejsjava/generate-postal-barcodes/
 ---

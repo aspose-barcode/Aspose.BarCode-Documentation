@@ -3,6 +3,8 @@ title: PDF417 Barcode Family
 type: docs
 description: "Generate different types of PDF417 barcodes using Aspose.BarCode for Android"
 keywords: "Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for Android"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /androidjava/pdf417-generation/
 ---

@@ -2,6 +2,8 @@
 title: Postal Barcode Types
 type: docs
 description: "How to use Aspose.BarCode for Android to generate postal barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 170
 url: /androidjava/postal-barcodes-generation/
 ---

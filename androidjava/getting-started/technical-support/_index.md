@@ -1,6 +1,8 @@
 ---
 title: Technical Support
 type: docs
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 description: "How to Contact Technical Support for Aspose.BarCode for Android via Java"

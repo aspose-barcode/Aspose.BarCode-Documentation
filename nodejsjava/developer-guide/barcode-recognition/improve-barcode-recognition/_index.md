@@ -2,6 +2,8 @@
 title: Barcode Reading Quality and Speed
 type: docs
 keywords: Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode in Node.js
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /nodejsjava/optimize-barcode-reading/
 ---

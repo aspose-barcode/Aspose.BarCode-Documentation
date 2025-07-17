@@ -1,6 +1,8 @@
 ---
 title: Set Aspect Ratio of Barcodes in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /java/set-aspect-ratio-of-barcodes-in-jython/
 ---

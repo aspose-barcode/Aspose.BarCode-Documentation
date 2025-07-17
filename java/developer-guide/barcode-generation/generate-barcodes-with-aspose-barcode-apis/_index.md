@@ -2,6 +2,8 @@
 title: Generate Barcodes in Aspose.BarCode APIs for Java
 linktitle: Generate Barcodes in Java API
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 url: /java/generate-barcodes-using-aspose-apis/

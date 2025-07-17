@@ -3,6 +3,8 @@ title: Barcode Reading Settings
 type: docs
 description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for Python according to business needs"
 keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcodes in Python
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /python-net/barcode-reading-settings/
 ---

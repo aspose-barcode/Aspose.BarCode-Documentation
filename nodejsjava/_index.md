@@ -2,6 +2,8 @@
 title: Aspose.BarCode for Node.js via Java
 description: Aspose.BarCode for Node.js via Java is implemented using Node.js and Java through nodejs-java bridge. It allows developers to quickly and easily add barcode generation and recognition functionality to their Node.js applications.
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 url: /nodejsjava/
 is_root: true

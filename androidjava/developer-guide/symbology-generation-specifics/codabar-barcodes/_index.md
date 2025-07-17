@@ -2,6 +2,8 @@
 title: Codabar Barcodes
 type: docs
 description: "Use Aspose.BarCode for Android to generate Codabar barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 110
 url: /androidjava/codabar-generation/
 ---

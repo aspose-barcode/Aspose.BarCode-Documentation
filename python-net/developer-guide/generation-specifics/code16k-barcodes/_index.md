@@ -2,6 +2,8 @@
 title: Generate Code16K Barcodes
 linktitle: Code16K Barcodes
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 url: /python-net/generate-code16k-barcodes/
 ---

@@ -2,6 +2,8 @@
 title: Customize Barcode Color Scheme in Python via Java
 linktitle: Customize Barcode Color Scheme
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 description: "How to Adjust Color Schemes of Barcode Elements in Aspose.BarCode for Python via Java"
 keywords: "generate barcodes, customize barcode image, change barcode color, set barcode color, generate colored barcodes, barcode color in Python, work with barcode image in Aspose.BarCode, generate barcodes in Aspose.BarCode"

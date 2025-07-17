@@ -3,6 +3,8 @@ title: Generate Code 16K Barcodes in Java
 linktitle: Code 16K
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/code16k-barcodes/
 ---

@@ -4,6 +4,8 @@ linktitle: Aztec Code
 type: docs
 description: "How to Generate Aztec Code barcodes via Aspose.BarCode for Python via .NET"
 keywords: Generate Aztec Barcode, Generate Aztec Code, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Python
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /python-net/generate-aztec-code/
 

@@ -2,6 +2,8 @@
 title: Code16K Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Android to generate Code16K barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 url: /androidjava/code16k-generation/
 ---

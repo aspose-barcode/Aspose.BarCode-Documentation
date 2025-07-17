@@ -4,6 +4,8 @@ linktitle: Barcode Generation in XML
 type: docs
 description: This article explains how to import and export barcode the generation state to the XML format with C++ API or Library."
 keywords: "Export barcode to XML, Import barcode from XML, Barcode in XML, Aspose.BarCode, Read Barcode C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 feedback: BARCODECOM
 url: /cpp/barcode-generation-state-in-xml/

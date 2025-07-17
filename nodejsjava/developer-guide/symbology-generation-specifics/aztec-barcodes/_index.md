@@ -3,6 +3,8 @@ title: Generate Aztec Code Barcodes
 type: docs
 description: "Use Aspose.BarCode for Node.js to generate Aztec Code barcodes"
 keywords: "Generate Aztec Barcode, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Node.js"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /nodejsjava/generate-aztec-code/
 ---

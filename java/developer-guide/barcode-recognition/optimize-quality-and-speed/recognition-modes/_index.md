@@ -3,6 +3,8 @@ title: Recognition Quality Modes
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode Java"
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 url: /java/recognition-quality-modes/

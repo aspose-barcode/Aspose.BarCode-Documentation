@@ -1,6 +1,8 @@
 ---
 title: Supported Barcode Types
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /python-java/barcode-types/
 aliases:

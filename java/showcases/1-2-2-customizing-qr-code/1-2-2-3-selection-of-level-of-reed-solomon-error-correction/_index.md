@@ -1,6 +1,8 @@
 ---
 title: Select Reed Solomon Error Correction Level
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/1-2-2-3-selection-of-level-of-reed-solomon-error-correction/
 ---

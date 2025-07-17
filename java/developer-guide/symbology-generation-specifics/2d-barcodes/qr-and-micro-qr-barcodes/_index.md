@@ -2,6 +2,8 @@
 title: Generate QR Code and Micro QR Code in Java
 linktitle: QR Code and Micro QR Code
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /java/qr-code-and-micro-qr-code/

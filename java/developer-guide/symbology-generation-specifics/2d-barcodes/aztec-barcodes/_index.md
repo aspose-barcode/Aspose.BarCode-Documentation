@@ -4,6 +4,8 @@ linktitle: Aztec Code
 type: docs
 description: "How to Generate Aztec Code barcodes via Aspose.BarCode for Java"
 keywords: Generate Aztec Barcode, Generate Aztec Code, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Java
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 url: /java/aztec-code-barcodes/

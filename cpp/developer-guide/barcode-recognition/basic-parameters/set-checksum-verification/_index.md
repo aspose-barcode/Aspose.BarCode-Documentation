@@ -4,6 +4,8 @@ linktitle: Set Checksum Verification
 type: docs
 description: "This article describes how to set checksum verification in Aspose.BarCode for C++"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /cpp/set-checksum-verification/

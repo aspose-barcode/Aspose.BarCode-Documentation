@@ -2,6 +2,8 @@
 title: Generate Data Matrix Barcodes
 type: docs
 description: "Use Aspose.BarCode for Node.js via Java to generate Data Matrix barcodes"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /nodejsjava/generate-datamatrix/
 ---

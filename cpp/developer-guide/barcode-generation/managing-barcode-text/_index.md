@@ -2,6 +2,8 @@
 title: Customize Barcode Text and Captions in C++
 linktitle: Customize Barcode Text
 type: docs
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 feedback: BARCODECOM
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for C++"

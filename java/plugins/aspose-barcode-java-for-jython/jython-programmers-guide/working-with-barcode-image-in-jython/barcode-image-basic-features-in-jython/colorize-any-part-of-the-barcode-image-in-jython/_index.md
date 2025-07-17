@@ -1,6 +1,8 @@
 ---
 title: Colorize any Part of the Barcode Image in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /java/colorize-any-part-of-the-barcode-image-in-jython/
 ---

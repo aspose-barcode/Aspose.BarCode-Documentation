@@ -3,6 +3,8 @@ title: Working with Barcode Types
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Python, Barcode types in Aspose.BarCode for Python, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /python-java/managing-barcode-types/
 ---

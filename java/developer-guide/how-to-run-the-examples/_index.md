@@ -1,6 +1,8 @@
 ---
 title: How to Run Aspose.BarCode Examples in Java
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 url: /java/run-aspose-barcode-examples/

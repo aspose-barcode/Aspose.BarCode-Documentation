@@ -2,6 +2,8 @@
 title: Customize Barcode Color Scheme in Java
 linktitle: Customize Barcode Color Scheme
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 description: "How to Adjust Color Schemes of Barcode Elements in Aspose.BarCode for Java"

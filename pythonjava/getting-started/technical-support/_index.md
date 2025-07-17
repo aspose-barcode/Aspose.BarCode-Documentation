@@ -1,6 +1,8 @@
 ---
 title: Technical Support
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 description: "How to Contact Technical Support for Aspose.BarCode for Python via Java"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Python, Technical Support for Aspose.BarCode, Aspose.Barcode Forum"

@@ -1,6 +1,8 @@
 ---
 title: Installation
 type: docs
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /androidjava/installation/

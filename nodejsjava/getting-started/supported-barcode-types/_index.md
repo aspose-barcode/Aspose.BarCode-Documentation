@@ -1,6 +1,8 @@
 ---
 title: Supported Barcode Types
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 feedback: BARCODECOM
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for Node.js via Java"

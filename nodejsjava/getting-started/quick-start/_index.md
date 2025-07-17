@@ -1,6 +1,8 @@
 ---
 title: Quick Start
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 feedback: BARCODECOM
 url: /nodejsjava/quick-start

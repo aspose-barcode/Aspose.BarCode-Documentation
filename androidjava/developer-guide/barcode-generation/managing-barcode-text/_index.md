@@ -1,6 +1,8 @@
 ---
 title: Barcode Text Settings
 type: docs
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Android"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Android, Work with Barcode Image in Aspose.BarCode for Android, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"

@@ -5,6 +5,8 @@ type: docs
 feedback: BARCODECOM
 description: "Aspose.BarCode for C++ can be used to generate different types of PDF417 barcodes"
 keywords: "Generate PDF417 Barcode, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /cpp/pdf417-barcodes/
 aliases:

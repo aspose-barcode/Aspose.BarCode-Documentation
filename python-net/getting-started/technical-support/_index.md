@@ -2,6 +2,8 @@
 title: Technical Support
 description: "How to Contact Technical Support and Get Help with Aspose.BarCode for Python via .NET"
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Python via .NET, Technical Support for Aspose.BarCode, Aspose.Barcode Forum"
 url: /python-net/technical-support/

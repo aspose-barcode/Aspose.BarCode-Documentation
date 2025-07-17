@@ -1,6 +1,8 @@
 ---
 title: Hiding Code Text that is too Long to Display in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /java/hiding-code-text-that-is-too-long-to-display-in-jython/
 ---

@@ -2,6 +2,8 @@
 title: Generate Barcodes with Aspose.BarCode APIs in C++
 linktitle: Aspose.BarCode API
 type: docs
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 100
 feedback: BARCODECOM
 url: /cpp/generate-barcodes-using-aspose-apis/

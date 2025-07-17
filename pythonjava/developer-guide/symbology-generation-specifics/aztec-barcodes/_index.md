@@ -3,6 +3,8 @@ title: Aztec Code
 type: docs
 description: "Use Aspose.BarCode for Python to generate Aztec Code barcodes"
 keywords: "Generate Aztec Barcode, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for Python"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /python-java/generate-aztec-code/
 ---

@@ -1,6 +1,8 @@
 ---
 title: Basic 2D Barcode Features in PHP
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /java/basic-2d-barcode-features-in-php/
 ---

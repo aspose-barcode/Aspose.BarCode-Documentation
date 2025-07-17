@@ -2,6 +2,8 @@
 title: Barcode Generation Specifics in Java
 linktitle: Barcode Generation Specifics
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /java/generate-barcode-types/

@@ -3,6 +3,8 @@ title: Multithread Barcode Reading
 type: docs
 description: "This article explains how to set mulithread barcode recognition"
 keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Multithread Barcode Reading, Barcode Recognition Multithreading, Aspose.BarCode, Read Barcode in Android
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /androidjava/multithread-barcode-reading/
 ---

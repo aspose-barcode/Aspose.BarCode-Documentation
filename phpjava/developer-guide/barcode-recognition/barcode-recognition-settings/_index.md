@@ -3,6 +3,8 @@ title: Barcode Reading Settings
 type: docs
 description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for PHP via Java according to business needs"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode PHP"
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /phpjava/barcode-reading-settings/
 ---

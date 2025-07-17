@@ -1,6 +1,8 @@
 ---
 title: Barcode Generation
 type: docs
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /androidjava/generate-barcodes/
 

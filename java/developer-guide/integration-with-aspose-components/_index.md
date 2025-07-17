@@ -2,6 +2,8 @@
 title: Integration with Aspose Libraries
 description: "How to Integrate Aspose.BarCode Java with Other Aspose Products"
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /java/integration-with-aspose-libraries/

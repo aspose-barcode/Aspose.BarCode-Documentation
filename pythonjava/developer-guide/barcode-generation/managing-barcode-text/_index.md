@@ -2,6 +2,8 @@
 title: Customize Barcode Text and Captions in Java
 linktitle: Customize Barcode Text
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Python, Work with Barcode Image in Aspose.BarCode for Python, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"

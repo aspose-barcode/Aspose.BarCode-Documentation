@@ -2,6 +2,8 @@
 title: Generate MaxiCode Barcodes
 linktitle: MaxiCode
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 url: /python-net/generate-maxicode-barcodes/
 ---

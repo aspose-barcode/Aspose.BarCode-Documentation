@@ -4,6 +4,8 @@ linktitle: Barcode Generation in XML
 type: docs
 description: "This article explains how to import and export barcodes to XML using Aspose.BarCode for Java."
 keywords: "Export barcode to XML, Import barcode from XML, barcode in XML, Aspose.BarCode, Read Barcode Java"
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 feedback: BARCODECOM
 url: /java/barcode-generation-state-in-xml/

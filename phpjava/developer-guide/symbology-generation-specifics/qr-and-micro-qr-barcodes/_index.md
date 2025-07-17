@@ -2,6 +2,8 @@
 title: Generate QR Code and Micro QR Code
 type: docs
 description: "Use Aspose.BarCode for PHP via Java to generate QR Codes"
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /phpjava/generate-qr-code/
 ---

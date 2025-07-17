@@ -2,6 +2,8 @@
 title: DataBar Barcodes
 type: docs
 description: "Use Aspose.BarCode for Android to generate Databar barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 100
 url: /androidjava/databar-generation/
 ---

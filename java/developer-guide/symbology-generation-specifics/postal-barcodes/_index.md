@@ -2,6 +2,8 @@
 title: Specific Parameters of Postal Barcode Types
 linktitle: Postal Barcodes
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /java/postal-barcode-types/

@@ -2,6 +2,8 @@
 title: Save Generated Barcodes in Python via Java
 linktitle: Save Generated Barcodes
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 description: "How to Save Generated Barcodes in Aspose.BarCode for Python via Java"
 keywords: "Generate Barcodes, Save Barcode in Python, Download Barcode in Aspose.BarCode for Python, Generate Barcodes in Aspose.BarCode, Save To File Aspose Barcode, Barcode Vector Format, Generate Vector Barcodes, Save Barcode as JPEG, Save Barcode as PNG, Save Barcode as BMP, Save Barcode as TIFF, Save Barcode as GIF"

@@ -2,6 +2,8 @@
 title: Aspose.BarCode for Python via .NET
 description:
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 100
 url: /python-net/
 is_root: true

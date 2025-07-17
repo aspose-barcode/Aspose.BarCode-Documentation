@@ -1,6 +1,8 @@
 ---
 title: Barcode Recognition
 type: docs
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 description: "This documentation section explains how to perform barcode recognition in Aspose.BarCode for PHP via Java"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcodes in PHP"

@@ -1,6 +1,8 @@
 ---
 title: Utility Features in PHP
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /java/utility-features-in-php/
 ---

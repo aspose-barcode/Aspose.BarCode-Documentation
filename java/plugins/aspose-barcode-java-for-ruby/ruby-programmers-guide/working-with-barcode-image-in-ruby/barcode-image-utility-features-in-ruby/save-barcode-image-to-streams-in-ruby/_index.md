@@ -1,6 +1,8 @@
 ---
 title: Save BarCode Image to Streams in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /java/save-barcode-image-to-streams-in-ruby/
 ---

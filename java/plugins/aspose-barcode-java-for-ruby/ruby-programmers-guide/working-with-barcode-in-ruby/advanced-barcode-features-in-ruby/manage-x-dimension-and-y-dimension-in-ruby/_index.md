@@ -1,6 +1,8 @@
 ---
 title: Manage X-Dimension and Y-Dimension in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/manage-x-dimension-and-y-dimension-in-ruby/
 ---

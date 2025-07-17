@@ -3,6 +3,8 @@ title: Generate QR Code and Micro QR Code in C++
 linktitle: QR Code and Micro QR Code
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /cpp/qr-code-and-micro-qr-code/
 aliases:
