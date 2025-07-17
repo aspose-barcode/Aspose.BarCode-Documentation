@@ -2,6 +2,8 @@
 title: Data encoding for 2D barcodes
 linktitle: Data encoding for 2D barcodes
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 9
 feedback: BARCODECOM
 url: /net/data-encoding-2d/

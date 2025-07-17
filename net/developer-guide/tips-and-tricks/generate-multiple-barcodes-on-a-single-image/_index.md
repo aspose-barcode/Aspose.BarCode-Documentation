@@ -1,6 +1,8 @@
 ---
 title: Generate Multiple Barcodes within Single Image
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 notoc: true
 feedback: BARCODECOM

@@ -1,6 +1,8 @@
 ---
 title: Product Overview
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 description: "Aspose.BarCode for .NET: Product Description, Main Features, and General Information"

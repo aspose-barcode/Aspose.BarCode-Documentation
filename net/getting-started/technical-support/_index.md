@@ -2,6 +2,8 @@
 title: Technical Support
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 description: "How to Contact Technical Support for Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Technical Support for Aspose.BarCode, Aspose.Barcode Forum, C#"

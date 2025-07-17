@@ -3,6 +3,8 @@ title: Get Product Name and DLL Version
 type: docs
 description: "How to Obtain the Information about Product Name and DLL Version"
 keywords: "Aspose Barcode, aspose barcode library, aspose version, aspose dll version, aspose c# version"
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 notoc: true

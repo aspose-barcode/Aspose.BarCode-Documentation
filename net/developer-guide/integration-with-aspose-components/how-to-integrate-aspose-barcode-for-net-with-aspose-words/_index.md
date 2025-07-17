@@ -4,6 +4,8 @@ linktitle: Integration with Aspose.Words
 description: "How to Integrate Aspose.BarCode and Aspose.Words for .NET"
 keywords:
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 notoc: true
 url: /net/integrate-with-aspose-words/

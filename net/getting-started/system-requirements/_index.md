@@ -2,6 +2,8 @@
 title: System Requirements
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 description: "Aspose.BarCode for .NET: Systems Requirements and Supported .NET Platforms"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode, C#"

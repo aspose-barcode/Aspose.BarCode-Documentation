@@ -4,6 +4,8 @@ linktitle: PDF417 and Micro PDF417
 type: docs
 description: "Aspose.BarCode for .NET can be used to generate different types of PDF417 and Micro PDF417 barcodes."
 keywords: "Generate PDF417 Barcode, Create Macro PDF417 Barcode, Micro PDF417, GS1 Micro PDF417, How to Generate PDF417 barcodes, Aspose.BarCode for .NET, C#"
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /net/pdf417-barcodes/

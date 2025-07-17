@@ -2,6 +2,8 @@
 title: Generate Code 16K Barcodes in C#
 linktitle: Code 16K
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /net/code16k-barcodes/

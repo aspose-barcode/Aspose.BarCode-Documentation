@@ -4,6 +4,8 @@ linktitle: Read Barcodes from TIFF
 description: "How to Recognize Barcodes from TIFF Files"
 keywords: "read barcodes from tiff, barcodes in tiff file, multi-page tiff document, recognize barcode from tiff, find barcodes in tiff document"
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 url: /net/read-barcode-from-multipage-tiff/

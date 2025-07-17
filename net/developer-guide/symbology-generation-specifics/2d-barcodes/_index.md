@@ -2,6 +2,8 @@
 title: Specific Parameters of 2D Barcode Types
 linktitle: 2D Barcode Types
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 notoc: true

@@ -5,6 +5,8 @@ description: "How to Intergrate Aspose.BarCode with Aspose.Cells"
 keywords:
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /net/integrate-with-aspose-cells/
 aliases:

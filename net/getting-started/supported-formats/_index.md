@@ -1,6 +1,8 @@
 ---
 title: Supported Image Formats
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 description: "Image Formats Supported in Aspose.BarCode for .NET"

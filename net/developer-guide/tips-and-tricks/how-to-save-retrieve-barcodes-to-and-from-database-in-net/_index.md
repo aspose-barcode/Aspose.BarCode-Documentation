@@ -2,6 +2,8 @@
 title: How to Save Retrieve Barcodes to and from Database in .NET
 linktitle: Store Barcodes in Database
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 url: /net/how-to-save-retrieve-barcodes-to-and-from-database-in-net/

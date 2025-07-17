@@ -4,6 +4,8 @@ description: "How to Insert Barcodes to PDF Files"
 keywords:
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /net/add-barcode-to-pdf-document/
 ---

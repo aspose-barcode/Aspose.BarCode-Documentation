@@ -2,6 +2,8 @@
 title: GS1 Composite Barcodes in C#
 linktitle: GS1 Composite
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 feedback: BARCODECOM
 url: /net/gs1-composite-barcodes/

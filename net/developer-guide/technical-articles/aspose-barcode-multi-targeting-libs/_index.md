@@ -4,6 +4,8 @@ linktitle: Aspose.Barcode Multi-Targeting Libs
 description: "How to develop custom libraries using Aspose.Barcode for multiple .Net versions in the same project"
 keywords: "Aspose Barcode, aspose barcode library, .Net Standard, .Net Framework, .Net Core"
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 feedback: BARCODECOM
 url: /net/aspose-barcode-multi-targeting-libs/

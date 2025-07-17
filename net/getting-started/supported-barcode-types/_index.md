@@ -1,6 +1,8 @@
 ---
 title: Supported Barcode Types
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 description: "1D, 2D, and Postal Barcode Symbologies Supported in Aspose.BarCode for .NET"
