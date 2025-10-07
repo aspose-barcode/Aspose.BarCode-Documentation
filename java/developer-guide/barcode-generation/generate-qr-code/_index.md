@@ -2,7 +2,7 @@
 title: Generate QR Code
 type: docs
 weight: 20
-url: /java/developer-guide/GenerateQRCode
+url: /java/developer-guide/barcode-generation/Generate-QR-Code
 ---
 # Generate QR Code - Quick Example
 
