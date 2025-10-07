@@ -20,7 +20,7 @@ public void basicQRGeneration() throws IOException
 {
     // Create barcode generator instance
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Hello World");
-    
+
     // Save barcode image
     generator.save("qrcode.png");
 }
@@ -36,13 +36,13 @@ You can control the size of QR code by setting the X-dimension (module width) an
 public void defineQRCodeSize() throws IOException
 {
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Set QR size");
-    
+
     // Set barcode dimensions in pixels
     generator.getParameters().getBarcode().getXDimension().setPixels(4);
-    
+
     // Set image resolution
     generator.getParameters().setResolution(300);
-    
+
     generator.save("qrcode_sized.png");
 }
 ```
@@ -55,11 +55,11 @@ QR codes support different error correction levels that allow the barcode to be 
 public void defineErrorCorrectionLevel() throws IOException
 {
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Data with error correction");
-    
+
     // Set error correction level
     // Options: LEVEL_L (7%), LEVEL_M (15%), LEVEL_Q (25%), LEVEL_H (30%)
     generator.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_H);
-    
+
     generator.save("qrcode_error_correction.png");
 }
 ```
@@ -141,10 +141,10 @@ generator.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF
 public void autoEncodingMode() throws IOException
 {
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Simple123");
-    
+
     // AUTO mode automatically selects optimal encoding
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.AUTO);
-    
+
     generator.save("qrcode_auto.png");
 }
 ```
@@ -155,11 +155,11 @@ public void autoEncodingMode() throws IOException
 public void defineEncodingMode() throws IOException
 {
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "データ");
-    
+
     // Use ECI mode for explicit character encoding
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI);
     generator.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
-    
+
     generator.save("qrcode_utf8.png");
 }
 ```
@@ -170,10 +170,10 @@ public void defineEncodingMode() throws IOException
 public void binaryEncodingMode() throws IOException
 {
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "BinaryData");
-    
+
     // BINARY mode for raw binary data
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.BINARY);
-    
+
     generator.save("qrcode_binary.png");
 }
 ```
@@ -193,31 +193,31 @@ public void completeExample() throws IOException
     try {
         // Initialize barcode generator
         BarcodeGenerator generator = new BarcodeGenerator(
-            EncodeTypes.QR,
-            "https://www.aspose.com"
+                EncodeTypes.QR,
+                "https://www.aspose.com"
         );
-        
+
         // Configure appearance
         generator.getParameters().getBarcode().getXDimension().setPixels(4);
         generator.getParameters().setResolution(300);
-        
+
         // Configure QR-specific settings
         generator.getParameters().getBarcode().getQR()
-            .setQrErrorLevel(QRErrorLevel.LEVEL_M);
+                .setQrErrorLevel(QRErrorLevel.LEVEL_M);
         generator.getParameters().getBarcode().getQR()
-            .setQrEncodeMode(QREncodeMode.ECI);
+                .setQrEncodeMode(QREncodeMode.ECI);
         generator.getParameters().getBarcode().getQR()
-            .setQrECIEncoding(ECIEncodings.UTF8);
-        
+                .setQrECIEncoding(ECIEncodings.UTF8);
+
         // Set colors
         generator.getParameters().setBackColor(java.awt.Color.WHITE);
         generator.getParameters().getBarcode().setBarColor(java.awt.Color.BLACK);
-        
+
         // Save to file
         generator.save("qrcode_complete.png");
-        
+
         System.out.println("QR Code generated successfully!");
-        
+
     } catch (Exception e) {
         e.printStackTrace();
     }
@@ -226,7 +226,73 @@ public void completeExample() throws IOException
 
 ## Micro QR Code
 
-For smaller data amounts, you can use Micro QR Code which is a more compact version:
+### What is Micro QR Code?
+
+Micro QR Code is a compact version of standard QR Code, designed for applications where space is limited but data requirements are minimal.
+
+### QR Code vs Micro QR Code
+
+#### Visual Differences
+
+**Standard QR Code:**
+- 3 position detection patterns (large squares in corners)
+- Minimum size: 21×21 modules
+- Maximum size: 177×177 modules
+
+**Micro QR Code:**
+- **Only 1 position detection pattern** (top-left corner)
+- Minimum size: 11×11 modules
+- Maximum size: 17×17 modules
+
+#### Data Capacity
+
+**Standard QR Code:**
+- Numeric: up to **7,089 digits**
+- Alphanumeric: up to **4,296 characters**
+- Binary: up to **2,953 bytes**
+
+**Micro QR Code:**
+- Numeric: up to **35 digits**
+- Alphanumeric: up to **21 characters**
+- Binary: up to **15 bytes**
+
+#### Versions
+
+**Standard QR Code:**
+- Versions 1-40 (size increases by 4 modules per version)
+
+**Micro QR Code:**
+- Versions M1, M2, M3, M4 (limited sizes)
+
+#### Error Correction Support
+
+**Standard QR Code:**
+- All levels supported: L, M, Q, H
+
+**Micro QR Code:**
+- M1: Error detection only (no correction)
+- M2: L, M levels
+- M3: L, M levels
+- M4: L, M, Q levels
+
+#### When to Use Each Type
+
+**Use Standard QR Code when:**
+- ✅ Encoding large amounts of data (URLs, vCard, long text)
+- ✅ Need for high error correction (Level H)
+- ✅ Maximum scanner compatibility required
+- ✅ Standard use cases (marketing, payments, etc.)
+
+**Use Micro QR Code when:**
+- ✅ Very limited data (serial numbers, short IDs)
+- ✅ Space is extremely constrained (small components, microchips)
+- ✅ Industrial marking of tiny parts
+- ✅ Data is less than 20 characters
+- ⚠️ Note: Not all scanners support Micro QR
+
+**Simple Rule**: If data is less than 20 characters AND space is limited → use Micro QR. For all other cases → use standard QR Code.
+
+### Generating Micro QR Code
 
 ```java
 public void generateMicroQR() throws IOException
@@ -240,6 +306,22 @@ public void generateMicroQR() throws IOException
 }
 ```
 
+### Comparison Example
+
+```java
+public void compareQRandMicroQR() throws IOException
+{
+    // Standard QR - for URL or longer data
+    BarcodeGenerator standardQR = new BarcodeGenerator(EncodeTypes.QR,"https://example.com/product/12345"
+    );
+    standardQR.save("standard_qr.png");
+    
+    // Micro QR - for short ID or serial number
+    BarcodeGenerator microQR = new BarcodeGenerator(EncodeTypes.MICRO_QR,"ID-12345");
+    microQR.save("micro_qr.png");
+}
+```
+
 ## Common Use Cases
 
 ### URL Encoding
@@ -247,10 +329,7 @@ public void generateMicroQR() throws IOException
 ```java
 public void encodeURL() throws IOException
 {
-    BarcodeGenerator generator = new BarcodeGenerator(
-        EncodeTypes.QR, 
-        "https://www.example.com/product/12345"
-    );
+    BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR,"https://docs.aspose.com/");
     generator.save("url_qrcode.png");
 }
 ```
@@ -261,18 +340,18 @@ public void encodeURL() throws IOException
 public void encodeVCard() throws IOException
 {
     String vcard = "BEGIN:VCARD\n" +
-                   "VERSION:3.0\n" +
-                   "FN:John Doe\n" +
-                   "TEL:+1-555-1234\n" +
-                   "EMAIL:john@example.com\n" +
-                   "END:VCARD";
-    
+            "VERSION:3.0\n" +
+            "FN:John Doe\n" +
+            "TEL:+1-555-1234\n" +
+            "EMAIL:john@example.com\n" +
+            "END:VCARD";
+
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, vcard);
-    
+
     // Use ECI mode for proper UTF-8 encoding
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI);
     generator.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
-    
+
     generator.save("vcard_qrcode.png");
 }
 ```
@@ -283,7 +362,7 @@ public void encodeVCard() throws IOException
 public void encodeWiFi() throws IOException
 {
     String wifi = "WIFI:T:WPA;S:MyNetwork;P:MyPassword;;";
-    
+
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, wifi);
     generator.save("wifi_qrcode.png");
 }
