@@ -22,7 +22,7 @@ public void basicQRGeneration() throws IOException
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Hello World");
 
     // Save barcode image
-    generator.save("qrcode.png");
+    generator.save(folder + "qrcode.png");
 }
 ```
 
@@ -43,7 +43,7 @@ public void defineQRCodeSize() throws IOException
     // Set image resolution
     generator.getParameters().setResolution(300);
 
-    generator.save("qrcode_sized.png");
+    generator.save(folder + "qrcode_sized.png");
 }
 ```
 
@@ -60,7 +60,7 @@ public void defineErrorCorrectionLevel() throws IOException
     // Options: LEVEL_L (7%), LEVEL_M (15%), LEVEL_Q (25%), LEVEL_H (30%)
     generator.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_H);
 
-    generator.save("qrcode_error_correction.png");
+    generator.save(folder + "qrcode_error_correction.png");
 }
 ```
 
@@ -145,7 +145,7 @@ public void autoEncodingMode() throws IOException
     // AUTO mode automatically selects optimal encoding
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.AUTO);
 
-    generator.save("qrcode_auto.png");
+    generator.save(folder + "qrcode_auto.png");
 }
 ```
 
@@ -160,7 +160,7 @@ public void defineEncodingMode() throws IOException
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI);
     generator.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
 
-    generator.save("qrcode_utf8.png");
+    generator.save(folder + "qrcode_utf8.png");
 }
 ```
 
@@ -174,7 +174,7 @@ public void binaryEncodingMode() throws IOException
     // BINARY mode for raw binary data
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.BINARY);
 
-    generator.save("qrcode_binary.png");
+    generator.save(folder + "qrcode_binary.png");
 }
 ```
 
@@ -214,7 +214,7 @@ public void completeExample() throws IOException
         generator.getParameters().getBarcode().setBarColor(java.awt.Color.BLACK);
 
         // Save to file
-        generator.save("qrcode_complete.png");
+        generator.save(folder + "qrcode_complete.png");
 
         System.out.println("QR Code generated successfully!");
 
@@ -302,7 +302,7 @@ public void generateMicroQR() throws IOException
     // Micro QR specific settings
     generator.getParameters().getBarcode().getXDimension().setPixels(4);
     
-    generator.save("micro_qr.png");
+    generator.save(folder + "micro_qr.png");
 }
 ```
 
@@ -314,7 +314,7 @@ public void compareQRandMicroQR() throws IOException
     // Standard QR - for URL or longer data
     BarcodeGenerator standardQR = new BarcodeGenerator(EncodeTypes.QR,"https://example.com/product/12345"
     );
-    standardQR.save("standard_qr.png");
+    standardQR.save(folder + "standard_qr.png");
     
     // Micro QR - for short ID or serial number
     BarcodeGenerator microQR = new BarcodeGenerator(EncodeTypes.MICRO_QR,"ID-12345");
@@ -324,47 +324,59 @@ public void compareQRandMicroQR() throws IOException
 
 ## Common Use Cases
 
+QR codes are widely used because they can be scanned quickly with smartphones and can encode various types of data. Here are some practical examples:
+
 ### URL Encoding
+
+QR codes are commonly used to share website links, allowing users to visit a webpage by simply scanning the code.
 
 ```java
 public void encodeURL() throws IOException
 {
-    BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR,"https://docs.aspose.com/");
-    generator.save("url_qrcode.png");
+    BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.QR,
+        "https://docs.aspose.com/"
+    );
+    generator.save(folder + "url_qrcode.png");
 }
 ```
 
 ### Contact Information (vCard)
 
+QR codes can store complete contact information in vCard format, making it easy to add contacts to a phone's address book.
+
 ```java
 public void encodeVCard() throws IOException
 {
     String vcard = "BEGIN:VCARD\n" +
-            "VERSION:3.0\n" +
-            "FN:John Doe\n" +
-            "TEL:+1-555-1234\n" +
-            "EMAIL:john@example.com\n" +
-            "END:VCARD";
+                   "VERSION:3.0\n" +
+                   "FN:John Doe\n" +
+                   "TEL:+1-555-1234\n" +
+                   "EMAIL:john@example.com\n" +
+                   "END:VCARD";
 
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, vcard);
-
-    // Use ECI mode for proper UTF-8 encoding
+    
+    // Use ECI mode for proper UTF-8 encoding if contact contains international characters
     generator.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.ECI);
     generator.getParameters().getBarcode().getQR().setQrECIEncoding(ECIEncodings.UTF8);
 
-    generator.save("vcard_qrcode.png");
+    generator.save(folder + "vcard_qrcode.png");
 }
 ```
 
 ### WiFi Configuration
 
+WiFi QR codes allow users to connect to a wireless network by scanning the code, without manually entering the password.
+
 ```java
 public void encodeWiFi() throws IOException
 {
+    // Format: WIFI:T:<encryption>;S:<network name>;P:<password>;;
     String wifi = "WIFI:T:WPA;S:MyNetwork;P:MyPassword;;";
 
     BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, wifi);
-    generator.save("wifi_qrcode.png");
+    generator.save(folder + "wifi_qrcode.png");
 }
 ```
 
