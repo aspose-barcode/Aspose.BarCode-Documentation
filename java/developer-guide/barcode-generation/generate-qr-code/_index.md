@@ -1,5 +1,6 @@
 ---
 title: Generate QR Code
+description: Learn how to generate QR codes using Aspose.BarCode for Java with examples of error correction levels, encoding modes, and common use cases.
 type: docs
 weight: 20
 url: /java/developer-guide/barcode-generation/generate-qr-code
@@ -312,13 +313,18 @@ public void generateMicroQR() throws IOException
 public void compareQRandMicroQR() throws IOException
 {
     // Standard QR - for URL or longer data
-    BarcodeGenerator standardQR = new BarcodeGenerator(EncodeTypes.QR,"https://example.com/product/12345"
+    BarcodeGenerator standardQR = new BarcodeGenerator(
+        EncodeTypes.QR,
+        "https://example.com/product/12345"
     );
     standardQR.save(folder + "standard_qr.png");
     
     // Micro QR - for short ID or serial number
-    BarcodeGenerator microQR = new BarcodeGenerator(EncodeTypes.MICRO_QR,"ID-12345");
-    microQR.save("micro_qr.png");
+    BarcodeGenerator microQR = new BarcodeGenerator(
+        EncodeTypes.MICRO_QR,
+        "ID-12345"
+    );
+    microQR.save(folder + "micro_qr.png");
 }
 ```
 
@@ -391,6 +397,6 @@ public void encodeWiFi() throws IOException
 
 ## Next Steps
 
-- Learn about [Customizing Barcode Appearance](../customize-appearance)
-- Explore [2D Barcode Types](../../2d-barcodes-overview)
-- Read about [Barcode Recognition](../../barcode-recognition/basic-barcode-recognition)
+- <a href="/barcode/java/developer-guide/barcode-generation/customize-appearance/" target="_blank">Customizing Barcode Appearance</a>
+- <a href="/barcode/java/developer-guide/2d-barcodes-overview/" target="_blank">2D Barcode Types</a>
+- <a href="/barcode/java/developer-guide/barcode-recognition/basic-barcode-recognition/" target="_blank">Barcode Recognition</a>
