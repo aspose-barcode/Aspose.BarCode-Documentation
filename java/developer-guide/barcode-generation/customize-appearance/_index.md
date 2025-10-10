@@ -1,21 +1,24 @@
 ---
-title: Customize Appearance
+title: "Customize Appearance"
 type: docs
 weight: 30
-url: /java/developer-guide/Customize-Appearance
+url: /java/developer-guide/customize-appearance/
 ---
-# Customizing Barcode Appearance
 
-## Overview
+# **Customizing Barcode Appearance**
 
-Aspose.BarCode for Java provides extensive customization options to control the visual appearance of generated barcodes. 
-This guide covers barcode sizing, colors, resolution, and visual styling.
+## **Overview**
 
-## Barcode Size and Dimensions
+Aspose.BarCode for Java provides extensive customization options to control the visual appearance of generated barcodes.  
+This guide covers barcode sizing, colors, resolution, margins, and rotation settings.
 
-### X-Dimension (Bar Width)
+---
 
-The X-dimension controls the width of the narrowest bar in the barcode:
+## **Barcode Size and Dimensions**
+
+### **X-Dimension (Bar Width)**
+
+The X-dimension controls the width of the narrowest bar (for 1D) or module (for 2D) in the barcode.
 
 ```java
 import com.aspose.barcode.generation.*;
@@ -28,102 +31,127 @@ generator.getParameters().getBarcode().getXDimension().setPixels(3);
 // Or set in millimeters
 generator.getParameters().getBarcode().getXDimension().setMillimeters(0.5f);
 
-generator.save("barcode_xdim.png");
+generator.save("barcode_xdim.png", BarCodeImageFormat.PNG);
 ```
 
-### Barcode Height
+---
+
+### **Barcode Height**
 
 ```java
+import com.aspose.barcode.generation.*;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "12345");
 
 // Set bar height in pixels
 generator.getParameters().getBarcode().getBarHeight().setPixels(80);
 
 // Or in millimeters
-generator.getParameters().getBarcode().getBarHeight().setMillimeters(20);
+generator.getParameters().getBarcode().getBarHeight().setMillimeters(20.0f);
 
-generator.save("barcode_height.png");
+generator.save("barcode_height.png", BarCodeImageFormat.PNG);
 ```
 
-### Auto-Sizing
+---
 
-Let the barcode automatically size to fit specific dimensions:
+### **Auto-Sizing**
+
+Let the barcode automatically scale to fit specific dimensions using the `AutoSizeMode` property.
 
 ```java
+import com.aspose.barcode.generation.*;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "AutoSize Example");
 
-// Set image dimensions
+// Target bitmap dimensions
 generator.getParameters().getImageHeight().setPixels(200);
 generator.getParameters().getImageWidth().setPixels(200);
 
-// Enable auto-sizing
+// Enable auto-sizing (fit while preserving geometry as much as possible)
 generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
 
-generator.save("barcode_autosize.png");
+generator.save("barcode_autosize.png", BarCodeImageFormat.PNG);
 ```
 
-## Color Customization
+---
 
-### Basic Colors
+## **Color Customization**
+
+### **Basic Colors**
 
 ```java
+import com.aspose.barcode.generation.*;
 import java.awt.Color;
 
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "COLOR");
 
-// Set background color
+// Background color
 generator.getParameters().setBackColor(Color.WHITE);
 
-// Set bar color
+// Bar (foreground) color
 generator.getParameters().getBarcode().setBarColor(Color.BLACK);
 
-generator.save("barcode_colors.png");
+generator.save("barcode_colors.png", BarCodeImageFormat.PNG);
 ```
 
-### Custom RGB Colors
+---
+
+### **Custom RGB Colors**
 
 ```java
+import com.aspose.barcode.generation.*;
+import java.awt.Color;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "Custom Colors");
 
 // Custom background color
 generator.getParameters().setBackColor(new Color(240, 248, 255)); // AliceBlue
 
-// Custom bar color  
+// Custom bar color
 generator.getParameters().getBarcode().setBarColor(new Color(25, 25, 112)); // MidnightBlue
 
-generator.save("barcode_custom_rgb.png");
+generator.save("barcode_custom_rgb.png", BarCodeImageFormat.PNG);
 ```
 
-### Border Color
+---
+
+### **Border Color**
 
 ```java
+import com.aspose.barcode.generation.*;
+import java.awt.Color;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "BORDER");
 
-// Enable border
+// Enable border and set thickness
 generator.getParameters().getBorder().setVisible(true);
 generator.getParameters().getBorder().getWidth().setPixels(2);
 
 // Set border color
 generator.getParameters().getBorder().setColor(Color.RED);
 
-generator.save("barcode_border.png");
+generator.save("barcode_border.png", BarCodeImageFormat.PNG);
 ```
 
-## Resolution and Quality
+---
 
-### Setting Resolution (DPI)
+## **Resolution and Quality**
+
+### **Setting Resolution (DPI)**
 
 ```java
+import com.aspose.barcode.generation.*;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "HIGH-RES");
 
 // Set resolution in DPI (dots per inch)
-generator.getParameters().setResolution(300); // High quality for printing
+generator.getParameters().setResolution(300.0f); // 300 dpi for print
 
-// Or set horizontal and vertical separately
+// Optionally control bitmap size
 generator.getParameters().getImageWidth().setPixels(400);
 generator.getParameters().getImageHeight().setPixels(200);
 
-generator.save("barcode_300dpi.png");
+generator.save("barcode_300dpi.png", BarCodeImageFormat.PNG);
 ```
 
 Common resolution settings:
@@ -132,42 +160,56 @@ Common resolution settings:
 - **300 DPI**: Standard printing quality
 - **600 DPI**: High-quality printing
 
-## Margins and Padding
+> If your build does not contain `setResolution()`, manage print density through `ImageWidth` and `ImageHeight` parameters.
 
-### Barcode Padding
+---
+
+## **Margins and Padding**
+
+### **Barcode Padding (Quiet Zone)**
 
 ```java
+import com.aspose.barcode.generation.*;
+
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "PADDING");
 
-// Set padding for all sides (quiet zone)
+// Quiet zone (padding) on all sides
 generator.getParameters().getBarcode().getPadding().getLeft().setPixels(20);
 generator.getParameters().getBarcode().getPadding().getRight().setPixels(20);
 generator.getParameters().getBarcode().getPadding().getTop().setPixels(10);
 generator.getParameters().getBarcode().getPadding().getBottom().setPixels(10);
 
-generator.save("barcode_padding.png");
+generator.save("barcode_padding.png", BarCodeImageFormat.PNG);
 ```
 
-### Image Margins
+> Padding defines the clear space around the barcode image (quiet zone) to ensure reliable scanning.
+
+---
+
+## **Rotation**
+
+Rotate barcode images at any required angle by setting the `RotationAngle` property.
 
 ```java
-BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR, "MARGINS");
+import com.aspose.barcode.generation.*;
 
-// Set image margins
-generator.getParameters().getImageHeight().setPixels(300);
-generator.getParameters().getImageWidth().setPixels(300);
-
-// Add margins around the image
-generator.getParameters().getCaptionAbove().setVisible(true);
-generator.getParameters().getCaptionAbove().setText("Product QR Code");
-generator.getParameters().getCaptionAbove().getFont().setSize(new com.aspose.barcode.generation.FontUnit(14));
-
-generator.save("barcode_margins.png");
-```
-
-## Rotation
-
-```java
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "ROTATE");
 
-// Rotate barcode (0, 90, 180
+// Rotate barcode (clockwise), degrees: 0, 90, 180, -90, etc.
+generator.getParameters().setRotationAngle(90.0f);
+generator.save("barcode_rotate_90.png", BarCodeImageFormat.PNG);
+
+generator.getParameters().setRotationAngle(-90.0f);
+generator.save("barcode_rotate_-90.png", BarCodeImageFormat.PNG);
+
+generator.getParameters().setRotationAngle(180.0f);
+generator.save("barcode_rotate_180.png", BarCodeImageFormat.PNG);
+```
+
+---
+
+{{% alert color="info" %}}
+💡 **Related Example**  
+See the full runnable TestNG example for X-Dimension and appearance customization here:  
+👉 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/design_usage_examples/src/test/java/com/aspose/barcode/guide/generation/XDimensionExamples.java" target="_blank" rel="noopener noreferrer">XDimensionExamples.java on GitHub</a>
+{{% /alert %}}
