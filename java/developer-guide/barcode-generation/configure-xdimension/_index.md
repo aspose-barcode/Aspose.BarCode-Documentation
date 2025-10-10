@@ -91,6 +91,15 @@ Here, each square module of the DataMatrix barcode will have a side length of 8 
 
 ---
 
+{{% alert color="info" %}}
+💡 **Full Example on GitHub**  
+You can find the complete, runnable TestNG example demonstrating X-Dimension and BarWidthReduction usage here:  
+👉 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/design_usage_examples/src/test/java/com/aspose/barcode/guide/generation/XDimensionExamples.java" target="_blank" rel="noopener noreferrer">XDimensionExamples.java on GitHub</a>
+{{% /alert %}}
+
+
+---
+
 ## **Recommended X-Dimension Values**
 
 | Application | Typical X-Dimension | Unit | Notes |
