@@ -26,11 +26,11 @@ public class Code128Example {
     public static void main(String[] args) {
         try {
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "ABC-12345");
-            
+
             // Basic settings
             gen.getParameters().getBarcode().getXDimension().setMillimeters(0.3f);
             gen.getParameters().getBarcode().getBarHeight().setMillimeters(10.0f);
-            
+
             gen.save("code128.png", BarCodeImageFormat.PNG);
             System.out.println("Code 128 barcode generated successfully!");
         } catch (Exception e) {
@@ -47,12 +47,12 @@ public class QRExample {
     public static void main(String[] args) {
         try {
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "https://www.aspose.com");
-            
+
             // QR-specific settings
             gen.getParameters().getBarcode().getXDimension().setMillimeters(0.5f);
             gen.getParameters().getBarcode().getQR().setQrEncodeMode(QREncodeMode.AUTO);
             gen.getParameters().getBarcode().getQR().setQrErrorLevel(QRErrorLevel.LEVEL_M);
-            
+
             gen.save("qrcode.png", BarCodeImageFormat.PNG);
             System.out.println("QR Code generated successfully!");
         } catch (Exception e) {
@@ -72,11 +72,11 @@ public class EAN13Example {
         try {
             // Create EAN-13 barcode (requires 13 digits with valid checksum)
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN_13, "5901234123457");
-            
+
             // Standard EAN-13 settings
             gen.getParameters().getBarcode().getXDimension().setMillimeters(0.33f);
             gen.getParameters().getBarcode().getBarHeight().setMillimeters(25.0f);
-            
+
             gen.save("ean13.png", BarCodeImageFormat.PNG);
             System.out.println("EAN-13 barcode generated successfully!");
         } catch (Exception e) {
@@ -93,21 +93,20 @@ public class PDF417Example {
     public static void main(String[] args) {
         try {
             BarcodeGenerator gen = new BarcodeGenerator(
-                EncodeTypes.PDF_417, 
-                "Aspose.BarCode makes barcode generation easy!"
+                    EncodeTypes.PDF_417,
+                    "Aspose.BarCode makes barcode generation easy!"
             );
-            
+
             // PDF417-specific parameters
             gen.getParameters().getBarcode().getXDimension().setMillimeters(0.6f);
             gen.getParameters().getBarcode().getPdf417().setColumns(3);
             gen.getParameters().getBarcode().getPdf417().setRows(6);
-            
+
             // Code text below barcode
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setLocation(CodeLocation.BELOW);
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setFont(new FontUnit("Arial", 9));
-            
+            gen.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().setFamilyName("Arial");
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().getSize().setPoint(9);
+
             gen.save("pdf417.png", BarCodeImageFormat.PNG);
             System.out.println("PDF417 barcode generated successfully!");
         } catch (Exception e) {
@@ -247,12 +246,11 @@ public class CustomizationExample {
             gen.getParameters().getBarcode().getBarHeight().setMillimeters(15.0f);
             
             // Code text styling
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setLocation(CodeLocation.BELOW);
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setColor(Color.RED);
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setFont(new FontUnit("Arial", 12, FontStyle.BOLD));
+            gen.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
+            gen.getParameters().getBarcode().getCodeTextParameters().setColor(Color.RED);
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().setFamilyName("Arial");
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().getSize().setPoint(12);
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().setStyle(FontStyle.BOLD);
             
             // Add padding
             gen.getParameters().getBarcode().getPadding().getLeft().setMillimeters(3.0f);
@@ -514,52 +512,55 @@ public class ProductLabelExample {
             // Product information
             String ean13Code = "5901234123457";
             String productName = "Premium Coffee Beans";
-            
+
             // Create EAN-13 barcode
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN_13, ean13Code);
-            
+
             // Professional label dimensions
             gen.getParameters().getBarcode().getXDimension().setMillimeters(0.33f);
             gen.getParameters().getBarcode().getBarHeight().setMillimeters(25.0f);
-            
+
             // Print resolution
             gen.getParameters().setResolution(300.0f);
-            
+
             // Code text styling
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setLocation(CodeLocation.BELOW);
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setFont(new FontUnit("Arial", 10));
-            gen.getParameters().getBarcode().getCodeTextParameters()
-                .setAlignment(TextAlignment.CENTER);
-            
+            gen.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
+            gen.getParameters().getBarcode().getCodeTextParameters().setAlignment(TextAlignment.CENTER);
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().setFamilyName("Arial");
+            gen.getParameters().getBarcode().getCodeTextParameters().getFont().getSize().setPoint(10);
+
             // Quiet zones
             gen.getParameters().getBarcode().getPadding().getLeft().setMillimeters(3.3f);
             gen.getParameters().getBarcode().getPadding().getRight().setMillimeters(3.3f);
             gen.getParameters().getBarcode().getPadding().getTop().setMillimeters(2.0f);
             gen.getParameters().getBarcode().getPadding().getBottom().setMillimeters(2.0f);
-            
+
             // Product name caption
             gen.getParameters().getCaptionAbove().setVisible(true);
             gen.getParameters().getCaptionAbove().setText(productName);
-            gen.getParameters().getCaptionAbove().setFont(new FontUnit("Arial", 12, FontStyle.BOLD));
             gen.getParameters().getCaptionAbove().setAlignment(TextAlignment.CENTER);
-            gen.getParameters().getCaptionAbove().getPadding().getBottom().set
-            
+            gen.getParameters().getCaptionAbove().getFont().setFamilyName("Arial");
+            gen.getParameters().getCaptionAbove().getFont().getSize().setPoint(12);
+            gen.getParameters().getCaptionAbove().getFont().setStyle(FontStyle.BOLD);
+            gen.getParameters().getCaptionAbove().getPadding().getLeft().setMillimeters(5);
+            gen.getParameters().getCaptionAbove().getPadding().getRight().setMillimeters(5);
+            gen.getParameters().getCaptionAbove().getPadding().getTop().setMillimeters(5);
+            gen.getParameters().getCaptionAbove().getPadding().getBottom().setMillimeters(5);
+
             // Clean appearance
             gen.getParameters().setBackColor(Color.WHITE);
             gen.getParameters().getBarcode().setBarColor(Color.BLACK);
-            
+
             // Auto-size
             gen.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-            
+
             // Save
             gen.save("product_label.png", BarCodeImageFormat.PNG);
-            
+
             System.out.println("Product label generated successfully!");
             System.out.println("Product: " + productName);
             System.out.println("EAN-13: " + ean13Code);
-            
+
         } catch (Exception e) {
             System.err.println("Error generating product label: " + e.getMessage());
             e.printStackTrace();
@@ -608,12 +609,12 @@ public class ErrorHandlingExample {
             // Attempt to generate barcode with potentially invalid data
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.EAN_13, "invalid");
             gen.save("test.png", BarCodeImageFormat.PNG);
-            
+
         } catch (BarCodeException ex) {
             // Handle barcode-specific errors
             System.err.println("Barcode Error: " + ex.getMessage());
             System.err.println("Check data format and encode type compatibility");
-            
+
         } catch (Exception ex) {
             // Handle general errors
             System.err.println("General Error: " + ex.getMessage());
@@ -622,10 +623,3 @@ public class ErrorHandlingExample {
     }
 }
 ```
-
-## Next Steps
-
-- Learn about [specific barcode types](/java/developer-guide/barcode-generation/)
-- Explore [advanced customization](/java/developer-guide/barcode-generation/customization/)
-- Read about [GS1 barcodes](/java/developer-guide/barcode-generation/generate-gs-128/)
-- Study [barcode recognition](/java/developer-guide/barcode-recognition/)
