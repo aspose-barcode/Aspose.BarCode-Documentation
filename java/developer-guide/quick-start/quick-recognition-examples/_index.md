@@ -22,12 +22,12 @@ Each snippet below is a test method — copy them into your test class or use th
 @Test
 public void read_Code128_singleType() throws Exception {
     String img = Paths.get(folder, "code128.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.CODE_128)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.CODE_128);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in code128.png");
-        // Optional sanity checks
-        // Assert.assertEquals(results[0].getCodeTypeName(), "Code128");
-        // System.out.println(results[0].getCodeText());
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -38,9 +38,12 @@ public void read_Code128_singleType() throws Exception {
 @Test
 public void read_QR_singleType() throws Exception {
     String img = Paths.get(folder, "qrcode.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.QR)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.QR);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in qrcode.png");
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -51,9 +54,12 @@ public void read_QR_singleType() throws Exception {
 @Test
 public void read_DataMatrix_singleType() throws Exception {
     String img = Paths.get(folder, "datamatrix.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.DATA_MATRIX)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.DATA_MATRIX);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in datamatrix.png");
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -64,9 +70,12 @@ public void read_DataMatrix_singleType() throws Exception {
 @Test
 public void read_PDF417_singleType() throws Exception {
     String img = Paths.get(folder, "pdf417.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.PDF_417)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.PDF_417);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in pdf417.png");
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -77,11 +86,14 @@ public void read_PDF417_singleType() throws Exception {
 @Test
 public void read_GS1_128_singleType() throws Exception {
     String img = Paths.get(folder, "gs1_128.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.GS1_CODE_128)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.GS1_CODE_128);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in gs1_128.png");
-        // If you need to assert parentheses AI format, check the text pattern:
+        // If you need to assert AI parentheses format, check text pattern:
         // Assert.assertTrue(results[0].getCodeText().contains("(01)"));
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -92,12 +104,15 @@ public void read_GS1_128_singleType() throws Exception {
 @Test
 public void read_AutoDetect_AllSupported() throws Exception {
     String img = Paths.get(folder, "mixed.png").toString(); // image may contain any supported symbology
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+    try {
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length > 0, "Nothing recognized in mixed.png");
         // for (BarCodeResult r : results) {
         //     System.out.println(r.getCodeTypeName() + " -> " + r.getCodeText());
         // }
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -108,20 +123,26 @@ public void read_AutoDetect_AllSupported() throws Exception {
 @Test
 public void read_HighPerformance() throws Exception {
     String img = Paths.get(folder, "challenging.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+    try {
         reader.setQualitySettings(QualitySettings.getHighPerformance());
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length >= 0, "Call should complete (even if 0 results)");
+    } finally {
+        reader.close();
     }
 }
 
 @Test
 public void read_HighQuality() throws Exception {
     String img = Paths.get(folder, "challenging.png").toString();
-    try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+    BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+    try {
         reader.setQualitySettings(QualitySettings.getHighQuality());
         BarCodeResult[] results = reader.readBarCodes();
         Assert.assertTrue(results.length >= 0, "Call should complete (even if 0 results)");
+    } finally {
+        reader.close();
     }
 }
 ```
@@ -152,74 +173,98 @@ public class QuickRecognitionExamplesTest {
     @Test
     public void read_Code128_singleType() throws Exception {
         String img = Paths.get(folder, "code128.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.CODE_128)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.CODE_128);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in code128.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_QR_singleType() throws Exception {
         String img = Paths.get(folder, "qrcode.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.QR)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.QR);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in qrcode.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_DataMatrix_singleType() throws Exception {
         String img = Paths.get(folder, "datamatrix.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.DATA_MATRIX)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.DATA_MATRIX);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in datamatrix.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_PDF417_singleType() throws Exception {
         String img = Paths.get(folder, "pdf417.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.PDF_417)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.PDF_417);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in pdf417.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_GS1_128_singleType() throws Exception {
         String img = Paths.get(folder, "gs1_128.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.GS1_CODE_128)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.GS1_CODE_128);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in gs1_128.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_AutoDetect_AllSupported() throws Exception {
         String img = Paths.get(folder, "mixed.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+        try {
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length > 0, "Nothing recognized in mixed.png");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_HighPerformance() throws Exception {
         String img = Paths.get(folder, "challenging.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+        try {
             reader.setQualitySettings(QualitySettings.getHighPerformance());
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length >= 0, "Call should complete (even if 0 results)");
+        } finally {
+            reader.close();
         }
     }
 
     @Test
     public void read_HighQuality() throws Exception {
         String img = Paths.get(folder, "challenging.png").toString();
-        try (BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES)) {
+        BarCodeReader reader = new BarCodeReader(img, DecodeType.ALL_SUPPORTED_TYPES);
+        try {
             reader.setQualitySettings(QualitySettings.getHighQuality());
             BarCodeResult[] results = reader.readBarCodes();
             Assert.assertTrue(results.length >= 0, "Call should complete (even if 0 results)");
+        } finally {
+            reader.close();
         }
     }
 }
