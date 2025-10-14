@@ -16,34 +16,6 @@ Each snippet below is a test method — copy them into your test class or use th
 
 ---
 
-## Imports and Test Class Skeleton
-
-```java
-import com.aspose.barcode.barcoderecognition.*;
-import com.aspose.barcode.guide.common.ExampleAssist;
-import com.aspose.barcode.guide.common.LicenseAssist;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-public class QuickRecognitionExamplesTest {
-
-    private static final String folder = ExampleAssist.getResourceFolderPath("quick_start/recognition");
-
-    @BeforeClass
-    public void setUp() {
-        LicenseAssist.setupLicense();
-    }
-
-    // Place test methods here...
-}
-```
-
----
-
 ## 1) Read Code 128 (single type)
 
 ```java
