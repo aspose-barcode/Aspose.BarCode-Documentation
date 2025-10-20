@@ -69,9 +69,8 @@ public class GS1CompleteExample {
         // Show human-readable text
         gen.getParameters().getBarcode().getCodeTextParameters()
             .setLocation(CodeLocation.BELOW);
-        gen.getParameters().getBarcode().getCodeTextParameters()
-            .setFont(new FontUnit("Arial", 9));
-
+        gen.getParameters().getBarcode().getCodeTextParameters().getFont().setFamilyName("Arial");
+        gen.getParameters().getBarcode().getCodeTextParameters().getFont().getSize().setPoint(9);
         gen.save("gs1_128_complete.png", BarCodeImageFormat.PNG);
     }
 }
