@@ -41,7 +41,6 @@ The links to some useful resources can be found below.
 
 ![Aspose.BarCode for Java Product Logo](home_2.png)
 
-Welcome to Aspose.BarCode for Java
 
 Aspose.BarCode for Java is a robust and reliable barcode generation and recognition component, written in Java, it allows developers to quickly and easily add barcode generation and recognition functionality to their Java applications.
 
@@ -173,3 +172,4 @@ The following are the links to some useful resources you may need to accomplish 
 - [Download Aspose.BarCode for SharePoint](https://downloads.aspose.com/barcode/sharepoint)
 - [Aspose.BarCode for SharePoint Free Support Forum](https://forum.aspose.com/c/barcode)
 - [Aspose.BarCode for SharePoint Paid Support Helpdesk](https://helpdesk.aspose.com/)
+
