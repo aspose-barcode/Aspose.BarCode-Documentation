@@ -8,11 +8,12 @@ url: /java/developer-guide/barcode-generation/xdimension/
 
 # Configuring X-Dimension in Aspose.BarCode for Java
 
-In *Aspose.BarCode for Java*, **X-Dimension** defines the smallest geometric unit of a barcode symbol:
+In barcoding, **X-Dimension** is the smallest geometric unit of a barcode symbol:
 
 - For **1D barcodes**, it is the width of the narrowest bar or space.
 - For **2D barcodes**, it is the size of a single module (square cell).
 
+In *Aspose.BarCode for Java*, X-Dimension is controlled via the `getXDimension()` property of `BarcodeParameters`.
 This parameter directly affects:
 
 - **Barcode density** (how compact the symbol is),
