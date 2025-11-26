@@ -242,6 +242,7 @@ public void readFromMemoryStream() throws Exception {
 ## 8. Recognition from Processed Image
 
 Images are often transformed (copied, re-rendered, converted) before recognition. This example ensures that `BarCodeReader` works correctly with such processed images.
+This example confirms that BarCodeReader can read barcodes from images that were redrawn or converted in memory using Java 2D. You can safely apply your own image processing (such as format conversion, drawing to a new BufferedImage, or applying filters) and pass the resulting BufferedImage to the BarCodeReader constructor.
 
 ```java
 /**
