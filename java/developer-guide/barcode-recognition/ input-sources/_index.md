@@ -27,7 +27,7 @@ All code snippets below are taken **directly** from the sample test class:
 
 You can find the full source code on GitHub:
 
-[InputSourcesExamples.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/input_sources/InputSourcesExamples.java)
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/input_sources/InputSourcesExamples.java" target="_blank" rel="noopener noreferrer">InputSourcesExamples.java</a>
 
 ---
 
