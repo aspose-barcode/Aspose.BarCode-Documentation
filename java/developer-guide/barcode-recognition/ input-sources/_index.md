@@ -29,15 +29,14 @@ You can find the full source code on GitHub:
 
 [InputSourcesExamples.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/input_sources/InputSourcesExamples.java)
 
+---
+
 ## 1. Recognition from File Path
 
-This is the most direct and common way to read barcodes from disk: you pass a file path as a `String`.
+This scenario covers the simplest and most common case: you already have a barcode image stored on disk and its path available as a `String`.  
+The test reuses `testImagePath` prepared in the `@BeforeClass` method and passes it directly to the `BarCodeReader` constructor along with the expected symbology type.
 
 ```java
-/**
- * Demonstrates recognition from a simple file path (String).
- * This is the most direct and typical way to read barcodes from disk.
- */
 @Test(priority = 1, description = "Recognition from file path")
 public void readFromFilePath() throws Exception {
     BarCodeReader reader = new BarCodeReader(testImagePath, DecodeType.CODE_128);
@@ -48,20 +47,17 @@ public void readFromFilePath() throws Exception {
 **Key points**
 
 - Uses the constructor `BarCodeReader(String filePath, DecodeType ...)`.
-- Suitable when barcode images are stored on the file system.
-- `ExampleAssist.assertRecognized(...)` is a helper that checks recognition results in tests.
+- Suitable when barcode images are stored on the file system and you know the path.
+- `ExampleAssist.assertRecognized(...)` verifies that exactly one `CODE_128` barcode is recognized from the given file.
 
 ---
 
 ## 2. Recognition from `File` Object
 
-This variant is useful when your application already operates with `java.io.File` objects.
+In many applications you do not work with raw path strings, but with `java.io.File` instances (file chooser dialogs, recent files list, etc.).  
+This test shows that you can easily integrate such code by converting the `File` instance to its absolute path and using the same `BarCodeReader` constructor.
 
 ```java
-/**
- * Demonstrates recognition when a {@link java.io.File} object is used.
- * Useful when working with files already managed by your application logic.
- */
 @Test(priority = 2, description = "Recognition from File object")
 public void readFromFileObject() throws Exception {
     File file = new File(testImagePath);
@@ -72,23 +68,18 @@ public void readFromFileObject() throws Exception {
 
 **Key points**
 
-- Converts `File` to its absolute path and passes it to `BarCodeReader`.
-- Convenient when you receive `File` from file choosers or other APIs.
+- Accepts an existing `File` instance produced by your application logic.
+- Uses `file.getAbsolutePath()` to obtain a path string for `BarCodeReader`.
+- This pattern is convenient when files are already managed by other components (UI, storage layer, etc.).
 
 ---
 
 ## 3. Recognition from `InputStream`
 
-`BarCodeReader` can consume any `InputStream`, making this approach ideal for uploads, network responses, archives, and more.
+On the server side or in networked applications, images often come as streams: uploaded files, HTTP responses, data extracted from archives.  
+This test demonstrates how to construct `BarCodeReader` from an `InputStream` and is implemented using `FileInputStream` as a concrete example.
 
 ```java
-/**
- * Demonstrates how to recognize barcodes from an {@link InputStream}.
- * This method is suitable for scenarios such as reading from:
- * - uploaded files,
- * - network responses,
- * - archives or resource bundles.
- */
 @Test(priority = 3, description = "Recognition from InputStream")
 public void readFromInputStream() throws Exception {
     try (FileInputStream stream = new FileInputStream(testImagePath)) {
@@ -100,20 +91,18 @@ public void readFromInputStream() throws Exception {
 
 **Key points**
 
-- Uses `FileInputStream` wrapped in try-with-resources (automatically closed).
-- The same pattern works for any `InputStream` (HTTP body, uploaded file, etc.).
+- Uses a `FileInputStream` wrapped in a try-with-resources block so that the stream is closed automatically.
+- The same pattern works for any `InputStream` (for example, an upload stream from a web framework or a stream from a ZIP entry).
+- Keeps the logic file-system agnostic: the source can be any stream that provides image bytes.
 
 ---
 
 ## 4. Recognition from `BufferedImage`
 
-If you already work with `BufferedImage` (Java 2D, image processing pipelines), you can pass it directly.
+In image processing pipelines you may already have the image loaded into memory as a `BufferedImage` — for example, after using Java 2D APIs or other imaging libraries.  
+This test shows that you can pass such an in-memory image directly to `BarCodeReader` without intermediate files or streams.
 
 ```java
-/**
- * Demonstrates recognition directly from an in-memory {@link BufferedImage}.
- * Useful when you already have the image loaded or processed by Java 2D or other APIs.
- */
 @Test(priority = 4, description = "Recognition from BufferedImage")
 public void readFromBufferedImage() throws Exception {
     BufferedImage image = ImageIO.read(new File(testImagePath));
@@ -124,20 +113,18 @@ public void readFromBufferedImage() throws Exception {
 
 **Key points**
 
-- `ImageIO.read(...)` loads the image into memory.
-- `BarCodeReader` works directly with the in-memory `BufferedImage`.
+- Loads the test barcode image into memory with `ImageIO.read(...)`.
+- Passes `BufferedImage` directly into the `BarCodeReader` constructor.
+- Useful when your existing code already produces or manipulates `BufferedImage` instances.
 
 ---
 
 ## 5. Recognition from Byte Array
 
-When image data is stored in memory as a `byte[]` (database fields, REST APIs, message queues), you can wrap it into a stream.
+Barcode images are often stored as raw byte arrays (for example, in database fields, caches, or message payloads).  
+This test demonstrates how to read all file bytes into a `byte[]`, wrap them in a `ByteArrayInputStream`, and use that stream as the input source for `BarCodeReader`.
 
 ```java
-/**
- * Demonstrates how to recognize barcodes when image data is stored in memory as a byte array.
- * Common use case: images stored in a database or received via REST API.
- */
 @Test(priority = 5, description = "Recognition from byte array")
 public void readFromByteArray() throws Exception {
     byte[] bytes = Files.readAllBytes(Paths.get(testImagePath));
@@ -150,30 +137,18 @@ public void readFromByteArray() throws Exception {
 
 **Key points**
 
-- `Files.readAllBytes(...)` loads the entire file into memory.
-- `ByteArrayInputStream` exposes these bytes as an `InputStream` to `BarCodeReader`.
+- `Files.readAllBytes(...)` loads the entire image file content into a `byte[]`.
+- `ByteArrayInputStream` adapts the byte array to the `InputStream` interface expected by `BarCodeReader`.
+- This pattern is appropriate for scenarios where images never touch the file system and live only in memory.
 
 ---
 
 ## 6. Recognition from Base64 String
 
-Web APIs often transmit images as Base64 strings. The test demonstrates a realistic pattern of decoding such data and passing it to `BarCodeReader`.
+Web APIs frequently transmit images as Base64 strings inside JSON payloads.  
+This test simulates such a scenario by encoding the barcode image to Base64, optionally stripping a data URI prefix, decoding it back to bytes, and passing those bytes to `BarCodeReader` through a memory stream.
 
 ```java
-/**
- * Demonstrates how to recognize barcodes from Base64-encoded image data.
- * This pattern is often used in web APIs that accept images as Base64 strings (e.g. JSON payloads).
- *
- * <p>Example use case:</p>
- * <pre>
- * {
- *   "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..."
- * }
- * </pre>
- *
- * Since {@link BarCodeReader} has no constructor for Base64 directly,
- * we manually decode the string into bytes and feed it via {@link ByteArrayInputStream}.
- */
 @Test(priority = 6, description = "Recognition from Base64 string")
 public void readFromBase64String() throws Exception {
     // 1. Read barcode image into bytes
@@ -201,21 +176,18 @@ public void readFromBase64String() throws Exception {
 
 **Key points**
 
-- Simulates web API payload by converting the image to Base64.
-- Removes a possible data URI prefix before decoding.
-- Uses `ByteArrayInputStream` to pass decoded bytes into `BarCodeReader`.
+- Encodes the original image bytes into Base64 to emulate a typical web API request body.
+- Handles an optional data URI prefix (`"data:image/png;base64,"`) that is often present in browser-generated strings.
+- After decoding, uses `ByteArrayInputStream` to pass the reconstructed image data into `BarCodeReader`.
 
 ---
 
 ## 7. Recognition from In-Memory Generated Barcode
 
-This example shows how to generate a barcode and immediately recognize it in memory, without creating any temporary files.
+Aspose.BarCode can generate barcodes programmatically, and you may want to validate or process them immediately without saving intermediate files.  
+This test demonstrates a complete in-memory pipeline: barcode generation into `ByteArrayOutputStream` followed by recognition from a `ByteArrayInputStream` created from the same bytes.
 
 ```java
-/**
- * Demonstrates barcode recognition from a dynamically generated image kept entirely in memory.
- * No temporary files are created — this is useful for pipelines or microservices.
- */
 @Test(priority = 7, description = "Recognition from in-memory generated barcode")
 public void readFromMemoryStream() throws Exception {
     // Generate barcode in memory
@@ -233,23 +205,18 @@ public void readFromMemoryStream() throws Exception {
 
 **Key points**
 
-- Uses `BarcodeGenerator` to create a QR code in memory.
-- Saves barcode image into `ByteArrayOutputStream`.
-- Immediately recognizes it using `ByteArrayInputStream` without touching disk.
+- Uses `BarcodeGenerator` to create a QR code image fully in memory.
+- Writes the generated image into a `ByteArrayOutputStream` instead of a file.
+- Immediately reads the same bytes back with `ByteArrayInputStream` and recognizes the QR code using `BarCodeReader`.
 
 ---
 
 ## 8. Recognition from Processed Image
 
-Images are often transformed (copied, re-rendered, converted) before recognition. This example ensures that `BarCodeReader` works correctly with such processed images.
-This example confirms that BarCodeReader can read barcodes from images that were redrawn or converted in memory using Java 2D. You can safely apply your own image processing (such as format conversion, drawing to a new BufferedImage, or applying filters) and pass the resulting BufferedImage to the BarCodeReader constructor.
+In real-world pipelines images are rarely used “as is”: they can be copied into new buffers, converted between color formats, scaled, or passed through various filters before recognition.  
+This example confirms that `BarCodeReader` can read barcodes from images that were redrawn or converted in memory using Java 2D. You can safely apply your own image processing (such as format conversion, drawing to a new `BufferedImage`, or applying filters) and pass the resulting `BufferedImage` to the `BarCodeReader` constructor.
 
 ```java
-/**
- * Demonstrates that BarCodeReader correctly recognizes barcodes from images that have been preprocessed or re-rendered,
- * such as those copied into a new BufferedImage, converted between color formats, or modified by image filters.
- * This ensures reliability of barcode recognition in real-world pipelines where images are frequently transformed before analysis.
- */
 @Test(priority = 8, description = "Recognition from processed image")
 public void readFromProcessedImage() throws Exception {
     BufferedImage source = ImageIO.read(new File(testImagePath));
@@ -266,28 +233,18 @@ public void readFromProcessedImage() throws Exception {
 
 **Key points**
 
-- Loads the original barcode image into `source`.
-- Creates a new `BufferedImage` and draws `source` into it.
-- Verifies that recognition still works after such processing.
+- Loads the original barcode image into `source` and creates a new `BufferedImage` instance `copy` with a specific color model (`TYPE_INT_RGB`).
+- Uses `Graphics2D.drawImage(...)` to redraw the original image into the new buffer, emulating a typical preprocessing step.
+- Demonstrates that even after such processing `BarCodeReader` correctly recognizes the `CODE_128` barcode from the resulting `BufferedImage`.
 
 ---
 
 ## 9. Error Handling for Invalid Inputs
 
-This test verifies that `BarCodeReader` handles invalid or corrupted inputs gracefully and does not crash the application.
+In production environments you cannot always trust input data: files may be missing, corrupted, or empty.  
+This test verifies that `BarCodeReader` reacts predictably and safely in three problematic scenarios: a non-existent file, an invalid fake image file, and an empty byte array provided as a stream.
 
 ```java
-// -----------------------------------------------------------------------------------------
-// 9. Error Handling for Invalid Inputs
-// -----------------------------------------------------------------------------------------
-/**
- * Demonstrates how {@link BarCodeReader} handles invalid or corrupted inputs:
- * 1. Non-existent file
- * 2. Fake .png file (invalid binary)
- * 3. Empty byte array
- *
- * Each case should be handled gracefully without crashing the application.
- */
 @Test(priority = 9, description = "Error handling for invalid inputs")
 public void handleInvalidInputs() throws Exception {
     // (1) Non-existent file
@@ -323,9 +280,9 @@ public void handleInvalidInputs() throws Exception {
 
 **Key points**
 
-- Non-existent file: exception is caught and logged.
-- Fake PNG: a text file with `.png` extension is created and then safely handled.
-- Empty byte array: reading from an empty stream triggers an exception, which is caught.
+- **Non-existent file**: attempts to construct `BarCodeReader` with a path that does not exist; the resulting exception is caught and logged.
+- **Fake PNG file**: creates a text file with `.png` extension and verifies that trying to read it as an image does not crash the application and is properly handled.
+- **Empty byte array**: constructs a `ByteArrayInputStream` from an empty array and shows that `BarCodeReader` throws an exception which is caught and reported.
 
 ---
 
@@ -335,15 +292,13 @@ This guide showed how to use `BarCodeReader` with different input sources in Asp
 
 - File paths and `File` objects
 - `InputStream`
-- `BufferedImage`
-- Byte arrays
-- Base64 strings
+- `BufferedImage` (including processed images)
+- Byte arrays and Base64 strings
 - In-memory generated barcodes
-- Processed images
-- Invalid or corrupted inputs (error handling)
+- Invalid or corrupted inputs, with basic error handling patterns
 
 All examples are taken directly from:
 
 [InputSourcesExamples.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/input_sources/InputSourcesExamples.java)
 
-You can use this class as a reference and adapt the patterns to your own application code.
+You can use this class as a reference and adapt the demonstrated patterns to your own application code.
