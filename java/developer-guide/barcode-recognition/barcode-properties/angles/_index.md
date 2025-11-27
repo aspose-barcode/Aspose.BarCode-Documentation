@@ -22,7 +22,7 @@ All examples in this article are based on the sample class:
 
 You can find the full source code on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/AnglesExample.java" target="_blank" rel="noopener noreferrer">AnglesExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose-barcode/guide/recognition/barcode_properties/AnglesExample.java" target="_blank" rel="noopener noreferrer">AnglesExample.java</a>
 
 In the snippets below, variables like `imagePath` represent paths to sample images that contain rotated barcodes.
 
@@ -170,56 +170,50 @@ Key points:
 
 ## 5. Drawing a Visual Overlay with Angle and Geometry
 
-You can combine the rotation angle, rectangle, and quadrangle to build a debug overlay image.  
-This helps to visually confirm how the engine sees the barcode and its orientation.
+The sample class also contains a helper that draws a visual overlay with the rectangle, quadrangle, and detected angle.  
+This method can be reused in your own applications when you need a debug image to inspect geometry.
 
 ```java
-String srcPath = "path/to/rotated_code128.png";
-String outPath = "path/to/angles_overlay.png";
-
-BarCodeReader reader = new BarCodeReader(srcPath, DecodeType.CODE_128);
-BarCodeResult[] results = reader.readBarCodes();
-
-if (results.length > 0) {
-    BarCodeRegionParameters region = results[0].getRegion();
-
+private static void drawOverlay(String srcPath, String outPath, BarCodeRegionParameters region) throws Exception {
     BufferedImage img = ImageIO.read(new File(srcPath));
     Graphics2D g = img.createGraphics();
+    try {
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-    Rectangle rect = region.getRectangle();
-    Quadrangle quad = region.getQuadrangle();
-    double angle = region.getAngle();
+        Rectangle rect = region.getRectangle();
+        g.setColor(new Color(0, 160, 0));
+        g.setStroke(new BasicStroke(2f));
+        g.drawRect(rect.x, rect.y, rect.width, rect.height);
 
-    g.setColor(new Color(0, 160, 0));
-    g.setStroke(new BasicStroke(2f));
-    g.drawRect(rect.x, rect.y, rect.width, rect.height);
+        Quadrangle q = region.getQuadrangle();
+        Point lt = q.getLeftTop();
+        Point rt = q.getRightTop();
+        Point rb = q.getRightBottom();
+        Point lb = q.getLeftBottom();
 
-    Point lt = quad.getLeftTop();
-    Point rt = quad.getRightTop();
-    Point rb = quad.getRightBottom();
-    Point lb = quad.getLeftBottom();
+        g.setColor(new Color(0, 90, 220));
+        g.drawLine(lt.x, lt.y, rt.x, rt.y);
+        g.drawLine(rt.x, rt.y, rb.x, rb.y);
+        g.drawLine(rb.x, rb.y, lb.x, lb.y);
+        g.drawLine(lb.x, lb.y, lt.x, lt.y);
 
-    g.setColor(new Color(0, 90, 220));
-    g.drawLine(lt.x, lt.y, rt.x, rt.y);
-    g.drawLine(rt.x, rt.y, rb.x, rb.y);
-    g.drawLine(rb.x, rb.y, lb.x, lb.y);
-    g.drawLine(lb.x, lb.y, lt.x, lt.y);
-
-    String text = String.format("angle: %.1f°", angle);
-    g.setColor(Color.BLACK);
-    g.drawString(text, Math.max(0, rect.x), Math.max(12, rect.y - 6));
-
-    g.dispose();
+        String text = String.format("angle: %.1f°", region.getAngle());
+        g.setColor(Color.BLACK);
+        g.drawString(text, Math.max(0, rect.x), Math.max(12, rect.y - 6));
+    } finally {
+        g.dispose();
+    }
     ImageIO.write(img, "PNG", new File(outPath));
+    System.out.println("[INFO] Overlay saved: " + outPath);
 }
 ```
 
 Key points:
 
-- The rectangle is drawn in one color to show the axis-aligned bounds.
-- The quadrangle is drawn in another color to show the actual rotated shape.
-- The detected angle is rendered as a label near the barcode.
-- This pattern is useful for debugging recognition results and tuning tolerance thresholds.
+- Draws the axis-aligned rectangle and the quadrangle in different colors.
+- Annotates the image with the detected angle value.
+- Uses anti-aliasing for smoother lines.
+- Saves the overlay as a PNG image that can be inspected manually.
 
 ---
 
@@ -234,6 +228,6 @@ Aspose.BarCode for Java provides detailed rotation information for each recogniz
 
 All examples shown here are based on:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/AnglesExample.java" target="_blank" rel="noopener noreferrer">AnglesExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose-barcode/guide/recognition/barcode_properties/AnglesExample.java" target="_blank" rel="noopener noreferrer">AnglesExample.java</a>
 
 Use these patterns as a reference when working with barcode rotation angles in your own Java applications.
