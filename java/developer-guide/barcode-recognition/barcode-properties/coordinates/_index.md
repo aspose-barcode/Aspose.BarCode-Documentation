@@ -23,7 +23,8 @@ All examples in this article are based on the sample class:
 
 You can find the full source code on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/CoordinatesExample.java" target="_blank" rel="noopener noreferrer">CoordinatesExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/CoordinatesExample.java" target="_blank" rel="noopener noreferrer">
+CoordinatesExample.java</a>
 
 In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
 
@@ -31,16 +32,18 @@ In the snippets below, variables like `imagePath` represent paths to barcode ima
 
 ## 1. Region Geometry Basics
 
-For each `BarCodeResult`, the method `getRegion()` returns a `BarCodeRegionParameters` instance that describes where the barcode was found:
+For each `BarCodeResult`, the method `getRegion()` returns a `BarCodeRegionParameters` instance that describes where the
+barcode was found:
 
 - `getRectangle()` — axis-aligned bounding box (`java.awt.Rectangle`).
 - `getQuadrangle()` — oriented quadrilateral (`Quadrangle`) that follows rotation/skew.
 - `getPoints()` — array of corner points (`java.awt.Point[]`) representing the same region.
 
-All three describe the **same physical barcode region**, but with different levels of detail and in different data shapes.
+All three describe the **same physical barcode region**, but with different levels of detail and in different data
+shapes.
 
 > Coordinate system: the origin (0,0) is at the top-left corner of the image,  
-> X increases to the right, Y increases downward (standard Java 2D coordinates).
+> X increases to the right, Y increases downward (standard Java 2D coordinate system).
 
 ---
 
@@ -49,43 +52,55 @@ All three describe the **same physical barcode region**, but with different leve
 The following example shows how to read region geometry for a Code 128 symbol:
 
 ```java
+import java.util.stream.IntStream;
+
 String imagePath = ExampleAssist.pathCombine(FOLDER, "coords_c128.png");
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
-if (barCodeResults.length > 0) {
-    BarCodeResult barCodeResult = barCodeResults[0];
-    BarCodeRegionParameters barCodeRegionParameters = barCodeResult.getRegion();
+if(barCodeResults.length >0){
+BarCodeResult barCodeResult = barCodeResults[0];
+BarCodeRegionParameters barCodeRegionParameters = barCodeResult.getRegion();
 
-    // Axis-aligned rectangle
-    Rectangle rectangle = barCodeRegionParameters.getRectangle();
-    System.out.println("Rect: x=" + rectangle.x
-            + " y=" + rectangle.y
-            + " w=" + rectangle.width
-            + " h=" + rectangle.height);
+// Axis-aligned rectangle
+Rectangle rectangle = barCodeRegionParameters.getRectangle();
+    System.out.
 
-    // Oriented quadrangle (true outline with rotation/skew)
-    Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
-    Point leftTop = quadrangle.getLeftTop();
-    Point rightTop = quadrangle.getRightTop();
-    Point rightBottom = quadrangle.getRightBottom();
-    Point leftBottom = quadrangle.getLeftBottom();
+println("Rect: x="+rectangle.x
+            +" y="+rectangle.y
+                    +" w="+rectangle.width
+                    +" h="+rectangle.height);
 
-    System.out.println("Quad LT=" + leftTop
-            + " RT=" + rightTop
-            + " RB=" + rightBottom
-            + " LB=" + leftBottom);
+// Oriented quadrangle (true outline with rotation/skew)
+Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
+Point leftTop = quadrangle.getLeftTop();
+Point rightTop = quadrangle.getRightTop();
+Point rightBottom = quadrangle.getRightBottom();
+Point leftBottom = quadrangle.getLeftBottom();
 
-    // Raw corner points as an array
-    Point[] points = barCodeRegionParameters.getPoints();
-            if (points != null) {
-            IntStream.range(0, points.length).forEach(i -> {
-                Point point = points[i];
-                System.out.println("Point " + i + ": x=" + point.x + " y=" + point.y);
+    System.out.
+
+println("Quad LT="+leftTop
+            +" RT="+rightTop
+                    +" RB="+rightBottom
+                    +" LB="+leftBottom);
+
+// Raw corner points as an array
+Point[] points = barCodeRegionParameters.getPoints();
+            if(points !=null){
+        IntStream.
+
+range(0,points.length).
+
+forEach(i ->{
+Point point = points[i];
+                System.out.
+
+println("Point "+i +": x="+point.x+" y="+point.y);
             });
-   }
-}
+                    }
+                    }
 ```
 
 What this snippet shows:
@@ -97,13 +112,16 @@ What this snippet shows:
     - `rightBottom`
     - `leftBottom`  
       These points follow the **actual shape** of the barcode region, including rotation or slight skew.
-- `points` is an array of `Point` that contains the same physical corner coordinates as the quadrangle, but in a form convenient for iteration and generic algorithms.
+- `points` is an array of `Point` that contains the same physical corner coordinates as the quadrangle, but in a form
+  convenient for iteration and generic algorithms.
 
 Typical use cases:
 
 - `Rectangle` is ideal for quick checks, hit-testing, or simple cropping.
-- `Quadrangle` is better when precise geometry matters, for example drawing a contour around a rotated symbol or applying a perspective transform.
-- `Point[]` is useful when you want to pass coordinates to APIs that work with arrays, serialize them, or run your own geometric algorithms.
+- `Quadrangle` is better when precise geometry matters, for example drawing a contour around a rotated symbol or
+  applying a perspective transform.
+- `Point[]` is useful when you want to pass coordinates to APIs that work with arrays, serialize them, or run your own
+  geometric algorithms.
 
 ---
 
@@ -121,7 +139,8 @@ All three methods describe the same region, but from different perspectives:
     - cropping a subimage from the source image,
     - simple masks and highlight rectangles.
 
-Limitation: it does not reflect the actual rotation angle — even if the barcode is rotated, the rectangle remains axis-aligned.
+Limitation: it does not reflect the actual rotation angle — even if the barcode is rotated, the rectangle remains
+axis-aligned.
 
 ### `getQuadrangle()`
 
@@ -136,7 +155,8 @@ Limitation: it does not reflect the actual rotation angle — even if the barcod
     - analyzing tilt/geometry,
     - applying perspective transforms only to the barcode region.
 
-Important: the corner methods (`getLeftTop()`, etc.) provide semantic positions; you should not assume that any particular index in `getPoints()` is “always left top”.
+Important: the corner methods (`getLeftTop()`, etc.) provide semantic positions; you should not assume that any
+particular index in `getPoints()` is “always left top”.
 
 ### `getPoints()`
 
@@ -149,11 +169,11 @@ Important: the corner methods (`getLeftTop()`, etc.) provide semantic positions;
 
 Comparison table:
 
-| Method            | Type         | Orientation        | Corner semantics              | Typical usage                                           |
-|-------------------|--------------|--------------------|-------------------------------|--------------------------------------------------------|
-| `getRectangle()`  | `Rectangle`  | Axis-aligned       | None                          | Fast crop, hit-testing, simple highlighting            |
-| `getQuadrangle()` | `Quadrangle` | Rotated / skewed   | LT, RT, RB, LB                | Accurate contour, angle analysis, perspective warping  |
-| `getPoints()`     | `Point[]`    | Same as Quadrangle | Order is engine-specific      | Loops, serialization, custom geometry algorithms       |
+| Method            | Type         | Orientation        | Corner semantics         | Typical usage                                         |
+|-------------------|--------------|--------------------|--------------------------|-------------------------------------------------------|
+| `getRectangle()`  | `Rectangle`  | Axis-aligned       | None                     | Fast crop, hit-testing, simple highlighting           |
+| `getQuadrangle()` | `Quadrangle` | Rotated / skewed   | LT, RT, RB, LB           | Accurate contour, angle analysis, perspective warping |
+| `getPoints()`     | `Point[]`    | Same as Quadrangle | Order is engine-specific | Loops, serialization, custom geometry algorithms      |
 
 ---
 
@@ -177,17 +197,17 @@ if (barCodeResults.length > 0) {
     Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
     Point[] points = barCodeRegionParameters.getPoints();
 
-    System.out.println("QR Rect: " + rectangle);
-    System.out.println("QR Quad: LT=" + quadrangle.getLeftTop()
-            + " RT=" + quadrangle.getRightTop()
-            + " RB=" + quadrangle.getRightBottom()
-            + " LB=" + quadrangle.getLeftBottom());
+    System.out.println("QR Rect: "+rectangle);
+    System.out.println("QR Quad: LT="+quadrangle.getLeftTop() +
+        " RT="+quadrangle.getRightTop() + 
+        " RB="+quadrangle.getRightBottom() + 
+        " LB="+quadrangle.getLeftBottom());
 
-    if (points != null) {
-        for (int i = 0; i < points.length; i++) {
+    if(points !=null){
+            IntStream.range(0, points.length).forEach(i -> {
             Point point = points[i];
-            System.out.println("QR Point " + i + ": x=" + point.x + " y=" + point.y);
-        }
+            System.out.println("Point " + i + ": x=" + point.getX() + " y=" + point.getY());
+        });
     }
 }
 ```
@@ -200,12 +220,45 @@ Key points:
 
 ---
 
-## 5. Drawing a Debug Overlay
+## 5. Test: Creating a Debug Overlay Image
 
-A common practical scenario is to **visualize** detected barcodes on top of the original image:  
-for example, in a debugging tool or an admin UI.
+The example class also contains a dedicated test that shows how to **create a debug overlay image** with the detected
+region drawn on top of the original barcode image.
 
-The helper method below shows how to draw both the rectangle and the quadrangle onto a copy of the source image and save it as a PNG:
+A simplified version of this pattern looks like this:
+
+```java
+String sourceImagePath = ExampleAssist.pathCombine(FOLDER, "coords_c128.png");
+String debugImagePath = ExampleAssist.pathCombine(FOLDER, "coords_overlay.png");
+
+// Recognize barcode
+BarCodeReader barCodeReader = new BarCodeReader(sourceImagePath, DecodeType.CODE_128);
+BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
+
+if(barCodeResults.length >0){
+    BarCodeRegionParameters barCodeRegionParameters = barCodeResults[0].getRegion();
+    Rectangle rectangle = barCodeRegionParameters.getRectangle();
+    Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
+
+    // Draw overlay and save result
+    drawOverlay(sourceImagePath, debugImagePath, rectangle, quadrangle);
+
+    File debugFile = new File(debugImagePath);
+    System.out.println("Overlay image exists: " + debugFile.exists());
+}
+```
+
+This pattern corresponds to a test method in `CoordinatesExample` that:
+
+1. Recognizes a Code 128 barcode.
+2. Extracts `Rectangle` and `Quadrangle` from `BarCodeRegionParameters`.
+3. Calls a helper method to draw both shapes on top of the source image.
+4. Verifies that the output overlay file has been created.
+
+### Helper: `drawOverlay`
+
+The helper method below draws both the rectangle and the quadrangle onto a copy of the source image and saves it as a
+PNG:
 
 ```java
 private static void drawOverlay(String srcPath,
@@ -216,14 +269,14 @@ private static void drawOverlay(String srcPath,
     Graphics2D graphics = image.createGraphics();
     try {
         graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
-                                  RenderingHints.VALUE_ANTIALIAS_ON);
+                RenderingHints.VALUE_ANTIALIAS_ON);
         graphics.setColor(new Color(0, 180, 0));
         graphics.setStroke(new BasicStroke(2f));
 
         // Rectangle (axis-aligned bounding box)
         if (rectangle != null) {
             graphics.drawRect(rectangle.x, rectangle.y,
-                              rectangle.width, rectangle.height);
+                    rectangle.width, rectangle.height);
         }
 
         // Quadrangle polygon: LT -> RT -> RB -> LB -> LT
@@ -247,10 +300,10 @@ private static void drawOverlay(String srcPath,
 }
 ```
 
-How to use this helper in your code:
+How to use this helper in your own code:
 
-1. Recognize the barcode and obtain `rectangle` and `quadrangle` from `BarCodeRegionParameters`.
-2. Call `drawOverlay(sourceImagePath, debugOutputPath, rectangle, quadrangle)`.
+1. Recognize the barcode and obtain `Rectangle` and `Quadrangle` from `BarCodeRegionParameters`.
+2. Call `drawOverlay(sourceImagePath, debugImagePath, rectangle, quadrangle)`.
 3. Open the generated debug image to visually verify that the coordinates match the actual barcode position.
 
 This is extremely useful when:
@@ -278,6 +331,7 @@ Using these shapes you can:
 
 All examples in this article are based on:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/CoordinatesExample.java" target="_blank" rel="noopener noreferrer">CoordinatesExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/CoordinatesExample.java" target="_blank" rel="noopener noreferrer">
+CoordinatesExample.java</a>
 
 Use this class as a reference when integrating coordinate-based processing into your barcode recognition workflows.
