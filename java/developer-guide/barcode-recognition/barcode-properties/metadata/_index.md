@@ -44,47 +44,46 @@ Example: reading metadata from a GS1 Code 128 symbol.
 ```java
 String imagePath = "gs1_code128.png";
 
-BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.GS_1_CODE_128);
-BarCodeResult[] results = reader.readBarCodes();
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.GS_1_CODE_128);
+BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
-if (results.length > 0) {
-BarCodeResult result = results[0];
+if (barCodeResults.length > 0) {
+BarCodeResult barCodeResult = barCodeResults[0];
 
 // Basic type and text
-DecodeType type = result.getCodeType();
-String typeName = result.getCodeTypeName();
-String codeText = result.getCodeText();
-System.out.println("Type=" + typeName + " Text=" + codeText);
+DecodeType decodeType = barCodeResult.getCodeType();
+String decodeTypeName = barCodeResult.getCodeTypeName();
+String codeText = barCodeResult.getCodeText();
+
+    System.out.println("Type=" + decodeTypeName + " Text=" + codeText);
 
 // Confidence (0..100)
-int confidence = result.getConfidence();
+int confidence = barCodeResult.getConfidence();
     System.out.println("Confidence=" + confidence);
 
 // Region geometry
-BarCodeRegionParameters region = result.getRegion();
-System.out.println("Rect=" + region.getRectangle());
+BarCodeRegionParameters barCodeRegionParameters = barCodeResult.getRegion();
+    System.out.println("Rect=" + barCodeRegionParameters.getRectangle());
 
-Quadrangle quad = region.getQuadrangle();
-if (quad != null) {
-     System.out.println("Quad LT=" + quad.getLeftTop()
-           + " RT=" + quad.getRightTop()
-           + " RB=" + quad.getRightBottom()
-           + " LB=" + quad.getLeftBottom());
-}
+Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
+    if (quadrangle != null) {
+        System.out.println("Quad LT=" + quadrangle.getLeftTop()
+                + " RT=" + quadrangle.getRightTop()
+                + " RB=" + quadrangle.getRightBottom()
+                + " LB=" + quadrangle.getLeftBottom());
+        }
 
-java.awt.Point[] points = region.getPoints();
-    if (points != null) {
-        IntStream.range(0, points.length).forEach(i -> {
-            Point point = points[i];
+java.awt.Point[] points = barCodeRegionParameters.getPoints();
+IntStream.range(0, points.length).forEach(i -> {
+Point point = points[i];
             System.out.println("Point " + i + ": x=" + point.getX() + " y=" + point.getY());
-        });
-    }
+        });    
 
 // 1D-specific extended parameters (checksum)
-BarCodeExtendedParameters extended = result.getExtended();
-    if (extended != null && extended.getOneD() != null) {
-        OneDExtendedParameters oneD = extended.getOneD();
-        System.out.println("OneD checksum=" + oneD.getCheckSum());
+BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
+    if (barCodeExtendedParameters != null && barCodeExtendedParameters.getOneD() != null) {
+         OneDExtendedParameters oneDExtendedParameters = barCodeExtendedParameters.getOneD();
+        System.out.println("OneD checksum=" + oneDExtendedParameters.getCheckSum());
         }
 }
 ```
@@ -93,7 +92,7 @@ BarCodeExtendedParameters extended = result.getExtended();
 
 The region geometry API describes **one and the same physical area** of the barcode at different levels of detail:
 
-- `region.getRectangle()`  
+- `barCodeRegionParameters.getRectangle()`  
   Returns an axis-aligned `java.awt.Rectangle` (bounding box).  
   The rectangle is always aligned to the X/Y axes and simply encloses the barcode.  
   Use it when you need:
@@ -101,7 +100,7 @@ The region geometry API describes **one and the same physical area** of the barc
     - simple hit-testing,
     - or cropping a sub-image without caring about rotation.
 
-- `region.getQuadrangle()`  
+- `barCodeRegionParameters.getQuadrangle()`  
   Returns a `Quadrangle` with four named corners:
   `getLeftTop()`, `getRightTop()`, `getRightBottom()`, `getLeftBottom()`.  
   The quadrangle can be rotated or skewed and represents the **actual shape** of the barcode region.  
@@ -110,12 +109,12 @@ The region geometry API describes **one and the same physical area** of the barc
     - to analyze rotation/tilt,
     - to perform perspective transforms based on the four corners.
 
-- `region.getPoints()`  
+- `barCodeRegionParameters.getPoints()`  
   Returns a `Point[]` with the corner points of the barcode region.  
   It contains the same physical points as the quadrangle, but in an array form that is convenient for loops and generic algorithms.  
   The order of points is defined by the engine implementation and should not be treated as
   “always left-top, right-top, right-bottom, left-bottom” by index. If you need semantically named
-  corners, prefer `region.getQuadrangle()`.
+  corners, prefer `barCodeRegionParameters.getQuadrangle()`.
 
 Key points:
 
@@ -139,26 +138,26 @@ Example: reading QR metadata from a symbol generated with high error correction 
 ```java
 String imagePath = "qr_high_ec.png";
 
-BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.QR);
-reader.setQualitySettings(QualitySettings.getHighQuality());
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.QR);
+barCodeReader.setQualitySettings(QualitySettings.getHighQuality());
 
-BarCodeResult[] results = reader.readBarCodes();
+BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
-if (results.length > 0) {
-    BarCodeResult result = results[0];
+if (barCodeResults.length > 0) {
+    BarCodeResult barCodeResult = barCodeResults[0];
 
-    int confidence = result.getConfidence();
+    int confidence = barCodeResult.getConfidence();
     System.out.println("Confidence=" + confidence);
 
-    BarCodeExtendedParameters extended = result.getExtended();
-    if (extended != null) {
-        QRExtendedParameters qrExtendedParameters = extended.getQR();
+    BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
+    if (barCodeExtendedParameters != null) {
+        QRExtendedParameters qrExtendedParameters = barCodeExtendedParameters.getQR();
         if (qrExtendedParameters != null) {
-            QRErrorLevel errorLevel = qrExtendedParameters.getQRErrorLevel();
-            int version = qrExtendedParameters.getQRVersion();
+            QRErrorLevel qrErrorLevel = qrExtendedParameters.getQRErrorLevel();
+            int qrVersion = qrExtendedParameters.getQRVersion();
 
-            System.out.println("QR error level=" + errorLevel);
-            System.out.println("QR version=" + version);
+            System.out.println("QR error level=" + qrErrorLevel);
+            System.out.println("QR version=" + qrVersion);
         }
     }
 }
@@ -181,8 +180,8 @@ When you read a QR symbol, `qrExtendedParameters.getQRErrorLevel()` returns the 
 Practical notes:
 
 - Higher error correction levels make the symbol more tolerant to damage (scratches, printing defects, partial occlusion).
-- The trade‑off is lower payload capacity for the same QR version.
-- When generating QR codes, you configure the level via `getQR().setQrErrorLevel(...)`.  
+- The trade-off is lower payload capacity for the same QR version.
+- When generating QR codes, you configure the level via `getQR().setQrErrorLevel(...)` on the generator.  
   When reading, you only inspect which level was used.
 
 ### QR Version (`QRVersion`)
@@ -199,7 +198,7 @@ The general formula for standard QR codes is:
 
 > **modulesPerSide = 21 + 4 × (version − 1)**
 
-In Aspose.BarCode, this is represented by the `QRVersion` enumeration when generating barcodes, and `QRExtendedParameters.getQRVersion()` returns the version of the **recognized** symbol.
+In Aspose.BarCode, this is represented by the `QRVersion` enumeration when generating barcodes, and `qrExtendedParameters.getQRVersion()` returns the version of the **recognized** symbol.
 
 Typical mapping (examples):
 
@@ -236,26 +235,26 @@ Example: reading Macro PDF417 metadata.
 ```java
 String imagePath = "pdf417_macro.png";
 
-BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.MACRO_PDF_417);
-BarCodeResult[] results = reader.readBarCodes();
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.MACRO_PDF_417);
+BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
-if (results.length > 0) {
-    BarCodeResult result = results[0];
+if (barCodeResults.length > 0) {
+    BarCodeResult barCodeResult = barCodeResults[0];
 
-    int confidence = result.getConfidence();
+    int confidence = barCodeResult.getConfidence();
     System.out.println("Confidence=" + confidence);
 
-    BarCodeExtendedParameters extended = result.getExtended();
-    if (extended != null) {
-        Pdf417ExtendedParameters pdf417Ext = extended.getPdf417();
-        if (pdf417Ext != null) {
-            int segmentsCount = pdf417Ext.getMacroPdf417SegmentsCount();
-            int segmentId = pdf417Ext.getMacroPdf417SegmentID();
-            String fileId = pdf417Ext.getMacroPdf417FileID();
+    BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
+    if (barCodeExtendedParameters != null) {
+        Pdf417ExtendedParameters pdf417ExtendedParameters = barCodeExtendedParameters.getPdf417();
+        if (pdf417ExtendedParameters != null) {
+            int macroSegmentsCount = pdf417ExtendedParameters.getMacroPdf417SegmentsCount();
+            int macroSegmentId = pdf417ExtendedParameters.getMacroPdf417SegmentID();
+            String macroFileId = pdf417ExtendedParameters.getMacroPdf417FileID();
 
-            System.out.println("Macro file ID      = " + fileId);
-            System.out.println("Macro segments     = " + segmentsCount);
-            System.out.println("Macro segment index= " + segmentId);
+            System.out.println("Macro file ID      = " + macroFileId);
+            System.out.println("Macro segments     = " + macroSegmentsCount);
+            System.out.println("Macro segment index= " + macroSegmentId);
         }
     }
 }
@@ -279,21 +278,21 @@ Example: reading binary data from a QR symbol encoded from a UTF-8 byte array.
 ```java
 String imagePath = "qr_binary_data.png";
 
-BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.QR);
-BarCodeResult[] results = reader.readBarCodes();
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.QR);
+BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
-if (results.length > 0) {
-    BarCodeResult result = results[0];
+if (barCodeResults.length > 0) {
+    BarCodeResult barCodeResult = barCodeResults[0];
 
-    int confidence = result.getConfidence();
+    int confidence = barCodeResult.getConfidence();
     System.out.println("Confidence=" + confidence);
 
-    byte[] rawBytes = result.getCodeBytes();
+    byte[] rawBytes = barCodeResult.getCodeBytes();
     if (rawBytes != null) {
         System.out.println("Binary data length: " + rawBytes.length + " bytes");
 
-        byte[] expected = "Hello, Metadata!".getBytes(java.nio.charset.StandardCharsets.UTF_8);
-        boolean matches = java.util.Arrays.equals(rawBytes, expected);
+        byte[] expectedBytes = "Hello, Metadata!".getBytes(java.nio.charset.StandardCharsets.UTF_8);
+        boolean matches = java.util.Arrays.equals(rawBytes, expectedBytes);
         System.out.println("Payload matches expected UTF-8: " + matches);
     }
 }
