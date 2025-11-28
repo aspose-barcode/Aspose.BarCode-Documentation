@@ -48,42 +48,42 @@ BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.GS_1_CODE_
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 
 if (barCodeResults.length > 0) {
-BarCodeResult barCodeResult = barCodeResults[0];
-
-// Basic type and text
-DecodeType decodeType = barCodeResult.getCodeType();
-String decodeTypeName = barCodeResult.getCodeTypeName();
-String codeText = barCodeResult.getCodeText();
-
+    BarCodeResult barCodeResult = barCodeResults[0];
+    
+    // Basic type and text
+    DecodeType decodeType = barCodeResult.getCodeType();
+    String decodeTypeName = barCodeResult.getCodeTypeName();
+    String codeText = barCodeResult.getCodeText();
     System.out.println("Type=" + decodeTypeName + " Text=" + codeText);
-
-// Confidence (0..100)
-int confidence = barCodeResult.getConfidence();
+    // Confidence (0..100)
+    int confidence = barCodeResult.getConfidence();
     System.out.println("Confidence=" + confidence);
-
-// Region geometry
-BarCodeRegionParameters barCodeRegionParameters = barCodeResult.getRegion();
+    
+    // Region geometry
+    BarCodeRegionParameters barCodeRegionParameters = barCodeResult.getRegion();
     System.out.println("Rect=" + barCodeRegionParameters.getRectangle());
-
-Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
+    
+    Quadrangle quadrangle = barCodeRegionParameters.getQuadrangle();
     if (quadrangle != null) {
         System.out.println("Quad LT=" + quadrangle.getLeftTop()
-                + " RT=" + quadrangle.getRightTop()
-                + " RB=" + quadrangle.getRightBottom()
-                + " LB=" + quadrangle.getLeftBottom());
-        }
-
-java.awt.Point[] points = barCodeRegionParameters.getPoints();
-IntStream.range(0, points.length).forEach(i -> {
-Point point = points[i];
-            System.out.println("Point " + i + ": x=" + point.getX() + " y=" + point.getY());
-        });    
-
-// 1D-specific extended parameters (checksum)
-BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
+                    + " RT=" + quadrangle.getRightTop()
+                    + " RB=" + quadrangle.getRightBottom()
+                    + " LB=" + quadrangle.getLeftBottom());
+    }
+    
+    java.awt.Point[] points = barCodeRegionParameters.getPoints();
+    if (points != null) {
+            IntStream.range(0, points.length).forEach(i -> {
+                Point point = points[i];
+                System.out.println("Point " + i + ": x=" + point.getX() + " y=" + point.getY());
+            });
+    }
+    
+    // 1D-specific extended parameters (checksum)
+    BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
     if (barCodeExtendedParameters != null && barCodeExtendedParameters.getOneD() != null) {
-         OneDExtendedParameters oneDExtendedParameters = barCodeExtendedParameters.getOneD();
-        System.out.println("OneD checksum=" + oneDExtendedParameters.getCheckSum());
+             OneDExtendedParameters oneDExtendedParameters = barCodeExtendedParameters.getOneD();
+            System.out.println("OneD checksum=" + oneDExtendedParameters.getCheckSum());
         }
 }
 ```
@@ -290,7 +290,6 @@ if (barCodeResults.length > 0) {
     byte[] rawBytes = barCodeResult.getCodeBytes();
     if (rawBytes != null) {
         System.out.println("Binary data length: " + rawBytes.length + " bytes");
-
         byte[] expectedBytes = "Hello, Metadata!".getBytes(java.nio.charset.StandardCharsets.UTF_8);
         boolean matches = java.util.Arrays.equals(rawBytes, expectedBytes);
         System.out.println("Payload matches expected UTF-8: " + matches);
