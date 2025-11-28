@@ -130,8 +130,8 @@ Key points:
 For 2D QR barcodes, Aspose.BarCode provides QR-specific extended metadata via `QRExtendedParameters`.  
 You can use it to inspect properties like:
 
-- QR **error correction level** (L, M, Q, H)
-- QR **version** (module size / symbol size)
+- QR **error correction level** (Reed–Solomon)
+- QR **version** (symbol size in modules)
 - other QR-related flags (for example, structured append, if used)
 
 Example: reading QR metadata from a symbol generated with high error correction (Level H).
@@ -164,12 +164,61 @@ if (results.length > 0) {
 }
 ```
 
-Key points:
+### QR Error Correction Level (`QRErrorLevel`)
 
-- `setQualitySettings(QualitySettings.getHighQuality())` can improve recognition robustness for QR codes.
-- `getExtended().getQR()` returns `QRExtendedParameters` with QR-specific details.
-- `getQRErrorLevel()` reflects the error correction level used when generating the symbol.
-- `getQRVersion()` indicates the QR version (1–40), which corresponds to symbol size and capacity.
+QR codes use Reed–Solomon error correction to restore data if part of the symbol is damaged or occluded.  
+The QR standard defines four error correction levels, from lowest to highest redundancy:
+
+| Error level | Enum value     | Approx. recoverable data | Description                         |
+|-------------|----------------|--------------------------|-------------------------------------|
+| L           | `LEVEL_L`      | ~7% of codewords         | Maximum capacity, lowest redundancy |
+| M           | `LEVEL_M`      | ~15% of codewords        | Default in many applications        |
+| Q           | `LEVEL_Q`      | ~25% of codewords        | Higher robustness                   |
+| H           | `LEVEL_H`      | ~30% of codewords        | Maximum robustness, lower capacity  |
+
+When you read a QR symbol, `qrExtendedParameters.getQRErrorLevel()` returns the **actual error correction level** that was used when this symbol was generated.
+
+Practical notes:
+
+- Higher error correction levels make the symbol more tolerant to damage (scratches, printing defects, partial occlusion).
+- The trade‑off is lower payload capacity for the same QR version.
+- When generating QR codes, you configure the level via `getQR().setQrErrorLevel(...)`.  
+  When reading, you only inspect which level was used.
+
+### QR Version (`QRVersion`)
+
+The **QR version** defines the size of the QR matrix in modules (black/white squares).  
+Standard QR codes use versions from 1 to 40:
+
+- Version 1 → 21 × 21 modules
+- Version 2 → 25 × 25 modules
+- …
+- Version 40 → 177 × 177 modules
+
+The general formula for standard QR codes is:
+
+> **modulesPerSide = 21 + 4 × (version − 1)**
+
+In Aspose.BarCode, this is represented by the `QRVersion` enumeration when generating barcodes, and `QRExtendedParameters.getQRVersion()` returns the version of the **recognized** symbol.
+
+Typical mapping (examples):
+
+| QR version | Modules per side | Comment                                  |
+|-----------:|------------------|------------------------------------------|
+| 1          | 21 × 21          | Small symbols, short text / IDs         |
+| 2          | 25 × 25          | Slightly larger, more data              |
+| 10         | 57 × 57          | Medium size / structured payloads       |
+| 20         | 97 × 97          | Large payloads in a single symbol       |
+| 40         | 177 × 177        | Maximum standard QR size and capacity   |
+
+Important points:
+
+- **Version describes the symbol size in modules**, not in pixels.
+- The final image size in pixels is determined by:
+    - the QR version (number of modules), and
+    - the module size (for example, `XDimension` in pixels per module).
+- For Micro QR, legacy values `VERSION_M1..VERSION_M4` in `QRVersion` are deprecated.  
+  Use the dedicated Micro QR barcode type and `MicroQRVersion` parameters instead.
 
 ---
 
@@ -280,6 +329,6 @@ Aspose.BarCode for Java provides detailed metadata for each recognized barcode t
 
 All examples shown here are based on:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose-barcode/guide/recognition/barcode_properties/ReadingMetadataExample.java" target="_blank" rel="noopener noreferrer">ReadingMetadataExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/ReadingMetadataExample.java" target="_blank" rel="noopener noreferrer">ReadingMetadataExample.java</a>
 
 Use these patterns as a reference when integrating barcode metadata into your Java applications.
