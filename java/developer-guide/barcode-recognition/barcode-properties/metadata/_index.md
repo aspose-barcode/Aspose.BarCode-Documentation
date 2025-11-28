@@ -48,48 +48,80 @@ BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.GS_1_CODE_128);
 BarCodeResult[] results = reader.readBarCodes();
 
 if (results.length > 0) {
-    BarCodeResult result = results[0];
+BarCodeResult result = results[0];
 
-    // Basic type and text
-    DecodeType type = result.getCodeType();
-    String typeName = result.getCodeTypeName();
-    String codeText = result.getCodeText();
+// Basic type and text
+DecodeType type = result.getCodeType();
+String typeName = result.getCodeTypeName();
+String codeText = result.getCodeText();
+System.out.println("Type=" + typeName + " Text=" + codeText);
 
-    System.out.println("Type=" + typeName + " Text=" + codeText);
-
-    // Confidence (0..100)
-    int confidence = result.getConfidence();
+// Confidence (0..100)
+int confidence = result.getConfidence();
     System.out.println("Confidence=" + confidence);
 
-    // Region geometry
-    BarCodeRegionParameters region = result.getRegion();
-    java.awt.Rectangle rect = region.getRectangle();
-    System.out.println("Rect=" + rect);
+// Region geometry
+BarCodeRegionParameters region = result.getRegion();
+System.out.println("Rect=" + region.getRectangle());
 
-    Quadrangle quad = region.getQuadrangle();
-    if (quad != null) {
-        System.out.println("Quad LT=" + quad.getLeftTop()
-                + " RT=" + quad.getRightTop()
-                + " RB=" + quad.getRightBottom()
-                + " LB=" + quad.getLeftBottom());
+Quadrangle quad = region.getQuadrangle();
+if (quad != null) {
+     System.out.println("Quad LT=" + quad.getLeftTop()
+           + " RT=" + quad.getRightTop()
+           + " RB=" + quad.getRightBottom()
+           + " LB=" + quad.getLeftBottom());
+}
+
+java.awt.Point[] points = region.getPoints();
+    if (points != null) {
+        IntStream.range(0, points.length).forEach(i -> {
+            Point point = points[i];
+            System.out.println("Point " + i + ": x=" + point.getX() + " y=" + point.getY());
+        });
     }
 
-    // 1D-specific extended parameters (checksum)
-    BarCodeExtendedParameters extended = result.getExtended();
+// 1D-specific extended parameters (checksum)
+BarCodeExtendedParameters extended = result.getExtended();
     if (extended != null && extended.getOneD() != null) {
         OneDExtendedParameters oneD = extended.getOneD();
         System.out.println("OneD checksum=" + oneD.getCheckSum());
-    }
+        }
 }
 ```
 
+### Rectangle vs. Quadrangle vs. Points
+
+The region geometry API describes **one and the same physical area** of the barcode at different levels of detail:
+
+- `region.getRectangle()`  
+  Returns an axis-aligned `java.awt.Rectangle` (bounding box).  
+  The rectangle is always aligned to the X/Y axes and simply encloses the barcode.  
+  Use it when you need:
+    - a quick bounding box,
+    - simple hit-testing,
+    - or cropping a sub-image without caring about rotation.
+
+- `region.getQuadrangle()`  
+  Returns a `Quadrangle` with four named corners:
+  `getLeftTop()`, `getRightTop()`, `getRightBottom()`, `getLeftBottom()`.  
+  The quadrangle can be rotated or skewed and represents the **actual shape** of the barcode region.  
+  Use it when you need:
+    - to draw an accurate contour around a rotated code,
+    - to analyze rotation/tilt,
+    - to perform perspective transforms based on the four corners.
+
+- `region.getPoints()`  
+  Returns a `Point[]` with the corner points of the barcode region.  
+  It contains the same physical points as the quadrangle, but in an array form that is convenient for loops and generic algorithms.  
+  The order of points is defined by the engine implementation and should not be treated as
+  “always left-top, right-top, right-bottom, left-bottom” by index. If you need semantically named
+  corners, prefer `region.getQuadrangle()`.
+
 Key points:
 
-- `getCodeType()` / `getCodeTypeName()` identify the symbology (for example, `GS_1_CODE_128`).
-- `getCodeText()` returns decoded text (such as a GS1 string with AIs).
-- `getConfidence()` is a score in the range 0–100 that can be used for quality checks.
-- `getRegion()` provides both an axis-aligned rectangle and an optional quadrangle for rotated or skewed codes.
-- For 1D barcodes, `getExtended().getOneD()` exposes additional details such as the checksum.
+- `getRectangle()` — simple bounding box, minimal information, maximum simplicity.
+- `getQuadrangle()` — full geometry with rotation and corner semantics.
+- `getPoints()` — the same geometry as individual points in an array, useful for iteration and custom processing.
 
 ---
 
@@ -120,10 +152,10 @@ if (results.length > 0) {
 
     BarCodeExtendedParameters extended = result.getExtended();
     if (extended != null) {
-        QRExtendedParameters qrExt = extended.getQR();
-        if (qrExt != null) {
-            QRErrorLevel errorLevel = qrExt.getQRErrorLevel();
-            int version = qrExt.getQRVersion();
+        QRExtendedParameters qrExtendedParameters = extended.getQR();
+        if (qrExtendedParameters != null) {
+            QRErrorLevel errorLevel = qrExtendedParameters.getQRErrorLevel();
+            int version = qrExtendedParameters.getQRVersion();
 
             System.out.println("QR error level=" + errorLevel);
             System.out.println("QR version=" + version);
@@ -193,7 +225,7 @@ Key points:
 Some barcodes store binary data rather than plain text.  
 In these cases, you should use `getCodeBytes()` to obtain the exact payload bytes and process them with an appropriate encoding or binary protocol.
 
-Example: reading binary data from a QR symbol encoded from a UTF‑8 byte array.
+Example: reading binary data from a QR symbol encoded from a UTF-8 byte array.
 
 ```java
 String imagePath = "qr_binary_data.png";
@@ -235,7 +267,10 @@ Aspose.BarCode for Java provides detailed metadata for each recognized barcode t
     - `getCodeText()` — decoded text
     - `getConfidence()` — recognition confidence score (0–100)
 - Geometry:
-    - `getRegion()` with `Rectangle` and `Quadrangle`
+    - `getRegion()` with:
+        - `getRectangle()` — axis-aligned bounding box
+        - `getQuadrangle()` — rotated/skewed quadrilateral with named corners
+        - `getPoints()` — corner points as an array for generic processing
 - Extended parameters:
     - `getExtended().getOneD()` for 1D checksums and related data
     - `getExtended().getQR()` for QR error level and version
