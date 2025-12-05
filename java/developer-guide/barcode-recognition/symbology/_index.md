@@ -33,6 +33,18 @@ You can find the full source on GitHub:
 
 In the snippets below, helper methods like `ExampleAssist.checkOrCreateImage` and `ExampleAssist.pathCombine` come from the test infrastructure and are used only to generate and locate sample images.
 
+```java
+ExampleAssist.checkOrCreateImage(FOLDER, fileName, fullPath -> {
+    BarcodeGenerator barcodeGenerator =
+            new BarcodeGenerator(EncodeTypes.CODE_128, "123456789");
+    barcodeGenerator.save(fullPath, BarCodeImageFormat.PNG);
+});
+```
+
+```java
+ExampleAssist.assertRecognized(barCodeReader, fileName, 1, DecodeType.CODE_128);
+```
+
 ---
 
 ## 1. Recognizing specific 1D symbologies
