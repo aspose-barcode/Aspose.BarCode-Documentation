@@ -2,7 +2,7 @@
 title: "Region of Interest (ROI)"
 description: "Learn how to limit barcode recognition to specific regions in an image using BarCodeReader in Aspose.BarCode for Java."
 type: docs
-weight: 20
+weight: 40
 url: /java/developer-guide/barcode-recognition/region-of-interest
 ---
 

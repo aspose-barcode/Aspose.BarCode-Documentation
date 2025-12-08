@@ -1,8 +1,8 @@
 ---
 title: Basic Barcode Recognition
 type: docs
-weight: 30
-url: /java/developer-guide/basic-barcode-recognition
+weight: 10
+url: /java/developer-guide/barcode-recognition/basic-barcode-recognition
 ---
 # Read Barcode from Image File
 

@@ -2,7 +2,7 @@
 title: "Different Input Sources"
 description: "Learn how to use BarCodeReader with file paths, streams, images, and in-memory data in Aspose.BarCode for Java."
 type: docs
-weight: 10
+weight: 30
 url: /java/developer-guide/barcode-recognition/input-sources
 ---
 
