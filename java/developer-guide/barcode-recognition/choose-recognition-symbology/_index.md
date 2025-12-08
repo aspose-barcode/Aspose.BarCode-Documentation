@@ -3,7 +3,7 @@ title: "Choose Recognition Symbology"
 description: "Learn how to choose and configure barcode symbologies when using BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 20
-url: /java/developer-guide/barcode-recognition/choose-symbology
+url: /java/developer-guide/barcode-recognition/choose-recognition-symbology
 
 ---
 
