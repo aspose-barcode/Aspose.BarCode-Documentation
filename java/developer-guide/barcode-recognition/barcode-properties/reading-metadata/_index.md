@@ -1,5 +1,5 @@
 ---
-title: " Metadata"
+title: "Reading Metadata"
 description: "Learn how to access and use barcode metadata returned by BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 50

@@ -1,5 +1,5 @@
 ---
-title: "Code Text Raw"
+title: "Reading Code Text Raw"
 description: "Learn how and when to use raw code bytes from BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 40
