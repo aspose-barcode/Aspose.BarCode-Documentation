@@ -1,9 +1,9 @@
 ---
-title: "Barcode Quality Deconvolution Mode"
-description: "Learn how to control recognition speed and robustness using BarcodeQualityMode, DeconvolutionMode, and targeted overrides in Aspose.BarCode for Java."
+title: "Deconvolution Mode"
+description: "Learn how to use deconvolution mode to recognize blurred and out-of-focus barcodes in Aspose.BarCode for Java."
 type: docs
-weight: 10
-url: /java/developer-guide/barcode-recognition/performance/quality-deconvolution-mode
+weight: 20
+url: /java/developer-guide/barcode-recognition/performance/deconvolution-mode
 ---
 
 # Barcode Quality and Deconvolution Modes

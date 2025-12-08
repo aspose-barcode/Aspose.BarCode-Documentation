@@ -2,7 +2,7 @@
 title: "Barcode Quality Mode"
 description: "Learn how to control recognition robustness and speed using BarcodeQualityMode in Aspose.BarCode for Java."
 type: docs
-weight: 20
+weight: 10
 url: /java/developer-guide/barcode-recognition/performance/quality-mode
 ---
 

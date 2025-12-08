@@ -1,6 +1,6 @@
 ---
 title: "Symbology Type"
-description: "Learn how to read Metadata"
+description: ""
 type: docs
 weight: 70
 url: /java/developer-guide/barcode-recognition/barcode-properties/symbology-type
