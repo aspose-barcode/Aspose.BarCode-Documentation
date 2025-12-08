@@ -26,11 +26,11 @@ This article shows how to:
 
 All code snippets are based on the sample class:
 
-`com.aspose.barcode.guide.recognition.choose_symbology.ChooseRecognitionSymbology`
+[`com.aspose.barcode.guide.recognition.choose_symbology.ChooseRecognitionSymbology`](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/choose_symbology/ChooseRecognitionSymbology.java)
 
 You can find the full source on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/choose_symbology/ChooseRecognitionSymbology.java" target="_blank" rel="noopener noreferrer">ChooseRecognitionSymbology.java</a>
+[ChooseRecognitionSymbology.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/choose_symbology/ChooseRecognitionSymbology.java)
 
 In the snippets below, helper methods like `ExampleAssist.checkOrCreateImage` and `ExampleAssist.pathCombine` come from the test infrastructure and are used only to generate and locate sample images.
 
@@ -604,6 +604,6 @@ To get the best results from `BarCodeReader` in Aspose.BarCode for Java:
 
 All code examples in this article are derived from:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/choose_symbology/ChooseRecognitionSymbology.java" target="_blank" rel="noopener noreferrer">ChooseRecognitionSymbology.java</a>
+[ChooseRecognitionSymbology.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/choose_symbology/ChooseRecognitionSymbology.java)
 
 Use this class as a reference when configuring symbology handling in your own Java applications.
