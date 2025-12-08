@@ -22,7 +22,7 @@ All examples in this article are based on the sample class:
 
 You can find the full source code on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/BarcodeQualityModeExample.java" target="_blank" rel="noopener noreferrer">BarcodeQualityModeExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/QualityModeExample.java" target="_blank" rel="noopener noreferrer">QualityModeExample.java</a>
 
 In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
 
@@ -224,6 +224,6 @@ When configuring `BarcodeQualityMode` for your application:
 
 All patterns demonstrated here come from:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/BarcodeQualityModeExample.java" target="_blank" rel="noopener noreferrer">BarcodeQualityModeExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/QualityModeExample.java" target="_blank" rel="noopener noreferrer">QualityModeExample.java</a>
 
 Use this class as a reference when tuning recognition quality and performance in your own Java applications.

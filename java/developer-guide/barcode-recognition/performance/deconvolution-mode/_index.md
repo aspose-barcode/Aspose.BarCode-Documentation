@@ -22,7 +22,7 @@ All examples in this article are based on the sample class:
 
 You can find the full source code on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/BarcodeQualityDeconvolutionModeExample.java" target="_blank" rel="noopener noreferrer">BarcodeQualityDeconvolutionModeExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/DeconvolutionModeExample.java" target="_blank" rel="noopener noreferrer">DeconvolutionModeExample.java</a>
 
 In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
 
@@ -199,6 +199,6 @@ When configuring quality and deconvolution parameters:
 
 All patterns in this article are demonstrated in:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/BarcodeQualityDeconvolutionModeExample.java" target="_blank" rel="noopener noreferrer">BarcodeQualityDeconvolutionModeExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/DeconvolutionModeExample.java" target="_blank" rel="noopener noreferrer">DeconvolutionModeExample.java</a>
 
 Use it as a reference when tuning recognition performance in your Java applications.
