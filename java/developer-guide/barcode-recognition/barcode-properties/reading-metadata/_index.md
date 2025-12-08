@@ -1,9 +1,9 @@
 ---
-title: "Reading Metadata"
+title: " Metadata"
 description: "Learn how to access and use barcode metadata returned by BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 50
-url: /java/developer-guide/barcode-recognition/barcode-properties/metadata
+url: /java/developer-guide/barcode-recognition/barcode-properties/reading-metadata
 ---
 
 # Reading Barcode Metadata

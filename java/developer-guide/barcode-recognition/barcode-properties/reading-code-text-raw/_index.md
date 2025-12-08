@@ -3,7 +3,7 @@ title: "Code Text Raw"
 description: "Learn how and when to use raw code bytes from BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 40
-url: /java/developer-guide/barcode-recognition/barcode-properties/code-text-raw
+url: /java/developer-guide/barcode-recognition/barcode-properties/reading-code-text-raw
 ---
 
 # Working with Raw Code Bytes

@@ -3,7 +3,7 @@ title: "Reading Code Text"
 description: "Learn how to read and interpret barcode code text and raw data with BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 30
-url: /java/developer-guide/barcode-recognition/barcode-properties/code-text
+url: /java/developer-guide/barcode-recognition/barcode-properties/reading-code-text
 ---
 
 # Reading Code Text and Raw Data
