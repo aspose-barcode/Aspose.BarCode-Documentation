@@ -1,5 +1,5 @@
 ---
-title: "Barcode Properties"
+title: "Reading Barcode Properties"
 description: "Barcode Properties"
 type: docs
 weight: 40
