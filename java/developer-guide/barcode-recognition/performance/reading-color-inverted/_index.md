@@ -140,7 +140,6 @@ Notes:
 In many applications, you do not control how the barcode image is produced.  
 The same inverse image configuration works for user-supplied images regardless of their source (screenshots, scans, exported graphics, and so on).
 
-
 ### 3.1 Data Matrix from a user image
 
 The example below shows how to recognize a color-inverted Data Matrix symbol from an arbitrary image file:
@@ -154,11 +153,11 @@ barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 BarCodeResult[] results = barCodeReader.readBarCodes();
 // process results[0].getCodeText(), etc.
 ```
-The important part is that InverseImageMode.ENABLED is applied in the same way as for test fixtures created in code.
+The important part is that `InverseImageMode.ENABLED` is applied in the same way as for test fixtures created in code.
 
 ### 3.2 Using inverse mode with different formats and bit depths
 
-Inverse image handling is orthogonal to the file format.
+Inverse image handling is orthogonal to the file format.  
 You can use the same approach for PNG, BMP, or other supported formats, including indexed and 1-bit-per-pixel images:
 
 ```java
@@ -170,7 +169,8 @@ barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 BarCodeResult[] results = barCodeReader.readBarCodes();
 ```
 This shows that:
-the same inverse mode configuration works across formats (PNG, BMP, etc.), you can still rely on InverseImageMode.ENABLED when working with low-bit-depth images, as long as the barcode itself is well-formed.
+- the same inverse mode configuration works across formats (PNG, BMP, etc.),
+- you can still rely on `InverseImageMode.ENABLED` when working with low-bit-depth images, as long as the barcode itself is well-formed.
 
 ---
 
