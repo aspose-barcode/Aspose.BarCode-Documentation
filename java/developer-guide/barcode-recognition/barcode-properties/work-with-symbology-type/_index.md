@@ -1,9 +1,9 @@
 ---
-title: "Working with Symbology"
-description: "Learn how to configure and work with symbology types for recognition"
+title: "Work with symbology types"
+description: "Learn how to choose and configure barcode symbology types when using BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 70
-url: /java/developer-guide/barcode-recognition/barcode-properties/working-with-symbology
+url: /java/developer-guide/barcode-recognition/barcode-properties/work-with-symbology-type
 ---
 
 # Configuring symbology types for recognition
