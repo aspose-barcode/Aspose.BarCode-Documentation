@@ -155,7 +155,7 @@ Typical expectations:
 - You can log these values to understand how different imaging conditions affect recognition quality.
 - In some workflows, you can enforce a **minimum confidence threshold** before accepting a result (for example, only accept confidence ≥ 60), while still combining this with checksum and business rules.
 
-Remember that confidence is mainly intended for **relative comparison** (clean vs. noisy, different presets on the same image), not as an absolute probability.
+Use the confidence value only to compare results on the same barcode or image (for example, clean vs. noisy input or different presets), and do not treat it as a calibrated probability that the result is correct.
 
 ---
 
