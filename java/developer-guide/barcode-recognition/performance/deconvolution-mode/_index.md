@@ -12,9 +12,10 @@ Aspose.BarCode for Java provides flexible controls to balance **recognition spee
 These controls are exposed through:
 
 - `QualitySettings` presets (for example, `getHighPerformance()`, `getNormalQuality()`, `getHighQuality()`)
-- `BarcodeQualityMode` – how aggressively the engine analyzes barcode quality
-- `DeconvolutionMode` – how aggressively the engine restores blurred or degraded images
+- `BarcodeQualityMode` – selects recognition methods depending on the expected barcode quality (heavier methods for low-quality codes)
+- `DeconvolutionMode` – deconvolution (image restoration) mode that defines the assumed level of image degradation and the strength of blur-reduction algorithms
 - Targeted overrides such as `XDimensionMode` and `setMinimalXDimension(...)`
+
 
 All examples in this article are based on the sample class:
 
@@ -44,7 +45,9 @@ You can use these presets as a **starting point** and then adjust details with `
 
 ## 2. BarcodeQualityMode – quality analysis profile
 
-`BarcodeQualityMode` defines how deeply the engine analyzes barcode quality and which internal methods are enabled.
+`BarcodeQualityMode` selects and enables recognition methods depending on the expected barcode quality.  
+For lower-quality barcodes it turns on heavier, more tolerant algorithms, which improves robustness but slows recognition.
+
 
 Supported values:
 
@@ -96,8 +99,8 @@ Use this pattern when you need to tune performance:
 
 ## 3. DeconvolutionMode – blur and degradation handling
 
-`DeconvolutionMode` controls how aggressively the engine tries to restore blurred or degraded barcodes.  
-This is especially important for QR and other 2D codes captured from mobile cameras or low-quality scans.
+`DeconvolutionMode` is an image restoration mode that defines the assumed level of image degradation.  
+It controls how strong deblurring and related preprocessing algorithms are, and therefore how much extra time the engine spends on image restoration.
 
 Supported values:
 
