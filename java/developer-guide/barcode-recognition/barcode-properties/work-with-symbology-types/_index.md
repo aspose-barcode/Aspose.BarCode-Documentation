@@ -8,9 +8,6 @@ url: /java/developer-guide/barcode-recognition/work-with-symbology-types
 
 # Working with symbology types in recognition
 
-When you recognize barcodes with `BarCodeReader`, it is not enough to just pass an image.  
-You should also decide **which symbology types the engine is allowed to use**.
-
 Configuring `DecodeType` values correctly helps you:
 
 - improve performance by narrowing down the search space,
