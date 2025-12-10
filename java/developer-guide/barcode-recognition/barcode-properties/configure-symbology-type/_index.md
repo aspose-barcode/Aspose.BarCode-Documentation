@@ -249,7 +249,7 @@ Use this configuration if:
 ## 8. Using an exact type for Data Matrix
 
 For 2D barcodes like Data Matrix, it is often safer to use the **exact** `DecodeType`.  
-This helps avoid confusion between visually similar 2D symbologies.
+When you already know that the image contains a specific 2D barcode type (for example, Data Matrix), specifying the exact DecodeType lets the engine skip other 2D symbologies, which improves performance and can make recognition more robust on low-quality images.
 
 The example below uses `DecodeType.DATA_MATRIX` to recognize a Data Matrix symbol:
 
