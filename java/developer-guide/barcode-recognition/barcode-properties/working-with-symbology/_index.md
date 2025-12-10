@@ -1,6 +1,6 @@
 ---
 title: "Working with Symbology"
-description: "Learn how to configure symbology types for recognition"
+description: "Learn how to configure and work with symbology types for recognition"
 type: docs
 weight: 70
 url: /java/developer-guide/barcode-recognition/barcode-properties/working-with-symbology
