@@ -28,25 +28,20 @@ In the snippets below, helper methods like `ExampleAssist.checkOrCreateImage` ar
 
 ---
 
-## 1. Test images: clean vs damaged
+## 1. Clean vs damaged test images
 
-The example class generates a small set of baseline images and then creates damaged variants:
+The example class operates on a small set of baseline (clean) images and corresponding damaged variants:
 
 - **Clean images**
     - `code128_clean.png` — clean Code 128 barcode
     - `qr_clean.png` — clean QR code with slightly thicker modules
 
 - **Damaged images**
-    - `code128_noisy.png` — Code 128 with added Gaussian noise (simulates low SNR)
+    - `code128_noisy.png` — Code 128 with added noise (simulates low SNR)
     - `qr_blurred_mild.png` — mildly blurred QR (recoverable with stronger settings)
     - `qr_blurred_heavy.png` — heavily blurred + slightly noisy QR (too degraded for FAST mode)
 
-The damaged images are produced using helper methods like:
-
-- `ExampleAssist.addGaussianNoise(inputPath, outputPath, stdDev)`
-- `ExampleAssist.blur(inputPath, outputPath, sigma)`
-
-This setup allows you to **compare recognition behavior** under different `QualitySettings` configurations.
+These fixtures allow you to **compare recognition behavior** under different `QualitySettings` configurations for the same logical barcode data.
 
 ---
 
@@ -252,3 +247,24 @@ All examples in this article are based on:
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/ReadingDamagedBarcodeExample.java" target="_blank" rel="noopener noreferrer">ReadingDamagedBarcodeExample.java</a>
 
 Use these patterns as a starting point when tuning Aspose.BarCode for Java to your own damaged or low-quality barcode images.
+
+---
+
+**Note – how the example generates damaged fixtures**
+
+In the sample project, damaged images are generated from clean barcodes by applying synthetic degradations.  
+This helps to demonstrate how `QualitySettings` behave on the same logical data under different distortion levels.
+
+Typical helper methods used in the example class include:
+
+- `ExampleAssist.addGaussianNoise(inputPath, outputPath, stdDev)` — adds noise to simulate low signal-to-noise ratio.
+- `ExampleAssist.blur(inputPath, outputPath, sigma)` — applies blur to simulate motion or out-of-focus captures.
+
+You can use a similar approach in your own test suite:
+
+1. Generate a clean barcode with `BarcodeGenerator`.
+2. Save it as an image.
+3. Produce noisy or blurred copies using your own image-processing pipeline.
+4. Run the same recognition configuration on clean vs damaged variants and compare the results.
+
+This is purely a **test fixture technique** and is not required to use `BarcodeQualityMode`, `DeconvolutionMode`, or X-dimension settings in production.
