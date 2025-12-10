@@ -53,8 +53,8 @@ barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 ExampleAssist.assertRecognizedWithText(
         barCodeReader,
         "Code128Invert.png",
-        1,
-        "INVERT IMAGE TEST"
+                1,
+                "INVERT IMAGE TEST"
 );
 ```
 
@@ -240,8 +240,6 @@ When you need to support reversed or color-inverted barcodes in your application
 
 ---
 
-
-
 ## Summary
 
 - Color-inverted barcodes are common on dark labels and in UI screenshots.
@@ -250,9 +248,13 @@ When you need to support reversed or color-inverted barcodes in your application
 - The same approach works for 1D and 2D symbologies and for a variety of image formats and bit depths.
 - The accompanying example class demonstrates how to generate fixtures and verify behavior across Code 128, QR, PDF417, and Data Matrix barcodes.
 
+For full context and runnable tests, refer to:
 
-## Note on the example
-#### How the example generates normal and inverted fixtures.
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/ReadingColorInvertedExample.java" target="_blank" rel="noopener noreferrer">ReadingColorInvertedExample.java</a>
+
+---
+
+**Note – how the example generates normal and inverted fixtures**
 
 The example class also contains code that generates **pairs of images** for each symbology used in the tests:
 
@@ -292,9 +294,3 @@ In this setup:
 - The `checkOrCreateImage` helper ensures each image is generated only once when tests run.
 
 You can follow the same pattern if you want controlled positive/inverted pairs for your own test suite.
-
----
-
-For full context and runnable tests, refer to:
-
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/ReadingColorInvertedExample.java" target="_blank" rel="noopener noreferrer">ReadingColorInvertedExample.java</a>
