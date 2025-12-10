@@ -138,87 +138,39 @@ Notes:
 ## 3. Working with user images and different formats
 
 In many applications, you do not control how the barcode image is produced.  
-The example class includes tests that run **only if specific user images exist on disk** and still use the same inverse mode.
+The same inverse image configuration works for user-supplied images regardless of their source (screenshots, scans, exported graphics, and so on).
 
-### 3.1 Data Matrix from an e-mail example
 
-```java
-@Test
-public void UserImage_DM_Email() {
-    String imagePath = ExampleAssist.pathCombine(FOLDER, "datamatrix-generator.png");
+### 3.1 Data Matrix from a user image
 
-    if (!ExampleAssist.fileExists(imagePath)) {
-        ExampleAssist.logWarn("Skip UserImage_DM_Email: not found " + imagePath);
-        return;
-    }
-
-    BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.DATA_MATRIX);
-    barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
-
-    ExampleAssist.assertRecognizedWithText(
-            barCodeReader,
-            "datamatrix-generator.png",
-            1,
-            "bartoli.giacomo@email.it"
-    );
-}
-```
-
-Pattern:
-
-1. Check if the file is actually present.
-2. Create `BarCodeReader` with the appropriate `DecodeType`.
-3. Enable `InverseImageMode.ENABLED`.
-4. Validate both barcode presence and decoded text.
-
-### 3.2 BMP samples (4-bpp, 1-bpp) if available
-
-The last two tests cover additional image formats and bit depths:
+The example below shows how to recognize a color-inverted Data Matrix symbol from an arbitrary image file:
 
 ```java
-@Test
-public void DMInvert4bpp_BMP_ifExists() {
-    String imagePath = ExampleAssist.pathCombine(FOLDER, "DMInvert4bpp.bmp");
-    if (!ExampleAssist.fileExists(imagePath)) {
-        ExampleAssist.logWarn("Skip DMInvert4bpp_BMP_ifExists: not found " + imagePath);
-        return;
-    }
+String imagePath = "/path/to/your/datamatrix-inverted.png";
 
-    BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.DATA_MATRIX);
-    barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.DATA_MATRIX);
+barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 
-    ExampleAssist.assertRecognizedWithText(
-            barCodeReader,
-            "DMInvert4bpp.bmp",
-            1,
-            "INVERT IMAGE TEST"
-    );
-}
-
-@Test
-public void QRInvert1bpp_BMP_ifExists() {
-    String imagePath = ExampleAssist.pathCombine(FOLDER, "QRInvert1bpp.bmp");
-    if (!ExampleAssist.fileExists(imagePath)) {
-        ExampleAssist.logWarn("Skip QRInvert1bpp_BMP_ifExists: not found " + imagePath);
-        return;
-    }
-
-    BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.QR);
-    barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
-
-    ExampleAssist.assertRecognizedWithText(
-            barCodeReader,
-            "QRInvert1bpp.bmp",
-            1,
-            "INVERT IMAGE TEST"
-    );
-}
+BarCodeResult[] results = barCodeReader.readBarCodes();
+// process results[0].getCodeText(), etc.
 ```
+The important part is that InverseImageMode.ENABLED is applied in the same way as for test fixtures created in code.
 
+### 3.2 Using inverse mode with different formats and bit depths
+
+Inverse image handling is orthogonal to the file format.
+You can use the same approach for PNG, BMP, or other supported formats, including indexed and 1-bit-per-pixel images:
+
+```java
+String bmpPath = "/path/to/your/DMInvert4bpp.bmp";
+
+BarCodeReader barCodeReader = new BarCodeReader(bmpPath, DecodeType.DATA_MATRIX);
+barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
+
+BarCodeResult[] results = barCodeReader.readBarCodes();
+```
 This shows that:
-
-- Inverse image handling is orthogonal to the file format (PNG, BMP, etc.).
-- You can still rely on `InverseImageMode.ENABLED` when working with indexed or 1-bit-per-pixel images, assuming the image data contains a well-formed inverted symbol.
+the same inverse mode configuration works across formats (PNG, BMP, etc.), you can still rely on InverseImageMode.ENABLED when working with low-bit-depth images, as long as the barcode itself is well-formed.
 
 ---
 
