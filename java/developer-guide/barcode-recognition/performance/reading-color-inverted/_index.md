@@ -6,29 +6,29 @@ weight: 50
 url: /java/developer-guide/barcode-recognition/performance/reading-color-inverted
 ---
 
-# Reading color‑inverted barcodes
+# Reading color-inverted barcodes
 
-In many real‑world scenarios barcodes are printed **white on black** (or light on dark) instead of the usual dark bars on a light background.  
-Such *color‑inverted* symbols may appear on:
+In many real-world scenarios barcodes are printed **white on black** (or light on dark) instead of the usual dark bars on a light background.  
+Such *color-inverted* symbols may appear on:
 
 - dark product labels
 - UI screenshots with dark themes
 - reversed graphics from design tools or printers
 
-By default, most recognition pipelines are tuned for dark‑on‑light images.  
+By default, most recognition pipelines are tuned for dark-on-light images.  
 Aspose.BarCode for Java lets you explicitly enable **inverse image processing** for such cases by using:
 
 - `QualitySettings.setInverseImage(InverseImageMode.ENABLED)` on the reader
 
 This article shows how to:
 
-- generate test fixtures with both normal and inverted barcodes
 - enable inverted image handling for common symbologies
-- apply the same setting to user‑supplied images and various bitmap formats
+- apply the same setting to user-supplied images and various bitmap formats
+- generate normal and inverted test fixtures used in the example class
 
 All code samples are based on the test class:
 
-`com.aspose.barcode.guide.recognition.conditions.ReadingColorInvertedExample`
+`com.aspose.barcode.guide.recognition.performance.ReadingColorInvertedExample`
 
 You can find the full source on GitHub:
 
@@ -38,46 +38,7 @@ In the snippets below, `folderPath` represents the path where you store test ima
 
 ---
 
-## 1. Generating normal and inverted fixtures
-
-The example class generates **pairs of images** for each symbology:
-
-- positive image: normal dark bars on light background
-- inverted image: colors flipped by a helper method `ExampleAssist.invertColors(srcPath, outPath)`
-
-Example for Code 128:
-
-```java
-private static final String FOLDER =
-        ExampleAssist.getOrCreateResourceFolderPath("recognition", "color", "color_inverted");
-
-private void generateFixtures() throws Exception {
-    // Positive Code 128
-    ExampleAssist.checkOrCreateImage(FOLDER, "Code128.png", out -> {
-        BarcodeGenerator barcodeGenerator =
-                new BarcodeGenerator(EncodeTypes.CODE_128, "INVERT IMAGE TEST");
-        barcodeGenerator.save(out, BarCodeImageFormat.PNG);
-    });
-
-    // Color‑inverted Code 128 (white bars on black background)
-    ExampleAssist.checkOrCreateImage(FOLDER, "Code128Invert.png", out -> {
-        String sourcePath = ExampleAssist.pathCombine(FOLDER, "Code128.png");
-        ExampleAssist.invertColors(sourcePath, out);
-    });
-
-    // The same pattern is used for QR, PDF417 and Data Matrix
-}
-```
-
-Key ideas:
-
-- **Positive image** is generated with `BarcodeGenerator`.
-- **Inverted image** is created by reading the positive PNG and inverting colors pixel by pixel.
-- The `checkOrCreateImage` helper ensures each image is generated only once.
-
----
-
-## 2. Enabling inverse image mode for recognition
+## 1. Enabling inverse image mode for recognition
 
 To read inverted images, you keep the usual `BarCodeReader` configuration (path + `DecodeType`) and then enable inverse processing in `QualitySettings`:
 
@@ -86,7 +47,7 @@ String imagePath = ExampleAssist.pathCombine(FOLDER, "Code128Invert.png");
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
-// Enable inverse image handling for white‑on‑black barcodes
+// Enable inverse image handling for white-on-black barcodes
 barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 
 ExampleAssist.assertRecognizedWithText(
@@ -107,7 +68,7 @@ When you have a mix of positive and inverted images in the same flow, it is usua
 
 ---
 
-## 3. Applying inverse mode to 2D barcodes
+## 2. Applying inverse mode to 2D barcodes
 
 The same setting works uniformly for common 2D symbologies:
 
@@ -174,12 +135,12 @@ Notes:
 
 ---
 
-## 4. Working with user images and different formats
+## 3. Working with user images and different formats
 
 In many applications, you do not control how the barcode image is produced.  
 The example class includes tests that run **only if specific user images exist on disk** and still use the same inverse mode.
 
-### 4.1 Data Matrix from an e‑mail example
+### 3.1 Data Matrix from an e-mail example
 
 ```java
 @Test
@@ -210,7 +171,7 @@ Pattern:
 3. Enable `InverseImageMode.ENABLED`.
 4. Validate both barcode presence and decoded text.
 
-### 4.2 BMP samples (4‑bpp, 1‑bpp) if available
+### 3.2 BMP samples (4-bpp, 1-bpp) if available
 
 The last two tests cover additional image formats and bit depths:
 
@@ -257,15 +218,15 @@ public void QRInvert1bpp_BMP_ifExists() {
 This shows that:
 
 - Inverse image handling is orthogonal to the file format (PNG, BMP, etc.).
-- You can still rely on `InverseImageMode.ENABLED` when working with indexed or 1‑bit per pixel images, assuming the image data contains a well‑formed inverted symbol.
+- You can still rely on `InverseImageMode.ENABLED` when working with indexed or 1-bit-per-pixel images, assuming the image data contains a well-formed inverted symbol.
 
 ---
 
-## 5. Practical guidelines
+## 4. Practical guidelines
 
-When you need to support reversed or color‑inverted barcodes in your application:
+When you need to support reversed or color-inverted barcodes in your application:
 
-1. **Enable inverse image mode** whenever you expect white‑on‑black or light‑on‑dark barcodes:
+1. **Enable inverse image mode** whenever you expect white-on-black or light-on-dark barcodes:
 
    ```java
    barCodeReader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
@@ -275,17 +236,64 @@ When you need to support reversed or color‑inverted barcodes in your applicati
 
 3. **Reuse the same setting** across different parts of your workflow. Inverse mode is transparent for normal images and only helps when inversion is actually present.
 
-4. **Test with your real inputs** (PNG, BMP, screenshots, scanned PDFs converted to images) to ensure that your pipeline and image pre‑processing preserve enough contrast and resolution.
+4. **Test with your real inputs** (PNG, BMP, screenshots, scanned PDFs converted to images) to ensure that your pipeline and image pre-processing preserve enough contrast and resolution.
 
 ---
 
+
+
 ## Summary
 
-- Color‑inverted barcodes are common on dark labels and in UI screenshots.
+- Color-inverted barcodes are common on dark labels and in UI screenshots.
 - Aspose.BarCode for Java supports such images via inverse image processing in `QualitySettings`.
 - The main API hook is `setInverseImage(InverseImageMode.ENABLED)` on the reader’s quality settings.
 - The same approach works for 1D and 2D symbologies and for a variety of image formats and bit depths.
 - The accompanying example class demonstrates how to generate fixtures and verify behavior across Code 128, QR, PDF417, and Data Matrix barcodes.
+
+
+## Note on the example
+#### How the example generates normal and inverted fixtures.
+
+The example class also contains code that generates **pairs of images** for each symbology used in the tests:
+
+- positive image: normal dark bars on a light background
+- inverted image: colors flipped by a helper method `ExampleAssist.invertColors(srcPath, outPath)`
+
+This is a **technical detail of the test setup** and is not required for using inverse mode in production, but it can be useful if you want to reproduce the same fixtures locally.
+
+Example for Code 128:
+
+```java
+private static final String FOLDER =
+        ExampleAssist.getOrCreateResourceFolderPath("recognition", "color", "color_inverted");
+
+private void generateFixtures() throws Exception {
+    // Positive Code 128
+    ExampleAssist.checkOrCreateImage(FOLDER, "Code128.png", out -> {
+        BarcodeGenerator barcodeGenerator =
+                new BarcodeGenerator(EncodeTypes.CODE_128, "INVERT IMAGE TEST");
+        barcodeGenerator.save(out, BarCodeImageFormat.PNG);
+    });
+
+    // Color-inverted Code 128 (white bars on black background)
+    ExampleAssist.checkOrCreateImage(FOLDER, "Code128Invert.png", out -> {
+        String sourcePath = ExampleAssist.pathCombine(FOLDER, "Code128.png");
+        ExampleAssist.invertColors(sourcePath, out);
+    });
+
+    // The same pattern is used for QR, PDF417 and Data Matrix
+}
+```
+
+In this setup:
+
+- The positive image is generated with `BarcodeGenerator`.
+- The inverted image is created by reading the positive PNG and inverting colors pixel by pixel.
+- The `checkOrCreateImage` helper ensures each image is generated only once when tests run.
+
+You can follow the same pattern if you want controlled positive/inverted pairs for your own test suite.
+
+---
 
 For full context and runnable tests, refer to:
 
