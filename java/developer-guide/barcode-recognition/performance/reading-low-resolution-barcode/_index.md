@@ -28,94 +28,23 @@ You can find the full source code on GitHub:
 
 ---
 
-## 1. Test Data: Clean and Low-Resolution Images
+## 1. Test data: clean and low-resolution images
 
-The example class generates one **clean** Code 128 image and three **low-resolution** variants that are rendered directly at fixed widths.
+The example class operates on one **clean** Code 128 image and three **low-resolution** variants that are rendered directly at fixed widths.
 
-```java
-private static final String FOLDER =
-        ExampleAssist.getOrCreateResourceFolderPath("recognition", "quality", "reading_low_resolution");
+- **Clean baseline**
+    - `code128_clean_width_600px.png` — large, high-quality Code 128 symbol (comfortable X-dimension, wide quiet zones).
 
-// Descriptive file names
-private static final String FILE_CODE128_CLEAN_BASE = "code128_clean_width_600px.png";
-private static final String FILE_CODE128_LOWRES_WIDTH_150 = "code128_low_resolution_width_150px.png";
-private static final String FILE_CODE128_LOWRES_WIDTH_80  = "code128_low_resolution_width_80px.png";
-private static final String FILE_CODE128_LOWRES_WIDTH_40  = "code128_low_resolution_width_40px.png";
+- **Low-resolution variants**
+    - `code128_low_resolution_width_150px.png` — moderately small barcode, still detailed.
+    - `code128_low_resolution_width_80px.png` — small barcode with modules ≈1–2 pixels wide.
+    - `code128_low_resolution_width_40px.png` — extremely small barcode, close to the practical resolution limit.
 
-private static final String PAYLOAD_TEXT = "LowRes:CODE128";
-
-@BeforeClass
-public void setUp() throws Exception {
-    LicenseAssist.setupLicense();
-    generateCode128Base();
-    generateLowResVariants();
-}
-```
-
-### 1.1 Clean baseline (600 px width)
-
-The baseline image is a comfortable, high-quality Code 128 symbol:
-
-```java
-private void generateCode128Base() throws Exception {
-    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_CLEAN_BASE, path -> {
-        BarcodeGenerator barcodeGenerator = new BarcodeGenerator(EncodeTypes.CODE_128, PAYLOAD_TEXT);
-        barcodeGenerator.getParameters().getBarcode().getXDimension().setPixels(3.0f);
-        barcodeGenerator.getParameters().getBarcode().getPadding().getLeft().setPixels(40f);
-        barcodeGenerator.getParameters().getBarcode().getPadding().getRight().setPixels(40f);
-        barcodeGenerator.getParameters().getBarcode().getPadding().getTop().setPixels(20f);
-        barcodeGenerator.getParameters().getBarcode().getPadding().getBottom().setPixels(20f);
-        barcodeGenerator.save(path, BarCodeImageFormat.PNG);
-    });
-}
-```
-
-Key points:
-
-- `XDimension = 3 px` → comfortable bar width.
-- Wide quiet zones on all sides.
-- This image is used to validate that **normal settings** decode reliably before testing low-resolution variants.
-
-### 1.2 Low-resolution variants (150 / 80 / 40 px)
-
-Low-resolution images are generated **directly** at fixed pixel widths using a helper method:
-
-```java
-private void generateLowResVariants() throws Exception {
-    final int heightPx = 140;
-    final int quietPx  = 12;
-
-    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_150,
-            out -> ExampleAssist.renderBarcodeFixedSizePNG(
-                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
-                    /*widthPx*/150, /*heightPx*/heightPx,
-                    /*xDimPx*/2.0f, /*quietPx*/quietPx, out));
-
-    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_80,
-            out -> ExampleAssist.renderBarcodeFixedSizePNG(
-                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
-                    /*widthPx*/80, /*heightPx*/heightPx,
-                    /*xDimPx*/1.2f, /*quietPx*/quietPx, out));
-
-    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_40,
-            out -> ExampleAssist.renderBarcodeFixedSizePNG(
-                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
-                    /*widthPx*/40, /*heightPx*/heightPx,
-                    /*xDimPx*/1.0f, /*quietPx*/quietPx, out));
-}
-```
-
-The helper `renderBarcodeFixedSizePNG(...)` is responsible for:
-
-- drawing a crisp, binarized barcode,
-- fitting it into a fixed canvas (width × height),
-- aligning modules to pixel grid as much as possible.
-
-This avoids post-resampling artifacts (no blur, no scaling in external tools) and provides **clean but tiny** barcodes.
+All images encode the same payload text, so you can directly compare recognition behavior under different `QualitySettings` configurations.
 
 ---
 
-## 2. Baseline: Clean Barcode with Normal Quality
+## 2. Baseline: clean barcode with normal quality
 
 Before dealing with low-resolution cases, the example validates that a clean, large barcode is recognized with **balanced** settings.
 
@@ -143,7 +72,7 @@ Use this pattern as a sanity check: if recognition fails here, the issue is not 
 
 ---
 
-## 3. Low Resolution, Width ≈ 150 px
+## 3. Low resolution, width ≈ 150 px
 
 At **150 px width**, the barcode is smaller but still reasonably detailed.
 
@@ -196,7 +125,7 @@ Here:
 
 ---
 
-## 4. Low Resolution, Width ≈ 80 px
+## 4. Low resolution, width ≈ 80 px
 
 At **80 px width**, module width approaches 1–2 pixels and correctly detecting bars becomes harder.  
 This is where **X-dimension hints** and **quality mode** start to matter.
@@ -260,7 +189,7 @@ Use this configuration if:
 
 ---
 
-## 5. Very Low Resolution, Width ≈ 40 px
+## 5. Very low resolution, width ≈ 40 px
 
 At **40 px width**, the barcode is near the practical resolution limit.  
 Modules are roughly 1 pixel wide, and even slight blur or interpolation can break recognition.
@@ -326,16 +255,16 @@ Treat it as:
 
 ---
 
-## 6. Practical Recommendations
+## 6. Practical recommendations
 
 Based on the patterns in `ReadingLowResolutionBarcodeExample`:
 
 1. **Generate crisp low-resolution barcodes**
     - Prefer rendering directly at the target pixel size over resampling larger images.
-    - Use enough bar height and quiet zones (`renderBarcodeFixedSizePNG(...)` pattern).
+    - Use enough bar height and quiet zones so that the symbol occupies most of the useful area.
 
 2. **Start with balanced settings for moderate sizes (≥ 150 px)**
-    - Use `QualitySettings.getNormalQuality()` with `BarcodeQualityMode.NORMAL` or
+    - Use `QualitySettings.getNormalQuality()` with `BarcodeQualityMode.NORMAL`, or
     - `QualitySettings.getHighPerformance()` with `BarcodeQualityMode.HIGH` if you need more speed.
 
 3. **For small symbols (≈ 80 px)**
@@ -366,3 +295,84 @@ All code samples in this article are derived from:
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/ReadingLowResolutionBarcodeExample.java" target="_blank" rel="noopener noreferrer">ReadingLowResolutionBarcodeExample.java</a>
 
 Use this class as a reference when tuning Aspose.BarCode for Java to work reliably with low-resolution barcodes.
+
+---
+
+**Note – how the example generates low-resolution fixtures**
+
+In the sample project, the test data is generated programmatically so that all images share the same payload and differ only by size and rendering parameters.
+
+Typical setup in `ReadingLowResolutionBarcodeExample` looks like this:
+
+```java
+private static final String FOLDER =
+        ExampleAssist.getOrCreateResourceFolderPath("recognition", "quality", "reading_low_resolution");
+
+// Descriptive file names
+private static final String FILE_CODE128_CLEAN_BASE = "code128_clean_width_600px.png";
+private static final String FILE_CODE128_LOWRES_WIDTH_150 = "code128_low_resolution_width_150px.png";
+private static final String FILE_CODE128_LOWRES_WIDTH_80  = "code128_low_resolution_width_80px.png";
+private static final String FILE_CODE128_LOWRES_WIDTH_40  = "code128_low_resolution_width_40px.png";
+
+private static final String PAYLOAD_TEXT = "LowRes:CODE128";
+
+@BeforeClass
+public void setUp() throws Exception {
+    LicenseAssist.setupLicense();
+    generateCode128Base();
+    generateLowResVariants();
+}
+```
+
+The clean baseline is created once with comfortable X-dimension and quiet zones:
+
+```java
+private void generateCode128Base() throws Exception {
+    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_CLEAN_BASE, path -> {
+        BarcodeGenerator barcodeGenerator = new BarcodeGenerator(EncodeTypes.CODE_128, PAYLOAD_TEXT);
+        barcodeGenerator.getParameters().getBarcode().getXDimension().setPixels(3.0f);
+        barcodeGenerator.getParameters().getBarcode().getPadding().getLeft().setPixels(40f);
+        barcodeGenerator.getParameters().getBarcode().getPadding().getRight().setPixels(40f);
+        barcodeGenerator.getParameters().getBarcode().getPadding().getTop().setPixels(20f);
+        barcodeGenerator.getParameters().getBarcode().getPadding().getBottom().setPixels(20f);
+        barcodeGenerator.save(path, BarCodeImageFormat.PNG);
+    });
+}
+```
+
+Low-resolution variants are rendered directly at the target pixel width:
+
+```java
+private void generateLowResVariants() throws Exception {
+    final int heightPx = 140;
+    final int quietPx  = 12;
+
+    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_150,
+            out -> ExampleAssist.renderBarcodeFixedSizePNG(
+                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
+                    /*widthPx*/150, /*heightPx*/heightPx,
+                    /*xDimPx*/2.0f, /*quietPx*/quietPx, out));
+
+    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_80,
+            out -> ExampleAssist.renderBarcodeFixedSizePNG(
+                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
+                    /*widthPx*/80, /*heightPx*/heightPx,
+                    /*xDimPx*/1.2f, /*quietPx*/quietPx, out));
+
+    ExampleAssist.checkOrCreateImage(FOLDER, FILE_CODE128_LOWRES_WIDTH_40,
+            out -> ExampleAssist.renderBarcodeFixedSizePNG(
+                    EncodeTypes.CODE_128, PAYLOAD_TEXT,
+                    /*widthPx*/40, /*heightPx*/heightPx,
+                    /*xDimPx*/1.0f, /*quietPx*/quietPx, out));
+}
+```
+
+The helper `renderBarcodeFixedSizePNG(...)` is responsible for:
+
+- drawing a crisp, binarized barcode,
+- fitting it into a fixed canvas (width × height),
+- aligning modules to the pixel grid as much as possible.
+
+This avoids post-resampling artifacts (no blur, no scaling in external tools) and provides **clean but tiny** barcodes.
+
+You can use a similar approach in your own test suite to generate controlled low-resolution fixtures and experiment with different recognition settings.
