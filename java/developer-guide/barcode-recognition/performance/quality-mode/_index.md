@@ -34,8 +34,6 @@ You can find the full source code on GitHub:
 The `BarcodeQualityMode` enum is defined as:
 
 ```java
-public enum BarcodeQualityMode
-{
     /**
      * Enables recognition methods for High quality barcodes.
      */
@@ -50,7 +48,6 @@ public enum BarcodeQualityMode
      * Enables recognition methods for Low quality barcodes.
      */
     LOW(2);
-}
 ```
 
 The key idea:
