@@ -198,8 +198,6 @@ Takeaways:
 
 - `DeconvolutionMode.FAST` is ideal for **slightly blurred or sharp images** where performance is critical.
 - For **heavily blurred** barcodes, FAST may not be sufficient — you should switch to `NORMAL` or `SLOW`.
-- Using negative tests like this in your own QA can help you understand **where the performance/quality trade-off breaks** for your images.
-
 ---
 
 ## 4. Practical guidelines
@@ -224,10 +222,6 @@ When working with damaged barcodes (noise, blur, small modules), consider the fo
 4. **Hint expected bar/module size with X-dimension settings**
     - `setXDimension(XDimensionMode.SMALL)` and `setMinimalXDimension(...)` help for **tiny barcodes**.
     - Do not set `MinimalXDimension` too small if your images are not tiny — it may slow recognition.
-
-5. **Use negative tests deliberately**
-    - Like `read_QR_BlurredHeavy_WithDeconvolution_FAST_Negative`, negative tests help document the limits of a given configuration and provide guidance on when to use stronger modes.
-
 ---
 
 ## Summary
