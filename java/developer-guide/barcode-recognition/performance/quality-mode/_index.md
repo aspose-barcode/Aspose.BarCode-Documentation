@@ -1,6 +1,6 @@
 ---
 title: "Barcode Quality Mode"
-description: "Learn how to control recognition robustness and speed using BarcodeQualityMode and QualitySettings presets in Aspose.BarCode for Java."
+description: "Learn how to control recognition robustness and performance using BarcodeQualityMode together with QualitySettings presets in Aspose.BarCode for Java."
 type: docs
 weight: 10
 url: /java/developer-guide/barcode-recognition/performance/quality-mode
@@ -8,19 +8,16 @@ url: /java/developer-guide/barcode-recognition/performance/quality-mode
 
 # Barcode Quality Mode
 
-`BarcodeQualityMode` in Aspose.BarCode for Java tells the recognition engine how **good** you expect the input image to be.  
-It does **not** directly mean how “powerful” the algorithm is, but how much effort is needed based on expected image quality:
+`BarcodeQualityMode` in Aspose.BarCode for Java tells the recognition engine **how good you expect the input image to be** and, based on that expectation, how much processing it should perform:
 
-- `HIGH` – you expect **high‑quality barcodes** → the engine uses **lighter / faster** processing
-- `NORMAL` – you expect **average image quality** → the engine uses **balanced** processing
-- `LOW` – you expect **low‑quality / damaged barcodes** → the engine uses **heavier / slower** processing
+- `HIGH` – the barcode image is expected to be **high quality** (clean, high contrast, minimal noise);  
+  the engine can use **lighter** processing and run faster.
+- `NORMAL` – the barcode image is expected to be of **typical / medium quality**;  
+  the engine uses a **balanced** amount of processing.
+- `LOW` – the barcode image is expected to be **low quality** (noise, blur, low contrast);  
+  the engine enables **heavier and more robust** processing.
 
-In other words:
-
-> The worse the expected image quality, the lower the `BarcodeQualityMode` value you should choose.
-
-`BarcodeQualityMode` is always used **together** with a `QualitySettings` preset (for example, `getHighPerformance`, `getNormalQuality`, `getHighQuality`).  
-You start from a preset and then optionally override the quality mode to fine‑tune behavior.
+The preset defines a baseline recognition pipeline, and `BarcodeQualityMode` refines this pipeline based on the *expected* image quality.
 
 All examples in this article are based on the sample class:
 
@@ -30,89 +27,86 @@ You can find the full source code on GitHub:
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/QualityModeExample.java" target="_blank" rel="noopener noreferrer">QualityModeExample.java</a>
 
-In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
+---
+
+## 1. How BarcodeQualityMode works
+
+The `BarcodeQualityMode` enum is defined as:
+
+```java
+public enum BarcodeQualityMode
+{
+    /**
+     * Enables recognition methods for High quality barcodes.
+     */
+    HIGH(0),
+
+    /**
+     * Enables recognition methods for Common (Normal) quality barcodes.
+     */
+    NORMAL(1),
+
+    /**
+     * Enables recognition methods for Low quality barcodes.
+     */
+    LOW(2);
+}
+```
+
+The key idea:
+
+- `HIGH` – **input is high quality**, so the engine can skip some heavy recovery steps.
+- `NORMAL` – **input is average quality**, use a balanced configuration.
+- `LOW` – **input is low quality**, enable additional robust methods even if this is slower.
+
+> Important: this is **different** from `QualitySettings.getHighQuality()` / `getMaxQuality()`, which are *presets* oriented toward **difficult** barcodes.  
+> `BarcodeQualityMode` does **not** describe how “strong” the preset is in general; it only hints what level of image degradation the engine should expect for the current image.
+
+In practice, you:
+
+1. Choose a base preset (`getHighPerformance`, `getNormalQuality`, `getHighQuality`, or `getMaxQuality`).
+2. Adjust `BarcodeQualityMode` to match the **quality of the specific input image** you are processing.
 
 ---
 
-## 1. How BarcodeQualityMode and QualitySettings presets interact
+## 2. Using BarcodeQualityMode on clean images
 
-`QualitySettings` presets define **overall recognition strategy**, and `BarcodeQualityMode` further narrows the engine’s expectations about input quality.
+On clean, synthetic, or well-scanned barcodes, all three modes usually recognize the code successfully.  
+The primary difference is how many robustness features are enabled and, consequently, how much time recognition takes.
 
-From the API documentation:
+In all code snippets below, `imagePath` represents a path to a `CODE_128` image in your application.
 
-- `QualitySettings.getNormalQuality()` – “NormalQuality recognition quality preset. Suitable for most barcodes.”
-- `QualitySettings.getHighQuality()` – “HighQuality recognition quality preset. This preset is developed for **low‑quality barcodes**. Allows to detect highly damaged barcodes.”
-- `QualitySettings.getMaxQuality()` – “MaxQuality recognition quality preset. This preset is developed to recognize **all possible barcodes, even incorrect barcodes**.”
+### 2.1. HIGH quality mode – for high quality input
 
-So presets behave roughly like this:
-
-- `getHighPerformance()` – fastest, for good images
-- `getNormalQuality()` – default preset, good for most cases
-- `getHighQuality()` – stronger, for **low‑quality / damaged** barcodes
-- `getMaxQuality()` – maximum effort, even tries to recover incorrect barcodes
-
-Now combine this with `BarcodeQualityMode`:
-
-- `BarcodeQualityMode.HIGH` – **you promise the engine that the image is good**  
-  → it can safely skip some heavy steps and treat the barcode as high‑quality.
-- `BarcodeQualityMode.NORMAL` – the engine expects typical, average quality.
-- `BarcodeQualityMode.LOW` – the engine expects **poor / noisy / distorted** images  
-  → it enables more aggressive processing inside the chosen preset.
-
-Put simply:
-
-- Preset (`getHighPerformance`, `getHighQuality`, …) defines *what toolbox* is available.
-- `BarcodeQualityMode` defines *how much of that toolbox is needed* for the current image.
-
-> Note the naming difference:  
-> `getHighQuality()` preset is designed for **low‑quality barcodes**,  
-> while `BarcodeQualityMode.HIGH` means **high‑quality images** and thus less internal work.
-
----
-
-## 2. Test data: clean and noisy Code 128
-
-The example class prepares two fixtures:
-
-- `code128_clean.png` – a clean synthetic `CODE_128` image with good contrast
-- `code128_noisy.png` – the same symbol with Gaussian noise (`addGaussianNoise`) to simulate low signal‑to‑noise ratio
-
-In real applications you will use your own images; here they simply help to show how different combinations of preset + `BarcodeQualityMode` behave.
-
----
-
-## 3. Using BarcodeQualityMode on clean images
-
-On a clean `CODE_128` image, all three quality modes are expected to work.  
-The question is how expensive the processing should be.
-
-### 3.1. High mode on clean image (fastest path within the preset)
+Use `BarcodeQualityMode.HIGH` when you know that barcodes come from a **reliable scanning process** (for example, industrial scanners or high‑resolution document scanners).
 
 ```java
 String imagePath = "code128_clean.png";
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
-// We expect a good image, so we combine a fast preset with HIGH quality mode.
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
+// Input is expected to be high quality → less heavy processing is needed
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.HIGH);
+
 barCodeReader.setQualitySettings(qualitySettings);
 
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 if (barCodeResults.length > 0) {
     BarCodeResult barCodeResult = barCodeResults[0];
-    System.out.println("Clean, HIGH mode: " + barCodeResult.getCodeText());
+    System.out.println("HIGH (clean input): " + barCodeResult.getCodeText());
 }
 ```
 
-Here:
+Typical use cases:
 
-- `getHighPerformance()` selects a **speed‑oriented preset**.
-- `BarcodeQualityMode.HIGH` tells the engine that the image quality is **good**,  
-  so it may skip some robust but expensive recovery steps.
-- For a clean image, this pattern gives **fast and stable** recognition.
+- clearly printed labels on conveyor lines
+- barcodes printed with good contrast, scanned in controlled lighting
+- bulk batch processing where you want minimal CPU usage per barcode
 
-### 3.2. Normal mode on clean image (balanced expectation)
+### 2.2. NORMAL quality mode – default for typical images
+
+Use `BarcodeQualityMode.NORMAL` when you expect **typical, mixed quality** input:
 
 ```java
 String imagePath = "code128_clean.png";
@@ -121,54 +115,55 @@ BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
 QualitySettings qualitySettings = QualitySettings.getNormalQuality();
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.NORMAL);
+
 barCodeReader.setQualitySettings(qualitySettings);
 
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 if (barCodeResults.length > 0) {
     BarCodeResult barCodeResult = barCodeResults[0];
-    System.out.println("Clean, NORMAL mode: " + barCodeResult.getCodeText());
+    System.out.println("NORMAL (clean input): " + barCodeResult.getCodeText());
 }
 ```
 
-Typical use cases:
+Recommended for:
 
-- back‑office processing with **mostly good**, but not perfect scans
-- scenarios where you prefer a **neutral default** – neither overly optimistic nor overly defensive
+- back‑office processing of scanned documents (invoices, shipping labels)
+- typical desktop scanners with reasonable but not perfect quality
+- applications where you want a good balance between throughput and robustness
 
-### 3.3. Low mode on clean image (overkill, but still valid)
+### 2.3. LOW quality mode – extra robustness for difficult cases
+
+Use `BarcodeQualityMode.LOW` when you expect **problematic images**: noise, faded print, partial occlusions, or low contrast.
 
 ```java
 String imagePath = "code128_clean.png";
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
-// Start from a robust preset designed for low-quality barcodes…
-QualitySettings qualitySettings = QualitySettings.getHighQuality();
-// …but tell the engine that the current image is actually low-quality:
+QualitySettings qualitySettings = QualitySettings.getHighQuality(); // robust preset
+// Tell the engine to expect low‑quality input and enable heavier methods
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
+
 barCodeReader.setQualitySettings(qualitySettings);
 
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
 if (barCodeResults.length > 0) {
     BarCodeResult barCodeResult = barCodeResults[0];
-    System.out.println("Clean, LOW mode (overkill): " + barCodeResult.getCodeText());
+    System.out.println("LOW (clean input, extra robust): " + barCodeResult.getCodeText());
 }
 ```
 
-Even though the image is clean:
-
-- we use `getHighQuality()` — a preset **designed for low‑quality barcodes**
-- and `BarcodeQualityMode.LOW` — an expectation of **poor input**
-
-This combination is effectively **over‑provisioned** for a clean image: it should still decode correctly, but at a higher CPU cost than necessary.
+Even on a clean image, `LOW` mode may still work, but it will usually be **slower** than `HIGH` or `NORMAL`.  
+This mode is intended for barcodes that are close to the readability limit.
 
 ---
 
-## 4. Quality mode on noisy images
+## 3. Quality mode on noisy images
 
-With noisy or degraded images, `BarcodeQualityMode` and presets become much more important.
+On noisy or degraded images, `BarcodeQualityMode` becomes more important.  
+By raising the mode from `HIGH` to `LOW`, you tell the engine to **spend more effort** trying to recover a valid result.
 
-### 4.1. Noisy image with HIGH mode (optimistic expectation)
+### 3.1. Noisy image with HIGH mode – faster, less robust
 
 ```java
 String imagePath = "code128_noisy.png";
@@ -176,70 +171,69 @@ String imagePath = "code128_noisy.png";
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
+// Expect reasonably good quality, even if some noise is present
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.HIGH);
+
 barCodeReader.setQualitySettings(qualitySettings);
 
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
-System.out.println("Noisy, HIGH mode: results=" + barCodeResults.length);
+System.out.println("Noisy, HIGH mode: results = " + barCodeResults.length);
 ```
 
-In the example test data, this configuration can still recognize the barcode, but conceptually it is **optimistic**:
+Use this configuration if:
 
-- we use a fast preset (`getHighPerformance()`)
-- and we tell the engine that the image quality is **high**
+- your noisy images are still largely readable
+- throughput is critical and an occasional failure is acceptable
+- you want to keep processing close to the “fast path”
 
-This is appropriate when:
-
-- the noise level is moderate
-- you want to keep latency low and are ready to tolerate some failures on very bad images
-
-### 4.2. Noisy image with LOW mode (defensive expectation)
+### 3.2. Noisy image with LOW mode – slower, more robust
 
 ```java
 String imagePath = "code128_noisy.png";
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
-// A more robust preset for low-quality images
 QualitySettings qualitySettings = QualitySettings.getHighQuality();
-// Tell the engine that this particular image is low-quality
+// Explicitly inform the engine that the image is low quality
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
 
 barCodeReader.setQualitySettings(qualitySettings);
 
 BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
-System.out.println("Noisy, LOW mode: results=" + barCodeResults.length);
+System.out.println("Noisy, LOW mode: results = " + barCodeResults.length);
 ```
 
-This combination is what you typically use for **difficult** barcodes:
+Compared to the previous example:
 
-- `getHighQuality()` preset is built specifically for **low‑quality / damaged** barcodes.
-- `BarcodeQualityMode.LOW` confirms that the engine should **expect trouble** and use heavier processing.
-
-In the sample tests, both HIGH and LOW modes recognize the noisy image, but LOW is the **safer choice** when you know that your inputs can be heavily degraded.
+- if `LOW` returns a result and `HIGH` does not, it means the image is near the quality threshold
+- you can decide whether it is acceptable to pay extra CPU time to rescue such inputs
 
 ---
 
-## 5. Combining presets with targeted overrides
+## 4. Combining presets with targeted overrides
 
-The example also shows how to combine a fast preset with additional hints for geometric properties such as X‑dimension.
+The strongest configuration is achieved by **combining**:
 
-Example: clean `CODE_128` with small modules and low quality mode.
+- a `QualitySettings` preset – describing the *general* robustness profile, and
+- `BarcodeQualityMode` – describing the *expected quality* of the current image, plus
+- additional hints such as `XDimensionMode` and `MinimalXDimension`.
+
+Example: clean `CODE_128` with small modules and a performance‑oriented preset.
 
 ```java
 String imagePath = "code128_clean.png";
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
-// Start from a performance-oriented preset
+// 1. Start from a fast preset
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
 
-// Hint that modules can be small and thin
+// 2. Hint the engine that modules are small
 qualitySettings.setXDimension(XDimensionMode.SMALL);
 qualitySettings.setMinimalXDimension(1.0f);
 
-// At the same time, we keep BarcodeQualityMode.LOW to be conservative on robustness
-qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
+// 3. Expected quality: average, not heavily degraded
+qualitySettings.setBarcodeQuality(BarcodeQualityMode.NORMAL);
 
 barCodeReader.setQualitySettings(qualitySettings);
 
@@ -250,43 +244,69 @@ if (barCodeResults.length > 0) {
 }
 ```
 
-Here:
+This pattern is useful when:
 
-- `getHighPerformance()` still keeps the base configuration fast.
-- `XDimensionMode.SMALL` + `MinimalXDimension(1.0f)` tell the engine to expect **small bar widths**.
-- `BarcodeQualityMode.LOW` says the barcode may be **hard to read**, so more work is allowed inside that preset.
+- you know something about your barcodes (for example, small X‑dimension)
+- you want to keep base settings fast (`getHighPerformance`)
+- but still provide the engine with enough hints to decode reliably
 
-This pattern is useful when you:
+---
 
-- know that barcodes are **physically small** (for example, on labels or parts)
-- expect **low resolution** or **noise**, but still want a performance‑oriented base configuration
+## 5. Interaction with QualitySettings presets
+
+`BarcodeQualityMode` works **together with** the main presets of `QualitySettings`:
+
+```java
+public static QualitySettings getNormalQuality() { return new QualitySettings(PresetType.NormalQuality); }
+public static QualitySettings getHighQuality()   { return new QualitySettings(PresetType.HighQuality); }
+public static QualitySettings getMaxQuality()    { return new QualitySettings(PresetType.MaxQuality); }
+```
+
+Conceptually:
+
+- `QualitySettings.getNormalQuality()` – baseline preset for **most barcodes**, balanced speed vs quality.
+- `QualitySettings.getHighQuality()` – preset designed for **low‑quality barcodes**, more robust algorithms, slower.
+- `QualitySettings.getMaxQuality()` – preset designed to recognize **all possible barcodes, including heavily damaged ones**, with maximum effort.
+
+Compared to that, `BarcodeQualityMode`:
+
+- does **not** define a full preset;
+- tells the engine how much additional robustness to enable **for the currently selected preset**, based on your **expectation about input quality**.
+
+This means:
+
+- you can use `getHighPerformance()` with `BarcodeQualityMode.HIGH` for **very fast processing** of clean barcodes;
+- or use `getHighQuality()` with `BarcodeQualityMode.LOW` for **maximum robustness** on extremely low‑quality images;
+- or stay at `getNormalQuality()` with `BarcodeQualityMode.NORMAL` for **typical scenarios**.
+
+Think of the relationship as:
+
+- **preset** = “how strong is the general recognition pipeline?”
+- **BarcodeQualityMode** = “what is the expected quality of *this* image, and how much extra work should we do for it?”
 
 ---
 
 ## 6. Practical recommendations
 
-When configuring `BarcodeQualityMode` and `QualitySettings` together:
+When configuring `BarcodeQualityMode` in real applications:
 
-1. **Choose a preset based on the general quality of your dataset:**
+- Start with:
+    - `QualitySettings.getNormalQuality()`, and
+    - `BarcodeQualityMode.NORMAL`.
+- Measure recognition speed and success rate on your **actual images** (both clean and degraded).
+- If some images fail due to noise or blur:
+    - try switching to `BarcodeQualityMode.LOW`, or
+    - move from `getHighPerformance()` to `getHighQuality()` / `getMaxQuality()` as presets.
+- If everything is recognized reliably and CPU usage is high:
+    - try using `BarcodeQualityMode.HIGH` on clean inputs, or
+    - replace `getHighQuality()` with `getNormalQuality()` or `getHighPerformance()`.
+- Use `XDimensionMode`, `MinimalXDimension`, and other hints when:
+    - barcodes are consistently small, or
+    - you work with a fixed camera or print resolution.
 
-    - mostly good images → start with `QualitySettings.getHighPerformance()` or `getNormalQuality()`
-    - many low‑quality / damaged barcodes → start with `QualitySettings.getHighQuality()`
-    - extremely difficult cases where you must recover everything, even incorrect symbols → try `QualitySettings.getMaxQuality()`
-
-2. **Then set `BarcodeQualityMode` according to the expected quality of the current image batch:**
-
-    - `BarcodeQualityMode.HIGH` – use when images are **clean and high‑quality**
-    - `BarcodeQualityMode.NORMAL` – use for **typical mixed** quality
-    - `BarcodeQualityMode.LOW` – use when images are **noisy, blurred, low‑contrast or damaged**
-
-3. **Measure on real data.**  
-   Use your own images (both clean and problematic) to find the sweet spot between robustness and speed.
-
-4. **Add targeted overrides only when needed.**  
-   Use hints like `setXDimension(...)` and `setMinimalXDimension(...)` when you know the approximate bar width or symbol size in pixels.
-
-All patterns in this article are demonstrated in the sample test class:
+All patterns demonstrated here come from the test class:
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/performance/QualityModeExample.java" target="_blank" rel="noopener noreferrer">QualityModeExample.java</a>
 
-Use it as a reference when tuning recognition quality and performance in your own Java applications.
+This class also contains helper code for generating **clean** and **noisy** `CODE_128` test images (for example, by adding Gaussian noise).  
+These fixtures are only used to emulate different input quality levels in automated tests and are **not required** in production code. In your own projects you will typically work with real images coming from scanners or cameras, while using `BarcodeQualityMode` and `QualitySettings` to tune recognition behavior.
