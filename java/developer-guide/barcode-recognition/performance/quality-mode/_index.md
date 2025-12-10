@@ -44,7 +44,7 @@ In the snippets below, variables like `imagePath` represent paths to barcode ima
 - `QualitySettings.getMaxQuality()` – **maximal robustness**, tries to recognize even very difficult or partially incorrect barcodes.
 - `QualitySettings.getHighPerformance()` – **speed-first** preset for clean and predictable inputs.
 
-`BarcodeQualityMode` is configured **on top of a preset** and describes the **expected barcode quality level**:
+`BarcodeQualityMode` is applied after selecting a QualitySettings preset and refines how the reader interprets the expected barcode quality level.
 
 - `BarcodeQualityMode.HIGH` – engine expects **high-quality symbols**, can follow the “lightest” path compatible with the preset.
 - `BarcodeQualityMode.NORMAL` – engine expects **medium quality**, uses a balanced path within the chosen preset.
