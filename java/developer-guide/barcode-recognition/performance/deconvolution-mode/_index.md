@@ -27,9 +27,91 @@ You can find the full source code on GitHub:
 
 In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
 
+
+## 1. DeconvolutionMode – blur and degradation handling
+
+`DeconvolutionMode` is an image restoration mode that defines the assumed level of image degradation.  
+It controls how strong deblurring and related preprocessing algorithms are, and therefore how much extra time the engine spends on image restoration.
+
+Supported values:
+
+| Mode                        | Description                                                                       | Typical scenario                               |
+|-----------------------------|-----------------------------------------------------------------------------------|------------------------------------------------|
+| `DeconvolutionMode.FAST`    | Lightweight restoration; minimal extra cost.                                     | Slight blur or almost clean images.            |
+| `DeconvolutionMode.NORMAL`  | Balanced restoration level.                                                      | Typical handheld photos with some blur/noise.  |
+| `DeconvolutionMode.SLOW`    | Strongest restoration pipeline; highest CPU cost, maximum robustness.           | Strong blur, motion blur, or heavy degradation.|
+
+Again, the pattern is:
+
+1. Pick a `QualitySettings` preset.
+2. Set the desired `DeconvolutionMode`.
+3. Apply `QualitySettings` to `BarCodeReader`.
+
+Example: configuring `FAST`, `NORMAL`, and `SLOW` for QR recognition.
+
+```java
+String imagePath = ExampleAssist.pathCombine(FOLDER, "qset_qr.png");
+
+// FAST: for clean or slightly blurred QR codes
+BarCodeReader fastDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
+QualitySettings fastDeconvolutionSettings = QualitySettings.getHighQuality();
+fastDeconvolutionSettings.setDeconvolution(DeconvolutionMode.FAST);
+fastDeconvolutionReader.setQualitySettings(fastDeconvolutionSettings);
+
+// NORMAL: default level for everyday mobile photos
+BarCodeReader normalDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
+QualitySettings normalDeconvolutionSettings = QualitySettings.getNormalQuality();
+normalDeconvolutionSettings.setDeconvolution(DeconvolutionMode.NORMAL);
+normalDeconvolutionReader.setQualitySettings(normalDeconvolutionSettings);
+
+// SLOW: strongest restoration for heavily blurred images
+BarCodeReader slowDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
+QualitySettings slowDeconvolutionSettings = QualitySettings.getHighQuality();
+slowDeconvolutionSettings.setDeconvolution(DeconvolutionMode.SLOW);
+slowDeconvolutionReader.setQualitySettings(slowDeconvolutionSettings);
+```
+
+Use a higher deconvolution level only when necessary, because it increases processing time.
+
 ---
 
-## 1. QualitySettings presets overview
+## 2. Combining presets with targeted overrides
+
+A common pattern is to:
+
+1. Start from a **fast preset**, such as `getHighPerformance()`.
+2. Apply targeted overrides for your specific scenario.
+
+For example, if you expect **small and low-quality 1D barcodes**:
+
+- enable detection of small modules via `XDimensionMode.SMALL`
+- set `MinimalXDimension` to the approximate minimal bar width in pixels
+- use `BarcodeQualityMode.LOW` and `DeconvolutionMode.SLOW` to improve robustness
+
+Example: tuning recognition for small, degraded Code 128 symbols.
+
+```java
+String imagePath = ExampleAssist.pathCombine(FOLDER, "qset_code128.png");
+
+BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
+
+QualitySettings qualitySettings = QualitySettings.getHighPerformance();
+qualitySettings.setXDimension(XDimensionMode.SMALL);
+qualitySettings.setMinimalXDimension(1.0f);
+qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
+qualitySettings.setDeconvolution(DeconvolutionMode.SLOW);
+
+barCodeReader.setQualitySettings(qualitySettings);
+```
+
+This configuration:
+
+- keeps the **overall preset** tuned for performance,
+- but adds **extra robustness** for tiny and degraded bars through explicit overrides.
+
+---
+
+## 3. QualitySettings presets overview
 
 `QualitySettings` provides ready-made presets that enable appropriate internal algorithms for typical scenarios:
 
@@ -43,7 +125,7 @@ You can use these presets as a **starting point** and then adjust details with `
 
 ---
 
-## 2. BarcodeQualityMode – quality analysis profile
+## 4. BarcodeQualityMode – quality analysis profile
 
 `BarcodeQualityMode` selects and enables recognition methods depending on the expected barcode quality.  
 For lower-quality barcodes it turns on heavier, more tolerant algorithms, which improves robustness but slows recognition.
@@ -56,8 +138,6 @@ Supported values:
 | `BarcodeQualityMode.HIGH`   | Lightweight checks assuming good print quality and clear edges.                                         | High-quality printed labels, synthetic test data. |
 | `BarcodeQualityMode.NORMAL` | Standard analysis for regular-quality images.                                                            | Most business documents and mobile photos.        |
 | `BarcodeQualityMode.LOW`    | Enables heavy and tolerant algorithms for damaged, low-contrast, or distorted barcodes.                 | Poor printing, fax/scans, degraded images.       |
-
-### 2.1 Using BarcodeQualityMode with Code 128
 
 The general pattern:
 
@@ -97,90 +177,6 @@ Use this pattern when you need to tune performance:
 
 ---
 
-## 3. DeconvolutionMode – blur and degradation handling
-
-`DeconvolutionMode` is an image restoration mode that defines the assumed level of image degradation.  
-It controls how strong deblurring and related preprocessing algorithms are, and therefore how much extra time the engine spends on image restoration.
-
-Supported values:
-
-| Mode                        | Description                                                                       | Typical scenario                               |
-|-----------------------------|-----------------------------------------------------------------------------------|------------------------------------------------|
-| `DeconvolutionMode.FAST`    | Lightweight restoration; minimal extra cost.                                     | Slight blur or almost clean images.            |
-| `DeconvolutionMode.NORMAL`  | Balanced restoration level.                                                      | Typical handheld photos with some blur/noise.  |
-| `DeconvolutionMode.SLOW`    | Strongest restoration pipeline; highest CPU cost, maximum robustness.           | Strong blur, motion blur, or heavy degradation.|
-
-### 3.1 Using DeconvolutionMode with QR codes
-
-Again, the pattern is:
-
-1. Pick a `QualitySettings` preset.
-2. Set the desired `DeconvolutionMode`.
-3. Apply `QualitySettings` to `BarCodeReader`.
-
-Example: configuring `FAST`, `NORMAL`, and `SLOW` for QR recognition.
-
-```java
-String imagePath = ExampleAssist.pathCombine(FOLDER, "qset_qr.png");
-
-// FAST: for clean or slightly blurred QR codes
-BarCodeReader fastDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
-QualitySettings fastDeconvolutionSettings = QualitySettings.getHighQuality();
-fastDeconvolutionSettings.setDeconvolution(DeconvolutionMode.FAST);
-fastDeconvolutionReader.setQualitySettings(fastDeconvolutionSettings);
-
-// NORMAL: default level for everyday mobile photos
-BarCodeReader normalDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
-QualitySettings normalDeconvolutionSettings = QualitySettings.getNormalQuality();
-normalDeconvolutionSettings.setDeconvolution(DeconvolutionMode.NORMAL);
-normalDeconvolutionReader.setQualitySettings(normalDeconvolutionSettings);
-
-// SLOW: strongest restoration for heavily blurred images
-BarCodeReader slowDeconvolutionReader = new BarCodeReader(imagePath, DecodeType.QR);
-QualitySettings slowDeconvolutionSettings = QualitySettings.getHighQuality();
-slowDeconvolutionSettings.setDeconvolution(DeconvolutionMode.SLOW);
-slowDeconvolutionReader.setQualitySettings(slowDeconvolutionSettings);
-```
-
-Use a higher deconvolution level only when necessary, because it increases processing time.
-
----
-
-## 4. Combining presets with targeted overrides
-
-A common pattern is to:
-
-1. Start from a **fast preset**, such as `getHighPerformance()`.
-2. Apply targeted overrides for your specific scenario.
-
-For example, if you expect **small and low-quality 1D barcodes**:
-
-- enable detection of small modules via `XDimensionMode.SMALL`
-- set `MinimalXDimension` to the approximate minimal bar width in pixels
-- use `BarcodeQualityMode.LOW` and `DeconvolutionMode.SLOW` to improve robustness
-
-Example: tuning recognition for small, degraded Code 128 symbols.
-
-```java
-String imagePath = ExampleAssist.pathCombine(FOLDER, "qset_code128.png");
-
-BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
-
-QualitySettings qualitySettings = QualitySettings.getHighPerformance();
-qualitySettings.setXDimension(XDimensionMode.SMALL);
-qualitySettings.setMinimalXDimension(1.0f);
-qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
-qualitySettings.setDeconvolution(DeconvolutionMode.SLOW);
-
-barCodeReader.setQualitySettings(qualitySettings);
-```
-
-This configuration:
-
-- keeps the **overall preset** tuned for performance,
-- but adds **extra robustness** for tiny and degraded bars through explicit overrides.
-
----
 
 ## 5. Practical guidelines
 
