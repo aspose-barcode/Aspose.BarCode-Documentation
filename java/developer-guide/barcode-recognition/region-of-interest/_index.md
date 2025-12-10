@@ -1,5 +1,5 @@
 ---
-title: "Region of Interest (ROI)"
+title: "Region of Interest"
 description: "Learn how to limit barcode recognition to specific regions in an image using BarCodeReader in Aspose.BarCode for Java."
 type: docs
 weight: 50
@@ -17,8 +17,6 @@ Typical scenarios for using ROI:
 - A barcode occupies a fixed area of a label or form.
 - Several different barcodes are placed in distinct regions of a single image.
 - You want to focus recognition on 1D or 2D barcodes in a specific part of the image.
-- You want to compare full-image recognition with targeted recognition inside a sub-region.
-- A barcode is offset inside a larger canvas (for example, centered with margins).
 
 All examples in this article are based on the sample class:
 
@@ -101,8 +99,15 @@ This pattern is well suited for structured documents and labels with multiple fi
 
 ## 4. Full-Image Scan vs ROI-Based Scan
 
-Sometimes it is useful to first scan the entire image to confirm that multiple barcodes are present,  
-and then perform ROI-based recognition to focus on a particular symbology in a known area.
+Region-of-interest (ROI) scanning lets you restrict recognition to a specific rectangle inside the image.  
+This is useful when you already know where a certain barcode type is printed (for example, a Data Matrix label in the bottom-left corner of a form).
+
+In practice, you typically use a **full-image scan only during testing or layout calibration** to understand which barcodes are present and where they are located.  
+Once the layout is known, you switch to **ROI-based recognition** in production code to:
+
+- speed up recognition,
+- ignore unrelated barcodes in other parts of the image,
+- focus on a specific symbology in a known area.
 
 ```java
 BarCodeReader fullReader =
@@ -110,18 +115,11 @@ BarCodeReader fullReader =
 BarCodeResult[] fullResults = fullReader.readBarCodes();
 
 Rectangle dataMatrixArea = new Rectangle(10, 190, 230, 230);
-BarCodeReader roiReader =
-        new BarCodeReader(getFullPath("roi_canvas.png"), dataMatrixArea, DecodeType.DATA_MATRIX);
+BarCodeReader roiReader = new BarCodeReader(getFullPath("roi_canvas.png"), dataMatrixArea, DecodeType.DATA_MATRIX);
 BarCodeResult[] roiResults = roiReader.readBarCodes();
 ```
-
-Here:
-
-- The full-image reader uses `DecodeType.ALL_SUPPORTED_TYPES` to detect all possible barcodes on the canvas.
-- The ROI reader is restricted to a rectangle that contains a Data Matrix symbol and uses `DecodeType.DATA_MATRIX`.
-- This combination lets you:
-    - verify the overall content of the image,
-    - and then focus on a specific region and symbology for more precise processing.
+In this example, the full-image scan can be used during development to confirm that a Data Matrix symbol exists on the canvas.
+After you determine its location (dataMatrixArea), the ROI-based reader focuses only on that region and only on DecodeType.DATA_MATRIX.
 
 ---
 
@@ -152,8 +150,6 @@ By providing one or more `Rectangle` instances to the constructor, you can:
 - Speed up recognition on large or complex images.
 - Reduce the influence of background noise and unrelated content.
 - Combine ROIs with type groups like `TYPES_1D` and `TYPES_2D`.
-- Compare full-image scanning with focused recognition in specific zones.
-- Work effectively with layouts where barcodes are placed away from the image origin.
 
 All ROI examples shown here are based on:
 
