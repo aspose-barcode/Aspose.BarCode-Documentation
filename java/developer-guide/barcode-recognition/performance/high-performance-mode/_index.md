@@ -184,7 +184,7 @@ When to use `QualitySettings.getHighPerformance()`:
 - You need **throughput**:
     - scanning many items per second,
     - minimizing CPU usage on the server or mobile device.
-- You are ready to **tune type filters** (`DecodeType`) and generation parameters (`XDimension`, bar height, etc.).
+- You are ready to **tune type filters** (`DecodeType`).
 
 When you might prefer `getNormalQuality()` or `getHighQuality()`:
 
