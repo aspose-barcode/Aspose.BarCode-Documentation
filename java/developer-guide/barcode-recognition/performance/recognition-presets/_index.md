@@ -107,10 +107,9 @@ Key points:
 
 ## 3. MaxQuality on clean images (thorough analysis)
 
-`MaxQuality` enables the most exhaustive set of recognition procedures.  
-Even though it is **not required** for clean images, running it on the same test input helps illustrate the trade-off: **higher robustness potential vs longer processing time**.
+`MaxQuality` enables the most exhaustive set of recognition procedures.
 
-Example: using `MaxQuality` on a similar clean Code 128 image.
+Example: using `MaxQuality` on a clean Code 128 image.
 
 ```java
 String fileName = "code128_max_quality.png";
@@ -126,6 +125,7 @@ barCodeReader.setQualitySettings(qualitySettings);
 
 ExampleAssist.assertRecognized(barCodeReader, fileName, 1, DecodeType.CODE_128);
 ```
+> Note to example: even though MaxQuality is not required for clean images, running it on the same test input helps illustrate the trade-off: higher robustness potential vs longer processing time.
 
 Recommendations:
 

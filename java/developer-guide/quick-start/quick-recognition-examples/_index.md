@@ -1345,5 +1345,5 @@ Start with HighPerformance, increase only if needed.
 
 - Learn about [barcode generation](/java/developer-guide/barcode-generation/)
 - Explore [advanced recognition features](/java/developer-guide/barcode-recognition/advanced/)
-- Read about [quality settings](/java/developer-guide/barcode-recognition/quality-settings/)
+- Read about [quality settings](/java/developer-guide/barcode-recognition/performance/quality-settings/)
 - Study [specific barcode types](/java/developer-guide/barcode-recognition/symbologies/)
