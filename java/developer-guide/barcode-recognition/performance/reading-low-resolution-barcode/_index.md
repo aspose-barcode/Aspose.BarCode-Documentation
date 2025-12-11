@@ -15,8 +15,11 @@ This article explains how to read low-resolution Code 128 barcodes in Aspose.Bar
 
 - `QualitySettings` presets (HighPerformance, NormalQuality, HighQuality)
 - `BarcodeQualityMode` (HIGH / NORMAL / LOW)
-- `XDimensionMode` and `setMinimalXDimension(float)`
+- `XDimensionMode.USE_MINIMAL_X_DIMENSION` and `setMinimalXDimension(float)`
 - proper barcode generation (crisp rendering, explicit width, quiet zones)
+
+> Important: The `MinimalXDimension` value is taken into account **only when** `XDimensionMode` is set to `USE_MINIMAL_X_DIMENSION`.  
+> For all other XDimension modes (such as `SMALL`, `NORMAL`, or `LARGE`), the engine ignores `MinimalXDimension` and uses the built-in preset module width.
 
 All code samples are based on the test class:
 
@@ -130,17 +133,17 @@ Here:
 At **80 px width**, module width approaches 1–2 pixels and correctly detecting bars becomes harder.  
 This is where **X-dimension hints** and **quality mode** start to matter.
 
-### 4.1 HighPerformance + SMALL XDimension + MinimalXDimension
+### 4.1 HighPerformance + USE_MINIMAL_X_DIMENSION + MinimalXDimension
 
 ```java
 @Test
-public void read_Code128_Width80_PerformancePreset_SmallXDim_HighQualityMode() throws Exception {
+public void read_Code128_Width80_PerformancePreset_MinimalXDim_HighQualityMode() throws Exception {
     BarCodeReader barCodeReader = new BarCodeReader(
             ExampleAssist.pathCombine(FOLDER, FILE_CODE128_LOWRES_WIDTH_80), DecodeType.CODE_128);
 
     QualitySettings qualitySettings = QualitySettings.getHighPerformance();
-    qualitySettings.setXDimension(XDimensionMode.SMALL);
-    qualitySettings.setMinimalXDimension(1.0f); // expected minimal module width in pixels
+    qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION); // enable MinimalXDimension hint
+    qualitySettings.setMinimalXDimension(1.0f);                            // expected minimal module width in pixels
     qualitySettings.setBarcodeQuality(BarcodeQualityMode.HIGH);
     barCodeReader.setQualitySettings(qualitySettings);
 
@@ -150,11 +153,11 @@ public void read_Code128_Width80_PerformancePreset_SmallXDim_HighQualityMode() t
 
 Important parameters:
 
-- `setXDimension(XDimensionMode.SMALL)`  
-  Tells the engine to **search for small modules** (thin bars).
+- `setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)`  
+  Switches the detector into a mode where `MinimalXDimension` is taken into account.
 
 - `setMinimalXDimension(1.0f)`  
-  Provides a **lower bound** (in pixels) for expected module size. This guides internal detectors and filters.
+  Provides a **heuristic lower bound** (in pixels) for expected module size. The engine treats modules thinner than `MinimalXDimension` as unlikely candidates and prioritizes detection around this scale and above.
 
 - `BarcodeQualityMode.HIGH`  
   Enables more robust preprocessing, which helps when bars are only 1–2 pixels wide.
@@ -196,7 +199,7 @@ Modules are roughly 1 pixel wide, and even slight blur or interpolation can brea
 
 The example demonstrates two **edge-case positive** scenarios — they show what is possible, not what is universally guaranteed.
 
-### 5.1 HighQuality preset + SMALL XDimension + HIGH quality mode
+### 5.1 HighQuality preset + USE_MINIMAL_X_DIMENSION + HIGH quality mode
 
 ```java
 @Test
@@ -205,7 +208,7 @@ public void read_Code128_Width40_Negative_TooSmallEvenWhenCrisp() throws Excepti
             ExampleAssist.pathCombine(FOLDER, FILE_CODE128_LOWRES_WIDTH_40), DecodeType.CODE_128);
 
     QualitySettings qualitySettings = QualitySettings.getHighQuality();
-    qualitySettings.setXDimension(XDimensionMode.SMALL);
+    qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
     qualitySettings.setMinimalXDimension(1.0f);
     qualitySettings.setBarcodeQuality(BarcodeQualityMode.HIGH);
     barCodeReader.setQualitySettings(qualitySettings);
@@ -217,7 +220,7 @@ public void read_Code128_Width40_Negative_TooSmallEvenWhenCrisp() throws Excepti
 Behavior:
 
 - `getHighQuality()` enables a **heavier** recognition pipeline.
-- SMALL XDimension + MinimalXDimension strongly bias detection towards very small modules.
+- `XDimensionMode.USE_MINIMAL_X_DIMENSION` together with `MinimalXDimension` strongly bias detection towards very small modules of around 1 px.
 - `BarcodeQualityMode.HIGH` makes the engine more tolerant to borderline cases.
 
 This is the **most tolerant** configuration in this example and shows that even extremely small symbols can be decoded **if**:
@@ -269,13 +272,13 @@ Based on the patterns in `ReadingLowResolutionBarcodeExample`:
 
 3. **For small symbols (≈ 80 px)**
     - Enable X-dimension hints:
-        - `setXDimension(XDimensionMode.SMALL);`
+        - `setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);`
         - `setMinimalXDimension(1.0f);`
     - Use at least `BarcodeQualityMode.HIGH` on a suitable preset.
 
 4. **For extremely small symbols (≈ 40 px)**
     - Use **HighQuality** preset plus:
-        - `XDimensionMode.SMALL`,
+        - `XDimensionMode.USE_MINIMAL_X_DIMENSION`,
         - `MinimalXDimension` around 1.0 px,
         - `BarcodeQualityMode.HIGH`.
     - Understand that this is near the physical resolution limit; any blur or scaling can make such barcodes unreadable.
