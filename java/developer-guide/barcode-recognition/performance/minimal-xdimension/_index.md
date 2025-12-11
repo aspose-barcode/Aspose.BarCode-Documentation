@@ -131,7 +131,7 @@ public void read_Code128_X1_with_MinimalX_2px_should_be_stricter() throws Except
 
     QualitySettings qualitySettings = QualitySettings.getHighQuality();
     qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
-    qualitySettings.setMinimalXDimension(2.0f); // prefer bars at least 2 px wide
+    qualitySettings.setMinimalXDimension(2.0f); // assume modules thinner than 2 px are unlikely
     barCodeReader.setQualitySettings(qualitySettings);
 
     ExampleAssist.assertRecognized(barCodeReader, currentMethodName(), 1, DecodeType.CODE_128);
