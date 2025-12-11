@@ -219,7 +219,7 @@ String imagePath = "code128_clean.png";
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
-qualitySettings.setXDimension(XDimensionMode.SMALL);
+qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
 qualitySettings.setMinimalXDimension(1.0f);
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
 barCodeReader.setQualitySettings(qualitySettings);
@@ -234,7 +234,7 @@ if (barCodeResults.length > 0) {
 Here:
 
 - `getHighPerformance()` provides a fast baseline,
-- `setXDimension(XDimensionMode.SMALL)` and `setMinimalXDimension(1.0f)` tell the engine that bar widths may be very small,
+- `setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)` and `setMinimalXDimension(1.0f)` tell the engine that bar widths may be very small,
 - `BarcodeQualityMode.LOW` says that barcodes may be low quality (weak / noisy), so the recognition path should be tolerant even though the preset is speed-oriented.
 
 Use this approach when:
