@@ -2,7 +2,7 @@
 title: "Recognition Presets"
 description: "Learn how to use recognition presets"
 type: docs
-weight: 80
+weight: 10
 url: /java/developer-guide/barcode-recognition/performance/recognition-presets
 ---
 
