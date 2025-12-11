@@ -343,7 +343,6 @@ Example: verifying preset defaults and applying partial overrides:
 // Inspect NormalQuality defaults
 QualitySettings normal = QualitySettings.getNormalQuality();
 Assert.assertEquals(normal.getXDimension(), XDimensionMode.NORMAL);
-Assert.assertEquals(normal.getMinimalXDimension(), 1.0f);
 Assert.assertEquals(normal.getBarcodeQuality(), BarcodeQualityMode.NORMAL);
 Assert.assertEquals(normal.getDeconvolution(), DeconvolutionMode.NORMAL);
 Assert.assertEquals(normal.getInverseImage(), InverseImageMode.DISABLED);
