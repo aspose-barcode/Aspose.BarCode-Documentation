@@ -2,7 +2,7 @@
 title: "Quality Settings"
 description: "Learn how to use QualitySettings presets and fine-tune recognition parameters in Aspose.BarCode for Java."
 type: docs
-weight: 70
+weight: 20
 url: /java/developer-guide/barcode-recognition/quality-settings
 ---
 

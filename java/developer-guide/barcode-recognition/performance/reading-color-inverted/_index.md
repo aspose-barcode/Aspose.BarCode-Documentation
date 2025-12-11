@@ -2,7 +2,7 @@
 title: "Reading Color-Inverted Barcodes"
 description: "Learn how to enable and use InverseImageMode to read barcodes on color-inverted (white-on-black) images in Aspose.BarCode for Java."
 type: docs
-weight: 50
+weight: 90
 url: /java/developer-guide/barcode-recognition/performance/reading-color-inverted
 ---
 

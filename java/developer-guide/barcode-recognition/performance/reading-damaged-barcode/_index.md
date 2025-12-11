@@ -2,7 +2,7 @@
 title: "Reading Damaged Barcode"
 description: "Learn how to read damaged barcode"
 type: docs
-weight: 60
+weight: 70
 url: /java/developer-guide/barcode-recognition/performance/reading-damaged-barcode
 ---
 

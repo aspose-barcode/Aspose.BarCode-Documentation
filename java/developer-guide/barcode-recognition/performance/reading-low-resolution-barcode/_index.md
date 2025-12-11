@@ -2,7 +2,7 @@
 title: "Reading Low-Resolution Barcode"
 description: "Learn how to read low-resolution barcodes in Aspose.BarCode for Java using QualitySettings and X-dimension hints."
 type: docs
-weight: 70
+weight: 80
 url: /java/developer-guide/barcode-recognition/performance/reading-low-resolution-barcode
 ---
 

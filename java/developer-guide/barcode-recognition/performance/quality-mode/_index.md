@@ -2,7 +2,7 @@
 title: "Barcode Quality Mode"
 description: "Learn how to describe expected barcode quality with BarcodeQualityMode and combine it with QualitySettings presets in Aspose.BarCode for Java."
 type: docs
-weight: 20
+weight: 50
 url: /java/developer-guide/barcode-recognition/performance/quality-mode
 ---
 
