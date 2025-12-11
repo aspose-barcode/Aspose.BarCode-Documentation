@@ -15,6 +15,8 @@ These controls are exposed through:
 - `BarcodeQualityMode` – selects recognition methods depending on the expected barcode quality (heavier methods for low-quality codes)
 - `DeconvolutionMode` – deconvolution (image restoration) mode that defines the assumed level of image degradation and the strength of blur-reduction algorithms
 - Targeted overrides such as `XDimensionMode` and `setMinimalXDimension(...)`
+  (used together with `XDimensionMode.USE_MINIMAL_X_DIMENSION` when you need an explicit minimal module size)
+
 
 
 All examples in this article are based on the sample class:
@@ -84,8 +86,7 @@ A common pattern is to:
 
 For example, if you expect **small and low-quality 1D barcodes**:
 
-- enable detection of small modules via `XDimensionMode.SMALL`
-- set `MinimalXDimension` to the approximate minimal bar width in pixels
+- enable detection of small modules via `XDimensionMode.SMALL` (heuristic mode, without MinimalXDimension),
 - use `BarcodeQualityMode.LOW` and `DeconvolutionMode.SLOW` to improve robustness
 
 Example: tuning recognition for small, degraded Code 128 symbols.
@@ -97,7 +98,6 @@ BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
 qualitySettings.setXDimension(XDimensionMode.SMALL);
-qualitySettings.setMinimalXDimension(1.0f);
 qualitySettings.setBarcodeQuality(BarcodeQualityMode.LOW);
 qualitySettings.setDeconvolution(DeconvolutionMode.SLOW);
 
