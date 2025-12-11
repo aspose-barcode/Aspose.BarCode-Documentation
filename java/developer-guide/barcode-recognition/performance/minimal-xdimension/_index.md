@@ -14,14 +14,15 @@ Aspose.BarCode for Java exposes this through:
 
 - `QualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)`
 - `QualitySettings.setMinimalXDimension(float minimalXDimension)`
-> Important : The `MinimalXDimension` value is taken into account **only when** `XDimensionMode` is set to `USE_MINIMAL_X_DIMENSION`.  
-  For all other XDimension modes (such as `SMALL`, `NORMAL`, or `LARGE`), the engine ignores `MinimalXDimension` and uses the built-in preset module width.
 
+> Important: The `MinimalXDimension` value is taken into account **only when** `XDimensionMode` is set to `USE_MINIMAL_X_DIMENSION`.  
+> For all other XDimension modes (such as `SMALL`, `NORMAL`, or `LARGE`), the engine ignores `MinimalXDimension` and uses the built-in preset module width.
 
 Together these parameters tell the engine:
 
-> Treat modules thinner than minimalXDimension pixels as unlikely candidates
-and prioritize detection around this scale and above.
+> Treat modules thinner than `minimalXDimension` pixels as unlikely candidates  
+> and prioritize detection around this scale and above.
+
 
 This article explains how to use these properties based on the sample test class:
 
