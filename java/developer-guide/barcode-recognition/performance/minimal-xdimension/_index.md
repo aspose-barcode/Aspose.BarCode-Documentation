@@ -14,11 +14,14 @@ Aspose.BarCode for Java exposes this through:
 
 - `QualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)`
 - `QualitySettings.setMinimalXDimension(float minimalXDimension)`
+> Important : The `MinimalXDimension` value is taken into account **only when** `XDimensionMode` is set to `USE_MINIMAL_X_DIMENSION`.  
+  For all other XDimension modes (such as `SMALL`, `NORMAL`, or `LARGE`), the engine ignores `MinimalXDimension` and uses the built-in preset module width.
+
 
 Together these parameters tell the engine:
 
-> “Do not search for modules thinner than `minimalXDimension` pixels.  
-> Focus recognition on modules at least this wide.”
+> Treat modules thinner than minimalXDimension pixels as unlikely candidates
+and prioritize detection around this scale and above.
 
 This article explains how to use these properties based on the sample test class:
 
@@ -200,7 +203,7 @@ General recommendations:
 `MinimalXDimension` is a powerful tuning parameter for recognition in Aspose.BarCode for Java:
 
 - It acts as a **lower bound** for module size in pixels.
-- It is enabled via `XDimensionMode.USE_MINIMAL_X_DIMENSION` in `QualitySettings`.
+- It is **only applied** when `XDimensionMode.USE_MINIMAL_X_DIMENSION` is set in `QualitySettings`. For all other modes the hint is ignored.
 - It can help:
     - detect **very small** symbols when set to a low value (for example, `1.0f`),
     - or **filter out** unrealistic thin patterns when set higher (for example, `2.0f` or more).
