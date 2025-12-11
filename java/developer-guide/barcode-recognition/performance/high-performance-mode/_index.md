@@ -2,7 +2,7 @@
 title: "High Performance Mode"
 description: "Learn how to use the High Performance quality preset in Aspose.BarCode for Java recognition."
 type: docs
-weight: 30
+weight: 10
 url: /java/developer-guide/barcode-recognition/performance/high-performance-mode
 ---
 

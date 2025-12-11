@@ -2,7 +2,7 @@
 title: "Deconvolution Mode"
 description: "Learn how to use deconvolution mode to recognize blurred and out-of-focus barcodes in Aspose.BarCode for Java."
 type: docs
-weight: 20
+weight: 30
 url: /java/developer-guide/barcode-recognition/performance/deconvolution-mode
 ---
 
