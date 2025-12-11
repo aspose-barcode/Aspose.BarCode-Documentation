@@ -1,5 +1,5 @@
 ---
-title: Quality Settings
+title: "Quality Settings"
 description: "Learn how to use QualitySettings presets and fine-tune recognition parameters in Aspose.BarCode for Java."
 type: docs
 weight: 70
@@ -228,10 +228,8 @@ Key points:
 ## 8. Tiny barcodes and minimal X-dimension
 
 For very small barcodes, the physical bar width (module size) in pixels is close to 1–2 px.  
-To make the detector more robust in such scenarios, you can:
+To make the detector more robust in such scenarios, you can specify minimal expected module width in pixels: `setMinimalXDimension(float value)`.
 
-- hint that bars are small: `setXDimension(XDimensionMode.SMALL)`
-- specify minimal expected module width in pixels: `setMinimalXDimension(float value)`
 
 Example: reading a very small Code 128 symbol:
 
@@ -239,7 +237,7 @@ Example: reading a very small Code 128 symbol:
 String imagePath = imagesFolder + "/code128_small.png";
 
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
-qualitySettings.setXDimension(XDimensionMode.SMALL);
+qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
 qualitySettings.setMinimalXDimension(1.0f);
 
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
@@ -251,8 +249,8 @@ ExampleAssist.assertRecognized(barCodeReader, "code128_small.png", 1, DecodeType
 Recommendations:
 
 - `MinimalXDimension` should roughly match the smallest bar width in your images.
-- For dense barcodes on screens or small labels, use `XDimensionMode.SMALL` together with a realistic minimal value.
-
+- Important: MinimalXDimension is taken into account only when XDimensionMode.USE_MINIMAL_X_DIMENSION is set.
+  For all other XDimension modes (SMALL, NORMAL, LARGE), the engine ignores this hint and uses the preset module width.
 ---
 
 ## 9. Forcing low quality mode for hard images
@@ -369,11 +367,11 @@ Then build a custom profile based on a preset:
 
 ```java
 QualitySettings custom = QualitySettings.getHighPerformance();
-
-// Partial overrides for a specific scenario
 custom.setInverseImage(InverseImageMode.ENABLED);   // support inverse images
 custom.setAllowIncorrectBarcodes(true);             // allow partially damaged codes
+custom.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION); // enable MinimalXDimension hint
 custom.setMinimalXDimension(2.5f);                  // adjust minimal bar width
+
 
 String imagePath = imagesFolder + "/code128_custom.png";
 BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
@@ -403,7 +401,7 @@ This pattern is recommended when you need a **stable base profile** (preset) wit
     - `getMaxQuality()` for the hardest inputs and complex backgrounds
 - Use fine-tuning options to adapt recognition to your data:
     - `setInverseImage(...)` for light-on-dark or inverted images
-    - `setXDimension(...)` and `setMinimalXDimension(...)` for tiny modules
+    - `setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)` together with `setMinimalXDimension(...)` for tiny modules
     - `setBarcodeQuality(...)` for low-quality inputs
     - `setComplexBackground(...)` for non-uniform backgrounds
     - `setAllowIncorrectBarcodes(true)` when you want to capture partially damaged symbols
