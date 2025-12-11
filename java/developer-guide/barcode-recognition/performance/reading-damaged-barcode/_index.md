@@ -94,7 +94,7 @@ BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 QualitySettings qualitySettings = QualitySettings.getHighPerformance();
 
 // Hint that bars can be very small
-qualitySettings.setXDimension(XDimensionMode.SMALL);
+qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
 qualitySettings.setMinimalXDimension(1.0f);
 
 // Still use LOW quality for noisy / weak bars
@@ -112,7 +112,6 @@ ExampleAssist.assertRecognized(
 
 What this configuration does:
 
-- `XDimensionMode.SMALL` tells the engine to **search for small bars / modules**.
 - `setMinimalXDimension(1.0f)` expresses that you expect bar width to be as small as **1 pixel**.
 - `BarcodeQualityMode.LOW` again enables heavier processing to help with noise.
 
@@ -148,7 +147,7 @@ QualitySettings qualitySettings = QualitySettings.getHighQuality();
 qualitySettings.setDeconvolution(DeconvolutionMode.SLOW);
 
 // Hint that modules can be small if needed
-qualitySettings.setXDimension(XDimensionMode.SMALL);
+qualitySettings.setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION);
 qualitySettings.setMinimalXDimension(1.0f);
 
 barCodeReader.setQualitySettings(qualitySettings);
@@ -220,7 +219,7 @@ When working with damaged barcodes (noise, blur, small modules), consider the fo
     - `DeconvolutionMode.SLOW` — heavily blurred or difficult captures.
 
 4. **Hint expected bar/module size with X-dimension settings**
-    - `setXDimension(XDimensionMode.SMALL)` and `setMinimalXDimension(...)` help for **tiny barcodes**.
+    - `setXDimension(XDimensionMode.USE_MINIMAL_X_DIMENSION)` and `setMinimalXDimension(...)` help for **tiny barcodes**.
     - Do not set `MinimalXDimension` too small if your images are not tiny — it may slow recognition.
 ---
 
