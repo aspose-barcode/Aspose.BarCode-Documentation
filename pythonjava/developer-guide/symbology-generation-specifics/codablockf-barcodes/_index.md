@@ -2,6 +2,8 @@
 title: Codablock-F Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Python to generate Codablock-F barcodes"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 130
 url: /python-java/generate-codablockf/
 ---

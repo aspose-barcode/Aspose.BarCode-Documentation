@@ -4,6 +4,8 @@ linktitle: Patch Code
 type: docs
 description: "Aspose.BarCode for Python via .NET enables Patch Code barcode generation"
 keywords: Generate Patch Code Barcodes, Create Patch Code, How to Generate Patch Code Barcodes, Aspose.BarCode for Python
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 140
 url: /python-net/generate-patch-code/
 

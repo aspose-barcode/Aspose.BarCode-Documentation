@@ -2,6 +2,8 @@
 title: Generate DotCode Barcodes in C#
 linktitle: DotCode
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 feedback: BARCODECOM
 url: /net/dotcode-barcodes/

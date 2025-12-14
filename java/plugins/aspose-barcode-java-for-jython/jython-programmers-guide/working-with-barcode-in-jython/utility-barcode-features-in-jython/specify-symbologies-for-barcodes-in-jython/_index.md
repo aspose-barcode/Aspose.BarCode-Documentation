@@ -1,6 +1,8 @@
 ---
 title: Specify Symbologies for Barcodes in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /java/specify-symbologies-for-barcodes-in-jython/
 ---

@@ -4,6 +4,8 @@ linktitle: Load custom fonts for barcode generation
 description: "How to Load custom fonts for barcode generation in Aspose.Barcode for .Net"
 keywords: "Aspose Barcode, aspose barcode library, .Net Standard, .Net Core, Custom Font"
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 feedback: BARCODECOM
 url: /net/aspose-barcode-load-fonts/

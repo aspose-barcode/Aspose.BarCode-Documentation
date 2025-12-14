@@ -3,6 +3,8 @@ title: Integration with Aspose Libraries
 description: "How to Integrate Aspose.BarCode with Other Aspose Products"
 keywords:
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 feedback: BARCODECOM
 url: /net/integration-with-aspose-libraries/

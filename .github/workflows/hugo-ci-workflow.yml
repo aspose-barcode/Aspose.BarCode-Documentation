@@ -1,5 +1,6 @@
 name: Hugo-CI
 on:
+  workflow_dispatch:
   push:
     branches: [ master, qa ]
     paths-ignore:
@@ -23,7 +24,7 @@ jobs:
           rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/barcode
-          rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
+          rsync --recursive --delete --force -e "ssh -o StrictHostKeyChecking=no" --progress public/ ${{ secrets.TRANSFERPATH }}
       - name: hugo deploy
         uses: appleboy/ssh-action@master
         with:

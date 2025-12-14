@@ -2,6 +2,8 @@
 title: Generate Data Matrix Barcodes
 linktitle: Data Matrix
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /python-net/generate-datamatrix-barcode/
 ---

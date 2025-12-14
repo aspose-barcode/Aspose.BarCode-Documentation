@@ -3,6 +3,8 @@ title: Customize Barcode Appearance in C++
 linktitle: Customize Barcode Appearance
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 description: "How to Adjust Barcode Appearance-Related Properties in Aspose.BarCode for C++"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Appearance, Barcode Appearance in Aspose.BarCode for C++, Work with Barcode Image in Aspose.BarCode for C++, Generate Barcodes in Aspose.BarCode"

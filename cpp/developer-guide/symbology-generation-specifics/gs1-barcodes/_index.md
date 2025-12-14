@@ -2,6 +2,8 @@
 title: GS1 Barcode Standards
 linktitle: GS1 Barcodes
 type: docs
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /cpp/gs1-barcodes/

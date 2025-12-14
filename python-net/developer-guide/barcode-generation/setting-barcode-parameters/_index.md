@@ -2,6 +2,8 @@
 title: Set Barcode Size and Resolution in Python via .NET
 linktitle: Set Barcode Size and Resolution
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 description: "How to Manage Barcode Parameters in Aspose.BarCode for Python"
 keywords: "Generate Barcodes, Customize Barcode Image, Barcode Size Units in Aspose.BarCode for Python, Work with Barcode Image in Aspose.BarCode for Python, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.Barcode"

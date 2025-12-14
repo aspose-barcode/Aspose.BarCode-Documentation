@@ -1,6 +1,8 @@
 ---
 title: Set Code Text for BarCode in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/set-code-text-for-barcode-in-ruby/
 ---

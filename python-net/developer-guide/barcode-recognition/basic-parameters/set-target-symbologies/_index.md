@@ -4,6 +4,8 @@ linktitle: Set Target Barcode Types
 type: docs
 description: "This Article Describes How to Set Target Barcode Types for Recognition"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcode Python"
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /python-net/set-target-barcode-types/
 ---

@@ -1,46 +1,70 @@
 ---
 title: Product Overview
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /nodejsjava/product-overview/
 
 ---
+# Aspose.BarCode for Node.js via Java
 
-***Aspose.BarCode for Node.js via Java*** is a robust and reliable barcode generation and recognition component written in Java that allows developers to quickly and easily add barcode generation and recognition functionality to Java applications.
+**Aspose.BarCode for Node.js via Java** is a powerful and reliable component for barcode generation and recognition,
+developed using Node.js and Java.
+It enables developers to quickly and easily integrate barcode functionality into Node.js applications.
 
-This article presents ***Aspose.BarCode for Node.js via Java*** and its main features, including some important technical details. You can get information about its functionality, input and output image formats, important classes, and supported platforms.
+## Product Description
 
-## **Product Description**
-***Aspose.BarCode for Node.js via Java*** has many characteristics that make it a flexible and easy-to-use tool. It is a fully functional library that provides both generation and reading functionality. Generated barcodes can be saved in five high-quality raster image formats and two vector ones. The other advantage is that the library facilitates decoding even low-quality or damaged barcode images. Therefore, it enables high recognition efficiency for most of the supported symbologies. There are no printing limitations for barcodes generated through the Aspose.BarCode library. Developers can utilize any type of printers. The quality of printed barcode images will depend only on the resolution of a printer.
+**Aspose.BarCode for Node.js via Java** is a versatile library designed to streamline barcode processing tasks in
+Node.js applications via Java. It offers robust capabilities for generating and recognizing both 1D (one-dimensional)
+and 2D (two-dimensional) barcode types at any angle—quickly and efficiently.
 
-The barcode library provides fully featured demos and working examples written in Java to provide developers with a better understanding of our product. Using these demos, developers can quickly test functionality provided by Aspose.BarCode.
+This library supports over **80 barcode symbologies**, fully compatible with most industry standards and specifications.
 
-### **Main Features**
-***Aspose.BarCode for Node.js via Java*** benefits from a great variety of features that can serve to address various business needs. One of the most important functions is the customization of barcode appearance-related properties, including barcode size, color of barcode elements, rotation angle, image quality, X-dimension, resolution, text captions, and many others. Moreover, rich barcode reading and imaging functionality is available.  
-  
-The most important features are the following: 
-- Barcode generation and recognition for over 60 barcode types
-- Reading barcodes at any angle and from images of any quality
-- Customization of barcode appearance (size, height, resolution, color, rotation angle, text label and captions, X-dimension, wide-to-narrow-ratio, and others)
-- Optimization of recognition engine variables to achieve the desired trade-off between reading accuracy and speed
-- Target scanning region selection
-- Barcode generation using special modes, such as ECI, error correction, or embedded metadata
-- Image rotation at any angle 
-- Saving to or loading from stream or file 
-- Encoding and decoding non-English characters in 2D types
+A comprehensive list of supported barcode types is available in <a href="/barcode/nodejsjava/barcode-types/" target="_blank">Supported Barcode Types</a>.
 
-The list of all features can be found in [**Product Features**](https://docs.aspose.com/barcode/nodejsjava/features/).
+The most important features are the following:
+- **Barcode generation and recognition** for 80+ barcode types
+- **Reading barcodes** at any angle and from images of various quality levels
+- **Customizing barcode appearance**, including size, height, resolution, colors, rotation angle, text labels, captions,
+  X-dimension, wide-to-narrow ratio, and more
+- **Optimizing recognition engine settings** to balance accuracy and speed
+- **Selecting a specific scanning region** for targeted barcode detection
+- **Generating barcodes with special modes**, such as ECI, error correction, and embedded metadata
+- **Rotating images** at any angle
+- **Saving and loading barcodes** from files or data streams
+- **Encoding and decoding non-ASCII characters** in 2D barcode formats
+  See <a href="/barcode/nodejsjava/features/" target="_blank">The List of Product Features</a> for more details.
 
-## **System Compatibility**
-***Aspose.BarCode for Node.js via Java*** is a platform-independent API that can be run on any platform (Windows, Linux, etc.) where Node.js and Java Bridge are installed.
+The fully functional library can be downloaded for evaluation:
 
-## **Supported Platforms**
-- Java Standard Edition 1.4 or greater
-- Java Enterprise Edition
-- Java Mobile Edition 3.0
+- <a href="https://releases.aspose.com/barcode/Node.js/" target="_blank">Download the Library</a>
+- <a href="https://packagist.org/packages/aspose/barcode" target="_blank">Packagist Repository</a>
 
-## **Licensing**
-License is required to get access to the advanced functionality of ***Aspose.BarCode for Node.js via Java***. The evaluation mode allows generating barcodes without any restrictions. However, watermarks are displayed on generated barcode images. Barcode recognition functionality is provided without limitations only for Code 39 barcodes. For all other barcode types, 30% of the decoded text will be masked. More information about how to buy and set the license is provided in [**Licensing**](/barcode/nodejsjava/licensing/). If you want to evaluate the full functionality of ***Aspose.BarCode for Node.js via Java***, you can obtain a temporary license that is valid for 30 days. Please refer to [How to get a Temporary License](https://purchase.aspose.com/temporary-license) for details.
+## System Compatibility
 
-## **Main Classes**
-***Aspose.BarCode for Node.js via Java*** contains three main classes: [*BarCodeReader*]() for barcode scanning and reading, [*BarcodeGenerator*]() for barcode generation according to the specified format requirements, and [*ComplexBarcode*]() to manage special barcodes, i.e. Swiss QR Code. 
+**Aspose.BarCode for Node.js via Java** is a platform-independent API that works on any system (Windows, Linux, etc.)
+where Node.js and Java are installed.
+
+## Licensing
+
+A valid license is required to access the full capabilities of **Aspose.BarCode for Node.js via Java**.
+
+In evaluation mode:
+- Barcode generation is unrestricted but includes a watermark
+- Recognition is fully enabled for Code 39 only
+- For other symbologies, 30% of the decoded text will be masked
+
+Learn more in <a href="/barcode/nodejsjava/licensing/" target="_blank">Licensing</a>.
+
+You can request a <a href="https://purchase.aspose.com/temporary-license" target="_blank">Temporary License</a>
+valid for 30 days to evaluate the full feature set.
+
+## Main Classes
+
+**Aspose.BarCode for Node.js via Java** provides the following core classes:
+
+- <a href="https://reference.aspose.com/barcode/nodejs/BarCodeReader" target="_blank">BarCodeReader</a> – for scanning and decoding barcodes
+- <a href="hhttps://reference.aspose.com/barcode/nodejs/BarcodeGenerator" target="_blank">BarcodeGenerator</a> – for generating barcodes with specific formatting
+- <a href="https://reference.aspose.com/barcode/nodejs/ComplexBarcodeGenerator" target="_blank">ComplexBarcodeGenerator</a>
+  and <https://reference.aspose.com/barcode/nodejs/ComplexCodetextReader" target="_blank">ComplexCodetextReader</a> for handling advanced barcodes such as Swiss QR Code and MailMark

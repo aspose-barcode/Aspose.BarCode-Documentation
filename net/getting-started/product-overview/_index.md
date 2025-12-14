@@ -1,6 +1,8 @@
 ---
 title: Product Overview
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 description: "Aspose.BarCode for .NET: Product Description, Main Features, and General Information"
@@ -37,7 +39,7 @@ The main features include:
 The full list of features can be found in [Product Features](/barcode/net/product-features/).  
 
 ## **System Compatibility**
-***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 2.1 or later with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 7 included) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, .Net MAUI, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
+***Aspose.BarCode for .NET*** supports any 32-bit or 64-bit operating system having installed: .NET framework 2.0 or later / .Net Core 3.1 or later with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 9 included) / any other .NET framework supporting the fist two ones. The library can be used in any .NET application, including WinForms, WPF, ASP.NET, Mono, .Net MAUI, and .NET Core. More technical details on this subject are provided in [System Requirements](/barcode/net/system-requirements/).
 
 ## **Licensing**
 License is required to obtain access to the advanced functionality of ***Aspose.BarCode for .NET***. The evaluation mode allows generating barcodes without any restrictions; however, a watermark is placed on the resulting image. Moreover, barcode recognition is available without limitations only for Code39 barcodes; for all other symbologies, 30% of the resulting text will be masked. 

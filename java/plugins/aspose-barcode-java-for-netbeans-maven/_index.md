@@ -1,6 +1,8 @@
 ---
 title: Aspose.BarCode Java for NetBeans - Maven
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-netbeans-maven/

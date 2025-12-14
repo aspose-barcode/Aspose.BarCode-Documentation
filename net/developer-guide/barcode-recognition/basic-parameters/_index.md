@@ -5,6 +5,8 @@ type: docs
 description: "This Article Describes How Basic Recognition Parameters"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /net/basic-recognition-parameters/
 aliases:

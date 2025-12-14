@@ -3,8 +3,10 @@ title: Supported Barcode Types
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for Node.js via Java"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in Node.js, Barcode types in Aspose.BarCode for Node.js, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF417, Generate Micro QR Code, Generate Data Matrix"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
-url: /nodejsjava/barcode-types/
+url: /nodejsjava/supported-barcode-types/
 
 ---
 This article introduces general information about barcode types and describes their key properties along with providing sample barcode labels and code snippets to generate barcodes of different types. 

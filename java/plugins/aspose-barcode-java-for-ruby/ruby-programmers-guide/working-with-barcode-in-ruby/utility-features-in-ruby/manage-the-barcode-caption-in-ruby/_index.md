@@ -1,6 +1,8 @@
 ---
 title: Manage the BarCode Caption in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /java/manage-the-barcode-caption-in-ruby/
 ---

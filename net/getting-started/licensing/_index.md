@@ -2,6 +2,8 @@
 title: Licensing
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 description: "Setting the License for Aspose.BarCode for .NET"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET, Aspose.BarCode License, Aspose.BarCode Licensing, Get License for Aspose.Barcode, C#"

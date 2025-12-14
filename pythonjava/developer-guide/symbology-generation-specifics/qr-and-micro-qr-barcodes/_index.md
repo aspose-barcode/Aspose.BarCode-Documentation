@@ -2,6 +2,8 @@
 title: QR Code and Micro QR Code
 type: docs
 description: "How to use Aspose.BarCode for Python to generate QR Codes"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /python-java/generate-qr-code/
 ---

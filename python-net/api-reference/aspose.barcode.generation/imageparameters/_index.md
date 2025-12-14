@@ -3,7 +3,9 @@ title: ImageParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 290
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 300
 url: /python-net/api-reference/aspose.barcode.generation/imageparameters/
 ---
 
@@ -16,6 +18,7 @@ The ImageParameters type exposes the following members:
 | Name | Description |
 | :- | :- |
 |svg|SVG parameters|
+|pdf|PDF parameters|
 
 ### See Also
 

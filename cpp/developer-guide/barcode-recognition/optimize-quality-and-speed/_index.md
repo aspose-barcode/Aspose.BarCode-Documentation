@@ -4,6 +4,8 @@ type: docs
 description: "This section describes how barcode recognition can be optimized in terms of accuracy and speed."
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Improve Barcode Recognition, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcode C++"
 notoc: true
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /cpp/improve-barcode-recognition/

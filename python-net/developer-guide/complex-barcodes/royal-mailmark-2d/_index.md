@@ -3,6 +3,8 @@ title: Mailmark 2D Barcodes
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 2D Barcodes using Aspose.BarCode for Python via .NET."
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode in Python"
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /python-net/mailmark-2D-barcode/
 ---

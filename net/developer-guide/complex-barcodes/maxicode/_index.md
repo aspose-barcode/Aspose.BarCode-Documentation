@@ -2,6 +2,8 @@
 title: Complex MaxiCode Settings
 linktitle: MaxiCode
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /net/complex-maxicode-barcodes/

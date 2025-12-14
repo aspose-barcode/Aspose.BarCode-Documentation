@@ -4,6 +4,8 @@ linktitle: Barcode Generation Specifics
 type: docs
 description: "Description of Various Barcode Types Supported in Aspose.BarCode for C++"
 keywords: "Generate Barcodes, Barcode Types, Barcode Symbology, How to Generate Barcodes in C++, Barcode types in Aspose.BarCode for C++, 2D Barcodes, Linear Barcodes, 1D Barcode, Postal Barcodes, Generate QR, QR Code, Generate Code 39, Generate PDF 417, Generate Micro QR Code, Generate Data Matrix"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /cpp/generate-barcode-types/

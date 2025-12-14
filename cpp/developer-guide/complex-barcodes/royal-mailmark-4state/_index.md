@@ -4,6 +4,8 @@ linktitle: Mailmark 4-State
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 4-State Barcodes using Aspose.BarCode for C++"
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 url: /cpp/mailmark-4state-barcodes/

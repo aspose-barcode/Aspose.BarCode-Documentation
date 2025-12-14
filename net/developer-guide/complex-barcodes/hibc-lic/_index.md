@@ -3,6 +3,8 @@ title: Generate and Read HIBC LIC Barcodes in C#
 linktitle: HIBC LIC
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /net/hibc-lic-barcodes/
 aliases:

@@ -3,7 +3,9 @@ title: DotCodeExtCodetextBuilder
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 190
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 200
 url: /python-net/api-reference/aspose.barcode.generation/dotcodeextcodetextbuilder/
 ---
 

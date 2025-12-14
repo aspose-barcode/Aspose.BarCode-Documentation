@@ -3,6 +3,8 @@ title: Recognition Color Schemes Modes
 type: docs
 description: "This article explains how barcode recognition can be optimized for different color schemes"
 keywords: "Improve Barcode Recognition, Read Inverted Barcodes, Read Colored Barcode, Aspose.BarCode, Read Barcode C#"
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 url: /net/recognition-color-scheme/

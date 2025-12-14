@@ -1,6 +1,8 @@
 ---
 title: Advanced Barcode Recognition Features in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /java/advanced-barcode-recognition-features-in-jython/
 ---

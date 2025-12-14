@@ -3,7 +3,9 @@ title: PostalParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 350
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 370
 url: /python-net/api-reference/aspose.barcode.generation/postalparameters/
 ---
 

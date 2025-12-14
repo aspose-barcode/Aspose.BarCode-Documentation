@@ -2,6 +2,8 @@
 title: Generate Han Xin Code Barcodes in C#
 linktitle: Han Xin Code
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 feedback: BARCODECOM
 url: /net/hanxin-code-barcodes/

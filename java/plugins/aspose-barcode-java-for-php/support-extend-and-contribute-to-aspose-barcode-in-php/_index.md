@@ -1,6 +1,8 @@
 ---
 title: Support, Extend and Contribute to Aspose.BarCode in PHP
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/support-extend-and-contribute-to-aspose-barcode-in-php/
 ---

@@ -2,6 +2,8 @@
 title: Postal Barcodes
 linktitle: Postal Barcodes
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 170
 url: /python-net/generate-postal-barcodes/
 

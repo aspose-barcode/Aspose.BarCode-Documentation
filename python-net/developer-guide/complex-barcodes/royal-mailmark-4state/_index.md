@@ -3,6 +3,8 @@ title: Mailmark 4-State Barcodes
 type: docs
 description: "This article explains how to Generate and Read Royal Mail Mailmark 4-State Barcodes using Aspose.BarCode for Python via .NET"
 keywords: "Generate Mailmark Barcode, Royal Mail Mailmark Barcodes, Royal Mail Barcode, Aspose.BarCode, Generate Barcode in Python"
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /python-net/mailmark-4state-barcode/
 ---

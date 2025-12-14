@@ -2,6 +2,8 @@
 title: Set Barcode Checksum Controls in Python via Java
 linktitle: Set Barcode Checksum Controls
 type: docs
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 80
 description: "How to Set Checksum for 1D Barcodes in Aspose.BarCode for Python via Java"
 keywords: "Generate Barcodes, Barcode Checksum in Aspose.Barcode for Python, Generate Barcodes in Aspose.BarCode, Convert Barcode Size in Aspose.BarCode, Customized Barcode Checksum, Set Barcode Check Digit, Checksum Settings in Aspose.BarCode for Python via Java"

@@ -3,7 +3,9 @@ title: Padding
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 320
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 330
 url: /python-net/api-reference/aspose.barcode.generation/padding/
 ---
 

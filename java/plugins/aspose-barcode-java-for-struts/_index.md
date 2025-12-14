@@ -1,6 +1,8 @@
 ---
 title: Aspose.Barcode Java For Struts
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 110
 feedback: BARCODECOM
 url: /java/aspose-barcode-java-for-struts/

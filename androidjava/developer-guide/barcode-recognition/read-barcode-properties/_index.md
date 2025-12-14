@@ -3,6 +3,8 @@ title: Reading Barcode Properties and Metadata
 type: docs
 description: "This article describes how to read barcode parameters and encoded metadata"
 keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcodes in Android
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /androidjava/read-barcode-properties/
 
@@ -34,7 +36,7 @@ To obtain input barcode data and its symbology, *getCodeText* and *getCodeType* 
   
 <!--The following code snippet shows how to use these methods.
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -62,7 +64,7 @@ It is possible to load barcode data as a byte stream using a special method of c
 
 <!--The following code sample explains how to fetch barcode data as a byte stream.  
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -97,7 +99,7 @@ For barcodes in which the barcode data is encoded in a Unicode encoding, the lib
   
 <!--The following code snippet shows how to get barcode data encoded using the UTF8 encoding.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create encoded Unicode codetext
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
 {
@@ -130,7 +132,7 @@ Depending of the quality of barcode reading results, the *getConfidence* method 
   
 <!--The following code sample shows how to obtain the recognition quality estimate.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //recognize image
 Console.WriteLine("ReadExtQuality:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
@@ -154,7 +156,7 @@ To obtain the position of a source barcode and its orientation angle, methods cl
   
 <!--The following code snippet shows how to fetch the information about barcode positiom and orientation angle.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //recognize image
 Console.WriteLine("ReadExtRegion:");
 using (BarCodeReader read = new BarCodeReader($"{path}qr_code128.png", DecodeType.QR, DecodeType.Code128))
@@ -195,7 +197,7 @@ Metadata from *PDF417* barcodes can be obtained using methods of class [*Pdf417E
   
 <!--The following code sample explains how to obtain metadata from a *PDF417* barcode.  
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate Macro PDF417 with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.Barcóde©"))
 {
@@ -248,7 +250,7 @@ To fetch metadata from *QR Code* barcodes with structured append, ***Aspose.BarC
   
 <!--The code sample below shows how to fetch metadata from a sample *QR Code* barcode with structured append.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate QR with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Åspóse.Barcóde©"))
 {
@@ -281,7 +283,7 @@ Metadata from *DataBar* barcodes with 2D components can be obtained using class 
   
 <!--The following code snippet shows how to fetch metadata from a sample *DataBar* barcode with a 2D component.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //generate Databar with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "ASPOSE.BARCODE"))
 {

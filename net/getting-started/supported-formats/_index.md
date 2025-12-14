@@ -1,6 +1,8 @@
 ---
 title: Supported Image Formats
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 feedback: BARCODECOM
 description: "Image Formats Supported in Aspose.BarCode for .NET"
@@ -14,7 +16,7 @@ url: /net/image-formats/
 | :------: | :------: | 
 |[JPEG](https://docs.fileformat.com/Image/JPEG/) | [EMF](https://docs.fileformat.com/Image/EMF/)|
 |[TIFF](https://docs.fileformat.com/Image/TIFF/)|[SVG](https://docs.fileformat.com/page-description-language/SVG/)|
-|[PNG](https://docs.fileformat.com/Image/PNG/) |
+|[PNG](https://docs.fileformat.com/Image/PNG/) |[PDF](https://docs.fileformat.com/pdf/)|
 |[BMP](https://docs.fileformat.com/Image/BMP/) |
 |[GIF](https://docs.fileformat.com/Image/GIF/) |
   

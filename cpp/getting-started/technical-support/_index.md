@@ -1,6 +1,8 @@
 ---
 title: Technical Support
 type: docs
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 feedback: BARCODECOM
 description: "How to Contact Technical Support for Aspose.BarCode for C++"

@@ -2,6 +2,8 @@
 title: Codabar Barcodes
 type: docs
 description: "Use Aspose.BarCode for Python to generate Codabar barcodes"
+ai_search_scope: "barcode_python-java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 110
 url: /python-java/generate-codabar/
 ---

@@ -2,6 +2,8 @@
 title: Codabar Barcodes
 type: docs
 description: "Use Aspose.BarCode for Android to generate Codabar barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 110
 url: /androidjava/codabar-generation/
 ---
@@ -26,7 +28,7 @@ Following barcode images have been created using various sets of start and stop 
   
 <!--The following code sample shows how to use various start and stop digits in *Codabar* barcodes. 
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set start A and stop A
@@ -71,7 +73,7 @@ Checksum controls for *Codabar* can be enabled using the [*EnableChecksum*](http
   
 <!--The following code snippet shows how to set different checksum control modes (Mod10 and Mod16) for *Codabar* barcodes. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Codabar, "-12345-");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set None checksum

@@ -2,6 +2,8 @@
 title: Manage GS1 Barcode Types
 linktitle: GS1 Barcodes
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 90
 url: /python-net/gs1-barcode-standard/
 

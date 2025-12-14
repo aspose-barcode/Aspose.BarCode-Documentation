@@ -4,6 +4,8 @@ linktitle: Basic Reading Parameters
 type: docs
 description: "This Article Describes How Basic Recognition Parameters"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 url: /cpp/basic-recognition-parameters/

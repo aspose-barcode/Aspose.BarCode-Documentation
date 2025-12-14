@@ -4,6 +4,8 @@ linktitle: PDF417
 type: docs
 description: "Aspose.BarCode for Python via .NET can be used to generate different types of PDF417 barcodes."
 keywords: Generate PDF417 Barcodes, Create Macro PDF417 Barcode, How to Generate PDF417 barcodes, Aspose.BarCode for Python
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 url: /python-net/generate-pdf417-barcodes/
 ---

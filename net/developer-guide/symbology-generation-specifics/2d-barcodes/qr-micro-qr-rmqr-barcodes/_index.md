@@ -2,6 +2,8 @@
 title: Generate QR Code, Micro QR Code and Rectangular Micro QR Code in C#
 linktitle: QR, Micro QR and rMQR
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 feedback: BARCODECOM
 url: /net/qr-micro-qr-and-rmqr/

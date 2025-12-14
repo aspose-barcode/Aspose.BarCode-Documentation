@@ -2,6 +2,8 @@
 title: Generate QR Code and Micro QR Code
 linktitle: QR Codes
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /python-net/generate-qr-code/
 

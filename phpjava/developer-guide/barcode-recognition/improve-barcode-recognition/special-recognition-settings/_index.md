@@ -3,6 +3,8 @@ title: Read Damaged Barcodes
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions in PHP via Java"
 keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrial Data Matrix, Aspose.BarCode, Read Barcodes in PHP"
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /phpjava/read-damaged-barcodes/
 ---

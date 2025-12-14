@@ -3,6 +3,8 @@ title: Generate Aztec Code Barcodes
 type: docs
 description: "Use Aspose.BarCode for PHP to generate Aztec Code barcodes"
 keywords: "Generate Aztec Barcode, Generate Aztec Rune, How to Generate Aztec Barcodes, Aspose.BarCode for PHP"
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /phpjava/generate-aztec-code/
 ---

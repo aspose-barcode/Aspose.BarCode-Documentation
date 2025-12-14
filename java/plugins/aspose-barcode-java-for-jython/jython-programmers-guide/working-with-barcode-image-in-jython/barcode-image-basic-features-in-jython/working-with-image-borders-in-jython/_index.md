@@ -1,6 +1,8 @@
 ---
 title: Working with Image Borders in Jython
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /java/working-with-image-borders-in-jython/
 ---

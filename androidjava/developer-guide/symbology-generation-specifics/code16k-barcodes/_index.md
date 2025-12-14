@@ -2,6 +2,8 @@
 title: Code16K Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Android to generate Code16K barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 url: /androidjava/code16k-generation/
 ---
@@ -23,7 +25,7 @@ Following *Code16K* barcodes have been created using various barcode height sett
   
 <!--The following code sample explains how to determine the height of *Code16K* barcode rows.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K aspect ratio 10
@@ -45,7 +47,7 @@ Following *Code16K* barcodes have been generated using various quiet zone settin
   
 <!--The following code snippet shows how to modify quiet zone settings for *Code16K* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code16K, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set Code 16K quiet zone 10

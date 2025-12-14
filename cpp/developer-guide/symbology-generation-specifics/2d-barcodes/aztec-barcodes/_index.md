@@ -5,6 +5,8 @@ type: docs
 feedback: BARCODECOM
 description: "Aspose.BarCode for C++ allows generating square-grid high-density two-dimensional Aztec barcodes."
 keywords: Generate Aztec Barcode, Generate Aztec code, How to Generate Aztec barcodes, Aspose.BarCode for C++
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /cpp/aztec-code-barcodes/
 aliases:

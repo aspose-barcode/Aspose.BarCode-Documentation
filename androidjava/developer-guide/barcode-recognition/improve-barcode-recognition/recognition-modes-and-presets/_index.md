@@ -3,6 +3,8 @@ title: Recognition Quality Options and Presets
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed using different automatic presets and setting various options"
 keywords: "Improve Barcode Recognition, Optimize Barcode Reading, Optimized Scan for Barcode Recognition, Speed Up Barcode Reading, Image Processing for Barcode, Read Many Barcodes from One Image, Aspose.BarCode, Read Barcodes in Android"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /androidjava/barcode-reading-presets
 ---
@@ -37,7 +39,7 @@ In this section, supported recognition presets are described, including *HighPer
   
 <p align="center"><img src="barcodes_different_quality.png" height="45%" width="45%"></p>
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("QualityPresetsMain:");
 
 //read barcode image with QualitySettings set to HighPerformance
@@ -83,7 +85,7 @@ The image shown below is a sample document with multiple barcodes that contains 
   
 <!--The following code sample shows how to tune reading quality parameters to enable correct detection and decoding of all 1D barcodes corresponding to the target symbologies. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("QualityPresetsOneD:");
 
 //read barcode image with QualitySettings set to NormalQuality
@@ -123,7 +125,7 @@ The *MaxBarCodes* preset may be used to scan even unreadable barcodes; however, 
   
 <!--The following code sample shows how to use the *MaxBarCodes* preset.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("MaxBarCodesPreset:");
 
 //read barcode image with QualitySettings set to MaxBarCodes
@@ -147,7 +149,7 @@ To recognize high-quality 1D barcodes created through web-based applications, it
 
 <p align="center"><img src="code128_hq.png" height="20%" width="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("FastScan:");
 
 //read barcode image with FastScan options disabled
@@ -188,7 +190,7 @@ To decode regular barcode images, ***Aspose.BarCode for Android via Java*** appl
   
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" heigh="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("RegularImage:");
 
 //read barcode image with AllowRegularImage set to false
@@ -228,7 +230,7 @@ To read barcodes, ***Aspose.BarCode for Android via Java*** first performs the s
   
 <!--The following code sample illustrates how to use [*BarcodeSvmDetectorSettings*](https://reference.aspose.com/barcode/java/com.aspose.barcode.barcoderecognition/BarcodeSvmDetectorSettings).
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("OneDDetectorSettings:");
 
 //read barcode image with DetectorSettings set to HighPerformance
@@ -257,7 +259,7 @@ The *setUseOldBarcodeDetector* method allows performing barcode region detection
   
 <!--The following code sample explains how to work with the previous version of the barcode region detector. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.WriteLine("OneOldBarcodeDetector:");
 
 //read barcode image with UseOldBarcodeDetector set to false
@@ -288,7 +290,7 @@ To conduct preliminary detection of large-sized 1D and some 2D types, such as *Q
 
 <p align="center"><img src="code128_big_and_small.png" width="25%" height="25%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("DetectScanGap:");
 
 //read barcode image with AllowDetectScanGap true

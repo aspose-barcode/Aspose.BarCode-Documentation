@@ -3,6 +3,8 @@ title: Barcode Reading Basics
 type: docs
 description: "This Article Describes How to Read Barcodes of Different Symbologies from Images or Stream and How to Recognize All 1D Barcodes Presented in an Image"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Aspose.BarCode, Read Barcodes in Node.js"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 url: /nodejsjava/barcode-reading-basics/
 

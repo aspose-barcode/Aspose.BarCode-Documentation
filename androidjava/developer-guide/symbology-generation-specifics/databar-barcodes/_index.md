@@ -2,6 +2,8 @@
 title: DataBar Barcodes
 type: docs
 description: "Use Aspose.BarCode for Android to generate Databar barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 100
 url: /androidjava/databar-generation/
 ---
@@ -32,7 +34,7 @@ Following *DataBar Omnidirectional* barcode images have been created setting var
   
 <!--The following code snippet explains how to modify the barcode height while generating continuos barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarOmniDirectional, "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set barheight 30 pixels
@@ -54,7 +56,7 @@ Following *DataBar Stacked Omnidirectional* barcodes have been generated setting
   
 <!--The following code snippet shows how to manage barcode height in stacked barcodes adjusting the value of the aspect ratio.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarStackedOmniDirectional, "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set DataBar AspectRatio 15
@@ -76,7 +78,7 @@ Following *DataBar Expanded Stacked* barcodes have varying barcode layouts.
   
 <!--The following code sample explains how to manage layout settings in *DataBar Expanded Stacked* barcodes.
    
-{{< highlight csharp>}}
+{{< highlight java>}}
 //set 4 columns
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "Databar Expanded Stacked long");
 gen.Parameters.Barcode.DataBar.Columns = 4;
@@ -103,7 +105,7 @@ Following *DataBar Expanded* barcodes have been generated suing the GS1-compatib
   
 <!--The following code sample demonstrates how to verify compatibility with GS1 standards for *DataBar Expanded* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, "");
 //right codetext with GS1Encoding check
 gen.CodeText = "(01)12345678901231";
@@ -137,7 +139,7 @@ Following *DataBar Expanded* barcodes have different settings for the 2D compone
   
 <!--The following code snippet shows how to manage the linkage to a 2D component in *DataBar Expanded* barcodes.
     
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, "(01)12345678901231");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //disable 2D component flag

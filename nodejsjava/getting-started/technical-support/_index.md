@@ -1,6 +1,8 @@
 ---
 title: Technical Support
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 description: "How to Contact Technical Support for Aspose.BarCode for Node.js"
 keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in Node.js, Technical Support for Aspose.BarCode, Aspose.Barcode Forum"

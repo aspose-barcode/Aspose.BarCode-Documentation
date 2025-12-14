@@ -2,6 +2,8 @@
 title: Generate Code16K Barcodes
 type: docs
 description: "Use Aspose.BarCode for Node.js via Java to generate Code16K barcodes"
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 150
 url: /nodejsjava/generate-code16k/
 ---

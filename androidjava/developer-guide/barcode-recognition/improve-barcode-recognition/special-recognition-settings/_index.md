@@ -3,6 +3,8 @@ title: Special Barcode Recognition Cases
 type: docs
 description: "This article explains how barcode recognition can be optimized in terms of accuracy and speed in case of various distortions"
 keywords: "Improve Barcode Recognition, Read Barcodes with Gaussian Noise, Read Inverted Barcodes, Read Colored Barcode, Read Distorted QR Code, Read Corrupted Barcodes, Read Industrual Data Matrix, Aspose.BarCode, Read Barcodes in Android"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /androidjava/special-recognition-cases/
 ---
@@ -20,7 +22,7 @@ In ***Aspose.BarCode for Android via Java***, median filtering can be implemente
   
 <p align="center"><img src="datamatrix_noised.png" width="15%" height="15%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("MedianSmoothing:");
 
 //read barcode image with AllowMedianSmoothing set to false
@@ -52,7 +54,7 @@ One-dimensional filtering for linear barcodes can be set using a method called *
 
 <p align="center"><img src="saltandpaper.png" width="30%" height="30%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("SaltAndPaperFiltering:");
 
 //read barcode image with AllowSaltAndPaperFiltering set to false
@@ -83,7 +85,7 @@ One-dimensional median filtering for postal symbologies can be performed using t
 
 <p align="center"><img src="planet_noised.png" width="40%" height="40%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("MicroWhiteSpotsRemoving:");
 
 //read barcode image with AllowMicroWhiteSpotsRemoving set to False
@@ -114,7 +116,7 @@ The presence of white spots in barcode images is a frequent problem that appears
 
 <p align="center"><img src="code128_whitespots.png" width="30%" height="30%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("WhiteSpotsRemoving:");
 
 //read barcode image with AllowWhiteSpotsRemoving set to false
@@ -145,7 +147,7 @@ In some cases, distortions caused by excessive scaling of a barcode image can be
 
 <p align="center"><img src="datamatrix_waved.png" width="20%" height="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("DecreasedImage:");
 
 //read barcode image with AllowDecreasedImage false
@@ -175,7 +177,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}datamatrix_waved.png", Dec
 
 <p align="center"><img src="aztec_regular_inverse.png" width="20%" height="20%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("InvertImage:");
 
 //read barcode image with AllowInvertImage set to false
@@ -205,7 +207,7 @@ To read colored barcodes on a colored background, ***Aspose.BarCode for Android 
   
 <p align="center"><img src="qr_color.png" width="15%" height="15%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("ComplexBackground:");
 
 //read barcode image with AllowComplexBackground set to false
@@ -236,7 +238,7 @@ While scanning or sending barcode images using fax transmission, the problem of 
 
 <p align="center"><img src="code128_wipedbars.png" width="40%" height="40%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("OneDWipedBarsRestoration:");
 
 //read barcode image with AllowQRMicroQrRestoration and CheckMore1DVariants set to False
@@ -271,7 +273,7 @@ The *setReadTinyBarcodes* method facilitates reading small barcode labels in lar
 
 <p align="center"><img src="pdf417_qr_corrupted.png" width="30%" height="30%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("IncorrectBarcodes:");
 
 //read barcode image with AllowIncorrectBarcodes set to False
@@ -301,7 +303,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}pdf417_qr_corrupted.png", 
 
 <p align="center"><img src="microqr_3d_distorted.png"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("QRMicroQrRestoration:");
 
 //recognize image with AllowQRMicroQrRestoration false
@@ -331,7 +333,7 @@ Industrial *Data Matrix* barcodes often have dotted patterns or other decoration
 
 <p align="center"><img src="datamatrix_industrial.png" width="30%" height="30%"></p>
 
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 Console.WriteLine("DatamatrixIndustrialBarcodes:");
 
 //read barcode image with AllowDatamatrixIndustrialBarcodes set to false

@@ -1,6 +1,8 @@
 ---
 title: Generate QR Codes for Wi-Fi Settings
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 70
 url: /java/1-2-1-7-generating-qr-code-for-a-wifi-settings/
 ---

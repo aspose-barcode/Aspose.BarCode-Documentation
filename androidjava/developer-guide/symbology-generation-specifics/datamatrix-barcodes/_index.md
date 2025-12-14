@@ -2,6 +2,8 @@
 title: Data Matrix Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Android to generate Data Matrix barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /androidjava/datamatrix-generation/
 ---
@@ -25,7 +27,7 @@ To enable the required *Data Matrix* standard, developers can use the *setDataMa
   
 <!--The following code sample shows how to enable the *ECC 200* encoding standard.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set DataMatrix ECC to 140
@@ -48,7 +50,7 @@ gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
   
 <!--The following code snippet explains how to work with the *ECC 140* standard.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set DataMatrix ECC to 140
@@ -77,7 +79,7 @@ For all encoding modes except *CUSTOM*, the encoding determined in *BarCodeBuild
   
 <!--The following code snippet explains how to enable the *AUTO* encoding mode.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set encode mode to Auto
@@ -92,7 +94,7 @@ The *FULL* mode is used to encode streams of bytes. In this mode, each byte is e
   
 <!--The following code snippet shows how to work with the *FULL* encoding mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 
 //encode array to string
@@ -121,7 +123,7 @@ In all cases, the *CUSTOM* encoding mode implies first re-encoding barcode infor
   
 <!--The following code sample explains how to manage the *Custom* mode. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 Console.OutputEncoding = Encoding.Unicode;
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -145,7 +147,7 @@ It is necessary to formulate a barcode text message using the following form: <m
   
 <!--The following code sample demonstrates how to enable the *EXTENDED_CODETEXT* mode.  
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set encode mode to ExtendedCodetext
@@ -168,7 +170,7 @@ Various special encoding modes, such as *TEXT*, *C40*, *EDIFACT*, and *ANSIX12*,
   
 <!--The following code snippet shows how to enable the *C40* encoding mode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE.BARCODE");
 gen.Parameters.Barcode.XDimension.Pixels = 6;
 //set encode mode to C40
@@ -185,7 +187,7 @@ The layout for *Data Matrix* barcode generation can be determined through *setRo
 | :-: | :-: | :-: |
 | |<img src="datamatrixrows22columns22ecc200.png">|<img src="datamatrixrows12columns36ecc200.png">|
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set ECC type to Ecc200
@@ -203,7 +205,7 @@ gen.Save($"{path}DatamatrixRows12Columns36Ecc200.png", BarCodeImageFormat.Png);
 
 <!--The following code sample shows how to manage macro characters in *Data Matrix* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set macro character to 05
@@ -225,7 +227,7 @@ foreach (BarCodeResult result in read.ReadBarCodes())
 | :-: | :-: | :-: |
 | |<img src="datamatrixaspectratio1.png">|<img src="datamatrixaspectratio0.5.png">|
   
-<!--{{< highlight csharp>}}
+<!--{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set aspect ratio 1

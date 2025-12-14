@@ -4,6 +4,8 @@ linktitle: Set Target Barcode Types
 type: docs
 description: "This Article Describes How to Set Target Barcode Types for Recognition"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C++"
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /cpp/set-target-barcode-types/

@@ -1,35 +1,108 @@
 ---
 title: Installation
 type: docs
-weight: 60
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 30
 url: /nodejsjava/installation/
-aliases:
-- /java/aspose-barcode-for-node-js-via-java-installation/
 ---
 
-## **Installation**
-To install and use Aspose.BarCode for Node.js via Java, follow the instructions below:
+### **Platform and Compatibility**
 
-### **Linux**
-- Download and install Node.js
-- Install Oracle JDK (1.8 and higher) for Linux and then configure the JAVA_HOME environment variable
-- Install Python 3.x
-- Install aspose.barcode: 'npm i aspose.barcode'  
-- You can also download "Aspose.BarCode for Node.js via Java" from https://downloads.aspose.com/barcode/nodejs and extract it
-- You can go to examples directory and launch examples
+**Aspose.BarCode for Node.js via Java** is a cross-platform product that runs on any operating system (**Windows**, **Linux**, **macOS**, **Solaris**) where both **Node.js** and **Java** are installed.
 
-### **Windows**
-- Download and install Node.js and add node.exe to PATH
-- Install Oracle JDK (1.8 and higher) for Windows and then configure the JAVA_HOME environment variable
-- Install Python 3.x and add python.exe to PATH
-- Install aspose.barcode: 'npm i aspose.barcode'
-- You can download "Aspose.BarCode for Node.js via Java" from https://downloads.aspose.com/barcode/nodejs and extract it
+### **System Requirements**
 
-### **MacOS**
-- Download and install Node.js and configure environment variables
-- Install Oracle JDK 1.8 and higher for MacOS and then configure the JAVA_HOME environment variable
-- Install Python 3.x and configure environment variables
-- Modify <key>JVMCapabilities</key> section in "/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Info.plist" with root privilege ("jdk1.8.0_152.jdk" depends on your jdk version)
-- Install aspose.barcode: 'npm i aspose.barcode'
-- You can also download "Aspose.BarCode for Node.js via Java" from https://downloads.aspose.com/barcode/nodejs and extract it
+- **Node.js**: Version 18 or higher
+- **Java**: JDK 1.8 or higher
+
+It supports various JDK distributions, including but not limited to:
+- **Oracle JDK**
+- **BellSoft Liberica JDK**
+- **Amazon Corretto**
+- **OpenJDK**
+- **Other compatible distributions**
+
+### **Installation Options**
+
+You can install the product in two main ways:
+
+#### **1. Install via npm**
+The recommended way is to install the package from npm:  
+<a href="https://www.npmjs.com/package/aspose.barcode" target="_blank">Aspose.BarCode for Node.js on npm</a>
+
+```bash
+npm install aspose.barcode
+```
+or specific version
+```bash
+npm i aspose.barcode@25.6.0
+```
+The library will be installed to `node_modules`.
+#### **2. Manual ZIP Installation**
+
+If you do not want to use npm to install the package, you can download Aspose.BarCode for Node.js via Java as a ZIP archive from the  
+<a href="https://releases.aspose.com/barcode/nodejs/" target="_blank">official Aspose website</a>.
+
+1. **Download** the ZIP file and extract its contents.
+This archive contains:
+
+``doc`` — API documentation
+``license`` — End User License Agreement and third-party licenses
+``libs`` — Java JAR file and supporting files
+``examples`` — code examples
+``readme.txt`` — general instructions
+
+2. **Copy the extracted folder** (for example, `libs` or `barcode-lib`) into your project directory.  
+   You can rename it if you wish (for example, to `barcode-lib`).
+
+   **Example project structure:**
+<pre> 
+    your-project/
+    ├── barcode-lib/
+    │ ├── index.js
+    │ └── lib/
+    │ ├── AsposeBarcode.js
+    │ ├── ...other .js files
+    │ └── aspose-barcode-nodejs-25.5.jar
+    ├── node_modules/
+    ├── package.json
+    ├── index.js
+    └── ...
+</pre>
+3. **Add the required dependency** to your project's `package.json` if it is not already there:
+```json
+"dependencies": {
+  "java": "^0.12.1"
+}
+```
+Then run:
+```bash
+npm install
+```
+4. Use the library in your code:
+
+```javascript
+const { AsposeBarcode } = require('./barcode-lib');
+const { BarcodeGenerator, EncodeTypes, BarCodeImageFormat, BarCodeReader, License } = AsposeBarcode;
+const license = new License();
+license.setLicense('Aspose.BarCode.NodeJsviaJava.lic');
+const generator = new BarcodeGenerator(EncodeTypes.CODE_11, "12345678");
+const base64Image = generator.generateBarCodeImage(BarCodeImageFormat.PNG);
+const reader = new BarCodeReader(base64Image);
+const resultsArray = reader.readBarCodes();
+const barCodeResult = resultsArray[0];
+console.log("codeText", barCodeResult.getCodeText());
+console.log("codeType", barCodeResult.getCodeTypeName());
+process.exit(0);
+```
+
+
+
+
+
+
+
+
+
 

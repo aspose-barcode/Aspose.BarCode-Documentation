@@ -5,6 +5,8 @@ type: docs
 feedback: BARCODECOM
 description: "This Article Describes How to Set Target Barcode Types for Recognition"
 keywords: "Read barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Barcode in WPF Project, Aspose.BarCode, Read Barcode C#"
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /net/set-target-barcode-types/
 ---

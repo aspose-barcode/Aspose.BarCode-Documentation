@@ -4,6 +4,8 @@ description: "How to Recognize Barcodes from PDF Files"
 keywords:
 type: docs
 feedback: BARCODECOM
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /net/read-barcode-from-pdf-document/
 aliases: 

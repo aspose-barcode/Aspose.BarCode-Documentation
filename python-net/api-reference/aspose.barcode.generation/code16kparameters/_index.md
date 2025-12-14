@@ -3,7 +3,9 @@ title: Code16KParameters
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 130
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 140
 url: /python-net/api-reference/aspose.barcode.generation/code16kparameters/
 ---
 

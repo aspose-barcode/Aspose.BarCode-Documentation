@@ -1,6 +1,8 @@
 ---
 title: Customize Barcode Appearance
 type: docs
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 description: "How to Customize Barcode Appearance-Related Properties in Aspose.BarCode for PHP via Java"
 keywords: "generate barcodes, customize barcode image, change barcode appearance, barcode appearance in PHP, customize barcodes, work with barcode image, generate barcodes in Aspose.BarCode"

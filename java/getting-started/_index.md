@@ -1,25 +1,31 @@
 ---
 title: Getting Started
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 10
 notoc: true
 feedback: BARCODECOM
 url: /java/getting-started/
-aliases:
-- /barcode/java/1-1-getting-started/
 ---
 
-This section introduces the basic concepts of ***Aspose.BarCode for Java***. Here you can learn about its features, supported barcode types (including QR codes), functionality, the available input and output formats, installation process, and other key aspects. New users can refer to this page as a starting point to get familiar with ***Aspose.BarCode for Java*** and its technical requirements.   
+This section provides an overview of ***Aspose.BarCode for Java***,
+covering its features,supported barcode types
+(including QR codes), functionality, input and output formats,
+installation process, and other key aspects.
 
-For specific information about ***Aspose.BarCode for Java***, see the following articles.
-  
-|Article|Description|
-|-------|-----------|
-|[Product Overview](/barcode/java/product-overview/)|Describes the product and its purpose, functionality, key advantages, barcode types, and compatibility|
-|[Supported Barcode Types](/barcode/java/barcode-types/)|Represents all supported barcode types (including 1D, 2D, and postal ones)|
-|[Supported Image Formats](/barcode/java/image-formats/)|Describes all image file formats available for input and output|
-|[Product Features](/barcode/java/product-features/)|Lists barcode processing features, including generation, recognition, imaging, and others|
-|[System Requirements](/barcode/java/system-requirements/)|Outlines supported operating systems and technical requirements|
-|[Installation](/barcode/java/installation/)|Describes how to install and start using the library|
-|[Licensing](/barcode/java/licensing/)|Explains why to get the license and how to deploy it|
-|[Technical Support](/barcode/java/technical-support/)|Provides information about the ways to contact technical support|
+If you are new to ***Aspose.BarCode for Java***, this page serves as a great starting point
+to understand its capabilities and technical requirements.
+
+For detailed information, refer to the following articles:
+
+| **Article**                                                                                                                   | **Description** |
+|-------------------------------------------------------------------------------------------------------------------------------|---------------|
+| <a href="/barcode/java/product-overview/" target="_blank"><strong>Product Overview</strong></a>        | Overview of the product, its functionality, key advantages, supported barcode types, and compatibility. |
+| <a href="/barcode/java/barcode-types/" target="_blank"><strong>Supported Barcode Types</strong></a>    | List of all supported barcode types, including 1D, 2D, and postal barcodes. |
+| <a href="/barcode/java/image-formats/" target="_blank"><strong>Supported Image Formats</strong></a>    | Overview of image formats available for input and output. |
+| <a href="/barcode/java/requirements-compatibility/" target="_blank"><strong>System Requirements</strong></a> | Information on supported operating systems and technical requirements. |
+| <a href="/barcode/java/installation/" target="_blank"><strong>Installation</strong></a>                | Step-by-step guide on how to install and start using the library. |
+| <a href="/barcode/java/licensing/" target="_blank"><strong>Licensing</strong></a>                      | Explanation of licensing options and deployment instructions. |
+| <a href="/barcode/java/technical-support/" target="_blank"><strong>Technical Support</strong></a>      | Details on how to contact Aspose technical support. |
+

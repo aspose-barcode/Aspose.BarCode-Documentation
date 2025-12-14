@@ -2,6 +2,8 @@
 title: Codablock-F Barcodes
 type: docs
 description: "How to use Aspose.BarCode for Android to generate Codablock-F barcodes"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 130
 url: /androidjava/codablockf-generation/
 ---
@@ -24,7 +26,7 @@ Following barcode images have been created using various aspect ratio settings.
   
 <!--The following code sample shows how to modify the height of a *Codablock-F* barcode.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set CodablockF aspect ratio 15
@@ -47,7 +49,7 @@ Barcode images provided below have been generated using different layout setting
   
 <!--The following code snippet illustrates how to customize layout settings for *Codablock-F* barcodes.
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CodablockF, "Aspose.Barcode");
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 //set CodablockF columns 4

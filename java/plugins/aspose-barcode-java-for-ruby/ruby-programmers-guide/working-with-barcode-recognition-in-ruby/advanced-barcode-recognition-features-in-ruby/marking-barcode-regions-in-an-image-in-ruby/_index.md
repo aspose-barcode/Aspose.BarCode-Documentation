@@ -1,6 +1,8 @@
 ---
 title: Marking BarCode Regions in an Image in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /java/marking-barcode-regions-in-an-image-in-ruby/
 ---

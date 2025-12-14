@@ -3,7 +3,9 @@ title: EncodeTypes
 second_title: Aspose.BarCode for Python via .NET API Reference
 description: 
 type: docs
-weight: 210
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
+weight: 220
 url: /python-net/api-reference/aspose.barcode.generation/encodetypes/
 ---
 
@@ -90,12 +92,12 @@ The EncodeTypes type exposes the following members:
 |CODABLOCK_F|Specifies that the data should be encoded with Codablock-F barcode specification.|
 |GS1_CODABLOCK_F|Specifies that the data should be encoded with GS1 Codablock-F barcode specification. The codetext must contains parentheses for AI.|
 |GS1_COMPOSITE_BAR|Specifies that the data should be encoded with GS1 Composite Bar barcode specification. The codetext must contains parentheses for AI. 1D codetext and 2D codetext must be separated with symbol '/'|
-|HIBC_CODE_39LIC|Specifies that the data should be encoded with HIBC LIC Code39Standart barcode specification.|
+|HIBC_CODE_39LIC|Specifies that the data should be encoded with HIBC LIC Code39 barcode specification.|
 |HIBC_CODE_128LIC|Specifies that the data should be encoded with HIBC LIC Code128 barcode specification.|
 |HIBC_AZTEC_LIC|Specifies that the data should be encoded with HIBC LIC Aztec barcode specification.|
 |HIBC_DATA_MATRIX_LIC|Specifies that the data should be encoded with HIBC LIC DataMatrix barcode specification.|
 |HIBCQRLIC|Specifies that the data should be encoded with HIBC LIC QR barcode specification.|
-|HIBC_CODE_39PAS|Specifies that the data should be encoded with HIBC PAS Code39Standart barcode specification.|
+|HIBC_CODE_39PAS|Specifies that the data should be encoded with HIBC PAS Code39 barcode specification.|
 |HIBC_CODE_128PAS|Specifies that the data should be encoded with HIBC PAS Code128 barcode specification.|
 |HIBC_AZTEC_PAS|Specifies that the data should be encoded with HIBC PAS Aztec barcode specification.|
 |HIBC_DATA_MATRIX_PAS|Specifies that the data should be encoded with HIBC PAS DataMatrix barcode specification.|

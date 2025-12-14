@@ -1,6 +1,8 @@
 ---
 title: Generate BarCode by Specifying Custom Image Size in Ruby
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /java/generate-barcode-by-specifying-custom-image-size-in-ruby/
 ---

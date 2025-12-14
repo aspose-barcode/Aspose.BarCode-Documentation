@@ -2,6 +2,8 @@
 title: Aspose.BarCode for C++
 description: Aspose.BarCode for C++ API allows C++ developers to control and manipulate barcode scanning, barcode reading and qr scanning functionalities. It provides a group of classes to work with barcodes on the backend, as well as GUI-based controls to process barcodes. Free evaluation version is available.
 type: docs
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 notoc: true
 feedback: BARCODECOM

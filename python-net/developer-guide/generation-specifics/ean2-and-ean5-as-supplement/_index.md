@@ -2,6 +2,8 @@
 title: Generate EAN-2 and EAN-5 as Supplement Barcodes
 linktitle: EAN-2 and EAN-5 as Supplement
 type: docs
+ai_search_scope: "barcode_python-net_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 160
 url: /python-net/generate-supplement-barcodes/
 ---

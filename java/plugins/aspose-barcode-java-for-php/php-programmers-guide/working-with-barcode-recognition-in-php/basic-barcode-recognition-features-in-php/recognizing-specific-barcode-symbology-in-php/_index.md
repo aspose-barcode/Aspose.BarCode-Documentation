@@ -1,6 +1,8 @@
 ---
 title: Recognizing Specific Barcode Symbology in PHP
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 30
 url: /java/recognizing-specific-barcode-symbology-in-php/
 ---

@@ -3,6 +3,8 @@ title: Read Barcode Properties and Metadata
 type: docs
 description: "This article describes how to read barcode parameters and encoded metadata"
 keywords: Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Many Barcodes in One Image, Read PDF417 Barcode, Read PDF417 Metadata, Read Qr Code, Read QR Code Metadata, QR Code Structured Append, Aspose.BarCode, Read Barcodes in PHP
+ai_search_scope: "barcode_phpjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 url: /phpjava/read-barcode-properties/
 

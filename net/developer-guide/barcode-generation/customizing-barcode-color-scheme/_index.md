@@ -2,6 +2,8 @@
 title: Customize Barcode Color Scheme in C#
 linktitle: Customize Barcode Color Scheme
 type: docs
+ai_search_scope: "barcode_dotnet_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 40
 feedback: BARCODECOM
 description: "How to Customize Color of Barcode Elements in C#"

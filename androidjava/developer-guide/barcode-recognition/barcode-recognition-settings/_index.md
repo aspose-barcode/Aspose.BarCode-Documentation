@@ -3,6 +3,8 @@ title: Barcode Recognition Settings
 type: docs
 description: "This article describes how to adjust various barcode recognition settings in Aspose.BarCode for Android according to business needs"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode Android"
+ai_search_scope: "barcode_androidjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 url: /androidjava/recognition-settings/
 ---
@@ -22,7 +24,7 @@ Barcoded types with obligatory checksum controls require performing compulsive c
   
 <!-->The following code sample shows how to adjust checksum settings for the barcode type with obligatory checksum controls (namely, *Code 11*). 
  
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code11, "123456"))
 {
@@ -67,7 +69,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code11.png", DecodeType.Co
   
 <!-->The following code snippet illustrates recognition options for symbologies with optional checksum controls (i.e. *Code 39*). 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "123456"))
 {
@@ -113,7 +115,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Co
   
 <!--The following code sample explains how to decode barcodes with UTF8 and UTF16 Unicode encodings automatically (namely, *QR Code* has been used). 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
@@ -154,7 +156,7 @@ The GS1 association suggests using FNC character to perform decoding of some sym
   
 <!--The following code snippet explains how to manage FCN symbols.
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code128, "Aspose" + FNC1 + FNC2 + FNC3))
 {
@@ -208,7 +210,7 @@ The *Australia Post* standard enables encoding additional customer data in three
   
 <!--The following code sample shows how to enable the decoding format through the *CTable* option. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE"))
 {
@@ -237,7 +239,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostCTable.png", 
   
 The following code snippet explains how to use the *NTable* decoding format. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234"))
 {
@@ -266,7 +268,7 @@ using (BarCodeReader read = new BarCodeReader($"{path}AustraliaPostNTable.png", 
   
 <!--The following code sample shows how to use the *Other* decoding format. 
   
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210"))
 {
@@ -296,7 +298,7 @@ The *Australia Post* type requires setting fixed size for each subtype. When the
   
 <!--The following code snippet shows how to remove filling empty patters for the *CTable* decoding mode. 
 
-{{< highlight csharp>}}
+{{< highlight java>}}
 //create barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567END"))
 {

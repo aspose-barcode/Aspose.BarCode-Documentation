@@ -1,6 +1,8 @@
 ---
 title: Use Checksum and Supplement Data for Barcodes in PHP
 type: docs
+ai_search_scope: "barcode_java_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 60
 url: /java/use-checksum-and-supplement-data-for-barcodes-in-php/
 ---

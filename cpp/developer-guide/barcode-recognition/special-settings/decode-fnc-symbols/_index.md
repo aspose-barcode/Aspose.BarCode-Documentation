@@ -4,6 +4,8 @@ type: docs
 description: "This article describes how to decode FNC symbols in GS1 barcodes in Aspose.BarCode for C++ according to business needs"
 keywords: "Read Barcode, Read Barcode from Stream, Scan Barcode from Image, Read Many Barcodes in One Image, Aspose.BarCode, Read Barcode C++"
 notoc: true
+ai_search_scope: "barcode_cpp_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 20
 feedback: BARCODECOM
 url: /cpp/decode-fnc-symbols/

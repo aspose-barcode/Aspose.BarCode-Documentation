@@ -1,6 +1,8 @@
 ---
 title: Set Barcode Text
 type: docs
+ai_search_scope: "barcode_nodejsjava_doc"
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 weight: 50
 description: "How to Set Barcode Text and Captions in Aspose.BarCode for Node.js"
 keywords: "Generate Barcodes, Customize Barcode Image, Change Barcode Text, Barcode Appearance in Aspose.BarCode for Node.js, Work with Barcode Image in Aspose.BarCode for Node.js, Set Barcode Text in Aspose.BarCode, Generate Barcode with Caption, Generate Barcodes in Aspose.BarCode"
