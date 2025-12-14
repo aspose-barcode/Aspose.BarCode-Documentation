@@ -1,224 +1,108 @@
 ---
-title: "Result Validation"
-description: "Learn how to validate recognition results and use checksums, confidence, and quality settings in Aspose.BarCode for Java."
+title: "Result Validation (Checksum Validation, Confidence, Quality Scores)"
+description: "How to validate results using checksum behavior, confidence score, and strict vs relaxed recognition settings."
 type: docs
-weight: 60
+weight: 50
 url: /java/developer-guide/barcode-recognition/barcode-properties/result-validation
 ---
 
-# Result validation in barcode recognition
+# Result Validation (Checksum Validation, Confidence, Quality Scores)
 
-When you integrate barcode recognition into a real system (logistics, retail, tickets, access control), you need more than just “a result was found”.  
-You also want to answer questions like:
+In production systems you usually need to decide whether a recognized barcode is trustworthy.
+Typical signals are checksum validity (when available), recognition confidence, and your own business rules.
 
-- Is this barcode **checksum-correct**?
-- How **confident** is the engine in this read?
-- Should I accept a **damaged** or **low-quality** symbol?
-- Which **quality preset** should I use for difficult images?
+## Use strict mode by default
 
-Aspose.BarCode for Java provides several mechanisms to validate and qualify recognition results:
+Strict mode means you do not allow potentially incorrect barcodes.
 
-- checksum handling and 1D metadata (`OneDExtendedParameters`)
-- the `confidence` score on `BarCodeResult`
-- `QualitySettings`, including `setAllowIncorrectBarcodes(...)` and preset profiles
+By default (`AllowIncorrectBarcodes` is `false`), the library **internally validates the checksum** if the symbology supports it (e.g. EAN-13, Code 128). If the checksum is invalid, the barcode is considered incorrectly read and is **not returned**.
 
-All examples in this article are based on the sample class:
-
-`com.aspose.barcode.guide.recognition.barcode_properties.ResultValidationExample`
-
-You can find the full source code on GitHub:
-
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/ResultValidationExample.java" target="_blank" rel="noopener noreferrer">ResultValidationExample.java</a>
-
-In the snippets below, variables like `imagePath` represent paths to barcode images in your application.
-
----
-
-## 1. Validating checksums for 1D barcodes (EAN‑13)
-
-Most linear (1D) symbologies, such as EAN‑13, UPC, Code 128, and others, include a **checksum digit**.  
-Aspose.BarCode validates this checksum internally and also exposes it via extended parameters.
-
-A common pattern is:
-
-1. Disable incorrect barcodes via `QualitySettings.setAllowIncorrectBarcodes(false)`.
-2. Read the barcode.
-3. Inspect the OneD checksum metadata if needed.
-
-Example: validating an EAN‑13 symbol and reading its checksum value.
+> Note: The `getCheckSum()` method available in metadata is for reading the value (e.g. for logging). You do not need to manually calculate and verify it if you rely on the default strict behavior.
 
 ```java
-String imagePath = "rv_ean13_valid.png";
+import com.aspose.barcode.barcoderecognition.BarCodeReader;
+import com.aspose.barcode.barcoderecognition.BarCodeResult;
+import com.aspose.barcode.barcoderecognition.DecodeType;
 
-BarCodeReader barCodeReader = new BarCodeReader(imagePath, DecodeType.EAN_13);
+BarCodeReader barCodeReader = new BarCodeReader("rv_ean13_valid.png", DecodeType.EAN_13);
+// Default is false: invalid checksums are discarded automatically
 barCodeReader.getQualitySettings().setAllowIncorrectBarcodes(false);
 
-BarCodeResult[] barCodeResults = barCodeReader.readBarCodes();
-if (barCodeResults.length > 0) {
-    BarCodeResult barCodeResult = barCodeResults[0];
+BarCodeResult[] results = barCodeReader.readBarCodes();
+```
 
-    System.out.println("EAN-13 text      = " + barCodeResult.getCodeText());
-    System.out.println("EAN-13 confidence= " + barCodeResult.getConfidence());
+## Compare strict vs relaxed mode on damaged input
 
-    BarCodeExtendedParameters barCodeExtendedParameters = barCodeResult.getExtended();
-    if (barCodeExtendedParameters != null && barCodeExtendedParameters.getOneD() != null) {
-        OneDExtendedParameters oneDExtendedParameters = barCodeExtendedParameters.getOneD();
-        System.out.println("OneD checksum    = " + oneDExtendedParameters.getCheckSum());
+If you set `AllowIncorrectBarcodes(true)`, the engine may return results with invalid checksums or partial reads. Use this only if you need to recover data from damaged labels and perform your own validation.
+
+```java
+import com.aspose.barcode.barcoderecognition.BarCodeReader;
+import com.aspose.barcode.barcoderecognition.BarCodeResult;
+import com.aspose.barcode.barcoderecognition.DecodeType;
+
+String imagePath = "rv_code39_damaged.png";
+
+BarCodeReader strictReader = new BarCodeReader(imagePath, DecodeType.CODE_39);
+strictReader.getQualitySettings().setAllowIncorrectBarcodes(false);
+int strictCount = strictReader.readBarCodes().length;
+
+BarCodeReader relaxedReader = new BarCodeReader(imagePath, DecodeType.CODE_39);
+relaxedReader.getQualitySettings().setAllowIncorrectBarcodes(true);
+BarCodeResult[] relaxedResults = relaxedReader.readBarCodes();
+
+System.out.println("Strict count:  " + strictCount);
+System.out.println("Relaxed count: " + relaxedResults.length);
+
+if (relaxedResults.length > 0) {
+    System.out.println("Text: " + relaxedResults[0].getCodeText());
+    System.out.println("Confidence: " + relaxedResults[0].getConfidence());
+}
+```
+
+## Fine-tune validation with ChecksumValidation enum
+
+For more control, especially with symbologies where checksums are optional (like Code 39 or Code 11), use `ChecksumValidation`.
+
+- `ChecksumValidation.DEFAULT`:
+  - For types with **mandatory** checksum (e.g. EAN-13): Validates checksum.
+  - For types with **optional** checksum (e.g. Code 39): Does **not** validate checksum.
+- `ChecksumValidation.ON`: Forces checksum validation for all types.
+- `ChecksumValidation.OFF`: Disables checksum validation.
+
+```java
+import com.aspose.barcode.barcoderecognition.BarCodeReader;
+import com.aspose.barcode.barcoderecognition.DecodeType;
+import com.aspose.barcode.barcoderecognition.ChecksumValidation;
+
+String imagePath = "code39_with_checksum.png";
+BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.CODE_39_EXTENDED);
+
+// Force checksum validation for Code 39 (normally optional)
+reader.getBarcodeSettings().setChecksumValidation(ChecksumValidation.ON);
+
+reader.readBarCodes();
+```
+
+## Use confidence as a filter
+
+The confidence score indicates how sure the engine is about the result.
+The value ranges from **0 to 100**, where 100 is the highest confidence.
+
+Low confidence often indicates a partial match or significant noise.
+
+```java
+import com.aspose.barcode.barcoderecognition.BarCodeReader;
+import com.aspose.barcode.barcoderecognition.BarCodeResult;
+import com.aspose.barcode.barcoderecognition.DecodeType;
+
+BarCodeReader reader = new BarCodeReader("barcode.png", DecodeType.ALL_SUPPORTED_TYPES);
+
+for (BarCodeResult result : reader.readBarCodes()) {
+    // Filter out weak matches
+    if (result.getConfidence() >= 80) {
+        System.out.println("Accepted: " + result.getCodeTypeName() + " -> " + result.getCodeText());
+    } else {
+        System.out.println("Rejected (low confidence): " + result.getCodeText());
     }
 }
 ```
-
-Key points:
-
-- With `setAllowIncorrectBarcodes(false)`, the engine **filters out** reads with invalid checksums where it can detect them.
-- `barCodeResult.getExtended().getOneD().getCheckSum()` exposes the checksum that was calculated from the bars.
-- This checksum can be logged or compared against expectations (for example, when implementing custom validation rules).
-
-If the image is severely damaged, the engine may return no results at all instead of a low-confidence, checksum-invalid candidate. This is usually desirable in production systems.
-
----
-
-## 2. Allowing vs. disallowing incorrect barcodes on damaged input
-
-For heavily degraded barcodes, you may want to **inspect borderline candidates** even if the checksum fails.  
-Aspose.BarCode lets you choose between strict and lenient behavior using `setAllowIncorrectBarcodes(...)`.
-
-Example: comparing results on a damaged Code 39 barcode.
-
-```java
-String imagePath = "rv_code39_damaged.png";
-
-// Strict mode: incorrect barcodes are filtered out
-BarCodeReader barCodeReaderStrict = new BarCodeReader(imagePath, DecodeType.CODE_39);
-barCodeReaderStrict.getQualitySettings().setAllowIncorrectBarcodes(false);
-BarCodeResult[] strictResults = barCodeReaderStrict.readBarCodes();
-int strictCount = strictResults.length;
-
-// Lenient mode: allow potentially incorrect barcodes
-BarCodeReader barCodeReaderLenient = new BarCodeReader(imagePath, DecodeType.CODE_39);
-barCodeReaderLenient.getQualitySettings().setAllowIncorrectBarcodes(true);
-BarCodeResult[] lenientResults = barCodeReaderLenient.readBarCodes();
-int lenientCount = lenientResults.length;
-
-System.out.println("[Code39 damaged] strict=" + strictCount + " | lenient=" + lenientCount);
-if (lenientCount > 0) {
-    BarCodeResult firstLenient = lenientResults[0];
-    System.out.println("  lenient first: text=" + firstLenient.getCodeText()
-            + " conf=" + firstLenient.getConfidence());
-}
-```
-
-How to interpret this:
-
-- In **strict mode**, you usually get **fewer results** but they are checksum-correct where checksums exist.
-- In **lenient mode**, you may see **more candidates**, including reads that fail checksum validation or look suspicious.
-- Lenient mode can be useful when you want to implement your own custom validation or diagnostics pipeline, while strict mode is more appropriate for production acceptance.
-
-A typical production setup:
-
-- use **strict mode** (`allowIncorrectBarcodes = false`) for live validation,
-- optionally run **lenient mode** in a secondary diagnostic pass if you need to investigate why a given image is hard to read.
-
----
-
-## 3. Comparing confidence for clean vs. noisy images
-
-Every `BarCodeResult` includes a **confidence score** (0–100).  
-Although this is not a formal probability, it is a useful heuristic for comparing reads of the **same barcode** under different conditions.
-
-Example: comparing recognition confidence between a clean QR code and a noisy QR code.
-
-```java
-String cleanImagePath = "rv_qr_clean.png";
-String noisyImagePath = "rv_qr_noisy.png";
-
-BarCodeReader cleanReader = new BarCodeReader(cleanImagePath, DecodeType.QR);
-cleanReader.setQualitySettings(QualitySettings.getHighQuality());
-BarCodeResult[] cleanResults = cleanReader.readBarCodes();
-
-BarCodeReader noisyReader = new BarCodeReader(noisyImagePath, DecodeType.QR);
-noisyReader.setQualitySettings(QualitySettings.getHighQuality());
-BarCodeResult[] noisyResults = noisyReader.readBarCodes();
-
-if (cleanResults.length > 0 && noisyResults.length > 0) {
-    double cleanConfidence = cleanResults[0].getConfidence();
-    double noisyConfidence = noisyResults[0].getConfidence();
-
-    System.out.println("[QR] clean confidence = " + cleanConfidence
-            + " vs noisy = " + noisyConfidence);
-}
-```
-
-Typical expectations:
-
-- Clean, well-printed codes tend to produce **higher confidence** than heavily degraded ones.
-- You can log these values to understand how different imaging conditions affect recognition quality.
-- In some workflows, you can enforce a **minimum confidence threshold** before accepting a result (for example, only accept confidence ≥ 60), while still combining this with checksum and business rules.
-
-Use the confidence value only to compare results on the same barcode or image (for example, clean vs. noisy input or different presets), and do not treat it as a calibrated probability that the result is correct.
-
----
-
-## 4. Using quality presets for difficult barcodes
-
-Aspose.BarCode provides several `QualitySettings` presets, such as:
-
-- `QualitySettings.getHighPerformance()` — optimized for speed.
-- `QualitySettings.getHighQuality()` — optimized for robustness on difficult inputs.
-
-A common validation pattern is to try more than one preset when dealing with **tiny**, **noisy**, or **distorted** barcodes.
-
-Example: reading a very small Code 128 symbol with both presets.
-
-```java
-String imagePath = "rv_c128_tiny.png";
-
-BarCodeReader barCodeReaderHighPerformance = new BarCodeReader(imagePath, DecodeType.CODE_128);
-barCodeReaderHighPerformance.setQualitySettings(QualitySettings.getHighPerformance());
-BarCodeResult[] highPerformanceResults = barCodeReaderHighPerformance.readBarCodes();
-
-BarCodeReader barCodeReaderHighQuality = new BarCodeReader(imagePath, DecodeType.CODE_128);
-barCodeReaderHighQuality.setQualitySettings(QualitySettings.getHighQuality());
-BarCodeResult[] highQualityResults = barCodeReaderHighQuality.readBarCodes();
-
-System.out.println("[Tiny Code 128] HighPerformance count=" + highPerformanceResults.length
-        + (highPerformanceResults.length > 0
-            ? (" conf=" + highPerformanceResults[0].getConfidence()) : "")
-        + " | HighQuality count=" + highQualityResults.length
-        + (highQualityResults.length > 0
-            ? (" conf=" + highQualityResults[0].getConfidence()) : ""));
-```
-
-How to use this pattern:
-
-- Start with a **default preset** that balances speed and quality for your use case.
-- For difficult inputs (tiny, low-resolution, compressed images), try `HighQuality` on a subset of images or as a fallback.
-- Compare both **result count** and **confidence** to decide which preset works better for a particular input type.
-
-In many real systems, you might:
-
-1. Run a fast pass (for example, `HighPerformance`) for all frames or pages.
-2. If nothing is found or confidence is too low, re-run a **second pass** with `HighQuality` on the same image.
-
----
-
-## Summary
-
-Result validation in Aspose.BarCode for Java combines several independent signals:
-
-- **Checksum validation**
-    - Use `QualitySettings.setAllowIncorrectBarcodes(false)` to filter out invalid 1D reads where possible.
-    - Inspect `OneDExtendedParameters.getCheckSum()` when you need explicit checksum information.
-- **Confidence score**
-    - `BarCodeResult.getConfidence()` (0–100) is useful for comparing reads on the same barcode under different conditions.
-    - You can log confidence or enforce minimum thresholds in your own business logic.
-- **Quality presets**
-    - `QualitySettings.getHighPerformance()` vs `QualitySettings.getHighQuality()` let you balance speed and robustness.
-    - Running multiple presets on difficult images can significantly improve overall reliability.
-
-All examples shown here are based on:
-
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/recognition/barcode_properties/ResultValidationExample.java" target="_blank" rel="noopener noreferrer">ResultValidationExample.java</a>
-
-Use these patterns as a reference when designing result validation logic and acceptance criteria in your barcode-based Java applications.
-
