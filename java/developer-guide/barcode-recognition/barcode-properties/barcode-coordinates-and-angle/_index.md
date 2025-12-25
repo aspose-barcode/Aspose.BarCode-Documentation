@@ -11,6 +11,21 @@ url: /java/developer-guide/barcode-recognition/barcode-properties/barcode-coordi
 For each recognized barcode, `BarCodeResult.getRegion()` returns geometry information.
 You can use it to locate the barcode on the image and to understand its rotation.
 
+## Rectangle vs quadrangle
+
+`BarCodeRegionParameters` exposes the barcode region in several forms.
+The two most common are:
+
+- `Rectangle`: an axis-aligned bounding box. It is always aligned with the image axes (X and Y).
+  Use it when you need a simple crop, a quick overlay, or a rough location.
+- `Quadrangle`: four corner points of the detected barcode region (`leftTop`, `rightTop`, `rightBottom`, `leftBottom`).
+  Use it when the barcode is rotated, skewed, or affected by perspective.
+
+If the barcode is rotated, the rectangle will usually include extra background because it cannot rotate with the barcode.
+The quadrangle follows the barcode shape more closely.
+
+Coordinates are in image pixels. The origin is the top-left corner of the image.
+
 ## Read rectangle, quadrangle, points
 
 ```java
@@ -45,6 +60,9 @@ if (barCodeResults.length > 0) {
 
 ## Read rotation angle
 
+The angle is reported in degrees and represents the detected barcode orientation.
+Use it when you need to rotate an overlay or to decide whether you should pre-rotate images before recognition.
+
 ```java
 import com.aspose.barcode.barcoderecognition.BarCodeReader;
 import com.aspose.barcode.barcoderecognition.BarCodeResult;
@@ -60,3 +78,7 @@ if (results.length > 0) {
     System.out.println("Detected angle: " + angle + " degrees");
 }
 ```
+
+## Related topics
+
+- If you need to validate results before using them: see [Result validation](../result-validation).

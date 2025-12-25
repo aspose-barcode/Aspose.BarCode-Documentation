@@ -49,23 +49,3 @@ Rectangle[] areas = new Rectangle[] {
 BarCodeReader reader = new BarCodeReader("roi_canvas.png", areas, DecodeType.TYPES_1D);
 BarCodeResult[] results = reader.readBarCodes();
 ```
-
-## Full image scan vs ROI scan
-
-Use a full scan when you do not know where the barcode is.
-Use ROI when you already know the expected location.
-
-```java
-import com.aspose.barcode.barcoderecognition.BarCodeReader;
-import com.aspose.barcode.barcoderecognition.BarCodeResult;
-import com.aspose.barcode.barcoderecognition.DecodeType;
-import java.awt.Rectangle;
-
-BarCodeReader fullReader =
-        new BarCodeReader("roi_canvas.png", DecodeType.ALL_SUPPORTED_TYPES);
-BarCodeResult[] fullResults = fullReader.readBarCodes();
-
-Rectangle dataMatrixArea = new Rectangle(10, 190, 230, 230);
-BarCodeReader roiReader = new BarCodeReader("roi_canvas.png", dataMatrixArea, DecodeType.DATA_MATRIX);
-BarCodeResult[] roiResults = roiReader.readBarCodes();
-```

@@ -42,20 +42,11 @@ import com.aspose.barcode.barcoderecognition.InverseImageMode;
 reader.getQualitySettings().setInverseImage(InverseImageMode.ENABLED);
 ```
 
-## 4. Handle rotation
-Most 1D barcodes are expected to be horizontal. If your barcode is rotated 90°, 180°, or 270°, the standard scan might miss it.
-Use `QualitySettings` to allow rotation.
-
-```java
-// Try to detect rotated barcodes (slower)
-reader.getQualitySettings().setAllowOneDRotatedBarcodes(true);
-```
-
-## 5. Narrow the symbology set
+## 4. Narrow the symbology set
 Searching for `ALL_SUPPORTED_TYPES` on a noisy image can be problematic.
 Always specify the exact type if you know it (e.g. `DecodeType.CODE_128`).
 
-## 6. Use ROI (Region of Interest)
+## 5. Use ROI (Region of Interest)
 If the image is very large (e.g. A4 document at 600 DPI), the barcode might be relatively small.
 Restricting the search area helps the engine focus.
 

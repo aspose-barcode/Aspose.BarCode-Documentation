@@ -8,10 +8,28 @@ url: /java/developer-guide/barcode-recognition/basic-recognition-setup
 
 # Basic Recognition Setup
 
-This page shows a clean baseline setup for barcode recognition.
-Start with this configuration, then adjust symbology, ROI, and quality settings only when you need to.
+This page shows a stable baseline for barcode recognition.
+Use it when you need correct results with minimal configuration.
+
+## What to configure first
+
+In most projects, recognition quality is defined by three choices:
+
+1. Input source and image quality.
+2. Expected barcode types (symbologies).
+3. The search area (ROI) when the barcode location is known.
+
+If you need more control than the examples below, continue with these pages:
+
+- [Choose recognition symbology](choose-recognition-symbology)
+- [Use ROI](use-roi)
+- [Save and load settings](save-load-settings)
+- [Special parameters](special-parameters)
 
 ## Minimal example
+
+This example reads a single expected symbology from a file.
+If you do not know the symbology, use `DecodeType.ALL_SUPPORTED_TYPES`, but expect slower recognition.
 
 ```java
 import com.aspose.barcode.barcoderecognition.BarCodeReader;
@@ -27,6 +45,8 @@ for (BarCodeResult result : reader.readBarCodes()) {
 ```
 
 ## Read multiple barcodes from one image
+
+Pass several `DecodeType` values when you expect more than one barcode type in the same image.
 
 ```java
 import com.aspose.barcode.barcoderecognition.BarCodeReader;
@@ -53,6 +73,7 @@ for (int i = 0; i < results.length; i++) {
 ## Handle the “no results” case
 
 `readBarCodes()` returns an empty array when nothing is recognized.
+Always handle this case, especially when images come from external systems.
 
 ```java
 import com.aspose.barcode.barcoderecognition.BarCodeReader;
@@ -69,6 +90,9 @@ if (results.length == 0) {
 
 ## Basic error handling
 
+Reader creation and recognition may throw exceptions when the input is missing, corrupted, or not a valid image.
+Handle exceptions at your application boundary and log enough context to troubleshoot.
+
 ```java
 import com.aspose.barcode.barcoderecognition.BarCodeReader;
 import com.aspose.barcode.barcoderecognition.BarCodeResult;
@@ -83,3 +107,8 @@ try {
     System.err.println("Recognition error: " + ex.getMessage());
 }
 ```
+
+## Next steps
+
+- If you need to control how images are loaded: see [Input Sources](../input-sources).
+- If recognition is slow or unstable: see [Performance & Quality](../performance).

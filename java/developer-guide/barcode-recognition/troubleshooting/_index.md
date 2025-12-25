@@ -19,4 +19,9 @@ Start by reducing variables, then add complexity only when needed.
 4. Try a more robust preset (`HighQuality` or `MaxQuality`) on the same image.
 5. Validate results using checksum rules and confidence thresholds.
 
+## Topics in this section
+
+- If no barcodes are found: see [Not recognized](not-recognized).
+- If you get false detections: see [False positives](false-positives).
+
 

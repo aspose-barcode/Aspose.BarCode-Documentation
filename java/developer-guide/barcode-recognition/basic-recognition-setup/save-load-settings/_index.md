@@ -49,27 +49,3 @@ for (BarCodeResult result : results) {
     System.out.println(result.getCodeTypeName() + ": " + result.getCodeText());
 }
 ```
-
-## Export/Import using Streams
-
-```java
-import com.aspose.barcode.barcoderecognition.BarCodeReader;
-import com.aspose.barcode.barcoderecognition.DecodeType;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-
-// 1. Configure and Export
-BarCodeReader originalReader = new BarCodeReader();
-originalReader.setBarCodeReadType(DecodeType.CODE_128);
-
-ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-originalReader.exportToXml(outputStream);
-
-// 2. Import from Stream
-ByteArrayInputStream inputStream = new ByteArrayInputStream(outputStream.toByteArray());
-BarCodeReader loadedReader = BarCodeReader.importFromXml(inputStream);
-
-// 3. Use the loaded reader
-loadedReader.setBarCodeImage("barcode.png");
-loadedReader.readBarCodes();
-```

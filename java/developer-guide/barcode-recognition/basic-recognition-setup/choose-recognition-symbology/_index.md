@@ -11,6 +11,28 @@ url: /java/developer-guide/barcode-recognition/basic-recognition-setup/choose-re
 `DecodeType` defines which symbologies the reader will try to detect.
 Limiting the set usually improves performance and reduces false positives.
 
+## Why it matters
+
+Recognition is not a simple lookup. The reader tries multiple detection strategies and decoders.
+If you allow many symbologies, the reader has more work to do and has more chances to interpret noise as a valid barcode.
+
+In practice, choosing the right `DecodeType` set helps you:
+
+- reduce latency for large images and batch processing
+- reduce false positives when images contain patterns, text, or graphics
+- make results easier to validate because the expected type is known
+
+## Practical selection rules
+
+Use these rules as a default:
+
+1. If you know the exact symbology, pass one `DecodeType` to the reader.
+2. If you know a small set of possible symbologies, pass only that set.
+3. If you only know the category, start with `DecodeType.TYPES_1D` or `DecodeType.TYPES_2D`.
+4. Use `DecodeType.ALL_SUPPORTED_TYPES` only for unknown inputs and diagnostics.
+
+If results are still unstable, restrict the search area using ROI. See [Use ROI](../use-roi).
+
 ## Recognize one exact type
 
 ```java
@@ -78,20 +100,7 @@ for (BarCodeResult result : reader.readBarCodes()) {
 }
 ```
 
-## Define a custom subset at runtime
+## Next steps
 
-```java
-import com.aspose.barcode.barcoderecognition.BarCodeReader;
-import com.aspose.barcode.barcoderecognition.DecodeType;
-
-String imagePath = "dm.png";
-
-BarCodeReader barCodeReader =
-        new BarCodeReader(imagePath, DecodeType.ALL_SUPPORTED_TYPES);
-
-barCodeReader.setBarCodeReadType(
-        DecodeType.CODE_128,
-        DecodeType.QR,
-        DecodeType.DATA_MATRIX
-);
-```
+- If you want a stable baseline and common patterns: see [Basic Recognition Setup](../..).
+- If you need to speed up recognition or tune robustness: see [Performance & Quality](../../performance).

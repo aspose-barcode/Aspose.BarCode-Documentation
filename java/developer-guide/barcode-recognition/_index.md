@@ -20,9 +20,9 @@ You will learn how to choose input sources, configure recognition, tune performa
 
 ## Start here
 
-- If you have an image already: go to **Input Sources: Files & Streams**.
-- If you need a baseline configuration: go to **Basic Recognition Setup**.
-- If recognition is slow or unstable: go to **Performance & Quality**.
-- If you need geometry, metadata, or validation: go to **Reading Barcode Properties**.
+- If you already have an image: go to [Input Sources: Files, Streams, and Bitmaps](input-sources).
+- If you need a baseline configuration: go to [Basic Recognition Setup](basic-recognition-setup).
+- If recognition is slow or unstable: go to [Performance & Quality](performance).
+- If you need geometry, metadata, or validation: go to [Reading Barcode Properties](barcode-properties).
 
 

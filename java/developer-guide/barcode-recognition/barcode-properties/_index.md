@@ -11,6 +11,16 @@ url: /java/developer-guide/barcode-recognition/barcode-properties
 After recognition, each detected barcode is returned as a `BarCodeResult`.
 This object contains decoded text, the detected type, geometry information, and extended metadata.
 
+## Topics in this section
+
+Use these pages to read specific result fields:
+
+- [Reading code text](reading-codetext) shows how to access decoded data and related output.
+- [Symbology type](symbology-type) shows how to read the detected barcode type and type names.
+- [Barcode coordinates and angle](barcode-coordinates-and-angle) shows how to read position and orientation.
+- [Barcode metadata](barcode-metadata) shows how to access extended information when it is available.
+- [Result validation](result-validation) describes validation signals and how to filter unreliable results.
+
 ## Minimal example
 
 ```java

@@ -38,25 +38,3 @@ reader.getQualitySettings().setDetectorSettings(BarcodeSvmDetectorSettings.getMa
 
 reader.readBarCodes();
 ```
-
-## Scan Gap (AllowDetectScanGap)
-
-For large 1D barcodes and some 2D types (like PDF417, QR), the engine can speed up detection by scanning with a gap (skipping lines), rather than checking every single pixel line.
-
-- **Enable (`true`)**: Increases speed for large barcodes.
-- **Disable (`false`)**: Required if you have very small barcodes or mixed sizes where small codes might fall into the gap.
-
-> **Warning:** Enabling this on images with small barcodes may cause them to be missed.
-
-```java
-import com.aspose.barcode.barcoderecognition.BarCodeReader;
-import com.aspose.barcode.barcoderecognition.DecodeType;
-
-String imagePath = "large_barcode.png";
-BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.PDF_417);
-
-// Enable scan gap to speed up reading of large barcodes
-reader.getQualitySettings().setAllowDetectScanGap(true);
-
-reader.readBarCodes();
-```

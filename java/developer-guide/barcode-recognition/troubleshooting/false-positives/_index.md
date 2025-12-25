@@ -32,6 +32,16 @@ Rectangle roi = new Rectangle(20, 20, 440, 140);
 BarCodeReader reader = new BarCodeReader("input.png", roi, DecodeType.CODE_128);
 ```
 
+## Set MinimalXDimension to ignore small noise
+
+If your images contain a lot of fine texture, the engine can sometimes interpret small patterns as barcode modules.
+You can reduce this by setting the minimal expected module size.
+This limits the search for very small candidates and often reduces false positives and CPU cost.
+
+This is a trade-off. If a real barcode has modules smaller than your threshold, it may not be detected.
+
+See [Using UseMinimalXDimension](../../performance/minimal-xdimension).
+
 ## Apply confidence threshold
 
 Each result has a confidence score from **0 to 100**. Real barcodes usually have high confidence (often 100). False positives typically have lower scores.
