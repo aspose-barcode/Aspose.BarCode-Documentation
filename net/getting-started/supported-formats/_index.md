@@ -10,7 +10,7 @@ keywords: "Generate Barcodes, Read Barcodes, How to Generate Barcodes in C# .NET
 url: /net/image-formats/
 ---
 
-***Aspose.BarCode for .NET*** allows rendering barcode images in the five most widespread image formats. Two additional vector formats can be used for barcode generation, but they are not supported for rendering by the SQL Server Reporting Services engine. The image formats available for input and output are listed below.
+**Aspose.BarCode for .NET** allows rendering and recognizing barcodes from five raster image formats. Additionally, it supports rendering barcodes to vector **output-only** formats.
   
 | Input / Output | Output Only| 
 | :------: | :------: | 

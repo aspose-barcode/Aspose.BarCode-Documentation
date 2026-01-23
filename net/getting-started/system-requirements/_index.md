@@ -11,10 +11,10 @@ url: /net/system-requirements/
 ---
 
 ## **Overview**
-***Aspose.BarCode for .NET*** is a robust and reliable library for barcode generation and recognition written in managed C#. Using this library, developers can add barcode generation and recognition functionality to their Microsoft .NET applications in a fast and easy manner. It is compatible with any type of x86 or x64 (32-bit or 64-bit) .NET application (including WinForms, WPF, .Net MAUI and .NET Core). The library supports all versions of the Microsoft .NET from .NET Framework 2.0 to .Net 9.
+***Aspose.BarCode for .NET*** is a robust and reliable library for barcode generation and recognition written in managed C#. Using this library, developers can add barcode generation and recognition functionality to their Microsoft .NET applications in a fast and easy manner. It is compatible with any type of x86 or x64 (32-bit or 64-bit) .NET application (including WinForms, WPF, .Net MAUI and .NET Core). The library supports all versions of the Microsoft .NET from .NET Framework 2.0 to .Net 10.
 
 ## **Supported Operating Systems**
-The barcode library supports any 32-bit or 64-bit operating system with the installed .NET framework 2.0 or later / .Net Core 3.1 or later with with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 9 included).
+The barcode library supports any 32-bit or 64-bit operating system with the installed .NET framework 2.0 or later / .Net Core 3.1 or later with with [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) (.Net 10 included).
   
 |Operating System|Compatible Versions|
 |---|---|
@@ -32,9 +32,21 @@ The barcode library supports any 32-bit or 64-bit operating system with the inst
 |Framework|Supported Versions|Additional Requirements|
 |---|---|---|
 |.NET Framework|2.0 / 3.5 / 4.0 / 4.6 / 4.7 / 4.8| |
-|.NET Standard|2.0 | [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.3.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
-|.NET Core| 3.1 / .Net 6.0 / .Net 8.0 / .Net 9.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.2.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
+|.NET Standard|2.0 | [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
+|.NET Core| 3.1 / .Net 6.0 / .Net 8.0| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
+|.NET Core| .Net 9.0. / .Net 10.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+|
 
+**Note on 32-bit (x86) Environments**
+
+Aspose.BarCode fully supports 32-bit (x86) applications. However, it is recommended to use a 64-bit (x64) environment when possible.
+
+Due to the inherent memory limitations of 32-bit processes, barcode recognition performance may be reduced in scenarios that require significant computational or memory resources, including:
+* processing large or high-resolution images,
+* PDF and document-based workflows,
+* batch or bulk recognition operations,
+* multi-threaded or server-side applications.
+
+For improved performance, stability, and scalability, use of a 64-bit environment is advised.
 
 ## **Development Environments**
 ***Aspose.BarCode for .NET*** can be used to create applications in any development environment that is based on the .NET platform. The following environments are supported explicitly:
@@ -47,3 +59,4 @@ The barcode library supports any 32-bit or 64-bit operating system with the inst
 - Microsoft Visual Studio 2017
 - Microsoft Visual Studio 2019
 - Microsoft Visual Studio 2022
+- Microsoft Visual Studio 2026

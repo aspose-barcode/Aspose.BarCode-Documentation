@@ -11,54 +11,52 @@ url: /net/product-features/
 ---
 
 ## **General Features**
-- Barcode generation
-- Barcode recognition
-- Symbology specification (80+ symbologies: 1D, 2D, DataBar, Postal, HIBC, GS1 types)
-- Managing barcode appearance-related parameters
-- Image rotation
-- Encoding and decoding non-English characters in 2D types
-- Customizing recognition engine variables
-- Saving to or loading from a stream or a file
-- Label printing
-- Working with complex barcodes (e.g. Swiss QR Code) 
-
-## **Barcode Recognition Features**
-- Class [*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader): reading 1D and 2D barcodes at any angle from an image
-- Supporting popular image formats: JPEG, TIFF, PNG, BMP, and GIF
-- Reading images with resolution from 75 to 600 dpi
-- Reading highly blurred or noised images
-- Specifying image areas to scan barcodes
-- Predefining target barcode types
-- Managing recognition engine variables to reach the best trade-off between reading speed and quality (both manually and through embedded presets). For example, the following cases can be allowed for recognition: color barcodes on color background, dashed industrial Datamatrix barcodes, decreased images, damaged barcodes with incorrect text, damaged QR Codes, and others
-- Detecting and then reading all barcodes presented in the scanned region
-- Reading barcodes of different 1D types from a single scanned region
-- Defining the angle and region information for all barcodes recognized in an image (using points, quadrangle, or rectangle to specify a bounding barcode region)
-- Performing checksum validation for 1D and postal barcodes
-- Increasing the barcode detection speed through multi-threading
-- Scanning from multi-page TIFF through System.Drawing
-- Scanning from PDF format via [*Aspose.PDF*](https://products.aspose.com/pdf/)
+- Pure managed .NET library.
+- Supports modern .NET platforms including **.NET Framework**, **.NET**, and **.NET Core**.
+- Works across a wide range of platforms supported by **.NET and .NET MAUI**, including **Windows, Linux, macOS, Android, and iOS**.
+- Compatible with other Aspose products for extended document workflows.
+- Optimized for high-throughput barcode generation and recognition.
+- Supports multi-core processing where applicable.
+- Designed for batch processing and server-side scenarios.
+- Supports common raster image formats for input and output: **BMP**, **JPEG**, **GIF**, **TIFF**, and **PNG**.
+- Supports vector image formats for output: **SVG**, **EMF**, and **PDF**.
+- Supports a wide range of international barcode standards and symbologies.
+- Supports **GS1** standards and industry-specific barcode formats.
+- Simple licensing model suitable for development and production environments.
+- License can be embedded and protected within the application.
 
 ## **Barcode Generation Features**
-- Class [*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator): generating barcode labels according to required settings
-- Providing a wide range of options to customize barcode image appearance (size, resolution, height, background color, bar color, rotation angle, X-dimension, image quality, captions, wide-to-narrow-ratio, and others)
-- Saving barcode labels in various image formats: JPEG, TIFF, PNG, BMP, GIF, EMF, and SVG 
-- Customizing the barcode encoding type and parameters
-- Supporting checksum addition (for 1D barcodes) and supplement data
-- Supporting X- and Y-dimensions for 2D barcodes
-- Customizing a wide-to-narrow ratio for the supported symbologies to improve recognition precision
-- Setting an encoding type for 2D barcodes: Error Checking and Correcting (ECC) or Extended Channel Interpretation (ECI)
-- Providing visual components for barcode generation in WinForms and WPF (e.g. supporting WYSIWYG editing through GUI-based controls)
-- Encoding DataMatrix barcodes through X12, EDIFACT, and Base 256
-- Embedding barcodes to Word and PDF formats via [*Aspose.Words*](https://products.aspose.com/words/) and [*Aspose.PDF*](https://products.aspose.com/pdf/)
+- The **[*BarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator)** class provides flexible and reliable barcode generation capabilities.
+- Generate a wide range of **1D and 2D barcode symbologies**, including linear, matrix, stacked, postal, GS1, and industry-specific formats.
+- Manage barcode size and layout, including X-dimension (module width), bar height, margins and quiet zones, auto-sizing, and scaling.
+- Customize barcode appearance, including foreground and background colors, rotation to any angle, borders and frames, and captions with configurable font, alignment, and positioning.
+- Generate barcodes with **high-resolution output** suitable for printing and screen display.
+- Configure symbology-specific parameters, such as error correction levels (for 2D barcodes), columns, rows, and encoding modes where applicable, as well as checksums and supplemental data for supported 1D barcodes.
+- Export generated barcodes to raster image formats (**BMP, JPEG, GIF, TIFF, PNG**) and vector formats (**SVG, EMF, PDF**).
+- Generate barcode images fully in memory or save them directly to files or streams.
+- Embed barcodes into Word and PDF documents via **[*Aspose.Words*](https://products.aspose.com/words/)** and **[*Aspose.PDF*](https://products.aspose.com/pdf/)**.
+- Use visual components for barcode generation in **WinForms** and **WPF** applications.
 
-## **Barcode Imaging Features**
-- Customizing barcode image borders, border color, style, margins, and width
-- Customizing barcode image color, background color, and bar color
-- Customizing bar height
-- Customizing barcode caption and its font, background/foreground colors, alignment, and location
-- Rotating barcode images to any degree
-- Setting the required quality and resolution setting for barcode images to be generated
-- Anti-aliasing for barcode images
-- Selecting size units (inches or millimeters)
-- Auto-sizing of barcode images
-- Rendering barcode images on any device
+## **Barcode Recognition Features**
+- The **[*BarCodeReader*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/barcodereader/)** class enables detection and recognition of barcodes from images, image streams, and files.
+- Recognize a wide range of **1D and 2D barcode symbologies**, including linear, matrix, stacked, postal, GS1, and industry-specific formats.
+- Detect and read barcodes **at any orientation**, including rotated and skewed images.
+- Read multiple barcodes from a single image.
+- Restrict recognition to **specific image regions** to improve performance and accuracy.
+- Validate checksums for supported 1D and postal barcode types.
+- Retrieve detailed recognition results, including barcode type, decoded text, and barcode location.
+- Process images in common raster formats (**BMP, JPEG, GIF, TIFF, PNG**).
+- Support batch processing and high-throughput recognition scenarios.
+- Scan barcodes from **multi-page TIFF** images via **System.Drawing** or **Aspose.Drawing.Common**.
+- Scan barcodes from **PDF documents** via **[*Aspose.PDF*](https://products.aspose.com/pdf/)**.
+- Select predefined recognition modes optimized for different scenarios, such as fast detection, high accuracy, or degraded image conditions.
+- Adjust recognition parameters to handle low-quality or noisy images, complex backgrounds, small or dense barcodes, and inverted or low-contrast barcodes.
+- Improve recognition performance by limiting expected barcode types and applying appropriate quality presets.
+
+## **Complex Barcode Features**
+- The **[*ComplexBarcodeGenerator*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexbarcodegenerator/)** and **[*ComplexCodetextReader*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/complexcodetextreader/)** classes enable generation and recognition of complex barcodes based on **structured domain models**, rather than manual composition of barcode text.
+- Support complex standards that require strict payload structure, field validation, and formatting rules (for example, **Driving License ID Code** or **Swiss QR Code**).
+- Parse and interpret complex barcode payloads into **strongly typed structured data representations**.
+- Validate encoded data against format and checksum rules defined by the corresponding complex barcode specification.
+- Eliminate manual handling of low-level encoding details such as field separators, control codes, and field ordering.
+- Support **round-trip workflows**, converting **structured data into barcode images** and **recognized barcode data back into structured objects**.
