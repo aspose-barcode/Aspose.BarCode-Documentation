@@ -121,7 +121,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
 {
-    bg.SetCodeText(encodedArr);
+    gen.SetCodeText(encodedArr);
     //set DataMatrix encode mode to Binary
     gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
     gen.Save($"{path}DataMatrixEncodeModeBinary.png", BarCodeImageFormat.Png);

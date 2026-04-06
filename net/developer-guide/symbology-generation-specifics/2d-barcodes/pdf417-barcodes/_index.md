@@ -207,7 +207,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417))
 {
-    bg.SetCodeText(encodedArr);
+    gen.SetCodeText(encodedArr);
     //set Pdf417 encode mode to Binary
     gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Binary;
     gen.Save($"{path}Pdf417EncodeModeBinary.png", BarCodeImageFormat.Png);

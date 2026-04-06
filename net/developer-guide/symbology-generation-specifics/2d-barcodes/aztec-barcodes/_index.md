@@ -93,7 +93,7 @@ The *Binary* mode serves to encode byte streams. If a Unicode character is encou
 byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec))
 {
-    bg.SetCodeText(encodedArr);
+    gen.SetCodeText(encodedArr);
     //set Aztec encode mode to Binary
     gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Binary;
     gen.Save($"{path}AztecEncodeModeBinary.png", BarCodeImageFormat.Png);
@@ -143,7 +143,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, codetext))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set encode mode to Extended
-    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecncodeMode.Extended;
+    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}AztecEncodeModeExtended.png", BarCodeImageFormat.Png);
 }
