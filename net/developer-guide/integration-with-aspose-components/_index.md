@@ -10,7 +10,7 @@ feedback: BARCODECOM
 url: /net/integration-with-aspose-libraries/
 ---
 
-This documentation chapter provides articles that describe how to integrate [***Aspose.BarCode for .NET***](https://products.aspose.com/barcode/net/) with other Aspose products, including [***Aspose.Words***](https://products.aspose.com/words/net/), [***Aspose.Words***](https://products.aspose.com/pdf/net/), and [***Aspose.Words***](https://products.aspose.com/cells/net/):
+This documentation chapter provides articles that describe how to integrate [***Aspose.BarCode for .NET***](https://products.aspose.com/barcode/net/) with other Aspose products, including [***Aspose.Words***](https://products.aspose.com/words/net/), [***Aspose.Pdf***](https://products.aspose.com/pdf/net/), and [***Aspose.Cells***](https://products.aspose.com/cells/net/):
 - [Integration with Aspose.Pdf](/barcode/net/integrate-with-aspose-pdf/)
 - [Integration with Aspose.Words](/barcode/net/integrate-with-aspose-words/)
 - [Integration with Aspose.Cells](/barcode/net/integrate-with-aspose-cells/)

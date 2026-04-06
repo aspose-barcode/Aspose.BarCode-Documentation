@@ -212,7 +212,7 @@ The following code sample shows how to enable the *Structured Append* mode.
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
-    //set Aztec strucutured append mode
+    //set Aztec structured append mode
     gen.Parameters.Barcode.Aztec.StructuredAppendBarcodeId = 3;
     gen.Parameters.Barcode.Aztec.StructuredAppendBarcodesCount = 5;
     gen.Parameters.Barcode.Aztec.StructuredAppendFileId = "ABCD";

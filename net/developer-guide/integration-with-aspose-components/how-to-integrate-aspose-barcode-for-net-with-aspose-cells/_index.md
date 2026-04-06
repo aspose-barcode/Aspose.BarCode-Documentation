@@ -1,7 +1,7 @@
 ---
 title: Integrate Aspose.BarCode for .NET with Aspose.Cells
 linktitle: Integration with Aspose.Cells
-description: "How to Intergrate Aspose.BarCode with Aspose.Cells"
+description: "How to Integrate Aspose.BarCode with Aspose.Cells"
 keywords:
 type: docs
 feedback: BARCODECOM
@@ -17,7 +17,7 @@ aliases:
 
 Adding barcodes into MS Excel documents is a requested feature that makes Excel reports machine-readable. A barcode label can be inserted into a cell in the format of raster (Raster graphics) or vector (Windows Metafile) images.  
 For raster image formats, an appropriate resolution value needs to be selected. The standard resolution equals 96 dpi, but for high-quality printing, it should be set in a range from 300 to 600 dpi.  
-For vector formats, the resolution does not have a significant influence on the printing quality. This parameter is important to accurately covert millimeters and inches to internal vector units determining the size of fonts and barcode elements. The vector EMF format might not be fully supported on non-Windows systems. In some cases, the raster format may suit better to work with barcode images despite the convenience of the vector format.  
+For vector formats, the resolution does not have a significant influence on the printing quality. This parameter is important to accurately convert millimeters and inches to internal vector units determining the size of fonts and barcode elements. The vector EMF format might not be fully supported on non-Windows systems. In some cases, the raster format may suit better to work with barcode images despite the convenience of the vector format.  
   
 [***Aspose.Cell***](https://products.aspose.com/cells/net/) library is the most suitable tool to work with documents like Excel spreadsheets. The procedure to insert barcode images into an Excel document includes the following steps:
 1.	Create or open an Excel document using [**Aspose.Cells.Workbook**](https://reference.aspose.com/cells/net/aspose.cells/workbook/) and  then add or select the required sheet

@@ -75,7 +75,7 @@ int topBarcodePosition = 20;//top pistion of the barcode image
 Aspose.Pdf.Document pdfDoc = new Aspose.Pdf.Document();
 pdfDoc.Pages.Add();
 
-//covert the barcode image to a PNG stream
+//convert the barcode image to a PNG stream
 BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose.Barcode Example");
 generator.Parameters.Resolution = Resolution;//set the barcode image resolution
 Bitmap image = generator.GenerateBarCodeImage();

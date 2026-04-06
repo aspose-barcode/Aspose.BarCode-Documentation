@@ -206,7 +206,7 @@ The structured append mode is a special generation regime that allows combining 
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
-    //set MaxiCode strucutured append mode
+    //set MaxiCode structured append mode
     gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 3;
     gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 5;
     gen.Save($"{path}MaxiCodeStructuredAppendMode.png", BarCodeImageFormat.Png);

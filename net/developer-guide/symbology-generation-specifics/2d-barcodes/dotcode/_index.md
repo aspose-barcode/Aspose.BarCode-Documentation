@@ -153,7 +153,7 @@ The following code sample shows how to enable the *Structured Append* mode.
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 10;
-    //set DotCode strucutured append mode
+    //set DotCode structured append mode
     gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 3;
     gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodesCount = 5;
     gen.Save($"{path}DotCodeStructuredAppendMode.png", BarCodeImageFormat.Png);

@@ -41,7 +41,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}multiple_codes.png", Dec
 }
 {{< /highlight >}}
   
-<p align="center"><img src="multiple_codes.png" hight="50%" width="50%"></p>  
+<p align="center"><img src="multiple_codes.png" height="50%" width="50%"></p>  
 
 
 ## **Get Recognition Results**

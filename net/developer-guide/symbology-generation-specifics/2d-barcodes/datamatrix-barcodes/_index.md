@@ -281,7 +281,7 @@ gen.Save($"{path}DatamatrixAspectRatio0.5.png", BarCodeImageFormat.Png);
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    //set DataMatrix strucutured append mode
+    //set DataMatrix structured append mode
     gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodeId = 3;
     gen.Parameters.Barcode.DataMatrix.StructuredAppendBarcodesCount = 5;
     gen.Parameters.Barcode.DataMatrix.StructuredAppendFileId = 150;
