@@ -100,12 +100,14 @@ using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality
 }
 
 //recognize image with MaxQuality and Incorrect Barcodes
+//Note: assigning a preset resets all QualitySettings sub-properties to the preset defaults.
+//Individual property overrides must be applied AFTER the preset assignment.
 Console.WriteLine("ReadQualityPresets: MaxQuality and Incorrect Barcodes");
 using (BarCodeReader read = new BarCodeReader($"{path}barcodes_different_quality.png", DecodeType.Code128,
     DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.Aztec))
 {
     read.QualitySettings = QualitySettings.MaxQuality;
-    read.QualitySettings.AllowIncorrectBarcodes = true;
+    read.QualitySettings.AllowIncorrectBarcodes = true;  // override applied after preset
     Console.WriteLine($"Barcodes read: {read.ReadBarCodes().Length}");
     foreach (BarCodeResult result in read.FoundBarCodes)
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");

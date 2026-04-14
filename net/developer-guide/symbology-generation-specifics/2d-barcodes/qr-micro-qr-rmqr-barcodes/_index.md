@@ -52,7 +52,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE"))
     gen.Save($"{path}QRVersionAuto.png", BarCodeImageFormat.Png);
 
     //set QR version 05
-    gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
+    gen.Parameters.Barcode.QR.Version = QRVersion.Version05;
     gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -131,7 +131,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR))
 {
     gen.SetCodeText(encodedArr);
     //set QR Code encode mode to Binary
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Binary;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Binary;
     gen.Save($"{path}QrEncodeModeBinary.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -150,7 +150,7 @@ var str = "ΑΒΓΔΕ";
 
 using (var gen = new BarcodeGenerator(EncodeTypes.QR, str))
 {
-    gen.Parameters.Barcode.QR.QrEncodeMode = QrEncodeMode.ECI;
+    gen.Parameters.Barcode.QR.EncodeMode = QrEncodeMode.ECI;
     gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = gen.GenerateBarCodeImage();
 }
@@ -173,7 +173,7 @@ textBuilder.AddPlainCodetext(@"!!!");
 //generate barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, textBuilder.GetExtendedCodetext())){
     //set the encoding mode to Extended
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Extended;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}QrEncodeModeExtended.png", BarCodeImageFormat.Png);
     //attempt to recognize it
@@ -209,16 +209,16 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set error level L
-    gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
+    gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelL;
     gen.Save($"{path}QrErrorLevelL.png", BarCodeImageFormat.Png);
     //set error level M
-    gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelM;
+    gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelM;
     gen.Save($"{path}QrErrorLevelM.png", BarCodeImageFormat.Png);
     //set error level Q
-    gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelQ;
+    gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelQ;
     gen.Save($"{path}QrErrorLevelQ.png", BarCodeImageFormat.Png);
     //set error level H
-    gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelH;
+    gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelH;
     gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -227,7 +227,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "A QR code is
 *QR Code* symbologies (except *Micro QR* and *Rectangular Micro QR*) support the possibility to generate composite barcodes using the so-called **Structured Append** mechanism. In this mode, the input data can be divided among different *QR Code* barcodes and then composed into a single image. ***Aspose.BarCode for .NET*** does not enable distributing information inputted into [*CodeText*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/barcodegenerator/properties/codetext) across several *QR Code* barcodes; however, it allows creating a composite *QR Code* label manually. This can be done by initializing the [*StructuredAppend*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrparameters/properties/structuredappend) property using the following fields: 
 - *TotalCount* - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
 - *SequenceIndicator* - the sequence number of the current barcode (starting from 0)
-- *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
+- *ParityByte* - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes. The *ParityByte* value **must be identical across all barcodes** in the structured append set — a scanner uses it to verify that all parts belong to the same composite message.  
   
 Sample barcode images provided below have been created using the structured append mechanism implemented in the following code snippet.
   
@@ -251,8 +251,8 @@ foreach (char val in secondMessage.ToCharArray())
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, firstMessage))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-    gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECIEncoding;
+    gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
     gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
     gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
     gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 0;
@@ -261,8 +261,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, firstMessage)
     using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR))
     {
         foreach (BarCodeResult result in read.ReadBarCodes())
-            Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +
-                $"Index: {result.Extended.QR.QRStructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.QRStructuredAppendModeParityData.ToString()} " +
+            Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.StructuredAppendModeBarCodesQuantity} " +
+                $"Index: {result.Extended.QR.StructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.StructuredAppendModeParityData.ToString()} " +
                 $"Codetext: {result.CodeText}");
     }
 }
@@ -270,8 +270,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, firstMessage)
 //generate second barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, secondMessage)) { 
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-    gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECIEncoding;
+    gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
     gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
     gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
     gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 1;
@@ -280,8 +280,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, secondMessage
     using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR))
     {
         foreach (BarCodeResult result in read.ReadBarCodes())
-            Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +
-                $"Index: {result.Extended.QR.QRStructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.QRStructuredAppendModeParityData.ToString()} " +
+            Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.StructuredAppendModeBarCodesQuantity} " +
+                $"Index: {result.Extended.QR.StructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.StructuredAppendModeParityData.ToString()} " +
                 $"Codetext: {result.CodeText}");
     }
 }

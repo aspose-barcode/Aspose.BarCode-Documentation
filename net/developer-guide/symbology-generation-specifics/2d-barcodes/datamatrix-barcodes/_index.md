@@ -38,7 +38,7 @@ The following code snippet illustrates how to set the *ECC 200* encoding standar
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set DataMatrix ECC to 140
-gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
+gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc200;
 gen.Save($"{path}DatamatrixEcc200Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -61,7 +61,7 @@ The following code sample shows how to enable the *ECC 140* standard.
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åspóse.Barcóde©");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 //set DataMatrix ECC to 140
-gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc140;
+gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc140;
 gen.Save($"{path}DatamatrixEcc000140Basic.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -90,7 +90,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspo
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set encode mode to Auto
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Auto;
     gen.Save($"{path}DataMatrixEncodeModeAuto.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -107,7 +107,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspo
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set encode mode to ASCII
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ASCII;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.ASCII;
     gen.Save($"{path}DataMatrixEncodeModeASCII.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -123,7 +123,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
 {
     gen.SetCodeText(encodedArr);
     //set DataMatrix encode mode to Binary
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Binary;
     gen.Save($"{path}DataMatrixEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
@@ -144,7 +144,7 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.DataMatrix, str))
 {
-    bg.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ECI;
+    bg.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.ECI;
     bg.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
@@ -174,7 +174,7 @@ using (var generator = new BarcodeGenerator(EncodeTypes.DataMatrix, codetext))
     generator.Parameters.Barcode.XDimension.Pixels = 4;
     generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended";
     //set encode mode to Extended
-    generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Extended;
+    generator.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Extended;
 
     generator.Save($"{path}DatamatrixExtended.png", BarCodeImageFormat.Png);
 
@@ -196,7 +196,7 @@ The following code sample explains how to set the *C40* encoding mode.
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE.BARCODE");
 gen.Parameters.Barcode.XDimension.Pixels = 6;
 //set encode mode to C40
-gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
+gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.C40;
 gen.Save($"{path}DatamatrixEncodeModeC40.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -217,18 +217,18 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Åsp
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set ECC type to Ecc200
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
+    gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc200;
     //set rows 22 columns 22
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC200_22x22;
+    gen.Parameters.Barcode.DataMatrix.Version = DataMatrixVersion.ECC200_22x22;
     gen.Save($"{path}DatamatrixRows22Columns22Ecc200.png", BarCodeImageFormat.Png);
     //set rows 12 columns 64
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.DMRE_12x64;
+    gen.Parameters.Barcode.DataMatrix.Version = DataMatrixVersion.DMRE_12x64;
     gen.Save($"{path}DatamatrixRows12Columns64Ecc200.png", BarCodeImageFormat.Png);
 
     //set ECC type to Ecc140
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc140;
+    gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc140;
     //set rows 23 columns 23
-    gen.Parameters.Barcode.DataMatrix.DataMatrixVersion = DataMatrixVersion.ECC000_140_29x29;
+    gen.Parameters.Barcode.DataMatrix.Version = DataMatrixVersion.ECC000_140_29x29;
     gen.Save($"{path}DatamatrixRows29Columns29Ecc140.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}

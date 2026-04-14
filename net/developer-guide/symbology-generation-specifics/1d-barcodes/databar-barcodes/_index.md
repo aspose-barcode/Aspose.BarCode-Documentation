@@ -110,17 +110,17 @@ The following code snippet explains how to enable the verification of compatibil
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpanded, "");
 //right codetext with GS1Encoding check
 gen.CodeText = "(01)12345678901231";
-gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = true;
+gen.Parameters.Barcode.DataBar.AllowOnlyGS1Encoding = true;
 gen.Save($"{path}DatabarGS1RightEncoding.png", BarCodeImageFormat.Png);
 //variable codetext without GS1Encoding check
 gen.CodeText = "ASPOSE";
-gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = false;
+gen.Parameters.Barcode.DataBar.AllowOnlyGS1Encoding = false;
 gen.Save($"{path}DatabarGS1VariableEncoding.png", BarCodeImageFormat.Png);
 //variable codetext with GS1Encoding check
 try
 {
     gen.CodeText = "ASPOSE";
-    gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = true;
+    gen.Parameters.Barcode.DataBar.AllowOnlyGS1Encoding = true;
     gen.GenerateBarCodeImage();
 }
 catch (Exception e)

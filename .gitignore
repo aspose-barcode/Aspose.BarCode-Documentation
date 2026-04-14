@@ -1,5 +1,6 @@
 .DS_Store
 .idea
 .thoughts
+.claude
 /*.iml
 /java/developer-guide/barcode-recognition/articles-order.txt

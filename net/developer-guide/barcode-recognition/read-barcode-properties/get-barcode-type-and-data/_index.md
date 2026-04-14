@@ -55,7 +55,7 @@ foreach (byte bval in encodedArr)
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, strBld.ToString()))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
-    gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Binary;
+    gen.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.Binary;
     gen.Parameters.Barcode.Pdf417.Columns = 2;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
     gen.Save($"{path}ExtCodeBytes.png", BarCodeImageFormat.Png);

@@ -58,7 +58,7 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcó
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 //set Pdf417 truncated or Compact Pdf417
-gen.Parameters.Barcode.Pdf417.Pdf417Truncate = true;
+gen.Parameters.Barcode.Pdf417.Truncate = true;
 gen.Save($"{path}CompactPdf417Basic.png", BarCodeImageFormat.Png);
 ```
 
@@ -209,7 +209,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417))
 {
     gen.SetCodeText(encodedArr);
     //set Pdf417 encode mode to Binary
-    gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Binary;
+    gen.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.Binary;
     gen.Save($"{path}Pdf417EncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
@@ -228,8 +228,8 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.Pdf417, str))
 {
-    bg.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.ECI;
-    bg.Parameters.Barcode.Pdf417.Pdf417ECIEncoding = ECIEncodings.ISO_8859_7;
+    bg.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.ECI;
+    bg.Parameters.Barcode.Pdf417.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
 ```
@@ -253,7 +253,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, codetext)
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set encode mode to Extended
-    gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Extended;
+    gen.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}Pdf417EncodeModeExtended.png", BarCodeImageFormat.Png);
 }
@@ -281,10 +281,10 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcó
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 3;
 //set error level 2
-gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level2;
+gen.Parameters.Barcode.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level2;
 gen.Save($"{path}Pdf417ErrorLevel2.png", BarCodeImageFormat.Png);
 //set error level 5
-gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level5;
+gen.Parameters.Barcode.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level5;
 gen.Save($"{path}Pdf417ErrorLevel5.png", BarCodeImageFormat.Png);
 ```
  
@@ -307,8 +307,8 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.B
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 //set metadata
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
 gen.Save($"{path}MacroPdf417Main.png", BarCodeImageFormat.Png);
 //try to recognize it
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MacroPdf417);
@@ -344,19 +344,19 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.B
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 //set metadata
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentsCount = 20;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileName = "file01";
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
+gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentsCount = 20;
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileName = "file01";
 //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
 //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
 //for the example we use random number
-gen.Parameters.Barcode.Pdf417.Pdf417MacroChecksum = 1234;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileSize = 400000;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroTimeStamp = new DateTime(2019, 11, 1);
-gen.Parameters.Barcode.Pdf417.Pdf417MacroAddressee = "street";
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "aspose";
-gen.Parameters.Barcode.Pdf417.Pdf417MacroTerminator = Pdf417MacroTerminator.Set;
+gen.Parameters.Barcode.Pdf417.MacroPdf417Checksum = 1234;
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileSize = 400000;
+gen.Parameters.Barcode.Pdf417.MacroPdf417TimeStamp = new DateTime(2019, 11, 1);
+gen.Parameters.Barcode.Pdf417.MacroPdf417Addressee = "street";
+gen.Parameters.Barcode.Pdf417.MacroPdf417Sender = "aspose";
+gen.Parameters.Barcode.Pdf417.MacroPdf417Terminator = Pdf417MacroTerminator.Set;
 gen.Save($"{path}MacroPdf417Optional.png", BarCodeImageFormat.Png);
 //try to recognize it
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MacroPdf417);
@@ -387,13 +387,13 @@ BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Åspóse.B
 gen.Parameters.Barcode.XDimension.Pixels = 2;
 gen.Parameters.Barcode.Pdf417.Columns = 4;
 //set metadata
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
-gen.Parameters.Barcode.Pdf417.Pdf417MacroFileName = "伍01";
-gen.Parameters.Barcode.Pdf417.Pdf417MacroAddressee = "街";
-gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "компания";
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
+gen.Parameters.Barcode.Pdf417.MacroPdf417FileName = "伍01";
+gen.Parameters.Barcode.Pdf417.MacroPdf417Addressee = "街";
+gen.Parameters.Barcode.Pdf417.MacroPdf417Sender = "компания";
 //set metadata ECI UTF8
-gen.Parameters.Barcode.Pdf417.Pdf417MacroECIEncoding = ECIEncodings.UTF8;
+gen.Parameters.Barcode.Pdf417.MacroPdf417ECIEncoding = ECIEncodings.UTF8;
 gen.Save($"{path}MacroPdf417ECIEncoding.png", BarCodeImageFormat.Png);
 //try to recognize it
 BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MacroPdf417);

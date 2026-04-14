@@ -37,8 +37,8 @@ The following special characters are used:
 - End-of-transmission Unicode character: (eot) - \u0004
 
 ## **MaxiCode Barcodes with Complex Data Modes**
-To simplify the generation and reading of MaxiCode barcodes with complex data formats, the barcode library provides a set of classes: [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetext/), [*MaxiCodeStructuredCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredcodetext/), [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandardcodetext/), [*MaxiCodeSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodesecondmessage/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/). All these classes correspond to [*ComplexBarcode*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/).  
-Classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandartSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/) might be specifically useful for developers because the required formats of data to be encoded in MaxiCode modes 2 and 3 are quite complex. 
+To simplify the generation and reading of MaxiCode barcodes with complex data formats, the barcode library provides a set of classes: [*MaxiCodeCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetext/), [*MaxiCodeStructuredCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredcodetext/), [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandardCodetext*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandardcodetext/), [*MaxiCodeSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodesecondmessage/), [*MaxiCodeStandardSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/). All these classes correspond to [*ComplexBarcode*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/).  
+Classes [*MaxiCodeCodetextMode2*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode2/), [*MaxiCodeCodetextMode3*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodecodetextmode3/), [*MaxiCodeStandardSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestandartsecondmessage/), and [*MaxiCodeStructuredSecondMessage*](https://reference.aspose.com/barcode/net/aspose.barcode.complexbarcode/maxicodestructuredsecondmessage/) might be specifically useful for developers because the required formats of data to be encoded in MaxiCode modes 2 and 3 are quite complex. 
 
 ### **Generation Modes**
 
@@ -111,9 +111,9 @@ maxiCodeCodetext.CountryCode = 056;
 maxiCodeCodetext.ServiceCategory = 999;
 
 //create a standard second message
-MaxiCodeStandartSecondMessage maxiCodeStandartSecondMessage = new MaxiCodeStandartSecondMessage();
-maxiCodeStandartSecondMessage.Message = "Second message";
-maxiCodeCodetext.SecondMessage = maxiCodeStandartSecondMessage;
+MaxiCodeStandardSecondMessage maxiCodeStandardSecondMessage = new MaxiCodeStandardSecondMessage();
+maxiCodeStandardSecondMessage.Message = "Second message";
+maxiCodeCodetext.SecondMessage = maxiCodeStandardSecondMessage;
 
 //encode the message
 using (ComplexBarcodeGenerator complexGenerator = new ComplexBarcodeGenerator(maxiCodeCodetext))
@@ -177,7 +177,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}MaxiCodeMode2StandardSec
 {
     foreach (BarCodeResult result in reader.ReadBarCodes())
     {
-        MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.MaxiCodeMode, result.CodeText);
+        MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.Mode, result.CodeText);
         MaxiCodeCodetextMode2 maxiCodeStructuredCodetext = complexCodetext as MaxiCodeCodetextMode2;
         if (maxiCodeStructuredCodetext == null)
             continue;
@@ -186,7 +186,7 @@ using (BarCodeReader reader = new BarCodeReader($"{path}MaxiCodeMode2StandardSec
         Console.WriteLine("CountryCode: " + maxiCodeStructuredCodetext.CountryCode);
         Console.WriteLine("ServiceCategory: " + maxiCodeStructuredCodetext.ServiceCategory);
 
-        MaxiCodeStandartSecondMessage secondMessage = maxiCodeStructuredCodetext.SecondMessage as MaxiCodeStandartSecondMessage;
+        MaxiCodeStandardSecondMessage secondMessage = maxiCodeStructuredCodetext.SecondMessage as MaxiCodeStandardSecondMessage;
         if (secondMessage == null)
             continue;
 

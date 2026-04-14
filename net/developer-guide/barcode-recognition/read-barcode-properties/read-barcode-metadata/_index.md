@@ -39,19 +39,19 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MacroPdf417, "Ås
 {
     gen.Parameters.Barcode.XDimension.Pixels = 2;
     gen.Parameters.Barcode.Pdf417.Columns = 5;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentsCount = 20;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroFileName = "file01";
+    gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentsCount = 20;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417FileName = "file01";
     //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
     //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
     //for the example we use random number
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroChecksum = 1234;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroFileSize = 400000;
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroTimeStamp = new DateTime(2019, 11, 1);
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroAddressee = "street";
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "aspose";
-    gen.Parameters.Barcode.Pdf417.Pdf417MacroTerminator = Pdf417MacroTerminator.Set;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417Checksum = 1234;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417FileSize = 400000;
+    gen.Parameters.Barcode.Pdf417.MacroPdf417TimeStamp = new DateTime(2019, 11, 1);
+    gen.Parameters.Barcode.Pdf417.MacroPdf417Addressee = "street";
+    gen.Parameters.Barcode.Pdf417.MacroPdf417Sender = "aspose";
+    gen.Parameters.Barcode.Pdf417.MacroPdf417Terminator = Pdf417MacroTerminator.Set;
     gen.Save($"{path}ExtPDF417Meta.png", BarCodeImageFormat.Png);
 }
 
@@ -157,9 +157,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417MetaCode128Emulat
 ## **Read Metadata from QR Code with Structured Append**
 To read metadata from *QR Code* barcodes, it is necessary to use a group of properties called [*QrExtendedParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters). These properties enable reading the information about *QR Code* barcodes with structured append that allows combining several *QR Code* labels into one. This information includes the following fields:
 
-- [*QRStructuredAppendModeBarCodeIndex*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodebarcodeindex) - the sequence number of the current barcode (starting from 0)
-- [*QRStructuredAppendModeBarCodesQuantity*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodebarcodesquantity) - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
-- [*QRStructuredAppendModeParityData*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodeparitydata) - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
+- [*StructuredAppendModeBarCodeIndex*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodebarcodeindex) - the sequence number of the current barcode (starting from 0)
+- [*StructuredAppendModeBarCodesQuantity*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodebarcodesquantity) - the number of barcodes in a composite *QR Code* image (can take values from 2 to 16)
+- [*StructuredAppendModeParityData*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/qrextendedparameters/properties/qrstructuredappendmodeparitydata) - a byte that serves as a checksum identifier. In the general case, it is calculated as *XOR* of all bytes in which UTF16BE symbols are encoded using two bytes  
   
 The code snippet given below explains how to get metadata for a sample *QR Code* image with structured append.
    
@@ -182,9 +182,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtQRMeta.png", DecodeType
     {
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"BarCodesQuantity:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity}");
-        Console.WriteLine($"BarCodeIndex:{result.Extended.QR.QRStructuredAppendModeBarCodeIndex}");
-        Console.WriteLine($"ParityData:{result.Extended.QR.QRStructuredAppendModeParityData}");
+        Console.WriteLine($"BarCodesQuantity:{result.Extended.QR.StructuredAppendModeBarCodesQuantity}");
+        Console.WriteLine($"BarCodeIndex:{result.Extended.QR.StructuredAppendModeBarCodeIndex}");
+        Console.WriteLine($"ParityData:{result.Extended.QR.StructuredAppendModeParityData}");
     }
 }
 {{< /highlight >}}
@@ -206,7 +206,7 @@ The following code snippet shows how to get metadata from a sample *Aztec Code* 
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.FullRange;
     gen.Parameters.Barcode.Aztec.IsReaderInitialization = true;
     gen.Parameters.Barcode.Aztec.StructuredAppendBarcodeId = 2;
     gen.Parameters.Barcode.Aztec.StructuredAppendBarcodesCount = 4;
@@ -298,9 +298,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDataMatrixMetaStructure
 ## **Read Metadata from DotCode**
 
 Metadata can be read from *DotCode* barcodes with the group of properties called [*DotCodeExtendedParameters*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/). These properties enable reading the extended information about *DotCode* barcodes like:
-- [*DotCodeIsReaderInitialization*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/dotcodeisreaderinitialization/) – indicates that contained in barcode data is instructions for initialization or reprogramming of the bar code reader;
-- [*DotCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/dotcodestructuredappendmodebarcodeid/) – identifier of barcode id in sequence, which starts from 1 and must be less or equal to barcodes count.
-- [*DotCodeStructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/dotcodestructuredappendmodebarcodescount/) – count of barcodes in sequence, can be from 1 to 35.
+- [*IsReaderInitialization*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/isreaderinitialization/) – indicates that contained in barcode data is instructions for initialization or reprogramming of the bar code reader;
+- [*StructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/structuredappendmodebarcodeid/) – identifier of barcode id in sequence, which starts from 1 and must be less or equal to barcodes count.
+- [*StructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.barcoderecognition/dotcodeextendedparameters/structuredappendmodebarcodescount/) – count of barcodes in sequence, can be from 1 to 35.
 
 ``` csharp
 //generate DotCode with metadata
@@ -308,8 +308,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Åspós
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.DotCode.IsReaderInitialization = true;
-    gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodesCount = 4;
-    gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 2;
+    gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodesCount = 4;
+    gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodeId = 2;
 
     gen.Save($"{path}ExtDotCodeMeta.png", BarCodeImageFormat.Png);
 }
@@ -322,9 +322,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtDotCodeMeta.png", Decod
     {
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"DotCodeIsReaderInitialization:{result.Extended.DotCode.DotCodeIsReaderInitialization}");
-        Console.WriteLine($"DotCodeStructuredAppendModeBarcodesCount:{result.Extended.DotCode.DotCodeStructuredAppendModeBarcodesCount}");
-        Console.WriteLine($"DotCodeStructuredAppendModeBarcodeId:{result.Extended.DotCode.DotCodeStructuredAppendModeBarcodeId}");
+        Console.WriteLine($"DotCodeIsReaderInitialization:{result.Extended.DotCode.IsReaderInitialization}");
+        Console.WriteLine($"DotCodeStructuredAppendModeBarcodesCount:{result.Extended.DotCode.StructuredAppendModeBarcodesCount}");
+        Console.WriteLine($"DotCodeStructuredAppendModeBarcodeId:{result.Extended.DotCode.StructuredAppendModeBarcodeId}");
     }
 }
 ```
@@ -340,9 +340,9 @@ Metadata can be read from *MaxiCode* barcodes with the group of properties calle
 //generate MaxiCode with metadata
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©"))
 {
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode5;
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodesCount = 4;
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 2;
+    gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode5;
+    gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodesCount = 4;
+    gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodeId = 2;
 
     gen.Save($"{path}ExtMaxiCodeMeta.png", BarCodeImageFormat.Png);
 }
@@ -355,9 +355,9 @@ using (BarCodeReader read = new BarCodeReader($"{path}ExtMaxiCodeMeta.png", Deco
     {
         Console.WriteLine($"CodeType:{result.CodeTypeName}");
         Console.WriteLine($"CodeText:{result.CodeText}");
-        Console.WriteLine($"MaxiCodeMode:{result.Extended.MaxiCode.MaxiCodeMode.ToString()}");
-        Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodesCount:{result.Extended.MaxiCode.MaxiCodeStructuredAppendModeBarcodesCount}");
-        Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodeId:{result.Extended.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId}");
+        Console.WriteLine($"MaxiCodeMode:{result.Extended.MaxiCode.Mode.ToString()}");
+        Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodesCount:{result.Extended.MaxiCode.StructuredAppendModeBarcodesCount}");
+        Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodeId:{result.Extended.MaxiCode.StructuredAppendModeBarcodeId}");
     }
 }
 ```

@@ -45,19 +45,19 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     //set symbol mode Auto
     gen.CodeText = "Åspóse.Barcóde©";
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Auto;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Auto;
     gen.Save($"{path}AztecSymbolModeAuto.png", BarCodeImageFormat.Png);
     //set symbol mode FullRange
     gen.CodeText = "Åspóse.Barcóde©";
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.FullRange;
     gen.Save($"{path}AztecSymbolModeFullRange.png", BarCodeImageFormat.Png);
     //set symbol mode Compact
     gen.CodeText = "Åspóse.Barcóde©";
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Compact;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Compact;
     gen.Save($"{path}AztecSymbolModeCompact.png", BarCodeImageFormat.Png);
     //set symbol mode Auto
     gen.CodeText = "123";
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Rune;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Rune;
     gen.Save($"{path}AztecSymbolModeRune.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -95,7 +95,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec))
 {
     gen.SetCodeText(encodedArr);
     //set Aztec encode mode to Binary
-    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Binary;
+    gen.Parameters.Barcode.Aztec.EncodeMode = AztecEncodeMode.Binary;
     gen.Save($"{path}AztecEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
@@ -114,7 +114,7 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.Aztec, str))
 {
-    bg.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.ECI;
+    bg.Parameters.Barcode.Aztec.EncodeMode = AztecEncodeMode.ECI;
     bg.Parameters.Barcode.Aztec.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
@@ -143,7 +143,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, codetext))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set encode mode to Extended
-    gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Extended;
+    gen.Parameters.Barcode.Aztec.EncodeMode = AztecEncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}AztecEncodeModeExtended.png", BarCodeImageFormat.Png);
 }
@@ -188,12 +188,12 @@ The following code sample is given to explain how to set the required error corr
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde© is a powerful library to generate & recognize 1D & 2D barcodes"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
-    gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
+    gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.FullRange;
     //set error correction capacity to 5%
-    gen.Parameters.Barcode.Aztec.AztecErrorLevel = 5;
+    gen.Parameters.Barcode.Aztec.ErrorLevel = 5;
     gen.Save($"{path}AztecErrorLevel5.png", BarCodeImageFormat.Png);
     //set error correction capacity to 50%
-    gen.Parameters.Barcode.Aztec.AztecErrorLevel = 50;
+    gen.Parameters.Barcode.Aztec.ErrorLevel = 50;
     gen.Save($"{path}AztecErrorLevel50.png", BarCodeImageFormat.Png);
 }
 {{< /highlight >}}
@@ -202,7 +202,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.
 ***Aspose.BarCode for .NET*** supports a special generation mode to create *Aztec Code* barcodes with a structured append. This mode allows combining up to 26 *Aztec Code* barcodes. To enable this generation mode, it is necessary to initialize the following properties:
 -	[*StructuredAppendBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/structuredappendbarcodescount/) – the number of barcodes to be combined (value from 1 to 26)
 -	[*StructuredAppendBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/structuredappendbarcodeid/) – the position of a barcode in the set (value from 1 to StructuredAppendBarcodesCount)  
--	[*StructuredAppendFileId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/structuredappendfileid/) – an optional field that must be the same in all symbols that make up the message. It should not contain spaces.
+-	[*StructuredAppendFileId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/aztecparameters/structuredappendfileid/) – an optional field that must be the same in all symbols that make up the message. It should not contain spaces. Barcodes with different *StructuredAppendFileId* values will not be combined during recognition.
 
 The following code sample shows how to enable the *Structured Append* mode.    
   

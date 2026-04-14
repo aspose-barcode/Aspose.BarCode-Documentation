@@ -87,7 +87,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode))
 {
     gen.SetCodeText(encodedArr);
     //set DotCode encode mode to Binary
-    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Binary;
+    gen.Parameters.Barcode.DotCode.EncodeMode = DotCodeEncodeMode.Binary;
     gen.Save($"{path}DotCodeEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
@@ -106,7 +106,7 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.DotCode, str))
 {
-    bg.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.ECI;
+    bg.Parameters.Barcode.DotCode.EncodeMode = DotCodeEncodeMode.ECI;
     bg.Parameters.Barcode.DotCode.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
@@ -135,15 +135,15 @@ string codetext = textBuilder.GetExtendedCodetext();
 //generate a DotCode barcode
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, codetext))
 {
-    gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Extended;
+    gen.Parameters.Barcode.DotCode.EncodeMode = DotCodeEncodeMode.Extended;
     gen.Save($"{path}DotCodeExtended.png", BarCodeImageFormat.Png);
 }
 ```
 
 ### **Structured Append Mode**
 The barcode library supports a special generation mode to create DotCode barcodes with a structured append. This mode allows combining up to 35 DotCode barcodes. To enable this generation mode, it is necessary to initialize the following properties:
--	[*DotCodeStructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodestructuredappendmodebarcodescount/2) – the number of barcodes to be combined (value from 1 to 35)
--	[*DotCodeStructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/dotcodestructuredappendmodebarcodeid/) – the position of a barcode in the set (value from 1 to DotCodeStructuredAppendModeBarcodesCount)  
+-	[*StructuredAppendModeBarcodesCount*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/structuredappendmodebarcodescount/) – the number of barcodes to be combined (value from 1 to 35)
+-	[*StructuredAppendModeBarcodeId*](https://reference.aspose.com/barcode/net/aspose.barcode.generation/dotcodeparameters/structuredappendmodebarcodeid/) – the position of a barcode in the set (value from 1 to StructuredAppendModeBarcodesCount)  
   
 The following code sample shows how to enable the *Structured Append* mode.    
   
@@ -154,8 +154,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"
 {
     gen.Parameters.Barcode.XDimension.Pixels = 10;
     //set DotCode structured append mode
-    gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 3;
-    gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodesCount = 5;
+    gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodeId = 3;
+    gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodesCount = 5;
     gen.Save($"{path}DotCodeStructuredAppendMode.png", BarCodeImageFormat.Png);
 }
 ```
@@ -187,3 +187,5 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "Aspose"
     gen.Save($"{path}DotCodeReaderInitialization.png", BarCodeImageFormat.Png);
 }
 ```
+  
+For information on reading the `IsReaderInitialization` flag from recognized barcodes, see [Read Barcode Metadata](/net/read-barcode-metadata/).

@@ -53,7 +53,7 @@ string codetext = $"[)>{rs}01{gs}B1050{gs}056{gs}001{gs}ADDITIONAL DATA{eot}";
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, codetext))
 {
     //set MaxiCode mode to 2
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode2;
+    gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode2;
 
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "MaxiCode Mode 2";
@@ -67,7 +67,7 @@ codetext = $"123456789{gs}056{gs}001{gs}ADDITIONAL DATA{eot}";
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, codetext))
 {
     //set MaxiCode mode to 2
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode2;
+    gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode2;
 
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "MaxiCode Mode 2";
@@ -85,7 +85,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspó
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set MaxiCode encode mode to 4
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode4;
+    gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode4;
     gen.Save($"{path}MaxiCodeEncodeMode4.png", BarCodeImageFormat.Png);
 }
 
@@ -126,7 +126,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode))
 {
     gen.SetCodeText(encodedArr);
     //set MaxiCode encode mode to Binary
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.Binary;
+    gen.Parameters.Barcode.MaxiCode.EncodeMode = MaxiCodeEncodeMode.Binary;
     gen.Save($"{path}MaxiCodeEncodeModeBinary.png", BarCodeImageFormat.Png);
 
 }
@@ -145,7 +145,7 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.MaxiCode, str))
 {
-    bg.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.ECI;
+    bg.Parameters.Barcode.MaxiCode.EncodeMode = MaxiCodeEncodeMode.ECI;
     bg.Parameters.Barcode.MaxiCode.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
@@ -172,7 +172,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, codetex
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set encode mode to Extended
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.Extended;
+    gen.Parameters.Barcode.MaxiCode.EncodeMode = MaxiCodeEncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}MaxiCodeEncodeModeExtended.png", BarCodeImageFormat.Png);
 }
@@ -207,8 +207,8 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspó
 {
     gen.Parameters.Barcode.XDimension.Pixels = 15;
     //set MaxiCode structured append mode
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 3;
-    gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 5;
+    gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodeId = 3;
+    gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodesCount = 5;
     gen.Save($"{path}MaxiCodeStructuredAppendMode.png", BarCodeImageFormat.Png);
 }
 ```

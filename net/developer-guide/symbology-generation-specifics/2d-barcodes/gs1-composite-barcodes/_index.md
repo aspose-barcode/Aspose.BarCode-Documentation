@@ -263,7 +263,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_C;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-    gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+    gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
     gen.Save($"{path}GS1Composite2D_NotGS1TwoDSupplement.png", BarCodeImageFormat.Png);
 }
@@ -288,7 +288,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-    gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+    gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
     gen.Save($"{path}GS1CompositeMode_0_Digits.png", BarCodeImageFormat.Png);
 }
@@ -304,7 +304,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-    gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+    gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
     gen.Save($"{path}GS1CompositeMode_0_CapitalLetters.png", BarCodeImageFormat.Png);
 }
@@ -320,7 +320,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-    gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+    gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
     
 ```
@@ -335,7 +335,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.GS1CompositeBar, 
     gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
     gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
     gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-    gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+    gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
     gen.Save($"{path}GS1CompositeMode_0_Punctuation.png", BarCodeImageFormat.Png);
 }

@@ -38,7 +38,7 @@ using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, "1234567890"))
     img.Save(Global.PathCombine({path}, "ver_auto.png"));
 
     // Version 24
-    bg.Parameters.Barcode.HanXin.HanXinVersion = HanXinVersion.Version24;
+    bg.Parameters.Barcode.HanXin.Version = HanXinVersion.Version24;
     img = bg.GenerateBarCodeImage();
     img.Save(Global.PathCombine({path}, "ver24.png"));
 }
@@ -64,7 +64,7 @@ var str = "abc123全ň全漄灟漄灟螅全ň螅螅螅";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Auto; // It is already Auto by default
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Auto; // It is already Auto by default
     var img = bg.GenerateBarCodeImage();
 }
 ```
@@ -79,7 +79,7 @@ byte[] encodedArr = { 0xFF, 0xFE, 0xFD, 0xFC, 0xFB, 0xFA, 0xF9 };
 using (BarcodeGenerator bg = new BarcodeGenerator(EncodeTypes.HanXin))
 {
     bg.SetCodeText(encodedArr);
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Binary;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Binary;
     var img = bg.GenerateBarCodeImage();
 }
 ```
@@ -95,8 +95,8 @@ var str = "ΑΒΓΔΕ";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.ECI;
-    bg.Parameters.Barcode.HanXin.HanXinECIEncoding = ECIEncodings.ISO_8859_7;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.ECI;
+    bg.Parameters.Barcode.HanXin.ECIEncoding = ECIEncodings.ISO_8859_7;
     var img = bg.GenerateBarCodeImage();
 }
 ```
@@ -111,7 +111,7 @@ var str = "abcd АБВ ıntəˈnæʃənəl 语言语言 แผ่นดินฮ
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Unicode;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Unicode;
     var img = bg.GenerateBarCodeImage();
 }
 ```
@@ -125,7 +125,7 @@ var str = "https://www.test.com/%BC%DE%ab/search=test";
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.URI;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.URI;
     var img = bg.GenerateBarCodeImage();
 
     using (var r = new BarCodeReader(img, DecodeType.HanXin))
@@ -157,7 +157,7 @@ expectedStr = expectedStr.Replace(@"\000009:", "");
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Extended;
     var img = bg.GenerateBarCodeImage();
 
     using (var r = new BarCodeReader(img, DecodeType.HanXin))
@@ -176,7 +176,7 @@ var expectedStr = @"漄㐁全螅123qweıntəˈnæʃənəlΑΒΓΔΕabcabcbacksla
 
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Extended;
     var img = bg.GenerateBarCodeImage();
 
     using (var r = new BarCodeReader(img, DecodeType.HanXin))
@@ -211,7 +211,7 @@ var str = codeTextBuilder.GetExtendedCodetext();
 // Generate
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, str))
 {
-    bg.Parameters.Barcode.HanXin.HanXinEncodeMode = HanXinEncodeMode.Extended;
+    bg.Parameters.Barcode.HanXin.EncodeMode = HanXinEncodeMode.Extended;
     var img = bg.GenerateBarCodeImage();
 
     using (var r = new BarCodeReader(img, DecodeType.HanXin))
@@ -241,7 +241,7 @@ The following code sample explains how to set the error correction level.
 using (var bg = new BarcodeGenerator(EncodeTypes.HanXin, "1234567890"))
 {
     // L4
-    bg.Parameters.Barcode.HanXin.HanXinErrorLevel = HanXinErrorLevel.L4;
+    bg.Parameters.Barcode.HanXin.ErrorLevel = HanXinErrorLevel.L4;
     var img = bg.GenerateBarCodeImage();
     img.Save(Global.PathCombine({path}, "img.png"));
 }

@@ -44,7 +44,7 @@ using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
 using (BarCodeReader reader = new BarCodeReader())
 {
     reader.SetBarCodeImage(bmp, rect2D);
-    reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
+    reader.BarCodeReadType = new MultiDecodeType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
     Console.WriteLine("ReadSetBarCodeRegion:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
@@ -65,7 +65,7 @@ using (BarCodeReader reader = new BarCodeReader())
     //rectangle of Code128 barcode in the source image
     Rectangle rectCode128 = new Rectangle(460, 111, 360, 150);
     reader.SetBarCodeImage(bmp, new Rectangle[] { rect2D, rectCode128 });
-    reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
+    reader.BarCodeReadType = new MultiDecodeType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
     Console.WriteLine("ReadMultipleRegions:");
     foreach (BarCodeResult result in reader.ReadBarCodes())
         Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");

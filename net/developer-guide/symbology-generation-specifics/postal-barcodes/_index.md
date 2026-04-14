@@ -106,7 +106,7 @@ In the *Planet* symbology, each character is encoded by five bars so that three 
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 20;
+gen.Parameters.Barcode.Postal.ShortBarHeight.Pixels = 20;
 gen.Save($"{path}PostalPlanetBarcode.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -119,7 +119,7 @@ The *Postnet* barcode type implies encoding each character using five bars where
 BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Postnet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 20;
+gen.Parameters.Barcode.Postal.ShortBarHeight.Pixels = 20;
 gen.Save($"{path}PostalPostnetBarcode.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
   
@@ -172,13 +172,13 @@ BarcodeGenerator gen = null;
 gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 10;
+gen.Parameters.Barcode.Postal.ShortBarHeight.Pixels = 10;
 gen.Save($"{path}PostalPlanetShortBarHeight10Pixels.png", BarCodeImageFormat.Png);
 //set Planet barcode ShortBarHeight 30 pixels
 gen = new BarcodeGenerator(EncodeTypes.Planet, "123456");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.Postal.PostalShortBarHeight.Pixels = 30;
+gen.Parameters.Barcode.Postal.ShortBarHeight.Pixels = 30;
 gen.Save($"{path}PostalPlanetShortBarHeight30Pixels.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
    
@@ -284,25 +284,25 @@ gen.Save($"{path}PostalAustraliaPostFCC11.png", BarCodeImageFormat.Png);
 gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "590123456701234");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
 gen.Save($"{path}PostalAustraliaPostFCC59NTable.png", BarCodeImageFormat.Png);
 //create AustraliaPost FCC 62 NTable
 gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
 gen.Save($"{path}PostalAustraliaPostFCC62NTable.png", BarCodeImageFormat.Png);
 //create AustraliaPost FCC 62 CTable
 gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
+gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.CTable;
 gen.Save($"{path}PostalAustraliaPostFCC62CTable.png", BarCodeImageFormat.Png);
 //create AustraliaPost FCC 62
 gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210");
 gen.Parameters.Barcode.XDimension.Pixels = 4;
 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.Other;
+gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.Other;
 gen.Save($"{path}PostalAustraliaPostFCC62OtherTable.png", BarCodeImageFormat.Png);
 {{< /highlight >}}
 

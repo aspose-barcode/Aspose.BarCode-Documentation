@@ -37,7 +37,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
+    gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.CTable;
     gen.Save($"{path}AustraliaPostCTable.png", BarCodeImageFormat.Png);
 }
 
@@ -66,7 +66,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+    gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
     gen.Save($"{path}AustraliaPostNTable.png", BarCodeImageFormat.Png);
 }
 
@@ -95,7 +95,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.Other;
+    gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.Other;
     gen.Save($"{path}AustraliaPostOther.png", BarCodeImageFormat.Png);
 }
 
@@ -125,7 +125,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
+    gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.CTable;
     gen.Save($"{path}AustraliaPostCTableIgnoreEnding.png", BarCodeImageFormat.Png);
 }
 
@@ -195,7 +195,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6
 {
     gen.Parameters.Barcode.XDimension.Pixels = 4;
     gen.Parameters.Barcode.BarHeight.Pixels = 50;
-    gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+    gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
     gen.Save($"{path}AustraliaPostCustomerInformationDecoder.png", BarCodeImageFormat.Png);
 }
 

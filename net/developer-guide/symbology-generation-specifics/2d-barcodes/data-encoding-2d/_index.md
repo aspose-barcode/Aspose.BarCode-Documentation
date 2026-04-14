@@ -51,7 +51,7 @@ You can encode alphanumeric data in ***Auto*** encoding mode and set the alphanu
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose 2002-2024"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Auto;
     gen.Save($"{path}Encoding2DAlphanumeric.png", BarCodeImageFormat.Png);
 
     using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DataMatrix))
@@ -76,7 +76,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
     gen.Parameters.Barcode.XDimension.Pixels = 8;
     //set encode mode to binary
     gen.SetCodeText(encodedArr);
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Binary;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Binary mode";
     gen.Save($"{path}Encoding2DBinary.png", BarCodeImageFormat.Png);
 
@@ -102,7 +102,7 @@ using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
     gen.Parameters.Barcode.XDimension.Pixels = 8;
     //set encode mode to binary
     gen.SetCodeText(encodedArr);
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Binary;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Binary mode";
     gen.Save($"{path}Encoding2DBinaryStream.png", BarCodeImageFormat.Png);
 
@@ -126,7 +126,7 @@ The example shows how to encode Unicode data in ***Auto*** mode with [ECIEncodin
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Auto;
     gen.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.UTF8;
     gen.Save($"{path}Encoding2DUnicodeAuto.png", BarCodeImageFormat.Png);
 
@@ -143,7 +143,7 @@ The example shows how to encode Unicode data in ***ECI*** mode with [ECIEncoding
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ECI;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.ECI;
     gen.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.UTF8;
     gen.Save($"{path}Encoding2DUnicodeECI.png", BarCodeImageFormat.Png);
 
@@ -160,7 +160,7 @@ The example shows how to encode Unicode data manually in ***QR code*** with auto
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Auto;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Auto;
     gen.SetCodeText("Aspose常に先を行", Encoding.UTF8);
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Aspose常に先を行";
     gen.Save($"{path}Encoding2DUnicodeUTF8.png", BarCodeImageFormat.Png);
@@ -178,7 +178,7 @@ The example shows how to encode Unicode data manually in ***QR code*** with unde
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Auto;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Auto;
     gen.SetCodeText("AsposeΣΑΩ", Encoding.GetEncoding(1253));
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "AsposeΣΑΩ";
     gen.Save($"{path}Encoding2DUnicodeCustom.png", BarCodeImageFormat.Png);
@@ -207,7 +207,7 @@ textBuilder.AddPlainCodetext(@"Aspose");
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, textBuilder.GetExtendedCodetext()))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Extended;
+    gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Extended;
     gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
     gen.Save($"{path}Encoding2DExtended.png", BarCodeImageFormat.Png);
 
@@ -245,7 +245,7 @@ Sometimes we require to encode data in special industrial formats like [C40](htt
 using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "ASPOSE.BARCODE"))
 {
     gen.Parameters.Barcode.XDimension.Pixels = 8;
-    gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
+    gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.C40;
     gen.Save($"{path}Encoding2DSpecial.png", BarCodeImageFormat.Png);
 
     using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DataMatrix))

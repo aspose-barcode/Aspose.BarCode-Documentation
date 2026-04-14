@@ -56,8 +56,8 @@ swissQRCode.Bill.Debtor = new Address
 //encode Swiss QR Bill
 ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(swissQRCode);
 generator.Parameters.Barcode.XDimension.Pixels = 4;
-generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+generator.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECIEncoding;
+generator.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
 generator.Save($"{path}SwissQRBill.png");
 {{< /highlight >}}
 
