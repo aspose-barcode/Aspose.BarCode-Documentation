@@ -1,11 +1,10 @@
 ---
-
 title: "Generate Code 128 Barcodes"
 description: "Learn how to generate Code 128 barcodes in Aspose.BarCode for Java, configure human-readable text, print resolution, colors, padding, borders, rotation, and compact layouts."
 type: docs
 weight: 10
 url: /java/developer-guide/barcode-generation/generate-code128/
----------------------------------------------------------------
+---
 
 # Generate Code 128 Barcodes
 
@@ -42,18 +41,16 @@ BarcodeGenerator generator = new BarcodeGenerator(
         "PRODUCT-789"
 );
 
-CodetextParameters code_text_parameters = generator.getParameters()
+CodetextParameters codeTextParameters = generator.getParameters()
         .getBarcode()
         .getCodeTextParameters();
 
-code_text_parameters.setLocation(CodeLocation.BELOW);
-code_text_parameters.setFontMode(FontMode.MANUAL);
-
-code_text_parameters.getFont().setFamilyName("Arial");
-code_text_parameters.getFont().setStyle(FontStyle.REGULAR);
-code_text_parameters.getFont().getSize().setPoint(12);
-
-code_text_parameters.getSpace().setPoint(2);
+codeTextParameters.setLocation(CodeLocation.BELOW);
+codeTextParameters.setFontMode(FontMode.MANUAL);
+codeTextParameters.getFont().setFamilyName("Arial");
+codeTextParameters.getFont().setStyle(Font.PLAIN);
+codeTextParameters.getFont().getSize().setPoint(12);
+codeTextParameters.getSpace().setPoint(2);
 
 generator.save("code128_with_text.png", BarCodeImageFormat.PNG);
 ```
@@ -64,7 +61,7 @@ The value returned by `getSpace()` defines the distance between the bars and the
 
 The selected font family must be available in the runtime environment. Otherwise, Java may substitute another installed font.
 
-## Prepare a barcode for 300 dpi output
+## Prepare a barcode for 300 DPI output
 
 Use `setResolution` to define the output resolution. The following example also defines an image bounding box and uses `AutoSizeMode.NEAREST` to fit the barcode while preserving its aspect ratio.
 
