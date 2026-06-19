@@ -1,302 +1,211 @@
 ---
-title: Generate Code128
-description: Learn how to generate Code128 barcodes using Aspose.BarCode for Java with examples of size control, styling, and optimization techniques.
+title: "Generate Code 128 Barcodes"
+description: "Learn how to generate Code 128 barcodes in Aspose.BarCode for Java, configure human-readable text, print resolution, colors, padding, borders, rotation, and compact layouts."
 type: docs
 weight: 10
 url: /java/developer-guide/barcode-generation/generate-code128/
 ---
 
-# Generate Code 128
+# Generate Code 128 Barcodes
 
-## Overview
+Code 128 is a high-density linear symbology that can encode numeric data, uppercase and lowercase letters, punctuation, and control characters. Aspose.BarCode for Java automatically selects and switches between Code 128 subsets when generating a symbol.
 
-**Code 128** is a high-density linear barcode symbology widely used in logistics, inventory management, and retail.  
-It encodes the full ASCII character set (128 characters) and provides excellent data density through automatic subset switching.  
-Aspose.BarCode for Java automatically optimizes **subset selection (A/B/C)** to produce the most compact barcode possible.
+The complete source code for the examples in this article is available on GitHub:
 
-### Key Features
+[View GenerateCode128.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateCode128.java)
 
-- **Full ASCII support** – encodes all 128 ASCII characters (0–127) using subsets A, B, and C
-    - Subset A: control and uppercase characters (ASCII 0–95)
-    - Subset B: printable ASCII characters (ASCII 32–127)
-    - Subset C: numeric pairs (00–99) for dense encoding of numeric data
-- **High density** – automatic subset switching ensures compact encoding
-- **Variable length** – supports arbitrary data lengths
-- **Built-in checksum** – automatic Mod-103 check character for integrity
-- **Wide adoption** – standard for logistics, shipping, and warehouse labeling
+You can also browse all barcode generation examples in the [Generation examples directory](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation).
 
----
+## Generate a basic Code 128 barcode
 
-## Quick Start
-
-The simplest way to generate a Code 128 barcode:
+Create a `BarcodeGenerator` with `EncodeTypes.CODE_128`, provide the code text, and save the generated image.
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "ASPOSE COMPANY"
+);
 
-public class Code128QuickStart {
-    public static void main(String[] args) throws Exception {
-        // Create barcode generator
-        BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.CODE_128, "ASPOSE COMPANY");
-
-        // Save with default settings
-        generator.save("code128_quick.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_quick.png", BarCodeImageFormat.PNG);
 ```
 
----
+The generator selects the appropriate Code 128 subsets automatically.
 
-## Key Parameters
+## Configure human-readable text
 
-### Setting Barcode Size
-
-Control the physical dimensions of your barcode using **X-Dimension** (narrow bar width) and **Bar Height**:
+The human-readable code text can be positioned below the bars and formatted through `CodeTextParameters`.
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "PRODUCT-789"
+);
 
-public class Code128SizeControl {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "SIZE-DEMO-123");
+generator.getParameters()
+        .getBarcode()
+        .getCodeTextParameters()
+        .setLocation(CodeLocation.BELOW);
 
-        // X-Dimension: width of the narrowest bar or space
-        // For screen display (72–96 DPI)
-        gen.getParameters().getBarcode().getXDimension().setPixels(2);
+generator.getParameters()
+        .getBarcode()
+        .getCodeTextParameters()
+        .getFont()
+        .setFamilyName("Arial");
 
-        // For printing (use millimeters for precision)
-        // gen.getParameters().getBarcode().getXDimension().setMillimeters(0.33f);
+generator.getParameters()
+        .getBarcode()
+        .getCodeTextParameters()
+        .getFont()
+        .setStyle(Font.PLAIN);
 
-        // Bar height
-        gen.getParameters().getBarcode().getBarHeight().setPixels(60);
-        // Or for printing:
-        // gen.getParameters().getBarcode().getBarHeight().setMillimeters(15.0f);
+generator.getParameters()
+        .getBarcode()
+        .getCodeTextParameters()
+        .getFont()
+        .getSize()
+        .setPoint(12);
 
-        // Auto-size mode determines how the final image is adjusted
-        gen.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
+generator.getParameters()
+        .getBarcode()
+        .getCodeTextParameters()
+        .getSpace()
+        .setPoint(2);
 
-        gen.save("code128_sized.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_with_text.png", BarCodeImageFormat.PNG);
 ```
 
-**Recommended Sizes:**
+The `Space` property defines the distance between the bars and the text.
 
-| Purpose             | X-Dimension  | Height   |
-|---------------------|--------------|----------|
-| Screen display      | 2–3 px       | 50–80 px |
-| Label printing      | 0.30–0.40 mm | 12–20 mm |
-| Industrial printing | 0.50–1.00 mm | 20–40 mm |
+## Prepare a barcode for 300 DPI output
 
----
-
-### Code Text Display
-
-Control how human-readable text appears below or above the barcode:
+Use `setResolution` to define the output resolution. The following example also specifies an image box and uses `AutoSizeMode.NEAREST` to fit the barcode while preserving valid geometry.
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "PRINT-READY-001"
+);
 
-public class Code128WithText {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "PRODUCT-789");
+generator.getParameters().setResolution(300.0f);
+generator.getParameters().getImageWidth().setPixels(400);
+generator.getParameters().getImageHeight().setPixels(150);
+generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
 
-        // Show code text below the bars
-        gen.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
-
-        // Customize font (safe way – modify existing FontUnit)
-        gen.getParameters().getBarcode().getCodeTextParameters().getFont().setFamilyName("Arial");
-        gen.getParameters().getBarcode().getCodeTextParameters().getFont().setStyle(java.awt.Font.PLAIN);
-        gen.getParameters().getBarcode().getCodeTextParameters().getFont().getSize().setPoint(12);
-
-        // Add spacing between bars and text
-        gen.getParameters().getBarcode().getCodeTextParameters().getSpace().setPoint(2);
-
-        gen.save("code128_with_text.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_300dpi.png", BarCodeImageFormat.PNG);
 ```
 
-**CodeLocation Options:**
+The resolution value is especially important when barcode dimensions are specified in physical units.
 
-- `BELOW` – Text below bars (default)
-- `ABOVE` – Text above bars
-- `NONE` – No text (bars only)
+## Configure colors, padding, and border
 
----
-
-### Image Quality and Resolution
-
-Adjust resolution to match your output medium:
+Barcode appearance can be customized through common generation parameters.
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "STYLE-2025"
+);
 
-public class Code128PrintQuality {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "PRINT-READY-001");
+// Colors
+generator.getParameters().setBackColor(Color.WHITE);
+generator.getParameters().getBarcode().setBarColor(Color.BLACK);
 
-        // 300 DPI is standard for label printing
-        gen.getParameters().setResolution(300.0f);
+// Padding and quiet zones
+generator.getParameters().getBarcode().getPadding().getLeft().setPixels(12);
+generator.getParameters().getBarcode().getPadding().getRight().setPixels(12);
+generator.getParameters().getBarcode().getPadding().getTop().setPixels(6);
+generator.getParameters().getBarcode().getPadding().getBottom().setPixels(6);
 
-        // 600 DPI for high-precision laser printing
-        // gen.getParameters().setResolution(600.0f);
+// Border
+generator.getParameters().getBorder().setVisible(true);
+generator.getParameters().getBorder().setColor(Color.GRAY);
+generator.getParameters().getBorder().getWidth().setPixels(2);
 
-        // Optional: adjust total image size
-        gen.getParameters().getImageWidth().setPixels(400);
-        gen.getParameters().getImageHeight().setPixels(150);
-
-        gen.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
-        gen.save("code128_300dpi.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_styled.png", BarCodeImageFormat.PNG);
 ```
 
-**Resolution Guidelines:**
+Left and right padding provide the blank area required around the barcode. Avoid reducing these areas excessively.
 
-| Medium             | DPI   | Notes           |
-|--------------------|-------|-----------------|
-| Screen / web       | 72–96 | Low precision   |
-| Office printer     | 200   | Basic documents |
-| Label printer      | 300   | Recommended     |
-| Laser / industrial | 600   | Fine detail     |
+## Rotate a Code 128 barcode
 
----
-
-## Appearance Customization
-
-### Colors and Styling
+Set `RotationAngle` to rotate the generated barcode image.
 
 ```java
-import com.aspose.barcode.generation.*;
-import java.awt.Color;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "ROTATE-ME"
+);
 
-public class Code128Styling {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "STYLE-2025");
-
-        gen.getParameters().setBackColor(Color.WHITE);
-        gen.getParameters().getBarcode().setBarColor(Color.BLACK);
-
-        // Quiet zone (blank margins for reliable scanning)
-        gen.getParameters().getBarcode().getPadding().getLeft().setPixels(12);
-        gen.getParameters().getBarcode().getPadding().getRight().setPixels(12);
-        gen.getParameters().getBarcode().getPadding().getTop().setPixels(6);
-        gen.getParameters().getBarcode().getPadding().getBottom().setPixels(6);
-
-        // Optional: visible border
-        gen.getParameters().getBorder().setVisible(true);
-        gen.getParameters().getBorder().setColor(Color.GRAY);
-        gen.getParameters().getBorder().getWidth().setPixels(2);
-
-        gen.save("code128_styled.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.getParameters().setRotationAngle(90.0f);
+generator.save("code128_rotate_90.png", BarCodeImageFormat.PNG);
 ```
 
----
+Rotation is applied to the complete generated image, including code text and padding.
 
-### Rotation and Orientation
+## Encode numeric, mixed, and lowercase content
+
+Aspose.BarCode selects Code 128 subsets automatically according to the supplied data.
+
+### Numeric content
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "123456789012"
+);
 
-public class Code128Rotation {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "ROTATE-ME");
-
-        // Rotate 90° clockwise
-        gen.getParameters().setRotationAngle(90.0f);
-
-        // Supported: 0, 90, 180, 270
-        gen.save("code128_rotate_90.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_numeric.png", BarCodeImageFormat.PNG);
 ```
 
----
+Numeric pairs can be encoded efficiently with subset C.
 
-### Caption Text
-
-*(Available only if your build supports CaptionAbove / CaptionBelow)*
+### Mixed content
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "ABC123def456"
+);
 
-public class Code128WithCaption {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.CODE_128, "ITEM-12345");
-
-        // Caption above
-        gen.getParameters().getCaptionAbove().setVisible(true);
-        gen.getParameters().getCaptionAbove().setText("Product Label");
-        gen.getParameters().getCaptionAbove().getFont().setFamilyName("Arial");
-        gen.getParameters().getCaptionAbove().getFont().getSize().setPoint(14);
-        gen.getParameters().getCaptionAbove().getPadding().getBottom().setPixels(4);
-
-        // Caption below
-        gen.getParameters().getCaptionBelow().setVisible(true);
-        gen.getParameters().getCaptionBelow().setText("Batch: A-2025-01");
-        gen.getParameters().getCaptionBelow().getFont().setFamilyName("Arial");
-        gen.getParameters().getCaptionBelow().getFont().getSize().setPoint(10);
-        gen.getParameters().getCaptionBelow().getPadding().getTop().setPixels(4);
-
-        gen.save("code128_with_caption.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_mixed.png", BarCodeImageFormat.PNG);
 ```
 
----
+The generator can switch between subsets within one symbol.
 
-## Understanding Code 128 Subsets
-
-Code 128 uses three subsets (A, B, C) to balance density and compatibility.
-
-| Subset  | Character Set         | Best For                    | Encoding            |
-|---------|-----------------------|-----------------------------|---------------------|
-| **A**   | Uppercase + control   | Control codes and uppercase | 1 char per symbol   |
-| **B**   | Printable ASCII       | Mixed-case text             | 1 char per symbol   |
-| **C**   | Numeric pairs (00–99) | Pure numeric data           | 2 digits per symbol |
-
-Aspose.BarCode automatically switches between subsets for optimal encoding:
+### Lowercase text
 
 ```java
-import com.aspose.barcode.generation.*;
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "product-code"
+);
 
-public class SubsetOptimization {
-    public static void main(String[] args) throws Exception {
-        BarcodeGenerator numeric = new BarcodeGenerator(EncodeTypes.CODE_128, "123456789012");  // Uses subset C
-        numeric.save("code128_numeric.png", BarCodeImageFormat.PNG);
-
-        BarcodeGenerator mixed = new BarcodeGenerator(EncodeTypes.CODE_128, "ABC123def456");    // Auto-switching
-        mixed.save("code128_mixed.png", BarCodeImageFormat.PNG);
-
-        BarcodeGenerator lowercase = new BarcodeGenerator(EncodeTypes.CODE_128, "product-code"); // Subset B
-        lowercase.save("code128_lowercase.png", BarCodeImageFormat.PNG);
-    }
-}
+generator.save("code128_lowercase.png", BarCodeImageFormat.PNG);
 ```
 
-**Tips:**
-- Use numeric data when possible for smaller symbols (Subset C)
-- Avoid unnecessary character mixing
-- Group similar data types to help auto-optimization
+Lowercase letters and punctuation are typically encoded with subset B.
 
----
+## Create a compact Code 128 image
 
-## Best Practices
+For a small barcode image, configure X-Dimension and bar height, disable human-readable text, reduce vertical padding, and fit the barcode to a target image box.
 
-1. **X-Dimension** – 0.30–0.40 mm for label printers; 2–3 px for on-screen use
-2. **Quiet Zone** – at least 10× X-Dimension on left/right, 2× on top/bottom
-3. **Height** – ≥ 15 % of barcode width or ≥ 0.25 in for printed labels
-4. **Resolution** – ≥ 300 DPI for printing
-5. **Testing** – verify readability on all intended scanners and substrates
-6. **Data Efficiency** – shorter data → faster scan, smaller symbol
+```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.CODE_128,
+        "SIZE-DEMO-123"
+);
 
----
+generator.getParameters().getBarcode().getXDimension().setPixels(2);
+generator.getParameters().getBarcode().getBarHeight().setPixels(16);
+generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
+generator.getParameters().getBarcode().getPadding().getTop().setPixels(1);
+generator.getParameters().getBarcode().getPadding().getBottom().setPixels(1);
 
-{{% alert color="info" %}}
-💡 **Full Example on GitHub**  
-You can find the complete, runnable TestNG example demonstrating Code 128 generation, size control, and text configuration here:  
-👉 [GenerateCode128ExamplesTest.java on GitHub](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/design_usage_examples/src/test/java/com/aspose/barcode/guide/generation/GenerateCode128ExamplesTest.java)
-{{% /alert %}}
+generator.getParameters().setAutoSizeMode(AutoSizeMode.NEAREST);
+generator.getParameters().getImageWidth().setPixels(300);
+generator.getParameters().getImageHeight().setPixels(60);
+
+generator.save("code128_tiny_no_text.png", BarCodeImageFormat.PNG);
+```
+
+Compact layouts should still be tested with the intended recognition device and output medium.
