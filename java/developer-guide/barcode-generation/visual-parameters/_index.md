@@ -45,4 +45,4 @@ A large image canvas does not automatically make barcode modules larger. Module 
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/ImageAndLayoutParametersExample.java" target="_blank">View ImageAndLayoutParametersExample.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+set

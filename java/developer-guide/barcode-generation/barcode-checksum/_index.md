@@ -52,4 +52,4 @@ Do not assume that `EnableChecksum.NO` can disable a checksum required by the ba
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/checksum/OptionalChecksumExamples.java" target="_blank">View OptionalChecksumExamples.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+set

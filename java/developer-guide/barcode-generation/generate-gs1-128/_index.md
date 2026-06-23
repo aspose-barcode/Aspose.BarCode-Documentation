@@ -16,7 +16,7 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateGS1_128.java" target="_blank">View GenerateGS1_128.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+set
 ## Generate a basic GS1-128 barcode
 
 The following example encodes a GTIN, expiration date, and batch number.

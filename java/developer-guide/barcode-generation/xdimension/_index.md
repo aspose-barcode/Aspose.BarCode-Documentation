@@ -19,7 +19,7 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/xdimension/XDimensionExamples.java" target="_blank">View XDimensionExamples.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+set
 ## Set X-Dimension for a 1D barcode
 
 For linear barcodes, X-Dimension controls the width of the narrowest bar. The following example generates a Code 128 barcode with an X-Dimension of `0.30 mm` and a bar height of `12 mm`.

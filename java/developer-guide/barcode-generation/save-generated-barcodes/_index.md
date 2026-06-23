@@ -44,4 +44,4 @@ Stream output is useful for web responses, database storage, message payloads, a
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/save_options/SaveGeneratedImageExample.java" target="_blank">View SaveGeneratedImageExample.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+set
