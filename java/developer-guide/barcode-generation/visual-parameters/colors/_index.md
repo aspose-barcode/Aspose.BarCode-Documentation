@@ -2,7 +2,7 @@
 title: "Customize Barcode Colors"
 description: "Learn how to configure bar, module, caption, and human-readable text colors in Aspose.BarCode for Java."
 type: docs
-weight: 50
+weight: 40
 url: /java/developer-guide/barcode-generation/visual-parameters/colors/
 ---
 

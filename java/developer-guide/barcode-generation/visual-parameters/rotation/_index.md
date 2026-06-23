@@ -2,7 +2,7 @@
 title: "Rotate Barcode Images"
 description: "Learn how to rotate generated barcode images in Aspose.BarCode for Java using right-angle and arbitrary rotation values."
 type: docs
-weight: 60
+weight: 70
 url: /java/developer-guide/barcode-generation/visual-parameters/rotation/
 ---
 

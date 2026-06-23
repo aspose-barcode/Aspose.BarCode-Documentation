@@ -2,7 +2,7 @@
 title: "Customize Barcode Size"
 description: "Configure X-dimension, bar height, auto-size modes, image bounds, and symbology-specific dimensions."
 type: docs
-weight: 10
+weight: 20
 url: /java/developer-guide/barcode-generation/visual-parameters-and-layout/customize-barcode-size/
 ---
 

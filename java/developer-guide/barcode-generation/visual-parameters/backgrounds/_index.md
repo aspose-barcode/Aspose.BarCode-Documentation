@@ -2,7 +2,7 @@
 title: "Customize Barcode Backgrounds"
 description: "Learn how to configure barcode background colors, transparency, padding, and contrast in Aspose.BarCode for Java."
 type: docs
-weight: 20
+weight: 10
 url: /java/developer-guide/barcode-generation/visual-parameters/backgrounds/
 ---
 
