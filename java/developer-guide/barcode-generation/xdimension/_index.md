@@ -2,7 +2,7 @@
 title: "Configure X-Dimension"
 description: "Learn how to configure X-Dimension for 1D and 2D barcodes in Aspose.BarCode for Java, compare symbol density, use AutoSizeMode, and apply BarWidthReduction for printing."
 type: docs
-weight: 10
+weight: 50
 url: /java/developer-guide/barcode-generation/xdimension/
 ---
 
