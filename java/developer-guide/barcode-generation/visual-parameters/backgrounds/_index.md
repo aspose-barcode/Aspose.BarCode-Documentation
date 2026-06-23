@@ -14,9 +14,7 @@ Background settings do not change the encoded data, but they can affect recognit
 
 The complete source code for the examples in this article is available on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/ColorsExample.java" target="_blank">View ColorsExample.java</a>
-
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/ImageAndLayoutParametersExample.java" target="_blank">View ImageAndLayoutParametersExample.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/BackgroundsExample.java" target="_blank">View BackgroundsExample.java</a>
 
 You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
 
@@ -43,6 +41,8 @@ generator.save(
         BarCodeImageFormat.PNG
 );
 ```
+
+A light background with dark modules usually provides reliable recognition.
 
 ## Use a dark background
 
@@ -86,15 +86,32 @@ generator.save(
 );
 ```
 
+The barcode modules remain visible, while the configured background area is transparent.
+
 ## Create a semi-transparent background
 
+Use an alpha value between `0` and `255` to create a semi-transparent background.
+
 ```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.QR,
+        "SEMI-TRANSPARENT-QR"
+);
+
 generator.getParameters().setBackColor(
         new Color(255, 255, 255, 128)
 );
+
+generator.save(
+        "qr_semi_transparent.png",
+        BarCodeImageFormat.PNG
+);
 ```
 
-The alpha value ranges from `0` for fully transparent to `255` for fully opaque.
+The alpha value ranges from:
+
+- `0` — fully transparent;
+- `255` — fully opaque.
 
 Not all image formats preserve transparency. JPEG does not support an alpha channel.
 
@@ -139,6 +156,12 @@ generator.save(
 ```
 
 Padding is an image-layout setting. Left and right padding can reserve space for required quiet zones, but the required quiet-zone width depends on the symbology, X-dimension, and applicable barcode specification.
+
+## Validate transparency in tests
+
+The related Java example checks generated PNG images with `ImageIO` and confirms that transparent or semi-transparent alpha values are actually present in the output.
+
+This verifies that the selected image format preserved the requested transparency instead of checking only that a file was created.
 
 ## Recommendations
 
