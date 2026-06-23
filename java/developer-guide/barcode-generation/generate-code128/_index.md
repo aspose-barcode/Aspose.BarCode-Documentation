@@ -12,9 +12,9 @@ Code 128 is a high-density linear symbology that can encode numeric data, upperc
 
 The complete source code for the examples in this article is available on GitHub:
 
-[View GenerateCode128.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateCode128.java)
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/overview/GenerateCode128.java" target="_blank">View GenerateCode128.java</a>
 
-You can also browse all barcode generation examples in the [Generation examples directory](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation).
+You can also browse all barcode generation examples in the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
 
 ## Generate a basic Code 128 barcode
 

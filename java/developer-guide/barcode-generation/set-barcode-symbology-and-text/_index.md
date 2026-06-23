@@ -1,5 +1,5 @@
 ---
-title: "Set Barcode Symbology and Text"
+title: "Barcode Symbology and Text"
 description: "Select a barcode symbology and provide text, Unicode, or binary data."
 type: docs
 weight: 10
