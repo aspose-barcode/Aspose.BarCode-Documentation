@@ -19,7 +19,7 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/CustomizingCaptionsExample.java" target="_blank">View CustomizingCaptionsExample.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+
 
 ## Captions and human-readable code text
 

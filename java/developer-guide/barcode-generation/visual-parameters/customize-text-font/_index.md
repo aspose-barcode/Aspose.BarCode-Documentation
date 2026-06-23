@@ -1,5 +1,5 @@
 ---
-title: "Customize Human-Readable Text and Font"
+title: "Customize Text and Font"
 description: "Learn how to configure human-readable barcode text position, font size, color, alignment, visibility, and spacing in Aspose.BarCode for Java."
 type: docs
 weight: 60
@@ -25,7 +25,7 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/TextAndFontExample.java" target="_blank">View TextAndFontExample.java</a>
 
-You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+
 
 ## Place human-readable text below the barcode
 
