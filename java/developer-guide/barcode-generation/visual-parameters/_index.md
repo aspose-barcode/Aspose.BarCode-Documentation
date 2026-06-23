@@ -2,7 +2,7 @@
 title: "Visual Parameters & Layout"
 description: "Configure common barcode dimensions, padding, image bounds, text placement, and layout."
 type: docs
-weight: 20
+weight: 90
 url: /java/developer-guide/barcode-generation/visual-parameters-and-layout/
 ---
 

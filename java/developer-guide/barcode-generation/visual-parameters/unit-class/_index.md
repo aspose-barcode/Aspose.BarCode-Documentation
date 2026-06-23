@@ -2,7 +2,7 @@
 title: "Unit Class"
 description: "Use the Unit class to define barcode measurements in pixels, millimeters, inches, and points."
 type: docs
-weight: 21
+weight: 70
 url: /java/developer-guide/barcode-generation/visual-parameters-and-layout/unit-class/
 ---
 

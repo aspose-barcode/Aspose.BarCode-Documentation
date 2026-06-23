@@ -2,7 +2,7 @@
 title: "Save Generated Barcodes"
 description: "Save generated barcodes to raster and vector formats or write them to a stream."
 type: docs
-weight: 30
+weight: 60
 url: /java/developer-guide/barcode-generation/save-generated-barcodes/
 ---
 

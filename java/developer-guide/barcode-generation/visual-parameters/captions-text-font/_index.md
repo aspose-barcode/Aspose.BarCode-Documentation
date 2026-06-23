@@ -1,8 +1,8 @@
 ---
-title: "Customize Captions, Human-Readable Text, and Font"
+title: "Customize Captions and Font"
 description: "Configure captions, human-readable text position, fonts, colors, alignment, and spacing."
 type: docs
-weight: 23
+weight: 40
 url: /java/developer-guide/barcode-generation/visual-parameters-and-layout/customize-captions-human-readable-text-font/
 ---
 

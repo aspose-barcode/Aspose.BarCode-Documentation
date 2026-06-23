@@ -2,7 +2,7 @@
 title: "Set Barcode Checksum"
 description: "Enable optional checksums and understand symbologies with mandatory check digits."
 type: docs
-weight: 40
+weight: 70
 url: /java/developer-guide/barcode-generation/set-barcode-checksum/
 ---
 

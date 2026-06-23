@@ -2,7 +2,7 @@
 title: "Barcode Symbology and Text"
 description: "Learn how to select a barcode symbology and provide plain text, Unicode text, or raw binary data in Aspose.BarCode for Java."
 type: docs
-weight: 10
+weight: 80
 url: /java/developer-guide/barcode-generation/set-barcode-symbology-and-text/
 ---
 
