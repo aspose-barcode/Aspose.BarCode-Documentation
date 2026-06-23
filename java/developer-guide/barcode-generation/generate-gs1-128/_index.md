@@ -2,7 +2,7 @@
 title: "Generate GS1-128 Barcodes"
 description: "Learn how to generate GS1-128 barcodes in Aspose.BarCode for Java, encode Application Identifiers, handle variable-length fields, configure physical dimensions, and create compact or box-driven layouts."
 type: docs
-weight: 10
+weight: 20
 url: /java/developer-guide/barcode-generation/generate-gs1-128/
 ---
 
