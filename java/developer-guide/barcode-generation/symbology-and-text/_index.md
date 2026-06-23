@@ -71,12 +71,12 @@ BarcodeGenerator generator = new BarcodeGenerator(
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrEncodeMode(QREncodeMode.ECI);
+        .setEncodeMode(QREncodeMode.ECI);
 
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrECIEncoding(ECIEncodings.UTF8);
+        .setECIEncoding(ECIEncodings.UTF8);
 
 generator.save("qr_unicode.png", BarCodeImageFormat.PNG);
 ```
@@ -103,12 +103,12 @@ generator.setCodeText(payload);
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrEncodeMode(QREncodeMode.BYTES);
+        .setEncodeMode(QREncodeMode.BYTES);
 
 generator.save("qr_bytes.png", BarCodeImageFormat.PNG);
 ```
 
-Do not combine `QREncodeMode.BYTES` with `setQrECIEncoding(ECIEncodings.UTF8)` merely because the byte array originally came from a UTF-8 string. In bytes mode, the supplied array is treated as the payload itself rather than as text that needs character encoding.
+Do not combine `QREncodeMode.BYTES` with `setECIEncoding(ECIEncodings.UTF8)` merely because the byte array originally came from a UTF-8 string. In bytes mode, the supplied array is treated as the payload itself rather than as text that needs character encoding.
 
 The receiving application is responsible for interpreting the decoded byte sequence according to the application protocol.
 

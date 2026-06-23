@@ -47,7 +47,7 @@ BarcodeGenerator generator = new BarcodeGenerator(
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrErrorLevel(QRErrorLevel.LEVEL_H);
+        .setErrorLevel(QRErrorLevel.LEVEL_H);
 
 generator.save("qrcode_error_correction.png", BarCodeImageFormat.PNG);
 ```
@@ -100,12 +100,12 @@ BarcodeGenerator generator = new BarcodeGenerator(
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrEncodeMode(QREncodeMode.ECI);
+        .setEncodeMode(QREncodeMode.ECI);
 
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrECIEncoding(ECIEncodings.UTF8);
+        .setECIEncoding(ECIEncodings.UTF8);
 
 generator.save("qrcode_utf8.png", BarCodeImageFormat.PNG);
 ```
@@ -132,17 +132,17 @@ generator.getParameters().setResolution(300.0f);
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrErrorLevel(QRErrorLevel.LEVEL_M);
+        .setErrorLevel(QRErrorLevel.LEVEL_M);
 
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrEncodeMode(QREncodeMode.ECI);
+        .setEncodeMode(QREncodeMode.ECI);
 
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrECIEncoding(ECIEncodings.UTF8);
+        .setECIEncoding(ECIEncodings.UTF8);
 
 generator.getParameters().setBackColor(java.awt.Color.WHITE);
 generator.getParameters().getBarcode().setBarColor(java.awt.Color.BLACK);
@@ -233,12 +233,12 @@ BarcodeGenerator generator = new BarcodeGenerator(
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrEncodeMode(QREncodeMode.ECI);
+        .setEncodeMode(QREncodeMode.ECI);
 
 generator.getParameters()
         .getBarcode()
         .getQR()
-        .setQrECIEncoding(ECIEncodings.UTF8);
+        .setECIEncoding(ECIEncodings.UTF8);
 
 generator.save("vcard_qrcode.png", BarCodeImageFormat.PNG);
 ```
