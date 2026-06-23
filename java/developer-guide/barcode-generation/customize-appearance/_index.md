@@ -7,6 +7,16 @@ url: /java/developer-guide/customize-appearance/
 
 # **Customizing Barcode Appearance**
 
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/ImageAndLayoutParametersExample.java" target="_blank">View ImageAndLayoutParametersExample.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/ColorsExample.java" target="_blank">View ColorsExample.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/BordersExample.java" target="_blank">View BordersExample.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/RotationExample.java" target="_blank">View RotationExample.java</a>
+
+You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
+
 ## **Overview**
 
 Aspose.BarCode for Java provides extensive customization options to control the visual appearance of generated barcodes.  
@@ -211,5 +221,4 @@ generator.save("barcode_rotate_180.png", BarCodeImageFormat.PNG);
 {{% alert color="info" %}}
 💡 **Related Example**  
 See the full runnable TestNG example for X-Dimension and appearance customization here:  
-👉 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/design_usage_examples/src/test/java/com/aspose/barcode/guide/generation/XDimensionExamples.java" target="_blank" rel="noopener noreferrer">XDimensionExamples.java on GitHub</a>
 {{% /alert %}}

@@ -50,6 +50,9 @@ Captions have their own visibility, text, font, color, alignment, and padding. T
 
 ## Complete example
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/appearance/CustomizeCaptionsAndText.java" target="_blank">View CustomizeCaptionsAndText.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/CustomizingCaptionsExample.java" target="_blank">View CustomizingCaptionsExample.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/TextAndFontExample.java" target="_blank">View TextAndFontExample.java</a>
 
 You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.

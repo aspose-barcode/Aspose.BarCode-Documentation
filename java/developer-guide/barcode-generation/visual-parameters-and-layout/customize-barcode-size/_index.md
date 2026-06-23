@@ -53,6 +53,7 @@ Always verify the final dimensions against the applicable barcode specification,
 
 ## Complete example
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/size/CustomizeBarcodeSize.java" target="_blank">View CustomizeBarcodeSize.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/CustomizingSizeExample.java" target="_blank">View CustomizingSizeExample.java</a>
 
 You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.

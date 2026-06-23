@@ -46,6 +46,7 @@ For thermal printers, calculate physical dimensions for the actual device resolu
 
 ## Complete example
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/print_options/PrintBarcodes.java" target="_blank">View PrintBarcodes.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/print_options/PrintOptionsExample.java" target="_blank">View PrintOptionsExample.java</a>
 
 You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.

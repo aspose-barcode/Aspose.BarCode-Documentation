@@ -61,6 +61,7 @@ The receiving application must know how to interpret the decoded bytes. ECI can 
 
 ## Complete example
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/symbology_codetext/SetBarcodeSymbologyAndText.java" target="_blank">View SetBarcodeSymbologyAndText.java</a>
+
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/symbology_codetext/SymbologyAndCodeTextExample.java" target="_blank">View SymbologyAndCodeTextExample.java</a>
 
 You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.

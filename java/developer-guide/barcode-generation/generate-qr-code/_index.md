@@ -12,10 +12,9 @@ QR Code is a two-dimensional symbology suitable for URLs, identifiers, contact i
 
 The complete source code for the examples in this article is available on GitHub:
 
-[View GenerateQRCode.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateQRCode.java)
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateQRCode.java" target="_blank">View GenerateQRCode.java</a>
 
-You can also browse all barcode generation examples in the [Generation examples directory](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation).
-
+You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
 ## Generate a basic QR Code
 
 Create a `BarcodeGenerator` with `EncodeTypes.QR`, provide the code text, and save the image.

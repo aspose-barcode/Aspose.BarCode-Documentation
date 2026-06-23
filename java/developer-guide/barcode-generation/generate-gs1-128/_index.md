@@ -14,10 +14,9 @@ In Aspose.BarCode for Java, use `EncodeTypes.GS_1_CODE_128`. Application Identif
 
 The complete source code for the examples in this article is available on GitHub:
 
-[View GenerateGS1_128.java](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateGS1_128.java)
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/GenerateGS1_128.java" target="_blank">View GenerateGS1_128.java</a>
 
-You can also browse all barcode generation examples in the [Generation examples directory](https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation).
-
+You can also browse the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
 ## Generate a basic GS1-128 barcode
 
 The following example encodes a GTIN, expiration date, and batch number.
