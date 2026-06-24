@@ -2,7 +2,7 @@
 title: "Complete Complex Barcode Examples"
 description: "Explore complete end-to-end workflows for generating, recognizing, decoding, and validating complex barcodes."
 type: docs
-weight: 40
+weight: 50
 url: /java/developer-guide/complex-barcode/examples/
 ---
 

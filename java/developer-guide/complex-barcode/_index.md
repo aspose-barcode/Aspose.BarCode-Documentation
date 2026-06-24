@@ -2,7 +2,7 @@
 title: "Complex Barcode"
 description: "Learn how to generate, read, decode, and troubleshoot structured complex barcodes with Aspose.BarCode for Java."
 type: docs
-weight: 40
+weight: 60
 url: /java/developer-guide/complex-barcode/
 ---
 

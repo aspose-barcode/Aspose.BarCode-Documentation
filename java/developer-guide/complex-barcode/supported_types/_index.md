@@ -2,7 +2,7 @@
 title: "Supported Complex Barcode Types"
 description: "Explore the complex barcode standards supported by Aspose.BarCode for Java."
 type: docs
-weight: 50
+weight: 40
 url: /java/developer-guide/complex-barcode/supported_types/
 ---
 
