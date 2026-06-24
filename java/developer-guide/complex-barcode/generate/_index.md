@@ -33,6 +33,32 @@ codetext.setPrimaryData(primaryData);
 
 Add expiry date, quantity, lot number, serial number, and manufacture date through `SecondaryAndAdditionalData`.
 
+```java
+SecondaryAndAdditionalData secondaryData =
+        new SecondaryAndAdditionalData();
+
+secondaryData.setExpiryDateFormat(
+        HIBCLICDateFormat.YYYYMMDD
+);
+
+secondaryData.setExpiryDate(
+        LocalDateTime.of(2027, 12, 31, 0, 0)
+);
+
+secondaryData.setQuantity(30);
+secondaryData.setLotNumber("LOT123");
+secondaryData.setSerialNumber("SERIAL123");
+secondaryData.setDateOfManufacture(
+        LocalDateTime.of(2026, 1, 15, 0, 0)
+);
+
+codetext.setSecondaryAndAdditionalData(
+        secondaryData
+);
+```
+
+The model constructs the standard-compliant HIBC LIC payload automatically.
+
 ## Generate a complex barcode image
 
 ```java
@@ -67,7 +93,36 @@ generator.getParameters()
         .setPixels(3);
 ```
 
-Padding and borders can be configured in the same way as for regular barcode generation. These settings do not modify the business data.
+Padding and borders can be configured in the same way as for regular barcode generation.
+
+```java
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getLeft()
+        .setPixels(12);
+
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getRight()
+        .setPixels(12);
+
+generator.getParameters()
+        .getBorder()
+        .setVisible(true);
+
+generator.getParameters()
+        .getBorder()
+        .setColor(Color.GRAY);
+
+generator.getParameters()
+        .getBorder()
+        .getWidth()
+        .setPixels(2);
+```
+
+These settings affect only the generated image and do not modify the structured business data.
 
 ## Save to a stream
 
@@ -87,22 +142,68 @@ Stream output is useful for web responses, cloud storage, document composition, 
 
 ## Verify generated output
 
-Recognize the generated image and compare its payload with `getConstructedCodetext()`:
+Use `BarCodeReader` to recognize the generated carrier barcode and compare the recognized payload with `getConstructedCodetext()`.
 
 ```java
-assertImageHasBarcodes(
-        outputPath,
-        1,
-        List.of(
-                expected(
-                        DecodeType.QR,
-                        codetext.getConstructedCodetext()
-                )
-        )
+BarCodeReader reader = new BarCodeReader(
+        "generated_swiss_qr.png",
+        DecodeType.QR
 );
+
+BarCodeResult[] results =
+        reader.readBarCodes();
+
+if (results.length != 1) {
+    throw new IllegalStateException(
+            "Expected exactly one QR barcode."
+    );
+}
+
+if (!results[0].getCodeType().equals(
+        DecodeType.QR
+)) {
+    throw new IllegalStateException(
+            "Unexpected barcode type: "
+                    + results[0].getCodeType()
+    );
+}
+
+if (!results[0].getCodeText().equals(
+        codetext.getConstructedCodetext()
+)) {
+    throw new IllegalStateException(
+            "Recognized payload does not match "
+                    + "the constructed codetext."
+    );
+}
 ```
 
+This example uses only the public Aspose.BarCode API.
+
 For critical workflows, decode the recognized text back into the typed model and compare business fields.
+
+```java
+SwissQRCodetext decodedCodetext =
+        ComplexCodetextReader.tryDecodeSwissQR(
+                results[0].getCodeText()
+        );
+
+if (decodedCodetext == null) {
+    throw new IllegalStateException(
+            "The recognized payload could not be "
+                    + "decoded as Swiss QR."
+    );
+}
+
+if (!decodedCodetext.getBill()
+        .getAccount()
+        .equals(codetext.getBill().getAccount())) {
+    throw new IllegalStateException(
+            "Decoded account does not match "
+                    + "the source data."
+    );
+}
+```
 
 ## Recommendations
 
@@ -110,4 +211,6 @@ For critical workflows, decode the recognized text back into the typed model and
 - Validate required fields before saving.
 - Keep appearance configuration separate from business data.
 - Use streams when intermediate files are unnecessary.
-- Verify generated output through recognition and structured decoding.
+- Recognize the generated carrier with `BarCodeReader`.
+- Decode the recognized text with the matching complex codetext reader.
+- Compare important business fields after decoding.
