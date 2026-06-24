@@ -2,7 +2,7 @@
 title: "Barcode Generation"
 description: "Generate and configure barcodes with Aspose.BarCode for Java."
 type: docs
-weight: 1
+weight: 30
 url: /java/developer-guide/barcode-generation/
 ---
 

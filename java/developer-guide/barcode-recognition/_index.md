@@ -1,6 +1,6 @@
 ---
 title: Barcode Recognition
 type: docs
-weight: 10
+weight: 20
 url: /java/developer-guide/barcode-recognition
 ---
