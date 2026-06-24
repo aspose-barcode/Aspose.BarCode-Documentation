@@ -19,8 +19,6 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/symbology_codetext/SetBarcodeSymbologyAndText.java" target="_blank">View SetBarcodeSymbologyAndText.java</a>
 
-You can also browse all barcode generation examples in the <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/tree/master/src/test/java/com/aspose/barcode/guide/generation" target="_blank">Generation examples directory</a>.
-
 ## Select a barcode symbology
 
 Create a `BarcodeGenerator` with one of the constants exposed by `EncodeTypes`.
@@ -33,7 +31,10 @@ BarcodeGenerator generator = new BarcodeGenerator(
         codeText
 );
 
-generator.save("code128_text.png", BarCodeImageFormat.PNG);
+generator.save(
+        "code128_text.png",
+        BarCodeImageFormat.PNG
+);
 ```
 
 Use a symbology that matches the application requirements. For example:
@@ -49,9 +50,15 @@ For additional background, see the <a href="https://docs.aspose.com/barcode/info
 You can create the generator without payload data and set it later.
 
 ```java
-BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
+BarcodeGenerator generator =
+        new BarcodeGenerator(EncodeTypes.QR);
+
 generator.setCodeText("Updated payload");
-generator.save("qr_updated_payload.png", BarCodeImageFormat.PNG);
+
+generator.save(
+        "qr_updated_payload.png",
+        BarCodeImageFormat.PNG
+);
 ```
 
 Use `setCodeText(String)` for text data and `setCodeText(byte[])` for a raw byte sequence.
@@ -78,7 +85,10 @@ generator.getParameters()
         .getQR()
         .setECIEncoding(ECIEncodings.UTF8);
 
-generator.save("qr_unicode.png", BarCodeImageFormat.PNG);
+generator.save(
+        "qr_unicode.png",
+        BarCodeImageFormat.PNG
+);
 ```
 
 In this scenario, the source value remains a Java `String`. The generator converts the text by using the selected ECI encoding and writes the corresponding ECI designator into the QR Code.
@@ -97,7 +107,9 @@ byte[] payload = {
         0x7F
 };
 
-BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
+BarcodeGenerator generator =
+        new BarcodeGenerator(EncodeTypes.QR);
+
 generator.setCodeText(payload);
 
 generator.getParameters()
@@ -105,7 +117,10 @@ generator.getParameters()
         .getQR()
         .setEncodeMode(QREncodeMode.BYTES);
 
-generator.save("qr_bytes.png", BarCodeImageFormat.PNG);
+generator.save(
+        "qr_bytes.png",
+        BarCodeImageFormat.PNG
+);
 ```
 
 Do not combine `QREncodeMode.BYTES` with `setECIEncoding(ECIEncodings.UTF8)` merely because the byte array originally came from a UTF-8 string. In bytes mode, the supplied array is treated as the payload itself rather than as text that needs character encoding.
@@ -121,41 +136,92 @@ Use the following rule when selecting the QR encoding mode:
 
 These scenarios should be tested independently. A Unicode text test verifies character encoding and decoding, while a raw-bytes test verifies byte-for-byte payload preservation.
 
-## Verify the generated barcode
+## Verify a text payload
 
-The example class saves each generated image and reads it back to verify the symbology and payload.
-
-For text payloads, compare the decoded text:
+Use `BarCodeReader` to recognize the generated barcode and compare the public recognition result with the expected symbology and text.
 
 ```java
-ExampleAssist.assertImageHasBarcodes(
-        outputPath,
-        1,
-        List.of(
-                ExampleAssist.expected(
-                        DecodeType.QR,
-                        codeText
-                )
-        )
+BarCodeReader reader = new BarCodeReader(
+        "qr_unicode.png",
+        DecodeType.QR
 );
+
+BarCodeResult[] results =
+        reader.readBarCodes();
+
+if (results.length != 1) {
+    throw new IllegalStateException(
+            "Expected exactly one QR barcode."
+    );
+}
+
+if (!results[0].getCodeType().equals(
+        DecodeType.QR
+)) {
+    throw new IllegalStateException(
+            "Unexpected barcode type: "
+                    + results[0].getCodeType()
+    );
+}
+
+if (!results[0].getCodeText().equals(
+        codeText
+)) {
+    throw new IllegalStateException(
+            "Decoded text does not match "
+                    + "the source text."
+    );
+}
 ```
 
-For raw binary payloads, compare the decoded bytes:
+This example uses only the public Aspose.BarCode API.
+
+## Verify a binary payload
+
+For raw binary data, compare `getCodeBytes()` rather than `getCodeText()`.
 
 ```java
-ExampleAssist.assertImageHasBarcodes(
-        outputPath,
-        1,
-        List.of(
-                ExampleAssist.expected(
-                        DecodeType.QR,
-                        payload
-                )
-        )
+BarCodeReader reader = new BarCodeReader(
+        "qr_bytes.png",
+        DecodeType.QR
 );
+
+BarCodeResult[] results =
+        reader.readBarCodes();
+
+if (results.length != 1) {
+    throw new IllegalStateException(
+            "Expected exactly one QR barcode."
+    );
+}
+
+if (!results[0].getCodeType().equals(
+        DecodeType.QR
+)) {
+    throw new IllegalStateException(
+            "Unexpected barcode type: "
+                    + results[0].getCodeType()
+    );
+}
+
+if (!Arrays.equals(
+        results[0].getCodeBytes(),
+        payload
+)) {
+    throw new IllegalStateException(
+            "Decoded bytes do not match "
+                    + "the source payload."
+    );
+}
 ```
 
 Byte comparison is preferable for binary content because `getCodeText()` may apply a character interpretation that is not meaningful for arbitrary binary data.
+
+The binary verification example requires:
+
+```java
+import java.util.Arrays;
+```
 
 ## Recommendations
 
@@ -164,4 +230,5 @@ Byte comparison is preferable for binary content because `getCodeText()` may app
 - Use UTF-8 ECI only when explicit character encoding is required.
 - Use `byte[]` with `QREncodeMode.BYTES` for exact binary payloads.
 - Do not assume that arbitrary binary data can be represented reliably through decoded text.
-- Read generated barcodes back during tests to verify both the barcode type and payload.
+- Use `BarCodeReader` to verify both the recognized barcode type and payload.
+- Compare `getCodeText()` for text and `getCodeBytes()` for binary data.
