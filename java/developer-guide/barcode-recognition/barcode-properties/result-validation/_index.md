@@ -30,50 +30,25 @@ The following example reads an EAN-13 barcode, disables incorrect barcode result
 ```java
 String imagePath = "rv_ean13_valid.png";
 
-BarCodeReader reader = new BarCodeReader(
-        imagePath,
-        DecodeType.EAN_13
-);
+BarCodeReader reader = new BarCodeReader(imagePath, DecodeType.EAN_13);
+reader.getQualitySettings().setAllowIncorrectBarcodes(false);
 
-reader.getQualitySettings()
-        .setAllowIncorrectBarcodes(false);
-
-BarCodeResult[] results =
-        reader.readBarCodes();
+BarCodeResult[] results = reader.readBarCodes();
 
 if (results.length == 0) {
-    throw new IllegalStateException(
-            "Expected a valid EAN-13 barcode."
-    );
+        throw new IllegalStateException("Expected a valid EAN-13 barcode.");
 }
 
 BarCodeResult result = results[0];
+BarCodeExtendedParameters extended = result.getExtended();
 
-BarCodeExtendedParameters extended =
-        result.getExtended();
-
-if (extended == null
-        || extended.getOneD() == null) {
-    throw new IllegalStateException(
-            "One-dimensional extended parameters "
-                    + "are not available."
-    );
+if (extended == null || extended.getOneD() == null) {
+        throw new IllegalStateException("One-dimensional extended parameters are not available.");
 }
 
-System.out.println(
-        "Recognized text: "
-                + result.getCodeText()
-);
-
-System.out.println(
-        "Confidence: "
-                + result.getConfidence()
-);
-
-System.out.println(
-        "Checksum: "
-                + extended.getOneD().getCheckSum()
-);
+        System.out.println("Recognized text: " + result.getCodeText());
+        System.out.println("Confidence: " + result.getConfidence());
+        System.out.println("Checksum: " + extended.getOneD().getCheckSum());
 ```
 
 `setAllowIncorrectBarcodes(false)` requests stricter filtering of incorrect recognition candidates. If the barcode is severely damaged, the reader may return no result rather than expose an unreliable candidate.
@@ -87,37 +62,16 @@ For damaged input, you can compare recognition with incorrect barcode results di
 ```java
 String imagePath = "rv_code39_damaged.png";
 
-BarCodeReader strictReader = new BarCodeReader(
-        imagePath,
-        DecodeType.CODE_39
-);
+BarCodeReader strictReader = new BarCodeReader(imagePath, DecodeType.CODE_39);
+strictReader.getQualitySettings().setAllowIncorrectBarcodes(false);
+BarCodeResult[] strictResults = strictReader.readBarCodes();
 
-strictReader.getQualitySettings()
-        .setAllowIncorrectBarcodes(false);
+BarCodeReader lenientReader = new BarCodeReader(imagePath, DecodeType.CODE_39);
+lenientReader.getQualitySettings().setAllowIncorrectBarcodes(true);
+BarCodeResult[] lenientResults = lenientReader.readBarCodes();
 
-BarCodeResult[] strictResults =
-        strictReader.readBarCodes();
-
-BarCodeReader lenientReader = new BarCodeReader(
-        imagePath,
-        DecodeType.CODE_39
-);
-
-lenientReader.getQualitySettings()
-        .setAllowIncorrectBarcodes(true);
-
-BarCodeResult[] lenientResults =
-        lenientReader.readBarCodes();
-
-System.out.println(
-        "Strict count: "
-                + strictResults.length
-);
-
-System.out.println(
-        "Lenient count: "
-                + lenientResults.length
-);
+System.out.println("Strict count: " + strictResults.length);
+System.out.println("Lenient count: " + lenientResults.length);
 ```
 
 Allowing incorrect results can expose additional candidates for diagnostics. It does not mean that every returned candidate should be accepted.
@@ -141,53 +95,23 @@ The following example compares a clean QR image with a noisy version of the same
 String cleanImagePath = "rv_qr_clean.png";
 String noisyImagePath = "rv_qr_noisy.png";
 
-BarCodeReader cleanReader = new BarCodeReader(
-        cleanImagePath,
-        DecodeType.QR
-);
+BarCodeReader cleanReader = new BarCodeReader(cleanImagePath, DecodeType.QR);
+cleanReader.setQualitySettings(QualitySettings.getHighQuality());
+BarCodeResult[] cleanResults = cleanReader.readBarCodes();
 
-cleanReader.setQualitySettings(
-        QualitySettings.getHighQuality()
-);
+BarCodeReader noisyReader = new BarCodeReader(noisyImagePath, DecodeType.QR);
+noisyReader.setQualitySettings(QualitySettings.getHighQuality());
+BarCodeResult[] noisyResults = noisyReader.readBarCodes();
 
-BarCodeResult[] cleanResults =
-        cleanReader.readBarCodes();
-
-BarCodeReader noisyReader = new BarCodeReader(
-        noisyImagePath,
-        DecodeType.QR
-);
-
-noisyReader.setQualitySettings(
-        QualitySettings.getHighQuality()
-);
-
-BarCodeResult[] noisyResults =
-        noisyReader.readBarCodes();
-
-if (cleanResults.length == 0
-        || noisyResults.length == 0) {
-    throw new IllegalStateException(
-            "Both QR images must be recognized "
-                    + "for confidence comparison."
-    );
+if (cleanResults.length == 0 || noisyResults.length == 0) {
+    throw new IllegalStateException("Both QR images must be recognized for confidence comparison.");
 }
 
-double cleanConfidence =
-        cleanResults[0].getConfidence();
+double cleanConfidence = cleanResults[0].getConfidence();
+double noisyConfidence = noisyResults[0].getConfidence();
 
-double noisyConfidence =
-        noisyResults[0].getConfidence();
-
-System.out.println(
-        "Clean confidence: "
-                + cleanConfidence
-);
-
-System.out.println(
-        "Noisy confidence: "
-                + noisyConfidence
-);
+System.out.println("Clean confidence: " + cleanConfidence);
+System.out.println("Noisy confidence: " + noisyConfidence);
 ```
 
 Confidence is a heuristic value, not a calibrated probability that the result is correct.
@@ -214,36 +138,16 @@ The following example compares both presets on a small Code 128 image.
 ```java
 String imagePath = "rv_c128_small.png";
 
-BarCodeReader highPerformanceReader = new BarCodeReader(
-                imagePath,
-                DecodeType.CODE_128
-        );
-
+BarCodeReader highPerformanceReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 highPerformanceReader.setQualitySettings(QualitySettings.getHighPerformance());
+BarCodeResult[] highPerformanceResults = highPerformanceReader.readBarCodes();
 
-BarCodeResult[] highPerformanceResults =
-        highPerformanceReader.readBarCodes();
-
-BarCodeReader highQualityReader =
-        new BarCodeReader(
-                imagePath,
-                DecodeType.CODE_128
-        );
-
+BarCodeReader highQualityReader = new BarCodeReader(imagePath, DecodeType.CODE_128);
 highQualityReader.setQualitySettings(QualitySettings.getHighQuality());
+BarCodeResult[] highQualityResults = highQualityReader.readBarCodes();
 
-BarCodeResult[] highQualityResults =
-        highQualityReader.readBarCodes();
-
-System.out.println(
-        "HighPerformance count: "
-                + highPerformanceResults.length
-);
-
-System.out.println(
-        "HighQuality count: "
-                + highQualityResults.length
-);
+System.out.println("HighPerformance count: " + highPerformanceResults.length);
+System.out.println("HighQuality count: " + highQualityResults.length);
 ```
 
 Different presets can return different candidate counts for the same image. For example, `HighPerformance` may return no result while `HighQuality` detects a candidate.
@@ -272,17 +176,11 @@ A result should normally be accepted only after its type and decoded value have 
 BarCodeResult result = results[0];
 
 if (!result.getCodeType().equals(DecodeType.CODE_128)) {
-    throw new IllegalStateException(
-            "Unexpected barcode type: "
-                    + result.getCodeType()
-    );
-}
+        throw new IllegalStateException("Unexpected barcode type: " + result.getCodeType());
+        }
 
-if (!result.getCodeText().matches("[A-Z0-9-]+")) {
-    throw new IllegalStateException(
-            "Recognized text does not match "
-                    + "the expected format."
-    );
+        if (!result.getCodeText().matches("[A-Z0-9-]+")) {
+        throw new IllegalStateException("Recognized text does not match the expected format.");
 }
 ```
 
