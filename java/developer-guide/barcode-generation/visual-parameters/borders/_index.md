@@ -1,6 +1,6 @@
 ---
 title: "Customize Barcode Borders"
-description: "Learn how to configure barcode image borders, colors, widths, line styles, and ITF-14 bearer bars in Aspose.BarCode for Java."
+description: "Learn how to configure barcode image borders, colors, widths, padding, and ITF-14 bearer bars in Aspose.BarCode for Java."
 type: docs
 weight: 30
 url: /java/developer-guide/barcode-generation/visual-parameters/borders/
@@ -8,7 +8,7 @@ url: /java/developer-guide/barcode-generation/visual-parameters/borders/
 
 # Customize Barcode Borders
 
-Aspose.BarCode for Java can draw a border around the generated barcode image. You can configure border visibility, color, width, and line style.
+Aspose.BarCode for Java can draw a decorative border around the generated barcode image. You can configure border visibility, color, and width.
 
 For ITF-14, separate bearer-bar settings are available because bearer bars are part of the symbology-specific layout rather than a decorative image border.
 
@@ -16,93 +16,156 @@ The complete source code for the examples in this article is available on GitHub
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/BordersExample.java" target="_blank">View BordersExample.java</a>
 
-set
-
 ## Enable an image border
 
-```java
-BarcodeGenerator generator = new BarcodeGenerator(
-        EncodeTypes.CODE_128,
-        "BORDER-EXAMPLE"
-);
-
-generator.getParameters()
-        .getBorder()
-        .setVisible(true);
-
-generator.save(
-        "code128_border.png",
-        BarCodeImageFormat.PNG
-);
-```
-
-## Set border color and width
-
-```java
-generator.getParameters()
-        .getBorder()
-        .setColor(Color.GRAY);
-
-generator.getParameters()
-        .getBorder()
-        .getWidth()
-        .setPixels(2);
-```
-
-## Set the border line style
-
-```java
-generator.getParameters()
-        .getBorder()
-        .setDashStyle(BorderDashStyle.SOLID);
-```
-
-Depending on the library version, additional dash styles can be available.
-
-A decorative border should remain visually separate from the barcode bars or modules. Provide enough padding so that the border does not intrude into the required blank margins.
-
-## Use a border with a custom background
+Use `BorderParameters` to enable a border around the complete generated image.
 
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(
         EncodeTypes.CODE_128,
-        "BORDER-STYLE"
+        "BORDER-RED-2PT"
 );
 
-generator.getParameters().setBackColor(
-        new Color(245, 248, 252)
-);
+BorderParameters border =
+        generator.getParameters().getBorder();
 
+border.setVisible(true);
+border.getWidth().setPoint(2.0f);
+border.setColor(new Color(0xE5, 0x2B, 0x2B));
+```
+
+The border width can be specified through the `Unit` returned by `getWidth()`.
+
+## Keep the border outside the barcode area
+
+A decorative border should remain visually separate from the barcode bars or modules. Add enough padding so that the border does not intrude into the required blank margins.
+
+```java
 generator.getParameters()
         .getBarcode()
         .getPadding()
         .getLeft()
-        .setPixels(20);
+        .setPixels(14);
 
 generator.getParameters()
         .getBarcode()
         .getPadding()
         .getRight()
-        .setPixels(20);
+        .setPixels(14);
 
 generator.getParameters()
-        .getBorder()
-        .setVisible(true);
+        .getBarcode()
+        .getPadding()
+        .getTop()
+        .setPixels(10);
 
 generator.getParameters()
-        .getBorder()
-        .setColor(Color.DARK_GRAY);
+        .getBarcode()
+        .getPadding()
+        .getBottom()
+        .setPixels(10);
+```
 
-generator.getParameters()
-        .getBorder()
-        .getWidth()
-        .setPixels(2);
+Then save the image:
 
+```java
 generator.save(
-        "code128_border_complete.png",
+        "c128_border_red_2pt_on_white.png",
         BarCodeImageFormat.PNG
 );
 ```
+
+## Add a white border on a dark background
+
+A barcode image can use a dark background, light modules, and a contrasting border.
+
+```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.QR,
+        "QR-WHITE-BORDER"
+);
+
+generator.getParameters()
+        .setBackColor(Color.BLACK);
+
+generator.getParameters()
+        .getBarcode()
+        .setBarColor(Color.WHITE);
+
+BorderParameters border =
+        generator.getParameters().getBorder();
+
+border.setVisible(true);
+border.getWidth().setPoint(2.0f);
+border.setColor(Color.WHITE);
+
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getLeft()
+        .setPixels(16);
+
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getRight()
+        .setPixels(16);
+
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getTop()
+        .setPixels(16);
+
+generator.getParameters()
+        .getBarcode()
+        .getPadding()
+        .getBottom()
+        .setPixels(16);
+
+generator.getParameters()
+        .getImageWidth()
+        .setPixels(260);
+
+generator.getParameters()
+        .getImageHeight()
+        .setPixels(260);
+
+generator.save(
+        "qr_white_border_on_black.png",
+        BarCodeImageFormat.PNG
+);
+```
+
+This example creates a white QR Code and a white solid border on a black background.
+
+Inverted barcodes are not supported equally by all scanners. A generated image can be visually correct even when a particular reader does not recognize it. Therefore, the related test verifies that the image is created but does not require successful barcode recognition.
+
+For maximum interoperability, use dark modules on a light background.
+
+## Set border width in physical units
+
+Border width can also be specified in millimeters for a target resolution.
+
+```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.EAN_13,
+        "5901234123457"
+);
+
+BorderParameters border =
+        generator.getParameters().getBorder();
+
+border.setVisible(true);
+border.setColor(new Color(0x0B, 0x57, 0xD0));
+
+Unit borderWidth = border.getWidth();
+
+borderWidth.updateResolution(300f);
+borderWidth.setMillimeters(1.0f);
+```
+
+In this example, the border width is configured as 1 mm at 300 DPI.
 
 ## Configure ITF-14 bearer bars
 
@@ -111,32 +174,75 @@ ITF-14 uses bearer bars that are specific to the symbology.
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(
         EncodeTypes.ITF_14,
-        "12345678901231"
+        "10012345000017"
 );
 
-generator.getParameters()
+ITFParameters itfParameters = generator.getParameters()
         .getBarcode()
-        .getITF()
-        .setItfBorderType(ITF14BorderType.FRAME);
+        .getITF();
 
-generator.getParameters()
-        .getBarcode()
-        .getITF()
-        .getItfBorderThickness()
-        .setPixels(4);
-
-generator.save(
-        "itf14_frame.png",
-        BarCodeImageFormat.PNG
+itfParameters.setItfBorderType(
+        ITF14BorderType.FRAME
 );
+
+Unit bearerThickness =
+        itfParameters.getItfBorderThickness();
+
+bearerThickness.updateResolution(300f);
+bearerThickness.setMillimeters(2.5f);
+
+itfParameters.setQuietZoneCoef(12);
 ```
 
-Available bearer-bar layouts can include frame and bar variants. The exact physical dimensions should be validated against the applicable barcode specification and printing process.
+The `FRAME` option creates a rectangular bearer around the barcode.
+
+## Use an alternative ITF-14 bearer layout
+
+ITF-14 also supports alternative bearer layouts such as `BAR_OUT`.
+
+```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.ITF_14,
+        "10012345000017"
+);
+
+ITFParameters itfParameters = generator.getParameters()
+        .getBarcode()
+        .getITF();
+
+itfParameters.setItfBorderType(
+        ITF14BorderType.BAR_OUT
+);
+
+Unit bearerThickness =
+        itfParameters.getItfBorderThickness();
+
+bearerThickness.updateResolution(300f);
+bearerThickness.setMillimeters(2.0f);
+
+itfParameters.setQuietZoneCoef(12);
+```
+
+The exact bearer type, thickness, and quiet-zone dimensions should be validated against the applicable barcode specification and printing process.
+
+## Decorative borders and bearer bars
+
+A decorative image border and an ITF-14 bearer bar serve different purposes:
+
+- a decorative border surrounds the complete generated image;
+- an ITF-14 bearer bar is part of the barcode-specific layout;
+- padding separates a decorative border from the barcode;
+- `QuietZoneCoef` controls the ITF-14 quiet zone in multiples of X-dimension.
+
+Do not replace required ITF-14 bearer bars with a decorative image border.
 
 ## Recommendations
 
 - Keep decorative borders outside the required quiet zones.
 - Use sufficient padding between the barcode and the border.
-- Avoid thick borders near linear barcode bars.
+- Avoid thick borders close to linear barcode bars.
+- Prefer dark bars or modules on a light background for reliable recognition.
+- Do not assume that inverted barcodes are supported by every scanner.
 - Treat ITF-14 bearer bars as symbology-specific elements.
-- Validate the result with the intended printer and scanner.
+- Validate physical dimensions against the target resolution and printing process.
+- Test the final image with the intended scanner.
