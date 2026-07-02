@@ -15,9 +15,9 @@ Aspose.BarCode for Java generates a barcode from two primary inputs:
 
 The selected symbology determines the supported data, capacity, structure, and available generation parameters. Text and binary payloads should be handled as separate scenarios because character encoding rules do not apply to arbitrary raw bytes.
 
-The complete source code for the examples in this article is available on GitHub:
+The runnable TestNG example for this article is available on GitHub:
 
-<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/symbology_codetext/SetBarcodeSymbologyAndText.java" target="_blank">View SetBarcodeSymbologyAndText.java</a>
+<a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/symbology_codetext/SymbologyAndCodeTextExample.java" target="_blank">View SymbologyAndCodeTextExample.java</a>
 
 ## Select a barcode symbology
 
@@ -95,6 +95,33 @@ In this scenario, the source value remains a Java `String`. The generator conver
 
 The scanning application must support the selected ECI encoding to reconstruct the original text correctly.
 
+## Encode Unicode text with a BOM
+
+Use `setCodeText(String, Charset, boolean)` when the encoded text must include a byte-order mark.
+
+```java
+BarcodeGenerator generator =
+        new BarcodeGenerator(EncodeTypes.QR);
+
+generator.setCodeText(
+        "車種名",
+        StandardCharsets.UTF_8,
+        true
+);
+
+generator.getParameters()
+        .getBarcode()
+        .getQR()
+        .setECIEncoding(ECIEncodings.UTF8);
+
+generator.save(
+        "qr_utf8_bom.png",
+        BarCodeImageFormat.PNG
+);
+```
+
+The final boolean argument controls whether the BOM is added.
+
 ## Encode raw binary data
 
 Use `QREncodeMode.BYTES` when the source payload is already a byte array and must be encoded without text transcoding.
@@ -136,6 +163,45 @@ Use the following rule when selecting the QR encoding mode:
 
 These scenarios should be tested independently. A Unicode text test verifies character encoding and decoding, while a raw-bytes test verifies byte-for-byte payload preservation.
 
+## Configure symbology-specific parameters
+
+The consolidated example also demonstrates where selected barcode-specific settings are configured.
+
+For QR Code, set the error correction level and version through `getQR()`:
+
+```java
+BarcodeGenerator generator = new BarcodeGenerator(
+        EncodeTypes.QR,
+        "QR-PARAMS"
+);
+
+generator.getParameters()
+        .getBarcode()
+        .getQR()
+        .setErrorLevel(QRErrorLevel.LEVEL_H);
+
+generator.getParameters()
+        .getBarcode()
+        .getQR()
+        .setVersion(QRVersion.VERSION_05);
+```
+
+For Data Matrix, configure ECC and encoding mode through `getDataMatrix()`:
+
+```java
+generator.getParameters()
+        .getBarcode()
+        .getDataMatrix()
+        .setDataMatrixEcc(DataMatrixEccType.ECC_200);
+
+generator.getParameters()
+        .getBarcode()
+        .getDataMatrix()
+        .setDataMatrixEncodeMode(DataMatrixEncodeMode.AUTO);
+```
+
+The example class also includes Macro PDF417 rows, columns, and macro-segmentation fields, together with a GS1 Code 128 payload based on Application Identifiers.
+
 ## Verify a text payload
 
 Use `BarCodeReader` to recognize the generated barcode and compare the public recognition result with the expected symbology and text.
@@ -150,27 +216,27 @@ BarCodeResult[] results =
         reader.readBarCodes();
 
 if (results.length != 1) {
-    throw new IllegalStateException(
+        throw new IllegalStateException(
             "Expected exactly one QR barcode."
-    );
+);
 }
 
-if (!results[0].getCodeType().equals(
+        if (!results[0].getCodeType().equals(
         DecodeType.QR
-)) {
-    throw new IllegalStateException(
+        )) {
+        throw new IllegalStateException(
             "Unexpected barcode type: "
                     + results[0].getCodeType()
     );
-}
+            }
 
-if (!results[0].getCodeText().equals(
+            if (!results[0].getCodeText().equals(
         codeText
-)) {
-    throw new IllegalStateException(
+        )) {
+        throw new IllegalStateException(
             "Decoded text does not match "
                     + "the source text."
-    );
+);
 }
 ```
 
@@ -195,23 +261,11 @@ if (results.length != 1) {
     );
 }
 
-if (!results[0].getCodeType().equals(
-        DecodeType.QR
-)) {
-    throw new IllegalStateException(
-            "Unexpected barcode type: "
-                    + results[0].getCodeType()
-    );
-}
+        if (!results[0].getCodeType().equals(DecodeType.QR)) {
+        throw new IllegalStateException("Unexpected barcode type: " + results[0].getCodeType());}
 
-if (!Arrays.equals(
-        results[0].getCodeBytes(),
-        payload
-)) {
-    throw new IllegalStateException(
-            "Decoded bytes do not match "
-                    + "the source payload."
-    );
+            if (!Arrays.equals(results[0].getCodeBytes(), payload)) {
+        throw new IllegalStateException("Decoded bytes do not match the source payload.");
 }
 ```
 
