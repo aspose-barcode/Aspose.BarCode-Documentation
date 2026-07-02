@@ -1,6 +1,6 @@
 ---
 title: "Customize Barcode Backgrounds"
-description: "Learn how to configure barcode background colors, transparency, padding, and contrast in Aspose.BarCode for Java."
+description: "Learn how to configure barcode background colors, padding, and foreground-to-background contrast in Aspose.BarCode for Java."
 type: docs
 weight: 10
 url: /java/developer-guide/barcode-generation/visual-parameters/backgrounds/
@@ -8,19 +8,17 @@ url: /java/developer-guide/barcode-generation/visual-parameters/backgrounds/
 
 # Customize Barcode Backgrounds
 
-Aspose.BarCode for Java allows you to configure the background of a generated barcode image, including solid colors, transparent backgrounds, and semi-transparent backgrounds.
+Aspose.BarCode for Java allows you to configure the background color, barcode color, and padding of a generated barcode image.
 
-Background settings do not change the encoded data, but they can affect recognition reliability.
+Background and foreground settings do not change the encoded data, but they can affect recognition reliability.
 
 The complete source code for the examples in this article is available on GitHub:
 
 <a href="https://github.com/aspose-barcode/Aspose.BarCode-for-Java/blob/master/src/test/java/com/aspose/barcode/guide/generation/visual_parameters/BackgroundsExample.java" target="_blank">View BackgroundsExample.java</a>
 
-set
-
 ## Set a solid background color
 
-Use `setBackColor` to configure the image background.
+Use `setBackColor` to configure the image background and `setBarColor` to configure the bars or modules.
 
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(
@@ -46,13 +44,17 @@ A light background with dark modules usually provides reliable recognition.
 
 ## Use a dark background
 
+You can also generate light modules on a dark background.
+
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(
         EncodeTypes.QR,
         "DARK-BACKGROUND"
 );
 
-generator.getParameters().setBackColor(Color.BLACK);
+generator.getParameters().setBackColor(
+        Color.BLACK
+);
 
 generator.getParameters()
         .getBarcode()
@@ -66,58 +68,9 @@ generator.save(
 
 Inverted barcodes can be less compatible with some readers. Use dark bars or modules on a light background when maximum interoperability is required.
 
-## Create a transparent background
-
-PNG supports an alpha channel. A fully transparent background can be created with an alpha value of `0`.
-
-```java
-BarcodeGenerator generator = new BarcodeGenerator(
-        EncodeTypes.QR,
-        "TRANSPARENT-QR"
-);
-
-generator.getParameters().setBackColor(
-        new Color(255, 255, 255, 0)
-);
-
-generator.save(
-        "qr_transparent.png",
-        BarCodeImageFormat.PNG
-);
-```
-
-The barcode modules remain visible, while the configured background area is transparent.
-
-## Create a semi-transparent background
-
-Use an alpha value between `0` and `255` to create a semi-transparent background.
-
-```java
-BarcodeGenerator generator = new BarcodeGenerator(
-        EncodeTypes.QR,
-        "SEMI-TRANSPARENT-QR"
-);
-
-generator.getParameters().setBackColor(
-        new Color(255, 255, 255, 128)
-);
-
-generator.save(
-        "qr_semi_transparent.png",
-        BarCodeImageFormat.PNG
-);
-```
-
-The alpha value ranges from:
-
-- `0` — fully transparent;
-- `255` — fully opaque.
-
-Not all image formats preserve transparency. JPEG does not support an alpha channel.
-
 ## Configure padding around the barcode
 
-Padding adds blank space around the generated barcode image.
+Padding adds blank image space around the generated barcode.
 
 ```java
 BarcodeGenerator generator = new BarcodeGenerator(
@@ -157,17 +110,35 @@ generator.save(
 
 Padding is an image-layout setting. Left and right padding can reserve space for required quiet zones, but the required quiet-zone width depends on the symbology, X-dimension, and applicable barcode specification.
 
-## Validate transparency in tests
+## Verify the generated background color
 
-The related Java example checks generated PNG images with `ImageIO` and confirms that transparent or semi-transparent alpha values are actually present in the output.
+The related Java example reads the generated image with `ImageIO` and checks the RGB values of a background pixel.
 
-This verifies that the selected image format preserved the requested transparency instead of checking only that a file was created.
+```java
+BufferedImage image = ImageIO.read(
+        new File("qr_custom_background.png")
+);
+
+Color actualColor = new Color(
+        image.getRGB(0, 0),
+        true
+);
+
+if (actualColor.getRed() != 245
+        || actualColor.getGreen() != 248
+        || actualColor.getBlue() != 252) {
+    throw new IllegalStateException(
+            "Unexpected background color."
+    );
+}
+```
+
+This confirms that the expected solid background color was written to the image.
 
 ## Recommendations
 
 - Maintain strong contrast between the barcode and its final background.
-- Test transparent images after placing them on the actual destination background.
-- Use an output format that preserves the required alpha channel.
+- Prefer dark bars or modules on a light background for maximum interoperability.
 - Keep enough blank space around the symbol.
 - Do not treat arbitrary padding values as universal quiet-zone dimensions.
 - Validate the final image with the intended scanner and rendering pipeline.
