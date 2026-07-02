@@ -242,30 +242,27 @@ if (results.length != 1) {
 
 This example uses only the public Aspose.BarCode API.
 
-## Verify a binary payload
+## Verify binary data
 
-For raw binary data, compare `getCodeBytes()` rather than `getCodeText()`.
+For raw binary data, use `getCodeBytes()` instead of `getCodeText()`.
+
+The following code reads the QR Code and verifies that the recognized byte array is identical to the original binary data.
 
 ```java
-BarCodeReader reader = new BarCodeReader(
-        "qr_bytes.png",
-        DecodeType.QR
-);
+BarCodeReader reader = new BarCodeReader("qr_bytes.png",DecodeType.QR);
 
 BarCodeResult[] results =
         reader.readBarCodes();
 
-if (results.length != 1) {
-    throw new IllegalStateException(
-            "Expected exactly one QR barcode."
-    );
+if (results.length != 1) {throw new IllegalStateException("Expected exactly one QR barcode.");
 }
 
         if (!results[0].getCodeType().equals(DecodeType.QR)) {
-        throw new IllegalStateException("Unexpected barcode type: " + results[0].getCodeType());}
+        throw new IllegalStateException("Unexpected barcode type: " + results[0].getCodeType());
+            }
 
-            if (!Arrays.equals(results[0].getCodeBytes(), payload)) {
-        throw new IllegalStateException("Decoded bytes do not match the source payload.");
+            if (!Arrays.equals(results[0].getCodeBytes(),binaryData)) {
+        throw new IllegalStateException("Recognized bytes do not match the original binary data.");
 }
 ```
 
